@@ -1,0 +1,585 @@
+export type PracticeIndustryId = "office" | "factory" | "logistics" | "sales";
+
+export type PracticeIndustry = {
+  id: PracticeIndustryId;
+  label: string;
+  description: string;
+};
+
+export type PracticeExercise = {
+  id: string;
+  eyebrow: string;
+  prompt: string;
+  chinese?: string;
+  options: string[];
+  correctOption: number;
+  explanation: string;
+};
+
+export type PracticeScenario = {
+  id: string;
+  industry: PracticeIndustryId;
+  title: string;
+  brief: string;
+  context: string;
+  durationMinutes: number;
+  level: "Cơ bản" | "Thực tế" | "Nâng cao";
+  isFree: boolean;
+  sentenceZh: string;
+  pinyin: string;
+  translation: string;
+  focus: string[];
+  exercises: PracticeExercise[];
+};
+
+export type PracticeScenarioDto = Omit<PracticeScenario, "exercises"> & {
+  locked: boolean;
+  exercises: PracticeExercise[] | null;
+};
+
+export const practiceIndustries: PracticeIndustry[] = [
+  { id: "office", label: "Văn phòng", description: "Họp, báo cáo và phối hợp công việc" },
+  { id: "factory", label: "Nhà máy", description: "Vận hành, chất lượng và bàn giao ca" },
+  { id: "logistics", label: "Kho vận", description: "Nhập xuất, kiểm đếm và giao nhận" },
+  { id: "sales", label: "Bán hàng", description: "Tư vấn, báo giá và chăm sóc khách" },
+];
+
+export const practiceScenarios: PracticeScenario[] = [
+  {
+    id: "bao-tien-do-tre-han",
+    industry: "office",
+    title: "Báo tiến độ khi sắp trễ hạn",
+    brief: "Báo sớm, nêu rõ mức chậm và chủ động đưa mốc cập nhật tiếp theo.",
+    context: "Quản lý hỏi liệu hạng mục có kịp hạn cuối vào ngày mai hay không.",
+    durationMinutes: 7,
+    level: "Thực tế",
+    isFree: true,
+    sentenceZh: "进度可能会晚一天，我先向您汇报。",
+    pinyin: "Jìndù kěnéng huì wǎn yì tiān, wǒ xiān xiàng nín huìbào.",
+    translation: "Tiến độ có thể chậm một ngày, tôi báo trước với anh/chị.",
+    focus: ["Báo sớm", "Nêu mốc cụ thể", "Giữ giọng chuyên nghiệp"],
+    exercises: [
+      {
+        id: "office-delay-1",
+        eyebrow: "Chọn cách phản hồi",
+        prompt: "Quản lý hỏi: 能按时完成吗？ Câu nào phù hợp nhất?",
+        chinese: "能按时完成吗？",
+        options: [
+          "目前可能会晚一天，我先向您汇报。",
+          "不知道，明天再说吧。",
+          "这不是我的问题。",
+        ],
+        correctOption: 0,
+        explanation: "Câu này báo sớm mức chậm cụ thể và thể hiện sự chủ động, không né tránh trách nhiệm.",
+      },
+      {
+        id: "office-delay-2",
+        eyebrow: "Hiểu đúng từ khóa",
+        prompt: "Trong công việc, 截止时间 có nghĩa là gì?",
+        options: ["Thời gian nghỉ", "Hạn chót", "Lịch họp"],
+        correctOption: 1,
+        explanation: "截止时间 (jiézhǐ shíjiān) là thời hạn cuối cần hoàn thành một việc.",
+      },
+      {
+        id: "office-delay-3",
+        eyebrow: "Chốt mốc tiếp theo",
+        prompt: "Sau khi báo trễ, câu nào giúp đồng nghiệp biết khi nào sẽ có cập nhật mới?",
+        options: [
+          "有消息再联系。",
+          "我尽量吧。",
+          "我会在今天下午五点前更新进度。",
+        ],
+        correctOption: 2,
+        explanation: "Mốc 5 giờ chiều làm cam kết rõ ràng và giúp người nghe chủ động sắp xếp công việc.",
+      },
+    ],
+  },
+  {
+    id: "xac-nhan-lich-hop",
+    industry: "office",
+    title: "Xác nhận lịch họp",
+    brief: "Xác nhận thời gian, phòng họp và tài liệu cần chuẩn bị trong một lượt nói.",
+    context: "Bạn nhận được lịch họp mới và cần xác nhận lại với thư ký bộ phận.",
+    durationMinutes: 5,
+    level: "Cơ bản",
+    isFree: true,
+    sentenceZh: "我确认一下，会议是下午两点在三号会议室，对吗？",
+    pinyin: "Wǒ quèrèn yíxià, huìyì shì xiàwǔ liǎng diǎn zài sān hào huìyìshì, duì ma?",
+    translation: "Tôi xin xác nhận: cuộc họp lúc 2 giờ chiều tại phòng họp số 3, đúng không?",
+    focus: ["Xác nhận thông tin", "Hỏi lại lịch sự", "Tránh bỏ sót"],
+    exercises: [
+      {
+        id: "office-meeting-1",
+        eyebrow: "Chọn câu xác nhận",
+        prompt: "Câu nào xác nhận đủ cả thời gian và địa điểm?",
+        options: [
+          "今天有会吗？",
+          "会议是下午两点在三号会议室，对吗？",
+          "我可能不参加。",
+        ],
+        correctOption: 1,
+        explanation: "Câu thứ hai nhắc lại đủ hai thông tin quan trọng và dùng 对吗 để xác nhận lịch sự.",
+      },
+      {
+        id: "office-meeting-2",
+        eyebrow: "Hiểu đúng ý",
+        prompt: "我确认一下 được dùng khi nào?",
+        options: ["Khi muốn xác nhận lại", "Khi muốn từ chối", "Khi muốn kết thúc họp"],
+        correctOption: 0,
+        explanation: "Cụm này mở đầu một lượt xác nhận, có sắc thái mềm và tự nhiên trong môi trường công sở.",
+      },
+      {
+        id: "office-meeting-3",
+        eyebrow: "Chuẩn bị trước họp",
+        prompt: "Bạn muốn hỏi có cần mang báo cáo không. Chọn câu phù hợp.",
+        options: ["报告已经结束了。", "需要我带报告过去吗？", "谁写这个报告？"],
+        correctOption: 1,
+        explanation: "需要我…吗？ là mẫu hỏi chủ động xem mình có cần thực hiện việc gì hay không.",
+      },
+    ],
+  },
+  {
+    id: "xin-them-thoi-gian",
+    industry: "office",
+    title: "Xin thêm thời gian xử lý",
+    brief: "Nêu lý do vừa đủ và đề xuất một hạn mới có thể cam kết.",
+    context: "Bạn cần thêm nửa ngày để kiểm tra số liệu trước khi gửi báo cáo.",
+    durationMinutes: 8,
+    level: "Nâng cao",
+    isFree: false,
+    sentenceZh: "为了再核对一次数据，可以延到明天中午吗？",
+    pinyin: "Wèile zài héduì yí cì shùjù, kěyǐ yán dào míngtiān zhōngwǔ ma?",
+    translation: "Để kiểm tra lại số liệu một lần nữa, có thể lùi đến trưa mai không?",
+    focus: ["Nêu lý do ngắn", "Đề xuất hạn mới", "Xin xác nhận"],
+    exercises: [
+      {
+        id: "office-extension-1",
+        eyebrow: "Đề xuất mốc mới",
+        prompt: "Cách xin lùi hạn nào cụ thể và chuyên nghiệp nhất?",
+        options: ["以后再交。", "可以延到明天中午吗？", "今天做不完。"],
+        correctOption: 1,
+        explanation: "Một đề xuất tốt cần có mốc mới rõ ràng để người nghe cân nhắc và xác nhận.",
+      },
+      {
+        id: "office-extension-2",
+        eyebrow: "Chọn lý do vừa đủ",
+        prompt: "Bạn cần kiểm tra lại số liệu. Cụm nào đúng?",
+        options: ["核对数据", "取消数据", "忘记数据"],
+        correctOption: 0,
+        explanation: "核对数据 nghĩa là đối chiếu hoặc kiểm tra lại số liệu.",
+      },
+      {
+        id: "office-extension-3",
+        eyebrow: "Cam kết sau khi được đồng ý",
+        prompt: "Câu nào phù hợp để chốt lại?",
+        options: ["那就这样吧。", "好的，我会在明天中午前发给您。", "我再看看。"],
+        correctOption: 1,
+        explanation: "Lặp lại hạn mới giúp cả hai bên thống nhất và cho thấy bạn nhận trách nhiệm.",
+      },
+    ],
+  },
+  {
+    id: "ban-giao-cong-viec",
+    industry: "office",
+    title: "Bàn giao trước khi nghỉ phép",
+    brief: "Tóm tắt việc đã xong, việc đang chờ và người có thể hỗ trợ.",
+    context: "Bạn nghỉ phép hai ngày và cần bàn giao một hồ sơ đang chờ khách xác nhận.",
+    durationMinutes: 9,
+    level: "Thực tế",
+    isFree: false,
+    sentenceZh: "文件已经整理好了，现在只等客户确认。",
+    pinyin: "Wénjiàn yǐjīng zhěnglǐ hǎo le, xiànzài zhǐ děng kèhù quèrèn.",
+    translation: "Hồ sơ đã được sắp xếp xong, hiện chỉ còn chờ khách xác nhận.",
+    focus: ["Nêu trạng thái", "Chỉ rõ việc đang chờ", "Giao người phụ trách"],
+    exercises: [
+      {
+        id: "office-handover-1",
+        eyebrow: "Báo trạng thái",
+        prompt: "文件已经整理好了 cho biết điều gì?",
+        options: ["Hồ sơ đã sắp xếp xong", "Hồ sơ bị mất", "Hồ sơ chưa bắt đầu"],
+        correctOption: 0,
+        explanation: "已经…好了 diễn tả một việc đã hoàn tất và đang ở trạng thái sẵn sàng.",
+      },
+      {
+        id: "office-handover-2",
+        eyebrow: "Chỉ rõ việc đang chờ",
+        prompt: "Câu nào nói rằng đang chờ khách xác nhận?",
+        options: ["客户已经取消。", "只等客户确认。", "不用客户确认。"],
+        correctOption: 1,
+        explanation: "只等… nhấn mạnh đây là bước duy nhất còn lại.",
+      },
+      {
+        id: "office-handover-3",
+        eyebrow: "Giao đầu mối",
+        prompt: "Câu nào chỉ người hỗ trợ khi có vấn đề?",
+        options: ["有问题可以联系小陈。", "小陈今天很忙。", "这个问题不重要。"],
+        correctOption: 0,
+        explanation: "Nêu rõ người liên hệ giúp việc bàn giao có thể tiếp tục ngay cả khi bạn vắng mặt.",
+      },
+    ],
+  },
+  {
+    id: "bao-may-tam-dung",
+    industry: "factory",
+    title: "Báo máy tạm dừng",
+    brief: "Báo đúng thiết bị, tình trạng hiện tại và việc đã làm để đảm bảo an toàn.",
+    context: "Máy đóng gói số 2 phát ra tiếng lạ và bạn đã dừng máy.",
+    durationMinutes: 7,
+    level: "Thực tế",
+    isFree: true,
+    sentenceZh: "二号包装机有异常声音，我已经停机检查了。",
+    pinyin: "Èr hào bāozhuāngjī yǒu yìcháng shēngyīn, wǒ yǐjīng tíngjī jiǎnchá le.",
+    translation: "Máy đóng gói số 2 có tiếng bất thường, tôi đã dừng máy để kiểm tra.",
+    focus: ["Đúng thiết bị", "An toàn trước", "Báo hành động đã làm"],
+    exercises: [
+      {
+        id: "factory-stop-1",
+        eyebrow: "Báo bất thường",
+        prompt: "异常声音 có nghĩa là gì?",
+        options: ["Âm thanh bất thường", "Tốc độ bình thường", "Nhiệt độ thấp"],
+        correctOption: 0,
+        explanation: "异常 dùng cho tình trạng khác với bình thường và cần được kiểm tra.",
+      },
+      {
+        id: "factory-stop-2",
+        eyebrow: "Báo hành động an toàn",
+        prompt: "Bạn đã dừng máy để kiểm tra. Chọn câu đúng.",
+        options: ["我继续开机。", "我已经停机检查了。", "我没有看到机器。"],
+        correctOption: 1,
+        explanation: "已经停机检查了 báo rõ hành động đã được thực hiện, tránh người khác khởi động nhầm.",
+      },
+      {
+        id: "factory-stop-3",
+        eyebrow: "Yêu cầu hỗ trợ",
+        prompt: "Câu nào phù hợp để nhờ kỹ thuật viên tới kiểm tra?",
+        options: ["请维修人员过来检查一下。", "机器不用检查。", "明天再开机吧。"],
+        correctOption: 0,
+        explanation: "请…过来检查一下 là yêu cầu hỗ trợ rõ ràng nhưng vẫn lịch sự.",
+      },
+    ],
+  },
+  {
+    id: "xac-nhan-quy-trinh",
+    industry: "factory",
+    title: "Xác nhận bước vận hành",
+    brief: "Hỏi lại thứ tự thao tác trước khi khởi động một công đoạn chưa quen.",
+    context: "Bạn cần xác nhận có phải kiểm tra áp suất trước khi mở van hay không.",
+    durationMinutes: 6,
+    level: "Cơ bản",
+    isFree: false,
+    sentenceZh: "开阀门之前，要先检查压力，对吗？",
+    pinyin: "Kāi fámén zhīqián, yào xiān jiǎnchá yālì, duì ma?",
+    translation: "Trước khi mở van, cần kiểm tra áp suất trước, đúng không?",
+    focus: ["Thứ tự thao tác", "Từ vựng an toàn", "Xác nhận lại"],
+    exercises: [
+      {
+        id: "factory-process-1",
+        eyebrow: "Hiểu thứ tự",
+        prompt: "开阀门之前 mô tả thời điểm nào?",
+        options: ["Sau khi mở van", "Trước khi mở van", "Trong lúc đóng van"],
+        correctOption: 1,
+        explanation: "之前 nghĩa là trước khi; 以后 mới là sau khi.",
+      },
+      {
+        id: "factory-process-2",
+        eyebrow: "Chọn thao tác",
+        prompt: "检查压力 nghĩa là gì?",
+        options: ["Kiểm tra áp suất", "Ghi nhiệt độ", "Đóng nguồn điện"],
+        correctOption: 0,
+        explanation: "压力 là áp suất; 检查 là kiểm tra.",
+      },
+      {
+        id: "factory-process-3",
+        eyebrow: "Xác nhận quy trình",
+        prompt: "Câu nào phù hợp khi bạn chưa chắc về thứ tự?",
+        options: ["我知道了，不用问。", "要先检查压力，对吗？", "这个步骤可以不做。"],
+        correctOption: 1,
+        explanation: "Nhắc lại thao tác và thêm 对吗 giúp xác nhận mà không làm gián đoạn giao tiếp.",
+      },
+    ],
+  },
+  {
+    id: "ban-giao-ca-san-xuat",
+    industry: "factory",
+    title: "Bàn giao ca sản xuất",
+    brief: "Bàn giao sản lượng, lỗi còn theo dõi và vật tư sắp hết.",
+    context: "Bạn kết thúc ca và cần báo rằng lô cuối còn chờ kiểm tra chất lượng.",
+    durationMinutes: 10,
+    level: "Nâng cao",
+    isFree: false,
+    sentenceZh: "最后一批还在等质检，结果出来后请记录一下。",
+    pinyin: "Zuìhòu yì pī hái zài děng zhìjiǎn, jiéguǒ chūlái hòu qǐng jìlù yíxià.",
+    translation: "Lô cuối vẫn đang chờ kiểm tra chất lượng, khi có kết quả vui lòng ghi lại.",
+    focus: ["Bàn giao lô hàng", "Nhắc việc còn mở", "Yêu cầu ghi nhận"],
+    exercises: [
+      {
+        id: "factory-handover-1",
+        eyebrow: "Nhận diện trạng thái",
+        prompt: "还在等质检 cho biết lô hàng đang ở trạng thái nào?",
+        options: ["Đã xuất kho", "Vẫn chờ kiểm tra chất lượng", "Đã bị hủy"],
+        correctOption: 1,
+        explanation: "还在等… cho biết một việc vẫn đang tiếp diễn và chưa hoàn tất.",
+      },
+      {
+        id: "factory-handover-2",
+        eyebrow: "Chỉ thời điểm tiếp theo",
+        prompt: "结果出来后 nghĩa là gì?",
+        options: ["Trước khi có kết quả", "Khi không có kết quả", "Sau khi có kết quả"],
+        correctOption: 2,
+        explanation: "…后 chỉ thời điểm sau một sự kiện.",
+      },
+      {
+        id: "factory-handover-3",
+        eyebrow: "Giao việc rõ ràng",
+        prompt: "Câu nào yêu cầu ca sau ghi lại kết quả?",
+        options: ["请记录一下结果。", "结果不重要。", "不要看结果。"],
+        correctOption: 0,
+        explanation: "请 + động từ là cấu trúc giao việc lịch sự và trực tiếp.",
+      },
+    ],
+  },
+  {
+    id: "kiem-dem-hang-nhap",
+    industry: "logistics",
+    title: "Kiểm đếm hàng nhập",
+    brief: "Đối chiếu số kiện, tình trạng bao bì và biên bản giao nhận.",
+    context: "Xe vừa đến kho, số kiện thực nhận ít hơn phiếu giao hai kiện.",
+    durationMinutes: 7,
+    level: "Thực tế",
+    isFree: true,
+    sentenceZh: "我们实收四十八箱，比送货单少两箱。",
+    pinyin: "Wǒmen shíshōu sìshíbā xiāng, bǐ sònghuòdān shǎo liǎng xiāng.",
+    translation: "Chúng tôi thực nhận 48 thùng, ít hơn phiếu giao hàng 2 thùng.",
+    focus: ["Số lượng thực nhận", "Đối chiếu chứng từ", "Báo chênh lệch"],
+    exercises: [
+      {
+        id: "warehouse-receive-1",
+        eyebrow: "Hiểu số lượng",
+        prompt: "实收四十八箱 nghĩa là gì?",
+        options: ["Thực nhận 48 thùng", "Dự kiến 48 thùng", "Đã xuất 48 thùng"],
+        correctOption: 0,
+        explanation: "实收 là số lượng thực tế đã nhận, khác với số trên kế hoạch hoặc chứng từ.",
+      },
+      {
+        id: "warehouse-receive-2",
+        eyebrow: "Báo chênh lệch",
+        prompt: "Cụm nào nói ít hơn hai thùng?",
+        options: ["多两箱", "少两箱", "有两箱"],
+        correctOption: 1,
+        explanation: "少 là ít/thiếu; 多 là nhiều/thừa.",
+      },
+      {
+        id: "warehouse-receive-3",
+        eyebrow: "Đề nghị xử lý",
+        prompt: "Câu nào đề nghị kiểm tra lại phiếu giao?",
+        options: ["请再核对一下送货单。", "送货单不用看。", "把货退回去。"],
+        correctOption: 0,
+        explanation: "核对 là đối chiếu, phù hợp trước khi kết luận nguyên nhân chênh lệch.",
+      },
+    ],
+  },
+  {
+    id: "bao-thieu-hang",
+    industry: "logistics",
+    title: "Báo thiếu hàng trong kho",
+    brief: "Báo mã hàng, số còn lại và thời điểm có thể ảnh hưởng đơn xuất.",
+    context: "Một mã vật tư chỉ còn đủ cho đơn sáng nay.",
+    durationMinutes: 8,
+    level: "Thực tế",
+    isFree: false,
+    sentenceZh: "这个物料库存不够，只能满足上午的订单。",
+    pinyin: "Zhège wùliào kùcún bú gòu, zhǐ néng mǎnzú shàngwǔ de dìngdān.",
+    translation: "Tồn kho vật tư này không đủ, chỉ có thể đáp ứng đơn buổi sáng.",
+    focus: ["Tình trạng tồn", "Mức ảnh hưởng", "Đề nghị bổ sung"],
+    exercises: [
+      {
+        id: "warehouse-shortage-1",
+        eyebrow: "Báo tồn kho",
+        prompt: "库存不够 mô tả tình trạng nào?",
+        options: ["Tồn kho không đủ", "Tồn kho vừa nhập", "Tồn kho bị khóa"],
+        correctOption: 0,
+        explanation: "不够 nghĩa là không đủ so với nhu cầu.",
+      },
+      {
+        id: "warehouse-shortage-2",
+        eyebrow: "Nêu phạm vi ảnh hưởng",
+        prompt: "只能满足上午的订单 nghĩa là gì?",
+        options: ["Chỉ đủ đáp ứng đơn buổi sáng", "Không có đơn buổi sáng", "Đủ cho cả ngày"],
+        correctOption: 0,
+        explanation: "只能 nhấn mạnh giới hạn: chỉ có thể thực hiện trong phạm vi được nêu.",
+      },
+      {
+        id: "warehouse-shortage-3",
+        eyebrow: "Đề nghị bổ sung",
+        prompt: "Câu nào hỏi thời điểm hàng bổ sung tới kho?",
+        options: ["补货什么时候到？", "库存放在哪里？", "订单是谁的？"],
+        correctOption: 0,
+        explanation: "补货 là bổ sung hàng; 什么时候到 hỏi thời điểm đến.",
+      },
+    ],
+  },
+  {
+    id: "xac-nhan-lenh-xuat-kho",
+    industry: "logistics",
+    title: "Xác nhận lệnh xuất kho",
+    brief: "Xác nhận mã đơn, số lượng và cửa xuất trước khi đưa hàng ra.",
+    context: "Bạn nhận lệnh gấp nhưng trên phiếu chưa ghi rõ cửa xuất.",
+    durationMinutes: 6,
+    level: "Cơ bản",
+    isFree: false,
+    sentenceZh: "我再确认一下，这批货从哪个门出库？",
+    pinyin: "Wǒ zài quèrèn yíxià, zhè pī huò cóng nǎge mén chūkù?",
+    translation: "Tôi xin xác nhận lại, lô hàng này xuất kho qua cửa nào?",
+    focus: ["Xác nhận lô", "Hỏi cửa xuất", "Tránh giao nhầm"],
+    exercises: [
+      {
+        id: "warehouse-dispatch-1",
+        eyebrow: "Hỏi cửa xuất",
+        prompt: "从哪个门出库 hỏi thông tin gì?",
+        options: ["Xuất kho qua cửa nào", "Ai nhập kho", "Kho mở lúc nào"],
+        correctOption: 0,
+        explanation: "哪个门 là cửa nào; 出库 là xuất kho.",
+      },
+      {
+        id: "warehouse-dispatch-2",
+        eyebrow: "Xác nhận lại",
+        prompt: "Cụm nào giúp lời hỏi mềm và chuyên nghiệp hơn?",
+        options: ["不用说", "我再确认一下", "你错了"],
+        correctOption: 1,
+        explanation: "我再确认一下 cho biết mục đích là kiểm tra lại thông tin, không phải chất vấn.",
+      },
+      {
+        id: "warehouse-dispatch-3",
+        eyebrow: "Chốt số lượng",
+        prompt: "Bạn muốn xác nhận lô này có 20 kiện. Chọn câu đúng.",
+        options: ["这批货一共二十件，对吗？", "这批货已经到了。", "二十件货不需要。"],
+        correctOption: 0,
+        explanation: "一共 chỉ tổng số lượng; 对吗 dùng để xác nhận lại.",
+      },
+    ],
+  },
+  {
+    id: "tu-van-nhu-cau",
+    industry: "sales",
+    title: "Hỏi đúng nhu cầu khách",
+    brief: "Làm rõ mục đích sử dụng, số lượng và ưu tiên trước khi giới thiệu.",
+    context: "Khách hỏi một sản phẩm nhưng chưa nói rõ dùng cho văn phòng hay nhà xưởng.",
+    durationMinutes: 6,
+    level: "Cơ bản",
+    isFree: true,
+    sentenceZh: "请问您主要是在办公室用，还是在车间用？",
+    pinyin: "Qǐngwèn nín zhǔyào shì zài bàngōngshì yòng, háishì zài chējiān yòng?",
+    translation: "Xin hỏi anh/chị chủ yếu dùng ở văn phòng hay tại xưởng?",
+    focus: ["Hỏi mục đích", "Đưa lựa chọn", "Xưng hô lịch sự"],
+    exercises: [
+      {
+        id: "sales-needs-1",
+        eyebrow: "Hỏi mục đích dùng",
+        prompt: "Câu nào giúp phân biệt nhu cầu văn phòng và nhà xưởng?",
+        options: ["您要几个？", "是在办公室用，还是在车间用？", "这个很便宜。"],
+        correctOption: 1,
+        explanation: "Mẫu 是…还是…? đưa ra hai bối cảnh rõ để khách trả lời dễ hơn.",
+      },
+      {
+        id: "sales-needs-2",
+        eyebrow: "Giữ giọng lịch sự",
+        prompt: "Trong giao tiếp với khách, 您 khác 你 ở điểm nào?",
+        options: ["Trang trọng và lịch sự hơn", "Mang nghĩa số nhiều", "Chỉ dùng cho đồng nghiệp"],
+        correctOption: 0,
+        explanation: "您 là cách gọi tôn trọng, phù hợp khi mới gặp hoặc tư vấn khách hàng.",
+      },
+      {
+        id: "sales-needs-3",
+        eyebrow: "Hỏi số lượng",
+        prompt: "Câu nào hỏi số lượng dự kiến?",
+        options: ["您预计需要多少？", "您什么时候来？", "您喜欢什么颜色？"],
+        correctOption: 0,
+        explanation: "预计需要多少 hỏi lượng dự kiến để chuẩn bị báo giá hoặc tồn kho.",
+      },
+    ],
+  },
+  {
+    id: "gui-bao-gia",
+    industry: "sales",
+    title: "Gửi và giải thích báo giá",
+    brief: "Giới thiệu phạm vi giá, thời hạn hiệu lực và phần chưa bao gồm.",
+    context: "Bạn vừa gửi báo giá và cần nhắc khách mức giá chưa bao gồm vận chuyển.",
+    durationMinutes: 8,
+    level: "Thực tế",
+    isFree: false,
+    sentenceZh: "报价已经发给您了，这个价格还不含运费。",
+    pinyin: "Bàojià yǐjīng fā gěi nín le, zhège jiàgé hái bù hán yùnfèi.",
+    translation: "Báo giá đã được gửi cho anh/chị, mức giá này chưa bao gồm phí vận chuyển.",
+    focus: ["Xác nhận đã gửi", "Nêu phần chưa gồm", "Chốt hiệu lực"],
+    exercises: [
+      {
+        id: "sales-quote-1",
+        eyebrow: "Xác nhận đã gửi",
+        prompt: "报价已经发给您了 nghĩa là gì?",
+        options: ["Báo giá đã gửi cho anh/chị", "Báo giá đang được sửa", "Báo giá đã hết hạn"],
+        correctOption: 0,
+        explanation: "已经…了 diễn tả hành động đã hoàn tất.",
+      },
+      {
+        id: "sales-quote-2",
+        eyebrow: "Nêu chi phí chưa gồm",
+        prompt: "不含运费 nghĩa là gì?",
+        options: ["Đã miễn phí vận chuyển", "Chưa gồm phí vận chuyển", "Chỉ gồm phí vận chuyển"],
+        correctOption: 1,
+        explanation: "不含 là không bao gồm; 运费 là phí vận chuyển.",
+      },
+      {
+        id: "sales-quote-3",
+        eyebrow: "Chốt thời hạn",
+        prompt: "Câu nào nói báo giá có hiệu lực trong 7 ngày?",
+        options: ["报价七天后再发。", "这份报价七天内有效。", "报价已经用了七天。"],
+        correctOption: 1,
+        explanation: "…内有效 nghĩa là có hiệu lực trong khoảng thời gian được nêu.",
+      },
+    ],
+  },
+  {
+    id: "xu-ly-khieu-nai",
+    industry: "sales",
+    title: "Xử lý khi khách phàn nàn",
+    brief: "Ghi nhận vấn đề, xin thông tin kiểm tra và hẹn thời điểm phản hồi.",
+    context: "Khách báo sản phẩm vừa nhận không đúng mẫu đã đặt.",
+    durationMinutes: 10,
+    level: "Nâng cao",
+    isFree: false,
+    sentenceZh: "很抱歉给您带来不便，我马上核实订单。",
+    pinyin: "Hěn bàoqiàn gěi nín dàilái búbiàn, wǒ mǎshàng héshí dìngdān.",
+    translation: "Rất xin lỗi vì đã gây bất tiện, tôi sẽ kiểm tra đơn hàng ngay.",
+    focus: ["Ghi nhận bất tiện", "Không tranh luận", "Hẹn phản hồi"],
+    exercises: [
+      {
+        id: "sales-complaint-1",
+        eyebrow: "Mở đầu phản hồi",
+        prompt: "Câu nào ghi nhận bất tiện của khách mà chưa vội kết luận lỗi?",
+        options: ["这不是我们的问题。", "很抱歉给您带来不便。", "您应该再看一次。"],
+        correctOption: 1,
+        explanation: "Câu xin lỗi vì sự bất tiện thể hiện lắng nghe mà chưa đổ lỗi cho bất kỳ bên nào.",
+      },
+      {
+        id: "sales-complaint-2",
+        eyebrow: "Báo hành động tiếp theo",
+        prompt: "我马上核实订单 cho khách biết điều gì?",
+        options: ["Sẽ kiểm tra đơn ngay", "Sẽ hủy đơn ngay", "Sẽ gửi đơn mới ngay"],
+        correctOption: 0,
+        explanation: "核实 là xác minh thông tin; 马上 là ngay lập tức.",
+      },
+      {
+        id: "sales-complaint-3",
+        eyebrow: "Hẹn phản hồi",
+        prompt: "Câu nào có mốc phản hồi rõ ràng?",
+        options: ["有结果再说。", "我今天四点前给您回复。", "请您等一下。"],
+        correctOption: 1,
+        explanation: "Một mốc giờ cụ thể giúp khách biết khi nào sẽ nhận được cập nhật.",
+      },
+    ],
+  },
+];
+
+export function findPracticeScenario(id: string): PracticeScenario | null {
+  return practiceScenarios.find((scenario) => scenario.id === id) ?? null;
+}

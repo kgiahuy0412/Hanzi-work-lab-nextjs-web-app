@@ -18,6 +18,7 @@ export const contentStatus = pgEnum("content_status", ["draft", "review", "publi
 export const subscriptionStatus = pgEnum("subscription_status", ["pending", "active", "expired", "cancelled", "refunded"]);
 export const paymentStatus = pgEnum("payment_status", ["pending", "paid", "failed", "expired", "refunded", "manual_review"]);
 export const reviewState = pgEnum("review_state", ["new", "learning", "reviewing", "mastered"]);
+export const authTokenPurpose = pgEnum("auth_token_purpose", ["verify_email", "reset_password"]);
 
 export const users = pgTable("users", {
   id: uuid("id").defaultRandom().primaryKey(),
@@ -26,18 +27,59 @@ export const users = pgTable("users", {
   displayName: varchar("display_name", { length: 120 }),
   role: userRole("role").notNull().default("learner"),
   isActive: boolean("is_active").notNull().default(true),
+  emailVerifiedAt: timestamp("email_verified_at", { withTimezone: true }),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => [uniqueIndex("users_email_uq").on(table.email)]);
+
+export const authSessions = pgTable("auth_sessions", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  tokenHash: varchar("token_hash", { length: 64 }).notNull(),
+  expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [uniqueIndex("auth_sessions_token_hash_uq").on(table.tokenHash), index("auth_sessions_user_idx").on(table.userId), index("auth_sessions_expiry_idx").on(table.expiresAt)]);
+
+export const authTokens = pgTable("auth_tokens", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  purpose: authTokenPurpose("purpose").notNull(),
+  tokenHash: varchar("token_hash", { length: 64 }).notNull(),
+  expiresAt: timestamp("expires_at", { withTimezone: true }).notNull(),
+  usedAt: timestamp("used_at", { withTimezone: true }),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [
+  uniqueIndex("auth_tokens_token_hash_uq").on(table.tokenHash),
+  index("auth_tokens_user_purpose_idx").on(table.userId, table.purpose),
+  index("auth_tokens_expiry_idx").on(table.expiresAt),
+]);
+
+export const authRateLimits = pgTable("auth_rate_limits", {
+  action: varchar("action", { length: 50 }).notNull(),
+  keyHash: varchar("key_hash", { length: 64 }).notNull(),
+  attempts: integer("attempts").notNull().default(0),
+  windowStartedAt: timestamp("window_started_at", { withTimezone: true }).notNull().defaultNow(),
+  blockedUntil: timestamp("blocked_until", { withTimezone: true }),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [
+  primaryKey({ columns: [table.action, table.keyHash] }),
+  index("auth_rate_limits_updated_idx").on(table.updatedAt),
+]);
 
 export const courses = pgTable("courses", {
   id: uuid("id").defaultRandom().primaryKey(),
   slug: varchar("slug", { length: 160 }).notNull(),
   titleVi: varchar("title_vi", { length: 180 }).notNull(),
   titleZh: varchar("title_zh", { length: 180 }).notNull(),
+  hanzi: varchar("hanzi", { length: 12 }).notNull(),
   category: varchar("category", { length: 100 }).notNull(),
   description: text("description").notNull(),
   level: varchar("level", { length: 40 }).notNull(),
+  lessonCount: integer("lesson_count").notNull().default(0),
+  totalMinutes: integer("total_minutes").notNull().default(0),
+  freeLessonCount: integer("free_lesson_count").notNull().default(0),
+  themeColor: varchar("theme_color", { length: 20 }).notNull().default("#dcebe2"),
+  themeInk: varchar("theme_ink", { length: 20 }).notNull().default("#176b5b"),
   status: contentStatus("status").notNull().default("draft"),
   sortOrder: integer("sort_order").notNull().default(0),
   publishedAt: timestamp("published_at", { withTimezone: true }),
@@ -48,10 +90,11 @@ export const courses = pgTable("courses", {
 export const modules = pgTable("modules", {
   id: uuid("id").defaultRandom().primaryKey(),
   courseId: uuid("course_id").notNull().references(() => courses.id, { onDelete: "cascade" }),
+  slug: varchar("slug", { length: 160 }).notNull(),
   title: varchar("title", { length: 180 }).notNull(),
   description: text("description"),
   sortOrder: integer("sort_order").notNull().default(0),
-}, (table) => [index("modules_course_idx").on(table.courseId)]);
+}, (table) => [uniqueIndex("modules_course_slug_uq").on(table.courseId, table.slug), index("modules_course_idx").on(table.courseId)]);
 
 export const lessons = pgTable("lessons", {
   id: uuid("id").defaultRandom().primaryKey(),
@@ -71,6 +114,7 @@ export const lessons = pgTable("lessons", {
 
 export const vocabulary = pgTable("vocabulary", {
   id: uuid("id").defaultRandom().primaryKey(),
+  slug: varchar("slug", { length: 180 }).notNull(),
   hanzi: varchar("hanzi", { length: 120 }).notNull(),
   pinyin: varchar("pinyin", { length: 220 }).notNull(),
   meaningVi: text("meaning_vi").notNull(),
@@ -80,7 +124,7 @@ export const vocabulary = pgTable("vocabulary", {
   tags: jsonb("tags").notNull().default([]),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
-});
+}, (table) => [uniqueIndex("vocabulary_slug_uq").on(table.slug)]);
 
 export const lessonVocabulary = pgTable("lesson_vocabulary", {
   lessonId: uuid("lesson_id").notNull().references(() => lessons.id, { onDelete: "cascade" }),

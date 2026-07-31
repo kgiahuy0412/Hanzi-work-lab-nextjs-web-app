@@ -1,9 +1,13 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import { Geist } from "next/font/google";
 import "./globals.css";
-import { SiteHeader } from "@/components/site-header";
+import "./motion.css";
+import { SiteHeader, SiteHeaderFallback } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileNav } from "@/components/mobile-nav";
+import { LearnerAppShell } from "@/components/learner-app-shell";
+import { getCurrentUser } from "@/lib/auth-session";
 
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
 
@@ -12,6 +16,14 @@ export const metadata: Metadata = {
   description: "Học tiếng Trung chuyên ngành theo tình huống thực tế tại nơi làm việc.",
 };
 
-export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="vi" className={geist.variable}><body><SiteHeader />{children}<SiteFooter /><MobileNav /></body></html>;
+export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
+  const user = await getCurrentUser();
+  const shellUser = user ? { displayName: user.displayName, role: user.role } : null;
+
+  return <html lang="vi" className={geist.variable}><body>
+    <Suspense fallback={<SiteHeaderFallback />}><SiteHeader /></Suspense>
+    <Suspense fallback={<div className="standalone-route-shell">{children}</div>}><LearnerAppShell user={shellUser}>{children}</LearnerAppShell></Suspense>
+    <SiteFooter />
+    <MobileNav />
+  </body></html>;
 }

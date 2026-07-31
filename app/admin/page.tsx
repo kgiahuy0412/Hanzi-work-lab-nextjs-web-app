@@ -1,18 +1,44 @@
 import type { Metadata } from "next";
-import { BookOpenText, CircleDollarSign, Crown, UsersRound } from "lucide-react";
+import Link from "next/link";
+import { BookOpenText, Crown, Languages, UsersRound } from "lucide-react";
+import { AdminConsoleHeader, StatusBadge } from "@/components/admin-console";
+import { requireAdminUser } from "@/lib/admin-auth";
+import { getAdminDashboard } from "@/lib/admin-content-service";
 
-export const metadata: Metadata = { title: "Admin mẫu" };
-const adminStats = [{ label: "Người học", value: "1.248", icon: UsersRound }, { label: "Tài khoản VIP", value: "186", icon: Crown }, { label: "Bài đã xuất bản", value: "149", icon: BookOpenText }, { label: "Doanh thu tháng", value: "18,6tr", icon: CircleDollarSign }];
-const courseRows = [["办", "Văn phòng & hành chính", "24", "1.062", "Đang mở"], ["产", "Nhà máy & sản xuất", "20", "784", "Đang mở"], ["仓", "Kho vận & logistics", "22", "638", "Đang mở"], ["客", "Bán hàng & CSKH", "18", "—", "Bản nháp"]];
+export const metadata: Metadata = { title: "HanziWork Console" };
 
-export default function AdminPage() {
+const actionLabels: Record<string, string> = {
+  "admin.course.created": "Đã tạo lộ trình",
+  "admin.course.updated": "Đã cập nhật lộ trình",
+  "admin.course.deleted": "Đã xóa lộ trình nháp",
+  "admin.module.created": "Đã tạo module",
+  "admin.module.updated": "Đã cập nhật module",
+  "admin.module.deleted": "Đã xóa module trống",
+  "admin.lesson.created": "Đã tạo bài học",
+  "admin.lesson.updated": "Đã cập nhật bài học",
+  "admin.lesson.deleted": "Đã xóa bài học nháp",
+  "admin.vocabulary.created": "Đã tạo từ vựng",
+  "admin.vocabulary.updated": "Đã cập nhật từ vựng",
+  "admin.vocabulary.deleted": "Đã xóa từ vựng",
+};
+
+export default async function AdminPage() {
+  const user = await requireAdminUser();
+  const data = await getAdminDashboard();
+  const stats = [
+    { label: "Người dùng", value: data.stats.users, icon: UsersRound },
+    { label: "VIP đang hoạt động", value: data.stats.activeVip, icon: Crown },
+    { label: "Bài đã xuất bản", value: data.stats.publishedLessons, icon: BookOpenText },
+    { label: "Lộ trình", value: data.stats.courses, icon: Languages },
+  ];
+
   return <main className="admin-page"><div className="section-shell">
-    <div className="admin-top"><div className="admin-title"><span>HanziWork Console</span><h1>Tổng quan vận hành</h1></div><span className="demo-badge">Dữ liệu minh họa · Chưa có xác thực</span></div>
-    <section className="admin-stats" aria-label="Chỉ số tổng quan">{adminStats.map(({ label, value, icon: Icon }) => <article className="admin-stat" key={label}><span className="admin-stat-icon"><Icon size={20} /></span><div><strong>{value}</strong><span>{label}</span></div></article>)}</section>
+    <AdminConsoleHeader eyebrow="HanziWork Console" title="Tổng quan vận hành" userName={user.displayName} />
+    <section className="admin-stats" aria-label="Chỉ số tổng quan">{stats.map(({ label, value, icon: Icon }) => <article className="admin-stat" key={label}><span className="admin-stat-icon"><Icon size={20} /></span><div><strong>{value}</strong><span>{label}</span></div></article>)}</section>
     <div className="admin-grid">
-      <section className="admin-panel"><div className="panel-heading"><h2>Quản lý lộ trình</h2><span>Cập nhật hôm nay</span></div><div className="table-scroll"><table className="data-table"><thead><tr><th>Lộ trình</th><th>Bài học</th><th>Người học</th><th>Trạng thái</th></tr></thead><tbody>{courseRows.map((row) => <tr key={row[1]}><td><span className="table-course"><span className="table-mark">{row[0]}</span>{row[1]}</span></td><td>{row[2]}</td><td>{row[3]}</td><td><span className={`status ${row[4] === "Đang mở" ? "live" : "draft"}`}>{row[4]}</span></td></tr>)}</tbody></table></div></section>
-      <section className="admin-panel"><div className="panel-heading"><h2>Quy trình nội dung</h2><span>6 mục chờ</span></div><div className="pipeline"><div className="pipeline-step"><span>01</span><div><strong>Soạn từ & tình huống</strong><span>Người biên soạn</span></div><strong>3 mục</strong></div><div className="pipeline-step"><span>02</span><div><strong>Kiểm tra tiếng Trung</strong><span>Người duyệt nội dung</span></div><strong>2 mục</strong></div><div className="pipeline-step"><span>03</span><div><strong>Xem trước bài học</strong><span>Quản trị viên</span></div><strong>1 mục</strong></div><div className="pipeline-step"><span>04</span><div><strong>Xuất bản</strong><span>Tự động ghi phiên bản</span></div><strong>Sẵn sàng</strong></div></div></section>
+      <section className="admin-panel"><div className="panel-heading"><h2>Quản lý lộ trình</h2><Link href="/admin/courses">Mở CRUD nội dung</Link></div><div className="table-scroll"><table className="data-table"><thead><tr><th>Lộ trình</th><th>Bài học</th><th>Trạng thái</th><th>Cập nhật</th></tr></thead><tbody>{data.courses.map((course) => <tr key={course.id}><td><Link className="table-course" href={`/admin/courses/${course.id}`}><span className="table-mark">{course.hanzi}</span>{course.titleVi}</Link></td><td>{course.lessonCount}</td><td><StatusBadge status={course.status} /></td><td>{course.updatedAt.toLocaleDateString("vi-VN")}</td></tr>)}</tbody></table></div></section>
+      <section className="admin-panel"><div className="panel-heading"><h2>Quy trình nội dung</h2><span>Dữ liệu thật</span></div><div className="pipeline"><div className="pipeline-step"><span>01</span><div><strong>Bản nháp</strong><span>Đang biên soạn</span></div><strong>{data.lessonStatuses.draft ?? 0} bài</strong></div><div className="pipeline-step"><span>02</span><div><strong>Chờ duyệt</strong><span>Sẵn sàng kiểm tra</span></div><strong>{data.lessonStatuses.review ?? 0} bài</strong></div><div className="pipeline-step"><span>03</span><div><strong>Đã xuất bản</strong><span>Người học đang thấy</span></div><strong>{data.lessonStatuses.published ?? 0} bài</strong></div><div className="pipeline-step"><span>04</span><div><strong>Lưu trữ</strong><span>Không còn công khai</span></div><strong>{data.lessonStatuses.archived ?? 0} bài</strong></div></div></section>
     </div>
-    <div className="admin-lower"><section className="admin-panel"><div className="panel-heading"><h2>Lượt học 7 ngày</h2><span>+18% so với tuần trước</span></div><div className="bar-chart" aria-label="Biểu đồ lượt học theo ngày">{[42, 66, 53, 78, 62, 90, 72].map((height, index) => <div className="bar-column" key={index}><div className="bar" style={{ height: `${height}%` }} /><span>T{index + 2}</span></div>)}</div></section><section className="admin-panel"><div className="panel-heading"><h2>Hoạt động gần đây</h2><span>Tự động cập nhật</span></div><div className="activity-list"><div className="activity-item"><i className="activity-dot" /><div><p>Giao dịch HW260731-018 đã kích hoạt VIP 6 tháng</p><span>8 phút trước</span></div></div><div className="activity-item"><i className="activity-dot" /><div><p>Bài “Theo dõi tiến độ” được cập nhật phiên bản 1.2</p><span>32 phút trước</span></div></div><div className="activity-item"><i className="activity-dot" /><div><p>12 từ mới đang chờ kiểm tra tiếng Trung</p><span>1 giờ trước</span></div></div></div></section></div>
+    <div className="admin-lower one"><section className="admin-panel"><div className="panel-heading"><h2>Audit gần đây</h2><span>{data.activities.length} sự kiện</span></div><div className="activity-list">{data.activities.length ? data.activities.map((activity) => <div className="activity-item" key={activity.id}><i className="activity-dot" /><div><p>{actionLabels[activity.action] ?? activity.action}</p><span>{activity.actorName ?? "Hệ thống"} · {activity.createdAt.toLocaleString("vi-VN")}</span></div></div>) : <p className="admin-empty">Chưa có hoạt động quản trị.</p>}</div></section></div>
   </div></main>;
 }

@@ -1,12 +1,33 @@
 import type { Metadata } from "next";
-import { BrainCircuit } from "lucide-react";
-import { PracticeBoard } from "@/components/practice-board";
+import { WorkPracticeHub } from "@/components/work-practice-hub";
+import { getCurrentUser } from "@/lib/auth-session";
+import { listPracticeVocabulary } from "@/lib/lesson-repository";
+import { getPracticeCatalog } from "@/lib/practice-repository";
+import { getWeeklyChallenge } from "@/lib/weekly-challenges";
 
-export const metadata: Metadata = { title: "Luyện tập từ vựng" };
+export const metadata: Metadata = {
+  title: "Kho ca làm",
+  description: "Luyện tiếng Trung qua các tình huống thật tại nơi làm việc.",
+};
 
-export default function PracticePage() {
-  return <main className="practice-section"><div className="section-shell practice-layout">
-    <div className="practice-info"><div className="eyebrow"><BrainCircuit size={16} /> Ôn tập thông minh</div><h1>Nhớ lâu hơn, không cần học lâu hơn.</h1><p>Ôn lại những từ bạn thấy khó trong bài học. Bản MVP dùng flashcard và tự đánh giá, chưa cần chấm điểm phát âm bằng AI.</p><div className="practice-stats"><div className="practice-stat"><strong>12</strong><span>Từ cần ôn hôm nay</span></div><div className="practice-stat"><strong>84%</strong><span>Tỷ lệ ghi nhớ tuần này</span></div></div></div>
-    <PracticeBoard />
-  </div></main>;
+export default async function PracticePage() {
+  const user = await getCurrentUser();
+  const catalog = await getPracticeCatalog(user?.id ?? null);
+  const vocabulary = await listPracticeVocabulary(10, user?.id ?? null, catalog.hasVip);
+  const weeklyChallenge = getWeeklyChallenge();
+  return (
+    <main className="learner-dashboard practice-dashboard">
+      <div className="practice-dashboard-frame">
+        <WorkPracticeHub
+          authenticated={Boolean(user)}
+          hasVip={catalog.hasVip}
+          industries={catalog.industries}
+          scenarios={catalog.scenarios}
+          vocabulary={vocabulary}
+          weeklyChallenge={weeklyChallenge}
+        />
+      </div>
+
+    </main>
+  );
 }

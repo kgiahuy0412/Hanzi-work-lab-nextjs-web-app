@@ -1,39 +1,25 @@
 import Link from "next/link";
+import { getCurrentUser } from "@/lib/auth-session";
+import { listPracticeVocabulary } from "@/lib/lesson-repository";
+import { getLearningSummary } from "@/lib/progress-repository";
 import {
   ArrowRight,
-  BarChart3,
-  Bell,
   BookOpen,
   Check,
   CheckCircle2,
   Clock3,
   Crown,
-  Flame,
-  Headphones,
-  Home,
   Lightbulb,
   LockKeyhole,
   MessageCircleMore,
-  NotebookTabs,
   Play,
-  Repeat2,
   Route,
-  Settings,
   Target,
   Volume2,
   Zap,
 } from "lucide-react";
 
-const railItems = [
-  { href: "/", label: "Học tập", icon: Home, active: true },
-  { href: "/courses", label: "Lộ trình", icon: BookOpen },
-  { href: "/practice", label: "Ôn tập", icon: Repeat2 },
-  { href: "/learn/van-phong-hanh-chinh", label: "Sổ tay", icon: NotebookTabs },
-  { href: "/vip", label: "Thành tích", icon: BarChart3 },
-  { href: "/admin", label: "Cài đặt", icon: Settings },
-];
-
-const reviewWords = [
+const demoReviewWords = [
   ["进度", "jìndù", "tiến độ"],
   ["按时", "ànshí", "đúng hạn"],
   ["汇报", "huìbào", "báo cáo"],
@@ -41,34 +27,23 @@ const reviewWords = [
   ["确认", "quèrèn", "xác nhận"],
 ];
 
-export default function HomePage() {
+export default async function HomePage() {
+  const user = await getCurrentUser();
+  const displayName = user?.displayName ?? "bạn";
+  const [summary, personalizedReviewWords] = user
+    ? await Promise.all([getLearningSummary(user.id), listPracticeVocabulary(5, user.id)])
+    : [{ completedLessons: 5, openedLessons: 5 }, []] as const;
+  const reviewWords = user
+    ? personalizedReviewWords.map((word) => [word.hanzi, word.pinyin, word.meaning] as const)
+    : demoReviewWords;
+  const completedLessons = Math.min(summary.completedLessons, 6);
+  const progressPercent = Math.round(completedLessons / 6 * 100);
   return (
     <main className="learner-dashboard">
-      <aside className="learn-rail" aria-label="Điều hướng học tập">
-        <Link className="rail-logo" href="/" aria-label="HanziWork"><span lang="zh">汉</span></Link>
-        <nav className="rail-nav">
-          {railItems.map(({ href, label, icon: Icon, active }) => (
-            <Link className={active ? "active" : ""} href={href} key={label}>
-              <Icon size={21} /><span>{label}</span>
-            </Link>
-          ))}
-        </nav>
-        <a className="rail-support" href="mailto:giahuy041204@gmail.com"><Headphones size={20} /><span>Hỗ trợ</span></a>
-      </aside>
-
-      <header className="learn-topbar">
-        <Link className="brand" href="/"><span className="brand-mark" lang="zh">汉</span><span>HanziWork</span></Link>
-        <div className="topbar-actions">
-          <span className="streak-chip"><Flame size={17} /> 5 ngày liên tiếp</span>
-          <button className="topbar-icon" type="button" aria-label="Thông báo"><Bell size={19} /></button>
-          <div className="user-chip"><span>GH</span><strong>Gia Huy</strong></div>
-        </div>
-      </header>
-
       <div className="learn-frame">
         <section className="learn-main-column">
           <div className="learn-greeting">
-            <span>Chào buổi sáng, Gia Huy</span>
+            <span>Chào buổi sáng, {displayName}</span>
             <h1>Hôm nay là một ngày tốt để tiến bộ.</h1>
           </div>
 
@@ -128,22 +103,22 @@ export default function HomePage() {
 
         <aside className="learn-aside-column">
           <section className="review-queue">
-            <div className="aside-heading"><div><span className="section-kicker">Hôm nay</span><h2>Ôn 8 từ</h2></div><Link href="/practice">Xem tất cả</Link></div>
+            <div className="aside-heading"><div><span className="section-kicker">Hôm nay</span><h2>Ôn {reviewWords.length} từ</h2></div><Link href="/practice">Xem tất cả</Link></div>
             <div className="review-list">
               {reviewWords.map(([hanzi, pinyin, meaning]) => (
                 <div className="review-row" key={hanzi}><strong lang="zh">{hanzi}</strong><span>{pinyin}</span><small>{meaning}</small><button type="button" disabled aria-label={`Audio ${hanzi} sẽ bổ sung sau`}><Volume2 size={15} /></button></div>
               ))}
+              {reviewWords.length === 0 ? <p className="review-empty">Bạn chưa có từ đến lịch ôn.</p> : null}
             </div>
-            <Link className="review-button" href="/practice">Bắt đầu ôn tập (8)</Link>
+            <Link className="review-button" href="/practice">Bắt đầu ôn tập ({reviewWords.length})</Link>
           </section>
 
           <section className="weekly-goal">
-            <div className="aside-heading"><div><span className="section-kicker">Nhịp học</span><h2>Mục tiêu tuần</h2></div><span>Còn 2 ngày</span></div>
-            <div className="goal-score"><strong>5/6</strong><div><b>Hoàn thành 5 buổi</b><span>Mục tiêu: 6 buổi học</span></div></div>
-            <div className="goal-progress"><span style={{ width: "84%" }} /></div>
-            <div className="week-dots" aria-label="Tiến độ học trong tuần">
-              {["T2", "T3", "T4", "T5", "T6"].map((day) => <span className="done" key={day}><CheckCircle2 size={18} />{day}</span>)}
-              <span><i />T7</span><span><i />CN</span>
+            <div className="aside-heading"><div><span className="section-kicker">Nhịp học</span><h2>Mục tiêu lộ trình</h2></div><span>{6 - completedLessons} bài còn lại</span></div>
+            <div className="goal-score"><strong>{completedLessons}/6</strong><div><b>Hoàn thành {completedLessons} bài</b><span>Mục tiêu đầu tiên: 6 bài mẫu</span></div></div>
+            <div className="goal-progress"><span style={{ width: `${progressPercent}%` }} /></div>
+            <div className="week-dots" aria-label="Tiến độ sáu bài mẫu">
+              {[1, 2, 3, 4, 5, 6].map((number) => number <= completedLessons ? <span className="done" key={number}><CheckCircle2 size={18} />B{number}</span> : <span key={number}><i />B{number}</span>)}
             </div>
           </section>
 
@@ -151,12 +126,6 @@ export default function HomePage() {
         </aside>
       </div>
 
-      <nav className="learner-mobile-nav" aria-label="Điều hướng học tập trên điện thoại">
-        <Link className="active" href="/"><Home size={20} /><span>Hôm nay</span></Link>
-        <Link href="/courses"><BookOpen size={20} /><span>Lộ trình</span></Link>
-        <Link href="/practice"><Repeat2 size={20} /><span>Ôn tập</span></Link>
-        <Link href="/vip"><Crown size={20} /><span>VIP</span></Link>
-      </nav>
     </main>
   );
 }

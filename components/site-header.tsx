@@ -1,15 +1,30 @@
 import Link from "next/link";
-import { Menu, UserRound } from "lucide-react";
+import { LogOut, Menu, UserRound } from "lucide-react";
+import { getCurrentUser } from "@/lib/auth-session";
 
-const navItems = [{ href: "/courses", label: "Lộ trình" }, { href: "/practice", label: "Luyện tập" }, { href: "/vip", label: "HanziWork VIP" }, { href: "/admin", label: "Admin mẫu" }];
+const publicNavItems = [{ href: "/courses", label: "Lộ trình" }, { href: "/practice", label: "Luyện tập" }, { href: "/vip", label: "HanziWork VIP" }];
 
-export function SiteHeader() {
+export async function SiteHeader() {
+  const user = await getCurrentUser();
+  const navItems = user?.role === "admin" ? [...publicNavItems, { href: "/admin", label: "Quản trị" }] : publicNavItems;
   return <header className="site-header"><div className="section-shell header-inner">
     <Link className="brand" href="/" aria-label="HanziWork - Trang chủ"><span className="brand-mark" lang="zh">汉</span><span>HanziWork</span></Link>
     <nav className="desktop-nav" aria-label="Điều hướng chính">{navItems.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}</nav>
     <div className="header-actions">
-      <Link className="header-login" href="/learn/van-phong-hanh-chinh"><UserRound size={17} /> Đăng nhập</Link><Link className="button button-primary button-small" href="/courses">Học miễn phí</Link>
+      {user ? <><Link className="header-login" href="/account"><UserRound size={17} /> {user.displayName}</Link><form action="/api/auth/logout" className="header-logout" method="post"><input name="returnTo" type="hidden" value="/" /><button aria-label="Đăng xuất" title="Đăng xuất" type="submit"><LogOut size={17} /></button></form></> : <Link className="header-login" href="/login"><UserRound size={17} /> Đăng nhập</Link>}<Link className="button button-primary button-small" href="/courses">Học miễn phí</Link>
       <details className="mobile-menu"><summary aria-label="Mở menu"><Menu size={20} /></summary><nav className="mobile-menu-panel" aria-label="Điều hướng trên máy tính bảng">{navItems.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}</nav></details>
+    </div>
+  </div></header>;
+}
+
+export function SiteHeaderFallback() {
+  return <header className="site-header"><div className="section-shell header-inner">
+    <Link className="brand" href="/" aria-label="HanziWork - Trang chủ"><span className="brand-mark" lang="zh">汉</span><span>HanziWork</span></Link>
+    <nav className="desktop-nav" aria-label="Điều hướng chính">{publicNavItems.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}</nav>
+    <div className="header-actions">
+      <span aria-hidden="true" className="header-login header-account-skeleton skeleton-block" />
+      <Link className="button button-primary button-small" href="/courses">Học miễn phí</Link>
+      <details className="mobile-menu"><summary aria-label="Mở menu"><Menu size={20} /></summary><nav className="mobile-menu-panel" aria-label="Điều hướng trên máy tính bảng">{publicNavItems.map((item) => <Link href={item.href} key={item.href}>{item.label}</Link>)}</nav></details>
     </div>
   </div></header>;
 }

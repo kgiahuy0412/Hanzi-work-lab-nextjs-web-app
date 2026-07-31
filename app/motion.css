@@ -1,0 +1,403 @@
+:root {
+  --motion-fast: 150ms;
+  --motion-base: 210ms;
+  --motion-slow: 260ms;
+  --motion-ease: cubic-bezier(.22, 1, .36, 1);
+  --motion-ease-soft: cubic-bezier(.2, .8, .2, 1);
+}
+
+@keyframes hw-rise {
+  from { opacity: 0; transform: translate3d(0, 10px, 0); }
+  to { opacity: 1; transform: translate3d(0, 0, 0); }
+}
+
+@keyframes hw-grow {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+@keyframes hw-spin {
+  to { transform: rotate(360deg); }
+}
+
+@keyframes hw-shimmer {
+  to { background-position-x: -220%; }
+}
+
+/* Shared interaction language */
+.button,
+.answer-button,
+.filter-chip,
+.icon-link,
+.round-button,
+.start-lesson-button,
+.review-button,
+.course-card,
+.lesson-nav a,
+.learn-quick-actions a,
+.rail-nav a,
+.rail-support,
+.topbar-icon,
+.mobile-nav a,
+.learner-mobile-nav a {
+  transition:
+    color var(--motion-fast) ease,
+    border-color var(--motion-fast) ease,
+    background-color var(--motion-fast) ease,
+    box-shadow var(--motion-base) ease,
+    transform var(--motion-base) var(--motion-ease);
+}
+
+.desktop-nav a,
+.text-link,
+.footer-column a,
+.course-card .course-hanzi,
+.course-card .icon-link,
+.learn-section-title a svg,
+.trail-heading a svg,
+.vip-mini-banner > svg:last-child,
+.start-lesson-button svg:last-child {
+  transition: transform var(--motion-base) var(--motion-ease), color var(--motion-fast) ease;
+}
+
+.button:active,
+.answer-button:active,
+.filter-chip:active,
+.round-button:active,
+.start-lesson-button:active,
+.review-button:active,
+.mobile-nav a:active,
+.learner-mobile-nav a:active,
+.learn-quick-actions a:active {
+  transform: scale(.97);
+}
+
+.search-box {
+  border-radius: 11px;
+  transition: background-color var(--motion-fast) ease, box-shadow var(--motion-fast) ease;
+}
+
+.search-box:focus-within {
+  background: var(--sage-light);
+  box-shadow: 0 0 0 4px rgba(23, 107, 91, .1);
+}
+
+.filter-chip {
+  white-space: nowrap;
+}
+
+.filter-chip.active {
+  box-shadow: 0 8px 18px rgba(23, 107, 91, .16);
+}
+
+.course-motion-item {
+  min-width: 0;
+  height: 100%;
+}
+
+.course-motion-item > .course-card {
+  height: 100%;
+}
+
+.course-card .course-hanzi {
+  transform-origin: 70% 70%;
+}
+
+/* Practice feedback and card transitions */
+.practice-round,
+.flashcard-motion-shell {
+  min-width: 0;
+}
+
+.flashcard-motion-shell {
+  border-radius: 20px;
+}
+
+.flashcard {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(145deg, var(--sage-light), #e8f2ec);
+  box-shadow: inset 0 0 0 1px rgba(23, 107, 91, .035);
+  transition: background-color var(--motion-base) ease, box-shadow var(--motion-base) ease;
+  touch-action: manipulation;
+}
+
+.flashcard-hanzi {
+  margin-top: 30px;
+  line-height: 1.05;
+}
+
+.flashcard-answer-slot {
+  min-height: 54px;
+  margin-top: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.flashcard-meaning {
+  margin: 0;
+}
+
+.flashcard-hint {
+  margin-top: 20px;
+}
+
+.flashcard-motion-shell.is-known .flashcard {
+  background: linear-gradient(145deg, #eff8f3, #e0f1e8);
+  box-shadow: inset 0 0 0 2px rgba(23, 107, 91, .22), 0 14px 34px rgba(23, 107, 91, .08);
+}
+
+.flashcard-motion-shell.is-hard .flashcard {
+  background: linear-gradient(145deg, #fffaf0, #f8efdd);
+  box-shadow: inset 0 0 0 2px rgba(221, 155, 66, .24);
+}
+
+.answer-button:not(:disabled) {
+  box-shadow: 0 7px 18px rgba(28, 67, 58, .045);
+}
+
+.answer-button.known:not(:disabled) {
+  box-shadow: 0 10px 24px rgba(23, 107, 91, .18);
+}
+
+/* Lesson tabs and completion */
+.lesson-tab {
+  position: relative;
+  border-bottom: 0;
+  transition: color var(--motion-fast) ease, background-color var(--motion-fast) ease;
+}
+
+.lesson-tab.active {
+  border-color: transparent;
+}
+
+.lesson-tab-indicator {
+  position: absolute;
+  right: 10px;
+  bottom: -1px;
+  left: 10px;
+  height: 2px;
+  border-radius: 999px 999px 0 0;
+  background: var(--forest);
+}
+
+.lesson-tab-panel-viewport {
+  min-width: 0;
+  overflow: clip;
+}
+
+.lesson-tab-panel {
+  min-width: 0;
+}
+
+.lesson-complete-message {
+  min-width: 0;
+  flex: 1;
+}
+
+.lesson-complete-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* A restrained entrance for server-rendered surfaces */
+@media (prefers-reduced-motion: no-preference) {
+  .page-hero-inner > *,
+  .practice-info,
+  .practice-board,
+  .auth-card,
+  .price-card,
+  .learn-greeting,
+  .learn-section-title,
+  .today-lesson,
+  .start-lesson-button,
+  .learn-quick-actions,
+  .daily-tip,
+  .learning-trail,
+  .learn-aside-column > * {
+    animation: hw-rise var(--motion-slow) var(--motion-ease) both;
+  }
+
+  .page-hero-inner > :nth-child(2),
+  .practice-board,
+  .learn-section-title,
+  .learn-aside-column > :nth-child(1) { animation-delay: 45ms; }
+
+  .today-lesson,
+  .learn-aside-column > :nth-child(2) { animation-delay: 85ms; }
+
+  .start-lesson-button,
+  .learn-aside-column > :nth-child(3) { animation-delay: 120ms; }
+
+  .learn-quick-actions { animation-delay: 145ms; }
+  .daily-tip { animation-delay: 170ms; }
+  .learning-trail { animation-delay: 195ms; }
+
+  .lesson-tab-panel { animation: hw-rise 150ms var(--motion-ease) both; }
+  .lesson-nav-spinner { animation: hw-spin 650ms linear infinite; }
+  .skeleton-block { animation: hw-shimmer 1.35s ease-in-out infinite; }
+
+  .price-card:nth-child(2) { animation-delay: 45ms; }
+  .price-card:nth-child(3) { animation-delay: 90ms; }
+
+  .goal-progress span,
+  .course-progress span,
+  .preview-progress span {
+    transform-origin: left center;
+    animation: hw-grow 520ms var(--motion-ease) both;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover,
+  .start-lesson-button:hover {
+    transform: translateY(-2px);
+  }
+
+  .course-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .course-card:hover .course-hanzi {
+    transform: translate3d(-2px, -2px, 0) scale(1.035);
+  }
+
+  .course-card:hover .icon-link {
+    transform: translate3d(2px, -2px, 0);
+  }
+
+  .text-link:hover svg,
+  .learn-section-title a:hover svg,
+  .trail-heading a:hover svg,
+  .start-lesson-button:hover svg:last-child,
+  .vip-mini-banner:hover > svg:last-child {
+    transform: translateX(3px);
+  }
+
+  .lesson-nav a:hover {
+    transform: translateX(2px);
+  }
+
+  .learn-quick-actions a:hover,
+  .rail-nav a:hover,
+  .topbar-icon:hover {
+    transform: translateY(-1px);
+  }
+}
+
+@media (max-width: 980px) {
+  :root {
+    --motion-base: 190ms;
+    --motion-slow: 240ms;
+  }
+
+  .lesson-tab-indicator {
+    right: 8px;
+    left: 8px;
+  }
+
+  .lesson-nav a:hover {
+    transform: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .filter-list {
+    width: 100%;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    overflow-x: auto;
+    overscroll-behavior-inline: contain;
+    scrollbar-width: none;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .filter-list::-webkit-scrollbar {
+    display: none;
+  }
+
+  .filter-chip {
+    flex: 0 0 auto;
+  }
+
+  .flashcard {
+    min-height: 315px;
+    padding: 24px 18px;
+  }
+
+  .flashcard-hanzi {
+    margin-top: 22px;
+    font-size: clamp(48px, 16vw, 58px);
+  }
+
+  .flashcard-answer-slot {
+    min-height: 48px;
+    margin-top: 8px;
+  }
+
+  .flashcard-hint {
+    margin-top: 16px;
+  }
+
+  .answer-actions {
+    gap: 8px;
+  }
+
+  .answer-button {
+    min-height: 50px;
+    padding-inline: 10px;
+  }
+
+  .lesson-tab {
+    flex: 0 0 auto;
+    padding-inline: 13px;
+  }
+
+  .lesson-tab-panel-viewport {
+    overflow: hidden;
+  }
+
+  .lesson-loading-row {
+    grid-template-columns: 30% 1fr;
+  }
+
+  .lesson-loading-row .skeleton-block:last-child {
+    grid-column: 1 / -1;
+    width: 72%;
+  }
+
+  .course-card:hover,
+  .button:hover,
+  .start-lesson-button:hover {
+    transform: none;
+  }
+}
+
+@media (hover: none) {
+  .button:hover,
+  .course-card:hover,
+  .start-lesson-button:hover {
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: .01ms !important;
+    animation-delay: 0ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    transition-delay: 0ms !important;
+  }
+}

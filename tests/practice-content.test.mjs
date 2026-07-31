@@ -1,0 +1,48 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import { practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
+import { getWeeklyChallenge } from "../lib/weekly-challenges.ts";
+import { factoryLessons } from "../lib/factory-course-seed.ts";
+import { logisticsLessons } from "../lib/logistics-course-seed.ts";
+import { officeLessons } from "../lib/office-course-seed.ts";
+import { salesLessons } from "../lib/sales-course-seed.ts";
+
+test("work practice catalogue covers four job families", () => {
+  assert.deepEqual(practiceIndustries.map((industry) => industry.id), ["office", "factory", "logistics", "sales"]);
+  assert.equal(practiceScenarios.length, 13);
+  assert.ok(practiceIndustries.every((industry) => practiceScenarios.some((scenario) => scenario.industry === industry.id)));
+});
+
+test("weekly challenges link to a real published specialization", () => {
+  const challenges = Array.from({ length: 40 }, (_, week) => getWeeklyChallenge(new Date(Date.UTC(2026, 0, 1 + (week * 7)))));
+  assert.ok(challenges.some((challenge) => challenge.courseSlug === "van-phong-hanh-chinh"));
+  assert.ok(challenges.some((challenge) => challenge.courseSlug === "nha-may-san-xuat"));
+  assert.ok(challenges.some((challenge) => challenge.courseSlug === "kho-van-logistics"));
+  assert.ok(challenges.some((challenge) => challenge.courseSlug === "ban-hang-cham-soc-khach-hang"));
+  const lessonSlugsByCourse = new Map([
+    ["van-phong-hanh-chinh", new Set(officeLessons.map((lesson) => lesson.slug))],
+    ["nha-may-san-xuat", new Set(factoryLessons.map((lesson) => lesson.slug))],
+    ["kho-van-logistics", new Set(logisticsLessons.map((lesson) => lesson.slug))],
+    ["ban-hang-cham-soc-khach-hang", new Set(salesLessons.map((lesson) => lesson.slug))],
+  ]);
+  assert.ok(challenges.every((challenge) => lessonSlugsByCourse.get(challenge.courseSlug)?.has(challenge.lessonSlug)));
+});
+
+test("practice catalogue provides a meaningful free sample without opening the whole library", () => {
+  const freeScenarios = practiceScenarios.filter((scenario) => scenario.isFree);
+  assert.equal(freeScenarios.length, 5);
+  assert.ok(practiceIndustries.every((industry) => freeScenarios.some((scenario) => scenario.industry === industry.id)));
+  assert.ok(practiceScenarios.some((scenario) => !scenario.isFree));
+});
+
+test("every work scenario contains a complete three-turn exercise", () => {
+  const ids = practiceScenarios.map((scenario) => scenario.id);
+  assert.equal(new Set(ids).size, ids.length);
+  assert.ok(practiceScenarios.every((scenario) => scenario.exercises.length === 3));
+  assert.ok(practiceScenarios.every((scenario) => scenario.exercises.every((exercise) => (
+    exercise.options.length === 3
+    && exercise.correctOption >= 0
+    && exercise.correctOption < exercise.options.length
+    && exercise.explanation.length > 20
+  ))));
+});
