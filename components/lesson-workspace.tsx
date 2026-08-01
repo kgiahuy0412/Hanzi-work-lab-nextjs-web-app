@@ -1,9 +1,10 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
-import { CheckCircle2, Crown, LockKeyhole, Volume2 } from "lucide-react";
+import { useCallback, useEffect, useState } from "react";
+import { CheckCircle2, ChevronDown, ChevronUp, Crown, LockKeyhole } from "lucide-react";
 import { LessonChallengePanel } from "@/components/lesson-challenge";
+import { LessonVocabularyDeck } from "@/components/lesson-vocabulary-deck";
 import type { Course, LessonAccess, LessonDetail, LessonProgressState, LessonSummary } from "@/lib/content-types";
 
 type LessonTab = "Từ vựng" | "Hội thoại" | "Ghi chú" | "Kiểm tra";
@@ -27,6 +28,7 @@ export function LessonWorkspace({
   const [tab, setTab] = useState<LessonTab>("Từ vựng");
   const [pendingLesson, setPendingLesson] = useState<string | null>(null);
   const [challengePassed, setChallengePassed] = useState(!lesson.challenge);
+  const [mobileLessonsOpen, setMobileLessonsOpen] = useState(false);
   const tabs = lesson.challenge ? [...baseTabs, "Kiểm tra" as const] : baseTabs;
   const moduleGroups = lessons.reduce<Array<{ slug: string; title: string; order: number; lessons: LessonSummary[] }>>((groups, item) => {
     const current = groups[groups.length - 1];
@@ -43,6 +45,7 @@ export function LessonWorkspace({
   const requiresChallengePass = Boolean(lesson.challenge) && !challengePassed;
   const viewerHasVip = access.source === "vip";
   const returnTo = `/learn/${course.slug}?lesson=${lesson.slug}`;
+  const continueToDialogue = useCallback(() => setTab("Hội thoại"), []);
 
   useEffect(() => {
     if (!authenticated || !access.allowed) return;
@@ -59,8 +62,8 @@ export function LessonWorkspace({
 
   return <div className="lesson-shell">
     <aside className="lesson-sidebar">
-      <div className="lesson-sidebar-header"><span>Lộ trình đang học</span><h2>{course.title}</h2><p>{lessons.length} bài đã xuất bản · {lessons.filter((item) => item.isFree).length} bài học thử</p></div>
-      <nav className="lesson-nav" aria-label="Danh sách bài học">{moduleGroups.map((group) => <section className="lesson-module-group" key={group.slug}>
+      <div className="lesson-sidebar-header"><span>Lộ trình đang học</span><h2>{course.title}</h2><p>{lessons.length} bài đã xuất bản · {lessons.filter((item) => item.isFree).length} bài học thử</p><button aria-controls="lesson-course-navigation" aria-expanded={mobileLessonsOpen} className="lesson-sidebar-toggle" onClick={() => setMobileLessonsOpen((open) => !open)} type="button"><span>Bài {lessonNumber} / {lessons.length}</span>{mobileLessonsOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}</button></div>
+      <nav className={`lesson-nav${mobileLessonsOpen ? " mobile-open" : ""}`} id="lesson-course-navigation" aria-label="Danh sách bài học">{moduleGroups.map((group) => <section className="lesson-module-group" key={group.slug}>
         <div className="lesson-module-title"><span>Module {group.order + 1}</span><strong>{group.title}</strong></div>
         {group.lessons.map((item) => {
           const active = item.slug === lesson.slug;
@@ -109,7 +112,7 @@ export function LessonWorkspace({
         <h2>Mở khóa bài học này</h2>
         <p>Server đã xác nhận đây không phải bài học miễn phí. Nội dung từ vựng, hội thoại và ghi chú chưa được gửi tới trình duyệt.</p>
         <Link className="button button-primary" href="/vip">Xem quyền lợi VIP</Link>
-      </div> : <div className="lesson-content-card">
+      </div> : <div className={`lesson-content-card${tab === "Từ vựng" ? " lesson-content-card-vocabulary" : ""}`}>
         <div className="lesson-tab-panel-viewport">
           <div
               aria-labelledby={`lesson-tab-${tabIndex}`}
@@ -118,7 +121,7 @@ export function LessonWorkspace({
               key={tab}
               role="tabpanel"
             >
-              {tab === "Từ vựng" ? <div className="word-list">{lesson.vocabulary.map((word) => <article className="vocab-row" key={word.slug}><div className="vocab-main"><span className="vocab-hanzi" lang="zh">{word.hanzi}</span><div><strong>{word.pinyin}</strong><span>{word.meaning}</span></div></div><div className="vocab-example"><strong lang="zh">{word.example}</strong><span>{word.translation}</span></div><button aria-label={`Âm thanh của từ ${word.hanzi} chưa có`} className="sound-button" disabled title="Âm thanh sẽ được bổ sung sau" type="button"><Volume2 size={18} /></button></article>)}</div> : null}
+              {tab === "Từ vựng" ? <LessonVocabularyDeck authenticated={authenticated} onFinished={continueToDialogue} words={lesson.vocabulary} /> : null}
               {tab === "Hội thoại" ? <div className="dialogue">{lesson.dialogue.map((line, index) => <div className="dialogue-line" key={`${line.speaker}-${index}`}><strong lang="zh">{line.speaker}：{line.hanzi}</strong><small>{line.pinyin}</small><span>{line.translation}</span></div>)}</div> : null}
               {tab === "Ghi chú" ? <div className="lesson-note-list">{lesson.notes.map((note) => <article className="note-panel" key={note.pattern}><h3>{note.title}</h3><strong lang="zh">{note.pattern}</strong><p>{note.explanation}</p></article>)}</div> : null}
               {tab === "Kiểm tra" && lesson.challenge ? <LessonChallengePanel challenge={lesson.challenge} onPassed={setChallengePassed} /> : null}

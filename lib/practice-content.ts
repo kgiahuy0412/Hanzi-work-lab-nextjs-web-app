@@ -11,10 +11,76 @@ export type PracticeExercise = {
   eyebrow: string;
   prompt: string;
   chinese?: string;
+  audioUrl?: string;
   options: string[];
   correctOption: number;
   explanation: string;
 };
+
+export type PracticeListeningStatement = {
+  optionIndex: number;
+  text: string;
+  isCorrect: boolean;
+  correctText: string;
+  explanation: string;
+};
+
+export type PracticeListeningContext = {
+  sentenceZh: string;
+  brief: string;
+  focus: string[];
+  exercises: PracticeExercise[] | null;
+};
+
+function containsHanzi(value: string | undefined): value is string {
+  return Boolean(value && /[㐀-鿿]/u.test(value));
+}
+
+/**
+ * Turns the existing three-choice exercise bank into a balanced listening
+ * judgement without exposing the written options before playback.
+ */
+export function getPracticeListeningStatement(
+  exercise: PracticeExercise,
+  context?: PracticeListeningContext,
+): PracticeListeningStatement {
+  const checksum = Array.from(exercise.id).reduce((total, character) => total + character.codePointAt(0)!, 0);
+  const directCorrectText = exercise.options[exercise.correctOption];
+  const correctText = containsHanzi(directCorrectText)
+    ? directCorrectText
+    : containsHanzi(exercise.chinese)
+      ? exercise.chinese
+      : context?.sentenceZh ?? directCorrectText;
+  const directIncorrectOption = exercise.options.findIndex((option, index) => (
+    index !== exercise.correctOption && containsHanzi(option)
+  ));
+  const pooledIncorrectText = context?.exercises
+    ?.flatMap((item) => item.options.filter((option, index) => index !== item.correctOption && containsHanzi(option)))
+    .find((option) => option !== correctText);
+  const incorrectText = directIncorrectOption >= 0
+    ? exercise.options[directIncorrectOption]
+    : pooledIncorrectText;
+  const useCorrectStatement = checksum % 2 === 0 || !incorrectText;
+  const optionIndex = useCorrectStatement
+    ? exercise.correctOption
+    : directIncorrectOption;
+  const text = useCorrectStatement ? correctText : incorrectText ?? correctText;
+  const usesOriginalChineseAnswer = containsHanzi(directCorrectText);
+  const genericFocus = context?.focus.slice(0, 2).join(" và ").toLocaleLowerCase("vi");
+  const explanation = usesOriginalChineseAnswer
+    ? exercise.explanation
+    : useCorrectStatement
+      ? `Câu này đi đúng trọng tâm của ca: ${context?.brief ?? "phản hồi rõ ràng và chuyên nghiệp"}`
+      : `Câu vừa nghe chưa xử lý đúng trọng tâm. Một phản hồi tốt cần ${genericFocus || "rõ ý và phù hợp với tình huống"}.`;
+
+  return {
+    optionIndex,
+    text,
+    isCorrect: useCorrectStatement,
+    correctText,
+    explanation,
+  };
+}
 
 export type PracticeScenario = {
   id: string;

@@ -4,10 +4,19 @@ import { readFile } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-test("home page contains the HanziWork daily learning dashboard", async () => {
-  const source = await read("app/page.tsx");
-  assert.match(source, /Bài học hôm nay/);
-  assert.match(source, /Bắt đầu bài học/);
+test("home page contains the HanziWork daily review studio", async () => {
+  const [page, studio] = await Promise.all([
+    read("app/page.tsx"),
+    read("components/review-home-studio.tsx"),
+  ]);
+  assert.match(page, /ReviewHomeStudio/);
+  assert.match(studio, /swipe-review-demo\.gif/);
+  assert.match(studio, /onExitComplete=\{finishCardTransition\}/);
+  assert.match(studio, /type: "spring", stiffness: 320/);
+  assert.doesNotMatch(studio, /setTimeout\(advance, 360\)/);
+  assert.doesNotMatch(studio, /review-session-summary/);
+  assert.doesNotMatch(studio, /Phiên ôn hôm nay|Kéo là bắt đầu/);
+  assert.doesNotMatch(studio, /Bắt đầu lượt ôn/);
 });
 
 test("prototype includes learner, VIP and admin routes", async () => {
@@ -54,7 +63,11 @@ test("practice route renders the work scenario hub", async () => {
   ]);
   assert.match(page, /WorkPracticeHub/);
   assert.match(hub, /Phòng luyện công việc/);
-  assert.match(hub, /Bắt đầu xử lý ca/);
+  assert.match(hub, /Bắt đầu ca nghe/);
+  assert.match(hub, /Đáp án mở sau khi audio kết thúc/);
+  assert.match(hub, /Nghe chậm 0\.8×/);
+  assert.match(hub, /chooseListeningAnswer\(true\)/);
+  assert.match(hub, /chooseListeningAnswer\(false\)/);
   assert.match(repository, /exercises: locked \? null : scenario\.exercises/);
 });
 
@@ -84,4 +97,18 @@ test("course library uses seven editorial topic covers and a streamed catalog", 
   assert.match(card, /course-cover-image/);
   assert.match(card, /unoptimized/);
   assert.equal((visuals.match(/src: "\/assets\/courses\//g) ?? []).length, 7);
+});
+
+test("lesson vocabulary uses a focused interactive card deck", async () => {
+  const [workspace, deck] = await Promise.all([
+    read("components/lesson-workspace.tsx"),
+    read("components/lesson-vocabulary-deck.tsx"),
+  ]);
+  assert.match(workspace, /LessonVocabularyDeck/);
+  assert.doesNotMatch(workspace, /className="word-list"/);
+  assert.match(deck, /speechSynthesis/);
+  assert.match(deck, /Đã hiểu · Tiếp tục/);
+  assert.match(deck, /ArrowLeft/);
+  assert.match(deck, /ArrowRight/);
+  assert.match(deck, /remembered: false/);
 });

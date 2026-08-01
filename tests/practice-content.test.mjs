@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { coreWorkplaceLessons } from "../lib/core-workplace-course-seed.ts";
 import { ecommerceLessons } from "../lib/ecommerce-course-seed.ts";
-import { practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
+import { getPracticeListeningStatement, practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
 import { getWeeklyChallenge } from "../lib/weekly-challenges.ts";
 import { factoryLessons } from "../lib/factory-course-seed.ts";
 import { logisticsLessons } from "../lib/logistics-course-seed.ts";
@@ -54,4 +54,14 @@ test("every work scenario contains a complete three-turn exercise", () => {
     && exercise.correctOption < exercise.options.length
     && exercise.explanation.length > 20
   ))));
+});
+
+test("work scenarios create both correct and incorrect audio judgements", () => {
+  const statements = practiceScenarios.flatMap((scenario) => (
+    scenario.exercises.map((exercise) => getPracticeListeningStatement(exercise, scenario))
+  ));
+  assert.ok(statements.some((statement) => statement.isCorrect));
+  assert.ok(statements.some((statement) => !statement.isCorrect));
+  assert.ok(statements.every((statement) => statement.text.length > 0 && statement.correctText.length > 0));
+  assert.ok(statements.every((statement) => /[㐀-鿿]/u.test(statement.text)));
 });

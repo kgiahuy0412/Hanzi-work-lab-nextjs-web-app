@@ -1,3 +1,149 @@
+# Design QA — Thẻ từ vựng trung tâm cho từng bài học
+
+## Nguồn, trạng thái và bằng chứng
+
+- Thiết kế đã chọn: `docs/design-target/lesson-vocabulary-card-selected.png` — 1487 × 1058 px; được chuẩn hóa về 1440 × 1024 chỉ cho bước đối chiếu.
+- Bản triển khai desktop: `docs/design-qa/lesson-vocabulary-card-desktop.png` — viewport CSS 1440 × 1024, DPR 0.8, ảnh đối chiếu 1440 × 1024 px.
+- Bản responsive mobile: `docs/design-qa/lesson-vocabulary-card-mobile.png` — viewport CSS 390 × 844, DPR 0.8, không tràn ngang.
+- Trạng thái mobile tập trung vào thẻ và CTA: `docs/design-qa/lesson-vocabulary-card-mobile-focused.png`.
+- So sánh thiết kế và triển khai trong cùng một ảnh: `docs/design-qa/lesson-vocabulary-card-comparison.png` — thiết kế bên trái, triển khai bên phải.
+- Trạng thái kiểm tra: khách ẩn danh, chuyên ngành Văn phòng & hành chính, bài 1/24, tab Từ vựng, từ 1/6.
+
+## Kết quả đối chiếu thiết kế
+
+- Layout: giữ đúng một thẻ trung tâm, hai lớp thẻ phía sau, điều hướng Trước/Tiếp theo, sáu đoạn tiến độ và CTA riêng bên dưới. Card triển khai rộng hơn thiết kế khoảng 1–2% nhưng vẫn giữ đúng hierarchy và không làm thay đổi nhịp đọc.
+- Spacing: phần card trong triển khai thấp hơn bản thiết kế khoảng 20–30 px do giữ nguyên breadcrumb và header bài học hiện có. CTA vẫn nằm trong vùng nhìn thấy ở desktop; khoảng cách giữa card, progress và CTA nhất quán.
+- Typography: giữ hệ chữ hiện có của HanziWork; Hán tự là điểm nhấn lớn nhất, sau đó là pinyin, nghĩa và ví dụ. Không có text bị cắt hoặc wrap lỗi ở desktop/mobile.
+- Màu và surfaces: dùng đúng ivory, pine/teal và lớp đổ bóng mềm của sản phẩm; không thêm gradient, blob, CSS art hay asset giả.
+- Icons: toàn bộ nút âm thanh, bookmark và mũi tên dùng cùng họ Lucide đang có trong dự án, đúng stroke và căn giữa.
+- Nội dung: mỗi card chỉ hiển thị một từ thật của bài học cùng ví dụ và bản dịch; không dùng placeholder.
+
+## Responsive, trạng thái và accessibility
+
+- P1 đã sửa: danh sách 24 bài ban đầu chiếm quá nhiều chiều cao trên mobile. Sidebar hiện thu gọn thành nút “Bài 1 / 24”, mở/đóng được với `aria-expanded`.
+- P2 đã sửa: card/CTA ban đầu sát vùng điều hướng mobile. Nhịp dọc mobile đã được rút gọn; trang cuộn tự nhiên, card cao khoảng 393 px và CTA vẫn truy cập được.
+- Không tràn ngang: desktop và mobile đều có `scrollWidth - clientWidth = 0`.
+- Card có thể focus; ArrowLeft/ArrowRight chuyển 01/06 ↔ 02/06, Enter tiếp tục. Các nút có nhãn truy cập, trạng thái lưu/đang phát, focus ring và tap target phù hợp.
+- `prefers-reduced-motion` tắt card entrance, audio pulse và các chuyển động không thiết yếu.
+- P3 chấp nhận: công cụ chụp mobile tạo capture lặp tile ở mép phải; ảnh bằng chứng được crop từ tile đầu. Kích thước viewport và overflow được đo trực tiếp trong trình duyệt.
+
+## Tương tác và kiểm thử
+
+- Âm thanh: phát từ `audioUrl` khi có và tự rơi về Speech Synthesis tiếng Trung; browser test nhận “Đã phát âm xong.”
+- Lưu từ: khách ẩn danh chuyển đúng sang trạng thái `aria-pressed=true`; người đăng nhập tiếp tục dùng API ôn tập hiện có.
+- Hành trình chính: nút CTA đi lần lượt đến 06/06 và lần nhấn cuối chuyển sang tab Hội thoại.
+- Sidebar mobile mở/đóng đúng, điều hướng card bằng nút và bàn phím hoạt động, console có 0 error.
+- `npm run lint`: passed.
+- `npx tsc --noEmit`: passed.
+- `npm test`: 48/48 passed.
+- `npm run build`: passed.
+- `git diff --check`: passed (chỉ có cảnh báo line-ending LF/CRLF của worktree Windows).
+- P0/P1/P2 còn lại: không.
+
+final result: passed
+
+---
+
+# Design QA — GIF thay pill và nâng trọng tâm flashcard
+
+## Nguồn và bằng chứng
+
+- Yêu cầu bố cục từ ảnh người dùng: `docs/design-target/review-studio-gif-layout-request.png` — 1920 × 1080 px, gồm browser chrome và trạng thái đăng nhập.
+- Baseline trước khi chỉnh ở cùng trạng thái ẩn danh: `docs/design-qa/review-studio-gif-desktop.png` — 1581 × 889 px.
+- Desktop sau chỉnh: `docs/design-qa/review-studio-gif-right-desktop.png` — browser viewport 1600 × 900 CSS px, ảnh 1600 × 900 px, density 1×.
+- Mobile sau chỉnh: `docs/design-qa/review-studio-gif-right-mobile.png` — CSS viewport 390 × 844 px; ảnh bằng chứng đã crop từ tile đầu của capture capability về 371 × 844 px, không resize nội dung.
+- Bản raw mobile để truy vết chuẩn hóa: `docs/design-qa/review-studio-gif-right-mobile-raw.png` — 464 × 1055 px.
+- So sánh baseline và bản mới trong cùng một ảnh: `docs/design-qa/review-studio-gif-right-comparison.png`; bản mới được scale về 1581 × 889 chỉ để so sánh song song.
+- Trạng thái: trang chủ `/`, khách ẩn danh, thẻ 1/5, chưa cuộn. Phần auth trong ảnh yêu cầu khác trạng thái nhưng không thuộc vùng bố cục được yêu cầu thay đổi.
+
+## Kết quả đối chiếu
+
+- Pill “Phiên ôn 5 từ” đã bị loại bỏ hoàn toàn khỏi DOM; tiến độ 1/5 chỉ còn trên chính flashcard.
+- GIF đã chuyển từ đầu cột trái sang vùng bên phải trước đây dành cho pill. Ở desktop figure nằm tại x=1012, y=106, rộng 500 px; asset được canh phải nên không cạnh tranh với card.
+- Flashcard desktop chuyển từ khoảng y=248 trong baseline lên y=190 và được căn giữa trong deck tại x=261. Cột “Nhịp tuần này” bắt đầu tại y=188 nhưng không chồng lấn vì nằm ở track phải riêng.
+- Mobile: GIF kết thúc tại y=154; card bắt đầu tại y=160, rộng 309 px và kết thúc tại y=602 trong viewport đầu. Nhịp đọc rõ, không cần cuộn mới thấy đủ ba nút ghi nhớ.
+- Không tràn ngang: desktop `scrollWidth = clientWidth = 1600`; mobile `scrollWidth = clientWidth = 371` trong vùng capture.
+
+## Fidelity và chất lượng
+
+- Typography: không đổi font, cấp chữ, weight hay hierarchy của thẻ; chữ Việt/CJK vẫn dùng fallback hiện có và không bị wrap mới.
+- Spacing/layout: khoảng trống header giảm có chủ ý; card được nâng 58 px và căn giữa track, đúng yêu cầu nhưng vẫn giữ khoảng thở với GIF/cột phụ.
+- Màu/token: giữ nguyên canvas ivory, teal, blue, coral và yellow; không phát sinh token hoặc hiệu ứng trang trí mới.
+- Asset: dùng nguyên GIF/PNG HanziWork đã duyệt, không placeholder, không kéo méo, có ảnh tĩnh cho `prefers-reduced-motion`.
+- Copy/content: chỉ gỡ nội dung session bị yêu cầu bỏ; từ vựng, ví dụ, nhịp tuần và bài tiếp theo không đổi.
+- Focused region không cần ảnh cắt riêng vì GIF, card và cột phụ đều đọc rõ trong full-view comparison ở cùng trạng thái.
+
+## Tương tác, lỗi và kiểm thử
+
+- Kéo card sang phải trên mobile chuyển đúng từ 1 sang 2 mà không cần nút bắt đầu.
+- Console sau khi tải lại bản desktop: 0 warning/error.
+- `npm test`: 46/46 passed.
+- `npm run lint`: passed.
+- `tsc --noEmit`: passed.
+- `npm run build`: passed.
+- P0/P1/P2 còn lại: không.
+- P3 chấp nhận: ảnh chụp mobile của capability phải crop tile đầu do lỗi lặp tile của công cụ; DOM metrics và trạng thái responsive đã được đo trực tiếp trong trình duyệt.
+
+final result: passed
+
+---
+
+# Design QA — Review Studio với GIF thao tác
+
+## Nguồn và bằng chứng
+
+- Hướng thiết kế gốc: `docs/design-target/review-studio-selected.png`.
+- GIF sản phẩm: `public/assets/review/swipe-review-demo.gif` — 600 × 216 px, 21 frame sau tối ưu, khoảng 396 KB.
+- Ảnh tĩnh cho `prefers-reduced-motion`: `public/assets/review/swipe-review-demo.png`.
+- Bốn keyframe kiểm tra chuyển động: `docs/design-qa/review-swipe-gif-frames.png`.
+- Desktop: `docs/design-qa/review-studio-gif-desktop.png`.
+- Mobile 390 × 844: `docs/design-qa/review-studio-gif-mobile.png`.
+- So sánh cùng khung: `docs/design-qa/review-studio-gif-comparison.png`.
+
+## Thay đổi và kiểm tra
+
+- Đã gỡ hoàn toàn ngày/giờ, nhãn “Phiên ôn hôm nay”, panel “Cách ôn” và dòng hướng dẫn nhìn thấy bên dưới card.
+- GIF được tạo từ chính card HanziWork đang chạy, mô phỏng lượt kéo sang phải và sang trái; không dùng stock/placeholder hoặc hình minh họa AI ngoài sản phẩm.
+- Hướng dẫn thao tác vẫn có ở dạng `sr-only` và liên kết với card bằng `aria-describedby` cho người dùng trình đọc màn hình.
+- Mobile: GIF cao 88 px; card kết thúc tại y=736 trong viewport cao 844 px; `scrollWidth` 371 trong `innerWidth` 390, không tràn ngang.
+- Thao tác kéo trực tiếp vẫn chuyển từ thẻ 1 sang thẻ 2; console 0 warning/error.
+- `npm test`: 46/46 passed; ESLint, TypeScript và production build đều passed.
+- P0/P1/P2 còn lại: không.
+
+final result: passed
+
+---
+
+# Design QA — Review Studio compact, drag-first
+
+## Nguồn và bằng chứng
+
+- Hướng thiết kế gốc: `docs/design-target/review-studio-selected.png`.
+- Desktop sau tinh chỉnh: `docs/design-qa/review-studio-desktop-compact.png`.
+- Mobile sau tinh chỉnh: `docs/design-qa/review-studio-mobile-compact.png` — CSS viewport 390 × 844 px.
+- So sánh cùng khung: `docs/design-qa/review-studio-compact-comparison.png`.
+
+## Thay đổi có chủ ý
+
+- Theo phản hồi người dùng, card desktop giảm từ khoảng 710 × 620 xuống 620 × 550 px; mobile giảm còn 309 × 440 px. Đây là sai khác có chủ ý so với hình nguồn để giảm cảm giác chiếm màn hình.
+- Loại bỏ hoàn toàn nút và trạng thái “Bắt đầu lượt ôn”. Card, ba nút ghi nhớ và phím mũi tên hoạt động ngay khi trang mở.
+- Khối CTA xanh được thay bằng hướng dẫn “Kéo là bắt đầu”; mobile rút gọn còn 102 px và nêu rõ kéo phải/trái trước khi người dùng chạm vào thẻ.
+- Nút đánh giá nằm trong viewport đầu ở mobile; nội dung card không overflow và document không tràn ngang.
+
+## Kiểm tra hành vi và kỹ thuật
+
+- Kéo trực tiếp thẻ đầu sang phải chuyển đúng sang từ thứ hai mà không qua bước bắt đầu.
+- Nút “Nhớ” hoạt động ngay; console 0 warning/error.
+- `npm test`: 46/46 passed.
+- `npm run lint`: passed.
+- `tsc --noEmit`: passed.
+- `npm run build`: passed.
+- P0/P1/P2 còn lại: không.
+
+final result: passed
+
+---
+
 # Design QA — HanziWork dashboard kết hợp
 
 ## Nguồn hình ảnh và bằng chứng
@@ -45,6 +191,45 @@
 - P1 còn lại: không.
 - P2 còn lại: không.
 - P3 chấp nhận: sai khác quang học rất nhỏ của font và cách raster hóa nền giữa trình duyệt/hình mẫu.
+
+final result: passed
+
+---
+
+# Design QA — Review Studio số 1
+
+## Nguồn và bằng chứng
+
+- Hình đã chốt: `docs/design-target/review-studio-selected.png` — 1487 × 1058 px.
+- Bản desktop: `docs/design-qa/review-studio-desktop.png` — trạng thái ẩn danh, thẻ đầu tiên, trước khi bắt đầu.
+- Bản mobile: `docs/design-qa/review-studio-mobile.png` — CSS viewport 390 × 844 px.
+- So sánh nguồn và bản build trong cùng một khung: `docs/design-qa/review-studio-comparison.png`.
+- In-app browser mặc định chụp ở CSS viewport 1600 × 900; ảnh nguồn và ảnh build khác tỷ lệ khung nên fidelity được đánh giá theo bố cục, hierarchy và hành vi responsive thay vì ép kéo giãn raster.
+
+## Phạm vi triển khai
+
+- Trang `/` chuyển thành Review Studio: đồng hồ và ngày, tóm tắt phiên, bộ thẻ Trung–Việt, nhịp tuần, CTA bắt đầu và bài học kế tiếp.
+- Người dùng thật nhận tối đa 5 từ đến lịch ôn và dữ liệu tiến độ từ PostgreSQL; khách ẩn danh có bộ 5 từ mẫu đầy đủ câu ví dụ.
+- Tương tác chính hoạt động bằng nút, kéo ngang và phím mũi tên; kết quả đăng nhập được lưu qua API `/api/progress/review` hiện có.
+- Chỉ dùng transform/opacity ngắn của Motion, có `prefers-reduced-motion`; không dùng hiệu ứng lật 3D hoặc chuỗi animation nặng.
+- Desktop giữ rail bên trái; mobile chuyển sang bottom navigation và đưa CTA bắt đầu lên trước bộ thẻ.
+
+## Lịch sử sửa lỗi
+
+1. Lần 1 — P1 responsiveness: ở 390 px, `.review-studio-layout` chuyển sang flex nhưng vẫn kế thừa `align-items: start`, khiến card và các panel co còn 150–264 px. Đã đặt `align-items: stretch`; các khối cuối cùng rộng 343 px và không tràn ngang.
+2. Lần 2 — P2 layout: pseudo-element rỗng trong heading tạo thêm grid item ở tablet. Đã loại bỏ để giữ thứ tự và nhịp dọc ổn định.
+3. Lần 3 — behavior: kiểm tra CTA bắt đầu, nút “Nhớ”, phím ArrowLeft và chuyển từ 1 sang 2; tất cả đúng, console 0 warning/error.
+
+## Kết quả kỹ thuật
+
+- TypeScript `tsc --noEmit`: passed.
+- ESLint toàn repository: passed.
+- `npm test`: 46/46 passed.
+- `npm run build`: passed.
+- P0 còn lại: không.
+- P1 còn lại: không.
+- P2 còn lại: không.
+- P3 chấp nhận: sai khác nhỏ về tỷ lệ khung chụp và raster font CJK giữa hình nguồn và browser; không ảnh hưởng layout hay thao tác.
 
 final result: passed
 
@@ -201,5 +386,3 @@ final result: passed
 - P3 chấp nhận: sai khác nhỏ về raster font và mật độ ảnh chụp của in-app browser; không ảnh hưởng CSS layout hay breakpoint đo trực tiếp từ DOM.
 
 final result: passed
-
----
