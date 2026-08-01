@@ -11,9 +11,12 @@ import {
   vocabulary as vocabularyTable,
 } from "./schema.ts";
 import { courses } from "../lib/course-data.ts";
+import { coreWorkplaceLessons, coreWorkplaceModules } from "../lib/core-workplace-course-seed.ts";
+import { ecommerceLessons, ecommerceModules } from "../lib/ecommerce-course-seed.ts";
 import { factoryLessons, factoryModules } from "../lib/factory-course-seed.ts";
 import { logisticsLessons, logisticsModules } from "../lib/logistics-course-seed.ts";
 import { officeLessons, officeModules } from "../lib/office-course-seed.ts";
+import { restaurantLessons, restaurantModules } from "../lib/restaurant-course-seed.ts";
 import { salesLessons, salesModules } from "../lib/sales-course-seed.ts";
 import type { CourseSeedBundle } from "../lib/course-seed-types.ts";
 
@@ -33,6 +36,9 @@ const courseSeedBundles: CourseSeedBundle[] = [
   { courseSlug: "nha-may-san-xuat", modules: factoryModules, lessons: factoryLessons },
   { courseSlug: "kho-van-logistics", modules: logisticsModules, lessons: logisticsLessons },
   { courseSlug: "ban-hang-cham-soc-khach-hang", modules: salesModules, lessons: salesLessons },
+  { courseSlug: "nha-hang-dich-vu", modules: restaurantModules, lessons: restaurantLessons },
+  { courseSlug: "thuong-mai-dien-tu", modules: ecommerceModules, lessons: ecommerceLessons },
+  { courseSlug: "giao-tiep-cong-so", modules: coreWorkplaceModules, lessons: coreWorkplaceLessons },
 ];
 
 async function seed() {

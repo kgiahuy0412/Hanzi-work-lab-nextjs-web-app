@@ -161,3 +161,45 @@ final result: passed
 - `docs/design-qa/course-covers-contact-sheet.webp`
 
 final result: passed
+# Design QA — Compact learner headers
+
+## Nguồn và bằng chứng
+
+- Hướng thiết kế đã chốt: `C:/Users/Windows/.codex/generated_images/019fb6e7-dd73-7b02-b4c0-985adf7e3e85/exec-3486f816-5841-4b1f-b22b-26fcfeb25c8a.png` (1470 × 1070 px).
+- Bản triển khai desktop: `docs/design-qa/course-library-compact-desktop.png` (1581 × 889 px).
+- Bản triển khai mobile: `docs/design-qa/course-library-compact-mobile.png` (469 × 1055 px; ảnh chụp ở capability 390 × 844 với mật độ hiển thị của in-app browser).
+- So sánh toàn màn hình: `docs/design-qa/course-library-compact-comparison.png`.
+- So sánh vùng header và toolbar: `docs/design-qa/course-library-compact-header-comparison.png`.
+
+## Phạm vi triển khai
+
+- `/courses`: bỏ marketing hero tối và collage lớn; dùng header product-catalog nền ivory, tiêu đề sans-serif gọn, metadata thật, một ảnh bối cảnh và đưa bộ lọc/lưới khóa học lên cao hơn.
+- `/practice`, `/vip`, `/account`: dùng chung `LearnerPageHeader`, cùng hệ typography, eyebrow, metadata và nhịp khoảng trắng.
+- `/learn/:slug`: header bài học được làm phẳng, giảm card chrome và giữ hierarchy tương thích với shell học viên.
+- Loading state của `/courses` và `/practice` đã được đồng bộ với cấu trúc header mới.
+- Trang chủ giữ nguyên vì đã là thiết kế được duyệt; auth/admin giữ layout riêng theo đúng luồng sản phẩm.
+
+## Lịch sử sửa lỗi theo mức độ
+
+1. Lần 1 — P2: tiêu đề desktop hơi lớn và chiếm thêm một dòng. Đã giảm cỡ cực đại về 46 px, giữ một dòng ở desktop và hai dòng dễ đọc trên mobile.
+2. Lần 2 — P2: chip “Tất cả” bị mất active state do selector cũ có độ ưu tiên cao hơn. Đã thêm selector theo phạm vi `.course-library-page` để giữ tương phản trắng/pine.
+3. Lần 3 — P2: hàng filter mobile rộng hơn document 12 px. Đã bỏ chiều rộng cộng thêm và negative margin; filter vẫn cuộn ngang nội bộ nhưng `scrollWidth === clientWidth`.
+4. Lần 4 — kiểm tra cuối: `/courses`, `/practice`, `/vip` và `/learn/van-phong-hanh-chinh` không tràn ngang ở desktop/mobile; `/account` chuyển đúng về đăng nhập khi chưa có phiên.
+
+## Kiểm tra chức năng và kỹ thuật
+
+- Tìm “kho” trả đúng “Kho vận & logistics”.
+- Lọc “Văn phòng” trả đúng một lộ trình; chuyển lại “Tất cả” khôi phục danh sách.
+- Browser log sau các luồng chỉ có Vite/React debug-info, không có warning/error.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm test`: 46/46 passed.
+- `npm run build`: passed.
+- P0 còn lại: không.
+- P1 còn lại: không.
+- P2 còn lại: không.
+- P3 chấp nhận: sai khác nhỏ về raster font và mật độ ảnh chụp của in-app browser; không ảnh hưởng CSS layout hay breakpoint đo trực tiếp từ DOM.
+
+final result: passed
+
+---

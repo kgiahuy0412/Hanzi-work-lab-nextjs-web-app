@@ -24,14 +24,16 @@ export function CourseGridSkeleton() {
 export function CoursesPageSkeleton() {
   return <main aria-busy="true" className="course-library-page">
     <span className="sr-only" role="status">Đang tải thư viện lộ trình…</span>
-    <section aria-hidden="true" className="section-shell course-library-hero course-library-hero-loading">
-      <div className="course-hero-copy">
-        <span className="skeleton-block" />
-        <span className="skeleton-block" />
-        <span className="skeleton-block" />
-        <span className="skeleton-block" />
+    <section aria-hidden="true" className="section-shell learner-page-header-shell">
+      <div className="learner-page-header has-aside course-library-hero-loading">
+        <div className="learner-page-header-copy">
+          <span className="skeleton-block" />
+          <span className="skeleton-block" />
+          <span className="skeleton-block" />
+          <span className="skeleton-block" />
+        </div>
+        <span className="skeleton-block course-header-image" />
       </div>
-      <div className="course-hero-media skeleton-block" />
     </section>
     <CourseGridSkeleton />
   </main>;

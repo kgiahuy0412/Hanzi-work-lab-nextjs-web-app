@@ -8,9 +8,9 @@ Prototype web responsive cho sản phẩm học tiếng Trung chuyên ngành dà
 
 - `/` — trang chủ và nhịp học hôm nay.
 - `/courses` — tìm kiếm, lọc 7 lộ trình ngành.
-- `/learn/[slug]` — bài học tương tác của Văn phòng, Nhà máy, Kho vận hoặc Bán hàng, gồm từ vựng, hội thoại, ghi chú và kiểm tra module.
-- `/practice` — “Kho ca làm” theo 4 ngành với 13 tình huống, ca mẫu miễn phí/VIP, chấm từng lượt và nhánh flashcard ôn nhanh.
-- `/vip` — học thử, bốn gói lộ trình mua một lần, VIP thư viện dự kiến và khung chính sách.
+- `/learn/[slug]` — bài học tương tác của bảy chuyên ngành đang mở, gồm từ vựng, hội thoại, ghi chú và kiểm tra module.
+- `/practice` — “Kho ca làm” theo 7 ngành với 22 tình huống, ca mẫu miễn phí/VIP, chấm từng lượt và nhánh flashcard ôn nhanh.
+- `/vip` — học thử, bảy gói lộ trình mua một lần, VIP thư viện dự kiến và khung chính sách.
 - `/admin` — dashboard vận hành đọc số liệu thật từ PostgreSQL.
 - `/admin/courses` — CRUD lộ trình; các trang chi tiết quản lý module và bài học.
 - `/admin/vocabulary` — CRUD kho từ vựng dùng chung và số bài đang liên kết.
@@ -64,7 +64,7 @@ npm run build
 1. Sao chép `.env.example` thành `.env.local`.
 2. Điền `DATABASE_URL` của cơ sở dữ liệu PostgreSQL.
 3. Chạy `npm run db:migrate` để áp dụng các migration trong `drizzle/`.
-4. Chạy `npm run db:seed` để seed idempotent 7 lộ trình MVP, 3 gói VIP, 16 module thuộc “Văn phòng & hành chính”, “Nhà máy & sản xuất”, “Kho vận & logistics” và “Bán hàng & chăm sóc khách”, 96 bài cùng 576 từ vựng mẫu.
+4. Chạy `npm run db:seed` để seed idempotent 7 lộ trình MVP, 3 gói VIP, 28 module thuộc bảy chuyên ngành đang mở, 168 bài cùng 1.008 từ vựng mẫu.
 5. Khởi động lại ứng dụng. `/courses`, `/learn/[slug]` và `/practice` sẽ đọc dữ liệu đã xuất bản từ PostgreSQL.
 
 Khi chưa có `DATABASE_URL`, ứng dụng tự dùng catalog demo để frontend vẫn chạy được. Sau mỗi lần sửa `db/schema.ts`, chạy `npm run db:generate` để tạo migration mới rồi kiểm tra SQL trước khi migrate.
@@ -102,7 +102,7 @@ Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chu
 - Khi người dùng đăng nhập mở bài miễn phí hoặc bài VIP hợp lệ, `last_opened_at` được cập nhật trong `lesson_progress`.
 - Nút “Hoàn thành bài” ghi 100%, `completed_at` và giữ trạng thái sau khi tải lại/đăng nhập lại.
 - Hai lựa chọn flashcard ghi vào `review_items`, cập nhật số lần đúng/sai, hệ số ghi nhớ, khoảng cách và `next_review_at`.
-- `/practice` ưu tiên từ chưa học hoặc đã đến lịch ôn; từ vừa đánh giá được tạm rời hàng đợi đến lần ôn tiếp theo. Kho ca làm có 5 tình huống thử miễn phí và khóa phần bài tập của ca VIP ở server; người chưa có VIP chỉ nhận metadata, bối cảnh và câu mẫu, không nhận đáp án bài tập trả phí.
+- `/practice` ưu tiên từ chưa học hoặc đã đến lịch ôn; từ vừa đánh giá được tạm rời hàng đợi đến lần ôn tiếp theo. Kho ca làm có 8 tình huống thử miễn phí và khóa phần bài tập của ca VIP ở server; người chưa có VIP chỉ nhận metadata, bối cảnh và câu mẫu, không nhận đáp án bài tập trả phí.
 - Dashboard và trang tài khoản hiển thị số bài đã mở/hoàn thành từ DB. Người chưa đăng nhập vẫn học thử nhưng tiến độ không được ghi.
 
 Đăng nhập, xác minh email, reset mật khẩu, rate-limit, RBAC, tiến độ bài học, lịch ôn, Admin CRUD và Kho ca làm responsive đã hoạt động. Bước tiếp theo hợp lý là lưu lịch sử xử lý ca theo tài khoản và đưa tình huống vào Admin CRUD; Resend có thể để sau khi có domain gửi thật.

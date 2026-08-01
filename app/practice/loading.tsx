@@ -4,9 +4,14 @@ export default function PracticeLoading() {
     <div className="practice-dashboard-frame">
       <div aria-hidden="true" className="work-practice-layout">
         <section className="work-practice-main practice-loading-main">
-          <span className="skeleton-block" />
-          <span className="skeleton-block" />
-          <span className="skeleton-block" />
+          <div className="learner-page-header practice-page-intro practice-loading-header">
+            <div className="learner-page-header-copy">
+              <span className="skeleton-block" />
+              <span className="skeleton-block" />
+              <span className="skeleton-block" />
+              <span className="skeleton-block" />
+            </div>
+          </div>
           <div className="practice-loading-tabs">
             {Array.from({ length: 4 }, (_, index) => <span className="skeleton-block" key={index} />)}
           </div>

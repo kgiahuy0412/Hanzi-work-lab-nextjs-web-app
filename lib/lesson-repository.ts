@@ -12,9 +12,12 @@ import {
 import { getPublishedCourse } from "./course-repository.ts";
 import { getLessonAccess } from "./lesson-access.ts";
 import { getLessonProgress } from "./progress-repository.ts";
+import { coreWorkplaceLessons, coreWorkplaceModules } from "./core-workplace-course-seed.ts";
+import { ecommerceLessons, ecommerceModules } from "./ecommerce-course-seed.ts";
 import { factoryLessons, factoryModules } from "./factory-course-seed.ts";
 import { logisticsLessons, logisticsModules } from "./logistics-course-seed.ts";
 import { officeLessons, officeModules } from "./office-course-seed.ts";
+import { restaurantLessons, restaurantModules } from "./restaurant-course-seed.ts";
 import { salesLessons, salesModules } from "./sales-course-seed.ts";
 import type { CourseLessonSeed, CourseModuleSeed, CourseSeedBundle } from "./course-seed-types.ts";
 import type {
@@ -35,6 +38,9 @@ const courseSeedBundles = new Map<string, CourseSeedBundle>([
   ["nha-may-san-xuat", { courseSlug: "nha-may-san-xuat", modules: factoryModules, lessons: factoryLessons }],
   ["kho-van-logistics", { courseSlug: "kho-van-logistics", modules: logisticsModules, lessons: logisticsLessons }],
   ["ban-hang-cham-soc-khach-hang", { courseSlug: "ban-hang-cham-soc-khach-hang", modules: salesModules, lessons: salesLessons }],
+  ["nha-hang-dich-vu", { courseSlug: "nha-hang-dich-vu", modules: restaurantModules, lessons: restaurantLessons }],
+  ["thuong-mai-dien-tu", { courseSlug: "thuong-mai-dien-tu", modules: ecommerceModules, lessons: ecommerceLessons }],
+  ["giao-tiep-cong-so", { courseSlug: "giao-tiep-cong-so", modules: coreWorkplaceModules, lessons: coreWorkplaceLessons }],
 ]);
 
 export type LessonPageData = {
@@ -309,7 +315,7 @@ const getCachedPublishedPracticeVocabulary = unstable_cache(async (limit: number
 
 export async function listPracticeVocabulary(limit = 12, userId: string | null = null, includeVip = false): Promise<Vocabulary[]> {
   if (!process.env.DATABASE_URL) {
-    const lessonGroups = [officeLessons, factoryLessons, logisticsLessons, salesLessons].map((lessons) => lessons.filter((lesson) => includeVip || lesson.isFree));
+    const lessonGroups = [officeLessons, factoryLessons, logisticsLessons, salesLessons, restaurantLessons, ecommerceLessons, coreWorkplaceLessons].map((lessons) => lessons.filter((lesson) => includeVip || lesson.isFree));
     const vocabularyGroups = lessonGroups.map((lessons) => lessons.flatMap((lesson) => lesson.vocabulary));
     const maxWords = Math.max(...vocabularyGroups.map((words) => words.length));
     return Array.from({ length: maxWords }, (_, index) => vocabularyGroups.flatMap((words) => words[index] ? [words[index]] : [])).flat().slice(0, limit);

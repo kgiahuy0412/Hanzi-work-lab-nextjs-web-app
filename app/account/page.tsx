@@ -4,6 +4,7 @@ import { BadgeCheck, Crown, ShieldCheck, UserRound } from "lucide-react";
 import { getCurrentUser } from "@/lib/auth-session";
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from "@/lib/auth-validation";
 import { getLearningSummary } from "@/lib/progress-repository";
+import { LearnerPageHeader } from "@/components/learner-page-header";
 
 export const metadata: Metadata = { title: "Tài khoản" };
 
@@ -20,9 +21,16 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
   if (!user) redirect("/login?returnTo=/account&error=required");
   const summary = await getLearningSummary(user.id);
 
-  return <main className="account-page"><section className="account-card">
-    <div className="account-avatar"><UserRound size={28} /></div>
-    <div><span className="section-kicker">Tài khoản HanziWork</span><h1>{user.displayName}</h1><p>{user.email}</p></div>
+  return <main className="account-page"><div className="section-shell account-page-inner">
+    <LearnerPageHeader
+      aside={<div className="account-header-avatar"><UserRound size={28} /><span>{roleLabels[user.role]}</span></div>}
+      description={`${user.email} · Quản lý thông tin đăng nhập và tiến độ học của bạn.`}
+      eyebrow="Tài khoản HanziWork"
+      eyebrowIcon={UserRound}
+      meta={<><span><BadgeCheck size={16} />Email đã xác minh</span><span><Crown size={16} /><strong>{summary.completedLessons}</strong> bài hoàn thành</span></>}
+      title={user.displayName}
+    />
+    <section className="account-card">
     {params.verified === "1" ? <p className="auth-notice" role="status">Email đã được xác minh. Tài khoản của bạn đã sẵn sàng.</p> : null}
     <dl><div><dt>Vai trò</dt><dd><ShieldCheck size={16} /> {roleLabels[user.role]}</dd></div><div><dt>Email</dt><dd><BadgeCheck size={16} /> Đã xác minh</dd></div><div><dt>Tiến độ</dt><dd>{summary.completedLessons} bài hoàn thành · {summary.openedLessons} bài đã mở</dd></div><div><dt>Quyền VIP</dt><dd><Crown size={16} /> Được kiểm tra trực tiếp từ subscription khi mở bài</dd></div></dl>
     <section className="account-security"><h2>Đổi mật khẩu</h2><p>Đổi xong, mọi phiên đăng nhập sẽ được thu hồi để bảo vệ tài khoản.</p>
@@ -35,5 +43,6 @@ export default async function AccountPage({ searchParams }: { searchParams: Prom
       </form>
     </section>
     <form action="/api/auth/logout" method="post"><input name="returnTo" type="hidden" value="/" /><button className="button button-quiet" type="submit">Đăng xuất</button></form>
-  </section></main>;
+    </section>
+  </div></main>;
 }

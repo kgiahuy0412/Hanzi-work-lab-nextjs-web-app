@@ -17,6 +17,9 @@ test("prototype includes learner, VIP and admin routes", async () => {
   assert.match(files[1], /Trọn lộ trình Nhà máy/);
   assert.match(files[1], /Trọn lộ trình Kho vận/);
   assert.match(files[1], /Trọn lộ trình Bán hàng/);
+  assert.match(files[1], /Trọn lộ trình Nhà hàng/);
+  assert.match(files[1], /Trọn lộ trình Thương mại điện tử/);
+  assert.match(files[1], /Trọn lộ trình Giao tiếp cốt lõi/);
   assert.match(files[2], /Tổng quan vận hành/);
 });
 
@@ -76,7 +79,7 @@ test("course library uses seven editorial topic covers and a streamed catalog", 
     read("components/course-card.tsx"),
     read("lib/course-visuals.ts"),
   ]);
-  assert.match(page, /Bắt đầu từ ca làm thật/);
+  assert.match(page, /Chọn đúng ngành, học đúng việc/);
   assert.match(page, /Suspense/);
   assert.match(card, /course-cover-image/);
   assert.match(card, /unoptimized/);

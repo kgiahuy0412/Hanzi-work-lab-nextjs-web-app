@@ -6,8 +6,8 @@ import { getPublishedCourse, listPublishedCourses } from "../lib/course-reposito
 test("demo catalog contains the seven approved MVP tracks", () => {
   assert.equal(courses.length, 7);
   assert.equal(new Set(courses.map((course) => course.slug)).size, courses.length);
-  assert.equal(courses.filter((course) => course.availability === "available").length, 4);
-  assert.equal(courses.filter((course) => course.availability === "coming_soon").length, 3);
+  assert.equal(courses.filter((course) => course.availability === "available").length, 7);
+  assert.equal(courses.filter((course) => course.availability === "coming_soon").length, 0);
   assert.ok(courses.filter((course) => course.availability === "coming_soon").every((course) => course.lessons === 0 && course.freeLessons === 0));
 });
 
@@ -30,6 +30,30 @@ test("logistics track is published with the same depth as office", () => {
 test("sales track is published with the same depth as office", () => {
   const course = getCourse("ban-hang-cham-soc-khach-hang");
   assert.equal(course?.chineseTitle, "销售与客户服务");
+  assert.equal(course?.lessons, 24);
+  assert.equal(course?.freeLessons, 6);
+  assert.equal(course?.availability, "available");
+});
+
+test("restaurant track is published with the same depth as office", () => {
+  const course = getCourse("nha-hang-dich-vu");
+  assert.equal(course?.chineseTitle, "餐饮与服务");
+  assert.equal(course?.lessons, 24);
+  assert.equal(course?.freeLessons, 6);
+  assert.equal(course?.availability, "available");
+});
+
+test("ecommerce track is published with the same depth as office", () => {
+  const course = getCourse("thuong-mai-dien-tu");
+  assert.equal(course?.chineseTitle, "电子商务");
+  assert.equal(course?.lessons, 24);
+  assert.equal(course?.freeLessons, 6);
+  assert.equal(course?.availability, "available");
+});
+
+test("core workplace track is published with the same depth as office", () => {
+  const course = getCourse("giao-tiep-cong-so");
+  assert.equal(course?.chineseTitle, "职场基础沟通");
   assert.equal(course?.lessons, 24);
   assert.equal(course?.freeLessons, 6);
   assert.equal(course?.availability, "available");

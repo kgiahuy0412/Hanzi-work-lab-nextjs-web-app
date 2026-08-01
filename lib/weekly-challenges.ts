@@ -51,11 +51,47 @@ const salesWeeklyChallenges: Omit<WeeklyChallenge, "courseSlug">[] = [
   { title: "Giải thích quy trình đổi hàng", situation: "Khách muốn đổi ngay sản phẩm nhưng bạn chưa xác minh thời hạn bảo hành và điều kiện đổi.", task: "Tiếp nhận yêu cầu, nêu bước kiểm tra và tránh tự ý cam kết kết quả.", keyPhrase: "我先核对保修期和换货条件，再给您明确回复。", lessonSlug: "xu-ly-doi-tra-va-bao-hanh" },
 ];
 
+const restaurantWeeklyChallenges: Omit<WeeklyChallenge, "courseSlug">[] = [
+  { title: "Xác nhận một lượt đặt bàn", situation: "Nhóm bốn khách đến lúc 7 giờ và nói đã đặt trước nhưng chưa đưa thông tin.", task: "Hỏi tên, thời gian và số người rồi xác nhận trước khi dẫn bàn.", keyPhrase: "请问预订姓名、时间和人数是？我来为您确认。", lessonSlug: "kiem-tra-thong-tin-dat-ban" },
+  { title: "Báo thời gian chờ", situation: "Nhà hàng kín bàn và thời gian chờ hiện ước tính khoảng 20 phút.", task: "Báo đây là thời gian dự kiến, cấp số và giải thích cách gọi khi có bàn.", keyPhrase: "预计要等二十分钟，我先为您排号，有空位马上通知您。", lessonSlug: "huong-dan-cho-va-xep-so" },
+  { title: "Ghi nhận dị ứng thực phẩm", situation: "Khách nói dị ứng lạc và hỏi một món có thể ăn được không.", task: "Ghi nhận dị nguyên, tránh tự cam kết và chuyển bếp/quản lý xác minh theo SOP.", keyPhrase: "我先记录您的过敏信息，再请厨房按流程确认。", lessonSlug: "hoi-khau-vi-di-ung-va-kieng-an" },
+  { title: "Đề xuất món thay thế", situation: "Món đặc trưng khách vừa chọn đã bán hết trong ngày.", task: "Xin lỗi, nói rõ trạng thái và đề xuất một món có khẩu vị tương tự.", keyPhrase: "这道菜今天售罄了，我可以为您推荐口味类似的菜。", lessonSlug: "bao-het-mon-va-de-xuat-thay-the" },
+  { title: "Xử lý món bị bỏ sót", situation: "Khách nói còn một món chưa lên trong khi các bàn đến sau đã nhận món.", task: "Xin lỗi, đối chiếu phiếu gọi món và hẹn mốc cập nhật sau khi hỏi bếp.", keyPhrase: "很抱歉，我先核对点菜单，并向厨房确认出餐时间。", lessonSlug: "xu-ly-thieu-mon-va-len-nham" },
+  { title: "Cảnh báo sàn trơn", situation: "Một cốc bị vỡ và nước đổ ở lối đi cạnh bàn khách.", task: "Cảnh báo trực tiếp, hướng dẫn đi vòng và gọi xử lý theo quy trình an toàn.", keyPhrase: "地面湿滑，还有玻璃碎片，请绕行并注意安全。", lessonSlug: "xu-ly-do-vo-va-san-tron" },
+  { title: "Giải thích hóa đơn", situation: "Khách thắc mắc vì tổng tiền có thêm một khoản phí dịch vụ.", task: "Mời khách đối chiếu chi tiết và giải thích theo hóa đơn của hệ thống.", keyPhrase: "请核对账单明细，合计金额里包含服务费。", lessonSlug: "kiem-tra-hoa-don-va-thanh-toan" },
+  { title: "Chuyển yêu cầu hoàn tiền", situation: "Khách không hài lòng và yêu cầu hoàn tiền, nhưng việc này vượt thẩm quyền của bạn.", task: "Ghi nhận bất tiện, xác minh sự việc và mời quản lý trực ca xử lý.", keyPhrase: "我先核实情况，再请值班经理按政策处理。", lessonSlug: "tiep-nhan-khieu-nai-va-chuyen-quan-ly" },
+];
+
+const ecommerceWeeklyChallenges: Omit<WeeklyChallenge, "courseSlug">[] = [
+  { title: "Rút gọn tiêu đề sản phẩm", situation: "Tiêu đề mới quá dài, lặp từ khóa và có một công dụng chưa được xác minh.", task: "Giữ tên sản phẩm, thuộc tính chính và một điểm bán có căn cứ; đề nghị kiểm tra quy định nền tảng.", keyPhrase: "我会保留品名和主要卖点，并检查平台规则。", lessonSlug: "viet-tieu-de-va-tu-khoa" },
+  { title: "Sửa ảnh biến thể bị nhầm", situation: "Biến thể màu xanh đang hiển thị ảnh của sản phẩm màu đen.", task: "Nêu lỗi, đề nghị ghép lại đúng ảnh và kiểm tra toàn bộ biến thể trước khi đăng.", keyPhrase: "蓝色变体图片不对应，我会重新核对后再发布。", lessonSlug: "quan-ly-hinh-anh-va-bien-the" },
+  { title: "Hỏi điều kiện cho lô thử", situation: "Bạn muốn đặt lô nhỏ gồm ba màu nhưng nhà cung cấp chỉ gửi một mức giá.", task: "Hỏi MOQ, khả năng gộp màu và giá theo bậc số lượng.", keyPhrase: "请确认起订量、混批条件和阶梯价。", lessonSlug: "hoi-moq-va-bac-so-luong" },
+  { title: "Yêu cầu mẫu có tiêu chuẩn", situation: "Đội ngũ cần đánh giá mẫu trước khi quyết định sản xuất lô lớn.", task: "Nêu quy cách, số lượng, tiêu chuẩn kiểm và thời gian gửi mẫu.", keyPhrase: "请按确认的规格寄样，并说明样品费和寄样时间。", lessonSlug: "yeu-cau-mau-va-kiem-mau" },
+  { title: "Làm rõ báo giá chưa đầy đủ", situation: "Báo giá chưa nói đơn giá ứng với số lượng nào, có gồm thuế và vận chuyển hay không.", task: "Yêu cầu bổ sung phạm vi giá, chi phí và thời hạn hiệu lực.", keyPhrase: "请补充单价对应的数量、费用明细和报价有效期。", lessonSlug: "doc-bao-gia-va-chi-phi" },
+  { title: "Chặn nguy cơ bán vượt tồn", situation: "Gian hàng hiển thị 20 sản phẩm nhưng kho thực tế chỉ còn 12.", task: "Nêu chênh lệch, tạm dừng bán và đề nghị kiểm tra bản ghi đồng bộ.", keyPhrase: "平台显示二十件，实际只有十二件，请先暂停销售并核对记录。", lessonSlug: "dong-bo-ton-kho-va-canh-bao-het-hang" },
+  { title: "Cập nhật vận đơn bất thường", situation: "Hành trình vận chuyển không cập nhật hai ngày và người mua đang hỏi mốc giao.", task: "Xác minh với đơn vị vận chuyển và hẹn một mốc phản hồi có thể kiểm soát.", keyPhrase: "我先联系承运方核实，今天四点前回复您。", lessonSlug: "theo-doi-van-don-va-bao-cham" },
+  { title: "Giải thích trạng thái hoàn tiền", situation: "Yêu cầu hậu mãi đang được xét và người mua muốn biết khi nào nhận lại tiền.", task: "Nêu trạng thái, phương thức hoàn và thời hạn dự kiến theo thông tin nền tảng.", keyPhrase: "申请正在审核中，款项会按平台显示的时限原路退回。", lessonSlug: "xu-ly-tra-hang-va-hoan-tien" },
+];
+
+const coreWorkplaceWeeklyChallenges: Omit<WeeklyChallenge, "courseSlug">[] = [
+  { title: "Xin nhắc lại trong môi trường ồn", situation: "Bạn không nghe rõ câu cuối của hướng dẫn tại khu vực có nhiều tiếng máy.", task: "Báo chưa nghe rõ và nhờ đối phương lặp lại chậm hơn.", keyPhrase: "不好意思，刚才我没听清，请慢一点再说一遍。", lessonSlug: "xin-nhac-lai-va-noi-cham-hon" },
+  { title: "Xác nhận lại ba bước", situation: "Đồng nghiệp vừa hướng dẫn ba bước bằng lời và bạn muốn chắc mình hiểu đúng thứ tự.", task: "Nhắc lại ngắn từng bước rồi hỏi xác nhận.", keyPhrase: "我的理解是先检查、再记录、最后提交，对吗？", lessonSlug: "noi-lai-y-hieu-de-xac-nhan" },
+  { title: "Làm rõ một yêu cầu chung chung", situation: "Quản lý nhờ ‘chuẩn bị tài liệu’ nhưng chưa nói ai sẽ dùng và cần định dạng nào.", task: "Hỏi mục tiêu, người sử dụng và dạng đầu ra mong muốn.", keyPhrase: "请问这份材料的用途、使用者和输出形式是什么？", lessonSlug: "hoi-muc-tieu-va-ket-qua-mong-doi" },
+  { title: "Chốt thứ tự hai việc gấp", situation: "Hai yêu cầu cùng hạn 4 giờ nhưng tổng thời gian xử lý vượt thời gian còn lại.", task: "Nêu xung đột, ảnh hưởng và đề nghị xác nhận việc ưu tiên.", keyPhrase: "两个任务时间冲突，请确认哪个优先。", lessonSlug: "xac-nhan-muc-do-uu-tien" },
+  { title: "Cập nhật tiến độ ba phần", situation: "Nhiệm vụ đã hoàn thành 70%, phần còn lại đang chờ đối chiếu và quản lý cần cập nhật.", task: "Nêu phần đã xong, đang xử lý và mốc cập nhật tiếp theo.", keyPhrase: "目前完成了百分之七十，正在核对剩余部分，三点再次更新。", lessonSlug: "cap-nhat-tien-do-va-phan-tram-hoan-thanh" },
+  { title: "Báo một trở ngại có ảnh hưởng", situation: "Dữ liệu đầu vào chưa đến nên bước kiểm tra sau không thể bắt đầu và có nguy cơ trễ.", task: "Nêu trở ngại, phần bị ảnh hưởng và hỗ trợ cần thiết.", keyPhrase: "目前缺少上游数据，后续检查无法开始，需要负责人协助确认。", lessonSlug: "bao-tro-ngai-va-anh-huong" },
+  { title: "Sửa một tệp gửi nhầm", situation: "Bạn đã gửi bản cũ cho khách và phát hiện sau 10 phút.", task: "Xin lỗi, gửi bản đúng, nói rõ ảnh hưởng và biện pháp ngăn lặp lại.", keyPhrase: "很抱歉，我发错文件了，现在马上更正。", lessonSlug: "nhan-loi-va-sua-sai" },
+  { title: "Bàn giao trước ngày nghỉ", situation: "Ngày mai bạn nghỉ và còn ba việc ở ba trạng thái khác nhau.", task: "Nêu trạng thái, việc tiếp theo, tài liệu, đầu mối và mốc theo dõi.", keyPhrase: "我会列出状态、剩余事项、附件和跟进节点，请确认收到。", lessonSlug: "ban-giao-va-theo-doi-sau-trao-doi" },
+];
+
 const weeklyChallenges: WeeklyChallenge[] = [
   ...officeWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "van-phong-hanh-chinh" })),
   ...factoryWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "nha-may-san-xuat" })),
   ...logisticsWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "kho-van-logistics" })),
   ...salesWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "ban-hang-cham-soc-khach-hang" })),
+  ...restaurantWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "nha-hang-dich-vu" })),
+  ...ecommerceWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "thuong-mai-dien-tu" })),
+  ...coreWorkplaceWeeklyChallenges.map((challenge) => ({ ...challenge, courseSlug: "giao-tiep-cong-so" })),
 ];
 
 function getIsoWeek(date: Date): number {

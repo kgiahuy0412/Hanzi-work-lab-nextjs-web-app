@@ -13,14 +13,18 @@ import {
   Crown,
   Factory,
   LockKeyhole,
+  MessagesSquare,
   PackageCheck,
   Play,
   RotateCcw,
   ShoppingBag,
+  Store,
   Trophy,
+  UtensilsCrossed,
   Warehouse,
   X,
 } from "lucide-react";
+import { LearnerPageHeader } from "@/components/learner-page-header";
 import { PracticeBoard } from "@/components/practice-board";
 import type { Vocabulary } from "@/lib/content-types";
 import type {
@@ -37,6 +41,9 @@ const industryIcons = {
   factory: Factory,
   logistics: Warehouse,
   sales: ShoppingBag,
+  restaurant: UtensilsCrossed,
+  ecommerce: Store,
+  core: MessagesSquare,
 } satisfies Record<PracticeIndustryId, typeof BriefcaseBusiness>;
 
 type HubMode = "catalog" | "session" | "complete" | "review";
@@ -156,11 +163,15 @@ export function WorkPracticeHub({
   return (
     <div className="work-practice-layout">
       <section className="work-practice-main" aria-labelledby="practice-title">
-        <header className="practice-hub-heading">
-          <span className="practice-hub-kicker">Phòng luyện công việc</span>
-          <h1 id="practice-title">Luyện đúng tình huống bạn sắp gặp.</h1>
-          <p>Chọn một ca làm, xử lý từng lượt hội thoại và mang câu nói dùng được ngay vào công việc.</p>
-        </header>
+        <LearnerPageHeader
+          className="practice-page-intro"
+          description="Chọn một ca làm, xử lý từng lượt hội thoại và mang câu nói dùng được ngay vào công việc."
+          eyebrow="Phòng luyện công việc"
+          eyebrowIcon={BriefcaseBusiness}
+          meta={<><span><BriefcaseBusiness size={16} /><strong>{industries.length}</strong> nhóm ngành</span><span><Clock3 size={16} />Ca ngắn 8–12 phút</span></>}
+          title="Luyện đúng tình huống sắp gặp."
+          titleId="practice-title"
+        />
 
         <div className="practice-industry-tabs" role="tablist" aria-label="Chọn ngành để luyện">
           {industries.map((industry) => {
@@ -391,7 +402,7 @@ export function WorkPracticeHub({
           <span className="practice-vip-icon"><Crown size={19} /></span>
           <span className="practice-vip-label">{hasVip ? "VIP đang hoạt động" : "HanziWork VIP"}</span>
           <h2>{hasVip ? "Toàn bộ kho ca làm đã mở." : "Luyện trước khi tình huống thật xảy ra."}</h2>
-          <p>{hasVip ? "Bạn có thể ôn từ của toàn bộ 96 bài và luyện các ca nâng cao không giới hạn." : "Mở 72 bài chuyên sâu thuộc bốn lộ trình, ôn theo từ yếu và luyện các ca nâng cao."}</p>
+          <p>{hasVip ? "Bạn có thể ôn từ của toàn bộ 168 bài và luyện các ca nâng cao không giới hạn." : "Mở 126 bài chuyên sâu thuộc bảy lộ trình, ôn theo từ yếu và luyện các ca nâng cao."}</p>
           {!hasVip ? <Link href="/vip">Khám phá gói VIP <ArrowRight size={16} /></Link> : <span className="vip-active-note"><CheckCircle2 size={15} /> Đã mở khóa</span>}
         </section>
 

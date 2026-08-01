@@ -1,8 +1,11 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { coreWorkplaceCourseStats, coreWorkplaceLessons, coreWorkplaceModules } from "../lib/core-workplace-course-seed.ts";
+import { ecommerceCourseStats, ecommerceLessons, ecommerceModules } from "../lib/ecommerce-course-seed.ts";
 import { factoryCourseStats, factoryLessons, factoryModules } from "../lib/factory-course-seed.ts";
 import { logisticsCourseStats, logisticsLessons, logisticsModules } from "../lib/logistics-course-seed.ts";
 import { officeCourseStats, officeLessons, officeModules } from "../lib/office-course-seed.ts";
+import { restaurantCourseStats, restaurantLessons, restaurantModules } from "../lib/restaurant-course-seed.ts";
 import { salesCourseStats, salesLessons, salesModules } from "../lib/sales-course-seed.ts";
 import { getLessonPageData, listPracticeVocabulary } from "../lib/lesson-repository.ts";
 
@@ -65,6 +68,48 @@ test("sales curriculum contains four complete modules and 24 lessons", () => {
   assert.equal(salesCourseStats.vocabulary, 144);
 });
 
+test("restaurant curriculum contains four complete modules and 24 lessons", () => {
+  assert.equal(restaurantModules.length, 4);
+  assert.equal(restaurantLessons.length, 24);
+  assert.equal(restaurantLessons.filter((lesson) => lesson.isFree).length, 6);
+  assert.ok(restaurantModules.every((module) => restaurantLessons.filter((lesson) => lesson.moduleSlug === module.slug).length === 6));
+  assert.ok(restaurantLessons.every((lesson) => lesson.vocabulary.length === 6));
+  assert.ok(restaurantLessons.every((lesson) => lesson.content.dialogue.length === 4));
+  assert.ok(restaurantLessons.every((lesson) => lesson.content.notes.length === 2));
+  assert.deepEqual(restaurantLessons.filter((lesson) => lesson.content.challenge).map((lesson) => lesson.content.challenge.questions.length), [5, 5, 5, 6]);
+  assert.equal(restaurantCourseStats.vocabulary, 144);
+});
+
+test("ecommerce curriculum contains four complete modules and 24 lessons", () => {
+  assert.equal(ecommerceModules.length, 4);
+  assert.equal(ecommerceLessons.length, 24);
+  assert.equal(ecommerceLessons.filter((lesson) => lesson.isFree).length, 6);
+  assert.ok(ecommerceModules.every((module) => ecommerceLessons.filter((lesson) => lesson.moduleSlug === module.slug).length === 6));
+  assert.ok(ecommerceLessons.every((lesson) => lesson.vocabulary.length === 6));
+  assert.ok(ecommerceLessons.every((lesson) => lesson.content.dialogue.length === 4));
+  assert.ok(ecommerceLessons.every((lesson) => lesson.content.notes.length === 2));
+  assert.deepEqual(ecommerceLessons.filter((lesson) => lesson.content.challenge).map((lesson) => lesson.content.challenge.questions.length), [5, 5, 5, 6]);
+  assert.equal(ecommerceCourseStats.vocabulary, 144);
+  const ecommerceWords = ecommerceLessons.flatMap((lesson) => lesson.vocabulary);
+  assert.ok(ecommerceWords.every((word) => /^ecommerce-[a-z0-9-]+$/.test(word.slug)));
+  assert.equal(new Set(ecommerceWords.map((word) => word.hanzi)).size, ecommerceWords.length);
+});
+
+test("core workplace curriculum contains four complete modules and 24 lessons", () => {
+  assert.equal(coreWorkplaceModules.length, 4);
+  assert.equal(coreWorkplaceLessons.length, 24);
+  assert.equal(coreWorkplaceLessons.filter((lesson) => lesson.isFree).length, 6);
+  assert.ok(coreWorkplaceModules.every((module) => coreWorkplaceLessons.filter((lesson) => lesson.moduleSlug === module.slug).length === 6));
+  assert.ok(coreWorkplaceLessons.every((lesson) => lesson.vocabulary.length === 6));
+  assert.ok(coreWorkplaceLessons.every((lesson) => lesson.content.dialogue.length === 4));
+  assert.ok(coreWorkplaceLessons.every((lesson) => lesson.content.notes.length === 2));
+  assert.deepEqual(coreWorkplaceLessons.filter((lesson) => lesson.content.challenge).map((lesson) => lesson.content.challenge.questions.length), [5, 5, 5, 6]);
+  assert.equal(coreWorkplaceCourseStats.vocabulary, 144);
+  const coreWords = coreWorkplaceLessons.flatMap((lesson) => lesson.vocabulary);
+  assert.ok(coreWords.every((word) => /^core-[a-z0-9-]+$/.test(word.slug)));
+  assert.equal(new Set(coreWords.map((word) => word.hanzi)).size, coreWords.length);
+});
+
 test("free lesson content is returned by the server repository", async () => withoutDatabase(async () => {
   const data = await getLessonPageData({ courseSlug: "van-phong-hanh-chinh" });
   assert.equal(data?.lesson?.slug, "chao-hoi-tai-noi-lam-viec");
@@ -109,6 +154,33 @@ test("sales free and VIP lesson access is enforced by the server repository", as
   assert.deepEqual(vipData?.lesson?.vocabulary, []);
 }));
 
+test("restaurant free and VIP lesson access is enforced by the server repository", async () => withoutDatabase(async () => {
+  const freeData = await getLessonPageData({ courseSlug: "nha-hang-dich-vu" });
+  const vipData = await getLessonPageData({ courseSlug: "nha-hang-dich-vu", lessonSlug: "gioi-thieu-thuc-don-va-mon-dac-trung" });
+  assert.equal(freeData?.lesson?.slug, "chao-khach-va-hoi-so-nguoi");
+  assert.equal(freeData?.lesson?.vocabulary.length, 6);
+  assert.equal(vipData?.access?.source, "vip_required");
+  assert.deepEqual(vipData?.lesson?.vocabulary, []);
+}));
+
+test("ecommerce free and VIP lesson access is enforced by the server repository", async () => withoutDatabase(async () => {
+  const freeData = await getLessonPageData({ courseSlug: "thuong-mai-dien-tu" });
+  const vipData = await getLessonPageData({ courseSlug: "thuong-mai-dien-tu", lessonSlug: "tim-kiem-va-sang-loc-nha-cung-cap" });
+  assert.equal(freeData?.lesson?.slug, "phan-loai-san-pham-va-vai-tro-gian-hang");
+  assert.equal(freeData?.lesson?.vocabulary.length, 6);
+  assert.equal(vipData?.access?.source, "vip_required");
+  assert.deepEqual(vipData?.lesson?.vocabulary, []);
+}));
+
+test("core workplace free and VIP lesson access is enforced by the server repository", async () => withoutDatabase(async () => {
+  const freeData = await getLessonPageData({ courseSlug: "giao-tiep-cong-so" });
+  const vipData = await getLessonPageData({ courseSlug: "giao-tiep-cong-so", lessonSlug: "tiep-nhan-va-nhac-lai-nhiem-vu" });
+  assert.equal(freeData?.lesson?.slug, "chao-hoi-va-xung-ho-lich-su");
+  assert.equal(freeData?.lesson?.vocabulary.length, 6);
+  assert.equal(vipData?.access?.source, "vip_required");
+  assert.deepEqual(vipData?.lesson?.vocabulary, []);
+}));
+
 test("practice repository only returns vocabulary from free lessons", async () => withoutDatabase(async () => {
   const vocabulary = await listPracticeVocabulary(12);
   assert.equal(vocabulary.length, 12);
@@ -116,4 +188,7 @@ test("practice repository only returns vocabulary from free lessons", async () =
   assert.ok(vocabulary.some((word) => word.slug.startsWith("factory-")));
   assert.ok(vocabulary.some((word) => word.slug.startsWith("logistics-")));
   assert.ok(vocabulary.some((word) => word.slug.startsWith("sales-")));
+  assert.ok(vocabulary.some((word) => word.slug.startsWith("restaurant-")));
+  assert.ok(vocabulary.some((word) => word.slug.startsWith("ecommerce-")));
+  assert.ok(vocabulary.some((word) => word.slug.startsWith("core-")));
 }));
