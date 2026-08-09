@@ -1,9 +1,10 @@
-export type PracticeIndustryId = "office" | "factory" | "logistics" | "sales" | "restaurant" | "ecommerce" | "core";
+export type PracticeIndustryId = string;
 
 export type PracticeIndustry = {
   id: PracticeIndustryId;
   label: string;
   description: string;
+  imageUrl?: string;
 };
 
 export type PracticeExercise = {
@@ -11,6 +12,8 @@ export type PracticeExercise = {
   eyebrow: string;
   prompt: string;
   chinese?: string;
+  listeningText?: string;
+  isStatementCorrect?: boolean;
   audioUrl?: string;
   options: string[];
   correctOption: number;
@@ -67,6 +70,18 @@ export function getPracticeListeningStatement(
   const text = useCorrectStatement ? correctText : incorrectText ?? correctText;
   const usesOriginalChineseAnswer = containsHanzi(directCorrectText);
   const genericFocus = context?.focus.slice(0, 2).join(" và ").toLocaleLowerCase("vi");
+  if (exercise.listeningText) {
+    const isCorrect = exercise.isStatementCorrect ?? exercise.listeningText === correctText;
+    return {
+      optionIndex: isCorrect ? exercise.correctOption : directIncorrectOption,
+      text: exercise.listeningText,
+      isCorrect,
+      correctText,
+      explanation: isCorrect
+        ? exercise.explanation
+        : `Câu vừa nghe chưa xử lý đúng trọng tâm. Một phản hồi tốt cần ${genericFocus || "rõ ý và phù hợp với tình huống"}.`,
+    };
+  }
   const explanation = usesOriginalChineseAnswer
     ? exercise.explanation
     : useCorrectStatement

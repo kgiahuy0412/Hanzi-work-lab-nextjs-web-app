@@ -1,0 +1,49 @@
+npm notice run hanziwork-prototype@0.1.0 dev
+npm notice run vinext dev --port 4174
+20:59:11 [vite] (rsc) warning: client component dependency is inconsistently optimized. It's recommended to add the dependency to 'optimizeDeps.exclude'.
+  Plugin: rsc:use-client
+  File: C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/lucide-react/dist/esm/Icon.mjs?v=d7f244fb
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+21:21:14 [vite] Internal server error: Cannot read properties of undefined (reading 'fetch')
+      at Object.fetchAsset (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:35:42)
+      at handleImageOptimization (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/vinext/src/server/image-optimization.ts:237:33)
+      at Object.fetch (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:34:14)
+      at null.<anonymous> (workers/runner-worker/index.js:359:20)
+      at maybeCaptureError (workers/runner-worker/index.js:51:10)
+21:21:15 [vite] Internal server error: Cannot read properties of undefined (reading 'fetch')
+      at Object.fetchAsset (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:35:42)
+      at handleImageOptimization (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/vinext/src/server/image-optimization.ts:237:33)
+      at Object.fetch (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:34:14)
+      at null.<anonymous> (workers/runner-worker/index.js:359:20)
+      at maybeCaptureError (workers/runner-worker/index.js:51:10)
+21:21:15 [vite] Internal server error: Cannot read properties of undefined (reading 'fetch')
+      at Object.fetchAsset (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:35:42)
+      at handleImageOptimization (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/vinext/src/server/image-optimization.ts:237:33)
+      at Object.fetch (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:34:14)
+      at null.<anonymous> (workers/runner-worker/index.js:359:20)
+      at maybeCaptureError (workers/runner-worker/index.js:51:10)
+21:21:46 [vite] Internal server error: Cannot read properties of undefined (reading 'fetch')
+      at Object.fetchAsset (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:35:42)
+      at handleImageOptimization (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/vinext/src/server/image-optimization.ts:237:33)
+      at Object.fetch (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:34:14)
+      at null.<anonymous> (workers/runner-worker/index.js:359:20)
+      at maybeCaptureError (workers/runner-worker/index.js:51:10)
+21:21:47 [vite] Internal server error: Cannot read properties of undefined (reading 'fetch')
+      at Object.fetchAsset (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:35:42)
+      at handleImageOptimization (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/vinext/src/server/image-optimization.ts:237:33)
+      at Object.fetch (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:34:14)
+      at null.<anonymous> (workers/runner-worker/index.js:359:20)
+      at maybeCaptureError (workers/runner-worker/index.js:51:10)
+21:21:47 [vite] Internal server error: Cannot read properties of undefined (reading 'fetch')
+      at Object.fetchAsset (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:35:42)
+      at handleImageOptimization (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/node_modules/vinext/src/server/image-optimization.ts:237:33)
+      at Object.fetch (C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/worker/index.ts:34:14)
+      at null.<anonymous> (workers/runner-worker/index.js:359:20)
+      at maybeCaptureError (workers/runner-worker/index.js:51:10)
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.
+Detected multiple renderers concurrently rendering the same context provider. This is currently unsupported.

@@ -2,7 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import { Search } from "lucide-react";
+import { ChevronRight, Search } from "lucide-react";
 import { CourseCard } from "@/components/course-card";
 import type { Course } from "@/lib/content-types";
 
@@ -26,14 +26,17 @@ export function CourseExplorer({ courses }: { courses: Course[] }) {
   return <section className="section-shell explorer">
     <div className="explorer-toolbar">
       <label className="search-box"><Search size={19} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Tìm ngành hoặc kỹ năng cần học..." aria-label="Tìm lộ trình" /></label>
-      <div className="filter-list" aria-label="Lọc theo nhóm ngành">{filters.map((item) => <motion.button
-        aria-pressed={filter === item}
-        className={`filter-chip ${filter === item ? "active" : ""}`}
-        key={item}
-        onClick={() => setFilter(item)}
-        type="button"
-        whileTap={reduceMotion ? undefined : { scale: 0.97 }}
-      >{item}</motion.button>)}</div>
+      <div className="filter-scroll-wrap">
+        <div className="filter-list" aria-label="Lọc theo nhóm ngành. Trên điện thoại, vuốt ngang để xem thêm lựa chọn.">{filters.map((item) => <motion.button
+          aria-pressed={filter === item}
+          className={`filter-chip ${filter === item ? "active" : ""}`}
+          key={item}
+          onClick={() => setFilter(item)}
+          type="button"
+          whileTap={reduceMotion ? undefined : { scale: 0.97 }}
+        >{item}</motion.button>)}</div>
+        <span aria-hidden="true" className="filter-scroll-cue"><ChevronRight size={17} /></span>
+      </div>
     </div>
     <motion.p animate={{ opacity: 1 }} className="explorer-count" initial={false} key={`${visibleCourses.length}-${availableCount}`}>{availableCount} lộ trình đang mở · {visibleCourses.length - availableCount} lộ trình trong kế hoạch</motion.p>
     <AnimatePresence initial={false} mode="popLayout">

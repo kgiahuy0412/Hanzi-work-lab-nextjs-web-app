@@ -68,4 +68,42 @@ flowchart LR
   F -- Có --> G
 ```
 
-Mỗi lần xuất bản tạo một `content_versions` snapshot. Mọi thay đổi quyền, VIP, giá và hoàn tiền được ghi vào `audit_logs`.
+Với Luyện ca, khi Editor gửi `draft → review`, hệ thống ghi thời điểm gửi và đưa ca vào hàng đợi. Admin gán reviewer đang hoạt động, mức ưu tiên và hạn duyệt; Reviewer cũng có thể tự nhận ca chưa phân công nhưng không thể lấy ca đang thuộc người khác. Reviewer chỉ được trả ca hoặc xuất bản sau khi đã nhận ca đó. Khi ca rời trạng thái `review`, hạn duyệt được đóng lại; mọi lần gán, nhận, bỏ nhận và chuyển trạng thái đều được ghi vào `audit_logs`.
+
+### 3.1. Tải lên và duyệt audio Luyện ca
+
+```mermaid
+sequenceDiagram
+  actor E as Editor
+  participant W as HanziWork
+  participant C as Cloudinary
+  participant D as PostgreSQL
+  actor R as Reviewer
+
+  E->>W: Chọn file audio
+  W-->>E: Trả chữ ký upload ngắn hạn
+  E->>C: Upload trực tiếp resource_type=video
+  C-->>E: Trả metadata + chữ ký phản hồi
+  E->>W: Gửi metadata đã upload
+  W->>W: Xác minh chữ ký, định dạng, dung lượng, thời lượng
+  W->>D: Gắn asset và đặt QA=pending
+  R->>W: Nghe audio trong ca được phân công
+  R->>D: Duyệt hoặc yêu cầu thu lại + checklist lỗi
+  alt Audio đạt
+    D-->>W: QA=approved
+    W-->>R: Mở điều kiện xuất bản audio
+  else Cần thu lại
+    D-->>W: QA=re_record
+    W-->>E: Hiển thị lỗi và ghi chú cần sửa
+  end
+```
+
+Quy tắc vận hành:
+
+- `CLOUDINARY_API_SECRET` chỉ tồn tại phía server thông qua `CLOUDINARY_URL`; trình duyệt chỉ nhận chữ ký upload có thời hạn.
+- Audio được gửi thẳng từ trình duyệt lên Cloudinary để không truyền file lớn qua server HanziWork. Cloudinary xử lý audio dưới `resource_type=video`.
+- Route phát audio vẫn kiểm tra ca đã xuất bản và quyền miễn phí/VIP ở server; nếu asset nằm trên Cloudinary thì route trả redirect tạm thời sang CDN.
+- Thay file hoặc thay transcript luôn đặt QA về `pending`. Học viên chỉ nhận audio `approved`; checklist xuất bản yêu cầu toàn bộ lượt nghe đã được duyệt.
+- Asset PostgreSQL cũ vẫn hoạt động trong thời gian chuyển đổi. Sau khi có `CLOUDINARY_URL`, chạy `npm run practice:audio:migrate-cloudinary`; chỉ khi upload và ghi metadata thành công script mới xóa blob cũ khỏi PostgreSQL.
+
+Mỗi lần xuất bản tạo một snapshot nội dung (`content_versions` hoặc `practice_scenario_versions`). Mọi thay đổi quyền, VIP, giá và hoàn tiền được ghi vào `audit_logs`.

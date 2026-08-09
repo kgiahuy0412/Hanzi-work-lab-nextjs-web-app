@@ -1,5 +1,200 @@
 # Nhật ký bàn giao phiên làm việc
 
+## 2026-08-08 — Hoàn thiện audio cho 14 ca VIP
+
+### Phần đã thay đổi
+
+- Mở rộng generator và manifest từ 24 lượt miễn phí thành đủ 66 lượt Luyện ca; 24 MP3 cũ được giữ nguyên và chỉ tạo mới 42 MP3 VIP còn thiếu.
+- Mở rộng `practice:audio:seed` và seed tổng để nhận toàn bộ manifest. Audio miễn phí giữ trạng thái `approved`; audio VIP mới luôn là `pending`, xóa sạch kết quả QA cũ nếu được gắn mới và không tự vượt qua bước nghe duyệt.
+- Cập nhật test manifest để khóa quan hệ scenario/exercise/transcript/Đúng-Sai/checksum cho cả nội dung miễn phí lẫn VIP.
+- Cho phép admin hoặc reviewer đã được phân công nghe duyệt audio `pending` ngay trên ca đã xuất bản. Điều này xử lý an toàn nội dung cũ: audio chưa duyệt vẫn bị server ẩn với học viên nhưng không cần gỡ cả ca chỉ để QA file mới.
+
+### Dữ liệu và kiểm tra
+
+- Đã gắn mới 42 audio, giữ nguyên 24 audio cũ và chuyển 42 file mới lên Cloudinary; PostgreSQL hiện có đủ 66/66 liên kết audio và 0 blob.
+- Cloudinary Admin API trả đủ 66 asset MP3 dưới `hanziwork/practice-audio/legacy/`, tổng khoảng 1,22 MB.
+- HEAD kiểm tra toàn bộ CDN đạt 66/66; tất cả trả tài nguyên audio hợp lệ.
+- 8 ca miễn phí đạt đủ 7/7 điều kiện. Cả 14 ca VIP đạt 6/7 và chỉ còn thiếu điều kiện `audio_review`; 42 lượt VIP giữ `pending` để reviewer nghe thật.
+- Script Cloudinary chạy lặp lại an toàn và không còn blob cần chuyển.
+
+### Bước vận hành tiếp theo
+
+- Người thành thạo Quan thoại nghe 42 lượt trong Admin, đánh dấu `Audio đạt` hoặc `Cần thu lại`. Không tự động duyệt chỉ dựa trên việc CDN/checksum hợp lệ.
+
+## 2026-08-08 — Cloudinary CDN và QA audio Luyện ca
+
+### Phần đã thay đổi
+
+- Thêm luồng upload có chữ ký: trình duyệt tải audio thẳng lên Cloudinary, server chỉ cấp chữ ký và xác minh chữ ký phản hồi/metadata trước khi gắn asset. API secret không được gửi xuống client.
+- Route media tiếp tục kiểm tra quyền miễn phí/VIP ở server rồi redirect sang Cloudinary CDN; cơ chế range-stream blob PostgreSQL cũ được giữ để chuyển đổi không gián đoạn.
+- Mở rộng `practice_audio_assets` với metadata Cloudinary và `practice_exercises` với trạng thái QA `pending/approved/re_record`, checklist lỗi, ghi chú, reviewer và thời điểm duyệt.
+- Thay file hoặc sửa transcript tự động đưa audio về chờ duyệt. Người học chỉ nhận audio đã duyệt; checklist xuất bản tăng thành 7 điều kiện và chặn xuất bản nếu còn audio chưa đạt.
+- Trang kiểm duyệt có điều khiển nghe riêng cho từng lượt, checklist lỗi phát âm/tốc độ/độ rõ/tạp âm/sai transcript/ngữ điệu, cùng hai hành động “Audio đạt” và “Yêu cầu thu lại”. Editor nhìn thấy phản hồi để thu lại đúng lỗi.
+- Thêm script idempotent `npm run practice:audio:migrate-cloudinary`; blob chỉ bị xóa khỏi PostgreSQL sau khi Cloudinary upload và cập nhật metadata thành công.
+
+### Dữ liệu và cấu hình
+
+- Migration `0011_talented_adam_warlock` đã áp dụng lên Neon. Dữ liệu hiện có: 24 audio PostgreSQL được backfill `approved`, 42 lượt chưa có audio giữ `pending`.
+- `.env.example` khai báo `CLOUDINARY_URL`; credential thật chỉ nằm trong `.env.local` bị Git bỏ qua. Script migration đã được sửa để tự nạp `.env.local` giống các script quản trị khác.
+- Đã chạy migration thật: 24/24 asset chuyển sang Cloudinary, `content` trong PostgreSQL đã về `null`, không thiếu CDN URL. Kiểm tra trực tiếp một asset trả HTTP 200 với `content-type: audio/mpeg`.
+- Chạy script lần hai trả “Không còn audio database cần chuyển”, xác nhận quy trình idempotent.
+
+### Kiểm tra
+
+- Browser E2E bằng ca/tài khoản tạm: duyệt một audio, yêu cầu thu lại một audio, kiểm tra checklist xuất bản còn 6/7; desktop và mobile 390 px không tràn ngang, không có error overlay hoặc console warning/error.
+- Nút upload/đổi file bị vô hiệu hóa đúng khi Cloudinary chưa cấu hình và hiển thị hướng dẫn thay vì thất bại âm thầm.
+- Toàn bộ ca, tài khoản và audit QA tạm đã được dọn khỏi PostgreSQL.
+- `npm test`: 77/77 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed.
+
+### Bằng chứng QA
+
+- `docs/design-qa/practice-audio-review-desktop-refined.png`
+- `docs/design-qa/practice-audio-review-mobile.png`
+
+## 2026-08-08 — Hàng đợi vận hành kiểm duyệt Luyện ca
+
+### Phần đã thay đổi
+
+- Thêm migration `0010_wandering_the_captain` và áp dụng lên Neon: `practice_scenarios` có reviewer phụ trách, ưu tiên `normal/high/urgent`, hạn duyệt và thời điểm gửi duyệt; ca review cũ được backfill mốc gửi từ `updated_at`.
+- Thêm hàng đợi ngay đầu `/admin/practice`, sắp xếp ca khẩn/sắp đến hạn trước và hiển thị tổng số chờ duyệt, chưa nhận, quá hạn cùng checklist sẵn sàng xuất bản.
+- Admin có thể gán reviewer/admin đang hoạt động, mức ưu tiên và hạn duyệt ở cả hàng đợi lẫn trang chi tiết. Reviewer chỉ thấy ca của mình và ca chưa phân công, có thể tự nhận hoặc bỏ nhận.
+- Siết quyền ở server: reviewer không thể trả ca hoặc xuất bản khi chưa được phân công cho chính mình; ca đang thuộc reviewer khác không thể bị lấy. Mọi thao tác gán, nhận và bỏ nhận đều ghi `audit_logs`.
+- Trang chi tiết có panel điều phối riêng; danh sách theo nhóm ngành hiển thị reviewer/hạn khi ca đang Chờ duyệt. Giao diện dùng hàng phân cách gọn, không thêm nhiều card lồng nhau và responsive cho mobile.
+
+### Dữ liệu và kiểm tra
+
+- Migration đã áp dụng thành công; Neon có đủ bốn cột review và index `practice_scenarios_review_queue_idx`.
+- Browser E2E bằng fixture tạm: admin gán reviewer thành công; reviewer nhìn thấy đúng ca được gán, bỏ nhận rồi tự nhận lại; trang chi tiết chỉ mở nút trả về/xuất bản sau khi đã nhận.
+- Desktop và mobile 390 px: không tràn ngang, không có error overlay hoặc console warning/error. Toàn bộ tài khoản, session, ca và audit QA tạm đã được dọn khỏi PostgreSQL sau kiểm tra.
+- `npm test`: 74/74 passed.
+- `npx tsc --noEmit`: passed.
+
+
+## 2026-08-08 — Lịch sử trực quan và khôi phục phiên bản Luyện ca
+
+### Phần đã thay đổi
+
+- Thay danh sách phiên bản tối giản bằng timeline biên tập đầy đủ: số phiên bản, người thực hiện, vai trò, thời gian, ghi chú, trạng thái, tiêu đề, quyền miễn phí/VIP, số lượt nghe, độ phủ audio và bản xem nhanh từng lượt.
+- Editor/admin có thể mở một phiên bản cũ và khôi phục khi ca đang ở Bản nháp. Reviewer vẫn xem được toàn bộ lịch sử nhưng không có quyền khôi phục.
+- Khôi phục không ghi đè lịch sử: hệ thống tự tạo một snapshot an toàn của nội dung hiện tại, phục hồi nội dung/lượt nghe từ phiên bản được chọn rồi tạo thêm một phiên bản Bản nháp mới.
+- Giữ nguyên slug, nhóm ngành và liên kết lịch sử làm bài khi khôi phục; mọi thao tác yêu cầu ghi chú và xác nhận, kiểm tra lại quyền ở server, đồng thời ghi audit log `admin.practice_scenario.version_restored`.
+- Audio từng xuất hiện trong snapshot được giữ lại thay vì dọn như asset không dùng, giúp phiên bản cũ tiếp tục có thể phục hồi. Snapshot cũ trước khi có transcript/Đúng-Sai vẫn được đọc theo chế độ tương thích.
+- Không cần migration mới vì bảng `practice_scenario_versions` hiện có đã lưu toàn bộ snapshot cần thiết.
+
+### Kiểm tra
+
+- Thực hiện khôi phục thật bằng tài khoản editor QA: tiêu đề/nội dung/lượt nghe quay đúng về v1, tạo v3 bảo toàn bản trước khôi phục và v4 làm Bản nháp mới.
+- Browser desktop 1280 × 900 và mobile 390 × 844: timeline không tràn ngang, không có error overlay hoặc console error.
+- Fixture tài khoản, ca luyện, phiên bản và audit QA đã được xóa khỏi PostgreSQL sau kiểm tra.
+- `npm test`: 71/71 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed.
+
+### Bằng chứng QA
+
+- `docs/design-qa/practice-version-history-desktop.png`
+- `docs/design-qa/practice-version-history-mobile.png`
+
+## 2026-08-08 — Quy trình biên tập và kiểm duyệt Luyện ca
+
+### Phần đã thay đổi
+
+- Tách quyền nội dung thành ba vai trò rõ ràng: `editor` tạo và sửa ca ở Bản nháp, `reviewer` nghe/đối chiếu rồi trả về hoặc xuất bản, `admin` quản lý toàn bộ quy trình và tài khoản nhân sự.
+- Thêm workflow trạng thái có kiểm tra ở server: Bản nháp → Chờ duyệt → Đã xuất bản; nội dung bị khóa chỉnh sửa ngoài trạng thái Bản nháp và mọi lần chuyển trạng thái đều bắt buộc có ghi chú, tạo phiên bản và audit log.
+- Thêm checklist 6 điều kiện trước khi xuất bản: nhóm ngành đang hoạt động, tối thiểu hai lượt nghe, đủ transcript, đủ audio, đáp án hợp lệ và có cả tình huống Đúng lẫn Sai.
+- Thiết kế trang kiểm duyệt riêng để reviewer nghe từng audio, xem transcript, câu hỏi, phương án, đáp án và giải thích mà không thấy form chỉnh sửa.
+- Thêm `/admin/team` để admin phân vai trò learner/editor/reviewer/admin cho tài khoản đã xác minh; chặn tự hạ quyền và chặn hạ quyền admin cuối cùng.
+- Cho editor/reviewer đăng nhập qua cổng quản trị nhưng chỉ nhìn thấy phạm vi Luyện ca và Tài khoản; người chưa đăng nhập vẫn bị chặn ở server.
+- Sửa truy vấn tổng hợp số ca theo nhóm ngành để số lượng ca và ca đang xuất bản hiển thị đúng trên màn hình tổng quan.
+
+### Kiểm tra
+
+- Browser QA desktop và mobile: reviewer chỉ thấy quyền kiểm duyệt, trang không tràn ngang; thao tác duyệt một ca đủ 6/6 điều kiện tạo đúng phiên bản xuất bản.
+- Người chưa đăng nhập truy cập `/admin/practice` được chuyển về `/admin/login` kèm `returnTo` an toàn.
+- Dữ liệu reviewer và ca QA tạm đã được xóa khỏi PostgreSQL sau kiểm tra.
+- `npm test`: 67/67 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed, gồm route mới `/admin/team`.
+
+### Bằng chứng QA
+
+- `docs/design-qa/practice-review-workflow-desktop.png`
+- `docs/design-qa/practice-review-workflow-mobile.png`
+
+## 2026-08-08 — Bộ audio Quan thoại cho toàn bộ ca miễn phí
+
+### Phần đã thay đổi
+
+- Tạo 24 tệp MP3 cho 8/8 ca Luyện ca miễn phí, tổng 66,5 giây và khoảng 390 KB. Dùng `zh-CN-XiaoxiaoNeural` cho văn phòng/dịch vụ và `zh-CN-YunxiNeural` cho nhà máy/kho vận/giao tiếp cốt lõi, tốc độ chậm nhẹ `-8%`.
+- Thêm `content/practice-audio/manifest.json` khóa quan hệ scenario/exercise/transcript/đáp án/giọng/thời lượng/checksum; test sẽ thất bại nếu thiếu file, đổi nội dung hoặc gắn nhầm câu.
+- Thêm `npm run practice:audio:generate` để tạo lại tài sản biên tập và `npm run practice:audio:seed` để nhập nhanh vào PostgreSQL mà không phải seed lại 168 bài học và hơn một nghìn mục từ.
+- Tích hợp audio vào `db:seed` cho môi trường mới. Cả seed đầy đủ và seed audio chuyên dụng chỉ gắn khi exercise chưa có asset, nên không ghi đè bản thu mà admin đã thay thủ công.
+- Sửa nhận diện frame MPEG không có ID3: MP3 Layer III và AAC ADTS giờ được phân loại đúng ở cả upload Admin lẫn seed.
+
+### Dữ liệu và kiểm tra
+
+- Neon: lần đầu gắn mới 24 audio; lần chạy lại gắn mới 0, giữ nguyên 24; 24/24 lượt miễn phí sẵn sàng.
+- Runtime `/practice`: 200; route media công khai trả `206 Partial Content`, `audio/mpeg`, `Accept-Ranges: bytes` và đúng `Content-Range: bytes 0-127/22752`.
+- `npm test`: 64/64 passed, gồm kiểm tra chữ ký file, checksum, thời lượng, transcript và độ phủ toàn bộ ca miễn phí.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- Tệp audio là bản TTS dùng cho MVP và vẫn cần người thành thạo Quan thoại nghe duyệt trước khi phát hành thương mại.
+
+## 2026-08-08 — Upload, lưu trữ và phát audio thật cho Luyện ca
+
+### Phần đã thay đổi
+
+- Thêm bảng `practice_audio_assets` và migration `0009_faithful_post`; tệp audio được lưu bền trong Neon PostgreSQL dạng `bytea`, gắn với từng lượt nghe và có checksum SHA-256 để tránh lưu trùng.
+- Admin có thể tải lên, nghe thử, thay thế hoặc gỡ audio ngay trong form lượt nghe tại `/admin/practice`. Tệp được kiểm tra chữ ký nhị phân ở server, giới hạn 8 MB và tối đa 5 phút; hỗ trợ MP3, WAV, M4A/MP4, AAC, OGG và WebM.
+- Bổ sung `listening_text` và `is_statement_correct` vào từng exercise. Nội dung thực sự được nghe và đáp án Đúng/Sai giờ là dữ liệu biên tập rõ ràng, không còn phụ thuộc phép biến đổi ngẫu nhiên ở client.
+- Thêm route media có kiểm tra quyền miễn phí/VIP/admin trước khi đọc nội dung tệp, hỗ trợ byte range/HTTP 206 để tua và phát ổn định. Audio VIP bị khóa không được trả về client.
+- Player Luyện ca ưu tiên bản thu thật, preload lượt kế tiếp, giữ chế độ nghe chậm 0.78x và tự chuyển sang TTS thiết bị nếu bản thu lỗi hoặc exercise chưa có audio.
+- Khi thay hoặc xóa audio, asset cũ chỉ bị dọn nếu không còn exercise nào sử dụng; mọi thao tác đều ghi audit log và phiên bản nội dung của ca.
+
+### Dữ liệu và kiểm tra
+
+- Migration đã áp dụng thành công lên Neon; seed idempotent giữ đủ 7 nhóm ngành, 22 ca và 66 lượt nghe.
+- 66/66 lượt nghe có transcript và đáp án rõ ràng sau seed: 36 câu Đúng, 30 câu Sai.
+- Kiểm tra ghi/đọc/xóa thực tế một blob WAV mẫu trong Neon thành công, đủ 12 byte.
+- API upload không đăng nhập admin trả 403; media không tồn tại trả 404; `/practice` trả 200 trong kiểm tra runtime.
+- `npx tsc --noEmit`: passed.
+- `npm test`: 63/63 passed.
+- `npm run lint`: passed.
+- `npm run build`: passed; `/api/admin/practice-audio` và `/api/media/practice-audio/:assetId` được nhận diện đầy đủ.
+
+### Lưu ý vận hành
+
+- Chưa seed các tệp thu âm thật. 66 lượt nghe hiện tiếp tục dùng TTS làm fallback cho đến khi admin tải bản thu tương ứng lên.
+- PostgreSQL `bytea` là phương án MVP không cần domain hay dịch vụ lưu trữ ngoài. Khi thư viện audio tăng lớn, nên chuyển phần nội dung asset sang R2/S3 và giữ metadata/quyền truy cập trong PostgreSQL.
+
+## 2026-08-08 — PostgreSQL và Admin CRUD hoàn chỉnh cho Luyện ca
+
+### Phần đã thay đổi
+
+- Thêm bốn bảng `practice_industries`, `practice_scenarios`, `practice_exercises`, `practice_scenario_versions`; giữ `practice_attempts.scenario_id` theo slug để tương thích lịch sử hiện có và mở rộng slug ngành lên 80 ký tự.
+- Sinh và áp dụng migration `0007_medical_tempest` cùng `0008_wealthy_rogue` lên Neon.
+- Seed idempotent toàn bộ dữ liệu Luyện ca hiện tại vào PostgreSQL: 7 nhóm ngành, 22 ca và 66 lượt nghe.
+- Chuyển `lib/practice-repository.ts` sang đọc nội dung `published` từ PostgreSQL. Với người chưa có VIP, truy vấn exercise chỉ lấy ca miễn phí và DTO ca khóa luôn có `exercises: null`, nên đáp án trả phí không đi qua ranh giới server/client.
+- Thêm Admin CRUD theo cấu trúc `/admin/practice` → nhóm ngành → ca luyện → lượt nghe, gồm trạng thái draft/review/published/archived, miễn phí/VIP, ảnh ngành, audio URL, câu hỏi, phương án, đáp án, giải thích và thứ tự.
+- Mỗi lần tạo/cập nhật ca hoặc thay đổi lượt nghe đều tạo snapshot tăng phiên bản; mọi mutation xác thực role admin, chạy transaction và ghi `audit_logs`.
+- Xóa cứng chỉ cho phép với draft/review an toàn. Không xóa ca có lịch sử làm bài; ca cần ít nhất hai lượt nghe mới được xuất bản. Đổi slug ca/ngành sẽ đồng bộ khóa logic trong lịch sử làm bài.
+- Mở rộng ảnh/icon của Kho ca làm có fallback an toàn cho nhóm ngành được tạo mới từ admin.
+
+### Kiểm tra
+
+- PostgreSQL sau seed: 7 nhóm ngành, 22 ca, 66 lượt nghe.
+- `/admin/practice` yêu cầu đăng nhập admin đúng như thiết kế; `/practice` đọc dữ liệu DB, hiển thị đủ 7 tab, ca miễn phí/VIP và không có console error.
+- Browser desktop và mobile: trang Luyện ca không tràn ngang; sau warm-up server render khoảng 40 ms trong lần kiểm tra local.
+- `npx tsc --noEmit`: passed.
+- `npm test`: 60/60 passed.
+- `npm run lint`: passed.
+- `npm run build`: passed; ba route Admin Luyện ca được nhận diện đầy đủ.
+
 ## 2026-07-31 — Điều hướng nhanh, header mới và bảy ảnh chủ đề
 
 ### Phần đã thay đổi

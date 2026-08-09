@@ -36,6 +36,55 @@
       "when": 1785485644599,
       "tag": "0004_hesitant_cerise",
       "breakpoints": true
+    },
+    {
+      "idx": 5,
+      "version": "7",
+      "when": 1786112340151,
+      "tag": "0005_green_supreme_intelligence",
+      "breakpoints": true
+    },
+    {
+      "idx": 6,
+      "version": "7",
+      "when": 1786113094993,
+      "tag": "0006_spooky_shocker",
+      "breakpoints": true
+    },
+    {
+      "idx": 7,
+      "version": "7",
+      "when": 1786153869675,
+      "tag": "0007_medical_tempest",
+      "breakpoints": true
+    },
+    {
+      "idx": 8,
+      "version": "7",
+      "when": 1786154279925,
+      "tag": "0008_wealthy_rogue",
+      "breakpoints": true
+    },
+    {
+      "idx": 9,
+      "version": "7",
+      "when": 1786154993633,
+      "tag": "0009_faithful_post",
+      "breakpoints": true
+    },
+    {
+      "idx": 10,
+      "version": "7",
+      "when": 1786159644668,
+      "tag": "0010_wandering_the_captain",
+      "breakpoints": true
+    },
+    {
+      "idx": 11,
+      "version": "7",
+      "when": 1786161234909,
+      "tag": "0011_talented_adam_warlock",
+      "breakpoints": true
     }
   ]
 }

@@ -18,7 +18,9 @@ import type { ContentStatus } from "./admin-content-validation.ts";
 import type { LessonContent } from "./content-types.ts";
 
 type DbTransaction = Parameters<Parameters<Database["transaction"]>[0]>[0];
-type MutationError = "duplicate_slug" | "not_found" | "unsafe_delete" | "invalid_parent";
+type MutationError = "duplicate_slug" | "not_found" | "unsafe_delete" | "invalid_parent" | "incomplete_content"
+  | "workflow_forbidden" | "invalid_transition" | "review_not_ready" | "role_change_forbidden" | "invalid_version"
+  | "invalid_reviewer" | "review_assignment_forbidden" | "review_assignment_required" | "invalid_input";
 export type MutationResult = { ok: true; id: string } | { ok: false; error: MutationError };
 
 export type CourseInput = {

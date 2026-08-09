@@ -37,6 +37,18 @@ export function parseTags(value: string): string[] {
   return [...new Set(value.split(",").map((tag) => tag.trim()).filter(Boolean))].slice(0, 20);
 }
 
+export function parseStringLines(value: string, maximum = 12): string[] | null {
+  const lines = value.split(/\r?\n/u).map((line) => line.trim()).filter(Boolean);
+  if (lines.length > maximum || lines.some((line) => line.length > 2_000)) return null;
+  return lines;
+}
+
+export function serializeStringList(value: unknown, separator = "\n"): string {
+  return Array.isArray(value)
+    ? value.filter((item): item is string => typeof item === "string").join(separator)
+    : "";
+}
+
 function parseRows<T>(value: string, columns: number, toRow: (parts: string[]) => T): T[] | null {
   if (!value.trim()) return [];
   const lines = value.split(/\r?\n/u).map((line) => line.trim()).filter(Boolean);

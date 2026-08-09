@@ -111,12 +111,13 @@ export async function recordVocabularyReview(userId: string, vocabularySlug: str
       correctCount: reviewItems.correctCount,
       wrongCount: reviewItems.wrongCount,
     }).from(reviewItems).where(and(eq(reviewItems.userId, userId), eq(reviewItems.vocabularyId, word.id))).limit(1);
-    const schedule = scheduleReview(rows[0] ?? null, remembered);
+    const reviewedAt = new Date();
+    const schedule = scheduleReview(rows[0] ?? null, remembered, reviewedAt);
 
-    await db.insert(reviewItems).values({ userId, vocabularyId: word.id, ...schedule })
+    await db.insert(reviewItems).values({ userId, vocabularyId: word.id, ...schedule, lastReviewedAt: reviewedAt })
       .onConflictDoUpdate({
         target: [reviewItems.userId, reviewItems.vocabularyId],
-        set: schedule,
+        set: { ...schedule, lastReviewedAt: reviewedAt },
       });
     return true;
   });

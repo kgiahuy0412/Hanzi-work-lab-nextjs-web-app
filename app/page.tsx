@@ -1,6 +1,7 @@
 import { getCurrentUser } from "@/lib/auth-session";
+import { buildDailySession } from "@/lib/daily-session";
+import { getDailySessionSource } from "@/lib/daily-session-repository";
 import { listPracticeVocabulary } from "@/lib/lesson-repository";
-import { getLearningSummary } from "@/lib/progress-repository";
 import { ReviewHomeStudio } from "@/components/review-home-studio";
 import type { Vocabulary } from "@/lib/content-types";
 
@@ -14,13 +15,16 @@ const demoReviewWords: Vocabulary[] = [
 
 export default async function HomePage() {
   const user = await getCurrentUser();
-  const [summary, personalizedReviewWords] = user
-    ? await Promise.all([getLearningSummary(user.id), listPracticeVocabulary(5, user.id)])
-    : [{ completedLessons: 6, openedLessons: 6 }, [] as Vocabulary[]] as const;
+  const [personalizedReviewWords, sessionSource] = await Promise.all([
+    user ? listPracticeVocabulary(5, user.id) : Promise.resolve([] as Vocabulary[]),
+    getDailySessionSource(user?.id ?? null),
+  ]);
+  const reviewWords = user ? personalizedReviewWords : demoReviewWords;
+  const dailySession = buildDailySession(sessionSource, reviewWords.length);
 
   return <ReviewHomeStudio
     authenticated={Boolean(user)}
-    completedLessons={summary.completedLessons}
-    vocabulary={user ? personalizedReviewWords : demoReviewWords}
+    dailySession={dailySession}
+    vocabulary={reviewWords}
   />;
 }

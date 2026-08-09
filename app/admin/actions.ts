@@ -2,7 +2,9 @@
 
 import { revalidatePath, revalidateTag } from "next/cache.js";
 import { redirect } from "next/navigation";
-import { requireAdminUser } from "@/lib/admin-auth";
+import { requireAdminUser, requirePracticeStaffUser } from "@/lib/admin-auth";
+import { updateUserRole } from "@/lib/admin-user-service";
+import type { UserRole } from "@/lib/auth-service";
 import {
   createCourse,
   createLesson,
@@ -23,11 +25,34 @@ import {
   type VocabularyInput,
 } from "@/lib/admin-content-service";
 import {
+  createPracticeExercise,
+  createPracticeIndustry,
+  createPracticeScenario,
+  claimPracticeReview,
+  deletePracticeExercise,
+  deletePracticeIndustry,
+  deletePracticeScenario,
+  releasePracticeReview,
+  reviewPracticeExerciseAudio,
+  restorePracticeScenarioVersion,
+  updatePracticeExercise,
+  updatePracticeIndustry,
+  updatePracticeReviewAssignment,
+  updatePracticeScenario,
+  transitionPracticeScenarioStatus,
+  type PracticeExerciseInput,
+  type PracticeIndustryInput,
+  type PracticeScenarioInput,
+} from "@/lib/admin-practice-service";
+import { parsePracticeReviewDueDate, parsePracticeReviewPriority } from "@/lib/practice-review-queue";
+import { parsePracticeAudioReviewIssues, parsePracticeAudioReviewStatus } from "@/lib/practice-audio-review";
+import {
   isUuid,
   normalizeSlug,
   parseBoolean,
   parseContentStatus,
   parseLessonContent,
+  parseStringLines,
   parseTags,
   valueInteger,
   valueString,
@@ -37,6 +62,8 @@ function resultRedirect(result: MutationResult, successPath: string, errorPath: 
   if (!result.ok) redirect(`${errorPath}?error=${result.error}`);
   revalidatePath("/admin");
   revalidatePath("/courses");
+  revalidatePath("/practice");
+  revalidatePath("/admin/practice");
   revalidateTag("published-content", "max");
   redirect(`${successPath}?success=${success}`);
 }
@@ -132,8 +159,96 @@ function vocabularyInput(formData: FormData): VocabularyInput | null {
   };
 }
 
+function practiceIndustryInput(formData: FormData): PracticeIndustryInput | null {
+  const label = valueString(formData, "label", 120);
+  const slug = normalizeSlug(valueString(formData, "slug", 80), label);
+  const description = valueString(formData, "description", 4_000);
+  if (!label || !slug || !description) return null;
+  return {
+    slug,
+    label,
+    description,
+    imageUrl: valueString(formData, "imageUrl", 2_000),
+    status: parseContentStatus(valueString(formData, "status", 20)),
+    sortOrder: valueInteger(formData, "sortOrder", 0, 0, 10_000),
+  };
+}
+
+function practiceScenarioInput(formData: FormData): PracticeScenarioInput | null {
+  const industryId = valueString(formData, "industryId", 40);
+  const title = valueString(formData, "title", 180);
+  const slug = normalizeSlug(valueString(formData, "slug", 120), title);
+  const brief = valueString(formData, "brief", 4_000);
+  const context = valueString(formData, "context", 4_000);
+  const level = valueString(formData, "level", 40);
+  const sentenceZh = valueString(formData, "sentenceZh", 4_000);
+  const pinyin = valueString(formData, "pinyin", 4_000);
+  const translation = valueString(formData, "translation", 4_000);
+  const focus = parseTags(valueString(formData, "focus", 2_000));
+  if (!isUuid(industryId) || !title || !slug || !brief || !context || !level || !sentenceZh || !pinyin || !translation || focus.length === 0) return null;
+  return {
+    industryId,
+    slug,
+    title,
+    brief,
+    context,
+    durationMinutes: valueInteger(formData, "durationMinutes", 7, 1, 180),
+    level,
+    isFree: parseBoolean(formData, "isFree"),
+    sentenceZh,
+    pinyin,
+    translation,
+    focus,
+    status: parseContentStatus(valueString(formData, "status", 20)),
+    sortOrder: valueInteger(formData, "sortOrder", 0, 0, 10_000),
+    changeNote: valueString(formData, "changeNote", 500),
+  };
+}
+
+function practiceExerciseInput(formData: FormData): PracticeExerciseInput | null {
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const audioAssetIdValue = valueString(formData, "audioAssetId", 40);
+  const eyebrow = valueString(formData, "eyebrow", 160);
+  const prompt = valueString(formData, "prompt", 4_000);
+  const listeningText = valueString(formData, "listeningText", 4_000);
+  const explanation = valueString(formData, "explanation", 4_000);
+  const slug = normalizeSlug(valueString(formData, "slug", 120), eyebrow || prompt);
+  const options = parseStringLines(valueString(formData, "options", 16_000), 8);
+  const audioUrl = valueString(formData, "audioUrl", 2_000);
+  const answerNumber = Number(valueString(formData, "correctOption", 10));
+  if (!isUuid(scenarioId) || (audioAssetIdValue && !isUuid(audioAssetIdValue)) || !slug || !eyebrow || !prompt || !listeningText || !explanation || !options || options.length < 2
+    || (audioUrl && !audioUrl.startsWith("/") && !/^https?:\/\//iu.test(audioUrl))
+    || !Number.isInteger(answerNumber) || answerNumber < 1 || answerNumber > options.length) return null;
+  return {
+    scenarioId,
+    audioAssetId: audioAssetIdValue || null,
+    slug,
+    eyebrow,
+    prompt,
+    chinese: valueString(formData, "chinese", 4_000),
+    listeningText,
+    isStatementCorrect: parseBoolean(formData, "isStatementCorrect"),
+    audioUrl,
+    options,
+    correctOption: answerNumber - 1,
+    explanation,
+    sortOrder: valueInteger(formData, "sortOrder", 0, 0, 10_000),
+    changeNote: valueString(formData, "changeNote", 500),
+  };
+}
+
 function confirmedDelete(formData: FormData): boolean {
   return valueString(formData, "confirmDelete", 20) === "DELETE";
+}
+
+export async function updateUserRoleAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const userId = valueString(formData, "userId", 40);
+  const roleValue = valueString(formData, "role", 20);
+  const role = (["learner", "editor", "reviewer", "admin"] as UserRole[]).find((item) => item === roleValue);
+  if (!isUuid(userId) || !role) invalid("/admin/team");
+  const result = await updateUserRole(userId, role, admin.id);
+  resultRedirect(result, "/admin/team", "/admin/team", "role_updated");
 }
 
 export async function createCourseAction(formData: FormData) {
@@ -238,4 +353,173 @@ export async function deleteVocabularyAction(formData: FormData) {
   if (!isUuid(vocabularyId) || !confirmedDelete(formData)) invalid(isUuid(vocabularyId) ? `/admin/vocabulary/${vocabularyId}` : "/admin/vocabulary");
   const result = await deleteVocabulary(vocabularyId, admin.id);
   resultRedirect(result, "/admin/vocabulary", `/admin/vocabulary/${vocabularyId}`, "deleted");
+}
+
+export async function createPracticeIndustryAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const input = practiceIndustryInput(formData);
+  if (!input) invalid("/admin/practice");
+  const result = await createPracticeIndustry(input, admin.id);
+  resultRedirect(result, result.ok ? `/admin/practice/industries/${result.id}` : "/admin/practice", "/admin/practice", "created");
+}
+
+export async function updatePracticeIndustryAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const industryId = valueString(formData, "industryId", 40);
+  const input = practiceIndustryInput(formData);
+  if (!isUuid(industryId) || !input) invalid(isUuid(industryId) ? `/admin/practice/industries/${industryId}` : "/admin/practice");
+  const result = await updatePracticeIndustry(industryId, input, admin.id);
+  resultRedirect(result, `/admin/practice/industries/${industryId}`, `/admin/practice/industries/${industryId}`);
+}
+
+export async function deletePracticeIndustryAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const industryId = valueString(formData, "industryId", 40);
+  if (!isUuid(industryId) || !confirmedDelete(formData)) invalid(isUuid(industryId) ? `/admin/practice/industries/${industryId}` : "/admin/practice");
+  const result = await deletePracticeIndustry(industryId, admin.id);
+  resultRedirect(result, "/admin/practice", `/admin/practice/industries/${industryId}`, "deleted");
+}
+
+export async function createPracticeScenarioAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const input = practiceScenarioInput(formData);
+  const errorPath = input?.industryId ? `/admin/practice/industries/${input.industryId}` : "/admin/practice";
+  if (!input) invalid(errorPath);
+  const result = await createPracticeScenario(input, { id: staff.id, role: staff.role });
+  resultRedirect(result, result.ok ? `/admin/practice/scenarios/${result.id}` : errorPath, errorPath, "created");
+}
+
+export async function updatePracticeScenarioAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const input = practiceScenarioInput(formData);
+  if (!isUuid(scenarioId) || !input) invalid(isUuid(scenarioId) ? `/admin/practice/scenarios/${scenarioId}` : "/admin/practice");
+  const result = await updatePracticeScenario(scenarioId, input, { id: staff.id, role: staff.role });
+  resultRedirect(result, `/admin/practice/scenarios/${scenarioId}`, `/admin/practice/scenarios/${scenarioId}`);
+}
+
+export async function deletePracticeScenarioAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const industryId = valueString(formData, "industryId", 40);
+  if (!isUuid(scenarioId) || !isUuid(industryId) || !confirmedDelete(formData)) invalid(isUuid(scenarioId) ? `/admin/practice/scenarios/${scenarioId}` : "/admin/practice");
+  const result = await deletePracticeScenario(scenarioId, { id: staff.id, role: staff.role });
+  resultRedirect(result, `/admin/practice/industries/${industryId}`, `/admin/practice/scenarios/${scenarioId}`, "deleted");
+}
+
+export async function createPracticeExerciseAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const input = practiceExerciseInput(formData);
+  const errorPath = input?.scenarioId ? `/admin/practice/scenarios/${input.scenarioId}` : "/admin/practice";
+  if (!input) invalid(errorPath);
+  const result = await createPracticeExercise(input, { id: staff.id, role: staff.role });
+  resultRedirect(result, errorPath, errorPath, "created");
+}
+
+export async function updatePracticeExerciseAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const exerciseId = valueString(formData, "exerciseId", 40);
+  const input = practiceExerciseInput(formData);
+  const errorPath = input?.scenarioId ? `/admin/practice/scenarios/${input.scenarioId}` : "/admin/practice";
+  if (!isUuid(exerciseId) || !input) invalid(errorPath);
+  const result = await updatePracticeExercise(exerciseId, input, { id: staff.id, role: staff.role });
+  resultRedirect(result, errorPath, errorPath);
+}
+
+export async function deletePracticeExerciseAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const exerciseId = valueString(formData, "exerciseId", 40);
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  if (!isUuid(exerciseId) || !isUuid(scenarioId) || !confirmedDelete(formData)) invalid(isUuid(scenarioId) ? `/admin/practice/scenarios/${scenarioId}` : "/admin/practice");
+  const result = await deletePracticeExercise(exerciseId, { id: staff.id, role: staff.role });
+  resultRedirect(result, `/admin/practice/scenarios/${scenarioId}`, `/admin/practice/scenarios/${scenarioId}`, "deleted");
+}
+
+export async function reviewPracticeExerciseAudioAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const exerciseId = valueString(formData, "exerciseId", 40);
+  const audioAssetId = valueString(formData, "audioAssetId", 40);
+  const status = parsePracticeAudioReviewStatus(valueString(formData, "audioReviewStatus", 20));
+  const issues = parsePracticeAudioReviewIssues(formData.getAll("audioReviewIssues").filter((value): value is string => typeof value === "string"));
+  const notes = valueString(formData, "audioReviewNotes", 1_000);
+  const returnPath = isUuid(scenarioId) ? `/admin/practice/scenarios/${scenarioId}` : "/admin/practice";
+  if (!isUuid(scenarioId) || !isUuid(exerciseId) || !isUuid(audioAssetId) || !status || status === "pending") invalid(returnPath);
+  const result = await reviewPracticeExerciseAudio({ exerciseId, audioAssetId, status, issues, notes }, { id: staff.id, role: staff.role });
+  resultRedirect(result, returnPath, returnPath, "audio_reviewed");
+}
+
+function practiceReviewReturnPath(formData: FormData, scenarioId: string): string {
+  return valueString(formData, "returnPath", 20) === "queue"
+    ? "/admin/practice"
+    : `/admin/practice/scenarios/${scenarioId}`;
+}
+
+export async function assignPracticeReviewAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const reviewerIdValue = valueString(formData, "reviewerId", 40);
+  const priority = parsePracticeReviewPriority(valueString(formData, "reviewPriority", 16));
+  const dueDateValue = valueString(formData, "reviewDueDate", 10);
+  const dueAt = dueDateValue ? parsePracticeReviewDueDate(dueDateValue) : null;
+  const returnPath = isUuid(scenarioId) ? practiceReviewReturnPath(formData, scenarioId) : "/admin/practice";
+  if (!isUuid(scenarioId) || (reviewerIdValue && !isUuid(reviewerIdValue)) || !priority || (dueDateValue && !dueAt)) invalid(returnPath);
+  const result = await updatePracticeReviewAssignment({
+    scenarioId,
+    reviewerId: reviewerIdValue || null,
+    priority,
+    dueAt,
+  }, { id: admin.id, role: "admin" });
+  resultRedirect(result, returnPath, returnPath, "review_assigned");
+}
+
+export async function claimPracticeReviewAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const returnPath = isUuid(scenarioId) ? practiceReviewReturnPath(formData, scenarioId) : "/admin/practice";
+  if (!isUuid(scenarioId)) invalid(returnPath);
+  const result = await claimPracticeReview(scenarioId, { id: staff.id, role: staff.role });
+  resultRedirect(result, returnPath, returnPath, "review_claimed");
+}
+
+export async function releasePracticeReviewAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const returnPath = isUuid(scenarioId) ? practiceReviewReturnPath(formData, scenarioId) : "/admin/practice";
+  if (!isUuid(scenarioId)) invalid(returnPath);
+  const result = await releasePracticeReview(scenarioId, { id: staff.id, role: staff.role });
+  resultRedirect(result, returnPath, returnPath, "review_released");
+}
+
+export async function transitionPracticeScenarioAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const targetValue = valueString(formData, "targetStatus", 20);
+  const targetStatus = (["draft", "review", "published", "archived"] as const).find((status) => status === targetValue);
+  const changeNote = valueString(formData, "changeNote", 500);
+  if (!isUuid(scenarioId) || !targetStatus || !changeNote) invalid(isUuid(scenarioId) ? `/admin/practice/scenarios/${scenarioId}` : "/admin/practice");
+  const result = await transitionPracticeScenarioStatus(
+    scenarioId,
+    targetStatus,
+    changeNote,
+    { id: staff.id, role: staff.role },
+  );
+  resultRedirect(result, `/admin/practice/scenarios/${scenarioId}`, `/admin/practice/scenarios/${scenarioId}`, "transitioned");
+}
+
+export async function restorePracticeScenarioVersionAction(formData: FormData) {
+  const staff = await requirePracticeStaffUser();
+  const scenarioId = valueString(formData, "scenarioId", 40);
+  const versionId = valueString(formData, "versionId", 40);
+  const changeNote = valueString(formData, "changeNote", 500);
+  if (!isUuid(scenarioId) || !isUuid(versionId) || !changeNote || !confirmedDelete(formData)) {
+    invalid(isUuid(scenarioId) ? `/admin/practice/scenarios/${scenarioId}` : "/admin/practice");
+  }
+  const result = await restorePracticeScenarioVersion(
+    scenarioId,
+    versionId,
+    changeNote,
+    { id: staff.id, role: staff.role },
+  );
+  resultRedirect(result, `/admin/practice/scenarios/${scenarioId}`, `/admin/practice/scenarios/${scenarioId}`, "version_restored");
 }

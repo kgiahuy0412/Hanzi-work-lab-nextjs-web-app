@@ -1,11 +1,13 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import {
   ArrowLeft,
   ArrowRight,
   BriefcaseBusiness,
+  CalendarDays,
   Check,
   CheckCircle2,
   ChevronRight,
@@ -27,9 +29,10 @@ import {
   Warehouse,
   X,
 } from "lucide-react";
-import { LearnerPageHeader } from "@/components/learner-page-header";
 import { PracticeBoard } from "@/components/practice-board";
+import type { PracticeProgressSnapshot } from "@/lib/activity-progress";
 import type { Vocabulary } from "@/lib/content-types";
+import { withDailySessionFlow, type DailyRecommendation } from "@/lib/daily-session";
 import type {
   PracticeExercise,
   PracticeIndustry,
@@ -40,8 +43,9 @@ import { getPracticeListeningStatement } from "@/lib/practice-content";
 import type { WeeklyChallenge } from "@/lib/weekly-challenges";
 
 const COMPLETED_STORAGE_KEY = "hanziwork.practice.completed.v1";
+const EMPTY_EXERCISES: PracticeExercise[] = [];
 
-const industryIcons = {
+const industryIcons: Record<string, typeof BriefcaseBusiness> = {
   office: BriefcaseBusiness,
   factory: Factory,
   logistics: Warehouse,
@@ -49,10 +53,28 @@ const industryIcons = {
   restaurant: UtensilsCrossed,
   ecommerce: Store,
   core: MessagesSquare,
-} satisfies Record<PracticeIndustryId, typeof BriefcaseBusiness>;
+};
+
+const industryPhotos: Record<string, string> = {
+  office: "/assets/practice/office-progress-meeting.webp",
+  factory: "/assets/courses/factory-production.webp",
+  logistics: "/assets/courses/warehouse-logistics.webp",
+  sales: "/assets/courses/sales-customer-care.webp",
+  restaurant: "/assets/courses/restaurant-service.webp",
+  ecommerce: "/assets/courses/ecommerce-operations.webp",
+  core: "/assets/courses/workplace-communication.webp",
+};
 
 type HubMode = "catalog" | "session" | "complete" | "review";
 type ListeningPhase = "idle" | "playing" | "ready";
+type SaveState = "idle" | "saving" | "saved" | "error";
+
+function formatAudioDuration(seconds: number | null): string {
+  if (seconds === null) return "--:--";
+  const safeSeconds = Math.max(0, Math.round(seconds));
+  const minutes = Math.floor(safeSeconds / 60);
+  return `${minutes}:${String(safeSeconds % 60).padStart(2, "0")}`;
+}
 
 function readCompletedScenarios(): string[] {
   try {
@@ -69,34 +91,53 @@ export function WorkPracticeHub({
   scenarios,
   vocabulary,
   authenticated,
+  dailyFlow,
+  dailyNextStep,
+  initialProgress,
+  initialScenarioId,
   hasVip,
+  todayLabel,
   weeklyChallenge,
 }: {
   industries: PracticeIndustry[];
   scenarios: PracticeScenarioDto[];
   vocabulary: Vocabulary[];
   authenticated: boolean;
+  dailyFlow: boolean;
+  dailyNextStep: DailyRecommendation | null;
+  initialProgress: PracticeProgressSnapshot;
+  initialScenarioId: string | null;
   hasVip: boolean;
+  todayLabel: string;
   weeklyChallenge: WeeklyChallenge;
 }) {
-  const [activeIndustry, setActiveIndustry] = useState<PracticeIndustryId>(industries[0]?.id ?? "office");
-  const [selectedScenarioId, setSelectedScenarioId] = useState(scenarios[0]?.id ?? "");
+  const initialScenario = scenarios.find((scenario) => scenario.id === initialScenarioId) ?? scenarios[0];
+  const [activeIndustry, setActiveIndustry] = useState<PracticeIndustryId>(initialScenario?.industry ?? industries[0]?.id ?? "office");
+  const [selectedScenarioId, setSelectedScenarioId] = useState(initialScenario?.id ?? "");
   const [mode, setMode] = useState<HubMode>("catalog");
   const [step, setStep] = useState(0);
   const [selectedAnswer, setSelectedAnswer] = useState<boolean | null>(null);
   const [listeningPhase, setListeningPhase] = useState<ListeningPhase>("idle");
   const [audioUnavailable, setAudioUnavailable] = useState(false);
   const [score, setScore] = useState(0);
-  const [completedScenarios, setCompletedScenarios] = useState<string[]>([]);
+  const [completedScenarios, setCompletedScenarios] = useState<string[]>(initialProgress.completedScenarioIds);
+  const [attemptCount, setAttemptCount] = useState(initialProgress.attemptCount);
+  const [saveState, setSaveState] = useState<SaveState>("idle");
+  const [audioDurationSeconds, setAudioDurationSeconds] = useState<number | null>(null);
+  const [audioSource, setAudioSource] = useState<"file" | "device" | null>(null);
   const [showUpgradeNote, setShowUpgradeNote] = useState(false);
+  const [previewPlaying, setPreviewPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const preloadAudioRef = useRef<HTMLAudioElement | null>(null);
   const playbackIdRef = useRef(0);
+  const playbackStartedAtRef = useRef(0);
   const sessionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
+    if (authenticated) return;
     const timer = window.setTimeout(() => setCompletedScenarios(readCompletedScenarios()), 0);
     return () => window.clearTimeout(timer);
-  }, []);
+  }, [authenticated]);
 
   const industryScenarios = useMemo(
     () => scenarios.filter((scenario) => scenario.industry === activeIndustry),
@@ -105,21 +146,48 @@ export function WorkPracticeHub({
   const selectedScenario = scenarios.find((scenario) => scenario.id === selectedScenarioId)
     ?? industryScenarios[0]
     ?? scenarios[0];
-  const exercises = selectedScenario?.exercises ?? [];
+  const exercises = selectedScenario?.exercises ?? EMPTY_EXERCISES;
   const exercise = exercises[step];
   const listeningStatement = exercise && selectedScenario
     ? getPracticeListeningStatement(exercise, selectedScenario)
     : null;
   const currentIndustry = industries.find((industry) => industry.id === activeIndustry);
+  const currentIndustryPhoto = currentIndustry?.imageUrl
+    ?? industryPhotos[activeIndustry]
+    ?? industryPhotos.core;
   const answerWasCorrect = selectedAnswer !== null
     && listeningStatement !== null
     && selectedAnswer === listeningStatement.isCorrect;
+  const dailyNextHref = dailyNextStep ? withDailySessionFlow(dailyNextStep.href) : "/games?session=today";
+  const dailyNextIsSummary = dailyNextStep?.href.includes("#today-summary") ?? false;
 
   useEffect(() => () => {
     playbackIdRef.current += 1;
     audioRef.current?.pause();
     if (typeof window !== "undefined") window.speechSynthesis?.cancel();
+    preloadAudioRef.current = null;
   }, []);
+
+  useEffect(() => {
+    if (mode !== "session") {
+      preloadAudioRef.current = null;
+      return;
+    }
+    const nextAudioUrl = exercises[step + 1]?.audioUrl;
+    if (!nextAudioUrl) {
+      preloadAudioRef.current = null;
+      return;
+    }
+    const preloadAudio = new Audio();
+    preloadAudio.preload = "auto";
+    preloadAudio.src = nextAudioUrl;
+    preloadAudio.load();
+    preloadAudioRef.current = preloadAudio;
+    return () => {
+      if (preloadAudioRef.current === preloadAudio) preloadAudioRef.current = null;
+      preloadAudio.removeAttribute("src");
+    };
+  }, [exercises, mode, step]);
 
   useEffect(() => {
     if (mode !== "session") return;
@@ -160,6 +228,7 @@ export function WorkPracticeHub({
 
   function stopCurrentAudio() {
     playbackIdRef.current += 1;
+    setPreviewPlaying(false);
     if (audioRef.current) {
       audioRef.current.pause();
       audioRef.current.currentTime = 0;
@@ -168,18 +237,45 @@ export function WorkPracticeHub({
     window.speechSynthesis?.cancel();
   }
 
+  function playScenarioPreview() {
+    stopCurrentAudio();
+    if (typeof window === "undefined" || !("speechSynthesis" in window) || !selectedScenario) {
+      setAudioUnavailable(true);
+      return;
+    }
+
+    const utterance = new SpeechSynthesisUtterance(selectedScenario.sentenceZh);
+    utterance.lang = "zh-CN";
+    utterance.rate = 0.82;
+    utterance.onend = () => setPreviewPlaying(false);
+    utterance.onerror = () => {
+      setPreviewPlaying(false);
+      setAudioUnavailable(true);
+    };
+    setAudioUnavailable(false);
+    setPreviewPlaying(true);
+    window.speechSynthesis.speak(utterance);
+  }
+
   function playExerciseAudio(targetExercise: PracticeExercise, slow = false) {
     stopCurrentAudio();
     const playbackId = playbackIdRef.current;
     const statement = getPracticeListeningStatement(targetExercise, selectedScenario);
     setAudioUnavailable(false);
+    setAudioDurationSeconds(null);
+    setAudioSource(null);
     setListeningPhase("playing");
+    playbackStartedAtRef.current = window.performance.now();
 
     const finishPlayback = () => {
-      if (playbackId === playbackIdRef.current) setListeningPhase("ready");
+      if (playbackId !== playbackIdRef.current) return;
+      const elapsedSeconds = (window.performance.now() - playbackStartedAtRef.current) / 1_000;
+      if (Number.isFinite(elapsedSeconds) && elapsedSeconds > 0) setAudioDurationSeconds(elapsedSeconds);
+      setListeningPhase("ready");
     };
 
     const speakWithDeviceVoice = () => {
+      if (playbackId !== playbackIdRef.current) return;
       if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
         setAudioUnavailable(true);
         finishPlayback();
@@ -187,6 +283,7 @@ export function WorkPracticeHub({
       }
 
       const utterance = new window.SpeechSynthesisUtterance(statement.text);
+      setAudioSource("device");
       const isChinese = /[㐀-鿿]/u.test(statement.text);
       utterance.lang = isChinese ? "zh-CN" : "vi-VN";
       utterance.rate = slow ? 0.72 : 0.9;
@@ -205,11 +302,25 @@ export function WorkPracticeHub({
 
     if (targetExercise.audioUrl) {
       const audio = new Audio(targetExercise.audioUrl);
+      let fallbackStarted = false;
       audioRef.current = audio;
+      audio.preload = "auto";
       audio.playbackRate = slow ? 0.78 : 1;
+      setAudioSource("file");
+      audio.onloadedmetadata = () => {
+        if (Number.isFinite(audio.duration)) setAudioDurationSeconds(audio.duration / audio.playbackRate);
+      };
       audio.onended = finishPlayback;
-      audio.onerror = speakWithDeviceVoice;
-      void audio.play().catch(speakWithDeviceVoice);
+      const fallbackToDeviceVoice = () => {
+        if (fallbackStarted || playbackId !== playbackIdRef.current) return;
+        fallbackStarted = true;
+        audio.pause();
+        audio.removeAttribute("src");
+        if (audioRef.current === audio) audioRef.current = null;
+        speakWithDeviceVoice();
+      };
+      audio.onerror = fallbackToDeviceVoice;
+      void audio.play().catch(fallbackToDeviceVoice);
       return;
     }
 
@@ -225,6 +336,7 @@ export function WorkPracticeHub({
     setStep(0);
     setScore(0);
     setSelectedAnswer(null);
+    setSaveState("idle");
     setShowUpgradeNote(false);
     playExerciseAudio(selectedScenario.exercises[0]);
     setMode("session");
@@ -236,14 +348,44 @@ export function WorkPracticeHub({
     if (answer === listeningStatement.isCorrect) setScore((value) => value + 1);
   }
 
+  function syncScenarioProgress() {
+    if (!selectedScenario || !authenticated) return;
+    setSaveState("saving");
+    void fetch("/api/progress/practice", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({
+          scenarioId: selectedScenario.id,
+          correctAnswers: score,
+          totalQuestions: exercises.length,
+        }),
+        keepalive: true,
+    }).then(async (response) => {
+      if (!response.ok) throw new Error("Practice attempt save failed");
+      const payload = await response.json() as { progress?: PracticeProgressSnapshot };
+      if (payload.progress) {
+        setCompletedScenarios(payload.progress.completedScenarioIds);
+        setAttemptCount(payload.progress.attemptCount);
+      }
+      setSaveState("saved");
+    }).catch(() => setSaveState("error"));
+  }
+
   function completeScenario() {
     if (!selectedScenario) return;
     const nextCompleted = Array.from(new Set([...completedScenarios, selectedScenario.id]));
     setCompletedScenarios(nextCompleted);
-    try {
-      window.localStorage.setItem(COMPLETED_STORAGE_KEY, JSON.stringify(nextCompleted));
-    } catch {
-      // The exercise remains usable when private browsing blocks local storage.
+    setAttemptCount((value) => value + 1);
+
+    if (authenticated) {
+      syncScenarioProgress();
+    } else {
+      try {
+        window.localStorage.setItem(COMPLETED_STORAGE_KEY, JSON.stringify(nextCompleted));
+      } catch {
+        // The exercise remains usable when private browsing blocks local storage.
+      }
+      setSaveState("saved");
     }
     setMode("complete");
   }
@@ -270,23 +412,28 @@ export function WorkPracticeHub({
   }
 
   return (
-    <div className={`work-practice-layout ${mode === "session" || mode === "complete" ? "is-focused" : ""}`}>
-      <section className="work-practice-main" aria-labelledby="practice-title">
-        {mode !== "session" && mode !== "complete" ? (
+    <div className={`work-practice-layout ${mode === "catalog" ? "is-catalog" : ""} ${mode === "review" ? "is-review" : ""} ${mode === "session" || mode === "complete" ? "is-focused" : ""}`.trim()}>
+      <section className="work-practice-main" aria-labelledby={mode === "catalog" ? "practice-title" : undefined}>
+        {mode === "catalog" ? (
           <>
-            <LearnerPageHeader
-              className="practice-page-intro"
-              description="Chọn một ca làm, nghe cách phản hồi và phán đoán như trong tình huống thật."
-              eyebrow="Phòng luyện công việc"
-              eyebrowIcon={BriefcaseBusiness}
-              meta={<><span><BriefcaseBusiness size={16} /><strong>{industries.length}</strong> nhóm ngành</span><span><Headphones size={16} />Nghe trước · Đúng/Sai</span></>}
-              title="Luyện tai trước khi vào ca."
-              titleId="practice-title"
-            />
+            <header className="practice-catalog-header">
+              <div>
+                <span>Kho ca làm</span>
+                <h1 id="practice-title">Luyện cách nói trước khi vào ca</h1>
+                <p>Chọn tình huống, nghe cách phản hồi và phán đoán như trong công việc thật.</p>
+              </div>
+              <div className="practice-catalog-today">
+                <CalendarDays size={18} />
+                <span>
+                  <strong>{todayLabel}</strong>
+                  <small>Một ca ngắn cũng là tiến bộ.</small>
+                </span>
+              </div>
+            </header>
 
             <div className="practice-industry-tabs" role="tablist" aria-label="Chọn ngành để luyện">
               {industries.map((industry) => {
-                const Icon = industryIcons[industry.id];
+                const Icon = industryIcons[industry.id] ?? BriefcaseBusiness;
                 const active = industry.id === activeIndustry;
                 return (
                   <button
@@ -324,15 +471,15 @@ export function WorkPracticeHub({
         {mode === "session" && selectedScenario && exercise && listeningStatement ? (
           <section
             aria-live="polite"
-            className="practice-case-card practice-session-card practice-listening-card"
+            className="practice-session-card practice-listening-card"
             ref={sessionRef}
             tabIndex={-1}
           >
             <div className="practice-session-topline">
-              <button className="practice-back-button" onClick={returnToCatalog} type="button">
-                <X size={17} /> Thoát ca
-              </button>
               <span>Lượt nghe {step + 1} / {exercises.length}</span>
+              <button aria-label="Thoát ca" className="practice-back-button" onClick={returnToCatalog} type="button">
+                <X size={17} />
+              </button>
             </div>
             <div
               aria-label={`Tiến độ ${step + 1} trên ${exercises.length}`}
@@ -345,34 +492,57 @@ export function WorkPracticeHub({
               <span style={{ width: `${((step + 1) / exercises.length) * 100}%` }} />
             </div>
 
-            <div className="listening-session-context">
-              <span>Tình huống đang luyện</span>
-              <p>{selectedScenario.context}</p>
-            </div>
+            <div className="practice-listening-layout">
+              <aside className="listening-session-context">
+                <span>Ca {String(step + 1).padStart(2, "0")}</span>
+                <h2>{selectedScenario.title}</h2>
+                <p>{selectedScenario.context}</p>
+              </aside>
 
-            <div className={`practice-audio-stage ${listeningPhase}`} role="status">
-              <span aria-hidden="true" className="practice-audio-orb">
-                <Headphones size={34} strokeWidth={1.8} />
-              </span>
-              <span className="practice-audio-state">
-                {listeningPhase === "playing" ? "Đang phát audio" : "Đã nghe xong"}
-              </span>
-              <h2>Nghe cách nhân viên phản hồi</h2>
-              <p>{listeningPhase === "playing" ? "Tập trung vào ý chính và thái độ của câu nói." : "Bây giờ hãy phán đoán câu vừa nghe, chưa cần nhớ từng chữ."}</p>
-              <div className="practice-audio-controls">
-                <button disabled={listeningPhase === "playing"} onClick={() => playExerciseAudio(exercise)} type="button">
-                  <Volume2 size={17} /> Nghe lại
+              <div className={`practice-audio-stage ${listeningPhase}`} role="status">
+                <h2>Nghe cách nhân viên phản hồi</h2>
+                <span className="practice-audio-state">
+                  {listeningPhase === "playing" ? "Đang phát audio" : "Đã nghe xong"}
+                </span>
+                <button
+                  aria-label={listeningPhase === "playing" ? "Audio đang phát" : "Nghe lại câu vừa rồi"}
+                  className="practice-audio-orb"
+                  disabled={listeningPhase === "playing"}
+                  onClick={() => playExerciseAudio(exercise)}
+                  type="button"
+                >
+                  {listeningPhase === "playing"
+                    ? <Headphones size={42} strokeWidth={1.8} />
+                    : <RotateCcw size={50} strokeWidth={1.7} />}
                 </button>
-                <button disabled={listeningPhase === "playing"} onClick={() => playExerciseAudio(exercise, true)} type="button">
-                  <Gauge size={17} /> Nghe chậm 0.8×
-                </button>
+                <span
+                  className="practice-audio-time"
+                  aria-label={audioDurationSeconds === null ? "Đang đo thời lượng audio" : `Thời lượng audio ${Math.round(audioDurationSeconds)} giây`}
+                >
+                  {audioDurationSeconds === null && listeningPhase === "playing"
+                    ? "Đang đo thời lượng"
+                    : `0:00 — ${formatAudioDuration(audioDurationSeconds)}`}
+                </span>
+                <div className="practice-audio-controls">
+                  <button disabled={listeningPhase === "playing"} onClick={() => playExerciseAudio(exercise)} type="button">
+                    <Volume2 size={17} /> Nghe lại
+                  </button>
+                  <button disabled={listeningPhase === "playing"} onClick={() => playExerciseAudio(exercise, true)} type="button">
+                    <Gauge size={17} /> Nghe chậm 0.8×
+                  </button>
+                </div>
+                <small className={audioUnavailable ? "is-warning" : ""}>
+                  {audioUnavailable
+                    ? "Thiết bị chưa phát được giọng đọc. Bản chép sẽ hiện sau khi bạn chọn."
+                    : audioSource === "device"
+                      ? "Đang dùng giọng đọc trên thiết bị. Bản chép sẽ mở sau khi trả lời."
+                      : "Bản chép lời sẽ mở sau khi trả lời."}
+                </small>
               </div>
-              {audioUnavailable ? <small>Thiết bị chưa phát được giọng đọc. Bản chép sẽ hiện sau khi bạn chọn.</small> : null}
             </div>
 
             {listeningPhase === "ready" ? (
               <div className="listening-answer-panel">
-                <span>Phán đoán sau khi nghe</span>
                 <h3>Câu vừa nghe có phù hợp với tình huống này không?</h3>
                 <div className="binary-answer-grid">
                   <button
@@ -425,7 +595,6 @@ export function WorkPracticeHub({
               </div>
             ) : null}
             <div className="practice-session-actions">
-              <span>Ca: {selectedScenario.title}</span>
               <button disabled={selectedAnswer === null} onClick={nextExercise} type="button">
                 {step === exercises.length - 1 ? "Xem kết quả" : "Lượt tiếp theo"} <ArrowRight size={17} />
               </button>
@@ -439,102 +608,120 @@ export function WorkPracticeHub({
             <span className="practice-hub-kicker">Đã nghe xong ca</span>
             <h2>{selectedScenario.title}</h2>
             <p>Bạn nghe và phán đoán đúng <strong>{score}/{exercises.length}</strong> lượt. Câu mẫu trọng tâm đã sẵn sàng để dùng khi gặp tình huống thật.</p>
+            <p className={`practice-sync-status is-${saveState}`} role="status">
+              {saveState === "saving" ? "Đang đồng bộ kết quả với tài khoản…"
+                : saveState === "saved" ? authenticated ? "Đã đồng bộ với tài khoản của bạn." : "Đã lưu kết quả trên thiết bị này."
+                  : saveState === "error" ? "Chưa thể đồng bộ. Kết quả vẫn được giữ trong phiên này."
+                    : "Kết quả của phiên vừa hoàn thành."}
+            </p>
             <div className="scenario-quote">
               <strong lang="zh">{selectedScenario.sentenceZh}</strong>
               <span>{selectedScenario.translation}</span>
             </div>
             <div className="scenario-complete-actions">
               <button onClick={startScenario} type="button"><RotateCcw size={17} /> Luyện lại ca này</button>
-              <button className="primary" onClick={returnToCatalog} type="button">Chọn ca khác <ArrowRight size={17} /></button>
+              {dailyFlow && dailyNextStep
+                ? saveState === "saving"
+                  ? <button className="primary" disabled type="button">Đang lưu kết quả…</button>
+                  : saveState === "error"
+                    ? <button className="primary" onClick={syncScenarioProgress} type="button"><RotateCcw size={17} /> Thử đồng bộ lại</button>
+                    : <Link className="primary" href={dailyNextHref} prefetch>
+                      {dailyNextIsSummary ? "Xem tổng kết 4/4" : "03/04 · Phản xạ 1 phút"} <ArrowRight size={17} />
+                    </Link>
+                : <button className="primary" onClick={returnToCatalog} type="button">Chọn ca khác <ArrowRight size={17} /></button>}
             </div>
           </section>
         ) : null}
 
         {mode === "catalog" && selectedScenario ? (
           <>
-            <article className={`practice-case-card ${selectedScenario.locked ? "is-locked" : ""}`}>
-              <div className="practice-case-meta">
-                <span><Clock3 size={15} /> {selectedScenario.durationMinutes} phút</span>
-                <span>{selectedScenario.level}</span>
-                <span className={selectedScenario.isFree ? "free" : "vip"}>
-                  {selectedScenario.isFree ? <PackageCheck size={14} /> : <Crown size={14} />}
-                  {selectedScenario.isFree ? "Mẫu miễn phí" : "Dành cho VIP"}
-                </span>
-              </div>
-              <div className="practice-case-title-row">
-                <div>
-                  <span>{currentIndustry?.label}</span>
-                  <h2>{selectedScenario.title}</h2>
-                  <p>{selectedScenario.brief}</p>
+            <article className={`practice-feature ${selectedScenario.locked ? "is-locked" : ""}`}>
+              <div className="practice-feature-copy">
+                <span className="practice-feature-kicker">Ca đề xuất <i /></span>
+                <h2>{selectedScenario.title}</h2>
+                <p className="practice-feature-brief">{selectedScenario.brief}</p>
+                <div className="practice-feature-meta">
+                  <span><Clock3 size={16} /> {selectedScenario.durationMinutes} phút</span>
+                  <span><Headphones size={16} /> Nghe trước · Đúng/Sai</span>
+                  <span className={selectedScenario.isFree ? "free" : "vip"}>
+                    {selectedScenario.isFree ? <PackageCheck size={15} /> : <Crown size={15} />}
+                    {selectedScenario.isFree ? "Miễn phí" : "VIP"}
+                  </span>
                 </div>
-                {selectedScenario.locked ? <span className="practice-lock-mark"><LockKeyhole size={20} /></span> : null}
-              </div>
-
-              <div className="practice-case-situation">
-                <span>Tình huống</span>
-                <p>{selectedScenario.context}</p>
-              </div>
-
-              <div className="practice-case-language">
-                <span>Câu nói trọng tâm</span>
-                <strong lang="zh">{selectedScenario.sentenceZh}</strong>
-                <p>{selectedScenario.pinyin}</p>
-                <small>{selectedScenario.translation}</small>
-              </div>
-
-              <div className="practice-case-focus" aria-label="Kỹ năng trong ca">
-                {selectedScenario.focus.map((item) => <span key={item}><Check size={14} /> {item}</span>)}
-              </div>
-
-              {showUpgradeNote && selectedScenario.locked ? (
-                <div className="practice-inline-upgrade" role="status">
-                  <Crown size={18} />
-                  <p><strong>Ca này thuộc kho VIP.</strong> Bạn vẫn xem được bối cảnh và câu mẫu; phần xử lý từng lượt sẽ mở sau khi nâng cấp.</p>
-                  <Link href="/vip">Xem quyền lợi</Link>
+                <div className="practice-feature-language">
+                  <strong lang="zh">{selectedScenario.sentenceZh}</strong>
+                  <p>{selectedScenario.pinyin}</p>
+                  <small>{selectedScenario.translation}</small>
                 </div>
-              ) : null}
 
-              <div className="practice-case-actions">
-                <button className="practice-start-button" onClick={startScenario} type="button">
-                  {selectedScenario.locked ? <LockKeyhole size={17} /> : <Play size={17} fill="currentColor" />}
-                  {selectedScenario.locked ? "Mở khóa ca này" : "Bắt đầu ca nghe"}
-                  <ArrowRight size={18} />
-                </button>
-                <span>{selectedScenario.exercises?.length ?? 3} lượt nghe · Đúng/Sai · Có giải thích</span>
+                {showUpgradeNote && selectedScenario.locked ? (
+                  <div className="practice-inline-upgrade" role="status">
+                    <Crown size={18} />
+                    <p><strong>Ca này thuộc kho VIP.</strong> Bạn vẫn xem được câu mẫu; phần luyện từng lượt sẽ mở sau khi nâng cấp.</p>
+                    <Link href="/vip">Xem quyền lợi</Link>
+                  </div>
+                ) : null}
+
+                <div className="practice-feature-actions">
+                  <button className="practice-start-button" onClick={startScenario} type="button">
+                    {selectedScenario.locked ? <LockKeyhole size={17} /> : <Play size={17} fill="currentColor" />}
+                    {selectedScenario.locked ? "Mở khóa ca này" : "Bắt đầu ca nghe"}
+                  </button>
+                  <button
+                    aria-pressed={previewPlaying}
+                    className="practice-preview-button"
+                    onClick={playScenarioPreview}
+                    type="button"
+                  >
+                    <Volume2 size={18} /> {previewPlaying ? "Đang phát câu ví dụ" : "Nghe câu ví dụ"}
+                  </button>
+                </div>
+                {audioUnavailable ? <small className="practice-preview-warning" role="status">Thiết bị chưa phát được giọng đọc.</small> : null}
+              </div>
+
+              <div className="practice-feature-media">
+                <Image
+                  alt={`Đồng nghiệp trao đổi trong bối cảnh ${currentIndustry?.label.toLocaleLowerCase("vi") ?? "công việc"}`}
+                  height={1067}
+                  priority
+                  sizes="(max-width: 720px) 100vw, 48vw"
+                  src={currentIndustryPhoto}
+                  unoptimized
+                  width={1600}
+                />
               </div>
             </article>
 
-            <section className="related-practice-cases" aria-labelledby="related-cases-title">
-              <div className="related-cases-heading">
-                <div>
-                  <span>Tiếp tục trong ngành</span>
-                  <h2 id="related-cases-title">Ca làm liên quan</h2>
-                </div>
-                <span>{industryScenarios.length} tình huống</span>
-              </div>
-              <div className="related-cases-list">
-                {industryScenarios.filter((scenario) => scenario.id !== selectedScenario.id).map((scenario) => (
+            <section className="practice-next-cases" aria-labelledby="related-cases-title">
+              <h2 id="related-cases-title">Ca tiếp theo</h2>
+              <div>
+                {industryScenarios.filter((scenario) => scenario.id !== selectedScenario.id).slice(0, 3).map((scenario, index) => (
                   <button key={scenario.id} onClick={() => chooseScenario(scenario)} type="button">
-                    <span className={`related-case-icon ${scenario.locked ? "locked" : ""}`}>
-                      {scenario.locked ? <LockKeyhole size={17} /> : <CheckCircle2 size={17} />}
-                    </span>
-                    <span className="related-case-copy">
-                      <strong>{scenario.title}</strong>
-                      <small>{scenario.durationMinutes} phút · {scenario.level}</small>
-                    </span>
-                    <span className={scenario.isFree ? "related-access free" : "related-access"}>
-                      {scenario.isFree ? "Miễn phí" : "VIP"}
+                    <span className="practice-next-index">{String(index + 2).padStart(2, "0")}</span>
+                    <strong>{scenario.title}</strong>
+                    <small>{scenario.brief}</small>
+                    <span className="practice-next-duration"><Clock3 size={15} /> {scenario.durationMinutes} phút</span>
+                    <span className={scenario.isFree ? "practice-next-access free" : "practice-next-access"}>
+                      {scenario.isFree ? "Miễn phí" : <><Crown size={15} /> VIP</>}
                     </span>
                     <ChevronRight size={18} />
                   </button>
                 ))}
               </div>
             </section>
+
+            <footer className="practice-catalog-footer">
+              <span><BriefcaseBusiness size={20} /><strong>{completedScenarios.length}</strong> ca đã luyện</span>
+              <button onClick={() => setMode("review")} type="button"><RotateCcw size={20} /><strong>{vocabulary.length}</strong> từ cần ôn</button>
+              {hasVip
+                ? <span className="practice-catalog-vip active"><CheckCircle2 size={18} /> Kho VIP đã mở</span>
+                : <Link className="practice-catalog-vip" href="/vip"><Crown size={19} /> Mở thêm ca VIP <ArrowRight size={18} /></Link>}
+            </footer>
           </>
         ) : null}
       </section>
 
-      {mode !== "session" && mode !== "complete" ? <aside className="work-practice-aside" aria-label="Tóm tắt luyện tập">
+      {mode === "review" ? <aside className="work-practice-aside" aria-label="Tóm tắt luyện tập">
         <section className="practice-progress-panel">
           <div className="practice-aside-title">
             <span>Nhịp luyện của bạn</span>
@@ -551,7 +738,7 @@ export function WorkPracticeHub({
               <ChevronRight size={17} />
             </button>
           </div>
-          <p>{authenticated ? "Lịch ôn từ được đồng bộ với tài khoản của bạn." : "Ca đã luyện được giữ trên thiết bị này. Đăng nhập để lưu lịch ôn từ."}</p>
+          <p>{authenticated ? `${attemptCount} lượt luyện và lịch ôn từ đang được đồng bộ với tài khoản của bạn.` : "Ca đã luyện được giữ trên thiết bị này. Đăng nhập để đồng bộ giữa các thiết bị."}</p>
         </section>
 
         <section className="practice-weekly-panel">

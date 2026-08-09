@@ -14,10 +14,14 @@
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:seed": "node --experimental-strip-types db/seed.ts",
+    "practice:audio:generate": "node --experimental-strip-types scripts/generate-practice-audio.ts",
+    "practice:audio:seed": "node --experimental-strip-types scripts/seed-practice-audio.ts",
+    "practice:audio:migrate-cloudinary": "node --experimental-strip-types scripts/migrate-practice-audio-cloudinary.ts",
     "admin:create": "node --experimental-strip-types scripts/create-admin.ts",
     "auth:cleanup": "node --experimental-strip-types scripts/cleanup-auth.ts"
   },
   "dependencies": {
+    "cloudinary": "^2.10.0",
     "drizzle-orm": "0.45.2",
     "lucide-react": "^1.28.0",
     "motion": "^12.43.0",

@@ -1,0 +1,2 @@
+ALTER TABLE "review_items" ADD COLUMN "last_reviewed_at" timestamp with time zone;--> statement-breakpoint
+CREATE INDEX "review_user_reviewed_idx" ON "review_items" USING btree ("user_id","last_reviewed_at");

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MailCheck } from "lucide-react";
+import { BrandMark } from "@/components/brand-logo";
 import { validateAuthToken } from "@/lib/auth-validation";
 
 export const metadata: Metadata = {
@@ -20,7 +21,7 @@ export default async function VerifyEmailPage({ searchParams }: { searchParams: 
   const token = params.token?.slice(0, 128) ?? "";
   const hasToken = validateAuthToken(token);
   return <main className="auth-page"><section className="auth-card">
-    <div className="auth-brand"><span className="brand-mark" lang="zh">汉</span><span>HanziWork</span></div>
+    <div className="auth-brand"><BrandMark priority /><span>HanziWork</span></div>
     <div className="auth-icon"><MailCheck size={24} /></div>
     <div className="auth-heading"><span>Bảo mật tài khoản</span><h1>{hasToken ? "Xác nhận email" : "Kiểm tra hộp thư"}</h1><p>{hasToken ? "Bấm xác nhận để kích hoạt tài khoản. Liên kết này chỉ dùng được một lần." : "HanziWork yêu cầu xác minh email trước khi tạo phiên đăng nhập."}</p></div>
     {params.error && errors[params.error] ? <p className="auth-error" role="alert">{errors[params.error]}</p> : null}

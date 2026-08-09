@@ -1,0 +1,1 @@
+ALTER TABLE "practice_attempts" ALTER COLUMN "industry" SET DATA TYPE varchar(80);

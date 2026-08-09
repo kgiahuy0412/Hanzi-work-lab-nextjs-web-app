@@ -4,19 +4,25 @@ import { useRef, useState, type KeyboardEvent as ReactKeyboardEvent } from "reac
 import Image from "next/image";
 import Link from "next/link";
 import { AnimatePresence, motion, type PanInfo, type Variants, useReducedMotion } from "motion/react";
-import { ArrowRight, BookOpen, Check, Clock3, RotateCcw, Volume2, X } from "lucide-react";
+import { ArrowRight, Award, BookOpen, Check, Clock3, Gamepad2, Headphones, RotateCcw, TimerReset, Volume2, X, Zap } from "lucide-react";
 import type { Vocabulary } from "@/lib/content-types";
+import type { DailySessionSnapshot, DailySessionStepId } from "@/lib/daily-session";
 
 type ReviewRating = "known" | "again" | "hard";
 type SwipeDirection = -1 | 0 | 1;
 
 type ReviewHomeStudioProps = {
   authenticated: boolean;
-  completedLessons: number;
+  dailySession: DailySessionSnapshot;
   vocabulary: Vocabulary[];
 };
 
-const weekDays = ["T2", "T3", "T4", "T5", "T6", "T7", "CN"];
+const dailyStepIcons = {
+  review: RotateCcw,
+  lesson: BookOpen,
+  practice: Headphones,
+  game: Gamepad2,
+} satisfies Record<DailySessionStepId, typeof BookOpen>;
 
 const cardMotionVariants: Variants = {
   enter: {
@@ -46,7 +52,7 @@ const cardMotionVariants: Variants = {
 
 export function ReviewHomeStudio({
   authenticated,
-  completedLessons,
+  dailySession,
   vocabulary,
 }: ReviewHomeStudioProps) {
   const [index, setIndex] = useState(0);
@@ -54,14 +60,36 @@ export function ReviewHomeStudio({
   const [cardVisible, setCardVisible] = useState(true);
   const [exitDirection, setExitDirection] = useState<SwipeDirection>(0);
   const [remembered, setRemembered] = useState(0);
+  const [reviewedInSession, setReviewedInSession] = useState(0);
   const [saveError, setSaveError] = useState(false);
+  const [phraseSpeaking, setPhraseSpeaking] = useState(false);
+  const [phraseAudioMessage, setPhraseAudioMessage] = useState("");
   const transitionLock = useRef(false);
   const reduceMotion = useReducedMotion();
 
   const finished = vocabulary.length > 0 && index >= vocabulary.length;
   const currentWord = vocabulary[index];
   const upcomingWords = vocabulary.slice(index + 1, index + 3);
-  const weeklyCount = Math.min(7, Math.max(0, completedLessons));
+  const effectiveReviewedToday = Math.min(
+    dailySession.reviewTarget,
+    dailySession.reviewedToday + reviewedInSession,
+  );
+  const sessionSteps = dailySession.steps.map((step) => step.id === "review" ? {
+    ...step,
+    completed: dailySession.reviewTarget === 0 || effectiveReviewedToday >= dailySession.reviewTarget,
+    title: dailySession.reviewTarget === 0
+      ? "Không có từ đến lịch"
+      : effectiveReviewedToday >= dailySession.reviewTarget
+        ? `Đã ôn ${dailySession.reviewTarget} từ`
+        : `${dailySession.reviewTarget - effectiveReviewedToday} từ đang chờ`,
+  } : step);
+  const completedSessionSteps = sessionSteps.filter((step) => step.completed).length;
+  const activeSessionStep = sessionSteps.find((step) => !step.completed);
+  const lessonStep = sessionSteps.find((step) => step.id === "lesson");
+  const sessionComplete = completedSessionSteps === dailySession.totalSteps;
+  const reviewTargetReachedThisVisit = reviewedInSession > 0
+    && Boolean(sessionSteps.find((step) => step.id === "review")?.completed);
+  const summaryReviewedWords = Math.max(dailySession.summary.reviewedWords, effectiveReviewedToday);
 
   function saveReview(word: Vocabulary, rating: ReviewRating) {
     if (!authenticated) return;
@@ -81,6 +109,7 @@ export function ReviewHomeStudio({
     transitionLock.current = true;
     setFeedback(rating);
     setSaveError(false);
+    setReviewedInSession((value) => value + 1);
     saveReview(currentWord, rating);
 
     if (reduceMotion) {
@@ -125,6 +154,31 @@ export function ReviewHomeStudio({
     void new Audio(currentWord.audioUrl).play();
   }
 
+  function playDailyPhrase() {
+    if (!("speechSynthesis" in window)) {
+      setPhraseAudioMessage("Trình duyệt này chưa hỗ trợ phát âm.");
+      return;
+    }
+
+    window.speechSynthesis.cancel();
+    const utterance = new SpeechSynthesisUtterance("我马上跟进");
+    utterance.lang = "zh-CN";
+    utterance.rate = .82;
+    utterance.onstart = () => {
+      setPhraseSpeaking(true);
+      setPhraseAudioMessage("Đang phát âm câu dùng ngay.");
+    };
+    utterance.onend = () => {
+      setPhraseSpeaking(false);
+      setPhraseAudioMessage("Đã phát âm xong.");
+    };
+    utterance.onerror = () => {
+      setPhraseSpeaking(false);
+      setPhraseAudioMessage("Chưa thể phát âm. Hãy thử lại.");
+    };
+    window.speechSynthesis.speak(utterance);
+  }
+
   function restart() {
     if (authenticated) {
       window.location.reload();
@@ -132,6 +186,7 @@ export function ReviewHomeStudio({
     }
     setIndex(0);
     setRemembered(0);
+    setReviewedInSession(0);
     setFeedback(null);
     setCardVisible(true);
     setExitDirection(0);
@@ -141,15 +196,72 @@ export function ReviewHomeStudio({
   return (
     <main className="learner-dashboard review-home-dashboard" onKeyDown={handleReviewKeyDown}>
       <div className="review-studio">
-        <header className="review-studio-heading">
-          <figure className="review-swipe-demo" role="img" aria-label="Minh họa thẻ từ HanziWork trượt sang phải rồi sang trái">
-            <Image className="review-swipe-demo-motion" src="/assets/review/swipe-review-demo.gif" alt="" aria-hidden="true" width={600} height={216} priority unoptimized />
-            <Image className="review-swipe-demo-static" src="/assets/review/swipe-review-demo.png" alt="" aria-hidden="true" width={600} height={216} priority unoptimized />
-          </figure>
-        </header>
+        <section className="today-session-strip" aria-labelledby="today-session-title">
+          <header className="today-session-intro">
+            <span><TimerReset size={16} /> Nhịp học gợi ý</span>
+            <h1 id="today-session-title">Phiên 10 phút hôm nay</h1>
+            <p>{sessionComplete
+              ? "Đã khép kín nhịp hôm nay. Nghỉ một chút cũng được."
+              : "Bốn bước ngắn để ôn, học và phản xạ mà không quá tải."}</p>
+            {!sessionComplete && activeSessionStep ? <Link className="today-session-resume" href={activeSessionStep.href} prefetch>
+              Tiếp tục từ {activeSessionStep.label.toLocaleLowerCase("vi-VN")} <ArrowRight size={16} />
+            </Link> : null}
+          </header>
+
+          {sessionComplete ? <section className="today-session-complete" id="today-summary" aria-live="polite">
+            <span className="today-session-complete-mark"><Award size={24} /></span>
+            <div className="today-session-complete-copy">
+              <small>4/4 · Phiên hôm nay đã xong</small>
+              <h2>10 phút đã khép lại.</h2>
+              <p>Một nhịp ngắn nhưng đủ cả ôn, học, nghe và phản xạ.</p>
+            </div>
+            <dl className="today-session-summary">
+              <div><dt>Ôn nhanh</dt><dd>{summaryReviewedWords} từ</dd></div>
+              <div><dt>Bài học</dt><dd>{dailySession.summary.lessonTitle ?? "Đã hoàn thành"}</dd></div>
+              <div><dt>Luyện ca</dt><dd>{dailySession.summary.practiceCorrect ?? 0}/{dailySession.summary.practiceTotal ?? 0} đúng</dd></div>
+              <div><dt>Phản xạ</dt><dd>{dailySession.summary.gameScore ?? 0} điểm · +{dailySession.summary.xpEarned} XP</dd></div>
+            </dl>
+            <Link className="today-session-extra" href={lessonStep?.href ?? "/courses"} prefetch>
+              Học tiếp nếu còn hứng <ArrowRight size={16} />
+            </Link>
+          </section> : <div className="today-session-plan">
+            <div className="today-session-progress-copy">
+              <span>{activeSessionStep ? `Bước tiếp: ${activeSessionStep.label}` : "Hoàn thành hôm nay"}</span>
+              <strong>{completedSessionSteps}/{dailySession.totalSteps} bước</strong>
+            </div>
+            <div
+              aria-label={`Đã hoàn thành ${completedSessionSteps} trên ${dailySession.totalSteps} bước`}
+              aria-valuemax={dailySession.totalSteps}
+              aria-valuemin={0}
+              aria-valuenow={completedSessionSteps}
+              className="today-session-progress"
+              role="progressbar"
+            >
+              <i style={{ width: `${completedSessionSteps / dailySession.totalSteps * 100}%` }} />
+            </div>
+            <ol className="today-session-steps">
+              {sessionSteps.map((step, stepIndex) => {
+                const StepIcon = dailyStepIcons[step.id];
+                const active = activeSessionStep?.id === step.id;
+                return <li className={step.completed ? "is-complete" : active ? "is-active" : ""} key={step.id}>
+                  <Link aria-current={active ? "step" : undefined} href={step.href} prefetch>
+                    <span className="today-session-step-number">
+                      {step.completed ? <Check size={15} /> : <StepIcon size={16} />}
+                    </span>
+                    <span className="today-session-step-copy">
+                      <b>{String(stepIndex + 1).padStart(2, "0")} · {step.label}</b>
+                      <small>{step.title}</small>
+                    </span>
+                    <em>{step.minutes}&prime;</em>
+                  </Link>
+                </li>;
+              })}
+            </ol>
+          </div>}
+        </section>
 
         <div className="review-studio-layout">
-          <section className="review-deck-stage" aria-label="Bộ thẻ ôn tập">
+          <section className="review-deck-stage" id="review-deck" aria-label="Bộ thẻ ôn tập">
             {currentWord ? (
               <div className="review-card-stack">
                 {upcomingWords.map((word, upcomingIndex) => (
@@ -215,23 +327,32 @@ export function ReviewHomeStudio({
             ) : (
               <div className="review-studio-empty">
                 <BookOpen size={30} />
-                <h1>Chưa có từ đến lịch ôn</h1>
+                <h2>Chưa có từ đến lịch ôn</h2>
                 <p>Học thêm một bài để tạo bộ từ và lịch ôn dành riêng cho bạn.</p>
                 <Link href="/courses">Khám phá lộ trình <ArrowRight size={17} /></Link>
               </div>
             )}
 
             {currentWord ? <p className="sr-only" id="review-card-instructions">Kéo thẻ sang phải khi nhớ, sang trái khi thấy khó; hoặc chọn một mức ghi nhớ ở cuối thẻ.</p> : null}
+            {reviewTargetReachedThisVisit && lessonStep && !finished ? <aside className="review-target-next" aria-live="polite">
+              <span><Check size={17} /></span>
+              <div><strong>Đủ phần ôn nhanh</strong><small>Bạn có thể tiếp tục hai thẻ còn lại hoặc sang bước học.</small></div>
+              <Link href={lessonStep.href} prefetch>Học tiếp 4 phút <ArrowRight size={16} /></Link>
+            </aside> : null}
             {saveError ? <p className="review-save-error" role="alert">Kết quả chưa được lưu. Bạn vẫn có thể tiếp tục và thử lại sau.</p> : null}
           </section>
 
           <aside className="review-studio-aside">
-            <section className="review-week-rhythm">
-              <div><span>Nhịp tuần này</span><small>{weeklyCount} / 7 ngày hoàn thành</small></div>
-              <div className="review-week-days">
-                {weekDays.map((day, dayIndex) => <span className={dayIndex < weeklyCount ? "done" : dayIndex === 5 ? "today" : ""} key={day}><b>{day}</b><i>{dayIndex < weeklyCount ? <Check size={13} /> : null}</i></span>)}
+            <section className="review-daily-phrase">
+              <div className="review-daily-phrase-heading"><span>Câu dùng ngay</span><i aria-hidden="true" /></div>
+              <strong lang="zh">我马上跟进。</strong>
+              <span className="review-daily-phrase-pinyin">wǒ mǎshàng gēnjìn</span>
+              <p>Tôi sẽ theo dõi ngay.</p>
+              <div className="review-daily-phrase-actions">
+                <button aria-label="Nghe phát âm câu 我马上跟进" aria-pressed={phraseSpeaking} className={phraseSpeaking ? "playing" : ""} onClick={playDailyPhrase} type="button"><Volume2 size={20} /></button>
+                <Link href="/practice">Luyện phản xạ <ArrowRight size={18} /></Link>
               </div>
-              <p>{weeklyCount >= 5 ? "Giữ đều là thói quen tốt!" : "Mỗi phiên ngắn đều giúp bạn tiến bộ."}</p>
+              <p aria-live="polite" className="sr-only">{phraseAudioMessage}</p>
             </section>
 
             {finished ? (
@@ -239,16 +360,24 @@ export function ReviewHomeStudio({
                 <span><Check size={22} /></span>
                 <h2>Hoàn thành lượt ôn</h2>
                 <p>Bạn nhớ chắc {remembered}/{vocabulary.length} từ trong phiên này.</p>
-                <button onClick={restart} type="button"><RotateCcw size={18} /> {authenticated ? "Tải lượt ôn mới" : "Ôn lại từ đầu"}</button>
+                <div className="review-complete-actions">
+                  <button onClick={restart} type="button"><RotateCcw size={18} /> {authenticated ? "Tải lượt ôn mới" : "Ôn lại từ đầu"}</button>
+                  {lessonStep ? <Link href={lessonStep.href} prefetch><Zap size={17} /> Học tiếp 4 phút <ArrowRight size={16} /></Link> : null}
+                </div>
               </section>
             ) : null}
 
-            <Link className="review-next-lesson" href="/learn/van-phong-hanh-chinh">
+            <Link className="review-next-lesson" href={lessonStep?.href ?? "/courses"}>
               <span>Tiếp theo</span>
-              <strong>Bài 05 — Theo dõi tiến độ công việc</strong>
-              <small><Clock3 size={14} /> 12 phút <BookOpen size={14} /> 6 mục học</small>
+              <strong>{lessonStep?.title ?? "Chọn bài học tiếp theo"}</strong>
+              <small><Clock3 size={14} /> 4 phút trong phiên <BookOpen size={14} /> Học tiếp</small>
               <ArrowRight size={19} />
             </Link>
+
+            <figure className="review-swipe-demo review-swipe-demo-below" role="img" aria-label="Minh họa thẻ từ HanziWork trượt sang phải rồi sang trái">
+              <Image className="review-swipe-demo-motion" src="/assets/review/swipe-review-demo.gif" alt="" aria-hidden="true" width={600} height={216} unoptimized />
+              <Image className="review-swipe-demo-static" src="/assets/review/swipe-review-demo.png" alt="" aria-hidden="true" width={600} height={216} unoptimized />
+            </figure>
           </aside>
         </div>
       </div>

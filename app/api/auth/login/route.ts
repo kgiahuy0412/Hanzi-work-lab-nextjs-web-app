@@ -6,6 +6,7 @@ import { createSession, sessionCookieName, sessionCookieOptions } from "@/lib/au
 import { sendAuthLink } from "@/lib/auth-workflows";
 import { normalizeEmail, safeReturnTo, validateEmail, validatePassword } from "@/lib/auth-validation";
 import { authRedirectUrl, formString, isSameOriginRequest } from "@/lib/request-security";
+import { isPracticeStaffRole } from "@/lib/practice-workflow";
 
 export async function POST(request: Request) {
   if (!isSameOriginRequest(request)) return NextResponse.json({ error: "Forbidden" }, { status: 403 });
@@ -31,7 +32,7 @@ export async function POST(request: Request) {
   }
 
   const user = await authenticateWithPassword(email, password);
-  if (!user || (mode === "admin" && user.role !== "admin")) {
+  if (!user || (mode === "admin" && !isPracticeStaffRole(user.role))) {
     await recordAuthEvent({ action: "auth.login.failed", request, identifier: email, userId: user?.id, metadata: { mode, reason: user ? "role" : "credentials" } });
     return NextResponse.redirect(authRedirectUrl(request, loginPath, { error: "invalid_credentials", returnTo }), 303);
   }
@@ -55,7 +56,8 @@ export async function POST(request: Request) {
     clearSuccessfulLoginLimit(request, email),
     recordAuthEvent({ action: "auth.login.succeeded", request, identifier: email, userId: user.id, metadata: { mode } }),
   ]);
-  const response = NextResponse.redirect(new URL(returnTo, request.url), 303);
+  const staffReturnTo = mode === "admin" && user.role !== "admin" && returnTo === "/admin" ? "/admin/practice" : returnTo;
+  const response = NextResponse.redirect(new URL(staffReturnTo, request.url), 303);
   response.cookies.set(sessionCookieName(), session.token, sessionCookieOptions(session.expiresAt));
   return response;
 }

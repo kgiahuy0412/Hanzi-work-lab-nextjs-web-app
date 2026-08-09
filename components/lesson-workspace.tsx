@@ -2,10 +2,11 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { CheckCircle2, ChevronDown, ChevronUp, Crown, LockKeyhole } from "lucide-react";
+import { ArrowRight, Award, CheckCircle2, ChevronDown, ChevronUp, Crown, Gamepad2, Headphones, LockKeyhole } from "lucide-react";
 import { LessonChallengePanel } from "@/components/lesson-challenge";
 import { LessonVocabularyDeck } from "@/components/lesson-vocabulary-deck";
 import type { Course, LessonAccess, LessonDetail, LessonProgressState, LessonSummary } from "@/lib/content-types";
+import { withDailySessionFlow, type DailyRecommendation } from "@/lib/daily-session";
 
 type LessonTab = "Từ vựng" | "Hội thoại" | "Ghi chú" | "Kiểm tra";
 const baseTabs: LessonTab[] = ["Từ vựng", "Hội thoại", "Ghi chú"];
@@ -17,6 +18,8 @@ export function LessonWorkspace({
   access,
   progress,
   authenticated,
+  dailyFlow,
+  dailyNextStep,
 }: {
   course: Course;
   lessons: LessonSummary[];
@@ -24,6 +27,8 @@ export function LessonWorkspace({
   access: LessonAccess;
   progress: LessonProgressState | null;
   authenticated: boolean;
+  dailyFlow: boolean;
+  dailyNextStep: DailyRecommendation | null;
 }) {
   const [tab, setTab] = useState<LessonTab>("Từ vựng");
   const [pendingLesson, setPendingLesson] = useState<string | null>(null);
@@ -44,7 +49,15 @@ export function LessonWorkspace({
   const completed = progress?.completionPercent === 100;
   const requiresChallengePass = Boolean(lesson.challenge) && !challengePassed;
   const viewerHasVip = access.source === "vip";
-  const returnTo = `/learn/${course.slug}?lesson=${lesson.slug}`;
+  const lessonHref = `/learn/${course.slug}?lesson=${lesson.slug}`;
+  const returnTo = dailyFlow ? withDailySessionFlow(lessonHref) : lessonHref;
+  const completionReturnTo = dailyFlow ? `${returnTo}#daily-next` : returnTo;
+  const dailyNextKind = dailyNextStep?.href.startsWith("/practice")
+    ? "practice"
+    : dailyNextStep?.href.startsWith("/games")
+      ? "game"
+      : "summary";
+  const DailyNextIcon = dailyNextKind === "practice" ? Headphones : dailyNextKind === "game" ? Gamepad2 : Award;
   const continueToDialogue = useCallback(() => setTab("Hội thoại"), []);
 
   useEffect(() => {
@@ -131,10 +144,29 @@ export function LessonWorkspace({
         <div className="lesson-complete-row">
           <div className="lesson-complete-message"><p>{completed ? "Tốt lắm! Tiến độ hoàn thành đã được lưu vào tài khoản." : authenticated ? "Lần mở bài đã được ghi nhận. Hoàn thành để cập nhật tiến độ." : "Bạn vẫn có thể học thử; hãy đăng nhập để lưu tiến độ."}</p></div>
           {completed ? <button className="button button-secondary" disabled type="button"><CheckCircle2 size={18} /> Đã hoàn thành</button> : authenticated ? <form action="/api/progress/lesson/complete" method="post">
-            <input name="courseSlug" type="hidden" value={course.slug} /><input name="lessonSlug" type="hidden" value={lesson.slug} /><input name="returnTo" type="hidden" value={returnTo} />
+            <input name="courseSlug" type="hidden" value={course.slug} /><input name="lessonSlug" type="hidden" value={lesson.slug} /><input name="returnTo" type="hidden" value={completionReturnTo} />
             <button className="button button-primary" disabled={requiresChallengePass} type="submit"><CheckCircle2 size={18} /> {requiresChallengePass ? "Hoàn thành kiểm tra trước" : "Hoàn thành bài"}</button>
           </form> : requiresChallengePass ? <button className="button button-primary" disabled type="button"><CheckCircle2 size={18} /> Hoàn thành kiểm tra trước</button> : <Link className="button button-primary" href={`/login?returnTo=${encodeURIComponent(returnTo)}`}><CheckCircle2 size={18} /> Đăng nhập để lưu</Link>}
         </div>
+        {completed && dailyFlow && dailyNextStep ? <section className="daily-flow-next-step" id="daily-next" aria-label="Bước tiếp theo trong phiên 10 phút">
+          <span className="daily-flow-next-mark"><CheckCircle2 size={20} /></span>
+          <div>
+            <small>02/04 · Bài học đã xong</small>
+            <strong>{dailyNextKind === "practice"
+              ? "Tiếp tục với một ca nghe 3 phút"
+              : dailyNextKind === "game"
+                ? "Bước còn lại: phản xạ 1 phút"
+                : "Bạn đã hoàn tất đủ bốn bước"}</strong>
+            <p>{dailyNextStep.title}</p>
+          </div>
+          <Link className="button button-primary" href={withDailySessionFlow(dailyNextStep.href)} prefetch>
+            <DailyNextIcon size={18} /> {dailyNextKind === "practice"
+              ? "Luyện ca tiếp theo"
+              : dailyNextKind === "game"
+                ? "Chơi lượt phản xạ"
+                : "Xem tổng kết 4/4"} <ArrowRight size={17} />
+          </Link>
+        </section> : null}
       </div>}
     </section>
   </div>;

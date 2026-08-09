@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { KeyRound, ShieldCheck, UserPlus } from "lucide-react";
+import { BrandMark } from "@/components/brand-logo";
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from "@/lib/auth-validation";
 
 type AuthMode = "login" | "register" | "admin";
@@ -7,7 +8,7 @@ type AuthMode = "login" | "register" | "admin";
 const errorMessages: Record<string, string> = {
   duplicate: "Email này đã được sử dụng.",
   email_in_use: "Email này đã được sử dụng. Hãy đăng nhập hoặc dùng email khác.",
-  invalid_credentials: "Email hoặc mật khẩu không đúng. Với trang quản trị, tài khoản cũng phải có quyền admin.",
+  invalid_credentials: "Email hoặc mật khẩu không đúng. Với Console, tài khoản cũng phải có quyền editor, reviewer hoặc admin.",
   invalid_email: "Địa chỉ email chưa đúng định dạng.",
   invalid_name: "Tên hiển thị cần từ 2 đến 120 ký tự.",
   invalid_password: `Mật khẩu cần từ ${MIN_PASSWORD_LENGTH} đến ${MAX_PASSWORD_LENGTH} ký tự.`,
@@ -24,16 +25,16 @@ export function AuthCard({ mode, error, returnTo }: { mode: AuthMode; error?: st
   const admin = mode === "admin";
   const title = registering ? "Tạo tài khoản học" : admin ? "Đăng nhập quản trị" : "Chào mừng bạn trở lại";
   const description = registering
-    ? "Tạo tài khoản learner để chuẩn bị lưu tiến độ và lịch ôn của riêng bạn."
+    ? "Tạo tài khoản để đồng bộ bài học, Luyện ca, trò chơi và lịch ôn trên các thiết bị của bạn."
     : admin
-      ? "Khu vực này dùng chung hệ thống tài khoản nhưng chỉ chấp nhận vai trò admin."
+      ? "Console dành cho biên tập viên, kiểm duyệt viên và quản trị viên đã được phân quyền."
       : "Đăng nhập để nhận đúng quyền VIP và tiếp tục hành trình học của bạn.";
   const Icon = registering ? UserPlus : admin ? ShieldCheck : KeyRound;
   const action = registering ? "/api/auth/register" : "/api/auth/login";
   const notice = error === "password_changed" || error === "password_reset";
 
   return <main className="auth-page"><section className={`auth-card ${admin ? "auth-card-admin" : ""}`}>
-    <div className="auth-brand"><span className="brand-mark" lang="zh">汉</span><span>HanziWork</span></div>
+    <div className="auth-brand"><BrandMark priority /><span>HanziWork</span></div>
     <div className="auth-icon"><Icon size={24} /></div>
     <div className="auth-heading"><span>{admin ? "HanziWork Console" : "Tài khoản HanziWork"}</span><h1>{title}</h1><p>{description}</p></div>
     {error && errorMessages[error] ? <p className={notice ? "auth-notice" : "auth-error"} role="status">{errorMessages[error]}</p> : null}
