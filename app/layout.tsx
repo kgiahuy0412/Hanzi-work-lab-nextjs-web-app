@@ -18,7 +18,11 @@ export const metadata: Metadata = {
 
 export default async function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   const user = await getCurrentUser();
-  const shellUser = user ? { displayName: user.displayName, role: user.role } : null;
+  const shellUser = user ? {
+    displayName: user.displayName,
+    role: user.role,
+    unreadNotificationCount: user.unreadNotificationCount,
+  } : null;
 
   return <html lang="vi" className={geist.variable}><body>
     <Suspense fallback={<SiteHeaderFallback />}><SiteHeader /></Suspense>

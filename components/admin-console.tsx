@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowLeft, BookOpenText, Check, Clock3, GitBranch, Headphones, Languages, LayoutDashboard, RotateCcw, UsersRound, X } from "lucide-react";
+import { ArrowLeft, BookOpenText, Check, Clock3, Crown, GitBranch, Headphones, Languages, LayoutDashboard, RotateCcw, UsersRound, X } from "lucide-react";
 import { PracticeAudioUploader } from "@/components/practice-audio-uploader";
 import type { ContentStatus } from "@/lib/admin-content-validation";
 import type { UserRole } from "@/lib/auth-service";
@@ -43,6 +43,11 @@ const errorMessages: Record<string, string> = {
   invalid_reviewer: "Người được chọn không còn là kiểm duyệt viên đang hoạt động.",
   review_assignment_forbidden: "Bạn không thể nhận hoặc thay đổi phân công của ca này.",
   review_assignment_required: "Hãy tự nhận ca này trước khi trả về Bản nháp hoặc duyệt xuất bản.",
+  vip_target_ineligible: "Chỉ có thể cấp VIP cho học viên đang hoạt động và đã xác minh email.",
+  vip_plan_inactive: "Gói VIP này không còn hoạt động.",
+  vip_not_active: "Tài khoản này không có quyền VIP đang hoạt động.",
+  vip_request_not_pending: "Yêu cầu này đã được xử lý hoặc đã bị hủy. Hãy tải lại hàng đợi.",
+  vip_request_ineligible: "Tài khoản hiện không đủ điều kiện gửi yêu cầu VIP.",
 };
 
 const successMessages: Record<string, string> = {
@@ -56,6 +61,10 @@ const successMessages: Record<string, string> = {
   review_assigned: "Đã cập nhật người phụ trách, ưu tiên và hạn duyệt.",
   review_claimed: "Bạn đã nhận ca này vào hàng đợi kiểm duyệt của mình.",
   review_released: "Đã trả ca về hàng đợi chưa phân công.",
+  vip_granted: "Đã cấp hoặc gia hạn VIP và ghi audit log.",
+  vip_revoked: "Đã thu hồi VIP và ghi audit log.",
+  vip_request_approved: "Đã duyệt yêu cầu, kích hoạt VIP và ghi audit log.",
+  vip_request_rejected: "Đã từ chối yêu cầu và lưu lý do vào audit log.",
 };
 
 const roleLabels: Record<UserRole, string> = {
@@ -86,6 +95,7 @@ export function AdminConsoleHeader({ title, eyebrow, description, userName, user
       {userRole === "admin" ? <Link href="/admin/courses"><BookOpenText size={16} /> Nội dung</Link> : null}
       {userRole === "admin" ? <Link href="/admin/vocabulary"><Languages size={16} /> Từ vựng</Link> : null}
       <Link href="/admin/practice"><Headphones size={16} /> Luyện ca</Link>
+      {userRole === "admin" ? <Link href="/admin/subscriptions"><Crown size={16} /> Thành viên VIP</Link> : null}
       {userRole === "admin" ? <Link href="/admin/team"><UsersRound size={16} /> Đội nội dung</Link> : null}
       <Link href="/account">Tài khoản</Link>
     </nav>

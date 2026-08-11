@@ -1,9 +1,9 @@
 import "server-only";
 import { cache } from "react";
-import { and, eq, gt, isNotNull } from "drizzle-orm";
+import { and, eq, gt, isNotNull, sql } from "drizzle-orm";
 import { cookies } from "next/headers";
 import { readDb, writeDb } from "../db/index.ts";
-import { authSessions, users } from "../db/schema.ts";
+import { authSessions, notifications, users } from "../db/schema.ts";
 import { createSessionToken, hashSessionToken } from "./auth-crypto.ts";
 import type { AuthenticatedUser } from "./auth-service.ts";
 
@@ -68,6 +68,12 @@ async function readCurrentUser(): Promise<AuthenticatedUser | null> {
       displayName: users.displayName,
       role: users.role,
       emailVerifiedAt: users.emailVerifiedAt,
+      unreadNotificationCount: sql<number>`(
+        select count(*)::int
+        from ${notifications}
+        where ${notifications.userId} = ${users.id}
+          and ${notifications.readAt} is null
+      )`,
     })
     .from(authSessions)
     .innerJoin(users, eq(authSessions.userId, users.id))
@@ -86,6 +92,7 @@ async function readCurrentUser(): Promise<AuthenticatedUser | null> {
     displayName: user.displayName ?? user.email,
     role: user.role,
     emailVerified: Boolean(user.emailVerifiedAt),
+    unreadNotificationCount: user.unreadNotificationCount,
   } : null;
 }
 

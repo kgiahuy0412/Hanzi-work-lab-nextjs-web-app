@@ -4,6 +4,8 @@ import { revalidatePath, revalidateTag } from "next/cache.js";
 import { redirect } from "next/navigation";
 import { requireAdminUser, requirePracticeStaffUser } from "@/lib/admin-auth";
 import { updateUserRole } from "@/lib/admin-user-service";
+import { grantOrExtendVipAccess, revokeVipAccess } from "@/lib/admin-subscription-service";
+import { approveVipActivationRequest, rejectVipActivationRequest } from "@/lib/vip-activation-request-service";
 import type { UserRole } from "@/lib/auth-service";
 import {
   createCourse,
@@ -64,6 +66,9 @@ function resultRedirect(result: MutationResult, successPath: string, errorPath: 
   revalidatePath("/courses");
   revalidatePath("/practice");
   revalidatePath("/admin/practice");
+  revalidatePath("/admin/subscriptions");
+  revalidatePath("/account");
+  revalidatePath("/vip");
   revalidateTag("published-content", "max");
   redirect(`${successPath}?success=${success}`);
 }
@@ -249,6 +254,42 @@ export async function updateUserRoleAction(formData: FormData) {
   if (!isUuid(userId) || !role) invalid("/admin/team");
   const result = await updateUserRole(userId, role, admin.id);
   resultRedirect(result, "/admin/team", "/admin/team", "role_updated");
+}
+
+export async function grantOrExtendVipAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const userId = valueString(formData, "userId", 40);
+  const planId = valueString(formData, "planId", 40);
+  if (!isUuid(userId) || !isUuid(planId)) invalid("/admin/subscriptions");
+  const result = await grantOrExtendVipAccess({ userId, planId }, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_granted");
+}
+
+export async function revokeVipAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const userId = valueString(formData, "userId", 40);
+  const confirmation = valueString(formData, "confirmRevoke", 20);
+  if (!isUuid(userId) || confirmation !== "REVOKE") invalid("/admin/subscriptions");
+  const result = await revokeVipAccess(userId, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_revoked");
+}
+
+export async function approveVipActivationRequestAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const requestId = valueString(formData, "requestId", 40);
+  const adminNote = valueString(formData, "adminNote", 500);
+  if (!isUuid(requestId)) invalid("/admin/subscriptions");
+  const result = await approveVipActivationRequest({ requestId, adminNote }, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_request_approved");
+}
+
+export async function rejectVipActivationRequestAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const requestId = valueString(formData, "requestId", 40);
+  const adminNote = valueString(formData, "adminNote", 500);
+  if (!isUuid(requestId) || !adminNote) invalid("/admin/subscriptions");
+  const result = await rejectVipActivationRequest({ requestId, adminNote }, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_request_rejected");
 }
 
 export async function createCourseAction(formData: FormData) {

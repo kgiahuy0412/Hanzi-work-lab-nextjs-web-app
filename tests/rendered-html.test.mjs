@@ -33,14 +33,184 @@ test("home page contains the HanziWork daily review studio", async () => {
 test("prototype includes learner, VIP and admin routes", async () => {
   const files = await Promise.all([read("app/courses/page.tsx"), read("app/vip/page.tsx"), read("app/admin/page.tsx")]);
   assert.match(files[0], /CourseExplorer/);
-  assert.match(files[1], /Mốc cần đạt trước khi nhận tiền/);
-  assert.match(files[1], /Trọn lộ trình Nhà máy/);
-  assert.match(files[1], /Trọn lộ trình Kho vận/);
-  assert.match(files[1], /Trọn lộ trình Bán hàng/);
-  assert.match(files[1], /Trọn lộ trình Nhà hàng/);
-  assert.match(files[1], /Trọn lộ trình Thương mại điện tử/);
-  assert.match(files[1], /Trọn lộ trình Giao tiếp cốt lõi/);
+  assert.match(files[1], /getVipUpgradeOverview/);
+  assert.match(files[1], /Gửi yêu cầu kích hoạt/);
+  assert.match(files[1], /beta thủ công và chưa thu tiền tự động/);
+  assert.match(files[1], /Từ yêu cầu đến lúc bắt đầu học/);
   assert.match(files[2], /Tổng quan vận hành/);
+});
+
+test("VIP activation requests stay single-pending and approve atomically", async () => {
+  const [schema, learnerActions, adminActions, requestService, adminPage, account] = await Promise.all([
+    read("db/schema.ts"),
+    read("app/vip/actions.ts"),
+    read("app/admin/actions.ts"),
+    read("lib/vip-activation-request-service.ts"),
+    read("app/admin/subscriptions/page.tsx"),
+    read("app/account/page.tsx"),
+  ]);
+  assert.match(schema, /vip_activation_request_status/);
+  assert.match(schema, /vip_activation_requests_user_pending_uq/);
+  assert.match(learnerActions, /requestVipActivationAction/);
+  assert.match(learnerActions, /cancelVipActivationRequestAction/);
+  assert.match(adminActions, /approveVipActivationRequestAction/);
+  assert.match(adminActions, /rejectVipActivationRequestAction/);
+  assert.match(requestService, /grantOrExtendVipAccessInTransaction/);
+  assert.match(requestService, /admin\.vip_activation_request\.approved/);
+  assert.match(requestService, /admin\.vip_activation_request\.rejected/);
+  assert.match(adminPage, /Hàng đợi kích hoạt/);
+  assert.match(account, /getPendingVipActivationRequest/);
+});
+
+test("in-app notifications are user-scoped, readable and linked to VIP decisions", async () => {
+  const [schema, service, actions, page, shell, authSession, vipService] = await Promise.all([
+    read("db/schema.ts"),
+    read("lib/notification-service.ts"),
+    read("app/notifications/actions.ts"),
+    read("app/notifications/page.tsx"),
+    read("components/learner-app-shell.tsx"),
+    read("lib/auth-session.ts"),
+    read("lib/vip-activation-request-service.ts"),
+  ]);
+  assert.match(schema, /notifications_user_type_entity_uq/);
+  assert.match(schema, /notifications_user_read_created_idx/);
+  assert.match(service, /eq\(notifications\.userId, userId\)/);
+  assert.match(service, /safeReturnTo\(notification\.href/);
+  assert.match(actions, /getCurrentUser/);
+  assert.match(actions, /markAllUserNotificationsRead/);
+  assert.match(page, /Hộp thư của bạn/);
+  assert.match(page, /openNotificationAction/);
+  assert.match(shell, /topbar-notification-count/);
+  assert.match(shell, /href=\{notificationsHref\}/);
+  assert.match(authSession, /unreadNotificationCount/);
+  assert.match(vipService, /vip_request_approved/);
+  assert.match(vipService, /vip_request_rejected/);
+});
+
+test("production start uses the Cloudflare runtime with an absolute local env file", async () => {
+  const [packageJsonSource, startScript, database] = await Promise.all([
+    read("package.json"),
+    read("scripts/start-production.ts"),
+    read("db/index.ts"),
+  ]);
+  const packageJson = JSON.parse(packageJsonSource);
+
+  assert.equal(
+    packageJson.scripts.start,
+    "node --experimental-strip-types scripts/start-production.ts",
+  );
+  assert.match(startScript, /node_modules", "wrangler", "bin", "wrangler\.js/);
+  assert.match(startScript, /"--config",\s*workerConfig/);
+  assert.match(startScript, /"--env-file",\s*environmentFile/);
+  assert.match(startScript, /resolve\(projectRoot, filename\)/);
+  assert.match(startScript, /process\.env\.PORT/);
+  assert.match(database, /replaceAll\(configuredUrl, "\[DATABASE_URL\]"\)/);
+  assert.match(database, /params: \[redacted\]/);
+});
+
+test("health endpoint checks PostgreSQL without exposing configuration details", async () => {
+  const route = await read("app/api/health/route.ts");
+
+  assert.match(route, /readDb/);
+  assert.match(route, /select 1 as ready/);
+  assert.match(route, /database: "ok"/);
+  assert.match(route, /database: "error"/);
+  assert.match(route, /status: 503/);
+  assert.match(route, /no-store/);
+  assert.doesNotMatch(route, /DATABASE_URL|error\.message|String\(error\)/);
+});
+
+test("staging deployment keeps secrets out of source and uses secure auth settings", async () => {
+  const [packageJsonSource, wrangler, secretScript] = await Promise.all([
+    read("package.json"),
+    read("wrangler.jsonc"),
+    read("scripts/configure-staging-secrets.ts"),
+  ]);
+  const packageJson = JSON.parse(packageJsonSource);
+
+  assert.equal(
+    packageJson.scripts["deploy:staging"],
+    "npm run build && wrangler deploy --name hanziwork-staging",
+  );
+  assert.match(packageJson.scripts.lint, /--ignore-pattern \.wrangler/);
+  assert.match(wrangler, /"name": "hanziwork-staging"/);
+  assert.match(wrangler, /"observability"/);
+  assert.match(secretScript, /AUTH_COOKIE_SECURE: "1"/);
+  assert.match(secretScript, /AUTH_TRUST_CF_CONNECTING_IP: "1"/);
+  assert.match(secretScript, /AUTH_TRUST_X_FORWARDED_FOR: "0"/);
+  assert.match(secretScript, /child\.stdin\.end\(JSON\.stringify\(secrets\)\)/);
+  assert.doesNotMatch(wrangler, /DATABASE_URL|AUTH_SECRET|CLOUDINARY_URL/);
+});
+
+test("staging verification covers auth, VIP, notifications, audio and fixture cleanup", async () => {
+  const [packageJsonSource, verification] = await Promise.all([
+    read("package.json"),
+    read("scripts/verify-staging.ts"),
+  ]);
+  const packageJson = JSON.parse(packageJsonSource);
+
+  assert.match(packageJson.scripts["verify:staging"], /scripts\/verify-staging\.ts/);
+  assert.match(verification, /\/api\/auth\/login/);
+  assert.match(verification, /\/api\/auth\/register/);
+  assert.match(verification, /vip_request_approved/);
+  assert.match(verification, /VIP đã được kích hoạt/);
+  assert.match(verification, /practice-audio/);
+  assert.match(verification, /cloudinary\.com/);
+  assert.match(verification, /finally \{/);
+  assert.match(verification, /qaUsersRemaining/);
+  assert.doesNotMatch(verification, /console\.log\([^)]*password|console\.log\([^)]*Cookie/);
+});
+
+test("password migration audit reports only aggregate algorithm counts", async () => {
+  const [packageJsonSource, auditScript] = await Promise.all([
+    read("package.json"),
+    read("scripts/audit-password-hashes.ts"),
+  ]);
+  const packageJson = JSON.parse(packageJsonSource);
+
+  assert.match(packageJson.scripts["auth:password-audit"], /audit-password-hashes\.ts/);
+  assert.match(auditScript, /split_part/);
+  assert.match(auditScript, /count\(\*\)::int/);
+  assert.match(auditScript, /role: users\.role/);
+  assert.doesNotMatch(auditScript, /users\.email|select\(\{[^}]*email/);
+});
+
+test("legacy password migration verifies the current password before rehashing", async () => {
+  const [packageJsonSource, migration] = await Promise.all([
+    read("package.json"),
+    read("scripts/migrate-account-password.ts"),
+  ]);
+  const packageJson = JSON.parse(packageJsonSource);
+
+  assert.match(packageJson.scripts["auth:password-migrate"], /migrate-account-password\.ts/);
+  assert.match(migration, /verifyPassword\(currentPassword, user\.passwordHash\)/);
+  assert.match(migration, /hashPassword\(currentPassword\)/);
+  assert.match(migration, /delete\(authSessions\)/);
+  assert.match(migration, /update\(authTokens\)/);
+  assert.doesNotMatch(migration, /console\.log\([^)]*currentPassword/);
+});
+
+test("admin can grant, extend and revoke VIP while learners see their live entitlement", async () => {
+  const [page, actions, service, account, access, consoleHeader] = await Promise.all([
+    read("app/admin/subscriptions/page.tsx"),
+    read("app/admin/actions.ts"),
+    read("lib/admin-subscription-service.ts"),
+    read("app/account/page.tsx"),
+    read("lib/lesson-access.ts"),
+    read("components/admin-console.tsx"),
+  ]);
+  assert.match(page, /Thành viên VIP/);
+  assert.match(page, /grantOrExtendVipAction/);
+  assert.match(page, /revokeVipAction/);
+  assert.match(actions, /requireAdminUser/);
+  assert.match(service, /for\("update"\)/);
+  assert.match(service, /admin\.subscription\.granted/);
+  assert.match(service, /admin\.subscription\.extended/);
+  assert.match(service, /admin\.subscription\.revoked/);
+  assert.match(account, /getActiveVipSubscription/);
+  assert.match(account, /Hiệu lực đến/);
+  assert.match(access, /getActiveVipSubscription/);
+  assert.match(consoleHeader, /href="\/admin\/subscriptions"/);
 });
 
 test("layout provides Vietnamese metadata", async () => {

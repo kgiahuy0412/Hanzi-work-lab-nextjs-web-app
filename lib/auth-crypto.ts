@@ -1,6 +1,9 @@
-const PASSWORD_ALGORITHM = "PBKDF2";
-const PASSWORD_DIGEST = "SHA-256";
-const PASSWORD_ITERATIONS = 600_000;
+import { pbkdf2 } from "node:crypto";
+
+const CURRENT_PASSWORD_ALGORITHM = "pbkdf2-sha256-v2";
+const LEGACY_PASSWORD_ALGORITHM = "pbkdf2-sha256";
+const PASSWORD_ITERATIONS = 100_000;
+const LEGACY_PASSWORD_MAX_ITERATIONS = 600_000;
 const PASSWORD_SALT_BYTES = 16;
 const PASSWORD_HASH_BYTES = 32;
 const SESSION_TOKEN_BYTES = 32;
@@ -29,37 +32,58 @@ function constantTimeEqual(left: Uint8Array, right: Uint8Array): boolean {
   return difference === 0;
 }
 
-async function derivePasswordHash(password: string, salt: Uint8Array, iterations: number): Promise<Uint8Array> {
+function authSecret(): string {
+  const configuredSecret = process.env.AUTH_SECRET;
+  if (!configuredSecret && process.env.NODE_ENV === "production") {
+    throw new Error("AUTH_SECRET chưa được cấu hình.");
+  }
+  return configuredSecret || "hanziwork-development-only-secret";
+}
+
+async function pepperPassword(password: string): Promise<Uint8Array> {
   const key = await crypto.subtle.importKey(
     "raw",
-    new TextEncoder().encode(password),
-    PASSWORD_ALGORITHM,
+    new TextEncoder().encode(authSecret()),
+    { name: "HMAC", hash: "SHA-256" },
     false,
-    ["deriveBits"],
+    ["sign"],
   );
-  const bits = await crypto.subtle.deriveBits(
-    { name: PASSWORD_ALGORITHM, hash: PASSWORD_DIGEST, salt: salt as BufferSource, iterations },
-    key,
-    PASSWORD_HASH_BYTES * 8,
-  );
-  return new Uint8Array(bits);
+  const digest = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(password));
+  return new Uint8Array(digest);
+}
+
+async function derivePasswordHash(password: string | Uint8Array, salt: Uint8Array, iterations: number): Promise<Uint8Array> {
+  return new Promise((resolve, reject) => {
+    pbkdf2(password, salt, iterations, PASSWORD_HASH_BYTES, "sha256", (error, derivedKey) => {
+      if (error) {
+        reject(error);
+        return;
+      }
+      resolve(new Uint8Array(derivedKey));
+    });
+  });
 }
 
 export async function hashPassword(password: string): Promise<string> {
   const salt = crypto.getRandomValues(new Uint8Array(PASSWORD_SALT_BYTES));
-  const hash = await derivePasswordHash(password, salt, PASSWORD_ITERATIONS);
-  return `pbkdf2-sha256$${PASSWORD_ITERATIONS}$${bytesToBase64Url(salt)}$${bytesToBase64Url(hash)}`;
+  const hash = await derivePasswordHash(await pepperPassword(password), salt, PASSWORD_ITERATIONS);
+  return `${CURRENT_PASSWORD_ALGORITHM}$${PASSWORD_ITERATIONS}$${bytesToBase64Url(salt)}$${bytesToBase64Url(hash)}`;
 }
 
 export async function verifyPassword(password: string, encodedHash: string): Promise<boolean> {
   const [algorithm, iterationsValue, saltValue, hashValue, extra] = encodedHash.split("$");
   const iterations = Number(iterationsValue);
-  if (algorithm !== "pbkdf2-sha256" || extra !== undefined || !Number.isSafeInteger(iterations) || iterations < 1) return false;
+  const isCurrent = algorithm === CURRENT_PASSWORD_ALGORITHM;
+  const isLegacy = algorithm === LEGACY_PASSWORD_ALGORITHM;
+  if ((!isCurrent && !isLegacy) || extra !== undefined || !Number.isSafeInteger(iterations) || iterations < 1) return false;
+  if (isCurrent && iterations !== PASSWORD_ITERATIONS) return false;
+  if (isLegacy && iterations > LEGACY_PASSWORD_MAX_ITERATIONS) return false;
 
   try {
     const salt = base64UrlToBytes(saltValue);
     const expected = base64UrlToBytes(hashValue);
-    const actual = await derivePasswordHash(password, salt, iterations);
+    const passwordMaterial = isCurrent ? await pepperPassword(password) : password;
+    const actual = await derivePasswordHash(passwordMaterial, salt, iterations);
     return constantTimeEqual(actual, expected);
   } catch {
     return false;

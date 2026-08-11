@@ -78,6 +78,8 @@ Không khóa toàn bộ sản phẩm. Người mới phải học trọn vẹn �
 
 Mua VIP dự kiến: chọn gói → server tạo đơn và mã tham chiếu duy nhất → hiển thị QR SePay → người dùng chuyển khoản → webhook xác minh chữ ký, số tiền và mã đơn → transaction cập nhật đơn và subscription → mở khóa nội dung.
 
+Luồng đang chạy trước khi có thanh toán: người học chọn gói thật ở `/vip` → gửi một yêu cầu pending → theo dõi/hủy tại `/vip` hoặc `/account` → admin duyệt/từ chối ở `/admin/subscriptions`. Khi duyệt, request và subscription được cập nhật trong cùng transaction; luồng này chưa tự trừ tiền.
+
 Không kích hoạt VIP chỉ bằng ảnh chụp chuyển khoản. Sai số tiền, thiếu mã, webhook trùng hoặc đơn hết hạn phải vào hàng chờ `manual_review`.
 
 ## 5. Bối cảnh tham khảo hoctrung.com
@@ -143,11 +145,16 @@ Không thay palette, cấu trúc trang chủ hoặc asset nền nếu chưa đư
 - CSS responsive tập trung ở `app/globals.css`.
 - PostgreSQL + Drizzle ORM; schema ở `db/schema.ts`.
 - Runtime tạo PostgreSQL client ngắn hạn trong từng thao tác đọc/ghi để không tái sử dụng I/O giữa request Cloudflare/Vinext; client singleton chỉ dành cho script CLI.
+- Production local chạy bằng `npm start` sau `npm run build`; script dùng Wrangler/Workerd để khớp Cloudflare target và nạp `.env.local` bằng đường dẫn tuyệt đối. Không dùng trực tiếp `vinext start` cho bundle này vì Node không hỗ trợ module protocol `cloudflare:` của PostgreSQL driver đã bundle.
+- Staging Cloudflare đã hoạt động tại Worker `hanziwork-staging`, có `/api/health` kiểm tra PostgreSQL, script nạp secret qua stdin và E2E tự dọn fixture. Hướng dẫn vận hành nằm trong `README.md`.
 - Catalog và nội dung “Văn phòng & hành chính” đã có repository PostgreSQL, migration và seed idempotent; hướng dẫn chạy ở `README.md`.
 - Quyền bài học được kiểm tra ở server: 6 bài đầu miễn phí; 18 bài chuyên sâu là VIP và nội dung bị khóa không được gửi xuống client ẩn danh.
-- Auth dùng `users`, `auth_sessions`, `auth_tokens` và `auth_rate_limits`; đăng ký công khai chỉ tạo `learner`, yêu cầu xác minh email trước session, còn `/admin` yêu cầu vai trò `admin` từ DB. Token xác minh/reset chỉ lưu hash, dùng một lần; IP/email trong rate-limit/audit dùng HMAC với `AUTH_SECRET`. Tài khoản admin đầu tiên đã được bootstrap trên Neon và mật khẩu tạm không được ghi vào repository/tài liệu.
+- Auth dùng `users`, `auth_sessions`, `auth_tokens` và `auth_rate_limits`; đăng ký công khai chỉ tạo `learner`, yêu cầu xác minh email trước session, còn `/admin` yêu cầu vai trò `admin` từ DB. Mật khẩu mới dùng `pbkdf2-sha256-v2` với 100.000 vòng, salt riêng và HMAC pepper từ `AUTH_SECRET` để chạy đúng trên Workerd. Hash cũ 600.000 vòng cần được đặt lại trước khi tài khoản cũ đăng nhập Worker. Token xác minh/reset chỉ lưu hash, dùng một lần; IP/email trong rate-limit/audit dùng HMAC với `AUTH_SECRET`. Tài khoản admin đầu tiên đã được bootstrap trên Neon và mật khẩu tạm không được ghi vào repository/tài liệu.
 - `lesson_progress` lưu lần mở và hoàn thành bài; `review_items` lưu kết quả tự đánh giá và ngày ôn tiếp theo. Dashboard/tài khoản đọc số liệu này theo session hiện hành.
 - Admin CRUD quản lý course/module/lesson/vocabulary thật. Lesson editor ghi `content_versions`, liên kết `lesson_vocabulary`, tính lại thống kê course và ghi mọi mutation vào `audit_logs`; xóa cứng bị chặn khi có dữ liệu phụ thuộc hoặc nội dung đã xuất bản.
+- `/admin/subscriptions` quản lý entitlement VIP thủ công cho học viên đã xác minh: cấp mới, gia hạn nối tiếp từ hạn hiện tại và thu hồi tức thì. Mutation khóa hàng người dùng trong transaction để tránh cộng trùng, đồng thời ghi audit riêng cho `granted/extended/revoked`. `/account` hiển thị tên gói, hạn dùng và số ngày còn lại từ subscription thật.
+- `vip_activation_requests` khép kín bước nâng cấp trước thanh toán: mỗi learner có tối đa một yêu cầu pending, có thể đổi/hủy; admin duyệt hoặc từ chối kèm ghi chú. Duyệt và cấp/gia hạn subscription dùng cùng transaction; `/vip` và `/account` đều đọc trạng thái thật.
+- `notifications` lưu hộp thư theo user. Duyệt/từ chối VIP tạo thông báo trong cùng transaction; chuông trong learner shell có unread badge, `/notifications` hỗ trợ mở/đọc từng mục hoặc đọc tất cả. Unread count nằm trong truy vấn session hiện có để không thêm một Neon round-trip khi chuyển trang.
 - Luyện ca đọc 7 nhóm ngành, 22 ca và 66 lượt nghe từ PostgreSQL; đủ 66/66 MP3 đã nằm trên Cloudinary và không còn blob audio trong PostgreSQL. Trong đó 24 lượt miễn phí đã duyệt, 42 lượt VIP mới giữ `pending` để người thành thạo Quan thoại nghe duyệt trước khi phát cho học viên.
 - Các vai trò `learner`, `editor`, `reviewer`, `admin` đã được triển khai. Hàng đợi kiểm duyệt Luyện ca có người phụ trách, ưu tiên, hạn/quá hạn; reviewer phải tự nhận hoặc được admin phân công trước khi duyệt.
 - Mỗi audio Luyện ca có trạng thái QA `pending/approved/re_record`, checklist lỗi và ghi chú reviewer. Thay file hoặc sửa transcript sẽ đưa audio về `pending`; chỉ audio `approved` mới được phát cho học viên và mọi lượt phải đạt QA trước khi xuất bản ca.
@@ -165,9 +172,11 @@ Không thay palette, cấu trúc trang chủ hoặc asset nền nếu chưa đư
 - Console không có warning/error trong các luồng chính đã thử.
 - Admin CRUD E2E đã chạy đủ tạo → sửa → version → liên kết từ → chặn xoá phụ thuộc → gỡ liên kết → xoá sạch trên Neon.
 - Form editor được remount theo entity để không giữ nhầm `defaultValue` khi chuyển nhanh giữa course/module/lesson bằng client navigation.
-- Không có dữ liệu hoặc tài khoản kiểm thử còn lại trên Neon.
+- E2E quyền VIP đã chạy trên Neon: cấp 30 ngày → mở nội dung Lộ trình/Luyện ca → gia hạn thêm 180 ngày từ hạn cũ → thu hồi → server trả lại DTO khóa cho học viên và khách. Không có dữ liệu hoặc tài khoản kiểm thử còn lại.
+- Staging Cloudflare đã deploy thành công. E2E từ HTTPS Worker đã qua health/Neon, route công khai, đăng ký khi chưa có Resend, đăng nhập learner/admin, RBAC, `pending → approved` VIP, unread notification, entitlement và audio redirect sang Cloudinary; fixture QA còn lại: 0.
+- `npm run auth:password-audit` hiện báo 4 tài khoản dùng hash legacy 600.000 vòng. Chưa tự đổi vì hệ thống không có plaintext; cần đặt lại từng tài khoản trước khi dùng Worker thật.
 - `npx tsc --noEmit`: passed.
-- `npm test`: 77/77 passed.
+- `npm test`: 91/91 passed.
 - `npm run lint`: passed.
 - `npm run build`: passed.
 - Báo cáo chính thức: `design-qa.md`, kết quả `final result: passed`.
@@ -177,13 +186,14 @@ Không thay palette, cấu trúc trang chủ hoặc asset nền nếu chưa đư
 1. Xoay lại Cloudinary key, mật khẩu Neon và `AUTH_SECRET` đã xuất hiện trong ảnh chụp; cập nhật `.env.local` bằng credential mới rồi kiểm tra đăng nhập/audio.
 2. Cho người thành thạo Quan thoại nghe duyệt 42 audio VIP đang `pending`; cả 14 ca VIP hiện đạt 6/7 điều kiện và chỉ còn thiếu xác nhận chất lượng audio.
 3. Mở rộng số ca VIP theo 7 nhóm ngành, ưu tiên ca khó/điểm đau nghề nghiệp thay vì tăng nội dung dàn trải.
-4. Bổ sung preview/khôi phục phiên bản bài học và bộ lọc audit cho admin; Luyện ca đã có phiên bản/khôi phục riêng.
-5. Thêm thông báo trong ứng dụng cho ca sắp quá hạn và báo cáo thời gian xử lý reviewer; chưa cần email khi chưa có domain.
-6. Khi có domain, cấu hình Resend, smoke-test email và lên lịch `npm run auth:cleanup`.
-7. Hoàn thiện chủ thể kinh doanh, chính sách và quy trình hỗ trợ.
-8. Tích hợp SePay sandbox/test, webhook idempotent và đối soát.
-9. Kiểm thử bảo mật, backup, theo dõi lỗi rồi mới mở thanh toán thật.
-10. Đo tỷ lệ hoàn thành bài đầu, quay lại ngày 7 và chuyển đổi VIP trước khi làm Flutter.
+4. Đặt lại mật khẩu cho tài khoản có hash cũ trước khi dùng staging/production; admin dùng `npm run admin:create`, learner dùng luồng reset sau khi có email hoặc quy trình hỗ trợ thủ công có xác minh.
+5. Đo phễu `xem VIP → gửi yêu cầu → được duyệt → dùng nội dung VIP`, đồng thời mở rộng thông báo cho lịch ôn và ca sắp quá hạn.
+6. Bổ sung preview/khôi phục phiên bản bài học và bộ lọc audit cho admin; Luyện ca đã có phiên bản/khôi phục riêng.
+7. Khi có domain, cấu hình Resend, smoke-test email và lên lịch `npm run auth:cleanup`.
+8. Hoàn thiện chủ thể kinh doanh, chính sách và quy trình hỗ trợ.
+9. Tích hợp SePay sandbox/test, webhook idempotent và đối soát.
+10. Kiểm thử bảo mật, backup, theo dõi lỗi rồi mới mở thanh toán thật.
+11. Đo tỷ lệ hoàn thành bài đầu, quay lại ngày 7 và chuyển đổi VIP trước khi làm Flutter.
 
 ## 12. Quy tắc cho người/agent tiếp tục
 

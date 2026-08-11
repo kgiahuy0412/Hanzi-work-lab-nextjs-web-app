@@ -1,5 +1,109 @@
 # Nhật ký bàn giao phiên làm việc
 
+## 2026-08-10 — Staging Cloudflare và E2E xuyên suốt
+
+### Phần đã thay đổi
+
+- Thêm `wrangler.jsonc` cho Worker `hanziwork-staging`, `/api/health` kiểm tra cả ứng dụng và Neon nhưng không trả lỗi hay cấu hình nhạy cảm, cùng ba lệnh `deploy:staging`, `staging:secrets` và `verify:staging`.
+- Secret staging chỉ được lấy từ `.env.local` và truyền qua stdin của Wrangler; source chỉ chứa allowlist tên biến. Cookie được ép `Secure`, chỉ tin `CF-Connecting-IP` trên Worker và không tin `x-forwarded-for`.
+- Viết E2E HTTPS tạo learner/admin QA tạm rồi kiểm tra đăng ký, đăng nhập, RBAC, yêu cầu và duyệt VIP qua Server Actions thật, notification, entitlement và media route Cloudinary. Fixture được dọn trong `finally`, kể cả khi một boundary thất bại.
+- Phát hiện Workerd từ chối PBKDF2 trên 100.000 vòng. Mật khẩu mới chuyển sang định dạng `pbkdf2-sha256-v2` gồm PBKDF2-HMAC-SHA256 100.000 vòng, salt riêng và HMAC pepper bằng `AUTH_SECRET`; verifier vẫn nhận diện hash legacy để Node local có thể đọc. Tài khoản mang hash 600.000 vòng cần đặt lại mật khẩu trước khi đăng nhập Worker.
+- Server Action native render `multipart/form-data`; verifier đã dùng `FormData` giống trình duyệt thay vì giả lập bằng `application/x-www-form-urlencoded`.
+- ESLint bỏ qua `.wrangler/` giống `dist/` và `.next/` vì đây là bundle generated sau deploy, không phải source cần lint.
+- Thêm `auth:password-audit` chỉ thống kê số tài khoản theo phiên bản hash, không in email hoặc chuỗi hash, để lập kế hoạch đặt lại tài khoản legacy.
+- Thêm `auth:password-migrate`: xác minh mật khẩu legacy bằng Node local, chỉ khi đúng mới rehash sang v2 trong transaction, thu hồi session/token cũ và không thay role/trạng thái tài khoản.
+
+### Triển khai và kiểm tra
+
+- Staging public: `https://hanziwork-staging.giahuy041204.workers.dev`, version đã kiểm tra: `d3d39950-b8b9-4189-ac72-52ddd660e6f8`.
+- `/api/health` trả `200`, `status=ok`, `database=ok` sau khi nạp secret.
+- E2E cuối qua toàn bộ route công khai, đăng ký thiếu Resend trả đúng trạng thái `delivery_failed` và không tạo session, learner/admin login, chặn learner khỏi admin, VIP `pending → approved`, unread notification, entitlement active và audio `307 → Cloudinary 200`.
+- Log Worker không còn lỗi runtime/database/auth; cảnh báo gửi email là hành vi dự kiến vì staging chưa cấu hình Resend.
+- `qaUsersRemaining`: 0.
+- Audit hiện đếm 4 tài khoản còn dùng `pbkdf2-sha256` legacy; chưa tự đổi mật khẩu vì không có plaintext và không được phép đặt mật khẩu thay người dùng.
+- `npm test`: 91/91 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed.
+
+## 2026-08-10 — Sửa production runtime cho PostgreSQL/Cloudflare
+
+### Nguyên nhân và phần đã thay đổi
+
+- Xác định lỗi `500` không nằm ở schema hay Neon: Cloudflare plugin đã bundle biến thể `postgres/cf`, nhưng `vinext start` lại nạp production bundle bằng Node. Node không xử lý được import `cloudflare:sockets` và trả `ERR_UNSUPPORTED_ESM_URL_SCHEME` cho mọi Server Component chạm database.
+- Thay `npm start` bằng `scripts/start-production.ts`, phục vụ chính bundle trong Wrangler/Workerd để khớp target của `vite.config.ts`. Script kiểm tra build/CLI/env trước khi chạy, tự chọn `.env.local` hoặc `.env`, chuyển env thành đường dẫn tuyệt đối, mặc định cổng `3000` và vẫn nhận `--port` hoặc biến `PORT`.
+- Có thể đặt `HANZIWORK_ENV_FILE` khi cần file môi trường khác. Script không in giá trị secret và không thay đổi quy trình build/deploy Cloudflare.
+- Bổ sung log lỗi database ở lần thất bại cuối cùng; chuỗi kết nối và query params được che trước khi ghi log, đồng thời vẫn giữ mã lỗi/chuỗi `cause` để điều tra production.
+- Thêm test hồi quy khóa lệnh start, Worker runtime, cách truyền env tuyệt đối và việc che thông tin nhạy cảm.
+
+### Kiểm tra
+
+- `npm start -- --port 4177` chạy production bundle thật trong Wrangler; `/`, `/vip`, `/courses`, `/practice`, `/games` đều trả `200`, `/writing` redirect đúng sang `/games`, `/notifications` redirect đúng sang đăng nhập khi chưa có session. Không còn lỗi database/runtime trong log.
+- `npm test`: 85/85 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed.
+
+## 2026-08-10 — Trung tâm thông báo trong ứng dụng
+
+### Phần đã thay đổi
+
+- Thêm bảng `notifications` theo từng user với loại sự kiện, tiêu đề, nội dung, liên kết nội bộ, entity nguồn, thời điểm đọc và các index phục vụ unread feed; unique key ngăn tạo trùng một event cho cùng entity.
+- Khi admin duyệt hoặc từ chối yêu cầu VIP, thông báo được tạo trong chính transaction xử lý request/subscription. Duyệt dẫn về `/account`; từ chối dẫn về `/vip` và hiển thị lý do admin đã nhập.
+- Chuông trong `LearnerAppShell` nay dẫn tới `/notifications` và có badge số chưa đọc. Unread count được tính ngay trong truy vấn session hiện có để không thêm một lượt gọi Neon vào mọi lần chuyển trang.
+- Thêm `/notifications` responsive với feed mới nhất, mở thông báo để tự đánh dấu đọc, đánh dấu từng mục hoặc toàn bộ đã đọc, trạng thái rỗng và kiểm tra ownership ở Server Actions.
+
+### Dữ liệu và kiểm tra
+
+- Migration `0013_empty_bloodaxe` đã áp dụng thành công lên Neon.
+- HTTP E2E bằng learner/admin QA tạm đã qua: duyệt VIP tạo badge + thông báo approved; mở thông báo dẫn đúng `/account` và đặt `read_at`; từ chối tạo thông báo có lý do; “đọc tất cả” xóa badge. Toàn bộ dữ liệu QA đã được dọn.
+- `npm test`: 84/84 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed; output có route `/notifications`.
+- `vinext dev` chạy đúng toàn bộ E2E. Lỗi production local được phát hiện ở lượt này và đã được xử lý bằng Worker runtime trong mục phía trên.
+
+## 2026-08-10 — Yêu cầu kích hoạt VIP thủ công từ người học
+
+### Phần đã thay đổi
+
+- Chuyển `/vip` từ bảng giá tĩnh sang dữ liệu `vip_plans` thật. Người học đã đăng nhập có thể gửi yêu cầu kích hoạt/gia hạn, đổi gói khi đang chờ hoặc hủy yêu cầu; trang `/account` hiển thị yêu cầu pending và quyền VIP active cùng thời hạn thật.
+- Thêm `vip_activation_requests` với trạng thái `pending/approved/rejected/cancelled`, liên kết user/plan/subscription/reviewer và unique index có điều kiện để mỗi người chỉ có một yêu cầu pending.
+- Thêm hàng đợi tại `/admin/subscriptions`: admin xem người học, gói, thời điểm và ghi chú; có thể duyệt & kích hoạt hoặc từ chối kèm lý do.
+- Thao tác duyệt gọi chung transaction cấp/gia hạn entitlement, sau đó cập nhật request và audit trong cùng transaction. Mọi thao tác gửi, đổi, hủy, duyệt và từ chối đều có audit log.
+- Giao diện mới dùng Server Components/Server Actions, không thêm JavaScript client không cần thiết; desktop và mobile giữ cùng ngôn ngữ thiết kế sáng, ít khung.
+
+### Dữ liệu và kiểm tra
+
+- Migration `0012_magical_silver_centurion` đã áp dụng thành công lên Neon.
+- HTTP E2E bằng learner/admin QA tạm đã qua đủ `pending → approved`, tạo đúng một subscription active, tạo mới rồi `cancelled`, tạo mới rồi `rejected` có lý do. Trang tài khoản và hàng đợi admin đều phản ánh dữ liệu thật; toàn bộ QA data đã được dọn.
+- `npm test`: 83/83 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed.
+
+## 2026-08-10 — Admin entitlement VIP và trạng thái tài khoản
+
+### Phần đã thay đổi
+
+- Thêm `/admin/subscriptions` cho admin tìm học viên, xem trạng thái hiện tại, cấp gói, gia hạn và thu hồi VIP. Học viên bị khóa hoặc chưa xác minh email không thể được cấp quyền.
+- Tách `lib/vip-subscription.ts` làm nguồn kiểm tra entitlement dùng chung. Quyền chỉ hợp lệ khi `status=active`, đã đến `starts_at` và chưa qua `ends_at`; bài học và Luyện ca tiếp tục quyết định quyền ở server trước khi trả nội dung.
+- Thêm transaction trong `lib/admin-subscription-service.ts`: khóa hàng user, tự đánh dấu subscription active đã quá hạn, gia hạn từ hạn hiện tại, gom trạng thái active trùng và ghi audit `admin.subscription.granted`, `extended`, `revoked`.
+- Trang `/account` hiển thị gói thật, ngày hết hạn, số ngày còn lại và CTA phù hợp; không còn dòng mô tả kỹ thuật chung chung về subscription.
+- Dashboard admin chỉ đếm VIP thực sự còn hiệu lực thay vì đếm mọi dòng có nhãn `active`.
+- Không cần migration mới vì schema `vip_plans`, `subscriptions` và `audit_logs` hiện tại đã đủ cho luồng thủ công.
+
+### Kiểm tra
+
+- Neon E2E bằng hai tài khoản QA tạm: cấp VIP 1 tháng thành công; tài khoản hiển thị hạn 30 ngày và Kho Luyện ca trả `hasVip=true`, exercise VIP đầy đủ.
+- Gia hạn gói 6 tháng giữ nguyên subscription và cộng đúng 180 ngày từ hạn cũ; audit có đủ `granted` rồi `extended`.
+- Thu hồi đổi subscription sang `cancelled`; tài khoản trở về Gói miễn phí, Luyện ca trả `hasVip=false`, ca VIP `locked=true`, `exercises=null`. Khách ẩn danh nhận cùng DTO khóa.
+- Toàn bộ user, session, subscription và audit QA tạm đã được dọn khỏi PostgreSQL.
+- `npm test`: 82/82 passed.
+- `npx tsc --noEmit`: passed.
+- `npm run lint`: passed.
+- `npm run build`: passed; route `/admin/subscriptions` được nhận diện trong output production.
+
 ## 2026-08-08 — Hoàn thiện audio cho 14 ca VIP
 
 ### Phần đã thay đổi

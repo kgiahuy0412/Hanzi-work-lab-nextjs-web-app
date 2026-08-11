@@ -13,6 +13,7 @@ import {
   uuid,
   varchar,
 } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
 
 const bytea = customType<{ data: Uint8Array; driverData: Uint8Array }>({
   dataType: () => "bytea",
@@ -21,6 +22,7 @@ const bytea = customType<{ data: Uint8Array; driverData: Uint8Array }>({
 export const userRole = pgEnum("user_role", ["learner", "editor", "reviewer", "admin"]);
 export const contentStatus = pgEnum("content_status", ["draft", "review", "published", "archived"]);
 export const subscriptionStatus = pgEnum("subscription_status", ["pending", "active", "expired", "cancelled", "refunded"]);
+export const vipActivationRequestStatus = pgEnum("vip_activation_request_status", ["pending", "approved", "rejected", "cancelled"]);
 export const paymentStatus = pgEnum("payment_status", ["pending", "paid", "failed", "expired", "refunded", "manual_review"]);
 export const reviewState = pgEnum("review_state", ["new", "learning", "reviewing", "mastered"]);
 export const authTokenPurpose = pgEnum("auth_token_purpose", ["verify_email", "reset_password"]);
@@ -316,6 +318,44 @@ export const subscriptions = pgTable("subscriptions", {
   activatedBy: uuid("activated_by").references(() => users.id),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => [index("subscriptions_user_status_idx").on(table.userId, table.status)]);
+
+export const vipActivationRequests = pgTable("vip_activation_requests", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  planId: uuid("plan_id").notNull().references(() => vipPlans.id),
+  status: vipActivationRequestStatus("status").notNull().default("pending"),
+  source: varchar("source", { length: 40 }).notNull().default("vip_page"),
+  userNote: text("user_note"),
+  adminNote: text("admin_note"),
+  reviewedBy: uuid("reviewed_by").references(() => users.id, { onDelete: "set null" }),
+  reviewedAt: timestamp("reviewed_at", { withTimezone: true }),
+  subscriptionId: uuid("subscription_id").references(() => subscriptions.id, { onDelete: "set null" }),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [
+  uniqueIndex("vip_activation_requests_user_pending_uq")
+    .on(table.userId)
+    .where(sql`${table.status} = 'pending'`),
+  index("vip_activation_requests_status_created_idx").on(table.status, table.createdAt),
+  index("vip_activation_requests_user_created_idx").on(table.userId, table.createdAt),
+]);
+
+export const notifications = pgTable("notifications", {
+  id: uuid("id").defaultRandom().primaryKey(),
+  userId: uuid("user_id").notNull().references(() => users.id, { onDelete: "cascade" }),
+  type: varchar("type", { length: 60 }).notNull(),
+  title: varchar("title", { length: 180 }).notNull(),
+  message: text("message").notNull(),
+  href: varchar("href", { length: 500 }).notNull().default("/notifications"),
+  entityType: varchar("entity_type", { length: 80 }),
+  entityId: uuid("entity_id"),
+  readAt: timestamp("read_at", { withTimezone: true }),
+  createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+}, (table) => [
+  uniqueIndex("notifications_user_type_entity_uq").on(table.userId, table.type, table.entityId),
+  index("notifications_user_read_created_idx").on(table.userId, table.readAt, table.createdAt),
+  index("notifications_user_created_idx").on(table.userId, table.createdAt),
+]);
 
 export const paymentOrders = pgTable("payment_orders", {
   id: uuid("id").defaultRandom().primaryKey(),

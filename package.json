@@ -8,9 +8,12 @@
   "scripts": {
     "dev": "vinext dev",
     "build": "vinext build",
-    "start": "vinext start",
+    "start": "node --experimental-strip-types scripts/start-production.ts",
+    "deploy:staging": "npm run build && wrangler deploy --name hanziwork-staging",
+    "staging:secrets": "node --env-file=.env.local --experimental-strip-types scripts/configure-staging-secrets.ts",
+    "verify:staging": "node --env-file=.env.local --experimental-strip-types scripts/verify-staging.ts",
     "test": "node --experimental-strip-types --test tests/*.test.mjs",
-    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next",
+    "lint": "eslint . --ignore-pattern dist --ignore-pattern .next --ignore-pattern .wrangler",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate",
     "db:seed": "node --experimental-strip-types db/seed.ts",
@@ -18,7 +21,9 @@
     "practice:audio:seed": "node --experimental-strip-types scripts/seed-practice-audio.ts",
     "practice:audio:migrate-cloudinary": "node --experimental-strip-types scripts/migrate-practice-audio-cloudinary.ts",
     "admin:create": "node --experimental-strip-types scripts/create-admin.ts",
-    "auth:cleanup": "node --experimental-strip-types scripts/cleanup-auth.ts"
+    "auth:cleanup": "node --experimental-strip-types scripts/cleanup-auth.ts",
+    "auth:password-audit": "node --env-file=.env.local --experimental-strip-types scripts/audit-password-hashes.ts",
+    "auth:password-migrate": "node --experimental-strip-types scripts/migrate-account-password.ts"
   },
   "dependencies": {
     "cloudinary": "^2.10.0",

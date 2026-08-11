@@ -9,9 +9,24 @@ test("passwords are salted and verified with PBKDF2", async () => {
   const first = await hashPassword("Mat-khau-an-toan-2026!");
   const second = await hashPassword("Mat-khau-an-toan-2026!");
   assert.notEqual(first, second);
-  assert.match(first, /^pbkdf2-sha256\$600000\$/u);
+  assert.match(first, /^pbkdf2-sha256-v2\$100000\$/u);
   assert.equal(await verifyPassword("Mat-khau-an-toan-2026!", first), true);
   assert.equal(await verifyPassword("mat-khau-sai", first), false);
+});
+
+test("password v2 hashes require the configured server-side pepper", async () => {
+  const previousSecret = process.env.AUTH_SECRET;
+  try {
+    process.env.AUTH_SECRET = "pepper-qa-a";
+    const encodedHash = await hashPassword("Mat-khau-an-toan-2026!");
+    assert.equal(await verifyPassword("Mat-khau-an-toan-2026!", encodedHash), true);
+
+    process.env.AUTH_SECRET = "pepper-qa-b";
+    assert.equal(await verifyPassword("Mat-khau-an-toan-2026!", encodedHash), false);
+  } finally {
+    if (previousSecret === undefined) delete process.env.AUTH_SECRET;
+    else process.env.AUTH_SECRET = previousSecret;
+  }
 });
 
 test("session tokens are random and only have deterministic hashes", async () => {

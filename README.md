@@ -37,7 +37,23 @@ Kiểm tra trước khi đưa code lên môi trường thật:
 npm run lint
 npm test
 npm run build
+npm start
 ```
+
+`npm start` phục vụ production bundle bằng Wrangler/Cloudflare Workers runtime, đúng với target trong `vite.config.ts`, và mặc định mở cổng `3000`. Lệnh tự nạp `.env.local` (hoặc `.env`) bằng đường dẫn tuyệt đối; có thể dùng `HANZIWORK_ENV_FILE` để chọn file khác và `npm start -- --port 4177` để đổi cổng. Cần chạy `npm run build` trước khi start.
+
+### Staging Cloudflare
+
+Worker staging hiện dùng tên `hanziwork-staging`. Sau khi đăng nhập Wrangler, triển khai và kiểm tra bằng PowerShell:
+
+```powershell
+npm run deploy:staging
+$env:STAGING_APP_URL="https://hanziwork-staging.<account>.workers.dev"
+npm run staging:secrets
+npm run verify:staging
+```
+
+`staging:secrets` chỉ lấy `DATABASE_URL`, `AUTH_SECRET` và `CLOUDINARY_URL` từ `.env.local`, truyền qua stdin của Wrangler và tự đặt cookie/proxy ở chế độ HTTPS an toàn. `verify:staging` kiểm tra health, route công khai, đăng ký/đăng nhập, RBAC, yêu cầu–duyệt VIP, thông báo, entitlement và audio Cloudinary; tài khoản QA tạm luôn được xóa trong `finally`.
 
 ## Công nghệ và cấu trúc
 
@@ -75,7 +91,10 @@ Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chu
 
 - Đăng ký công khai luôn tạo vai trò `learner`; không có endpoint đăng ký admin.
 - `/admin` đọc session và vai trò hiện hành từ PostgreSQL trước khi render. Learner bị chuyển về `/admin/login`.
-- Mật khẩu dùng PBKDF2-HMAC-SHA256 với salt riêng; session cookie là `HttpOnly`, `SameSite=Lax`, bật `Secure` ở production và chỉ token hash được lưu trong DB.
+- Mật khẩu mới dùng định dạng có phiên bản `pbkdf2-sha256-v2`: PBKDF2-HMAC-SHA256 với salt riêng, 100.000 vòng theo giới hạn Workerd và thêm HMAC pepper từ `AUTH_SECRET`. Session cookie là `HttpOnly`, `SameSite=Lax`, bật `Secure` ở production và chỉ token hash được lưu trong DB.
+- Hash cũ `pbkdf2-sha256$600000` vẫn được nhận diện ở Node local nhưng Workerd không thể xác minh vì giới hạn runtime. Trước khi cho tài khoản cũ đăng nhập staging/production, đặt lại mật khẩu bằng luồng reset hoặc chạy `npm run admin:create` cho tài khoản quản trị; không sửa trực tiếp chuỗi hash trong PostgreSQL.
+- Chạy `npm run auth:password-audit` để chỉ đếm tài khoản theo phiên bản hash; lệnh không in email, password hash hay dữ liệu nhận diện người dùng.
+- Để giữ nguyên mật khẩu hiện tại nhưng chuyển một tài khoản legacy sang v2, đặt tạm `MIGRATE_EMAIL` và `MIGRATE_CURRENT_PASSWORD` trong terminal rồi chạy `npm run auth:password-migrate`. Lệnh chỉ cập nhật khi mật khẩu cũ xác minh đúng, giữ nguyên role/trạng thái, đồng thời thu hồi session và token cũ.
 - Learner mới không nhận session cho tới khi xác minh email. Token xác minh hết hạn sau 24 giờ; token đặt lại mật khẩu hết hạn sau 30 phút, chỉ dùng một lần và chỉ lưu dạng hash.
 - Đăng nhập và các endpoint gửi token có rate-limit trong PostgreSQL. IP/email trong bộ đếm và `audit_logs` dùng HMAC với `AUTH_SECRET`, không lưu giá trị thô.
 - Đặt lại hoặc đổi mật khẩu thu hồi toàn bộ session cũ. Sự kiện đăng nhập, xác minh, reset và logout được ghi vào `audit_logs`.

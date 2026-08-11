@@ -1,3 +1,41 @@
+# Design QA — Đăng nhập “Chiếc túi san hô”
+
+## Nguồn và bằng chứng
+
+- Video chuyển động tham chiếu: `C:/Users/Windows/Downloads/1786379438132_2299012107817654072_1234608406821690621.mp4`; contact sheet: `docs/design-target/login-video/motion-contact-sheet.png`.
+- Phương án 2 đã được người dùng chọn: `docs/design-qa/login-satchel/source-selected.png`, 1472 × 1056 px.
+- Implementation desktop: `docs/design-qa/login-satchel/implementation-desktop.png`, viewport 1472 × 1056 px.
+- Implementation mobile: `docs/design-qa/login-satchel/implementation-mobile.png`, viewport 390 × 844 px, ảnh full-page.
+- Đối chiếu source và implementation trong cùng một ảnh: `docs/design-qa/login-satchel/comparison-desktop.png`.
+
+## Findings và lịch sử sửa
+
+1. [P2] Lượt render đầu vẫn còn site header phía trên màn đăng nhập nên cảnh bị thấp, nền không phủ trọn viewport và form không còn cảm giác trồi từ túi. Đã ẩn site header/footer/mobile nav riêng khi có `.auth-page-login-scene`; ảnh desktop cuối xác nhận scene phủ kín 1472 × 1056.
+2. [P2] Form cần ăn khớp miệng túi nhưng vẫn giữ vùng chạm và chữ rõ. Đã đặt form thành sheet ivory độc lập, dùng vị trí `clamp()` ở desktop, nhịp trồi 840 ms và biến thể compact cho màn hình thấp; không che mascot hoặc nút về trang chủ.
+3. [P2] Mobile dùng asset portrait riêng và chuyển card về document flow. Phép đo DOM tại 390 px cho thấy `body.scrollWidth = innerWidth = 390`, card nằm từ x=12 đến x=378.4, input và CTA kết thúc ở x=355.6; không có overflow ngang.
+4. [P2] Chuyển động được giới hạn vào phần mở màn: mascot đi ngang, scene hiện sau đó và sheet trồi lên; tất cả animation được tắt bằng `prefers-reduced-motion`. Sau intro, form đứng yên để người dùng nhập liệu không bị phân tâm.
+- P0/P1/P2 còn lại: không.
+
+## Fidelity, responsive và tương tác
+
+- Fidelity: giữ đúng bố cục túi coral bên trái, form ivory đi lên từ túi, Cánh Cụt chỉ dẫn bên phải, đảo mint và nền kem; hierarchy, CTA coral và hai liên kết phụ bám sát phương án 2.
+- Desktop: kiểm tra 1472 × 1056 và viewport mặc định 1265 × 710; form, túi, mascot, logo và nút về trang chủ đều nằm trong viewport, không xuất hiện thanh điều hướng cũ.
+- Mobile: kiểm tra 390 × 844; dùng crop portrait riêng, logo và nút home vẫn truy cập được, form nằm trọn chiều ngang và phần minh họa tiếp tục ở dưới form.
+- Tương tác: email/password nhận giá trị thử; nút đăng nhập enabled; form giữ action `/api/auth/login`; liên kết “Quên mật khẩu?” mở đúng `/forgot-password` và điều hướng quay lại `/login` thành công.
+- Trình duyệt: 0 warning/error sau tải lại, nhập liệu và kiểm tra điều hướng.
+
+## Kiểm tra kỹ thuật
+
+- `npm run build`: passed; route `/login` có trong manifest và production Worker local phục vụ scene/asset mới.
+- `npm test`: passed 91/91.
+- `npx tsc --noEmit`: passed.
+- `npx eslint components/auth-card.tsx`: passed, 0 warning/error.
+- `git diff --check -- components/auth-card.tsx app/globals.css`: passed; chỉ có cảnh báo LF/CRLF của worktree Windows.
+
+final result: passed
+
+---
+
 # Design QA — Hệ nền Fresh Mint Sky cho Trang chủ, Lộ trình và Luyện ca
 
 ## Nguồn và bằng chứng
@@ -1000,3 +1038,78 @@ final result: blocked
 - [P1 blocker] Chưa có browser-rendered screenshot sau sửa để xác nhận trực quan nav đã biến mất và nút quay lại không bị che. Cần người dùng reload `/games` và cung cấp ảnh sau sửa để hoàn tất vòng visual QA.
 
 final result: blocked
+
+---
+
+# Design QA — Chuyển động đăng nhập “bước chân + khung bay khỏi túi”
+
+## Nguồn và bằng chứng
+
+- Video chuyển động tham chiếu: `C:/Users/Windows/Downloads/1786379438132_2299012107817654072_1234608406821690621.mp4`; contact sheet gốc: `docs/design-target/login-video/motion-contact-sheet.png`.
+- Chu kỳ bước chân 4 frame theo mascot production: `public/assets/auth/penguin-walk-cycle.png`; bản nền trong suốt: `docs/design-target/login-video/penguin-walk-cycle-transparent.png`.
+- Chuỗi 8 mốc chuyển động desktop: `docs/design-qa/login-satchel/motion-v2/motion-contact-sheet.png`.
+- Render hoàn tất: `docs/design-qa/login-satchel/implementation-desktop-motion-v2.png` và `docs/design-qa/login-satchel/implementation-mobile-motion-v2.png`.
+- Đối chiếu source đã chọn và implementation: `docs/design-qa/login-satchel/comparison-desktop-motion-v2.png`.
+
+## Findings và lịch sử sửa
+
+1. [P1] CSS intro cũ bắt đầu ngay khi HTML/CSS được tải nên phần lớn chuyển động đã chạy xong trước khi route `/login` hiển thị. Đã chuyển sang kích hoạt bằng trạng thái client sau hai animation frame; tải mới và nút phát lại đều bắt đầu từ mốc 0 thật.
+2. [P1] GIF mascot cũ chỉ thay đổi tư thế vẫy tay nên khi dịch ngang tạo cảm giác “lướt”. Đã thay bằng sprite 4 frame gồm chân trái, passing pose, chân phải và passing pose; frame đổi theo nhịp 540 ms, đi kèm bob thân và bóng chân co giãn.
+3. [P1] Khung đăng nhập cũ xuất hiện quá sớm và chưa đọc được là đi ra từ trong túi. Đã đặt khung bắt đầu dưới viewport, thêm lớp foreground lấy đúng phần mép túi để che khung trong giai đoạn đầu, sau đó cho khung trồi lên với overshoot và settle nhẹ.
+4. [P2] Đã thêm nút icon phát lại cạnh nút Home; nút có accessible name, focus-visible, hover/active và tự ẩn khi `prefers-reduced-motion: reduce`.
+5. Desktop 1280 × 720 cho thấy rõ ba giai đoạn: mascot bước qua nền trống, scene/túi xuất hiện, form trồi từ sau mép túi. Mobile 390 × 844 giữ form trong chiều ngang, nút Home/phát lại không chồng nhau và intro vẫn chạy đúng thứ tự.
+- P0/P1/P2 còn lại: không.
+
+## Kiểm tra kỹ thuật và trình duyệt
+
+- Browser console: 0 warning/error sau tải mới, phát lại intro và kiểm tra responsive.
+- `npm run build`: passed; route `/login` và asset sprite được phục vụ trong production Worker local.
+- `npm test`: passed 91/91.
+- `npx tsc --noEmit`: passed.
+- `npx eslint components/auth-card.tsx`: passed.
+- `prefers-reduced-motion`: scene và form hiện tĩnh; walker, foreground mask và nút phát lại không hiển thị.
+
+final result: passed
+
+---
+
+# Design QA — Motion đăng nhập v4: đi bộ → chỉ túi → khung xuất hiện
+
+## Nguồn và bằng chứng
+
+- Source visual truth: video `C:/Users/Windows/Downloads/1786379438132_2299012107817654072_1234608406821690621.mp4` và contact sheet `docs/design-target/login-video/motion-contact-sheet.png`.
+- Source layout đã chọn: `docs/design-qa/login-satchel/source-selected.png`, 1487 × 1058 px.
+- Sprite production 8 frame: `public/assets/auth/penguin-walk-cycle-v2.png`, 2560 × 420 px, PNG alpha; nguồn chroma và bản tách nền nằm tại `docs/design-target/login-video/penguin-walk-cycle-8f-chroma.png` và `penguin-walk-cycle-8f-transparent.png`.
+- Implementation desktop: `docs/design-qa/login-satchel/implementation-desktop-motion-v4.png`, viewport 1280 × 720 CSS px, DPR 1.
+- Implementation mobile: `docs/design-qa/login-satchel/implementation-mobile-motion-v4.png`, viewport 390 × 844 CSS px.
+- Full-view comparison: `docs/design-qa/login-satchel/comparison-desktop-motion-v4.png`; source và implementation được thu cùng chiều cao tối đa 500 px để so bố cục.
+- Motion comparison: `docs/design-qa/login-satchel/comparison-motion-v4.png`; chuỗi tham chiếu và 14 mốc implementation đặt trong cùng một ảnh.
+- Focused motion evidence: `docs/design-qa/login-satchel/motion-v4/motion-contact-sheet.png`; mobile: `docs/design-qa/login-satchel/motion-v4/mobile-motion-contact-sheet.png`.
+
+## Findings và lịch sử sửa
+
+1. [P1] Bản v2 dùng 4 frame ở khoảng 7–8 fps nên chân đổi tư thế còn giật và đọc như một ảnh bị kéo ngang. Fix: tạo sprite 8 frame với hai pha tiếp đất, hai passing pose, hai pha thân hạ và hai pha nhấc chân; cadence cuối khoảng 10.4 fps, bob thân giảm từ 7 px xuống 3 px và bóng chân co nhẹ hơn. Evidence sau sửa: năm mốc đầu của `motion-v4/motion-contact-sheet.png` cho thấy chân đổi liên tục trong khi tâm cơ thể di chuyển đều.
+2. [P1] Bản v2 làm walker biến mất rồi form trồi lên gần như ngay lập tức, không có quan hệ nhân quả. Fix: walker tăng dần theo phối cảnh, hòa vào đúng mascot lớn đang chỉ tay; scene hoàn tất trước form và giữ tư thế chỉ túi khoảng nửa giây rồi mới bắt đầu `auth-sheet-rise`.
+3. [P2] Pass v3 bắt đầu crossfade hơi sớm nên tại một mốc có thể đọc thành hai Cánh Cụt cùng lúc. Evidence: `docs/design-qa/login-satchel/motion-v3/motion-contact-sheet.png`. Fix v4: dời scene reveal về cuối travel, tăng tỷ lệ walker trước khi hòa cảnh và rút crossfade còn 420 ms. Chuỗi v4 không còn frame trùng nhân vật rõ ràng.
+4. [P2] Mobile cần giữ được cùng câu chuyện dù mascot cuối bị crop theo asset portrait. Fix: dùng travel keyframe riêng, baseline 18% viewport và điểm hòa ở 80vw; chuỗi mobile xác nhận ba trạng thái walking, pointing và form xuất hiện không chồng điều khiển.
+5. P0/P1/P2 còn lại: không. P3 chấp nhận: source motion là video mobile có phong cách khác, nên implementation giữ mascot, palette và layout production của HanziWork thay vì sao chép nhân vật tham chiếu.
+
+## Fidelity surfaces
+
+- Typography/copy: không thay đổi font, hierarchy, nhãn form hoặc CTA.
+- Spacing/layout: card vẫn đi đúng từ sau mép túi; desktop và mobile không phát sinh overflow ngang hoặc chồng nút Home/phát lại.
+- Colors/tokens: giữ nguyên ivory–mint–coral–pine; animation không thêm màu hoặc hiệu ứng mới.
+- Image quality: sprite v2 dùng PNG alpha thật, cạnh sạch, không nền chroma/halo; tám frame cùng camera, tỷ lệ, baseline và ánh sáng.
+- Copy/content: action `/api/auth/login`, liên kết phụ, accessible name và nội dung đăng nhập giữ nguyên.
+
+## Kiểm tra kỹ thuật và tương tác
+
+- Tải mới và nút `Phát lại chuyển động` đều khởi động lại từ mốc 0; fix lint bằng cách reset motion trong event handler thay vì gọi đồng bộ trong effect.
+- Browser console: 0 warning/error trên desktop và mobile.
+- `npm run build`: passed; `/login` và asset `penguin-walk-cycle-v2.png` được production Worker local phục vụ.
+- `npx eslint components/auth-card.tsx`: passed.
+- `npx tsc --noEmit`: passed.
+- `npm test`: passed 91/91.
+- `git diff --check -- components/auth-card.tsx app/globals.css design-qa.md`: passed, chỉ có cảnh báo line-ending Windows.
+
+final result: passed

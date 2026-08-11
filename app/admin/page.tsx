@@ -39,6 +39,9 @@ const actionLabels: Record<string, string> = {
   "admin.practice_exercise.audio_rerecord_requested": "Reviewer yêu cầu thu lại audio",
   "admin.practice_exercise.audio_removed": "Đã gỡ audio khỏi lượt nghe",
   "admin.user.role_updated": "Đã cập nhật vai trò đội nội dung",
+  "admin.subscription.granted": "Đã cấp quyền VIP cho học viên",
+  "admin.subscription.extended": "Đã gia hạn quyền VIP",
+  "admin.subscription.revoked": "Đã thu hồi quyền VIP",
 };
 
 export default async function AdminPage() {

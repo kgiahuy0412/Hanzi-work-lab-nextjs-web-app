@@ -5,6 +5,36 @@ import * as schema from "./schema.ts";
 let sqlClient: ReturnType<typeof postgres> | undefined;
 let database: ReturnType<typeof drizzle<typeof schema>> | undefined;
 
+function databaseErrorSummary(error: unknown, depth = 0): Record<string, unknown> {
+  const candidate = error instanceof Error ? error : undefined;
+  const code =
+    typeof error === "object" && error !== null && "code" in error
+      ? String(error.code)
+      : undefined;
+  const configuredUrl = process.env.DATABASE_URL;
+  let message = candidate?.message ?? "Unknown database error";
+
+  if (configuredUrl) message = message.replaceAll(configuredUrl, "[DATABASE_URL]");
+  message = message.replace(/postgres(?:ql)?:\/\/\S+/gi, "[DATABASE_URL]");
+  message = message.replace(/\nparams:[\s\S]*$/i, "\nparams: [redacted]");
+
+  const summary: Record<string, unknown> = {
+    name: candidate?.name ?? "DatabaseError",
+    ...(code ? { code } : {}),
+    message,
+  };
+
+  if (depth < 3 && candidate?.cause && candidate.cause !== error) {
+    summary.cause = databaseErrorSummary(candidate.cause, depth + 1);
+  }
+
+  return summary;
+}
+
+function reportDatabaseError(operation: "read" | "write", error: unknown) {
+  console.error(`[database] ${operation} failed`, databaseErrorSummary(error));
+}
+
 function connectionString(): string {
   const value = process.env.DATABASE_URL;
   if (!value) {
@@ -45,11 +75,17 @@ export async function readDb<T>(operation: (db: Database) => PromiseLike<T>): Pr
     }
   }
 
+  reportDatabaseError("read", lastError);
   throw lastError;
 }
 
 export async function writeDb<T>(operation: (db: Database) => PromiseLike<T>): Promise<T> {
-  return withRequestDb(operation);
+  try {
+    return await withRequestDb(operation);
+  } catch (error) {
+    reportDatabaseError("write", error);
+    throw error;
+  }
 }
 
 export async function closeDb() {

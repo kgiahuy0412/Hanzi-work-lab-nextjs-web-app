@@ -13,6 +13,7 @@ export type AuthenticatedUser = {
   displayName: string;
   role: UserRole;
   emailVerified: boolean;
+  unreadNotificationCount: number;
 };
 
 function toAuthenticatedUser(user: typeof users.$inferSelect): AuthenticatedUser {
@@ -22,6 +23,7 @@ function toAuthenticatedUser(user: typeof users.$inferSelect): AuthenticatedUser
     displayName: user.displayName ?? user.email,
     role: user.role,
     emailVerified: Boolean(user.emailVerifiedAt),
+    unreadNotificationCount: 0,
   };
 }
 

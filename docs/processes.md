@@ -24,7 +24,83 @@ flowchart LR
 
 Quy tắc: quyền xem bài phải được xác nhận ở server. Khi hoàn thành, cập nhật `lesson_progress` và tạo/cập nhật `review_items` trong cùng một transaction.
 
-## 2. Mua và kích hoạt VIP qua SePay
+## 2. Cấp, gia hạn và thu hồi VIP thủ công
+
+Trước khi mở thanh toán, admin có thể vận hành entitlement tại `/admin/subscriptions`:
+
+```mermaid
+sequenceDiagram
+  actor A as Admin
+  participant W as HanziWork Console
+  participant D as PostgreSQL
+  actor U as Học viên
+
+  A->>W: Chọn học viên đã xác minh + gói VIP
+  W->>D: Khóa hàng user trong transaction
+  D->>D: Hết hạn subscription cũ đã quá hạn
+  alt Chưa có VIP hoạt động
+    D->>D: Tạo subscription active từ hiện tại
+  else Đang có VIP
+    D->>D: Cộng duration vào ends_at hiện tại
+  end
+  D->>D: Ghi audit granted/extended
+  W-->>A: Xác nhận thành công
+  U->>W: Mở bài hoặc ca VIP
+  W->>D: Kiểm tra status + starts_at + ends_at
+  W-->>U: Chỉ trả nội dung khi entitlement hợp lệ
+```
+
+Thu hồi yêu cầu admin xác nhận rõ trên form. Server đổi mọi subscription đang hoạt động của học viên sang `cancelled`, đặt `ends_at` về thời điểm hiện tại và ghi `admin.subscription.revoked`. UI không phải nguồn quyết định quyền; Lộ trình, Luyện ca, media và trang tài khoản đều đọc cùng một kiểm tra subscription phía server.
+
+## 2.1. Người học gửi yêu cầu kích hoạt VIP thủ công
+
+```mermaid
+sequenceDiagram
+  actor U as Người học
+  participant W as HanziWork
+  participant D as PostgreSQL
+  actor A as Admin
+
+  U->>W: Chọn gói và gửi yêu cầu
+  W->>D: Khóa user, tạo/cập nhật một request pending
+  D-->>U: Hiển thị đang chờ ở VIP và Tài khoản
+  alt Người học đổi ý
+    U->>W: Đổi gói hoặc hủy
+    W->>D: Cập nhật request + audit
+  else Admin duyệt
+    A->>W: Duyệt & kích hoạt
+    W->>D: Khóa user + request
+    D->>D: Cấp/gia hạn subscription và approve request trong cùng transaction
+    D-->>U: Hiển thị VIP active và ngày hết hạn
+  else Admin từ chối
+    A->>W: Nhập lý do từ chối
+    W->>D: Reject request + audit
+  end
+```
+
+Mỗi người chỉ có tối đa một request `pending`; gửi lại gói khác sẽ cập nhật yêu cầu hiện tại thay vì tạo hàng đợi trùng. Luồng beta này không tự trừ tiền. Admin chỉ duyệt tài khoản learner đang hoạt động và đã xác minh email.
+
+## 2.2. Thông báo trạng thái trong ứng dụng
+
+```mermaid
+sequenceDiagram
+  actor A as Admin
+  participant W as HanziWork
+  participant D as PostgreSQL
+  actor U as Người học
+
+  A->>W: Duyệt hoặc từ chối yêu cầu VIP
+  W->>D: Cập nhật request/subscription
+  W->>D: Tạo notification trong cùng transaction
+  D-->>U: Chuông hiển thị badge chưa đọc
+  U->>W: Mở thông báo
+  W->>D: Kiểm tra ownership + đặt read_at
+  W-->>U: Chuyển tới Tài khoản hoặc VIP
+```
+
+Thông báo chỉ được đọc/đánh dấu bởi đúng user sở hữu. Liên kết đích luôn được chuẩn hóa thành đường dẫn nội bộ; badge chưa đọc được tính cùng truy vấn session để không phát sinh thêm database round-trip trên mọi route.
+
+## 2.3. Mua và kích hoạt VIP qua SePay
 
 ```mermaid
 sequenceDiagram

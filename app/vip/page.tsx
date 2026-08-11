@@ -1,31 +1,151 @@
 import type { Metadata } from "next";
-import { AlertCircle, Check, Crown, Route } from "lucide-react";
+import Link from "next/link";
+import { AlertCircle, CalendarDays, Check, Clock3, Crown, Route, Send, ShieldCheck } from "lucide-react";
+import { cancelVipActivationRequestAction, requestVipActivationAction } from "@/app/vip/actions";
 import { LearnerPageHeader } from "@/components/learner-page-header";
+import { getCurrentUser } from "@/lib/auth-session";
+import { getVipUpgradeOverview } from "@/lib/vip-activation-request-service";
+import { vipDaysRemaining } from "@/lib/vip-subscription";
 
 export const metadata: Metadata = { title: "Gói HanziWork VIP" };
-const plans = [
-  { name: "Học thử", price: "0đ", unit: "", description: "Học module nền tảng của cả bảy môi trường trước khi chọn lộ trình.", features: ["42 bài nền tảng", "252 từ cốt lõi", "7 bài kiểm tra module", "Ôn tập không cần thanh toán"], featured: false, href: "/courses", cta: "Chọn lộ trình", disabled: false },
-  { name: "Trọn lộ trình Văn phòng", price: "Giá beta", unit: "mua một lần", description: "Mở khóa một sản phẩm hữu hạn, không buộc người học trả theo tháng.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ dùng trong công việc", "Ôn ưu tiên từ yếu", "Thử thách mới mỗi tuần"], featured: true, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "Trọn lộ trình Nhà máy", price: "Giá beta", unit: "mua một lần", description: "Tập trung vào giao tiếp an toàn, vận hành, chất lượng và bàn giao ca.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ dùng tại xưởng", "4 bài kiểm tra", "Thử thách công việc hằng tuần"], featured: false, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "Trọn lộ trình Kho vận", price: "Giá beta", unit: "mua một lần", description: "Tập trung vào nhập kho, tồn kho, soạn xuất, giao nhận và xử lý chênh lệch.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ kho vận", "4 bài kiểm tra", "Thử thách tình huống hằng tuần"], featured: false, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "Trọn lộ trình Bán hàng", price: "Giá beta", unit: "mua một lần", description: "Tập trung vào tư vấn nhu cầu, báo giá, theo dõi đơn và chăm sóc khách sau bán.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ bán hàng", "4 bài kiểm tra", "Thử thách tình huống hằng tuần"], featured: false, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "Trọn lộ trình Nhà hàng", price: "Giá beta", unit: "mua một lần", description: "Tập trung vào đón khách, gọi món, phục vụ tại bàn, thanh toán và phản hồi.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ nhà hàng", "4 bài kiểm tra", "Thử thách tình huống hằng tuần"], featured: false, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "Trọn lộ trình Thương mại điện tử", price: "Giá beta", unit: "mua một lần", description: "Tập trung vào gian hàng, nguồn hàng, thực hiện đơn, hậu mãi và tối ưu dữ liệu.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ thương mại điện tử", "4 bài kiểm tra", "Thử thách vận hành hằng tuần"], featured: false, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "Trọn lộ trình Giao tiếp cốt lõi", price: "Giá beta", unit: "mua một lần", description: "Tập trung vào nghe hiểu, nhận việc, phối hợp, báo vấn đề và giao tiếp đa kênh.", features: ["Đủ 24 bài và 4 module", "18 bài chuyên sâu", "144 từ nền tảng công việc", "4 bài kiểm tra", "Thử thách giao tiếp hằng tuần"], featured: false, href: "#moc-mo-ban", cta: "Xem mốc mở bán", disabled: false },
-  { name: "VIP thư viện", price: "Sắp mở", unit: "", description: "Chỉ mở bán sau khi bảy lộ trình được duyệt ngôn ngữ và chứng minh có người học quay lại.", features: ["168 bài thuộc 7 chuyên ngành", "1.008 từ chủ động", "Kho ca làm mở rộng", "Lịch sử học dài hạn"], featured: false, href: "#moc-mo-ban", cta: "Chưa mở bán", disabled: true },
+
+const defaultBenefits = [
+  "Mở toàn bộ bài học VIP",
+  "Luyện ca không giới hạn",
+  "Ôn tập và lịch nhắc theo tiến độ",
+  "Tập viết và trò chơi luyện phản xạ",
 ];
 
-export default function VipPage() {
+const noticeMessages: Record<string, string> = {
+  requested: "Yêu cầu của bạn đã vào hàng đợi. Quản trị viên sẽ kiểm tra và kích hoạt trực tiếp trên tài khoản này.",
+  request_cancelled: "Đã hủy yêu cầu đang chờ. Bạn có thể chọn lại gói khác bất cứ lúc nào.",
+};
+
+const errorMessages: Record<string, string> = {
+  invalid_input: "Thông tin gói chưa hợp lệ. Hãy tải lại trang và thử lại.",
+  not_found: "Không tìm thấy yêu cầu này hoặc yêu cầu không còn thuộc tài khoản của bạn.",
+  vip_plan_inactive: "Gói này vừa ngừng nhận yêu cầu. Hãy chọn một gói còn hiển thị.",
+  vip_request_ineligible: "Tài khoản hiện chưa đủ điều kiện gửi yêu cầu VIP.",
+  vip_request_not_pending: "Yêu cầu đã được xử lý trước đó. Trạng thái mới nhất đã được cập nhật bên dưới.",
+};
+
+function formatPrice(value: number): string {
+  return new Intl.NumberFormat("vi-VN").format(value) + "đ";
+}
+
+function formatDate(value: Date | null): string {
+  if (!value) return "không giới hạn";
+  return value.toLocaleDateString("vi-VN", {
+    day: "2-digit",
+    month: "2-digit",
+    timeZone: "Asia/Ho_Chi_Minh",
+    year: "numeric",
+  });
+}
+
+function planBenefits(value: unknown): string[] {
+  if (!Array.isArray(value)) return defaultBenefits;
+  const benefits = value.filter((item): item is string => typeof item === "string" && item.trim().length > 0).slice(0, 5);
+  return benefits.length ? benefits : defaultBenefits;
+}
+
+export default async function VipPage({
+  searchParams,
+}: {
+  searchParams: Promise<{ error?: string; success?: string }>;
+}) {
+  const [params, user] = await Promise.all([searchParams, getCurrentUser()]);
+  const overview = await getVipUpgradeOverview(user?.id);
+  const pending = overview.pendingRequest;
+  const active = overview.activeSubscription;
+  const daysRemaining = active ? vipDaysRemaining(active.endsAt) : null;
+  const notice = params.success ? noticeMessages[params.success] : null;
+  const error = params.error ? errorMessages[params.error] : null;
+  const featuredPlanId = overview.plans.find((plan) => plan.durationDays >= 180)?.id ?? overview.plans[0]?.id;
+
   return <main>
     <section className="section-shell learner-page-header-shell vip-page-header"><LearnerPageHeader
-      description="HanziWork mở khóa từng lộ trình đã hoàn thiện. Bảy lộ trình hiện đã có đủ 24 bài; mua một lần theo nhu cầu vẫn là lựa chọn chính."
+      description="Chọn thời hạn phù hợp rồi gửi yêu cầu trong một phút. Đây là luồng kích hoạt thủ công: không tự trừ tiền, không yêu cầu nhập thông tin thanh toán."
       eyebrow="Quyền lợi học tập"
       eyebrowIcon={Crown}
-      meta={<><span><Route size={16} /><strong>07</strong> lộ trình chuyên ngành</span><span><Crown size={16} />Mua một lần theo nhu cầu</span></>}
-      title="Chỉ trả tiền cho lộ trình bạn thật sự cần."
+      meta={<><span><Route size={16} />Mở Lộ trình, Luyện ca và Tập viết</span><span><ShieldCheck size={16} />Duyệt trực tiếp trên tài khoản</span></>}
+      title="Giữ nhịp học liền mạch với HanziWork VIP."
     /></section>
-    <section className="section-shell pricing-grid" aria-label="Các lựa chọn học">{plans.map((plan) => <article className={`price-card ${plan.featured ? "featured" : ""}`} key={plan.name}>{plan.featured ? <span className="price-badge">Phù hợp giai đoạn hiện tại</span> : null}<span className="price-name">{plan.name}</span><div className="price"><strong>{plan.price}</strong>{plan.unit ? <span>/ {plan.unit}</span> : null}</div><p className="price-description">{plan.description}</p><ul className="feature-list">{plan.features.map((feature) => <li key={feature}><Check size={15} />{feature}</li>)}</ul>{plan.disabled ? <span className="button button-full button-disabled" aria-disabled="true">{plan.cta}</span> : <a className={`button button-full ${plan.featured ? "button-light" : "button-primary"}`} href={plan.href}>{plan.cta}</a>}</article>)}</section>
-    <section className="section-shell vip-flow" id="moc-mo-ban"><h2>Mốc cần đạt trước khi nhận tiền</h2><div className="flow-grid"><article className="flow-step"><span>01</span><h3>Đủ chiều sâu</h3><p>Mỗi lộ trình có 24 bài thật, 4 module, 4 bài kiểm tra và kho từ được ôn theo lịch.</p></article><article className="flow-step"><span>02</span><h3>Duyệt ngôn ngữ</h3><p>Toàn bộ tiếng Trung, pinyin và ngữ cảnh cần được biên tập viên rà lại; các lộ trình nghiệp vụ cần chuyên gia kiểm tra thêm thuật ngữ, chứng từ, chính sách và an toàn.</p></article><article className="flow-step"><span>03</span><h3>Chạy beta</h3><p>Đo tỷ lệ hoàn thành, số ngày quay lại và mức sử dụng ôn tập riêng cho từng lộ trình trước khi chốt giá.</p></article><article className="flow-step"><span>04</span><h3>Mở khóa minh bạch</h3><p>Chỉ thu tiền cho lộ trình người học chọn; chuyên ngành tương lai luôn ghi rõ “đang biên soạn”.</p></article></div><div className="prototype-note"><Route size={19} /><span>Khung này chưa nhận tiền thật. Bảy lộ trình cần hoàn tất duyệt nội dung và beta trước khi chốt giá mua một lần hoặc mở VIP thư viện.</span></div></section>
-    <section className="section-shell policy-section" id="chinh-sach"><span className="section-kicker">Minh bạch trước khi bán</span><h2>Chính sách VIP bản đề xuất</h2><div className="policy-grid"><article className="policy-card"><h3>Kích hoạt</h3><p>VIP được kích hoạt sau khi hệ thống xác nhận thanh toán thành công. Thời hạn tính từ thời điểm kích hoạt.</p></article><article className="policy-card"><h3>Hoàn tiền</h3><p>Tiếp nhận yêu cầu nếu thanh toán trùng, bị trừ tiền nhưng không kích hoạt, hoặc lỗi do hệ thống chưa được xử lý.</p></article><article className="policy-card"><h3>Tài khoản & dữ liệu</h3><p>Mỗi gói gắn với một tài khoản. Không công khai dữ liệu học tập và cần có cơ chế đổi, xóa dữ liệu theo yêu cầu hợp lệ.</p></article></div><div className="prototype-note"><AlertCircle size={19} /><span>Nội dung này là khung sản phẩm, chưa thay thế điều khoản pháp lý chính thức. Trước ngày mở bán cần hoàn thiện thông tin chủ sở hữu, chính sách bảo mật, điều khoản sử dụng, hoàn tiền và thủ tục thương mại điện tử phù hợp.</span></div></section>
+
+    <section className="section-shell vip-request-feedback" aria-live="polite">
+      {notice ? <p className="vip-request-notice success"><Check size={17} />{notice}</p> : null}
+      {error ? <p className="vip-request-notice error" role="alert"><AlertCircle size={17} />{error}</p> : null}
+      {active ? <div className="vip-current-status is-active">
+        <span className="vip-current-status-icon"><Crown size={20} /></span>
+        <div><span>VIP đang hoạt động</span><strong>{active.planName}</strong><small>Hiệu lực đến {formatDate(active.endsAt)}{daysRemaining === null ? "" : ` · còn ${daysRemaining} ngày`}</small></div>
+        <Link href="/account">Xem tài khoản →</Link>
+      </div> : null}
+      {pending ? <div className="vip-current-status is-pending">
+        <span className="vip-current-status-icon"><Clock3 size={20} /></span>
+        <div><span>Đang chờ quản trị viên duyệt</span><strong>{pending.planName}</strong><small>Gửi ngày {formatDate(pending.createdAt)} · bạn vẫn có thể đổi gói ở bên dưới</small></div>
+        <form action={cancelVipActivationRequestAction}>
+          <input name="requestId" type="hidden" value={pending.id} />
+          <input name="returnTo" type="hidden" value="vip" />
+          <button type="submit">Hủy yêu cầu</button>
+        </form>
+      </div> : null}
+    </section>
+
+    <section className="section-shell pricing-grid vip-pricing-grid" aria-label="Các lựa chọn học">
+      <article className="price-card vip-plan-card is-free">
+        <span className="price-name">Học miễn phí</span>
+        <div className="price"><strong>0đ</strong></div>
+        <p className="price-description">Bắt đầu với các bài mở khóa sẵn và làm quen nhịp học trước khi nâng cấp.</p>
+        <ul className="feature-list">
+          {["Bài học thử trong Lộ trình", "Ca luyện mẫu", "Ôn tập từ đã học", "Không cần gửi yêu cầu"].map((feature) => <li key={feature}><Check size={15} />{feature}</li>)}
+        </ul>
+        <Link className="button button-full button-secondary" href="/courses">Tiếp tục học miễn phí</Link>
+      </article>
+
+      {overview.plans.map((plan) => {
+        const featured = plan.id === featuredPlanId;
+        const isPendingPlan = pending?.planId === plan.id;
+        const buttonText = isPendingPlan
+          ? "Đang chờ duyệt"
+          : pending
+            ? "Đổi sang gói này"
+            : active
+              ? "Yêu cầu gia hạn"
+              : "Gửi yêu cầu kích hoạt";
+        return <article className={`price-card vip-plan-card ${featured ? "featured" : ""}`} key={plan.id}>
+          {featured ? <span className="price-badge">Được chọn nhiều</span> : null}
+          <span className="price-name">{plan.name}</span>
+          <div className="price"><strong>{formatPrice(plan.priceVnd)}</strong><span>/ {plan.durationDays} ngày</span></div>
+          <p className="price-description">Mức dự kiến cho một lần kích hoạt. Yêu cầu này chưa tạo thanh toán tự động.</p>
+          <ul className="feature-list">{planBenefits(plan.benefits).map((feature) => <li key={feature}><Check size={15} />{feature}</li>)}</ul>
+          {user ? <form action={requestVipActivationAction} className="vip-plan-request-form">
+            <input name="planId" type="hidden" value={plan.id} />
+            <label><span>Ghi chú (không bắt buộc)</span><input disabled={isPendingPlan} maxLength={500} name="userNote" placeholder="Ví dụ: cần luyện ca văn phòng" /></label>
+            <button className={`button button-full ${featured ? "button-light" : "button-primary"}`} disabled={isPendingPlan} type="submit"><Send size={15} />{buttonText}</button>
+          </form> : <Link className={`button button-full ${featured ? "button-light" : "button-primary"}`} href="/login?returnTo=%2Fvip">Đăng nhập để gửi yêu cầu</Link>}
+        </article>;
+      })}
+    </section>
+
+    <section className="section-shell vip-flow" id="quy-trinh-kich-hoat">
+      <h2>Từ yêu cầu đến lúc bắt đầu học</h2>
+      <div className="flow-grid">
+        <article className="flow-step"><span>01</span><h3>Chọn gói</h3><p>Chọn thời hạn phù hợp với nhịp học và gửi yêu cầu bằng đúng tài khoản đang dùng.</p></article>
+        <article className="flow-step"><span>02</span><h3>Vào hàng đợi</h3><p>Bạn thấy ngay trạng thái “đang chờ” tại trang VIP và trong Tài khoản.</p></article>
+        <article className="flow-step"><span>03</span><h3>Admin kiểm tra</h3><p>Quản trị viên xác nhận yêu cầu, tài khoản và thời hạn trước khi kích hoạt.</p></article>
+        <article className="flow-step"><span>04</span><h3>Mở quyền học</h3><p>Khi duyệt, quyền VIP được cấp ngay và ngày hết hạn hiển thị rõ trên tài khoản.</p></article>
+      </div>
+      <div className="prototype-note"><AlertCircle size={19} /><span>HanziWork hiện dùng quy trình beta thủ công và chưa thu tiền tự động. Mức giá hiển thị là mức dự kiến để thử nghiệm sản phẩm; việc tích hợp thanh toán sẽ được bổ sung sau.</span></div>
+    </section>
+
+    <section className="section-shell policy-section" id="chinh-sach">
+      <span className="section-kicker">Rõ ràng trước khi kích hoạt</span><h2>Thông tin bạn luôn nhìn thấy</h2>
+      <div className="policy-grid">
+        <article className="policy-card"><h3>Trạng thái yêu cầu</h3><p>Yêu cầu đang chờ có thể hủy hoặc đổi gói. Một tài khoản chỉ có một yêu cầu chờ tại một thời điểm.</p></article>
+        <article className="policy-card"><h3>Thời hạn VIP</h3><p>Thời hạn tính từ lúc admin duyệt. Nếu đang còn VIP, lần duyệt mới sẽ cộng tiếp từ ngày hết hạn hiện tại.</p></article>
+        <article className="policy-card"><h3>Lịch sử minh bạch</h3><p>Mọi thao tác gửi, đổi, hủy, duyệt và từ chối đều được ghi lại để có thể đối soát khi cần.</p></article>
+      </div>
+      <div className="prototype-note"><CalendarDays size={19} /><span>Luồng này chưa thay thế điều khoản bán hàng chính thức. Trước khi nhận thanh toán thật cần hoàn thiện chính sách bảo mật, sử dụng, hoàn tiền và thông tin chủ sở hữu.</span></div>
+    </section>
   </main>;
 }

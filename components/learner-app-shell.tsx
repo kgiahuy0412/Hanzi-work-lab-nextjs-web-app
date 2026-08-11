@@ -20,6 +20,7 @@ import { BrandLogoImage, BrandMark } from "@/components/brand-logo";
 type LearnerShellUser = {
   displayName: string;
   role: "learner" | "editor" | "reviewer" | "admin";
+  unreadNotificationCount: number;
 } | null;
 
 const learnerRailItems = [
@@ -103,6 +104,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
     ? { href: "/admin", label: "Quản trị" }
     : { href: user ? "/account" : "/login", label: user ? "Tài khoản" : "Đăng nhập" };
   const profileHref = user ? "/account" : "/login";
+  const notificationsHref = user ? "/notifications" : "/login?returnTo=%2Fnotifications";
   const displayName = user?.displayName ?? "Đăng nhập";
   const navigating = Boolean(pendingHref && pendingHref !== pathname);
   const visualPathname = navigating && pendingHref ? pendingHref : pathname;
@@ -148,7 +150,18 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
         <Link aria-label="HanziWork - Trang chủ" className="brand" href="/" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><BrandMark priority /><span>HanziWork</span></Link>
         <div className="topbar-actions">
           <span className="streak-chip"><Flame size={17} /> {user ? "Tiếp tục nhịp học hôm nay" : "Đăng nhập để lưu nhịp học"}</span>
-          <button className="topbar-icon" type="button" aria-label="Thông báo" title="Thông báo"><Bell size={19} /></button>
+          <Link
+            aria-label={user?.unreadNotificationCount ? `${user.unreadNotificationCount} thông báo chưa đọc` : "Thông báo"}
+            className={`topbar-icon ${user?.unreadNotificationCount ? "has-notifications" : ""}`.trim()}
+            href={notificationsHref}
+            onClick={(event) => beginRoute(event, notificationsHref)}
+            onPointerEnter={() => prepareRoute(notificationsHref)}
+            prefetch
+            title="Thông báo"
+          >
+            <Bell size={19} />
+            {user?.unreadNotificationCount ? <span aria-hidden="true" className="topbar-notification-count">{Math.min(user.unreadNotificationCount, 99)}</span> : null}
+          </Link>
           <Link className="user-chip" href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch>
             <span>{initials(displayName)}</span>
             <strong>{displayName}</strong>
