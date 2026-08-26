@@ -6,38 +6,38 @@ export type CourseVisual = {
 
 const courseVisuals: Record<string, CourseVisual> = {
   "van-phong-hanh-chinh": {
-    src: "/assets/courses/office-administration.webp",
-    alt: "Bàn làm việc hành chính với lịch và hồ sơ được sắp xếp gọn gàng",
+    src: "/assets/courses/himi-concepts/himi-office-administration.png",
+    alt: "Himi sắp xếp lịch làm việc tại bàn hành chính",
     position: "center",
   },
   "nha-may-san-xuat": {
-    src: "/assets/courses/factory-production.webp",
-    alt: "Nhân sự nhà máy kiểm tra máy móc trong ca sản xuất",
+    src: "/assets/courses/himi-concepts/himi-factory-production.png",
+    alt: "Himi đội mũ bảo hộ kiểm tra máy móc trong nhà máy",
     position: "center",
   },
   "kho-van-logistics": {
-    src: "/assets/courses/warehouse-logistics.webp",
-    alt: "Nhân sự kho quét kiện hàng trong khu vực logistics",
+    src: "/assets/courses/himi-concepts/himi-warehouse-logistics.png",
+    alt: "Himi quét kiện hàng trên xe đẩy trong kho logistics",
     position: "center",
   },
   "ban-hang-cham-soc-khach-hang": {
-    src: "/assets/courses/sales-customer-care.webp",
-    alt: "Hai chuyên viên cùng trao đổi mẫu sản phẩm với khách hàng",
+    src: "/assets/courses/himi-concepts/himi-sales-customer-care.png",
+    alt: "Himi đeo tai nghe và tư vấn bộ mẫu sản phẩm cho khách hàng",
     position: "center",
   },
   "nha-hang-dich-vu": {
-    src: "/assets/courses/restaurant-service.webp",
-    alt: "Nhân viên nhà hàng chuẩn bị bàn trước giờ phục vụ",
+    src: "/assets/courses/himi-concepts/himi-restaurant-service.png",
+    alt: "Himi phục vụ trà và món hấp trong nhà hàng",
     position: "center",
   },
   "thuong-mai-dien-tu": {
-    src: "/assets/courses/ecommerce-operations.webp",
-    alt: "Bàn vận hành thương mại điện tử với kiện hàng và máy in nhãn",
+    src: "/assets/courses/himi-concepts/himi-ecommerce-operations.png",
+    alt: "Himi vận hành gian hàng trực tuyến và đóng gói đơn hàng",
     position: "center",
   },
   "giao-tiep-cong-so": {
-    src: "/assets/courses/workplace-communication.webp",
-    alt: "Nhóm đồng nghiệp trao đổi nhanh trong một buổi họp công việc",
+    src: "/assets/courses/himi-concepts/himi-workplace-communication.png",
+    alt: "Himi chủ trì cuộc họp và điều phối giao tiếp công sở",
     position: "center",
   },
 };

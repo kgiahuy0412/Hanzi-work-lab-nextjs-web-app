@@ -1,4 +1,9 @@
 @import "tailwindcss";
+@import "./himi-section-banner.css";
+@import "./video-learning.css";
+@import "./learner-navigation.css";
+@import "./home-portal.css";
+@import "./writing-studio.css";
 
 :root {
   --ink: #16342f;
@@ -1817,9 +1822,10 @@
 
 .game-journey-background {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
   display: block;
+  pointer-events: none;
 }
 
 .game-journey-background img {
@@ -1836,6 +1842,16 @@
   left: 4.6%;
   top: 4%;
 }
+
+.game-journey-status {
+  width: max-content;
+  position: absolute;
+  z-index: 5;
+  left: 4.6%;
+  top: 4%;
+}
+
+.game-journey-status .game-journey-progress { margin-top: 0; }
 
 .game-journey-header > span,
 .game-journey-featured-card > small {
@@ -2612,6 +2628,19 @@
     top: auto;
   }
 
+  .game-journey-status {
+    width: 100%;
+    position: relative;
+    left: auto;
+    top: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+  }
+
+  .game-journey-status .game-progress-sync { margin-top: 0; text-align: right; }
+
   .game-journey-header h1 { font-size: clamp(39px, 7vw, 52px); }
   .game-journey-header h1 { white-space: normal; }
 
@@ -3137,20 +3166,6 @@ button { color: inherit; }
 .feature-list svg { flex: 0 0 auto; color: var(--forest); }
 .featured .feature-list svg { color: #bfe3d7; }
 .price-card .button { margin-top: auto; }
-.vip-flow { margin-bottom: 80px; padding: 48px; border-radius: 26px; background: var(--sand); }
-.vip-flow h2, .policy-section h2 { margin: 0; font-size: 32px; letter-spacing: -.04em; }
-.flow-grid { margin-top: 28px; display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; }
-.flow-step { padding: 20px; border: 1px solid rgba(196, 177, 146, .55); border-radius: 15px; background: rgba(255,255,255,.65); }
-.flow-step span { width: 30px; height: 30px; display: grid; place-items: center; color: #fff; border-radius: 9px; background: var(--forest); font-size: 11px; font-weight: 800; }
-.flow-step h3 { margin: 14px 0 7px; font-size: 15px; }
-.flow-step p { margin: 0; color: var(--ink-soft); font-size: 11px; line-height: 1.6; }
-.policy-section { padding-bottom: 100px; }
-.policy-grid { margin-top: 25px; display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; }
-.policy-card { padding: 24px; border-top: 3px solid var(--forest); border-radius: 0 0 16px 16px; background: #fff; box-shadow: 0 8px 30px rgba(26, 69, 59, .06); }
-.policy-card h3 { margin: 0 0 9px; font-size: 16px; }
-.policy-card p { margin: 0; color: var(--ink-soft); font-size: 12px; line-height: 1.7; }
-.prototype-note { margin-top: 20px; padding: 14px 17px; display: flex; gap: 10px; align-items: flex-start; color: #7f571d; border: 1px solid #edcf9e; border-radius: 12px; background: #fff8e9; font-size: 11px; line-height: 1.6; }
-.prototype-note svg { flex: 0 0 auto; }
 
 /* Admin */
 .admin-page { min-height: 760px; padding-block: 38px 100px; background: #f3f5f2; }
@@ -3522,7 +3537,6 @@ button { color: inherit; }
   .vocab-example { grid-column: 1 / -1; }
   .pricing-grid { grid-template-columns: 1fr 1fr; }
   .price-card.featured { transform: none; }
-  .flow-grid { grid-template-columns: repeat(2, 1fr); }
   .admin-stats { grid-template-columns: repeat(2, 1fr); }
   .admin-content-grid, .admin-detail-grid, .admin-detail-grid.lesson-layout { grid-template-columns: 1fr; }
   .practice-exercise-editor { grid-template-columns: 1fr; }
@@ -3591,7 +3605,7 @@ button { color: inherit; }
   .floating-streak { right: -5px; top: 86px; }
   .section-heading { align-items: flex-start; }
   .compact-heading { align-items: end; }
-  .dashboard-grid, .course-grid, .learning-principles, .policy-grid { grid-template-columns: 1fr; }
+  .dashboard-grid, .course-grid, .learning-principles { grid-template-columns: 1fr; }
   .continue-card { align-items: flex-start; }
   .mini-stat-card { min-height: 95px; }
   .desktop-link { display: none; }
@@ -3637,8 +3651,6 @@ button { color: inherit; }
   .flashcard { min-height: 330px; padding: 25px; }
   .flashcard-hanzi { margin-top: 55px; font-size: 52px; }
   .pricing-grid { grid-template-columns: 1fr; }
-  .vip-flow { width: 100%; padding: 40px 22px; border-radius: 0; }
-  .flow-grid { grid-template-columns: 1fr; }
   .admin-top { align-items: flex-start; flex-direction: column; }
   .admin-stats, .admin-grid, .admin-lower { grid-template-columns: 1fr; }
   .admin-nav { overflow-x: auto; }
@@ -6250,11 +6262,13 @@ body:has(.learner-app-shell) > .mobile-nav {
   }
 }
 
-/* Fast shared navigation feedback */
+/* Shared navigation feedback: warm Himi red, steadily advancing before the
+ * final completion sweep. */
 @keyframes hw-route-progress {
-  0% { transform: translateX(-115%) scaleX(.35); }
-  55% { transform: translateX(45%) scaleX(.72); }
-  100% { transform: translateX(245%) scaleX(.42); }
+  0% { transform: scaleX(.025); }
+  48% { transform: scaleX(.64); }
+  76% { transform: scaleX(.79); }
+  100% { transform: scaleX(.9); }
 }
 
 .route-transition-progress {
@@ -6263,28 +6277,38 @@ body:has(.learner-app-shell) > .mobile-nav {
   right: 0;
   left: 100px;
   z-index: 96;
-  height: 3px;
+  height: 4px;
   overflow: hidden;
   pointer-events: none;
   opacity: 0;
-  transition: opacity 120ms ease;
+  background: rgba(255, 91, 85, .1);
+  transition: opacity 160ms ease;
 }
 
 .route-transition-progress span {
   display: block;
-  width: 42%;
+  width: 100%;
   height: 100%;
   border-radius: 999px;
-  background: #0a8978;
+  background: linear-gradient(90deg, #ff8178 0%, #ff5b55 58%, #e83f49 100%);
+  box-shadow: 0 0 12px rgba(255, 91, 85, .42);
+  transform: scaleX(.025);
   transform-origin: left center;
+  transition: transform 420ms cubic-bezier(.22, 1, .36, 1);
 }
 
-.route-transition-progress.active {
+.route-transition-progress.active,
+.route-transition-progress.complete {
   opacity: 1;
 }
 
 .route-transition-progress.active span {
-  animation: hw-route-progress 930ms cubic-bezier(.22, 1, .36, 1) infinite;
+  animation: hw-route-progress 2400ms cubic-bezier(.16, .78, .22, 1) forwards;
+}
+
+.route-transition-progress.complete span {
+  animation: none;
+  transform: scaleX(1);
 }
 
 .rail-nav a.pending,
@@ -6769,7 +6793,12 @@ body:has(.learner-app-shell) > .mobile-nav {
 
 @media (prefers-reduced-motion: reduce) {
   .route-transition-progress.active span {
-    animation-duration: 1.8s !important;
+    animation: none !important;
+    transform: scaleX(.9);
+  }
+
+  .route-transition-progress.complete span {
+    transition-duration: 1ms;
   }
 }
 
@@ -12351,13 +12380,16 @@ textarea {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: inherit;
 }
 
 .learner-app-shell .rail-logo {
   width: 60px;
   height: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  flex: 0 0 60px;
   border-radius: 18px;
 }
 

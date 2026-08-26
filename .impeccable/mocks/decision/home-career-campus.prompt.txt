@@ -1,0 +1,23 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop web application homepage composition, 1440x900 landscape
+Input images:
+- Image 1 is the incumbent homepage; preserve only the persistent left rail, quiet topbar, warm canvas, type character and brand signal colors. Remove all 10-minute session and oversized flashcard structures.
+- Image 2 is the exact Himi mascot identity; preserve black-and-white penguin, orange beak/feet, three head feathers, rosy cheeks, glossy eyes and red-orange scarf.
+- Images 3–5 are approved Himi career-course covers. Reuse their premium 3D Himi career imagery and visual quality in course areas without introducing human stock photos.
+
+Primary request: Design “Khuôn viên nghề nghiệp”, a new Himi Chinese homepage organized around professional Chinese career paths. There must be NO 10-minute session, NO four-step journey, and NO daily-session ribbon. The homepage should immediately communicate “Tiếng Trung cho người đi làm”.
+
+Structure:
+1. Preserve the narrow white left navigation rail and quiet topbar.
+2. Compact greeting: “Chào buổi sáng” with small Himi coach, plus one sentence: “Tiếp tục chặng học phù hợp với công việc của bạn.”
+3. Dominant center “Lộ trình của tôi” landscape module: selected track “Giao tiếp công sở cốt lõi”, progress 8/24 lessons, four module milestones shown as a refined path (not a daily journey), current milestone “Phối hợp & cuộc họp”, next lesson “Sắp xếp cuộc họp”, coral button “Học tiếp”. Integrate a wide Himi workplace-communication course image.
+4. Right support column: “Kỹ năng đang phát triển” with four radial/bar indicators for Từ vựng, Nghe, Viết, Phản xạ; beneath it “Câu dùng ngay” with Hanzi, pinyin, translation and audio.
+5. Next band “Khám phá ngành khác”: three premium Himi course covers for Văn phòng & hành chính, Nhà máy & sản xuất, Kho vận & logistics, with compact lesson counts and arrows.
+6. A connected “Phòng luyện tập” dock underneath for “Luyện viết”, “Video”, “Luyện nghe”, “Luyện ca”, “Trò chơi”, each represented as a calm skill station with line icons and one useful state.
+7. Bottom visible strip: weekly progress and recent activity, quiet and subordinate.
+
+Visual system: The Himi Workday Studio. Sophisticated, modern, workplace-oriented but friendly. Warm canvas #f8f7f2, surface #fffdf8, teal #159f96, pine #064f48, coral #ff5b55, blue #1767e8, ink #071a35. Use premium Himi 3D imagery, precise line icons, 13–24px corner system, sparse shadows and clean layout.
+Composition/framing: full desktop app screenshot, front-on, 1440x900, edge-to-edge. The main career path occupies about 60% of the first content row; the skill column occupies about 30%. Career covers create a visual middle band. Clear OPERATE hierarchy.
+Text: concise Vietnamese/Chinese copy listed above, correctly spelled and readable; no English filler or lorem ipsum.
+Constraints: no “10 phút”, no daily session, no four-step daily flow; preserve shell and exact Himi identity; no humans, stock photography, fake testimonials, pricing, invented claims, browser chrome or watermark.
+Avoid: generic university campus illustration, uniform bento grid, oversized flashcard, childish game aesthetic, map clutter, excessive gradients/glassmorphism/shadows, floating decorative icons, tiny unreadable text.

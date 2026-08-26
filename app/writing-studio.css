@@ -1,0 +1,558 @@
+.himi-writing-studio {
+  --writing-red: #ff574d;
+  --writing-red-deep: #e9433b;
+  --writing-teal: #0c8174;
+  --writing-ink: #123d36;
+  --writing-muted: #657b76;
+  --writing-cream: #fff9ed;
+  --writing-line: #e5e5dd;
+  padding: clamp(22px, 3vw, 44px);
+  background:
+    radial-gradient(circle at 0 0, rgba(126, 211, 190, .17), transparent 30%),
+    radial-gradient(circle at 100% 8%, rgba(255, 205, 115, .2), transparent 25%),
+    #fbfaf6;
+}
+
+.himi-writing-workspace {
+  max-width: 1740px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(220px, 270px) minmax(440px, 1fr) minmax(220px, 270px);
+  gap: 18px;
+  align-items: start;
+}
+
+.himi-writing-library,
+.himi-writing-practice,
+.himi-writing-character-info > * {
+  border: 1px solid rgba(20, 83, 72, .11);
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 16px 40px rgba(29, 75, 64, .07);
+}
+
+.himi-writing-library {
+  min-width: 0;
+  padding: 19px;
+  border-radius: 24px;
+}
+
+.himi-writing-library-heading > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.himi-writing-library-heading > div span {
+  color: var(--writing-ink);
+  font-size: 17px;
+  font-weight: 820;
+}
+
+.himi-writing-library-heading > div strong {
+  color: var(--writing-teal);
+  font-size: 11px;
+  font-weight: 780;
+}
+
+.himi-writing-search {
+  min-height: 43px;
+  margin-top: 14px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  color: #76908a;
+  border: 1px solid var(--writing-line);
+  border-radius: 13px;
+  background: #fbfcfa;
+  transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+.himi-writing-search:focus-within {
+  border-color: rgba(255, 87, 77, .55);
+  box-shadow: 0 0 0 4px rgba(255, 87, 77, .09);
+}
+
+.himi-writing-search input {
+  width: 100%;
+  min-width: 0;
+  color: var(--writing-ink);
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 12px;
+}
+
+.himi-writing-search input::placeholder { color: #93a29e; }
+
+.himi-writing-groups {
+  margin-top: 12px;
+  display: flex;
+  gap: 6px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.himi-writing-groups::-webkit-scrollbar { display: none; }
+
+.himi-writing-groups button {
+  min-height: 31px;
+  padding: 0 10px;
+  flex: 0 0 auto;
+  color: #6e817d;
+  border: 0;
+  border-radius: 999px;
+  background: #f2f5f2;
+  cursor: pointer;
+  font-size: 10px;
+  font-weight: 760;
+  transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
+}
+
+.himi-writing-groups button:hover { transform: translateY(-1px); }
+.himi-writing-groups button.active { color: #fff; background: var(--writing-teal); }
+
+.himi-writing-character-grid {
+  max-height: min(580px, calc(100dvh - 390px));
+  margin-top: 15px;
+  padding-right: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  overflow-y: auto;
+  scrollbar-color: #cbdad5 transparent;
+  scrollbar-width: thin;
+}
+
+.himi-writing-character-grid button {
+  min-width: 0;
+  aspect-ratio: 1;
+  padding: 7px 3px 4px;
+  position: relative;
+  display: grid;
+  place-content: center;
+  color: var(--writing-ink);
+  border: 1px solid #e5e8e3;
+  border-radius: 15px;
+  background: #fff;
+  cursor: pointer;
+  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+.himi-writing-character-grid button:hover {
+  border-color: #efaca5;
+  transform: translateY(-2px);
+}
+
+.himi-writing-character-grid button.active {
+  color: #fff;
+  border-color: var(--writing-red);
+  background: linear-gradient(145deg, #ff675d, var(--writing-red));
+  box-shadow: 0 10px 22px rgba(255, 87, 77, .24);
+}
+
+.himi-writing-character-grid button.completed:not(.active) { border-color: rgba(12, 129, 116, .34); background: #f1faf7; }
+
+.himi-writing-character-grid button > span {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 650;
+  line-height: 1;
+}
+
+.himi-writing-character-grid button small {
+  margin-top: 4px;
+  color: #84928e;
+  font-size: 9px;
+}
+
+.himi-writing-character-grid button.active small { color: rgba(255, 255, 255, .82); }
+
+.himi-writing-character-grid button > svg {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  color: var(--writing-teal);
+}
+
+.himi-writing-character-grid button.active > svg { color: #fff; }
+.himi-writing-empty { grid-column: 1 / -1; color: #758782; font-size: 12px; text-align: center; }
+
+.himi-writing-practice {
+  min-width: 0;
+  padding: clamp(16px, 2.1vw, 28px);
+  border-radius: 28px;
+}
+
+.himi-writing-mode-tabs {
+  padding: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 5px;
+  border-radius: 17px;
+  background: #f2f4f1;
+}
+
+.himi-writing-mode-tabs button {
+  min-width: 0;
+  min-height: 54px;
+  padding: 8px 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  color: #6a7e79;
+  border: 0;
+  border-radius: 13px;
+  background: transparent;
+  cursor: pointer;
+  transition: color 160ms ease, background-color 160ms ease, box-shadow 160ms ease, transform 160ms ease;
+}
+
+.himi-writing-mode-tabs button:hover { color: var(--writing-ink); }
+
+.himi-writing-mode-tabs button.active {
+  color: var(--writing-red-deep);
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(42, 70, 62, .09);
+}
+
+.himi-writing-mode-tabs button > span { min-width: 0; display: grid; text-align: left; }
+.himi-writing-mode-tabs button strong { font-size: 12px; }
+.himi-writing-mode-tabs button small { color: inherit; font-size: 9px; opacity: .7; }
+
+.himi-writing-board-shell {
+  width: min(100%, 490px);
+  aspect-ratio: 1;
+  margin: clamp(17px, 2.4vw, 27px) auto 0;
+  position: relative;
+  overflow: hidden;
+  border: 10px solid #fff8ea;
+  border-radius: 25px;
+  background: #fffdfa;
+  box-shadow:
+    0 20px 50px rgba(61, 87, 78, .12),
+    inset 0 0 0 1px rgba(245, 188, 177, .75);
+}
+
+.himi-writing-board-shell::after {
+  position: absolute;
+  inset: 10px;
+  z-index: 0;
+  content: "";
+  pointer-events: none;
+  border: 1px solid rgba(255, 87, 77, .18);
+  border-radius: 14px;
+}
+
+.himi-writing-grid-line {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  border-color: rgba(255, 87, 77, .17);
+  border-style: dashed;
+}
+
+.himi-writing-grid-line.is-horizontal { top: 50%; left: 4%; width: 92%; border-width: 1px 0 0; }
+.himi-writing-grid-line.is-vertical { top: 4%; left: 50%; height: 92%; border-width: 0 0 0 1px; }
+.himi-writing-grid-line.is-diagonal-one { width: 130%; top: 50%; left: -15%; border-width: 1px 0 0; transform: rotate(45deg); }
+.himi-writing-grid-line.is-diagonal-two { width: 130%; top: 50%; left: -15%; border-width: 1px 0 0; transform: rotate(-45deg); }
+
+.himi-writing-board {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  touch-action: none;
+}
+
+.himi-writing-board svg,
+.himi-writing-board canvas { max-width: 100%; height: auto; }
+
+.himi-writing-mode-badge {
+  min-height: 28px;
+  padding: 0 10px;
+  position: absolute;
+  z-index: 3;
+  top: 18px;
+  left: 18px;
+  display: inline-flex;
+  align-items: center;
+  color: var(--writing-teal);
+  border: 1px solid rgba(12, 129, 116, .15);
+  border-radius: 999px;
+  background: rgba(239, 250, 247, .9);
+  backdrop-filter: blur(8px);
+  font-size: 9px;
+  font-weight: 820;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+
+.himi-writing-board-shell.is-quiz .himi-writing-mode-badge { color: var(--writing-red-deep); border-color: rgba(255, 87, 77, .18); background: rgba(255, 242, 239, .91); }
+
+.himi-writing-feedback {
+  width: min(100%, 540px);
+  margin: 17px auto 0;
+}
+
+.himi-writing-feedback-copy {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.himi-writing-feedback-copy > span {
+  width: 36px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  color: #9b701b;
+  border-radius: 12px;
+  background: #fff1ca;
+}
+
+.himi-writing-feedback-copy > span.has-mistake { color: var(--writing-red-deep); background: #fff0ee; }
+.himi-writing-feedback-copy > div { min-width: 0; display: grid; gap: 2px; }
+.himi-writing-feedback-copy strong { color: var(--writing-ink); font-size: 12px; }
+.himi-writing-feedback-copy small { color: #7b8d88; font-size: 10px; }
+
+.himi-writing-progress {
+  height: 5px;
+  margin-top: 10px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e9eeeb;
+}
+
+.himi-writing-progress span {
+  height: 100%;
+  display: block;
+  border-radius: inherit;
+  background: linear-gradient(90deg, var(--writing-red), #ff9c54);
+  transition: width 260ms cubic-bezier(.2, .75, .2, 1);
+}
+
+.himi-writing-board-actions {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.himi-writing-board-actions button {
+  min-height: 44px;
+  padding: 0 16px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: var(--writing-ink);
+  border: 1px solid #dfe6e1;
+  border-radius: 13px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 11px;
+  font-weight: 780;
+  transition: transform 150ms ease, box-shadow 150ms ease, background-color 150ms ease;
+}
+
+.himi-writing-board-actions button:hover { transform: translateY(-2px); box-shadow: 0 9px 20px rgba(39, 75, 66, .1); }
+.himi-writing-board-actions button:active { transform: scale(.97); }
+.himi-writing-board-actions button.primary { color: #fff; border-color: var(--writing-red); background: var(--writing-red); box-shadow: 0 10px 22px rgba(255, 87, 77, .22); }
+
+.himi-writing-character-info {
+  min-width: 0;
+  display: grid;
+  gap: 12px;
+}
+
+.himi-writing-character-card,
+.himi-writing-daily-card,
+.himi-writing-rule-card { padding: 20px; border-radius: 22px; }
+
+.himi-writing-character-card { text-align: center; }
+.himi-writing-card-label { color: var(--writing-teal); font-size: 9px; font-weight: 850; letter-spacing: .1em; text-transform: uppercase; }
+
+.himi-writing-character-card > strong {
+  margin-top: 11px;
+  display: block;
+  color: var(--writing-ink);
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: clamp(64px, 7vw, 92px);
+  font-weight: 650;
+  line-height: 1;
+}
+
+.himi-writing-character-card > div:not(.himi-writing-meta) {
+  margin-top: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+}
+
+.himi-writing-character-card b { color: var(--writing-red-deep); font-size: 17px; }
+
+.himi-writing-character-card button {
+  width: 38px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: var(--writing-teal);
+  border: 0;
+  border-radius: 50%;
+  background: #eaf7f3;
+  cursor: pointer;
+  transition: transform 150ms ease, background-color 150ms ease;
+}
+
+.himi-writing-character-card button:hover { background: #d9f1ea; transform: scale(1.05); }
+.himi-writing-character-card p { margin: 9px 0 0; color: #60766f; font-size: 13px; }
+
+.himi-writing-meta {
+  margin-top: 15px;
+  padding-top: 13px;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+  border-top: 1px solid #edf0ed;
+}
+
+.himi-writing-meta span {
+  padding: 5px 9px;
+  color: #477069;
+  border-radius: 999px;
+  background: #eef6f3;
+  font-size: 9px;
+  font-weight: 760;
+}
+
+.himi-writing-navigation {
+  min-height: 54px;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: 40px 1fr 40px;
+  align-items: center;
+  gap: 8px;
+  border-radius: 18px;
+}
+
+.himi-writing-navigation button {
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  color: var(--writing-ink);
+  border: 0;
+  border-radius: 12px;
+  background: #f2f5f2;
+  cursor: pointer;
+  transition: color 150ms ease, background-color 150ms ease, transform 150ms ease;
+}
+
+.himi-writing-navigation button:hover { color: #fff; background: var(--writing-teal); transform: translateY(-1px); }
+.himi-writing-navigation span { color: #6f827d; font-size: 10px; font-weight: 760; text-align: center; }
+
+.himi-writing-daily-card > span,
+.himi-writing-rule-card > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--writing-teal);
+  font-size: 10px;
+  font-weight: 820;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+}
+
+.himi-writing-daily-card > strong { margin-top: 13px; display: block; color: var(--writing-ink); font-size: 31px; }
+.himi-writing-daily-card > strong small { color: #8b9995; font-size: 11px; }
+
+.himi-writing-daily-card > div {
+  height: 6px;
+  margin-top: 8px;
+  overflow: hidden;
+  border-radius: 999px;
+  background: #e8eeea;
+}
+
+.himi-writing-daily-card > div span { height: 100%; display: block; border-radius: inherit; background: linear-gradient(90deg, var(--writing-teal), #5cc7ae); transition: width 280ms ease; }
+.himi-writing-daily-card p,
+.himi-writing-rule-card p { margin: 10px 0 0; color: #6d807b; font-size: 10px; line-height: 1.55; }
+
+.himi-writing-rule-card { border-color: rgba(224, 162, 60, .23); background: #fffaf0; }
+.himi-writing-rule-card > span { color: #a86c15; }
+.himi-writing-rule-card strong { margin-top: 10px; display: block; color: #5a4928; font-size: 13px; }
+
+.himi-writing-studio button:focus-visible,
+.himi-writing-studio input:focus-visible {
+  outline: 3px solid rgba(255, 87, 77, .28);
+  outline-offset: 3px;
+}
+
+@media (max-width: 1220px) {
+  .himi-writing-workspace { grid-template-columns: 220px minmax(420px, 1fr); }
+  .himi-writing-character-info { grid-column: 1 / -1; grid-template-columns: 1.1fr .65fr 1fr 1.15fr; }
+  .himi-writing-character-card { display: grid; grid-template-columns: auto 86px 1fr auto; align-items: center; gap: 14px; text-align: left; }
+  .himi-writing-character-card > strong { margin: 0; font-size: 62px; text-align: center; }
+  .himi-writing-character-card > div:not(.himi-writing-meta) { margin: 0; justify-content: flex-start; }
+  .himi-writing-character-card > p { margin: 0; }
+  .himi-writing-meta { margin: 0; padding: 0; border: 0; }
+  .himi-writing-navigation { min-height: 100%; }
+}
+
+@media (max-width: 920px) {
+  .himi-writing-studio { padding: 22px 18px 30px; }
+  .himi-writing-workspace { grid-template-columns: 1fr; }
+  .himi-writing-library { order: 2; }
+  .himi-writing-practice { order: 1; }
+  .himi-writing-character-info { order: 3; grid-column: auto; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .himi-writing-character-grid { max-height: none; grid-template-columns: repeat(6, minmax(0, 1fr)); overflow: visible; }
+  .himi-writing-character-card { display: block; text-align: center; }
+  .himi-writing-character-card > strong { margin-top: 10px; font-size: 76px; }
+  .himi-writing-character-card > div:not(.himi-writing-meta) { margin-top: 6px; justify-content: center; }
+  .himi-writing-character-card > p { margin-top: 8px; }
+  .himi-writing-meta { margin-top: 13px; padding-top: 12px; border-top: 1px solid #edf0ed; }
+}
+
+@media (max-width: 720px) {
+  .himi-writing-studio { padding: 14px 12px 24px; }
+  .himi-writing-workspace { gap: 12px; }
+  .himi-writing-practice { padding: 12px; border-radius: 22px; }
+  .himi-writing-mode-tabs button { min-height: 47px; padding: 6px; gap: 5px; }
+  .himi-writing-mode-tabs button small { display: none; }
+  .himi-writing-mode-tabs button strong { font-size: 10px; }
+  .himi-writing-board-shell { width: 100%; margin-top: 12px; border-width: 7px; border-radius: 20px; }
+  .himi-writing-mode-badge { top: 12px; left: 12px; }
+  .himi-writing-feedback { margin-top: 12px; }
+  .himi-writing-feedback-copy strong { font-size: 11px; }
+  .himi-writing-board-actions { align-items: stretch; }
+  .himi-writing-board-actions button { flex: 1; padding-inline: 10px; }
+  .himi-writing-library { padding: 15px; border-radius: 21px; }
+  .himi-writing-character-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .himi-writing-character-grid button > span { font-size: 27px; }
+  .himi-writing-character-info { grid-template-columns: 1fr; }
+  .himi-writing-character-card,
+  .himi-writing-daily-card,
+  .himi-writing-rule-card { padding: 17px; }
+  .himi-writing-navigation { min-height: 54px; }
+}
+
+@media (max-width: 390px) {
+  .himi-writing-mode-tabs button > svg { width: 15px; }
+  .himi-writing-mode-tabs button strong { font-size: 9px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .himi-writing-character-grid button,
+  .himi-writing-board-actions button,
+  .himi-writing-progress span,
+  .himi-writing-daily-card > div span { transition: none; }
+}

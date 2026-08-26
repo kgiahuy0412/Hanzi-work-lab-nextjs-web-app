@@ -12,7 +12,6 @@ import {
   Check,
   CircleHelp,
   Footprints,
-  Gamepad2,
   Headphones,
   Keyboard,
   Layers3,
@@ -708,8 +707,9 @@ export function GameCenter({
 
   return (
     <main className="learner-dashboard game-center-dashboard">
+      <h1 className="sr-only">Trung tâm trò chơi Himi</h1>
       <div className="game-center-shell game-journey-shell">
-        <section className="game-journey-stage" aria-labelledby="game-journey-title">
+        <section className="game-journey-stage" aria-label="Hành trình trò chơi">
           <picture className="game-journey-background">
             <source media="(max-width: 960px)" srcSet="/assets/games/journey-map-mobile-long.webp" />
             <img alt="" height={1067} src="/assets/games/journey-map-desktop.webp" width={1600} />
@@ -717,10 +717,7 @@ export function GameCenter({
 
           <JourneyTraveler targetGameId={recommendedGameId} />
 
-          <header className="game-journey-header">
-            <span><Gamepad2 size={16} /> TRUNG TÂM TRÒ CHƠI</span>
-            <h1 id="game-journey-title">Hành trình phản xạ</h1>
-            <p>Mỗi trò chơi là một bước tiến.</p>
+          <div className="game-journey-status">
             <div className="game-journey-progress" aria-label={`${record.completed.length} trên 7 trò đã hoàn thành`}>
               <Sparkles size={16} />
               <strong>{record.completed.length} / 7</strong>
@@ -731,7 +728,7 @@ export function GameCenter({
                 : syncState === "error" ? "Chưa đồng bộ được kết quả gần nhất"
                   : authenticated ? `${record.totalXp} XP · đồng bộ tài khoản` : `${record.totalXp} XP · lưu trên thiết bị`}
             </small>
-          </header>
+          </div>
 
           <section className={`game-journey-featured ${record.completed.includes("slice") ? "is-complete" : ""}`.trim()} aria-label="Trạm hiện tại: Luyện chém từ">
             <div className="game-journey-featured-card">

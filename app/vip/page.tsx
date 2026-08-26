@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AlertCircle, CalendarDays, Check, Clock3, Crown, Route, Send, ShieldCheck } from "lucide-react";
+import { AlertCircle, Check, Clock3, Crown, Send } from "lucide-react";
 import { cancelVipActivationRequestAction, requestVipActivationAction } from "@/app/vip/actions";
-import { LearnerPageHeader } from "@/components/learner-page-header";
+import { HimiSectionBanner } from "@/components/himi-section-banner";
 import { getCurrentUser } from "@/lib/auth-session";
 import { getVipUpgradeOverview } from "@/lib/vip-activation-request-service";
 import { vipDaysRemaining } from "@/lib/vip-subscription";
@@ -64,12 +64,10 @@ export default async function VipPage({
   const featuredPlanId = overview.plans.find((plan) => plan.durationDays >= 180)?.id ?? overview.plans[0]?.id;
 
   return <main>
-    <section className="section-shell learner-page-header-shell vip-page-header"><LearnerPageHeader
-      description="Chọn thời hạn phù hợp rồi gửi yêu cầu trong một phút. Đây là luồng kích hoạt thủ công: không tự trừ tiền, không yêu cầu nhập thông tin thanh toán."
-      eyebrow="Quyền lợi học tập"
-      eyebrowIcon={Crown}
-      meta={<><span><Route size={16} />Mở Lộ trình, Luyện ca và Tập viết</span><span><ShieldCheck size={16} />Duyệt trực tiếp trên tài khoản</span></>}
-      title="Giữ nhịp học liền mạch với Himi Chinese VIP."
+    <section className="section-shell himi-banner-shell vip-page-header"><HimiSectionBanner
+      titleId="vip-page-title"
+      titleLines={["Học liền mạch.", "Mở trọn hành trình."]}
+      variant="vip"
     /></section>
 
     <section className="section-shell vip-request-feedback" aria-live="polite">
@@ -127,25 +125,5 @@ export default async function VipPage({
       })}
     </section>
 
-    <section className="section-shell vip-flow" id="quy-trinh-kich-hoat">
-      <h2>Từ yêu cầu đến lúc bắt đầu học</h2>
-      <div className="flow-grid">
-        <article className="flow-step"><span>01</span><h3>Chọn gói</h3><p>Chọn thời hạn phù hợp với nhịp học và gửi yêu cầu bằng đúng tài khoản đang dùng.</p></article>
-        <article className="flow-step"><span>02</span><h3>Vào hàng đợi</h3><p>Bạn thấy ngay trạng thái “đang chờ” tại trang VIP và trong Tài khoản.</p></article>
-        <article className="flow-step"><span>03</span><h3>Admin kiểm tra</h3><p>Quản trị viên xác nhận yêu cầu, tài khoản và thời hạn trước khi kích hoạt.</p></article>
-        <article className="flow-step"><span>04</span><h3>Mở quyền học</h3><p>Khi duyệt, quyền VIP được cấp ngay và ngày hết hạn hiển thị rõ trên tài khoản.</p></article>
-      </div>
-      <div className="prototype-note"><AlertCircle size={19} /><span>Himi Chinese hiện dùng quy trình beta thủ công và chưa thu tiền tự động. Mức giá hiển thị là mức dự kiến để thử nghiệm sản phẩm; việc tích hợp thanh toán sẽ được bổ sung sau.</span></div>
-    </section>
-
-    <section className="section-shell policy-section" id="chinh-sach">
-      <span className="section-kicker">Rõ ràng trước khi kích hoạt</span><h2>Thông tin bạn luôn nhìn thấy</h2>
-      <div className="policy-grid">
-        <article className="policy-card"><h3>Trạng thái yêu cầu</h3><p>Yêu cầu đang chờ có thể hủy hoặc đổi gói. Một tài khoản chỉ có một yêu cầu chờ tại một thời điểm.</p></article>
-        <article className="policy-card"><h3>Thời hạn VIP</h3><p>Thời hạn tính từ lúc admin duyệt. Nếu đang còn VIP, lần duyệt mới sẽ cộng tiếp từ ngày hết hạn hiện tại.</p></article>
-        <article className="policy-card"><h3>Lịch sử minh bạch</h3><p>Mọi thao tác gửi, đổi, hủy, duyệt và từ chối đều được ghi lại để có thể đối soát khi cần.</p></article>
-      </div>
-      <div className="prototype-note"><CalendarDays size={19} /><span>Luồng này chưa thay thế điều khoản bán hàng chính thức. Trước khi nhận thanh toán thật cần hoàn thiện chính sách bảo mật, sử dụng, hoàn tiền và thông tin chủ sở hữu.</span></div>
-    </section>
   </main>;
 }

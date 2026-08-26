@@ -3,6 +3,8 @@ import { Suspense } from "react";
 import { Geist } from "next/font/google";
 import "./globals.css";
 import "./motion.css";
+import "./responsive.css";
+import "./white-backgrounds.css";
 import { SiteHeader, SiteHeaderFallback } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileNav } from "@/components/mobile-nav";

@@ -4,7 +4,7 @@ import { readFile } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-test("home page contains the Himi Chinese daily review studio", async () => {
+test("home page contains the Himi Chinese language portal hero", async () => {
   const [page, studio, verifyEmail] = await Promise.all([
     read("app/page.tsx"),
     read("components/review-home-studio.tsx"),
@@ -14,24 +14,18 @@ test("home page contains the Himi Chinese daily review studio", async () => {
   assert.match(page, /verified=\{params\.verified === "1"\}/);
   assert.match(page, /getDailySessionSource/);
   assert.match(page, /buildDailySession/);
-  assert.match(studio, /Phiên 10 phút hôm nay/);
+  assert.match(studio, /Nói tiếng/);
+  assert.match(studio, /Trung trong/);
+  assert.match(studio, /đời sống thật/);
   assert.match(studio, /Email đã xác minh\. Chào mừng bạn đến Himi Chinese\./);
   assert.match(verifyEmail, /new URL\("\/\?verified=1"/);
-  assert.match(studio, /today-session-steps/);
-  assert.match(studio, /dailySession\.totalSteps/);
-  assert.match(studio, /swipe-review-demo\.gif/);
-  assert.match(studio, /Câu dùng ngay/);
-  assert.match(studio, /我马上跟进。/);
-  assert.match(studio, /speechSynthesis/);
-  assert.match(studio, /review-next-lesson[\s\S]*review-swipe-demo-below/);
-  assert.doesNotMatch(studio, /Nhịp tuần này|review-week-rhythm/);
+  assert.match(studio, /himi-language-portal-hero-1536\.webp/);
+  assert.match(studio, /himi-language-portal-hero-2k\.webp 2560w/);
+  assert.match(studio, /himi-language-portal-hero-4k\.webp 3840w/);
+  assert.match(studio, /Bắt đầu luyện nói/);
+  assert.match(studio, /Xem lộ trình/);
+  assert.doesNotMatch(studio, /Phiên 10 phút|today-session-steps|swipe-review-demo/);
   assert.doesNotMatch(page, /getLearningSummary/);
-  assert.match(studio, /onExitComplete=\{finishCardTransition\}/);
-  assert.match(studio, /type: "spring", stiffness: 320/);
-  assert.doesNotMatch(studio, /setTimeout\(advance, 360\)/);
-  assert.doesNotMatch(studio, /review-session-summary/);
-  assert.doesNotMatch(studio, /Phiên ôn hôm nay|Kéo là bắt đầu/);
-  assert.doesNotMatch(studio, /Bắt đầu lượt ôn/);
 });
 
 test("prototype includes learner, VIP and admin routes", async () => {
@@ -39,8 +33,8 @@ test("prototype includes learner, VIP and admin routes", async () => {
   assert.match(files[0], /CourseExplorer/);
   assert.match(files[1], /getVipUpgradeOverview/);
   assert.match(files[1], /Gửi yêu cầu kích hoạt/);
-  assert.match(files[1], /beta thủ công và chưa thu tiền tự động/);
-  assert.match(files[1], /Từ yêu cầu đến lúc bắt đầu học/);
+  assert.doesNotMatch(files[1], /Từ yêu cầu đến lúc bắt đầu học/);
+  assert.doesNotMatch(files[1], /Thông tin bạn luôn nhìn thấy/);
   assert.match(files[2], /Tổng quan vận hành/);
 });
 
@@ -317,9 +311,8 @@ test("practice content has PostgreSQL schema, seed and authenticated admin CRUD"
 });
 
 test("games route renders the Cánh Cụt slice game and six video-inspired activities", async () => {
-  const [page, legacyPage, center, game, shell, styles, content] = await Promise.all([
+  const [page, center, game, shell, styles, content] = await Promise.all([
     read("app/games/page.tsx"),
-    read("app/writing/page.tsx"),
     read("components/game-center.tsx"),
     read("components/writing-slice-game.tsx"),
     read("components/learner-app-shell.tsx"),
@@ -327,7 +320,6 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
     read("lib/game-content.ts"),
   ]);
   assert.match(page, /GameCenter/);
-  assert.match(legacyPage, /redirect\("\/games"\)/);
   assert.match(center, /Luyện chém từ/);
   assert.match(center, /Ghép cặp siêu tốc/);
   assert.match(center, /Nối nhanh chữ – âm/);
@@ -335,7 +327,7 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
   assert.match(center, /Viết chữ theo nghĩa/);
   assert.match(center, /Flashcard 3D/);
   assert.match(center, /Thử thách tổng hợp/);
-  assert.match(center, /Hành trình phản xạ/);
+  assert.doesNotMatch(center, /Chơi một lượt/);
   assert.match(center, /journey-map-desktop\.webp/);
   assert.match(center, /journey-map-mobile-long\.webp/);
   assert.match(center, /memory-penguin-cutout\.png/);
@@ -376,6 +368,28 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
   assert.equal((content.match(/id: "/g) ?? []).length, 12);
 });
 
+test("writing route provides a responsive Himi stroke-order studio", async () => {
+  const [page, studio, styles, packageJson] = await Promise.all([
+    read("app/writing/page.tsx"),
+    read("components/himi-writing-studio.tsx"),
+    read("app/writing-studio.css"),
+    read("package.json"),
+  ]);
+  assert.match(page, /HimiWritingStudio/);
+  assert.match(studio, /import\("hanzi-writer"\)/);
+  assert.match(studio, /Xem nét/);
+  assert.match(studio, /Tô theo/);
+  assert.match(studio, /Tự viết/);
+  assert.match(studio, /speechSynthesis/);
+  assert.match(studio, /localStorage/);
+  assert.match(studio, /onCorrectStroke/);
+  assert.match(studio, /onMistake/);
+  assert.match(studio, /onComplete/);
+  assert.match(styles, /@media \(max-width: 720px\)/);
+  assert.match(styles, /prefers-reduced-motion/);
+  assert.match(packageJson, /"hanzi-writer": "\^3\.7\.3"/);
+});
+
 test("practice and game progress persist per authenticated learner", async () => {
   const [schema, repository, practiceRoute, gameRoute, practicePage, gamesPage] = await Promise.all([
     read("db/schema.ts"),
@@ -398,7 +412,7 @@ test("practice and game progress persist per authenticated learner", async () =>
 });
 
 test("daily session reads today's learner activity and deep-links each next step", async () => {
-  const [repository, model, schema, lessonPage, lessonWorkspace, practicePage, practiceHub, gamesPage, gameCenter, reviewStudio] = await Promise.all([
+  const [repository, model, schema, lessonPage, lessonWorkspace, practicePage, practiceHub, gamesPage, gameCenter] = await Promise.all([
     read("lib/daily-session-repository.ts"),
     read("lib/daily-session.ts"),
     read("db/schema.ts"),
@@ -408,7 +422,6 @@ test("daily session reads today's learner activity and deep-links each next step
     read("components/work-practice-hub.tsx"),
     read("app/games/page.tsx"),
     read("components/game-center.tsx"),
-    read("components/review-home-studio.tsx"),
   ]);
   assert.match(repository, /vietnamDayRange/);
   assert.match(repository, /practiceAttempts/);
@@ -426,8 +439,6 @@ test("daily session reads today's learner activity and deep-links each next step
   assert.match(gamesPage, /initialGameId/);
   assert.match(gameCenter, /daily-game-flow-action/);
   assert.match(gameCenter, /session=today#today-summary/);
-  assert.match(reviewStudio, /4\/4 · Phiên hôm nay đã xong/);
-  assert.match(reviewStudio, /today-session-summary/);
 });
 
 test("public trust pages and current account copy are present", async () => {
@@ -445,32 +456,72 @@ test("public trust pages and current account copy are present", async () => {
   assert.match(privacy, /Chính sách bảo mật/);
 });
 
+test("learner login and registration keep the animated Himi background", async () => {
+  const [loginPage, registerPage, authCard, styles, whiteBackgrounds] = await Promise.all([
+    read("app/login/page.tsx"),
+    read("app/register/page.tsx"),
+    read("components/auth-card.tsx"),
+    read("app/globals.css"),
+    read("app/white-backgrounds.css"),
+  ]);
+  assert.match(loginPage, /mode="login"/);
+  assert.match(registerPage, /mode="register"/);
+  assert.match(authCard, /auth-page-login-scene/);
+  assert.match(styles, /login-bag-scene\.webp/);
+  assert.match(styles, /penguin-walk-cycle-v2\.png/);
+  assert.match(whiteBackgrounds, /\.auth-page\.auth-page-login-scene/);
+  assert.doesNotMatch(whiteBackgrounds, /auth-login-scene-art|auth-login-scene-foreground/);
+});
+
 test("learner navigation prefetches primary routes and exposes immediate loading feedback", async () => {
-  const [shell, coursesLoading, practiceLoading, lessons] = await Promise.all([
+  const [shell, coursesLoading, practiceLoading, lessons, navigationStyles, globalStyles] = await Promise.all([
     read("components/learner-app-shell.tsx"),
     read("app/courses/loading.tsx"),
     read("app/practice/loading.tsx"),
     read("lib/lesson-repository.ts"),
+    read("app/learner-navigation.css"),
+    read("app/globals.css"),
   ]);
   assert.match(shell, /router\.prefetch/);
   assert.match(shell, /route-transition-progress/);
+  assert.match(shell, /routeProgressCompleting/);
   assert.match(shell, /pendingHref/);
+  assert.match(shell, /aria-expanded={railExpanded}/);
+  assert.match(shell, /<span>Luyện tập<\/span>/);
+  assert.match(shell, /aria-controls="rail-practice-menu"/);
+  assert.match(shell, /aria-controls="mobile-practice-menu"/);
+  assert.match(shell, /practiceMenuOpen/);
+  assert.match(shell, /setRailExpanded\(true\)/);
+  assert.match(shell, /label: "Luyện viết"/);
+  assert.match(shell, /label: "Luyện nghe"/);
+  assert.match(navigationStyles, /rail-practice-group:is\(:hover, :focus-within, \.is-open\)/);
+  assert.match(navigationStyles, /mobile-practice-group\.is-open/);
+  assert.match(globalStyles, /linear-gradient\(90deg, #ff8178 0%, #ff5b55 58%, #e83f49 100%\)/);
+  assert.match(globalStyles, /route-transition-progress\.complete span/);
   assert.match(coursesLoading, /CoursesPageSkeleton/);
   assert.match(practiceLoading, /Đang chuẩn bị Kho ca làm/);
   assert.match(lessons, /getCachedPublishedPracticeVocabulary/);
 });
 
-test("course library uses seven editorial topic covers and a streamed catalog", async () => {
-  const [page, card, visuals] = await Promise.all([
+test("course library uses seven Himi industry covers and a streamed catalog", async () => {
+  const [page, card, visuals, practiceHub, bannerStyles] = await Promise.all([
     read("app/courses/page.tsx"),
     read("components/course-card.tsx"),
     read("lib/course-visuals.ts"),
+    read("components/work-practice-hub.tsx"),
+    read("app/himi-section-banner.css"),
   ]);
-  assert.match(page, /Chọn đúng ngành, học đúng việc/);
+  assert.match(page, /Bạn muốn dùng tiếng/);
   assert.match(page, /Suspense/);
   assert.match(card, /course-cover-image/);
   assert.match(card, /unoptimized/);
   assert.equal((visuals.match(/src: "\/assets\/courses\//g) ?? []).length, 7);
+  assert.equal((visuals.match(/src: "\/assets\/courses\/himi-concepts\//g) ?? []).length, 7);
+  assert.match(visuals, /himi-workplace-communication\.png/);
+  assert.equal((practiceHub.match(/"\/assets\/courses\/himi-concepts\//g) ?? []).length, 7);
+  assert.match(bannerStyles, /himi-career-current\.gif/);
+  assert.match(bannerStyles, /himi-career-current-static\.png/);
+  assert.doesNotMatch(bannerStyles, /penguin-hello\.gif/);
 });
 
 test("lesson vocabulary uses a focused interactive card deck", async () => {

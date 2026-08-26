@@ -1,13 +1,13 @@
+import { HimiSectionBanner } from "@/components/himi-section-banner";
+
 export default function PracticeLoading() {
   return <main aria-busy="true" className="learner-dashboard practice-dashboard practice-route-loading">
     <span className="sr-only" role="status">Đang chuẩn bị Kho ca làm…</span>
     <div className="practice-dashboard-frame">
       <div aria-hidden="true" className="work-practice-layout is-catalog">
         <section className="work-practice-main practice-loading-main">
-          <div className="practice-loading-catalog-head">
-            <span className="skeleton-block" />
-            <span className="skeleton-block" />
-            <span className="skeleton-block" />
+          <div className="practice-banner-shell">
+            <HimiSectionBanner titleId="practice-loading-title" titleLines={["Luyện đúng cảnh.", "Nói tự nhiên hơn."]} variant="practice" />
           </div>
           <div className="practice-loading-tabs">
             {Array.from({ length: 7 }, (_, index) => <span className="skeleton-block" key={index} />)}

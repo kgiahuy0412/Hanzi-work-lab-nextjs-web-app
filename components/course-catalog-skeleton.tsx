@@ -1,3 +1,5 @@
+import { HimiSectionBanner } from "@/components/himi-section-banner";
+
 export function CourseGridSkeleton() {
   return <section aria-hidden="true" className="section-shell explorer course-catalog-skeleton">
     <div className="explorer-toolbar">
@@ -24,16 +26,13 @@ export function CourseGridSkeleton() {
 export function CoursesPageSkeleton() {
   return <main aria-busy="true" className="course-library-page">
     <span className="sr-only" role="status">Đang tải thư viện lộ trình…</span>
-    <section aria-hidden="true" className="section-shell learner-page-header-shell">
-      <div className="learner-page-header has-aside course-library-hero-loading">
-        <div className="learner-page-header-copy">
-          <span className="skeleton-block" />
-          <span className="skeleton-block" />
-          <span className="skeleton-block" />
-          <span className="skeleton-block" />
-        </div>
-        <span className="skeleton-block course-header-image" />
-      </div>
+    <section className="section-shell himi-banner-shell">
+      <HimiSectionBanner
+        description="Khám phá lộ trình theo ngành để dùng tiếng Trung hiệu quả trong công việc thực tế."
+        titleId="course-library-loading-title"
+        titleLines={["Bạn muốn dùng tiếng", "Trung để làm gì?"]}
+        variant="courses"
+      />
     </section>
     <CourseGridSkeleton />
   </main>;

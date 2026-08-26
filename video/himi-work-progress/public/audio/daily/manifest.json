@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "generatedAt": "2026-08-26T06:53:08.505Z",
+  "clips": [
+    {
+      "id": "store-01",
+      "text": "您好，需要袋子吗？",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-8%",
+      "durationMs": 2352,
+      "sizeBytes": 14112
+    },
+    {
+      "id": "store-02",
+      "text": "需要一个，谢谢。",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-8%",
+      "durationMs": 2544,
+      "sizeBytes": 15264
+    },
+    {
+      "id": "store-03",
+      "text": "可以用手机支付吗？",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-8%",
+      "durationMs": 2592,
+      "sizeBytes": 15552
+    },
+    {
+      "id": "food-01",
+      "text": "您好，想吃点儿什么？",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-8%",
+      "durationMs": 2472,
+      "sizeBytes": 14832
+    },
+    {
+      "id": "food-02",
+      "text": "我要一碗牛肉面。",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-8%",
+      "durationMs": 2280,
+      "sizeBytes": 13680
+    },
+    {
+      "id": "food-03",
+      "text": "请少放一点辣椒。",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-8%",
+      "durationMs": 2424,
+      "sizeBytes": 14544
+    },
+    {
+      "id": "metro-01",
+      "text": "请问，地铁站怎么走？",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-8%",
+      "durationMs": 2760,
+      "sizeBytes": 16560
+    },
+    {
+      "id": "metro-02",
+      "text": "一直走，然后向右转。",
+      "voice": "zh-CN-YunxiNeural",
+      "rate": "-8%",
+      "durationMs": 3216,
+      "sizeBytes": 19296
+    },
+    {
+      "id": "metro-03",
+      "text": "离这里远吗？",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-8%",
+      "durationMs": 1800,
+      "sizeBytes": 10800
+    }
+  ]
+}

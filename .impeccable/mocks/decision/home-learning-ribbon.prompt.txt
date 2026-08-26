@@ -1,0 +1,21 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop web application homepage composition, 1440x900 landscape
+Input images:
+- Image 1 is the incumbent Himi Chinese homepage. Carry over only its persistent left navigation rail, quiet top bar, warm-white palette, Geist-like sans typography, rounded component character, teal/coral/blue signal colors, and adult-learning tone. Do not copy its oversized flashcard composition.
+- Image 2 is the exact Himi mascot identity. Preserve black-and-white baby penguin, orange beak and feet, three head feathers, rosy cheeks, large glossy eyes, and red-to-orange scarf.
+
+Primary request: Design the “Hành trình 10 phút” dashboard structure for Himi Chinese, a Vietnamese Chinese-learning app for working adults. The homepage must feel like an OPERATE surface: immediately clear what to do next, then reveal the broader learning ecosystem without clutter.
+
+Structure in reading order:
+1. Keep the existing narrow white left sidebar with Himi logo and line icons, and the existing quiet top bar with “Himi Chinese”, login/streak and notification controls.
+2. First content row: welcoming heading “Chào buổi sáng” and a concise subtitle on the left; small useful Himi coach integrated on the right, pointing toward the active session, not decorative.
+3. Dominant center move: a wide tactile horizontal journey ribbon titled “Phiên 10 phút hôm nay”, showing four connected steps with clear states: “Ôn nhanh”, “Học tiếp”, “Luyện ca”, “Phản xạ”. The active step is teal/blue, completed steps are calm green, pending steps are warm neutral. Primary coral button text: “Tiếp tục phiên học”.
+4. Second tier: one medium “Bài đang học” panel with Chinese workplace lesson content and a visible progress bar; beside it one compact “Câu dùng ngay” pine panel with Hanzi, pinyin, Vietnamese meaning and audio control.
+5. Third tier: six compact capability entries for “Lộ trình”, “Luyện viết”, “Video”, “Luyện nghe”, “Luyện ca”, “Trò chơi”, arranged as a quiet horizontal utility strip with distinct Lucide-style line icons, plus one small weekly-progress summary.
+6. Show enough of the next fold to prove the whole dashboard system continues.
+
+Visual system: The Himi Workday Studio. Bright, modern, professional but friendly; not childish. Warm canvas #f8f7f2, warm surface #fffdf8, Himi teal #159f96, deep teal/pine #064f48, action coral #ff5b55, progress blue #1767e8, dark instruction ink #071a35. Rounded 13–24px controls and panels, large diffuse shadow only on the journey ribbon and Himi coach panel. Chinese characters receive strong typographic scale.
+Composition/framing: crisp full desktop browser/app screenshot, front-on, 1440x900 landscape, entire app UI visible edge-to-edge. Strong asymmetry and clear hierarchy; the journey ribbon is the memorable dominant object, not a generic hero banner.
+Text: Render only concise Vietnamese/Chinese UI copy listed above. All text must be readable and correctly spelled. No English filler or lorem ipsum.
+Constraints: preserve exact Himi identity; keep current sidebar/topbar shell; semantic-looking real product UI; no people; no stock photos; no fake testimonials, statistics, pricing or marketing claims; no browser chrome outside the app; no watermark.
+Avoid: oversized flashcard covering the page, equal-weight white-card bento grid, dashboard clutter, excessive gradients, glassmorphism, floating decorative icons, childish game UI, illegible microtext.

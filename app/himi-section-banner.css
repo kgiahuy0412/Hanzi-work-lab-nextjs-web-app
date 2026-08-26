@@ -1,0 +1,332 @@
+/* Shared Himi banners — concise page identity without duplicating explanatory copy. */
+.himi-banner-shell {
+  padding-top: 30px;
+}
+
+.practice-banner-shell {
+  width: min(1320px, calc(100% - 64px));
+  margin-inline: auto;
+}
+
+.practice-banner-shell { padding: 2px 0 24px; }
+
+.himi-section-banner {
+  --himi-banner-accent: #138779;
+  --himi-banner-accent-soft: #d9f1e8;
+  min-height: 196px;
+  padding: 24px clamp(30px, 4vw, 52px);
+  position: relative;
+  isolation: isolate;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(400px, 500px);
+  align-items: center;
+  gap: 22px;
+  overflow: hidden;
+  border: 1px solid rgba(220, 208, 185, .78);
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 9% 4%, rgba(255, 255, 255, .95), transparent 33%),
+    radial-gradient(circle at 92% 12%, rgba(255, 203, 112, .25), transparent 25%),
+    linear-gradient(126deg, #fffaf1 0%, #fff4e7 50%, #e1f4eb 100%);
+  box-shadow: 0 18px 48px rgba(35, 83, 69, .09);
+}
+
+.himi-section-banner::before {
+  content: "";
+  width: 310px;
+  height: 310px;
+  position: absolute;
+  right: -72px;
+  bottom: -176px;
+  z-index: -1;
+  border-radius: 50%;
+  background: color-mix(in srgb, var(--himi-banner-accent-soft) 78%, transparent);
+  box-shadow: 0 0 0 24px rgba(255, 255, 255, .27), 0 0 0 50px rgba(255, 159, 98, .07);
+}
+
+.himi-section-banner.is-courses {
+  --himi-banner-accent: #347cc3;
+  --himi-banner-accent-soft: #dbeeff;
+  min-height: 318px;
+  padding: 38px clamp(34px, 4.4vw, 64px);
+  grid-template-columns: minmax(390px, .88fr) minmax(500px, 1.12fr);
+  border-color: rgba(199, 220, 216, .82);
+  background-color: #fff;
+  background-image: url("/assets/courses/himi-career-hero-background-2k.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-shadow: 0 22px 58px rgba(33, 88, 77, .11);
+}
+
+.himi-section-banner.is-courses::before { display: none; }
+
+.is-courses .himi-section-banner-copy { max-width: 520px; }
+
+.is-courses h1 {
+  font-size: clamp(40px, 3.7vw, 53px);
+  line-height: .96;
+}
+
+.is-courses h1 > span { white-space: nowrap; }
+
+.himi-section-banner-copy > p {
+  max-width: 500px;
+  margin: 18px 0 0;
+  color: #536b66;
+  font-size: 15px;
+  font-weight: 560;
+  line-height: 1.58;
+}
+
+.is-courses .himi-section-banner-visual { min-height: 242px; }
+
+.himi-section-banner-mascot.himi-course-banner-mascot {
+  width: clamp(315px, 27vw, 380px);
+  right: clamp(10px, 2.3vw, 34px);
+  bottom: -24px;
+  background-image: url("/assets/mascot/penguin/himi-career-current.gif");
+  filter: drop-shadow(0 18px 22px rgba(21, 69, 60, .17));
+}
+
+.himi-section-banner.is-practice {
+  --himi-banner-accent: #df765b;
+  --himi-banner-accent-soft: #ffe1d6;
+  background: radial-gradient(circle at 10% 5%, #fff, transparent 32%), linear-gradient(126deg, #fffaf0, #fff0e7 49%, #dff3ea);
+}
+
+.himi-section-banner.is-vip {
+  --himi-banner-accent: #b88222;
+  --himi-banner-accent-soft: #ffedbd;
+  background: radial-gradient(circle at 10% 5%, #fff, transparent 32%), linear-gradient(126deg, #fffaf0, #fff2d8 50%, #e2f3e9);
+}
+
+.himi-section-banner-copy {
+  min-width: 0;
+  position: relative;
+  z-index: 3;
+}
+
+.himi-section-banner h1 {
+  max-width: 720px;
+  margin: 0;
+  color: #0a3b34;
+  font-size: clamp(38px, 3.5vw, 51px);
+  font-weight: 770;
+  line-height: .98;
+  letter-spacing: -.055em;
+}
+
+.himi-section-banner h1 > span { display: block; }
+
+.himi-section-banner-visual {
+  min-width: 0;
+  align-self: stretch;
+  position: relative;
+}
+
+.himi-banner-motif {
+  width: 250px;
+  height: 94px;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  border: 1px solid rgba(255, 255, 255, .9);
+  border-radius: 34px;
+  background: linear-gradient(120deg, rgba(255, 255, 255, .9), rgba(250, 255, 252, .55));
+  box-shadow: 0 18px 38px rgba(42, 98, 82, .11), inset 0 0 0 1px color-mix(in srgb, var(--himi-banner-accent) 9%, transparent);
+  transform: translateY(-50%);
+}
+
+.himi-banner-motif::before {
+  content: "";
+  width: 164px;
+  position: absolute;
+  top: 47px;
+  left: 42px;
+  border-top: 2px dashed color-mix(in srgb, var(--himi-banner-accent) 36%, transparent);
+}
+
+.himi-banner-token {
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  top: 20px;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: var(--himi-banner-accent);
+  border: 5px solid rgba(255, 255, 255, .84);
+  border-radius: 18px;
+  background: var(--himi-banner-accent-soft);
+  box-shadow: 0 8px 18px rgba(38, 91, 77, .12);
+  animation: himi-banner-token-float 3.2s ease-in-out infinite;
+}
+
+.himi-banner-token.token-one { left: 18px; transform: rotate(-6deg); }
+.himi-banner-token.token-two { left: 98px; animation-delay: -1.1s; }
+.himi-banner-token.token-three { right: 18px; transform: rotate(6deg); animation-delay: -2.1s; }
+
+.is-practice .himi-banner-token { border-radius: 50%; }
+.is-vip .himi-banner-token { color: #9e6911; background: linear-gradient(145deg, #fff5ce, #ffd975); }
+
+.himi-section-banner-mascot {
+  width: 188px;
+  aspect-ratio: 1;
+  position: absolute;
+  right: -2px;
+  bottom: -19px;
+  z-index: 4;
+  background: url("/assets/mascot/penguin/penguin-study-banner.gif") center / contain no-repeat;
+  filter: drop-shadow(0 15px 17px rgba(31, 69, 58, .16));
+  animation: himi-banner-mascot-float 3.5s ease-in-out infinite;
+}
+
+.is-vip .himi-section-banner-mascot { background-image: url("/assets/mascot/penguin/penguin-success-banner.gif"); }
+
+.himi-banner-orbit {
+  aspect-ratio: 1;
+  position: absolute;
+  right: 10px;
+  bottom: -13px;
+  z-index: 1;
+  border: 1px solid color-mix(in srgb, var(--himi-banner-accent) 24%, transparent);
+  border-radius: 50%;
+  animation: himi-banner-orbit 3.5s ease-out infinite;
+}
+
+.himi-banner-orbit-one { width: 158px; }
+.himi-banner-orbit-two { width: 198px; animation-delay: 1.7s; }
+
+.himi-banner-spark {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  z-index: 5;
+  border-radius: 3px;
+  background: #ff7463;
+  box-shadow: 19px 17px 0 -2px #f4b83f, -13px 24px 0 -3px #55bea3;
+  transform: rotate(18deg);
+  animation: himi-banner-spark 2.8s ease-in-out infinite;
+}
+
+.himi-banner-spark.spark-one { top: 23px; left: 245px; }
+.himi-banner-spark.spark-two { right: 13px; top: 29px; transform: rotate(-10deg) scale(.72); animation-delay: -1.4s; }
+
+@keyframes himi-banner-token-float {
+  0%, 100% { translate: 0 0; }
+  50% { translate: 0 -5px; }
+}
+
+@keyframes himi-banner-mascot-float {
+  0%, 100% { transform: translateY(0) rotate(-.6deg); }
+  50% { transform: translateY(-5px) rotate(.6deg); }
+}
+
+@keyframes himi-banner-orbit {
+  0% { opacity: 0; transform: scale(.72); }
+  30% { opacity: .58; }
+  100% { opacity: 0; transform: scale(1.12); }
+}
+
+@keyframes himi-banner-spark {
+  0%, 100% { opacity: .45; transform: scale(.82) rotate(18deg); }
+  50% { opacity: 1; transform: scale(1.08) rotate(29deg); }
+}
+
+@media (max-width: 1120px) {
+  .himi-section-banner { grid-template-columns: minmax(0, 1fr) 390px; }
+  .himi-banner-motif { width: 226px; }
+  .himi-banner-motif::before { width: 142px; }
+  .himi-banner-token.token-two { left: 86px; }
+  .himi-section-banner-mascot { width: 174px; }
+  .himi-section-banner.is-courses {
+    min-height: 292px;
+    grid-template-columns: minmax(360px, .9fr) minmax(390px, 1.1fr);
+    background-position: 53% center;
+  }
+  .himi-section-banner-mascot.himi-course-banner-mascot { width: 340px; bottom: -26px; }
+}
+
+@media (max-width: 860px) {
+  .himi-section-banner { padding-inline: 30px; grid-template-columns: minmax(0, 1fr) 292px; }
+  .himi-section-banner h1 { font-size: clamp(34px, 5vw, 44px); }
+  .himi-banner-motif { width: 162px; height: 82px; }
+  .himi-banner-motif::before { width: 84px; left: 38px; top: 41px; }
+  .himi-banner-token { width: 46px; height: 46px; top: 18px; border-width: 4px; border-radius: 15px; }
+  .himi-banner-token.token-one { left: 14px; }
+  .himi-banner-token.token-two { left: 58px; }
+  .himi-banner-token.token-three { right: 14px; }
+  .himi-banner-token svg { width: 19px; }
+  .himi-section-banner-mascot { width: 156px; }
+  .himi-banner-spark.spark-one { display: none; }
+  .himi-section-banner.is-courses {
+    min-height: 268px;
+    padding-inline: 30px;
+    grid-template-columns: minmax(330px, 1fr) 280px;
+    background-position: 58% center;
+  }
+  .is-courses h1 { font-size: clamp(38px, 5.3vw, 46px); }
+  .is-courses h1 > span { white-space: normal; }
+  .is-courses .himi-section-banner-copy > p { max-width: 390px; font-size: 13px; }
+  .himi-section-banner-mascot.himi-course-banner-mascot { width: 292px; right: -4px; bottom: -23px; }
+}
+
+@media (max-width: 720px) {
+  .himi-banner-shell { padding-top: 20px; }
+  .practice-banner-shell { width: calc(100% - 24px); }
+  .practice-banner-shell { padding: 0 0 18px; }
+  .himi-section-banner {
+    min-height: 168px;
+    padding: 21px 18px;
+    grid-template-columns: minmax(0, 1fr) 104px;
+    gap: 0;
+    border-radius: 21px;
+  }
+  .himi-section-banner::before { width: 220px; height: 220px; right: -100px; bottom: -125px; }
+  .himi-section-banner h1 { font-size: 23px; line-height: .99; }
+  .himi-banner-motif,
+  .himi-banner-spark.spark-two { display: none; }
+  .himi-section-banner-mascot { width: 111px; right: -13px; bottom: -1px; }
+  .himi-banner-orbit { right: -5px; bottom: 7px; }
+  .himi-banner-orbit-one { width: 92px; }
+  .himi-banner-orbit-two { width: 112px; }
+  .himi-section-banner.is-courses {
+    min-height: 332px;
+    padding: 24px 20px 138px;
+    grid-template-columns: 1fr;
+    align-items: start;
+    background-position: 63% center;
+  }
+  .is-courses .himi-section-banner-copy { max-width: 330px; }
+  .is-courses h1 { font-size: clamp(31px, 10.5vw, 43px); line-height: .98; }
+  .is-courses .himi-section-banner-copy > p { max-width: 290px; margin-top: 13px; font-size: 12px; line-height: 1.5; }
+  .is-courses .himi-section-banner-copy {
+    margin: -6px -6px 0;
+    padding: 14px 14px 16px;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .88);
+    box-shadow: 0 12px 30px rgba(21, 67, 58, .08);
+  }
+  .is-courses .himi-section-banner-visual { min-height: 0; position: static; }
+  .himi-section-banner-mascot.himi-course-banner-mascot { width: 222px; right: -8px; bottom: -18px; }
+}
+
+@media (max-width: 390px) {
+  .himi-section-banner { grid-template-columns: minmax(0, 1fr) 88px; }
+  .himi-section-banner-mascot { width: 101px; right: -16px; }
+  .himi-section-banner-mascot.himi-course-banner-mascot { width: 188px; right: -10px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .himi-banner-token,
+  .himi-section-banner-mascot,
+  .himi-banner-orbit,
+  .himi-banner-spark { animation: none; }
+  .is-courses .himi-section-banner-mascot,
+  .is-practice .himi-section-banner-mascot { background-image: url("/assets/mascot/penguin/penguin-study.png"); }
+  .is-courses .himi-section-banner-mascot.himi-course-banner-mascot { background-image: url("/assets/mascot/penguin/himi-career-current-static.png"); }
+  .is-vip .himi-section-banner-mascot { background-image: url("/assets/mascot/penguin/penguin-success.png"); }
+  .himi-banner-orbit { opacity: .2; transform: none; }
+}
