@@ -111,8 +111,8 @@ Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chu
 
 ## Email xác minh và đặt lại mật khẩu
 
-- Production cần `NEXT_PUBLIC_APP_URL`, `AUTH_SECRET`, `RESEND_API_KEY` và `RESEND_FROM_EMAIL`. Địa chỉ gửi phải thuộc domain đã xác minh với Resend.
-- Khi chạy development mà chưa có Resend, link xác minh/reset được in vào terminal để kiểm thử; production thiếu cấu hình sẽ báo lỗi và không giả vờ đã gửi thành công.
+- Production cần `NEXT_PUBLIC_APP_URL`, `AUTH_SECRET`, `BREVO_API_KEY` và `BREVO_FROM_EMAIL`; có thể đặt tên người gửi bằng `BREVO_FROM_NAME`. Địa chỉ gửi phải được xác minh trong Brevo.
+- Khi chạy development mà chưa cấu hình Brevo, link xác minh/reset được in vào terminal để kiểm thử; production thiếu cấu hình sẽ báo lỗi và không giả vờ đã gửi thành công.
 - Trên Vercel, ứng dụng chỉ tin `x-forwarded-for` do nền tảng ghi đè. Nếu tự triển khai sau reverse proxy hoặc Cloudflare, chỉ bật `AUTH_TRUST_X_FORWARDED_FOR=1` hoặc `AUTH_TRUST_CF_CONNECTING_IP=1` khi proxy thực sự ghi đè header từ client.
 - Chạy `npm run auth:cleanup` định kỳ để xóa session/token hết hạn và bộ đếm rate-limit cũ.
 
@@ -124,4 +124,4 @@ Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chu
 - `/practice` ưu tiên từ chưa học hoặc đã đến lịch ôn; từ vừa đánh giá được tạm rời hàng đợi đến lần ôn tiếp theo. Kho ca làm có 8 tình huống thử miễn phí và khóa phần bài tập của ca VIP ở server; người chưa có VIP chỉ nhận metadata, bối cảnh và câu mẫu, không nhận đáp án bài tập trả phí.
 - Dashboard và trang tài khoản hiển thị số bài đã mở/hoàn thành từ DB. Người chưa đăng nhập vẫn học thử nhưng tiến độ không được ghi.
 
-Đăng nhập, xác minh email, reset mật khẩu, rate-limit, RBAC, tiến độ bài học, lịch ôn, Admin CRUD và Kho ca làm responsive đã hoạt động. Bước tiếp theo hợp lý là lưu lịch sử xử lý ca theo tài khoản và đưa tình huống vào Admin CRUD; Resend có thể để sau khi có domain gửi thật.
+Đăng nhập, xác minh email, reset mật khẩu, rate-limit, RBAC, tiến độ bài học, lịch ôn, Admin CRUD và Kho ca làm responsive đã hoạt động. Bước tiếp theo hợp lý là lưu lịch sử xử lý ca theo tài khoản và đưa tình huống vào Admin CRUD; Brevo sẽ gửi email thật sau khi API key và địa chỉ gửi đã được xác minh.

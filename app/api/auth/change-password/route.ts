@@ -25,7 +25,7 @@ export async function POST(request: Request) {
   }
 
   await revokeUserSessions(user.id);
-  let notification: "resend" | "console" | "failed" = "failed";
+  let notification: "brevo" | "console" | "failed" = "failed";
   try {
     notification = await sendPasswordChangedEmail(user);
   } catch (error) {

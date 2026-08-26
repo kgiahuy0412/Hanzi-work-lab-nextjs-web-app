@@ -27,7 +27,7 @@ export async function POST(request: Request) {
 
   const session = await createSession(user.id);
   await recordAuthEvent({ action: "auth.email_verification.succeeded", request, userId: user.id });
-  const response = NextResponse.redirect(new URL("/account?verified=1", request.url), 303);
+  const response = NextResponse.redirect(new URL("/?verified=1", request.url), 303);
   response.cookies.set(sessionCookieName(), session.token, sessionCookieOptions(session.expiresAt));
   return response;
 }

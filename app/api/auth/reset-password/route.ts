@@ -31,7 +31,7 @@ export async function POST(request: Request) {
     return NextResponse.redirect(new URL("/reset-password?error=invalid_or_expired", request.url), 303);
   }
 
-  let notification: "resend" | "console" | "failed" = "failed";
+  let notification: "brevo" | "console" | "failed" = "failed";
   try {
     notification = await sendPasswordChangedEmail(user);
   } catch (error) {

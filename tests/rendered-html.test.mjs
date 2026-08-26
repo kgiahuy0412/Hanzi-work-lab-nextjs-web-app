@@ -4,15 +4,19 @@ import { readFile } from "node:fs/promises";
 
 const read = (path) => readFile(new URL(`../${path}`, import.meta.url), "utf8");
 
-test("home page contains the HanziWork daily review studio", async () => {
-  const [page, studio] = await Promise.all([
+test("home page contains the Himi Chinese daily review studio", async () => {
+  const [page, studio, verifyEmail] = await Promise.all([
     read("app/page.tsx"),
     read("components/review-home-studio.tsx"),
+    read("app/api/auth/verify-email/route.ts"),
   ]);
   assert.match(page, /ReviewHomeStudio/);
+  assert.match(page, /verified=\{params\.verified === "1"\}/);
   assert.match(page, /getDailySessionSource/);
   assert.match(page, /buildDailySession/);
   assert.match(studio, /Phiên 10 phút hôm nay/);
+  assert.match(studio, /Email đã xác minh\. Chào mừng bạn đến Himi Chinese\./);
+  assert.match(verifyEmail, /new URL\("\/\?verified=1"/);
   assert.match(studio, /today-session-steps/);
   assert.match(studio, /dailySession\.totalSteps/);
   assert.match(studio, /swipe-review-demo\.gif/);
@@ -208,14 +212,31 @@ test("admin can grant, extend and revoke VIP while learners see their live entit
   assert.match(service, /admin\.subscription\.extended/);
   assert.match(service, /admin\.subscription\.revoked/);
   assert.match(account, /getActiveVipSubscription/);
-  assert.match(account, /Hiệu lực đến/);
+  assert.match(account, /Quyền VIP có hiệu lực đến/);
   assert.match(access, /getActiveVipSubscription/);
   assert.match(consoleHeader, /href="\/admin\/subscriptions"/);
 });
 
+test("account page uses the approved profile-first layout without learning progress", async () => {
+  const [account, session] = await Promise.all([
+    read("app/account/page.tsx"),
+    read("lib/auth-session.ts"),
+  ]);
+
+  assert.match(account, /Tài khoản của tôi/);
+  assert.match(account, /account-profile-hero/);
+  assert.match(account, /Thông tin tài khoản/);
+  assert.match(account, /Tài khoản &amp; bảo mật/);
+  assert.match(account, /Ngày tham gia/);
+  assert.match(account, /account-security-details/);
+  assert.doesNotMatch(account, /getLearningSummary/);
+  assert.doesNotMatch(account, /Tiến độ học tập|Tiếp tục phiên hôm nay/);
+  assert.match(session, /createdAt: users\.createdAt/);
+});
+
 test("layout provides Vietnamese metadata", async () => {
   const source = await read("app/layout.tsx");
-  assert.match(source, /HanziWork — Tiếng Trung cho người đi làm/);
+  assert.match(source, /Himi Chinese — Tiếng Trung cho người đi làm/);
   assert.match(source, /<html lang="vi"/);
 });
 

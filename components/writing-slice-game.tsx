@@ -1,6 +1,8 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
+import { useGSAP } from "@gsap/react";
+import { gsap } from "gsap";
 import {
   ArrowLeft,
   ArrowRight,
@@ -24,6 +26,8 @@ import {
   type ReactNode,
 } from "react";
 import { gameWords, speakChinese } from "@/lib/game-content";
+
+gsap.registerPlugin(useGSAP);
 
 type GameMode = "ready" | "playing" | "paused" | "slicing" | "complete" | "gameover";
 
@@ -123,6 +127,9 @@ export function WritingSliceGame({
   const penguinRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
   const nextTimerRef = useRef<number | null>(null);
+  const fallTweenRef = useRef<gsap.core.Tween | null>(null);
+  const strikeTimelineRef = useRef<gsap.core.Timeline | null>(null);
+  const pendingStrikeRef = useRef<{ finalScore: number; nextCompleted: number } | null>(null);
 
   const word = gameWords[wordIndex];
   const normalizedTarget = useMemo(() => normalizeAnswer(word.pinyin), [word.pinyin]);
@@ -141,6 +148,8 @@ export function WritingSliceGame({
 
   useEffect(() => () => {
     if (nextTimerRef.current) window.clearTimeout(nextTimerRef.current);
+    fallTweenRef.current?.kill();
+    strikeTimelineRef.current?.kill();
     window.speechSynthesis?.cancel();
   }, []);
 
@@ -176,11 +185,11 @@ export function WritingSliceGame({
     setMode(nextMode);
   };
 
-  const measureStrikePoint = () => {
+  const measureStrikePoint = (): StrikeMotion | null => {
     const arena = arenaRef.current?.getBoundingClientRect();
     const target = wordRef.current?.getBoundingClientRect();
     const penguin = penguinRef.current?.getBoundingClientRect();
-    if (!arena || !target || !penguin) return;
+    if (!arena || !target || !penguin) return null;
     const targetX = target.left + target.width / 2;
     const targetY = target.top + target.height / 2;
     // Align the upper tip of the penguin's diagonal bamboo staff with the word.
@@ -188,7 +197,7 @@ export function WritingSliceGame({
     const impactTop = targetY - penguin.height * 0.16;
     const impactX = impactLeft - penguin.left;
     const impactY = impactTop - penguin.top;
-    setStrikePoint({
+    const nextStrikePoint = {
       x: Math.max(12, Math.min(88, ((targetX - arena.left) / arena.width) * 100)),
       y: Math.max(18, Math.min(78, ((targetY - arena.top) / arena.height) * 100)),
       approachX: impactX * 0.68 - 16,
@@ -197,29 +206,30 @@ export function WritingSliceGame({
       impactY,
       exitX: impactX + Math.max(100, arena.width * 0.12),
       exitY: impactY - Math.max(110, arena.height * 0.2),
-    });
+    };
+    setStrikePoint(nextStrikePoint);
+    return nextStrikePoint;
   };
 
   const handleCorrect = () => {
     if (mode !== "playing") return;
-    measureStrikePoint();
+    fallTweenRef.current?.pause();
+    const measuredStrike = measureStrikePoint();
+    if (!measuredStrike) {
+      fallTweenRef.current?.resume();
+      return;
+    }
     window.speechSynthesis?.cancel();
     const nextCombo = combo + 1;
     const nextCompleted = completed + 1;
+    const earnedScore = 100 + Math.min(nextCombo - 1, 5) * 20;
+    const finalScore = score + earnedScore;
     setCombo(nextCombo);
     setCompleted(nextCompleted);
-    setScore((value) => value + 100 + Math.min(nextCombo - 1, 5) * 20);
+    setScore(finalScore);
+    pendingStrikeRef.current = { finalScore, nextCompleted };
     setMode("slicing");
     clearNextTimer();
-    nextTimerRef.current = window.setTimeout(() => {
-      if (nextCompleted >= TARGET_ROUNDS) {
-        setMode("complete");
-        setAnswer("");
-        onComplete?.(score + 100 + Math.min(nextCombo - 1, 5) * 20);
-        return;
-      }
-      advanceWord();
-    }, 1780);
   };
 
   const handleMiss = () => {
@@ -253,9 +263,112 @@ export function WritingSliceGame({
   };
 
   const togglePause = () => {
-    if (mode === "playing") setMode("paused");
-    else if (mode === "paused" && !missed) setMode("playing");
+    if (mode === "playing") {
+      fallTweenRef.current?.pause();
+      setMode("paused");
+    } else if (mode === "paused" && !missed) {
+      fallTweenRef.current?.resume();
+      setMode("playing");
+    }
   };
+
+  useGSAP(() => {
+    if (mode !== "playing") return;
+    const arena = arenaRef.current;
+    const fallingWord = wordRef.current;
+    if (!arena || !fallingWord) return;
+
+    const fallDistance = Math.max(220, arena.clientHeight - 176);
+    gsap.set(fallingWord, { autoAlpha: 1, xPercent: -50, y: 0 });
+    const tween = gsap.to(fallingWord, {
+      duration: word.duration,
+      ease: "none",
+      onComplete: handleMiss,
+      y: fallDistance,
+    });
+    fallTweenRef.current = tween;
+
+    return () => {
+      tween.kill();
+      if (fallTweenRef.current === tween) fallTweenRef.current = null;
+    };
+  }, { dependencies: [runKey], scope: arenaRef });
+
+  useGSAP(() => {
+    if (mode !== "slicing") return;
+    const arena = arenaRef.current;
+    const fallingWord = wordRef.current;
+    const penguin = penguinRef.current;
+    if (!arena || !fallingWord || !penguin) return;
+
+    fallTweenRef.current?.kill();
+    fallTweenRef.current = null;
+
+    const face = fallingWord.querySelector<HTMLElement>(".writing-word-face");
+    const leftHalf = fallingWord.querySelector<HTMLElement>(".writing-word-half.is-left");
+    const rightHalf = fallingWord.querySelector<HTMLElement>(".writing-word-half.is-right");
+    const cape = penguin.querySelector<HTMLElement>(".writing-penguin-cape");
+    const impact = arena.querySelector<HTMLElement>(".writing-slice-impact");
+    const hitScore = arena.querySelector<HTMLElement>(".writing-hit-score");
+    if (!face || !leftHalf || !rightHalf || !cape || !impact || !hitScore) return;
+
+    const finishStrike = () => {
+      const pending = pendingStrikeRef.current;
+      pendingStrikeRef.current = null;
+      if (!pending) return;
+      if (pending.nextCompleted >= TARGET_ROUNDS) {
+        setMode("complete");
+        setAnswer("");
+        onComplete?.(pending.finalScore);
+      } else {
+        advanceWord();
+      }
+    };
+
+    gsap.set(face, { autoAlpha: 1 });
+    gsap.set([leftHalf, rightHalf], { autoAlpha: 0, display: "grid", rotation: 0, x: 0, y: 0 });
+    gsap.set(penguin, { autoAlpha: 1, filter: "drop-shadow(0 17px 18px rgba(35, 75, 47, .14))", rotation: -4, scale: 1, x: 0, y: 0 });
+    gsap.set(cape, { autoAlpha: 0, rotation: 3, scaleX: .34, skewY: -2 });
+    gsap.set(impact, { autoAlpha: 0, rotation: -7, scale: .42, xPercent: -50, yPercent: -50 });
+    gsap.set(hitScore, { autoAlpha: 0, rotation: 0, scale: .84, x: 32, y: -4 });
+
+    const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const timeline = gsap.timeline({ onComplete: finishStrike });
+    strikeTimelineRef.current = timeline;
+
+    if (reducedMotion) {
+      timeline
+        .set(face, { autoAlpha: 0 })
+        .set([leftHalf, rightHalf], { autoAlpha: 1 })
+        .to(impact, { autoAlpha: 1, duration: .1, rotation: 0, scale: .8 })
+        .to([leftHalf, rightHalf, impact], { autoAlpha: 0, duration: .16 });
+    } else {
+      timeline
+        .to(penguin, { duration: .2, ease: "power2.out", rotation: -10, scale: 1.03, x: -24, y: 17 }, 0)
+        .to(cape, { autoAlpha: .72, duration: .2, ease: "power2.out", rotation: 6, scaleX: .72, skewY: -5 }, .06)
+        .to(penguin, { duration: .58, ease: "power2.inOut", filter: "drop-shadow(-18px 19px 11px rgba(35, 75, 47, .11))", rotation: 3, scale: .95, x: strikePoint.approachX, y: strikePoint.approachY }, .2)
+        .to(cape, { autoAlpha: 1, duration: .58, ease: "sine.inOut", rotation: -5, scaleX: 1.08, skewY: 5 }, .2)
+        .to(penguin, { duration: .16, ease: "power3.in", filter: "drop-shadow(-24px 22px 9px rgba(35, 75, 47, .08))", rotation: 11, scale: .92, x: strikePoint.impactX, y: strikePoint.impactY }, .78)
+        .to(cape, { duration: .16, ease: "power2.in", rotation: 7, scaleX: .94, skewY: -6 }, .78)
+        .addLabel("impact", .94)
+        .set(face, { autoAlpha: 0 }, "impact")
+        .set([leftHalf, rightHalf], { autoAlpha: 1 }, "impact")
+        .to(impact, { autoAlpha: 1, duration: .16, ease: "power3.out", rotation: -1, scale: .96 }, "impact")
+        .to(arena, { duration: .04, repeat: 3, x: (index) => index % 2 ? -2 : 2, yoyo: true }, "impact")
+        .to(leftHalf, { autoAlpha: 0, duration: .68, ease: "power2.in", rotation: -18, x: -46, y: 78 }, "impact")
+        .to(rightHalf, { autoAlpha: 0, duration: .68, ease: "power2.in", rotation: 17, x: 48, y: 70 }, "impact")
+        .to(hitScore, { autoAlpha: 1, duration: .17, ease: "power3.out", scale: 1.04, x: 38, y: -18 }, "impact")
+        .to(hitScore, { autoAlpha: 0, duration: .46, ease: "power1.in", scale: .96, x: 43, y: -58 }, "impact+=.17")
+        .to(impact, { autoAlpha: 0, duration: .38, ease: "power1.out", rotation: 3, scale: 1.18 }, "impact+=.16")
+        .to(penguin, { autoAlpha: 0, duration: .45, ease: "power2.in", filter: "drop-shadow(-30px 25px 6px rgba(35, 75, 47, 0))", rotation: 19, scale: .78, x: strikePoint.exitX, y: strikePoint.exitY }, "impact+=.1")
+        .to(cape, { autoAlpha: 0, duration: .42, ease: "sine.in", rotation: -4, scaleX: .86, skewY: 3 }, "impact+=.1");
+    }
+
+    return () => {
+      timeline.kill();
+      if (strikeTimelineRef.current === timeline) strikeTimelineRef.current = null;
+    };
+  }, { dependencies: [mode], scope: arenaRef });
 
   return (
     <main className="learner-dashboard writing-game-dashboard game-immersive-dashboard">
@@ -263,7 +376,7 @@ export function WritingSliceGame({
         <h1 className="writing-page-title">Luyện chém từ cùng Cánh Cụt</h1>
         <div className="writing-game-layout">
           <section className="writing-arena-column" aria-label="Sân chơi chém từ">
-            <div className={`writing-arena is-${mode}`} ref={arenaRef} style={gameStyle}>
+            <div className={`writing-arena writing-gsap-motion is-${mode}`} ref={arenaRef} style={gameStyle}>
               <img
                 alt=""
                 aria-hidden="true"
@@ -312,9 +425,6 @@ export function WritingSliceGame({
               <div
                 className={`writing-falling-word ${mode === "slicing" ? "is-sliced" : ""}`}
                 key={runKey}
-                onAnimationEnd={(event) => {
-                  if (event.animationName === "writing-word-fall") handleMiss();
-                }}
                 ref={wordRef}
               >
                 <span className="writing-word-face">

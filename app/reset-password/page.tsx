@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { KeyRound } from "lucide-react";
-import { BrandMark } from "@/components/brand-logo";
+import { BrandMark, BrandWordmark } from "@/components/brand-logo";
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH, validateAuthToken } from "@/lib/auth-validation";
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default async function ResetPasswordPage({ searchParams }: { searchParams
   const token = params.token?.slice(0, 128) ?? "";
   const hasToken = validateAuthToken(token);
   return <main className="auth-page"><section className="auth-card">
-    <div className="auth-brand"><BrandMark priority /><span>HanziWork</span></div>
+    <div className="auth-brand"><BrandMark priority /><BrandWordmark /></div>
     <div className="auth-icon"><KeyRound size={24} /></div>
     <div className="auth-heading"><span>Bảo mật tài khoản</span><h1>Chọn mật khẩu mới</h1><p>Đặt mật khẩu mới cho tài khoản. Sau khi hoàn tất, mọi phiên đăng nhập cũ sẽ bị thu hồi.</p></div>
     {params.error && errors[params.error] ? <p className="auth-error" role="alert">{errors[params.error]}</p> : null}

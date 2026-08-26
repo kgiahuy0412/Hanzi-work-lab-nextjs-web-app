@@ -751,7 +751,7 @@ export function WorkPracticeHub({
 
         <section className={`practice-vip-panel ${hasVip ? "is-active" : ""}`}>
           <span className="practice-vip-icon"><Crown size={19} /></span>
-          <span className="practice-vip-label">{hasVip ? "VIP đang hoạt động" : "HanziWork VIP"}</span>
+          <span className="practice-vip-label">{hasVip ? "VIP đang hoạt động" : "Himi Chinese VIP"}</span>
           <h2>{hasVip ? "Toàn bộ kho ca làm đã mở." : "Luyện trước khi tình huống thật xảy ra."}</h2>
           <p>{hasVip ? "Bạn có thể ôn từ của toàn bộ 168 bài và luyện các ca nâng cao không giới hạn." : "Mở 126 bài chuyên sâu thuộc bảy lộ trình, ôn theo từ yếu và luyện các ca nâng cao."}</p>
           {!hasVip ? <Link href="/vip">Khám phá gói VIP <ArrowRight size={16} /></Link> : <span className="vip-active-note"><CheckCircle2 size={15} /> Đã mở khóa</span>}

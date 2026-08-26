@@ -37,33 +37,48 @@ async function deliverEmail(input: {
   html: string;
   idempotencyKey: string;
   developmentLink?: string;
-}): Promise<"resend" | "console"> {
-  const apiKey = process.env.RESEND_API_KEY;
-  const from = process.env.RESEND_FROM_EMAIL;
-  if (!apiKey || !from) {
-    if (process.env.NODE_ENV === "production") throw new Error("RESEND_API_KEY và RESEND_FROM_EMAIL chưa được cấu hình.");
-    console.info(`[HanziWork email dev] ${input.subject}: ${input.to}${input.developmentLink ? ` -> ${input.developmentLink}` : ""}`);
+}): Promise<"brevo" | "console"> {
+  const apiKey = process.env.BREVO_API_KEY?.trim();
+  const fromEmail = process.env.BREVO_FROM_EMAIL?.trim();
+  const fromName = process.env.BREVO_FROM_NAME?.trim() || "Himi Chinese";
+  if (!apiKey || !fromEmail) {
+    const partiallyConfigured = Boolean(apiKey || fromEmail);
+    if (process.env.NODE_ENV === "production" || partiallyConfigured) {
+      throw new Error("BREVO_API_KEY và BREVO_FROM_EMAIL chưa được cấu hình đầy đủ.");
+    }
+    console.info(`[Himi Chinese email dev] ${input.subject}: ${input.to}${input.developmentLink ? ` -> ${input.developmentLink}` : ""}`);
     return "console";
   }
 
-  const response = await fetch("https://api.resend.com/emails", {
+  const response = await fetch("https://api.brevo.com/v3/smtp/email", {
     method: "POST",
     headers: {
-      Authorization: `Bearer ${apiKey}`,
+      Accept: "application/json",
+      "api-key": apiKey,
       "Content-Type": "application/json",
-      "Idempotency-Key": input.idempotencyKey,
-      "User-Agent": "hanziwork/0.1",
     },
-    body: JSON.stringify({ from, to: [input.to], subject: input.subject, text: input.text, html: input.html }),
+    body: JSON.stringify({
+      sender: { email: fromEmail, name: fromName },
+      to: [{ email: input.to }],
+      subject: input.subject,
+      textContent: input.text,
+      htmlContent: input.html,
+      headers: { "Idempotency-Key": input.idempotencyKey },
+      tags: ["hanziwork-auth"],
+    }),
   });
-  if (!response.ok) throw new Error(`Resend trả về HTTP ${response.status}.`);
-  return "resend";
+  if (!response.ok) {
+    const detail = await response.json().catch(() => null) as { code?: string; message?: string } | null;
+    const reason = detail?.message || detail?.code;
+    throw new Error(`Brevo trả về HTTP ${response.status}${reason ? `: ${reason}` : "."}`);
+  }
+  return "brevo";
 }
 
-export async function sendAuthLinkEmail(user: AuthEmailUser, purpose: AuthTokenPurpose, issued: IssuedAuthToken): Promise<"resend" | "console"> {
+export async function sendAuthLinkEmail(user: AuthEmailUser, purpose: AuthTokenPurpose, issued: IssuedAuthToken): Promise<"brevo" | "console"> {
   const link = authLink(purpose, issued.token);
   const verification = purpose === "verify_email";
-  const title = verification ? "Xác minh email HanziWork" : "Đặt lại mật khẩu HanziWork";
+  const title = verification ? "Xác minh email Himi Chinese" : "Đặt lại mật khẩu Himi Chinese";
   const instruction = verification
     ? "Xác nhận địa chỉ email để kích hoạt tài khoản và bắt đầu lưu tiến độ học."
     : "Mở liên kết để đặt mật khẩu mới. Liên kết chỉ dùng một lần và hết hạn sau 30 phút.";
@@ -80,13 +95,13 @@ export async function sendAuthLinkEmail(user: AuthEmailUser, purpose: AuthTokenP
   });
 }
 
-export async function sendPasswordChangedEmail(user: AuthEmailUser): Promise<"resend" | "console"> {
-  const subject = "Mật khẩu HanziWork đã được thay đổi";
+export async function sendPasswordChangedEmail(user: AuthEmailUser): Promise<"brevo" | "console"> {
+  const subject = "Mật khẩu Himi Chinese đã được thay đổi";
   const emailKey = await hashPrivateIdentifier(user.email);
   return deliverEmail({
     to: user.email,
     subject,
-    text: `Xin chào ${user.displayName},\n\nMật khẩu HanziWork của bạn vừa được thay đổi. Mọi phiên đăng nhập cũ đã bị thu hồi. Nếu đây không phải là bạn, hãy liên hệ hỗ trợ ngay.`,
+    text: `Xin chào ${user.displayName},\n\nMật khẩu Himi Chinese của bạn vừa được thay đổi. Mọi phiên đăng nhập cũ đã bị thu hồi. Nếu đây không phải là bạn, hãy liên hệ hỗ trợ ngay.`,
     html: `<div style="font-family:Arial,sans-serif;max-width:560px;margin:auto;color:#173c33"><h1 style="font-size:24px">${subject}</h1><p>Xin chào ${escapeHtml(user.displayName)},</p><p style="line-height:1.6">Mật khẩu của bạn vừa được thay đổi. Mọi phiên đăng nhập cũ đã bị thu hồi.</p><p style="line-height:1.6">Nếu đây không phải là bạn, hãy liên hệ hỗ trợ ngay.</p></div>`,
     idempotencyKey: `password-changed/${emailKey}/${Date.now()}`,
   });

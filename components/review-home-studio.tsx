@@ -14,6 +14,7 @@ type SwipeDirection = -1 | 0 | 1;
 type ReviewHomeStudioProps = {
   authenticated: boolean;
   dailySession: DailySessionSnapshot;
+  verified?: boolean;
   vocabulary: Vocabulary[];
 };
 
@@ -53,6 +54,7 @@ const cardMotionVariants: Variants = {
 export function ReviewHomeStudio({
   authenticated,
   dailySession,
+  verified = false,
   vocabulary,
 }: ReviewHomeStudioProps) {
   const [index, setIndex] = useState(0);
@@ -196,6 +198,7 @@ export function ReviewHomeStudio({
   return (
     <main className="learner-dashboard review-home-dashboard" onKeyDown={handleReviewKeyDown}>
       <div className="review-studio">
+        {verified ? <p className="home-auth-success" role="status"><Check size={17} /> Email đã xác minh. Chào mừng bạn đến Himi Chinese.</p> : null}
         <section className="today-session-strip" aria-labelledby="today-session-title">
           <header className="today-session-intro">
             <span><TimerReset size={16} /> Nhịp học gợi ý</span>
@@ -374,7 +377,7 @@ export function ReviewHomeStudio({
               <ArrowRight size={19} />
             </Link>
 
-            <figure className="review-swipe-demo review-swipe-demo-below" role="img" aria-label="Minh họa thẻ từ HanziWork trượt sang phải rồi sang trái">
+            <figure className="review-swipe-demo review-swipe-demo-below" role="img" aria-label="Minh họa thẻ từ Himi Chinese trượt sang phải rồi sang trái">
               <Image className="review-swipe-demo-motion" src="/assets/review/swipe-review-demo.gif" alt="" aria-hidden="true" width={600} height={216} unoptimized />
               <Image className="review-swipe-demo-static" src="/assets/review/swipe-review-demo.png" alt="" aria-hidden="true" width={600} height={216} unoptimized />
             </figure>

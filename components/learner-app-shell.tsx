@@ -15,7 +15,7 @@ import {
   Repeat2,
   Settings,
 } from "lucide-react";
-import { BrandLogoImage, BrandMark } from "@/components/brand-logo";
+import { BrandLogoImage, BrandMark, BrandWordmark } from "@/components/brand-logo";
 
 type LearnerShellUser = {
   displayName: string;
@@ -109,9 +109,10 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const navigating = Boolean(pendingHref && pendingHref !== pathname);
   const visualPathname = navigating && pendingHref ? pendingHref : pathname;
   return (
-    <div className="learner-app-shell">
+    <div aria-busy={navigating} className="learner-app-shell">
+      <a className="skip-link" href="#learner-main-content">Bỏ qua điều hướng</a>
       <aside className="learn-rail" aria-label="Điều hướng học tập">
-        <Link className="rail-logo" href="/" aria-label="HanziWork - Trang chủ" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><BrandLogoImage priority /></Link>
+        <Link className="rail-logo" href="/" aria-label="Himi Chinese - Trang chủ" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><BrandLogoImage priority size={60} /></Link>
         <nav className="rail-nav">
           {learnerRailItems.map(({ href, label, icon: Icon, matches }) => {
             const active = matches(visualPathname);
@@ -127,7 +128,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
                 onPointerEnter={() => prepareRoute(href)}
                 prefetch
               >
-                <Icon size={21} /><span>{label}</span>
+                <Icon aria-hidden="true" size={21} /><span>{label}</span>
               </Link>
             );
           })}
@@ -140,16 +141,16 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
             onPointerEnter={() => prepareRoute(accountItem.href)}
             prefetch
           >
-            <Settings size={21} /><span>{accountItem.label}</span>
+            <Settings aria-hidden="true" size={21} /><span>{accountItem.label}</span>
           </Link>
         </nav>
-        <a className="rail-support" href="mailto:giahuy041204@gmail.com"><Headphones size={20} /><span>Hỗ trợ</span></a>
+        <a className="rail-support" href="mailto:giahuy041204@gmail.com"><Headphones aria-hidden="true" size={20} /><span>Hỗ trợ</span></a>
       </aside>
 
       <header className="learn-topbar">
-        <Link aria-label="HanziWork - Trang chủ" className="brand" href="/" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><BrandMark priority /><span>HanziWork</span></Link>
+        <Link aria-label="Himi Chinese - Trang chủ" className="brand" href="/" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><BrandMark priority /><BrandWordmark /></Link>
         <div className="topbar-actions">
-          <span className="streak-chip"><Flame size={17} /> {user ? "Tiếp tục nhịp học hôm nay" : "Đăng nhập để lưu nhịp học"}</span>
+          <span className="streak-chip"><Flame aria-hidden="true" size={17} /> {user ? "Tiếp tục nhịp học hôm nay" : "Đăng nhập để lưu nhịp học"}</span>
           <Link
             aria-label={user?.unreadNotificationCount ? `${user.unreadNotificationCount} thông báo chưa đọc` : "Thông báo"}
             className={`topbar-icon ${user?.unreadNotificationCount ? "has-notifications" : ""}`.trim()}
@@ -159,27 +160,27 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
             prefetch
             title="Thông báo"
           >
-            <Bell size={19} />
+            <Bell aria-hidden="true" size={19} />
             {user?.unreadNotificationCount ? <span aria-hidden="true" className="topbar-notification-count">{Math.min(user.unreadNotificationCount, 99)}</span> : null}
           </Link>
-          <Link className="user-chip" href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch>
-            <span>{initials(displayName)}</span>
+          <Link aria-label={user ? `Mở tài khoản của ${displayName}` : "Đăng nhập"} className="user-chip" href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch>
+            <span aria-hidden="true">{initials(displayName)}</span>
             <strong>{displayName}</strong>
           </Link>
         </div>
       </header>
 
       <div aria-hidden="true" className={`route-transition-progress ${navigating ? "active" : ""}`}><span /></div>
-      {navigating ? <span className="sr-only" role="status">Đang mở nội dung…</span> : null}
+      <span aria-live="polite" className="sr-only" role="status">{navigating ? "Đang mở nội dung…" : ""}</span>
 
-      <div className="learner-shell-content">{children}</div>
+      <div className="learner-shell-content" id="learner-main-content" tabIndex={-1}>{children}</div>
 
       <nav className="learner-mobile-nav" aria-label="Điều hướng học tập trên điện thoại">
-        <Link aria-current={visualPathname === "/" ? "page" : undefined} className={visualPathname === "/" ? "active" : ""} href="/" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><Home size={20} /><span>Hôm nay</span></Link>
-        <Link aria-current={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") ? "page" : undefined} className={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") ? "active" : ""} href="/courses" onClick={(event) => beginRoute(event, "/courses")} onPointerEnter={() => prepareRoute("/courses")} prefetch><BookOpen size={20} /><span>Lộ trình</span></Link>
-        <Link aria-current={visualPathname.startsWith("/practice") ? "page" : undefined} className={visualPathname.startsWith("/practice") ? "active" : ""} href="/practice" onClick={(event) => beginRoute(event, "/practice")} onPointerEnter={() => prepareRoute("/practice")} prefetch><Repeat2 size={20} /><span>Luyện ca</span></Link>
-        <Link aria-current={visualPathname.startsWith("/games") || visualPathname.startsWith("/writing") ? "page" : undefined} className={visualPathname.startsWith("/games") || visualPathname.startsWith("/writing") ? "active" : ""} href="/games" onClick={(event) => beginRoute(event, "/games")} onPointerEnter={() => prepareRoute("/games")} prefetch><Gamepad2 size={20} /><span>Trò chơi</span></Link>
-        <Link aria-current={visualPathname.startsWith("/vip") ? "page" : undefined} className={visualPathname.startsWith("/vip") ? "active" : ""} href="/vip" onClick={(event) => beginRoute(event, "/vip")} onPointerEnter={() => prepareRoute("/vip")} prefetch><Crown size={20} /><span>VIP</span></Link>
+        <Link aria-current={visualPathname === "/" ? "page" : undefined} className={visualPathname === "/" ? "active" : ""} href="/" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><Home aria-hidden="true" size={20} /><span>Hôm nay</span></Link>
+        <Link aria-current={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") ? "page" : undefined} className={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") ? "active" : ""} href="/courses" onClick={(event) => beginRoute(event, "/courses")} onPointerEnter={() => prepareRoute("/courses")} prefetch><BookOpen aria-hidden="true" size={20} /><span>Lộ trình</span></Link>
+        <Link aria-current={visualPathname.startsWith("/practice") ? "page" : undefined} className={visualPathname.startsWith("/practice") ? "active" : ""} href="/practice" onClick={(event) => beginRoute(event, "/practice")} onPointerEnter={() => prepareRoute("/practice")} prefetch><Repeat2 aria-hidden="true" size={20} /><span>Luyện ca</span></Link>
+        <Link aria-current={visualPathname.startsWith("/games") || visualPathname.startsWith("/writing") ? "page" : undefined} className={visualPathname.startsWith("/games") || visualPathname.startsWith("/writing") ? "active" : ""} href="/games" onClick={(event) => beginRoute(event, "/games")} onPointerEnter={() => prepareRoute("/games")} prefetch><Gamepad2 aria-hidden="true" size={20} /><span>Trò chơi</span></Link>
+        <Link aria-current={visualPathname.startsWith("/vip") ? "page" : undefined} className={visualPathname.startsWith("/vip") ? "active" : ""} href="/vip" onClick={(event) => beginRoute(event, "/vip")} onPointerEnter={() => prepareRoute("/vip")} prefetch><Crown aria-hidden="true" size={20} /><span>VIP</span></Link>
       </nav>
     </div>
   );

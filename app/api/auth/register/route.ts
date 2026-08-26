@@ -10,6 +10,7 @@ export async function POST(request: Request) {
   if (!isSameOriginRequest(request)) return NextResponse.json({ error: "Forbidden" }, { status: 403 });
 
   const formData = await request.formData();
+  const wantsJson = formString(formData, "responseMode") === "json";
   const returnTo = safeReturnTo(formString(formData, "returnTo"));
   const parsed = parseRegistrationInput({
     displayName: formString(formData, "displayName", 120),
@@ -19,12 +20,18 @@ export async function POST(request: Request) {
   });
 
   if (!parsed.data) {
+    if (wantsJson) return NextResponse.json({ error: parsed.error, ok: false }, { status: 400 });
     return NextResponse.redirect(authRedirectUrl(request, "/register", { error: parsed.error, returnTo }), 303);
   }
 
   const rateLimit = await consumeAuthRateLimit(request, "register", parsed.data.email);
   if (!rateLimit.allowed) {
     await recordAuthEvent({ action: "auth.register.rate_limited", request, identifier: parsed.data.email });
+    if (wantsJson) {
+      const response = NextResponse.json({ error: "rate_limited", ok: false }, { status: 429 });
+      response.headers.set("Retry-After", String(rateLimit.retryAfterSeconds));
+      return response;
+    }
     const response = NextResponse.redirect(authRedirectUrl(request, "/register", { error: "rate_limited", returnTo }), 303);
     response.headers.set("Retry-After", String(rateLimit.retryAfterSeconds));
     return response;
@@ -32,7 +39,7 @@ export async function POST(request: Request) {
 
   const result = await registerLearner(parsed.data);
   const user = result.user ?? await findActiveUserByEmail(parsed.data.email);
-  let delivery: "resend" | "console" | "failed" | "not_needed" = "not_needed";
+  let delivery: "brevo" | "console" | "failed" | "not_needed" = "not_needed";
   if (user && !user.emailVerified) {
     try {
       delivery = await sendAuthLink(user, "verify_email");
@@ -52,5 +59,6 @@ export async function POST(request: Request) {
   const url = new URL("/verify-email", request.url);
   url.searchParams.set("sent", "1");
   if (delivery === "failed") url.searchParams.set("error", "delivery_failed");
+  if (wantsJson) return NextResponse.json({ ok: true, redirectTo: `${url.pathname}${url.search}` });
   return NextResponse.redirect(url, 303);
 }

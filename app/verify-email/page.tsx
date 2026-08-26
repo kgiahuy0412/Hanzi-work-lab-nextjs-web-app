@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { MailCheck } from "lucide-react";
-import { BrandMark } from "@/components/brand-logo";
+import { BrandMark, BrandWordmark } from "@/components/brand-logo";
 import { validateAuthToken } from "@/lib/auth-validation";
 
 export const metadata: Metadata = {
@@ -21,9 +21,9 @@ export default async function VerifyEmailPage({ searchParams }: { searchParams: 
   const token = params.token?.slice(0, 128) ?? "";
   const hasToken = validateAuthToken(token);
   return <main className="auth-page"><section className="auth-card">
-    <div className="auth-brand"><BrandMark priority /><span>HanziWork</span></div>
+    <div className="auth-brand"><BrandMark priority /><BrandWordmark /></div>
     <div className="auth-icon"><MailCheck size={24} /></div>
-    <div className="auth-heading"><span>Bảo mật tài khoản</span><h1>{hasToken ? "Xác nhận email" : "Kiểm tra hộp thư"}</h1><p>{hasToken ? "Bấm xác nhận để kích hoạt tài khoản. Liên kết này chỉ dùng được một lần." : "HanziWork yêu cầu xác minh email trước khi tạo phiên đăng nhập."}</p></div>
+    <div className="auth-heading"><span>Bảo mật tài khoản</span><h1>{hasToken ? "Xác nhận email" : "Kiểm tra hộp thư"}</h1><p>{hasToken ? "Bấm xác nhận để kích hoạt tài khoản. Liên kết này chỉ dùng được một lần." : "Himi Chinese yêu cầu xác minh email trước khi tạo phiên đăng nhập."}</p></div>
     {params.error && errors[params.error] ? <p className="auth-error" role="alert">{errors[params.error]}</p> : null}
     {!params.error && (params.sent === "1" || params.required === "1") ? <p className="auth-notice" role="status">Nếu email khớp với tài khoản chưa xác minh, một liên kết đã được gửi. Hãy kiểm tra cả thư rác.</p> : null}
     {hasToken ? <form action="/api/auth/verify-email" className="auth-form" method="post">

@@ -7,7 +7,7 @@ import { getCurrentUser } from "@/lib/auth-session";
 import { getVipUpgradeOverview } from "@/lib/vip-activation-request-service";
 import { vipDaysRemaining } from "@/lib/vip-subscription";
 
-export const metadata: Metadata = { title: "Gói HanziWork VIP" };
+export const metadata: Metadata = { title: "Gói Himi Chinese VIP" };
 
 const defaultBenefits = [
   "Mở toàn bộ bài học VIP",
@@ -69,7 +69,7 @@ export default async function VipPage({
       eyebrow="Quyền lợi học tập"
       eyebrowIcon={Crown}
       meta={<><span><Route size={16} />Mở Lộ trình, Luyện ca và Tập viết</span><span><ShieldCheck size={16} />Duyệt trực tiếp trên tài khoản</span></>}
-      title="Giữ nhịp học liền mạch với HanziWork VIP."
+      title="Giữ nhịp học liền mạch với Himi Chinese VIP."
     /></section>
 
     <section className="section-shell vip-request-feedback" aria-live="polite">
@@ -135,7 +135,7 @@ export default async function VipPage({
         <article className="flow-step"><span>03</span><h3>Admin kiểm tra</h3><p>Quản trị viên xác nhận yêu cầu, tài khoản và thời hạn trước khi kích hoạt.</p></article>
         <article className="flow-step"><span>04</span><h3>Mở quyền học</h3><p>Khi duyệt, quyền VIP được cấp ngay và ngày hết hạn hiển thị rõ trên tài khoản.</p></article>
       </div>
-      <div className="prototype-note"><AlertCircle size={19} /><span>HanziWork hiện dùng quy trình beta thủ công và chưa thu tiền tự động. Mức giá hiển thị là mức dự kiến để thử nghiệm sản phẩm; việc tích hợp thanh toán sẽ được bổ sung sau.</span></div>
+      <div className="prototype-note"><AlertCircle size={19} /><span>Himi Chinese hiện dùng quy trình beta thủ công và chưa thu tiền tự động. Mức giá hiển thị là mức dự kiến để thử nghiệm sản phẩm; việc tích hợp thanh toán sẽ được bổ sung sau.</span></div>
     </section>
 
     <section className="section-shell policy-section" id="chinh-sach">

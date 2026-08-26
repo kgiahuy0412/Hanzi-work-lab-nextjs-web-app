@@ -1,0 +1,37 @@
+{
+  "name": "himi-work-progress-video",
+  "version": "1.0.0",
+  "description": "Video học tình huống Báo tiến độ công việc của Himi Chinese",
+  "repository": {},
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+    "@remotion/captions": "4.0.517",
+    "@remotion/cli": "4.0.517",
+    "@remotion/media": "4.0.517",
+    "@remotion/tailwind-v4": "4.0.517",
+    "react": "19.2.3",
+    "react-dom": "19.2.3",
+    "remotion": "4.0.517",
+    "tailwindcss": "4.0.0"
+  },
+  "devDependencies": {
+    "@remotion/eslint-config-flat": "4.0.517",
+    "@types/react": "19.2.7",
+    "@types/web": "0.0.166",
+    "eslint": "9.19.0",
+    "prettier": "3.8.1",
+    "typescript": "5.9.3"
+  },
+  "scripts": {
+    "dev": "remotion studio",
+    "build": "remotion bundle",
+    "render:landscape": "remotion render HimiWorkProgressLandscape ../../public/assets/videos/work-progress/himi-work-progress-16x9.mp4 --codec=h264 --crf=18 --audio-codec=aac",
+    "render:portrait": "remotion render HimiWorkProgressPortrait ../../public/assets/videos/work-progress/himi-work-progress-9x16.mp4 --codec=h264 --crf=20 --audio-codec=aac",
+    "upgrade": "remotion upgrade",
+    "lint": "eslint src && tsc"
+  },
+  "sideEffects": [
+    "*.css"
+  ]
+}

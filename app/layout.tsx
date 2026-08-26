@@ -12,7 +12,7 @@ import { getCurrentUser } from "@/lib/auth-session";
 const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
 
 export const metadata: Metadata = {
-  title: { default: "HanziWork — Tiếng Trung cho người đi làm", template: "%s | HanziWork" },
+  title: { default: "Himi Chinese — Tiếng Trung cho người đi làm", template: "%s | Himi Chinese" },
   description: "Học tiếng Trung chuyên ngành theo tình huống thực tế tại nơi làm việc.",
 };
 

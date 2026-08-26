@@ -5,7 +5,7 @@ import { AdminConsoleHeader, StatusBadge } from "@/components/admin-console";
 import { requireAdminUser } from "@/lib/admin-auth";
 import { getAdminDashboard } from "@/lib/admin-content-service";
 
-export const metadata: Metadata = { title: "HanziWork Console" };
+export const metadata: Metadata = { title: "Himi Chinese Console" };
 
 const actionLabels: Record<string, string> = {
   "admin.course.created": "Đã tạo lộ trình",
@@ -55,7 +55,7 @@ export default async function AdminPage() {
   ];
 
   return <main className="admin-page"><div className="section-shell">
-    <AdminConsoleHeader eyebrow="HanziWork Console" title="Tổng quan vận hành" userName={user.displayName} />
+    <AdminConsoleHeader eyebrow="Himi Chinese Console" title="Tổng quan vận hành" userName={user.displayName} />
     <section className="admin-stats" aria-label="Chỉ số tổng quan">{stats.map(({ label, value, icon: Icon }) => <article className="admin-stat" key={label}><span className="admin-stat-icon"><Icon size={20} /></span><div><strong>{value}</strong><span>{label}</span></div></article>)}</section>
     <div className="admin-grid">
       <section className="admin-panel"><div className="panel-heading"><h2>Quản lý lộ trình</h2><Link href="/admin/courses">Mở CRUD nội dung</Link></div><div className="table-scroll"><table className="data-table"><thead><tr><th>Lộ trình</th><th>Bài học</th><th>Trạng thái</th><th>Cập nhật</th></tr></thead><tbody>{data.courses.map((course) => <tr key={course.id}><td><Link className="table-course" href={`/admin/courses/${course.id}`}><span className="table-mark">{course.hanzi}</span>{course.titleVi}</Link></td><td>{course.lessonCount}</td><td><StatusBadge status={course.status} /></td><td>{course.updatedAt.toLocaleDateString("vi-VN")}</td></tr>)}</tbody></table></div></section>

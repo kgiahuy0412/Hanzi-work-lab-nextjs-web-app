@@ -13,7 +13,8 @@ const demoReviewWords: Vocabulary[] = [
   { slug: "demo-queren", hanzi: "确认", pinyin: "quèrèn", meaning: "xác nhận", example: "请确认一下会议时间。", translation: "Vui lòng xác nhận lại thời gian họp.", audioUrl: null },
 ];
 
-export default async function HomePage() {
+export default async function HomePage({ searchParams }: { searchParams: Promise<{ verified?: string }> }) {
+  const params = await searchParams;
   const user = await getCurrentUser();
   const [personalizedReviewWords, sessionSource] = await Promise.all([
     user ? listPracticeVocabulary(5, user.id) : Promise.resolve([] as Vocabulary[]),
@@ -25,6 +26,7 @@ export default async function HomePage() {
   return <ReviewHomeStudio
     authenticated={Boolean(user)}
     dailySession={dailySession}
+    verified={params.verified === "1"}
     vocabulary={reviewWords}
   />;
 }

@@ -68,6 +68,7 @@ async function readCurrentUser(): Promise<AuthenticatedUser | null> {
       displayName: users.displayName,
       role: users.role,
       emailVerifiedAt: users.emailVerifiedAt,
+      createdAt: users.createdAt,
       unreadNotificationCount: sql<number>`(
         select count(*)::int
         from ${notifications}
@@ -93,6 +94,7 @@ async function readCurrentUser(): Promise<AuthenticatedUser | null> {
     role: user.role,
     emailVerified: Boolean(user.emailVerifiedAt),
     unreadNotificationCount: user.unreadNotificationCount,
+    createdAt: user.createdAt,
   } : null;
 }
 

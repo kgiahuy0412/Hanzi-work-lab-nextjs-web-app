@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Chính sách bảo mật",
-  description: "Cách HanziWork thu thập và sử dụng dữ liệu học tập của người dùng.",
+  description: "Cách Himi Chinese thu thập và sử dụng dữ liệu học tập của người dùng.",
 };
 
 export default function PrivacyPage() {
   return <main className="legal-page"><article className="legal-card">
-    <span className="legal-kicker">HanziWork · cập nhật 07/08/2026</span>
+    <span className="legal-kicker">Himi Chinese · cập nhật 07/08/2026</span>
     <h1>Chính sách bảo mật</h1>
-    <p className="legal-lead">HanziWork chỉ thu thập dữ liệu cần thiết để vận hành tài khoản, đồng bộ tiến độ và cải thiện trải nghiệm học tập.</p>
+    <p className="legal-lead">Himi Chinese chỉ thu thập dữ liệu cần thiết để vận hành tài khoản, đồng bộ tiến độ và cải thiện trải nghiệm học tập.</p>
 
     <section><h2>1. Dữ liệu được lưu</h2><p>Khi đăng ký, hệ thống lưu email, tên hiển thị, mật khẩu đã được băm, phiên đăng nhập, tiến độ bài học, lịch ôn, kết quả Luyện ca và trò chơi.</p></section>
     <section><h2>2. Mục đích sử dụng</h2><p>Dữ liệu được dùng để xác thực tài khoản, mở đúng quyền truy cập, đồng bộ giữa các thiết bị, đề xuất nội dung tiếp theo và phát hiện lỗi vận hành.</p></section>

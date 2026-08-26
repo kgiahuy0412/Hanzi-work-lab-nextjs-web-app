@@ -19,7 +19,7 @@ export async function POST(request: Request) {
   }
 
   let userId: string | undefined;
-  let delivery: "resend" | "console" | "failed" | "not_needed" = "not_needed";
+  let delivery: "brevo" | "console" | "failed" | "not_needed" = "not_needed";
   if (validateEmail(email)) {
     const user = await findActiveUserByEmail(email);
     userId = user?.id;

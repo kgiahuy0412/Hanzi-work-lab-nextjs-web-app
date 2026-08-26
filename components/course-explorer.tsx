@@ -25,9 +25,9 @@ export function CourseExplorer({ courses }: { courses: Course[] }) {
 
   return <section className="section-shell explorer">
     <div className="explorer-toolbar">
-      <label className="search-box"><Search size={19} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Tìm ngành hoặc kỹ năng cần học..." aria-label="Tìm lộ trình" /></label>
+      <label className="search-box"><Search aria-hidden="true" size={19} /><input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Tìm ngành hoặc kỹ năng cần học..." aria-label="Tìm lộ trình" /></label>
       <div className="filter-scroll-wrap">
-        <div className="filter-list" aria-label="Lọc theo nhóm ngành. Trên điện thoại, vuốt ngang để xem thêm lựa chọn.">{filters.map((item) => <motion.button
+        <div className="filter-list" aria-label="Lọc theo nhóm ngành. Trên điện thoại, vuốt ngang để xem thêm lựa chọn." role="group">{filters.map((item) => <motion.button
           aria-pressed={filter === item}
           className={`filter-chip ${filter === item ? "active" : ""}`}
           key={item}
@@ -38,7 +38,7 @@ export function CourseExplorer({ courses }: { courses: Course[] }) {
         <span aria-hidden="true" className="filter-scroll-cue"><ChevronRight size={17} /></span>
       </div>
     </div>
-    <motion.p animate={{ opacity: 1 }} className="explorer-count" initial={false} key={`${visibleCourses.length}-${availableCount}`}>{availableCount} lộ trình đang mở · {visibleCourses.length - availableCount} lộ trình trong kế hoạch</motion.p>
+    <motion.p animate={{ opacity: 1 }} aria-live="polite" className="explorer-count" initial={false} key={`${visibleCourses.length}-${availableCount}`}>{availableCount} lộ trình đang mở · {visibleCourses.length - availableCount} lộ trình trong kế hoạch</motion.p>
     <AnimatePresence initial={false} mode="popLayout">
       {visibleCourses.length ? <motion.div className="course-grid" layout key="course-grid">{visibleCourses.map((course, index) => <motion.div
         animate={{ opacity: 1, scale: 1, y: 0 }}

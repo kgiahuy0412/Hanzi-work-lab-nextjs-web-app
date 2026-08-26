@@ -1,0 +1,58 @@
+{
+  "id": "office-work-progress-01",
+  "title": "Báo tiến độ công việc với quản lý",
+  "brand": "Himi Chinese",
+  "durationMs": 60000,
+  "fps": 30,
+  "formats": {
+    "landscape": {
+      "width": 1920,
+      "height": 1080,
+      "file": "/assets/videos/work-progress/himi-work-progress-16x9.mp4",
+      "poster": "/assets/videos/work-progress/himi-work-progress-poster-16x9.png"
+    },
+    "portrait": {
+      "width": 1080,
+      "height": 1920,
+      "file": "/assets/videos/work-progress/himi-work-progress-9x16.mp4",
+      "poster": "/assets/videos/work-progress/himi-work-progress-poster-9x16.png"
+    }
+  },
+  "scenes": [
+    {"id": "intro", "startMs": 0, "endMs": 5000, "type": "intro"},
+    {"id": "line-01", "startMs": 5000, "endMs": 16000, "type": "dialogue", "audioStartMs": 5800, "audioEndMs": 8128, "shadowingStartMs": 10000, "shadowingEndMs": 15000},
+    {"id": "line-02", "startMs": 16000, "endMs": 27000, "type": "dialogue", "audioStartMs": 16800, "audioEndMs": 19440, "shadowingStartMs": 21000, "shadowingEndMs": 26000},
+    {"id": "line-03", "startMs": 27000, "endMs": 38000, "type": "dialogue", "audioStartMs": 27800, "audioEndMs": 30344, "shadowingStartMs": 32000, "shadowingEndMs": 37000},
+    {"id": "recap", "startMs": 38000, "endMs": 48000, "type": "vocabulary"},
+    {"id": "quiz", "startMs": 48000, "endMs": 60000, "type": "quiz", "answerRevealMs": 55000}
+  ],
+  "dialogues": [
+    {
+      "id": "line-01",
+      "speaker": "manager",
+      "role": "Quản lý",
+      "hanzi": "项目进展怎么样了？",
+      "pinyin": "xiàngmù jìnzhǎn zěnmeyàng le?",
+      "vietnamese": "Dự án tiến triển thế nào rồi?",
+      "keyword": "进展"
+    },
+    {
+      "id": "line-02",
+      "speaker": "employee",
+      "role": "Nhân viên",
+      "hanzi": "已经完成百分之八十了。",
+      "pinyin": "yǐjīng wánchéng bǎifēnzhī bāshí le.",
+      "vietnamese": "Đã hoàn thành 80% rồi.",
+      "keyword": "百分之八十"
+    },
+    {
+      "id": "line-03",
+      "speaker": "employee",
+      "role": "Nhân viên",
+      "hanzi": "我今天下班前发给您。",
+      "pinyin": "wǒ jīntiān xiàbān qián fā gěi nín.",
+      "vietnamese": "Tôi sẽ gửi cho anh/chị trước khi tan làm hôm nay.",
+      "keyword": "下班前"
+    }
+  ]
+}

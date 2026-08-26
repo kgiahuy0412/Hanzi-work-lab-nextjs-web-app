@@ -38,7 +38,7 @@ export async function POST(request: Request) {
   }
 
   if (!user.emailVerified) {
-    let delivery: "resend" | "console" | "failed" = "failed";
+    let delivery: "brevo" | "console" | "failed" = "failed";
     try {
       delivery = await sendAuthLink(user, "verify_email");
     } catch (error) {

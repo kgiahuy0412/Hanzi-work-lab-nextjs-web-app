@@ -1,0 +1,23 @@
+[
+  {
+    "text": "项目进展怎么样了？",
+    "startMs": 5800,
+    "endMs": 8128,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "已经完成百分之八十了。",
+    "startMs": 16800,
+    "endMs": 19440,
+    "timestampMs": null,
+    "confidence": null
+  },
+  {
+    "text": "我今天下班前发给您。",
+    "startMs": 27800,
+    "endMs": 30344,
+    "timestampMs": null,
+    "confidence": null
+  }
+]
