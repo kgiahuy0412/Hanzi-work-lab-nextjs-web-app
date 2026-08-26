@@ -1,5 +1,7 @@
 import Link from "next/link";
-import { ArrowLeft, BookOpenText, Check, Clock3, Crown, GitBranch, Headphones, Languages, LayoutDashboard, RotateCcw, UsersRound, X } from "lucide-react";
+import { ArrowLeft, ArrowUpRight, Bell, Check, Clock3, GitBranch, RotateCcw, UsersRound, X } from "lucide-react";
+import { AdminNavigation } from "@/components/admin-navigation";
+import { BrandLogoImage } from "@/components/brand-logo";
 import { PracticeAudioUploader } from "@/components/practice-audio-uploader";
 import type { ContentStatus } from "@/lib/admin-content-validation";
 import type { UserRole } from "@/lib/auth-service";
@@ -48,6 +50,9 @@ const errorMessages: Record<string, string> = {
   vip_not_active: "Tài khoản này không có quyền VIP đang hoạt động.",
   vip_request_not_pending: "Yêu cầu này đã được xử lý hoặc đã bị hủy. Hãy tải lại hàng đợi.",
   vip_request_ineligible: "Tài khoản hiện không đủ điều kiện gửi yêu cầu VIP.",
+  duplicate_code: "Mã gói VIP đã tồn tại. Hãy dùng một mã khác.",
+  vip_plan_in_use: "Gói đã có đăng ký, yêu cầu hoặc giao dịch nên không thể xóa. Hãy chuyển sang Tạm ngưng.",
+  user_delete_forbidden: "Không thể xóa tài khoản này. Chỉ học viên đang hoạt động và không phải tài khoản hiện tại mới được phép khóa.",
 };
 
 const successMessages: Record<string, string> = {
@@ -65,6 +70,11 @@ const successMessages: Record<string, string> = {
   vip_revoked: "Đã thu hồi VIP và ghi audit log.",
   vip_request_approved: "Đã duyệt yêu cầu, kích hoạt VIP và ghi audit log.",
   vip_request_rejected: "Đã từ chối yêu cầu và lưu lý do vào audit log.",
+  vip_plan_created: "Đã tạo gói VIP mới.",
+  vip_plan_updated: "Đã cập nhật thông tin gói VIP.",
+  vip_plan_status_updated: "Đã cập nhật trạng thái hiển thị của gói VIP.",
+  vip_plan_deleted: "Đã xóa gói VIP chưa có dữ liệu liên quan.",
+  user_deleted: "Đã khóa tài khoản, thu hồi phiên đăng nhập và giữ lại lịch sử giao dịch.",
 };
 
 const roleLabels: Record<UserRole, string> = {
@@ -82,23 +92,33 @@ export function AdminConsoleHeader({ title, eyebrow, description, userName, user
   userRole?: UserRole;
   backHref?: string;
 }) {
+  const userInitial = userName.trim().slice(0, 1).toLocaleUpperCase("vi-VN") || "H";
+
   return <>
-    <div className="admin-top">
+    <aside className="admin-sidebar">
+      <Link aria-label="Himi Chinese Console - Tổng quan" className="admin-sidebar-brand" href="/admin" prefetch={false}>
+        <span><BrandLogoImage priority size={40} /></span>
+        <div><strong>Himi Chinese</strong><small>Admin Console</small></div>
+      </Link>
+      <AdminNavigation userRole={userRole} />
+      <div className="admin-sidebar-footer">
+        <Link href="/account" prefetch={false}>
+          <span aria-hidden="true" className="admin-user-avatar">{userInitial}</span>
+          <span><strong>{userName}</strong><small>{roleLabels[userRole]}</small></span>
+          <ArrowUpRight aria-hidden="true" size={14} />
+        </Link>
+      </div>
+    </aside>
+    <header className="admin-top">
       <div className="admin-title">
-        {backHref ? <Link className="admin-back" href={backHref}><ArrowLeft size={14} /> Quay lại</Link> : null}
+        {backHref ? <Link className="admin-back" href={backHref} prefetch={false}><ArrowLeft size={14} /> Quay lại</Link> : null}
         <span>{eyebrow}</span><h1>{title}</h1>{description ? <p>{description}</p> : null}
       </div>
-      <span className="demo-badge">{userName} · {roleLabels[userRole]}</span>
-    </div>
-    <nav aria-label="Điều hướng Console" className="admin-nav">
-      {userRole === "admin" ? <Link href="/admin"><LayoutDashboard size={16} /> Tổng quan</Link> : null}
-      {userRole === "admin" ? <Link href="/admin/courses"><BookOpenText size={16} /> Nội dung</Link> : null}
-      {userRole === "admin" ? <Link href="/admin/vocabulary"><Languages size={16} /> Từ vựng</Link> : null}
-      <Link href="/admin/practice"><Headphones size={16} /> Luyện ca</Link>
-      {userRole === "admin" ? <Link href="/admin/subscriptions"><Crown size={16} /> Thành viên VIP</Link> : null}
-      {userRole === "admin" ? <Link href="/admin/team"><UsersRound size={16} /> Đội nội dung</Link> : null}
-      <Link href="/account">Tài khoản</Link>
-    </nav>
+      <div className="admin-top-actions">
+        <Link aria-label="Thông báo" className="admin-icon-button" href="/notifications" prefetch={false} title="Thông báo"><Bell aria-hidden="true" size={17} /></Link>
+        <Link className="button button-primary admin-learner-link" href="/" prefetch={false}>Trang người học <ArrowUpRight aria-hidden="true" size={15} /></Link>
+      </div>
+    </header>
   </>;
 }
 
@@ -221,7 +241,7 @@ export function PracticeReviewQueue({
         return <article className={overdue ? "is-overdue" : ""} key={item.id}>
           <div className="practice-review-task-copy">
             <div className="practice-review-task-meta"><span className={`practice-review-priority ${priority}`}>{reviewPriorityLabels[priority]}</span><span>{item.industryLabel}</span><span>{item.isFree ? "Miễn phí" : "VIP"}</span></div>
-            <Link href={`/admin/practice/scenarios/${item.id}`}><strong>{item.title}</strong><span>{item.brief}</span></Link>
+            <Link href={`/admin/practice/scenarios/${item.id}`} prefetch={false}><strong>{item.title}</strong><span>{item.brief}</span></Link>
             <div className="practice-review-task-status"><span>{item.reviewerId ? `Phụ trách: ${item.reviewerName || item.reviewerEmail}` : "Chưa có người nhận"}</span><span className={overdue ? "overdue" : ""}><Clock3 size={12} /> {overdue ? "Quá hạn · " : ""}{reviewDateLabel(item.reviewDueAt)}</span><span>{item.readiness.passed}/{item.readiness.items.length} điều kiện xuất bản</span></div>
           </div>
           {userRole === "admin" ? <form action={action} className="practice-review-assignment-form">
@@ -229,8 +249,8 @@ export function PracticeReviewQueue({
             <ReviewAssignmentFields assignees={assignees} item={item} />
             <button className="button button-secondary" type="submit">Lưu phân công</button>
           </form> : userRole === "reviewer" ? <div className="practice-review-task-actions">
-            {assignedToCurrentUser ? <><Link className="button button-primary" href={`/admin/practice/scenarios/${item.id}`}>Mở kiểm duyệt</Link><form action={releaseAction}><input name="scenarioId" type="hidden" value={item.id} /><input name="returnPath" type="hidden" value="queue" /><button className="button button-secondary" type="submit">Bỏ nhận</button></form></> : <form action={claimAction}><input name="scenarioId" type="hidden" value={item.id} /><input name="returnPath" type="hidden" value="queue" /><button className="button button-primary" type="submit">Nhận ca này</button></form>}
-          </div> : <Link className="button button-secondary" href={`/admin/practice/scenarios/${item.id}`}>Xem trạng thái</Link>}
+            {assignedToCurrentUser ? <><Link className="button button-primary" href={`/admin/practice/scenarios/${item.id}`} prefetch={false}>Mở kiểm duyệt</Link><form action={releaseAction}><input name="scenarioId" type="hidden" value={item.id} /><input name="returnPath" type="hidden" value="queue" /><button className="button button-secondary" type="submit">Bỏ nhận</button></form></> : <form action={claimAction}><input name="scenarioId" type="hidden" value={item.id} /><input name="returnPath" type="hidden" value="queue" /><button className="button button-primary" type="submit">Nhận ca này</button></form>}
+          </div> : <Link className="button button-secondary" href={`/admin/practice/scenarios/${item.id}`} prefetch={false}>Xem trạng thái</Link>}
         </article>;
       }) : <p className="admin-empty">Không có ca nào đang chờ duyệt trong phạm vi của bạn.</p>}
     </div>

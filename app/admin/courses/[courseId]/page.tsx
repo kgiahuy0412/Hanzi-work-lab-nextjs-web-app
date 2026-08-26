@@ -21,7 +21,7 @@ export default async function AdminCoursePage({ params, searchParams }: { params
     </div>
     <div className="admin-content-grid modules-section">
       <section className="admin-panel"><div className="panel-heading"><h2>Thêm module</h2><span>Trong {data.course.titleVi}</span></div><ModuleForm action={createModuleAction} courseId={data.course.id} submitLabel="Tạo module" /></section>
-      <section className="admin-panel"><div className="panel-heading"><h2>{data.modules.length} module</h2><span>Theo thứ tự hiển thị</span></div><div className="admin-record-list">{data.modules.length ? data.modules.map((module) => <Link href={`/admin/modules/${module.id}`} key={module.id}><span><strong>{module.title}</strong><small>{module.slug} · {module.lessonCount} bài</small></span><b>Chỉnh sửa →</b></Link>) : <p className="admin-empty">Chưa có module. Hãy tạo module đầu tiên.</p>}</div></section>
+      <section className="admin-panel"><div className="panel-heading"><h2>{data.modules.length} module</h2><span>Theo thứ tự hiển thị</span></div><div className="admin-record-list">{data.modules.length ? data.modules.map((module) => <Link href={`/admin/modules/${module.id}`} key={module.id} prefetch={false}><span><strong>{module.title}</strong><small>{module.slug} · {module.lessonCount} bài</small></span><b>Chỉnh sửa →</b></Link>) : <p className="admin-empty">Chưa có module. Hãy tạo module đầu tiên.</p>}</div></section>
     </div>
   </div></main>;
 }

@@ -67,6 +67,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const [pendingHref, setPendingHref] = useState<string | null>(null);
 
   useEffect(() => {
+    if (isStandaloneRoute(pathname)) return;
     const warmPrimaryRoutes = () => {
       for (const { href } of learnerRailItems) router.prefetch(href);
     };
@@ -82,7 +83,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
 
     const handle = window.setTimeout(warmPrimaryRoutes, 500);
     return () => window.clearTimeout(handle);
-  }, [router]);
+  }, [pathname, router]);
 
   useEffect(() => {
     if (!pendingHref) return;

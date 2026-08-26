@@ -195,15 +195,16 @@ test("legacy password migration verifies the current password before rehashing",
 });
 
 test("admin can grant, extend and revoke VIP while learners see their live entitlement", async () => {
-  const [page, actions, service, account, access, consoleHeader] = await Promise.all([
+  const [page, actions, service, account, access, consoleHeader, consoleNavigation] = await Promise.all([
     read("app/admin/subscriptions/page.tsx"),
     read("app/admin/actions.ts"),
     read("lib/admin-subscription-service.ts"),
     read("app/account/page.tsx"),
     read("lib/lesson-access.ts"),
     read("components/admin-console.tsx"),
+    read("components/admin-navigation.tsx"),
   ]);
-  assert.match(page, /Thành viên VIP/);
+  assert.match(page, /VIP & Thanh toán/);
   assert.match(page, /grantOrExtendVipAction/);
   assert.match(page, /revokeVipAction/);
   assert.match(actions, /requireAdminUser/);
@@ -214,7 +215,41 @@ test("admin can grant, extend and revoke VIP while learners see their live entit
   assert.match(account, /getActiveVipSubscription/);
   assert.match(account, /Quyền VIP có hiệu lực đến/);
   assert.match(access, /getActiveVipSubscription/);
-  assert.match(consoleHeader, /href="\/admin\/subscriptions"/);
+  assert.match(consoleHeader, /AdminNavigation/);
+  assert.match(consoleHeader, /prefetch=\{false\}/);
+  assert.match(consoleNavigation, /href: "\/admin\/subscriptions"/);
+  assert.match(consoleNavigation, /prefetch=\{false\}/);
+  assert.doesNotMatch(consoleNavigation, /router\.prefetch|waitForRouteWarmup/);
+});
+
+test("admin business console exposes dashboard, users, VIP payments and analytics", async () => {
+  const [dashboard, users, vip, analytics, loading, actions, exportRoute, schema] = await Promise.all([
+    read("app/admin/page.tsx"),
+    read("app/admin/users/page.tsx"),
+    read("app/admin/subscriptions/page.tsx"),
+    read("app/admin/analytics/page.tsx"),
+    read("app/admin/loading.tsx"),
+    read("app/admin/actions.ts"),
+    read("app/api/admin/users/export/route.ts"),
+    read("db/schema.ts"),
+  ]);
+
+  assert.match(dashboard, /Doanh thu/);
+  assert.match(dashboard, /Hoạt động gần đây/);
+  assert.match(dashboard, /Giao dịch gần đây/);
+  assert.match(users, /Tên người dùng hoặc email/);
+  assert.match(users, /Xuất Excel/);
+  assert.match(users, /Nâng cấp/);
+  assert.match(vip, /createVipPlanAction/);
+  assert.match(vip, /Lịch sử giao dịch/);
+  assert.match(analytics, /Đồ thị người dùng/);
+  assert.match(analytics, /Đồ thị doanh thu/);
+  assert.match(loading, /Đang tải dữ liệu quản trị/);
+  assert.match(actions, /deleteAdminUserAction/);
+  assert.match(actions, /toggleVipPlanAction/);
+  assert.match(exportRoute, /text\/csv/);
+  assert.match(schema, /discountPercent/);
+  assert.match(schema, /promotionLabel/);
 });
 
 test("account page uses the approved profile-first layout without learning progress", async () => {
@@ -446,15 +481,22 @@ test("public trust pages and current account copy are present", async () => {
 });
 
 test("learner navigation prefetches primary routes and exposes immediate loading feedback", async () => {
-  const [shell, coursesLoading, practiceLoading, lessons] = await Promise.all([
+  const [shell, coursesLoading, practiceLoading, lessons, siteHeader, siteFooter, mobileNav] = await Promise.all([
     read("components/learner-app-shell.tsx"),
     read("app/courses/loading.tsx"),
     read("app/practice/loading.tsx"),
     read("lib/lesson-repository.ts"),
+    read("components/site-header.tsx"),
+    read("components/site-footer.tsx"),
+    read("components/mobile-nav.tsx"),
   ]);
   assert.match(shell, /router\.prefetch/);
+  assert.match(shell, /if \(isStandaloneRoute\(pathname\)\) return;/);
   assert.match(shell, /route-transition-progress/);
   assert.match(shell, /pendingHref/);
+  assert.match(siteHeader, /prefetch=\{false\}/);
+  assert.match(siteFooter, /prefetch=\{false\}/);
+  assert.match(mobileNav, /prefetch=\{false\}/);
   assert.match(coursesLoading, /CoursesPageSkeleton/);
   assert.match(practiceLoading, /Đang chuẩn bị Kho ca làm/);
   assert.match(lessons, /getCachedPublishedPracticeVocabulary/);

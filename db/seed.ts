@@ -54,9 +54,9 @@ const practiceAudioByExercise = new Map(
 );
 
 const planSeeds = [
-  { code: "VIP_1M", name: "VIP 1 tháng", durationDays: 30, priceVnd: 79_000 },
-  { code: "VIP_6M", name: "VIP 6 tháng", durationDays: 180, priceVnd: 329_000 },
-  { code: "VIP_12M", name: "VIP 12 tháng", durationDays: 365, priceVnd: 549_000 },
+  { code: "VIP_1M", name: "VIP 1 tháng", durationDays: 30, priceVnd: 79_000, discountPercent: 0, promotionLabel: null },
+  { code: "VIP_6M", name: "VIP 6 tháng", durationDays: 180, priceVnd: 329_000, discountPercent: 15, promotionLabel: "Tiết kiệm hơn theo kỳ 6 tháng" },
+  { code: "VIP_12M", name: "VIP 1 năm", durationDays: 365, priceVnd: 549_000, discountPercent: 30, promotionLabel: "Ưu đãi tốt nhất trong năm" },
 ] as const;
 
 const courseSeedBundles: CourseSeedBundle[] = [
@@ -130,7 +130,15 @@ async function seed() {
         benefits: ["Mở toàn bộ bài học", "Luyện tập không giới hạn", "Theo dõi tiến độ"],
       }).onConflictDoUpdate({
         target: vipPlans.code,
-        set: { name: plan.name, durationDays: plan.durationDays, priceVnd: plan.priceVnd, isActive: true },
+        set: {
+          name: plan.name,
+          durationDays: plan.durationDays,
+          priceVnd: plan.priceVnd,
+          discountPercent: plan.discountPercent,
+          promotionLabel: plan.promotionLabel,
+          isActive: true,
+          updatedAt: new Date(),
+        },
       });
     }
 

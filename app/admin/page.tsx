@@ -1,9 +1,18 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { BookOpenText, Crown, Languages, UsersRound } from "lucide-react";
+import { CircleDollarSign, Crown, TrendingUp, UsersRound } from "lucide-react";
+import {
+  AdminLineChart,
+  AdminPeriodFilter,
+  AdminRecentActivity,
+  AdminTransactionTable,
+  formatAdminCurrency,
+} from "@/components/admin-business-widgets";
 import { AdminConsoleHeader, StatusBadge } from "@/components/admin-console";
+import { getAdminBusinessAnalytics } from "@/lib/admin-analytics-service";
 import { requireAdminUser } from "@/lib/admin-auth";
 import { getAdminDashboard } from "@/lib/admin-content-service";
+import { parseAdminPeriod } from "@/lib/admin-reporting";
 
 export const metadata: Metadata = { title: "Himi Chinese Console" };
 
@@ -42,23 +51,38 @@ const actionLabels: Record<string, string> = {
   "admin.subscription.granted": "Đã cấp quyền VIP cho học viên",
   "admin.subscription.extended": "Đã gia hạn quyền VIP",
   "admin.subscription.revoked": "Đã thu hồi quyền VIP",
+  "admin.user.deactivated": "Đã khóa tài khoản học viên",
+  "admin.vip_plan.created": "Đã tạo gói VIP",
+  "admin.vip_plan.updated": "Đã cập nhật gói VIP",
+  "admin.vip_plan.activated": "Đã mở lại gói VIP",
+  "admin.vip_plan.paused": "Đã tạm ngưng gói VIP",
+  "admin.vip_plan.deleted": "Đã xóa gói VIP",
 };
 
-export default async function AdminPage() {
-  const user = await requireAdminUser();
-  const data = await getAdminDashboard();
+export default async function AdminPage({ searchParams }: {
+  searchParams: Promise<{ period?: string }>;
+}) {
+  const [user, params] = await Promise.all([requireAdminUser(), searchParams]);
+  const period = parseAdminPeriod(params.period);
+  const [data, business] = await Promise.all([getAdminDashboard(), getAdminBusinessAnalytics(period)]);
   const stats = [
-    { label: "Người dùng", value: data.stats.users, icon: UsersRound },
-    { label: "VIP đang hoạt động", value: data.stats.activeVip, icon: Crown },
-    { label: "Bài đã xuất bản", value: data.stats.publishedLessons, icon: BookOpenText },
-    { label: "Lộ trình", value: data.stats.courses, icon: Languages },
+    { label: "Doanh thu", value: formatAdminCurrency(business.stats.revenue), hint: business.period.label, icon: CircleDollarSign },
+    { label: "Người dùng", value: business.stats.totalUsers.toLocaleString("vi-VN"), hint: "Toàn hệ thống", icon: UsersRound },
+    { label: "Đăng ký VIP", value: business.stats.vipRegistrations.toLocaleString("vi-VN"), hint: business.period.label, icon: Crown },
+    { label: "Chuyển đổi VIP", value: `${business.stats.conversionRate.toFixed(1)}%`, hint: "VIP / tổng học viên", icon: TrendingUp },
   ];
 
   return <main className="admin-page"><div className="section-shell">
     <AdminConsoleHeader eyebrow="Himi Chinese Console" title="Tổng quan vận hành" userName={user.displayName} />
-    <section className="admin-stats" aria-label="Chỉ số tổng quan">{stats.map(({ label, value, icon: Icon }) => <article className="admin-stat" key={label}><span className="admin-stat-icon"><Icon size={20} /></span><div><strong>{value}</strong><span>{label}</span></div></article>)}</section>
+    <div className="admin-report-filter-row"><div><strong>Báo cáo kinh doanh</strong><span>{business.period.label}</span></div><AdminPeriodFilter basePath="/admin" period={period} /></div>
+    <section className="admin-stats" aria-label="Chỉ số tổng quan">{stats.map(({ label, value, hint, icon: Icon }) => <article className="admin-stat" key={label}><span className="admin-stat-icon"><Icon size={18} /></span><div><span>{label}</span><strong>{value}</strong><small>{hint}</small></div></article>)}</section>
+    <section className="admin-dashboard-business-grid">
+      <article className="admin-panel"><div className="panel-heading"><div><span>Doanh thu theo thời gian</span><h2>{business.period.label}</h2></div><strong>{formatAdminCurrency(business.stats.revenue)}</strong></div><AdminLineChart id="dashboard-revenue" series={business.revenueSeries} title="Doanh thu dashboard" valueLabel={formatAdminCurrency} /></article>
+      <article className="admin-panel"><div className="panel-heading"><div><span>Tài khoản & thanh toán</span><h2>Hoạt động gần đây</h2></div><Link href="/admin/analytics" prefetch={false}>Xem thống kê</Link></div><AdminRecentActivity activities={business.recentActivity} now={business.period.end} /></article>
+    </section>
+    <section className="admin-panel admin-dashboard-transactions"><div className="panel-heading"><div><span>Dòng tiền</span><h2>Giao dịch gần đây</h2></div><Link href="/admin/subscriptions#transactions" prefetch={false}>Xem lịch sử</Link></div><AdminTransactionTable transactions={business.recentTransactions} /></section>
     <div className="admin-grid">
-      <section className="admin-panel"><div className="panel-heading"><h2>Quản lý lộ trình</h2><Link href="/admin/courses">Mở CRUD nội dung</Link></div><div className="table-scroll"><table className="data-table"><thead><tr><th>Lộ trình</th><th>Bài học</th><th>Trạng thái</th><th>Cập nhật</th></tr></thead><tbody>{data.courses.map((course) => <tr key={course.id}><td><Link className="table-course" href={`/admin/courses/${course.id}`}><span className="table-mark">{course.hanzi}</span>{course.titleVi}</Link></td><td>{course.lessonCount}</td><td><StatusBadge status={course.status} /></td><td>{course.updatedAt.toLocaleDateString("vi-VN")}</td></tr>)}</tbody></table></div></section>
+      <section className="admin-panel"><div className="panel-heading"><div><span>Danh mục nội dung</span><h2>Quản lý lộ trình</h2></div><Link href="/admin/courses" prefetch={false}>Mở CRUD nội dung</Link></div><div className="table-scroll"><table className="data-table"><thead><tr><th>Lộ trình</th><th>Bài học</th><th>Trạng thái</th><th>Cập nhật</th></tr></thead><tbody>{data.courses.map((course) => <tr key={course.id}><td><Link className="table-course" href={`/admin/courses/${course.id}`} prefetch={false}><span className="table-mark">{course.hanzi}</span><span><strong>{course.titleVi}</strong><small>{course.slug}</small></span></Link></td><td>{course.lessonCount}</td><td><StatusBadge status={course.status} /></td><td>{course.updatedAt.toLocaleDateString("vi-VN")}</td></tr>)}</tbody></table></div></section>
       <section className="admin-panel"><div className="panel-heading"><h2>Quy trình nội dung</h2><span>Dữ liệu thật</span></div><div className="pipeline"><div className="pipeline-step"><span>01</span><div><strong>Bản nháp</strong><span>Đang biên soạn</span></div><strong>{data.lessonStatuses.draft ?? 0} bài</strong></div><div className="pipeline-step"><span>02</span><div><strong>Chờ duyệt</strong><span>Sẵn sàng kiểm tra</span></div><strong>{data.lessonStatuses.review ?? 0} bài</strong></div><div className="pipeline-step"><span>03</span><div><strong>Đã xuất bản</strong><span>Người học đang thấy</span></div><strong>{data.lessonStatuses.published ?? 0} bài</strong></div><div className="pipeline-step"><span>04</span><div><strong>Lưu trữ</strong><span>Không còn công khai</span></div><strong>{data.lessonStatuses.archived ?? 0} bài</strong></div></div></section>
     </div>
     <div className="admin-lower one"><section className="admin-panel"><div className="panel-heading"><h2>Audit gần đây</h2><span>{data.activities.length} sự kiện</span></div><div className="activity-list">{data.activities.length ? data.activities.map((activity) => <div className="activity-item" key={activity.id}><i className="activity-dot" /><div><p>{actionLabels[activity.action] ?? activity.action}</p><span>{activity.actorName ?? "Hệ thống"} · {activity.createdAt.toLocaleString("vi-VN")}</span></div></div>) : <p className="admin-empty">Chưa có hoạt động quản trị.</p>}</div></section></div>

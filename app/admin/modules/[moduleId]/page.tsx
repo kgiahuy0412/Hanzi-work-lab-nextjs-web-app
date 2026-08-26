@@ -22,7 +22,7 @@ export default async function AdminModulePage({ params, searchParams }: { params
     </div>
     <div className="admin-content-grid modules-section">
       <section className="admin-panel"><div className="panel-heading"><h2>Tạo bài học</h2><span>Soạn chi tiết sau khi tạo</span></div><LessonCreateForm action={createLessonAction} moduleId={data.module.id} nextOrder={nextOrder} /></section>
-      <section className="admin-panel"><div className="panel-heading"><h2>{data.lessons.length} bài học</h2><span>Dữ liệu thật</span></div><div className="admin-record-list">{data.lessons.length ? data.lessons.map((lesson) => <Link href={`/admin/lessons/${lesson.id}`} key={lesson.id}><span><strong>{lesson.title}</strong><small>{lesson.estimatedMinutes} phút · {lesson.vocabularyCount} từ · {lesson.isFree ? "Miễn phí" : "VIP"}</small></span><StatusBadge status={lesson.status} /></Link>) : <p className="admin-empty">Chưa có bài học trong module.</p>}</div></section>
+      <section className="admin-panel"><div className="panel-heading"><h2>{data.lessons.length} bài học</h2><span>Dữ liệu thật</span></div><div className="admin-record-list">{data.lessons.length ? data.lessons.map((lesson) => <Link href={`/admin/lessons/${lesson.id}`} key={lesson.id} prefetch={false}><span><strong>{lesson.title}</strong><small>{lesson.estimatedMinutes} phút · {lesson.vocabularyCount} từ · {lesson.isFree ? "Miễn phí" : "VIP"}</small></span><StatusBadge status={lesson.status} /></Link>) : <p className="admin-empty">Chưa có bài học trong module.</p>}</div></section>
     </div>
   </div></main>;
 }

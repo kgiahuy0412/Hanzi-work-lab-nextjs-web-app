@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, count, countDistinct, desc, eq, gt, ilike, inArray, isNull, lte, max, ne, or, sql } from "drizzle-orm";
+import { and, asc, count, desc, eq, ilike, inArray, max, ne, or, sql } from "drizzle-orm";
 import { readDb, writeDb, type Database } from "../db/index.ts";
 import {
   auditLogs,
@@ -10,7 +10,6 @@ import {
   lessonVocabulary,
   modules,
   reviewItems,
-  subscriptions,
   users,
   vocabulary,
 } from "../db/schema.ts";
@@ -22,7 +21,7 @@ type MutationError = "duplicate_slug" | "not_found" | "unsafe_delete" | "invalid
   | "workflow_forbidden" | "invalid_transition" | "review_not_ready" | "role_change_forbidden" | "invalid_version"
   | "invalid_reviewer" | "review_assignment_forbidden" | "review_assignment_required" | "invalid_input"
   | "vip_target_ineligible" | "vip_plan_inactive" | "vip_not_active" | "vip_request_not_pending"
-  | "vip_request_ineligible";
+  | "vip_request_ineligible" | "duplicate_code" | "vip_plan_in_use" | "user_delete_forbidden";
 export type MutationResult = { ok: true; id: string } | { ok: false; error: MutationError };
 
 export type CourseInput = {
@@ -84,15 +83,7 @@ async function refreshCourseStats(tx: DbTransaction, courseId: string) {
 
 export async function getAdminDashboard() {
   return readDb(async (db) => {
-    const now = new Date();
-    const [userCount, vipCount, publishedCount, courseRows, statusRows, activities] = await Promise.all([
-      db.select({ value: count() }).from(users),
-      db.select({ value: countDistinct(subscriptions.userId) }).from(subscriptions).where(and(
-        eq(subscriptions.status, "active"),
-        or(isNull(subscriptions.startsAt), lte(subscriptions.startsAt, now)),
-        or(isNull(subscriptions.endsAt), gt(subscriptions.endsAt, now)),
-      )),
-      db.select({ value: count() }).from(lessons).where(eq(lessons.status, "published")),
+    const [courseRows, statusRows, activities] = await Promise.all([
       db.select({
         id: courses.id,
         slug: courses.slug,
@@ -113,12 +104,6 @@ export async function getAdminDashboard() {
       }).from(auditLogs).leftJoin(users, eq(auditLogs.actorId, users.id)).orderBy(desc(auditLogs.createdAt)).limit(6),
     ]);
     return {
-      stats: {
-        users: userCount[0]?.value ?? 0,
-        activeVip: vipCount[0]?.value ?? 0,
-        publishedLessons: publishedCount[0]?.value ?? 0,
-        courses: courseRows.length,
-      },
       courses: courseRows,
       lessonStatuses: Object.fromEntries(statusRows.map((row) => [row.status, row.value])) as Partial<Record<ContentStatus, number>>,
       activities,

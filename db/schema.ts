@@ -303,9 +303,12 @@ export const vipPlans = pgTable("vip_plans", {
   name: varchar("name", { length: 100 }).notNull(),
   durationDays: integer("duration_days").notNull(),
   priceVnd: integer("price_vnd").notNull(),
+  discountPercent: integer("discount_percent").notNull().default(0),
+  promotionLabel: varchar("promotion_label", { length: 160 }),
   isActive: boolean("is_active").notNull().default(true),
   benefits: jsonb("benefits").notNull().default([]),
   createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => [uniqueIndex("vip_plans_code_uq").on(table.code)]);
 
 export const subscriptions = pgTable("subscriptions", {
