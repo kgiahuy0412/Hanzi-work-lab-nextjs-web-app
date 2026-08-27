@@ -26,6 +26,7 @@
   "scripts": {
     "dev": "remotion studio",
     "build": "remotion bundle",
+    "audio:daily": "node scripts/generate-daily-audio.mjs",
     "render:landscape": "remotion render HimiWorkProgressLandscape ../../public/assets/videos/work-progress/himi-work-progress-16x9.mp4 --codec=h264 --crf=18 --audio-codec=aac",
     "render:portrait": "remotion render HimiWorkProgressPortrait ../../public/assets/videos/work-progress/himi-work-progress-9x16.mp4 --codec=h264 --crf=20 --audio-codec=aac",
     "upgrade": "remotion upgrade",

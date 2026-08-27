@@ -1,0 +1,88 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-26T00:00:00+07:00",
+  "title": "Design System: Himi Chinese",
+  "extensions": {
+    "colorMeta": {
+      "himi-teal": { "role": "primary", "displayName": "Himi Teal", "canonical": "#159f96", "tonalRamp": ["#063a37", "#075a55", "#087a72", "#159f96", "#54bbb4", "#91d5d0", "#c9ebe8", "#effaf9"] },
+      "himi-teal-deep": { "role": "primary", "displayName": "Deep Himi Teal", "canonical": "#087a72", "tonalRamp": ["#042f2c", "#064d48", "#087a72", "#159f96", "#55bbb4", "#96d9d4", "#d3efec", "#f2fbfa"] },
+      "pine": { "role": "primary", "displayName": "Coach Pine", "canonical": "#064f48", "tonalRamp": ["#032824", "#064f48", "#08746a", "#15988d", "#4ab5ac", "#89d2cc", "#c8ebe8", "#eff9f8"] },
+      "action-coral": { "role": "secondary", "displayName": "Action Coral", "canonical": "#ff5b55", "tonalRamp": ["#4d100e", "#7a1c18", "#ad2d28", "#dc433e", "#ff5b55", "#ff918c", "#ffc3c0", "#fff0ef"] },
+      "progress-blue": { "role": "tertiary", "displayName": "Progress Blue", "canonical": "#1767e8", "tonalRamp": ["#071e49", "#0b347c", "#104dae", "#1767e8", "#4f8df0", "#89b4f7", "#c5d9fb", "#eff5ff"] },
+      "warm-canvas": { "role": "neutral", "displayName": "Warm Canvas", "canonical": "#f8f7f2", "tonalRamp": ["#252521", "#494842", "#6f6e66", "#98968d", "#bdbbb2", "#d9d7cf", "#eceae4", "#f8f7f2"] },
+      "warm-surface": { "role": "neutral", "displayName": "Warm Surface", "canonical": "#fffdf8", "tonalRamp": ["#282621", "#504d46", "#78746b", "#a19c92", "#c9c4ba", "#e4e0d8", "#f4f1eb", "#fffdf8"] },
+      "ink-navy": { "role": "neutral", "displayName": "Instruction Ink", "canonical": "#071a35", "tonalRamp": ["#071a35", "#17304f", "#324b69", "#536a86", "#788ba3", "#a7b4c4", "#d4dbe3", "#f4f6f8"] },
+      "line-soft": { "role": "neutral", "displayName": "Soft Structure", "canonical": "#d9dfda", "tonalRamp": ["#1d231f", "#3d4540", "#616a64", "#87908a", "#adb5b0", "#cbd1cd", "#e3e7e4", "#f6f8f6"] }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Learning Display", "purpose": "Dashboard focus and large Chinese vocabulary." },
+      "body": { "displayName": "Interface Body", "purpose": "Instructions, context, and navigation." },
+      "label": { "displayName": "Operational Label", "purpose": "Compact steps, categories, and state." }
+    },
+    "shadows": [
+      { "name": "learning-lift", "value": "0 28px 58px rgba(25,85,82,.17), 0 6px 16px rgba(18,52,49,.09)", "purpose": "Active learning object." },
+      { "name": "coach-lift", "value": "0 24px 52px rgba(6,79,72,.20), 0 7px 16px rgba(7,26,53,.08)", "purpose": "Himi guidance or daily phrase." }
+    ],
+    "motion": [
+      { "name": "state-standard", "value": "180ms ease", "purpose": "Hover and compact state changes." },
+      { "name": "card-spring", "value": "spring(320, 30, .72)", "purpose": "Vocabulary card entry and progression." }
+    ],
+    "breakpoints": [
+      { "name": "mobile", "value": "720px" },
+      { "name": "tablet", "value": "920px" },
+      { "name": "compact-desktop", "value": "1180px" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Action",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Decisive learning action in Action Coral.",
+      "html": "<button class=\"ds-btn-primary\">TIẾP TỤC HỌC</button>",
+      "css": ".ds-btn-primary{height:50px;padding:0 18px;border:0;border-radius:13px;background:#ff5b55;color:#fff;font:780 13px Geist,Segoe UI,sans-serif;transition:transform .18s ease,filter .18s ease}.ds-btn-primary:hover{transform:translateY(-2px);filter:saturate(1.08)}.ds-btn-primary:focus-visible{outline:3px solid #071a35;outline-offset:3px}"
+    },
+    {
+      "name": "Active Navigation",
+      "kind": "nav",
+      "description": "Muted navigation that becomes pale teal when active.",
+      "html": "<a class=\"ds-nav-active\" href=\"#\"><svg aria-hidden=\"true\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\"><path d=\"M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z\"/></svg><span>Học tập</span></a>",
+      "css": ".ds-nav-active{min-height:44px;padding:0 13px;display:inline-flex;align-items:center;gap:10px;border-radius:13px;background:#e2f5f2;color:#087a72;font:700 14px Geist,Segoe UI,sans-serif;text-decoration:none}.ds-nav-active:hover{background:#d5efeb}.ds-nav-active:focus-visible{outline:2px solid #087a72;outline-offset:2px}"
+    },
+    {
+      "name": "Learning Card",
+      "kind": "card",
+      "refersTo": "card-feature",
+      "description": "Teal active learning surface with Hanzi as the dominant element.",
+      "html": "<article class=\"ds-learning-card\"><small>01 / 05</small><strong>进度</strong><span>jìndù · tiến độ</span></article>",
+      "css": ".ds-learning-card{width:320px;padding:28px 36px;border-radius:24px;background:#159f96;color:#fff;box-shadow:0 28px 58px rgba(25,85,82,.17);font-family:Geist,Segoe UI,sans-serif}.ds-learning-card small{font-weight:800}.ds-learning-card strong{display:block;margin-top:28px;font:760 72px/1 Microsoft YaHei,PingFang SC,sans-serif}.ds-learning-card span{display:block;margin-top:12px;font-weight:650}"
+    },
+    {
+      "name": "Active Status Chip",
+      "kind": "chip",
+      "refersTo": "chip-active",
+      "description": "Compact active or progress state.",
+      "html": "<span class=\"ds-chip-active\">3 từ đang chờ</span>",
+      "css": ".ds-chip-active{padding:8px 14px;display:inline-flex;border-radius:999px;background:#e2f5f2;color:#087a72;font:760 12px Geist,Segoe UI,sans-serif}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "description": "Warm, softly outlined form field.",
+      "html": "<input class=\"ds-field\" value=\"Tiếng Trung công sở\" aria-label=\"Tìm kiếm\">",
+      "css": ".ds-field{height:48px;padding:0 15px;border:1px solid #d9dfda;border-radius:13px;background:#fffdf8;color:#071a35;font:500 14px Geist,Segoe UI,sans-serif}.ds-field:focus{border-color:#087a72;outline:3px solid rgba(8,122,114,.18);outline-offset:1px}.ds-field:disabled{opacity:.55}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Himi Workday Studio",
+    "overview": "Himi Chinese feels like a bright, well-organized learning studio built into the learner's workday. Task state is explicit, interaction is tactile without becoming childish, and Chinese content receives enough scale to remain memorable.",
+    "keyCharacteristics": ["Warm white work surfaces with strong pine-colored text.", "Teal as the learning field, coral as the decisive action, blue as progress.", "Large Chinese characters paired with compact Vietnamese guidance.", "Rounded, tactile controls and soft ambient depth.", "Clear responsive reordering with one dominant action per view."],
+    "rules": [
+      { "name": "The Three Signals Rule", "body": "Teal owns learning, coral owns action, and blue owns progress.", "section": "colors" },
+      { "name": "The Chinese Leads Rule", "body": "Hanzi leads whenever vocabulary or a practical phrase is the subject.", "section": "typography" },
+      { "name": "The Earned Lift Rule", "body": "No more than one main panel and one supporting coach panel appear lifted in the same viewport.", "section": "elevation" }
+    ],
+    "dos": ["Do make the next useful action unmistakable within the first viewport.", "Do let Himi explain or guide a real learning state.", "Do use the three signal colors according to their named roles.", "Do keep Chinese, pinyin, and Vietnamese translation in a consistent reading ladder."],
+    "donts": ["Don't build a dashboard from many equal white cards with identical weight.", "Don't let a single flashcard obscure access to the rest of the product.", "Don't use mascot art as unrelated corner decoration.", "Don't stack multiple large shadows or saturated panels without a quiet field between them."]
+  }
+}

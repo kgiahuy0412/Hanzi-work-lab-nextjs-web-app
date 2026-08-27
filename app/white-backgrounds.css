@@ -1,0 +1,65 @@
+/*
+ * Product-wide white canvas.
+ *
+ * Keep semantic component surfaces (buttons, cards, success/error states) in
+ * their existing colors. Only full-page canvases and decorative backdrop
+ * artwork are normalized here so every route starts from the same white base.
+ */
+:root {
+  --paper: #ffffff;
+}
+
+html,
+body,
+.standalone-route-shell,
+body:has(.learner-app-shell),
+.learner-app-shell,
+.learner-shell-content,
+body:has(.learner-dashboard),
+.learner-dashboard,
+.learner-dashboard.review-home-dashboard,
+.course-library-page,
+.practice-dashboard,
+.practice-dashboard:has(.work-practice-layout.is-catalog),
+.practice-dashboard:has(.work-practice-layout.is-focused),
+.practice-dashboard.practice-route-loading,
+.lesson-page,
+.game-center-dashboard,
+.game-session-dashboard,
+.writing-game-dashboard,
+.auth-page,
+.account-page,
+.notifications-page,
+.legal-page,
+.admin-page,
+.video-library-page,
+.video-detail-page {
+  background-color: #ffffff;
+  background-image: none;
+}
+
+/* Learner login and registration keep their shared animated Himi scene. */
+.auth-page.auth-page-login-scene {
+  background-color: #fffaf0;
+}
+
+/* These are full-canvas illustrations rather than content images. */
+.game-session-world,
+.writing-game-dashboard {
+  background-color: #ffffff;
+  background-image: none !important;
+}
+
+.writing-arena-background {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .learner-dashboard.review-home-dashboard,
+  .course-library-page,
+  .practice-dashboard:has(.work-practice-layout.is-catalog),
+  .practice-dashboard.practice-route-loading {
+    background-color: #ffffff;
+    background-image: none !important;
+  }
+}

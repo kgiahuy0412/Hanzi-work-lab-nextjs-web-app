@@ -219,7 +219,11 @@ test("admin can grant, extend and revoke VIP while learners see their live entit
   assert.match(consoleHeader, /prefetch=\{false\}/);
   assert.match(consoleNavigation, /href: "\/admin\/subscriptions"/);
   assert.match(consoleNavigation, /prefetch=\{false\}/);
-  assert.doesNotMatch(consoleNavigation, /router\.prefetch|waitForRouteWarmup/);
+  assert.match(consoleNavigation, /getAdminPrefetchHrefs/);
+  assert.match(consoleNavigation, /requestIdleCallback/);
+  assert.match(consoleNavigation, /router\.prefetch\(href\)/);
+  assert.match(consoleNavigation, /onMouseEnter=\{\(\) => prepareRoute\(href\)\}/);
+  assert.match(consoleNavigation, /onFocus=\{\(\) => prepareRoute\(href\)\}/);
 });
 
 test("admin business console exposes dashboard, users, VIP payments and analytics", async () => {

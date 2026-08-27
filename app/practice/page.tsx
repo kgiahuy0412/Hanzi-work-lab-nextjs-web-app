@@ -3,7 +3,6 @@ import { WorkPracticeHub } from "@/components/work-practice-hub";
 import { emptyPracticeProgress } from "@/lib/activity-progress";
 import { getPracticeProgress } from "@/lib/activity-progress-repository";
 import { getCurrentUser } from "@/lib/auth-session";
-import { formatVietnameseWorkDate } from "@/lib/date-format";
 import { getDailySessionSource } from "@/lib/daily-session-repository";
 import { listPracticeVocabulary } from "@/lib/lesson-repository";
 import { getPracticeCatalog } from "@/lib/practice-repository";
@@ -51,7 +50,6 @@ export default async function PracticePage({
           scenarios={catalog.scenarios}
           vocabulary={vocabulary}
           weeklyChallenge={weeklyChallenge}
-          todayLabel={formatVietnameseWorkDate(new Date())}
         />
       </div>
 

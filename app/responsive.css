@@ -1,0 +1,292 @@
+/*
+ * Product-wide responsive guardrails.
+ *
+ * This file is intentionally loaded after the page and motion styles. It does
+ * not introduce a new visual direction; it only keeps the existing Himi UI
+ * usable from compact phones through wide desktop displays.
+ */
+
+:root {
+  --responsive-page-gutter: clamp(12px, 3vw, 38px);
+  --responsive-touch-target: 44px;
+}
+
+html,
+body {
+  max-width: 100%;
+}
+
+img,
+svg,
+video,
+canvas,
+iframe {
+  max-width: 100%;
+}
+
+iframe,
+video {
+  display: block;
+}
+
+:where(
+  .learner-shell-content,
+  .learn-frame,
+  .learn-main-column,
+  .learn-aside-column,
+  .section-shell,
+  .course-library-page,
+  .video-library-page,
+  .practice-dashboard,
+  .game-center-dashboard,
+  .lesson-page,
+  .vip-page,
+  .admin-page,
+  .account-page
+) {
+  min-width: 0;
+}
+
+:where(
+  .course-card,
+  .learning-video-card,
+  .practice-feature-card,
+  .lesson-header-card,
+  .lesson-content-card,
+  .pricing-card,
+  .admin-panel,
+  .account-panel
+) :where(h1, h2, h3, p, span, strong, small, a) {
+  overflow-wrap: anywhere;
+}
+
+/* Tablet: retain one supporting card without letting the decorative stack
+ * leave the viewport. */
+@media (min-width: 721px) and (max-width: 920px) {
+  .review-peek-card.peek-2 {
+    display: none;
+  }
+
+  .learn-aside-column,
+  .practice-side-column {
+    min-width: 0;
+  }
+}
+
+@media (max-width: 720px) {
+  :root {
+    --responsive-page-gutter: clamp(12px, 4vw, 18px);
+  }
+
+  body {
+    overscroll-behavior-x: none;
+  }
+
+  .learner-app-shell .learn-topbar {
+    padding-left: max(var(--responsive-page-gutter), env(safe-area-inset-left));
+    padding-right: max(var(--responsive-page-gutter), env(safe-area-inset-right));
+  }
+
+  .learner-app-shell .topbar-actions,
+  .learner-app-shell .brand,
+  .learner-app-shell .user-chip {
+    min-width: 0;
+  }
+
+  .learner-mobile-nav {
+    left: max(8px, env(safe-area-inset-left));
+    right: max(8px, env(safe-area-inset-right));
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
+  }
+
+  .learner-mobile-nav a {
+    min-width: 0;
+    min-height: 50px;
+    overflow: hidden;
+  }
+
+  .learner-mobile-nav a span {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  :where(
+    .course-library-page .filter-list,
+    .video-category-filters,
+    .practice-industry-tabs,
+    .lesson-tabs,
+    .admin-nav,
+    .today-session-steps
+  ) {
+    overscroll-behavior-inline: contain;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  :where(button, [role="button"], input, select, textarea) {
+    min-height: var(--responsive-touch-target);
+  }
+
+  .admin-stats,
+  .admin-vip-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .admin-content-grid,
+  .admin-detail-grid,
+  .admin-detail-grid.lesson-layout,
+  .admin-grid,
+  .admin-lower {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-team-list article,
+  .admin-vip-heading,
+  .admin-panel-heading {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .admin-team-list form,
+  .admin-search,
+  .admin-vip-request-actions,
+  .admin-vip-request-actions form {
+    width: 100%;
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .admin-team-list select,
+  .admin-search .button,
+  .admin-vip-request-actions .button {
+    width: 100%;
+    min-width: 0;
+  }
+
+  .legal-page,
+  .auth-page,
+  .account-page {
+    padding-left: var(--responsive-page-gutter);
+    padding-right: var(--responsive-page-gutter);
+  }
+
+  .legal-card,
+  .auth-card,
+  .account-shell {
+    width: 100%;
+    min-width: 0;
+  }
+}
+
+/* Compact phones need the full wordmark and all three account actions to fit
+ * in one row. The account action stays available; it becomes avatar-only. */
+@media (max-width: 359px) {
+  .learner-app-shell .learn-topbar {
+    padding-left: max(8px, env(safe-area-inset-left));
+    padding-right: max(8px, env(safe-area-inset-right));
+  }
+
+  .learner-app-shell .learn-topbar .brand {
+    gap: 5px;
+    font-size: 16px;
+  }
+
+  .learner-app-shell .learn-topbar .brand-mark {
+    width: 40px;
+    height: 40px;
+    flex: 0 0 40px;
+    border-radius: 13px;
+  }
+
+  .learner-app-shell .brand-wordmark {
+    gap: .16em;
+    letter-spacing: -.045em;
+  }
+
+  .learner-app-shell .topbar-actions {
+    gap: 2px;
+    flex: 0 0 auto;
+  }
+
+  .learner-app-shell .streak-chip,
+  .learner-app-shell .topbar-icon,
+  .learner-app-shell .user-chip,
+  .learner-app-shell .user-chip > span {
+    width: 40px;
+    min-width: 40px;
+    height: 40px;
+    min-height: 40px;
+  }
+
+  .learner-app-shell .streak-chip,
+  .learner-app-shell .user-chip {
+    padding: 0;
+    justify-content: center;
+  }
+
+  .learner-mobile-nav {
+    left: 6px;
+    right: 6px;
+    gap: 1px;
+    padding-inline: 4px;
+  }
+
+  .learner-mobile-nav a {
+    padding-inline: 1px;
+    font-size: 8px;
+  }
+
+  .learner-mobile-nav a svg {
+    width: 18px;
+    height: 18px;
+  }
+
+  .auth-card-login-scene,
+  .legal-card {
+    border-radius: 22px;
+  }
+}
+
+/* Short landscape phones: keep the persistent chrome compact and make the
+ * content scroll naturally instead of squeezing interactive controls. */
+@media (max-height: 500px) and (min-width: 721px) and (max-width: 920px) {
+  .learner-app-shell .learn-topbar {
+    height: 72px;
+  }
+
+  .learner-app-shell .learn-topbar .brand-mark {
+    width: 42px;
+    height: 42px;
+  }
+
+  .learner-app-shell .streak-chip {
+    min-height: 40px;
+  }
+
+  .learn-frame {
+    padding-top: 92px;
+  }
+
+  .auth-page-login-scene {
+    min-height: 100dvh;
+  }
+}
+
+/* Wide displays keep reading and interaction distances comfortable. */
+@media (min-width: 1600px) {
+  .section-shell,
+  .course-library-page > :where(section, div),
+  .video-library-page > :where(header, section) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .learner-mobile-nav,
+  .review-peek-card,
+  .course-card,
+  .learning-video-card {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,24 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop web application homepage composition, 1440x900 landscape
+Input images:
+- Image 1 is the incumbent Himi Chinese homepage. Carry over only its persistent left navigation rail, quiet top bar, warm-white palette, Geist-like sans typography, rounded component character, teal/coral/blue signal colors, and adult-learning tone. Do not copy its oversized flashcard composition.
+- Image 2 is the exact Himi mascot identity. Preserve black-and-white baby penguin, orange beak and feet, three head feathers, rosy cheeks, large glossy eyes, and red-to-orange scarf.
+
+Primary request: Design the “Bento ngày học” homepage structure for Himi Chinese, a Vietnamese Chinese-learning app for working adults. It is a broad learning dashboard showing many capabilities at a glance, but hierarchy must remain unmistakable.
+
+Structure in reading order:
+1. Preserve the narrow white left sidebar and quiet existing top bar.
+2. Compact welcome band: “Chào buổi sáng” and one-line daily context; Himi is integrated into a small useful coach message, not separate decoration.
+3. Build an asymmetric modular composition, not an equal card grid:
+   - largest 5-column teal/pine panel: “Phiên 10 phút hôm nay”, four step status, next lesson, and coral “Tiếp tục phiên học” button;
+   - medium 3-column panel: “Bài đang học” with one Chinese workplace course, lesson title, cover image and progress;
+   - tall 2-column pine panel: “Câu dùng ngay” with Hanzi, pinyin, Vietnamese meaning, audio button and Himi coaching gesture;
+   - small calm weekly-progress strip and one tiny “Từ cần ôn” preview.
+4. Under these, six capability entries of deliberately varied width for “Lộ trình”, “Luyện viết”, “Video”, “Luyện nghe”, “Luyện ca”, “Trò chơi”. They share one connected baseline and line-icon language; they must not look like six identical floating cards.
+5. Final visible band: “Đề xuất cho bạn” with two Himi career/course covers and one recent-activity column. Show enough next fold for continuity.
+
+Visual system: The Himi Workday Studio. Contemporary adult learning, highly polished, warm and friendly. Canvas #f8f7f2, warm surface #fffdf8, teal #159f96, pine #064f48, coral #ff5b55, progress blue #1767e8, instruction ink #071a35. Rounded 13–24px shapes; sparse borders; selective ambient shadows only on the dominant daily-session and Himi coach panels. Strong Chinese typographic moments.
+Composition/framing: full desktop app screenshot, front-on, 1440x900 landscape, edge-to-edge. Use a 12-column asymmetric grid with a clearly dominant top-left daily-session module. The viewer can scan the whole product within seconds.
+Text: only concise Vietnamese/Chinese copy listed above, correctly spelled and readable. No English filler, lorem ipsum, fabricated stats, testimonials, pricing or claims.
+Constraints: preserve exact Himi identity and persistent shell; real production-like UI; no people, stock photography, browser chrome, watermark, glassmorphism or excessive gradients.
+Avoid: uniform equal-weight bento grid, too many white cards, oversized standalone flashcard, childish mobile-game style, excessive shadows, floating decorative icons, tiny unreadable labels, generic SaaS dashboard.

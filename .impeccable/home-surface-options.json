@@ -1,0 +1,48 @@
+{
+  "title": "Chọn trang chủ mới — không dùng phiên 10 phút",
+  "question": "Ba phương án mới đều ưu tiên học tiếp, khám phá kỹ năng và tiến độ cá nhân. Không phương án nào dùng hành trình 10 phút.",
+  "options": [
+    {
+      "id": "himi-home-desk",
+      "label": "Bàn học Himi",
+      "kicker": "THE ROLL",
+      "lineage": "Một bàn học cá nhân với nội dung hiện tại ở trung tâm",
+      "thesis": "Trang chủ mở thẳng vào bài đang học, còn Himi sắp xếp lộ trình, từ cần ôn và công cụ luyện tập quanh tác vụ đó.",
+      "palette": ["#f8f7f2", "#159f96", "#064f48", "#ff5b55", "#1767e8"],
+      "materials": ["warm study surface", "focused lesson canvas", "useful Himi coach"],
+      "viewport": "Bài đang học chiếm phần lớn bên trái; Himi và kế hoạch học cá nhân bên phải; một dock kỹ năng cùng tiến độ tuần nằm dưới.",
+      "risk": "Cần giữ đủ lối vào chức năng để trang không biến thành một màn hình bài học phóng lớn.",
+      "comp": ".impeccable/mocks/decision/home-himi-desk.png"
+    },
+    {
+      "id": "career-campus",
+      "label": "Khuôn viên nghề nghiệp",
+      "lineage": "Lộ trình ngành là bản đồ chính, kỹ năng là các khu luyện tập kết nối",
+      "thesis": "Người học nhìn thấy ngành đang theo đuổi, chặng hiện tại và các kỹ năng có thể luyện ngay trong cùng một bản đồ tiến bộ.",
+      "palette": ["#f8f7f2", "#159f96", "#064f48", "#ff5b55", "#1767e8"],
+      "materials": ["Himi industry covers", "career pathway map", "calm skill stations"],
+      "viewport": "Khối lộ trình ngành rộng ở trung tâm với bài tiếp theo; ba ngành khác nằm như dải khám phá; nghe, viết, video, luyện ca và trò chơi là các trạm phía dưới.",
+      "risk": "Nếu bản đồ ngành quá lớn, người chỉ muốn ôn nhanh một kỹ năng có thể phải quét lâu hơn.",
+      "comp": ".impeccable/mocks/decision/home-career-campus.png"
+    },
+    {
+      "id": "learning-feed",
+      "label": "Dòng học cá nhân",
+      "lineage": "Một feed học tập được xếp theo việc nên làm tiếp theo",
+      "thesis": "Trang chủ tự xếp bài học, từ cần ôn, video và tình huống nghề nghiệp thành một dòng ưu tiên thay đổi theo tiến độ.",
+      "palette": ["#f8f7f2", "#159f96", "#064f48", "#ff5b55", "#1767e8"],
+      "materials": ["priority learning queue", "compact progress rail", "Himi recommendation notes"],
+      "viewport": "Cột feed rộng chứa ba hoạt động ưu tiên có độ lớn khác nhau; sidebar bên trong nội dung hiển thị mục tiêu tuần, tiến độ ngành và các lối vào kỹ năng.",
+      "risk": "Cần giải thích rõ vì sao một hoạt động được đề xuất để feed không có cảm giác ngẫu nhiên.",
+      "comp": ".impeccable/mocks/decision/home-learning-feed.png"
+    }
+  ],
+  "reroll": {
+    "registers": ["safer", "bolder"]
+  },
+  "buildPath": {
+    "value": "comp",
+    "toggle": true
+  },
+  "steer": true
+}

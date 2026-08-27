@@ -7,7 +7,6 @@ import {
   ArrowLeft,
   ArrowRight,
   BriefcaseBusiness,
-  CalendarDays,
   Check,
   CheckCircle2,
   ChevronRight,
@@ -30,6 +29,7 @@ import {
   X,
 } from "lucide-react";
 import { PracticeBoard } from "@/components/practice-board";
+import { HimiSectionBanner } from "@/components/himi-section-banner";
 import type { PracticeProgressSnapshot } from "@/lib/activity-progress";
 import type { Vocabulary } from "@/lib/content-types";
 import { withDailySessionFlow, type DailyRecommendation } from "@/lib/daily-session";
@@ -56,13 +56,13 @@ const industryIcons: Record<string, typeof BriefcaseBusiness> = {
 };
 
 const industryPhotos: Record<string, string> = {
-  office: "/assets/practice/office-progress-meeting.webp",
-  factory: "/assets/courses/factory-production.webp",
-  logistics: "/assets/courses/warehouse-logistics.webp",
-  sales: "/assets/courses/sales-customer-care.webp",
-  restaurant: "/assets/courses/restaurant-service.webp",
-  ecommerce: "/assets/courses/ecommerce-operations.webp",
-  core: "/assets/courses/workplace-communication.webp",
+  office: "/assets/courses/himi-concepts/himi-office-administration.png",
+  factory: "/assets/courses/himi-concepts/himi-factory-production.png",
+  logistics: "/assets/courses/himi-concepts/himi-warehouse-logistics.png",
+  sales: "/assets/courses/himi-concepts/himi-sales-customer-care.png",
+  restaurant: "/assets/courses/himi-concepts/himi-restaurant-service.png",
+  ecommerce: "/assets/courses/himi-concepts/himi-ecommerce-operations.png",
+  core: "/assets/courses/himi-concepts/himi-workplace-communication.png",
 };
 
 type HubMode = "catalog" | "session" | "complete" | "review";
@@ -96,7 +96,6 @@ export function WorkPracticeHub({
   initialProgress,
   initialScenarioId,
   hasVip,
-  todayLabel,
   weeklyChallenge,
 }: {
   industries: PracticeIndustry[];
@@ -108,7 +107,6 @@ export function WorkPracticeHub({
   initialProgress: PracticeProgressSnapshot;
   initialScenarioId: string | null;
   hasVip: boolean;
-  todayLabel: string;
   weeklyChallenge: WeeklyChallenge;
 }) {
   const initialScenario = scenarios.find((scenario) => scenario.id === initialScenarioId) ?? scenarios[0];
@@ -416,20 +414,9 @@ export function WorkPracticeHub({
       <section className="work-practice-main" aria-labelledby={mode === "catalog" ? "practice-title" : undefined}>
         {mode === "catalog" ? (
           <>
-            <header className="practice-catalog-header">
-              <div>
-                <span>Kho ca làm</span>
-                <h1 id="practice-title">Luyện cách nói trước khi vào ca</h1>
-                <p>Chọn tình huống, nghe cách phản hồi và phán đoán như trong công việc thật.</p>
-              </div>
-              <div className="practice-catalog-today">
-                <CalendarDays size={18} />
-                <span>
-                  <strong>{todayLabel}</strong>
-                  <small>Một ca ngắn cũng là tiến bộ.</small>
-                </span>
-              </div>
-            </header>
+            <div className="practice-banner-shell">
+              <HimiSectionBanner titleId="practice-title" titleLines={["Luyện đúng cảnh.", "Nói tự nhiên hơn."]} variant="practice" />
+            </div>
 
             <div className="practice-industry-tabs" role="tablist" aria-label="Chọn ngành để luyện">
               {industries.map((industry) => {

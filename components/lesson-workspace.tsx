@@ -5,11 +5,12 @@ import { useCallback, useEffect, useState } from "react";
 import { ArrowRight, Award, CheckCircle2, ChevronDown, ChevronUp, Crown, Gamepad2, Headphones, LockKeyhole } from "lucide-react";
 import { LessonChallengePanel } from "@/components/lesson-challenge";
 import { LessonVocabularyDeck } from "@/components/lesson-vocabulary-deck";
+import { VideoLearningPlayer } from "@/components/video-learning-player";
 import type { Course, LessonAccess, LessonDetail, LessonProgressState, LessonSummary } from "@/lib/content-types";
 import { withDailySessionFlow, type DailyRecommendation } from "@/lib/daily-session";
+import { getLessonScenarioVideo } from "@/lib/video-library";
 
-type LessonTab = "Từ vựng" | "Hội thoại" | "Ghi chú" | "Kiểm tra";
-const baseTabs: LessonTab[] = ["Từ vựng", "Hội thoại", "Ghi chú"];
+type LessonTab = "Tình huống" | "Từ vựng" | "Hội thoại" | "Ghi chú" | "Kiểm tra";
 
 export function LessonWorkspace({
   course,
@@ -30,7 +31,9 @@ export function LessonWorkspace({
   dailyFlow: boolean;
   dailyNextStep: DailyRecommendation | null;
 }) {
-  const [tab, setTab] = useState<LessonTab>("Từ vựng");
+  const scenarioVideo = getLessonScenarioVideo(course.slug, lesson.slug);
+  const baseTabs: LessonTab[] = scenarioVideo ? ["Tình huống", "Từ vựng", "Hội thoại", "Ghi chú"] : ["Từ vựng", "Hội thoại", "Ghi chú"];
+  const [tab, setTab] = useState<LessonTab>(scenarioVideo ? "Tình huống" : "Từ vựng");
   const [pendingLesson, setPendingLesson] = useState<string | null>(null);
   const [challengePassed, setChallengePassed] = useState(!lesson.challenge);
   const [mobileLessonsOpen, setMobileLessonsOpen] = useState(false);
@@ -125,7 +128,7 @@ export function LessonWorkspace({
         <h2>Mở khóa bài học này</h2>
         <p>Server đã xác nhận đây không phải bài học miễn phí. Nội dung từ vựng, hội thoại và ghi chú chưa được gửi tới trình duyệt.</p>
         <Link className="button button-primary" href="/vip">Xem quyền lợi VIP</Link>
-      </div> : <div className={`lesson-content-card${tab === "Từ vựng" ? " lesson-content-card-vocabulary" : ""}`}>
+      </div> : <div className={`lesson-content-card${tab === "Từ vựng" ? " lesson-content-card-vocabulary" : ""}${tab === "Tình huống" ? " lesson-content-card-video" : ""}`}>
         <div className="lesson-tab-panel-viewport">
           <div
               aria-labelledby={`lesson-tab-${tabIndex}`}
@@ -134,6 +137,10 @@ export function LessonWorkspace({
               key={tab}
               role="tabpanel"
             >
+              {tab === "Tình huống" && scenarioVideo ? <section className="lesson-scenario-video">
+                <div className="lesson-scenario-video-heading"><div><span className="section-kicker">Tình huống mở đầu</span><h2>{scenarioVideo.title}</h2><p>{scenarioVideo.summary}</p></div></div>
+                <VideoLearningPlayer compact video={scenarioVideo} />
+              </section> : null}
               {tab === "Từ vựng" ? <LessonVocabularyDeck authenticated={authenticated} onFinished={continueToDialogue} words={lesson.vocabulary} /> : null}
               {tab === "Hội thoại" ? <div className="dialogue">{lesson.dialogue.map((line, index) => <div className="dialogue-line" key={`${line.speaker}-${index}`}><strong lang="zh">{line.speaker}：{line.hanzi}</strong><small>{line.pinyin}</small><span>{line.translation}</span></div>)}</div> : null}
               {tab === "Ghi chú" ? <div className="lesson-note-list">{lesson.notes.map((note) => <article className="note-panel" key={note.pattern}><h3>{note.title}</h3><strong lang="zh">{note.pattern}</strong><p>{note.explanation}</p></article>)}</div> : null}

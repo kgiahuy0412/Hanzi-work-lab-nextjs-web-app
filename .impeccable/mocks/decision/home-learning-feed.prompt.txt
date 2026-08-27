@@ -1,0 +1,26 @@
+Use case: ui-mockup
+Asset type: high-fidelity desktop web application homepage composition, 1440x900 landscape
+Input images:
+- Image 1 is the incumbent Himi Chinese homepage; preserve only the persistent white left rail, quiet topbar, warm canvas, typography character and teal/coral/blue brand signals. Remove the 10-minute strip and oversized flashcard.
+- Image 2 is the exact Himi mascot identity; preserve the black-and-white penguin, orange beak and feet, three head feathers, rosy cheeks, glossy eyes and red-orange scarf.
+- Image 3 is an approved Himi workplace course cover; use it only as career-learning imagery and quality reference.
+
+Primary request: Design “Dòng học cá nhân”, a new Himi Chinese homepage that ranks the most useful next learning activities as a personalized feed. There must be NO 10-minute session, NO four-step journey and NO daily-session ribbon. Each recommendation must visibly explain why it is next.
+
+Structure:
+1. Preserve the narrow left navigation rail and quiet topbar.
+2. Greeting row: “Chào buổi sáng” with subtitle “Himi đã sắp xếp nội dung phù hợp với tiến độ của bạn.” A small Himi coach holds a simple recommendation note, integrated into the row.
+3. Main content split 68/32.
+4. Wide left feed titled “Nên học tiếp”: 
+   - first and largest teal item “Tiếp tục bài học” with Himi course image, track “Giao tiếp công sở cốt lõi”, lesson “Sắp xếp cuộc họp”, Chinese phrase “安排会议”, progress and coral “Học tiếp” button; visible reason label “Vì bạn đang học dở bài này”;
+   - second medium item “Ôn 5 từ vựng” with five compact Hanzi chips and reason “Đến lịch ôn hôm nay”;
+   - third medium item “Luyện nghe hội thoại” with waveform/audio control and reason “Củng cố bài vừa học”;
+   - a fourth compact preview “Tình huống công việc” with Himi scenario thumbnail.
+5. Right sidebar inside content: “Mục tiêu tuần” with compact progress visualization, “Lộ trình của tôi” status, “Câu dùng ngay” with Hanzi/pinyin/translation/audio, and “Truy cập nhanh” line-icon links for Luyện viết, Video, Luyện nghe, Luyện ca, Trò chơi.
+6. Bottom visible row: recent activity and two Himi course recommendations, subordinate to the feed.
+
+Visual system: The Himi Workday Studio. Modern personalized learning interface for working adults. Warm canvas #f8f7f2, surface #fffdf8, Himi teal #159f96, pine #064f48, coral #ff5b55, progress blue #1767e8, ink #071a35. Tactile 13–24px corners, sparse shadows, generous whitespace. Feed items vary in height and intensity according to priority; they must not look like identical social-media posts.
+Composition/framing: full desktop app screenshot, front-on, edge-to-edge, 1440x900 landscape. Clear wide feed plus narrow planning sidebar. The first recommendation is the only large saturated surface; lower items become increasingly quiet.
+Text: only concise Vietnamese/Chinese copy listed above, correctly spelled and readable. No English filler, lorem ipsum or fabricated commercial claims.
+Constraints: no “10 phút”, daily session, journey or step ribbon; preserve shell and exact Himi identity; no people, stock photos, testimonials, pricing, fake performance data, browser chrome, watermark or glassmorphism.
+Avoid: social-media appearance, endless scroll feeling, uniform bento grid, oversized flashcard, childish gamification, clutter, unexplained recommendations, excessive gradients/shadows, floating icons, tiny illegible text.
