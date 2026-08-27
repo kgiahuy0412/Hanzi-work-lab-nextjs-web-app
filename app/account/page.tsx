@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@/app/account.css";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import {

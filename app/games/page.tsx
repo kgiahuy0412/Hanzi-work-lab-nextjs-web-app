@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { GameCenter } from "@/components/game-center";
+import { GameCenterClient } from "@/components/game-center-client";
 import { emptyGameProgress, isGameId } from "@/lib/activity-progress";
 import { getGameProgress } from "@/lib/activity-progress-repository";
 import { getCurrentUser } from "@/lib/auth-session";
@@ -18,7 +18,7 @@ export default async function GamesPage({
   const requestedGameId = Array.isArray(game) ? game[0] : game;
   const dailyFlow = (Array.isArray(session) ? session[0] : session) === "today";
   const progress = user ? await getGameProgress(user.id) : emptyGameProgress;
-  return <GameCenter
+  return <GameCenterClient
     authenticated={Boolean(user)}
     dailyFlow={dailyFlow}
     initialGameId={isGameId(requestedGameId) ? requestedGameId : null}

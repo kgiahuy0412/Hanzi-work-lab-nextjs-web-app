@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import "@/app/notifications.css";
 import Link from "next/link";
 import { redirect } from "next/navigation";
 import { ArrowUpRight, Bell, BellRing, Check, CheckCheck, CircleAlert, Crown } from "lucide-react";

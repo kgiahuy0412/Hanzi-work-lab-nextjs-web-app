@@ -1,0 +1,1053 @@
+/* Route-scoped styles extracted from globals.css: writing slice game. */
+/* Writing slice game — bamboo reaction training */
+.writing-game-dashboard {
+  min-height: 100dvh;
+  overflow: hidden;
+  background-color: #fbf7ed;
+  background-image: url("/assets/writing/bamboo-garden-session-bg.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.writing-page-shell {
+  width: 100%;
+  min-height: 100dvh;
+  margin-left: 0;
+  padding: clamp(18px, 2.6vh, 28px) clamp(26px, 3.4vw, 52px);
+  display: grid;
+  align-items: center;
+}
+
+.writing-page-title {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.writing-current-word > span,
+.writing-howto > span {
+  color: #08766a;
+  font-size: 10px;
+  font-weight: 820;
+  letter-spacing: .1em;
+}
+
+.writing-game-layout {
+  width: min(1320px, 100%);
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 290px;
+  gap: clamp(22px, 2.5vw, 38px);
+  align-items: start;
+}
+
+.writing-arena-column {
+  min-width: 0;
+}
+
+.writing-arena {
+  height: clamp(430px, 56vh, 520px);
+  min-height: 430px;
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border: 1px solid rgba(15, 89, 73, .2);
+  border-radius: 24px;
+  background: #eff5c8;
+  box-shadow: 0 22px 48px rgba(26, 76, 60, .12);
+}
+
+.writing-arena-background {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  z-index: -2;
+  object-fit: cover;
+  object-position: center;
+}
+
+.writing-arena::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background: rgba(255, 252, 217, .06);
+}
+
+.writing-game-back {
+  width: 44px;
+  height: 44px;
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  z-index: 32;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #0c766a;
+  border: 1px solid #e2d8bb;
+  border-radius: 14px;
+  background: #fffdf5;
+  box-shadow: 0 8px 20px rgba(31, 72, 58, .1);
+  transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease;
+}
+
+.writing-game-back span {
+  width: 1px;
+  height: 1px;
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.writing-game-back:hover {
+  color: #075f57;
+  background: #f2fbf6;
+  box-shadow: 0 10px 24px rgba(31, 72, 58, .14);
+  transform: translateY(-2px);
+}
+
+.writing-arena-metrics {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  z-index: 30;
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+.writing-arena-metrics > span {
+  min-width: 88px;
+  min-height: 66px;
+  padding: 10px 12px 9px;
+  display: grid;
+  place-content: center;
+  justify-items: center;
+  gap: 5px;
+  color: #0a4d44;
+  border: 1px solid #e2d8bb;
+  border-radius: 13px;
+  background: #fffdf5;
+  box-shadow: 0 8px 20px rgba(31, 72, 58, .08);
+}
+
+.writing-arena-metrics strong {
+  font-size: 20px;
+  line-height: 1;
+}
+
+.writing-arena-metrics em {
+  color: #647873;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 650;
+}
+
+.writing-arena-metrics small {
+  color: #365f56;
+  font-size: 8px;
+  font-weight: 820;
+  letter-spacing: .06em;
+}
+
+.writing-arena-topline {
+  min-height: 58px;
+  padding: 0 220px 0 72px;
+  position: relative;
+  z-index: 6;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 14px;
+  color: #164e43;
+}
+
+.writing-arena-controls {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.writing-arena-controls button,
+.writing-current-word button {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #0c6f61;
+  border: 1px solid rgba(8, 112, 97, .18);
+  border-radius: 50%;
+  background: rgba(255, 255, 248, .76);
+}
+
+.writing-arena-controls button:disabled {
+  cursor: default;
+  opacity: .45;
+}
+
+.writing-arena-topline > span:nth-child(2) {
+  justify-self: center;
+  padding: 7px 14px;
+  border-radius: 999px;
+  background: rgba(33, 120, 87, .12);
+  font-size: 10px;
+  font-weight: 820;
+  letter-spacing: .06em;
+}
+
+.writing-hearts {
+  display: flex;
+  gap: 5px;
+  color: #f0a330;
+}
+
+.writing-target-ribbon {
+  min-width: 154px;
+  position: absolute;
+  left: 50%;
+  bottom: 17px;
+  z-index: 4;
+  padding: 10px 20px 11px;
+  display: grid;
+  justify-items: center;
+  color: #21463d;
+  border: 1px solid rgba(116, 134, 31, .24);
+  border-radius: 12px 12px 4px 4px;
+  background: rgba(246, 235, 81, .88);
+  box-shadow: 0 9px 25px rgba(74, 96, 36, .1);
+  transform: translateX(-50%);
+}
+
+.writing-target-ribbon span,
+.writing-target-ribbon small {
+  font-size: 8px;
+  font-weight: 750;
+}
+
+.writing-target-ribbon strong {
+  margin: 1px 0;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+}
+
+.writing-falling-word {
+  width: 136px;
+  min-height: 72px;
+  position: absolute;
+  left: var(--word-lane);
+  top: 68px;
+  z-index: 5;
+  display: block;
+  color: #fff;
+  transform: translateX(-50%);
+  will-change: transform;
+}
+
+.writing-word-face {
+  position: absolute;
+  inset: 0;
+  padding: 10px 14px 8px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  border: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 11px;
+  background: #087462;
+  box-shadow: 0 12px 25px rgba(0, 85, 69, .2);
+}
+
+.writing-word-face > span,
+.writing-word-half {
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  font-size: 25px;
+  font-weight: 650;
+  line-height: 1.1;
+}
+
+.writing-word-face > small {
+  margin-top: 4px;
+  color: rgba(255, 255, 255, .78);
+  font-size: 9px;
+}
+
+.writing-word-half {
+  position: absolute;
+  inset: 0;
+  padding: 10px 14px 8px;
+  display: none;
+  place-items: center;
+  align-content: center;
+  text-align: center;
+  opacity: 0;
+}
+
+.writing-arena.is-ready .writing-falling-word,
+.writing-arena.is-paused .writing-falling-word,
+.writing-arena.is-slicing .writing-falling-word,
+.writing-arena.is-complete .writing-falling-word,
+.writing-arena.is-gameover .writing-falling-word {
+  animation-play-state: paused;
+}
+
+.writing-falling-word.is-sliced {
+  z-index: 10;
+}
+
+.writing-falling-word.is-sliced .writing-word-face {
+  animation: writing-word-face-cut .01s .86s step-end forwards;
+}
+
+.writing-falling-word.is-sliced .writing-word-half {
+  display: grid;
+  color: #fff;
+  border-radius: 10px;
+  background: #087462;
+  box-shadow: 0 12px 25px rgba(0, 85, 69, .2);
+}
+
+.writing-falling-word.is-sliced .writing-word-half.is-left {
+  clip-path: polygon(0 0, 56% 0, 44% 100%, 0 100%);
+  animation: writing-slice-left .82s .86s cubic-bezier(.16, .78, .28, 1) forwards;
+}
+
+.writing-falling-word.is-sliced .writing-word-half.is-right {
+  clip-path: polygon(56% 0, 100% 0, 100% 100%, 44% 100%);
+  animation: writing-slice-right .82s .86s cubic-bezier(.16, .78, .28, 1) forwards;
+}
+
+.writing-penguin {
+  width: clamp(145px, 17vw, 220px);
+  aspect-ratio: 1;
+  position: absolute;
+  left: 2%;
+  top: 61%;
+  z-index: 3;
+  pointer-events: none;
+  filter: drop-shadow(0 17px 18px rgba(35, 75, 47, .14));
+  transform: rotate(-4deg);
+  transform-origin: center;
+  backface-visibility: hidden;
+  will-change: transform, opacity, filter;
+}
+
+.writing-penguin > img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  inset: 0;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+.writing-penguin-cape {
+  z-index: 0;
+  clip-path: polygon(0 44%, 38% 45%, 44% 57%, 38% 76%, 18% 80%, 0 73%);
+  opacity: 0;
+  transform: rotate(3deg) skewY(-2deg) scaleX(.34);
+  transform-origin: 37% 56%;
+  will-change: transform, opacity;
+}
+
+.writing-penguin-body {
+  z-index: 1;
+}
+
+.writing-arena.is-slicing .writing-penguin {
+  z-index: 8;
+  animation: writing-penguin-strike 1.55s cubic-bezier(.18, .74, .22, 1) both;
+}
+
+.writing-arena.is-slicing .writing-penguin-cape {
+  animation: writing-penguin-cape-flutter 1.55s cubic-bezier(.22, .7, .2, 1) both;
+}
+
+.writing-slice-impact {
+  width: clamp(220px, 28vw, 340px);
+  height: auto;
+  position: absolute;
+  left: var(--strike-x);
+  top: var(--strike-y);
+  z-index: 11;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate3d(-50%, -50%, 0) scale(.42);
+  transform-origin: center;
+  will-change: transform, opacity;
+}
+
+.writing-arena.is-slicing .writing-slice-impact {
+  animation: writing-slice-impact 1.48s ease-out both;
+}
+
+.writing-hit-score {
+  position: absolute;
+  left: var(--strike-x);
+  top: var(--strike-y);
+  z-index: 12;
+  pointer-events: none;
+  color: #805b10;
+  font-size: 14px;
+  font-weight: 860;
+  opacity: 0;
+  text-shadow: 0 2px 0 rgba(255, 255, 239, .88);
+  transform: translate3d(32px, -6px, 0);
+}
+
+.writing-arena.is-slicing .writing-hit-score {
+  animation: writing-hit-score .72s .84s cubic-bezier(.18, .72, .24, 1) both;
+}
+
+.writing-arena.is-slicing {
+  animation: writing-arena-hit 1.55s linear both;
+}
+
+.writing-gsap-motion.is-slicing,
+.writing-gsap-motion.is-slicing .writing-penguin,
+.writing-gsap-motion.is-slicing .writing-penguin-cape,
+.writing-gsap-motion.is-slicing .writing-slice-impact,
+.writing-gsap-motion.is-slicing .writing-hit-score,
+.writing-gsap-motion .writing-falling-word.is-sliced .writing-word-face,
+.writing-gsap-motion .writing-falling-word.is-sliced .writing-word-half {
+  animation: none;
+}
+
+.writing-combo {
+  min-height: 28px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+  z-index: 4;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #996318;
+  font-size: 11px;
+  font-weight: 820;
+}
+
+.writing-game-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 20;
+  padding: 30px;
+  display: none;
+  place-content: center;
+  justify-items: center;
+  color: #103f37;
+  background: #fffdf2;
+  text-align: center;
+}
+
+.writing-arena.is-ready .writing-game-overlay,
+.writing-arena.is-complete .writing-game-overlay,
+.writing-arena.is-gameover .writing-game-overlay {
+  display: grid;
+}
+
+.writing-overlay-mark {
+  width: 58px;
+  height: 58px;
+  display: grid;
+  place-items: center;
+  color: #087565;
+  border: 1px solid rgba(8, 117, 101, .18);
+  border-radius: 50%;
+  background: #edf7e8;
+}
+
+.writing-overlay-kicker {
+  margin-top: 16px;
+  color: #087568;
+  font-size: 10px;
+  font-weight: 830;
+  letter-spacing: .1em;
+}
+
+.writing-game-overlay h2 {
+  margin: 7px 0 9px;
+  font-size: clamp(27px, 3vw, 40px);
+  letter-spacing: -.045em;
+}
+
+.writing-game-overlay p {
+  max-width: 490px;
+  margin: 0;
+  color: #5d706a;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.writing-primary-action {
+  min-width: 218px;
+  min-height: 49px;
+  margin-top: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  border-radius: 9px;
+  background: #087565;
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+}
+
+.writing-game-overlay .daily-game-flow-action {
+  min-width: 218px;
+  min-height: 49px;
+  margin-top: 9px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  color: #087565;
+  border: 1px solid #9fc9bf;
+  border-radius: 9px;
+  background: #fff;
+  font: inherit;
+  font-size: 11px;
+  font-weight: 780;
+  text-decoration: none;
+}
+
+.writing-game-overlay button.daily-game-flow-action:disabled {
+  cursor: wait;
+  opacity: .7;
+}
+
+.writing-game-overlay > small {
+  margin-top: 11px;
+  color: #7a8984;
+  font-size: 9px;
+}
+
+.writing-pause-overlay {
+  min-height: 46px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 18;
+  padding: 0 22px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  background: rgba(8, 76, 65, .9);
+  font: inherit;
+  font-size: 12px;
+  font-weight: 760;
+  transform: translate(-50%, -50%);
+}
+
+.writing-answer-bar {
+  padding: 15px 18px 0;
+}
+
+.writing-answer-bar > label {
+  display: block;
+  margin-bottom: 7px;
+  color: #516b64;
+  font-size: 10px;
+  font-weight: 760;
+}
+
+.writing-answer-bar > div {
+  min-height: 55px;
+  padding: 0 8px 0 16px;
+  display: grid;
+  grid-template-columns: auto 1fr 42px;
+  align-items: center;
+  gap: 11px;
+  color: #0d7466;
+  border: 1px solid #cfdcd6;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 10px 28px rgba(25, 66, 56, .06);
+}
+
+.writing-answer-bar input {
+  min-width: 0;
+  height: 51px;
+  color: #153b34;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  font: inherit;
+  font-size: 16px;
+  font-weight: 650;
+}
+
+.writing-answer-bar input::placeholder {
+  color: #95a29e;
+  font-size: 12px;
+  font-weight: 480;
+}
+
+.writing-answer-bar > div > button {
+  width: 38px;
+  height: 38px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  border-radius: 9px;
+  background: #087565;
+}
+
+.writing-answer-bar > div > button:disabled {
+  cursor: default;
+  color: #82938e;
+  background: #e6ece9;
+}
+
+.writing-answer-bar > span {
+  min-height: 28px;
+  padding-top: 7px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #7a8984;
+  font-size: 9px;
+}
+
+.writing-answer-bar.has-error > div {
+  border-color: #e89b86;
+  animation: writing-input-shake .34s ease both;
+}
+
+.writing-answer-bar.has-error > span {
+  color: #b64f35;
+}
+
+.writing-session-aside {
+  padding-top: 7px;
+  display: grid;
+  gap: 22px;
+}
+
+.writing-current-word,
+.writing-howto {
+  padding-bottom: 22px;
+  border-bottom: 1px solid #dce4df;
+}
+
+.writing-current-word > div {
+  margin-top: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+}
+
+.writing-current-word strong {
+  color: #0d3d35;
+  font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+  font-size: 44px;
+  font-weight: 620;
+}
+
+.writing-current-word b {
+  margin-top: 3px;
+  display: block;
+  color: #08776a;
+  font-size: 15px;
+}
+
+.writing-current-word p,
+.writing-session-note p {
+  margin: 12px 0 0;
+  color: #60736d;
+  font-size: 11px;
+  line-height: 1.65;
+}
+
+.writing-howto ol {
+  margin: 13px 0 0;
+  padding: 0;
+  display: grid;
+  gap: 11px;
+  list-style: none;
+}
+
+.writing-howto li {
+  display: grid;
+  grid-template-columns: 26px 1fr;
+  align-items: start;
+  gap: 9px;
+  color: #526a63;
+  font-size: 10px;
+  line-height: 1.5;
+}
+
+.writing-howto li b {
+  color: #087568;
+  font-size: 10px;
+}
+
+.writing-session-note {
+  padding: 15px 16px;
+  border: 1px solid #e5d5a8;
+  border-radius: 12px;
+  background: #fff9e9;
+}
+
+.writing-session-note > span {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #996318;
+  font-size: 10px;
+  font-weight: 780;
+}
+
+.writing-session-note p {
+  margin-top: 7px;
+  color: #76694d;
+}
+
+@keyframes writing-word-fall {
+  from { transform: translate(-50%, 0); }
+  to { transform: translate(-50%, calc(min(61vh, 570px) - 176px)); }
+}
+
+@keyframes writing-penguin-strike {
+  0% { opacity: 1; filter: drop-shadow(0 17px 18px rgba(35, 75, 47, .14)); transform: translate3d(0, 0, 0) rotate(-4deg) scale(1); }
+  16% { opacity: 1; transform: translate3d(-24px, 17px, 0) rotate(-10deg) scale(1.03); }
+  54% { opacity: 1; filter: drop-shadow(-18px 19px 11px rgba(35, 75, 47, .11)); transform: translate3d(var(--strike-approach-x), var(--strike-approach-y), 0) rotate(3deg) scale(.95); }
+  64% { opacity: 1; filter: drop-shadow(-24px 22px 9px rgba(35, 75, 47, .08)); transform: translate3d(var(--strike-impact-x), var(--strike-impact-y), 0) rotate(11deg) scale(.92); }
+  71% { opacity: 1; filter: drop-shadow(-24px 22px 9px rgba(35, 75, 47, .08)); transform: translate3d(var(--strike-impact-x), var(--strike-impact-y), 0) rotate(11deg) scale(.92); }
+  100% { opacity: 0; filter: drop-shadow(-30px 25px 6px rgba(35, 75, 47, 0)); transform: translate3d(var(--strike-exit-x), var(--strike-exit-y), 0) rotate(19deg) scale(.78); }
+}
+
+@keyframes writing-penguin-cape-flutter {
+  0%, 9% { opacity: 0; transform: rotate(3deg) skewY(-2deg) scaleX(.34); }
+  16% { opacity: .72; transform: rotate(6deg) skewY(-5deg) scaleX(.72); }
+  24% { opacity: 1; transform: rotate(2deg) skewY(-3deg) scaleX(.98); }
+  52% { opacity: 1; transform: rotate(-5deg) skewY(5deg) scaleX(1.08); }
+  64% { opacity: 1; transform: rotate(7deg) skewY(-6deg) scaleX(.94); }
+  76% { opacity: 1; transform: rotate(-3deg) skewY(4deg) scaleX(1.05); }
+  92% { opacity: .9; transform: rotate(-1deg) skewY(2deg) scaleX(1.02); }
+  100% { opacity: 0; transform: rotate(-4deg) skewY(3deg) scaleX(.86); }
+}
+
+@keyframes writing-slice-impact {
+  0%, 55% { opacity: 0; transform: translate3d(-50%, -50%, 0) scale(.42) rotate(-7deg); }
+  64% { opacity: 1; transform: translate3d(-50%, -50%, 0) scale(.9) rotate(-2deg); }
+  72% { opacity: .96; transform: translate3d(-50%, -50%, 0) scale(1.02) rotate(0); }
+  100% { opacity: 0; transform: translate3d(-50%, -50%, 0) scale(1.18) rotate(3deg); }
+}
+
+@keyframes writing-word-face-cut {
+  to { opacity: 0; }
+}
+
+@keyframes writing-slice-left {
+  0% { opacity: 1; transform: translate3d(0, 0, 0) rotate(0); }
+  22% { opacity: 1; transform: translate3d(-8px, 8px, 0) rotate(-4deg); }
+  100% { opacity: 0; transform: translate3d(-46px, 78px, 0) rotate(-18deg); }
+}
+
+@keyframes writing-slice-right {
+  0% { opacity: 1; transform: translate3d(0, 0, 0) rotate(0); }
+  22% { opacity: 1; transform: translate3d(9px, 7px, 0) rotate(4deg); }
+  100% { opacity: 0; transform: translate3d(48px, 70px, 0) rotate(17deg); }
+}
+
+@keyframes writing-hit-score {
+  0% { opacity: 0; transform: translate3d(32px, -4px, 0) scale(.84); }
+  24% { opacity: 1; transform: translate3d(38px, -18px, 0) scale(1.04); }
+  100% { opacity: 0; transform: translate3d(43px, -58px, 0) scale(.96); }
+}
+
+@keyframes writing-arena-hit {
+  0%, 63%, 74%, 100% { transform: translate3d(0, 0, 0); }
+  65% { transform: translate3d(2px, -1px, 0); }
+  68% { transform: translate3d(-2px, 1px, 0); }
+  71% { transform: translate3d(1px, 0, 0); }
+}
+
+@keyframes writing-input-shake {
+  25% { transform: translateX(-4px); }
+  55% { transform: translateX(4px); }
+  80% { transform: translateX(-2px); }
+}
+
+@media (max-width: 1080px) {
+  .writing-page-shell {
+    width: 100%;
+    margin-left: 0;
+    padding-inline: 24px;
+  }
+
+  .writing-game-layout {
+    grid-template-columns: minmax(0, 1fr) 245px;
+  }
+
+  .writing-current-word strong {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 820px) {
+  .writing-page-shell {
+    align-items: start;
+  }
+
+  .writing-game-layout {
+    max-width: 720px;
+    grid-template-columns: 1fr;
+  }
+
+  .writing-session-aside {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .writing-session-note {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 720px) {
+  .writing-game-dashboard {
+    min-height: 100dvh;
+    overflow: visible;
+  }
+
+  .writing-page-shell {
+    width: 100%;
+    min-height: 100dvh;
+    margin-left: 0;
+    padding: 12px;
+  }
+
+  .writing-game-dashboard {
+    background-position: 18% center;
+    background-size: auto 100%;
+  }
+
+  .writing-game-layout {
+    width: 100%;
+  }
+
+  .writing-arena-metrics {
+    top: 10px;
+    right: 10px;
+    gap: 6px;
+  }
+
+  .writing-game-back {
+    width: 42px;
+    height: 42px;
+    top: 10px;
+    left: 10px;
+    border-radius: 13px;
+  }
+
+  .writing-arena-metrics > span {
+    min-width: 65px;
+    min-height: 54px;
+    padding: 7px 8px 6px;
+    border-radius: 11px;
+  }
+
+  .writing-arena-metrics strong {
+    font-size: 17px;
+  }
+
+  .writing-arena-metrics small {
+    font-size: 6px;
+  }
+
+  .writing-arena-topline {
+    min-height: 58px;
+    padding: 0 156px 0 60px;
+    grid-template-columns: auto 1fr;
+    gap: 8px;
+  }
+
+  .writing-arena-topline > span:nth-child(2) {
+    display: none;
+  }
+
+  .writing-arena {
+    height: 520px;
+    min-height: 520px;
+    border-radius: 22px;
+    box-shadow: 0 18px 38px rgba(26, 76, 60, .12);
+  }
+
+  .writing-arena-background {
+    object-position: 59% center;
+  }
+
+  .writing-falling-word {
+    width: 118px;
+    min-height: 66px;
+    left: clamp(36%, var(--word-lane), 70%);
+  }
+
+  .writing-falling-word > span {
+    font-size: 22px;
+  }
+
+  .writing-penguin {
+    width: 174px;
+    left: -3%;
+    top: 64%;
+  }
+
+  .writing-slice-impact {
+    width: 244px;
+  }
+
+  .writing-target-ribbon {
+    bottom: 13px;
+  }
+
+  .writing-combo {
+    right: 12px;
+    bottom: 15px;
+  }
+
+  .writing-game-overlay {
+    padding: 24px 20px;
+  }
+
+  .writing-game-overlay h2 {
+    font-size: 29px;
+  }
+
+  .writing-game-overlay p {
+    max-width: 320px;
+    font-size: 11px;
+  }
+
+  .writing-answer-bar {
+    position: sticky;
+    bottom: 77px;
+    z-index: 40;
+    padding: 12px 0 5px;
+    background: rgba(251, 247, 237, .96);
+  }
+
+  .writing-answer-bar > label {
+    display: none;
+  }
+
+  .writing-answer-bar > span {
+    padding-left: 3px;
+  }
+
+  .writing-session-aside {
+    padding: 20px 18px;
+    grid-template-columns: 1fr;
+    gap: 17px;
+    border: 1px solid rgba(15, 89, 73, .12);
+    border-radius: 20px;
+    background: #fffdf5;
+    box-shadow: 0 16px 34px rgba(26, 76, 60, .09);
+  }
+
+  .writing-session-note {
+    grid-column: auto;
+  }
+
+  .writing-current-word {
+    display: grid;
+    grid-template-columns: 1fr auto;
+  }
+
+  .writing-current-word > span,
+  .writing-current-word > b,
+  .writing-current-word > p {
+    grid-column: 1;
+  }
+
+  .writing-current-word > div {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    margin: 0;
+  }
+
+  .writing-current-word strong {
+    font-size: 38px;
+  }
+}
+
+@media (max-height: 820px) and (min-width: 821px) {
+  .writing-page-shell {
+    padding-block: 12px;
+  }
+
+  .writing-arena {
+    height: clamp(390px, 52vh, 450px);
+    min-height: 390px;
+  }
+
+  .writing-game-overlay {
+    padding-block: 18px;
+  }
+
+  .writing-overlay-mark {
+    width: 50px;
+    height: 50px;
+  }
+
+  .writing-overlay-kicker {
+    margin-top: 11px;
+  }
+
+  .writing-game-overlay h2 {
+    margin-block: 5px 7px;
+    font-size: clamp(25px, 2.6vw, 35px);
+  }
+
+  .writing-primary-action {
+    margin-top: 15px;
+  }
+
+  .writing-answer-bar {
+    padding-top: 10px;
+  }
+
+  .writing-session-aside {
+    gap: 15px;
+  }
+
+  .writing-current-word,
+  .writing-howto {
+    padding-bottom: 15px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .writing-penguin,
+  .writing-penguin-cape,
+  .writing-falling-word,
+  .writing-word-half,
+  .writing-slice-impact,
+  .writing-hit-score,
+  .writing-arena.is-slicing,
+  .writing-answer-bar > div {
+    animation-timing-function: linear !important;
+  }
+}

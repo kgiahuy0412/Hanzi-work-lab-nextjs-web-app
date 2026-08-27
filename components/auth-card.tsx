@@ -8,8 +8,11 @@ import { type FocusEvent, type FormEvent, useEffect, useRef, useState } from "re
 import { ArrowRight, Home, KeyRound, LockKeyhole, Mail, RotateCcw, ShieldCheck, UserPlus, UserRound } from "lucide-react";
 import { BrandMark, BrandWordmark } from "@/components/brand-logo";
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from "@/lib/auth-validation";
+import "@/app/auth-card.css";
 
-gsap.registerPlugin(useGSAP);
+if (typeof window !== "undefined") {
+  gsap.registerPlugin(useGSAP);
+}
 
 type AuthMode = "login" | "register" | "admin";
 

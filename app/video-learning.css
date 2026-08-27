@@ -203,7 +203,7 @@
   bottom: -19px;
   z-index: 4;
   display: block;
-  background: url("/assets/mascot/penguin/penguin-study-banner.gif") center / contain no-repeat;
+  background: url("/assets/mascot/penguin/penguin-study-banner.webp") center / contain no-repeat;
   filter: drop-shadow(0 15px 17px rgba(31, 69, 58, .16));
   animation: video-himi-float 3.4s ease-in-out infinite;
 }

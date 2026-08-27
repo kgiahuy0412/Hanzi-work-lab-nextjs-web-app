@@ -57,6 +57,7 @@
 .learner-app-shell .rail-toggle:focus-visible,
 .learner-app-shell .rail-nav a:focus-visible,
 .learner-app-shell .rail-practice-trigger:focus-visible,
+.learner-app-shell .rail-community-trigger:focus-visible,
 .learner-app-shell .rail-support:focus-visible,
 .learner-app-shell .rail-brand:focus-visible {
   outline: 3px solid rgba(15, 145, 128, .32);
@@ -124,6 +125,7 @@
 
 .learner-app-shell .rail-nav a,
 .learner-app-shell .rail-practice-trigger,
+.learner-app-shell .rail-community-trigger,
 .learner-app-shell .rail-support {
   position: relative;
   min-width: 0;
@@ -154,8 +156,17 @@
   appearance: none;
 }
 
+.learner-app-shell .rail-community-trigger {
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  font-family: inherit;
+  appearance: none;
+}
+
 .learner-app-shell .rail-nav a svg,
 .learner-app-shell .rail-practice-trigger > svg:first-child,
+.learner-app-shell .rail-community-trigger > svg,
 .learner-app-shell .rail-support svg {
   width: 22px;
   height: 22px;
@@ -165,6 +176,7 @@
 
 .learner-app-shell .rail-nav a > span,
 .learner-app-shell .rail-practice-trigger > span,
+.learner-app-shell .rail-community-trigger > span,
 .learner-app-shell .rail-support > span {
   min-width: 122px;
   opacity: 0;
@@ -175,6 +187,7 @@
 
 .learner-app-shell.is-rail-expanded .rail-nav a > span,
 .learner-app-shell.is-rail-expanded .rail-practice-trigger > span,
+.learner-app-shell.is-rail-expanded .rail-community-trigger > span,
 .learner-app-shell.is-rail-expanded .rail-support > span {
   opacity: 1;
   transform: translateX(0);
@@ -185,6 +198,8 @@
 .learner-app-shell .rail-nav a.active,
 .learner-app-shell .rail-practice-trigger:hover,
 .learner-app-shell .rail-practice-trigger.active,
+.learner-app-shell .rail-community-trigger:hover,
+.learner-app-shell .rail-community-trigger.active,
 .learner-app-shell .rail-support:hover {
   color: #087a72;
   border-color: transparent;
@@ -193,7 +208,8 @@
 }
 
 .learner-app-shell .rail-nav a.active::before,
-.learner-app-shell .rail-practice-trigger.active::before {
+.learner-app-shell .rail-practice-trigger.active::before,
+.learner-app-shell .rail-community-trigger.active::before {
   content: "";
   width: 3px;
   height: 22px;
@@ -205,6 +221,7 @@
 
 .learner-app-shell .rail-nav a:active,
 .learner-app-shell .rail-practice-trigger:active,
+.learner-app-shell .rail-community-trigger:active,
 .learner-app-shell .rail-support:active {
   transform: scale(.98);
 }
@@ -212,6 +229,10 @@
 .learner-app-shell .rail-practice-group {
   min-width: 0;
   position: relative;
+}
+
+.learner-app-shell .rail-community-group {
+  min-width: 0;
 }
 
 .learner-app-shell .rail-practice-chevron {
@@ -284,6 +305,68 @@
   background: #d8f1eb;
 }
 
+.learner-app-shell .rail-community-menu {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  visibility: hidden;
+  transform: translateY(-5px);
+  transition: max-height 320ms var(--learner-rail-ease), opacity 160ms ease, transform 220ms var(--learner-rail-ease), visibility 0s linear 320ms;
+}
+
+.learner-app-shell.is-rail-expanded .rail-community-menu {
+  max-height: 470px;
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition-delay: 0s;
+}
+
+.learner-app-shell .rail-community-menu > p {
+  margin: 10px 10px 6px;
+  color: #96a49f;
+  font-size: 8px;
+  font-weight: 840;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.learner-app-shell .rail-community-menu-inner {
+  padding: 0 5px 7px;
+  display: grid;
+  gap: 2px;
+}
+
+.learner-app-shell .rail-community-menu a {
+  min-height: 39px;
+  padding-inline: 9px;
+  grid-template-columns: 31px minmax(0, 1fr);
+  gap: 6px;
+  border-radius: 11px;
+  font-size: 10px;
+  background: transparent;
+}
+
+.learner-app-shell .rail-community-menu a svg {
+  width: 17px;
+  height: 17px;
+  color: #93a09c;
+}
+
+.learner-app-shell .rail-community-menu a:hover {
+  background: #f3f8f6;
+}
+
+.learner-app-shell .rail-community-menu a.active {
+  color: #087a72;
+  background: #e4f5f1;
+}
+
+.learner-app-shell .rail-community-menu a.active svg {
+  color: #e44f55;
+}
+
 /* While the compact rail's practice group is open, the rail becomes a
  * temporary overlay. Main content keeps its original offset, avoiding a
  * distracting layout jump. */
@@ -295,6 +378,7 @@
 .learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-brand .brand-wordmark,
 .learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-nav a > span,
 .learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-practice-trigger > span,
+.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-community-trigger > span,
 .learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-support > span {
   opacity: 1;
   transform: translateX(0);
@@ -459,6 +543,7 @@
 
   .learner-app-shell .rail-nav a,
   .learner-app-shell .rail-practice-trigger,
+  .learner-app-shell .rail-community-trigger,
   .learner-app-shell .rail-support {
     padding-inline: 8px;
   }
@@ -472,6 +557,7 @@
 
   .learner-app-shell .rail-nav a,
   .learner-app-shell .rail-practice-trigger,
+  .learner-app-shell .rail-community-trigger,
   .learner-app-shell .rail-support {
     min-height: 44px;
   }
@@ -499,21 +585,24 @@
   }
 
   .learner-app-shell .learner-mobile-nav {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .learner-app-shell .learner-mobile-nav > a,
-  .learner-app-shell .mobile-practice-trigger {
+  .learner-app-shell .mobile-practice-trigger,
+  .learner-app-shell .mobile-community-trigger {
     min-width: 0;
     min-height: 48px;
   }
 
-  .learner-app-shell .mobile-practice-group {
+  .learner-app-shell .mobile-practice-group,
+  .learner-app-shell .mobile-community-group {
     min-width: 0;
     display: grid;
   }
 
-  .learner-app-shell .mobile-practice-trigger {
+  .learner-app-shell .mobile-practice-trigger,
+  .learner-app-shell .mobile-community-trigger {
     padding: 4px 2px;
     display: grid;
     place-items: center;
@@ -532,18 +621,23 @@
   }
 
   .learner-app-shell .mobile-practice-trigger.active,
-  .learner-app-shell .mobile-practice-trigger[aria-expanded="true"] {
+  .learner-app-shell .mobile-practice-trigger[aria-expanded="true"],
+  .learner-app-shell .mobile-community-trigger.active,
+  .learner-app-shell .mobile-community-trigger[aria-expanded="true"] {
     color: #176b5b;
     background: #e5f0ea;
   }
 
   .learner-app-shell .mobile-practice-trigger:focus-visible,
-  .learner-app-shell .mobile-practice-menu a:focus-visible {
+  .learner-app-shell .mobile-community-trigger:focus-visible,
+  .learner-app-shell .mobile-practice-menu a:focus-visible,
+  .learner-app-shell .mobile-community-menu a:focus-visible {
     outline: 3px solid rgba(15, 145, 128, .32);
     outline-offset: 2px;
   }
 
-  .learner-app-shell .mobile-practice-menu {
+  .learner-app-shell .mobile-practice-menu,
+  .learner-app-shell .mobile-community-menu {
     position: fixed;
     right: 14px;
     bottom: calc(82px + env(safe-area-inset-bottom));
@@ -574,7 +668,16 @@
     transition-delay: 0s;
   }
 
-  .learner-app-shell .mobile-practice-menu a {
+  .learner-app-shell .mobile-community-group.is-open .mobile-community-menu {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    transform: translateY(0) scale(1);
+    transition-delay: 0s;
+  }
+
+  .learner-app-shell .mobile-practice-menu a,
+  .learner-app-shell .mobile-community-menu a {
     min-height: 66px;
     padding: 8px 5px;
     display: grid;
@@ -591,6 +694,35 @@
   }
 
   .learner-app-shell .mobile-practice-menu a.active {
+    color: #08786d;
+    background: #ddf3ed;
+  }
+
+  .learner-app-shell .mobile-community-menu {
+    max-height: min(420px, calc(100dvh - 170px));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    overflow-y: auto;
+  }
+
+  .learner-app-shell .mobile-community-menu a {
+    min-height: 58px;
+    grid-template-columns: 28px minmax(0, 1fr);
+    place-items: initial;
+    align-items: center;
+    gap: 7px;
+    padding-inline: 10px;
+    text-align: left;
+  }
+
+  .learner-app-shell .mobile-community-menu a > span {
+    min-width: 0;
+    overflow: visible;
+    line-height: 1.25;
+    text-overflow: clip;
+    white-space: normal;
+  }
+
+  .learner-app-shell .mobile-community-menu a.active {
     color: #08786d;
     background: #ddf3ed;
   }
@@ -615,9 +747,12 @@
   .learner-app-shell .rail-brand .brand-wordmark,
   .learner-app-shell .rail-nav a > span,
   .learner-app-shell .rail-practice-trigger > span,
+  .learner-app-shell .rail-community-trigger > span,
   .learner-app-shell .rail-practice-chevron,
   .learner-app-shell .rail-practice-menu,
+  .learner-app-shell .rail-community-menu,
   .learner-app-shell .mobile-practice-menu,
+  .learner-app-shell .mobile-community-menu,
   .learner-app-shell .rail-support > span,
   .learning-mode-placeholder-card > a {
     scroll-behavior: auto;

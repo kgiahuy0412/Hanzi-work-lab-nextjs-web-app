@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from "react";
 import { Captions, ExternalLink, Gauge, Languages, Repeat2, RotateCcw, Volume2 } from "lucide-react";
 import type { LearningVideo, VideoTranscriptLine } from "@/lib/video-library";
 import { YouTubeLearningStudio } from "@/components/youtube-learning-studio";
+import "@/app/video-learning.css";
 
 function progressKey(slug: string) {
   return `himi-video-progress:${slug}`;

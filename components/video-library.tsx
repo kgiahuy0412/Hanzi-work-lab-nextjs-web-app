@@ -6,6 +6,7 @@ import { useMemo, useState } from "react";
 import { ArrowRight, Captions, CirclePlay, Search } from "lucide-react";
 import { HimiSectionBanner } from "@/components/himi-section-banner";
 import type { LearningVideo } from "@/lib/video-library";
+import "@/app/video-learning.css";
 
 function VideoCard({ video }: { video: LearningVideo }) {
   return <article className="learning-video-card">

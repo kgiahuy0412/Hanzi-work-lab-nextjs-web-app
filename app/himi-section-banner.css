@@ -58,11 +58,11 @@
   box-shadow: 0 22px 58px rgba(33, 88, 77, .11);
 }
 
-.himi-section-banner.is-courses { background-image: url("/assets/courses/himi-career-hero-background-2k.webp"); }
-.himi-section-banner.is-practice { background-image: url("/assets/backgrounds/himi-practice-hero-2k.webp"); }
-.himi-section-banner.is-listening { background-image: url("/assets/backgrounds/himi-listening-hero-2k.webp"); }
-.himi-section-banner.is-videos { background-image: url("/assets/backgrounds/himi-video-hero-2k.webp"); }
-.himi-section-banner.is-vip { background-image: url("/assets/backgrounds/himi-vip-hero-2k.webp"); }
+.himi-section-banner-background {
+  object-fit: cover;
+  object-position: center;
+  z-index: -2;
+}
 
 .himi-section-banner.is-immersive::before { display: none; }
 
@@ -90,7 +90,7 @@
   width: clamp(315px, 27vw, 380px);
   right: clamp(10px, 2.3vw, 34px);
   bottom: -68px;
-  background-image: url("/assets/mascot/penguin/himi-career-current.gif");
+  background-image: url("/assets/mascot/penguin/himi-career-current.webp");
   filter: drop-shadow(0 18px 22px rgba(21, 69, 60, .17));
 }
 
@@ -176,7 +176,7 @@
   right: -2px;
   bottom: -19px;
   z-index: 4;
-  background: url("/assets/mascot/penguin/penguin-study-banner.gif") center / contain no-repeat;
+  background: url("/assets/mascot/penguin/penguin-study-banner.webp") center / contain no-repeat;
   filter: drop-shadow(0 15px 17px rgba(31, 69, 58, .16));
   animation: himi-banner-mascot-float 3.5s ease-in-out infinite;
 }

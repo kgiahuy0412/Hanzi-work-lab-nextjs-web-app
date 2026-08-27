@@ -26,6 +26,7 @@ import {
   type ReactNode,
 } from "react";
 import { gameWords, speakChinese } from "@/lib/game-content";
+import "@/app/writing-slice-game.css";
 
 gsap.registerPlugin(useGSAP);
 
