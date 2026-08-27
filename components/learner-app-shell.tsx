@@ -1,26 +1,25 @@
 "use client";
 
-import { useEffect, useRef, useState, type FocusEvent, type KeyboardEvent, type MouseEvent, type ReactNode } from "react";
+import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
+  ArrowRight,
   AudioLines,
-  BarChart3,
   Bell,
   BookOpen,
   BrainCircuit,
+  ChevronLeft,
   ChevronDown,
   Clapperboard,
   Crown,
   Flame,
   Gamepad2,
-  Headphones,
   Home,
-  PanelLeftClose,
-  PanelLeftOpen,
   PenLine,
   Repeat2,
   Settings,
+  Sparkles,
 } from "lucide-react";
 import { BrandLogoImage, BrandMark, BrandWordmark } from "@/components/brand-logo";
 
@@ -35,7 +34,6 @@ const learnerRailItems = [
   { href: "/courses", label: "Lộ trình", icon: BookOpen, matches: (pathname: string) => pathname.startsWith("/courses") || pathname.startsWith("/learn") },
   { href: "/practice", label: "Luyện ca", icon: Repeat2, matches: (pathname: string) => pathname.startsWith("/practice") },
   { href: "/games", label: "Trò chơi", icon: Gamepad2, matches: (pathname: string) => pathname.startsWith("/games") },
-  { href: "/vip", label: "VIP", icon: BarChart3, matches: (pathname: string) => pathname.startsWith("/vip") },
 ];
 
 const learnerPracticeItems = [
@@ -45,6 +43,7 @@ const learnerPracticeItems = [
 ];
 
 const learnerPrefetchItems = [...learnerRailItems, ...learnerPracticeItems];
+const RAIL_STORAGE_KEY = "himi-learner-rail";
 
 const standalonePrefixes = [
   "/admin",
@@ -81,11 +80,26 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const router = useRouter();
   const [pendingHref, setPendingHref] = useState<string | null>(null);
   const [routeProgressCompleting, setRouteProgressCompleting] = useState(false);
-  const [railExpanded, setRailExpanded] = useState(false);
+  const [railExpanded, setRailExpanded] = useState(true);
   const [practiceMenuOpen, setPracticeMenuOpen] = useState(false);
-  const practiceTriggerRef = useRef<HTMLButtonElement>(null);
+  const [practiceTriggerSelected, setPracticeTriggerSelected] = useState(false);
   const practiceAutoExpandedRef = useRef(false);
   const routeProgressStartedAtRef = useRef<number | null>(null);
+
+  useEffect(() => {
+    let handle: number | undefined;
+    try {
+      const storedPreference = window.localStorage.getItem(RAIL_STORAGE_KEY);
+      if (storedPreference) {
+        handle = window.setTimeout(() => setRailExpanded(storedPreference === "expanded"), 0);
+      }
+    } catch {
+      // The expanded default remains usable when storage is unavailable.
+    }
+    return () => {
+      if (handle) window.clearTimeout(handle);
+    };
+  }, []);
 
   useEffect(() => {
     if (isStandaloneRoute(pathname)) return;
@@ -139,7 +153,9 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
 
   const prepareRoute = (href: string) => router.prefetch(href);
   const beginRoute = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (!isPlainNavigation(event) || pathname === href) return;
+    if (!isPlainNavigation(event)) return;
+    setPracticeTriggerSelected(false);
+    if (pathname === href) return;
     routeProgressStartedAtRef.current = event.timeStamp;
     setRouteProgressCompleting(false);
     setPendingHref(href);
@@ -151,45 +167,40 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   };
   const toggleRail = () => {
     practiceAutoExpandedRef.current = false;
-    setPracticeMenuOpen(false);
-    setRailExpanded(!railExpanded);
+    setRailExpanded((current) => {
+      const next = !current;
+      try {
+        window.localStorage.setItem(RAIL_STORAGE_KEY, next ? "expanded" : "collapsed");
+      } catch {
+        // The toggle still works for the current session without storage.
+      }
+      return next;
+    });
   };
   const togglePracticeMenu = () => {
     if (!railExpanded) {
       practiceAutoExpandedRef.current = true;
       setRailExpanded(true);
       setPracticeMenuOpen(true);
+      setPracticeTriggerSelected(true);
       return;
     }
 
-    if (practiceAutoExpandedRef.current && practiceMenuOpen) {
+    if (practiceMenuOpen) {
       setPracticeMenuOpen(false);
+      setPracticeTriggerSelected(false);
       restoreAutoCollapsedRail();
       return;
     }
 
-    setPracticeMenuOpen((current) => !current);
+    setPracticeMenuOpen(true);
+    setPracticeTriggerSelected(true);
   };
-  const selectPracticeRoute = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
-    if (isPlainNavigation(event)) {
-      setPracticeMenuOpen(false);
-      restoreAutoCollapsedRail();
-    }
-    beginRoute(event, href);
+  const toggleMobilePracticeMenu = () => {
+    const next = !practiceMenuOpen;
+    setPracticeMenuOpen(next);
+    setPracticeTriggerSelected(next);
   };
-  const closePracticeMenuOnBlur = (event: FocusEvent<HTMLDivElement>) => {
-    if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
-      setPracticeMenuOpen(false);
-      restoreAutoCollapsedRail();
-    }
-  };
-  const closePracticeMenuOnEscape = (event: KeyboardEvent<HTMLDivElement>) => {
-    if (event.key !== "Escape") return;
-    setPracticeMenuOpen(false);
-    practiceTriggerRef.current?.focus();
-    restoreAutoCollapsedRail();
-  };
-
   if (isStandaloneRoute(pathname)) {
     return <div className="standalone-route-shell">{children}</div>;
   }
@@ -205,8 +216,9 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const routeProgressActive = navigating || (routeArrived && !routeProgressCompleting);
   const visualPathname = navigating && pendingHref ? pendingHref : pathname;
   const practiceSectionActive = learnerPracticeItems.some(({ matches }) => matches(visualPathname));
+  const practiceTriggerActive = practiceSectionActive || practiceTriggerSelected;
   const renderRailItem = ({ href, label, icon: Icon, matches }: (typeof learnerRailItems)[number]) => {
-    const active = matches(visualPathname);
+    const active = !practiceTriggerSelected && matches(visualPathname);
     const pending = pendingHref === href;
     return (
       <Link
@@ -227,8 +239,9 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   return (
     <div aria-busy={navigating} className={`learner-app-shell ${pathname === "/" ? "is-home-route" : ""} ${railExpanded ? "is-rail-expanded" : "is-rail-collapsed"}`.trim()}>
       <a className="skip-link" href="#learner-main-content">Bỏ qua điều hướng</a>
-      <aside className="learn-rail" aria-label="Điều hướng học tập">
+      <aside className="learn-rail" id="learner-navigation-rail" aria-label="Điều hướng học tập">
         <button
+          aria-controls="learner-navigation-rail"
           aria-expanded={railExpanded}
           aria-label={railExpanded ? "Thu gọn thanh điều hướng" : "Mở rộng thanh điều hướng"}
           className="rail-toggle"
@@ -236,7 +249,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
           title={railExpanded ? "Thu gọn" : "Mở rộng"}
           type="button"
         >
-          {railExpanded ? <PanelLeftClose aria-hidden="true" size={20} /> : <PanelLeftOpen aria-hidden="true" size={20} />}
+          <ChevronLeft aria-hidden="true" className="rail-toggle-icon" size={18} strokeWidth={3} />
         </button>
         <Link className="rail-brand" href="/" aria-label="Himi Chinese - Trang chủ" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch>
           <span className="rail-logo"><BrandLogoImage priority size={60} /></span>
@@ -246,15 +259,12 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
           {learnerRailItems.slice(0, 2).map(renderRailItem)}
           <div
             className={`rail-practice-group ${practiceMenuOpen ? "is-open" : ""} ${practiceSectionActive ? "is-active" : ""}`.trim()}
-            onBlur={closePracticeMenuOnBlur}
-            onKeyDown={closePracticeMenuOnEscape}
           >
             <button
               aria-controls="rail-practice-menu"
               aria-expanded={practiceMenuOpen}
-              className={`rail-practice-trigger ${practiceSectionActive ? "active" : ""}`.trim()}
+              className={`rail-practice-trigger ${practiceTriggerActive ? "active" : ""}`.trim()}
               onClick={togglePracticeMenu}
-              ref={practiceTriggerRef}
               title={!railExpanded ? "Luyện tập" : undefined}
               type="button"
             >
@@ -272,7 +282,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
                       className={`${active ? "active" : ""} ${pendingHref === href ? "pending" : ""}`.trim()}
                       href={href}
                       key={href}
-                      onClick={(event) => selectPracticeRoute(event, href)}
+                      onClick={(event) => beginRoute(event, href)}
                       onFocus={() => prepareRoute(href)}
                       onPointerEnter={() => prepareRoute(href)}
                       prefetch
@@ -298,7 +308,24 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
             <Settings aria-hidden="true" size={21} /><span>{accountItem.label}</span>
           </Link>
         </nav>
-        <a className="rail-support" href="mailto:giahuy041204@gmail.com" title={!railExpanded ? "Hỗ trợ" : undefined}><Headphones aria-hidden="true" size={20} /><span>Hỗ trợ</span></a>
+        <Link
+          aria-label="Nâng cấp Pro - Mở trang VIP"
+          className="rail-pro-card"
+          href="/vip"
+          onClick={(event) => beginRoute(event, "/vip")}
+          onFocus={() => prepareRoute("/vip")}
+          onPointerEnter={() => prepareRoute("/vip")}
+          prefetch
+        >
+          <span className="rail-pro-crown"><Crown aria-hidden="true" size={25} strokeWidth={2.3} /></span>
+          <span className="rail-pro-title">Nâng cấp <strong>Pro</strong></span>
+          <span className="rail-pro-copy">Mở khóa toàn bộ bài học và luyện thi không giới hạn.</span>
+          <span className="rail-pro-action">
+            <Sparkles aria-hidden="true" size={14} />
+            <span>Nâng cấp ngay</span>
+            <span className="rail-pro-arrow"><ArrowRight aria-hidden="true" size={15} strokeWidth={2.5} /></span>
+          </span>
+        </Link>
       </aside>
 
       <header className="learn-topbar">
@@ -342,8 +369,8 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
             aria-controls="mobile-practice-menu"
             aria-expanded={practiceMenuOpen}
             aria-label="Mở các nội dung luyện tập"
-            className={`mobile-practice-trigger ${practiceSectionActive ? "active" : ""}`.trim()}
-            onClick={() => setPracticeMenuOpen((current) => !current)}
+            className={`mobile-practice-trigger ${practiceTriggerActive ? "active" : ""}`.trim()}
+            onClick={toggleMobilePracticeMenu}
             type="button"
           >
             <BrainCircuit aria-hidden="true" size={20} /><span>Luyện tập</span>
@@ -355,10 +382,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
                 className={matches(visualPathname) ? "active" : ""}
                 href={href}
                 key={href}
-                onClick={(event) => {
-                  setPracticeMenuOpen(false);
-                  beginRoute(event, href);
-                }}
+                onClick={(event) => beginRoute(event, href)}
                 onPointerEnter={() => prepareRoute(href)}
                 prefetch
               >

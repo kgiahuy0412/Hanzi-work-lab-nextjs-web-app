@@ -7407,10 +7407,10 @@ body:has(.learner-app-shell) > .mobile-nav {
 
 .route-transition-progress {
   position: fixed;
-  top: 85px;
+  top: 0;
   right: 0;
   left: 100px;
-  z-index: 96;
+  z-index: 2147483647;
   height: 4px;
   overflow: hidden;
   pointer-events: none;
@@ -7832,7 +7832,6 @@ body:has(.learner-app-shell) > .mobile-nav {
 
 @media (max-width: 720px) {
   .route-transition-progress {
-    top: 66px;
     left: 0;
   }
 

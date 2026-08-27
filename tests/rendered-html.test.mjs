@@ -356,9 +356,8 @@ test("practice content has PostgreSQL schema, seed and authenticated admin CRUD"
 });
 
 test("games route renders the Cánh Cụt slice game and six video-inspired activities", async () => {
-  const [page, legacyPage, center, game, shell, styles, content] = await Promise.all([
+  const [page, center, game, shell, styles, content] = await Promise.all([
     read("app/games/page.tsx"),
-    read("app/writing/page.tsx"),
     read("components/game-center.tsx"),
     read("components/writing-slice-game.tsx"),
     read("components/learner-app-shell.tsx"),
@@ -366,7 +365,6 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
     read("lib/game-content.ts"),
   ]);
   assert.match(page, /GameCenter/);
-  assert.match(legacyPage, /redirect\("\/games"\)/);
   assert.match(center, /Luyện chém từ/);
   assert.match(center, /Ghép cặp siêu tốc/);
   assert.match(center, /Nối nhanh chữ – âm/);
@@ -413,6 +411,34 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
   assert.match(styles, /@keyframes writing-slice-impact/);
   assert.match(styles, /@keyframes writing-slice-left/);
   assert.equal((content.match(/id: "/g) ?? []).length, 12);
+});
+
+test("writing route flows from six HSK topics to one lesson and the writing studio", async () => {
+  const [catalog, lesson, practice, studio, content, styles] = await Promise.all([
+    read("app/writing/page.tsx"),
+    read("app/writing/[level]/page.tsx"),
+    read("app/writing/[level]/practice/page.tsx"),
+    read("components/himi-writing-studio.tsx"),
+    read("lib/writing-content.ts"),
+    read("app/writing-studio.css"),
+  ]);
+  assert.match(catalog, /WRITING_TOPICS\.map/);
+  assert.match(catalog, /6 chủ đề · 6 bài học/);
+  assert.match(catalog, /href=\{`\/writing\/\$\{topic\.slug\}`\}/);
+  assert.equal((content.match(/slug: "hsk-[1-6]"/g) ?? []).length, 6);
+  assert.equal((content.match(/title: "/g) ?? []).length, 6);
+  assert.match(lesson, /getWritingTopic/);
+  assert.match(lesson, /Bài học duy nhất trong chủ đề/);
+  assert.match(lesson, /href=\{`\/writing\/\$\{topic\.slug\}\/practice`\}/);
+  assert.match(practice, /HimiWritingStudio/);
+  assert.match(practice, /notFound/);
+  assert.match(studio, /topic\.characters/);
+  assert.match(studio, /Xem nét/);
+  assert.match(studio, /Tô theo/);
+  assert.match(studio, /Tự viết/);
+  assert.match(styles, /\.writing-topic-grid/);
+  assert.match(styles, /\.writing-single-lesson/);
+  assert.match(styles, /\.himi-writing-session-header/);
 });
 
 test("practice and game progress persist per authenticated learner", async () => {
@@ -484,9 +510,10 @@ test("public trust pages and current account copy are present", async () => {
   assert.match(privacy, /Chính sách bảo mật/);
 });
 
-test("learner navigation prefetches primary routes and exposes immediate loading feedback", async () => {
-  const [shell, coursesLoading, practiceLoading, lessons, siteHeader, siteFooter, mobileNav] = await Promise.all([
+test("learner navigation prefetches routes and keeps a persistent collapsible desktop rail", async () => {
+  const [shell, railStyles, coursesLoading, practiceLoading, lessons, siteHeader, siteFooter, mobileNav] = await Promise.all([
     read("components/learner-app-shell.tsx"),
+    read("app/learner-navigation.css"),
     read("app/courses/loading.tsx"),
     read("app/practice/loading.tsx"),
     read("lib/lesson-repository.ts"),
@@ -498,12 +525,79 @@ test("learner navigation prefetches primary routes and exposes immediate loading
   assert.match(shell, /if \(isStandaloneRoute\(pathname\)\) return;/);
   assert.match(shell, /route-transition-progress/);
   assert.match(shell, /pendingHref/);
+  assert.match(shell, /RAIL_STORAGE_KEY/);
+  assert.match(shell, /useState\(true\)/);
+  assert.match(shell, /ChevronLeft/);
+  assert.doesNotMatch(shell, /ChevronRight/);
+  assert.match(shell, /rail-toggle-icon/);
+  assert.match(railStyles, /--learner-rail-width: 72px/);
+  assert.match(railStyles, /--learner-rail-expanded-width: 216px/);
+  assert.match(railStyles, /--learner-rail-duration: 360ms/);
+  assert.match(railStyles, /\.is-rail-collapsed \.rail-toggle-icon \{[\s\S]*?rotate\(180deg\)/);
+  assert.match(railStyles, /background: #070b0a/);
+  assert.match(railStyles, /\.learner-app-shell \.rail-toggle \{[\s\S]*?top: 29px;/);
+  assert.doesNotMatch(railStyles, /\.is-rail-collapsed \.rail-toggle\s*\{/);
+  assert.match(railStyles, /\.is-rail-collapsed \.rail-nav a/);
   assert.match(siteHeader, /prefetch=\{false\}/);
   assert.match(siteFooter, /prefetch=\{false\}/);
   assert.match(mobileNav, /prefetch=\{false\}/);
   assert.match(coursesLoading, /CoursesPageSkeleton/);
   assert.match(practiceLoading, /Đang chuẩn bị Kho ca làm/);
   assert.match(lessons, /getCachedPublishedPracticeVocabulary/);
+});
+
+test("practice menu stays open until its Luyện tập trigger is clicked again", async () => {
+  const [shell, railStyles] = await Promise.all([
+    read("components/learner-app-shell.tsx"),
+    read("app/learner-navigation.css"),
+  ]);
+
+  assert.match(shell, /practiceSectionActive \|\| practiceTriggerSelected/);
+  assert.doesNotMatch(shell, /closePracticeMenuOnBlur/);
+  assert.doesNotMatch(shell, /closePracticeMenuOnEscape/);
+  assert.doesNotMatch(shell, /selectPracticeRoute/);
+  assert.doesNotMatch(shell, /onBlur=/);
+  assert.doesNotMatch(shell, /onKeyDown=/);
+  assert.equal(shell.match(/setPracticeMenuOpen\(false\)/g)?.length, 1);
+  assert.match(shell, /key=\{href\}[\s\S]*?onClick=\{\(event\) => beginRoute\(event, href\)\}/);
+  assert.match(railStyles, /\.rail-practice-group\.is-open \.rail-practice-chevron/);
+  assert.match(railStyles, /\.rail-practice-group\.is-open \.rail-practice-menu/);
+  assert.doesNotMatch(railStyles, /rail-practice-group:is\(:hover, :focus-within, \.is-open\)/);
+});
+
+test("opening the practice menu clears active state from primary rail items", async () => {
+  const shell = await read("components/learner-app-shell.tsx");
+
+  assert.match(shell, /const active = !practiceTriggerSelected && matches\(visualPathname\);/);
+});
+
+test("navigating to a primary rail item transfers active state without closing the practice menu", async () => {
+  const shell = await read("components/learner-app-shell.tsx");
+
+  assert.match(shell, /const \[practiceTriggerSelected, setPracticeTriggerSelected\] = useState\(false\);/);
+  assert.match(shell, /setPracticeTriggerSelected\(false\);[\s\S]*?if \(pathname === href\) return;/);
+  assert.match(shell, /const practiceTriggerActive = practiceSectionActive \|\| practiceTriggerSelected;/);
+});
+
+test("expanded learner rail ends with a Pro upgrade card that disappears when collapsed", async () => {
+  const [shell, railStyles] = await Promise.all([
+    read("components/learner-app-shell.tsx"),
+    read("app/learner-navigation.css"),
+  ]);
+
+  assert.match(shell, /className="rail-pro-card"/);
+  assert.match(shell, /Nâng cấp Pro/);
+  assert.match(shell, /Nâng cấp ngay/);
+  assert.match(shell, /href="\/vip"/);
+  assert.match(railStyles, /\.learner-app-shell \.rail-pro-card \{[\s\S]*?margin-top: auto;/);
+  assert.match(railStyles, /\.learner-app-shell\.is-rail-collapsed \.rail-pro-card \{[\s\S]*?display: none;/);
+});
+
+test("desktop learner rail uses the Pro card as its only VIP entry point", async () => {
+  const shell = await read("components/learner-app-shell.tsx");
+
+  assert.doesNotMatch(shell, /\{ href: "\/vip", label: "VIP"/);
+  assert.match(shell, /className="rail-pro-card"[\s\S]*?href="\/vip"/);
 });
 
 test("course library uses seven editorial topic covers and a streamed catalog", async () => {
