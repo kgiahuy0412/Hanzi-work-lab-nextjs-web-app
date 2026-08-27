@@ -19,9 +19,9 @@ test("home page contains the Himi Chinese language portal hero", async () => {
   assert.match(studio, /đời sống thật/);
   assert.match(studio, /Email đã xác minh\. Chào mừng bạn đến Himi Chinese\./);
   assert.match(verifyEmail, /new URL\("\/\?verified=1"/);
-  assert.match(studio, /himi-language-portal-hero-1536\.webp/);
-  assert.match(studio, /himi-language-portal-hero-2k\.webp 2560w/);
-  assert.match(studio, /himi-language-portal-hero-4k\.webp 3840w/);
+  assert.match(studio, /himi-language-portal-clean-1536\.webp/);
+  assert.match(studio, /himi-language-portal-clean-2k\.webp 2560w/);
+  assert.match(studio, /himi-language-portal-clean-4k\.webp 3840w/);
   assert.match(studio, /Bắt đầu luyện nói/);
   assert.match(studio, /Xem lộ trình/);
   assert.doesNotMatch(studio, /Phiên 10 phút|today-session-steps|swipe-review-demo/);
@@ -504,12 +504,16 @@ test("learner navigation prefetches primary routes and exposes immediate loading
 });
 
 test("course library uses seven Himi industry covers and a streamed catalog", async () => {
-  const [page, card, visuals, practiceHub, bannerStyles] = await Promise.all([
+  const [page, card, visuals, practiceHub, bannerStyles, banner, listeningStudio, videoLibrary, vipPage] = await Promise.all([
     read("app/courses/page.tsx"),
     read("components/course-card.tsx"),
     read("lib/course-visuals.ts"),
     read("components/work-practice-hub.tsx"),
     read("app/himi-section-banner.css"),
+    read("components/himi-section-banner.tsx"),
+    read("components/listening-studio.tsx"),
+    read("components/video-library.tsx"),
+    read("app/vip/page.tsx"),
   ]);
   assert.match(page, /Bạn muốn dùng tiếng/);
   assert.match(page, /Suspense/);
@@ -521,7 +525,16 @@ test("course library uses seven Himi industry covers and a streamed catalog", as
   assert.equal((practiceHub.match(/"\/assets\/courses\/himi-concepts\//g) ?? []).length, 7);
   assert.match(bannerStyles, /himi-career-current\.gif/);
   assert.match(bannerStyles, /himi-career-current-static\.png/);
+  assert.match(bannerStyles, /himi-practice-hero-2k\.webp/);
+  assert.match(bannerStyles, /himi-listening-hero-2k\.webp/);
+  assert.match(bannerStyles, /himi-video-hero-2k\.webp/);
+  assert.match(bannerStyles, /himi-vip-hero-2k\.webp/);
   assert.doesNotMatch(bannerStyles, /penguin-hello\.gif/);
+  assert.match(banner, /"courses" \| "practice" \| "listening" \| "videos" \| "vip"/);
+  assert.match(banner, /himi-immersive-banner-mascot/);
+  assert.match(listeningStudio, /variant="listening"/);
+  assert.match(videoLibrary, /variant="videos"/);
+  assert.match(vipPage, /Mở toàn bộ bài học, ca luyện/);
 });
 
 test("lesson vocabulary uses a focused interactive card deck", async () => {

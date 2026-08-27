@@ -415,7 +415,12 @@ export function WorkPracticeHub({
         {mode === "catalog" ? (
           <>
             <div className="practice-banner-shell">
-              <HimiSectionBanner titleId="practice-title" titleLines={["Luyện đúng cảnh.", "Nói tự nhiên hơn."]} variant="practice" />
+              <HimiSectionBanner
+                description="Nghe tình huống công việc, phản xạ bằng tiếng Trung và sửa từng câu theo nhịp của bạn."
+                titleId="practice-title"
+                titleLines={["Luyện đúng cảnh.", "Nói tự nhiên hơn."]}
+                variant="practice"
+              />
             </div>
 
             <div className="practice-industry-tabs" role="tablist" aria-label="Chọn ngành để luyện">

@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { LearningModePlaceholder } from "@/components/learning-mode-placeholder";
+import { ListeningStudio } from "@/components/listening-studio";
 
 export const metadata: Metadata = {
   title: "Luyện nghe",
@@ -7,5 +7,5 @@ export const metadata: Metadata = {
 };
 
 export default function ListeningPage() {
-  return <LearningModePlaceholder mode="listening" />;
+  return <ListeningStudio />;
 }

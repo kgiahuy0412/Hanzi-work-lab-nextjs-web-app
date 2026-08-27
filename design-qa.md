@@ -65,6 +65,142 @@ final result: passed
 
 ---
 
+# Design QA — Listening immersive banner
+
+## Comparison target
+
+- Source visual truth: `design-qa-course-mascot-lowered-banner.png`, the approved Himi panoramic banner family.
+- Generated background asset: `public/assets/backgrounds/himi-listening-hero-2k.webp`.
+- Implementation desktop: `design-qa-listening-banner-new.png`.
+- Focused implementation crop: `design-qa-listening-banner-crop.png`.
+- Side-by-side comparison evidence: `design-qa-listening-banner-comparison.png`.
+- Mobile implementation: `design-qa-listening-banner-mobile.png`.
+- Route and state: `/listening`, intro state, HSK 1 selected.
+
+## Viewports and normalization
+
+- Source visual truth: 1475 × 400 px.
+- Desktop browser viewport request: 1440 × 900 CSS px; in-app Browser content canvas: 1427 px wide.
+- Desktop implementation screenshot: 1427 × 1015 px; focused banner crop: 1224 × 352 px.
+- Mobile browser viewport request: 390 × 844; in-app Browser content canvas: 488 CSS px due host density scaling; screenshot: 594 × 1055 px.
+- Density normalization: the source was proportionally scaled to 1224 × 332 and padded to 1224 × 352; the focused implementation remained 1224 × 352. The two equal-size regions were placed side by side without stretching.
+
+## Full-view comparison evidence
+
+The desktop capture keeps the approved family composition: strong two-line teal heading in a quiet left field, bright realistic workplace imagery through the middle, current Himi animation on the right, soft radius and restrained shadow. The listening variant changes only the route-specific scene to headphones, an audio device and light-wave imagery. The primary listening CTA is intentionally retained inside the banner so the existing exercise flow remains reachable.
+
+## Focused comparison evidence
+
+`design-qa-listening-banner-comparison.png` places the approved course banner and the new listening banner in one normalized image. It confirms matching headline scale, left-to-right visual balance, bright palette, mascot scale, edge radius and image sharpness. The new route-specific headphones remain clear behind Himi rather than being obscured or cropped.
+
+## Required fidelity surfaces
+
+- Fonts and typography: the shared Himi heading, body font stack, weight, line height and tight display tracking are inherited from `HimiSectionBanner`; Vietnamese diacritics remain crisp at desktop and mobile sizes.
+- Spacing and layout rhythm: the desktop banner uses the same shared grid, padding, radius and visual proportions as Courses, Practice, Videos and VIP. Mobile stacks copy and action content above the mascot without clipping.
+- Colors and visual tokens: the established white, forest teal and coral action palette is preserved; the listening asset adds only pale blue/mint sound-wave accents.
+- Image quality and asset fidelity: the generated background is a purpose-built 2048 × 512 WebP rather than an enlarged screenshot. Headphones, audio device and background remain sharp; current Himi uses the existing animated GIF with the static reduced-motion fallback.
+- Copy and content: the new title and description communicate focused listening practice; the original 10-question, four-mode, 5–7-minute facts and “Bắt đầu nghe” action remain intact.
+
+## Interaction and accessibility verification
+
+- Selecting HSK 2 updates the level state, then “Bắt đầu nghe” enters the listening session and displays the first “Chọn Hán tự bạn vừa nghe” prompt.
+- “Rời lượt nghe” returns to the intro banner.
+- Banner heading remains connected through `aria-labelledby`; facts retain an accessible label and decorative Himi stays hidden from assistive technology.
+- Desktop and mobile canvases have no document-level horizontal overflow.
+- Browser warning/error log checked after the interaction flow: none.
+
+## Findings
+
+- No actionable P0, P1 or P2 differences remain.
+
+## Comparison history
+
+- Initial implementation replaced the standalone listening hero with the shared immersive banner, added the route-specific 2K background and preserved the start action inside the banner.
+- Final desktop and mobile checks found no clipping, overflow, fuzzy assets or blocked controls, so no P0/P1/P2 fix loop was required.
+
+## Follow-up polish
+
+- P3: the mobile banner is intentionally taller than the other catalog banners because it contains the core start action and session facts.
+
+## Implementation checklist
+
+- [x] Match the approved bright panoramic Himi banner family.
+- [x] Use a dedicated 2048 × 512 listening background.
+- [x] Preserve the listening CTA, facts, level selection and session flow.
+- [x] Verify desktop, mobile, reduced-motion fallback, interactions and console output.
+
+final result: passed
+
+---
+
+# Design QA — Immersive banner family for Practice, Video and VIP
+
+## Comparison target
+
+- Source visual truth: `design-qa-course-mascot-lowered-final.png`, the approved live Career-route banner selected by the user as the banner-family reference.
+- Practice desktop: `design-qa-practice-banner-new.png`.
+- Video desktop: `design-qa-video-banner-new.png`.
+- VIP desktop: `design-qa-vip-banner-new.png`.
+- Practice mobile: `design-qa-practice-banner-mobile.png`.
+- Video mobile: `design-qa-videos-banner-mobile.png`.
+- VIP mobile: `design-qa-vip-banner-mobile.png`.
+- Full family comparison: `design-qa-immersive-banner-family-comparison.png`.
+- Routes and state: `/practice` catalog mode, `/videos` unfiltered library, `/vip` anonymous learner.
+
+## Viewports and normalization
+
+- Desktop CSS viewport: 1292 × 760. The in-app browser captured at 1.25 density.
+- Source and VIP banner captures: 1475 × 400 px. Practice and Video banner captures: 1594 × 400 px because those route shells are wider.
+- Family comparison normalizes every banner to a 1475 × 400 px slot, preserving aspect ratio and padding the two wider route captures vertically rather than stretching them.
+- Mobile browser inner width: 488 CSS px at the same density. Captures are 564 × 506 px (Practice), 561 × 415 px (Video) and 556 × 454 px (VIP), reflecting each route shell's existing responsive width and content height.
+
+## Full-view comparison evidence
+
+`design-qa-immersive-banner-family-comparison.png` places the approved Career banner first, followed by Practice, Video and VIP. All four retain the same quiet editorial copy zone, panoramic scene, dark-teal two-line heading, supporting copy, rounded frame, current red-scarf Himi and floor-anchored animation. The three new scenes are intentionally content-specific: microphone and conversation studio for Practice, screen/camera/audio equipment for Video, and a warm premium library for VIP.
+
+## Focused comparison evidence
+
+The desktop banner crops are large enough to read the headline, paragraph, Himi face, scarf and mission board, so no additional micro-crop is needed. The mobile captures separately confirm that the text card, background focal point and mascot remain independently readable after stacking.
+
+## Required fidelity surfaces
+
+- Fonts and typography: all variants reuse the approved Geist stack, display weight, letter spacing, two-line hierarchy and responsive wrapping from the Career banner.
+- Spacing and layout rhythm: desktop banners share 318–320px height, copy/visual grid tracks, 26px radius and identical mascot scale; mobile uses the existing 332px minimum with the text surface separated from the art.
+- Colors and visual tokens: white, teal, ice blue and coral remain consistent. Practice adds mint, Video adds sky blue, and VIP adds restrained champagne gold without introducing a dark premium theme.
+- Image quality and asset fidelity: each background is a purpose-built 2048 × 512 WebP. All variants use the approved 560 × 560 current-Himi transparent GIF and the matching static PNG for reduced-motion users.
+- Copy and content: every description states the real purpose of its route; no fake buttons, plan claims or duplicate workflow explanations were added.
+
+## Interaction and accessibility verification
+
+- Practice: selecting the exact `Nhà máy` tab updates `aria-selected` from `Văn phòng` to `Nhà máy`.
+- Video: the `Mua sắm` filter returns one card; searching `ga tàu` returns one matching video.
+- VIP: four plan cards remain rendered and all three anonymous upgrade links still target `/login?returnTo=%2Fvip`.
+- All three banners retain semantic labelled headers with live HTML text; the backdrop and mascot remain decorative.
+- Mobile routes report no document-level horizontal overflow (`scrollWidth` 475 vs `innerWidth` 488).
+- Browser development logs contain debug/info messages only; no warning or error entries were recorded.
+
+## Findings and comparison history
+
+- Iteration 1: Practice and Video immediately matched the current-Himi reference, but VIP retained the retired success mascot because a later equal-specificity selector overrode the shared asset.
+- Fix: removed the obsolete VIP-specific mascot override. The post-fix desktop capture confirms VIP now uses the current red-scarf, mission-board Himi.
+- Final comparison: no actionable P0, P1 or P2 differences remain.
+
+## Follow-up polish
+
+- P3: dedicated per-route Himi props could be explored later, but the shared current mascot is the user's approved identity and produces the strongest family consistency now.
+
+## Implementation checklist
+
+- [x] Generate and install three sharp 2048 × 512 route-specific backdrops.
+- [x] Replace old Practice, Video and VIP headers with the shared immersive banner system.
+- [x] Use current animated Himi and reduced-motion fallback everywhere.
+- [x] Preserve Practice tabs, Video search/filter and VIP plan/login flows.
+- [x] Verify desktop, mobile, overflow and browser logs.
+
+final result: passed
+
+---
+
 # Design QA — Career-route banner with animated Himi
 
 ## Comparison target
@@ -74,6 +210,9 @@ final result: passed
 - Implementation desktop: `design-qa-course-current-himi-desktop.png`.
 - Implementation mobile: `design-qa-course-current-himi-mobile.png`.
 - Current-Himi focused comparison: `design-qa-course-current-himi-comparison.png`.
+- Mascot vertical-position source: `C:/Users/Windows/AppData/Local/Temp/codex-clipboard-c83ee611-0ce5-42d8-ad35-3facc95af334.png`.
+- Mascot lowered implementation: `design-qa-course-mascot-lowered-final.png`.
+- Mascot vertical-position comparison: `design-qa-course-mascot-lowered-comparison.png`.
 - Full banner comparison: `design-qa-course-banner-comparison.png`.
 - Route and state: `/courses`, anonymous learner, empty search, “Tất cả” filter active.
 
@@ -91,6 +230,8 @@ final result: passed
 ## Focused comparison evidence
 
 The focused stacked comparison confirms the current scarf-and-mission-board Himi identity rather than the retired school-character asset. Two live browser captures taken 650 ms apart changed 41,363 of 144,000 pixels in the mascot region (28.7%), confirming that the transparent Himi GIF is actually animating rather than displaying a static first frame.
+
+`design-qa-course-mascot-lowered-comparison.png` places the user's high-position screenshot above the revised live banner. The source was normalized from 1615 × 562 px to the implementation's 1475 px width; the implementation banner was captured from a 1292 × 760 CSS viewport at 1.25 density. Himi now sits visibly lower, keeps a small safe margin above the head throughout the five-pixel float animation, and remains anchored to the banner floor without changing scale or horizontal placement.
 
 ## Required fidelity surfaces
 
@@ -113,6 +254,7 @@ The focused stacked comparison confirms the current scarf-and-mission-board Himi
 - Iteration 1: desktop heading wrapped into three lines because the first line exceeded the copy track. The final CSS preserves the source's intended two-line desktop wrap and releases it at the tablet breakpoint.
 - Iteration 1 mobile: the panoramic crop placed detailed machinery directly behind the supporting copy. A compact white reading surface restored contrast without hiding the lower workplace scene or Himi.
 - Iteration 2: the first animation reused the retired Himi school GIF. After the user supplied the current model, it was replaced with a newly generated base pose and waving pose that preserve the red-orange scarf, wink, soft 3D finish and mission board.
+- Iteration 3: the current mascot sat too high and its hair could touch the banner crop during the upward float frame. Desktop bottom offset moved from `-24px` to `-68px` (`-58px` at the 1120px breakpoint), with proportionally smaller adjustments on tablet and mobile. The post-fix comparison confirms the full head remains visible and the mascot sits lower without affecting text, filters or background composition.
 - Final comparison: no actionable P0, P1 or P2 differences remain. The removed selector boxes are intentional; the current Himi and mission board are now preserved in both animated and reduced-motion states.
 
 ## Follow-up polish
