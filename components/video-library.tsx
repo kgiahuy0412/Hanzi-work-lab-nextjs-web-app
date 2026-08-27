@@ -4,6 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useMemo, useState } from "react";
 import { ArrowRight, Captions, CirclePlay, Search } from "lucide-react";
+import { HimiSectionBanner } from "@/components/himi-section-banner";
 import type { LearningVideo } from "@/lib/video-library";
 
 function VideoCard({ video }: { video: LearningVideo }) {
@@ -35,25 +36,12 @@ export function VideoLibrary({ videos }: { videos: LearningVideo[] }) {
 
   return <main className="video-library-page">
     <div className="video-library-shell">
-      <header className="video-library-header">
-        <div className="video-library-hero-copy"><h1><span>Nghe dễ hơn.</span><span>Nhớ lâu hơn.</span></h1></div>
-        <div aria-hidden="true" className="video-library-hero-visual">
-          <div className="video-radio-studio">
-            <div className="video-radio-player">
-              <span className="video-radio-play"><CirclePlay size={28} /></span>
-              <span className="video-radio-wave">
-                <i /><i /><i /><i /><i /><i /><i /><i /><i />
-              </span>
-            </div>
-            <span className="video-radio-note video-radio-note-one">♪</span>
-            <span className="video-radio-note video-radio-note-two">♫</span>
-            <span className="video-radio-spark" />
-            <span className="video-radio-pulse video-radio-pulse-one" />
-            <span className="video-radio-pulse video-radio-pulse-two" />
-            <span className="video-radio-himi" />
-          </div>
-        </div>
-      </header>
+      <HimiSectionBanner
+        description="Xem tình huống thật, nghe từng câu rõ hơn và luyện lại ngay trong phòng học tương tác."
+        titleId="video-library-title"
+        titleLines={["Nghe dễ hơn.", "Nhớ lâu hơn."]}
+        variant="videos"
+      />
 
       <section className="video-catalog" aria-labelledby="video-catalog-title">
         <h2 className="sr-only" id="video-catalog-title">Thư viện video tuyển chọn</h2>

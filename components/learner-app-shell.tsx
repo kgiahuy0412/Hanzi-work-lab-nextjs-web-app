@@ -84,6 +84,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const [railExpanded, setRailExpanded] = useState(false);
   const [practiceMenuOpen, setPracticeMenuOpen] = useState(false);
   const practiceTriggerRef = useRef<HTMLButtonElement>(null);
+  const practiceAutoExpandedRef = useRef(false);
   const routeProgressStartedAtRef = useRef<number | null>(null);
 
   useEffect(() => {
@@ -143,15 +144,50 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
     setRouteProgressCompleting(false);
     setPendingHref(href);
   };
+  const restoreAutoCollapsedRail = () => {
+    if (!practiceAutoExpandedRef.current) return;
+    practiceAutoExpandedRef.current = false;
+    setRailExpanded(false);
+  };
+  const toggleRail = () => {
+    practiceAutoExpandedRef.current = false;
+    setPracticeMenuOpen(false);
+    setRailExpanded(!railExpanded);
+  };
+  const togglePracticeMenu = () => {
+    if (!railExpanded) {
+      practiceAutoExpandedRef.current = true;
+      setRailExpanded(true);
+      setPracticeMenuOpen(true);
+      return;
+    }
+
+    if (practiceAutoExpandedRef.current && practiceMenuOpen) {
+      setPracticeMenuOpen(false);
+      restoreAutoCollapsedRail();
+      return;
+    }
+
+    setPracticeMenuOpen((current) => !current);
+  };
+  const selectPracticeRoute = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+    if (isPlainNavigation(event)) {
+      setPracticeMenuOpen(false);
+      restoreAutoCollapsedRail();
+    }
+    beginRoute(event, href);
+  };
   const closePracticeMenuOnBlur = (event: FocusEvent<HTMLDivElement>) => {
     if (!event.currentTarget.contains(event.relatedTarget as Node | null)) {
       setPracticeMenuOpen(false);
+      restoreAutoCollapsedRail();
     }
   };
   const closePracticeMenuOnEscape = (event: KeyboardEvent<HTMLDivElement>) => {
     if (event.key !== "Escape") return;
     setPracticeMenuOpen(false);
     practiceTriggerRef.current?.focus();
+    restoreAutoCollapsedRail();
   };
 
   if (isStandaloneRoute(pathname)) {
@@ -196,7 +232,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
           aria-expanded={railExpanded}
           aria-label={railExpanded ? "Thu gọn thanh điều hướng" : "Mở rộng thanh điều hướng"}
           className="rail-toggle"
-          onClick={() => setRailExpanded((current) => !current)}
+          onClick={toggleRail}
           title={railExpanded ? "Thu gọn" : "Mở rộng"}
           type="button"
         >
@@ -217,14 +253,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
               aria-controls="rail-practice-menu"
               aria-expanded={practiceMenuOpen}
               className={`rail-practice-trigger ${practiceSectionActive ? "active" : ""}`.trim()}
-              onClick={() => {
-                if (!railExpanded) {
-                  setRailExpanded(true);
-                  setPracticeMenuOpen(true);
-                  return;
-                }
-                setPracticeMenuOpen((current) => !current);
-              }}
+              onClick={togglePracticeMenu}
               ref={practiceTriggerRef}
               title={!railExpanded ? "Luyện tập" : undefined}
               type="button"
@@ -243,10 +272,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
                       className={`${active ? "active" : ""} ${pendingHref === href ? "pending" : ""}`.trim()}
                       href={href}
                       key={href}
-                      onClick={(event) => {
-                        setPracticeMenuOpen(false);
-                        beginRoute(event, href);
-                      }}
+                      onClick={(event) => selectPracticeRoute(event, href)}
                       onFocus={() => prepareRoute(href)}
                       onPointerEnter={() => prepareRoute(href)}
                       prefetch
