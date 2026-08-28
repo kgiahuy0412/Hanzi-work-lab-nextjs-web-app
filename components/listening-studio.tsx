@@ -69,6 +69,10 @@ export function ListeningStudio() {
 
   useEffect(() => () => window.speechSynthesis?.cancel(), []);
 
+  useEffect(() => {
+    if (studio.view !== "intro") window.scrollTo({ top: 0, behavior: "auto" });
+  }, [studio.view]);
+
   const playWord = (word: ListeningWord | undefined = currentWord, slower = slowPlayback) => {
     if (!word || typeof window === "undefined" || !("speechSynthesis" in window)) {
       setAudioSupported(false);
