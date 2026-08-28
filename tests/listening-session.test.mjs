@@ -9,6 +9,14 @@ import {
   recordListeningResult,
 } from "../lib/listening-progress.ts";
 import { buildListeningRound } from "../lib/listening-session.ts";
+import {
+  advanceListeningQuestion,
+  answerListeningQuestion,
+  createInitialListeningState,
+  leaveListeningSession,
+  selectListeningLevel,
+  startListeningLesson,
+} from "../lib/listening-studio-state.ts";
 
 test("every HSK listening group exposes four usable lessons", () => {
   assert.equal(listeningLevels.length, 7);
@@ -80,4 +88,65 @@ test("recording a result keeps the best score and increments attempts", () => {
     attempts: 2,
     completedAt: "2026-08-29T00:00:00.000Z",
   });
+});
+
+test("the listening state flows from a selected level into its selected lesson", () => {
+  const initial = createInitialListeningState("hsk-1");
+  const level = listeningLevels[3];
+  const selected = selectListeningLevel(initial, level.id);
+  const started = startListeningLesson(selected, level, level.lessons[1], () => 0.25);
+
+  assert.equal(selected.view, "intro");
+  assert.equal(selected.selectedLevelId, "hsk-4");
+  assert.equal(started.view, "session");
+  assert.equal(started.selectedLessonId, "hsk-4-lesson-2");
+  assert.equal(started.round.length, 10);
+  assert.equal(started.questionIndex, 0);
+});
+
+test("a question accepts one answer and advances without losing lesson context", () => {
+  const level = listeningLevels[0];
+  const started = startListeningLesson(
+    createInitialListeningState(level.id),
+    level,
+    level.lessons[0],
+    () => 0.25,
+  );
+  const question = started.round[0];
+  const wrongChoice = question.choices.find((choice) => choice !== question.word.hanzi);
+  assert.ok(wrongChoice);
+
+  const answered = answerListeningQuestion(started, wrongChoice);
+  const ignoredSecondAnswer = answerListeningQuestion(answered, question.word.hanzi);
+  const advanced = advanceListeningQuestion(ignoredSecondAnswer);
+
+  assert.equal(answered.answerStatus, "wrong");
+  assert.equal(answered.score, 0);
+  assert.deepEqual(ignoredSecondAnswer, answered);
+  assert.equal(advanced.questionIndex, 1);
+  assert.equal(advanced.answerStatus, "idle");
+  assert.equal(advanced.selectedLessonId, level.lessons[0].id);
+});
+
+test("the final answered question completes the lesson and returning keeps the level selected", () => {
+  const level = listeningLevels[1];
+  const started = startListeningLesson(
+    createInitialListeningState(level.id),
+    level,
+    level.lessons[2],
+    () => 0.25,
+  );
+  const finalQuestion = started.round.at(-1);
+  assert.ok(finalQuestion);
+  const onFinalQuestion = { ...started, questionIndex: started.round.length - 1 };
+  const answered = answerListeningQuestion(onFinalQuestion, finalQuestion.word.hanzi);
+  const completed = advanceListeningQuestion(answered);
+  const catalog = leaveListeningSession(completed);
+
+  assert.equal(completed.view, "complete");
+  assert.equal(completed.score, 1);
+  assert.equal(catalog.view, "intro");
+  assert.equal(catalog.selectedLevelId, level.id);
+  assert.equal(catalog.selectedLessonId, level.lessons[2].id);
+  assert.equal(catalog.round.length, 0);
 });
