@@ -17,7 +17,6 @@ import {
   Gamepad2,
   Home,
   PenLine,
-  Repeat2,
   Settings,
   Sparkles,
 } from "lucide-react";
@@ -32,14 +31,13 @@ type LearnerShellUser = {
 const learnerRailItems = [
   { href: "/", label: "Học tập", icon: Home, matches: (pathname: string) => pathname === "/" },
   { href: "/courses", label: "Lộ trình", icon: BookOpen, matches: (pathname: string) => pathname.startsWith("/courses") || pathname.startsWith("/learn") },
-  { href: "/practice", label: "Luyện ca", icon: Repeat2, matches: (pathname: string) => pathname.startsWith("/practice") },
   { href: "/games", label: "Trò chơi", icon: Gamepad2, matches: (pathname: string) => pathname.startsWith("/games") },
 ];
 
 const learnerPracticeItems = [
   { href: "/writing", label: "Luyện viết", icon: PenLine, matches: (pathname: string) => pathname.startsWith("/writing") },
   { href: "/videos", label: "Video", icon: Clapperboard, matches: (pathname: string) => pathname.startsWith("/videos") },
-  { href: "/listening", label: "Luyện nghe", icon: AudioLines, matches: (pathname: string) => pathname.startsWith("/listening") },
+  { href: "/listening", label: "Nghe & phản xạ", icon: AudioLines, matches: (pathname: string) => pathname.startsWith("/listening") || pathname.startsWith("/practice") },
 ];
 
 const learnerPrefetchItems = [...learnerRailItems, ...learnerPracticeItems];
@@ -391,7 +389,6 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
             ))}
           </div>
         </div>
-        <Link aria-current={visualPathname.startsWith("/practice") ? "page" : undefined} className={visualPathname.startsWith("/practice") ? "active" : ""} href="/practice" onClick={(event) => beginRoute(event, "/practice")} onPointerEnter={() => prepareRoute("/practice")} prefetch><Repeat2 aria-hidden="true" size={20} /><span>Luyện ca</span></Link>
         <Link aria-current={visualPathname.startsWith("/games") ? "page" : undefined} className={visualPathname.startsWith("/games") ? "active" : ""} href="/games" onClick={(event) => beginRoute(event, "/games")} onPointerEnter={() => prepareRoute("/games")} prefetch><Gamepad2 aria-hidden="true" size={20} /><span>Trò chơi</span></Link>
         <Link aria-current={visualPathname.startsWith("/vip") ? "page" : undefined} className={visualPathname.startsWith("/vip") ? "active" : ""} href="/vip" onClick={(event) => beginRoute(event, "/vip")} onPointerEnter={() => prepareRoute("/vip")} prefetch><Crown aria-hidden="true" size={20} /><span>VIP</span></Link>
       </nav>

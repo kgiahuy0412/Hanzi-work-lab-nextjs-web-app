@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
 import {
   ArrowLeft,
@@ -40,7 +40,7 @@ import {
 
 const ROUND_LENGTH = 10;
 
-export function ListeningStudio() {
+export function ListeningStudio({ modeSwitcher }: { modeSwitcher?: ReactNode }) {
   const [studio, setStudio] = useState(() => createInitialListeningState(LEVELS[0].id));
   const [slowPlayback, setSlowPlayback] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
@@ -162,6 +162,7 @@ export function ListeningStudio() {
   if (studio.view === "intro") {
     return (
       <main className="learner-dashboard listening-studio">
+        {modeSwitcher ? <div className="listening-mode-shell">{modeSwitcher}</div> : null}
         <div className="listening-banner-shell">
           <HimiSectionBanner
             actions={

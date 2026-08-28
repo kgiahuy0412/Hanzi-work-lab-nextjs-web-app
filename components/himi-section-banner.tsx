@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-export type HimiBannerVariant = "courses" | "practice" | "listening" | "videos" | "vip";
+export type HimiBannerVariant = "courses" | "practice" | "listening" | "videos" | "writing" | "vip";
 
 export function HimiSectionBanner({
   titleLines,

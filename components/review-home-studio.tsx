@@ -113,7 +113,7 @@ export function ReviewHomeStudio({ verified = false }: ReviewHomeStudioProps) {
           <p>Himi đưa bạn vào tình huống thật —<br />nghe, nói và phản xạ tự nhiên.</p>
 
           <div className="home-portal-actions">
-            <Link className="home-portal-primary" href="/practice" prefetch>
+            <Link className="home-portal-primary" href="/listening?mode=scenario" prefetch>
               Bắt đầu luyện nói <ArrowRight aria-hidden="true" size={23} />
             </Link>
             <Link className="home-portal-secondary" href="/courses" prefetch>

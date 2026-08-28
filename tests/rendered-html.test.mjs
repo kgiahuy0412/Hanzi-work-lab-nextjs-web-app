@@ -298,13 +298,15 @@ test("learner routes share one responsive application shell", async () => {
   assert.doesNotMatch(practice, /className="learn-rail"/);
 });
 
-test("practice route renders the work scenario hub", async () => {
-  const [page, hub, repository] = await Promise.all([
+test("legacy practice route redirects into the combined listening hub", async () => {
+  const [page, scenarioMode, hub, repository] = await Promise.all([
     read("app/practice/page.tsx"),
+    read("components/scenario-practice.tsx"),
     read("components/work-practice-hub.tsx"),
     read("lib/practice-repository.ts"),
   ]);
-  assert.match(page, /WorkPracticeHub/);
+  assert.match(page, /redirect\(`\/listening\?\$\{destination\.toString\(\)\}`\)/);
+  assert.match(scenarioMode, /WorkPracticeHub/);
   assert.match(hub, /Kho ca làm/);
   assert.match(hub, /Bắt đầu ca nghe/);
   assert.match(hub, /Đáp án mở sau khi audio kết thúc/);
@@ -447,7 +449,7 @@ test("practice and game progress persist per authenticated learner", async () =>
     read("lib/activity-progress-repository.ts"),
     read("app/api/progress/practice/route.ts"),
     read("app/api/progress/game/route.ts"),
-    read("app/practice/page.tsx"),
+    read("components/scenario-practice.tsx"),
     read("app/games/page.tsx"),
   ]);
   assert.match(schema, /practice_attempts/);
@@ -469,7 +471,7 @@ test("daily session reads today's learner activity and deep-links each next step
     read("db/schema.ts"),
     read("app/learn/[slug]/page.tsx"),
     read("components/lesson-workspace.tsx"),
-    read("app/practice/page.tsx"),
+    read("components/scenario-practice.tsx"),
     read("components/work-practice-hub.tsx"),
     read("app/games/page.tsx"),
     read("components/game-center.tsx"),

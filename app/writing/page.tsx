@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, BookOpen, PenLine, Sparkles } from "lucide-react";
+import { ArrowRight, BookOpen, PenLine } from "lucide-react";
+import { HimiSectionBanner } from "@/components/himi-section-banner";
 import { WRITING_TOPICS } from "@/lib/writing-content";
 
 export const metadata: Metadata = {
@@ -10,17 +11,13 @@ export const metadata: Metadata = {
 
 export default function WritingPage() {
   return <main className="learner-dashboard writing-catalog-page">
-    <header className="writing-catalog-hero">
-      <div className="writing-catalog-hero-copy">
-        <span><Sparkles aria-hidden="true" size={16} /> Lộ trình viết Hán tự</span>
-        <h1>Chọn cấp độ.<br />Viết từng nét thật chắc.</h1>
-        <p>Sáu chủ đề từ HSK 1 đến HSK 6, mỗi chủ đề gồm một bài học ngắn trước khi vào bàn luyện viết tương tác.</p>
-      </div>
-      <div aria-hidden="true" className="writing-catalog-hero-mark">
-        <span>写</span>
-        <small>xiě · viết</small>
-      </div>
-    </header>
+    <HimiSectionBanner
+      className="writing-catalog-banner"
+      description="Sáu chủ đề từ HSK 1 đến HSK 6, mỗi chủ đề gồm một bài học ngắn trước khi vào bàn luyện viết tương tác."
+      titleId="writing-catalog-title"
+      titleLines={["Chọn cấp độ.", "Viết từng nét thật chắc."]}
+      variant="writing"
+    />
 
     <section className="writing-topic-section" aria-labelledby="writing-topic-heading">
       <div className="writing-topic-heading">
