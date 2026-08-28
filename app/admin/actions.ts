@@ -3,8 +3,16 @@
 import { revalidatePath, revalidateTag } from "next/cache.js";
 import { redirect } from "next/navigation";
 import { requireAdminUser, requirePracticeStaffUser } from "@/lib/admin-auth";
-import { updateUserRole } from "@/lib/admin-user-service";
-import { grantOrExtendVipAccess, revokeVipAccess } from "@/lib/admin-subscription-service";
+import { deactivateAdminUser, updateUserRole } from "@/lib/admin-user-service";
+import {
+  createVipPlan,
+  deleteVipPlan,
+  grantOrExtendVipAccess,
+  revokeVipAccess,
+  setVipPlanActive,
+  updateVipPlan,
+  type AdminVipPlanInput,
+} from "@/lib/admin-subscription-service";
 import { approveVipActivationRequest, rejectVipActivationRequest } from "@/lib/vip-activation-request-service";
 import type { UserRole } from "@/lib/auth-service";
 import {
@@ -67,6 +75,8 @@ function resultRedirect(result: MutationResult, successPath: string, errorPath: 
   revalidatePath("/practice");
   revalidatePath("/admin/practice");
   revalidatePath("/admin/subscriptions");
+  revalidatePath("/admin/users");
+  revalidatePath("/admin/analytics");
   revalidatePath("/account");
   revalidatePath("/vip");
   revalidateTag("published-content", "max");
@@ -246,6 +256,32 @@ function confirmedDelete(formData: FormData): boolean {
   return valueString(formData, "confirmDelete", 20) === "DELETE";
 }
 
+function adminBusinessReturnPath(formData: FormData, fallback: string): string {
+  const value = valueString(formData, "returnTo", 40);
+  return value === "/admin/users" || value === "/admin/subscriptions" ? value : fallback;
+}
+
+function vipPlanInput(formData: FormData): AdminVipPlanInput | null {
+  const rawCode = valueString(formData, "code", 50).toUpperCase();
+  const code = rawCode.replace(/[^A-Z0-9_]+/gu, "_").replace(/^_+|_+$/gu, "");
+  const name = valueString(formData, "name", 100);
+  const durationDays = valueInteger(formData, "durationDays", 30, 1, 3_650);
+  const priceVnd = valueInteger(formData, "priceVnd", 0, 0, 100_000_000);
+  const discountPercent = valueInteger(formData, "discountPercent", 0, 0, 90);
+  const benefits = parseStringLines(valueString(formData, "benefits", 4_000), 20);
+  if (!code || !name || !benefits) return null;
+  return {
+    benefits,
+    code,
+    discountPercent,
+    durationDays,
+    isActive: parseBoolean(formData, "isActive"),
+    name,
+    priceVnd,
+    promotionLabel: valueString(formData, "promotionLabel", 160),
+  };
+}
+
 export async function updateUserRoleAction(formData: FormData) {
   const admin = await requireAdminUser();
   const userId = valueString(formData, "userId", 40);
@@ -256,13 +292,55 @@ export async function updateUserRoleAction(formData: FormData) {
   resultRedirect(result, "/admin/team", "/admin/team", "role_updated");
 }
 
+export async function deleteAdminUserAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const userId = valueString(formData, "userId", 40);
+  if (!isUuid(userId) || !confirmedDelete(formData)) invalid("/admin/users");
+  const result = await deactivateAdminUser(userId, admin.id);
+  resultRedirect(result, "/admin/users", "/admin/users", "user_deleted");
+}
+
 export async function grantOrExtendVipAction(formData: FormData) {
   const admin = await requireAdminUser();
   const userId = valueString(formData, "userId", 40);
   const planId = valueString(formData, "planId", 40);
-  if (!isUuid(userId) || !isUuid(planId)) invalid("/admin/subscriptions");
+  const returnPath = adminBusinessReturnPath(formData, "/admin/subscriptions");
+  if (!isUuid(userId) || !isUuid(planId)) invalid(returnPath);
   const result = await grantOrExtendVipAccess({ userId, planId }, admin.id);
-  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_granted");
+  resultRedirect(result, returnPath, returnPath, "vip_granted");
+}
+
+export async function createVipPlanAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const input = vipPlanInput(formData);
+  if (!input) invalid("/admin/subscriptions");
+  const result = await createVipPlan(input, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_plan_created");
+}
+
+export async function updateVipPlanAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const planId = valueString(formData, "planId", 40);
+  const input = vipPlanInput(formData);
+  if (!isUuid(planId) || !input) invalid("/admin/subscriptions");
+  const result = await updateVipPlan(planId, input, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_plan_updated");
+}
+
+export async function toggleVipPlanAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const planId = valueString(formData, "planId", 40);
+  if (!isUuid(planId)) invalid("/admin/subscriptions");
+  const result = await setVipPlanActive(planId, parseBoolean(formData, "isActive"), admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_plan_status_updated");
+}
+
+export async function deleteVipPlanAction(formData: FormData) {
+  const admin = await requireAdminUser();
+  const planId = valueString(formData, "planId", 40);
+  if (!isUuid(planId) || !confirmedDelete(formData)) invalid("/admin/subscriptions");
+  const result = await deleteVipPlan(planId, admin.id);
+  resultRedirect(result, "/admin/subscriptions", "/admin/subscriptions", "vip_plan_deleted");
 }
 
 export async function revokeVipAction(formData: FormData) {

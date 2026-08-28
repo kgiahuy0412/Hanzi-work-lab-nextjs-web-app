@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useRef, useState } from "react";
+import Link from "next/link";
 import type HanziWriter from "hanzi-writer";
 import {
   ArrowLeft,
@@ -15,51 +16,15 @@ import {
   Sparkles,
   Volume2,
 } from "lucide-react";
+import type { WritingCharacter, WritingTopic } from "@/lib/writing-content";
 
 type WritingMode = "watch" | "trace" | "quiz";
-type CharacterGroup = "all" | "daily" | "work" | "hsk1";
-
-type WritingCharacter = {
-  hanzi: string;
-  pinyin: string;
-  meaning: string;
-  hsk: string;
-  strokes: number;
-  groups: Exclude<CharacterGroup, "all">[];
-};
-
-const WRITING_CHARACTERS: WritingCharacter[] = [
-  { hanzi: "你", pinyin: "nǐ", meaning: "bạn", hsk: "HSK 1", strokes: 7, groups: ["daily", "hsk1"] },
-  { hanzi: "好", pinyin: "hǎo", meaning: "tốt, khỏe", hsk: "HSK 1", strokes: 6, groups: ["daily", "hsk1"] },
-  { hanzi: "我", pinyin: "wǒ", meaning: "tôi", hsk: "HSK 1", strokes: 7, groups: ["daily", "hsk1"] },
-  { hanzi: "是", pinyin: "shì", meaning: "là", hsk: "HSK 1", strokes: 9, groups: ["daily", "hsk1"] },
-  { hanzi: "谢", pinyin: "xiè", meaning: "cảm ơn", hsk: "HSK 1", strokes: 12, groups: ["daily", "hsk1"] },
-  { hanzi: "再", pinyin: "zài", meaning: "lại, lần nữa", hsk: "HSK 1", strokes: 6, groups: ["daily", "hsk1"] },
-  { hanzi: "见", pinyin: "jiàn", meaning: "gặp, nhìn thấy", hsk: "HSK 1", strokes: 4, groups: ["daily", "hsk1"] },
-  { hanzi: "请", pinyin: "qǐng", meaning: "mời, vui lòng", hsk: "HSK 1", strokes: 10, groups: ["daily", "hsk1"] },
-  { hanzi: "吃", pinyin: "chī", meaning: "ăn", hsk: "HSK 1", strokes: 6, groups: ["daily", "hsk1"] },
-  { hanzi: "喝", pinyin: "hē", meaning: "uống", hsk: "HSK 1", strokes: 12, groups: ["daily", "hsk1"] },
-  { hanzi: "买", pinyin: "mǎi", meaning: "mua", hsk: "HSK 1", strokes: 6, groups: ["daily", "hsk1"] },
-  { hanzi: "家", pinyin: "jiā", meaning: "nhà, gia đình", hsk: "HSK 1", strokes: 10, groups: ["daily", "hsk1"] },
-  { hanzi: "工", pinyin: "gōng", meaning: "công việc, công", hsk: "HSK 1", strokes: 3, groups: ["work", "hsk1"] },
-  { hanzi: "作", pinyin: "zuò", meaning: "làm, thực hiện", hsk: "HSK 2", strokes: 7, groups: ["work"] },
-  { hanzi: "进", pinyin: "jìn", meaning: "tiến, đi vào", hsk: "HSK 2", strokes: 7, groups: ["work"] },
-  { hanzi: "度", pinyin: "dù", meaning: "mức độ, tiến độ", hsk: "HSK 2", strokes: 9, groups: ["work"] },
-  { hanzi: "会", pinyin: "huì", meaning: "họp; biết", hsk: "HSK 1", strokes: 6, groups: ["work", "hsk1"] },
-  { hanzi: "报", pinyin: "bào", meaning: "báo cáo", hsk: "HSK 2", strokes: 7, groups: ["work"] },
-  { hanzi: "表", pinyin: "biǎo", meaning: "biểu mẫu", hsk: "HSK 2", strokes: 8, groups: ["work"] },
-  { hanzi: "时", pinyin: "shí", meaning: "thời gian", hsk: "HSK 1", strokes: 7, groups: ["work", "hsk1"] },
-  { hanzi: "间", pinyin: "jiān", meaning: "khoảng, gian", hsk: "HSK 1", strokes: 7, groups: ["work", "hsk1"] },
-  { hanzi: "发", pinyin: "fā", meaning: "gửi, phát", hsk: "HSK 2", strokes: 5, groups: ["work"] },
-  { hanzi: "文", pinyin: "wén", meaning: "văn bản", hsk: "HSK 1", strokes: 4, groups: ["work", "hsk1"] },
-  { hanzi: "件", pinyin: "jiàn", meaning: "tệp; lượng từ", hsk: "HSK 2", strokes: 6, groups: ["work"] },
-];
+type CharacterGroup = "all" | "daily" | "work";
 
 const GROUPS: { value: CharacterGroup; label: string }[] = [
   { value: "all", label: "Tất cả" },
   { value: "daily", label: "Hằng ngày" },
   { value: "work", label: "Công việc" },
-  { value: "hsk1", label: "HSK 1" },
 ];
 
 const MODES: { value: WritingMode; label: string; hint: string; icon: typeof Eye }[] = [
@@ -70,14 +35,14 @@ const MODES: { value: WritingMode; label: string; hint: string; icon: typeof Eye
 
 const STORAGE_KEY = "himi-writing-completed";
 
-function getDailyStorageKey(): string {
+function getDailyStorageKey(topicSlug: string): string {
   const date = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Bangkok",
     year: "numeric",
     month: "2-digit",
     day: "2-digit",
   }).format(new Date());
-  return `${STORAGE_KEY}:${date}`;
+  return `${STORAGE_KEY}:${topicSlug}:${date}`;
 }
 
 function getModeMessage(mode: WritingMode): string {
@@ -86,7 +51,7 @@ function getModeMessage(mode: WritingMode): string {
   return "Tự viết từ trí nhớ. Sau 3 lần sai, nét đúng sẽ sáng lên.";
 }
 
-export function HimiWritingStudio() {
+export function HimiWritingStudio({ topic }: { topic: WritingTopic }) {
   const boardRef = useRef<HTMLDivElement>(null);
   const writerRef = useRef<HanziWriter | null>(null);
   const [canvasSize, setCanvasSize] = useState(420);
@@ -100,21 +65,21 @@ export function HimiWritingStudio() {
   const [correctStrokes, setCorrectStrokes] = useState(0);
   const [completedCharacters, setCompletedCharacters] = useState<string[]>([]);
 
-  const selected = WRITING_CHARACTERS[selectedIndex];
+  const selected = topic.characters[selectedIndex];
   const filteredCharacters = useMemo(() => {
     const normalizedQuery = query.trim().toLocaleLowerCase("vi-VN");
-    return WRITING_CHARACTERS.filter((character) => {
+    return topic.characters.filter((character) => {
       const matchesGroup = group === "all" || character.groups.includes(group);
       const matchesQuery = !normalizedQuery
         || `${character.hanzi} ${character.pinyin} ${character.meaning}`.toLocaleLowerCase("vi-VN").includes(normalizedQuery);
       return matchesGroup && matchesQuery;
     });
-  }, [group, query]);
+  }, [group, query, topic.characters]);
 
   useEffect(() => {
     let handle: number | undefined;
     try {
-      const stored = window.localStorage.getItem(getDailyStorageKey());
+      const stored = window.localStorage.getItem(getDailyStorageKey(topic.slug));
       if (stored) {
         handle = window.setTimeout(() => setCompletedCharacters(JSON.parse(stored) as string[]), 0);
       }
@@ -124,7 +89,7 @@ export function HimiWritingStudio() {
     return () => {
       if (handle) window.clearTimeout(handle);
     };
-  }, []);
+  }, [topic.slug]);
 
   useEffect(() => {
     const board = boardRef.current;
@@ -198,7 +163,7 @@ export function HimiWritingStudio() {
           setCompletedCharacters((current) => {
             const next = current.includes(selected.hanzi) ? current : [...current, selected.hanzi];
             try {
-              window.localStorage.setItem(getDailyStorageKey(), JSON.stringify(next));
+              window.localStorage.setItem(getDailyStorageKey(topic.slug), JSON.stringify(next));
             } catch {
               // Completion feedback still works without persistent storage.
             }
@@ -217,7 +182,7 @@ export function HimiWritingStudio() {
       writerRef.current = null;
       board.replaceChildren();
     };
-  }, [canvasSize, mode, resetVersion, selected]);
+  }, [canvasSize, mode, resetVersion, selected, topic.slug]);
 
   const prepareSession = (nextMode: WritingMode) => {
     setMistakes(0);
@@ -226,7 +191,7 @@ export function HimiWritingStudio() {
   };
 
   const chooseCharacter = (character: WritingCharacter) => {
-    const nextIndex = WRITING_CHARACTERS.indexOf(character);
+    const nextIndex = topic.characters.indexOf(character);
     prepareSession("watch");
     setSelectedIndex(nextIndex);
     setMode("watch");
@@ -235,7 +200,7 @@ export function HimiWritingStudio() {
 
   const moveCharacter = (direction: -1 | 1) => {
     prepareSession("watch");
-    setSelectedIndex((current) => (current + direction + WRITING_CHARACTERS.length) % WRITING_CHARACTERS.length);
+    setSelectedIndex((current) => (current + direction + topic.characters.length) % topic.characters.length);
     setMode("watch");
     setResetVersion((current) => current + 1);
   };
@@ -264,6 +229,11 @@ export function HimiWritingStudio() {
 
   return (
     <main className="learner-dashboard himi-writing-studio">
+      <header className="himi-writing-session-header">
+        <Link href={`/writing/${topic.slug}`}><ArrowLeft aria-hidden="true" size={16} /> Quay lại bài học</Link>
+        <div><span>{topic.level} · Bài 01</span><h1>{topic.title}</h1></div>
+        <strong>{topic.characters.length} chữ trọng tâm</strong>
+      </header>
       <section className="himi-writing-workspace" aria-label="Bàn luyện viết Hán tự">
         <aside className="himi-writing-library">
           <div className="himi-writing-library-heading">
@@ -344,12 +314,12 @@ export function HimiWritingStudio() {
             <strong lang="zh-CN">{selected.hanzi}</strong>
             <div><b>{selected.pinyin}</b><button aria-label={`Nghe phát âm chữ ${selected.hanzi}`} onClick={speakCharacter} type="button"><Volume2 aria-hidden="true" size={19} /></button></div>
             <p>{selected.meaning}</p>
-            <div className="himi-writing-meta"><span>{selected.hsk}</span><span>{selected.strokes} nét</span></div>
+            <div className="himi-writing-meta"><span>{topic.level}</span><span>{selected.strokes} nét</span></div>
           </div>
 
           <div className="himi-writing-navigation">
             <button aria-label="Chữ trước" onClick={() => moveCharacter(-1)} type="button"><ArrowLeft aria-hidden="true" size={18} /></button>
-            <span>{selectedIndex + 1} / {WRITING_CHARACTERS.length}</span>
+            <span>{selectedIndex + 1} / {topic.characters.length}</span>
             <button aria-label="Chữ tiếp theo" onClick={() => moveCharacter(1)} type="button"><ArrowRight aria-hidden="true" size={18} /></button>
           </div>
 

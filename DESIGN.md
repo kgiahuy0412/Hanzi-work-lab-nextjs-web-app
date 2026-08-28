@@ -13,18 +13,18 @@ colors:
   line-soft: "#d9dfda"
 typography:
   display:
-    fontFamily: "Geist, Segoe UI, Noto Sans SC, sans-serif"
+    fontFamily: "Inter"
     fontSize: "clamp(2rem, 4vw, 4rem)"
     fontWeight: 780
     lineHeight: 1.02
     letterSpacing: "-0.045em"
   body:
-    fontFamily: "Geist, Segoe UI, Noto Sans SC, sans-serif"
+    fontFamily: "Inter"
     fontSize: "1rem"
     fontWeight: 400
     lineHeight: 1.55
   label:
-    fontFamily: "Geist, Segoe UI, Noto Sans SC, sans-serif"
+    fontFamily: "Inter"
     fontSize: "0.6875rem"
     fontWeight: 820
     lineHeight: 1.2
@@ -102,9 +102,9 @@ The palette balances quiet workplace neutrals with three purposeful learning sig
 
 ## Typography
 
-**Display Font:** Geist with Segoe UI fallback  
-**Body Font:** Geist with Segoe UI fallback  
-**Chinese Font:** Microsoft YaHei, PingFang SC, Noto Sans CJK SC
+**Display Font:** Inter
+**Body Font:** Inter
+**Chinese Font:** Inter
 
 **Character:** Compact, contemporary sans-serif typography keeps the interface credible for adult learners. Chinese characters are allowed to become the visual headline while Vietnamese labels stay concise and operational.
 

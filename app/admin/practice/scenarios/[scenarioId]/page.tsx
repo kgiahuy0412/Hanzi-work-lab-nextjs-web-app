@@ -84,7 +84,7 @@ export default async function AdminPracticeScenarioPage({ params, searchParams }
         <div className="panel-heading"><h2>Nội dung đang khóa</h2><StatusBadge status={data.scenario.status} /></div>
         <p className="practice-review-lead">{data.scenario.brief}</p>
         <dl><div><dt>Bối cảnh</dt><dd>{data.scenario.context}</dd></div><div><dt>Câu trọng tâm</dt><dd lang="zh">{data.scenario.sentenceZh}</dd></div><div><dt>Pinyin</dt><dd>{data.scenario.pinyin}</dd></div><div><dt>Dịch nghĩa</dt><dd>{data.scenario.translation}</dd></div></dl>
-        {data.scenario.status === "published" ? <Link className="button button-secondary" href={`/practice?scenario=${data.scenario.slug}`}>Mở bản người học →</Link> : <p className="admin-empty">Nội dung được khóa trong lúc chờ duyệt. Trả về Bản nháp nếu cần chỉnh sửa.</p>}
+        {data.scenario.status === "published" ? <Link className="button button-secondary" href={`/practice?scenario=${data.scenario.slug}`} prefetch={false}>Mở bản người học →</Link> : <p className="admin-empty">Nội dung được khóa trong lúc chờ duyệt. Trả về Bản nháp nếu cần chỉnh sửa.</p>}
       </section>}
       {!editable ? exerciseEditor : null}
       </div>

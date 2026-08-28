@@ -1,8 +1,9 @@
 /* Collapsible Himi learner navigation. The rail remains persistent on desktop
  * and uses the existing mobile navigation below 720px. */
 .learner-app-shell {
-  --learner-rail-width: 88px;
-  --learner-rail-expanded-width: 238px;
+  --learner-rail-width: 72px;
+  --learner-rail-expanded-width: 216px;
+  --learner-rail-duration: 360ms;
   --learner-rail-ease: cubic-bezier(.22, 1, .36, 1);
 }
 
@@ -12,42 +13,57 @@
 
 .learner-app-shell .learn-rail {
   width: var(--learner-rail-width);
-  padding: 14px 10px 16px;
+  padding: 18px 12px 20px;
+  position: fixed;
   align-items: stretch;
-  overflow: hidden;
-  border-right: 1px solid #e0e7e2;
-  background: rgba(255, 255, 255, .97);
-  box-shadow: 12px 0 40px rgba(12, 63, 54, .055);
-  transition: width 320ms var(--learner-rail-ease), box-shadow 220ms ease;
+  overflow: visible;
+  border-right: 1px solid #e7ebe9;
+  background: rgba(255, 255, 255, .985);
+  box-shadow: 8px 0 24px rgba(21, 64, 56, .045);
+  transition: width var(--learner-rail-duration) var(--learner-rail-ease), box-shadow 240ms ease;
   will-change: width;
 }
 
 .learner-app-shell.is-rail-expanded .learn-rail {
-  box-shadow: 20px 0 52px rgba(12, 63, 54, .1);
+  box-shadow: 12px 0 30px rgba(21, 64, 56, .065);
 }
 
 .learner-app-shell .rail-toggle {
-  width: 44px;
-  min-width: 44px;
-  height: 44px;
-  min-height: 44px;
-  margin: 0 0 12px auto;
+  width: 26px;
+  min-width: 26px;
+  height: 26px;
+  min-height: 26px;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 29px;
+  right: -13px;
+  z-index: 3;
   display: grid;
   place-items: center;
   cursor: pointer;
-  color: #0a786d;
-  border: 1px solid #d9e8e3;
-  border-radius: 14px;
-  background: #f4faf7;
-  box-shadow: 0 8px 20px rgba(13, 96, 83, .07);
-  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, transform 160ms ease;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  background: #070b0a;
+  box-shadow: 0 5px 14px rgba(7, 11, 10, .24);
+  transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease, transform 180ms ease;
   touch-action: manipulation;
+}
+
+.learner-app-shell .rail-toggle-icon {
+  transition: transform var(--learner-rail-duration) var(--learner-rail-ease);
+}
+
+.learner-app-shell.is-rail-collapsed .rail-toggle-icon {
+  transform: rotate(180deg);
 }
 
 .learner-app-shell .rail-toggle:hover {
   color: #fff;
-  border-color: #0a8275;
-  background: #0a8275;
+  border-color: #fff;
+  background: #0c7f74;
+  transform: scale(1.06);
 }
 
 .learner-app-shell .rail-toggle:active {
@@ -58,6 +74,7 @@
 .learner-app-shell .rail-nav a:focus-visible,
 .learner-app-shell .rail-practice-trigger:focus-visible,
 .learner-app-shell .rail-support:focus-visible,
+.learner-app-shell .rail-pro-card:focus-visible,
 .learner-app-shell .rail-brand:focus-visible {
   outline: 3px solid rgba(15, 145, 128, .32);
   outline-offset: 2px;
@@ -65,34 +82,66 @@
 
 .learner-app-shell .rail-brand {
   min-width: 0;
-  min-height: 60px;
+  min-height: 54px;
+  padding: 0 12px;
   display: grid;
-  grid-template-columns: 60px minmax(0, 1fr);
+  grid-template-columns: 48px minmax(0, 1fr);
   align-items: center;
-  gap: 12px;
+  gap: 11px;
   color: #123d36;
   text-decoration: none;
+  transition:
+    padding var(--learner-rail-duration) var(--learner-rail-ease),
+    gap var(--learner-rail-duration) var(--learner-rail-ease),
+    grid-template-columns var(--learner-rail-duration) var(--learner-rail-ease);
 }
 
 .learner-app-shell .rail-brand .rail-logo {
-  width: 60px;
-  min-width: 60px;
-  height: 60px;
-  min-height: 60px;
+  width: 48px;
+  min-width: 48px;
+  max-width: 48px;
+  height: 48px;
+  min-height: 48px;
+  flex: 0 0 48px;
   display: grid;
   place-items: center;
-  border-radius: 18px;
+  overflow: hidden;
+  border: 1px solid #e6ebe8;
+  border-radius: 15px;
+  background: #fff;
+  box-shadow: 0 8px 18px rgba(25, 78, 68, .07);
+  transition:
+    width var(--learner-rail-duration) var(--learner-rail-ease),
+    min-width var(--learner-rail-duration) var(--learner-rail-ease),
+    max-width var(--learner-rail-duration) var(--learner-rail-ease),
+    height var(--learner-rail-duration) var(--learner-rail-ease),
+    min-height var(--learner-rail-duration) var(--learner-rail-ease),
+    border-radius var(--learner-rail-duration) var(--learner-rail-ease);
 }
 
 .learner-app-shell .rail-brand .brand-wordmark {
-  min-width: 126px;
+  min-width: 0;
+  max-width: 0;
   display: inline-flex;
   align-items: baseline;
   gap: .22em;
+  overflow: hidden;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateX(-10px);
   white-space: nowrap;
-  transition: opacity 150ms ease, transform 240ms var(--learner-rail-ease);
+  transition:
+    max-width var(--learner-rail-duration) var(--learner-rail-ease),
+    opacity 160ms ease,
+    transform 260ms var(--learner-rail-ease),
+    visibility 0s linear 220ms;
+}
+
+.learner-app-shell .rail-brand .brand-wordmark {
+  font-size: 14px;
+  font-weight: 820;
+  letter-spacing: -.025em;
 }
 
 .learner-app-shell .rail-brand .brand-wordmark strong {
@@ -100,54 +149,90 @@
 }
 
 .learner-app-shell.is-rail-expanded .rail-brand .brand-wordmark {
+  max-width: 120px;
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   transform: translateX(0);
-  transition-delay: 80ms;
+  transition-delay: 0s, 90ms, 70ms, 0s;
+}
+
+.learner-app-shell.is-rail-collapsed .rail-brand {
+  padding-inline: 3px;
+  grid-template-columns: 42px minmax(0, 1fr);
+  gap: 0;
+}
+
+.learner-app-shell.is-rail-collapsed .rail-brand .rail-logo {
+  width: 42px;
+  min-width: 42px;
+  max-width: 42px;
+  height: 42px;
+  min-height: 42px;
+  flex-basis: 42px;
+  border-radius: 13px;
 }
 
 .learner-app-shell .rail-nav {
   min-height: 0;
-  margin-top: 22px;
-  padding-right: 1px;
+  margin-top: 18px;
+  padding-right: 0;
   flex: 1 1 auto;
   display: grid;
   align-content: start;
-  gap: 5px;
+  gap: 4px;
   overflow-y: auto;
+  overflow-x: clip;
   overscroll-behavior: contain;
   scrollbar-width: none;
+  transition: padding var(--learner-rail-duration) var(--learner-rail-ease);
 }
 
 .learner-app-shell .rail-nav::-webkit-scrollbar {
   display: none;
 }
 
+.learner-app-shell.is-rail-expanded .rail-nav {
+  padding-left: 9px;
+  padding-right: 3px;
+}
+
 .learner-app-shell .rail-nav a,
 .learner-app-shell .rail-practice-trigger,
 .learner-app-shell .rail-support {
   position: relative;
+  width: 100%;
   min-width: 0;
-  min-height: 50px;
-  padding: 0 12px;
+  min-height: 44px;
+  margin-inline: auto;
+  padding: 0 10px;
   display: grid;
-  grid-template-columns: 42px minmax(0, 1fr);
+  grid-template-columns: 36px minmax(0, 1fr);
   align-items: center;
   justify-content: initial;
-  gap: 10px;
-  color: #61736e;
+  gap: 8px;
+  color: #657a74;
   border: 1px solid transparent;
-  border-radius: 15px;
-  font-size: 12px;
-  font-weight: 720;
+  border-radius: 13px;
+  font-size: 11px;
+  font-weight: 740;
   line-height: 1.2;
   text-decoration: none;
-  transition: color 170ms ease, background-color 170ms ease, border-color 170ms ease, transform 170ms ease;
+  transition:
+    width var(--learner-rail-duration) var(--learner-rail-ease),
+    padding var(--learner-rail-duration) var(--learner-rail-ease),
+    gap var(--learner-rail-duration) var(--learner-rail-ease),
+    grid-template-columns var(--learner-rail-duration) var(--learner-rail-ease),
+    color 170ms ease,
+    background-color 170ms ease,
+    border-color 170ms ease,
+    transform 170ms ease;
   touch-action: manipulation;
 }
 
 .learner-app-shell .rail-practice-trigger {
   width: 100%;
-  grid-template-columns: 42px minmax(0, 1fr) 18px;
+  grid-template-columns: 36px minmax(0, 1fr) 16px;
   cursor: pointer;
   text-align: left;
   font-family: inherit;
@@ -166,29 +251,61 @@
 .learner-app-shell .rail-nav a > span,
 .learner-app-shell .rail-practice-trigger > span,
 .learner-app-shell .rail-support > span {
-  min-width: 122px;
+  min-width: 0;
+  max-width: 0;
+  overflow: hidden;
   opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
   transform: translateX(-8px);
   white-space: nowrap;
-  transition: opacity 120ms ease, transform 220ms var(--learner-rail-ease);
+  transition:
+    max-width var(--learner-rail-duration) var(--learner-rail-ease),
+    opacity 140ms ease,
+    transform 240ms var(--learner-rail-ease),
+    visibility 0s linear 220ms;
 }
 
 .learner-app-shell.is-rail-expanded .rail-nav a > span,
 .learner-app-shell.is-rail-expanded .rail-practice-trigger > span,
 .learner-app-shell.is-rail-expanded .rail-support > span {
+  max-width: 114px;
   opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
   transform: translateX(0);
-  transition-delay: 70ms;
+  transition-delay: 0s, 80ms, 60ms, 0s;
 }
+
+.learner-app-shell.is-rail-collapsed .rail-nav a,
+.learner-app-shell.is-rail-collapsed .rail-practice-trigger,
+.learner-app-shell.is-rail-collapsed .rail-support {
+  width: 44px;
+  min-height: 44px;
+  margin-inline: auto;
+  padding: 0;
+  gap: 0;
+}
+
+.learner-app-shell.is-rail-collapsed .rail-practice-trigger {
+  grid-template-columns: 36px minmax(0, 1fr) 0;
+}
+
+.learner-app-shell.is-rail-collapsed .rail-practice-chevron {
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-4px) scale(.8);
+}
+.learner-app-shell.is-rail-collapsed .rail-nav a.active::before,
+.learner-app-shell.is-rail-collapsed .rail-practice-trigger.active::before { left: 1px; }
 
 .learner-app-shell .rail-nav a:hover,
 .learner-app-shell .rail-nav a.active,
-.learner-app-shell .rail-practice-trigger:hover,
 .learner-app-shell .rail-practice-trigger.active,
 .learner-app-shell .rail-support:hover {
   color: #087a72;
   border-color: transparent;
-  background: #e4f5f1;
+  background: #ddf3ef;
   box-shadow: none;
 }
 
@@ -196,9 +313,9 @@
 .learner-app-shell .rail-practice-trigger.active::before {
   content: "";
   width: 3px;
-  height: 22px;
+  height: 20px;
   position: absolute;
-  left: 4px;
+  left: 3px;
   border-radius: 999px;
   background: #0a8b7d;
 }
@@ -219,15 +336,20 @@
   height: 16px;
   justify-self: end;
   opacity: 0;
-  transition: opacity 140ms ease, transform 220ms var(--learner-rail-ease);
+  visibility: hidden;
+  transition:
+    opacity 160ms ease,
+    transform 240ms var(--learner-rail-ease),
+    visibility 0s linear 220ms;
 }
 
-.learner-app-shell.is-rail-expanded .rail-practice-chevron,
-.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-practice-chevron {
+.learner-app-shell.is-rail-expanded .rail-practice-chevron {
   opacity: .72;
+  visibility: visible;
+  transition-delay: 80ms, 60ms, 0s;
 }
 
-.learner-app-shell .rail-practice-group:is(:hover, :focus-within, .is-open) .rail-practice-chevron {
+.learner-app-shell .rail-practice-group.is-open .rail-practice-chevron {
   transform: rotate(180deg);
 }
 
@@ -246,13 +368,13 @@
 
 .learner-app-shell .rail-practice-menu-inner {
   min-height: 0;
-  padding: 0 5px;
+  padding: 0 4px 2px 16px;
   display: grid;
   gap: 3px;
   overflow: hidden;
 }
 
-.learner-app-shell .rail-practice-group:is(:hover, :focus-within, .is-open) .rail-practice-menu {
+.learner-app-shell .rail-practice-group.is-open .rail-practice-menu {
   grid-template-rows: 1fr;
   opacity: 1;
   visibility: visible;
@@ -261,13 +383,13 @@
 }
 
 .learner-app-shell .rail-practice-menu a {
-  min-height: 44px;
-  padding-inline: 10px;
-  grid-template-columns: 34px minmax(0, 1fr);
+  min-height: 40px;
+  padding-inline: 8px;
+  grid-template-columns: 30px minmax(0, 1fr);
   gap: 7px;
   border-radius: 12px;
   font-size: 11px;
-  background: rgba(239, 248, 245, .72);
+  background: transparent;
 }
 
 .learner-app-shell .rail-practice-menu a:first-child {
@@ -284,50 +406,130 @@
   background: #d8f1eb;
 }
 
-/* While the compact rail's practice group is open, the rail becomes a
- * temporary overlay. Main content keeps its original offset, avoiding a
- * distracting layout jump. */
-.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) {
-  width: var(--learner-rail-expanded-width);
-  box-shadow: 22px 0 56px rgba(12, 63, 54, .15);
-}
-
-.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-brand .brand-wordmark,
-.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-nav a > span,
-.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-practice-trigger > span,
-.learner-app-shell.is-rail-collapsed .learn-rail:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .rail-support > span {
-  opacity: 1;
-  transform: translateX(0);
-}
-
 .learner-app-shell .rail-support {
   width: 100%;
   margin-top: 10px;
   flex: 0 0 auto;
 }
 
+.learner-app-shell .rail-pro-card {
+  width: 100%;
+  margin-top: auto;
+  padding: 16px 13px 13px;
+  flex: 0 0 auto;
+  display: grid;
+  justify-items: center;
+  color: #173f39;
+  border: 1px solid #d5eee9;
+  border-radius: 20px;
+  background: #f0faf8;
+  box-shadow: 0 12px 28px rgba(17, 124, 111, .1);
+  text-align: center;
+  text-decoration: none;
+  transition: border-color 180ms ease, box-shadow 180ms ease, transform 180ms ease;
+}
+
+.learner-app-shell .rail-pro-card:hover {
+  border-color: #b7e4dc;
+  box-shadow: 0 16px 32px rgba(17, 124, 111, .15);
+  transform: translateY(-2px);
+}
+
+.learner-app-shell .rail-pro-card:active {
+  transform: translateY(0) scale(.985);
+}
+
+.learner-app-shell.is-rail-collapsed .rail-pro-card {
+  display: none;
+}
+
+.learner-app-shell .rail-pro-crown {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border: 4px solid rgba(255, 255, 255, .92);
+  border-radius: 50%;
+  background: #119b91;
+  box-shadow: 0 8px 20px rgba(17, 155, 145, .2);
+}
+
+.learner-app-shell .rail-pro-title {
+  margin-top: 10px;
+  color: #153d37;
+  font-size: 16px;
+  font-weight: 850;
+  letter-spacing: -.035em;
+  line-height: 1.1;
+}
+
+.learner-app-shell .rail-pro-title strong {
+  color: #0b988c;
+  font-weight: inherit;
+}
+
+.learner-app-shell .rail-pro-copy {
+  margin-top: 7px;
+  color: #58716b;
+  font-size: 9px;
+  font-weight: 620;
+  line-height: 1.45;
+}
+
+.learner-app-shell .rail-pro-action {
+  width: 100%;
+  min-height: 36px;
+  margin-top: 12px;
+  padding: 4px 5px 4px 9px;
+  display: grid;
+  grid-template-columns: 14px minmax(0, 1fr) 28px;
+  align-items: center;
+  gap: 5px;
+  color: #fff;
+  border-radius: 12px;
+  background: #0e9488;
+  font-size: 9px;
+  font-weight: 850;
+  letter-spacing: .015em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.learner-app-shell .rail-pro-action > svg {
+  justify-self: center;
+}
+
+.learner-app-shell .rail-pro-arrow {
+  width: 28px;
+  height: 28px;
+  display: grid;
+  place-items: center;
+  color: #0c8d82;
+  border-radius: 50%;
+  background: #fff;
+}
+
 .learner-app-shell .learn-topbar {
   left: var(--learner-rail-width);
-  transition: left 320ms var(--learner-rail-ease);
+  transition: left var(--learner-rail-duration) var(--learner-rail-ease);
 }
 
 .learner-app-shell .learn-topbar .brand {
-  transition: opacity 140ms ease;
-}
-
-.learner-app-shell.is-rail-collapsed:has(.rail-practice-group:is(:hover, :focus-within, .is-open)) .learn-topbar .brand {
   opacity: 0;
+  visibility: hidden;
   pointer-events: none;
+  transition: opacity 140ms ease;
 }
 
 .learner-app-shell .learner-shell-content {
   margin-left: var(--learner-rail-width);
-  transition: margin-left 320ms var(--learner-rail-ease);
+  transition: margin-left var(--learner-rail-duration) var(--learner-rail-ease);
 }
 
 .learner-app-shell .route-transition-progress {
-  left: var(--learner-rail-width);
-  transition: left 320ms var(--learner-rail-ease), opacity 120ms ease;
+  left: 0;
+  transition: left var(--learner-rail-duration) var(--learner-rail-ease), opacity 120ms ease;
 }
 
 /* Future learning modes intentionally explain their state instead of linking
@@ -445,8 +647,8 @@
 
 @media (min-width: 721px) and (max-width: 920px) {
   .learner-app-shell {
-    --learner-rail-width: 78px;
-    --learner-rail-expanded-width: 224px;
+    --learner-rail-width: 68px;
+    --learner-rail-expanded-width: 204px;
   }
 
   .learner-app-shell .learn-rail {
@@ -454,7 +656,12 @@
   }
 
   .learner-app-shell .rail-brand {
-    grid-template-columns: 60px minmax(0, 1fr);
+    grid-template-columns: 48px minmax(0, 1fr);
+  }
+
+  .learner-app-shell.is-rail-collapsed .rail-brand {
+    padding-inline: 5px;
+    grid-template-columns: 42px minmax(0, 1fr);
   }
 
   .learner-app-shell .rail-nav a,
@@ -478,13 +685,21 @@
 
   .learner-app-shell .rail-brand,
   .learner-app-shell .rail-brand .rail-logo {
-    min-height: 50px;
-    height: 50px;
+    min-height: 48px;
+    height: 48px;
   }
 
   .learner-app-shell .rail-brand .rail-logo {
-    width: 50px;
-    min-width: 50px;
+    width: 48px;
+    min-width: 48px;
+  }
+
+  .learner-app-shell.is-rail-collapsed .rail-brand .rail-logo {
+    width: 42px;
+    min-width: 42px;
+    max-width: 42px;
+    height: 42px;
+    min-height: 42px;
   }
 }
 
@@ -607,20 +822,36 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
+  /* Keep a brief spatial transition so the rail's new position remains easy
+   * to follow, while removing the longer decorative motion. */
   .learner-app-shell .learn-rail,
   .learner-app-shell .learn-topbar,
-  .learner-app-shell .learn-topbar .brand,
+  .learner-app-shell .rail-brand,
+  .learner-app-shell .rail-brand .rail-logo,
+  .learner-app-shell .rail-nav,
+  .learner-app-shell .rail-nav a,
+  .learner-app-shell .rail-practice-trigger,
   .learner-app-shell .learner-shell-content,
-  .learner-app-shell .route-transition-progress,
+  .learner-app-shell .route-transition-progress {
+    transition-duration: 180ms !important;
+    transition-timing-function: ease-out !important;
+  }
+
+  .learner-app-shell .learn-topbar .brand,
+  .learner-app-shell .rail-toggle-icon,
   .learner-app-shell .rail-brand .brand-wordmark,
   .learner-app-shell .rail-nav a > span,
   .learner-app-shell .rail-practice-trigger > span,
   .learner-app-shell .rail-practice-chevron,
+  .learner-app-shell .rail-support > span {
+    transition-duration: 120ms !important;
+    transition-timing-function: ease-out !important;
+  }
+
   .learner-app-shell .rail-practice-menu,
   .learner-app-shell .mobile-practice-menu,
-  .learner-app-shell .rail-support > span,
   .learning-mode-placeholder-card > a {
     scroll-behavior: auto;
-    transition-duration: 1ms;
+    transition-duration: 1ms !important;
   }
 }

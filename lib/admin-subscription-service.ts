@@ -1,8 +1,8 @@
 import "server-only";
 
-import { and, asc, count, countDistinct, desc, eq, gt, ilike, inArray, isNotNull, isNull, lte, or } from "drizzle-orm";
+import { and, asc, count, countDistinct, desc, eq, gt, ilike, inArray, isNotNull, isNull, lte, ne, or, sql } from "drizzle-orm";
 import { readDb, writeDb, type Database } from "../db/index.ts";
-import { auditLogs, subscriptions, users, vipActivationRequests, vipPlans } from "../db/schema.ts";
+import { auditLogs, paymentOrders, subscriptions, users, vipActivationRequests, vipPlans } from "../db/schema.ts";
 import type { MutationResult } from "./admin-content-service.ts";
 import { calculateVipEndsAt } from "./vip-subscription.ts";
 
@@ -11,6 +11,17 @@ function escapedSearch(value: string): string {
 }
 
 type DbTransaction = Parameters<Parameters<Database["transaction"]>[0]>[0];
+
+export type AdminVipPlanInput = {
+  benefits: string[];
+  code: string;
+  discountPercent: number;
+  durationDays: number;
+  isActive: boolean;
+  name: string;
+  priceVnd: number;
+  promotionLabel: string;
+};
 
 export async function getAdminVipConsole(search = "") {
   return readDb(async (db) => {
@@ -25,7 +36,26 @@ export async function getAdminVipConsole(search = "") {
         ),
       )
       : eq(users.role, "learner");
-    const [learnerRows, planRows, activeCountRows, pendingCountRows, pendingRequestRows] = await Promise.all([
+    const activeSubscription = db.select({
+      id: subscriptions.id,
+      planId: subscriptions.planId,
+      planCode: vipPlans.code,
+      planName: vipPlans.name,
+      startsAt: subscriptions.startsAt,
+      endsAt: subscriptions.endsAt,
+      createdAt: subscriptions.createdAt,
+    }).from(subscriptions)
+      .innerJoin(vipPlans, eq(subscriptions.planId, vipPlans.id))
+      .where(and(
+        eq(subscriptions.userId, users.id),
+        eq(subscriptions.status, "active"),
+        or(isNull(subscriptions.startsAt), lte(subscriptions.startsAt, now)),
+        or(isNull(subscriptions.endsAt), gt(subscriptions.endsAt, now)),
+      ))
+      .orderBy(desc(subscriptions.endsAt), desc(subscriptions.createdAt))
+      .limit(1)
+      .as("active_subscription");
+    const [learnerRows, planRows, activeCountRows, pendingCountRows, pendingRequestRows, subscriberRows, transactionRows] = await Promise.all([
       db.select({
         id: users.id,
         email: users.email,
@@ -33,14 +63,30 @@ export async function getAdminVipConsole(search = "") {
         isActive: users.isActive,
         emailVerifiedAt: users.emailVerifiedAt,
         createdAt: users.createdAt,
-      }).from(users).where(learnerFilter).orderBy(asc(users.createdAt), asc(users.email)).limit(100),
+        subscriptionId: activeSubscription.id,
+        subscriptionPlanId: activeSubscription.planId,
+        subscriptionPlanCode: activeSubscription.planCode,
+        subscriptionPlanName: activeSubscription.planName,
+        subscriptionStartsAt: activeSubscription.startsAt,
+        subscriptionEndsAt: activeSubscription.endsAt,
+        subscriptionCreatedAt: activeSubscription.createdAt,
+      }).from(users)
+        .leftJoinLateral(activeSubscription, sql`true`)
+        .where(learnerFilter)
+        .orderBy(asc(users.createdAt), asc(users.email))
+        .limit(100),
       db.select({
         id: vipPlans.id,
         code: vipPlans.code,
         name: vipPlans.name,
         durationDays: vipPlans.durationDays,
         priceVnd: vipPlans.priceVnd,
-      }).from(vipPlans).where(eq(vipPlans.isActive, true)).orderBy(asc(vipPlans.durationDays), asc(vipPlans.name)),
+        discountPercent: vipPlans.discountPercent,
+        promotionLabel: vipPlans.promotionLabel,
+        benefits: vipPlans.benefits,
+        isActive: vipPlans.isActive,
+        subscriberCount: sql<number>`(select count(distinct ${subscriptions.userId})::int from ${subscriptions} where ${subscriptions.planId} = ${vipPlans.id})`,
+      }).from(vipPlans).orderBy(asc(vipPlans.durationDays), asc(vipPlans.name)),
       db.select({ value: countDistinct(subscriptions.userId) }).from(subscriptions).where(and(
         eq(subscriptions.status, "active"),
         or(isNull(subscriptions.startsAt), lte(subscriptions.startsAt, now)),
@@ -63,45 +109,161 @@ export async function getAdminVipConsole(search = "") {
         planName: vipPlans.name,
         durationDays: vipPlans.durationDays,
         priceVnd: vipPlans.priceVnd,
+        planActive: vipPlans.isActive,
       }).from(vipActivationRequests)
         .innerJoin(users, eq(vipActivationRequests.userId, users.id))
         .innerJoin(vipPlans, eq(vipActivationRequests.planId, vipPlans.id))
         .where(eq(vipActivationRequests.status, "pending"))
         .orderBy(asc(vipActivationRequests.createdAt))
         .limit(50),
+      db.select({
+        id: subscriptions.id,
+        userId: subscriptions.userId,
+        displayName: users.displayName,
+        email: users.email,
+        planId: vipPlans.id,
+        planName: vipPlans.name,
+        status: subscriptions.status,
+        startsAt: subscriptions.startsAt,
+        endsAt: subscriptions.endsAt,
+        createdAt: subscriptions.createdAt,
+      }).from(subscriptions)
+        .innerJoin(users, eq(subscriptions.userId, users.id))
+        .innerJoin(vipPlans, eq(subscriptions.planId, vipPlans.id))
+        .orderBy(desc(subscriptions.createdAt))
+        .limit(200),
+      db.select({
+        id: paymentOrders.id,
+        displayName: users.displayName,
+        email: users.email,
+        planName: vipPlans.name,
+        amountVnd: paymentOrders.amountVnd,
+        status: paymentOrders.status,
+        paidAt: paymentOrders.paidAt,
+        createdAt: paymentOrders.createdAt,
+      }).from(paymentOrders)
+        .innerJoin(users, eq(paymentOrders.userId, users.id))
+        .innerJoin(vipPlans, eq(paymentOrders.planId, vipPlans.id))
+        .orderBy(desc(sql`coalesce(${paymentOrders.paidAt}, ${paymentOrders.createdAt})`))
+        .limit(200),
     ]);
-    const userIds = learnerRows.map((learner) => learner.id);
-    const subscriptionRows = userIds.length === 0 ? [] : await db.select({
-      id: subscriptions.id,
-      userId: subscriptions.userId,
-      planId: subscriptions.planId,
-      planCode: vipPlans.code,
-      planName: vipPlans.name,
-      startsAt: subscriptions.startsAt,
-      endsAt: subscriptions.endsAt,
-      createdAt: subscriptions.createdAt,
-    }).from(subscriptions)
-      .innerJoin(vipPlans, eq(subscriptions.planId, vipPlans.id))
-      .where(and(
-        inArray(subscriptions.userId, userIds),
-        eq(subscriptions.status, "active"),
-        or(isNull(subscriptions.startsAt), lte(subscriptions.startsAt, now)),
-        or(isNull(subscriptions.endsAt), gt(subscriptions.endsAt, now)),
-      ))
-      .orderBy(desc(subscriptions.endsAt), desc(subscriptions.createdAt));
-    const activeByUser = new Map<string, (typeof subscriptionRows)[number]>();
-    for (const subscription of subscriptionRows) {
-      if (!activeByUser.has(subscription.userId)) activeByUser.set(subscription.userId, subscription);
-    }
     return {
       activeCount: activeCountRows[0]?.value ?? 0,
       pendingRequestCount: pendingCountRows[0]?.value ?? 0,
       pendingRequests: pendingRequestRows,
-      learners: learnerRows.map((learner) => ({ ...learner, subscription: activeByUser.get(learner.id) ?? null })),
+      learners: learnerRows.map(({
+        subscriptionCreatedAt,
+        subscriptionEndsAt,
+        subscriptionId,
+        subscriptionPlanCode,
+        subscriptionPlanId,
+        subscriptionPlanName,
+        subscriptionStartsAt,
+        ...learner
+      }) => ({
+        ...learner,
+        subscription: subscriptionId ? {
+          id: subscriptionId,
+          userId: learner.id,
+          planId: subscriptionPlanId!,
+          planCode: subscriptionPlanCode!,
+          planName: subscriptionPlanName!,
+          startsAt: subscriptionStartsAt,
+          endsAt: subscriptionEndsAt,
+          createdAt: subscriptionCreatedAt!,
+        } : null,
+      })),
       plans: planRows,
+      activePlans: planRows.filter((plan) => plan.isActive),
+      subscribers: subscriberRows,
+      transactions: transactionRows,
       search: search.trim().slice(0, 120),
     };
   });
+}
+
+export async function createVipPlan(input: AdminVipPlanInput, actorId: string): Promise<MutationResult> {
+  return writeDb((db) => db.transaction(async (tx) => {
+    const inserted = await tx.insert(vipPlans).values({
+      ...input,
+      promotionLabel: input.promotionLabel || null,
+    }).onConflictDoNothing({ target: vipPlans.code }).returning({ id: vipPlans.id });
+    if (!inserted[0]) return { ok: false, error: "duplicate_code" };
+    await tx.insert(auditLogs).values({
+      actorId,
+      action: "admin.vip_plan.created",
+      entityType: "vip_plan",
+      entityId: inserted[0].id,
+      metadata: { code: input.code, durationDays: input.durationDays, priceVnd: input.priceVnd },
+    });
+    return { ok: true, id: inserted[0].id };
+  }));
+}
+
+export async function updateVipPlan(planId: string, input: AdminVipPlanInput, actorId: string): Promise<MutationResult> {
+  return writeDb((db) => db.transaction(async (tx) => {
+    const [existingRows, collisionRows] = await Promise.all([
+      tx.select({ id: vipPlans.id, code: vipPlans.code }).from(vipPlans).where(eq(vipPlans.id, planId)).limit(1),
+      tx.select({ id: vipPlans.id }).from(vipPlans).where(and(eq(vipPlans.code, input.code), ne(vipPlans.id, planId))).limit(1),
+    ]);
+    const existing = existingRows[0];
+    if (!existing) return { ok: false, error: "not_found" };
+    if (collisionRows[0]) return { ok: false, error: "duplicate_code" };
+    await tx.update(vipPlans).set({
+      ...input,
+      promotionLabel: input.promotionLabel || null,
+      updatedAt: new Date(),
+    }).where(eq(vipPlans.id, planId));
+    await tx.insert(auditLogs).values({
+      actorId,
+      action: "admin.vip_plan.updated",
+      entityType: "vip_plan",
+      entityId: planId,
+      metadata: { fromCode: existing.code, code: input.code, durationDays: input.durationDays, priceVnd: input.priceVnd },
+    });
+    return { ok: true, id: planId };
+  }));
+}
+
+export async function setVipPlanActive(planId: string, isActive: boolean, actorId: string): Promise<MutationResult> {
+  return writeDb((db) => db.transaction(async (tx) => {
+    const rows = await tx.update(vipPlans).set({ isActive, updatedAt: new Date() })
+      .where(eq(vipPlans.id, planId)).returning({ id: vipPlans.id, code: vipPlans.code });
+    const plan = rows[0];
+    if (!plan) return { ok: false, error: "not_found" };
+    await tx.insert(auditLogs).values({
+      actorId,
+      action: isActive ? "admin.vip_plan.activated" : "admin.vip_plan.paused",
+      entityType: "vip_plan",
+      entityId: plan.id,
+      metadata: { code: plan.code, isActive },
+    });
+    return { ok: true, id: plan.id };
+  }));
+}
+
+export async function deleteVipPlan(planId: string, actorId: string): Promise<MutationResult> {
+  return writeDb((db) => db.transaction(async (tx) => {
+    const [planRows, subscriptionRows, requestRows, paymentRows] = await Promise.all([
+      tx.select({ id: vipPlans.id, code: vipPlans.code }).from(vipPlans).where(eq(vipPlans.id, planId)).limit(1),
+      tx.select({ value: count() }).from(subscriptions).where(eq(subscriptions.planId, planId)),
+      tx.select({ value: count() }).from(vipActivationRequests).where(eq(vipActivationRequests.planId, planId)),
+      tx.select({ value: count() }).from(paymentOrders).where(eq(paymentOrders.planId, planId)),
+    ]);
+    const plan = planRows[0];
+    if (!plan) return { ok: false, error: "not_found" };
+    if ((subscriptionRows[0]?.value ?? 0) + (requestRows[0]?.value ?? 0) + (paymentRows[0]?.value ?? 0) > 0) {
+      return { ok: false, error: "vip_plan_in_use" };
+    }
+    await tx.delete(vipPlans).where(eq(vipPlans.id, plan.id));
+    await tx.insert(auditLogs).values({
+      actorId,
+      action: "admin.vip_plan.deleted",
+      entityType: "vip_plan",
+      metadata: { deletedId: plan.id, code: plan.code },
+    });
+    return { ok: true, id: plan.id };
+  }));
 }
 
 export async function grantOrExtendVipAccessInTransaction(tx: DbTransaction, input: {
