@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "@/app/himi-section-banner.css";
 import Link from "next/link";
 import { AlertCircle, Check, Clock3, Crown, Send } from "lucide-react";
 import { cancelVipActivationRequestAction, requestVipActivationAction } from "@/app/vip/actions";

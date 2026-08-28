@@ -48,7 +48,7 @@ export function CourseExplorer({ courses }: { courses: Course[] }) {
         key={course.slug}
         layout
         transition={{ duration: 0.2, delay: reduceMotion ? 0 : Math.min(index * 0.035, 0.18), ease }}
-      ><CourseCard course={course} priority={index === 0} /></motion.div>)}</motion.div> : <motion.div
+      ><CourseCard course={course} priority={index < 3} /></motion.div>)}</motion.div> : <motion.div
         animate={{ opacity: 1, y: 0 }}
         className="empty-state"
         exit={reduceMotion ? undefined : { opacity: 0, y: -6 }}

@@ -1,7 +1,5 @@
 "use client";
 
-import "@/app/work-practice.css";
-
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
@@ -58,13 +56,13 @@ const industryIcons: Record<string, typeof BriefcaseBusiness> = {
 };
 
 const industryPhotos: Record<string, string> = {
-  office: "/assets/courses/himi-concepts/himi-office-administration.webp",
-  factory: "/assets/courses/himi-concepts/himi-factory-production.webp",
-  logistics: "/assets/courses/himi-concepts/himi-warehouse-logistics.webp",
-  sales: "/assets/courses/himi-concepts/himi-sales-customer-care.webp",
-  restaurant: "/assets/courses/himi-concepts/himi-restaurant-service.webp",
-  ecommerce: "/assets/courses/himi-concepts/himi-ecommerce-operations.webp",
-  core: "/assets/courses/himi-concepts/himi-workplace-communication.webp",
+  office: "/assets/courses/himi-concepts/himi-office-administration.png",
+  factory: "/assets/courses/himi-concepts/himi-factory-production.png",
+  logistics: "/assets/courses/himi-concepts/himi-warehouse-logistics.png",
+  sales: "/assets/courses/himi-concepts/himi-sales-customer-care.png",
+  restaurant: "/assets/courses/himi-concepts/himi-restaurant-service.png",
+  ecommerce: "/assets/courses/himi-concepts/himi-ecommerce-operations.png",
+  core: "/assets/courses/himi-concepts/himi-workplace-communication.png",
 };
 
 type HubMode = "catalog" | "session" | "complete" | "review";

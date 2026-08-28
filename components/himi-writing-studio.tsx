@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import type HanziWriter from "hanzi-writer";
-import "@/app/writing-studio.css";
 import {
   ArrowLeft,
   ArrowRight,

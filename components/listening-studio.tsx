@@ -2,7 +2,6 @@
 
 import { useEffect, useMemo, useState, type FormEvent } from "react";
 import Image from "next/image";
-import "@/app/listening-studio.css";
 import {
   ArrowLeft,
   AudioLines,

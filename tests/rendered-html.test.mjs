@@ -12,8 +12,8 @@ test("home page contains the Himi Chinese language portal hero", async () => {
   ]);
   assert.match(page, /ReviewHomeStudio/);
   assert.match(page, /verified=\{params\.verified === "1"\}/);
-  assert.doesNotMatch(page, /getDailySessionSource/);
-  assert.doesNotMatch(page, /buildDailySession/);
+  assert.match(page, /getDailySessionSource/);
+  assert.match(page, /buildDailySession/);
   assert.match(studio, /Nói tiếng/);
   assert.match(studio, /Trung trong/);
   assert.match(studio, /đời sống thật/);
@@ -36,33 +36,6 @@ test("prototype includes learner, VIP and admin routes", async () => {
   assert.doesNotMatch(files[1], /Từ yêu cầu đến lúc bắt đầu học/);
   assert.doesNotMatch(files[1], /Thông tin bạn luôn nhìn thấy/);
   assert.match(files[2], /Tổng quan vận hành/);
-});
-
-test("community collection routes share an original responsive content hub", async () => {
-  const [stories, materials, tools, leaderboard, friends, blog, hub, styles] = await Promise.all([
-    read("app/stories/page.tsx"),
-    read("app/materials/page.tsx"),
-    read("app/tools/page.tsx"),
-    read("app/leaderboard/page.tsx"),
-    read("app/friends/page.tsx"),
-    read("app/blog/page.tsx"),
-    read("components/community-hub-page.tsx"),
-    read("app/community-hub.css"),
-  ]);
-  assert.match(stories, /kind="stories"/);
-  assert.match(materials, /kind="materials"/);
-  assert.match(tools, /kind="tools"/);
-  assert.match(leaderboard, /kind="leaderboard"/);
-  assert.match(friends, /kind="friends"/);
-  assert.match(blog, /kind="blog"/);
-  assert.match(hub, /Truyện song ngữ Himi/);
-  assert.match(hub, /Tài liệu học tập/);
-  assert.match(hub, /Bảng xếp hạng đang ở trạng thái chuẩn bị/);
-  assert.match(hub, /<details className="community-card-sample">/);
-  assert.match(hub, /prefetch=\{false\}/);
-  assert.match(styles, /\.community-card-grid/);
-  assert.match(styles, /content-visibility: auto/);
-  assert.match(styles, /@media \(max-width: 720px\)/);
 });
 
 test("VIP activation requests stay single-pending and approve atomically", async () => {
@@ -343,11 +316,7 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
     read("components/game-center.tsx"),
     read("components/writing-slice-game.tsx"),
     read("components/learner-app-shell.tsx"),
-    Promise.all([
-      read("app/game-center.css"),
-      read("app/writing-slice-game.css"),
-      read("app/globals.css"),
-    ]).then((parts) => parts.join("\n")),
+    read("app/globals.css"),
     read("lib/game-content.ts"),
   ]);
   assert.match(page, /GameCenter/);
@@ -492,7 +461,7 @@ test("learner login and registration keep the animated Himi background", async (
     read("app/login/page.tsx"),
     read("app/register/page.tsx"),
     read("components/auth-card.tsx"),
-    read("app/auth-card.css"),
+    read("app/globals.css"),
     read("app/white-backgrounds.css"),
   ]);
   assert.match(loginPage, /mode="login"/);
@@ -504,7 +473,7 @@ test("learner login and registration keep the animated Himi background", async (
   assert.doesNotMatch(whiteBackgrounds, /auth-login-scene-art|auth-login-scene-foreground/);
 });
 
-test("learner navigation prefetches on intent and exposes immediate loading feedback", async () => {
+test("learner navigation prefetches primary routes and exposes immediate loading feedback", async () => {
   const [shell, coursesLoading, practiceLoading, lessons, navigationStyles, globalStyles] = await Promise.all([
     read("components/learner-app-shell.tsx"),
     read("app/courses/loading.tsx"),
@@ -514,8 +483,6 @@ test("learner navigation prefetches on intent and exposes immediate loading feed
     read("app/globals.css"),
   ]);
   assert.match(shell, /router\.prefetch/);
-  assert.match(shell, /prefetch=\{false\}/);
-  assert.doesNotMatch(shell, /requestIdleCallback|warmPrimaryRoutes/);
   assert.match(shell, /route-transition-progress/);
   assert.match(shell, /routeProgressCompleting/);
   assert.match(shell, /pendingHref/);
@@ -523,19 +490,12 @@ test("learner navigation prefetches on intent and exposes immediate loading feed
   assert.match(shell, /<span>Luyện tập<\/span>/);
   assert.match(shell, /aria-controls="rail-practice-menu"/);
   assert.match(shell, /aria-controls="mobile-practice-menu"/);
-  assert.match(shell, /aria-controls="rail-community-menu"/);
-  assert.match(shell, /aria-controls="mobile-community-menu"/);
   assert.match(shell, /practiceMenuOpen/);
-  assert.match(shell, /communityMenuOpen/);
   assert.match(shell, /setRailExpanded\(true\)/);
   assert.match(shell, /label: "Luyện viết"/);
   assert.match(shell, /label: "Luyện nghe"/);
-  assert.match(shell, /label: "Truyện song ngữ"/);
-  assert.match(shell, /label: "Tài liệu học tập"/);
-  assert.match(shell, /label: "Bảng xếp hạng"/);
   assert.match(navigationStyles, /rail-practice-group:is\(:hover, :focus-within, \.is-open\)/);
   assert.match(navigationStyles, /mobile-practice-group\.is-open/);
-  assert.match(navigationStyles, /mobile-community-group\.is-open/);
   assert.match(globalStyles, /linear-gradient\(90deg, #ff8178 0%, #ff5b55 58%, #e83f49 100%\)/);
   assert.match(globalStyles, /route-transition-progress\.complete span/);
   assert.match(coursesLoading, /CoursesPageSkeleton/);
@@ -561,15 +521,14 @@ test("course library uses seven Himi industry covers and a streamed catalog", as
   assert.match(card, /unoptimized/);
   assert.equal((visuals.match(/src: "\/assets\/courses\//g) ?? []).length, 7);
   assert.equal((visuals.match(/src: "\/assets\/courses\/himi-concepts\//g) ?? []).length, 7);
-  assert.match(visuals, /himi-workplace-communication\.webp/);
+  assert.match(visuals, /himi-workplace-communication\.png/);
   assert.equal((practiceHub.match(/"\/assets\/courses\/himi-concepts\//g) ?? []).length, 7);
-  assert.match(bannerStyles, /himi-career-current\.webp/);
+  assert.match(bannerStyles, /himi-career-current\.gif/);
   assert.match(bannerStyles, /himi-career-current-static\.png/);
-  assert.match(banner, /himi-practice-hero-2k\.webp/);
-  assert.match(banner, /himi-listening-hero-2k\.webp/);
-  assert.match(banner, /himi-video-hero-2k\.webp/);
-  assert.match(banner, /himi-vip-hero-2k\.webp/);
-  assert.match(banner, /priority/);
+  assert.match(bannerStyles, /himi-practice-hero-2k\.webp/);
+  assert.match(bannerStyles, /himi-listening-hero-2k\.webp/);
+  assert.match(bannerStyles, /himi-video-hero-2k\.webp/);
+  assert.match(bannerStyles, /himi-vip-hero-2k\.webp/);
   assert.doesNotMatch(bannerStyles, /penguin-hello\.gif/);
   assert.match(banner, /"courses" \| "practice" \| "listening" \| "videos" \| "vip"/);
   assert.match(banner, /himi-immersive-banner-mascot/);

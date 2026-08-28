@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import "@/app/himi-section-banner.css";
 import { Suspense } from "react";
 import { CourseGridSkeleton } from "@/components/course-catalog-skeleton";
 import { CourseExplorer } from "@/components/course-explorer";

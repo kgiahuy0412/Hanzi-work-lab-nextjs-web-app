@@ -5,7 +5,15 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight, Check, Play } from "lucide-react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
-import "@/app/home-portal.css";
+import type { Vocabulary } from "@/lib/content-types";
+import type { DailySessionSnapshot } from "@/lib/daily-session";
+
+type ReviewHomeStudioProps = {
+  authenticated: boolean;
+  dailySession: DailySessionSnapshot;
+  verified?: boolean;
+  vocabulary: Vocabulary[];
+};
 
 const HOME_DIALOGUE = [
   { speaker: "man", hanzi: "你今天怎么样？", pinyin: "nǐ jīntiān zěnmeyàng?", translation: "Hôm nay bạn thế nào?" },
@@ -14,7 +22,7 @@ const HOME_DIALOGUE = [
   { speaker: "woman", hanzi: "好，我们开始吧！", pinyin: "hǎo, wǒmen kāishǐ ba!", translation: "Được, bắt đầu thôi!" },
 ] as const;
 
-export function ReviewHomeStudio({ verified = false }: { verified?: boolean }) {
+export function ReviewHomeStudio({ verified = false }: ReviewHomeStudioProps) {
   const reduceMotion = useReducedMotion();
   const [activeDialogue, setActiveDialogue] = useState(0);
   const [pageVisible, setPageVisible] = useState(true);
@@ -79,7 +87,7 @@ export function ReviewHomeStudio({ verified = false }: { verified?: boolean }) {
           <Image
             alt=""
             height="420"
-            src={motionEnabled ? "/assets/home/himi-current-wave-fixed.webp" : "/assets/home/himi-current-static.webp"}
+            src={motionEnabled ? "/assets/home/himi-current-wave-fixed.gif" : "/assets/home/himi-current-static.webp"}
             unoptimized
             width="420"
           />
@@ -105,10 +113,10 @@ export function ReviewHomeStudio({ verified = false }: { verified?: boolean }) {
           <p>Himi đưa bạn vào tình huống thật —<br />nghe, nói và phản xạ tự nhiên.</p>
 
           <div className="home-portal-actions">
-            <Link className="home-portal-primary" href="/practice" prefetch={false}>
+            <Link className="home-portal-primary" href="/practice" prefetch>
               Bắt đầu luyện nói <ArrowRight aria-hidden="true" size={23} />
             </Link>
-            <Link className="home-portal-secondary" href="/courses" prefetch={false}>
+            <Link className="home-portal-secondary" href="/courses" prefetch>
               <span aria-hidden="true"><Play size={18} fill="currentColor" /></span>
               Xem lộ trình
             </Link>
