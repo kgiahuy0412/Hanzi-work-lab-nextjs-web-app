@@ -1,0 +1,176 @@
+{
+  "schemaVersion": "1.0.0",
+  "blocks": [
+    {
+      "id": "hsk2-tb-l01-practice-01",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-019",
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        31,
+        32,
+        33,
+        34
+      ],
+      "detectedHeadingsOcrRaw": [
+        "练习 分角色朗读课文"
+      ],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l02-practice-01",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-027",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l03-practice-01",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-035",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l04-practice-01",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-043",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l05-practice-01",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-051",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l06-practice-01",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-059",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-practice-01",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-067",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-practice-01",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-075",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l09-practice-01",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-083",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l10-practice-01",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-091",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l11-practice-01",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-099",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l12-practice-01",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-107",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-practice-01",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-115",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l14-practice-01",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-123",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l15-practice-01",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "kind": "practice",
+      "sourcePageRef": "hsk2-tb-source-page-131",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    }
+  ]
+}

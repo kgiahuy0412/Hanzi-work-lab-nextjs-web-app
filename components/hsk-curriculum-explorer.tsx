@@ -42,9 +42,10 @@ const topicIcons: Record<HskTopicIcon, LucideIcon> = {
 
 function LessonMeta({ lesson }: { lesson: HskCurriculumLesson }) {
   return <span className="hsk-lesson-meta">
-    <span><BookOpen aria-hidden="true" size={14} /> {lesson.vocabulary} từ vựng</span>
-    <span><GraduationCap aria-hidden="true" size={14} /> {lesson.grammar} ngữ pháp</span>
-    <span><MessageCircle aria-hidden="true" size={14} /> {lesson.dialogues} hội thoại</span>
+    {lesson.vocabulary ? <span><BookOpen aria-hidden="true" size={14} /> {lesson.vocabulary} từ vựng</span> : null}
+    {lesson.grammar ? <span><GraduationCap aria-hidden="true" size={14} /> {lesson.grammar} ngữ pháp</span> : null}
+    {lesson.dialogues ? <span><MessageCircle aria-hidden="true" size={14} /> {lesson.dialogues} hội thoại</span> : null}
+    {lesson.exercises ? <span><GraduationCap aria-hidden="true" size={14} /> {lesson.exercises} bài tập</span> : null}
   </span>;
 }
 
@@ -74,6 +75,9 @@ export function HskCurriculumExplorer({
             const stored = window.localStorage.getItem(getHskLessonProgressStorageKey(lesson.id));
             next[lesson.id] = calculateHskLessonProgressFromCounts({
               vocabulary: lesson.vocabulary,
+              pronunciation: lesson.vocabulary,
+              exercises: lesson.exercises ?? 0,
+              scoredExercises: lesson.kind !== "workbook",
               writing: lesson.writing,
               guidedSteps: lesson.guidedSteps,
             }, parseHskLessonProgress(stored));

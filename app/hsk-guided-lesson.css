@@ -160,7 +160,7 @@
   font-size: 9px;
 }
 
-.hsk-guided-sections button:hover { color: var(--guided-green-deep); background: #f0faf6; }
+.hsk-guided-sections button:not(.is-active):hover { color: var(--guided-green-deep); background: #f0faf6; }
 .hsk-guided-sections button.is-active { color: #fff; background: var(--guided-green); }
 .hsk-guided-sections button.is-active b { color: #fff; }
 
@@ -272,6 +272,11 @@
 .hsk-guided-stats strong { font-size: 22px; }
 .hsk-guided-stats span { color: #6d7c78; font-size: 10px; font-weight: 690; }
 .hsk-guided-tip { margin-top: 22px !important; display: flex; align-items: center; gap: 7px; color: #7a8783 !important; font-size: 10px !important; }
+
+.hsk-guided-unavailable { max-width: 720px; margin: 55px auto 0; display: grid; justify-items: center; text-align: center; }
+.hsk-guided-unavailable > div { width: 76px; height: 76px; margin: 24px 0 12px; display: grid; place-items: center; color: var(--guided-green); border-radius: 24px; background: #edf5f2; }
+.hsk-guided-unavailable h1 { margin: 8px 0 12px; font-size: clamp(28px, 4vw, 42px); }
+.hsk-guided-unavailable p { max-width: 610px; margin: 0; color: #6e7f7a; font-size: 14px; line-height: 1.75; }
 
 .hsk-guided-vocabulary {
   max-width: 830px;
@@ -406,8 +411,8 @@
 
 .hsk-guided-writing { max-width: 860px; margin: 0 auto; }
 .hsk-guided-writing h1 { margin-top: 13px; }
-.hsk-guided-writing-picker { margin-top: 18px; padding: 5px 2px; display: flex; gap: 7px; overflow-x: auto; }
-.hsk-guided-writing-picker button { min-width: 62px; min-height: 61px; padding: 5px; display: grid; place-items: center; cursor: pointer; color: #60726d; border: 1px solid #dce7e4; border-radius: 13px; background: #fff; }
+.hsk-guided-writing-picker { margin-top: 18px; padding: 5px 2px; display: flex; flex-wrap: wrap; gap: 7px; overflow: visible; }
+.hsk-guided-writing-picker button { min-width: 62px; min-height: 61px; padding: 5px; flex: 0 0 62px; display: grid; place-items: center; cursor: pointer; color: #60726d; border: 1px solid #dce7e4; border-radius: 13px; background: #fff; }
 .hsk-guided-writing-picker button span { font-family: Georgia, "Noto Serif SC", serif; font-size: 24px; }
 .hsk-guided-writing-picker button small { font-size: 8px; }
 .hsk-guided-writing-picker button[aria-pressed="true"] { color: #fff; border-color: var(--guided-green); background: var(--guided-green); }
@@ -432,6 +437,7 @@
 .hsk-guided-practice { max-width: 700px; margin: 0 auto; padding: 34px; text-align: center; }
 .hsk-guided-practice h1 { margin-top: 12px; font-size: 31px; }
 .hsk-guided-practice-prompt { min-height: 120px; display: grid; place-items: center; font-family: Georgia, "Noto Serif SC", serif; font-size: 76px; }
+.hsk-guided-practice-prompt.has-pinyin { font-size: clamp(27px, 4vw, 46px); line-height: 1.45; text-align: center; }
 .hsk-guided-listen { width: 94px; height: 94px; margin: 28px auto; display: grid; place-items: center; cursor: pointer; color: #fff; border: 0; border-radius: 50%; background: var(--guided-green); box-shadow: 0 7px 0 var(--guided-green-deep); }
 .hsk-guided-listen span { font-size: 9px; font-weight: 740; }
 .hsk-guided-practice-options { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
@@ -440,9 +446,11 @@
 .hsk-guided-practice-options button span { font-size: 12px; font-weight: 680; }
 .hsk-guided-practice-options button.is-correct { color: #08705b; border-color: #83d2bd; background: #eafaf4; }
 .hsk-guided-practice-options button.is-wrong { color: #a44b45; border-color: #efb8b2; background: #fff2f0; }
+.hsk-guided-practice-options button.is-selected { color: var(--guided-green-deep); border-color: #ff9f8d; background: #fff4f1; }
 .hsk-guided-practice-feedback { margin: 15px 0 0; padding: 12px; border-radius: 12px; font-size: 11px; font-weight: 700; }
 .hsk-guided-practice-feedback.is-correct { color: #08705b; background: #eafaf4; }
 .hsk-guided-practice-feedback.is-wrong { color: #a44b45; background: #fff2f0; }
+.hsk-guided-practice-note { margin: 15px 0 0 !important; padding: 12px; color: #6e7f7a !important; border-radius: 12px; background: #f2f6f4; font-size: 11px !important; }
 
 .hsk-guided-completion { max-width: 720px; margin: 20px auto 0; display: grid; justify-items: center; text-align: center; }
 .hsk-guided-completion > span { width: 82px; height: 82px; display: grid; place-items: center; color: #fff; border-radius: 50%; background: var(--guided-green); box-shadow: 0 7px 0 var(--guided-green-deep); }

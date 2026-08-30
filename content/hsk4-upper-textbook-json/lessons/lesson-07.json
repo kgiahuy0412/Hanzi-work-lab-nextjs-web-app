@@ -1,0 +1,173 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-07",
+  "lessonNumber": 7,
+  "status": "review",
+  "title": {
+    "zh": "最好的医生是自己",
+    "pinyin": "zuì hǎo de yī shēng shì zì jǐ",
+    "vi": "Bác sĩ tốt nhất là bản thân"
+  },
+  "source": {
+    "pdfPages": [
+      86,
+      97
+    ],
+    "printedPages": [
+      86,
+      97
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-086",
+      "hsk4u-tb-source-page-087",
+      "hsk4u-tb-source-page-088",
+      "hsk4u-tb-source-page-089",
+      "hsk4u-tb-source-page-090",
+      "hsk4u-tb-source-page-091",
+      "hsk4u-tb-source-page-092",
+      "hsk4u-tb-source-page-093",
+      "hsk4u-tb-source-page-094",
+      "hsk4u-tb-source-page-095",
+      "hsk4u-tb-source-page-096",
+      "hsk4u-tb-source-page-097"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l07-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-07-text-1",
+        "hsk4u-tb-lesson-07-text-2",
+        "hsk4u-tb-lesson-07-text-3",
+        "hsk4u-tb-lesson-07-text-4",
+        "hsk4u-tb-lesson-07-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-087",
+        "hsk4u-tb-source-page-088",
+        "hsk4u-tb-source-page-092"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l07-v01",
+        "hsk4u-tb-l07-v02",
+        "hsk4u-tb-l07-v03",
+        "hsk4u-tb-l07-v04",
+        "hsk4u-tb-l07-v05",
+        "hsk4u-tb-l07-v06",
+        "hsk4u-tb-l07-v07",
+        "hsk4u-tb-l07-v08",
+        "hsk4u-tb-l07-v09",
+        "hsk4u-tb-l07-v10",
+        "hsk4u-tb-l07-v11",
+        "hsk4u-tb-l07-v12",
+        "hsk4u-tb-l07-v13",
+        "hsk4u-tb-l07-v14",
+        "hsk4u-tb-l07-v15",
+        "hsk4u-tb-l07-v16",
+        "hsk4u-tb-l07-v17",
+        "hsk4u-tb-l07-v18",
+        "hsk4u-tb-l07-v19",
+        "hsk4u-tb-l07-v20",
+        "hsk4u-tb-l07-v21",
+        "hsk4u-tb-l07-v22",
+        "hsk4u-tb-l07-v23",
+        "hsk4u-tb-l07-v24",
+        "hsk4u-tb-l07-v25",
+        "hsk4u-tb-l07-v26",
+        "hsk4u-tb-l07-v27",
+        "hsk4u-tb-l07-v28",
+        "hsk4u-tb-l07-v29",
+        "hsk4u-tb-l07-v30",
+        "hsk4u-tb-l07-v31",
+        "hsk4u-tb-l07-v32",
+        "hsk4u-tb-l07-v33"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l07-pinyin-transcript-01",
+        "hsk4u-tb-l07-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l07-annotation-01",
+        "hsk4u-tb-l07-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l07-practice-01",
+        "hsk4u-tb-l07-practice-02",
+        "hsk4u-tb-l07-practice-03",
+        "hsk4u-tb-l07-practice-04",
+        "hsk4u-tb-l07-practice-05"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-07"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l07-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-07"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l07-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l07-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-07"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l07-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

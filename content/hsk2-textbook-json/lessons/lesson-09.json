@@ -1,0 +1,122 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-tb-lesson-09",
+  "lessonNumber": 9,
+  "status": "review",
+  "title": {
+    "zh": "题太多，我没做完。",
+    "pinyin": "tí tài duō， wǒ méi zuò wán。",
+    "vi": "Câu hỏi quá nhiều nên mình không làm hết."
+  },
+  "source": {
+    "pdfPages": [
+      79,
+      86
+    ],
+    "printedPages": [
+      79,
+      86
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk2-tb-source-page-079",
+      "hsk2-tb-source-page-080",
+      "hsk2-tb-source-page-081",
+      "hsk2-tb-source-page-082",
+      "hsk2-tb-source-page-083",
+      "hsk2-tb-source-page-084",
+      "hsk2-tb-source-page-085",
+      "hsk2-tb-source-page-086"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk2-tb-l09-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk2-tb-lesson-09-scene-1",
+        "hsk2-tb-lesson-09-scene-2",
+        "hsk2-tb-lesson-09-scene-3",
+        "hsk2-tb-lesson-09-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk2-tb-source-page-080",
+        "hsk2-tb-source-page-081"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk2-tb-l09-v01",
+        "hsk2-tb-l09-v02",
+        "hsk2-tb-l09-v03",
+        "hsk2-tb-l09-v04",
+        "hsk2-tb-l09-v05",
+        "hsk2-tb-l09-v06",
+        "hsk2-tb-l09-v07",
+        "hsk2-tb-l09-v08",
+        "hsk2-tb-l09-v09",
+        "hsk2-tb-l09-v10",
+        "hsk2-tb-l09-v11"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": []
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk2-tb-l09-grammar-01",
+        "hsk2-tb-l09-grammar-02",
+        "hsk2-tb-l09-grammar-03"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l09-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk2-tb-l09-practice-01"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk2-tb-l09-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk2-tb-l09-application-01"
+      ]
+    },
+    {
+      "type": "pronunciation",
+      "contentRefs": [
+        "hsk2-tb-l09-pronunciation"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l09-pronunciation-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

@@ -893,7 +893,6 @@ body {
 
 .hsk-learning-greeting,
 .hsk-lesson-launch-actions a.is-primary,
-.hsk-learning-tabs button.is-active,
 .hsk-audio-orb,
 .hsk-exercise-listen,
 .hsk-primary-action,
@@ -901,6 +900,10 @@ body {
 .hsk-pronunciation-play,
 .hsk-writing-modes button[aria-pressed="true"] {
   color: var(--himi-on-red);
+}
+
+.hsk-learning-tabs button.is-active {
+  color: var(--himi-red);
 }
 
 .hsk-learning-tabs button.is-active small {
@@ -943,7 +946,7 @@ body {
   background: linear-gradient(90deg, var(--himi-red), var(--himi-orange));
 }
 
-.hsk-guided-sections button:hover,
+.hsk-guided-sections button:not(.is-active):hover,
 .hsk-guided-pinyin[aria-pressed="true"],
 .hsk-guided-writing-modes button[aria-pressed="true"] {
   color: var(--himi-black);

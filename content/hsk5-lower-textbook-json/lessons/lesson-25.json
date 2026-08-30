@@ -1,0 +1,125 @@
+{
+  "id": "hsk5l-lesson-25",
+  "number": 25,
+  "unitId": "hsk5l-unit-09",
+  "titleZh": "给自己加满水",
+  "titleVi": "Bơm nước vào tàu",
+  "sourcePdfPages": {
+    "start": 65,
+    "end": 71
+  },
+  "sourcePrintedPages": {
+    "start": 64,
+    "end": 70
+  },
+  "audioTracks": [
+    "25-1",
+    "25-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 65,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身 你听说过“有压力才会有动力”这句话吗？你是否同意这种观点？为什么？"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 65,
+      "rowIndex": 8,
+      "matchedTextOcr": "课文 给自己加满水 （624字） 25-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 67,
+      "rowIndex": 10,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 69,
+      "rowIndex": 23,
+      "matchedTextOcr": "练习 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 71,
+      "rowIndex": 1,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 71,
+      "rowIndex": 12,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-25-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-25-01",
+    "hsk5l-annotation-25-01",
+    "hsk5l-practice-25-01",
+    "hsk5l-extension-25-01",
+    "hsk5l-application-25-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0036",
+    "hsk5l-lexeme-0039",
+    "hsk5l-lexeme-0050",
+    "hsk5l-lexeme-0092",
+    "hsk5l-lexeme-0094",
+    "hsk5l-lexeme-0095",
+    "hsk5l-lexeme-0108",
+    "hsk5l-lexeme-0109",
+    "hsk5l-lexeme-0111",
+    "hsk5l-lexeme-0121",
+    "hsk5l-lexeme-0147",
+    "hsk5l-lexeme-0158",
+    "hsk5l-lexeme-0180",
+    "hsk5l-lexeme-0200",
+    "hsk5l-lexeme-0216",
+    "hsk5l-lexeme-0227",
+    "hsk5l-lexeme-0288",
+    "hsk5l-lexeme-0295",
+    "hsk5l-lexeme-0339",
+    "hsk5l-lexeme-0349",
+    "hsk5l-lexeme-0350",
+    "hsk5l-lexeme-0381",
+    "hsk5l-lexeme-0400",
+    "hsk5l-lexeme-0411",
+    "hsk5l-lexeme-0416",
+    "hsk5l-lexeme-0437",
+    "hsk5l-lexeme-0453",
+    "hsk5l-lexeme-0473"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-012",
+    "hsk5l-beyond-level-015",
+    "hsk5l-beyond-level-029",
+    "hsk5l-beyond-level-033",
+    "hsk5l-beyond-level-035",
+    "hsk5l-beyond-level-037",
+    "hsk5l-beyond-level-044",
+    "hsk5l-beyond-level-081",
+    "hsk5l-beyond-level-103",
+    "hsk5l-beyond-level-121",
+    "hsk5l-beyond-level-134",
+    "hsk5l-beyond-level-158"
+  ],
+  "vocabularyCount": 28,
+  "beyondLevelVocabularyCount": 12,
+  "allVocabularyCount": 40,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": "1.0.0",
+  "cultureNotes": [
+    {
+      "id": "hsk2-tb-culture-01",
+      "number": 1,
+      "title": {
+        "zh": "中国人的餐桌礼仪",
+        "pinyin": "zhōng guó rén de cān zhuō lǐ yí",
+        "vi": "Phép lịch sự trên bàn ăn của người Trung Quốc"
+      },
+      "sourcePageRef": "hsk2-tb-source-page-054",
+      "printedPage": 54,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-culture-02",
+      "number": 2,
+      "title": {
+        "zh": "中国的茶文化",
+        "pinyin": "zhōng guó de chá wén huà",
+        "vi": "Văn hóa uống trà của người Trung Quốc"
+      },
+      "sourcePageRef": "hsk2-tb-source-page-094",
+      "printedPage": 94,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-culture-03",
+      "number": 3,
+      "title": {
+        "zh": "中国的“新年”——春节",
+        "pinyin": "zhōng guó de “ xīn nián ”—— chūn jié",
+        "vi": "Năm mới của Trung Quốc - Tết âm lịch"
+      },
+      "sourcePageRef": "hsk2-tb-source-page-134",
+      "printedPage": 134,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    }
+  ]
+}

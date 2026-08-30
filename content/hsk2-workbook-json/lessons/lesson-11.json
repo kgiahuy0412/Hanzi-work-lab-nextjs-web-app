@@ -1,0 +1,78 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-11",
+  "lessonNumber": 11,
+  "status": "review",
+  "title": {
+    "zh": "他比我大三岁。",
+    "pinyin": "tā bǐ wǒ dà sān suì 。",
+    "vi": "Anh ấy lớn hơn mình ba tuổi."
+  },
+  "source": {
+    "pdfPages": [
+      103,
+      111
+    ],
+    "printedPages": [
+      103,
+      111
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-103",
+      "hsk2-wb-source-page-104",
+      "hsk2-wb-source-page-105",
+      "hsk2-wb-source-page-106",
+      "hsk2-wb-source-page-107",
+      "hsk2-wb-source-page-108",
+      "hsk2-wb-source-page-109",
+      "hsk2-wb-source-page-110",
+      "hsk2-wb-source-page-111"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-11-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-11-listening-part-1",
+        "hsk2-wb-lesson-11-listening-part-2",
+        "hsk2-wb-lesson-11-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-11-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-11-reading-part-1",
+        "hsk2-wb-lesson-11-reading-part-2",
+        "hsk2-wb-lesson-11-reading-part-3",
+        "hsk2-wb-lesson-11-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-11-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-11-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-11-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-11-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

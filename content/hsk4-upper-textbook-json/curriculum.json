@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk4-standard-course-upper-volume",
+  "title": "Giáo trình chuẩn HSK 4 - Tập 1",
+  "lessonRange": [
+    1,
+    10
+  ],
+  "lessonCount": 10,
+  "lessons": [
+    {
+      "lessonNumber": 1,
+      "lessonRef": "lessons/lesson-01.json",
+      "titleZh": "简单的爱情",
+      "titleVi": "Tình yêu đơn giản",
+      "pdfPages": [
+        10,
+        21
+      ],
+      "printedPages": [
+        10,
+        21
+      ]
+    },
+    {
+      "lessonNumber": 2,
+      "lessonRef": "lessons/lesson-02.json",
+      "titleZh": "真正的朋友",
+      "titleVi": "Người bạn chân chính",
+      "pdfPages": [
+        22,
+        33
+      ],
+      "printedPages": [
+        22,
+        33
+      ]
+    },
+    {
+      "lessonNumber": 3,
+      "lessonRef": "lessons/lesson-03.json",
+      "titleZh": "经理对我印象不错",
+      "titleVi": "Giám đốc có ấn tượng tốt về tôi",
+      "pdfPages": [
+        34,
+        47
+      ],
+      "printedPages": [
+        34,
+        47
+      ]
+    },
+    {
+      "lessonNumber": 4,
+      "lessonRef": "lessons/lesson-04.json",
+      "titleZh": "不要太着急赚钱",
+      "titleVi": "Đừng quá nôn nóng kiếm tiền",
+      "pdfPages": [
+        48,
+        59
+      ],
+      "printedPages": [
+        48,
+        59
+      ]
+    },
+    {
+      "lessonNumber": 5,
+      "lessonRef": "lessons/lesson-05.json",
+      "titleZh": "只买对的，不买贵的",
+      "titleVi": "Chỉ mua cái đúng, không mua cái đắt",
+      "pdfPages": [
+        60,
+        73
+      ],
+      "printedPages": [
+        60,
+        73
+      ]
+    },
+    {
+      "lessonNumber": 6,
+      "lessonRef": "lessons/lesson-06.json",
+      "titleZh": "一分钱一分货",
+      "titleVi": "Tiền nào của nấy",
+      "pdfPages": [
+        74,
+        85
+      ],
+      "printedPages": [
+        74,
+        85
+      ]
+    },
+    {
+      "lessonNumber": 7,
+      "lessonRef": "lessons/lesson-07.json",
+      "titleZh": "最好的医生是自己",
+      "titleVi": "Bác sĩ tốt nhất là bản thân",
+      "pdfPages": [
+        86,
+        97
+      ],
+      "printedPages": [
+        86,
+        97
+      ]
+    },
+    {
+      "lessonNumber": 8,
+      "lessonRef": "lessons/lesson-08.json",
+      "titleZh": "生活中不缺少美",
+      "titleVi": "Cuộc sống không thiếu cái đẹp",
+      "pdfPages": [
+        98,
+        109
+      ],
+      "printedPages": [
+        98,
+        109
+      ]
+    },
+    {
+      "lessonNumber": 9,
+      "lessonRef": "lessons/lesson-09.json",
+      "titleZh": "阳光总在风雨后",
+      "titleVi": "Sau cơn mưa trời lại sáng",
+      "pdfPages": [
+        110,
+        123
+      ],
+      "printedPages": [
+        110,
+        123
+      ]
+    },
+    {
+      "lessonNumber": 10,
+      "lessonRef": "lessons/lesson-10.json",
+      "titleZh": "幸福的标准",
+      "titleVi": "Tiêu chuẩn của hạnh phúc",
+      "pdfPages": [
+        124,
+        136
+      ],
+      "printedPages": [
+        124,
+        136
+      ]
+    }
+  ],
+  "appendixRefs": [
+    "appendices/vocabulary-summary.json",
+    "appendices/proper-names-summary.json",
+    "appendices/beyond-level-vocabulary.json",
+    "appendices/related-old-new-words.json",
+    "appendices/answer-key.json"
+  ]
+}

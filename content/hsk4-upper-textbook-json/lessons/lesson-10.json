@@ -1,0 +1,172 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-10",
+  "lessonNumber": 10,
+  "status": "review",
+  "title": {
+    "zh": "幸福的标准",
+    "pinyin": "xìng fú de biāo zhǔn",
+    "vi": "Tiêu chuẩn của hạnh phúc"
+  },
+  "source": {
+    "pdfPages": [
+      124,
+      136
+    ],
+    "printedPages": [
+      124,
+      136
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-124",
+      "hsk4u-tb-source-page-125",
+      "hsk4u-tb-source-page-126",
+      "hsk4u-tb-source-page-127",
+      "hsk4u-tb-source-page-128",
+      "hsk4u-tb-source-page-129",
+      "hsk4u-tb-source-page-130",
+      "hsk4u-tb-source-page-131",
+      "hsk4u-tb-source-page-132",
+      "hsk4u-tb-source-page-133",
+      "hsk4u-tb-source-page-134",
+      "hsk4u-tb-source-page-135",
+      "hsk4u-tb-source-page-136"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l10-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-10-text-1",
+        "hsk4u-tb-lesson-10-text-2",
+        "hsk4u-tb-lesson-10-text-3",
+        "hsk4u-tb-lesson-10-text-4",
+        "hsk4u-tb-lesson-10-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-125",
+        "hsk4u-tb-source-page-126",
+        "hsk4u-tb-source-page-130",
+        "hsk4u-tb-source-page-131"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l10-v01",
+        "hsk4u-tb-l10-v02",
+        "hsk4u-tb-l10-v03",
+        "hsk4u-tb-l10-v04",
+        "hsk4u-tb-l10-v05",
+        "hsk4u-tb-l10-v06",
+        "hsk4u-tb-l10-v07",
+        "hsk4u-tb-l10-v08",
+        "hsk4u-tb-l10-v09",
+        "hsk4u-tb-l10-v10",
+        "hsk4u-tb-l10-v11",
+        "hsk4u-tb-l10-v12",
+        "hsk4u-tb-l10-v13",
+        "hsk4u-tb-l10-v14",
+        "hsk4u-tb-l10-v15",
+        "hsk4u-tb-l10-v16",
+        "hsk4u-tb-l10-v17",
+        "hsk4u-tb-l10-v18",
+        "hsk4u-tb-l10-v19",
+        "hsk4u-tb-l10-v20",
+        "hsk4u-tb-l10-v21",
+        "hsk4u-tb-l10-v22",
+        "hsk4u-tb-l10-v23",
+        "hsk4u-tb-l10-v24",
+        "hsk4u-tb-l10-v25",
+        "hsk4u-tb-l10-v26",
+        "hsk4u-tb-l10-v27",
+        "hsk4u-tb-l10-v28",
+        "hsk4u-tb-l10-v29",
+        "hsk4u-tb-l10-v30"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l10-pinyin-transcript-01",
+        "hsk4u-tb-l10-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l10-annotation-01",
+        "hsk4u-tb-l10-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l10-practice-01",
+        "hsk4u-tb-l10-practice-02",
+        "hsk4u-tb-l10-practice-03",
+        "hsk4u-tb-l10-practice-04",
+        "hsk4u-tb-l10-practice-05"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-10"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l10-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-10"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l10-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l10-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-10"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l10-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

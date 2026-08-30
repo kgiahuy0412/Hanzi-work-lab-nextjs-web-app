@@ -1,0 +1,171 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-02",
+  "lessonNumber": 2,
+  "status": "review",
+  "title": {
+    "zh": "真正的朋友",
+    "pinyin": "zhēn zhèng de péng yǒu",
+    "vi": "Người bạn chân chính"
+  },
+  "source": {
+    "pdfPages": [
+      22,
+      33
+    ],
+    "printedPages": [
+      22,
+      33
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-022",
+      "hsk4u-tb-source-page-023",
+      "hsk4u-tb-source-page-024",
+      "hsk4u-tb-source-page-025",
+      "hsk4u-tb-source-page-026",
+      "hsk4u-tb-source-page-027",
+      "hsk4u-tb-source-page-028",
+      "hsk4u-tb-source-page-029",
+      "hsk4u-tb-source-page-030",
+      "hsk4u-tb-source-page-031",
+      "hsk4u-tb-source-page-032",
+      "hsk4u-tb-source-page-033"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l02-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-02-text-1",
+        "hsk4u-tb-lesson-02-text-2",
+        "hsk4u-tb-lesson-02-text-3",
+        "hsk4u-tb-lesson-02-text-4",
+        "hsk4u-tb-lesson-02-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-023",
+        "hsk4u-tb-source-page-024",
+        "hsk4u-tb-source-page-028",
+        "hsk4u-tb-source-page-029"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l02-v01",
+        "hsk4u-tb-l02-v02",
+        "hsk4u-tb-l02-v03",
+        "hsk4u-tb-l02-v04",
+        "hsk4u-tb-l02-v05",
+        "hsk4u-tb-l02-v06",
+        "hsk4u-tb-l02-v07",
+        "hsk4u-tb-l02-v08",
+        "hsk4u-tb-l02-v09",
+        "hsk4u-tb-l02-v10",
+        "hsk4u-tb-l02-v11",
+        "hsk4u-tb-l02-v12",
+        "hsk4u-tb-l02-v13",
+        "hsk4u-tb-l02-v14",
+        "hsk4u-tb-l02-v15",
+        "hsk4u-tb-l02-v16",
+        "hsk4u-tb-l02-v17",
+        "hsk4u-tb-l02-v18",
+        "hsk4u-tb-l02-v19",
+        "hsk4u-tb-l02-v20",
+        "hsk4u-tb-l02-v21",
+        "hsk4u-tb-l02-v22",
+        "hsk4u-tb-l02-v23",
+        "hsk4u-tb-l02-v24",
+        "hsk4u-tb-l02-v25",
+        "hsk4u-tb-l02-v26",
+        "hsk4u-tb-l02-v27",
+        "hsk4u-tb-l02-v28",
+        "hsk4u-tb-l02-v29",
+        "hsk4u-tb-l02-v30"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l02-pinyin-transcript-01",
+        "hsk4u-tb-l02-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l02-annotation-01",
+        "hsk4u-tb-l02-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l02-practice-01",
+        "hsk4u-tb-l02-practice-02",
+        "hsk4u-tb-l02-practice-03",
+        "hsk4u-tb-l02-practice-04",
+        "hsk4u-tb-l02-practice-05"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-02"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l02-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-02"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l02-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l02-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-02"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l02-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

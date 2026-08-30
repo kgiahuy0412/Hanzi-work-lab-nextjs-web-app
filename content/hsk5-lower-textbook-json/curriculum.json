@@ -1,0 +1,2277 @@
+{
+  "bundleId": "hsk5-standard-course-lower-textbook-vi-v1",
+  "units": [
+    {
+      "id": "hsk5l-unit-07",
+      "number": 7,
+      "titleZh": "交流文化",
+      "titleVi": "Giao lưu văn hóa",
+      "sourceDividerPdfPage": 14,
+      "sourceDividerPrintedPage": 13,
+      "lessonIds": [
+        "hsk5l-lesson-19",
+        "hsk5l-lesson-20",
+        "hsk5l-lesson-21"
+      ]
+    },
+    {
+      "id": "hsk5l-unit-08",
+      "number": 8,
+      "titleZh": "体会教育",
+      "titleVi": "Hiểu về giáo dục",
+      "sourceDividerPdfPage": 40,
+      "sourceDividerPrintedPage": 39,
+      "lessonIds": [
+        "hsk5l-lesson-22",
+        "hsk5l-lesson-23",
+        "hsk5l-lesson-24"
+      ]
+    },
+    {
+      "id": "hsk5l-unit-09",
+      "number": 9,
+      "titleZh": "感受人生",
+      "titleVi": "Cảm nhận về đời người",
+      "sourceDividerPdfPage": 64,
+      "sourceDividerPrintedPage": 63,
+      "lessonIds": [
+        "hsk5l-lesson-25",
+        "hsk5l-lesson-26",
+        "hsk5l-lesson-27"
+      ]
+    },
+    {
+      "id": "hsk5l-unit-10",
+      "number": 10,
+      "titleZh": "关注经济",
+      "titleVi": "Quan tâm kinh tế",
+      "sourceDividerPdfPage": 88,
+      "sourceDividerPrintedPage": 87,
+      "lessonIds": [
+        "hsk5l-lesson-28",
+        "hsk5l-lesson-29",
+        "hsk5l-lesson-30"
+      ]
+    },
+    {
+      "id": "hsk5l-unit-11",
+      "number": 11,
+      "titleZh": "观察社会",
+      "titleVi": "Quan sát xã hội",
+      "sourceDividerPdfPage": 114,
+      "sourceDividerPrintedPage": 113,
+      "lessonIds": [
+        "hsk5l-lesson-31",
+        "hsk5l-lesson-32",
+        "hsk5l-lesson-33"
+      ]
+    },
+    {
+      "id": "hsk5l-unit-12",
+      "number": 12,
+      "titleZh": "亲近自然",
+      "titleVi": "Gần với thiên nhiên",
+      "sourceDividerPdfPage": 140,
+      "sourceDividerPrintedPage": 139,
+      "lessonIds": [
+        "hsk5l-lesson-34",
+        "hsk5l-lesson-35",
+        "hsk5l-lesson-36"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hsk5l-lesson-19",
+      "number": 19,
+      "unitId": "hsk5l-unit-07",
+      "titleZh": "家乡的萝卜饼",
+      "titleVi": "Bánh củ cải quê nhà",
+      "sourcePdfPages": {
+        "start": 15,
+        "end": 22
+      },
+      "sourcePrintedPages": {
+        "start": 14,
+        "end": 21
+      },
+      "audioTracks": [
+        "19-1",
+        "19-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 15,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 下面的图片分别表示三种做菜的方法，请从本课的生词表中找出对应的说"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 15,
+          "rowIndex": 10,
+          "matchedTextOcr": "课文 家乡的萝卜饼 （547字） 19-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 17,
+          "rowIndex": 19,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 20,
+          "rowIndex": 14,
+          "matchedTextOcr": "练习1选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 21,
+          "rowIndex": 16,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 22,
+          "rowIndex": 8,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-19-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-19-01",
+        "hsk5l-annotation-19-01",
+        "hsk5l-practice-19-01",
+        "hsk5l-extension-19-01",
+        "hsk5l-application-19-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0008",
+        "hsk5l-lexeme-0038",
+        "hsk5l-lexeme-0041",
+        "hsk5l-lexeme-0068",
+        "hsk5l-lexeme-0114",
+        "hsk5l-lexeme-0155",
+        "hsk5l-lexeme-0172",
+        "hsk5l-lexeme-0185",
+        "hsk5l-lexeme-0205",
+        "hsk5l-lexeme-0211",
+        "hsk5l-lexeme-0222",
+        "hsk5l-lexeme-0224",
+        "hsk5l-lexeme-0235",
+        "hsk5l-lexeme-0269",
+        "hsk5l-lexeme-0286",
+        "hsk5l-lexeme-0301",
+        "hsk5l-lexeme-0303",
+        "hsk5l-lexeme-0306",
+        "hsk5l-lexeme-0309",
+        "hsk5l-lexeme-0321",
+        "hsk5l-lexeme-0357",
+        "hsk5l-lexeme-0359",
+        "hsk5l-lexeme-0374",
+        "hsk5l-lexeme-0388",
+        "hsk5l-lexeme-0401",
+        "hsk5l-lexeme-0436",
+        "hsk5l-lexeme-0441",
+        "hsk5l-lexeme-0444",
+        "hsk5l-lexeme-0479",
+        "hsk5l-lexeme-0489"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-002",
+        "hsk5l-beyond-level-036",
+        "hsk5l-beyond-level-047",
+        "hsk5l-beyond-level-058",
+        "hsk5l-beyond-level-059",
+        "hsk5l-beyond-level-064",
+        "hsk5l-beyond-level-071",
+        "hsk5l-beyond-level-076",
+        "hsk5l-beyond-level-098",
+        "hsk5l-beyond-level-100",
+        "hsk5l-beyond-level-112",
+        "hsk5l-beyond-level-115",
+        "hsk5l-beyond-level-128",
+        "hsk5l-beyond-level-145"
+      ],
+      "vocabularyCount": 30,
+      "beyondLevelVocabularyCount": 14,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-20",
+      "number": 20,
+      "unitId": "hsk5l-unit-07",
+      "titleZh": "小人书摊",
+      "titleVi": "Quầy truyện tranh",
+      "sourcePdfPages": {
+        "start": 23,
+        "end": 30
+      },
+      "sourcePrintedPages": {
+        "start": 22,
+        "end": 29
+      },
+      "audioTracks": [
+        "20-1",
+        "20-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 23,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 23,
+          "rowIndex": 13,
+          "matchedTextOcr": "课文 小人书摊 （664字） 20-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 25,
+          "rowIndex": 22,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 28,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习1 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 29,
+          "rowIndex": 10,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 30,
+          "rowIndex": 2,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-20-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-20-01",
+        "hsk5l-annotation-20-01",
+        "hsk5l-practice-20-01",
+        "hsk5l-extension-20-01",
+        "hsk5l-application-20-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0006",
+        "hsk5l-lexeme-0033",
+        "hsk5l-lexeme-0046",
+        "hsk5l-lexeme-0053",
+        "hsk5l-lexeme-0064",
+        "hsk5l-lexeme-0065",
+        "hsk5l-lexeme-0074",
+        "hsk5l-lexeme-0083",
+        "hsk5l-lexeme-0087",
+        "hsk5l-lexeme-0098",
+        "hsk5l-lexeme-0167",
+        "hsk5l-lexeme-0173",
+        "hsk5l-lexeme-0264",
+        "hsk5l-lexeme-0273",
+        "hsk5l-lexeme-0274",
+        "hsk5l-lexeme-0289",
+        "hsk5l-lexeme-0304",
+        "hsk5l-lexeme-0331",
+        "hsk5l-lexeme-0342",
+        "hsk5l-lexeme-0380",
+        "hsk5l-lexeme-0390",
+        "hsk5l-lexeme-0414",
+        "hsk5l-lexeme-0423",
+        "hsk5l-lexeme-0426",
+        "hsk5l-lexeme-0439",
+        "hsk5l-lexeme-0455",
+        "hsk5l-lexeme-0462",
+        "hsk5l-lexeme-0464"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-023",
+        "hsk5l-beyond-level-043",
+        "hsk5l-beyond-level-070",
+        "hsk5l-beyond-level-085",
+        "hsk5l-beyond-level-110",
+        "hsk5l-beyond-level-113",
+        "hsk5l-beyond-level-116",
+        "hsk5l-beyond-level-160"
+      ],
+      "vocabularyCount": 28,
+      "beyondLevelVocabularyCount": 8,
+      "allVocabularyCount": 36,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-21",
+      "number": 21,
+      "unitId": "hsk5l-unit-07",
+      "titleZh": "汉字叔叔：一个美国人的汉字情缘",
+      "titleVi": "Tình yêu chữ Hán của \"ông chú người Mỹ\"",
+      "sourcePdfPages": {
+        "start": 31,
+        "end": 39
+      },
+      "sourcePrintedPages": {
+        "start": 30,
+        "end": 38
+      },
+      "audioTracks": [
+        "21-1",
+        "21-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 31,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身1 说说你母语所使用的文字和中文有什么不同。简单介绍一下你在学习汉字"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 31,
+          "rowIndex": 14,
+          "matchedTextOcr": "课文汉字叔叔：一个美国人的汉字情缘 （657字） 21-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 33,
+          "rowIndex": 30,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 37,
+          "rowIndex": 1,
+          "matchedTextOcr": "练习1 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 38,
+          "rowIndex": 12,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 39,
+          "rowIndex": 1,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-21-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-21-01",
+        "hsk5l-annotation-21-01",
+        "hsk5l-practice-21-01",
+        "hsk5l-extension-21-01",
+        "hsk5l-application-21-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0007",
+        "hsk5l-lexeme-0042",
+        "hsk5l-lexeme-0043",
+        "hsk5l-lexeme-0076",
+        "hsk5l-lexeme-0129",
+        "hsk5l-lexeme-0197",
+        "hsk5l-lexeme-0202",
+        "hsk5l-lexeme-0212",
+        "hsk5l-lexeme-0217",
+        "hsk5l-lexeme-0223",
+        "hsk5l-lexeme-0246",
+        "hsk5l-lexeme-0251",
+        "hsk5l-lexeme-0277",
+        "hsk5l-lexeme-0281",
+        "hsk5l-lexeme-0319",
+        "hsk5l-lexeme-0345",
+        "hsk5l-lexeme-0352",
+        "hsk5l-lexeme-0371",
+        "hsk5l-lexeme-0377",
+        "hsk5l-lexeme-0392",
+        "hsk5l-lexeme-0397",
+        "hsk5l-lexeme-0406",
+        "hsk5l-lexeme-0422",
+        "hsk5l-lexeme-0430",
+        "hsk5l-lexeme-0442",
+        "hsk5l-lexeme-0481",
+        "hsk5l-lexeme-0485",
+        "hsk5l-lexeme-0499"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-013",
+        "hsk5l-beyond-level-020",
+        "hsk5l-beyond-level-027",
+        "hsk5l-beyond-level-031",
+        "hsk5l-beyond-level-050",
+        "hsk5l-beyond-level-055",
+        "hsk5l-beyond-level-091",
+        "hsk5l-beyond-level-107",
+        "hsk5l-beyond-level-111",
+        "hsk5l-beyond-level-125",
+        "hsk5l-beyond-level-138",
+        "hsk5l-beyond-level-148"
+      ],
+      "vocabularyCount": 28,
+      "beyondLevelVocabularyCount": 12,
+      "allVocabularyCount": 40,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-22",
+      "number": 22,
+      "unitId": "hsk5l-unit-08",
+      "titleZh": "阅读与思考",
+      "titleVi": "Đọc và suy nghĩ",
+      "sourcePdfPages": {
+        "start": 41,
+        "end": 47
+      },
+      "sourcePrintedPages": {
+        "start": 40,
+        "end": 46
+      },
+      "audioTracks": [
+        "22-1",
+        "22-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 41,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身1 请看下面的图片并说说你知道的颜色。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 41,
+          "rowIndex": 8,
+          "matchedTextOcr": "课文阅读与思考 （578字）22-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 43,
+          "rowIndex": 1,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 45,
+          "rowIndex": 24,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 47,
+          "rowIndex": 1,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 47,
+          "rowIndex": 12,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-22-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-22-01",
+        "hsk5l-annotation-22-01",
+        "hsk5l-practice-22-01",
+        "hsk5l-extension-22-01",
+        "hsk5l-application-22-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0049",
+        "hsk5l-lexeme-0073",
+        "hsk5l-lexeme-0081",
+        "hsk5l-lexeme-0089",
+        "hsk5l-lexeme-0138",
+        "hsk5l-lexeme-0139",
+        "hsk5l-lexeme-0148",
+        "hsk5l-lexeme-0159",
+        "hsk5l-lexeme-0162",
+        "hsk5l-lexeme-0175",
+        "hsk5l-lexeme-0186",
+        "hsk5l-lexeme-0206",
+        "hsk5l-lexeme-0219",
+        "hsk5l-lexeme-0236",
+        "hsk5l-lexeme-0267",
+        "hsk5l-lexeme-0287",
+        "hsk5l-lexeme-0299",
+        "hsk5l-lexeme-0310",
+        "hsk5l-lexeme-0347",
+        "hsk5l-lexeme-0362",
+        "hsk5l-lexeme-0376",
+        "hsk5l-lexeme-0379",
+        "hsk5l-lexeme-0419",
+        "hsk5l-lexeme-0478",
+        "hsk5l-lexeme-0482",
+        "hsk5l-lexeme-0490",
+        "hsk5l-lexeme-0494",
+        "hsk5l-lexeme-0502"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-089",
+        "hsk5l-beyond-level-095",
+        "hsk5l-beyond-level-118",
+        "hsk5l-beyond-level-122",
+        "hsk5l-beyond-level-142",
+        "hsk5l-beyond-level-152"
+      ],
+      "vocabularyCount": 28,
+      "beyondLevelVocabularyCount": 6,
+      "allVocabularyCount": 34,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-23",
+      "number": 23,
+      "unitId": "hsk5l-unit-08",
+      "titleZh": "放手",
+      "titleVi": "Buông tay",
+      "sourcePdfPages": {
+        "start": 48,
+        "end": 55
+      },
+      "sourcePrintedPages": {
+        "start": 47,
+        "end": 54
+      },
+      "audioTracks": [
+        "23-1",
+        "23-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 48,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身1 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 48,
+          "rowIndex": 8,
+          "matchedTextOcr": "课文 放手 （716字） 23-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 50,
+          "rowIndex": 28,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 53,
+          "rowIndex": 20,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 54,
+          "rowIndex": 18,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 55,
+          "rowIndex": 6,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-23-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-23-01",
+        "hsk5l-annotation-23-01",
+        "hsk5l-practice-23-01",
+        "hsk5l-extension-23-01",
+        "hsk5l-application-23-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0004",
+        "hsk5l-lexeme-0040",
+        "hsk5l-lexeme-0056",
+        "hsk5l-lexeme-0072",
+        "hsk5l-lexeme-0075",
+        "hsk5l-lexeme-0132",
+        "hsk5l-lexeme-0136",
+        "hsk5l-lexeme-0146",
+        "hsk5l-lexeme-0164",
+        "hsk5l-lexeme-0169",
+        "hsk5l-lexeme-0181",
+        "hsk5l-lexeme-0184",
+        "hsk5l-lexeme-0192",
+        "hsk5l-lexeme-0203",
+        "hsk5l-lexeme-0204",
+        "hsk5l-lexeme-0218",
+        "hsk5l-lexeme-0245",
+        "hsk5l-lexeme-0256",
+        "hsk5l-lexeme-0258",
+        "hsk5l-lexeme-0262",
+        "hsk5l-lexeme-0263",
+        "hsk5l-lexeme-0265",
+        "hsk5l-lexeme-0270",
+        "hsk5l-lexeme-0275",
+        "hsk5l-lexeme-0302",
+        "hsk5l-lexeme-0318",
+        "hsk5l-lexeme-0323",
+        "hsk5l-lexeme-0375",
+        "hsk5l-lexeme-0382",
+        "hsk5l-lexeme-0389",
+        "hsk5l-lexeme-0395",
+        "hsk5l-lexeme-0409",
+        "hsk5l-lexeme-0421",
+        "hsk5l-lexeme-0460",
+        "hsk5l-lexeme-0477",
+        "hsk5l-lexeme-0498",
+        "hsk5l-lexeme-0501"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-045",
+        "hsk5l-beyond-level-094",
+        "hsk5l-beyond-level-141"
+      ],
+      "vocabularyCount": 37,
+      "beyondLevelVocabularyCount": 3,
+      "allVocabularyCount": 40,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-24",
+      "number": 24,
+      "unitId": "hsk5l-unit-08",
+      "titleZh": "支教行动",
+      "titleVi": "Hoạt động dạy học tình nguyện",
+      "sourcePdfPages": {
+        "start": 56,
+        "end": 63
+      },
+      "sourcePrintedPages": {
+        "start": 55,
+        "end": 62
+      },
+      "audioTracks": [
+        "24-1",
+        "24-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 56,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身1 请看下面的图片，试着找出本课跟它们有关的生词。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 56,
+          "rowIndex": 8,
+          "matchedTextOcr": "课文 支教行动 （682字） 24-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 58,
+          "rowIndex": 27,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 61,
+          "rowIndex": 7,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 62,
+          "rowIndex": 16,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 63,
+          "rowIndex": 1,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-24-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-24-01",
+        "hsk5l-annotation-24-01",
+        "hsk5l-practice-24-01",
+        "hsk5l-extension-24-01",
+        "hsk5l-application-24-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0030",
+        "hsk5l-lexeme-0032",
+        "hsk5l-lexeme-0048",
+        "hsk5l-lexeme-0059",
+        "hsk5l-lexeme-0084",
+        "hsk5l-lexeme-0097",
+        "hsk5l-lexeme-0135",
+        "hsk5l-lexeme-0141",
+        "hsk5l-lexeme-0154",
+        "hsk5l-lexeme-0165",
+        "hsk5l-lexeme-0171",
+        "hsk5l-lexeme-0176",
+        "hsk5l-lexeme-0182",
+        "hsk5l-lexeme-0187",
+        "hsk5l-lexeme-0201",
+        "hsk5l-lexeme-0220",
+        "hsk5l-lexeme-0230",
+        "hsk5l-lexeme-0237",
+        "hsk5l-lexeme-0240",
+        "hsk5l-lexeme-0278",
+        "hsk5l-lexeme-0315",
+        "hsk5l-lexeme-0341",
+        "hsk5l-lexeme-0365",
+        "hsk5l-lexeme-0367",
+        "hsk5l-lexeme-0385",
+        "hsk5l-lexeme-0407",
+        "hsk5l-lexeme-0424",
+        "hsk5l-lexeme-0432",
+        "hsk5l-lexeme-0433",
+        "hsk5l-lexeme-0466",
+        "hsk5l-lexeme-0476"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-054",
+        "hsk5l-beyond-level-073",
+        "hsk5l-beyond-level-084",
+        "hsk5l-beyond-level-088",
+        "hsk5l-beyond-level-130",
+        "hsk5l-beyond-level-150"
+      ],
+      "vocabularyCount": 31,
+      "beyondLevelVocabularyCount": 6,
+      "allVocabularyCount": 37,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-25",
+      "number": 25,
+      "unitId": "hsk5l-unit-09",
+      "titleZh": "给自己加满水",
+      "titleVi": "Bơm nước vào tàu",
+      "sourcePdfPages": {
+        "start": 65,
+        "end": 71
+      },
+      "sourcePrintedPages": {
+        "start": 64,
+        "end": 70
+      },
+      "audioTracks": [
+        "25-1",
+        "25-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 65,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 你听说过“有压力才会有动力”这句话吗？你是否同意这种观点？为什么？"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 65,
+          "rowIndex": 8,
+          "matchedTextOcr": "课文 给自己加满水 （624字） 25-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 67,
+          "rowIndex": 10,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 69,
+          "rowIndex": 23,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 71,
+          "rowIndex": 1,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 71,
+          "rowIndex": 12,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-25-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-25-01",
+        "hsk5l-annotation-25-01",
+        "hsk5l-practice-25-01",
+        "hsk5l-extension-25-01",
+        "hsk5l-application-25-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0036",
+        "hsk5l-lexeme-0039",
+        "hsk5l-lexeme-0050",
+        "hsk5l-lexeme-0092",
+        "hsk5l-lexeme-0094",
+        "hsk5l-lexeme-0095",
+        "hsk5l-lexeme-0108",
+        "hsk5l-lexeme-0109",
+        "hsk5l-lexeme-0111",
+        "hsk5l-lexeme-0121",
+        "hsk5l-lexeme-0147",
+        "hsk5l-lexeme-0158",
+        "hsk5l-lexeme-0180",
+        "hsk5l-lexeme-0200",
+        "hsk5l-lexeme-0216",
+        "hsk5l-lexeme-0227",
+        "hsk5l-lexeme-0288",
+        "hsk5l-lexeme-0295",
+        "hsk5l-lexeme-0339",
+        "hsk5l-lexeme-0349",
+        "hsk5l-lexeme-0350",
+        "hsk5l-lexeme-0381",
+        "hsk5l-lexeme-0400",
+        "hsk5l-lexeme-0411",
+        "hsk5l-lexeme-0416",
+        "hsk5l-lexeme-0437",
+        "hsk5l-lexeme-0453",
+        "hsk5l-lexeme-0473"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-012",
+        "hsk5l-beyond-level-015",
+        "hsk5l-beyond-level-029",
+        "hsk5l-beyond-level-033",
+        "hsk5l-beyond-level-035",
+        "hsk5l-beyond-level-037",
+        "hsk5l-beyond-level-044",
+        "hsk5l-beyond-level-081",
+        "hsk5l-beyond-level-103",
+        "hsk5l-beyond-level-121",
+        "hsk5l-beyond-level-134",
+        "hsk5l-beyond-level-158"
+      ],
+      "vocabularyCount": 28,
+      "beyondLevelVocabularyCount": 12,
+      "allVocabularyCount": 40,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-26",
+      "number": 26,
+      "unitId": "hsk5l-unit-09",
+      "titleZh": "你属于哪一种“忙”？",
+      "titleVi": "Bạn thuộc nhóm người \"bận rộn\" nào?",
+      "sourcePdfPages": {
+        "start": 72,
+        "end": 79
+      },
+      "sourcePrintedPages": {
+        "start": 71,
+        "end": 78
+      },
+      "audioTracks": [
+        "26-1",
+        "26-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 72,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身1 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 72,
+          "rowIndex": 9,
+          "matchedTextOcr": "课文 你属于哪一种“忙 （731字） 26-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 74,
+          "rowIndex": 34,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 77,
+          "rowIndex": 22,
+          "matchedTextOcr": "练习1 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 79,
+          "rowIndex": 1,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 79,
+          "rowIndex": 13,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-26-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-26-01",
+        "hsk5l-annotation-26-01",
+        "hsk5l-practice-26-01",
+        "hsk5l-extension-26-01",
+        "hsk5l-application-26-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0028",
+        "hsk5l-lexeme-0054",
+        "hsk5l-lexeme-0077",
+        "hsk5l-lexeme-0122",
+        "hsk5l-lexeme-0123",
+        "hsk5l-lexeme-0168",
+        "hsk5l-lexeme-0170",
+        "hsk5l-lexeme-0208",
+        "hsk5l-lexeme-0248",
+        "hsk5l-lexeme-0282",
+        "hsk5l-lexeme-0284",
+        "hsk5l-lexeme-0317",
+        "hsk5l-lexeme-0353",
+        "hsk5l-lexeme-0363",
+        "hsk5l-lexeme-0373",
+        "hsk5l-lexeme-0387",
+        "hsk5l-lexeme-0404",
+        "hsk5l-lexeme-0420",
+        "hsk5l-lexeme-0468",
+        "hsk5l-lexeme-0496"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-007",
+        "hsk5l-beyond-level-008",
+        "hsk5l-beyond-level-021",
+        "hsk5l-beyond-level-025",
+        "hsk5l-beyond-level-028",
+        "hsk5l-beyond-level-040",
+        "hsk5l-beyond-level-056",
+        "hsk5l-beyond-level-067",
+        "hsk5l-beyond-level-072",
+        "hsk5l-beyond-level-077",
+        "hsk5l-beyond-level-083",
+        "hsk5l-beyond-level-131",
+        "hsk5l-beyond-level-136",
+        "hsk5l-beyond-level-139",
+        "hsk5l-beyond-level-146"
+      ],
+      "vocabularyCount": 20,
+      "beyondLevelVocabularyCount": 15,
+      "allVocabularyCount": 35,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-27",
+      "number": 27,
+      "unitId": "hsk5l-unit-09",
+      "titleZh": "下棋",
+      "titleVi": "Đánh cờ",
+      "sourcePdfPages": {
+        "start": 80,
+        "end": 87
+      },
+      "sourcePrintedPages": {
+        "start": 79,
+        "end": 86
+      },
+      "audioTracks": [
+        "27-1",
+        "27-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 80,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 下图中的棋类，你认识多少？请说一说它们的名称。除了这些以外，你还知"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 80,
+          "rowIndex": 9,
+          "matchedTextOcr": "课文 棋 （704字） 27-"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 83,
+          "rowIndex": 1,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 85,
+          "rowIndex": 7,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 86,
+          "rowIndex": 12,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 87,
+          "rowIndex": 1,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-27-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-27-01",
+        "hsk5l-annotation-27-01",
+        "hsk5l-practice-27-01",
+        "hsk5l-extension-27-01",
+        "hsk5l-application-27-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0005",
+        "hsk5l-lexeme-0017",
+        "hsk5l-lexeme-0061",
+        "hsk5l-lexeme-0069",
+        "hsk5l-lexeme-0096",
+        "hsk5l-lexeme-0110",
+        "hsk5l-lexeme-0137",
+        "hsk5l-lexeme-0153",
+        "hsk5l-lexeme-0160",
+        "hsk5l-lexeme-0190",
+        "hsk5l-lexeme-0191",
+        "hsk5l-lexeme-0293",
+        "hsk5l-lexeme-0294",
+        "hsk5l-lexeme-0328",
+        "hsk5l-lexeme-0334",
+        "hsk5l-lexeme-0340",
+        "hsk5l-lexeme-0355",
+        "hsk5l-lexeme-0384",
+        "hsk5l-lexeme-0393",
+        "hsk5l-lexeme-0425",
+        "hsk5l-lexeme-0445",
+        "hsk5l-lexeme-0447",
+        "hsk5l-lexeme-0450",
+        "hsk5l-lexeme-0452",
+        "hsk5l-lexeme-0458",
+        "hsk5l-lexeme-0461"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-010",
+        "hsk5l-beyond-level-030",
+        "hsk5l-beyond-level-034",
+        "hsk5l-beyond-level-041",
+        "hsk5l-beyond-level-062",
+        "hsk5l-beyond-level-075",
+        "hsk5l-beyond-level-135"
+      ],
+      "vocabularyCount": 26,
+      "beyondLevelVocabularyCount": 7,
+      "allVocabularyCount": 33,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-28",
+      "number": 28,
+      "unitId": "hsk5l-unit-10",
+      "titleZh": "最受欢迎的毕业生",
+      "titleVi": "Người tốt nghiệp được hoan nghênh nhất",
+      "sourcePdfPages": {
+        "start": 89,
+        "end": 96
+      },
+      "sourcePrintedPages": {
+        "start": 88,
+        "end": 95
+      },
+      "audioTracks": [
+        "28-1",
+        "28-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 89,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身1 请看下面的图片，试着说出你知道的跟学历有关的词汇。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 89,
+          "rowIndex": 13,
+          "matchedTextOcr": "课文 最受欢迎的毕业生 （673字） 28-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 91,
+          "rowIndex": 26,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 94,
+          "rowIndex": 33,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 96,
+          "rowIndex": 1,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语 最受欢迎的毕业生"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 96,
+          "rowIndex": 14,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-28-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-28-01",
+        "hsk5l-annotation-28-01",
+        "hsk5l-practice-28-01",
+        "hsk5l-extension-28-01",
+        "hsk5l-application-28-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0014",
+        "hsk5l-lexeme-0029",
+        "hsk5l-lexeme-0031",
+        "hsk5l-lexeme-0045",
+        "hsk5l-lexeme-0047",
+        "hsk5l-lexeme-0063",
+        "hsk5l-lexeme-0080",
+        "hsk5l-lexeme-0088",
+        "hsk5l-lexeme-0101",
+        "hsk5l-lexeme-0103",
+        "hsk5l-lexeme-0143",
+        "hsk5l-lexeme-0149",
+        "hsk5l-lexeme-0174",
+        "hsk5l-lexeme-0179",
+        "hsk5l-lexeme-0196",
+        "hsk5l-lexeme-0207",
+        "hsk5l-lexeme-0232",
+        "hsk5l-lexeme-0233",
+        "hsk5l-lexeme-0244",
+        "hsk5l-lexeme-0254",
+        "hsk5l-lexeme-0298",
+        "hsk5l-lexeme-0312",
+        "hsk5l-lexeme-0336",
+        "hsk5l-lexeme-0364",
+        "hsk5l-lexeme-0369",
+        "hsk5l-lexeme-0399",
+        "hsk5l-lexeme-0412",
+        "hsk5l-lexeme-0434",
+        "hsk5l-lexeme-0469"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-011",
+        "hsk5l-beyond-level-017",
+        "hsk5l-beyond-level-039",
+        "hsk5l-beyond-level-061",
+        "hsk5l-beyond-level-090",
+        "hsk5l-beyond-level-133",
+        "hsk5l-beyond-level-154",
+        "hsk5l-beyond-level-156",
+        "hsk5l-beyond-level-157",
+        "hsk5l-beyond-level-159"
+      ],
+      "vocabularyCount": 29,
+      "beyondLevelVocabularyCount": 10,
+      "allVocabularyCount": 39,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-29",
+      "number": 29,
+      "unitId": "hsk5l-unit-10",
+      "titleZh": "培养对手",
+      "titleVi": "Đào tạo đối thủ",
+      "sourcePdfPages": {
+        "start": 97,
+        "end": 104
+      },
+      "sourcePrintedPages": {
+        "start": 96,
+        "end": 103
+      },
+      "audioTracks": [
+        "29-1",
+        "29-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 97,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 请看下面的图，说一说你知道的日用品的名称。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 97,
+          "rowIndex": 8,
+          "matchedTextOcr": "课文 培养对手 （652字）29-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 99,
+          "rowIndex": 20,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 102,
+          "rowIndex": 24,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 103,
+          "rowIndex": 21,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 104,
+          "rowIndex": 7,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-29-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-29-01",
+        "hsk5l-annotation-29-01",
+        "hsk5l-practice-29-01",
+        "hsk5l-extension-29-01",
+        "hsk5l-application-29-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0023",
+        "hsk5l-lexeme-0027",
+        "hsk5l-lexeme-0066",
+        "hsk5l-lexeme-0067",
+        "hsk5l-lexeme-0079",
+        "hsk5l-lexeme-0086",
+        "hsk5l-lexeme-0090",
+        "hsk5l-lexeme-0091",
+        "hsk5l-lexeme-0104",
+        "hsk5l-lexeme-0119",
+        "hsk5l-lexeme-0130",
+        "hsk5l-lexeme-0150",
+        "hsk5l-lexeme-0166",
+        "hsk5l-lexeme-0238",
+        "hsk5l-lexeme-0239",
+        "hsk5l-lexeme-0243",
+        "hsk5l-lexeme-0249",
+        "hsk5l-lexeme-0279",
+        "hsk5l-lexeme-0316",
+        "hsk5l-lexeme-0320",
+        "hsk5l-lexeme-0324",
+        "hsk5l-lexeme-0327",
+        "hsk5l-lexeme-0333",
+        "hsk5l-lexeme-0378",
+        "hsk5l-lexeme-0386",
+        "hsk5l-lexeme-0428",
+        "hsk5l-lexeme-0487"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-004",
+        "hsk5l-beyond-level-016",
+        "hsk5l-beyond-level-024",
+        "hsk5l-beyond-level-026",
+        "hsk5l-beyond-level-066",
+        "hsk5l-beyond-level-074",
+        "hsk5l-beyond-level-105",
+        "hsk5l-beyond-level-108",
+        "hsk5l-beyond-level-126"
+      ],
+      "vocabularyCount": 27,
+      "beyondLevelVocabularyCount": 9,
+      "allVocabularyCount": 36,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-30",
+      "number": 30,
+      "unitId": "hsk5l-unit-10",
+      "titleZh": "竞争让市场更高效",
+      "titleVi": "Cạnh tranh khiến thị trường phát triển.",
+      "sourcePdfPages": {
+        "start": 105,
+        "end": 113
+      },
+      "sourcePrintedPages": {
+        "start": 104,
+        "end": 112
+      },
+      "audioTracks": [
+        "30-1",
+        "30-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 105,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 105,
+          "rowIndex": 9,
+          "matchedTextOcr": "课文竞争让市场更高效 （607字） 30-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 107,
+          "rowIndex": 12,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 110,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 111,
+          "rowIndex": 21,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 112,
+          "rowIndex": 7,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-30-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-30-01",
+        "hsk5l-annotation-30-01",
+        "hsk5l-practice-30-01",
+        "hsk5l-extension-30-01",
+        "hsk5l-application-30-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0003",
+        "hsk5l-lexeme-0015",
+        "hsk5l-lexeme-0016",
+        "hsk5l-lexeme-0022",
+        "hsk5l-lexeme-0062",
+        "hsk5l-lexeme-0082",
+        "hsk5l-lexeme-0113",
+        "hsk5l-lexeme-0116",
+        "hsk5l-lexeme-0118",
+        "hsk5l-lexeme-0133",
+        "hsk5l-lexeme-0151",
+        "hsk5l-lexeme-0152",
+        "hsk5l-lexeme-0194",
+        "hsk5l-lexeme-0209",
+        "hsk5l-lexeme-0247",
+        "hsk5l-lexeme-0300",
+        "hsk5l-lexeme-0325",
+        "hsk5l-lexeme-0329",
+        "hsk5l-lexeme-0338",
+        "hsk5l-lexeme-0358",
+        "hsk5l-lexeme-0366",
+        "hsk5l-lexeme-0415",
+        "hsk5l-lexeme-0438",
+        "hsk5l-lexeme-0443",
+        "hsk5l-lexeme-0448"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-022",
+        "hsk5l-beyond-level-049",
+        "hsk5l-beyond-level-052",
+        "hsk5l-beyond-level-082",
+        "hsk5l-beyond-level-086",
+        "hsk5l-beyond-level-096",
+        "hsk5l-beyond-level-117",
+        "hsk5l-beyond-level-120",
+        "hsk5l-beyond-level-123",
+        "hsk5l-beyond-level-124",
+        "hsk5l-beyond-level-129"
+      ],
+      "vocabularyCount": 25,
+      "beyondLevelVocabularyCount": 11,
+      "allVocabularyCount": 36,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-31",
+      "number": 31,
+      "unitId": "hsk5l-unit-11",
+      "titleZh": "登门槛效应",
+      "titleVi": "Hiệu ứng \"thò chân vào cửa\"",
+      "sourcePdfPages": {
+        "start": 115,
+        "end": 122
+      },
+      "sourcePrintedPages": {
+        "start": 114,
+        "end": 121
+      },
+      "audioTracks": [
+        "31-1",
+        "31-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 115,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 如果你想请别人帮你做件事情，又担心对方不愿意，你一般会考虑哪些问"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 115,
+          "rowIndex": 9,
+          "matchedTextOcr": "课文登门槛效应 （714字） 31-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 117,
+          "rowIndex": 20,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 120,
+          "rowIndex": 2,
+          "matchedTextOcr": "练习1 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 121,
+          "rowIndex": 18,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 122,
+          "rowIndex": 2,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-31-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-31-01",
+        "hsk5l-annotation-31-01",
+        "hsk5l-practice-31-01",
+        "hsk5l-extension-31-01",
+        "hsk5l-application-31-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0011",
+        "hsk5l-lexeme-0012",
+        "hsk5l-lexeme-0018",
+        "hsk5l-lexeme-0019",
+        "hsk5l-lexeme-0055",
+        "hsk5l-lexeme-0058",
+        "hsk5l-lexeme-0189",
+        "hsk5l-lexeme-0215",
+        "hsk5l-lexeme-0234",
+        "hsk5l-lexeme-0241",
+        "hsk5l-lexeme-0242",
+        "hsk5l-lexeme-0261",
+        "hsk5l-lexeme-0272",
+        "hsk5l-lexeme-0290",
+        "hsk5l-lexeme-0297",
+        "hsk5l-lexeme-0305",
+        "hsk5l-lexeme-0311",
+        "hsk5l-lexeme-0337",
+        "hsk5l-lexeme-0356",
+        "hsk5l-lexeme-0391",
+        "hsk5l-lexeme-0435",
+        "hsk5l-lexeme-0446",
+        "hsk5l-lexeme-0451"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-001",
+        "hsk5l-beyond-level-080",
+        "hsk5l-beyond-level-092",
+        "hsk5l-beyond-level-101",
+        "hsk5l-beyond-level-102",
+        "hsk5l-beyond-level-155"
+      ],
+      "vocabularyCount": 23,
+      "beyondLevelVocabularyCount": 6,
+      "allVocabularyCount": 29,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-32",
+      "number": 32,
+      "unitId": "hsk5l-unit-11",
+      "titleZh": "身边的环保",
+      "titleVi": "Bảo vệ môi trường quanh ta",
+      "sourcePdfPages": {
+        "start": 123,
+        "end": 130
+      },
+      "sourcePrintedPages": {
+        "start": 122,
+        "end": 129
+      },
+      "audioTracks": [
+        "32-1",
+        "32-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 123,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 结合图片，请你举例说明人类对环境的破坏造成了哪些恶劣的影响。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 123,
+          "rowIndex": 9,
+          "matchedTextOcr": "课文 身边的环保（737字） 32-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 125,
+          "rowIndex": 16,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 128,
+          "rowIndex": 23,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 130,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 130,
+          "rowIndex": 13,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-32-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-32-01",
+        "hsk5l-annotation-32-01",
+        "hsk5l-practice-32-01",
+        "hsk5l-extension-32-01",
+        "hsk5l-application-32-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0025",
+        "hsk5l-lexeme-0071",
+        "hsk5l-lexeme-0085",
+        "hsk5l-lexeme-0106",
+        "hsk5l-lexeme-0126",
+        "hsk5l-lexeme-0127",
+        "hsk5l-lexeme-0128",
+        "hsk5l-lexeme-0131",
+        "hsk5l-lexeme-0134",
+        "hsk5l-lexeme-0157",
+        "hsk5l-lexeme-0198",
+        "hsk5l-lexeme-0214",
+        "hsk5l-lexeme-0225",
+        "hsk5l-lexeme-0250",
+        "hsk5l-lexeme-0253",
+        "hsk5l-lexeme-0257",
+        "hsk5l-lexeme-0260",
+        "hsk5l-lexeme-0271",
+        "hsk5l-lexeme-0276",
+        "hsk5l-lexeme-0291",
+        "hsk5l-lexeme-0313",
+        "hsk5l-lexeme-0322",
+        "hsk5l-lexeme-0330",
+        "hsk5l-lexeme-0332",
+        "hsk5l-lexeme-0348",
+        "hsk5l-lexeme-0351",
+        "hsk5l-lexeme-0402",
+        "hsk5l-lexeme-0403",
+        "hsk5l-lexeme-0410",
+        "hsk5l-lexeme-0456",
+        "hsk5l-lexeme-0459",
+        "hsk5l-lexeme-0474",
+        "hsk5l-lexeme-0488",
+        "hsk5l-lexeme-0493",
+        "hsk5l-lexeme-0500"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-014",
+        "hsk5l-beyond-level-046",
+        "hsk5l-beyond-level-104",
+        "hsk5l-beyond-level-127"
+      ],
+      "vocabularyCount": 35,
+      "beyondLevelVocabularyCount": 4,
+      "allVocabularyCount": 39,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-33",
+      "number": 33,
+      "unitId": "hsk5l-unit-11",
+      "titleZh": "以堵治堵——缓解交通有妙招",
+      "titleVi": "\"Dùng tắc trị tắc\" - tuyệt chiêu giảm tải giao thông",
+      "sourcePdfPages": {
+        "start": 131,
+        "end": 139
+      },
+      "sourcePrintedPages": {
+        "start": 130,
+        "end": 138
+      },
+      "audioTracks": [
+        "33-1",
+        "33-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 131,
+          "rowIndex": 4,
+          "matchedTextOcr": "热身 请你说说这幅图片反映了什么问题，它对你的生活有何影响。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 131,
+          "rowIndex": 11,
+          "matchedTextOcr": "课文以堵治堵 一一缓解交通有妙招 （744字） 33-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 133,
+          "rowIndex": 23,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 136,
+          "rowIndex": 20,
+          "matchedTextOcr": "练习1 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 138,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 138,
+          "rowIndex": 13,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-33-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-33-01",
+        "hsk5l-annotation-33-01",
+        "hsk5l-practice-33-01",
+        "hsk5l-extension-33-01",
+        "hsk5l-application-33-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0010",
+        "hsk5l-lexeme-0070",
+        "hsk5l-lexeme-0099",
+        "hsk5l-lexeme-0112",
+        "hsk5l-lexeme-0144",
+        "hsk5l-lexeme-0145",
+        "hsk5l-lexeme-0156",
+        "hsk5l-lexeme-0183",
+        "hsk5l-lexeme-0226",
+        "hsk5l-lexeme-0229",
+        "hsk5l-lexeme-0255",
+        "hsk5l-lexeme-0259",
+        "hsk5l-lexeme-0266",
+        "hsk5l-lexeme-0280",
+        "hsk5l-lexeme-0283",
+        "hsk5l-lexeme-0292",
+        "hsk5l-lexeme-0296",
+        "hsk5l-lexeme-0308",
+        "hsk5l-lexeme-0326",
+        "hsk5l-lexeme-0343",
+        "hsk5l-lexeme-0368",
+        "hsk5l-lexeme-0408",
+        "hsk5l-lexeme-0413",
+        "hsk5l-lexeme-0431",
+        "hsk5l-lexeme-0440",
+        "hsk5l-lexeme-0454",
+        "hsk5l-lexeme-0457",
+        "hsk5l-lexeme-0463",
+        "hsk5l-lexeme-0471",
+        "hsk5l-lexeme-0475",
+        "hsk5l-lexeme-0486",
+        "hsk5l-lexeme-0495"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-009",
+        "hsk5l-beyond-level-038",
+        "hsk5l-beyond-level-053",
+        "hsk5l-beyond-level-060",
+        "hsk5l-beyond-level-119",
+        "hsk5l-beyond-level-144"
+      ],
+      "vocabularyCount": 32,
+      "beyondLevelVocabularyCount": 6,
+      "allVocabularyCount": 38,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-34",
+      "number": 34,
+      "unitId": "hsk5l-unit-12",
+      "titleZh": "鸟儿的护肤术",
+      "titleVi": "Cách loài chim bảo vệ da",
+      "sourcePdfPages": {
+        "start": 141,
+        "end": 148
+      },
+      "sourcePrintedPages": {
+        "start": 140,
+        "end": 147
+      },
+      "audioTracks": [
+        "34-1",
+        "34-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 141,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 141,
+          "rowIndex": 7,
+          "matchedTextOcr": "课文 鸟儿的护肤术 （661字） 34-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 143,
+          "rowIndex": 15,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 144,
+          "rowIndex": 23,
+          "matchedTextOcr": "（2）他把纸铺（pu，trai）A，笔拿B好，准备C练习D书法。"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 147,
+          "rowIndex": 19,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 148,
+          "rowIndex": 7,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-34-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-34-01",
+        "hsk5l-annotation-34-01",
+        "hsk5l-practice-34-01",
+        "hsk5l-extension-34-01",
+        "hsk5l-application-34-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0001",
+        "hsk5l-lexeme-0051",
+        "hsk5l-lexeme-0052",
+        "hsk5l-lexeme-0078",
+        "hsk5l-lexeme-0100",
+        "hsk5l-lexeme-0105",
+        "hsk5l-lexeme-0115",
+        "hsk5l-lexeme-0120",
+        "hsk5l-lexeme-0142",
+        "hsk5l-lexeme-0193",
+        "hsk5l-lexeme-0210",
+        "hsk5l-lexeme-0228",
+        "hsk5l-lexeme-0252",
+        "hsk5l-lexeme-0344",
+        "hsk5l-lexeme-0354",
+        "hsk5l-lexeme-0361",
+        "hsk5l-lexeme-0370",
+        "hsk5l-lexeme-0372",
+        "hsk5l-lexeme-0383",
+        "hsk5l-lexeme-0427",
+        "hsk5l-lexeme-0472",
+        "hsk5l-lexeme-0480",
+        "hsk5l-lexeme-0497"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-003",
+        "hsk5l-beyond-level-005",
+        "hsk5l-beyond-level-018",
+        "hsk5l-beyond-level-051",
+        "hsk5l-beyond-level-065",
+        "hsk5l-beyond-level-068",
+        "hsk5l-beyond-level-093",
+        "hsk5l-beyond-level-097",
+        "hsk5l-beyond-level-132",
+        "hsk5l-beyond-level-153",
+        "hsk5l-beyond-level-161"
+      ],
+      "vocabularyCount": 23,
+      "beyondLevelVocabularyCount": 11,
+      "allVocabularyCount": 34,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-35",
+      "number": 35,
+      "unitId": "hsk5l-unit-12",
+      "titleZh": "植物会出汗。",
+      "titleVi": "Thực vật cũng đổ mồ hôi.",
+      "sourcePdfPages": {
+        "start": 149,
+        "end": 156
+      },
+      "sourcePrintedPages": {
+        "start": 148,
+        "end": 155
+      },
+      "audioTracks": [
+        "35-1",
+        "35-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 149,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 149,
+          "rowIndex": 11,
+          "matchedTextOcr": "课文植物会出汗 （604字） 35-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 151,
+          "rowIndex": 10,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 154,
+          "rowIndex": 9,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 155,
+          "rowIndex": 18,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 156,
+          "rowIndex": 8,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-35-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-35-01",
+        "hsk5l-annotation-35-01",
+        "hsk5l-practice-35-01",
+        "hsk5l-extension-35-01",
+        "hsk5l-application-35-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0020",
+        "hsk5l-lexeme-0021",
+        "hsk5l-lexeme-0024",
+        "hsk5l-lexeme-0034",
+        "hsk5l-lexeme-0035",
+        "hsk5l-lexeme-0044",
+        "hsk5l-lexeme-0117",
+        "hsk5l-lexeme-0124",
+        "hsk5l-lexeme-0125",
+        "hsk5l-lexeme-0140",
+        "hsk5l-lexeme-0161",
+        "hsk5l-lexeme-0163",
+        "hsk5l-lexeme-0213",
+        "hsk5l-lexeme-0221",
+        "hsk5l-lexeme-0268",
+        "hsk5l-lexeme-0285",
+        "hsk5l-lexeme-0335",
+        "hsk5l-lexeme-0360",
+        "hsk5l-lexeme-0394",
+        "hsk5l-lexeme-0396",
+        "hsk5l-lexeme-0405",
+        "hsk5l-lexeme-0467",
+        "hsk5l-lexeme-0470",
+        "hsk5l-lexeme-0484",
+        "hsk5l-lexeme-0491"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-019",
+        "hsk5l-beyond-level-042",
+        "hsk5l-beyond-level-078",
+        "hsk5l-beyond-level-079",
+        "hsk5l-beyond-level-099",
+        "hsk5l-beyond-level-109",
+        "hsk5l-beyond-level-137",
+        "hsk5l-beyond-level-140",
+        "hsk5l-beyond-level-149",
+        "hsk5l-beyond-level-151"
+      ],
+      "vocabularyCount": 25,
+      "beyondLevelVocabularyCount": 10,
+      "allVocabularyCount": 35,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk5l-lesson-36",
+      "number": 36,
+      "unitId": "hsk5l-unit-12",
+      "titleZh": "老舍与养花",
+      "titleVi": "Lão Xá và hoa",
+      "sourcePdfPages": {
+        "start": 157,
+        "end": 164
+      },
+      "sourcePrintedPages": {
+        "start": 156,
+        "end": 163
+      },
+      "audioTracks": [
+        "36-1",
+        "36-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 157,
+          "rowIndex": 2,
+          "matchedTextOcr": "热身 你知道哪些有关养花的词语，请写在下面的横线上，并说说它们分别是什么"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 157,
+          "rowIndex": 9,
+          "matchedTextOcr": "课文老舍与养花（799字）361"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "注释",
+          "pdfPage": 159,
+          "rowIndex": 24,
+          "matchedTextOcr": "注释（一）词语例释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 162,
+          "rowIndex": 29,
+          "matchedTextOcr": "练习 选择合适的词语填空"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 164,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 164,
+          "rowIndex": 12,
+          "matchedTextOcr": "运用 背景分析："
+        }
+      ],
+      "textIds": [
+        "hsk5l-text-36-01"
+      ],
+      "blockIds": [
+        "hsk5l-warmup-36-01",
+        "hsk5l-annotation-36-01",
+        "hsk5l-practice-36-01",
+        "hsk5l-extension-36-01",
+        "hsk5l-application-36-01"
+      ],
+      "lexemeIds": [
+        "hsk5l-lexeme-0002",
+        "hsk5l-lexeme-0009",
+        "hsk5l-lexeme-0013",
+        "hsk5l-lexeme-0026",
+        "hsk5l-lexeme-0037",
+        "hsk5l-lexeme-0057",
+        "hsk5l-lexeme-0060",
+        "hsk5l-lexeme-0093",
+        "hsk5l-lexeme-0102",
+        "hsk5l-lexeme-0107",
+        "hsk5l-lexeme-0177",
+        "hsk5l-lexeme-0178",
+        "hsk5l-lexeme-0188",
+        "hsk5l-lexeme-0195",
+        "hsk5l-lexeme-0199",
+        "hsk5l-lexeme-0231",
+        "hsk5l-lexeme-0307",
+        "hsk5l-lexeme-0314",
+        "hsk5l-lexeme-0346",
+        "hsk5l-lexeme-0398",
+        "hsk5l-lexeme-0417",
+        "hsk5l-lexeme-0418",
+        "hsk5l-lexeme-0429",
+        "hsk5l-lexeme-0449",
+        "hsk5l-lexeme-0465",
+        "hsk5l-lexeme-0483",
+        "hsk5l-lexeme-0492"
+      ],
+      "beyondLevelLexemeIds": [
+        "hsk5l-beyond-level-006",
+        "hsk5l-beyond-level-032",
+        "hsk5l-beyond-level-048",
+        "hsk5l-beyond-level-063",
+        "hsk5l-beyond-level-069",
+        "hsk5l-beyond-level-087",
+        "hsk5l-beyond-level-106",
+        "hsk5l-beyond-level-114",
+        "hsk5l-beyond-level-143",
+        "hsk5l-beyond-level-147"
+      ],
+      "vocabularyCount": 27,
+      "beyondLevelVocabularyCount": 10,
+      "allVocabularyCount": 37,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    }
+  ]
+}

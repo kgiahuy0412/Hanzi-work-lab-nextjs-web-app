@@ -13,6 +13,22 @@ import lesson12 from "../content/hsk1-textbook-json/lessons/lesson-12.json" with
 import lesson13 from "../content/hsk1-textbook-json/lessons/lesson-13.json" with { type: "json" };
 import lesson14 from "../content/hsk1-textbook-json/lessons/lesson-14.json" with { type: "json" };
 import lesson15 from "../content/hsk1-textbook-json/lessons/lesson-15.json" with { type: "json" };
+import hsk2CurriculumData from "../content/hsk2-textbook-json/curriculum.json" with { type: "json" };
+import hsk2GrammarData from "../content/hsk2-textbook-json/shared/grammar-points.json" with { type: "json" };
+import hsk2LexemeData from "../content/hsk2-textbook-json/shared/lexemes.json" with { type: "json" };
+import hsk2SceneData from "../content/hsk2-textbook-json/shared/text-scenes.json" with { type: "json" };
+import hsk3CurriculumData from "../content/hsk3-textbook-json/curriculum.json" with { type: "json" };
+import hsk3GrammarData from "../content/hsk3-textbook-json/shared/grammar-blocks.json" with { type: "json" };
+import hsk3LexemeData from "../content/hsk3-textbook-json/shared/lexemes.json" with { type: "json" };
+import hsk3SceneData from "../content/hsk3-textbook-json/shared/text-scenes.json" with { type: "json" };
+import hsk4LowerCurriculumData from "../content/hsk4-lower-textbook-json/curriculum.json" with { type: "json" };
+import hsk4LowerLexemeData from "../content/hsk4-lower-textbook-json/shared/lexemes.json" with { type: "json" };
+import hsk4LowerTextData from "../content/hsk4-lower-textbook-json/shared/texts.json" with { type: "json" };
+import hsk4UpperCurriculumData from "../content/hsk4-upper-textbook-json/curriculum.json" with { type: "json" };
+import hsk4UpperLexemeData from "../content/hsk4-upper-textbook-json/shared/lexemes.json" with { type: "json" };
+import hsk4UpperTextData from "../content/hsk4-upper-textbook-json/shared/texts.json" with { type: "json" };
+import hsk5LowerCurriculumData from "../content/hsk5-lower-textbook-json/curriculum.json" with { type: "json" };
+import { HSK5_LOWER_TEXTBOOK_LESSONS } from "./hsk5-lower-textbook-content.ts";
 
 export type HskTopicIcon = "message" | "people" | "clock" | "food" | "travel" | "work" | "book" | "globe";
 
@@ -20,10 +36,14 @@ export type HskCurriculumLesson = {
   id: string;
   lessonNumber: number;
   title: string;
+  kind?: "textbook" | "workbook";
   vocabulary: number;
   grammar: number;
   dialogues: number;
   writing: number;
+  listening?: number;
+  reading?: number;
+  exercises?: number;
   minutes: number;
   guidedSteps: number;
   available: boolean;
@@ -67,7 +87,7 @@ function makeLessons(
     vocabulary: baseVocabulary + (index % 3),
     grammar: 2 + (index % 2),
     dialogues: 1 + (index % 2),
-    writing: 0,
+    writing: baseVocabulary + (index % 3),
     minutes: 12 + (index % 3),
     guidedSteps: 0,
     available: false,
@@ -129,13 +149,14 @@ const HSK_1_TEXTBOOK_LESSONS: HskCurriculumLesson[] = RAW_HSK_1_LESSONS.map((les
   const vocabulary = sectionCount(lesson, "vocabulary");
   const grammar = sectionCount(lesson, "grammar");
   const dialogues = sectionCount(lesson, "dialogue");
-  const writing = sectionCount(lesson, "writing");
+  const writing = vocabulary;
   const assessments = sectionCount(lesson, "practice");
   const pronunciationSteps = sectionCount(lesson, "pronunciation") > 0 ? 1 : 0;
   return {
     id: lesson.slug,
     lessonNumber: lesson.metadata.lessonNumber,
     title: lesson.metadata.titleVi,
+    kind: "textbook",
     vocabulary,
     grammar,
     dialogues,
@@ -145,6 +166,239 @@ const HSK_1_TEXTBOOK_LESSONS: HskCurriculumLesson[] = RAW_HSK_1_LESSONS.map((les
     available: true,
   };
 });
+
+type RawHsk2Curriculum = {
+  lessons: Array<{
+    lessonNumber: number;
+    titleVi: string;
+  }>;
+};
+
+type RawHsk2Entity = {
+  lessonRef: string;
+};
+
+type RawHsk2Scene = RawHsk2Entity & {
+  lines: Array<unknown>;
+};
+
+const RAW_HSK_2_CURRICULUM = hsk2CurriculumData as unknown as RawHsk2Curriculum;
+const RAW_HSK_2_LEXEMES = (hsk2LexemeData as unknown as { lexemes: RawHsk2Entity[] }).lexemes;
+const RAW_HSK_2_SCENES = (hsk2SceneData as unknown as { scenes: RawHsk2Scene[] }).scenes;
+const RAW_HSK_2_GRAMMAR = (hsk2GrammarData as unknown as { grammarPoints: RawHsk2Entity[] }).grammarPoints;
+
+const HSK_2_TEXTBOOK_LESSONS: HskCurriculumLesson[] = RAW_HSK_2_CURRICULUM.lessons.map((lesson) => {
+  const id = `hsk2-tb-lesson-${String(lesson.lessonNumber).padStart(2, "0")}`;
+  const vocabulary = RAW_HSK_2_LEXEMES.filter((item) => item.lessonRef === id).length;
+  const dialogues = RAW_HSK_2_SCENES.filter((item) => item.lessonRef === id && item.lines.length > 0).length;
+  const grammar = RAW_HSK_2_GRAMMAR.filter((item) => item.lessonRef === id).length;
+  const exercises = 4;
+  const writing = vocabulary;
+  return {
+    id,
+    lessonNumber: lesson.lessonNumber,
+    title: lesson.titleVi,
+    kind: "textbook",
+    vocabulary,
+    grammar,
+    dialogues,
+    writing,
+    exercises,
+    minutes: Math.max(25, Math.min(30, 24 + Math.ceil(vocabulary / 4))),
+    guidedSteps: vocabulary + grammar + dialogues + exercises + 4,
+    available: true,
+  };
+});
+
+type RawHsk3Curriculum = {
+  lessons: Array<{
+    lessonNumber: number;
+    titleVi: string;
+  }>;
+};
+
+type RawHsk3Entity = {
+  lessonRef: string;
+};
+
+type RawHsk3Scene = RawHsk3Entity & {
+  lines: Array<unknown>;
+};
+
+const RAW_HSK_3_CURRICULUM = hsk3CurriculumData as unknown as RawHsk3Curriculum;
+const RAW_HSK_3_LEXEMES = (hsk3LexemeData as unknown as { lexemes: RawHsk3Entity[] }).lexemes;
+const RAW_HSK_3_SCENES = (hsk3SceneData as unknown as { scenes: RawHsk3Scene[] }).scenes;
+const RAW_HSK_3_GRAMMAR = (hsk3GrammarData as unknown as { blocks: RawHsk3Entity[] }).blocks;
+
+const HSK_3_TEXTBOOK_LESSONS: HskCurriculumLesson[] = RAW_HSK_3_CURRICULUM.lessons.map((lesson) => {
+  const id = `hsk3-tb-lesson-${String(lesson.lessonNumber).padStart(2, "0")}`;
+  const vocabulary = RAW_HSK_3_LEXEMES.filter((item) => item.lessonRef === id).length;
+  const dialogues = RAW_HSK_3_SCENES.filter((item) => item.lessonRef === id && item.lines.length > 0).length;
+  const grammar = RAW_HSK_3_GRAMMAR.filter((item) => item.lessonRef === id).length;
+  const exercises = 4;
+  const writing = vocabulary;
+  const guidedDialogueSteps = dialogues || 1;
+  return {
+    id,
+    lessonNumber: lesson.lessonNumber,
+    title: lesson.titleVi,
+    kind: "textbook",
+    vocabulary,
+    grammar,
+    dialogues,
+    writing,
+    exercises,
+    minutes: Math.max(25, Math.min(35, 20 + Math.ceil(vocabulary / 3))),
+    guidedSteps: vocabulary + grammar + guidedDialogueSteps + exercises + 4,
+    available: true,
+  };
+});
+
+type RawHsk4Curriculum = {
+  lessons: Array<{
+    lessonNumber: number;
+    titleVi: string;
+  }>;
+};
+
+function buildHsk4TextbookLessons(
+  curriculum: RawHsk4Curriculum,
+  lexemes: RawHsk3Entity[],
+  texts: RawHsk3Entity[],
+  volumePrefix: "hsk4u" | "hsk4l",
+): HskCurriculumLesson[] {
+  return curriculum.lessons.map((lesson) => {
+    const id = `${volumePrefix}-tb-lesson-${String(lesson.lessonNumber).padStart(2, "0")}`;
+    const vocabulary = lexemes.filter((item) => item.lessonRef === id).length;
+    const dialogues = texts.filter((item) => item.lessonRef === id).length;
+    const grammar = 5;
+    const exercises = 4;
+    const writing = vocabulary;
+    return {
+      id,
+      lessonNumber: lesson.lessonNumber,
+      title: lesson.titleVi,
+      kind: "textbook",
+      vocabulary,
+      grammar,
+      dialogues,
+      writing,
+      exercises,
+      minutes: Math.max(35, Math.min(45, 25 + Math.ceil(vocabulary / 3))),
+      guidedSteps: vocabulary + grammar + dialogues + exercises + 4,
+      available: true,
+    };
+  });
+}
+
+const RAW_HSK_4_UPPER_CURRICULUM = hsk4UpperCurriculumData as unknown as RawHsk4Curriculum;
+const RAW_HSK_4_UPPER_LEXEMES = (hsk4UpperLexemeData as unknown as { lexemes: RawHsk3Entity[] }).lexemes;
+const RAW_HSK_4_UPPER_TEXTS = (hsk4UpperTextData as unknown as { texts: RawHsk3Entity[] }).texts;
+const RAW_HSK_4_LOWER_CURRICULUM = hsk4LowerCurriculumData as unknown as RawHsk4Curriculum;
+const RAW_HSK_4_LOWER_LEXEMES = (hsk4LowerLexemeData as unknown as { lexemes: RawHsk3Entity[] }).lexemes;
+const RAW_HSK_4_LOWER_TEXTS = (hsk4LowerTextData as unknown as { texts: RawHsk3Entity[] }).texts;
+
+const HSK_4_TEXTBOOK_LESSONS: HskCurriculumLesson[] = [
+  ...buildHsk4TextbookLessons(
+    RAW_HSK_4_UPPER_CURRICULUM,
+    RAW_HSK_4_UPPER_LEXEMES,
+    RAW_HSK_4_UPPER_TEXTS,
+    "hsk4u",
+  ),
+  ...buildHsk4TextbookLessons(
+    RAW_HSK_4_LOWER_CURRICULUM,
+    RAW_HSK_4_LOWER_LEXEMES,
+    RAW_HSK_4_LOWER_TEXTS,
+    "hsk4l",
+  ),
+];
+
+type RawHsk5Curriculum = {
+  units: Array<{
+    id: string;
+    titleVi: string;
+    lessonIds: string[];
+  }>;
+};
+
+const RAW_HSK_5_CURRICULUM = hsk5LowerCurriculumData as unknown as RawHsk5Curriculum;
+const HSK_5_LESSONS_BY_ID = new Map(
+  HSK5_LOWER_TEXTBOOK_LESSONS.map((lesson) => [lesson.id, lesson]),
+);
+const HSK_5_TOPIC_ICONS: HskTopicIcon[] = ["food", "book", "people", "work", "globe", "travel"];
+
+const HSK_5_TEXTBOOK_TOPICS: HskCurriculumTopic[] = RAW_HSK_5_CURRICULUM.units.map((unit, index) => ({
+  id: unit.id,
+  title: unit.titleVi,
+  icon: HSK_5_TOPIC_ICONS[index % HSK_5_TOPIC_ICONS.length],
+  lessons: unit.lessonIds.map((lessonId) => {
+    const lesson = HSK_5_LESSONS_BY_ID.get(lessonId);
+    if (!lesson) throw new Error(`Chủ đề HSK 5 tham chiếu bài học không tồn tại: ${lessonId}`);
+    return {
+      id: lesson.id,
+      lessonNumber: lesson.lessonNumber,
+      title: lesson.title,
+      kind: "textbook" as const,
+      vocabulary: lesson.vocabulary.length,
+      grammar: lesson.grammar.length,
+      dialogues: lesson.dialogues.length,
+      writing: lesson.writingCharacters.length,
+      exercises: lesson.exercises.length,
+      minutes: lesson.minutes,
+      guidedSteps: lesson.vocabulary.length
+        + lesson.grammar.length
+        + lesson.dialogues.length
+        + lesson.exercises.length
+        + 4,
+      available: true,
+    };
+  }),
+}));
+
+function hsk2TextbookTopic(
+  id: string,
+  title: string,
+  icon: HskTopicIcon,
+  startIndex: number,
+  endIndex: number,
+): HskCurriculumTopic {
+  return {
+    id,
+    title,
+    icon,
+    lessons: HSK_2_TEXTBOOK_LESSONS.slice(startIndex, endIndex),
+  };
+}
+
+function hsk3TextbookTopic(
+  id: string,
+  title: string,
+  icon: HskTopicIcon,
+  startIndex: number,
+  endIndex: number,
+): HskCurriculumTopic {
+  return {
+    id,
+    title,
+    icon,
+    lessons: HSK_3_TEXTBOOK_LESSONS.slice(startIndex, endIndex),
+  };
+}
+
+function hsk4TextbookTopic(
+  id: string,
+  title: string,
+  icon: HskTopicIcon,
+  startIndex: number,
+  endIndex: number,
+): HskCurriculumTopic {
+  return {
+    id,
+    title,
+    icon,
+    lessons: HSK_4_TEXTBOOK_LESSONS.slice(startIndex, endIndex),
+  };
+}
 
 function textbookTopic(
   id: string,
@@ -177,49 +431,43 @@ export const HSK_CURRICULUM: HskCurriculumLevel[] = [
     id: "hsk-2",
     label: "HSK 2",
     symbol: "贰",
-    description: "Mở rộng hội thoại hằng ngày và diễn đạt nhu cầu rõ hơn.",
+    description: "15 bài từ Giáo trình chuẩn HSK 2, có từ vựng, bài khóa, ngữ pháp, phát âm, luyện viết và bài tập tương tác như HSK 1.",
     topics: [
-      makeTopic("hsk-2", "sinh-hoat-hang-ngay", "Sinh hoạt hằng ngày", "clock", ["Một ngày của tôi", "Thói quen buổi sáng", "Việc nhà", "Ôn tập sinh hoạt"], 13),
-      makeTopic("hsk-2", "di-chuyen-thanh-pho", "Di chuyển trong thành phố", "travel", ["Hỏi đường", "Đi xe buýt", "Gọi taxi", "Đến đúng địa điểm"], 12),
-      makeTopic("hsk-2", "suc-khoe-co-ban", "Sức khỏe cơ bản", "people", ["Nói về cơ thể", "Mô tả triệu chứng", "Đi khám bệnh", "Lời khuyên sức khỏe"], 14),
-      makeTopic("hsk-2", "ke-hoach-loi-moi", "Kế hoạch & Lời mời", "message", ["Rủ bạn đi chơi", "Sắp xếp thời gian", "Đồng ý và từ chối", "Thay đổi kế hoạch"], 13),
+      hsk2TextbookTopic("du-lich-cong-viec-mua-sam", "Du lịch, công việc & mua sắm", "travel", 0, 5),
+      hsk2TextbookTopic("sinh-hoat-di-chuyen-ke-hoach", "Sinh hoạt, di chuyển & kế hoạch", "clock", 5, 10),
+      hsk2TextbookTopic("so-sanh-trang-thai-trai-nghiem", "So sánh, trạng thái & trải nghiệm", "message", 10, 15),
     ],
   },
   {
     id: "hsk-3",
     label: "HSK 3",
     symbol: "叁",
-    description: "Kết nối ý trong những tình huống học tập, công việc và du lịch.",
+    description: "20 bài từ Giáo trình chuẩn HSK 3, có từ vựng, bài khóa, ngữ pháp, phát âm, luyện viết và bài tập tương tác.",
     topics: [
-      makeTopic("hsk-3", "hoc-tap-cong-viec", "Học tập & Công việc", "work", ["Môi trường học tập", "Trao đổi công việc", "Kế hoạch trong ngày", "Báo cáo tiến độ"], 16),
-      makeTopic("hsk-3", "du-lich-dich-vu", "Du lịch & Dịch vụ", "travel", ["Đặt phòng", "Làm thủ tục", "Hỏi thông tin", "Xử lý thay đổi"], 15),
-      makeTopic("hsk-3", "cam-xuc-trai-nghiem", "Cảm xúc & Trải nghiệm", "message", ["Miêu tả cảm xúc", "Kể một trải nghiệm", "Đưa ra nhận xét", "An ủi và động viên"], 15),
-      makeTopic("hsk-3", "giao-tiep-xa-hoi", "Giao tiếp xã hội", "people", ["Gặp gỡ bạn mới", "Trao đổi sở thích", "Đề xuất hoạt động", "Giữ liên lạc"], 16),
+      hsk3TextbookTopic("ke-hoach-sinh-hoat", "Kế hoạch & Sinh hoạt", "clock", 0, 5),
+      hsk3TextbookTopic("di-chuyen-so-sanh", "Di chuyển & So sánh", "travel", 5, 10),
+      hsk3TextbookTopic("cong-viec-trai-nghiem", "Công việc & Trải nghiệm", "work", 10, 15),
+      hsk3TextbookTopic("quan-diem-anh-huong", "Quan điểm & Ảnh hưởng", "message", 15, 20),
     ],
   },
   {
     id: "hsk-4",
     label: "HSK 4",
     symbol: "肆",
-    description: "Theo kịp hội thoại tự nhiên và trình bày quan điểm có cấu trúc.",
+    description: "20 bài từ Giáo trình chuẩn HSK 4 - Tập 1 và Tập 2, có từ vựng, bài khóa, ngữ pháp, phát âm, luyện viết và bài tập tương tác.",
     topics: [
-      makeTopic("hsk-4", "cong-viec-chuyen-nghiep", "Công việc chuyên nghiệp", "work", ["Phân công nhiệm vụ", "Sắp xếp cuộc họp", "Giải quyết vấn đề", "Tổng kết dự án"], 18),
-      makeTopic("hsk-4", "tin-tuc-xa-hoi", "Tin tức & Xã hội", "globe", ["Đọc tin ngắn", "Tóm tắt sự kiện", "Nêu nguyên nhân", "Trao đổi ảnh hưởng"], 18),
-      makeTopic("hsk-4", "quan-diem-thao-luan", "Quan điểm & Thảo luận", "message", ["Nêu quan điểm", "Đồng tình có điều kiện", "Phản biện lịch sự", "Đi đến kết luận"], 17),
-      makeTopic("hsk-4", "dich-vu-khieu-nai", "Dịch vụ & Khiếu nại", "people", ["Mô tả sự cố", "Yêu cầu hỗ trợ", "Đề xuất giải pháp", "Xác nhận kết quả"], 18),
+      hsk4TextbookTopic("tinh-cam-cong-viec-lua-chon", "Tình cảm, công việc & lựa chọn", "people", 0, 5),
+      hsk4TextbookTopic("suc-khoe-cuoc-song-hanh-phuc", "Sức khỏe, cuộc sống & hạnh phúc", "globe", 5, 10),
+      hsk4TextbookTopic("tri-thuc-van-hoa-moi-truong", "Tri thức, văn hóa & môi trường", "book", 10, 15),
+      hsk4TextbookTopic("cuoc-song-cong-nghe-thien-nhien", "Cuộc sống, công nghệ & thiên nhiên", "globe", 15, 20),
     ],
   },
   {
     id: "hsk-5",
     label: "HSK 5",
     symbol: "伍",
-    description: "Xử lý văn bản dài hơn, lập luận nhiều lớp và ngôn ngữ công việc.",
-    topics: [
-      makeTopic("hsk-5", "thuyet-trinh-lap-luan", "Thuyết trình & Lập luận", "message", ["Mở đầu thuyết trình", "Sắp xếp luận điểm", "Dùng ví dụ thuyết phục", "Kết luận và hỏi đáp"], 21),
-      makeTopic("hsk-5", "kinh-te-kinh-doanh", "Kinh tế & Kinh doanh", "work", ["Đọc xu hướng", "Trao đổi số liệu", "Đánh giá phương án", "Dự báo kết quả"], 20),
-      makeTopic("hsk-5", "van-hoa-truyen-thong", "Văn hóa & Truyền thông", "globe", ["Phân tích một bài báo", "So sánh quan điểm", "Tóm tắt nội dung", "Viết phản hồi"], 20),
-      makeTopic("hsk-5", "van-ban-hoc-thuat", "Văn bản học thuật", "book", ["Đọc ý chính", "Nhận diện lập luận", "Ghi chú có hệ thống", "Viết đoạn tổng hợp"], 22),
-    ],
+    description: "18 bài (Bài 19–36) từ Giáo trình chuẩn HSK 5 - Tập 2, có từ vựng, bài khóa, ngữ pháp, phát âm, luyện viết và bài tập tương tác.",
+    topics: HSK_5_TEXTBOOK_TOPICS,
   },
   {
     id: "hsk-6",

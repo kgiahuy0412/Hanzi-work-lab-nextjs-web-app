@@ -1,0 +1,187 @@
+{
+  "schemaVersion": "1.0.0",
+  "blocks": [
+    {
+      "id": "hsk2-tb-l01-application-01",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-022",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l02-application-01",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-030",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l03-application-01",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-038",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l04-application-01",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-046",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l05-application-01",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-054",
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l06-application-01",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-062",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-application-01",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-070",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-application-01",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-078",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l09-application-01",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-086",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l10-application-01",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-094",
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15
+      ],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l11-application-01",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-102",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l12-application-01",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-110",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-application-01",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-118",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l14-application-01",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-126",
+      "sourceRowIndexes": [],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l15-application-01",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "kind": "application",
+      "sourcePageRef": "hsk2-tb-source-page-134",
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14
+      ],
+      "detectedHeadingsOcrRaw": [],
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    }
+  ]
+}

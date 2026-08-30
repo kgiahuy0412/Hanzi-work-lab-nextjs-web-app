@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "comparisons": [
+    {
+      "id": "hsk4l-tb-comparison-11",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "terms": [
+        "无论",
+        "不管"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l11-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-12",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "terms": [
+        "对于",
+        "关于"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l12-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-13",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "terms": [
+        "大概",
+        "也许"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l13-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-14",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "terms": [
+        "于是",
+        "因此"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l14-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-15",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "terms": [
+        "千万",
+        "一定"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l15-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-16",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "terms": [
+        "恐怕",
+        "怕"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l16-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-17",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "terms": [
+        "越",
+        "越"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l17-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-18",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "terms": [
+        "接着",
+        "然后"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l18-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-19",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "terms": [
+        "出来",
+        "起来"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l19-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-comparison-20",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "terms": [
+        "究竟",
+        "到底"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4l-tb-l20-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    }
+  ]
+}

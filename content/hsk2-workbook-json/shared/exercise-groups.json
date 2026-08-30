@@ -1,0 +1,5768 @@
+{
+  "schemaVersion": "1.0.0",
+  "groups": [
+    {
+      "id": "hsk2-wb-lesson-01-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-007"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q01",
+        "hsk2-wb-lesson-01-q02",
+        "hsk2-wb-lesson-01-q03",
+        "hsk2-wb-lesson-01-q04",
+        "hsk2-wb-lesson-01-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l01-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-008"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q06",
+        "hsk2-wb-lesson-01-q07",
+        "hsk2-wb-lesson-01-q08",
+        "hsk2-wb-lesson-01-q09",
+        "hsk2-wb-lesson-01-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l01-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-009"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q11",
+        "hsk2-wb-lesson-01-q12",
+        "hsk2-wb-lesson-01-q13",
+        "hsk2-wb-lesson-01-q14",
+        "hsk2-wb-lesson-01-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l01-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-010"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q16",
+        "hsk2-wb-lesson-01-q17",
+        "hsk2-wb-lesson-01-q18",
+        "hsk2-wb-lesson-01-q19",
+        "hsk2-wb-lesson-01-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-011"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q21",
+        "hsk2-wb-lesson-01-q22",
+        "hsk2-wb-lesson-01-q23",
+        "hsk2-wb-lesson-01-q24",
+        "hsk2-wb-lesson-01-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "为什么",
+            "pinyin": "wèi shén me"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "要",
+            "pinyin": "yào"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "最",
+            "pinyin": "zuì"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "觉得",
+            "pinyin": "jué de"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "也",
+            "pinyin": "yě"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-012"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q26",
+        "hsk2-wb-lesson-01-q27",
+        "hsk2-wb-lesson-01-q28",
+        "hsk2-wb-lesson-01-q29",
+        "hsk2-wb-lesson-01-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-013"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-01-q31",
+        "hsk2-wb-lesson-01-q32",
+        "hsk2-wb-lesson-01-q33",
+        "hsk2-wb-lesson-01-q34",
+        "hsk2-wb-lesson-01-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "桌子上有一本新书。那是你的书吗？",
+            "pinyin": "zhuō zi shàng yǒu yī běn xīn shū 。 nà shì nǐ de shū ma ？"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "王老师什么时候能到？",
+            "pinyin": "wáng lǎo shī shén me shí hòu néng dào ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "他们都去踢足球了，你去不去？",
+            "pinyin": "tā men dōu qù tī zú qiú le ， nǐ qù bù qù ？"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "这个小猫很漂亮。它多大了？",
+            "pinyin": "zhè ge xiǎo māo hěn piào liàng 。 tā duō dà le ？"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "你为什么不开车去学校？",
+            "pinyin": "nǐ wèi shén me bù kāi chē qù xué xiào ？"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-014"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "audioRef": "hsk2-wb-audio-l01-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-01-hanzi",
+      "lessonRef": "hsk2-wb-lesson-01",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-015",
+        "hsk2-wb-source-page-016"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-015",
+          "rowIndexes": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-016",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-017"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q01",
+        "hsk2-wb-lesson-02-q02",
+        "hsk2-wb-lesson-02-q03",
+        "hsk2-wb-lesson-02-q04",
+        "hsk2-wb-lesson-02-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l02-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-018"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q06",
+        "hsk2-wb-lesson-02-q07",
+        "hsk2-wb-lesson-02-q08",
+        "hsk2-wb-lesson-02-q09",
+        "hsk2-wb-lesson-02-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l02-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-019"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q11",
+        "hsk2-wb-lesson-02-q12",
+        "hsk2-wb-lesson-02-q13",
+        "hsk2-wb-lesson-02-q14",
+        "hsk2-wb-lesson-02-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l02-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-020"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q16",
+        "hsk2-wb-lesson-02-q17",
+        "hsk2-wb-lesson-02-q18",
+        "hsk2-wb-lesson-02-q19",
+        "hsk2-wb-lesson-02-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-021"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q21",
+        "hsk2-wb-lesson-02-q22",
+        "hsk2-wb-lesson-02-q23",
+        "hsk2-wb-lesson-02-q24",
+        "hsk2-wb-lesson-02-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "出去",
+            "pinyin": "chū qù"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "每",
+            "pinyin": "měi"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "忙",
+            "pinyin": "máng"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "知道",
+            "pinyin": "zhī dào"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "生病",
+            "pinyin": "shēng bìng"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-022"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q26",
+        "hsk2-wb-lesson-02-q27",
+        "hsk2-wb-lesson-02-q28",
+        "hsk2-wb-lesson-02-q29",
+        "hsk2-wb-lesson-02-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-023"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-02-q31",
+        "hsk2-wb-lesson-02-q32",
+        "hsk2-wb-lesson-02-q33",
+        "hsk2-wb-lesson-02-q34",
+        "hsk2-wb-lesson-02-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "他儿子今年八岁了。",
+            "pinyin": "tā ér zi jīn nián bā suì le 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "星期六也不休息，你工作累不累？",
+            "pinyin": "xīng qī liù yě bù xiū xī ， nǐ gōng zuò lèi bù lèi ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "我不喜欢早上运动，我喜欢下午和朋友一起踢足球。",
+            "pinyin": "wǒ bù xǐ huān zǎo shàng yùn dòng ， wǒ xǐ huān xià wǔ hé péng yǒu yì qǐ tī zú qiú 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "医生说他不能出院。",
+            "pinyin": "yī shēng shuō tā bù néng chū yuàn 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "你每天什么时候睡觉？",
+            "pinyin": "nǐ měi tiān shén me shí hòu shuì jiào ？"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-024"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22
+      ],
+      "audioRef": "hsk2-wb-audio-l02-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-02-hanzi",
+      "lessonRef": "hsk2-wb-lesson-02",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-025",
+        "hsk2-wb-source-page-026"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-025",
+          "rowIndexes": [
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-026",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-027"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q01",
+        "hsk2-wb-lesson-03-q02",
+        "hsk2-wb-lesson-03-q03",
+        "hsk2-wb-lesson-03-q04",
+        "hsk2-wb-lesson-03-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l03-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-028"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q06",
+        "hsk2-wb-lesson-03-q07",
+        "hsk2-wb-lesson-03-q08",
+        "hsk2-wb-lesson-03-q09",
+        "hsk2-wb-lesson-03-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l03-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-029"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q11",
+        "hsk2-wb-lesson-03-q12",
+        "hsk2-wb-lesson-03-q13",
+        "hsk2-wb-lesson-03-q14",
+        "hsk2-wb-lesson-03-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l03-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-030"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q16",
+        "hsk2-wb-lesson-03-q17",
+        "hsk2-wb-lesson-03-q18",
+        "hsk2-wb-lesson-03-q19",
+        "hsk2-wb-lesson-03-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-031"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q21",
+        "hsk2-wb-lesson-03-q22",
+        "hsk2-wb-lesson-03-q23",
+        "hsk2-wb-lesson-03-q24",
+        "hsk2-wb-lesson-03-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "送",
+            "pinyin": "sòng"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "真",
+            "pinyin": "zhēn"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "-下",
+            "pinyin": "- xià"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "旁边",
+            "pinyin": "páng biān"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "千",
+            "pinyin": "qiān"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-032"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q26",
+        "hsk2-wb-lesson-03-q27",
+        "hsk2-wb-lesson-03-q28",
+        "hsk2-wb-lesson-03-q29",
+        "hsk2-wb-lesson-03-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-033"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-03-q31",
+        "hsk2-wb-lesson-03-q32",
+        "hsk2-wb-lesson-03-q33",
+        "hsk2-wb-lesson-03-q34",
+        "hsk2-wb-lesson-03-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "我不认识前边的那两个人，他们是谁？",
+            "pinyin": "wǒ bù rèn shí qián biān de nà liǎng gè rén ， tā men shì shuí ？"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "来了，你休息一下吧，看看报纸，喝喝茶。",
+            "pinyin": "lái le ， nǐ xiū xī yī xià ba ， kàn kàn bào zhǐ ， hē hē chá 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "我想给爸爸买一块手表，你觉得这块怎么样？",
+            "pinyin": "wǒ xiǎng gěi bà bà mǎi yī kuài shǒu biǎo ， nǐ jué de zhè kuài zěn me yàng ？"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "今天我要给儿子、女儿做早饭，要给丈夫做午饭，还要给朋友们",
+            "pinyin": "jīn tiān wǒ yào gěi ér zi 、 nǚ ér zuò zǎo fàn ， yào gěi zhàng fū zuò wǔ fàn ， hái yào gěi péng yǒu men"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "做晚饭。",
+            "pinyin": "zuò wǎn fàn 。"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-034"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "audioRef": "hsk2-wb-audio-l03-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-03-hanzi",
+      "lessonRef": "hsk2-wb-lesson-03",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-035",
+        "hsk2-wb-source-page-036"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-035",
+          "rowIndexes": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-036",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-037"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q01",
+        "hsk2-wb-lesson-04-q02",
+        "hsk2-wb-lesson-04-q03",
+        "hsk2-wb-lesson-04-q04",
+        "hsk2-wb-lesson-04-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l04-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-038"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q06",
+        "hsk2-wb-lesson-04-q07",
+        "hsk2-wb-lesson-04-q08",
+        "hsk2-wb-lesson-04-q09",
+        "hsk2-wb-lesson-04-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l04-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-039"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q11",
+        "hsk2-wb-lesson-04-q12",
+        "hsk2-wb-lesson-04-q13",
+        "hsk2-wb-lesson-04-q14",
+        "hsk2-wb-lesson-04-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l04-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-040"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q16",
+        "hsk2-wb-lesson-04-q17",
+        "hsk2-wb-lesson-04-q18",
+        "hsk2-wb-lesson-04-q19",
+        "hsk2-wb-lesson-04-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-041"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q21",
+        "hsk2-wb-lesson-04-q22",
+        "hsk2-wb-lesson-04-q23",
+        "hsk2-wb-lesson-04-q24",
+        "hsk2-wb-lesson-04-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "介绍",
+            "pinyin": "jiè shào"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "帮",
+            "pinyin": "bāng"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "给",
+            "pinyin": "gěi"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "非常",
+            "pinyin": "fēi cháng"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "已经",
+            "pinyin": "yǐ jīng"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-042"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q26",
+        "hsk2-wb-lesson-04-q27",
+        "hsk2-wb-lesson-04-q28",
+        "hsk2-wb-lesson-04-q29",
+        "hsk2-wb-lesson-04-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-043"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-04-q31",
+        "hsk2-wb-lesson-04-q32",
+        "hsk2-wb-lesson-04-q33",
+        "hsk2-wb-lesson-04-q34",
+        "hsk2-wb-lesson-04-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "这本书是你什么时候写的？",
+            "pinyin": "zhè běn shū shì nǐ shén me shí hòu xiě de ？"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "昨天晚上的电话是谁打的？",
+            "pinyin": "zuó tiān wǎn shàng de diàn huà shì shuí dǎ dī ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "你的汉字非常漂亮！",
+            "pinyin": "nǐ de hàn zì fēi cháng piào liàng ！"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "今天我非常高兴，你们多吃点儿。",
+            "pinyin": "jīn tiān wǒ fēi cháng gāo xìng ， nǐ men duō chī diǎn ér 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "这几天我不想吃饭，觉得很累。",
+            "pinyin": "zhè jǐ tiān wǒ bù xiǎng chī fàn ， jué de hěn lèi 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-044"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33
+      ],
+      "audioRef": "hsk2-wb-audio-l04-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-04-hanzi",
+      "lessonRef": "hsk2-wb-lesson-04",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-045",
+        "hsk2-wb-source-page-046"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-045",
+          "rowIndexes": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-046",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-047"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q01",
+        "hsk2-wb-lesson-05-q02",
+        "hsk2-wb-lesson-05-q03",
+        "hsk2-wb-lesson-05-q04",
+        "hsk2-wb-lesson-05-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l05-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-048"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q06",
+        "hsk2-wb-lesson-05-q07",
+        "hsk2-wb-lesson-05-q08",
+        "hsk2-wb-lesson-05-q09",
+        "hsk2-wb-lesson-05-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l05-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-049"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q11",
+        "hsk2-wb-lesson-05-q12",
+        "hsk2-wb-lesson-05-q13",
+        "hsk2-wb-lesson-05-q14",
+        "hsk2-wb-lesson-05-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l05-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-050"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q16",
+        "hsk2-wb-lesson-05-q17",
+        "hsk2-wb-lesson-05-q18",
+        "hsk2-wb-lesson-05-q19",
+        "hsk2-wb-lesson-05-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-051"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q21",
+        "hsk2-wb-lesson-05-q22",
+        "hsk2-wb-lesson-05-q23",
+        "hsk2-wb-lesson-05-q24",
+        "hsk2-wb-lesson-05-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "就",
+            "pinyin": "jiù"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "吧",
+            "pinyin": "ba"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "还",
+            "pinyin": "hái"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "对",
+            "pinyin": "duì"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "以后",
+            "pinyin": "yǐ hòu"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-052"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q26",
+        "hsk2-wb-lesson-05-q27",
+        "hsk2-wb-lesson-05-q28",
+        "hsk2-wb-lesson-05-q29",
+        "hsk2-wb-lesson-05-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-053"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-05-q31",
+        "hsk2-wb-lesson-05-q32",
+        "hsk2-wb-lesson-05-q33",
+        "hsk2-wb-lesson-05-q34",
+        "hsk2-wb-lesson-05-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "我今天早上六点起床的，现在有点儿累。",
+            "pinyin": "wǒ jīn tiān zǎo shàng liù diǎn qǐ chuáng de ， xiàn zài yǒu diǎn ér lèi 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "你会做什么菜？",
+            "pinyin": "nǐ huì zuò shén me cài ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "明天我去公司，不去打球了。",
+            "pinyin": "míng tiān wǒ qù gōng sī ， bù qù dǎ qiú le 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "昨天的考试你觉得怎么样？",
+            "pinyin": "zuó tiān de kǎo shì nǐ jué de zěn me yàng ？"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "你准备去北京旅游的东西了吗？",
+            "pinyin": "nǐ zhǔn bèi qù běi jīng lǚ yóu de dōng xī le ma ？"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-054"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "audioRef": "hsk2-wb-audio-l05-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-05-hanzi",
+      "lessonRef": "hsk2-wb-lesson-05",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-055",
+        "hsk2-wb-source-page-056"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-055",
+          "rowIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-056",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-057"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q01",
+        "hsk2-wb-lesson-06-q02",
+        "hsk2-wb-lesson-06-q03",
+        "hsk2-wb-lesson-06-q04",
+        "hsk2-wb-lesson-06-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l06-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-058"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q06",
+        "hsk2-wb-lesson-06-q07",
+        "hsk2-wb-lesson-06-q08",
+        "hsk2-wb-lesson-06-q09",
+        "hsk2-wb-lesson-06-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l06-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-059"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q11",
+        "hsk2-wb-lesson-06-q12",
+        "hsk2-wb-lesson-06-q13",
+        "hsk2-wb-lesson-06-q14",
+        "hsk2-wb-lesson-06-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l06-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-060"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q16",
+        "hsk2-wb-lesson-06-q17",
+        "hsk2-wb-lesson-06-q18",
+        "hsk2-wb-lesson-06-q19",
+        "hsk2-wb-lesson-06-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-061"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q21",
+        "hsk2-wb-lesson-06-q22",
+        "hsk2-wb-lesson-06-q23",
+        "hsk2-wb-lesson-06-q24",
+        "hsk2-wb-lesson-06-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "件件",
+            "pinyin": "jiàn jiàn"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "因为",
+            "pinyin": "yīn wèi"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "打",
+            "pinyin": "dǎ"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "经常",
+            "pinyin": "jīng cháng"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "公斤",
+            "pinyin": "gōng jīn"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-062"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q26",
+        "hsk2-wb-lesson-06-q27",
+        "hsk2-wb-lesson-06-q28",
+        "hsk2-wb-lesson-06-q29",
+        "hsk2-wb-lesson-06-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-063"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-06-q31",
+        "hsk2-wb-lesson-06-q32",
+        "hsk2-wb-lesson-06-q33",
+        "hsk2-wb-lesson-06-q34",
+        "hsk2-wb-lesson-06-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "是啊，下雨了。",
+            "pinyin": "shì a ， xià yǔ le 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "他已经来了，你没看见吗？",
+            "pinyin": "tā yǐ jīng lái le ， nǐ méi kàn jiàn ma ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "他今天身体不太好。",
+            "pinyin": "tā jīn tiān shēn tǐ bù tài hǎo 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "天天吃米饭，我想来点儿面条。",
+            "pinyin": "tiān tiān chī mǐ fàn ， wǒ xiǎng lái diǎn ér miàn tiáo 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "昨天下雨了。",
+            "pinyin": "zuó tiān xià yǔ le 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-064"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "audioRef": "hsk2-wb-audio-l06-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-06-hanzi",
+      "lessonRef": "hsk2-wb-lesson-06",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-065",
+        "hsk2-wb-source-page-066"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-065",
+          "rowIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-066",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-067"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q01",
+        "hsk2-wb-lesson-07-q02",
+        "hsk2-wb-lesson-07-q03",
+        "hsk2-wb-lesson-07-q04",
+        "hsk2-wb-lesson-07-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l07-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-068"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q06",
+        "hsk2-wb-lesson-07-q07",
+        "hsk2-wb-lesson-07-q08",
+        "hsk2-wb-lesson-07-q09",
+        "hsk2-wb-lesson-07-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l07-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-069"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q11",
+        "hsk2-wb-lesson-07-q12",
+        "hsk2-wb-lesson-07-q13",
+        "hsk2-wb-lesson-07-q14",
+        "hsk2-wb-lesson-07-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l07-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-070"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q16",
+        "hsk2-wb-lesson-07-q17",
+        "hsk2-wb-lesson-07-q18",
+        "hsk2-wb-lesson-07-q19",
+        "hsk2-wb-lesson-07-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-071"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q21",
+        "hsk2-wb-lesson-07-q22",
+        "hsk2-wb-lesson-07-q23",
+        "hsk2-wb-lesson-07-q24",
+        "hsk2-wb-lesson-07-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "离",
+            "pinyin": "lí"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "教室",
+            "pinyin": "jiào shì"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "就",
+            "pinyin": "jiù"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "过",
+            "pinyin": "guò"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "公司",
+            "pinyin": "gōng sī"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-072"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q26",
+        "hsk2-wb-lesson-07-q27",
+        "hsk2-wb-lesson-07-q28",
+        "hsk2-wb-lesson-07-q29",
+        "hsk2-wb-lesson-07-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-073"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-07-q31",
+        "hsk2-wb-lesson-07-q32",
+        "hsk2-wb-lesson-07-q33",
+        "hsk2-wb-lesson-07-q34",
+        "hsk2-wb-lesson-07-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "还没有呢。",
+            "pinyin": "hái méi yǒu ne 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "坐公共汽车太慢了。",
+            "pinyin": "zuò gōng gòng qì chē tài màn le 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "不远，我每天走路去学校。",
+            "pinyin": "bù yuǎn ， wǒ měi tiān zǒu lù qù xué xiào 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "我们家前面有一个小饭馆，走几分钟就到了，去那儿吃吧。",
+            "pinyin": "wǒ men jiā qián miàn yǒu yí gè xiǎo fàn guǎn ， zǒu jǐ fēn zhōng jiù dào le ， qù nà ér chī ba 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "我在去机场的路上。",
+            "pinyin": "wǒ zài qù jī chǎng de lù shàng 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-074"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "audioRef": "hsk2-wb-audio-l07-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-07-hanzi",
+      "lessonRef": "hsk2-wb-lesson-07",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-075"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-075",
+          "rowIndexes": [
+            2,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-076"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q01",
+        "hsk2-wb-lesson-08-q02",
+        "hsk2-wb-lesson-08-q03",
+        "hsk2-wb-lesson-08-q04",
+        "hsk2-wb-lesson-08-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l08-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-077"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q06",
+        "hsk2-wb-lesson-08-q07",
+        "hsk2-wb-lesson-08-q08",
+        "hsk2-wb-lesson-08-q09",
+        "hsk2-wb-lesson-08-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l08-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-078"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q11",
+        "hsk2-wb-lesson-08-q12",
+        "hsk2-wb-lesson-08-q13",
+        "hsk2-wb-lesson-08-q14",
+        "hsk2-wb-lesson-08-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l08-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-079"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q16",
+        "hsk2-wb-lesson-08-q17",
+        "hsk2-wb-lesson-08-q18",
+        "hsk2-wb-lesson-08-q19",
+        "hsk2-wb-lesson-08-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-080"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q21",
+        "hsk2-wb-lesson-08-q22",
+        "hsk2-wb-lesson-08-q23",
+        "hsk2-wb-lesson-08-q24",
+        "hsk2-wb-lesson-08-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "等",
+            "pinyin": "děng"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "让",
+            "pinyin": "ràng"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "再",
+            "pinyin": "zài"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "事情",
+            "pinyin": "shì qíng"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "找",
+            "pinyin": "zhǎo"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-081"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q26",
+        "hsk2-wb-lesson-08-q27",
+        "hsk2-wb-lesson-08-q28",
+        "hsk2-wb-lesson-08-q29",
+        "hsk2-wb-lesson-08-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-082"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-08-q31",
+        "hsk2-wb-lesson-08-q32",
+        "hsk2-wb-lesson-08-q33",
+        "hsk2-wb-lesson-08-q34",
+        "hsk2-wb-lesson-08-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "这件白的有点儿长，这件黑的我也不太喜欢，我再看看吧。",
+            "pinyin": "zhè jiàn bái de yǒu diǎn ér zhǎng ， zhè jiàn hēi de wǒ yě bù tài xǐ huān ， wǒ zài kàn kàn ba 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "服务员，我想要点儿热水。",
+            "pinyin": "fú wù yuán ， wǒ xiǎng yào diǎn ér rè shuǐ 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "明天要考试，考试后再去看吧。",
+            "pinyin": "míng tiān yào kǎo shì ， kǎo shì hòu zài qù kàn ba 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "让我想想再告诉你。",
+            "pinyin": "ràng wǒ xiǎng xiǎng zài gào sù nǐ 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "听说他生病了，我想去医院看看他。",
+            "pinyin": "tīng shuō tā shēng bìng le ， wǒ xiǎng qù yī yuàn kàn kàn tā 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-083"
+      ],
+      "sourceRowIndexes": [
+        1,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "audioRef": "hsk2-wb-audio-l08-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-08-hanzi",
+      "lessonRef": "hsk2-wb-lesson-08",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-084"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-084",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-085"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q01",
+        "hsk2-wb-lesson-09-q02",
+        "hsk2-wb-lesson-09-q03",
+        "hsk2-wb-lesson-09-q04",
+        "hsk2-wb-lesson-09-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l09-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-086"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q06",
+        "hsk2-wb-lesson-09-q07",
+        "hsk2-wb-lesson-09-q08",
+        "hsk2-wb-lesson-09-q09",
+        "hsk2-wb-lesson-09-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l09-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-087"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q11",
+        "hsk2-wb-lesson-09-q12",
+        "hsk2-wb-lesson-09-q13",
+        "hsk2-wb-lesson-09-q14",
+        "hsk2-wb-lesson-09-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l09-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-088"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q16",
+        "hsk2-wb-lesson-09-q17",
+        "hsk2-wb-lesson-09-q18",
+        "hsk2-wb-lesson-09-q19",
+        "hsk2-wb-lesson-09-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-089"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q21",
+        "hsk2-wb-lesson-09-q22",
+        "hsk2-wb-lesson-09-q23",
+        "hsk2-wb-lesson-09-q24",
+        "hsk2-wb-lesson-09-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "上班",
+            "pinyin": "shàng bān"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "从",
+            "pinyin": "cóng"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "希望",
+            "pinyin": "xī wàng"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "问题",
+            "pinyin": "wèn tí"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "懂",
+            "pinyin": "dǒng"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-090"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q26",
+        "hsk2-wb-lesson-09-q27",
+        "hsk2-wb-lesson-09-q28",
+        "hsk2-wb-lesson-09-q29",
+        "hsk2-wb-lesson-09-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-091"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-09-q31",
+        "hsk2-wb-lesson-09-q32",
+        "hsk2-wb-lesson-09-q33",
+        "hsk2-wb-lesson-09-q34",
+        "hsk2-wb-lesson-09-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "就在前面，你还没看见吗？",
+            "pinyin": "jiù zài qián miàn ， nǐ hái méi kàn jiàn ma ？"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "非常好，我想明年再来一次。",
+            "pinyin": "fēi cháng hǎo ， wǒ xiǎng míng nián zài lái yī cì 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "还可以，都做完了。",
+            "pinyin": "hái kě yǐ ， dōu zuò wán le 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "这些衣服你一个人能洗完吗？",
+            "pinyin": "zhè xiē yī fú nǐ yí gè rén néng xǐ wán ma ？"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "等等我，我也想去。",
+            "pinyin": "děng děng wǒ ， wǒ yě xiǎng qù 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-092"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30
+      ],
+      "audioRef": "hsk2-wb-audio-l09-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-09-hanzi",
+      "lessonRef": "hsk2-wb-lesson-09",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-093"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-093",
+          "rowIndexes": [
+            1,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-094"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q01",
+        "hsk2-wb-lesson-10-q02",
+        "hsk2-wb-lesson-10-q03",
+        "hsk2-wb-lesson-10-q04",
+        "hsk2-wb-lesson-10-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l10-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-095"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q06",
+        "hsk2-wb-lesson-10-q07",
+        "hsk2-wb-lesson-10-q08",
+        "hsk2-wb-lesson-10-q09",
+        "hsk2-wb-lesson-10-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l10-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-096"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q11",
+        "hsk2-wb-lesson-10-q12",
+        "hsk2-wb-lesson-10-q13",
+        "hsk2-wb-lesson-10-q14",
+        "hsk2-wb-lesson-10-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l10-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-097"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q16",
+        "hsk2-wb-lesson-10-q17",
+        "hsk2-wb-lesson-10-q18",
+        "hsk2-wb-lesson-10-q19",
+        "hsk2-wb-lesson-10-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-098"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q21",
+        "hsk2-wb-lesson-10-q22",
+        "hsk2-wb-lesson-10-q23",
+        "hsk2-wb-lesson-10-q24",
+        "hsk2-wb-lesson-10-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "帮助",
+            "pinyin": "bāng zhù"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "正在",
+            "pinyin": "zhèng zài"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "课",
+            "pinyin": "kè"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "鸡蛋",
+            "pinyin": "jī dàn"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "别",
+            "pinyin": "bié"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-099"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q26",
+        "hsk2-wb-lesson-10-q27",
+        "hsk2-wb-lesson-10-q28",
+        "hsk2-wb-lesson-10-q29",
+        "hsk2-wb-lesson-10-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-100"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-10-q31",
+        "hsk2-wb-lesson-10-q32",
+        "hsk2-wb-lesson-10-q33",
+        "hsk2-wb-lesson-10-q34",
+        "hsk2-wb-lesson-10-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "爸，我们明天去跑步吧。",
+            "pinyin": "bà ， wǒ men míng tiān qù pǎo bù ba 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "你弟弟正在学习汉语吗？",
+            "pinyin": "nǐ dì di zhèng zài xué xí hàn yǔ ma ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "一个红的，一个白的，真漂亮。",
+            "pinyin": "yí gè hóng de ， yí gè bái de ， zhēn piào liàng 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "你明天的课都准备好了吗？",
+            "pinyin": "nǐ míng tiān de kè dōu zhǔn bèi hǎo le ma ？"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "别看电视了，明天还要考试呢。",
+            "pinyin": "bié kàn diàn shì le ， míng tiān hái yào kǎo shì ne 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-101"
+      ],
+      "sourceRowIndexes": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "audioRef": "hsk2-wb-audio-l10-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-10-hanzi",
+      "lessonRef": "hsk2-wb-lesson-10",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-102"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-102",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-103"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q01",
+        "hsk2-wb-lesson-11-q02",
+        "hsk2-wb-lesson-11-q03",
+        "hsk2-wb-lesson-11-q04",
+        "hsk2-wb-lesson-11-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l11-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-104"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q06",
+        "hsk2-wb-lesson-11-q07",
+        "hsk2-wb-lesson-11-q08",
+        "hsk2-wb-lesson-11-q09",
+        "hsk2-wb-lesson-11-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l11-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-105"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q11",
+        "hsk2-wb-lesson-11-q12",
+        "hsk2-wb-lesson-11-q13",
+        "hsk2-wb-lesson-11-q14",
+        "hsk2-wb-lesson-11-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l11-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-106"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q16",
+        "hsk2-wb-lesson-11-q17",
+        "hsk2-wb-lesson-11-q18",
+        "hsk2-wb-lesson-11-q19",
+        "hsk2-wb-lesson-11-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-107"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q21",
+        "hsk2-wb-lesson-11-q22",
+        "hsk2-wb-lesson-11-q23",
+        "hsk2-wb-lesson-11-q24",
+        "hsk2-wb-lesson-11-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "唱歌",
+            "pinyin": "chàng gē"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "便宜",
+            "pinyin": "pián yi"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "说话",
+            "pinyin": "shuō huà"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "可能",
+            "pinyin": "kě néng"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "比",
+            "pinyin": "bǐ"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-108"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q26",
+        "hsk2-wb-lesson-11-q27",
+        "hsk2-wb-lesson-11-q28",
+        "hsk2-wb-lesson-11-q29",
+        "hsk2-wb-lesson-11-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-109"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-11-q31",
+        "hsk2-wb-lesson-11-q32",
+        "hsk2-wb-lesson-11-q33",
+        "hsk2-wb-lesson-11-q34",
+        "hsk2-wb-lesson-11-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "这两天怎么没看见王老师？",
+            "pinyin": "zhè liǎng tiān zěn me méi kàn jiàn wáng lǎo shī ？"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "我哥哥比我姐姐大三岁。",
+            "pinyin": "wǒ gē gē bǐ wǒ jiě jiě dà sān suì 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "家里还有呢，来点儿水果吧。",
+            "pinyin": "jiā lǐ hái yǒu ne ， lái diǎn ér shuǐ guǒ ba 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "这是我爸爸送给我的，昨天是我的生日。",
+            "pinyin": "zhè shì wǒ bà bà sòng gěi wǒ de ， zuó tiān shì wǒ de shēng rì 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "我觉得公共汽车没有自行车快。因为路上车太多了。",
+            "pinyin": "wǒ jué de gōng gòng qì chē méi yǒu zì xíng chē kuài 。 yīn wèi lù shàng chē tài duō le 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-110"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "audioRef": "hsk2-wb-audio-l11-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-11-hanzi",
+      "lessonRef": "hsk2-wb-lesson-11",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-111"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-111",
+          "rowIndexes": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            16
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-112"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q01",
+        "hsk2-wb-lesson-12-q02",
+        "hsk2-wb-lesson-12-q03",
+        "hsk2-wb-lesson-12-q04",
+        "hsk2-wb-lesson-12-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l12-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-113"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q06",
+        "hsk2-wb-lesson-12-q07",
+        "hsk2-wb-lesson-12-q08",
+        "hsk2-wb-lesson-12-q09",
+        "hsk2-wb-lesson-12-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l12-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-114"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q11",
+        "hsk2-wb-lesson-12-q12",
+        "hsk2-wb-lesson-12-q13",
+        "hsk2-wb-lesson-12-q14",
+        "hsk2-wb-lesson-12-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l12-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-115"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q16",
+        "hsk2-wb-lesson-12-q17",
+        "hsk2-wb-lesson-12-q18",
+        "hsk2-wb-lesson-12-q19",
+        "hsk2-wb-lesson-12-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-116"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q21",
+        "hsk2-wb-lesson-12-q22",
+        "hsk2-wb-lesson-12-q23",
+        "hsk2-wb-lesson-12-q24",
+        "hsk2-wb-lesson-12-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "穿",
+            "pinyin": "chuān"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "进",
+            "pinyin": "jìn"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "近",
+            "pinyin": "jìn"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "让",
+            "pinyin": "ràng"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "希望",
+            "pinyin": "xī wàng"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-117"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q26",
+        "hsk2-wb-lesson-12-q27",
+        "hsk2-wb-lesson-12-q28",
+        "hsk2-wb-lesson-12-q29",
+        "hsk2-wb-lesson-12-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-118"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-12-q31",
+        "hsk2-wb-lesson-12-q32",
+        "hsk2-wb-lesson-12-q33",
+        "hsk2-wb-lesson-12-q34",
+        "hsk2-wb-lesson-12-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "路上车太多，坐公共汽车还没有走路快呢。",
+            "pinyin": "lù shàng chē tài duō ， zuò gōng gòng qì chē hái méi yǒu zǒu lù kuài ne 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "上个星期怎么没看到你？",
+            "pinyin": "shàng gè xīng qī zěn me méi kàn dào nǐ ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "天气太冷了，都零下十度了。",
+            "pinyin": "tiān qì tài lěng le ， dōu líng xià shí dù le 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "他比我游得快，但是没有大卫游得快。",
+            "pinyin": "tā bǐ wǒ yóu dé kuài ， dàn shì méi yǒu dà wèi yóu dé kuài 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "住得远真的很累。",
+            "pinyin": "zhù dé yuǎn zhēn de hěn lèi 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-119"
+      ],
+      "sourceRowIndexes": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26
+      ],
+      "audioRef": "hsk2-wb-audio-l12-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-12-hanzi",
+      "lessonRef": "hsk2-wb-lesson-12",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-120"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-120",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-121"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q01",
+        "hsk2-wb-lesson-13-q02",
+        "hsk2-wb-lesson-13-q03",
+        "hsk2-wb-lesson-13-q04",
+        "hsk2-wb-lesson-13-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l13-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-122"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q06",
+        "hsk2-wb-lesson-13-q07",
+        "hsk2-wb-lesson-13-q08",
+        "hsk2-wb-lesson-13-q09",
+        "hsk2-wb-lesson-13-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l13-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-123"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q11",
+        "hsk2-wb-lesson-13-q12",
+        "hsk2-wb-lesson-13-q13",
+        "hsk2-wb-lesson-13-q14",
+        "hsk2-wb-lesson-13-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l13-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-124"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q16",
+        "hsk2-wb-lesson-13-q17",
+        "hsk2-wb-lesson-13-q18",
+        "hsk2-wb-lesson-13-q19",
+        "hsk2-wb-lesson-13-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-125"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q21",
+        "hsk2-wb-lesson-13-q22",
+        "hsk2-wb-lesson-13-q23",
+        "hsk2-wb-lesson-13-q24",
+        "hsk2-wb-lesson-13-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "拿",
+            "pinyin": "ná"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "笑",
+            "pinyin": "xiào"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "长",
+            "pinyin": "zhǎng"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "往",
+            "pinyin": "wǎng"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "一直",
+            "pinyin": "yì zhí"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-126"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q26",
+        "hsk2-wb-lesson-13-q27",
+        "hsk2-wb-lesson-13-q28",
+        "hsk2-wb-lesson-13-q29",
+        "hsk2-wb-lesson-13-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-127"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-13-q31",
+        "hsk2-wb-lesson-13-q32",
+        "hsk2-wb-lesson-13-q33",
+        "hsk2-wb-lesson-13-q34",
+        "hsk2-wb-lesson-13-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "是给我妈妈买的新衣服，明天是她的生日。",
+            "pinyin": "shì gěi wǒ mā mā mǎi de xīn yī fú ， míng tiān shì tā de shēng rì 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "他开着车出去了。下午可能回来。",
+            "pinyin": "tā kāi zhe chē chū qù le 。 xià wǔ kě néng huí lái 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "大卫也想跟我们一起去。",
+            "pinyin": "dà wèi yě xiǎng gēn wǒ men yì qǐ qù 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "不是两年，是一年半。",
+            "pinyin": "bú shì liǎng nián ， shì yī nián bàn 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "教室前面还有一位老师，他正在给学生们上课呢。",
+            "pinyin": "jiào shì qián miàn hái yǒu yī wèi lǎo shī ， tā zhèng zài gěi xué shēng men shàng kè ne 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-128"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29
+      ],
+      "audioRef": "hsk2-wb-audio-l13-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-13-hanzi",
+      "lessonRef": "hsk2-wb-lesson-13",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-129"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-129",
+          "rowIndexes": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            17
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-130"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q01",
+        "hsk2-wb-lesson-14-q02",
+        "hsk2-wb-lesson-14-q03",
+        "hsk2-wb-lesson-14-q04",
+        "hsk2-wb-lesson-14-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l14-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-131"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q06",
+        "hsk2-wb-lesson-14-q07",
+        "hsk2-wb-lesson-14-q08",
+        "hsk2-wb-lesson-14-q09",
+        "hsk2-wb-lesson-14-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l14-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-132"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q11",
+        "hsk2-wb-lesson-14-q12",
+        "hsk2-wb-lesson-14-q13",
+        "hsk2-wb-lesson-14-q14",
+        "hsk2-wb-lesson-14-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l14-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-133"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q16",
+        "hsk2-wb-lesson-14-q17",
+        "hsk2-wb-lesson-14-q18",
+        "hsk2-wb-lesson-14-q19",
+        "hsk2-wb-lesson-14-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-134"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q21",
+        "hsk2-wb-lesson-14-q22",
+        "hsk2-wb-lesson-14-q23",
+        "hsk2-wb-lesson-14-q24",
+        "hsk2-wb-lesson-14-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "有意思",
+            "pinyin": "yǒu yì si"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "但是",
+            "pinyin": "dàn shì"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "意思",
+            "pinyin": "yì si"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "过",
+            "pinyin": "guò"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "听说",
+            "pinyin": "tīng shuō"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-135"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q26",
+        "hsk2-wb-lesson-14-q27",
+        "hsk2-wb-lesson-14-q28",
+        "hsk2-wb-lesson-14-q29",
+        "hsk2-wb-lesson-14-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-136"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-14-q31",
+        "hsk2-wb-lesson-14-q32",
+        "hsk2-wb-lesson-14-q33",
+        "hsk2-wb-lesson-14-q34",
+        "hsk2-wb-lesson-14-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "你出去的时候多穿些衣服。",
+            "pinyin": "nǐ chū qù de shí hòu duō chuān xiē yī fú 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "你在那个商店买过东西没有？",
+            "pinyin": "nǐ zài nà ge shāng diàn mǎi guò dōng xī méi yǒu ？"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "妈妈告诉过我很多次，长时间玩儿电脑和手机对眼睛不好。",
+            "pinyin": "mā mā gào sù guò wǒ hěn duō cì ， zhǎng shí jiān wán ér diàn nǎo hé shǒu jī duì yǎn jīng bù hǎo 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "没学过，听说很难，但是很有意思。",
+            "pinyin": "méi xué guò ， tīng shuō hěn nán ， dàn shì hěn yǒu yì si 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "没关系，喜欢就买吧。",
+            "pinyin": "méi guān xì ， xǐ huān jiù mǎi ba 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-137"
+      ],
+      "sourceRowIndexes": [
+        2,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "audioRef": "hsk2-wb-audio-l14-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-14-hanzi",
+      "lessonRef": "hsk2-wb-lesson-14",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-138"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-138",
+          "rowIndexes": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            18
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-listening-part-1",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "listening",
+      "part": 1,
+      "exerciseType": "listen-judge-image",
+      "questionRange": [
+        1,
+        5
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-139"
+      ],
+      "instruction": {
+        "zh": "听句子，判断对错",
+        "vi": "Nghe câu và xác định hình ảnh mô tả đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q01",
+        "hsk2-wb-lesson-15-q02",
+        "hsk2-wb-lesson-15-q03",
+        "hsk2-wb-lesson-15-q04",
+        "hsk2-wb-lesson-15-q05"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l15-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-listening-part-2",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "listening",
+      "part": 2,
+      "exerciseType": "listen-match-image",
+      "questionRange": [
+        6,
+        10
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-140"
+      ],
+      "instruction": {
+        "zh": "听对话，选择与对话内容一致的图片",
+        "vi": "Nghe các mẫu đối thoại và chọn hình phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q06",
+        "hsk2-wb-lesson-15-q07",
+        "hsk2-wb-lesson-15-q08",
+        "hsk2-wb-lesson-15-q09",
+        "hsk2-wb-lesson-15-q10"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l15-listening",
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-listening-part-3",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "listening",
+      "part": 3,
+      "exerciseType": "listen-multiple-choice",
+      "questionRange": [
+        11,
+        15
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-141"
+      ],
+      "instruction": {
+        "zh": "听对话，选择正确答案",
+        "vi": "Nghe các mẫu đối thoại và chọn câu trả lời đúng.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q11",
+        "hsk2-wb-lesson-15-q12",
+        "hsk2-wb-lesson-15-q13",
+        "hsk2-wb-lesson-15-q14",
+        "hsk2-wb-lesson-15-q15"
+      ],
+      "requiresAudio": true,
+      "audioRef": "hsk2-wb-audio-l15-listening",
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-reading-part-1",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "reading",
+      "part": 1,
+      "exerciseType": "read-match-image",
+      "questionRange": [
+        16,
+        20
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-142"
+      ],
+      "instruction": {
+        "zh": "看图片，选择与句子内容一致的图片",
+        "vi": "Chọn hình phù hợp với nội dung câu.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q16",
+        "hsk2-wb-lesson-15-q17",
+        "hsk2-wb-lesson-15-q18",
+        "hsk2-wb-lesson-15-q19",
+        "hsk2-wb-lesson-15-q20"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": true,
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-reading-part-2",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "reading",
+      "part": 2,
+      "exerciseType": "fill-word-bank",
+      "questionRange": [
+        21,
+        25
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-143"
+      ],
+      "instruction": {
+        "zh": "选择合适的词语填空",
+        "vi": "Điền từ ngữ thích hợp vào chỗ trống.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q21",
+        "hsk2-wb-lesson-15-q22",
+        "hsk2-wb-lesson-15-q23",
+        "hsk2-wb-lesson-15-q24",
+        "hsk2-wb-lesson-15-q25"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "新年",
+            "pinyin": "xīn nián"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "更",
+            "pinyin": "gèng"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "大家",
+            "pinyin": "dà jiā"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "帮助",
+            "pinyin": "bāng zhù"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "贵",
+            "pinyin": "guì"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "阴",
+            "pinyin": "yīn"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-reading-part-3",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "reading",
+      "part": 3,
+      "exerciseType": "semantic-true-false",
+      "questionRange": [
+        26,
+        30
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-144"
+      ],
+      "instruction": {
+        "zh": "判断下列句子的意思是否正确",
+        "vi": "Xác định câu diễn giải bên dưới đúng hay sai.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q26",
+        "hsk2-wb-lesson-15-q27",
+        "hsk2-wb-lesson-15-q28",
+        "hsk2-wb-lesson-15-q29",
+        "hsk2-wb-lesson-15-q30"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": null,
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-reading-part-4",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "reading",
+      "part": 4,
+      "exerciseType": "match-question-answer",
+      "questionRange": [
+        31,
+        35
+      ],
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-145"
+      ],
+      "instruction": {
+        "zh": "选择合适的问答",
+        "vi": "Chọn câu hỏi hoặc câu trả lời phù hợp.",
+        "viStatus": "normalized-from-source"
+      },
+      "itemRefs": [
+        "hsk2-wb-lesson-15-q31",
+        "hsk2-wb-lesson-15-q32",
+        "hsk2-wb-lesson-15-q33",
+        "hsk2-wb-lesson-15-q34",
+        "hsk2-wb-lesson-15-q35"
+      ],
+      "requiresAudio": false,
+      "audioRef": null,
+      "requiresVisual": false,
+      "visualAssetStatus": "not-required",
+      "optionBank": {
+        "status": "ocr-transcribed-needs-review",
+        "options": [
+          {
+            "id": "a",
+            "label": "A",
+            "textZh": "我想新年的时候休息休息。你们自己去玩儿吧。",
+            "pinyin": "wǒ xiǎng xīn nián de shí hòu xiū xī xiū xī 。 nǐ men zì jǐ qù wán ér ba 。"
+          },
+          {
+            "id": "b",
+            "label": "B",
+            "textZh": "这件衣服的颜色我不喜欢。",
+            "pinyin": "zhè jiàn yī fú de yán sè wǒ bù xǐ huān 。"
+          },
+          {
+            "id": "c",
+            "label": "C",
+            "textZh": "你的生日是几月几号？我们一起吃饭吧。",
+            "pinyin": "nǐ de shēng rì shì jǐ yuè jǐ hào ？ wǒ men yì qǐ chī fàn ba 。"
+          },
+          {
+            "id": "d",
+            "label": "D",
+            "textZh": "这是我第二次来北京。",
+            "pinyin": "zhè shì wǒ dì èr cì lái běi jīng 。"
+          },
+          {
+            "id": "e",
+            "label": "E",
+            "textZh": "他在哪儿呢？你看见他了吗？",
+            "pinyin": "tā zài nǎ ér ne ？ nǐ kàn jiàn tā le ma ？"
+          },
+          {
+            "id": "f",
+            "label": "F",
+            "textZh": "十分钟以后就要开始了。",
+            "pinyin": "shí fēn zhōng yǐ hòu jiù yào kāi shǐ le 。"
+          }
+        ]
+      },
+      "answerStatus": "not-provided-in-source-pdf"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-pronunciation",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "pronunciation",
+      "exerciseType": "pronunciation-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-146"
+      ],
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27
+      ],
+      "audioRef": "hsk2-wb-audio-l15-pronunciation",
+      "requiresAudio": true,
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-wb-lesson-15-hanzi",
+      "lessonRef": "hsk2-wb-lesson-15",
+      "section": "hanzi",
+      "exerciseType": "radical-and-stroke-practice",
+      "sourcePageRefs": [
+        "hsk2-wb-source-page-147",
+        "hsk2-wb-source-page-148"
+      ],
+      "sourceRowsByPage": [
+        {
+          "pageRef": "hsk2-wb-source-page-147",
+          "rowIndexes": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            21
+          ]
+        },
+        {
+          "pageRef": "hsk2-wb-source-page-148",
+          "rowIndexes": [
+            1
+          ]
+        }
+      ],
+      "visualAssetStatus": "stroke-order-diagrams-embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    }
+  ]
+}

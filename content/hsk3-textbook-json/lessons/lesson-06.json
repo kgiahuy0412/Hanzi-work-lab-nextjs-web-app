@@ -1,0 +1,124 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-06",
+  "lessonNumber": 6,
+  "status": "review",
+  "title": {
+    "zh": "怎么突然找不到了？",
+    "pinyin": "zěn me tū rán zhǎo bú dào le ？",
+    "vi": "Sao bỗng dưng lại không tìm thấy?"
+  },
+  "source": {
+    "pdfPages": [
+      62,
+      70
+    ],
+    "printedPages": [
+      62,
+      70
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-062",
+      "hsk3-tb-source-page-063",
+      "hsk3-tb-source-page-064",
+      "hsk3-tb-source-page-065",
+      "hsk3-tb-source-page-066",
+      "hsk3-tb-source-page-067",
+      "hsk3-tb-source-page-068",
+      "hsk3-tb-source-page-069",
+      "hsk3-tb-source-page-070"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l06-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-06-scene-1",
+        "hsk3-tb-lesson-06-scene-2",
+        "hsk3-tb-lesson-06-scene-3",
+        "hsk3-tb-lesson-06-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-063",
+        "hsk3-tb-source-page-064"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l06-v01",
+        "hsk3-tb-l06-v02",
+        "hsk3-tb-l06-v03",
+        "hsk3-tb-l06-v04",
+        "hsk3-tb-l06-v05",
+        "hsk3-tb-l06-v06",
+        "hsk3-tb-l06-v07",
+        "hsk3-tb-l06-v08",
+        "hsk3-tb-l06-v09",
+        "hsk3-tb-l06-v10",
+        "hsk3-tb-l06-v11",
+        "hsk3-tb-l06-v12",
+        "hsk3-tb-l06-v13",
+        "hsk3-tb-l06-v14",
+        "hsk3-tb-l06-v15"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l06-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l06-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l06-practice-01",
+        "hsk3-tb-l06-practice-02",
+        "hsk3-tb-l06-practice-03"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l06-hanzi-01",
+        "hsk3-tb-l06-hanzi-02"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l06-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l06-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

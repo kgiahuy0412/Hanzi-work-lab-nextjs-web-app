@@ -1,0 +1,120 @@
+{
+  "id": "hsk5l-lesson-35",
+  "number": 35,
+  "unitId": "hsk5l-unit-12",
+  "titleZh": "植物会出汗。",
+  "titleVi": "Thực vật cũng đổ mồ hôi.",
+  "sourcePdfPages": {
+    "start": 149,
+    "end": 156
+  },
+  "sourcePrintedPages": {
+    "start": 148,
+    "end": 155
+  },
+  "audioTracks": [
+    "35-1",
+    "35-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 149,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 149,
+      "rowIndex": 11,
+      "matchedTextOcr": "课文植物会出汗 （604字） 35-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 151,
+      "rowIndex": 10,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 154,
+      "rowIndex": 9,
+      "matchedTextOcr": "练习 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 155,
+      "rowIndex": 18,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 156,
+      "rowIndex": 8,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-35-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-35-01",
+    "hsk5l-annotation-35-01",
+    "hsk5l-practice-35-01",
+    "hsk5l-extension-35-01",
+    "hsk5l-application-35-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0020",
+    "hsk5l-lexeme-0021",
+    "hsk5l-lexeme-0024",
+    "hsk5l-lexeme-0034",
+    "hsk5l-lexeme-0035",
+    "hsk5l-lexeme-0044",
+    "hsk5l-lexeme-0117",
+    "hsk5l-lexeme-0124",
+    "hsk5l-lexeme-0125",
+    "hsk5l-lexeme-0140",
+    "hsk5l-lexeme-0161",
+    "hsk5l-lexeme-0163",
+    "hsk5l-lexeme-0213",
+    "hsk5l-lexeme-0221",
+    "hsk5l-lexeme-0268",
+    "hsk5l-lexeme-0285",
+    "hsk5l-lexeme-0335",
+    "hsk5l-lexeme-0360",
+    "hsk5l-lexeme-0394",
+    "hsk5l-lexeme-0396",
+    "hsk5l-lexeme-0405",
+    "hsk5l-lexeme-0467",
+    "hsk5l-lexeme-0470",
+    "hsk5l-lexeme-0484",
+    "hsk5l-lexeme-0491"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-019",
+    "hsk5l-beyond-level-042",
+    "hsk5l-beyond-level-078",
+    "hsk5l-beyond-level-079",
+    "hsk5l-beyond-level-099",
+    "hsk5l-beyond-level-109",
+    "hsk5l-beyond-level-137",
+    "hsk5l-beyond-level-140",
+    "hsk5l-beyond-level-149",
+    "hsk5l-beyond-level-151"
+  ],
+  "vocabularyCount": 25,
+  "beyondLevelVocabularyCount": 10,
+  "allVocabularyCount": 35,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

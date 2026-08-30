@@ -474,6 +474,10 @@
 
 .hsk-exercise-card > p { margin: 0; color: #73827e; text-align: center; font-size: 11px; }
 .hsk-exercise-prompt { min-height: 120px; display: grid; place-items: center; font-family: Georgia, "Noto Serif SC", serif; font-size: 70px; font-weight: 600; }
+.hsk-exercise-copy.has-pinyin { min-height: 150px; display: grid; place-items: center; align-content: center; gap: 10px; text-align: center; }
+.hsk-exercise-copy.has-pinyin .hsk-exercise-prompt { min-height: 0; font-size: clamp(27px, 4vw, 46px); line-height: 1.45; }
+.hsk-exercise-copy > span { color: #6f827d; font-size: 13px; line-height: 1.7; }
+.hsk-exercise-note { margin: 0 0 18px !important; color: #81908c !important; }
 
 .hsk-exercise-listen {
   width: 94px;
@@ -509,6 +513,7 @@
 .hsk-exercise-options button span { font-size: 13px; font-weight: 660; }
 .hsk-exercise-options button.is-correct { color: #087365; border-color: #8ddacb; background: #ecfaf6; }
 .hsk-exercise-options button.is-wrong { color: #a84740; border-color: #efb2ac; background: #fff1ef; }
+.hsk-exercise-options button.is-selected { color: var(--hsk-learn-deep); border-color: #ff9f8d; background: #fff4f1; }
 
 .hsk-answer-feedback {
   min-height: 44px;

@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "hsk2-standard-course-textbook-vi-v1",
+  "title": "Bộ dữ liệu JSON từ Giáo trình chuẩn HSK 2",
+  "description": "Dữ liệu 15 bài, 60 cảnh hội thoại, 169 mục từ được đánh số trong bài, chú thích ngữ pháp, luyện tập, ngữ âm, chữ Hán, vận dụng, văn hóa, media placeholder và bằng chứng OCR theo trang.",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN",
+    "pinyinSystem": "hanyu-pinyin-diacritic"
+  },
+  "status": "review",
+  "sourceRef": "source-analysis.json",
+  "curriculumRef": "curriculum.json",
+  "files": [
+    {
+      "path": "schemas/textbook-lesson.schema.json",
+      "kind": "schema"
+    },
+    {
+      "path": "source-analysis.json",
+      "kind": "source-analysis"
+    },
+    {
+      "path": "curriculum.json",
+      "kind": "curriculum"
+    },
+    {
+      "path": "hsk2-textbook.json",
+      "kind": "combined-export"
+    },
+    {
+      "path": "shared/source-pages.json",
+      "kind": "ocr-evidence"
+    },
+    {
+      "path": "shared/lexemes.json",
+      "kind": "shared-content",
+      "entity": "lexeme"
+    },
+    {
+      "path": "shared/text-scenes.json",
+      "kind": "shared-content",
+      "entity": "text-scene"
+    },
+    {
+      "path": "shared/grammar-points.json",
+      "kind": "shared-content",
+      "entity": "grammar-point"
+    },
+    {
+      "path": "shared/pronunciation-topics.json",
+      "kind": "shared-content",
+      "entity": "pronunciation-topic"
+    },
+    {
+      "path": "shared/proper-names.json",
+      "kind": "shared-content",
+      "entity": "proper-name"
+    },
+    {
+      "path": "shared/culture-notes.json",
+      "kind": "shared-content",
+      "entity": "culture-note"
+    },
+    {
+      "path": "shared/media-assets.json",
+      "kind": "shared-content",
+      "entity": "media"
+    },
+    {
+      "path": "appendices/vocabulary-summary.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "shared/warmup-blocks.json",
+      "kind": "shared-content",
+      "entity": "warmup"
+    },
+    {
+      "path": "shared/pinyin-transcript-blocks.json",
+      "kind": "shared-content",
+      "entity": "pinyin-transcript"
+    },
+    {
+      "path": "shared/grammar-blocks.json",
+      "kind": "shared-content",
+      "entity": "grammar"
+    },
+    {
+      "path": "shared/practice-blocks.json",
+      "kind": "shared-content",
+      "entity": "practice"
+    },
+    {
+      "path": "shared/hanzi-blocks.json",
+      "kind": "shared-content",
+      "entity": "hanzi"
+    },
+    {
+      "path": "shared/application-blocks.json",
+      "kind": "shared-content",
+      "entity": "application"
+    },
+    {
+      "path": "shared/pronunciation-blocks.json",
+      "kind": "shared-content",
+      "entity": "pronunciation"
+    },
+    {
+      "path": "lessons/lesson-01.json",
+      "kind": "lesson",
+      "lessonNumber": 1
+    },
+    {
+      "path": "lessons/lesson-02.json",
+      "kind": "lesson",
+      "lessonNumber": 2
+    },
+    {
+      "path": "lessons/lesson-03.json",
+      "kind": "lesson",
+      "lessonNumber": 3
+    },
+    {
+      "path": "lessons/lesson-04.json",
+      "kind": "lesson",
+      "lessonNumber": 4
+    },
+    {
+      "path": "lessons/lesson-05.json",
+      "kind": "lesson",
+      "lessonNumber": 5
+    },
+    {
+      "path": "lessons/lesson-06.json",
+      "kind": "lesson",
+      "lessonNumber": 6
+    },
+    {
+      "path": "lessons/lesson-07.json",
+      "kind": "lesson",
+      "lessonNumber": 7
+    },
+    {
+      "path": "lessons/lesson-08.json",
+      "kind": "lesson",
+      "lessonNumber": 8
+    },
+    {
+      "path": "lessons/lesson-09.json",
+      "kind": "lesson",
+      "lessonNumber": 9
+    },
+    {
+      "path": "lessons/lesson-10.json",
+      "kind": "lesson",
+      "lessonNumber": 10
+    },
+    {
+      "path": "lessons/lesson-11.json",
+      "kind": "lesson",
+      "lessonNumber": 11
+    },
+    {
+      "path": "lessons/lesson-12.json",
+      "kind": "lesson",
+      "lessonNumber": 12
+    },
+    {
+      "path": "lessons/lesson-13.json",
+      "kind": "lesson",
+      "lessonNumber": 13
+    },
+    {
+      "path": "lessons/lesson-14.json",
+      "kind": "lesson",
+      "lessonNumber": 14
+    },
+    {
+      "path": "lessons/lesson-15.json",
+      "kind": "lesson",
+      "lessonNumber": 15
+    }
+  ],
+  "counts": {
+    "lessons": 15,
+    "textScenes": 60,
+    "lexemes": 169,
+    "properNames": 2,
+    "grammarPoints": 44,
+    "pronunciationTopics": 15,
+    "cultureNotes": 3,
+    "mediaPlaceholders": 60,
+    "ocrSourcePages": 77,
+    "mappedSourcePages": 145,
+    "contentBlocks": 90
+  }
+}

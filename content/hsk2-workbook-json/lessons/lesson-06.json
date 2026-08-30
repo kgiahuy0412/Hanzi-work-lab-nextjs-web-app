@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-06",
+  "lessonNumber": 6,
+  "status": "review",
+  "title": {
+    "zh": "你怎么不吃了？",
+    "pinyin": "nǐ zěn me bù chī le ？",
+    "vi": "Sao anh không ăn nữa?"
+  },
+  "source": {
+    "pdfPages": [
+      57,
+      66
+    ],
+    "printedPages": [
+      57,
+      66
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-057",
+      "hsk2-wb-source-page-058",
+      "hsk2-wb-source-page-059",
+      "hsk2-wb-source-page-060",
+      "hsk2-wb-source-page-061",
+      "hsk2-wb-source-page-062",
+      "hsk2-wb-source-page-063",
+      "hsk2-wb-source-page-064",
+      "hsk2-wb-source-page-065",
+      "hsk2-wb-source-page-066"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-06-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-06-listening-part-1",
+        "hsk2-wb-lesson-06-listening-part-2",
+        "hsk2-wb-lesson-06-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-06-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-06-reading-part-1",
+        "hsk2-wb-lesson-06-reading-part-2",
+        "hsk2-wb-lesson-06-reading-part-3",
+        "hsk2-wb-lesson-06-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-06-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-06-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-06-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-06-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

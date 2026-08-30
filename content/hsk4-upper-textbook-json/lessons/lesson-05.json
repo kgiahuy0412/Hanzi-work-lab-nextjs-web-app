@@ -1,0 +1,174 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-05",
+  "lessonNumber": 5,
+  "status": "review",
+  "title": {
+    "zh": "只买对的，不买贵的",
+    "pinyin": "zhǐ mǎi duì de ， bù mǎi guì de",
+    "vi": "Chỉ mua cái đúng, không mua cái đắt"
+  },
+  "source": {
+    "pdfPages": [
+      60,
+      73
+    ],
+    "printedPages": [
+      60,
+      73
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-060",
+      "hsk4u-tb-source-page-061",
+      "hsk4u-tb-source-page-062",
+      "hsk4u-tb-source-page-063",
+      "hsk4u-tb-source-page-064",
+      "hsk4u-tb-source-page-065",
+      "hsk4u-tb-source-page-066",
+      "hsk4u-tb-source-page-067",
+      "hsk4u-tb-source-page-068",
+      "hsk4u-tb-source-page-069",
+      "hsk4u-tb-source-page-070",
+      "hsk4u-tb-source-page-071",
+      "hsk4u-tb-source-page-072",
+      "hsk4u-tb-source-page-073"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l05-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-05-text-1",
+        "hsk4u-tb-lesson-05-text-2",
+        "hsk4u-tb-lesson-05-text-3",
+        "hsk4u-tb-lesson-05-text-4",
+        "hsk4u-tb-lesson-05-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-061",
+        "hsk4u-tb-source-page-062",
+        "hsk4u-tb-source-page-066"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l05-v01",
+        "hsk4u-tb-l05-v02",
+        "hsk4u-tb-l05-v03",
+        "hsk4u-tb-l05-v04",
+        "hsk4u-tb-l05-v05",
+        "hsk4u-tb-l05-v06",
+        "hsk4u-tb-l05-v07",
+        "hsk4u-tb-l05-v08",
+        "hsk4u-tb-l05-v09",
+        "hsk4u-tb-l05-v10",
+        "hsk4u-tb-l05-v11",
+        "hsk4u-tb-l05-v12",
+        "hsk4u-tb-l05-v13",
+        "hsk4u-tb-l05-v14",
+        "hsk4u-tb-l05-v15",
+        "hsk4u-tb-l05-v16",
+        "hsk4u-tb-l05-v17",
+        "hsk4u-tb-l05-v18",
+        "hsk4u-tb-l05-v19",
+        "hsk4u-tb-l05-v20",
+        "hsk4u-tb-l05-v21",
+        "hsk4u-tb-l05-v22",
+        "hsk4u-tb-l05-v23",
+        "hsk4u-tb-l05-v24",
+        "hsk4u-tb-l05-v25",
+        "hsk4u-tb-l05-v26",
+        "hsk4u-tb-l05-v27",
+        "hsk4u-tb-l05-v28",
+        "hsk4u-tb-l05-v29",
+        "hsk4u-tb-l05-v30",
+        "hsk4u-tb-l05-v31"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l05-pinyin-transcript-01",
+        "hsk4u-tb-l05-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l05-annotation-01",
+        "hsk4u-tb-l05-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l05-practice-01",
+        "hsk4u-tb-l05-practice-02",
+        "hsk4u-tb-l05-practice-03",
+        "hsk4u-tb-l05-practice-04",
+        "hsk4u-tb-l05-practice-05",
+        "hsk4u-tb-l05-practice-06"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-05"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l05-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-05"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l05-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l05-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-05"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l05-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

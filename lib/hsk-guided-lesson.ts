@@ -35,13 +35,18 @@ const SECTION_LABELS: Array<[HskGuidedStepKind, string]> = [
 ];
 
 export function buildHskGuidedLessonSteps(lesson: HskLessonContent): HskGuidedStep[] {
+  const placeholders = new Set(lesson.guidedPlaceholders ?? []);
   return [
     { id: "introduction", kind: "introduction" },
-    ...lesson.vocabulary.map((word, itemIndex) => ({ id: `vocabulary-${word.id}`, kind: "vocabulary" as const, itemIndex })),
+    ...(lesson.vocabulary.length
+      ? lesson.vocabulary.map((word, itemIndex) => ({ id: `vocabulary-${word.id}`, kind: "vocabulary" as const, itemIndex }))
+      : placeholders.has("vocabulary") ? [{ id: "vocabulary-overview", kind: "vocabulary" as const }] : []),
     ...lesson.grammar.map((point, itemIndex) => ({ id: `grammar-${point.id}`, kind: "grammar" as const, itemIndex })),
-    ...lesson.dialogues.map((dialogue, itemIndex) => ({ id: `dialogue-${dialogue.id}`, kind: "dialogue" as const, itemIndex })),
-    ...(lesson.pronunciationTopics.length ? [{ id: "pronunciation", kind: "pronunciation" as const }] : []),
-    { id: "writing", kind: "writing" },
+    ...(lesson.dialogues.length
+      ? lesson.dialogues.map((dialogue, itemIndex) => ({ id: `dialogue-${dialogue.id}`, kind: "dialogue" as const, itemIndex }))
+      : placeholders.has("dialogue") ? [{ id: "dialogue-overview", kind: "dialogue" as const }] : []),
+    ...(lesson.pronunciationTopics.length || placeholders.has("pronunciation") ? [{ id: "pronunciation", kind: "pronunciation" as const }] : []),
+    ...(lesson.writingCharacters.length || placeholders.has("writing") ? [{ id: "writing", kind: "writing" as const }] : []),
     ...lesson.exercises.map((exercise, itemIndex) => ({ id: `practice-${exercise.id}`, kind: "practice" as const, itemIndex })),
     { id: "complete", kind: "complete" },
   ];

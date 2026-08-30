@@ -1,0 +1,173 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-03",
+  "lessonNumber": 3,
+  "status": "review",
+  "title": {
+    "zh": "经理对我印象不错",
+    "pinyin": "jīng lǐ duì wǒ yìn xiàng bù cuò",
+    "vi": "Giám đốc có ấn tượng tốt về tôi"
+  },
+  "source": {
+    "pdfPages": [
+      34,
+      47
+    ],
+    "printedPages": [
+      34,
+      47
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-034",
+      "hsk4u-tb-source-page-035",
+      "hsk4u-tb-source-page-036",
+      "hsk4u-tb-source-page-037",
+      "hsk4u-tb-source-page-038",
+      "hsk4u-tb-source-page-039",
+      "hsk4u-tb-source-page-040",
+      "hsk4u-tb-source-page-041",
+      "hsk4u-tb-source-page-042",
+      "hsk4u-tb-source-page-043",
+      "hsk4u-tb-source-page-044",
+      "hsk4u-tb-source-page-045",
+      "hsk4u-tb-source-page-046",
+      "hsk4u-tb-source-page-047"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l03-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-03-text-1",
+        "hsk4u-tb-lesson-03-text-2",
+        "hsk4u-tb-lesson-03-text-3",
+        "hsk4u-tb-lesson-03-text-4",
+        "hsk4u-tb-lesson-03-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-035",
+        "hsk4u-tb-source-page-036",
+        "hsk4u-tb-source-page-041"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l03-v01",
+        "hsk4u-tb-l03-v02",
+        "hsk4u-tb-l03-v03",
+        "hsk4u-tb-l03-v04",
+        "hsk4u-tb-l03-v05",
+        "hsk4u-tb-l03-v06",
+        "hsk4u-tb-l03-v07",
+        "hsk4u-tb-l03-v08",
+        "hsk4u-tb-l03-v09",
+        "hsk4u-tb-l03-v10",
+        "hsk4u-tb-l03-v11",
+        "hsk4u-tb-l03-v12",
+        "hsk4u-tb-l03-v13",
+        "hsk4u-tb-l03-v14",
+        "hsk4u-tb-l03-v15",
+        "hsk4u-tb-l03-v16",
+        "hsk4u-tb-l03-v17",
+        "hsk4u-tb-l03-v18",
+        "hsk4u-tb-l03-v19",
+        "hsk4u-tb-l03-v20",
+        "hsk4u-tb-l03-v21",
+        "hsk4u-tb-l03-v22",
+        "hsk4u-tb-l03-v23",
+        "hsk4u-tb-l03-v24",
+        "hsk4u-tb-l03-v25",
+        "hsk4u-tb-l03-v26",
+        "hsk4u-tb-l03-v27",
+        "hsk4u-tb-l03-v28",
+        "hsk4u-tb-l03-v29",
+        "hsk4u-tb-l03-v30",
+        "hsk4u-tb-l03-v31"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l03-pinyin-transcript-01",
+        "hsk4u-tb-l03-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l03-annotation-01",
+        "hsk4u-tb-l03-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l03-practice-01",
+        "hsk4u-tb-l03-practice-02",
+        "hsk4u-tb-l03-practice-03",
+        "hsk4u-tb-l03-practice-04",
+        "hsk4u-tb-l03-practice-05"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-03"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l03-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-03"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l03-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l03-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-03"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l03-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

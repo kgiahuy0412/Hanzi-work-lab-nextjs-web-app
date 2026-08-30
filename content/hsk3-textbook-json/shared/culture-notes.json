@@ -1,0 +1,102 @@
+{
+  "schemaVersion": "1.0.0",
+  "cultureNotes": [
+    {
+      "id": "hsk3-tb-culture-01",
+      "number": 1,
+      "title": {
+        "zh": "中国有什么传统运动",
+        "pinyin": "zhōng guó yǒu shén me chuán tǒng yùn dòng",
+        "vi": "Các môn thể thao truyền thống của Trung Quốc"
+      },
+      "sourcePageRef": "hsk3-tb-source-page-061",
+      "printedPage": 61,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-culture-02",
+      "number": 2,
+      "title": {
+        "zh": "中国人结婚时穿什么",
+        "pinyin": "zhōng guó rén jié hūn shí chuān shén me",
+        "vi": "Trang phục trong ngày cưới của người Trung Quốc"
+      },
+      "sourcePageRef": "hsk3-tb-source-page-105",
+      "printedPage": 105,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-culture-03",
+      "number": 3,
+      "title": {
+        "zh": "中国人过生日吃什么",
+        "pinyin": "zhōng guó rén guò shēng rì chī shén me",
+        "vi": "Món ăn của người Trung Quốc trong dịp sinh nhật"
+      },
+      "sourcePageRef": "hsk3-tb-source-page-150",
+      "printedPage": 150,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-culture-04",
+      "number": 4,
+      "title": {
+        "zh": "中国人什么礼物不能送",
+        "pinyin": "zhōng guó rén shén me lǐ wù bù néng sòng",
+        "vi": "Những đồ vật không được dùng làm quà tặng ở Trung Quốc"
+      },
+      "sourcePageRef": "hsk3-tb-source-page-191",
+      "printedPage": 193,
+      "sourceRowIndexes": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "visualAssetStatus": "embedded-in-pdf-not-extracted",
+      "transcriptionStatus": "page-block-ocr-needs-editorial-review"
+    }
+  ]
+}

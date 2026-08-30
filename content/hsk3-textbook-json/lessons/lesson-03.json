@@ -1,0 +1,124 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-03",
+  "lessonNumber": 3,
+  "status": "review",
+  "title": {
+    "zh": "桌子上放着很多饮料。",
+    "pinyin": "zhuō zi shàng fàng zhe hěn duō yǐn liào 。",
+    "vi": "Trên bàn có rất nhiều thức uống."
+  },
+  "source": {
+    "pdfPages": [
+      36,
+      44
+    ],
+    "printedPages": [
+      36,
+      44
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-036",
+      "hsk3-tb-source-page-037",
+      "hsk3-tb-source-page-038",
+      "hsk3-tb-source-page-039",
+      "hsk3-tb-source-page-040",
+      "hsk3-tb-source-page-041",
+      "hsk3-tb-source-page-042",
+      "hsk3-tb-source-page-043",
+      "hsk3-tb-source-page-044"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l03-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-03-scene-1",
+        "hsk3-tb-lesson-03-scene-2",
+        "hsk3-tb-lesson-03-scene-3",
+        "hsk3-tb-lesson-03-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-037",
+        "hsk3-tb-source-page-038"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l03-v01",
+        "hsk3-tb-l03-v02",
+        "hsk3-tb-l03-v03",
+        "hsk3-tb-l03-v04",
+        "hsk3-tb-l03-v05",
+        "hsk3-tb-l03-v06",
+        "hsk3-tb-l03-v07",
+        "hsk3-tb-l03-v08",
+        "hsk3-tb-l03-v09",
+        "hsk3-tb-l03-v10",
+        "hsk3-tb-l03-v11",
+        "hsk3-tb-l03-v12",
+        "hsk3-tb-l03-v13",
+        "hsk3-tb-l03-v14",
+        "hsk3-tb-l03-v15",
+        "hsk3-tb-l03-v16",
+        "hsk3-tb-l03-v17"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l03-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l03-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l03-practice-01",
+        "hsk3-tb-l03-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l03-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l03-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l03-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

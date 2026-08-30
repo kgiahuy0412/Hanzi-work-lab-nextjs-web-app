@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "hsk3-standard-course-textbook-vi-v1",
+  "title": "Bộ dữ liệu JSON từ Giáo trình chuẩn HSK 3",
+  "description": "Dữ liệu 20 bài, 80 bài khóa, từ mới, chú thích ngữ pháp, luyện tập, chữ Hán, vận dụng, tục ngữ, văn hóa, media placeholder và bằng chứng OCR theo trang.",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN",
+    "pinyinSystem": "hanyu-pinyin-diacritic"
+  },
+  "status": "review",
+  "sourceRef": "source-analysis.json",
+  "curriculumRef": "curriculum.json",
+  "files": [
+    {
+      "path": "schemas/textbook-lesson.schema.json",
+      "kind": "schema"
+    },
+    {
+      "path": "source-analysis.json",
+      "kind": "source-analysis"
+    },
+    {
+      "path": "curriculum.json",
+      "kind": "curriculum"
+    },
+    {
+      "path": "shared/source-pages.json",
+      "kind": "ocr-evidence"
+    },
+    {
+      "path": "shared/lexemes.json",
+      "kind": "shared-content",
+      "entity": "lexeme"
+    },
+    {
+      "path": "shared/text-scenes.json",
+      "kind": "shared-content",
+      "entity": "text-scene"
+    },
+    {
+      "path": "shared/proper-names.json",
+      "kind": "shared-content",
+      "entity": "proper-name"
+    },
+    {
+      "path": "shared/culture-notes.json",
+      "kind": "shared-content",
+      "entity": "culture-note"
+    },
+    {
+      "path": "shared/media-assets.json",
+      "kind": "shared-content",
+      "entity": "media"
+    },
+    {
+      "path": "appendices/vocabulary-summary.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "shared/warmup-blocks.json",
+      "kind": "shared-content",
+      "entity": "warmup"
+    },
+    {
+      "path": "shared/pinyin-transcript-blocks.json",
+      "kind": "shared-content",
+      "entity": "pinyin-transcript"
+    },
+    {
+      "path": "shared/grammar-blocks.json",
+      "kind": "shared-content",
+      "entity": "grammar"
+    },
+    {
+      "path": "shared/practice-blocks.json",
+      "kind": "shared-content",
+      "entity": "practice"
+    },
+    {
+      "path": "shared/hanzi-blocks.json",
+      "kind": "shared-content",
+      "entity": "hanzi"
+    },
+    {
+      "path": "shared/application-blocks.json",
+      "kind": "shared-content",
+      "entity": "application"
+    },
+    {
+      "path": "shared/idiom-blocks.json",
+      "kind": "shared-content",
+      "entity": "idiom"
+    },
+    {
+      "path": "lessons/lesson-01.json",
+      "kind": "lesson",
+      "lessonNumber": 1
+    },
+    {
+      "path": "lessons/lesson-02.json",
+      "kind": "lesson",
+      "lessonNumber": 2
+    },
+    {
+      "path": "lessons/lesson-03.json",
+      "kind": "lesson",
+      "lessonNumber": 3
+    },
+    {
+      "path": "lessons/lesson-04.json",
+      "kind": "lesson",
+      "lessonNumber": 4
+    },
+    {
+      "path": "lessons/lesson-05.json",
+      "kind": "lesson",
+      "lessonNumber": 5
+    },
+    {
+      "path": "lessons/lesson-06.json",
+      "kind": "lesson",
+      "lessonNumber": 6
+    },
+    {
+      "path": "lessons/lesson-07.json",
+      "kind": "lesson",
+      "lessonNumber": 7
+    },
+    {
+      "path": "lessons/lesson-08.json",
+      "kind": "lesson",
+      "lessonNumber": 8
+    },
+    {
+      "path": "lessons/lesson-09.json",
+      "kind": "lesson",
+      "lessonNumber": 9
+    },
+    {
+      "path": "lessons/lesson-10.json",
+      "kind": "lesson",
+      "lessonNumber": 10
+    },
+    {
+      "path": "lessons/lesson-11.json",
+      "kind": "lesson",
+      "lessonNumber": 11
+    },
+    {
+      "path": "lessons/lesson-12.json",
+      "kind": "lesson",
+      "lessonNumber": 12
+    },
+    {
+      "path": "lessons/lesson-13.json",
+      "kind": "lesson",
+      "lessonNumber": 13
+    },
+    {
+      "path": "lessons/lesson-14.json",
+      "kind": "lesson",
+      "lessonNumber": 14
+    },
+    {
+      "path": "lessons/lesson-15.json",
+      "kind": "lesson",
+      "lessonNumber": 15
+    },
+    {
+      "path": "lessons/lesson-16.json",
+      "kind": "lesson",
+      "lessonNumber": 16
+    },
+    {
+      "path": "lessons/lesson-17.json",
+      "kind": "lesson",
+      "lessonNumber": 17
+    },
+    {
+      "path": "lessons/lesson-18.json",
+      "kind": "lesson",
+      "lessonNumber": 18
+    },
+    {
+      "path": "lessons/lesson-19.json",
+      "kind": "lesson",
+      "lessonNumber": 19
+    },
+    {
+      "path": "lessons/lesson-20.json",
+      "kind": "lesson",
+      "lessonNumber": 20
+    }
+  ],
+  "counts": {
+    "lessons": 20,
+    "textScenes": 80,
+    "lexemes": 314,
+    "properNames": 8,
+    "cultureNotes": 4,
+    "mediaPlaceholders": 80,
+    "ocrSourcePages": 204,
+    "contentBlocks": 170
+  }
+}

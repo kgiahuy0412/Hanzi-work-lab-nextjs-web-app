@@ -1,0 +1,122 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-tb-lesson-11",
+  "lessonNumber": 11,
+  "status": "review",
+  "title": {
+    "zh": "他比我大三岁。",
+    "pinyin": "tā bǐ wǒ dà sān suì。",
+    "vi": "Anh ấy lớn hơn mình ba tuổi."
+  },
+  "source": {
+    "pdfPages": [
+      95,
+      102
+    ],
+    "printedPages": [
+      95,
+      102
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk2-tb-source-page-095",
+      "hsk2-tb-source-page-096",
+      "hsk2-tb-source-page-097",
+      "hsk2-tb-source-page-098",
+      "hsk2-tb-source-page-099",
+      "hsk2-tb-source-page-100",
+      "hsk2-tb-source-page-101",
+      "hsk2-tb-source-page-102"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk2-tb-l11-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk2-tb-lesson-11-scene-1",
+        "hsk2-tb-lesson-11-scene-2",
+        "hsk2-tb-lesson-11-scene-3",
+        "hsk2-tb-lesson-11-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk2-tb-source-page-096",
+        "hsk2-tb-source-page-097"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk2-tb-l11-v01",
+        "hsk2-tb-l11-v02",
+        "hsk2-tb-l11-v03",
+        "hsk2-tb-l11-v04",
+        "hsk2-tb-l11-v05",
+        "hsk2-tb-l11-v06",
+        "hsk2-tb-l11-v07",
+        "hsk2-tb-l11-v08",
+        "hsk2-tb-l11-v09",
+        "hsk2-tb-l11-v10",
+        "hsk2-tb-l11-v11"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": []
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk2-tb-l11-grammar-01",
+        "hsk2-tb-l11-grammar-02",
+        "hsk2-tb-l11-grammar-03"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l11-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk2-tb-l11-practice-01"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk2-tb-l11-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk2-tb-l11-application-01"
+      ]
+    },
+    {
+      "type": "pronunciation",
+      "contentRefs": [
+        "hsk2-tb-l11-pronunciation"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l11-pronunciation-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

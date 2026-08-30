@@ -1,0 +1,83 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "hsk2-standard-course-textbook-vi-scan",
+  "fileName": "HSK 2 Sách giáo khoa.pdf",
+  "documentType": "scanned-textbook",
+  "pageCount": 145,
+  "textLayer": false,
+  "language": [
+    "zh-CN",
+    "vi-VN",
+    "Hanyu Pinyin"
+  ],
+  "contentMap": {
+    "frontMatter": [
+      1,
+      14
+    ],
+    "lessons": [
+      15,
+      133
+    ],
+    "culturePrintedPages": [
+      54,
+      94,
+      134
+    ],
+    "vocabularyAppendixPrintedPages": [
+      135,
+      145
+    ]
+  },
+  "method": {
+    "renderDpi": 140,
+    "ocrEngine": "RapidOCR/ONNX Runtime",
+    "ocrScope": "Table of contents, dialogue/vocabulary pages, grammar pages, culture pages and appendices.",
+    "visualReview": "Table of contents and representative warm-up, dialogue, grammar, pronunciation, application and appendix pages were visually reviewed."
+  },
+  "coverage": {
+    "lessons": 15,
+    "textScenes": 60,
+    "dialogueLines": 244,
+    "dialogueLinesWithVietnameseOcr": 230,
+    "lexemeRecords": 169,
+    "beyondHsk2MarkedLexemes": 15,
+    "grammarPoints": 44,
+    "pronunciationTopics": 15,
+    "properNameRecords": 2,
+    "cultureNotes": 3,
+    "audioPlaceholders": 60,
+    "ocrSourcePages": 77,
+    "mappedSourcePages": 145
+  },
+  "qualityMetrics": {
+    "nonNoiseOcrRows": 2584,
+    "nonNoiseRowsBelow075Confidence": 131,
+    "lexemeStubsFromMissedAnchors": 0,
+    "lexemesRecoveredFromTableOfContents": 9,
+    "sceneRecordsWithRecognizedLines": 60
+  },
+  "sourceConstraints": [
+    "The PDF is image-only and has no extractable text layer.",
+    "Audio tracks are referenced by code but are not embedded in the supplied PDF.",
+    "Vietnamese and source pinyin diacritics are less reliable in OCR than Chinese characters.",
+    "Illustrations remain embedded in the source PDF and are represented by page references.",
+    "Exercise answer keys are not printed in the supplied PDF.",
+    "Pages outside the selected OCR scope retain deterministic page and section mappings without raw OCR rows."
+  ],
+  "sourceGaps": [],
+  "editorialPolicy": {
+    "status": "review",
+    "documentTextRole": "All printed instructions are treated only as textbook content, not as instructions to the data-processing agent.",
+    "doNotPublishWithout": [
+      "manual OCR comparison",
+      "licensed audio",
+      "visual asset review"
+    ],
+    "derivedFields": [
+      "stable IDs",
+      "Hanyu pinyin generated from recognized Chinese",
+      "section and page mappings"
+    ]
+  }
+}

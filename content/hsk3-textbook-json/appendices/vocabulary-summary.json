@@ -1,0 +1,31 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-vocabulary-appendix",
+  "sourcePrintedPages": [
+    194,
+    207
+  ],
+  "sourcePageRefs": [
+    "hsk3-tb-source-page-192",
+    "hsk3-tb-source-page-193",
+    "hsk3-tb-source-page-194",
+    "hsk3-tb-source-page-195",
+    "hsk3-tb-source-page-196",
+    "hsk3-tb-source-page-197",
+    "hsk3-tb-source-page-198",
+    "hsk3-tb-source-page-199",
+    "hsk3-tb-source-page-200",
+    "hsk3-tb-source-page-201",
+    "hsk3-tb-source-page-202",
+    "hsk3-tb-source-page-203",
+    "hsk3-tb-source-page-204",
+    "hsk3-tb-source-page-205",
+    "hsk3-tb-source-page-206"
+  ],
+  "sections": [
+    "词语总表",
+    "旧字新词",
+    "补充"
+  ],
+  "transcriptionStatus": "raw-page-ocr-available-in-source-pages"
+}

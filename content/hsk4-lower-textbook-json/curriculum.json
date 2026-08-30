@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk4-standard-course-lower-volume",
+  "title": "Giáo trình chuẩn HSK 4 - Tập 2",
+  "lessonRange": [
+    11,
+    20
+  ],
+  "lessonCount": 10,
+  "lessons": [
+    {
+      "lessonNumber": 11,
+      "lessonRef": "lessons/lesson-11.json",
+      "titleZh": "读书好，读好书，好读书",
+      "titleVi": "Đọc sách có rất nhiều lợi ích, đọc sách hay, thích đọc sách",
+      "pdfPages": [
+        10,
+        22
+      ],
+      "printedPages": [
+        10,
+        22
+      ]
+    },
+    {
+      "lessonNumber": 12,
+      "lessonRef": "lessons/lesson-12.json",
+      "titleZh": "用心发现世界",
+      "titleVi": "Khám phá thế giới bằng trái tim",
+      "pdfPages": [
+        23,
+        35
+      ],
+      "printedPages": [
+        23,
+        35
+      ]
+    },
+    {
+      "lessonNumber": 13,
+      "lessonRef": "lessons/lesson-13.json",
+      "titleZh": "喝着茶看京剧",
+      "titleVi": "Uống trà trong lúc xem Kinh kịch",
+      "pdfPages": [
+        36,
+        49
+      ],
+      "printedPages": [
+        36,
+        49
+      ]
+    },
+    {
+      "lessonNumber": 14,
+      "lessonRef": "lessons/lesson-14.json",
+      "titleZh": "保护地球母亲",
+      "titleVi": "Bảo vệ Mẹ Trái đất",
+      "pdfPages": [
+        50,
+        63
+      ],
+      "printedPages": [
+        50,
+        63
+      ]
+    },
+    {
+      "lessonNumber": 15,
+      "lessonRef": "lessons/lesson-15.json",
+      "titleZh": "教育孩子的艺术",
+      "titleVi": "Nghệ thuật giáo dục con cái",
+      "pdfPages": [
+        64,
+        79
+      ],
+      "printedPages": [
+        64,
+        79
+      ]
+    },
+    {
+      "lessonNumber": 16,
+      "lessonRef": "lessons/lesson-16.json",
+      "titleZh": "生活可以更美好",
+      "titleVi": "Cuộc sống có thể tốt đẹp hơn",
+      "pdfPages": [
+        80,
+        93
+      ],
+      "printedPages": [
+        80,
+        93
+      ]
+    },
+    {
+      "lessonNumber": 17,
+      "lessonRef": "lessons/lesson-17.json",
+      "titleZh": "人与自然",
+      "titleVi": "Con người và thiên nhiên",
+      "pdfPages": [
+        94,
+        107
+      ],
+      "printedPages": [
+        94,
+        107
+      ]
+    },
+    {
+      "lessonNumber": 18,
+      "lessonRef": "lessons/lesson-18.json",
+      "titleZh": "科技与世界",
+      "titleVi": "Khoa học công nghệ và thế giới",
+      "pdfPages": [
+        108,
+        121
+      ],
+      "printedPages": [
+        108,
+        121
+      ]
+    },
+    {
+      "lessonNumber": 19,
+      "lessonRef": "lessons/lesson-19.json",
+      "titleZh": "生活的味道",
+      "titleVi": "Mùi vị của cuộc sống",
+      "pdfPages": [
+        122,
+        134
+      ],
+      "printedPages": [
+        122,
+        134
+      ]
+    },
+    {
+      "lessonNumber": 20,
+      "lessonRef": "lessons/lesson-20.json",
+      "titleZh": "路上的风景",
+      "titleVi": "Quang cảnh dọc đường",
+      "pdfPages": [
+        135,
+        148
+      ],
+      "printedPages": [
+        135,
+        148
+      ]
+    }
+  ],
+  "appendixRefs": [
+    "appendices/vocabulary-summary.json",
+    "appendices/proper-names-summary.json",
+    "appendices/beyond-level-vocabulary.json",
+    "appendices/related-old-new-words.json",
+    "appendices/answer-key.json"
+  ]
+}

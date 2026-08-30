@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk4l-tb-answer-key",
+  "sourcePdfPages": [
+    164,
+    174
+  ],
+  "sourcePageRefs": [
+    "hsk4l-tb-source-page-164",
+    "hsk4l-tb-source-page-165",
+    "hsk4l-tb-source-page-166",
+    "hsk4l-tb-source-page-167",
+    "hsk4l-tb-source-page-168",
+    "hsk4l-tb-source-page-169",
+    "hsk4l-tb-source-page-170",
+    "hsk4l-tb-source-page-171",
+    "hsk4l-tb-source-page-172",
+    "hsk4l-tb-source-page-173",
+    "hsk4l-tb-source-page-174"
+  ],
+  "scope": "warmup, comparison, practice and extension answers for lessons 11-20",
+  "transcriptionStatus": "page-level-ocr-needs-editorial-review"
+}

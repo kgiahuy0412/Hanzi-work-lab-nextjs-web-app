@@ -1,0 +1,198 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "hsk4-standard-course-upper-textbook-vi-v1",
+  "title": "Bộ dữ liệu JSON từ Giáo trình chuẩn HSK 4 - Tập 1",
+  "description": "Dữ liệu bài 1-10, 50 bài khóa, từ mới, chú thích, so sánh, luyện tập, mở rộng, vận dụng, văn hóa, phụ lục, đáp án và bằng chứng OCR theo trang.",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN",
+    "pinyinSystem": "hanyu-pinyin-diacritic"
+  },
+  "status": "review",
+  "sourceRef": "source-analysis.json",
+  "curriculumRef": "curriculum.json",
+  "files": [
+    {
+      "path": "vocabulary.json",
+      "kind": "vocabulary"
+    },
+    {
+      "path": "hsk4-upper-textbook.json",
+      "kind": "compiled-dataset"
+    },
+    {
+      "path": "schemas/textbook-lesson.schema.json",
+      "kind": "schema"
+    },
+    {
+      "path": "source-analysis.json",
+      "kind": "source-analysis"
+    },
+    {
+      "path": "curriculum.json",
+      "kind": "curriculum"
+    },
+    {
+      "path": "shared/source-pages.json",
+      "kind": "ocr-evidence"
+    },
+    {
+      "path": "shared/lexemes.json",
+      "kind": "shared-content",
+      "entity": "lexeme"
+    },
+    {
+      "path": "shared/texts.json",
+      "kind": "shared-content",
+      "entity": "text"
+    },
+    {
+      "path": "shared/proper-names.json",
+      "kind": "shared-content",
+      "entity": "proper-name"
+    },
+    {
+      "path": "shared/culture-notes.json",
+      "kind": "shared-content",
+      "entity": "culture-note"
+    },
+    {
+      "path": "shared/comparison-notes.json",
+      "kind": "shared-content",
+      "entity": "comparison"
+    },
+    {
+      "path": "shared/same-character-groups.json",
+      "kind": "shared-content",
+      "entity": "same-character-group"
+    },
+    {
+      "path": "shared/media-assets.json",
+      "kind": "shared-content",
+      "entity": "media"
+    },
+    {
+      "path": "shared/warmup-blocks.json",
+      "kind": "shared-content",
+      "entity": "warmup-blocks"
+    },
+    {
+      "path": "shared/pinyin-transcript-blocks.json",
+      "kind": "shared-content",
+      "entity": "pinyin-transcript-blocks"
+    },
+    {
+      "path": "shared/annotation-blocks.json",
+      "kind": "shared-content",
+      "entity": "annotation-blocks"
+    },
+    {
+      "path": "shared/practice-blocks.json",
+      "kind": "shared-content",
+      "entity": "practice-blocks"
+    },
+    {
+      "path": "shared/comparison-blocks.json",
+      "kind": "shared-content",
+      "entity": "comparison-blocks"
+    },
+    {
+      "path": "shared/extension-blocks.json",
+      "kind": "shared-content",
+      "entity": "extension-blocks"
+    },
+    {
+      "path": "shared/application-blocks.json",
+      "kind": "shared-content",
+      "entity": "application-blocks"
+    },
+    {
+      "path": "shared/culture-blocks.json",
+      "kind": "shared-content",
+      "entity": "culture-blocks"
+    },
+    {
+      "path": "appendices/vocabulary-summary.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "appendices/proper-names-summary.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "appendices/beyond-level-vocabulary.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "appendices/related-old-new-words.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "appendices/answer-key.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "lessons/lesson-01.json",
+      "kind": "lesson",
+      "lessonNumber": 1
+    },
+    {
+      "path": "lessons/lesson-02.json",
+      "kind": "lesson",
+      "lessonNumber": 2
+    },
+    {
+      "path": "lessons/lesson-03.json",
+      "kind": "lesson",
+      "lessonNumber": 3
+    },
+    {
+      "path": "lessons/lesson-04.json",
+      "kind": "lesson",
+      "lessonNumber": 4
+    },
+    {
+      "path": "lessons/lesson-05.json",
+      "kind": "lesson",
+      "lessonNumber": 5
+    },
+    {
+      "path": "lessons/lesson-06.json",
+      "kind": "lesson",
+      "lessonNumber": 6
+    },
+    {
+      "path": "lessons/lesson-07.json",
+      "kind": "lesson",
+      "lessonNumber": 7
+    },
+    {
+      "path": "lessons/lesson-08.json",
+      "kind": "lesson",
+      "lessonNumber": 8
+    },
+    {
+      "path": "lessons/lesson-09.json",
+      "kind": "lesson",
+      "lessonNumber": 9
+    },
+    {
+      "path": "lessons/lesson-10.json",
+      "kind": "lesson",
+      "lessonNumber": 10
+    }
+  ],
+  "counts": {
+    "lessons": 10,
+    "texts": 50,
+    "lexemes": 309,
+    "properNames": 9,
+    "cultureNotes": 10,
+    "comparisons": 10,
+    "sameCharacterGroups": 10,
+    "mediaPlaceholders": 50,
+    "ocrSourcePages": 161,
+    "answerKeyPages": 11,
+    "contentBlocks": 141
+  }
+}

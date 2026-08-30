@@ -1,0 +1,133 @@
+{
+  "schemaVersion": "1.0.0",
+  "groups": [
+    {
+      "id": "hsk4l-tb-same-character-11",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sharedCharacter": "同",
+      "words": [
+        "同意",
+        "共同",
+        "相同",
+        "同时"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-12",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sharedCharacter": "用",
+      "words": [
+        "信用卡",
+        "作用",
+        "使用"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-13",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sharedCharacter": "量",
+      "words": [
+        "商量",
+        "数量",
+        "质量"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-14",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sharedCharacter": "度",
+      "words": [
+        "速度",
+        "温度",
+        "态度"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-15",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sharedCharacter": "护",
+      "words": [
+        "护照",
+        "保护",
+        "护士"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-16",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sharedCharacter": "重",
+      "words": [
+        "严重",
+        "重点",
+        "重视",
+        "尊重"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-17",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sharedCharacter": "然",
+      "words": [
+        "既然",
+        "竟然",
+        "仍然",
+        "突然"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-18",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sharedCharacter": "点",
+      "words": [
+        "地点",
+        "特点",
+        "优点",
+        "缺点",
+        "重点"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-19",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sharedCharacter": "发",
+      "words": [
+        "沙发",
+        "发生",
+        "发展",
+        "理发"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4l-tb-same-character-20",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sharedCharacter": "格",
+      "words": [
+        "性格",
+        "价格",
+        "表格",
+        "合格",
+        "严格"
+      ],
+      "sourcePageRef": "hsk4l-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    }
+  ]
+}

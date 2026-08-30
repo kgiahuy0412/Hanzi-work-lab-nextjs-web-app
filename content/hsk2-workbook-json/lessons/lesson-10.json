@@ -1,0 +1,78 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-10",
+  "lessonNumber": 10,
+  "status": "review",
+  "title": {
+    "zh": "别找了，手机在桌子上呢。",
+    "pinyin": "bié zhǎo le ， shǒu jī zài zhuō zi shàng ne 。",
+    "vi": "Đừng tìm nữa, điện thoại di động ở trên bàn kìa."
+  },
+  "source": {
+    "pdfPages": [
+      94,
+      102
+    ],
+    "printedPages": [
+      94,
+      102
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-094",
+      "hsk2-wb-source-page-095",
+      "hsk2-wb-source-page-096",
+      "hsk2-wb-source-page-097",
+      "hsk2-wb-source-page-098",
+      "hsk2-wb-source-page-099",
+      "hsk2-wb-source-page-100",
+      "hsk2-wb-source-page-101",
+      "hsk2-wb-source-page-102"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-10-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-10-listening-part-1",
+        "hsk2-wb-lesson-10-listening-part-2",
+        "hsk2-wb-lesson-10-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-10-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-10-reading-part-1",
+        "hsk2-wb-lesson-10-reading-part-2",
+        "hsk2-wb-lesson-10-reading-part-3",
+        "hsk2-wb-lesson-10-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-10-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-10-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-10-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-10-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

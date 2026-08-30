@@ -1,0 +1,121 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-19",
+  "lessonNumber": 19,
+  "status": "review",
+  "title": {
+    "zh": "你没看出来吗？",
+    "pinyin": "nǐ méi kàn chū lái ma ？",
+    "vi": "Anh không nhìn ra được à?"
+  },
+  "source": {
+    "pdfPages": [
+      173,
+      181
+    ],
+    "printedPages": [
+      175,
+      183
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-173",
+      "hsk3-tb-source-page-174",
+      "hsk3-tb-source-page-175",
+      "hsk3-tb-source-page-176",
+      "hsk3-tb-source-page-177",
+      "hsk3-tb-source-page-178",
+      "hsk3-tb-source-page-179",
+      "hsk3-tb-source-page-180",
+      "hsk3-tb-source-page-181"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l19-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-19-scene-1",
+        "hsk3-tb-lesson-19-scene-2",
+        "hsk3-tb-lesson-19-scene-3",
+        "hsk3-tb-lesson-19-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-174",
+        "hsk3-tb-source-page-175"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l19-v01",
+        "hsk3-tb-l19-v02",
+        "hsk3-tb-l19-v03",
+        "hsk3-tb-l19-v04",
+        "hsk3-tb-l19-v05",
+        "hsk3-tb-l19-v06",
+        "hsk3-tb-l19-v07",
+        "hsk3-tb-l19-v08",
+        "hsk3-tb-l19-v09",
+        "hsk3-tb-l19-v10",
+        "hsk3-tb-l19-v11",
+        "hsk3-tb-l19-v12",
+        "hsk3-tb-l19-v13",
+        "hsk3-tb-l19-v14"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l19-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l19-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l19-practice-01",
+        "hsk3-tb-l19-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l19-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l19-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l19-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

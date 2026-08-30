@@ -1,0 +1,123 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-13",
+  "lessonNumber": 13,
+  "status": "review",
+  "title": {
+    "zh": "我是走回来的。",
+    "pinyin": "wǒ shì zǒu huí lái de 。",
+    "vi": "Anh đi bộ về."
+  },
+  "source": {
+    "pdfPages": [
+      123,
+      131
+    ],
+    "printedPages": [
+      123,
+      131
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-123",
+      "hsk3-tb-source-page-124",
+      "hsk3-tb-source-page-125",
+      "hsk3-tb-source-page-126",
+      "hsk3-tb-source-page-127",
+      "hsk3-tb-source-page-128",
+      "hsk3-tb-source-page-129",
+      "hsk3-tb-source-page-130",
+      "hsk3-tb-source-page-131"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l13-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-13-scene-1",
+        "hsk3-tb-lesson-13-scene-2",
+        "hsk3-tb-lesson-13-scene-3",
+        "hsk3-tb-lesson-13-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-124",
+        "hsk3-tb-source-page-125"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l13-v01",
+        "hsk3-tb-l13-v02",
+        "hsk3-tb-l13-v03",
+        "hsk3-tb-l13-v04",
+        "hsk3-tb-l13-v05",
+        "hsk3-tb-l13-v06",
+        "hsk3-tb-l13-v07",
+        "hsk3-tb-l13-v08",
+        "hsk3-tb-l13-v09",
+        "hsk3-tb-l13-v10",
+        "hsk3-tb-l13-v11",
+        "hsk3-tb-l13-v12",
+        "hsk3-tb-l13-v13",
+        "hsk3-tb-l13-v14",
+        "hsk3-tb-l13-v15"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l13-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l13-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l13-practice-01",
+        "hsk3-tb-l13-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l13-hanzi-01",
+        "hsk3-tb-l13-hanzi-02"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l13-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l13-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-05",
+  "lessonNumber": 5,
+  "status": "review",
+  "title": {
+    "zh": "我最近越来越胖了。",
+    "pinyin": "wǒ zuì jìn yuè lái yuè pàng le 。",
+    "vi": "Dạo này em ngày càng béo ra."
+  },
+  "source": {
+    "pdfPages": [
+      53,
+      60
+    ],
+    "printedPages": [
+      53,
+      60
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-053",
+      "hsk3-tb-source-page-054",
+      "hsk3-tb-source-page-055",
+      "hsk3-tb-source-page-056",
+      "hsk3-tb-source-page-057",
+      "hsk3-tb-source-page-058",
+      "hsk3-tb-source-page-059",
+      "hsk3-tb-source-page-060"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l05-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-05-scene-1",
+        "hsk3-tb-lesson-05-scene-2",
+        "hsk3-tb-lesson-05-scene-3",
+        "hsk3-tb-lesson-05-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-054",
+        "hsk3-tb-source-page-055"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l05-v01",
+        "hsk3-tb-l05-v02",
+        "hsk3-tb-l05-v03",
+        "hsk3-tb-l05-v04",
+        "hsk3-tb-l05-v05",
+        "hsk3-tb-l05-v06",
+        "hsk3-tb-l05-v07",
+        "hsk3-tb-l05-v08",
+        "hsk3-tb-l05-v09",
+        "hsk3-tb-l05-v10",
+        "hsk3-tb-l05-v11",
+        "hsk3-tb-l05-v12",
+        "hsk3-tb-l05-v13"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l05-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l05-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l05-practice-01",
+        "hsk3-tb-l05-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l05-hanzi-01",
+        "hsk3-tb-l05-hanzi-02"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l05-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l05-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

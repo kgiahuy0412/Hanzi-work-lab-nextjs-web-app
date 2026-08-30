@@ -1,0 +1,122 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-16",
+  "lessonNumber": 16,
+  "status": "review",
+  "title": {
+    "zh": "我现在累得下了班就想睡觉。",
+    "pinyin": "wǒ xiàn zài lèi dé xià le bān jiù xiǎng shuì jiào 。",
+    "vi": "Bây giờ tôi mệt đến nỗi chỉ muốn đi ngủ sau khi hết giờ làm việc."
+  },
+  "source": {
+    "pdfPages": [
+      151,
+      158
+    ],
+    "printedPages": [
+      151,
+      158
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-151",
+      "hsk3-tb-source-page-152",
+      "hsk3-tb-source-page-153",
+      "hsk3-tb-source-page-154",
+      "hsk3-tb-source-page-155",
+      "hsk3-tb-source-page-156",
+      "hsk3-tb-source-page-157",
+      "hsk3-tb-source-page-158"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l16-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-16-scene-1",
+        "hsk3-tb-lesson-16-scene-2",
+        "hsk3-tb-lesson-16-scene-3",
+        "hsk3-tb-lesson-16-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-152",
+        "hsk3-tb-source-page-153"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l16-v01",
+        "hsk3-tb-l16-v02",
+        "hsk3-tb-l16-v03",
+        "hsk3-tb-l16-v04",
+        "hsk3-tb-l16-v05",
+        "hsk3-tb-l16-v06",
+        "hsk3-tb-l16-v07",
+        "hsk3-tb-l16-v08",
+        "hsk3-tb-l16-v09",
+        "hsk3-tb-l16-v10",
+        "hsk3-tb-l16-v11",
+        "hsk3-tb-l16-v12",
+        "hsk3-tb-l16-v13",
+        "hsk3-tb-l16-v14",
+        "hsk3-tb-l16-v15",
+        "hsk3-tb-l16-v16"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l16-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l16-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l16-practice-01",
+        "hsk3-tb-l16-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l16-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l16-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l16-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

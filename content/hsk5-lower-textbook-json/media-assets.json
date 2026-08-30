@@ -1,0 +1,293 @@
+{
+  "bundleId": "hsk5-standard-course-lower-textbook-vi-v1",
+  "mediaAssets": [
+    {
+      "id": "hsk5l-audio-19-1",
+      "lessonNumber": 19,
+      "type": "audio",
+      "trackLabel": "19-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-19-2",
+      "lessonNumber": 19,
+      "type": "audio",
+      "trackLabel": "19-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-20-1",
+      "lessonNumber": 20,
+      "type": "audio",
+      "trackLabel": "20-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-20-2",
+      "lessonNumber": 20,
+      "type": "audio",
+      "trackLabel": "20-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-21-1",
+      "lessonNumber": 21,
+      "type": "audio",
+      "trackLabel": "21-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-21-2",
+      "lessonNumber": 21,
+      "type": "audio",
+      "trackLabel": "21-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-22-1",
+      "lessonNumber": 22,
+      "type": "audio",
+      "trackLabel": "22-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-22-2",
+      "lessonNumber": 22,
+      "type": "audio",
+      "trackLabel": "22-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-23-1",
+      "lessonNumber": 23,
+      "type": "audio",
+      "trackLabel": "23-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-23-2",
+      "lessonNumber": 23,
+      "type": "audio",
+      "trackLabel": "23-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-24-1",
+      "lessonNumber": 24,
+      "type": "audio",
+      "trackLabel": "24-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-24-2",
+      "lessonNumber": 24,
+      "type": "audio",
+      "trackLabel": "24-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-25-1",
+      "lessonNumber": 25,
+      "type": "audio",
+      "trackLabel": "25-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-25-2",
+      "lessonNumber": 25,
+      "type": "audio",
+      "trackLabel": "25-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-26-1",
+      "lessonNumber": 26,
+      "type": "audio",
+      "trackLabel": "26-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-26-2",
+      "lessonNumber": 26,
+      "type": "audio",
+      "trackLabel": "26-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-27-1",
+      "lessonNumber": 27,
+      "type": "audio",
+      "trackLabel": "27-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-27-2",
+      "lessonNumber": 27,
+      "type": "audio",
+      "trackLabel": "27-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-28-1",
+      "lessonNumber": 28,
+      "type": "audio",
+      "trackLabel": "28-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-28-2",
+      "lessonNumber": 28,
+      "type": "audio",
+      "trackLabel": "28-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-29-1",
+      "lessonNumber": 29,
+      "type": "audio",
+      "trackLabel": "29-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-29-2",
+      "lessonNumber": 29,
+      "type": "audio",
+      "trackLabel": "29-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-30-1",
+      "lessonNumber": 30,
+      "type": "audio",
+      "trackLabel": "30-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-30-2",
+      "lessonNumber": 30,
+      "type": "audio",
+      "trackLabel": "30-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-31-1",
+      "lessonNumber": 31,
+      "type": "audio",
+      "trackLabel": "31-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-31-2",
+      "lessonNumber": 31,
+      "type": "audio",
+      "trackLabel": "31-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-32-1",
+      "lessonNumber": 32,
+      "type": "audio",
+      "trackLabel": "32-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-32-2",
+      "lessonNumber": 32,
+      "type": "audio",
+      "trackLabel": "32-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-33-1",
+      "lessonNumber": 33,
+      "type": "audio",
+      "trackLabel": "33-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-33-2",
+      "lessonNumber": 33,
+      "type": "audio",
+      "trackLabel": "33-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-34-1",
+      "lessonNumber": 34,
+      "type": "audio",
+      "trackLabel": "34-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-34-2",
+      "lessonNumber": 34,
+      "type": "audio",
+      "trackLabel": "34-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-35-1",
+      "lessonNumber": 35,
+      "type": "audio",
+      "trackLabel": "35-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-35-2",
+      "lessonNumber": 35,
+      "type": "audio",
+      "trackLabel": "35-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-36-1",
+      "lessonNumber": 36,
+      "type": "audio",
+      "trackLabel": "36-1",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5l-audio-36-2",
+      "lessonNumber": 36,
+      "type": "audio",
+      "trackLabel": "36-2",
+      "availability": "referenced-in-book-not-embedded-in-source-pdf",
+      "file": null
+    }
+  ]
+}

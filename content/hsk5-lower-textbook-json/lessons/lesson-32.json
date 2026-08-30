@@ -1,0 +1,124 @@
+{
+  "id": "hsk5l-lesson-32",
+  "number": 32,
+  "unitId": "hsk5l-unit-11",
+  "titleZh": "身边的环保",
+  "titleVi": "Bảo vệ môi trường quanh ta",
+  "sourcePdfPages": {
+    "start": 123,
+    "end": 130
+  },
+  "sourcePrintedPages": {
+    "start": 122,
+    "end": 129
+  },
+  "audioTracks": [
+    "32-1",
+    "32-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 123,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身 结合图片，请你举例说明人类对环境的破坏造成了哪些恶劣的影响。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 123,
+      "rowIndex": 9,
+      "matchedTextOcr": "课文 身边的环保（737字） 32-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 125,
+      "rowIndex": 16,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 128,
+      "rowIndex": 23,
+      "matchedTextOcr": "练习 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 130,
+      "rowIndex": 2,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 130,
+      "rowIndex": 13,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-32-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-32-01",
+    "hsk5l-annotation-32-01",
+    "hsk5l-practice-32-01",
+    "hsk5l-extension-32-01",
+    "hsk5l-application-32-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0025",
+    "hsk5l-lexeme-0071",
+    "hsk5l-lexeme-0085",
+    "hsk5l-lexeme-0106",
+    "hsk5l-lexeme-0126",
+    "hsk5l-lexeme-0127",
+    "hsk5l-lexeme-0128",
+    "hsk5l-lexeme-0131",
+    "hsk5l-lexeme-0134",
+    "hsk5l-lexeme-0157",
+    "hsk5l-lexeme-0198",
+    "hsk5l-lexeme-0214",
+    "hsk5l-lexeme-0225",
+    "hsk5l-lexeme-0250",
+    "hsk5l-lexeme-0253",
+    "hsk5l-lexeme-0257",
+    "hsk5l-lexeme-0260",
+    "hsk5l-lexeme-0271",
+    "hsk5l-lexeme-0276",
+    "hsk5l-lexeme-0291",
+    "hsk5l-lexeme-0313",
+    "hsk5l-lexeme-0322",
+    "hsk5l-lexeme-0330",
+    "hsk5l-lexeme-0332",
+    "hsk5l-lexeme-0348",
+    "hsk5l-lexeme-0351",
+    "hsk5l-lexeme-0402",
+    "hsk5l-lexeme-0403",
+    "hsk5l-lexeme-0410",
+    "hsk5l-lexeme-0456",
+    "hsk5l-lexeme-0459",
+    "hsk5l-lexeme-0474",
+    "hsk5l-lexeme-0488",
+    "hsk5l-lexeme-0493",
+    "hsk5l-lexeme-0500"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-014",
+    "hsk5l-beyond-level-046",
+    "hsk5l-beyond-level-104",
+    "hsk5l-beyond-level-127"
+  ],
+  "vocabularyCount": 35,
+  "beyondLevelVocabularyCount": 4,
+  "allVocabularyCount": 39,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

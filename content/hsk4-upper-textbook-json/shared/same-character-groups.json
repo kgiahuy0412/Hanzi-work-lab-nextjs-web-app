@@ -1,0 +1,132 @@
+{
+  "schemaVersion": "1.0.0",
+  "groups": [
+    {
+      "id": "hsk4u-tb-same-character-01",
+      "lessonRef": "hsk4u-tb-lesson-01",
+      "sharedCharacter": "感",
+      "words": [
+        "感到",
+        "感动",
+        "感冒",
+        "感兴趣"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-02",
+      "lessonRef": "hsk4u-tb-lesson-02",
+      "sharedCharacter": "系",
+      "words": [
+        "联系",
+        "关系",
+        "没关系"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-03",
+      "lessonRef": "hsk4u-tb-lesson-03",
+      "sharedCharacter": "时",
+      "words": [
+        "时候",
+        "时间",
+        "及时",
+        "平时",
+        "准时"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-04",
+      "lessonRef": "hsk4u-tb-lesson-04",
+      "sharedCharacter": "法",
+      "words": [
+        "办法",
+        "法律",
+        "方法"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-05",
+      "lessonRef": "hsk4u-tb-lesson-05",
+      "sharedCharacter": "准",
+      "words": [
+        "准时",
+        "准备",
+        "标准"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-06",
+      "lessonRef": "hsk4u-tb-lesson-06",
+      "sharedCharacter": "其",
+      "words": [
+        "其次",
+        "其中",
+        "其实",
+        "其他",
+        "尤其"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-07",
+      "lessonRef": "hsk4u-tb-lesson-07",
+      "sharedCharacter": "气",
+      "words": [
+        "生气",
+        "脾气",
+        "空气",
+        "气候"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-08",
+      "lessonRef": "hsk4u-tb-lesson-08",
+      "sharedCharacter": "要",
+      "words": [
+        "重要",
+        "主要",
+        "只要",
+        "要是"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-09",
+      "lessonRef": "hsk4u-tb-lesson-09",
+      "sharedCharacter": "果",
+      "words": [
+        "如果",
+        "结果",
+        "效果"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    },
+    {
+      "id": "hsk4u-tb-same-character-10",
+      "lessonRef": "hsk4u-tb-lesson-10",
+      "sharedCharacter": "经",
+      "words": [
+        "经济",
+        "经验",
+        "经历"
+      ],
+      "sourcePageRef": "hsk4u-tb-source-page-009",
+      "transcriptionStatus": "visually-verified-from-table-of-contents"
+    }
+  ]
+}

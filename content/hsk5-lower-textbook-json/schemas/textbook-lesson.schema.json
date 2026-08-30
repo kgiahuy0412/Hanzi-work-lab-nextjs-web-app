@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://local.invalid/schemas/hsk5-lower-textbook-lesson.schema.json",
+  "title": "HSK 5 lower textbook lesson",
+  "type": "object",
+  "required": [
+    "id",
+    "number",
+    "unitId",
+    "titleZh",
+    "titleVi",
+    "sourcePdfPages",
+    "textIds",
+    "lexemeIds"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^hsk5l-lesson-[0-9]{2}$"
+    },
+    "number": {
+      "type": "integer",
+      "minimum": 19,
+      "maximum": 36
+    },
+    "unitId": {
+      "type": "string"
+    },
+    "titleZh": {
+      "type": "string",
+      "minLength": 1
+    },
+    "titleVi": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sourcePdfPages": {
+      "type": "object",
+      "required": [
+        "start",
+        "end"
+      ],
+      "properties": {
+        "start": {
+          "type": "integer"
+        },
+        "end": {
+          "type": "integer"
+        }
+      }
+    },
+    "textIds": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "lexemeIds": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": true
+}

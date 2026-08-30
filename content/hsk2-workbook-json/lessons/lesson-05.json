@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-05",
+  "lessonNumber": 5,
+  "status": "review",
+  "title": {
+    "zh": "就买这件吧。",
+    "pinyin": "jiù mǎi zhè jiàn ba 。",
+    "vi": "Mua chiếc áo này đi."
+  },
+  "source": {
+    "pdfPages": [
+      47,
+      56
+    ],
+    "printedPages": [
+      47,
+      56
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-047",
+      "hsk2-wb-source-page-048",
+      "hsk2-wb-source-page-049",
+      "hsk2-wb-source-page-050",
+      "hsk2-wb-source-page-051",
+      "hsk2-wb-source-page-052",
+      "hsk2-wb-source-page-053",
+      "hsk2-wb-source-page-054",
+      "hsk2-wb-source-page-055",
+      "hsk2-wb-source-page-056"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-05-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-05-listening-part-1",
+        "hsk2-wb-lesson-05-listening-part-2",
+        "hsk2-wb-lesson-05-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-05-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-05-reading-part-1",
+        "hsk2-wb-lesson-05-reading-part-2",
+        "hsk2-wb-lesson-05-reading-part-3",
+        "hsk2-wb-lesson-05-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-05-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-05-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-05-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-05-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-answer-key",
+  "sourcePdfPages": [
+    151,
+    161
+  ],
+  "sourcePageRefs": [
+    "hsk4u-tb-source-page-151",
+    "hsk4u-tb-source-page-152",
+    "hsk4u-tb-source-page-153",
+    "hsk4u-tb-source-page-154",
+    "hsk4u-tb-source-page-155",
+    "hsk4u-tb-source-page-156",
+    "hsk4u-tb-source-page-157",
+    "hsk4u-tb-source-page-158",
+    "hsk4u-tb-source-page-159",
+    "hsk4u-tb-source-page-160",
+    "hsk4u-tb-source-page-161"
+  ],
+  "scope": "warmup, comparison, practice and extension answers for lessons 1-10",
+  "transcriptionStatus": "page-level-ocr-needs-editorial-review"
+}

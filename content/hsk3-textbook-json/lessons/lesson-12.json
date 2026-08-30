@@ -1,0 +1,121 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-12",
+  "lessonNumber": 12,
+  "status": "review",
+  "title": {
+    "zh": "把重要的东西放在我这儿吧。",
+    "pinyin": "bǎ zhòng yào de dōng xī fàng zài wǒ zhè ér ba 。",
+    "vi": "Hãy để những đồ quan trọng ở chỗ tôi đi."
+  },
+  "source": {
+    "pdfPages": [
+      114,
+      122
+    ],
+    "printedPages": [
+      114,
+      122
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-114",
+      "hsk3-tb-source-page-115",
+      "hsk3-tb-source-page-116",
+      "hsk3-tb-source-page-117",
+      "hsk3-tb-source-page-118",
+      "hsk3-tb-source-page-119",
+      "hsk3-tb-source-page-120",
+      "hsk3-tb-source-page-121",
+      "hsk3-tb-source-page-122"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l12-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-12-scene-1",
+        "hsk3-tb-lesson-12-scene-2",
+        "hsk3-tb-lesson-12-scene-3",
+        "hsk3-tb-lesson-12-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-115",
+        "hsk3-tb-source-page-116"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l12-v01",
+        "hsk3-tb-l12-v02",
+        "hsk3-tb-l12-v03",
+        "hsk3-tb-l12-v04",
+        "hsk3-tb-l12-v05",
+        "hsk3-tb-l12-v06",
+        "hsk3-tb-l12-v07",
+        "hsk3-tb-l12-v08",
+        "hsk3-tb-l12-v09",
+        "hsk3-tb-l12-v10",
+        "hsk3-tb-l12-v11",
+        "hsk3-tb-l12-v12",
+        "hsk3-tb-l12-v13",
+        "hsk3-tb-l12-v14"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l12-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l12-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l12-practice-01",
+        "hsk3-tb-l12-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l12-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l12-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l12-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

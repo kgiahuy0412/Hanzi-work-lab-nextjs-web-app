@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-02",
+  "lessonNumber": 2,
+  "status": "review",
+  "title": {
+    "zh": "我每天六点起床。",
+    "pinyin": "wǒ měi tiān liù diǎn qǐ chuáng 。",
+    "vi": "Hằng ngày tôi thức dậy lúc 6 giờ."
+  },
+  "source": {
+    "pdfPages": [
+      17,
+      26
+    ],
+    "printedPages": [
+      17,
+      26
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-017",
+      "hsk2-wb-source-page-018",
+      "hsk2-wb-source-page-019",
+      "hsk2-wb-source-page-020",
+      "hsk2-wb-source-page-021",
+      "hsk2-wb-source-page-022",
+      "hsk2-wb-source-page-023",
+      "hsk2-wb-source-page-024",
+      "hsk2-wb-source-page-025",
+      "hsk2-wb-source-page-026"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-02-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-02-listening-part-1",
+        "hsk2-wb-lesson-02-listening-part-2",
+        "hsk2-wb-lesson-02-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-02-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-02-reading-part-1",
+        "hsk2-wb-lesson-02-reading-part-2",
+        "hsk2-wb-lesson-02-reading-part-3",
+        "hsk2-wb-lesson-02-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-02-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-02-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-02-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-02-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

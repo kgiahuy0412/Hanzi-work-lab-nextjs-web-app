@@ -140,20 +140,24 @@ function VocabularyPanel({
 
 function ExercisePrompt({ exercise, speak }: { exercise: HskExercise; speak: (text: string, rate?: SpeechRate) => void }) {
   if (exercise.type === "listening") {
-    return <button aria-label="Nghe câu hỏi" className="hsk-exercise-listen" onClick={() => speak(exercise.speakText ?? exercise.answer)} type="button"><Volume2 aria-hidden="true" size={30} /><span>Nghe lại</span></button>;
+    return <button aria-label="Nghe câu hỏi" className="hsk-exercise-listen" onClick={() => speak(exercise.speakText ?? exercise.answer ?? "")} type="button"><Volume2 aria-hidden="true" size={30} /><span>Nghe lại</span></button>;
   }
-  return <strong className="hsk-exercise-prompt" lang={exercise.type === "meaning" ? "zh-CN" : undefined}>{exercise.prompt}</strong>;
+  return <div className={`hsk-exercise-copy${exercise.pinyin ? " has-pinyin" : ""}`}><strong className="hsk-exercise-prompt" lang={exercise.type === "meaning" ? "zh-CN" : undefined}>{exercise.prompt}</strong>{exercise.pinyin ? <span>{exercise.pinyin}</span> : null}</div>;
 }
 
 function ExercisePanel({
   exercises,
   bestPercent,
+  reviewed,
   onFinished,
+  onReview,
   speak,
 }: {
   exercises: HskExercise[];
   bestPercent: number;
+  reviewed: string[];
   onFinished: (percent: number) => void;
+  onReview: (exerciseId: string) => void;
   speak: (text: string, rate?: SpeechRate) => void;
 }) {
   const [index, setIndex] = useState(0);
@@ -161,18 +165,19 @@ function ExercisePanel({
   const [correct, setCorrect] = useState(0);
   const [finished, setFinished] = useState(false);
   const exercise = exercises[index];
+  const scored = exercises.every((item) => item.answer !== null);
 
   const choose = (option: string) => {
     if (selected) return;
     setSelected(option);
-    if (option === exercise.answer) setCorrect((value) => value + 1);
+    if (exercise.answer !== null && option === exercise.answer) setCorrect((value) => value + 1);
   };
 
   const next = () => {
-    if (!selected) return;
+    if (exercise.answer !== null && exercise.options.length && !selected) return;
+    onReview(exercise.id);
     if (index === exercises.length - 1) {
-      const percent = Math.round((correct / exercises.length) * 100);
-      onFinished(percent);
+      if (scored) onFinished(Math.round((correct / exercises.length) * 100));
       setFinished(true);
       return;
     }
@@ -191,33 +196,33 @@ function ExercisePanel({
     const percent = Math.round((correct / exercises.length) * 100);
     return <section className="hsk-result-card" aria-live="polite">
       <span><Sparkles aria-hidden="true" size={28} /></span>
-      <small>Hoàn thành bài tập</small>
-      <h2>{correct}/{exercises.length} câu đúng</h2>
-      <p>{percent >= 80 ? "Bạn đã nắm khá chắc bài này." : "Ôn lại flashcard rồi thử thêm một lượt nhé."}</p>
+      <small>{scored ? "Hoàn thành bài tập" : "Hoàn thành lượt ôn tập"}</small>
+      <h2>{scored ? `${correct}/${exercises.length} câu đúng` : `Đã xem ${exercises.length} nội dung`}</h2>
+      <p>{scored ? percent >= 80 ? "Bạn đã nắm khá chắc bài này." : "Ôn lại flashcard rồi thử thêm một lượt nhé." : "Tiến độ đã được lưu. Phần này không chấm đúng sai vì dữ liệu nguồn không có đáp án."}</p>
       <button onClick={restart} type="button"><RotateCcw aria-hidden="true" size={18} /> Làm lại bài tập</button>
     </section>;
   }
 
   return <section className="hsk-exercise-mode" aria-label="Bài tập HSK">
     <div className="hsk-mode-intro">
-      <div><span>Luyện tập tổng hợp</span><h2>{exercise.instruction}</h2><p>Câu {index + 1}/{exercises.length} · Kỷ lục {bestPercent}%</p></div>
-      <strong>{correct} câu đúng</strong>
+      <div><span>Luyện tập tổng hợp</span><h2>{exercise.instruction}</h2><p>Câu {index + 1}/{exercises.length}{scored ? ` · Kỷ lục ${bestPercent}%` : " · Tự luyện theo nội dung nguồn"}</p></div>
+      <strong>{scored ? `${correct} câu đúng` : `${reviewed.length}/${exercises.length} đã xem`}</strong>
     </div>
     <div aria-label={`Bài tập ${index + 1} trên ${exercises.length}`} aria-valuemax={exercises.length} aria-valuemin={1} aria-valuenow={index + 1} className="hsk-step-progress" role="progressbar"><span style={{ width: `${((index + 1) / exercises.length) * 100}%` }} /></div>
     <article className="hsk-exercise-card">
-      <p>{exercise.prompt}</p>
       <ExercisePrompt exercise={exercise} speak={speak} />
+      {exercise.note ? <p className="hsk-exercise-note">{exercise.note}</p> : null}
       <div className="hsk-exercise-options">
         {exercise.options.map((option, optionIndex) => {
-          const state = selected ? option === exercise.answer ? " is-correct" : option === selected ? " is-wrong" : "" : "";
+          const state = exercise.answer !== null && selected ? option === exercise.answer ? " is-correct" : option === selected ? " is-wrong" : "" : selected === option ? " is-selected" : "";
           return <button className={state} key={option} onClick={() => choose(option)} type="button"><b>{String.fromCharCode(65 + optionIndex)}</b><span>{option}</span>{state === " is-correct" ? <Check aria-hidden="true" size={18} /> : state === " is-wrong" ? <X aria-hidden="true" size={18} /> : null}</button>;
         })}
       </div>
-      {selected ? <div className={`hsk-answer-feedback${selected === exercise.answer ? " is-correct" : " is-wrong"}`} role="status">
+      {selected && exercise.answer !== null ? <div className={`hsk-answer-feedback${selected === exercise.answer ? " is-correct" : " is-wrong"}`} role="status">
         <span>{selected === exercise.answer ? <Check aria-hidden="true" size={18} /> : <X aria-hidden="true" size={18} />}</span>
         <strong>{selected === exercise.answer ? "Chính xác" : `Đáp án đúng: ${exercise.answer}`}</strong>
       </div> : null}
-      <button className="hsk-primary-action" disabled={!selected} onClick={next} type="button">{index === exercises.length - 1 ? "Xem kết quả" : "Câu tiếp theo"}<ArrowRight aria-hidden="true" size={18} /></button>
+      <button className="hsk-primary-action" disabled={exercise.answer !== null && exercise.options.length > 0 && !selected} onClick={next} type="button">{index === exercises.length - 1 ? scored ? "Xem kết quả" : "Hoàn thành" : "Câu tiếp theo"}<ArrowRight aria-hidden="true" size={18} /></button>
     </article>
   </section>;
 }
@@ -279,7 +284,7 @@ function HanziPanel({
 }: {
   characters: HskWritingCharacter[];
   completed: string[];
-  onComplete: (hanzi: string) => void;
+  onComplete: (writingId: string) => void;
   speak: (text: string, rate?: SpeechRate) => void;
 }) {
   const boardRef = useRef<HTMLDivElement>(null);
@@ -290,6 +295,9 @@ function HanziPanel({
   const [resetVersion, setResetVersion] = useState(0);
   const [status, setStatus] = useState("Đang chuẩn bị dữ liệu nét…");
   const character = characters[index];
+  const completedCount = characters.filter((item) => (
+    completed.includes(item.id) || completed.includes(item.hanzi)
+  )).length;
 
   useEffect(() => {
     const board = boardRef.current;
@@ -351,7 +359,7 @@ function HanziPanel({
         onComplete: () => {
           if (!canceled) {
             setStatus("Hoàn thành! Tiến độ chữ này đã được lưu.");
-            onComplete(character.hanzi);
+            onComplete(character.id);
           }
         },
       });
@@ -366,7 +374,7 @@ function HanziPanel({
       writerRef.current = null;
       board.replaceChildren();
     };
-  }, [boardSize, character.hanzi, mode, onComplete, resetVersion]);
+  }, [boardSize, character.hanzi, character.id, mode, onComplete, resetVersion]);
 
   const chooseCharacter = (nextIndex: number) => {
     setIndex(nextIndex);
@@ -383,11 +391,11 @@ function HanziPanel({
   return <section className="hsk-hanzi-mode" aria-label="Luyện viết chữ Hán">
     <div className="hsk-mode-intro">
       <div><span>Bút thuận tương tác</span><h2>Xem nét, tô theo, rồi tự viết</h2><p>Bàn viết phản hồi ngay sau mỗi nét và lưu chữ đã hoàn thành.</p></div>
-      <strong>{completed.length}/{characters.length} đã luyện</strong>
+      <strong>{completedCount}/{characters.length} đã luyện</strong>
     </div>
 
     <div className="hsk-hanzi-layout">
-      <nav aria-label="Chọn chữ Hán" className="hsk-hanzi-list">{characters.map((item, itemIndex) => <button aria-current={itemIndex === index ? "true" : undefined} className={itemIndex === index ? "is-active" : ""} key={item.hanzi} onClick={() => chooseCharacter(itemIndex)} type="button"><span lang="zh-CN">{item.hanzi}</span><small>{item.pinyin}</small>{completed.includes(item.hanzi) ? <Check aria-hidden="true" size={14} /> : null}</button>)}</nav>
+      <nav aria-label="Chọn từ luyện viết" className="hsk-hanzi-list">{characters.map((item, itemIndex) => <button aria-current={itemIndex === index ? "true" : undefined} className={itemIndex === index ? "is-active" : ""} key={item.id} onClick={() => chooseCharacter(itemIndex)} type="button"><span lang="zh-CN">{item.hanzi}</span><small>{item.pinyin}</small>{completed.includes(item.id) || completed.includes(item.hanzi) ? <Check aria-hidden="true" size={14} /> : null}</button>)}</nav>
       <div className="hsk-hanzi-practice">
         <div aria-label="Chế độ luyện viết" className="hsk-writing-modes" role="group">
           <button aria-pressed={mode === "watch"} onClick={() => chooseMode("watch")} type="button"><Eye aria-hidden="true" size={17} /> Xem nét</button>
@@ -401,7 +409,7 @@ function HanziPanel({
         <p aria-live="polite" className="hsk-writing-status">{status}</p>
         <button className="hsk-writing-reset" onClick={() => setResetVersion((value) => value + 1)} type="button"><RotateCcw aria-hidden="true" size={17} /> {mode === "watch" ? "Phát lại" : "Viết lại"}</button>
       </div>
-      <aside className="hsk-character-detail"><small>CHỮ ĐANG LUYỆN</small><strong lang="zh-CN">{character.hanzi}</strong><div><b>{character.pinyin}</b><button aria-label={`Nghe phát âm ${character.hanzi}`} onClick={() => speak(character.hanzi)} type="button"><Volume2 aria-hidden="true" size={18} /></button></div><p>{character.meaning}</p><div className="hsk-character-nav"><button aria-label="Chữ trước" onClick={() => chooseCharacter((index - 1 + characters.length) % characters.length)} type="button"><ChevronLeft aria-hidden="true" size={18} /></button><span>{index + 1}/{characters.length}</span><button aria-label="Chữ tiếp theo" onClick={() => chooseCharacter((index + 1) % characters.length)} type="button"><ChevronRight aria-hidden="true" size={18} /></button></div></aside>
+      <aside className="hsk-character-detail"><small>CHỮ TRONG TỪ {index + 1}/{characters.length}</small><strong lang="zh-CN">{character.hanzi}</strong><div><b>{character.pinyin}</b><button aria-label={`Nghe phát âm ${character.hanzi}`} onClick={() => speak(character.hanzi)} type="button"><Volume2 aria-hidden="true" size={18} /></button></div><p>Từ “{character.word}” · {character.meaning}</p><div className="hsk-character-nav"><button aria-label="Chữ trước" onClick={() => chooseCharacter((index - 1 + characters.length) % characters.length)} type="button"><ChevronLeft aria-hidden="true" size={18} /></button><span>{index + 1}/{characters.length}</span><button aria-label="Chữ tiếp theo" onClick={() => chooseCharacter((index + 1) % characters.length)} type="button"><ChevronRight aria-hidden="true" size={18} /></button></div></aside>
     </div>
   </section>;
 }
@@ -411,10 +419,20 @@ export function HskLessonWorkspace({ lesson, initialMode = "vocabulary", showLau
   initialMode?: HskLessonMode;
   showLaunchActions?: boolean;
 }) {
-  const [activeTab, setActiveTab] = useState<HskLessonMode>(initialMode);
+  const availableTabs = TABS.filter((tab) => {
+    if (tab.id === "vocabulary") return lesson.vocabulary.length > 0;
+    if (tab.id === "exercise") return lesson.exercises.length > 0;
+    if (tab.id === "pronunciation") return lesson.vocabulary.length > 0;
+    return lesson.writingCharacters.length > 0;
+  });
+  const defaultTab = availableTabs.some((tab) => tab.id === initialMode)
+    ? initialMode
+    : availableTabs[0]?.id ?? "exercise";
+  const [activeTab, setActiveTab] = useState<HskLessonMode>(defaultTab);
   const [progress, setProgress] = useState<HskLessonProgress>(EMPTY_HSK_LESSON_PROGRESS);
   const progressPercent = useMemo(() => calculateHskLessonProgress(lesson, progress), [lesson, progress]);
   const lessonHref = `/hsk/${lesson.levelId.replace(/^hsk-/, "")}/${lesson.id}`;
+  const scoredExercises = lesson.exercises.length > 0 && lesson.exercises.every((exercise) => exercise.answer !== null);
 
   useEffect(() => {
     const handle = window.setTimeout(() => {
@@ -451,10 +469,10 @@ export function HskLessonWorkspace({ lesson, initialMode = "vocabulary", showLau
   const panel = activeTab === "vocabulary"
     ? <VocabularyPanel completed={progress.vocabulary} onComplete={(id) => commitProgress((current) => ({ ...current, vocabulary: addUnique(current.vocabulary, id) }))} onContinue={() => setActiveTab("exercise")} speak={speak} words={lesson.vocabulary} />
     : activeTab === "exercise"
-      ? <ExercisePanel bestPercent={progress.exerciseBestPercent} exercises={lesson.exercises} onFinished={(percent) => commitProgress((current) => ({ ...current, exerciseBestPercent: Math.max(current.exerciseBestPercent, percent) }))} speak={speak} />
+      ? <ExercisePanel bestPercent={progress.exerciseBestPercent} exercises={lesson.exercises} onFinished={(percent) => commitProgress((current) => ({ ...current, exerciseBestPercent: Math.max(current.exerciseBestPercent, percent) }))} onReview={(id) => commitProgress((current) => ({ ...current, reviewedExercises: addUnique(current.reviewedExercises, id) }))} reviewed={progress.reviewedExercises} speak={speak} />
       : activeTab === "pronunciation"
         ? <PronunciationPanel completed={progress.pronunciation} onComplete={(id) => commitProgress((current) => ({ ...current, pronunciation: addUnique(current.pronunciation, id) }))} speak={speak} words={lesson.vocabulary} />
-        : <HanziPanel characters={lesson.writingCharacters} completed={progress.writing} onComplete={(hanzi) => commitProgress((current) => ({ ...current, writing: addUnique(current.writing, hanzi) }))} speak={speak} />;
+        : <HanziPanel characters={lesson.writingCharacters} completed={progress.writing} onComplete={(writingId) => commitProgress((current) => ({ ...current, writing: addUnique(current.writing, writingId) }))} speak={speak} />;
 
   return <main className="hsk-lesson-page">
     <header className="hsk-learning-header">
@@ -465,16 +483,20 @@ export function HskLessonWorkspace({ lesson, initialMode = "vocabulary", showLau
         <div className="hsk-learning-progress-copy"><strong>{progressPercent}%</strong><span>hoàn thành</span></div>
       </div>
       <div aria-label={`Tiến độ bài học ${progressPercent}%`} aria-valuemax={100} aria-valuemin={0} aria-valuenow={progressPercent} className="hsk-learning-progress" role="progressbar"><span style={{ width: `${progressPercent}%` }} /></div>
-      <div className="hsk-learning-meta"><span><BookOpen aria-hidden="true" size={16} /> {lesson.vocabulary.length} từ trọng tâm</span><span><GraduationCap aria-hidden="true" size={16} /> {lesson.exercises.length} bài tập</span><span><PenLine aria-hidden="true" size={16} /> {lesson.writingCharacters.length} chữ luyện viết</span></div>
+      <div className="hsk-learning-meta">
+        {lesson.vocabulary.length ? <span><BookOpen aria-hidden="true" size={16} /> {lesson.vocabulary.length} từ trọng tâm</span> : null}
+        {lesson.exercises.length ? <span><GraduationCap aria-hidden="true" size={16} /> {lesson.exercises.length} bài tập</span> : null}
+        {lesson.writingCharacters.length ? <span><PenLine aria-hidden="true" size={16} /> {lesson.writingCharacters.length} từ luyện viết</span> : null}
+      </div>
       {showLaunchActions ? <nav aria-label="Cách học bài này" className="hsk-lesson-launch-actions">
         <Link className="is-primary" href={`${lessonHref}/play`}><Play aria-hidden="true" fill="currentColor" size={17} /><span>Bắt đầu học</span></Link>
-        <Link href={`${lessonHref}/flashcard`}><BookOpen aria-hidden="true" size={17} /><span>Flashcard</span></Link>
-        <Link href={`${lessonHref}/quiz`}><GraduationCap aria-hidden="true" size={17} /><span>Quiz</span></Link>
+        {lesson.vocabulary.length ? <Link href={`${lessonHref}/flashcard`}><BookOpen aria-hidden="true" size={17} /><span>Flashcard</span></Link> : null}
+        {lesson.exercises.length ? <Link href={`${lessonHref}/quiz`}><GraduationCap aria-hidden="true" size={17} /><span>{scoredExercises ? "Quiz" : "Bài tập"}</span></Link> : null}
       </nav> : null}
     </header>
 
     <nav aria-label="Nội dung bài học" className="hsk-learning-tabs" role="tablist">
-      {TABS.map((tab) => {
+      {availableTabs.map((tab) => {
         const Icon = tab.icon;
         const selected = activeTab === tab.id;
         return <button aria-controls={`hsk-panel-${tab.id}`} aria-selected={selected} className={selected ? "is-active" : ""} id={`hsk-tab-${tab.id}`} key={tab.id} onClick={() => setActiveTab(tab.id)} role="tab" type="button"><Icon aria-hidden="true" size={19} /><span>{tab.label}</span>{tab.id === "vocabulary" ? <small>{progress.vocabulary.length}/{lesson.vocabulary.length}</small> : null}</button>;

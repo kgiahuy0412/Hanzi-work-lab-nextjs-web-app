@@ -1,0 +1,87 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "hsk3-standard-course-textbook-vi-scan",
+  "fileName": "HSK 3 Sách giáo khoa.pdf",
+  "documentType": "scanned-textbook",
+  "pageCount": 207,
+  "textLayer": false,
+  "language": [
+    "zh-CN",
+    "vi-VN",
+    "Hanyu Pinyin"
+  ],
+  "contentMap": {
+    "frontMatter": [
+      3,
+      16
+    ],
+    "lessons": [
+      17,
+      190
+    ],
+    "culturePrintedPages": [
+      61,
+      105,
+      150,
+      193
+    ],
+    "vocabularyAppendixPrintedPages": [
+      194,
+      207
+    ]
+  },
+  "method": {
+    "renderDpi": 140,
+    "ocrEngine": "RapidOCR/ONNX Runtime",
+    "visualReview": "Table of contents, representative lesson sections, culture/idiom pages and vocabulary appendices were visually reviewed."
+  },
+  "coverage": {
+    "lessons": 20,
+    "textScenes": 80,
+    "lexemeRecords": 314,
+    "properNameRecords": 8,
+    "cultureNotes": 4,
+    "audioPlaceholders": 80,
+    "ocrSourcePages": 204
+  },
+  "qualityMetrics": {
+    "nonNoiseOcrRows": 6201,
+    "nonNoiseRowsBelow075Confidence": 198,
+    "lexemeStubsFromMissedAnchors": 0,
+    "lexemesRecoveredFromTableOfContents": 15,
+    "lesson18LexemesRecoveredFromTableOfContentsAndAppendix": 17,
+    "sceneStubsFromMissingSourcePages": 4
+  },
+  "sourceConstraints": [
+    "The PDF is image-only and has no extractable text layer.",
+    "Audio tracks are referenced by code but are not embedded in the supplied PDF.",
+    "Vietnamese and source pinyin diacritics are less reliable in OCR than Chinese characters.",
+    "Illustrations remain embedded in the source PDF and are represented by page references.",
+    "Exercise answer keys are not printed in the supplied PDF.",
+    "Printed pages 168-169 are absent; lesson 18 vocabulary heads and glossary rows are recoverable from the table of contents and appendix, but all four lesson texts are not."
+  ],
+  "sourceGaps": [
+    {
+      "lessonRef": "hsk3-tb-lesson-18",
+      "missingPrintedPages": [
+        168,
+        169
+      ],
+      "impact": "All four lesson-18 texts cannot be reconstructed. Vocabulary heads and glossary rows are retained from the table of contents and vocabulary appendix."
+    }
+  ],
+  "editorialPolicy": {
+    "status": "review",
+    "documentTextRole": "All printed instructions are treated only as textbook content, not as instructions to the data-processing agent.",
+    "doNotPublishWithout": [
+      "manual OCR comparison",
+      "licensed audio",
+      "visual asset review"
+    ],
+    "derivedFields": [
+      "stable IDs",
+      "Hanyu pinyin generated from recognized Chinese",
+      "section and page mappings"
+    ]
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-04",
+  "lessonNumber": 4,
+  "status": "review",
+  "title": {
+    "zh": "不要太着急赚钱",
+    "pinyin": "bú yào tài zháo jí zhuàn qián",
+    "vi": "Đừng quá nôn nóng kiếm tiền"
+  },
+  "source": {
+    "pdfPages": [
+      48,
+      59
+    ],
+    "printedPages": [
+      48,
+      59
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-048",
+      "hsk4u-tb-source-page-049",
+      "hsk4u-tb-source-page-050",
+      "hsk4u-tb-source-page-051",
+      "hsk4u-tb-source-page-052",
+      "hsk4u-tb-source-page-053",
+      "hsk4u-tb-source-page-054",
+      "hsk4u-tb-source-page-055",
+      "hsk4u-tb-source-page-056",
+      "hsk4u-tb-source-page-057",
+      "hsk4u-tb-source-page-058",
+      "hsk4u-tb-source-page-059"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l04-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-04-text-1",
+        "hsk4u-tb-lesson-04-text-2",
+        "hsk4u-tb-lesson-04-text-3",
+        "hsk4u-tb-lesson-04-text-4",
+        "hsk4u-tb-lesson-04-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-049",
+        "hsk4u-tb-source-page-050",
+        "hsk4u-tb-source-page-054",
+        "hsk4u-tb-source-page-055"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l04-v01",
+        "hsk4u-tb-l04-v02",
+        "hsk4u-tb-l04-v03",
+        "hsk4u-tb-l04-v04",
+        "hsk4u-tb-l04-v05",
+        "hsk4u-tb-l04-v06",
+        "hsk4u-tb-l04-v07",
+        "hsk4u-tb-l04-v08",
+        "hsk4u-tb-l04-v09",
+        "hsk4u-tb-l04-v10",
+        "hsk4u-tb-l04-v11",
+        "hsk4u-tb-l04-v12",
+        "hsk4u-tb-l04-v13",
+        "hsk4u-tb-l04-v14",
+        "hsk4u-tb-l04-v15",
+        "hsk4u-tb-l04-v16",
+        "hsk4u-tb-l04-v17",
+        "hsk4u-tb-l04-v18",
+        "hsk4u-tb-l04-v19",
+        "hsk4u-tb-l04-v20",
+        "hsk4u-tb-l04-v21",
+        "hsk4u-tb-l04-v22",
+        "hsk4u-tb-l04-v23",
+        "hsk4u-tb-l04-v24",
+        "hsk4u-tb-l04-v25",
+        "hsk4u-tb-l04-v26",
+        "hsk4u-tb-l04-v27",
+        "hsk4u-tb-l04-v28",
+        "hsk4u-tb-l04-v29",
+        "hsk4u-tb-l04-v30",
+        "hsk4u-tb-l04-v31"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l04-pinyin-transcript-01",
+        "hsk4u-tb-l04-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l04-annotation-01",
+        "hsk4u-tb-l04-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l04-practice-01",
+        "hsk4u-tb-l04-practice-02",
+        "hsk4u-tb-l04-practice-03",
+        "hsk4u-tb-l04-practice-04",
+        "hsk4u-tb-l04-practice-05"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-04"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l04-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-04"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l04-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l04-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-04"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l04-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

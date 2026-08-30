@@ -1,0 +1,124 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-tb-lesson-04",
+  "lessonNumber": 4,
+  "status": "review",
+  "title": {
+    "zh": "这个工作是他帮我介绍的。",
+    "pinyin": "zhè ge gōng zuò shì tā bāng wǒ jiè shào de。",
+    "vi": "Ông ấy đã giới thiệu giúp tôi công việc này."
+  },
+  "source": {
+    "pdfPages": [
+      39,
+      46
+    ],
+    "printedPages": [
+      39,
+      46
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk2-tb-source-page-039",
+      "hsk2-tb-source-page-040",
+      "hsk2-tb-source-page-041",
+      "hsk2-tb-source-page-042",
+      "hsk2-tb-source-page-043",
+      "hsk2-tb-source-page-044",
+      "hsk2-tb-source-page-045",
+      "hsk2-tb-source-page-046"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk2-tb-l04-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk2-tb-lesson-04-scene-1",
+        "hsk2-tb-lesson-04-scene-2",
+        "hsk2-tb-lesson-04-scene-3",
+        "hsk2-tb-lesson-04-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk2-tb-source-page-040",
+        "hsk2-tb-source-page-041"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk2-tb-l04-v01",
+        "hsk2-tb-l04-v02",
+        "hsk2-tb-l04-v03",
+        "hsk2-tb-l04-v04",
+        "hsk2-tb-l04-v05",
+        "hsk2-tb-l04-v06",
+        "hsk2-tb-l04-v07",
+        "hsk2-tb-l04-v08",
+        "hsk2-tb-l04-v09",
+        "hsk2-tb-l04-v10",
+        "hsk2-tb-l04-v11",
+        "hsk2-tb-l04-v12",
+        "hsk2-tb-l04-v13"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": []
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk2-tb-l04-grammar-01",
+        "hsk2-tb-l04-grammar-02",
+        "hsk2-tb-l04-grammar-03"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l04-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk2-tb-l04-practice-01"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk2-tb-l04-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk2-tb-l04-application-01"
+      ]
+    },
+    {
+      "type": "pronunciation",
+      "contentRefs": [
+        "hsk2-tb-l04-pronunciation"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l04-pronunciation-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

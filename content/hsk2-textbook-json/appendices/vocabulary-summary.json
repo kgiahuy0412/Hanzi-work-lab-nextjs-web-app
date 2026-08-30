@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-tb-vocabulary-appendix",
+  "sourcePrintedPages": [
+    135,
+    145
+  ],
+  "sourcePageRefs": [
+    "hsk2-tb-source-page-135",
+    "hsk2-tb-source-page-136",
+    "hsk2-tb-source-page-137",
+    "hsk2-tb-source-page-138",
+    "hsk2-tb-source-page-139",
+    "hsk2-tb-source-page-140",
+    "hsk2-tb-source-page-141",
+    "hsk2-tb-source-page-142",
+    "hsk2-tb-source-page-143",
+    "hsk2-tb-source-page-144",
+    "hsk2-tb-source-page-145"
+  ],
+  "sections": [
+    "词语总表",
+    "汉字总表",
+    "偏旁总表"
+  ],
+  "transcriptionStatus": "selective-page-ocr-available-in-source-pages"
+}

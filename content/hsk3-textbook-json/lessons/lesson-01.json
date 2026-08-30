@@ -1,0 +1,124 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-01",
+  "lessonNumber": 1,
+  "status": "review",
+  "title": {
+    "zh": "周末你有什么打算？",
+    "pinyin": "zhōu mò nǐ yǒu shén me dǎ suàn ？",
+    "vi": "Anh dự định làm gì vào cuối tuần vậy?"
+  },
+  "source": {
+    "pdfPages": [
+      17,
+      26
+    ],
+    "printedPages": [
+      17,
+      26
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-017",
+      "hsk3-tb-source-page-018",
+      "hsk3-tb-source-page-019",
+      "hsk3-tb-source-page-020",
+      "hsk3-tb-source-page-021",
+      "hsk3-tb-source-page-022",
+      "hsk3-tb-source-page-023",
+      "hsk3-tb-source-page-024",
+      "hsk3-tb-source-page-025",
+      "hsk3-tb-source-page-026"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l01-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-01-scene-1",
+        "hsk3-tb-lesson-01-scene-2",
+        "hsk3-tb-lesson-01-scene-3",
+        "hsk3-tb-lesson-01-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-018",
+        "hsk3-tb-source-page-019"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l01-v01",
+        "hsk3-tb-l01-v02",
+        "hsk3-tb-l01-v03",
+        "hsk3-tb-l01-v04",
+        "hsk3-tb-l01-v05",
+        "hsk3-tb-l01-v06",
+        "hsk3-tb-l01-v07",
+        "hsk3-tb-l01-v08",
+        "hsk3-tb-l01-v09",
+        "hsk3-tb-l01-v10",
+        "hsk3-tb-l01-v11",
+        "hsk3-tb-l01-v12",
+        "hsk3-tb-l01-v13",
+        "hsk3-tb-l01-v14",
+        "hsk3-tb-l01-v15"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l01-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l01-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l01-practice-01",
+        "hsk3-tb-l01-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l01-hanzi-01",
+        "hsk3-tb-l01-hanzi-02"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l01-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l01-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

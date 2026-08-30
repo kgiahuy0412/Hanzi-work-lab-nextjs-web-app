@@ -1,0 +1,172 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-01",
+  "lessonNumber": 1,
+  "status": "review",
+  "title": {
+    "zh": "简单的爱情",
+    "pinyin": "jiǎn dān de ài qíng",
+    "vi": "Tình yêu đơn giản"
+  },
+  "source": {
+    "pdfPages": [
+      10,
+      21
+    ],
+    "printedPages": [
+      10,
+      21
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-010",
+      "hsk4u-tb-source-page-011",
+      "hsk4u-tb-source-page-012",
+      "hsk4u-tb-source-page-013",
+      "hsk4u-tb-source-page-014",
+      "hsk4u-tb-source-page-015",
+      "hsk4u-tb-source-page-016",
+      "hsk4u-tb-source-page-017",
+      "hsk4u-tb-source-page-018",
+      "hsk4u-tb-source-page-019",
+      "hsk4u-tb-source-page-020",
+      "hsk4u-tb-source-page-021"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l01-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-01-text-1",
+        "hsk4u-tb-lesson-01-text-2",
+        "hsk4u-tb-lesson-01-text-3",
+        "hsk4u-tb-lesson-01-text-4",
+        "hsk4u-tb-lesson-01-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-011",
+        "hsk4u-tb-source-page-012",
+        "hsk4u-tb-source-page-016"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l01-v01",
+        "hsk4u-tb-l01-v02",
+        "hsk4u-tb-l01-v03",
+        "hsk4u-tb-l01-v04",
+        "hsk4u-tb-l01-v05",
+        "hsk4u-tb-l01-v06",
+        "hsk4u-tb-l01-v07",
+        "hsk4u-tb-l01-v08",
+        "hsk4u-tb-l01-v09",
+        "hsk4u-tb-l01-v10",
+        "hsk4u-tb-l01-v11",
+        "hsk4u-tb-l01-v12",
+        "hsk4u-tb-l01-v13",
+        "hsk4u-tb-l01-v14",
+        "hsk4u-tb-l01-v15",
+        "hsk4u-tb-l01-v16",
+        "hsk4u-tb-l01-v17",
+        "hsk4u-tb-l01-v18",
+        "hsk4u-tb-l01-v19",
+        "hsk4u-tb-l01-v20",
+        "hsk4u-tb-l01-v21",
+        "hsk4u-tb-l01-v22",
+        "hsk4u-tb-l01-v23",
+        "hsk4u-tb-l01-v24",
+        "hsk4u-tb-l01-v25",
+        "hsk4u-tb-l01-v26",
+        "hsk4u-tb-l01-v27",
+        "hsk4u-tb-l01-v28",
+        "hsk4u-tb-l01-v29",
+        "hsk4u-tb-l01-v30",
+        "hsk4u-tb-l01-v31",
+        "hsk4u-tb-l01-v32"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l01-pinyin-transcript-01",
+        "hsk4u-tb-l01-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l01-annotation-01",
+        "hsk4u-tb-l01-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l01-practice-01",
+        "hsk4u-tb-l01-practice-02",
+        "hsk4u-tb-l01-practice-03",
+        "hsk4u-tb-l01-practice-04",
+        "hsk4u-tb-l01-practice-05"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-01"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l01-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-01"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l01-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l01-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-01"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l01-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

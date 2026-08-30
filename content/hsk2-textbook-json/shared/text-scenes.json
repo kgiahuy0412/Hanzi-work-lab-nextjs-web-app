@@ -1,0 +1,2926 @@
+{
+  "schemaVersion": "1.0.0",
+  "scenes": [
+    {
+      "id": "hsk2-tb-lesson-01-scene-1",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在学校",
+        "pinyin": "zài xué xiào",
+        "vi": "Ở trường",
+        "viOcrRaw": "0 truong"
+      },
+      "trackCode": "01-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-016",
+      "sourceRowIndexes": [
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "我要去北京旅游，你觉得什么时候去最好？",
+          "pinyin": "wǒ yào qù běi jīng lǚ yóu， nǐ jué de shén me shí hòu qù zuì hǎo？",
+          "translationViOcrRaw": "Minh se di Bac Kinh de du lich, theo ban thi di vaoluc nao la tot nhat?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "九月去北京旅游最好。",
+          "pinyin": "jiǔ yuè qù běi jīng lǚ yóu zuì hǎo。",
+          "translationViOcrRaw": "Neu di BacKinh de du lich thi tot nhat la di vao thang chin."
+        },
+        {
+          "speaker": "A",
+          "textZh": "为什么？",
+          "pinyin": "wèi shén me？",
+          "translationViOcrRaw": "Tai sao vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "九月的北京天气不冷也不热。",
+          "pinyin": "jiǔ yuè de běi jīng tiān qì bù lěng yě bù rè。",
+          "translationViOcrRaw": "Vi vao thang chin, thoi tiet Bac Kinh khong lanh cung khong nong."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l01-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-01-scene-2",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "看照片",
+        "pinyin": "kàn zhào piān",
+        "vi": "Xem ảnh",
+        "viOcrRaw": null
+      },
+      "trackCode": "01-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-016",
+      "sourceRowIndexes": [
+        30,
+        32,
+        34,
+        35
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你喜欢什么运动？",
+          "pinyin": "nǐ xǐ huān shén me yùn dòng？",
+          "translationViOcrRaw": "Ban thich mon the thao nao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我最喜欢踢足球。",
+          "pinyin": "wǒ zuì xǐ huān tī zú qiú。",
+          "translationViOcrRaw": "Minh thich da bong nhat."
+        },
+        {
+          "speaker": "A",
+          "textZh": "下午我们一起去踢足球吧。",
+          "pinyin": "xià wǔ wǒ men yì qǐ qù tī zú qiú ba。",
+          "translationViOcrRaw": "Vay bubi chieu chung ta cung di da bong nhe."
+        },
+        {
+          "speaker": "B",
+          "textZh": "好啊！",
+          "pinyin": "hǎo a！",
+          "translationViOcrRaw": "Duoc day!"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l01-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-01-scene-3",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "01-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-017",
+      "sourceRowIndexes": [
+        3,
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "我们要不要买几个新的椅子？",
+          "pinyin": "wǒ men yào bù yào mǎi jǐ gè xīn de yǐ zi？",
+          "translationViOcrRaw": "Chuing ta co can mua may chiec ghe dua moi khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "好啊。什么时候去买？",
+          "pinyin": "hǎo a。 shén me shí hòu qù mǎi？",
+          "translationViOcrRaw": "Duoc thoi. Khi nao di mua?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "明天下午怎么样？你明天几点能回来？",
+          "pinyin": "míng tiān xià wǔ zěn me yàng？ nǐ míng tiān jǐ diǎn néng huí lái？",
+          "translationViOcrRaw": "Chieu mai duoc khong? Ngay mai anh co the ve luc may gio?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "三点多。",
+          "pinyin": "sān diǎn duō。",
+          "translationViOcrRaw": "Hon 3 gio."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l01-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-01-scene-4",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": "0nha"
+      },
+      "trackCode": "01-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-017",
+      "sourceRowIndexes": [
+        22,
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "桌子下面有个猫。",
+          "pinyin": "zhuō zi xià miàn yǒu gè māo。",
+          "translationViOcrRaw": "O duoi ban co con meo kia."
+        },
+        {
+          "speaker": "B",
+          "textZh": "那是我的猫，它叫花花。",
+          "pinyin": "nà shì wǒ de māo， tā jiào huā huā。",
+          "translationViOcrRaw": "Do la con meo cua minh,no ten la Hoa Hoa."
+        },
+        {
+          "speaker": "A",
+          "textZh": "它很漂亮。",
+          "pinyin": "tā hěn piào liàng。",
+          "translationViOcrRaw": "Con meo nay dep qua."
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，我觉得它的眼睛最漂亮。",
+          "pinyin": "shì a， wǒ jué de tā de yǎn jīng zuì piào liàng。",
+          "translationViOcrRaw": "Dung vay, minh nghi doi mat cua n6 dep nhat."
+        },
+        {
+          "speaker": "A",
+          "textZh": "它多大了？",
+          "pinyin": "tā duō dà le？",
+          "translationViOcrRaw": "No duoc bao nhieu tuoi roi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "六个多月。",
+          "pinyin": "liù gè duō yuè。",
+          "translationViOcrRaw": "Hon 6 thang tuoi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l01-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-02-scene-1",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在运动场",
+        "pinyin": "zài yùn dòng chǎng",
+        "vi": "Ở sân vận động",
+        "viOcrRaw": null
+      },
+      "trackCode": "02-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-024",
+      "sourceRowIndexes": [
+        7,
+        9,
+        11,
+        13
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你很少生病，是不是喜欢运动？",
+          "pinyin": "nǐ hěn shǎo shēng bìng， shì bú shì xǐ huān yùn dòng？",
+          "translationViOcrRaw": "Anh it lkhi bi benh, chac la anh thich tap the duc phai khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，我每天早上都要出去跑步。",
+          "pinyin": "shì a， wǒ měi tiān zǎo shàng dōu yào chū qù pǎo bù。",
+          "translationViOcrRaw": "Dung vay. Moi buoi sang toi deu ra ngoai chay bo."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你每天几点起床？",
+          "pinyin": "nǐ měi tiān jǐ diǎn qǐ chuáng？",
+          "translationViOcrRaw": "Hang ngay anh thuc dayluc may gio?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我每天六点起床。",
+          "pinyin": "wǒ měi tiān liù diǎn qǐ chuáng。",
+          "translationViOcrRaw": "6 gio."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l02-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-02-scene-2",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在医院",
+        "pinyin": "zài yī yuàn",
+        "vi": "Ở bệnh viện",
+        "viOcrRaw": null
+      },
+      "trackCode": "02-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-024",
+      "sourceRowIndexes": [
+        26,
+        28,
+        30,
+        32
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "吃药了吗？现在身体怎么样？",
+          "pinyin": "chī yào le ma？ xiàn zài shēn tǐ zěn me yàng？",
+          "translationViOcrRaw": "Couong thuc chua?Bay gioc thay trong nguoi the nao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "吃了。现在好多了。",
+          "pinyin": "chī le。 xiàn zài hǎo duō le。",
+          "translationViOcrRaw": "Toiuong roi Gio thi toi da khoe hon nhieu."
+        },
+        {
+          "speaker": "A",
+          "textZh": "什么时候能出院？",
+          "pinyin": "shén me shí hòu néng chū yuàn？",
+          "translationViOcrRaw": "Khi nao co c6 the xuat vien?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "医生说下个星期。",
+          "pinyin": "yī shēng shuō xià gè xīng qī。",
+          "translationViOcrRaw": "Bac si noi la tuan sau. .nhantrivi MMM"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l02-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-02-scene-3",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在操场",
+        "pinyin": "zài cāo chǎng",
+        "vi": "Ở sân thể thao",
+        "viOcrRaw": "O san the thao"
+      },
+      "trackCode": "02-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-025",
+      "sourceRowIndexes": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "大卫今年多大？",
+          "pinyin": "dà wèi jīn nián duō dà？",
+          "translationViOcrRaw": "David nam nay bao nhieu tuoi vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "二十多岁。",
+          "pinyin": "èr shí duō suì。",
+          "translationViOcrRaw": "Hon 20 tuoi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "他多高？",
+          "pinyin": "tā duō gāo？",
+          "translationViOcrRaw": "The anh ay cao bao nhieu?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "一米八几。",
+          "pinyin": "yī mǐ bā jǐ。",
+          "translationViOcrRaw": "Tren mot met tam muoi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你怎么知道这么多啊？",
+          "pinyin": "nǐ zěn me zhī dào zhè me duō a？",
+          "translationViOcrRaw": "Sao ban biet ve anh ay nhieu nhu vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "他是我同学。",
+          "pinyin": "tā shì wǒ tóng xué。",
+          "translationViOcrRaw": "Anh ay hoc cung lop voi minh ma."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l02-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-02-scene-4",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在房间",
+        "pinyin": "zài fáng jiān",
+        "vi": "Ở trong phòng",
+        "viOcrRaw": "Trong phong"
+      },
+      "trackCode": "02-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-025",
+      "sourceRowIndexes": [
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "张老师星期六也不休息啊？",
+          "pinyin": "zhāng lǎo shī xīng qī liù yě bù xiū xī a？",
+          "translationViOcrRaw": "Thu bay ma thay Truong cung khong nghi ngoi a?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，他这几天很忙，没有时间休息。",
+          "pinyin": "shì a， tā zhè jǐ tiān hěn máng， méi yǒu shí jiān xiū xī。",
+          "translationViOcrRaw": "Dung vay, may ngay nay anh ay rat ban, khong co thoi gian nghi ngoi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那会很累吧？",
+          "pinyin": "nà huì hěn lèi ba？",
+          "translationViOcrRaw": "Neu the thi chac la anh ay met lam."
+        },
+        {
+          "speaker": "B",
+          "textZh": "他每天回来都很累。",
+          "pinyin": "tā měi tiān huí lái dōu hěn lèi。",
+          "translationViOcrRaw": "Ngay nao ve den nha anh ay cuing rat met."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l02-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-03-scene-1",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在房间",
+        "pinyin": "zài fáng jiān",
+        "vi": "Ở trong phòng",
+        "viOcrRaw": null
+      },
+      "trackCode": "03-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-032",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "这块手表是你的吗？",
+          "pinyin": "zhè kuài shǒu biǎo shì nǐ de ma？",
+          "translationViOcrRaw": "Chicc dong ho deo tay nay la cuia anh phai khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "不是我的。是我爸爸的。",
+          "pinyin": "bú shì wǒ de。 shì wǒ bà bà de。",
+          "translationViOcrRaw": "Khong phai, dong h do la cia cha toi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "多少钱买的？",
+          "pinyin": "duō shǎo qián mǎi de？",
+          "translationViOcrRaw": "Mua het bao nhieu tien vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "三千多块。",
+          "pinyin": "sān qiān duō kuài。",
+          "translationViOcrRaw": "Hon 3.000 dong."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l03-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-03-scene-2",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": "Onha"
+      },
+      "trackCode": "03-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-032",
+      "sourceRowIndexes": [
+        22,
+        24,
+        26,
+        28
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "这是今天早上的报纸吗？",
+          "pinyin": "zhè shì jīn tiān zǎo shàng de bào zhǐ ma？"
+        },
+        {
+          "speaker": "B",
+          "textZh": "不是，是昨天的。",
+          "pinyin": "bú shì， shì zuó tiān de。"
+        },
+        {
+          "speaker": "A",
+          "textZh": "你听，是不是送报纸的来了？",
+          "pinyin": "nǐ tīng， shì bú shì sòng bào zhǐ de lái le？"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我看一下。不是，是送牛奶的。",
+          "pinyin": "wǒ kàn yī xià。 bú shì， shì sòng niú nǎi de。"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l03-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-03-scene-3",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "03-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-033",
+      "sourceRowIndexes": [
+        7,
+        11,
+        13,
+        15,
+        17
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "这是谁的房间？",
+          "pinyin": "zhè shì shéi de fáng jiān？",
+          "translationViOcrRaw": "Day la phong cua ai vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这是我和我丈夫的，旁边那个小的房间是我女儿的。",
+          "pinyin": "zhè shì wǒ hé wǒ zhàng fū de， páng biān nà ge xiǎo de fáng jiān shì wǒ nǚ ér de。",
+          "translationViOcrRaw": "D6 la phong cuia vo chong toi, con phong nho ben canh la cua con gai toi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你女儿的房间真漂亮！都是粉色的。",
+          "pinyin": "nǐ nǚ ér de fáng jiān zhēn piào liàng！ dōu shì fěn sè de。",
+          "translationViOcrRaw": "Phong ctia con gai chj dep that! Toan la mau hong."
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，粉色是我女儿最喜欢的颜色。",
+          "pinyin": "shì a， fěn sè shì wǒ nǚ ér zuì xǐ huān de yán sè。",
+          "translationViOcrRaw": "Dung vay, con be thich mau hong nhat."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l03-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-03-scene-4",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在办公室",
+        "pinyin": "zài bàn gōng shì",
+        "vi": "Ở văn phòng",
+        "viOcrRaw": null
+      },
+      "trackCode": "03-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-033",
+      "sourceRowIndexes": [
+        33,
+        35,
+        37,
+        39
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你看见我的杯子了吗？",
+          "pinyin": "nǐ kàn jiàn wǒ de bēi zi le ma？",
+          "translationViOcrRaw": "Anh co thay cai ly cuia toi khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这里有几个杯子，哪个是你的？",
+          "pinyin": "zhè lǐ yǒu jǐ gè bēi zi， nǎ ge shì nǐ de？",
+          "translationViOcrRaw": "Cho nay co may cai ly, cai nao la cia co vay?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "左边那个红色的是我的。",
+          "pinyin": "zuǒ biān nà ge hóng sè de shì wǒ de。",
+          "translationViOcrRaw": "Ly mau do  ben trai la cuia toi."
+        },
+        {
+          "speaker": "B",
+          "textZh": "给你。",
+          "pinyin": "gěi nǐ。",
+          "translationViOcrRaw": "Ly cua co day."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l03-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-04-scene-1",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在教室",
+        "pinyin": "zài jiào shì",
+        "vi": "Trong lớp học",
+        "viOcrRaw": null
+      },
+      "trackCode": "04-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-040",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "生日快乐！这是送给你的！",
+          "pinyin": "shēng rì kuài lè！ zhè shì sòng gěi nǐ de！",
+          "translationViOcrRaw": "Chuic sinh nhat vui ve! Day la mon qua minh tang ban."
+        },
+        {
+          "speaker": "B",
+          "textZh": "是什么？是一本书吗？",
+          "pinyin": "shì shén me？ shì yī běn shū ma？",
+          "translationViOcrRaw": "Qua gi vay? Co phai mot quyen sich khong?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "对，这本书是我写的。",
+          "pinyin": "duì， zhè běn shū shì wǒ xiě de。",
+          "translationViOcrRaw": "Dung vay,quyen sachnayla minh vie day."
+        },
+        {
+          "speaker": "B",
+          "textZh": "太谢谢你了！",
+          "pinyin": "tài xiè xiè nǐ le！",
+          "translationViOcrRaw": "Cam on ban nhicu lam!"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l04-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-04-scene-2",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": "2"
+      },
+      "trackCode": "04-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-040",
+      "sourceRowIndexes": [
+        24,
+        26,
+        28,
+        30
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "早上有你一个电话。",
+          "pinyin": "zǎo shàng yǒu nǐ yí gè diàn huà。",
+          "translationViOcrRaw": "Bubi sang co nguoi goi dien cho anh do."
+        },
+        {
+          "speaker": "B",
+          "textZh": "电话是谁打的？",
+          "pinyin": "diàn huà shì shuí dǎ dī？",
+          "translationViOcrRaw": "Ai goi vay?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "不知道，是儿子接的。",
+          "pinyin": "bù zhī dào， shì ér zi jiē de。",
+          "translationViOcrRaw": "Em khong biet nia, con trai nghe dien thoai."
+        },
+        {
+          "speaker": "B",
+          "textZh": "好，晚上我问一下儿子。",
+          "pinyin": "hǎo， wǎn shàng wǒ wèn yī xià ér zi。",
+          "translationViOcrRaw": "Dugc roi, de t6i anh se hoi con."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l04-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-04-scene-3",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在运动场",
+        "pinyin": "zài yùn dòng chǎng",
+        "vi": "Ở sân vận động",
+        "viOcrRaw": null
+      },
+      "trackCode": "04-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-041",
+      "sourceRowIndexes": [
+        6,
+        10,
+        13,
+        15
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你喜欢踢足球吗？",
+          "pinyin": "nǐ xǐ huān tī zú qiú ma？",
+          "translationViOcrRaw": "Anh co thich da bong khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "非常喜欢。",
+          "pinyin": "fēi cháng xǐ huān。",
+          "translationViOcrRaw": "Rat thich."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你是什么时候开始踢足球的？",
+          "pinyin": "nǐ shì shén me shí hòu kāi shǐ tī zú qiú de？",
+          "translationViOcrRaw": "Anh bat dau da bong tir khi nao vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我十一岁的时候开始踢足球，已经踢了十年了。",
+          "pinyin": "wǒ shí yī suì de shí hòu kāi shǐ tī zú qiú， yǐ jīng tī le shí nián le。",
+          "translationViOcrRaw": "Tt luc 11 tu6i. Toi da bong duoc 10 nam r6i."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l04-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-04-scene-4",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在公司",
+        "pinyin": "zài gōng sī",
+        "vi": "Ở công ty",
+        "viOcrRaw": null
+      },
+      "trackCode": "04-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-041",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你在这儿工作多长时间了？",
+          "pinyin": "nǐ zài zhè ér gōng zuò duō zhǎng shí jiān le？",
+          "translationViOcrRaw": "Anh lam viec  day duoc bao lau roi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "已经两年多了，我是2011年来的。",
+          "pinyin": "yǐ jīng liǎng nián duō le， wǒ shì 2011 nián lái de。",
+          "translationViOcrRaw": "Duoc hon hai nam roi. Toi den day vao nam 2011."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你认识谢先生吗？",
+          "pinyin": "nǐ rèn shí xiè xiān shēng ma？",
+          "translationViOcrRaw": "Anh co quen ong Ta khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "认识，我们是大学同学，这个工作是他帮我介绍的。",
+          "pinyin": "rèn shí， wǒ men shì dà xué tóng xué， zhè ge gōng zuò shì tā bāng wǒ jiè shào de。",
+          "translationViOcrRaw": "C6 quen,chng toi la ban cung l dai hoc. Ongay da gioi thieu giup toi cong viec nay."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l04-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-05-scene-1",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "05-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-048",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "晚上我们去饭馆吃饭，怎么样？",
+          "pinyin": "wǎn shàng wǒ men qù fàn guǎn chī fàn， zěn me yàng？",
+          "translationViOcrRaw": "Chuing ta den quan an dung com toi, dugc khong em?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我不想去外面吃，我想在家吃。",
+          "pinyin": "wǒ bù xiǎng qù wài miàn chī， wǒ xiǎng zài jiā chī。",
+          "translationViOcrRaw": "Em khong muon an ngoai, em muon an  nha."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那你准备做什么呢？",
+          "pinyin": "nà nǐ zhǔn bèi zuò shén me ne？",
+          "translationViOcrRaw": "Vay em djnh nau mon gi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "就做你爱吃的鱼吧。",
+          "pinyin": "jiù zuò nǐ ài chī de yú ba。",
+          "translationViOcrRaw": "Thi nau mon ca ma anh thich in thoi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l05-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-05-scene-2",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在商店",
+        "pinyin": "zài shāng diàn",
+        "vi": "Ở cửa hàng",
+        "viOcrRaw": "Ocua hang"
+      },
+      "trackCode": "05-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-048",
+      "sourceRowIndexes": [
+        28,
+        30,
+        32,
+        34
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "帮我看一下这件衣服怎么样。",
+          "pinyin": "bāng wǒ kàn yī xià zhè jiàn yī fú zěn me yàng。",
+          "translationViOcrRaw": "Xem giup minh chiec ao nay th 'oqu"
+        },
+        {
+          "speaker": "B",
+          "textZh": "颜色还可以，就是有点儿大。",
+          "pinyin": "yán sè hái kě yǐ， jiù shì yǒu diǎn ér dà。",
+          "translationViOcrRaw": "Mau sac cuing tam duoc nhung hoi rong."
+        },
+        {
+          "speaker": "A",
+          "textZh": "这件小的怎么样？",
+          "pinyin": "zhè jiàn xiǎo de zěn me yàng？",
+          "translationViOcrRaw": "Con chiec ao nho nay thi sao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这件不错，就买这件吧。",
+          "pinyin": "zhè jiàn bù cuò， jiù mǎi zhè jiàn ba。",
+          "translationViOcrRaw": "Kha dep day. Mua chiec ao nay di."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l05-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-05-scene-3",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在教室",
+        "pinyin": "zài jiào shì",
+        "vi": "Trong lớp học",
+        "viOcrRaw": null
+      },
+      "trackCode": "05-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-049",
+      "sourceRowIndexes": [
+        4,
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "今天去不去打球？",
+          "pinyin": "jīn tiān qù bù qù dǎ qiú？",
+          "translationViOcrRaw": "Hom nay ban di choi bong khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这两天有点儿累，不去打球了。",
+          "pinyin": "zhè liǎng tiān yǒu diǎn ér lèi， bù qù dǎ qiú le。",
+          "translationViOcrRaw": "Minh khong di dau, may ngay nay minh hoi met."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你在做什么呢？是在想昨天的考试吗？",
+          "pinyin": "nǐ zài zuò shén me ne？ shì zài xiǎng zuó tiān de kǎo shì ma？",
+          "translationViOcrRaw": "Ban dang lam gi the? Co phai dang nghi ve bai kiem tra hom qua khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，我觉得听和说还可以，读和写不好，很多字我都不知道是什么意思。",
+          "pinyin": "shì a， wǒ jué de tīng hé shuō hái kě yǐ， dú hé xiě bù hǎo， hěn duō zì wǒ dōu bù zhī dào shì shén me yì si。",
+          "translationViOcrRaw": "Dung vay,minh thay rang minh lam bai ngheva noi cing tam duoc, nhung lam bai doc va viet khong ductt, corat nhiu chminh khong biet ngha."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l05-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-05-scene-4",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在公司",
+        "pinyin": "zài gōng sī",
+        "vi": "Ở công ty",
+        "viOcrRaw": "4"
+      },
+      "trackCode": "05-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-049",
+      "sourceRowIndexes": [
+        26,
+        28,
+        30,
+        32
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "休息一下吧，喝咖啡吗？",
+          "pinyin": "xiū xī yī xià ba， hē kā fēi ma？",
+          "translationViOcrRaw": "Nghi mot chut di, anh uong ca phe khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "不喝了，我已经喝两杯了。",
+          "pinyin": "bù hē le， wǒ yǐ jīng hē liǎng bēi le。",
+          "translationViOcrRaw": "Khong. Toi da uong hai ly roi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "是啊，咖啡喝多了对身体不好。",
+          "pinyin": "shì a， kā fēi hē duō le duì shēn tǐ bù hǎo。",
+          "translationViOcrRaw": "Dung day. Uong nhieu ca phe khong tot cho surc khbe dau."
+        },
+        {
+          "speaker": "B",
+          "textZh": "以后我少喝一点儿，每天喝一杯。",
+          "pinyin": "yǐ hòu wǒ shǎo hē yì diǎn ér， měi tiān hē yī bēi。",
+          "translationViOcrRaw": "Sau nay ti se ung it mt chit, mi ngay chi mot ly thoi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l05-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-06-scene-1",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在学校",
+        "pinyin": "zài xué xiào",
+        "vi": "Ở trường",
+        "viOcrRaw": null
+      },
+      "trackCode": "06-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-056",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你知道小王今天什么时候来学校吗？",
+          "pinyin": "nǐ zhī dào xiǎo wáng jīn tiān shén me shí hòu lái xué xiào ma？",
+          "translationViOcrRaw": "Ban co biet hom nay cau Vuong se den truong khi nao khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "他已经来了。",
+          "pinyin": "tā yǐ jīng lái le。",
+          "translationViOcrRaw": "Cau ay da den roi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你怎么知道他来了？",
+          "pinyin": "nǐ zěn me zhī dào tā lái le？",
+          "translationViOcrRaw": "Sao ban biet cau ay da den?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我在门外看见他的自行车了。",
+          "pinyin": "wǒ zài mén wài kàn jiàn tā de zì xíng chē le。",
+          "translationViOcrRaw": "Minh thay xe dap cia cauay ngoai cia."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l06-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-06-scene-2",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在饭馆",
+        "pinyin": "zài fàn guǎn",
+        "vi": "Ở nhà hàng",
+        "viOcrRaw": "quan an"
+      },
+      "trackCode": "06-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-056",
+      "sourceRowIndexes": [
+        22,
+        24,
+        26,
+        28
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "今天的羊肉很好吃，你怎么不吃了？",
+          "pinyin": "jīn tiān de yáng ròu hěn hǎo chī， nǐ zěn me bù chī le？",
+          "translationViOcrRaw": "Mon thjt ciu hom nay rat ngon, sao anh khong an nuia?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这个星期天天都吃羊肉，不想吃了。",
+          "pinyin": "zhè ge xīng qī tiān tiān dōu chī yáng ròu， bù xiǎng chī le。",
+          "translationViOcrRaw": "Tuan nay ngay nao toi cing an thit ciu nen chang muon an nua."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那你还想吃什么？",
+          "pinyin": "nà nǐ hái xiǎng chī shén me？",
+          "translationViOcrRaw": "Vay anh con muon an mon gi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "来一点儿面条吧。",
+          "pinyin": "lái yì diǎn ér miàn tiáo ba。",
+          "translationViOcrRaw": "Cho toi mi soi di"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l06-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-06-scene-3",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在健身房",
+        "pinyin": "zài jiàn shēn fáng",
+        "vi": "Ở phòng tập",
+        "viOcrRaw": null
+      },
+      "trackCode": "06-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-057",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "昨天你们怎么都没去打篮球？",
+          "pinyin": "zuó tiān nǐ men zěn me dōu méi qù dǎ lán qiú？",
+          "translationViOcrRaw": "Hom qua sao cac anh khong di choi bong r?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "因为昨天下雨，所以我们都没去。我去游泳了。",
+          "pinyin": "yīn wèi zuó tiān xià yǔ， suǒ yǐ wǒ men dōu méi qù。 wǒ qù yóu yǒng le。",
+          "translationViOcrRaw": "Chung toi khong choivihom qua troi mua. Nhung toi di boi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你经常游泳吗？",
+          "pinyin": "nǐ jīng cháng yóu yǒng ma？",
+          "translationViOcrRaw": "Anh co di boi thuong xuyen khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这个月我天天游泳，我现在七十公斤了。",
+          "pinyin": "zhè ge yuè wǒ tiān tiān yóu yǒng， wǒ xiàn zài qī shí gōng jīn le。",
+          "translationViOcrRaw": "Thang nay ngay nao toi cing diboi, hien gio toi da 70 kg ri."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l06-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-06-scene-4",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在办公室",
+        "pinyin": "zài bàn gōng shì",
+        "vi": "Ở văn phòng",
+        "viOcrRaw": null
+      },
+      "trackCode": "06-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-057",
+      "sourceRowIndexes": [
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "这两天怎么没看见小张？",
+          "pinyin": "zhè liǎng tiān zěn me méi kàn jiàn xiǎo zhāng？",
+          "translationViOcrRaw": "May ngay nay sao toi khong thay anh Truong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "他去北京了。",
+          "pinyin": "tā qù běi jīng le。",
+          "translationViOcrRaw": "Anh ay di Bac Kinh roi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "去北京了？是去旅游吗？",
+          "pinyin": "qù běi jīng le？ shì qù lǚ yóu ma？",
+          "translationViOcrRaw": "Di Bac Kinh a? Co phai di du lich khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "不是，听说是去看他姐姐。",
+          "pinyin": "bú shì， tīng shuō shì qù kàn tā jiě jiě。",
+          "translationViOcrRaw": "Khong phai, nghe noi la di tham chi cua anh ay."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l06-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-07-scene-1",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "07-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-064",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "大卫回来了吗？",
+          "pinyin": "dà wèi huí lái le ma？",
+          "translationViOcrRaw": "David ve chua vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "没有，他还在教室学习呢。",
+          "pinyin": "méi yǒu， tā hái zài jiào shì xué xí ne。",
+          "translationViOcrRaw": "Chua, anh ay con dang hoc trong lop."
+        },
+        {
+          "speaker": "A",
+          "textZh": "已经9点多了，他怎么还在学习？",
+          "pinyin": "yǐ jīng 9 diǎn duō le， tā zěn me hái zài xué xí？",
+          "translationViOcrRaw": "Da hon 9 gid roi, sao con dang hoc?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "明天有考试，他说今天要好好准备。",
+          "pinyin": "míng tiān yǒu kǎo shì， tā shuō jīn tiān yào hǎo hǎo zhǔn bèi。",
+          "translationViOcrRaw": "Ngay mai co bai kiem tra, anh ay noi hom nay phai chuan bi that 6t."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l07-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-07-scene-2",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "去机场的路上",
+        "pinyin": "qù jī chǎng de lù shàng",
+        "vi": "Trên đường ra sân bay",
+        "viOcrRaw": null
+      },
+      "trackCode": "07-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-064",
+      "sourceRowIndexes": [
+        21,
+        23,
+        25,
+        27,
+        29
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你现在在哪儿呢？",
+          "pinyin": "nǐ xiàn zài zài nǎ ér ne？"
+        },
+        {
+          "speaker": "B",
+          "textZh": "在去机场的路上。你已经到了吗？",
+          "pinyin": "zài qù jī chǎng de lù shàng。 nǐ yǐ jīng dào le ma？"
+        },
+        {
+          "speaker": "A",
+          "textZh": "我下飞机了。你还有多长时间能到这儿？",
+          "pinyin": "wǒ xià fēi jī le。 nǐ hái yǒu duō zhǎng shí jiān néng dào zhè ér？"
+        },
+        {
+          "speaker": "B",
+          "textZh": "二十分钟就到。",
+          "pinyin": "èr shí fēn zhōng jiù dào。"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l07-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-07-scene-3",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在健身房",
+        "pinyin": "zài jiàn shēn fáng",
+        "vi": "Ở phòng tập",
+        "viOcrRaw": null
+      },
+      "trackCode": "07-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-065",
+      "sourceRowIndexes": [
+        6,
+        9,
+        11,
+        13
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你家离公司远吗？",
+          "pinyin": "nǐ jiā lí gōng sī yuǎn ma？",
+          "translationViOcrRaw": "Nha chj co a xa cong ty khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "很远，坐公共汽车要一个多小时呢！",
+          "pinyin": "hěn yuǎn， zuò gōng gòng qì chē yào yí gè duō xiǎo shí ne！",
+          "translationViOcrRaw": "Rat xa,di xe buyt phaimat hon mot gio dong ho!"
+        },
+        {
+          "speaker": "A",
+          "textZh": "坐公共汽车太慢了，你怎么不开车？",
+          "pinyin": "zuò gōng gòng qì chē tài màn le， nǐ zěn me bù kāi chē？",
+          "translationViOcrRaw": "Di xe buyt thi cham qua, sao chj khong lai xe?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "开车也不快，路上车太多了！",
+          "pinyin": "kāi chē yě bù kuài， lù shàng chē tài duō le！",
+          "translationViOcrRaw": "Lai xe cuing chang nhanh du, tren durong co qua nhieu xe!"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l07-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-07-scene-4",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在路上",
+        "pinyin": "zài lù shàng",
+        "vi": "Trên đường",
+        "viOcrRaw": "Tren duong"
+      },
+      "trackCode": "07-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-065",
+      "sourceRowIndexes": [
+        27,
+        29,
+        31,
+        33,
+        35
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "今天晚上我们一起吃饭吧，给你过生日。",
+          "pinyin": "jīn tiān wǎn shàng wǒ men yì qǐ chī fàn ba， gěi nǐ guò shēng rì。",
+          "translationViOcrRaw": "Toi nay chuing ta cung di an com nhe, mung sinh nhat ban d6."
+        },
+        {
+          "speaker": "B",
+          "textZh": "今天？离我的生日还有一个多星期呢！",
+          "pinyin": "jīn tiān？ lí wǒ de shēng rì hái yǒu yí gè duō xīng qī ne！",
+          "translationViOcrRaw": "Hom nay a? Con hon mot tuan nia moi den sinh nhat cuia minh ma!"
+        },
+        {
+          "speaker": "A",
+          "textZh": "下个星期我要去北京，今天过吧。",
+          "pinyin": "xià gè xīng qī wǒ yào qù běi jīng， jīn tiān guò ba。",
+          "translationViOcrRaw": "Tuan sau minh se di Bac Kinh nen an ming hom nay di."
+        },
+        {
+          "speaker": "B",
+          "textZh": "好吧，离这儿不远有一个中国饭馆，走几分钟就到了。",
+          "pinyin": "hǎo ba， lí zhè ér bù yuǎn yǒu yí gè zhōng guó fàn guǎn， zǒu jǐ fēn zhōng jiù dào le。",
+          "translationViOcrRaw": "Dugc thoi, gan day co mot quan an Trung Quoc, di bo vai phut la den roi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l07-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-08-scene-1",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在教室",
+        "pinyin": "zài jiào shì",
+        "vi": "Trong lớp học",
+        "viOcrRaw": null
+      },
+      "trackCode": "08-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-072",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "我们下午去看电影，好吗？",
+          "pinyin": "wǒ men xià wǔ qù kàn diàn yǐng， hǎo ma？",
+          "translationViOcrRaw": "Buoi chieu chung ta di xem phim duoc khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "今天下午我没有时间，明天下午再去吧。",
+          "pinyin": "jīn tiān xià wǔ wǒ méi yǒu shí jiān， míng tiān xià wǔ zài qù ba。",
+          "translationViOcrRaw": "Chieu nay minh khong ranh roi, chiu p keq e"
+        },
+        {
+          "speaker": "A",
+          "textZh": "你想看什么电影？",
+          "pinyin": "nǐ xiǎng kàn shén me diàn yǐng？",
+          "translationViOcrRaw": "Ban muon xem phim gi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "让我想想再告诉你。",
+          "pinyin": "ràng wǒ xiǎng xiǎng zài gào sù nǐ。",
+          "translationViOcrRaw": "De minh suy nghi rbise n6i cho ban biet."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l08-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-08-scene-2",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在宿舍",
+        "pinyin": "zài sù shè",
+        "vi": "Ở ký túc xá",
+        "viOcrRaw": null
+      },
+      "trackCode": "08-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-072",
+      "sourceRowIndexes": [
+        24,
+        26,
+        28,
+        30,
+        32
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "外边天气很好，我们出去运动运动吧！",
+          "pinyin": "wài biān tiān qì hěn hǎo， wǒ men chū qù yùn dòng yùn dòng ba！",
+          "translationViOcrRaw": "Ben ngoai troi rat dep,chung ta ra ngoai ta /Gia0 the duc mot chut di!"
+        },
+        {
+          "speaker": "B",
+          "textZh": "你等等我，好吗？王老师让我给大卫打个电话。",
+          "pinyin": "nǐ děng děng wǒ， hǎo ma？ wáng lǎo shī ràng wǒ gěi dà wèi dǎ gè diàn huà。",
+          "translationViOcrRaw": "Cau dpi minh mot lat duoc khong? Co Vuong bao minh goi dien cho David."
+        },
+        {
+          "speaker": "A",
+          "textZh": "回来再打吧。找大卫有什么事情吗？",
+          "pinyin": "huí lái zài dǎ ba。 zhǎo dà wèi yǒu shén me shì qíng ma？",
+          "translationViOcrRaw": "Khi nao quay ve hay goi. Cau tim David co chuyen gi khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "听说大卫病了，我想找时间去看看他。",
+          "pinyin": "tīng shuō dà wèi bìng le， wǒ xiǎng zhǎo shí jiān qù kàn kàn tā。",
+          "translationViOcrRaw": "Nghe noi David bi benh roi. Minh dinh luc nao MM/N ranh se di tham."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l08-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-08-scene-3",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在宾馆的前台",
+        "pinyin": "zài bīn guǎn de qián tái",
+        "vi": "Tại quầy lễ tân khách sạn",
+        "viOcrRaw": null
+      },
+      "trackCode": "08-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-073",
+      "sourceRowIndexes": [
+        8,
+        12,
+        16
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "服务员，我房间的门打不开了。",
+          "pinyin": "fú wù yuán， wǒ fáng jiān de mén dǎ bù kāi le。",
+          "translationViOcrRaw": "Anh phuc vu oi phong toi ca khong mo duoc."
+        },
+        {
+          "speaker": "B",
+          "textZh": "您住哪个房间？",
+          "pinyin": "nín zhù nǎ ge fáng jiān？",
+          "translationViOcrRaw": "Chi  phong naoa?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "好的，我叫人去看看。",
+          "pinyin": "hǎo de， wǒ jiào rén qù kàn kàn。",
+          "translationViOcrRaw": "317."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l08-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-08-scene-4",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在商店",
+        "pinyin": "zài shāng diàn",
+        "vi": "Ở cửa hàng",
+        "viOcrRaw": "cuta hang"
+      },
+      "trackCode": "08-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-073",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你看看这几件衣服怎么样。",
+          "pinyin": "nǐ kàn kàn zhè jǐ jiàn yī fú zěn me yàng。",
+          "translationViOcrRaw": "Co xem xem may cai dam nay the nao."
+        },
+        {
+          "speaker": "B",
+          "textZh": "这件白的有点儿长，那件黑的有点儿贵。",
+          "pinyin": "zhè jiàn bái de yǒu diǎn ér zhǎng， nà jiàn hēi de yǒu diǎn ér guì。",
+          "translationViOcrRaw": "Cai mau trang nayhoi dai con cai mau den kia hoi dat. u suopu moi ve hom nay day."
+        },
+        {
+          "speaker": "A",
+          "textZh": "这件红的呢？这是今天新来的。",
+          "pinyin": "zhè jiàn hóng de ne？ zhè shì jīn tiān xīn lái de。",
+          "translationViOcrRaw": "De toi xem da."
+        },
+        {
+          "speaker": "B",
+          "textZh": "让我再看看。",
+          "pinyin": "ràng wǒ zài kàn kàn。"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l08-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-09-scene-1",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "打电话",
+        "pinyin": "dǎ diàn huà",
+        "vi": "Gọi điện thoại",
+        "viOcrRaw": "1"
+      },
+      "trackCode": "09-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-080",
+      "sourceRowIndexes": [
+        5,
+        7,
+        9,
+        11
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你好！请问，张欢在吗？",
+          "pinyin": "nǐ hǎo！ qǐng wèn， zhāng huān zài ma？",
+          "translationViOcrRaw": "Chao chj! Xin hoi Truong Hoan co d6 khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "你打错了，我们这儿没有叫张欢的。",
+          "pinyin": "nǐ dǎ cuò le， wǒ men zhè ér méi yǒu jiào zhāng huān de。",
+          "translationViOcrRaw": "Anh goinham s6r6ichchung toi khong co ai ten Truong Hoan ca."
+        },
+        {
+          "speaker": "A",
+          "textZh": "对不起。",
+          "pinyin": "duì bù qǐ。",
+          "translationViOcrRaw": "Xin l6i chj."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l09-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-09-scene-2",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在学校",
+        "pinyin": "zài xué xiào",
+        "vi": "Ở trường",
+        "viOcrRaw": "truong"
+      },
+      "trackCode": "09-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-080",
+      "sourceRowIndexes": [
+        20,
+        22,
+        24,
+        26,
+        28
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "您从几岁开始学习跳舞？",
+          "pinyin": "nín cóng jǐ suì kāi shǐ xué xí tiào wǔ？",
+          "translationViOcrRaw": "Co bat dau hoc ma tirluc may tuoi vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我第一次跳舞是在七岁的时候。",
+          "pinyin": "wǒ dì yī cì tiào wǔ shì zài qī suì de shí hòu。",
+          "translationViOcrRaw": "Lan dau tien toimua la vao nam len bay tu6i."
+        },
+        {
+          "speaker": "A",
+          "textZh": "我女儿今年也七岁了。我希望她能跟您学跳舞，可以吗？",
+          "pinyin": "wǒ nǚ ér jīn nián yě qī suì le。 wǒ xī wàng tā néng gēn nín xué tiào wǔ， kě yǐ ma？",
+          "translationViOcrRaw": "Con gai toi nam nay cing duc bay tuoiroi.Toi mong lanoco the hoc mua voi co, duoc khong co?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "没问题，非常欢迎。",
+          "pinyin": "méi wèn tí， fēi cháng huān yíng。",
+          "translationViOcrRaw": "Khong co van de gi, toi rat hoan nghenh. MAA"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l09-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-09-scene-3",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "09-3",
+      "trackDetectionSource": "visual-review-recovery",
+      "sourcePageRef": "hsk2-tb-source-page-081",
+      "sourceRowIndexes": [],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你知道吗？大卫找到工作了。",
+          "translationVi": "Chị biết không? David đã tìm được việc rồi.",
+          "pinyin": "nǐ zhī dào ma？ dà wèi zhǎo dào gōng zuò le。"
+        },
+        {
+          "speaker": "B",
+          "textZh": "太好了！他从什么时候开始上班？",
+          "translationVi": "Tốt quá! Vậy khi nào thì nó bắt đầu đi làm?",
+          "pinyin": "tài hǎo le！ tā cóng shén me shí hòu kāi shǐ shàng bān？"
+        },
+        {
+          "speaker": "A",
+          "textZh": "从下个星期一开始。",
+          "translationVi": "Thứ hai tuần sau.",
+          "pinyin": "cóng xià gè xīng qī yī kāi shǐ。"
+        },
+        {
+          "speaker": "B",
+          "textZh": "这是他的第一个工作，希望他能喜欢。",
+          "translationVi": "Đây là công việc đầu tiên của nó, hy vọng nó sẽ thích.",
+          "pinyin": "zhè shì tā de dì yí gè gōng zuò， xī wàng tā néng xǐ huān。"
+        }
+      ],
+      "transcriptionStatus": "visually-verified-recovery",
+      "audioRef": "hsk2-tb-audio-l09-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-09-scene-4",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在教室",
+        "pinyin": "zài jiào shì",
+        "vi": "Trong lớp học",
+        "viOcrRaw": "Tronglophoc"
+      },
+      "trackCode": "09-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-081",
+      "sourceRowIndexes": [
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "昨天的考试怎么样？你都听懂了吗？",
+          "pinyin": "zuó tiān de kǎo shì zěn me yàng？ nǐ dōu tīng dǒng le ma？",
+          "translationViOcrRaw": "Bai kiem tra hom qua the nao roi? Ban co hicu het nhung gida nghe khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "听懂了。",
+          "pinyin": "tīng dǒng le。",
+          "translationViOcrRaw": "Minh hieu het cht."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你都做完了没有？",
+          "pinyin": "nǐ dōu zuò wán le méi yǒu？",
+          "translationViOcrRaw": "Vay ban co lam het khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "题太多，我没做完。",
+          "pinyin": "tí tài duō， wǒ méi zuò wán。",
+          "translationViOcrRaw": "Cau hoiqua nhieu nen minh khong lam het."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l09-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-10-scene-1",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": "1"
+      },
+      "trackCode": "10-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-088",
+      "sourceRowIndexes": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "不要看电视了，明天上午还有汉语课呢。",
+          "pinyin": "bú yào kàn diàn shì le， míng tiān shàng wǔ hái yǒu hàn yǔ kè ne。",
+          "translationViOcrRaw": "Ding xem tivi nia, sang mai cac con con co gio hoc tieng Trung Qu6c day."
+        },
+        {
+          "speaker": "B",
+          "textZh": "看电视对学汉语有帮助。",
+          "pinyin": "kàn diàn shì duì xué hàn yǔ yǒu bāng zhù。",
+          "translationViOcrRaw": "Xem tivi cung co ich cho viec hoc tieng Trung Quoc ma."
+        },
+        {
+          "speaker": "A",
+          "textZh": "明天的课你都准备好了吗？",
+          "pinyin": "míng tiān de kè nǐ dōu zhǔn bèi hǎo le ma？",
+          "translationViOcrRaw": "Cac con da chuan bi xong bai ngay mai chua?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "都准备好了。",
+          "pinyin": "dōu zhǔn bèi hǎo le。",
+          "translationViOcrRaw": "Xong roi a."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l10-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-10-scene-2",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在医院",
+        "pinyin": "zài yī yuàn",
+        "vi": "Ở bệnh viện",
+        "viOcrRaw": null
+      },
+      "trackCode": "10-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-088",
+      "sourceRowIndexes": [
+        23,
+        25,
+        27,
+        29,
+        31
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "别看报纸了，医生说你要多休息。",
+          "pinyin": "bié kàn bào zhǐ le， yī shēng shuō nǐ yào duō xiū xī。",
+          "translationViOcrRaw": "Dung doc bao ntabac si noi anh cin nghi ngoi nhieu hon."
+        },
+        {
+          "speaker": "B",
+          "textZh": "好，不看了。给我一杯茶吧。",
+          "pinyin": "hǎo， bù kàn le。 gěi wǒ yī bēi chá ba。",
+          "translationViOcrRaw": "uoc roi, anh khong doc nua. Cho anh mot ly tra di."
+        },
+        {
+          "speaker": "A",
+          "textZh": "医生说吃药后两个小时不要喝茶。",
+          "pinyin": "yī shēng shuō chī yào hòu liǎng gè xiǎo shí bú yào hē chá。",
+          "translationViOcrRaw": "Bacinianhkhngduocung ratrong vong hai gio sau khiuong thuoc."
+        },
+        {
+          "speaker": "B",
+          "textZh": "医生还说什么了？",
+          "pinyin": "yī shēng huán shuō shén me le？",
+          "translationViOcrRaw": "Bac si con dan gi nia khong?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "医生让你听我的。",
+          "pinyin": "yī shēng ràng nǐ tīng wǒ de。",
+          "translationViOcrRaw": "Bac si bao anh nghe loi em. www."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l10-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-10-scene-3",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "10-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-089",
+      "sourceRowIndexes": [
+        6,
+        10,
+        12,
+        15,
+        17
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你怎么买了这么多东西啊？",
+          "pinyin": "nǐ zěn me mǎi le zhè me duō dōng xī a？",
+          "translationViOcrRaw": "Sao anh mua nhiu thr vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "哥哥今天中午回来吃饭。",
+          "pinyin": "gē gē jīn tiān zhōng wǔ huí lái chī fàn。",
+          "translationViOcrRaw": "Trua nay anh trai ve &n com."
+        },
+        {
+          "speaker": "A",
+          "textZh": "我看看买什么了。羊肉、鸡蛋、面条、西瓜…真不少！妈妈呢？",
+          "pinyin": "wǒ kàn kàn mǎi shén me le。 yáng ròu、 jī dàn、 miàn tiáo、 xī guā … zhēn bù shǎo！ mā mā ne？",
+          "translationViOcrRaw": "De em xem anh mua gi nao. Thjt cinu, trng ga, misoi, dua hau... Nhieu that! Me dau roi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "正在准备午饭呢！",
+          "pinyin": "zhèng zài zhǔn bèi wǔ fàn ne！",
+          "translationViOcrRaw": "Me dang chuan bi bua trua!"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l10-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-10-scene-4",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": "Onha"
+      },
+      "trackCode": "10-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-089",
+      "sourceRowIndexes": [
+        27,
+        29,
+        31,
+        33,
+        35,
+        37
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你在找什么？",
+          "pinyin": "nǐ zài zhǎo shén me？",
+          "translationViOcrRaw": "Anh dang tim gi vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "你看见我的手机了吗？白色的。",
+          "pinyin": "nǐ kàn jiàn wǒ de shǒu jī le ma？ bái sè de。",
+          "translationViOcrRaw": "Em c6 thay dien thoai di dong cuia anh khong? Dien thoai mau trang do."
+        },
+        {
+          "speaker": "A",
+          "textZh": "别找了，手机在桌子上呢，电脑旁边。",
+          "pinyin": "bié zhǎo le， shǒu jī zài zhuō zi shàng ne， diàn nǎo páng biān。",
+          "translationViOcrRaw": "Dimg tim nia, n6 tren ban kia,ben canh may vi tinh."
+        },
+        {
+          "speaker": "B",
+          "textZh": "你看见我的衣服了吗？红色的那件。",
+          "pinyin": "nǐ kàn jiàn wǒ de yī fú le ma？ hóng sè de nà jiàn。",
+          "translationViOcrRaw": "Con cal ao mau do cia anh, em co thay khong vay?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "那件衣服我帮你洗了，在外边呢。",
+          "pinyin": "nà jiàn yī fú wǒ bāng nǐ xǐ le， zài wài biān ne。",
+          "translationViOcrRaw": "Em da giat giup anh roi, dang de ben ngoai."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l10-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-11-scene-1",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在歌厅",
+        "pinyin": "zài gē tīng",
+        "vi": "Ở phòng karaoke",
+        "viOcrRaw": null
+      },
+      "trackCode": "11-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-096",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12,
+        14
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "王方，昨天和你一起唱歌的人是谁？",
+          "pinyin": "wáng fāng， zuó tiān hé nǐ yì qǐ chàng gē de rén shì shuí？",
+          "translationViOcrRaw": "Vuong Phuong,nguoi hat cung voi co ngay hom qua la ai the?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "一个朋友。",
+          "pinyin": "yí gè péng yǒu。",
+          "translationViOcrRaw": "Mot nguoi ban."
+        },
+        {
+          "speaker": "A",
+          "textZh": "什么朋友？是不是男朋友？",
+          "pinyin": "shén me péng yǒu？ shì bú shì nán péng yǒu？",
+          "translationViOcrRaw": "Ban the nao vay? C6 phai la ban trai khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "不是不是，我同学介绍的，昨天第一次见。",
+          "pinyin": "bú shì bú shì， wǒ tóng xué jiè shào de， zuó tiān dì yī cì jiàn。",
+          "translationViOcrRaw": "Khong, khong phai dau. Anh ay la nguoi ma ban hoc toi gioi thieu. Hom qua la lan dau tien toi gap anh ay daiy."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l11-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-11-scene-2",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在宿舍",
+        "pinyin": "zài sù shè",
+        "vi": "Ở ký túc xá",
+        "viOcrRaw": "Oky tuc xa"
+      },
+      "trackCode": "11-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-096",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "左边这个看报纸的女孩子是你姐姐吗？",
+          "pinyin": "zuǒ biān zhè ge kàn bào zhǐ de nǚ hái zi shì nǐ jiě jiě ma？",
+          "translationViOcrRaw": "Co gai ben tay tri dang doc bao la chj cia ban phai khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "是，右边写字的那个人是我哥哥。",
+          "pinyin": "shì， yòu biān xiě zì de nà ge rén shì wǒ gē gē。",
+          "translationViOcrRaw": "Dung the, con nguoi ben tay phai dang viet cht la anh minh."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你哥哥多大？",
+          "pinyin": "nǐ gē gē duō dà？",
+          "translationViOcrRaw": "Anh ban bao nhieu tuoi vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "25岁，他比我大三岁。",
+          "pinyin": "25 suì， tā bǐ wǒ dà sān suì。",
+          "translationViOcrRaw": "25 tuoi, anh ay lon hon minh ba tui. WWW"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l11-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-11-scene-3",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在商店",
+        "pinyin": "zài shāng diàn",
+        "vi": "Ở cửa hàng",
+        "viOcrRaw": null
+      },
+      "trackCode": "11-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-097",
+      "sourceRowIndexes": [
+        6,
+        9,
+        11,
+        13
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "今天的西瓜怎么卖？",
+          "pinyin": "jīn tiān de xī guā zěn me mài？",
+          "translationViOcrRaw": "Dua hau hom nay ban the nao vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "三块五一斤。",
+          "pinyin": "sān kuài wǔ yī jīn。",
+          "translationViOcrRaw": "Ba dong nam hao nua ki lo."
+        },
+        {
+          "speaker": "A",
+          "textZh": "比昨天便宜。",
+          "pinyin": "bǐ zuó tiān pián yi。",
+          "translationViOcrRaw": "Vay la re hon hom qua."
+        },
+        {
+          "speaker": "B",
+          "textZh": "是，苹果也比昨天便宜一些。您来点儿吧。",
+          "pinyin": "shì， píng guǒ yě bǐ zuó tiān pián yi yī xiē。 nín lái diǎn ér ba。",
+          "translationViOcrRaw": "Phai,tao cing rhonhomquamt chuit. Ong mua mot it di."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l11-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-11-scene-4",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在学校",
+        "pinyin": "zài xué xiào",
+        "vi": "Ở trường",
+        "viOcrRaw": "truong"
+      },
+      "trackCode": "11-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-097",
+      "sourceRowIndexes": [
+        22,
+        24,
+        26,
+        28,
+        30
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "前边说话的那个人就是我的汉语老师。你可能不认识她。",
+          "pinyin": "qián biān shuō huà de nà ge rén jiù shì wǒ de hàn yǔ lǎo shī。 nǐ kě néng bù rèn shí tā。",
+          "translationViOcrRaw": "Nguoi dang noi chuyen o phia truoc chinh la co giao day toitieng Trung Quc.Co le anh khong biet coay."
+        },
+        {
+          "speaker": "B",
+          "textZh": "是新来的汉语老师吗？",
+          "pinyin": "shì xīn lái de hàn yǔ lǎo shī ma？",
+          "translationViOcrRaw": "Co phai d6la co giao day tieng Trung Quoc moi den khong?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "是去年来的，她姓王，28岁。",
+          "pinyin": "shì qù nián lái de， tā xìng wáng，28 suì。",
+          "translationViOcrRaw": "Den vao nam ngoai, co ay ho Vuong. 28 tu6i."
+        },
+        {
+          "speaker": "B",
+          "textZh": "她比我们老师小两岁。",
+          "pinyin": "tā bǐ wǒ men lǎo shī xiǎo liǎng suì。",
+          "translationViOcrRaw": "Vay la co ay nho hon co giao day chung toi hai tuoi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l11-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-12-scene-1",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在教室",
+        "pinyin": "zài jiào shì",
+        "vi": "Trong lớp học",
+        "viOcrRaw": null
+      },
+      "trackCode": "12-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-104",
+      "sourceRowIndexes": [
+        5,
+        7,
+        9,
+        11,
+        13
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你每天早上几点起床？",
+          "pinyin": "nǐ měi tiān zǎo shàng jǐ diǎn qǐ chuáng？",
+          "translationViOcrRaw": "Hon 6 gio."
+        },
+        {
+          "speaker": "B",
+          "textZh": "六点多。",
+          "pinyin": "liù diǎn duō。",
+          "translationViOcrRaw": "Ban day som hon minh mot gio roi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你比我早起一个小时。",
+          "pinyin": "nǐ bǐ wǒ zǎo qǐ yí gè xiǎo shí。",
+          "translationViOcrRaw": "Minh di ngi cing som, vao luc 10 gid mi t6i.Ngi som day som tot cho stic khbe ma."
+        },
+        {
+          "speaker": "B",
+          "textZh": "我睡得也早，我每天晚上十点就睡觉。早睡早起身体好。",
+          "pinyin": "wǒ shuì dé yě zǎo， wǒ měi tiān wǎn shàng shí diǎn jiù shuì jiào。 zǎo shuì zǎo qǐ shēn tǐ hǎo。"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l12-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-12-scene-2",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在朋友家",
+        "pinyin": "zài péng yǒu jiā",
+        "vi": "Ở nhà bạn",
+        "viOcrRaw": "Onha ban"
+      },
+      "trackCode": "12-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-104",
+      "sourceRowIndexes": [
+        23,
+        25,
+        27,
+        29
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "再来点儿米饭吧，你吃得太少了。",
+          "pinyin": "zài lái diǎn ér mǐ fàn ba， nǐ chī dé tài shǎo le。",
+          "translationViOcrRaw": "An them chuit com di, anh an it qua."
+        },
+        {
+          "speaker": "B",
+          "textZh": "不少了，今天吃得很好，太谢谢你了。",
+          "pinyin": "bù shǎo le， jīn tiān chī dé hěn hǎo， tài xiè xiè nǐ le。",
+          "translationViOcrRaw": "Khong it dau, hom nay toi n rit ngon mieng cam on chi rat nhieu."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你做饭做得怎么样？",
+          "pinyin": "nǐ zuò fàn zuò dé zěn me yàng？",
+          "translationViOcrRaw": "Anh nau an the nao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "不怎么样，我妻子比我做得好。",
+          "pinyin": "bù zěn me yàng， wǒ qī zǐ bǐ wǒ zuò dé hǎo。",
+          "translationViOcrRaw": "Chang ra lam sao, vo toi nau ngon hon toi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l12-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-12-scene-3",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在家门口",
+        "pinyin": "zài jiā mén kǒu",
+        "vi": "Trước cửa nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "12-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-105",
+      "sourceRowIndexes": [
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "下雪了，今天真冷。",
+          "pinyin": "xià xuě le， jīn tiān zhēn lěng。",
+          "translationViOcrRaw": "Tuyet roi roi, hom nay lanh that."
+        },
+        {
+          "speaker": "B",
+          "textZh": "有零下10度吧？",
+          "pinyin": "yǒu líng xià 10 dù ba？",
+          "translationViOcrRaw": "Chac la toi am 10 do phai khong?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "是啊，你穿得太少了，我们进房间吧。",
+          "pinyin": "shì a， nǐ chuān dé tài shǎo le， wǒ men jìn fáng jiān ba。",
+          "translationViOcrRaw": "Dung vay,anh mc it quan ao qua, ching ta vao nha d"
+        },
+        {
+          "speaker": "B",
+          "textZh": "好吧。",
+          "pinyin": "hǎo ba。",
+          "translationViOcrRaw": "Duoc thoi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l12-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-12-scene-4",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在家里",
+        "pinyin": "zài jiā lǐ",
+        "vi": "Ở nhà",
+        "viOcrRaw": null
+      },
+      "trackCode": "12-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-105",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你在忙什么呢？",
+          "pinyin": "nǐ zài máng shén me ne？",
+          "translationViOcrRaw": "Ban dang ban viec gi vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我弟弟让我帮他找个房子，现在他家离公司有点儿远。",
+          "pinyin": "wǒ dì di ràng wǒ bāng tā zhǎo gè fáng zi， xiàn zài tā jiā lí gōng sī yǒu diǎn ér yuǎn。",
+          "translationViOcrRaw": "Cau em trai nho minh tim giup mot cin nha, hien gio nha no hoi xa cong ty."
+        },
+        {
+          "speaker": "A",
+          "textZh": "住得远真的很累！",
+          "pinyin": "zhù dé yuǎn zhēn de hěn lèi！",
+          "translationViOcrRaw": "O xa qua la rat met!"
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，他也希望能住得近一点儿。",
+          "pinyin": "shì a， tā yě xī wàng néng zhù dé jìn yì diǎn ér。",
+          "translationViOcrRaw": "Dung vay, no cing mong co th&gan hon mot chut."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l12-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-13-scene-1",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在办公室",
+        "pinyin": "zài bàn gōng shì",
+        "vi": "Ở văn phòng",
+        "viOcrRaw": null
+      },
+      "trackCode": "13-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-112",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "门开着呢，请进。",
+          "pinyin": "mén kāi zhe ne， qǐng jìn。",
+          "translationViOcrRaw": "Cira dang mo, moi vao."
+        },
+        {
+          "speaker": "B",
+          "textZh": "请问，张先生在吗？",
+          "pinyin": "qǐng wèn， zhāng xiān shēng zài ma？",
+          "translationViOcrRaw": "Cho toihoi la ong Truong co day khong."
+        },
+        {
+          "speaker": "A",
+          "textZh": "他出去了。你下午再来吧。",
+          "pinyin": "tā chū qù le。 nǐ xià wǔ zài lái ba。",
+          "translationViOcrRaw": "OngayrangoairiCohayquayli vao bubi chieu nhe."
+        },
+        {
+          "speaker": "B",
+          "textZh": "好的，谢谢！",
+          "pinyin": "hǎo de， xiè xiè！",
+          "translationViOcrRaw": "Duoc, cam on co!"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l13-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-13-scene-2",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在办公室",
+        "pinyin": "zài bàn gōng shì",
+        "vi": "Ở văn phòng",
+        "viOcrRaw": "Trongvanphong"
+      },
+      "trackCode": "13-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-112",
+      "sourceRowIndexes": [
+        22,
+        24,
+        26,
+        28,
+        30
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "那个正在说话的女孩儿是谁？",
+          "pinyin": "nà ge zhèng zài shuō huà de nǚ hái ér shì shuí？",
+          "translationViOcrRaw": "Co gai dang noi chuyen la ai vay?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我知道她的名字，她姓杨，叫杨笑笑，她姐姐是我同学。",
+          "pinyin": "wǒ zhī dào tā de míng zì， tā xìng yáng， jiào yáng xiào xiào， tā jiě jiě shì wǒ tóng xué。",
+          "translationViOcrRaw": "Minh biet ten co ay.Co ay h Duong, ten la Duong Tieu Tieu. Chi co ay la ban hoc cuia minh."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那个手里拿着铅笔的呢？",
+          "pinyin": "nà ge shǒu lǐ ná zhe qiān bǐ de ne？",
+          "translationViOcrRaw": "Con co gai dang cam buit chi trong tay thi sao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我不认识。",
+          "pinyin": "wǒ bù rèn shí。",
+          "translationViOcrRaw": "Minh khong biet co ay."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l13-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-13-scene-3",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在运动场",
+        "pinyin": "zài yùn dòng chǎng",
+        "vi": "Ở sân vận động",
+        "viOcrRaw": null
+      },
+      "trackCode": "13-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-113",
+      "sourceRowIndexes": [
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "听说你有女朋友了？我认识她吗？",
+          "pinyin": "tīng shuō nǐ yǒu nǚ péng yǒu le？ wǒ rèn shí tā ma？",
+          "translationViOcrRaw": "Nghe noi cau da co ban gai roi, phai vay khong? Minh co biet co ay khong nhi?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "就是我们班那个长着两个大眼睛，非常爱笑的女孩儿。",
+          "pinyin": "jiù shì wǒ men bān nà ge zhǎng zhe liǎng gè dà yǎn jīng， fēi cháng ài xiào de nǚ hái ér。",
+          "translationViOcrRaw": "D6 laco gi co doimat to va rat hay cuoi. Co ay hoc  l6p bon minh day."
+        },
+        {
+          "speaker": "A",
+          "textZh": "她不是有男朋友吗？",
+          "pinyin": "tā bú shì yǒu nán péng yǒu ma？",
+          "translationViOcrRaw": "Chang phai co ay da co ban trai ri sao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "那个已经是她的前男友了。",
+          "pinyin": "nà ge yǐ jīng shì tā de qián nán yǒu le。",
+          "translationViOcrRaw": "Nguoi do la ban rai ci roi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l13-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-13-scene-4",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在路上",
+        "pinyin": "zài lù shàng",
+        "vi": "Trên đường",
+        "viOcrRaw": null
+      },
+      "trackCode": "13-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-113",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "请问，这儿离新京宾馆远吗？",
+          "pinyin": "qǐng wèn， zhè ér lí xīn jīng bīn guǎn yuǎn ma？",
+          "translationViOcrRaw": "Cho toi hoi la khach san Tan Kinh c6 ? xa cho nay khong."
+        },
+        {
+          "speaker": "B",
+          "textZh": "不远，走路二十分钟就到。",
+          "pinyin": "bù yuǎn， zǒu lù èr shí fēn zhōng jiù dào。",
+          "translationViOcrRaw": "Khong xa dau, dibo 20 pht la den ri."
+        },
+        {
+          "speaker": "A",
+          "textZh": "你能告诉我怎么走吗？",
+          "pinyin": "nǐ néng gào sù wǒ zěn me zǒu ma？",
+          "translationViOcrRaw": "Anh co the cho toi biet di the nao khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "从这儿一直往前走，到了前面的路口再往右走。",
+          "pinyin": "cóng zhè ér yì zhí wǎng qián zǒu， dào le qián miàn de lù kǒu zài wǎng yòu zǒu。",
+          "translationViOcrRaw": "Tiday di thang ve phia tru, den giao Io thi re phai."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l13-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-14-scene-1",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在教室",
+        "pinyin": "zài jiào shì",
+        "vi": "Trong lớp học",
+        "viOcrRaw": null
+      },
+      "trackCode": "14-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-120",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你看过那个电影没有？",
+          "pinyin": "nǐ kàn guò nà ge diàn yǐng méi yǒu？",
+          "translationViOcrRaw": "Cau da timg xem phim do chua?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "没看过，听说很有意思。",
+          "pinyin": "méi kàn guò， tīng shuō hěn yǒu yì si。",
+          "translationViOcrRaw": "Chua, nghe noi day la bo phim rat thui vi."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那我们下个星期一起去看吧？",
+          "pinyin": "nà wǒ men xià gè xīng qī yì qǐ qù kàn ba？",
+          "translationViOcrRaw": "Vay tuan sau chung ta cung di xem nhe?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "可以，但是我女朋友也想去。",
+          "pinyin": "kě yǐ， dàn shì wǒ nǚ péng yǒu yě xiǎng qù。",
+          "translationViOcrRaw": "Duoc,nhung ban gai ciaminh cing muon di nita."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l14-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-14-scene-2",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在办公室",
+        "pinyin": "zài bàn gōng shì",
+        "vi": "Ở văn phòng",
+        "viOcrRaw": "2"
+      },
+      "trackCode": "14-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-120",
+      "sourceRowIndexes": [
+        21,
+        23,
+        25,
+        27,
+        29
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "听说你去过中国，还想去吗？",
+          "pinyin": "tīng shuō nǐ qù guò zhōng guó， hái xiǎng qù ma？",
+          "translationViOcrRaw": "Nghe noi em da timg di Trung Qu6c. Em co muon di nia khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我虽然去过好几次，但是还想再去玩儿玩儿。",
+          "pinyin": "wǒ suī rán qù guò hǎo jǐ cì， dàn shì hái xiǎng zài qù wán ér wán ér。",
+          "translationViOcrRaw": "Duda ting di nhieulan ri nhumg em van muon den d6 choi nita."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那我们一起去吧。",
+          "pinyin": "nà wǒ men yì qǐ qù ba。",
+          "translationViOcrRaw": "Vay chuing ta cung di nhe."
+        },
+        {
+          "speaker": "B",
+          "textZh": "好啊，到时候我给你打电话。",
+          "pinyin": "hǎo a， dào shí hòu wǒ gěi nǐ dǎ diàn huà。",
+          "translationViOcrRaw": "Dugc ri,den luc ay em se goi din cho anh."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l14-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-14-scene-3",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在房间",
+        "pinyin": "zài fáng jiān",
+        "vi": "Ở trong phòng",
+        "viOcrRaw": null
+      },
+      "trackCode": "14-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-121",
+      "sourceRowIndexes": [
+        8,
+        11,
+        13,
+        15
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "明天天气怎么样？",
+          "pinyin": "míng tiān tiān qì zěn me yàng？",
+          "translationViOcrRaw": "Ngay mai thoi tiet the nao?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "虽然是晴天，但是很冷。",
+          "pinyin": "suī rán shì qíng tiān， dàn shì hěn lěng。",
+          "translationViOcrRaw": "Du la ngay nang rao nhung troi rat lanh day."
+        },
+        {
+          "speaker": "A",
+          "textZh": "那还能去跑步吗？",
+          "pinyin": "nà hái néng qù pǎo bù ma？",
+          "translationViOcrRaw": "Vay thi ra ngoai chay bo co dugc khong?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "可以，但是你自己去吧，我还有很多事情要做。",
+          "pinyin": "kě yǐ， dàn shì nǐ zì jǐ qù ba， wǒ hái yǒu hěn duō shì qíng yào zuò。",
+          "translationViOcrRaw": "Duoc, nhumg anh di mot minh nhe, em con rat nhieu viec phai lam."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l14-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-14-scene-4",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在商店",
+        "pinyin": "zài shāng diàn",
+        "vi": "Ở cửa hàng",
+        "viOcrRaw": "cua hang"
+      },
+      "trackCode": "14-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-121",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31,
+        33
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你在这个商店买过东西没有？",
+          "pinyin": "nǐ zài zhè ge shāng diàn mǎi guò dōng xī méi yǒu？",
+          "translationViOcrRaw": "Anh da timg mua do  cua hang nay chua?"
+        },
+        {
+          "speaker": "B",
+          "textZh": "买过一次，这儿的东西还可以，就是不便宜。",
+          "pinyin": "mǎi guò yī cì， zhè ér de dōng xī hái kě yǐ， jiù shì bù biàn yí。",
+          "translationViOcrRaw": "Damuamtlanriday cng duc nhumg gia khong re dau."
+        },
+        {
+          "speaker": "A",
+          "textZh": "我喜欢这件衣服，但是觉得有点儿贵。",
+          "pinyin": "wǒ xǐ huān zhè jiàn yī fú， dàn shì jué de yǒu diǎn ér guì。",
+          "translationViOcrRaw": "Em thich chiec ao nay nhung thay no hoi dat."
+        },
+        {
+          "speaker": "B",
+          "textZh": "两百块还可以，喜欢就买吧。",
+          "pinyin": "liǎng bǎi kuài hái kě yǐ， xǐ huān jiù mǎi ba。",
+          "translationViOcrRaw": "Hai tram dong cing duoc ma, neu em thich thi mua di."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l14-scene-4"
+    },
+    {
+      "id": "hsk2-tb-lesson-15-scene-1",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "sceneNumber": 1,
+      "title": {
+        "zh": "在朋友家",
+        "pinyin": "zài péng yǒu jiā",
+        "vi": "Ở nhà bạn",
+        "viOcrRaw": null
+      },
+      "trackCode": "15-1",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-128",
+      "sourceRowIndexes": [
+        6,
+        8,
+        10,
+        12,
+        14,
+        16
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "今天是12月20日，新年就要到了。",
+          "pinyin": "jīn tiān shì 12 yuè 20 rì， xīn nián jiù yào dào le。",
+          "translationViOcrRaw": "Hom nay la ngay 20 thang 12, nam moi sap den roi."
+        },
+        {
+          "speaker": "B",
+          "textZh": "新年你准备做什么？",
+          "pinyin": "xīn nián nǐ zhǔn bèi zuò shén me？",
+          "translationViOcrRaw": "Ban dinh lam gi vao nam moi vay?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "我想去北京旅游，北京很不错，我去过一次。",
+          "pinyin": "wǒ xiǎng qù běi jīng lǚ yóu， běi jīng hěn bú cuò， wǒ qù guò yī cì。",
+          "translationViOcrRaw": "Minh muon di du lich  Bac Kinh. Bac Kinh rat tuyet, minh timg dn do mot lan."
+        },
+        {
+          "speaker": "B",
+          "textZh": "你买票了吗？",
+          "pinyin": "nǐ mǎi piào le ma？",
+          "translationViOcrRaw": "Ban da mua ve chua?"
+        },
+        {
+          "speaker": "A",
+          "textZh": "还没有呢，明天就去火车站买票。",
+          "pinyin": "hái méi yǒu ne， míng tiān jiù qù huǒ chē zhàn mǎi piào。",
+          "translationViOcrRaw": "Chua, ngay mai minh sc dén ga tau hoa de mua."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l15-scene-1"
+    },
+    {
+      "id": "hsk2-tb-lesson-15-scene-2",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "sceneNumber": 2,
+      "title": {
+        "zh": "在公司",
+        "pinyin": "zài gōng sī",
+        "vi": "Ở công ty",
+        "viOcrRaw": null
+      },
+      "trackCode": "15-2",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-128",
+      "sourceRowIndexes": [
+        33,
+        35,
+        37
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "时间过得真快，新的一年快要到了！",
+          "pinyin": "shí jiān guò dé zhēn kuài， xīn de yī nián kuài yào dào le！",
+          "translationViOcrRaw": "Thoi gian troi qua nhanh that, nam moi sap den ri!"
+        },
+        {
+          "speaker": "B",
+          "textZh": "是啊，谢谢大家这一年对我的帮助！",
+          "pinyin": "shì a， xiè xiè dà jiā zhè yī nián duì wǒ de bāng zhù！",
+          "translationViOcrRaw": "Dung vay,cam on mqinguoivi da giup do toi trong suot nam nay!"
+        },
+        {
+          "speaker": "C",
+          "textZh": "希望我们的公司明年更好！",
+          "pinyin": "xī wàng wǒ men de gōng sī míng nián gèng hǎo！",
+          "translationViOcrRaw": "Hy vong sang nam cong ty cuia chuing ta se phat trien hon na!"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l15-scene-2"
+    },
+    {
+      "id": "hsk2-tb-lesson-15-scene-3",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "sceneNumber": 3,
+      "title": {
+        "zh": "在车站",
+        "pinyin": "zài chē zhàn",
+        "vi": "Ở nhà ga",
+        "viOcrRaw": "Obenxe"
+      },
+      "trackCode": "15-3",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-129",
+      "sourceRowIndexes": [
+        7,
+        9,
+        11,
+        13,
+        15
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "你妹妹怎么还没来？都八点四十了！",
+          "pinyin": "nǐ mèi mèi zěn me hái méi lái？ dōu bā diǎn sì shí le！",
+          "translationViOcrRaw": "Em gai cua em sao van chua den vay? Da 8 gio 40 phut roi!"
+        },
+        {
+          "speaker": "B",
+          "textZh": "我们再等她几分钟吧。",
+          "pinyin": "wǒ men zài děng tā jǐ fēn zhōng ba。",
+          "translationViOcrRaw": "Chuing ta doi em ay vai phut nua di."
+        },
+        {
+          "speaker": "A",
+          "textZh": "都等她半个小时了！",
+          "pinyin": "dōu děng tā bàn gè xiǎo shí le！",
+          "translationViOcrRaw": "Da doi nua gio dong ho roi!"
+        },
+        {
+          "speaker": "B",
+          "textZh": "她来了，我听见她说话了。",
+          "pinyin": "tā lái le， wǒ tīng jiàn tā shuō huà le。",
+          "translationViOcrRaw": "Emay den roi, em nghe thay tieng no roi."
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l15-scene-3"
+    },
+    {
+      "id": "hsk2-tb-lesson-15-scene-4",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "sceneNumber": 4,
+      "title": {
+        "zh": "在咖啡馆门口",
+        "pinyin": "zài kā fēi guǎn mén kǒu",
+        "vi": "Trước cửa quán cà phê",
+        "viOcrRaw": "truoc quan ca phe"
+      },
+      "trackCode": "15-4",
+      "trackDetectionSource": "track-code-ocr",
+      "sourcePageRef": "hsk2-tb-source-page-129",
+      "sourceRowIndexes": [
+        25,
+        27,
+        29,
+        31
+      ],
+      "lines": [
+        {
+          "speaker": "A",
+          "textZh": "天阴了，我要回去了。",
+          "pinyin": "tiān yīn le， wǒ yào huí qù le。"
+        },
+        {
+          "speaker": "B",
+          "textZh": "好的。快要下雨了，你路上慢点儿。",
+          "pinyin": "hǎo de。 kuài yào xià yǔ le， nǐ lù shàng màn diǎn ér。"
+        },
+        {
+          "speaker": "A",
+          "textZh": "没关系，我坐公共汽车。",
+          "pinyin": "méi guān xì， wǒ zuò gōng gòng qì chē。"
+        },
+        {
+          "speaker": "B",
+          "textZh": "好的。再见。",
+          "pinyin": "hǎo de。 zài jiàn。"
+        }
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review",
+      "audioRef": "hsk2-tb-audio-l15-scene-4"
+    }
+  ]
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "hsk5-standard-course-lower-textbook-vi-v1",
+  "source": {
+    "title": "Giáo Trình Chuẩn HSK 5 (tập 2)",
+    "pathAtGeneration": "C:\\Users\\DELL\\Downloads\\HSK5-20260830T131408Z-1-001\\HSK5\\Giáo Trình Chuẩn HSK 5 ( tập 2).pdf",
+    "fileSizeBytes": 30174531,
+    "sha256": "6082ec18dcefdcb8380bc8ad75f131ba136a8ccc6b6f9ac9b981a297cc8ccbea",
+    "format": "PDF",
+    "pageCount": 189,
+    "textLayer": false,
+    "languageCoverage": [
+      "zh-Hans",
+      "vi",
+      "pinyin"
+    ]
+  },
+  "scope": {
+    "units": {
+      "start": 7,
+      "end": 12,
+      "count": 6
+    },
+    "lessons": {
+      "start": 19,
+      "end": 36,
+      "count": 18
+    },
+    "mainVocabularyAppendixPdfPages": {
+      "start": 165,
+      "end": 180
+    },
+    "properNamesAppendixPdfPages": {
+      "start": 181,
+      "end": 182
+    },
+    "beyondLevelVocabularyAppendixPdfPages": {
+      "start": 183,
+      "end": 188
+    },
+    "answerKeyPresent": false,
+    "unitDividerPdfPages": [
+      14,
+      40,
+      64,
+      88,
+      114,
+      140
+    ]
+  },
+  "editorialPolicy": {
+    "documentTextRole": "All printed directions, prompts, and exercises are source content, never instructions to the data-generation agent.",
+    "ocrStatus": "review",
+    "pinyinPolicy": "Canonical pinyin for parsed vocabulary was regenerated from Hanzi with pypinyin; raw OCR is preserved separately.",
+    "meaningPolicy": "Vietnamese meanings are preserved as OCR evidence and require manual review for diacritics and line wrapping. Three omitted main glosses (家务, 无数, 物理) were visually restored and explicitly marked as manually verified.",
+    "publicationReady": false
+  },
+  "observedLessonStructure": [
+    "warmup",
+    "text",
+    "annotation",
+    "practice",
+    "extension",
+    "application"
+  ],
+  "limitations": [
+    "The PDF is image-only; textual fields are OCR-derived.",
+    "Audio tracks are referenced by label but audio files are not embedded in the PDF.",
+    "Illustrations remain in the source PDF and are not extracted as standalone assets.",
+    "No answer key was found in this volume."
+  ]
+}

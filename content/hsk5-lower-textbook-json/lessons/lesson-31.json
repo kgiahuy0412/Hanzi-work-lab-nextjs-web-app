@@ -1,0 +1,114 @@
+{
+  "id": "hsk5l-lesson-31",
+  "number": 31,
+  "unitId": "hsk5l-unit-11",
+  "titleZh": "登门槛效应",
+  "titleVi": "Hiệu ứng \"thò chân vào cửa\"",
+  "sourcePdfPages": {
+    "start": 115,
+    "end": 122
+  },
+  "sourcePrintedPages": {
+    "start": 114,
+    "end": 121
+  },
+  "audioTracks": [
+    "31-1",
+    "31-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 115,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身 如果你想请别人帮你做件事情，又担心对方不愿意，你一般会考虑哪些问"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 115,
+      "rowIndex": 9,
+      "matchedTextOcr": "课文登门槛效应 （714字） 31-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 117,
+      "rowIndex": 20,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 120,
+      "rowIndex": 2,
+      "matchedTextOcr": "练习1 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 121,
+      "rowIndex": 18,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 122,
+      "rowIndex": 2,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-31-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-31-01",
+    "hsk5l-annotation-31-01",
+    "hsk5l-practice-31-01",
+    "hsk5l-extension-31-01",
+    "hsk5l-application-31-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0011",
+    "hsk5l-lexeme-0012",
+    "hsk5l-lexeme-0018",
+    "hsk5l-lexeme-0019",
+    "hsk5l-lexeme-0055",
+    "hsk5l-lexeme-0058",
+    "hsk5l-lexeme-0189",
+    "hsk5l-lexeme-0215",
+    "hsk5l-lexeme-0234",
+    "hsk5l-lexeme-0241",
+    "hsk5l-lexeme-0242",
+    "hsk5l-lexeme-0261",
+    "hsk5l-lexeme-0272",
+    "hsk5l-lexeme-0290",
+    "hsk5l-lexeme-0297",
+    "hsk5l-lexeme-0305",
+    "hsk5l-lexeme-0311",
+    "hsk5l-lexeme-0337",
+    "hsk5l-lexeme-0356",
+    "hsk5l-lexeme-0391",
+    "hsk5l-lexeme-0435",
+    "hsk5l-lexeme-0446",
+    "hsk5l-lexeme-0451"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-001",
+    "hsk5l-beyond-level-080",
+    "hsk5l-beyond-level-092",
+    "hsk5l-beyond-level-101",
+    "hsk5l-beyond-level-102",
+    "hsk5l-beyond-level-155"
+  ],
+  "vocabularyCount": 23,
+  "beyondLevelVocabularyCount": 6,
+  "allVocabularyCount": 29,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

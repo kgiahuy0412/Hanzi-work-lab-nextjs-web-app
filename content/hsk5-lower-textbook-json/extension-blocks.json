@@ -1,0 +1,1424 @@
+{
+  "bundleId": "hsk5-standard-course-lower-textbook-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk5l-extension-19-01",
+      "lessonId": "hsk5l-lesson-19",
+      "lessonNumber": 19,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "phan",
+        "零食（lingshi）、冰激凌（bingjiling）、酱油（jiangyou）、",
+        "marong",
+        "醋（cu）、开水（kaishui）、点心（dianxin）、营养（yingyang）、",
+        "饮食2",
+        "口味（kouwei）、胃口（weikou）、淡（dan）、臭（chou）、",
+        "软（ruan）、嫩（nen）、过期（guoqi）",
+        "19",
+        "家乡的萝卜饼",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）龙井茶是绿茶，冲泡三四遍后颜色和味道就都变 了。",
+        "（2）这种鲜牛奶保质期只有4天，这袋已经 好几天了。",
+        "（3）你下班时顺路带点儿 吧，明天去公园玩儿丽丽肯定会要的。",
+        "（4）湖南长沙当地有种用豆腐制作的美食，看上去黑黑的，闻着也有股",
+        "味，但吃起来味道棒极了。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nphan\n零食（lingshi）、冰激凌（bingjiling）、酱油（jiangyou）、\nmarong\n醋（cu）、开水（kaishui）、点心（dianxin）、营养（yingyang）、\n饮食2\n口味（kouwei）、胃口（weikou）、淡（dan）、臭（chou）、\n软（ruan）、嫩（nen）、过期（guoqi）\n19\n家乡的萝卜饼\n做一做：从上表中选择合适的词语填空\n（1）龙井茶是绿茶，冲泡三四遍后颜色和味道就都变 了。\n（2）这种鲜牛奶保质期只有4天，这袋已经 好几天了。\n（3）你下班时顺路带点儿 吧，明天去公园玩儿丽丽肯定会要的。\n（4）湖南长沙当地有种用豆腐制作的美食，看上去黑黑的，闻着也有股\n味，但吃起来味道棒极了。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-022",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-20-01",
+      "lessonId": "hsk5l-lesson-20",
+      "lessonNumber": 20,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "俱乐部（julebu）、幼儿园（you'éryuan）、博物馆（bowuguan）、",
+        "marong 单位、场所",
+        "酒吧（jiuba）、法院（foyuan）、海关（haiguan）",
+        "生产（shengchan）、发明（faming）、设计（sheji）",
+        "生产2 业务（yewu）、项目（xiangmu）、效率（xidol）、合法（héfa）、",
+        "公平（gongping）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）我想报名参加射击 ，你有兴趣吗？",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK （2）我已经下飞机了，但还没出",
+        "（3）世界上没有绝对的 ，比如鸡吃虫子，对虫子就是不公平的。",
+        "（4）在这个国家，留学生在没有得到允许的情况下在校外打工，是",
+        "不 的。",
+        "20",
+        "小人书摊"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n俱乐部（julebu）、幼儿园（you'éryuan）、博物馆（bowuguan）、\nmarong 单位、场所\n酒吧（jiuba）、法院（foyuan）、海关（haiguan）\n生产（shengchan）、发明（faming）、设计（sheji）\n生产2 业务（yewu）、项目（xiangmu）、效率（xidol）、合法（héfa）、\n公平（gongping）\n做一做：从上表中选择合适的词语填空\n（1）我想报名参加射击 ，你有兴趣吗？\nwww.nhantriviet.com/GiaoTrinhChuanHSK （2）我已经下飞机了，但还没出\n（3）世界上没有绝对的 ，比如鸡吃虫子，对虫子就是不公平的。\n（4）在这个国家，留学生在没有得到允许的情况下在校外打工，是\n不 的。\n20\n小人书摊",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-030",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-030",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-21-01",
+      "lessonId": "hsk5l-lesson-21",
+      "lessonNumber": 21,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "morong 学科 哲学（zhéxué）、化学（huaxue）、物理（wuli）、政治（zhengzhi）",
+        "粘贴（zhantie）、复制（fuzhi）、浏览（liulon）、删除（shanchu）",
+        "电脑",
+        "搜索（sousuo）、文件（wenjian）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）昨天我把电脑好好整理了一下，把没用的文件、照片都 了。",
+        "（2）据调查，有70%的网民经常在网上 信息、找资料。",
+        "（3）老年人喜欢读报，而年轻人现在大都是在网上 新闻了。",
+        "（4）你把他们送来的广告设计方案 一份到移动硬盘里。",
+        "HSK 标准教程5（下）"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\nmorong 学科 哲学（zhéxué）、化学（huaxue）、物理（wuli）、政治（zhengzhi）\n粘贴（zhantie）、复制（fuzhi）、浏览（liulon）、删除（shanchu）\n电脑\n搜索（sousuo）、文件（wenjian）\n做一做：从上表中选择合适的词语填空\n（1）昨天我把电脑好好整理了一下，把没用的文件、照片都 了。\n（2）据调查，有70%的网民经常在网上 信息、找资料。\n（3）老年人喜欢读报，而年轻人现在大都是在网上 新闻了。\n（4）你把他们送来的广告设计方案 一份到移动硬盘里。\nHSK 标准教程5（下）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-039",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-22-01",
+      "lessonId": "hsk5l-lesson-22",
+      "lessonNumber": 22,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "morong 作文（zuowen）、论文（lunwén）、主题（zhuti）、题目（timu）",
+        "写作表达 话题（huati）、目录（mulu）、提纲（tigang）、标点（biaodian）、",
+        "废话（feihua）、胡说（hushuo）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）买书的时候我一般会先看看前面的 这样可以了解书的大概",
+        "内容。",
+        "（2）这不是一篇研究型的文章，算不上是一篇",
+        "（3）这个地方的 用错了，这是书的名字，应该用书名号。",
+        "（4）你现在完全是在说 ，解决不了问题！"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\nmorong 作文（zuowen）、论文（lunwén）、主题（zhuti）、题目（timu）\n写作表达 话题（huati）、目录（mulu）、提纲（tigang）、标点（biaodian）、\n废话（feihua）、胡说（hushuo）\n做一做：从上表中选择合适的词语填空\n（1）买书的时候我一般会先看看前面的 这样可以了解书的大概\n内容。\n（2）这不是一篇研究型的文章，算不上是一篇\n（3）这个地方的 用错了，这是书的名字，应该用书名号。\n（4）你现在完全是在说 ，解决不了问题！",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-23-01",
+      "lessonId": "hsk5l-lesson-23",
+      "lessonNumber": 23,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan www.nhantriviet.com/GiaoTrinhChuanHsK",
+        "教材（jiaocai）、课程（kechéng）、实习（shixi）、学历（xueli）",
+        "marong 教学1",
+        "本科（bénke）、系（xi）、讲座（jiangzuo）",
+        "学术（xuéshu）、学问（xuewen）、理论（lilun）、资料（ziliao）",
+        "学术",
+        "修改（xiugai）、发表（fabiäo）",
+        "HSK 标准教程5（下）",
+        "●做一做：从上表中选择合适的词语填空",
+        "（1）请你帮我看看这篇作文有什么毛病，给我提提 意见。",
+        "（2）李教授是知名的历史学家，在 研究方面取得了丰富的成果。",
+        "（3）这是国内首部针对HSK考试编写的汉语 ，分为6级，共9册。",
+        "（4）现在，我在一家出版社 ，要是表现好的话，应该能留下工作。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan www.nhantriviet.com/GiaoTrinhChuanHsK\n教材（jiaocai）、课程（kechéng）、实习（shixi）、学历（xueli）\nmarong 教学1\n本科（bénke）、系（xi）、讲座（jiangzuo）\n学术（xuéshu）、学问（xuewen）、理论（lilun）、资料（ziliao）\n学术\n修改（xiugai）、发表（fabiäo）\nHSK 标准教程5（下）\n●做一做：从上表中选择合适的词语填空\n（1）请你帮我看看这篇作文有什么毛病，给我提提 意见。\n（2）李教授是知名的历史学家，在 研究方面取得了丰富的成果。\n（3）这是国内首部针对HSK考试编写的汉语 ，分为6级，共9册。\n（4）现在，我在一家出版社 ，要是表现好的话，应该能留下工作。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-055",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-055",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-055",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-055",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-055",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-055",
+          "rowIndex": 5
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-24-01",
+      "lessonId": "hsk5l-lesson-24",
+      "lessonNumber": 24,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "测验（ceyan）、实验（shiyan）、抄（chao）、试卷（shjuan）",
+        "marong",
+        "夏令营（xidlingying）、操场（caochäng）、用功（yonggong）、",
+        "教学2",
+        "辅导（fudoo）、收获（shouhuo）、铃（ling）、退步（tuibu）",
+        "改正（gaizheng)",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）暑假时很多中小学生去外地或外国参加 又可以旅游又可以 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "交朋友。",
+        "（2）这是上次考试的 ，请大家认真看一看错在哪儿。",
+        "（3）我想请一个家教，下课后 我学习汉语。",
+        "（4）预习生词时，我会把不认识的字 三遍。",
+        "HSK 标准教程5（下）"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n测验（ceyan）、实验（shiyan）、抄（chao）、试卷（shjuan）\nmarong\n夏令营（xidlingying）、操场（caochäng）、用功（yonggong）、\n教学2\n辅导（fudoo）、收获（shouhuo）、铃（ling）、退步（tuibu）\n改正（gaizheng)\n做一做：从上表中选择合适的词语填空\n（1）暑假时很多中小学生去外地或外国参加 又可以旅游又可以 www.nhantriviet.com/GiaoTrinhChuanHSK\n交朋友。\n（2）这是上次考试的 ，请大家认真看一看错在哪儿。\n（3）我想请一个家教，下课后 我学习汉语。\n（4）预习生词时，我会把不认识的字 三遍。\nHSK 标准教程5（下）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-063",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-25-01",
+      "lessonId": "hsk5l-lesson-25",
+      "lessonNumber": 25,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan 厘米（limi）、克（ke）、平方（pingfang）、",
+        "marong 度量（duliang，sudolutong）单位",
+        "吨（dun）",
+        "学习用具 尺子（chizi）、胶水（jiaoshui）、文具（wenju）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）你这儿有 吗？报名表上要贴张照片。",
+        "（2）这些 是寄到地震灾区（zaiqu，khuvucbitainan）给那里的孩",
+        "子们用的。",
+        "（3）新城的街区就像用 画出的格子一样的整齐。",
+        "（4）这个最小的房间只有12个 ，我想当作书房。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan 厘米（limi）、克（ke）、平方（pingfang）、\nmarong 度量（duliang，sudolutong）单位\n吨（dun）\n学习用具 尺子（chizi）、胶水（jiaoshui）、文具（wenju）\n做一做：从上表中选择合适的词语填空\n（1）你这儿有 吗？报名表上要贴张照片。\n（2）这些 是寄到地震灾区（zaiqu，khuvucbitainan）给那里的孩\n子们用的。\n（3）新城的街区就像用 画出的格子一样的整齐。\n（4）这个最小的房间只有12个 ，我想当作书房。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-26-01",
+      "lessonId": "hsk5l-lesson-26",
+      "lessonNumber": 26,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan 演讲（yanjiang）、发言（fayan）、宴会（yanhui）、嘉宾（jiabin）、",
+        "marong 社会关系",
+        "证件（zhengjian）、名片（mingpian）",
+        "嫁（jia）、娶（qu）、分手（fen shou）、怀孕（hudiyun）",
+        "婚恋",
+        "吻（wén）",
+        "·做一做：从上表中选择合适的词语填空",
+        "（1）这是我的 ，我们保持联系，希望将来有机会一起合作。",
+        "（2）明天，希望公司的总裁刘明先生来学校 ，你想去听听吗？",
+        "（3）老师，请问我报名时，都需要带什么 啊？",
+        "（4）出席开幕式的 都联系好了。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan 演讲（yanjiang）、发言（fayan）、宴会（yanhui）、嘉宾（jiabin）、\nmarong 社会关系\n证件（zhengjian）、名片（mingpian）\n嫁（jia）、娶（qu）、分手（fen shou）、怀孕（hudiyun）\n婚恋\n吻（wén）\n·做一做：从上表中选择合适的词语填空\n（1）这是我的 ，我们保持联系，希望将来有机会一起合作。\n（2）明天，希望公司的总裁刘明先生来学校 ，你想去听听吗？\n（3）老师，请问我报名时，都需要带什么 啊？\n（4）出席开幕式的 都联系好了。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-27-01",
+      "lessonId": "hsk5l-lesson-27",
+      "lessonNumber": 27,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "夹子（jiazi）、梳子（shuzi）、肥皂（feizao）、扇子（shanzi）",
+        "morong",
+        "家居2 剪刀（jiandao）、绳子（shengzi）、锁（suo）、叉子（chazi）",
+        "锅（guo）、壶（hu）、盆（pén）、火柴（huochai）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）这份文件有好几页，拿个 夹一下吧，别丢了。",
+        "（2）一把钥匙开一把",
+        "（3）中国人吃饭习惯用筷子，西方人吃饭习惯用刀和",
+        "（4）周末的下午，坐在阳光下，喝 茶，感觉很舒服。 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "HSK 标准教程5（下）"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n夹子（jiazi）、梳子（shuzi）、肥皂（feizao）、扇子（shanzi）\nmorong\n家居2 剪刀（jiandao）、绳子（shengzi）、锁（suo）、叉子（chazi）\n锅（guo）、壶（hu）、盆（pén）、火柴（huochai）\n做一做：从上表中选择合适的词语填空\n（1）这份文件有好几页，拿个 夹一下吧，别丢了。\n（2）一把钥匙开一把\n（3）中国人吃饭习惯用筷子，西方人吃饭习惯用刀和\n（4）周末的下午，坐在阳光下，喝 茶，感觉很舒服。 www.nhantriviet.com/GiaoTrinhChuanHSK\nHSK 标准教程5（下）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-087",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-28-01",
+      "lessonId": "hsk5l-lesson-28",
+      "lessonNumber": 28,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语 最受欢迎的毕业生",
+        "Phan",
+        "marong 模特（mote）、会计（kuaiji）、秘书（mishu）、农民（nongmin）、",
+        "职业",
+        "工程师（gongchengshi）、工人（gongrén）、员工（yuangong）",
+        "人事（rénshi）、报到（baodao）、失业（shiye）、手续（shouxu）、",
+        "求职",
+        "待遇（daiyu）、兼职（jianzhi）、简历（jianli）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）你女儿的身材这么好，可以去当个",
+        "（2）我要考注册 师，报了个辅导班，每周末都要上课。",
+        "（3）平时我上课，周末我会到一个公司去做",
+        "（4）我们决定录用你，请你下周一到 部办理 手续。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语 最受欢迎的毕业生\nPhan\nmarong 模特（mote）、会计（kuaiji）、秘书（mishu）、农民（nongmin）、\n职业\n工程师（gongchengshi）、工人（gongrén）、员工（yuangong）\n人事（rénshi）、报到（baodao）、失业（shiye）、手续（shouxu）、\n求职\n待遇（daiyu）、兼职（jianzhi）、简历（jianli）\n做一做：从上表中选择合适的词语填空\n（1）你女儿的身材这么好，可以去当个\n（2）我要考注册 师，报了个辅导班，每周末都要上课。\n（3）平时我上课，周末我会到一个公司去做\n（4）我们决定录用你，请你下周一到 部办理 手续。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 13
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-29-01",
+      "lessonId": "hsk5l-lesson-29",
+      "lessonNumber": 29,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "发票（fapiao）、收据（shouju）、支票（zhipido）、欠（qian）、",
+        "marong",
+        "税（shui）、市场（shichang）、执照（zhizhao）、柜台（guitai）、",
+        "经济1",
+        "商品（shangpin）、优惠（youhui）、讨价还价（taojia-huanjia）、",
+        "兑换（duihuan）、投资（touzi）、分配（fenpei）",
+        "29",
+        "培养对手",
+        "·做一做：从上表中选择合适的词语填空",
+        "（1）这是找您的钱，这是 ，请拿好。",
+        "（2）交 是每个人的义务。",
+        "（3）我不喜欢在小商品市场买东西，因为我不会",
+        "（4）将军把自己的食品 给了身边的每一个士兵。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n发票（fapiao）、收据（shouju）、支票（zhipido）、欠（qian）、\nmarong\n税（shui）、市场（shichang）、执照（zhizhao）、柜台（guitai）、\n经济1\n商品（shangpin）、优惠（youhui）、讨价还价（taojia-huanjia）、\n兑换（duihuan）、投资（touzi）、分配（fenpei）\n29\n培养对手\n·做一做：从上表中选择合适的词语填空\n（1）这是找您的钱，这是 ，请拿好。\n（2）交 是每个人的义务。\n（3）我不喜欢在小商品市场买东西，因为我不会\n（4）将军把自己的食品 给了身边的每一个士兵。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-104",
+          "rowIndex": 6
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-30-01",
+      "lessonId": "hsk5l-lesson-30",
+      "lessonNumber": 30,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "出口（chukou）、进口（jinkou）、贸易（maoyi）、谈判（tanpan）",
+        "marong",
+        "合同（hetong）、中介（zhongjie）、破产（pochän）、资金（zijin）、",
+        "经济2",
+        "利润（lirun）、股票（gupido）、账户（zhanghu）、利息（lixi）、",
+        "贷款（daikuan）、汇率（hul）、押金（yajin）",
+        "30-",
+        "·做一做：从上表中选择合适的词语填空",
+        "竞争让市场更高效",
+        "（1）他从事对外 工作多年，积累了丰富的经验。",
+        "(2) 进行得还算顺利，最快下周就可以签合同了。",
+        "（3）公司的项目挺不错，但资金出了问题，目前面临 危险。",
+        "（4）买房的 还有三四年就可以还清了。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n出口（chukou）、进口（jinkou）、贸易（maoyi）、谈判（tanpan）\nmarong\n合同（hetong）、中介（zhongjie）、破产（pochän）、资金（zijin）、\n经济2\n利润（lirun）、股票（gupido）、账户（zhanghu）、利息（lixi）、\n贷款（daikuan）、汇率（hul）、押金（yajin）\n30-\n·做一做：从上表中选择合适的词语填空\n竞争让市场更高效\n（1）他从事对外 工作多年，积累了丰富的经验。\n(2) 进行得还算顺利，最快下周就可以签合同了。\n（3）公司的项目挺不错，但资金出了问题，目前面临 危险。\n（4）买房的 还有三四年就可以还清了。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-112",
+          "rowIndex": 6
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-31-01",
+      "lessonId": "hsk5l-lesson-31",
+      "lessonNumber": 31,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "推辞（tuici）、议论（yilun）、转告（zhuangao）、祝福（zhufu）、",
+        "morong",
+        "握手（woshou）、看望（kanwang）、问候（wenhou）、处理（chuli）、",
+        "行为1",
+        "恭喜（gongxi）、宣布（xuanbu）、信任（xinren）、配合（peihé）、",
+        "xb）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）我把李阳、刘方调到你们部门，他们会全力 你的工作。",
+        "(2) 是对孩子最大的鼓励，也是给孩子最好的爱。",
+        "（3）在校长和师生们再三邀请下，刘先生 不过，只好走上讲台。",
+        "（4）听说你接到北大的录取通知书啦？ 你啊！",
+        "31",
+        "登门槛效应"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n推辞（tuici）、议论（yilun）、转告（zhuangao）、祝福（zhufu）、\nmorong\n握手（woshou）、看望（kanwang）、问候（wenhou）、处理（chuli）、\n行为1\n恭喜（gongxi）、宣布（xuanbu）、信任（xinren）、配合（peihé）、\nxb）\n做一做：从上表中选择合适的词语填空\n（1）我把李阳、刘方调到你们部门，他们会全力 你的工作。\n(2) 是对孩子最大的鼓励，也是给孩子最好的爱。\n（3）在校长和师生们再三邀请下，刘先生 不过，只好走上讲台。\n（4）听说你接到北大的录取通知书啦？ 你啊！\n31\n登门槛效应",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-122",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-122",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-32-01",
+      "lessonId": "hsk5l-lesson-32",
+      "lessonNumber": 32,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "金属（jinshu）、黄金（huangjin）、银（yin）、钢铁（gangtié）、",
+        "morong",
+        "资源 煤炭（meitan）、能源（nengyuan）、原料（yuanliao）、",
+        "资源（ziyuan）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）这种管子是 管，只是从表面上看像塑料。",
+        "（2）“中国大妈”一词的产生充分证明中国是 消费的大国。",
+        "（3）豆腐深受中国人的喜爱，制作它的主要 就是黄豆。",
+        "（4）从目前中国能源消费结构来看， 依然占主导地位。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\n金属（jinshu）、黄金（huangjin）、银（yin）、钢铁（gangtié）、\nmorong\n资源 煤炭（meitan）、能源（nengyuan）、原料（yuanliao）、\n资源（ziyuan）\n做一做：从上表中选择合适的词语填空\n（1）这种管子是 管，只是从表面上看像塑料。\n（2）“中国大妈”一词的产生充分证明中国是 消费的大国。\n（3）豆腐深受中国人的喜爱，制作它的主要 就是黄豆。\n（4）从目前中国能源消费结构来看， 依然占主导地位。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-33-01",
+      "lessonId": "hsk5l-lesson-33",
+      "lessonNumber": 33,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "morong 卡车（kache）、列车（lieche）、摩托车（motuoche）、行人（xingren）、",
+        "交通 车厢（chexiang）、车库（cheku）、拐弯（guaiwan）、绕（rao）、",
+        "长途（changtu）、运输（yunshu）、汽油（qiyou）、罚款（fakuan） 缓解交通有妙招",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）列车长办公室在9号 ，请到那儿办理补票手续。",
+        "（2）刚考下驾照时，他陪我到郊外练车， 倒车、停车，没一个",
+        "月我就敢自己上路了。",
+        "（3）月亮 地球一圈的真实时间是27日7小时43分11秒。",
+        "（4）这个交通标志表示禁止停车，在这儿停车是要 的。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\nmorong 卡车（kache）、列车（lieche）、摩托车（motuoche）、行人（xingren）、\n交通 车厢（chexiang）、车库（cheku）、拐弯（guaiwan）、绕（rao）、\n长途（changtu）、运输（yunshu）、汽油（qiyou）、罚款（fakuan） 缓解交通有妙招\n做一做：从上表中选择合适的词语填空\n（1）列车长办公室在9号 ，请到那儿办理补票手续。\n（2）刚考下驾照时，他陪我到郊外练车， 倒车、停车，没一个\n月我就敢自己上路了。\n（3）月亮 地球一圈的真实时间是27日7小时43分11秒。\n（4）这个交通标志表示禁止停车，在这儿停车是要 的。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-34-01",
+      "lessonId": "hsk5l-lesson-34",
+      "lessonNumber": 34,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "marong 天空（tiankong）、陆地（ludi）、土地（tudi）、池塘（chitang）、",
+        "地理",
+        "沙漠（shamo）、沙滩（shatan）、岛屿（doyu）、岸（an）、",
+        "环境",
+        "洞（dong）、木头（mutou）、石头（shitou）、灰尘（huichén）",
+        "34",
+        "鸟儿的护肤术",
+        "做一做：从上表中选择合适的词语填空",
+        "(1) 是重要的自然资源，没有它，人类无法得到食物。",
+        "（2）他坐着自造的小船很轻松地就到达了对",
+        "（3） 排球是一种很有意思的运动。",
+        "（4）孩子们在树林里玩儿，一个孩子不小心把裤子刮破了一个"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\nmarong 天空（tiankong）、陆地（ludi）、土地（tudi）、池塘（chitang）、\n地理\n沙漠（shamo）、沙滩（shatan）、岛屿（doyu）、岸（an）、\n环境\n洞（dong）、木头（mutou）、石头（shitou）、灰尘（huichén）\n34\n鸟儿的护肤术\n做一做：从上表中选择合适的词语填空\n(1) 是重要的自然资源，没有它，人类无法得到食物。\n（2）他坐着自造的小船很轻松地就到达了对\n（3） 排球是一种很有意思的运动。\n（4）孩子们在树林里玩儿，一个孩子不小心把裤子刮破了一个",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-148",
+          "rowIndex": 6
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-35-01",
+      "lessonId": "hsk5l-lesson-35",
+      "lessonNumber": 35,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "morong 老鼠（läoshu）、蜜蜂（mifeng）、蛇（shé）、狮子（shizi）、",
+        "动物 兔子（tuzi）、大象（daxiang）、猴子（houzi）、猪（zhu）、",
+        "蝴蝶（hudié）、昆虫（kunchong）",
+        "植物 小麦（xiäomai）、竹子（zhuzi）、根（gen）、果实（guoshi）",
+        "35",
+        "植物会出汗",
+        "·做一做：从上表中选择合适的词语填空",
+        "（1）猫和 是天敌。",
+        "（2）“蜂拥而至”这个成语是形容很多人像 似的一拥而来。",
+        "（3）冬天，一位农夫在路边看到一条快要冻死的 ，觉得它很",
+        "可怜。",
+        "(4) 是世界上产量第二的粮食，仅次于玉米。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\nmorong 老鼠（läoshu）、蜜蜂（mifeng）、蛇（shé）、狮子（shizi）、\n动物 兔子（tuzi）、大象（daxiang）、猴子（houzi）、猪（zhu）、\n蝴蝶（hudié）、昆虫（kunchong）\n植物 小麦（xiäomai）、竹子（zhuzi）、根（gen）、果实（guoshi）\n35\n植物会出汗\n·做一做：从上表中选择合适的词语填空\n（1）猫和 是天敌。\n（2）“蜂拥而至”这个成语是形容很多人像 似的一拥而来。\n（3）冬天，一位农夫在路边看到一条快要冻死的 ，觉得它很\n可怜。\n(4) 是世界上产量第二的粮食，仅次于玉米。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-156",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-extension-36-01",
+      "lessonId": "hsk5l-lesson-36",
+      "lessonNumber": 36,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 话题 HSK（五级）话题分类词语",
+        "Phan",
+        "marong 拆（chai）、撕（si）、摸（mo）、拍（pai）、抓（zhua）、",
+        "行为2 捡（jian）、摘（zhai）、披（pi）、偷（tou）、抢（qing）、",
+        "捐（juan）、扶（fu）、挡（dang）、拦（lán）、退（tui）",
+        "做一做：从上表中选择合适的词语填空",
+        "（1）知道李阳的困难后，同事们都为他 款。",
+        "（2）产品自售出之日起七日内，发生问题，消费者可以选择 贷。",
+        "（3）这个袋子很结实，用手 不开，去拿把剪刀。",
+        "（4）经过四年的植树造林，种草固沙，退化的草原又 上了绿装。"
+      ],
+      "contentOcr": "扩展 话题 HSK（五级）话题分类词语\nPhan\nmarong 拆（chai）、撕（si）、摸（mo）、拍（pai）、抓（zhua）、\n行为2 捡（jian）、摘（zhai）、披（pi）、偷（tou）、抢（qing）、\n捐（juan）、扶（fu）、挡（dang）、拦（lán）、退（tui）\n做一做：从上表中选择合适的词语填空\n（1）知道李阳的困难后，同事们都为他 款。\n（2）产品自售出之日起七日内，发生问题，消费者可以选择 贷。\n（3）这个袋子很结实，用手 不开，去拿把剪刀。\n（4）经过四年的植树造林，种草固沙，退化的草原又 上了绿装。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

@@ -1,0 +1,5203 @@
+{
+  "schemaVersion": "1.0.0",
+  "lexemes": [
+    {
+      "id": "hsk4l-tb-l11-v01",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 1,
+      "hanzi": "流利",
+      "hanziSource": "流利",
+      "pinyin": "liú lì",
+      "sourceTextOcrRaw": "1.流利 liuli tt. luru loat, 读 troichay 好 书",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        5,
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v02",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 2,
+      "hanzi": "厉害",
+      "hanziSource": "厉害",
+      "pinyin": "lì hài",
+      "sourceTextOcrRaw": "2.厉害 lihai tt. loihai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v03",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 3,
+      "hanzi": "语法",
+      "hanziSource": "语法",
+      "pinyin": "yǔ fǎ",
+      "sourceTextOcrRaw": "3.语法 yufa dt. nguphap 好 读",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        10,
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v04",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 4,
+      "hanzi": "准确",
+      "hanziSource": "准确",
+      "pinyin": "zhǔn què",
+      "sourceTextOcrRaw": "4. 准确zhinque .tt. chinhxac, duing",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v05",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 5,
+      "hanzi": "词语",
+      "hanziSource": "词语",
+      "pinyin": "cí yǔ",
+      "sourceTextOcrRaw": "5.词语 clyu dt. tit ngu, cachdiendat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v06",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 6,
+      "hanzi": "连",
+      "hanziSource": "连",
+      "pinyin": "lián",
+      "sourceTextOcrRaw": "6.连. lián gioi. ngay ca",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v07",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 7,
+      "hanzi": "阅读",
+      "hanziSource": "阅读",
+      "pinyin": "yuè dú",
+      "sourceTextOcrRaw": "7.阅读 yuedu dgt.doc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v08",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 8,
+      "hanzi": "来得及",
+      "hanziSource": "来得及",
+      "pinyin": "lái de jí",
+      "sourceTextOcrRaw": "8.来得及 laidejidgt.kip, con kip",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        30,
+        31
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v09",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 9,
+      "hanzi": "复杂",
+      "hanziSource": "复杂",
+      "pinyin": "fù zá",
+      "sourceTextOcrRaw": "9.复杂 fuzá tt.phuc tap, racroi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        33,
+        34
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v10",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 10,
+      "hanzi": "只好",
+      "hanziSource": "只好",
+      "pinyin": "zhǐ hǎo",
+      "sourceTextOcrRaw": "10.只好 zhihäo pho. danh phai,buocphai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        35,
+        36
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v11",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 11,
+      "hanzi": "填空",
+      "hanziSource": "填空",
+      "pinyin": "tián kòng",
+      "sourceTextOcrRaw": "11.填空 tián kong dgt. dien vao cho trong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        37,
+        39
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v12",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 12,
+      "hanzi": "猜",
+      "hanziSource": "猜",
+      "pinyin": "cāi",
+      "sourceTextOcrRaw": "12.猜 cai dgt.doan",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        41
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v13",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 13,
+      "hanzi": "否则",
+      "hanziSource": "否则",
+      "pinyin": "fǒu zé",
+      "sourceTextOcrRaw": "13.否则 fouze lien. neu khong thi,bangkhong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        43,
+        44
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v14",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 14,
+      "hanzi": "客厅",
+      "hanziSource": "客厅",
+      "pinyin": "kè tīng",
+      "sourceTextOcrRaw": "14.客厅ketingdt.phong khach",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-012",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v15",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 15,
+      "hanzi": "无论",
+      "hanziSource": "无论",
+      "pinyin": "wú lùn",
+      "sourceTextOcrRaw": "15.无论 wulun lien.  bat ke?",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-012",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v16",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 16,
+      "hanzi": "杂志",
+      "hanziSource": "杂志",
+      "pinyin": "zá zhì",
+      "sourceTextOcrRaw": "16.杂志 zazhi dt. tapchi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-012",
+      "sourceRowIndexes": [
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v17",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 17,
+      "hanzi": "著名",
+      "hanziSource": "著名",
+      "pinyin": "zhù míng",
+      "sourceTextOcrRaw": "17.著名 zhiming tt. noitieng",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-012",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v18",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 18,
+      "hanzi": "页",
+      "hanziSource": "页",
+      "pinyin": "yè",
+      "sourceTextOcrRaw": "18.页 ye luong. trang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-012",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v19",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 19,
+      "hanzi": "增加",
+      "hanziSource": "增加",
+      "pinyin": "zēng jiā",
+      "sourceTextOcrRaw": "19.增加zengjiadgt.tang them",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-012",
+      "sourceRowIndexes": [
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v20",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 20,
+      "hanzi": "文章",
+      "hanziSource": "文章",
+      "pinyin": "wén zhāng",
+      "sourceTextOcrRaw": "20.文章wenzhang dt. bai van, baibao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-016",
+      "sourceRowIndexes": [
+        17,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v21",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 21,
+      "hanzi": "之",
+      "hanziSource": "之",
+      "pinyin": "zhī",
+      "sourceTextOcrRaw": "21.之 zhi  trg.  duoc dung de noi tr bo nghia va tir duoc bo nghia",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-016",
+      "sourceRowIndexes": [
+        20,
+        22,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v22",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 22,
+      "hanzi": "内容",
+      "hanziSource": "内容",
+      "pinyin": "nèi róng",
+      "sourceTextOcrRaw": "22.内容 neirong dt. noi dung",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-016",
+      "sourceRowIndexes": [
+        24
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v23",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 23,
+      "hanzi": "然而",
+      "hanziSource": "然而",
+      "pinyin": "rán ér",
+      "sourceTextOcrRaw": "23.然而ran'ér lien. nhung, song",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-016",
+      "sourceRowIndexes": [
+        25
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v24",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 24,
+      "hanzi": "看法",
+      "hanziSource": "看法",
+      "pinyin": "kàn fǎ",
+      "sourceTextOcrRaw": "24.看法kanfä quandiem, cachnhin",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-016",
+      "sourceRowIndexes": [
+        26,
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v25",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 25,
+      "hanzi": "相同",
+      "hanziSource": "相同",
+      "pinyin": "xiāng tóng",
+      "sourceTextOcrRaw": "25.相同xiangtongtt.giong nhau, nhunhau 好",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-017",
+      "sourceRowIndexes": [
+        8,
+        9,
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v26",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 26,
+      "hanzi": "顺序",
+      "hanziSource": "顺序",
+      "pinyin": "shùn xù",
+      "sourceTextOcrRaw": "26.顺序 shunxudt.trat tu,thit tu 读",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-017",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v27",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 27,
+      "hanzi": "表示",
+      "hanziSource": "表示",
+      "pinyin": "biǎo shì",
+      "sourceTextOcrRaw": "27.表示 biäoshidgt. co y nghia, bieu thi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-017",
+      "sourceRowIndexes": [
+        13,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v28",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 28,
+      "hanzi": "养成",
+      "hanziSource": "养成",
+      "pinyin": "yǎng chéng",
+      "sourceTextOcrRaw": "28.养成yangchéngdgt.hinh thanh/ tao(thoi quen)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-017",
+      "sourceRowIndexes": [
+        16,
+        17,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v29",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 29,
+      "hanzi": "同时",
+      "hanziSource": "同时",
+      "pinyin": "tóng shí",
+      "sourceTextOcrRaw": "29.同时tongshilien.dong thoi,hon nita",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-017",
+      "sourceRowIndexes": [
+        20,
+        21
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l11-v30",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "sourceNumber": 30,
+      "hanzi": "精彩",
+      "hanziSource": "精彩",
+      "pinyin": "jīng cǎi",
+      "sourceTextOcrRaw": "30.精彩jingcai tt. tuyet voi,xuat sac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-017",
+      "sourceRowIndexes": [
+        22,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v01",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 1,
+      "hanzi": "规定",
+      "hanziSource": "规定",
+      "pinyin": "guī dìng",
+      "sourceTextOcrRaw": "1.规定guidingdt.quy dinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v02",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 2,
+      "hanzi": "死",
+      "hanziSource": "死",
+      "pinyin": "sǐ",
+      "sourceTextOcrRaw": "2.死 1S tt.codinh, citng nhac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        7,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v03",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 3,
+      "hanzi": "可惜",
+      "hanziSource": "可惜",
+      "pinyin": "kě xī",
+      "sourceTextOcrRaw": "3.可惜kexitt.dang tiec",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v04",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 4,
+      "hanzi": "全部",
+      "hanziSource": "全部",
+      "pinyin": "quán bù",
+      "sourceTextOcrRaw": "4.全部 quanbudt. toan bo, tat ca",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v05",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 5,
+      "hanzi": "也许",
+      "hanziSource": "也许",
+      "pinyin": "yě xǔ",
+      "sourceTextOcrRaw": "5.也许 yéxu pho.co le, mayra",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v06",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 6,
+      "hanzi": "商量",
+      "hanziSource": "商量",
+      "pinyin": "shāng liáng",
+      "sourceTextOcrRaw": "6.商量shangliangdgt. thuongluong,banbac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        16,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v07",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 7,
+      "hanzi": "并且",
+      "hanziSource": "并且",
+      "pinyin": "bìng qiě",
+      "sourceTextOcrRaw": "7.并且bingqielien.dtorg thoi,va",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-024",
+      "sourceRowIndexes": [
+        20,
+        21
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v08",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 8,
+      "hanzi": "盐",
+      "hanziSource": "盐",
+      "pinyin": "yán",
+      "sourceTextOcrRaw": "8.盐 yán muoi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-025",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v09",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 9,
+      "hanzi": "勺子",
+      "hanziSource": "勺（子）",
+      "pinyin": "sháo zi",
+      "sourceTextOcrRaw": "9.勺（子）sháo(zi）dt. caimuoi,caithia",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-025",
+      "sourceRowIndexes": [
+        7,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v10",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 10,
+      "hanzi": "保护",
+      "hanziSource": "保护",
+      "pinyin": "bǎo hù",
+      "sourceTextOcrRaw": "10.保护 bäohu dgt. bao ve",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-025",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v11",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 11,
+      "hanzi": "作用",
+      "hanziSource": "作用",
+      "pinyin": "zuò yòng",
+      "sourceTextOcrRaw": "11.作用zuoyongdt．tac dung",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-025",
+      "sourceRowIndexes": [
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v12",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 12,
+      "hanzi": "无法",
+      "hanziSource": "无法",
+      "pinyin": "wú fǎ",
+      "sourceTextOcrRaw": "12.无法 wufa dgt.khong the, khongcocachgi 无 wu dgt. khong co, khong wwv.nhantriviet.com/",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-025",
+      "sourceRowIndexes": [
+        14,
+        15,
+        17,
+        19,
+        42
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v13",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 13,
+      "hanzi": "节",
+      "hanziSource": "节",
+      "pinyin": "jié",
+      "sourceTextOcrRaw": "13.节 jié luqng. tiet (hoc)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-026",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v14",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 14,
+      "hanzi": "详细",
+      "hanziSource": "详细",
+      "pinyin": "xiáng xì",
+      "sourceTextOcrRaw": "14.详细 xiángxi tt.chitiet, timi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-026",
+      "sourceRowIndexes": [
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v15",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 15,
+      "hanzi": "解释",
+      "hanziSource": "解释",
+      "pinyin": "jiě shì",
+      "sourceTextOcrRaw": "15.解释 jieshi dgt. giaithich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-026",
+      "sourceRowIndexes": [
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v16",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 16,
+      "hanzi": "对于",
+      "hanziSource": "对于",
+      "pinyin": "duì yú",
+      "sourceTextOcrRaw": "16.对于 n<inp gioi. doivoi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-026",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v17",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 17,
+      "hanzi": "叶子",
+      "hanziSource": "叶子",
+      "pinyin": "yè zi",
+      "sourceTextOcrRaw": "17.叶子 yezi la cay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-026",
+      "sourceRowIndexes": [
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v18",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 18,
+      "hanzi": "教育",
+      "hanziSource": "教育",
+      "pinyin": "jiào yù",
+      "sourceTextOcrRaw": "18.教育jiaoyu dgt. giao duc, dav do",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-026",
+      "sourceRowIndexes": [
+        15,
+        16
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v19",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 19,
+      "hanzi": "使用",
+      "hanziSource": "使用",
+      "pinyin": "shǐ yòng",
+      "sourceTextOcrRaw": "19.使用shiyongdgt.sur dung",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v20",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 20,
+      "hanzi": "语言",
+      "hanziSource": "语言",
+      "pinyin": "yǔ yán",
+      "sourceTextOcrRaw": "20.语言yuyán dt. ngon ngit",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v21",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 21,
+      "hanzi": "直接",
+      "hanziSource": "直接",
+      "pinyin": "zhí jiē",
+      "sourceTextOcrRaw": "21.直接zhijie tt. truc tiep, thang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        7,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v22",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 22,
+      "hanzi": "引起",
+      "hanziSource": "引起",
+      "pinyin": "yǐn qǐ",
+      "sourceTextOcrRaw": "22.引起yinqi dgt. gay ra, danden",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        11,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v23",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 23,
+      "hanzi": "误会",
+      "hanziSource": "误会",
+      "pinyin": "wù huì",
+      "sourceTextOcrRaw": "23.误会wuhui dt. suhieu lam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        13,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v24",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 24,
+      "hanzi": "友好",
+      "hanziSource": "友好",
+      "pinyin": "yǒu hǎo",
+      "sourceTextOcrRaw": "24.友好youháott. thanthien 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        16,
+        22
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v25",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 25,
+      "hanzi": "事半功倍",
+      "hanziSource": "事半功倍",
+      "pinyin": "shì bàn gōng bèi",
+      "sourceTextOcrRaw": "*25.事半功倍shibangongbci lamchoianthat",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        23,
+        24
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v26",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 26,
+      "hanzi": "节约",
+      "hanziSource": "节约",
+      "pinyin": "jié yuē",
+      "sourceTextOcrRaw": "26.节约 jiéyuedgt. tiet kiem",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        26
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v27",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 27,
+      "hanzi": "力气",
+      "hanziSource": "力气",
+      "pinyin": "lì qì",
+      "sourceTextOcrRaw": "27.力气 liqi dt. siic luec, hoi suic",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        28,
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v28",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 28,
+      "hanzi": "相反",
+      "hanziSource": "相反",
+      "pinyin": "xiāng fǎn",
+      "sourceTextOcrRaw": "28.相反 xiangfanlien. trai lai, nguoc lai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        30,
+        31
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v29",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 29,
+      "hanzi": "任务",
+      "hanziSource": "任务",
+      "pinyin": "rèn wù",
+      "sourceTextOcrRaw": "29.任务 renwudt.nhiemwu",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        33
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v30",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 30,
+      "hanzi": "意见",
+      "hanziSource": "意见",
+      "pinyin": "yì jiàn",
+      "sourceTextOcrRaw": "30.意见 yijian dt.ykien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        35
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v31",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 31,
+      "hanzi": "仔细",
+      "hanziSource": "仔细",
+      "pinyin": "zǐ xì",
+      "sourceTextOcrRaw": "31.仔细 zixi tt. than trong,ky luong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        37,
+        38
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l12-v32",
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "sourceNumber": 32,
+      "hanzi": "达到",
+      "hanziSource": "达到",
+      "pinyin": "dá dào",
+      "sourceTextOcrRaw": "*32.达到 dádaodgt. dat dugc",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-030",
+      "sourceRowIndexes": [
+        39
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v01",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 1,
+      "hanzi": "京剧",
+      "hanziSource": "京剧",
+      "pinyin": "jīng jù",
+      "sourceTextOcrRaw": "1.京剧 jingju dt.Kinh kich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-037",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v02",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 2,
+      "hanzi": "演员",
+      "hanziSource": "演员",
+      "pinyin": "yǎn yuán",
+      "sourceTextOcrRaw": "2.演员 yanyuandt.dien vien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-037",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v03",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 3,
+      "hanzi": "观众",
+      "hanziSource": "观众",
+      "pinyin": "guān zhòng",
+      "sourceTextOcrRaw": "3.观众 guanzhong dt. khan gin",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-037",
+      "sourceRowIndexes": [
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v04",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 4,
+      "hanzi": "厚",
+      "hanziSource": "厚",
+      "pinyin": "hòu",
+      "sourceTextOcrRaw": "4.厚 hou tt.day, sau nang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-037",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v05",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 5,
+      "hanzi": "演出",
+      "hanziSource": "演出",
+      "pinyin": "yǎn chū",
+      "sourceTextOcrRaw": "5.演出 yanchudgt.bieu dien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-037",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v06",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 6,
+      "hanzi": "大概",
+      "hanziSource": "大概",
+      "pinyin": "dà gài",
+      "sourceTextOcrRaw": "6.大概 无dagai pho.khoang ching,co lé",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-037",
+      "sourceRowIndexes": [
+        12,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v07",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 7,
+      "hanzi": "来自",
+      "hanziSource": "来自",
+      "pinyin": "lái zì",
+      "sourceTextOcrRaw": "7.来自laizi dgt. den te",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-038",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v08",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 8,
+      "hanzi": "遍",
+      "hanziSource": "遍",
+      "pinyin": "biàn",
+      "sourceTextOcrRaw": "8.遍 bian  luong. (chi mot hanh dong ti luc bat dau den khi ket thuc) lan, luot",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-038",
+      "sourceRowIndexes": [
+        6,
+        7,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v09",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 9,
+      "hanzi": "偶尔",
+      "hanziSource": "偶尔",
+      "pinyin": "ǒu ěr",
+      "sourceTextOcrRaw": "9.偶尔Ou'rpho.thinh thoang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-038",
+      "sourceRowIndexes": [
+        11,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v10",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 10,
+      "hanzi": "吃惊",
+      "hanziSource": "吃惊",
+      "pinyin": "chī jīng",
+      "sourceTextOcrRaw": "10.吃惊chijing dgt.kinh ngac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-038",
+      "sourceRowIndexes": [
+        13,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v11",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 11,
+      "hanzi": "基础",
+      "hanziSource": "基础",
+      "pinyin": "jī chǔ",
+      "sourceTextOcrRaw": "11.基础jichu udt. t.nen tang, canban",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-038",
+      "sourceRowIndexes": [
+        16,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v12",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 12,
+      "hanzi": "表演",
+      "hanziSource": "表演",
+      "pinyin": "biǎo yǎn",
+      "sourceTextOcrRaw": "12.表演bidoyan dgt. hieu dien,trinhdien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-038",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v13",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 13,
+      "hanzi": "正常",
+      "hanziSource": "正常",
+      "pinyin": "zhèng cháng",
+      "sourceTextOcrRaw": "13.正常zhengchangtt. binhthuong,thong thuong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        4,
+        5,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v14",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 14,
+      "hanzi": "申请",
+      "hanziSource": "申请",
+      "pinyin": "shēn qǐng",
+      "sourceTextOcrRaw": "14.申请shenqingdgt.xin",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v15",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 15,
+      "hanzi": "有趣",
+      "hanziSource": "有趣",
+      "pinyin": "yǒu qù",
+      "sourceTextOcrRaw": "15.有趣youqu tt.thui wi, lyithu",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        10,
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v16",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 16,
+      "hanzi": "开心",
+      "hanziSource": "开心",
+      "pinyin": "kāi xīn",
+      "sourceTextOcrRaw": "16.开心kaixintt.vuive",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v17",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 17,
+      "hanzi": "继续",
+      "hanziSource": "继续",
+      "pinyin": "jì xù",
+      "sourceTextOcrRaw": "17.继续 jixu dgt.tiep tuc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v18",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 18,
+      "hanzi": "由",
+      "hanziSource": "由",
+      "pinyin": "yóu",
+      "sourceTextOcrRaw": "18.由 yougioi. do",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v19",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 19,
+      "hanzi": "讨论",
+      "hanziSource": "讨论",
+      "pinyin": "tǎo lùn",
+      "sourceTextOcrRaw": "19.讨论täolundgt.thao luan,banbac GiaoTrinhChuanHSK",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-039",
+      "sourceRowIndexes": [
+        17,
+        19,
+        33
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v20",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 20,
+      "hanzi": "大约",
+      "hanziSource": "大约",
+      "pinyin": "dà yuē",
+      "sourceTextOcrRaw": "20.大约 dayue   pho. khoang ching,uic ching",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-043",
+      "sourceRowIndexes": [
+        15,
+        16
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v21",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 21,
+      "hanzi": "餐厅",
+      "hanziSource": "餐厅",
+      "pinyin": "cān tīng",
+      "sourceTextOcrRaw": "21.餐厅 canting dt. nha hang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-043",
+      "sourceRowIndexes": [
+        18,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v22",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 22,
+      "hanzi": "纸袋",
+      "hanziSource": "纸袋",
+      "pinyin": "zhǐ dài",
+      "sourceTextOcrRaw": "22.纸袋zhidai dt. tui giay 袋(子）dai(zi）dt. tui",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-043",
+      "sourceRowIndexes": [
+        22,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v23",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 23,
+      "hanzi": "互联网",
+      "hanziSource": "互联网",
+      "pinyin": "hù lián wǎng",
+      "sourceTextOcrRaw": "23.互联网hulianwangdt. mangInternet /GiaoTrinhCnuanHSK",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-043",
+      "sourceRowIndexes": [
+        24,
+        25
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v24",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 24,
+      "hanzi": "进行",
+      "hanziSource": "进行",
+      "pinyin": "jìn xíng",
+      "sourceTextOcrRaw": "24.进行 jinxing   dgt. tien hanh,thurchien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-043",
+      "sourceRowIndexes": [
+        26,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v25",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 25,
+      "hanzi": "错误",
+      "hanziSource": "错误",
+      "pinyin": "cuò wù",
+      "sourceTextOcrRaw": "25.错误 cuowutt.sai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-043",
+      "sourceRowIndexes": [
+        30
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v26",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 26,
+      "hanzi": "随着",
+      "hanziSource": "随着",
+      "pinyin": "suí zhe",
+      "sourceTextOcrRaw": "26.随着 suizhe gioi. cung voi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v27",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 27,
+      "hanzi": "十分",
+      "hanziSource": "十分",
+      "pinyin": "shí fēn",
+      "sourceTextOcrRaw": "27.十分 shifen pho. rat, vo cung",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v28",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 28,
+      "hanzi": "普遍",
+      "hanziSource": "普遍",
+      "pinyin": "pǔ biàn",
+      "sourceTextOcrRaw": "28.普遍 pubiantt.phobien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v29",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 29,
+      "hanzi": "部分",
+      "hanziSource": "部分",
+      "pinyin": "bù fèn",
+      "sourceTextOcrRaw": "29.部分 bufen dt.phan, bophan",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        11,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v30",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 30,
+      "hanzi": "稍微",
+      "hanziSource": "稍微",
+      "pinyin": "shāo wēi",
+      "sourceTextOcrRaw": "30.稍微 shaowei pho. hoi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v31",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 31,
+      "hanzi": "苦",
+      "hanziSource": "苦",
+      "pinyin": "kǔ",
+      "sourceTextOcrRaw": "31.苦 tt. dang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-v32",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "sourceNumber": 32,
+      "hanzi": "省",
+      "hanziSource": "省",
+      "pinyin": "shěng",
+      "sourceTextOcrRaw": "32.省 sheng dt. tinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v01",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 1,
+      "hanzi": "出差",
+      "hanziSource": "出差",
+      "pinyin": "chū chāi",
+      "sourceTextOcrRaw": "1. 出差chu chai dgt. di cong taic",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        7,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v02",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 2,
+      "hanzi": "毛巾",
+      "hanziSource": "毛巾",
+      "pinyin": "máo jīn",
+      "sourceTextOcrRaw": "2.毛巾 máojin dt.khanlau",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v03",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 3,
+      "hanzi": "牙膏",
+      "hanziSource": "牙膏",
+      "pinyin": "yá gāo",
+      "sourceTextOcrRaw": "3.牙膏yágao dt.kem danh rang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        12,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v04",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 4,
+      "hanzi": "重",
+      "hanziSource": "重",
+      "pinyin": "zhòng",
+      "sourceTextOcrRaw": "4.重 zhong nang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v05",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 5,
+      "hanzi": "行",
+      "hanziSource": "行",
+      "pinyin": "xíng",
+      "sourceTextOcrRaw": "5.行 xing. dgt. druoc, dongy",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        16,
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v06",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 6,
+      "hanzi": "省",
+      "hanziSource": "省",
+      "pinyin": "shěng",
+      "sourceTextOcrRaw": "6.省 sheng dgt.tiet kiem",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v07",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 7,
+      "hanzi": "污染",
+      "hanziSource": "污染",
+      "pinyin": "wū rǎn",
+      "sourceTextOcrRaw": "7.污染 wuran dgt. lam.o nhiem 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        21,
+        23,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v08",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 8,
+      "hanzi": "卫生间",
+      "hanziSource": "卫生间",
+      "pinyin": "wèi shēng jiān",
+      "sourceTextOcrRaw": "8. 卫生间 weishengjian dt. nhavesinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        29,
+        30
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v09",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 9,
+      "hanzi": "脏",
+      "hanziSource": "脏",
+      "pinyin": "zàng",
+      "sourceTextOcrRaw": "9.脏 zang tt. ban, banthiu",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        32,
+        34
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v10",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 10,
+      "hanzi": "抱歉",
+      "hanziSource": "抱歉",
+      "pinyin": "bào qiàn",
+      "sourceTextOcrRaw": "10.抱歉 baoqian  dgt. xin loi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        35
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v11",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 11,
+      "hanzi": "空",
+      "hanziSource": "空",
+      "pinyin": "kōng",
+      "sourceTextOcrRaw": "11.空 kong tt. trong, rong, khong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        36,
+        37
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v12",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 12,
+      "hanzi": "盒子",
+      "hanziSource": "盒子",
+      "pinyin": "hé zi",
+      "sourceTextOcrRaw": "12.盒子 hézi dt. hop",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        38
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v13",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 13,
+      "hanzi": "扔",
+      "hanziSource": "扔",
+      "pinyin": "rēng",
+      "sourceTextOcrRaw": "13.扔 reng dgt.vu b²",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        40
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v14",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 14,
+      "hanzi": "以",
+      "hanziSource": "以",
+      "pinyin": "yǐ",
+      "sourceTextOcrRaw": "14.以 yi gioi. dua vao, bang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        42,
+        44
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v15",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 15,
+      "hanzi": "速度",
+      "hanziSource": "速度",
+      "pinyin": "sù dù",
+      "sourceTextOcrRaw": "15.速度 sudu dt. toc ao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-051",
+      "sourceRowIndexes": [
+        45
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v16",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 16,
+      "hanzi": "地球",
+      "hanziSource": "地球",
+      "pinyin": "dì qiú",
+      "sourceTextOcrRaw": "16.地球 diqiu dt.traidat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-052",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v17",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 17,
+      "hanzi": "既然",
+      "hanziSource": "既然",
+      "pinyin": "jì rán",
+      "sourceTextOcrRaw": "17.既然 jirán lien. vi, da... thi...",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-052",
+      "sourceRowIndexes": [
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v18",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 18,
+      "hanzi": "停",
+      "hanziSource": "停",
+      "pinyin": "tíng",
+      "sourceTextOcrRaw": "18.停 ting dgt. nging, cup,cat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-052",
+      "sourceRowIndexes": [
+        9,
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v19",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 19,
+      "hanzi": "得意",
+      "hanziSource": "得意",
+      "pinyin": "dé yì",
+      "sourceTextOcrRaw": "19.得意 déyi tt. he'ha, dacchi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-052",
+      "sourceRowIndexes": [
+        11,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v20",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 20,
+      "hanzi": "目的",
+      "hanziSource": "目的",
+      "pinyin": "mù dì",
+      "sourceTextOcrRaw": "20.目的 mudi 'p mucdich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-052",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v21",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 21,
+      "hanzi": "暖",
+      "hanziSource": "暖",
+      "pinyin": "nuǎn",
+      "sourceTextOcrRaw": "21.暖 nuan t tt. am,am ap",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-052",
+      "sourceRowIndexes": [
+        16,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v22",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 22,
+      "hanzi": "塑料袋",
+      "hanziSource": "塑料袋",
+      "pinyin": "sù liào dài",
+      "sourceTextOcrRaw": "22.塑料袋 suliaodai dt. tui nilong, tninhuta",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v23",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 23,
+      "hanzi": "于是",
+      "hanziSource": "于是",
+      "pinyin": "yú shì",
+      "sourceTextOcrRaw": "23.于是 yushi lién. thela",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v24",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 24,
+      "hanzi": "鼓励",
+      "hanziSource": "鼓励",
+      "pinyin": "gǔ lì",
+      "sourceTextOcrRaw": "24.鼓励 in6 dgt.khuyen khich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        11,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v25",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 25,
+      "hanzi": "拒绝",
+      "hanziSource": "拒绝",
+      "pinyin": "jù jué",
+      "sourceTextOcrRaw": "25.拒绝 jujué dgt. ti choi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v26",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 26,
+      "hanzi": "减少",
+      "hanziSource": "减少",
+      "pinyin": "jiǎn shǎo",
+      "sourceTextOcrRaw": "26.减少 jiänsháo dgt. giam bot",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v27",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 27,
+      "hanzi": "数量",
+      "hanziSource": "数量",
+      "pinyin": "shù liàng",
+      "sourceTextOcrRaw": "27.数量 shuliangdt.  so luong 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        16,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v28",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 28,
+      "hanzi": "温度",
+      "hanziSource": "温度",
+      "pinyin": "wēn dù",
+      "sourceTextOcrRaw": "28.温度 wendudt. nhiet do",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        24
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v29",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 29,
+      "hanzi": "乘坐",
+      "hanziSource": "乘坐",
+      "pinyin": "chéng zuò",
+      "sourceTextOcrRaw": "29.乘坐 chengzuo dgt. di, dap (xe buyst.)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        25,
+        26
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v30",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 30,
+      "hanzi": "丢",
+      "hanziSource": "丢",
+      "pinyin": "diū",
+      "sourceTextOcrRaw": "30.丢 n!p dgt.nem,vrit",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v31",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 31,
+      "hanzi": "垃圾桶",
+      "hanziSource": "垃圾桶",
+      "pinyin": "lā jī tǒng",
+      "sourceTextOcrRaw": "31.垃圾桶lajitongdt.thung rac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        30
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l14-v32",
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "sourceNumber": 32,
+      "hanzi": "美丽",
+      "hanziSource": "美丽",
+      "pinyin": "měi lì",
+      "sourceTextOcrRaw": "32.美丽 meili tt.dep",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-056",
+      "sourceRowIndexes": [
+        32
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v01",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 1,
+      "hanzi": "弹钢琴",
+      "hanziSource": "弹钢琴",
+      "pinyin": "tán gāng qín",
+      "sourceTextOcrRaw": "1.弹钢琴tan gangqin choidanduongcam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-065",
+      "sourceRowIndexes": [
+        4,
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v02",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 2,
+      "hanzi": "棒",
+      "hanziSource": "棒",
+      "pinyin": "bàng",
+      "sourceTextOcrRaw": "2.棒 bang  tt. xuat sac, hay,gioi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-065",
+      "sourceRowIndexes": [
+        6,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v03",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 3,
+      "hanzi": "孙子",
+      "hanziSource": "孙子",
+      "pinyin": "sūn zi",
+      "sourceTextOcrRaw": "3.孙子 sunzi dt.chaunoi trai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-065",
+      "sourceRowIndexes": [
+        10,
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v04",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 4,
+      "hanzi": "寒假",
+      "hanziSource": "寒假",
+      "pinyin": "hán jià",
+      "sourceTextOcrRaw": "4.寒假 hanjia kynghi dong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-065",
+      "sourceRowIndexes": [
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v05",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 5,
+      "hanzi": "父亲",
+      "hanziSource": "父亲",
+      "pinyin": "fù qīn",
+      "sourceTextOcrRaw": "5.父亲 fuqin dt. cha, bo t.com/ www.nhantriviet",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-065",
+      "sourceRowIndexes": [
+        15,
+        37,
+        39
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v06",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 6,
+      "hanzi": "闹钟",
+      "hanziSource": "闹钟",
+      "pinyin": "nào zhōng",
+      "sourceTextOcrRaw": "*6.闹钟 中naozhongdt. dong ho bao thutc",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v07",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 7,
+      "hanzi": "响",
+      "hanziSource": "响",
+      "pinyin": "xiǎng",
+      "sourceTextOcrRaw": "7.响 xiäng dgt.reo, vanglen",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        8,
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v08",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 8,
+      "hanzi": "醒",
+      "hanziSource": "醒",
+      "pinyin": "xǐng",
+      "sourceTextOcrRaw": "8.醒 bu1x dgt.thuic day,tinhday",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        11,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v09",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 9,
+      "hanzi": "赶",
+      "hanziSource": "赶",
+      "pinyin": "gǎn",
+      "sourceTextOcrRaw": "9.赶 gän dgt. voi, gap ruit",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        13,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v10",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 10,
+      "hanzi": "厕所",
+      "hanziSource": "厕所",
+      "pinyin": "cè suǒ",
+      "sourceTextOcrRaw": "10.厕所 cesuo nhave sinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        16,
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v11",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 11,
+      "hanzi": "批评",
+      "hanziSource": "批评",
+      "pinyin": "pī píng",
+      "sourceTextOcrRaw": "11.批评 piping dgt.phebinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v12",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 12,
+      "hanzi": "弄",
+      "hanziSource": "弄",
+      "pinyin": "nòng",
+      "sourceTextOcrRaw": "12.弄 nong dgt.lam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v13",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 13,
+      "hanzi": "管理",
+      "hanziSource": "管理",
+      "pinyin": "guǎn lǐ",
+      "sourceTextOcrRaw": "13.管理 guanli  dgt.  quan ly",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-066",
+      "sourceRowIndexes": [
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v14",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 14,
+      "hanzi": "打针",
+      "hanziSource": "打针",
+      "pinyin": "dǎ zhēn",
+      "sourceTextOcrRaw": "14.打针do zhen dgt.tiem, chich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-067",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v15",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 15,
+      "hanzi": "护士",
+      "hanziSource": "护士",
+      "pinyin": "hù shì",
+      "sourceTextOcrRaw": "15.护士hushi dt. vta",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-067",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v16",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 16,
+      "hanzi": "表扬",
+      "hanziSource": "表扬",
+      "pinyin": "biǎo yáng",
+      "sourceTextOcrRaw": "16.表扬biaoyangdgt. khenngoibieu duong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-067",
+      "sourceRowIndexes": [
+        10,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v17",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 17,
+      "hanzi": "千万",
+      "hanziSource": "千万",
+      "pinyin": "qiān wàn",
+      "sourceTextOcrRaw": "17.千万qianwanpho.nhat thiotphai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-067",
+      "sourceRowIndexes": [
+        13,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v18",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 18,
+      "hanzi": "怀疑",
+      "hanziSource": "怀疑",
+      "pinyin": "huái yí",
+      "sourceTextOcrRaw": "18.怀疑huáiyidgt.nghi ngo,hoainghi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-067",
+      "sourceRowIndexes": [
+        15,
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v19",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 19,
+      "hanzi": "故意",
+      "hanziSource": "故意",
+      "pinyin": "gù yì",
+      "sourceTextOcrRaw": "19.故意guyi pho.co'tinh, cO'y",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v20",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 20,
+      "hanzi": "敲",
+      "hanziSource": "敲",
+      "pinyin": "qiāo",
+      "sourceTextOcrRaw": "20.敲 qiao dgt. go, khua",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v21",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 21,
+      "hanzi": "整理",
+      "hanziSource": "整理",
+      "pinyin": "zhěng lǐ",
+      "sourceTextOcrRaw": "21.整理 zhengli dgt.thu don, dondep",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v22",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 22,
+      "hanzi": "合适",
+      "hanziSource": "合适",
+      "pinyin": "hé shì",
+      "sourceTextOcrRaw": "22.合适 héshi tt. thich hop",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        21,
+        22
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v23",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 23,
+      "hanzi": "骗",
+      "hanziSource": "骗",
+      "pinyin": "piàn",
+      "sourceTextOcrRaw": "23.骗 pian dgt.liua gat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v24",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 24,
+      "hanzi": "儿童",
+      "hanziSource": "儿童",
+      "pinyin": "ér tóng",
+      "sourceTextOcrRaw": "24.儿童 értong dt.treem",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        25
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v25",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 25,
+      "hanzi": "假",
+      "hanziSource": "假",
+      "pinyin": "jiǎ",
+      "sourceTextOcrRaw": "25.假 jia tt. gi doi, khongthat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-072",
+      "sourceRowIndexes": [
+        27,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v26",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 26,
+      "hanzi": "左右",
+      "hanziSource": "左右",
+      "pinyin": "zuǒ yòu",
+      "sourceTextOcrRaw": "26.左右zuoyou dt.khodng, khoang ching",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-073",
+      "sourceRowIndexes": [
+        3,
+        4
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v27",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 27,
+      "hanzi": "懒",
+      "hanziSource": "懒",
+      "pinyin": "lǎn",
+      "sourceTextOcrRaw": "27.懒 l&n tt. lutoi,ltoi nhac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-073",
+      "sourceRowIndexes": [
+        6,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v28",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 28,
+      "hanzi": "笨",
+      "hanziSource": "笨",
+      "pinyin": "bèn",
+      "sourceTextOcrRaw": "28.笨 ben tt. dan, ngoc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-073",
+      "sourceRowIndexes": [
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v29",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 29,
+      "hanzi": "粗心",
+      "hanziSource": "粗心",
+      "pinyin": "cū xīn",
+      "sourceTextOcrRaw": "29.粗心 cuxin tt. cautha",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-073",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v30",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 30,
+      "hanzi": "骄傲",
+      "hanziSource": "骄傲",
+      "pinyin": "jiāo ào",
+      "sourceTextOcrRaw": "30.骄傲jiaodao tt. kieungao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-073",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l15-v31",
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "sourceNumber": 31,
+      "hanzi": "害差",
+      "hanziSource": "害差",
+      "pinyin": "hài chà",
+      "sourceTextOcrRaw": "31.害差haixiu dgt. nguong ngung,then thing",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-073",
+      "sourceRowIndexes": [
+        12,
+        13,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v01",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 1,
+      "hanzi": "博上",
+      "hanziSource": "博上",
+      "pinyin": "bó shàng",
+      "sourceTextOcrRaw": "1.博上 b6shi  dt. tien st",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-081",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v02",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 2,
+      "hanzi": "签证",
+      "hanziSource": "签证",
+      "pinyin": "qiān zhèng",
+      "sourceTextOcrRaw": "2.签证 qianzheng  dt. thithuc,visa",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-081",
+      "sourceRowIndexes": [
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v03",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 3,
+      "hanzi": "报名",
+      "hanziSource": "报名",
+      "pinyin": "bào míng",
+      "sourceTextOcrRaw": "3.报名 bao ming  dgt. ghi danh,dang ky",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-081",
+      "sourceRowIndexes": [
+        9,
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v04",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 4,
+      "hanzi": "表格",
+      "hanziSource": "表格",
+      "pinyin": "biǎo gé",
+      "sourceTextOcrRaw": "4.表格 biaoge dt. ban ke khai,maudon",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-081",
+      "sourceRowIndexes": [
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v05",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 5,
+      "hanzi": "传真",
+      "hanziSource": "传真",
+      "pinyin": "chuán zhēn",
+      "sourceTextOcrRaw": "5.传真 chuunzhen agt. girifax",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-081",
+      "sourceRowIndexes": [
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v06",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 6,
+      "hanzi": "号码",
+      "hanziSource": "号码",
+      "pinyin": "hào mǎ",
+      "sourceTextOcrRaw": "6.号码 haoma dt. so hChuanHSK iaoTrinh G iet.com/ www.nhantrivie",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-081",
+      "sourceRowIndexes": [
+        17,
+        32,
+        35,
+        37,
+        38,
+        39
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v07",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 7,
+      "hanzi": "参观",
+      "hanziSource": "参观",
+      "pinyin": "cān guān",
+      "sourceTextOcrRaw": "7.参观 canguan  dgt. thamquan,ditham",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-082",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v08",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 8,
+      "hanzi": "激动",
+      "hanziSource": "激动",
+      "pinyin": "jī dòng",
+      "sourceTextOcrRaw": "8.激动 jidongtt.cam dong, xuc dong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-082",
+      "sourceRowIndexes": [
+        8,
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v09",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 9,
+      "hanzi": "小伙子",
+      "hanziSource": "小伙子",
+      "pinyin": "xiǎo huǒ zi",
+      "sourceTextOcrRaw": "9.小伙子xidohuOzidt. changtrai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-082",
+      "sourceRowIndexes": [
+        11,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v10",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 10,
+      "hanzi": "记者",
+      "hanziSource": "记者",
+      "pinyin": "jì zhě",
+      "sourceTextOcrRaw": "10.记者 jizhe  dt. phong vien,nhabao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-082",
+      "sourceRowIndexes": [
+        13,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v11",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 11,
+      "hanzi": "代表",
+      "hanziSource": "代表",
+      "pinyin": "dài biǎo",
+      "sourceTextOcrRaw": "*11.代表 daibiao dgt.dqi dien,thaymat",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-082",
+      "sourceRowIndexes": [
+        16,
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v12",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 12,
+      "hanzi": "恐怕",
+      "hanziSource": "恐怕",
+      "pinyin": "kǒng pà",
+      "sourceTextOcrRaw": "12.恐怕 kongpa pho. e rang, co le",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-082",
+      "sourceRowIndexes": [
+        18,
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v13",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 13,
+      "hanzi": "失望",
+      "hanziSource": "失望",
+      "pinyin": "shī wàng",
+      "sourceTextOcrRaw": "13.失望shiwangdgt.that vong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v14",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 14,
+      "hanzi": "郊区",
+      "hanziSource": "郊区",
+      "pinyin": "jiāo qū",
+      "sourceTextOcrRaw": "14.郊区jiaoqu dt.zing ngoai o",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        7,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v15",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 15,
+      "hanzi": "到底",
+      "hanziSource": "到底",
+      "pinyin": "dào dǐ",
+      "sourceTextOcrRaw": "15.到底 daodi  pho. (duoc dung trong cau hoi de nhan manh) rot cuoc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        11,
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v16",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 16,
+      "hanzi": "呀",
+      "hanziSource": "呀",
+      "pinyin": "ya",
+      "sourceTextOcrRaw": "16.呀 ya tro. (mor hien the cua than tu 啊, duoc dung o cuoi cau hoi de lam cho giong dieu tro nen nhc nhang hon)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        15,
+        17,
+        18,
+        19,
+        21,
+        22
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v17",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 17,
+      "hanzi": "导游",
+      "hanziSource": "导游",
+      "pinyin": "dǎo yóu",
+      "sourceTextOcrRaw": "17.导游 daoyou dt. hurong danviendulich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        23,
+        24
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v18",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 18,
+      "hanzi": "礼貌",
+      "hanziSource": "礼貌",
+      "pinyin": "lǐ mào",
+      "sourceTextOcrRaw": "18.礼貌limao tt.le phep, lich su",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        26,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v19",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 19,
+      "hanzi": "原谅",
+      "hanziSource": "原谅",
+      "pinyin": "yuán liàng",
+      "sourceTextOcrRaw": "19.原谅yuanliangdgt.tha thui",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-083",
+      "sourceRowIndexes": [
+        30,
+        31
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v20",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 20,
+      "hanzi": "挂",
+      "hanziSource": "挂",
+      "pinyin": "guà",
+      "sourceTextOcrRaw": "20.挂 gua dgt. treo, moc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v21",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 21,
+      "hanzi": "同情",
+      "hanziSource": "同情",
+      "pinyin": "tóng qíng",
+      "sourceTextOcrRaw": "21.同情 tongqing dgt. thong cam, dongtinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v22",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 22,
+      "hanzi": "推",
+      "hanziSource": "推",
+      "pinyin": "tuī",
+      "sourceTextOcrRaw": "22.推 tui dgt.hoan lai, day, trienkhai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        22,
+        24
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v23",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 23,
+      "hanzi": "预习",
+      "hanziSource": "预习",
+      "pinyin": "yù xí",
+      "sourceTextOcrRaw": "23.预习 yuxidgt.chuan bibai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        26
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v24",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 24,
+      "hanzi": "重点",
+      "hanziSource": "重点",
+      "pinyin": "zhòng diǎn",
+      "sourceTextOcrRaw": "24.重点zhongdiändt. trong diem, trongtam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        28,
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v25",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 25,
+      "hanzi": "马虎",
+      "hanziSource": "马虎",
+      "pinyin": "mǎ hǔ",
+      "sourceTextOcrRaw": "25.马虎 mahu tt. cau tha,lo denh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        30,
+        32
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v26",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 26,
+      "hanzi": "自信",
+      "hanziSource": "自信",
+      "pinyin": "zì xìn",
+      "sourceTextOcrRaw": "26.自信zixin tt.tuetin",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-087",
+      "sourceRowIndexes": [
+        35
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v27",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 27,
+      "hanzi": "冷静",
+      "hanziSource": "冷静",
+      "pinyin": "lěng jìng",
+      "sourceTextOcrRaw": "27.冷静lengjingtt.binh tinh, diemtinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-088",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v28",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 28,
+      "hanzi": "输",
+      "hanziSource": "输",
+      "pinyin": "shū",
+      "sourceTextOcrRaw": "28.输 shu dgt.thua",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-088",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v29",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 29,
+      "hanzi": "重视",
+      "hanziSource": "重视",
+      "pinyin": "zhòng shì",
+      "sourceTextOcrRaw": "29.重视 zhongshi dgt. xem trong, chri trong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-088",
+      "sourceRowIndexes": [
+        10,
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v30",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 30,
+      "hanzi": "敢",
+      "hanziSource": "敢",
+      "pinyin": "gǎn",
+      "sourceTextOcrRaw": "30.敢 gan dgt.dam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-088",
+      "sourceRowIndexes": [
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l16-v31",
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "sourceNumber": 31,
+      "hanzi": "尊重",
+      "hanziSource": "尊重",
+      "pinyin": "zūn zhòng",
+      "sourceTextOcrRaw": "31.尊重 zunzhongdgt.ton trong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-088",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v01",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 1,
+      "hanzi": "安娜",
+      "hanziSource": "安娜",
+      "pinyin": "ān nà",
+      "sourceTextOcrRaw": "1.安娜 Anna Anna (ten gurvi)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v02",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 2,
+      "hanzi": "六一儿童节",
+      "hanziSource": "六一儿童节",
+      "pinyin": "liù yī ér tóng jié",
+      "sourceTextOcrRaw": "2.六一儿童节Livyi Ertongjié ngay Quoc te thieunhi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        27,
+        28,
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v03",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 3,
+      "hanzi": "长城",
+      "hanziSource": "长城",
+      "pinyin": "cháng chéng",
+      "sourceTextOcrRaw": "3.长城Changchéng TruongThanh 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        24,
+        26,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v04",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 4,
+      "hanzi": "广播",
+      "hanziSource": "广播",
+      "pinyin": "guǎng bō",
+      "sourceTextOcrRaw": "4.广播 guangbo dt. chuong trinhphaitthanh/truyen hinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        7,
+        8,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v05",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 5,
+      "hanzi": "照",
+      "hanziSource": "照",
+      "pinyin": "zhào",
+      "sourceTextOcrRaw": "5.照 zhao dgt. chup (anh)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v06",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 6,
+      "hanzi": "倒",
+      "hanziSource": "倒",
+      "pinyin": "dào",
+      "sourceTextOcrRaw": "6.倒 dao  pho. (duoc dung de chi sur tuong phan) nhung,lai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        13,
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v07",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 7,
+      "hanzi": "毛",
+      "hanziSource": "毛",
+      "pinyin": "máo",
+      "sourceTextOcrRaw": "7.毛 máo dt.long",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v08",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 8,
+      "hanzi": "抱",
+      "hanziSource": "抱",
+      "pinyin": "bào",
+      "sourceTextOcrRaw": "8.抱 bao dgt. be, bong, om",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        30,
+        31
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v09",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 9,
+      "hanzi": "干",
+      "hanziSource": "干",
+      "pinyin": "gàn",
+      "sourceTextOcrRaw": "9.干 gan dgt.lam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        33
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v10",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 10,
+      "hanzi": "严格",
+      "hanziSource": "严格",
+      "pinyin": "yán gé",
+      "sourceTextOcrRaw": "10.严格 yange tt. nghiem khac,nghiemngat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        35,
+        37
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v11",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 11,
+      "hanzi": "难受",
+      "hanziSource": "难受",
+      "pinyin": "nán shòu",
+      "sourceTextOcrRaw": "11.难受 nánshou tt. burc boi,buon rau",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        39,
+        40
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v12",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 12,
+      "hanzi": "趟",
+      "hanziSource": "趟",
+      "pinyin": "tàng",
+      "sourceTextOcrRaw": "12.趟 tang  luong. (duoc dung de chi so lan di lai) lan, chuyen",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v13",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 13,
+      "hanzi": "放暑假",
+      "hanziSource": "放暑假",
+      "pinyin": "fàng shǔ jià",
+      "sourceTextOcrRaw": "13.放暑假fang shujia nghihe",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        10,
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v14",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 14,
+      "hanzi": "老虎",
+      "hanziSource": "老虎",
+      "pinyin": "lǎo hǔ",
+      "sourceTextOcrRaw": "14.老虎 laohu dt. ho, cop",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v15",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 15,
+      "hanzi": "人口",
+      "hanziSource": "人口",
+      "pinyin": "rén kǒu",
+      "sourceTextOcrRaw": "15.人口 rukou dt. cong ope",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        15,
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v16",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 16,
+      "hanzi": "排队",
+      "hanziSource": "排队",
+      "pinyin": "pái duì",
+      "sourceTextOcrRaw": "16.排队 pai dui  dgt. xephang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        18,
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v17",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 17,
+      "hanzi": "活泼",
+      "hanziSource": "活泼",
+      "pinyin": "huó pō",
+      "sourceTextOcrRaw": "17.活泼 huopo tt. hoat bat,nhanhnhen",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        20,
+        21
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v18",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 18,
+      "hanzi": "社会",
+      "hanziSource": "社会",
+      "pinyin": "shè huì",
+      "sourceTextOcrRaw": "18.社会shehui dt.xahoi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v19",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 19,
+      "hanzi": "竞争",
+      "hanziSource": "竞争",
+      "pinyin": "jìng zhēng",
+      "sourceTextOcrRaw": "19.竞争jingzheng dgt．canh tranh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        7,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v20",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 20,
+      "hanzi": "森林",
+      "hanziSource": "森林",
+      "pinyin": "sēn lín",
+      "sourceTextOcrRaw": "20.森林senlin dt. ritngram",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v21",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 21,
+      "hanzi": "剩",
+      "hanziSource": "剩",
+      "pinyin": "shèng",
+      "sourceTextOcrRaw": "21.剩 sheng dgt.  con lai",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v22",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 22,
+      "hanzi": "暖和",
+      "hanziSource": "暖和",
+      "pinyin": "nuǎn huo",
+      "sourceTextOcrRaw": "22.暖和nuanhuo ott. am ap 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        14,
+        21
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v23",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 23,
+      "hanzi": "海洋",
+      "hanziSource": "海洋",
+      "pinyin": "hǎi yáng",
+      "sourceTextOcrRaw": "23.海洋 haiyang dt.  bien, dai duong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        22,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v24",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 24,
+      "hanzi": "底",
+      "hanziSource": "底",
+      "pinyin": "dǐ",
+      "sourceTextOcrRaw": "24.底 !P dt.   diy",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        25
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v25",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 25,
+      "hanzi": "美人鱼",
+      "hanziSource": "美人鱼",
+      "pinyin": "měi rén yú",
+      "sourceTextOcrRaw": "*25.美人鱼 Meirényu dl. nguoi ca",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        27
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v26",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 26,
+      "hanzi": "公里",
+      "hanziSource": "公里",
+      "pinyin": "gōng lǐ",
+      "sourceTextOcrRaw": "26.公里 gongli lugng. kilomet",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        29,
+        30
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v27",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 27,
+      "hanzi": "仍然",
+      "hanziSource": "仍然",
+      "pinyin": "réng rán",
+      "sourceTextOcrRaw": "27.仍然 rengran pho. van",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        31
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v28",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 28,
+      "hanzi": "排列",
+      "hanziSource": "排列",
+      "pinyin": "pái liè",
+      "sourceTextOcrRaw": "28.排列 pailie dgt.sap xep (theo thie tur)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        32,
+        33
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-v29",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "sourceNumber": 29,
+      "hanzi": "梦",
+      "hanziSource": "梦",
+      "pinyin": "mèng",
+      "sourceTextOcrRaw": "29.梦 meng dt.giac mo",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-101",
+      "sourceRowIndexes": [
+        35
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v01",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 1,
+      "hanzi": "降落",
+      "hanziSource": "降落",
+      "pinyin": "jiàng luò",
+      "sourceTextOcrRaw": "1.降落jiangluodgt.aap xuong,ha canh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-109",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v02",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 2,
+      "hanzi": "火",
+      "hanziSource": "火",
+      "pinyin": "huǒ",
+      "sourceTextOcrRaw": "2.火 huo  tt.  chay, dait, dupcnhieunguoi ua chuong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-109",
+      "sourceRowIndexes": [
+        7,
+        9,
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v03",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 3,
+      "hanzi": "作者",
+      "hanziSource": "作者",
+      "pinyin": "zuò zhě",
+      "sourceTextOcrRaw": "3.作者 zuozhédt.tac gia",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-109",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v04",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 4,
+      "hanzi": "交通",
+      "hanziSource": "交通",
+      "pinyin": "jiāo tōng",
+      "sourceTextOcrRaw": "4.交通jiaotong dt.gicto thong.thongtinlien lac",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-109",
+      "sourceRowIndexes": [
+        12,
+        13,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v05",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 5,
+      "hanzi": "技术",
+      "hanziSource": "技术",
+      "pinyin": "jì shù",
+      "sourceTextOcrRaw": "5.技术jishu dt.ky thuat, cong nghe",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-109",
+      "sourceRowIndexes": [
+        17,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v06",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 6,
+      "hanzi": "是否",
+      "hanziSource": "是否",
+      "pinyin": "shì fǒu",
+      "sourceTextOcrRaw": "6.是否 shifoupho. hay khong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-109",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v07",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 7,
+      "hanzi": "秒",
+      "hanziSource": "秒",
+      "pinyin": "miǎo",
+      "sourceTextOcrRaw": "7.秒 midoluong. giay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v08",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 8,
+      "hanzi": "方式",
+      "hanziSource": "方式",
+      "pinyin": "fāng shì",
+      "sourceTextOcrRaw": "*8.方式 fangshi dt. phuong thiic,caich thiic",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        6,
+        7,
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v09",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 9,
+      "hanzi": "受不了",
+      "hanziSource": "受不了",
+      "pinyin": "shòu bù liǎo",
+      "sourceTextOcrRaw": "9.受不了shoubuliaochiuu khongnoi,chiu khongduoc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        10,
+        12,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v10",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 10,
+      "hanzi": "日记",
+      "hanziSource": "日记",
+      "pinyin": "rì jì",
+      "sourceTextOcrRaw": "10.日记 rijdt.nhat ky",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v11",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 11,
+      "hanzi": "安全",
+      "hanziSource": "安全",
+      "pinyin": "ān quán",
+      "sourceTextOcrRaw": "11.安全 anquán tt. an toan",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        15,
+        16
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v12",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 12,
+      "hanzi": "密码",
+      "hanziSource": "密码",
+      "pinyin": "mì mǎ",
+      "sourceTextOcrRaw": "12.密码 mimadt. matma",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v13",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 13,
+      "hanzi": "允许",
+      "hanziSource": "允许",
+      "pinyin": "yǔn xǔ",
+      "sourceTextOcrRaw": "13.允许 yunxudgt.chu phep",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-110",
+      "sourceRowIndexes": [
+        18,
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v14",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 14,
+      "hanzi": "座",
+      "hanziSource": "座",
+      "pinyin": "zuò",
+      "sourceTextOcrRaw": "14.座 zuoluong. (duoc 界 dung cho cay cau, nui, cao oc...) toa, hon, cay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        4,
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v15",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 15,
+      "hanzi": "桥",
+      "hanziSource": "桥",
+      "pinyin": "qiáo",
+      "sourceTextOcrRaw": "15.桥 qiáo dt.cau",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v16",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 16,
+      "hanzi": "危险",
+      "hanziSource": "危险",
+      "pinyin": "wēi xiǎn",
+      "sourceTextOcrRaw": "16.危险 weixiantt. nguy hiem",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        8,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v17",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 17,
+      "hanzi": "接着",
+      "hanziSource": "接着",
+      "pinyin": "jiē zhe",
+      "sourceTextOcrRaw": "17.接着 jiezhe pho. ngay sau do",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        11,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v18",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 18,
+      "hanzi": "警察",
+      "hanziSource": "警察",
+      "pinyin": "jǐng chá",
+      "sourceTextOcrRaw": "18.警察 jingcha dt. canh sat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        15,
+        16
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v19",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 19,
+      "hanzi": "抓",
+      "hanziSource": "抓",
+      "pinyin": "zhuā",
+      "sourceTextOcrRaw": "19.抓 zhua dgt. bat, tuim",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v20",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 20,
+      "hanzi": "咸",
+      "hanziSource": "咸",
+      "pinyin": "xián",
+      "sourceTextOcrRaw": "20.咸 xián tt.  man",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v21",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 21,
+      "hanzi": "矿泉水",
+      "hanziSource": "矿泉水",
+      "pinyin": "kuàng quán shuǐ",
+      "sourceTextOcrRaw": "21.矿泉水kuangquanshuidt. nuoc suoi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-111",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v22",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 22,
+      "hanzi": "付款",
+      "hanziSource": "付款",
+      "pinyin": "fù kuǎn",
+      "sourceTextOcrRaw": "22.付款 fu kuan tratien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v23",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 23,
+      "hanzi": "举",
+      "hanziSource": "举",
+      "pinyin": "jǔ",
+      "sourceTextOcrRaw": "23.举 贝! dgt. neu, dua ra",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v24",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 24,
+      "hanzi": "迷路",
+      "hanziSource": "迷路",
+      "pinyin": "mí lù",
+      "sourceTextOcrRaw": "24.迷路 mi lu dgt.lacduong",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v25",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 25,
+      "hanzi": "地址",
+      "hanziSource": "地址",
+      "pinyin": "dì zhǐ",
+      "sourceTextOcrRaw": "25.地址 dizhi dt.dia chi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v26",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 26,
+      "hanzi": "地点",
+      "hanziSource": "地点",
+      "pinyin": "dì diǎn",
+      "sourceTextOcrRaw": "26.地点 didian dt.dia diem, noi 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        9,
+        11,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v27",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 27,
+      "hanzi": "世纪",
+      "hanziSource": "世纪",
+      "pinyin": "shì jì",
+      "sourceTextOcrRaw": "27.世纪 shiji dt. the'ky”",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v28",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 28,
+      "hanzi": "邮局",
+      "hanziSource": "邮局",
+      "pinyin": "yóu jú",
+      "sourceTextOcrRaw": "28.邮局 youju dt. bir dien",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v29",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 29,
+      "hanzi": "收",
+      "hanziSource": "收",
+      "pinyin": "shōu",
+      "sourceTextOcrRaw": "29.收 shou dgt. nhan",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        21
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v30",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 30,
+      "hanzi": "信封",
+      "hanziSource": "信封",
+      "pinyin": "xìn fēng",
+      "sourceTextOcrRaw": "30.信封 xinfeng dt. phongthu, bithu",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        22,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v31",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 31,
+      "hanzi": "网站",
+      "hanziSource": "网站",
+      "pinyin": "wǎng zhàn",
+      "sourceTextOcrRaw": "31.网站 wangzhan dt. trang web",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        25,
+        26
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l18-v32",
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "sourceNumber": 32,
+      "hanzi": "信息",
+      "hanziSource": "信息",
+      "pinyin": "xìn xī",
+      "sourceTextOcrRaw": "32.信息 [xu(x dt. tin tic, thongtin",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-115",
+      "sourceRowIndexes": [
+        27,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v01",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 1,
+      "hanzi": "学期",
+      "hanziSource": "学期",
+      "pinyin": "xué qī",
+      "sourceTextOcrRaw": "1.学期xuéqi dt.hoc ky 道",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        4
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v02",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 2,
+      "hanzi": "出生",
+      "hanziSource": "出生（",
+      "pinyin": "chū shēng",
+      "sourceTextOcrRaw": "2.出生（ chusheng dgt. ra doi, sinhra",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v03",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 3,
+      "hanzi": "性别",
+      "hanziSource": "性别",
+      "pinyin": "xìng bié",
+      "sourceTextOcrRaw": "3.性别 」xingbiédt.gioitinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v04",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 4,
+      "hanzi": "道歉",
+      "hanziSource": "道歉",
+      "pinyin": "dào qiàn",
+      "sourceTextOcrRaw": "4.道歉 dao qiandgt.xin loi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v05",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 5,
+      "hanzi": "打印",
+      "hanziSource": "打印（",
+      "pinyin": "dǎ yìn",
+      "sourceTextOcrRaw": "5.打印（ dayin dgt. in",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v06",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 6,
+      "hanzi": "复印",
+      "hanziSource": "复印",
+      "pinyin": "fù yìn",
+      "sourceTextOcrRaw": "6.复印fuyin dgt. photocopy, sao chup 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        14,
+        16,
+        28
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v07",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 7,
+      "hanzi": "饺子",
+      "hanziSource": "饺子",
+      "pinyin": "jiǎo zi",
+      "sourceTextOcrRaw": "7.饺子 !ZOD!! dt. banhcheo",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v08",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 8,
+      "hanzi": "刀",
+      "hanziSource": "刀",
+      "pinyin": "dāo",
+      "sourceTextOcrRaw": "8.刀 dao dt. condao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        30
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v09",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 9,
+      "hanzi": "破",
+      "hanziSource": "破",
+      "pinyin": "pò",
+      "sourceTextOcrRaw": "9.破 po tt. hi dit,hi thiing",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        31,
+        32
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v10",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 10,
+      "hanzi": "脱",
+      "hanziSource": "脱",
+      "pinyin": "tuō",
+      "sourceTextOcrRaw": "10.脱 tuo dgt. cori ra",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        33
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v11",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 11,
+      "hanzi": "理发",
+      "hanziSource": "理发",
+      "pinyin": "lǐ fà",
+      "sourceTextOcrRaw": "11.理发 Iifa dgt. cat toc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        35
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v12",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 12,
+      "hanzi": "包子",
+      "hanziSource": "包子",
+      "pinyin": "bāo zi",
+      "sourceTextOcrRaw": "12.包子 baozi dt.banh bao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        37
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v13",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 13,
+      "hanzi": "零钱",
+      "hanziSource": "零钱",
+      "pinyin": "líng qián",
+      "sourceTextOcrRaw": "13.零钱 lingqiándt.tienle",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-123",
+      "sourceRowIndexes": [
+        39
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v14",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 14,
+      "hanzi": "打招呼",
+      "hanziSource": "打招呼",
+      "pinyin": "dǎ zhāo hū",
+      "sourceTextOcrRaw": "14.打招呼dä zhaohuchao hi, chao",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v15",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 15,
+      "hanzi": "戴",
+      "hanziSource": "戴",
+      "pinyin": "dài",
+      "sourceTextOcrRaw": "15.戴 !Rp dgt.deo,mang",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        8
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v16",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 16,
+      "hanzi": "眼镜",
+      "hanziSource": "眼镜",
+      "pinyin": "yǎn jìng",
+      "sourceTextOcrRaw": "16.眼镜 yanjingdt.mat kinh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        10
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v17",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 17,
+      "hanzi": "舞蹈",
+      "hanziSource": "舞蹈",
+      "pinyin": "wǔ dǎo",
+      "sourceTextOcrRaw": "*17.舞蹈 wudaodt.dieumua",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        12
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v18",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 18,
+      "hanzi": "国籍",
+      "hanziSource": "国籍",
+      "pinyin": "guó jí",
+      "sourceTextOcrRaw": "18.国籍 yoin sonb p onb",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v19",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 19,
+      "hanzi": "拾",
+      "hanziSource": "拾",
+      "pinyin": "shí",
+      "sourceTextOcrRaw": "19.拾 tái dgt. gio len, dualen",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        16,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v20",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 20,
+      "hanzi": "胳膊",
+      "hanziSource": "胳膊",
+      "pinyin": "gē bó",
+      "sourceTextOcrRaw": "20.胳膊 gebo dt. canh tay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v21",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 21,
+      "hanzi": "转",
+      "hanziSource": "转",
+      "pinyin": "zhuǎn",
+      "sourceTextOcrRaw": "21.转 zhuan dgt: quay, xoay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-124",
+      "sourceRowIndexes": [
+        22,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v22",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 22,
+      "hanzi": "租",
+      "hanziSource": "租",
+      "pinyin": "zū",
+      "sourceTextOcrRaw": "22.租 nz dgt.thue,chothue",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-128",
+      "sourceRowIndexes": [
+        17
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v23",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 23,
+      "hanzi": "吵",
+      "hanziSource": "吵",
+      "pinyin": "chǎo",
+      "sourceTextOcrRaw": "*23.吵 chao ott. onao",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-128",
+      "sourceRowIndexes": [
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v24",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 24,
+      "hanzi": "厨房",
+      "hanziSource": "厨房",
+      "pinyin": "chú fáng",
+      "sourceTextOcrRaw": "24.厨房 chufang dt. nha bep",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-128",
+      "sourceRowIndexes": [
+        19
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v25",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 25,
+      "hanzi": "房东",
+      "hanziSource": "房东",
+      "pinyin": "fáng dōng",
+      "sourceTextOcrRaw": "25.房东 fongdongdt.chunha (nhachothue)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-128",
+      "sourceRowIndexes": [
+        20,
+        22
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v26",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 26,
+      "hanzi": "占线",
+      "hanziSource": "占线",
+      "pinyin": "zhàn xiàn",
+      "sourceTextOcrRaw": "26.占线zhanxiandgt.（duong daydien thoai) ban",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-128",
+      "sourceRowIndexes": [
+        24,
+        25,
+        26
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v27",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 27,
+      "hanzi": "功夫",
+      "hanziSource": "功夫",
+      "pinyin": "gōng fu",
+      "sourceTextOcrRaw": "27.功夫 gongfu dt. vo thuat, monvokungfu",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-129",
+      "sourceRowIndexes": [
+        5,
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v28",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 28,
+      "hanzi": "乒乓球",
+      "hanziSource": "乒乓球",
+      "pinyin": "pīng pāng qiú",
+      "sourceTextOcrRaw": "28.乒乓球pingpangqiudt.bong upq",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-129",
+      "sourceRowIndexes": [
+        7,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v29",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 29,
+      "hanzi": "羽毛球",
+      "hanziSource": "羽毛球",
+      "pinyin": "yǔ máo qiú",
+      "sourceTextOcrRaw": "29.羽毛球yumáoqiudt．cau long",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-129",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v30",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 30,
+      "hanzi": "场",
+      "hanziSource": "场",
+      "pinyin": "chǎng",
+      "sourceTextOcrRaw": "30.场 chang lugng.(duoc dungcho thethao haycac hoat dong giai tr...) tran",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-129",
+      "sourceRowIndexes": [
+        12,
+        13,
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v31",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 31,
+      "hanzi": "禁止",
+      "hanziSource": "禁止",
+      "pinyin": "jìn zhǐ",
+      "sourceTextOcrRaw": "31.禁止 jinzhi dgt. cam",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-129",
+      "sourceRowIndexes": [
+        16
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l19-v32",
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "sourceNumber": 32,
+      "hanzi": "座位",
+      "hanziSource": "座位",
+      "pinyin": "zuò wèi",
+      "sourceTextOcrRaw": "32.座位 zuoweidt.cho ngoi",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-129",
+      "sourceRowIndexes": [
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v01",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 1,
+      "hanzi": "长江",
+      "hanziSource": "长江",
+      "pinyin": "cháng jiāng",
+      "sourceTextOcrRaw": "1.长江 Changjiang song Truong Giang (song dai nhat ? Trung Quoc)",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        23,
+        24,
+        25,
+        27
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v02",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 2,
+      "hanzi": "航班",
+      "hanziSource": "航班",
+      "pinyin": "háng bān",
+      "sourceTextOcrRaw": "2.航班 hangban  dt. chuyen bay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        9,
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v03",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 3,
+      "hanzi": "首都机场",
+      "hanziSource": "首都机场",
+      "pinyin": "shǒu dū jī chǎng",
+      "sourceTextOcrRaw": "3.首都机场Shoudu Jichang san bayThuDo",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        28,
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v04",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 4,
+      "hanzi": "高速公路",
+      "hanziSource": "高速公路",
+      "pinyin": "gāo sù gōng lù",
+      "sourceTextOcrRaw": "4.高速公路gaosu gonglu dutongcaotoc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v05",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 5,
+      "hanzi": "登机牌",
+      "hanziSource": "登机牌",
+      "pinyin": "dēng jī pái",
+      "sourceTextOcrRaw": "5.登机牌 dengjipai dt. the lenmay bay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        17,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v06",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 6,
+      "hanzi": "首都",
+      "hanziSource": "首都",
+      "pinyin": "shǒu dū",
+      "sourceTextOcrRaw": "6.首都 shoudu dt. thudo",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        19,
+        20
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v07",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 7,
+      "hanzi": "旅行",
+      "hanziSource": "旅行",
+      "pinyin": "lǚ xíng",
+      "sourceTextOcrRaw": "7.旅行luixingdgt.du lich",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v08",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 8,
+      "hanzi": "怪",
+      "hanziSource": "怪",
+      "pinyin": "guài",
+      "sourceTextOcrRaw": "*8.怪 guai pho. rat, vo cung",
+      "isBeyondHsk4Marked": true,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        8,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v09",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 9,
+      "hanzi": "可怜",
+      "hanziSource": "可怜",
+      "pinyin": "kě lián",
+      "sourceTextOcrRaw": "9.可怜kelian tt.dang thuong,toinghiep",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        11,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v10",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 10,
+      "hanzi": "对面",
+      "hanziSource": "对面（",
+      "pinyin": "duì miàn",
+      "sourceTextOcrRaw": "10.对面（ duimian dt.dot dien,truocmat",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        14,
+        15
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v11",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 11,
+      "hanzi": "烤鸭",
+      "hanziSource": "烤鸭",
+      "pinyin": "kǎo yā",
+      "sourceTextOcrRaw": "11.烤鸭kaoya dt.wit quay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        16,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v12",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 12,
+      "hanzi": "祝贺",
+      "hanziSource": "祝贺",
+      "pinyin": "zhù hè",
+      "sourceTextOcrRaw": "12.祝贺zhuhe·dgt.chuic Bunu",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        20,
+        21
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v13",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 13,
+      "hanzi": "合格",
+      "hanziSource": "合格",
+      "pinyin": "hé gé",
+      "sourceTextOcrRaw": "13.合格hégé tt.dat tieu chuan,datyeucau ChuanHSK",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-137",
+      "sourceRowIndexes": [
+        22,
+        23,
+        32
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v14",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 14,
+      "hanzi": "干杯",
+      "hanziSource": "干杯",
+      "pinyin": "gān bēi",
+      "sourceTextOcrRaw": "14.干杯gan bei dgt.can ly",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        5
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v15",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 15,
+      "hanzi": "民族",
+      "hanziSource": "民族",
+      "pinyin": "mín zú",
+      "sourceTextOcrRaw": "15.民族 minzu dt.dan toc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        6
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v16",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 16,
+      "hanzi": "打扮",
+      "hanziSource": "打扮",
+      "pinyin": "dǎ bàn",
+      "sourceTextOcrRaw": "16.打扮 däban dgt.trang diem",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        7,
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v17",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 17,
+      "hanzi": "笑话",
+      "hanziSource": "笑话",
+      "pinyin": "xiào huà",
+      "sourceTextOcrRaw": "17.笑话xiaohua dt. truyen",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        11
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v18",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 18,
+      "hanzi": "存",
+      "hanziSource": "存",
+      "pinyin": "cún",
+      "sourceTextOcrRaw": "18.存 cun m8 ap",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v19",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 19,
+      "hanzi": "钥匙",
+      "hanziSource": "钥匙",
+      "pinyin": "yào shi",
+      "sourceTextOcrRaw": "19.钥匙 yaoshi dt.chiakhoa",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        14
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v20",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 20,
+      "hanzi": "究竟",
+      "hanziSource": "究竟",
+      "pinyin": "jiū jìng",
+      "sourceTextOcrRaw": "20.究竟jiujingpho.（duoc dung trong cau hoi d? nhan manh) rot cuoc",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-138",
+      "sourceRowIndexes": [
+        15,
+        16,
+        18
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v21",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 21,
+      "hanzi": "棵",
+      "hanziSource": "棵",
+      "pinyin": "kē",
+      "sourceTextOcrRaw": "21.棵 keluong. (duoc dung cho thuc vat) cay, ngon",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        6,
+        7
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v22",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 22,
+      "hanzi": "汤",
+      "hanziSource": "汤",
+      "pinyin": "tāng",
+      "sourceTextOcrRaw": "22.汤 tang  dt. canh, sup",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        9
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v23",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 23,
+      "hanzi": "对话",
+      "hanziSource": "对话",
+      "pinyin": "duì huà",
+      "sourceTextOcrRaw": "23.对话 duihua dgt. doi thoqi, tiepxuic",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        11,
+        13
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v24",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 24,
+      "hanzi": "普通话",
+      "hanziSource": "普通话",
+      "pinyin": "pǔ tōng huà",
+      "sourceTextOcrRaw": "24.普通话putonghuadt.tieng phothong,tiengQuan thoqi 生词",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        14,
+        15,
+        16,
+        23
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v25",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 25,
+      "hanzi": "小吃",
+      "hanziSource": "小吃",
+      "pinyin": "xiǎo chī",
+      "sourceTextOcrRaw": "25.小吃xiaochidt.mon an 102",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        24,
+        25
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v26",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 26,
+      "hanzi": "收拾",
+      "hanziSource": "收拾",
+      "pinyin": "shōu shí",
+      "sourceTextOcrRaw": "26.收拾 shoushi dgt.thu don, thu xep",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        27,
+        29
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v27",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 27,
+      "hanzi": "出发",
+      "hanziSource": "出发",
+      "pinyin": "chū fā",
+      "sourceTextOcrRaw": "27.出发 chufa dgt. xuait phat, khorhanh",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        30,
+        31
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v28",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 28,
+      "hanzi": "辣",
+      "hanziSource": "辣",
+      "pinyin": "là",
+      "sourceTextOcrRaw": "28.辣 QI tt. cay",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        32
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v29",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 29,
+      "hanzi": "香",
+      "hanziSource": "香",
+      "pinyin": "xiāng",
+      "sourceTextOcrRaw": "29.香 xiang tt. thom",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        33
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-v30",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "sourceNumber": 30,
+      "hanzi": "酸",
+      "hanziSource": "酸",
+      "pinyin": "suān",
+      "sourceTextOcrRaw": "30.酸 suan tt. chua",
+      "isBeyondHsk4Marked": false,
+      "sourcePageRef": "hsk4l-tb-source-page-142",
+      "sourceRowIndexes": [
+        35
+      ],
+      "sourceEvidence": "lesson-page-ocr",
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    }
+  ]
+}

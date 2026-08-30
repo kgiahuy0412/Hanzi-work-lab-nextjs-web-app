@@ -15,7 +15,11 @@ test("the textbook bundle supplies all 15 HSK 1 lessons for the four learning mo
   assert.equal(contentModule.HSK_LESSONS.reduce((total, item) => total + item.grammar.length, 0), 45);
   assert.equal(contentModule.HSK_LESSONS.reduce((total, item) => total + item.dialogues.length, 0), 45);
   assert.equal(contentModule.HSK_LESSONS.reduce((total, item) => total + item.exercises.length, 0), 30);
-  assert.equal(contentModule.HSK_LESSONS.reduce((total, item) => total + item.writingCharacters.length, 0), 52);
+  assert.equal(contentModule.HSK_LESSONS.reduce((total, item) => total + item.writingCharacters.length, 0), 172);
+  assert.ok(contentModule.HSK_LESSONS.every((item) => item.writingCharacters.length === item.vocabulary.length));
+  assert.ok(contentModule.HSK_LESSONS.every((item) => (
+    item.writingCharacters.every((writingItem, index) => writingItem.id === item.vocabulary[index].id)
+  )));
   assert.ok(contentModule.HSK_LESSONS.every((item) => item.vocabulary.every((word) => word.example && word.examplePinyin && word.translation)));
 
   const lesson = contentModule.getHskLessonContent("hsk-1", "hsk1-bai-01-chao-anh");
@@ -56,7 +60,7 @@ test("HSK lesson progress reaches completion only after all four modes are compl
     vocabulary: lesson.vocabulary.map((word) => word.id),
     pronunciation: lesson.vocabulary.map((word) => word.id),
     exerciseBestPercent: 100,
-    writing: lesson.writingCharacters.map((character) => character.hanzi),
+    writing: lesson.writingCharacters.map((character) => character.id),
   };
   assert.equal(progressModule.calculateHskLessonProgress(lesson, complete), 100);
   assert.deepEqual(progressModule.parseHskLessonProgress("not-json"), progressModule.EMPTY_HSK_LESSON_PROGRESS);

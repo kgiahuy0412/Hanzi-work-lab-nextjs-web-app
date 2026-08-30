@@ -1,0 +1,27 @@
+{
+  "schemaVersion": "1.0.0",
+  "properNames": [
+    {
+      "id": "hsk2-tb-l01-proper-canonical",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "hanzi": "花花",
+      "pinyin": "huā huā",
+      "meaningVi": "Hoa Hoa",
+      "noteVi": "tên con mèo",
+      "sourcePageRef": "hsk2-tb-source-page-017",
+      "sourceEvidence": "table-of-contents-and-dialogue-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-proper-canonical",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "hanzi": "杨笑笑",
+      "pinyin": "yáng xiào xiào",
+      "meaningVi": "Dương Tiếu Tiếu",
+      "noteVi": "tên người",
+      "sourcePageRef": "hsk2-tb-source-page-113",
+      "sourceEvidence": "table-of-contents-and-dialogue-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    }
+  ]
+}

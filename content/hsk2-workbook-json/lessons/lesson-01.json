@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-01",
+  "lessonNumber": 1,
+  "status": "review",
+  "title": {
+    "zh": "九月去北京旅游最好。",
+    "pinyin": "jiǔ yuè qù běi jīng lǚ yóu zuì hǎo 。",
+    "vi": "Nếu đi Bắc Kinh để du lịch thì tốt nhất là đi vào tháng chín."
+  },
+  "source": {
+    "pdfPages": [
+      7,
+      16
+    ],
+    "printedPages": [
+      7,
+      16
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-007",
+      "hsk2-wb-source-page-008",
+      "hsk2-wb-source-page-009",
+      "hsk2-wb-source-page-010",
+      "hsk2-wb-source-page-011",
+      "hsk2-wb-source-page-012",
+      "hsk2-wb-source-page-013",
+      "hsk2-wb-source-page-014",
+      "hsk2-wb-source-page-015",
+      "hsk2-wb-source-page-016"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-01-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-01-listening-part-1",
+        "hsk2-wb-lesson-01-listening-part-2",
+        "hsk2-wb-lesson-01-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-01-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-01-reading-part-1",
+        "hsk2-wb-lesson-01-reading-part-2",
+        "hsk2-wb-lesson-01-reading-part-3",
+        "hsk2-wb-lesson-01-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-01-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-01-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-01-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-01-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

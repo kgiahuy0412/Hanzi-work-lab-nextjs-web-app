@@ -1,0 +1,123 @@
+{
+  "id": "hsk5l-lesson-33",
+  "number": 33,
+  "unitId": "hsk5l-unit-11",
+  "titleZh": "以堵治堵——缓解交通有妙招",
+  "titleVi": "\"Dùng tắc trị tắc\" - tuyệt chiêu giảm tải giao thông",
+  "sourcePdfPages": {
+    "start": 131,
+    "end": 139
+  },
+  "sourcePrintedPages": {
+    "start": 130,
+    "end": 138
+  },
+  "audioTracks": [
+    "33-1",
+    "33-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 131,
+      "rowIndex": 4,
+      "matchedTextOcr": "热身 请你说说这幅图片反映了什么问题，它对你的生活有何影响。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 131,
+      "rowIndex": 11,
+      "matchedTextOcr": "课文以堵治堵 一一缓解交通有妙招 （744字） 33-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 133,
+      "rowIndex": 23,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 136,
+      "rowIndex": 20,
+      "matchedTextOcr": "练习1 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 138,
+      "rowIndex": 2,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 138,
+      "rowIndex": 13,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-33-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-33-01",
+    "hsk5l-annotation-33-01",
+    "hsk5l-practice-33-01",
+    "hsk5l-extension-33-01",
+    "hsk5l-application-33-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0010",
+    "hsk5l-lexeme-0070",
+    "hsk5l-lexeme-0099",
+    "hsk5l-lexeme-0112",
+    "hsk5l-lexeme-0144",
+    "hsk5l-lexeme-0145",
+    "hsk5l-lexeme-0156",
+    "hsk5l-lexeme-0183",
+    "hsk5l-lexeme-0226",
+    "hsk5l-lexeme-0229",
+    "hsk5l-lexeme-0255",
+    "hsk5l-lexeme-0259",
+    "hsk5l-lexeme-0266",
+    "hsk5l-lexeme-0280",
+    "hsk5l-lexeme-0283",
+    "hsk5l-lexeme-0292",
+    "hsk5l-lexeme-0296",
+    "hsk5l-lexeme-0308",
+    "hsk5l-lexeme-0326",
+    "hsk5l-lexeme-0343",
+    "hsk5l-lexeme-0368",
+    "hsk5l-lexeme-0408",
+    "hsk5l-lexeme-0413",
+    "hsk5l-lexeme-0431",
+    "hsk5l-lexeme-0440",
+    "hsk5l-lexeme-0454",
+    "hsk5l-lexeme-0457",
+    "hsk5l-lexeme-0463",
+    "hsk5l-lexeme-0471",
+    "hsk5l-lexeme-0475",
+    "hsk5l-lexeme-0486",
+    "hsk5l-lexeme-0495"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-009",
+    "hsk5l-beyond-level-038",
+    "hsk5l-beyond-level-053",
+    "hsk5l-beyond-level-060",
+    "hsk5l-beyond-level-119",
+    "hsk5l-beyond-level-144"
+  ],
+  "vocabularyCount": 32,
+  "beyondLevelVocabularyCount": 6,
+  "allVocabularyCount": 38,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

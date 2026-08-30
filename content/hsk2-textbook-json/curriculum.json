@@ -1,0 +1,224 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-standard-course-textbook",
+  "title": "Giáo trình chuẩn HSK 2",
+  "lessonCount": 15,
+  "lessons": [
+    {
+      "lessonNumber": 1,
+      "lessonRef": "lessons/lesson-01.json",
+      "titleZh": "九月去北京旅游最好。",
+      "titleVi": "Nếu đi Bắc Kinh để du lịch thì tốt nhất là đi vào tháng chín.",
+      "pdfPages": [
+        15,
+        22
+      ],
+      "printedPages": [
+        15,
+        22
+      ]
+    },
+    {
+      "lessonNumber": 2,
+      "lessonRef": "lessons/lesson-02.json",
+      "titleZh": "我每天六点起床。",
+      "titleVi": "Hằng ngày tôi thức dậy lúc 6 giờ.",
+      "pdfPages": [
+        23,
+        30
+      ],
+      "printedPages": [
+        23,
+        30
+      ]
+    },
+    {
+      "lessonNumber": 3,
+      "lessonRef": "lessons/lesson-03.json",
+      "titleZh": "左边那个红色的是我的。",
+      "titleVi": "Ly màu đỏ ở bên trái là của tôi.",
+      "pdfPages": [
+        31,
+        38
+      ],
+      "printedPages": [
+        31,
+        38
+      ]
+    },
+    {
+      "lessonNumber": 4,
+      "lessonRef": "lessons/lesson-04.json",
+      "titleZh": "这个工作是他帮我介绍的。",
+      "titleVi": "Ông ấy đã giới thiệu giúp tôi công việc này.",
+      "pdfPages": [
+        39,
+        46
+      ],
+      "printedPages": [
+        39,
+        46
+      ]
+    },
+    {
+      "lessonNumber": 5,
+      "lessonRef": "lessons/lesson-05.json",
+      "titleZh": "就买这件吧。",
+      "titleVi": "Mua chiếc áo này đi.",
+      "pdfPages": [
+        47,
+        53
+      ],
+      "printedPages": [
+        47,
+        53
+      ]
+    },
+    {
+      "lessonNumber": 6,
+      "lessonRef": "lessons/lesson-06.json",
+      "titleZh": "你怎么不吃了？",
+      "titleVi": "Sao anh không ăn nữa?",
+      "pdfPages": [
+        55,
+        62
+      ],
+      "printedPages": [
+        55,
+        62
+      ]
+    },
+    {
+      "lessonNumber": 7,
+      "lessonRef": "lessons/lesson-07.json",
+      "titleZh": "你家离公司远吗？",
+      "titleVi": "Nhà chị có ở xa công ty không?",
+      "pdfPages": [
+        63,
+        70
+      ],
+      "printedPages": [
+        63,
+        70
+      ]
+    },
+    {
+      "lessonNumber": 8,
+      "lessonRef": "lessons/lesson-08.json",
+      "titleZh": "让我想想再告诉你。",
+      "titleVi": "Để mình suy nghĩ rồi sẽ nói cho bạn biết.",
+      "pdfPages": [
+        71,
+        78
+      ],
+      "printedPages": [
+        71,
+        78
+      ]
+    },
+    {
+      "lessonNumber": 9,
+      "lessonRef": "lessons/lesson-09.json",
+      "titleZh": "题太多，我没做完。",
+      "titleVi": "Câu hỏi quá nhiều nên mình không làm hết.",
+      "pdfPages": [
+        79,
+        86
+      ],
+      "printedPages": [
+        79,
+        86
+      ]
+    },
+    {
+      "lessonNumber": 10,
+      "lessonRef": "lessons/lesson-10.json",
+      "titleZh": "别找了，手机在桌子上呢。",
+      "titleVi": "Đừng tìm nữa, điện thoại di động ở trên bàn kìa.",
+      "pdfPages": [
+        87,
+        93
+      ],
+      "printedPages": [
+        87,
+        93
+      ]
+    },
+    {
+      "lessonNumber": 11,
+      "lessonRef": "lessons/lesson-11.json",
+      "titleZh": "他比我大三岁。",
+      "titleVi": "Anh ấy lớn hơn mình ba tuổi.",
+      "pdfPages": [
+        95,
+        102
+      ],
+      "printedPages": [
+        95,
+        102
+      ]
+    },
+    {
+      "lessonNumber": 12,
+      "lessonRef": "lessons/lesson-12.json",
+      "titleZh": "你穿得太少了。",
+      "titleVi": "Anh mặc ít quần áo quá.",
+      "pdfPages": [
+        103,
+        110
+      ],
+      "printedPages": [
+        103,
+        110
+      ]
+    },
+    {
+      "lessonNumber": 13,
+      "lessonRef": "lessons/lesson-13.json",
+      "titleZh": "门开着呢。",
+      "titleVi": "Cửa đang mở.",
+      "pdfPages": [
+        111,
+        118
+      ],
+      "printedPages": [
+        111,
+        118
+      ]
+    },
+    {
+      "lessonNumber": 14,
+      "lessonRef": "lessons/lesson-14.json",
+      "titleZh": "你看过那个电影吗？",
+      "titleVi": "Cậu đã từng xem phim đó chưa?",
+      "pdfPages": [
+        119,
+        126
+      ],
+      "printedPages": [
+        119,
+        126
+      ]
+    },
+    {
+      "lessonNumber": 15,
+      "lessonRef": "lessons/lesson-15.json",
+      "titleZh": "新年就要到了。",
+      "titleVi": "Năm mới sắp đến rồi.",
+      "pdfPages": [
+        127,
+        133
+      ],
+      "printedPages": [
+        127,
+        133
+      ]
+    }
+  ],
+  "cultureRefs": [
+    "hsk2-tb-culture-01",
+    "hsk2-tb-culture-02",
+    "hsk2-tb-culture-03"
+  ],
+  "appendixRef": "appendices/vocabulary-summary.json"
+}

@@ -1,0 +1,914 @@
+{
+  "bundleId": "hsk5-standard-course-lower-textbook-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk5l-warmup-19-01",
+      "lessonId": "hsk5l-lesson-19",
+      "lessonNumber": 19,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 下面的图片分别表示三种做菜的方法，请从本课的生词表中找出对应的说",
+        "Phan 法，然后给它们排个顺序，并说说你为什么这么排序。",
+        "khoidong",
+        "(A) (B) (C)",
+        "请从本课的生词表中找出与饮食有关的词语，填在下表中，并说说它们的意思。",
+        "词性 例词 生词",
+        "名词 口味",
+        "形容词 可口"
+      ],
+      "contentOcr": "热身 下面的图片分别表示三种做菜的方法，请从本课的生词表中找出对应的说\nPhan 法，然后给它们排个顺序，并说说你为什么这么排序。\nkhoidong\n(A) (B) (C)\n请从本课的生词表中找出与饮食有关的词语，填在下表中，并说说它们的意思。\n词性 例词 生词\n名词 口味\n形容词 可口",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-015",
+          "rowIndex": 9
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-20-01",
+      "lessonId": "hsk5l-lesson-20",
+      "lessonNumber": 20,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 请看下面的图片，试着找出本课跟它们有关的生词。",
+        "Phan",
+        "大电影",
+        "khai dong 喜庆火",
+        "虎虎生感",
+        "(1) (2)",
+        "生词：成人",
+        "请问问你的同学或朋友，他们小时候有哪些印象深刻的娱乐活动？现在还有",
+        "没有这样的活动？",
+        "国家 活动的名称或内容",
+        "中国 看小人书"
+      ],
+      "contentOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。\nPhan\n大电影\nkhai dong 喜庆火\n虎虎生感\n(1) (2)\n生词：成人\n请问问你的同学或朋友，他们小时候有哪些印象深刻的娱乐活动？现在还有\n没有这样的活动？\n国家 活动的名称或内容\n中国 看小人书",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-023",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-21-01",
+      "lessonId": "hsk5l-lesson-21",
+      "lessonNumber": 21,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 说说你母语所使用的文字和中文有什么不同。简单介绍一下你在学习汉字",
+        "Phan 时，遇到了哪些困难或问题，你是怎么解决的。",
+        "khoi dong",
+        "水",
+        "小家",
+        "书",
+        "水",
+        "甲骨文 楷书",
+        "从上图我们可以知道，汉字的字形随着时间的发展，产生了很大变化。请从",
+        "本课生词中找出与下表中繁体字对应的简体写法。",
+        "繁體 邂辑 快 輸人 開放 夢想",
+        "简体 尽快"
+      ],
+      "contentOcr": "热身1 说说你母语所使用的文字和中文有什么不同。简单介绍一下你在学习汉字\nPhan 时，遇到了哪些困难或问题，你是怎么解决的。\nkhoi dong\n水\n小家\n书\n水\n甲骨文 楷书\n从上图我们可以知道，汉字的字形随着时间的发展，产生了很大变化。请从\n本课生词中找出与下表中繁体字对应的简体写法。\n繁體 邂辑 快 輸人 開放 夢想\n简体 尽快",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-031",
+          "rowIndex": 13
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-22-01",
+      "lessonId": "hsk5l-lesson-22",
+      "lessonNumber": 22,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 请看下面的图片并说说你知道的颜色。",
+        "Phan",
+        "khdi dong",
+        "颜色：红",
+        "你喜欢写作文吗？你觉得有哪些提高写作水平的好方法？请给老师和同学们",
+        "介绍一下。"
+      ],
+      "contentOcr": "热身1 请看下面的图片并说说你知道的颜色。\nPhan\nkhdi dong\n颜色：红\n你喜欢写作文吗？你觉得有哪些提高写作水平的好方法？请给老师和同学们\n介绍一下。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-041",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-041",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-041",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-041",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-041",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-041",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-23-01",
+      "lessonId": "hsk5l-lesson-23",
+      "lessonNumber": 23,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。",
+        "Phan",
+        "khdi dong",
+        "请从本课的生词中找出与学校生活有关的词语，试试用它们各说一句话。",
+        "词语 造句",
+        "主席 大学期间，我曾经当过学生会主席。"
+      ],
+      "contentOcr": "热身1 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。\nPhan\nkhdi dong\n请从本课的生词中找出与学校生活有关的词语，试试用它们各说一句话。\n词语 造句\n主席 大学期间，我曾经当过学生会主席。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-048",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-048",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-048",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-048",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-048",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-048",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-24-01",
+      "lessonId": "hsk5l-lesson-24",
+      "lessonNumber": 24,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 请看下面的图片，试着找出本课跟它们有关的生词。",
+        "Phan",
+        "khdi dong",
+        "生词：冠军",
+        "中国有这样一些志愿者，他们会去经济不太发达的地区或农村的学校当老",
+        "师，帮助那里的孩子学习。你听说过没有？你对志愿者有什么看法？"
+      ],
+      "contentOcr": "热身1 请看下面的图片，试着找出本课跟它们有关的生词。\nPhan\nkhdi dong\n生词：冠军\n中国有这样一些志愿者，他们会去经济不太发达的地区或农村的学校当老\n师，帮助那里的孩子学习。你听说过没有？你对志愿者有什么看法？",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-056",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-056",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-056",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-056",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-056",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-056",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-25-01",
+      "lessonId": "hsk5l-lesson-25",
+      "lessonNumber": 25,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 你听说过“有压力才会有动力”这句话吗？你是否同意这种观点？为什么？",
+        "Phan",
+        "khoi dong",
+        "请从生词中找出与上面图片内容有关的词语，写在下面的表格中。",
+        "形容词 动词 名词",
+        "返航"
+      ],
+      "contentOcr": "热身 你听说过“有压力才会有动力”这句话吗？你是否同意这种观点？为什么？\nPhan\nkhoi dong\n请从生词中找出与上面图片内容有关的词语，写在下面的表格中。\n形容词 动词 名词\n返航",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-065",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-065",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-065",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-065",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-065",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-065",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-26-01",
+      "lessonId": "hsk5l-lesson-26",
+      "lessonNumber": 26,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。",
+        "Phan",
+        "khdi dong",
+        "请试着找出本课跟“出行”有关的词语，写在下面的横线上，并说说这些词",
+        "之间有什么关系。",
+        "本课生词中的：",
+        "其他你知道的：行李"
+      ],
+      "contentOcr": "热身1 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。\nPhan\nkhdi dong\n请试着找出本课跟“出行”有关的词语，写在下面的横线上，并说说这些词\n之间有什么关系。\n本课生词中的：\n其他你知道的：行李",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-072",
+          "rowIndex": 8
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-27-01",
+      "lessonId": "hsk5l-lesson-27",
+      "lessonNumber": 27,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 下图中的棋类，你认识多少？请说一说它们的名称。除了这些以外，你还知",
+        "Phan 道其他棋牌运动吗？",
+        "khdi dong",
+        "棋牌类运动：",
+        "请问问你的同学或朋友，他们会哪种或哪些棋牌运动？如果举行相关的活",
+        "动，他们是否愿意参加？",
+        "国籍 会玩的棋牌运动 学的时间或水平 是否愿意参加活动"
+      ],
+      "contentOcr": "热身 下图中的棋类，你认识多少？请说一说它们的名称。除了这些以外，你还知\nPhan 道其他棋牌运动吗？\nkhdi dong\n棋牌类运动：\n请问问你的同学或朋友，他们会哪种或哪些棋牌运动？如果举行相关的活\n动，他们是否愿意参加？\n国籍 会玩的棋牌运动 学的时间或水平 是否愿意参加活动",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-080",
+          "rowIndex": 8
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-28-01",
+      "lessonId": "hsk5l-lesson-28",
+      "lessonNumber": 28,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 请看下面的图片，试着说出你知道的跟学历有关的词汇。",
+        "Phan",
+        "khoi dong",
+        "PRESCHOOL",
+        "学前班",
+        "RY",
+        "PRIMARY",
+        "COLLEGE",
+        "UNIVERSITY",
+        "如果你是一家公司的老板，需要招聘一名旅游体验师，你对这个职位有什么",
+        "样的要求？你会对应聘者提出哪些问题？"
+      ],
+      "contentOcr": "热身1 请看下面的图片，试着说出你知道的跟学历有关的词汇。\nPhan\nkhoi dong\nPRESCHOOL\n学前班\nRY\nPRIMARY\nCOLLEGE\nUNIVERSITY\n如果你是一家公司的老板，需要招聘一名旅游体验师，你对这个职位有什么\n样的要求？你会对应聘者提出哪些问题？",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-089",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-29-01",
+      "lessonId": "hsk5l-lesson-29",
+      "lessonNumber": 29,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 请看下面的图，说一说你知道的日用品的名称。",
+        "Phan",
+        "khoi dong",
+        "请从本课的生词中找出与商业有关的词语，写在下面的横线上，并说说它",
+        "们分别是什么意思。",
+        "与商业有关的生词：利润"
+      ],
+      "contentOcr": "热身 请看下面的图，说一说你知道的日用品的名称。\nPhan\nkhoi dong\n请从本课的生词中找出与商业有关的词语，写在下面的横线上，并说说它\n们分别是什么意思。\n与商业有关的生词：利润",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-097",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-097",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-097",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-097",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-097",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-097",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-30-01",
+      "lessonId": "hsk5l-lesson-30",
+      "lessonNumber": 30,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。",
+        "Phan",
+        "khdi dong",
+        "请试着找出本课和你知道的跟“竞争”有关的词语，写在下面的横线上，",
+        "并说说你选这些词的道理。",
+        "本课生词中的：刺激",
+        "其他你知道的："
+      ],
+      "contentOcr": "热身 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。\nPhan\nkhdi dong\n请试着找出本课和你知道的跟“竞争”有关的词语，写在下面的横线上，\n并说说你选这些词的道理。\n本课生词中的：刺激\n其他你知道的：",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-105",
+          "rowIndex": 8
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-31-01",
+      "lessonId": "hsk5l-lesson-31",
+      "lessonNumber": 31,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 如果你想请别人帮你做件事情，又担心对方不愿意，你一般会考虑哪些问",
+        "Phan 题？你会以何种方式向对方提出请求呢？",
+        "khdi dong",
+        "你知道哪些表示人的意愿、态度的词语？请写在下面的横线上，并说说它们",
+        "分别是什么意思。",
+        "本课生词中的：",
+        "其他你知道的：接受"
+      ],
+      "contentOcr": "热身 如果你想请别人帮你做件事情，又担心对方不愿意，你一般会考虑哪些问\nPhan 题？你会以何种方式向对方提出请求呢？\nkhdi dong\n你知道哪些表示人的意愿、态度的词语？请写在下面的横线上，并说说它们\n分别是什么意思。\n本课生词中的：\n其他你知道的：接受",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-115",
+          "rowIndex": 8
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-32-01",
+      "lessonId": "hsk5l-lesson-32",
+      "lessonNumber": 32,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 结合图片，请你举例说明人类对环境的破坏造成了哪些恶劣的影响。",
+        "Phan",
+        "khai dong",
+        "当我们谈论环境遭到污染和破坏时，常常提到哪些词语？请写在下面的横线",
+        "上，并说说它们是什么意思。",
+        "本课生词中的：绝迹",
+        "其他你知道的："
+      ],
+      "contentOcr": "热身 结合图片，请你举例说明人类对环境的破坏造成了哪些恶劣的影响。\nPhan\nkhai dong\n当我们谈论环境遭到污染和破坏时，常常提到哪些词语？请写在下面的横线\n上，并说说它们是什么意思。\n本课生词中的：绝迹\n其他你知道的：",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-123",
+          "rowIndex": 8
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-33-01",
+      "lessonId": "hsk5l-lesson-33",
+      "lessonNumber": 33,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 请你说说这幅图片反映了什么问题，它对你的生活有何影响。",
+        "Phan",
+        "khoi dong",
+        "你知道哪些有关交通的词语？请写在下面的横线上，并说说它们分别是什么",
+        "意思。",
+        "本课生词中的：",
+        "其他你知道的：堵车"
+      ],
+      "contentOcr": "热身 请你说说这幅图片反映了什么问题，它对你的生活有何影响。\nPhan\nkhoi dong\n你知道哪些有关交通的词语？请写在下面的横线上，并说说它们分别是什么\n意思。\n本课生词中的：\n其他你知道的：堵车",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-131",
+          "rowIndex": 10
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-34-01",
+      "lessonId": "hsk5l-lesson-34",
+      "lessonNumber": 34,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 请看下面的图片，试着找出本课跟它们有关的生词。",
+        "Phan",
+        "khdi dong",
+        "生词：池塘",
+        "说起鸟儿，你会想到它们的哪些特征？请给老师和同学们讲一讲。"
+      ],
+      "contentOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。\nPhan\nkhdi dong\n生词：池塘\n说起鸟儿，你会想到它们的哪些特征？请给老师和同学们讲一讲。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-141",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-141",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-141",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-141",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-141",
+          "rowIndex": 6
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-35-01",
+      "lessonId": "hsk5l-lesson-35",
+      "lessonNumber": 35,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 请看下面的图片，试着找出本课跟它们有关的生词。",
+        "Phan",
+        "khai dong",
+        "(1) (2)",
+        "生词：秩序",
+        "请问问你的同学或朋友，他们在炎热的夏天运动之后，常常用什么办法给自",
+        "己降温。",
+        "降温的办法 是否有效 优点 缺点",
+        "吃冰激凌 是 感觉降温很快 可能对健康不利"
+      ],
+      "contentOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。\nPhan\nkhai dong\n(1) (2)\n生词：秩序\n请问问你的同学或朋友，他们在炎热的夏天运动之后，常常用什么办法给自\n己降温。\n降温的办法 是否有效 优点 缺点\n吃冰激凌 是 感觉降温很快 可能对健康不利",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-149",
+          "rowIndex": 10
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-warmup-36-01",
+      "lessonId": "hsk5l-lesson-36",
+      "lessonNumber": 36,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 你知道哪些有关养花的词语，请写在下面的横线上，并说说它们分别是什么",
+        "Phan 意思。",
+        "khoi dong",
+        "名词：花草、花盆 量词：",
+        "动词： 形容词：",
+        "请你说出下图中植物各部分的名称。你养过花吗？介绍一下你在这方面的",
+        "经验。"
+      ],
+      "contentOcr": "热身 你知道哪些有关养花的词语，请写在下面的横线上，并说说它们分别是什么\nPhan 意思。\nkhoi dong\n名词：花草、花盆 量词：\n动词： 形容词：\n请你说出下图中植物各部分的名称。你养过花吗？介绍一下你在这方面的\n经验。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-157",
+          "rowIndex": 8
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

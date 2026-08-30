@@ -1,0 +1,3524 @@
+{
+  "bundleId": "hsk5-standard-course-lower-textbook-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk5l-practice-19-01",
+      "lessonId": "hsk5l-lesson-19",
+      "lessonNumber": 19,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1选择合适的词语填空",
+        "Bai tap",
+        "特色 预防 色彩 平安 清淡 均匀",
+        "1也许是药物的作用，这一夜他 地度过了。",
+        "②最后，我们用酱油、白糖、味精等做成汁， 地浇在鸡肉上就",
+        "做好了。",
+        "饭菜很 很平常，却给我留下了极深的印象。",
+        "①请你给我们推荐几个你们这儿的 菜吧。",
+        "研究发现，常吃胡萝卜能起到保护眼睛、 近视的效果。",
+        "此菜的特点是 美观，咸鲜滑嫩，味香可口，营养丰富。",
+        "2 选择正确答案",
+        "①女儿安静地睡在她身旁，呼吸也很 （A.均匀B.平均）",
+        "②尽管这话里感情很重，但也不是没有道理。 （A.色彩B.颜色）",
+        "我们从天津回来时，才听说她出国的事。 (A.趁 B.等）",
+        "了解李阳的人都说，李阳最大的 就是胆大、敢干。",
+        "（A.特色B.特点）",
+        "HSK 标准教程5（下）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "烫 肉丝 口味 丰富",
+        "闻 饺子 色彩 透明",
+        "炒 手 玻璃 明显",
+        "煮 味道 特色 清淡",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "怀念、色彩、口感、",
+        "家乡的萝卜",
+        "清淡",
+        "极其、炒、煮、油炸、",
+        "萝卜饼的做法 切、均匀、薄、烫、",
+        "盖、闻",
+        "萝卜饼的优点 色、香、味、形、养生"
+      ],
+      "contentOcr": "练习1选择合适的词语填空\nBai tap\n特色 预防 色彩 平安 清淡 均匀\n1也许是药物的作用，这一夜他 地度过了。\n②最后，我们用酱油、白糖、味精等做成汁， 地浇在鸡肉上就\n做好了。\n饭菜很 很平常，却给我留下了极深的印象。\n①请你给我们推荐几个你们这儿的 菜吧。\n研究发现，常吃胡萝卜能起到保护眼睛、 近视的效果。\n此菜的特点是 美观，咸鲜滑嫩，味香可口，营养丰富。\n2 选择正确答案\n①女儿安静地睡在她身旁，呼吸也很 （A.均匀B.平均）\n②尽管这话里感情很重，但也不是没有道理。 （A.色彩B.颜色）\n我们从天津回来时，才听说她出国的事。 (A.趁 B.等）\n了解李阳的人都说，李阳最大的 就是胆大、敢干。\n（A.特色B.特点）\nHSK 标准教程5（下）\n3 画线连接可以搭配的词语\n(1) (2)\n烫 肉丝 口味 丰富\n闻 饺子 色彩 透明\n炒 手 玻璃 明显\n煮 味道 特色 清淡\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n怀念、色彩、口感、\n家乡的萝卜\n清淡\n极其、炒、煮、油炸、\n萝卜饼的做法 切、均匀、薄、烫、\n盖、闻\n萝卜饼的优点 色、香、味、形、养生",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-020",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-021",
+          "rowIndex": 15
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-20-01",
+      "lessonId": "hsk5l-lesson-20",
+      "lessonNumber": 20,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 选择合适的词语填空",
+        "Bai tap",
+        "涨办理 从事粗糙 单调整齐",
+        "①我想 有挑战性的工作，因为那样可以更好地成长。",
+        "②请96号顾客到2号窗口 业务。",
+        "③这房子装修得太 了！你看，地板都没铺（pu，lot，san）平。",
+        "④窗外响起了一阵 的歌声。",
+        "他觉得在中国的生活很 ，我却觉得很丰富。",
+        "6最近几年，物价 得很厉害。",
+        "选择正确答案",
+        "一般来说，一包香烟有二十 (A.册 B.支）",
+        "②今天的课就到这儿，大家有什么 吗？ （A.疑问B.怀疑）",
+        "③他 高大，动作灵活，很适合打篮球。 （A.身体B.身材）",
+        "④这可以说是20世纪80 最流行的歌曲。 （A.年代B.时代）",
+        "3 给括号里的词选择适当的位置",
+        "①我的A经验B来自于C错误的D判断。 （无数） www.nhantriviet.com/GiaoTrinhChuanHSk",
+        "?今天早上是谁打A了B桌子上C的牛奶D？ （翻）",
+        "③A你每天都能B做好C一件事，D那么你每天都能得到一份快乐。",
+        "（假如）",
+        "你的这个A结论B全C经验和想象，我认为不D科学。 （凭）",
+        "27.",
+        "HSK 标准教程5（下）",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "小人书摊为什么 出版、年代、单调、",
+        "会流行 从事、买不起",
+        "小人书摊的情况 支、翻、整齐、身材",
+        "册、假如、登记、",
+        "租借的手续",
+        "记录、办理、凭",
+        "小人书的现状 印刷、涨"
+      ],
+      "contentOcr": "练习1 选择合适的词语填空\nBai tap\n涨办理 从事粗糙 单调整齐\n①我想 有挑战性的工作，因为那样可以更好地成长。\n②请96号顾客到2号窗口 业务。\n③这房子装修得太 了！你看，地板都没铺（pu，lot，san）平。\n④窗外响起了一阵 的歌声。\n他觉得在中国的生活很 ，我却觉得很丰富。\n6最近几年，物价 得很厉害。\n选择正确答案\n一般来说，一包香烟有二十 (A.册 B.支）\n②今天的课就到这儿，大家有什么 吗？ （A.疑问B.怀疑）\n③他 高大，动作灵活，很适合打篮球。 （A.身体B.身材）\n④这可以说是20世纪80 最流行的歌曲。 （A.年代B.时代）\n3 给括号里的词选择适当的位置\n①我的A经验B来自于C错误的D判断。 （无数） www.nhantriviet.com/GiaoTrinhChuanHSk\n?今天早上是谁打A了B桌子上C的牛奶D？ （翻）\n③A你每天都能B做好C一件事，D那么你每天都能得到一份快乐。\n（假如）\n你的这个A结论B全C经验和想象，我认为不D科学。 （凭）\n27.\nHSK 标准教程5（下）\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n小人书摊为什么 出版、年代、单调、\n会流行 从事、买不起\n小人书摊的情况 支、翻、整齐、身材\n册、假如、登记、\n租借的手续\n记录、办理、凭\n小人书的现状 印刷、涨",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-028",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-029",
+          "rowIndex": 9
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-21-01",
+      "lessonId": "hsk5l-lesson-21",
+      "lessonNumber": 21,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 选择合适的词语填空",
+        "Bai tap",
+        "收集克服 追求 公开 佩服 抓紧",
+        "①这点儿困难不算什么，我一定可以 的。",
+        "②其实，林峰与刘医生的恋情，在医院里已经是 的秘密了。",
+        "③我们是大学同学，那时候他就有了这个 老报纸的爱好。",
+        "你 准备一下，争取下周把这个项目谈下来。",
+        "5她对工作认真负责的态度很让人",
+        "爸爸平时常提醒我，生活上不要过于 享受。",
+        "2 选择正确答案",
+        "①买车的事我还没想好，你让我再 几天。 （A.思考B.考虑）",
+        "②令人 的是，中国至今还没有自己的国花。 （A.遗憾B.后悔）",
+        "③什么？小明受伤了，那 送医院呀！ （A.尽快B.赶快）",
+        "有文字学家指出， 的文字就是可以读出来的图画。",
+        "（A.最初B.当初）",
+        "3 画线连接可以搭配的词语",
+        "(1)",
+        "(2)",
+        "追求 秘密 提上 逻辑",
+        "公开 梦想 符合 称赞",
+        "收集 制度 受到 资料",
+        "完善 雨水 下载 日程",
+        "21",
+        "汉字叔叔",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "理查德学汉 笔画、逻辑、死记硬背、",
+        "字的经验 偶然 一个美国人的汉字情缘",
+        "抓紧、尽快、资料、",
+        "理查德的汉 输入、公开、收集、",
+        "字网站 克服、包含、开放、",
+        "下载",
+        "理查德现在 单位、查询、物理、完",
+        "的工作情况 善、追求、梦想、日程"
+      ],
+      "contentOcr": "练习1 选择合适的词语填空\nBai tap\n收集克服 追求 公开 佩服 抓紧\n①这点儿困难不算什么，我一定可以 的。\n②其实，林峰与刘医生的恋情，在医院里已经是 的秘密了。\n③我们是大学同学，那时候他就有了这个 老报纸的爱好。\n你 准备一下，争取下周把这个项目谈下来。\n5她对工作认真负责的态度很让人\n爸爸平时常提醒我，生活上不要过于 享受。\n2 选择正确答案\n①买车的事我还没想好，你让我再 几天。 （A.思考B.考虑）\n②令人 的是，中国至今还没有自己的国花。 （A.遗憾B.后悔）\n③什么？小明受伤了，那 送医院呀！ （A.尽快B.赶快）\n有文字学家指出， 的文字就是可以读出来的图画。\n（A.最初B.当初）\n3 画线连接可以搭配的词语\n(1)\n(2)\n追求 秘密 提上 逻辑\n公开 梦想 符合 称赞\n收集 制度 受到 资料\n完善 雨水 下载 日程\n21\n汉字叔叔\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n理查德学汉 笔画、逻辑、死记硬背、\n字的经验 偶然 一个美国人的汉字情缘\n抓紧、尽快、资料、\n理查德的汉 输入、公开、收集、\n字网站 克服、包含、开放、\n下载\n理查德现在 单位、查询、物理、完\n的工作情况 善、追求、梦想、日程",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-037",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-038",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-22-01",
+      "lessonId": "hsk5l-lesson-22",
+      "lessonNumber": 22,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "承认过分 价值客观理由 主张",
+        "虽然这次的错误有点儿严重，但你应该勇敢地",
+        "②人都是有感情甚至自私的，很难做到任何时候都很",
+        "③你的这个建议很有 ，我马上告诉总裁。",
+        "他 将会议地点改在上海，因为这次的合作伙伴对我们来说非常",
+        "重要。",
+        "你这种做法太 了，我不能接受！",
+        "希望你能给我一个好的 解释清楚你为什么这么做。",
+        "22",
+        "阅读与思考",
+        "2 选择正确答案",
+        "①你可以试着 一下思路，可能会快一点解决问题。",
+        "(A.变化 B.转变）",
+        "②我不同意你的 ，我觉得这部电影很不错。（A.观点 B.观念）",
+        "这次新产品销售得不好的 是宣传推广做得不够。",
+        "(A.原因 B.理由）",
+        "他太 了，这样很容易被人骗。 (A.单调 B.单纯）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "交换 我们 完美的 了解",
+        "转变 意见 自私的 行为",
+        "属于 错误 全面地 计划",
+        "承认 观念 平等地 对待",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "一些家长的 过分、作文、客观、",
+        "观念 转变",
+        "一旦、对待、交换、",
+        "关于《灰姑",
+        "承认、难免、平等、",
+        "娘》的讨论",
+        "理由",
+        "作者的思考 自从、价值、单纯",
+        "HSK 标准教程5（下）"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n承认过分 价值客观理由 主张\n虽然这次的错误有点儿严重，但你应该勇敢地\n②人都是有感情甚至自私的，很难做到任何时候都很\n③你的这个建议很有 ，我马上告诉总裁。\n他 将会议地点改在上海，因为这次的合作伙伴对我们来说非常\n重要。\n你这种做法太 了，我不能接受！\n希望你能给我一个好的 解释清楚你为什么这么做。\n22\n阅读与思考\n2 选择正确答案\n①你可以试着 一下思路，可能会快一点解决问题。\n(A.变化 B.转变）\n②我不同意你的 ，我觉得这部电影很不错。（A.观点 B.观念）\n这次新产品销售得不好的 是宣传推广做得不够。\n(A.原因 B.理由）\n他太 了，这样很容易被人骗。 (A.单调 B.单纯）\n3 画线连接可以搭配的词语\n(1) (2)\n交换 我们 完美的 了解\n转变 意见 自私的 行为\n属于 错误 全面地 计划\n承认 观念 平等地 对待\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n一些家长的 过分、作文、客观、\n观念 转变\n一旦、对待、交换、\n关于《灰姑\n承认、难免、平等、\n娘》的讨论\n理由\n作者的思考 自从、价值、单纯\nHSK 标准教程5（下）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-045",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-046",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-047",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-23-01",
+      "lessonId": "hsk5l-lesson-23",
+      "lessonNumber": 23,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Baitap 沉默 能干 沟通 陌生刻苦建立",
+        "公司已与这家银行 起了良好的业务关系。",
+        "②妈妈在电话那端 了一会儿说：“真抱歉！我差点儿忘了。",
+        "③经过 训练，她终于成为了我们的第一批女飞行员。",
+        "喜欢篮球的观众对姚明这个名字一定不会",
+        "你跟幼儿园的老师 一下，看看到底是什么原因。",
+        "那个小姑娘既 又漂亮。",
+        "选择正确答案",
+        "①我儿子要是能这样懂 ，该有多么好啊！ （A.规矩 B.规定）",
+        "2 了吴县长，咱不用出村就把苹果都卖了。（A.幸亏 B.多亏）",
+        "③我给他打电话的 是看他回来了没有。 （A.目标 B.目的）",
+        "他的建议一提出，就得到了大家的 认可。（A.一致 B.一样）",
+        "23",
+        "放手",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "征求 宴会 一致的 单位",
+        "面临 经理 精彩的 讲座",
+        "出席 意见 陌生的 主席",
+        "担任 危机 能干的 结论",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "文文小时候 乖乖女、刻苦、纪律、",
+        "的情况 征求、说了算",
+        "文文大学期 规矩、主见、能干、独",
+        "间的表现 立、出席、组织、目标",
+        "文文留学的 保送、面试、名牌、录",
+        "决定 取、一致",
+        "妈妈的美国 陌生、交换、身份、单",
+        "之行 独、沟通、靠、鼓励"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBaitap 沉默 能干 沟通 陌生刻苦建立\n公司已与这家银行 起了良好的业务关系。\n②妈妈在电话那端 了一会儿说：“真抱歉！我差点儿忘了。\n③经过 训练，她终于成为了我们的第一批女飞行员。\n喜欢篮球的观众对姚明这个名字一定不会\n你跟幼儿园的老师 一下，看看到底是什么原因。\n那个小姑娘既 又漂亮。\n选择正确答案\n①我儿子要是能这样懂 ，该有多么好啊！ （A.规矩 B.规定）\n2 了吴县长，咱不用出村就把苹果都卖了。（A.幸亏 B.多亏）\n③我给他打电话的 是看他回来了没有。 （A.目标 B.目的）\n他的建议一提出，就得到了大家的 认可。（A.一致 B.一样）\n23\n放手\n3 画线连接可以搭配的词语\n(1) (2)\n征求 宴会 一致的 单位\n面临 经理 精彩的 讲座\n出席 意见 陌生的 主席\n担任 危机 能干的 结论\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n文文小时候 乖乖女、刻苦、纪律、\n的情况 征求、说了算\n文文大学期 规矩、主见、能干、独\n间的表现 立、出席、组织、目标\n文文留学的 保送、面试、名牌、录\n决定 取、一致\n妈妈的美国 陌生、交换、身份、单\n之行 独、沟通、靠、鼓励",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-053",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-054",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-24-01",
+      "lessonId": "hsk5l-lesson-24",
+      "lessonNumber": 24,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "闯操心 承担 勇气 建设 温柔",
+        "别怕困难，鼓起 ，你一定能成功！",
+        "②大家都很美慕他有个 体贴的妻子。",
+        "③昨天开车时精力不集中， 了红灯。",
+        "父母为我们 了一辈子 ，现在该享福（xiangfu，huongphuic）了。",
+        "毕业后我希望回去 我的国家。",
+        "这次活动的费用将由学校统一（tongyi，thongnhat）",
+        "选择正确答案",
+        "该准备的我们都已经准备了，你这么做完全是 的。",
+        "(A.多余 B.过分）",
+        "②表面上弱小的人，很可能拥有你想象不到的巨大",
+        "(A.精力 B.力量）",
+        "③心理学家发现，性格 的人的生活比其他人更丰富。",
+        "(A.热烈 B.热情）",
+        "我觉得他这并不是对你好，只是 你。 （A.用 B.利用）",
+        "24",
+        "支教行动",
+        "3 给括号里的词选择适当的位置",
+        "我都已经A安排B好了，你别C瞎D了！ (操心）",
+        "②看了她的舞蹈，大家都A鼓B起C来D。 （掌）",
+        "③A他B下班后的C时间参加D专业培训。 （利用）",
+        "我会A最大的B力量C来D帮助你。 （尽）",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "发言、及格、家务、冠",
+        "赵福根的故事",
+        "军、鼓掌、进步、题目",
+        "闯、主题、采访、利用、",
+        "研究型学习活动",
+        "操心、义务",
+        "郝老师的想法 收获、力量"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n闯操心 承担 勇气 建设 温柔\n别怕困难，鼓起 ，你一定能成功！\n②大家都很美慕他有个 体贴的妻子。\n③昨天开车时精力不集中， 了红灯。\n父母为我们 了一辈子 ，现在该享福（xiangfu，huongphuic）了。\n毕业后我希望回去 我的国家。\n这次活动的费用将由学校统一（tongyi，thongnhat）\n选择正确答案\n该准备的我们都已经准备了，你这么做完全是 的。\n(A.多余 B.过分）\n②表面上弱小的人，很可能拥有你想象不到的巨大\n(A.精力 B.力量）\n③心理学家发现，性格 的人的生活比其他人更丰富。\n(A.热烈 B.热情）\n我觉得他这并不是对你好，只是 你。 （A.用 B.利用）\n24\n支教行动\n3 给括号里的词选择适当的位置\n我都已经A安排B好了，你别C瞎D了！ (操心）\n②看了她的舞蹈，大家都A鼓B起C来D。 （掌）\n③A他B下班后的C时间参加D专业培训。 （利用）\n我会A最大的B力量C来D帮助你。 （尽）\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n发言、及格、家务、冠\n赵福根的故事\n军、鼓掌、进步、题目\n闯、主题、采访、利用、\n研究型学习活动\n操心、义务\n郝老师的想法 收获、力量",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-061",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-062",
+          "rowIndex": 15
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-25-01",
+      "lessonId": "hsk5l-lesson-25",
+      "lessonNumber": 25,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "风险谨慎 平衡威胁 简直 恶劣",
+        "对这种行为 的队员只能让他离开球队。",
+        "②在人口压力面前，经济发展、社会进步都受到了巨大",
+        "③这毕竞是高考择校，我们必须 对待。",
+        "初学骑自行车最重要的是注意保持",
+        "你决定在海外投资，有没有考虑到 ？",
+        "昨晚的比赛太精彩了，林丹 太厉害了！",
+        "25",
+        "给自己加满水",
+        "选择正确答案",
+        "不是你努力得不够， 是努力的方向错了。",
+        "（A.可怕 B.恐怕）",
+        "②李岩之所以那么 地返回北京，是因为得知了这个坏消息。",
+        "(A.慌张 B.紧张）",
+        "③你的病好得不 还应该再休息几天。 (A.彻底 B.完全）",
+        "我实在不敢 这么贵重的礼物。 (A.承受 B.接受）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "冒 生命 形状 平衡",
+        "游览 压力 气候 相似",
+        "承受 名胜 营养 严肃",
+        "威胁 风险 态度 恶劣",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "返航途中遇 恶劣、风浪、慌张、",
+        "险的经历 沉、威胁、平衡、翻",
+        "“鬼谷”的 窄、游览、发抖、摔、",
+        "故事 滚、风险、谨慎、安全",
+        "压力效应 责任感、承受、压力",
+        "HSK 标准教程5（下）"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n风险谨慎 平衡威胁 简直 恶劣\n对这种行为 的队员只能让他离开球队。\n②在人口压力面前，经济发展、社会进步都受到了巨大\n③这毕竞是高考择校，我们必须 对待。\n初学骑自行车最重要的是注意保持\n你决定在海外投资，有没有考虑到 ？\n昨晚的比赛太精彩了，林丹 太厉害了！\n25\n给自己加满水\n选择正确答案\n不是你努力得不够， 是努力的方向错了。\n（A.可怕 B.恐怕）\n②李岩之所以那么 地返回北京，是因为得知了这个坏消息。\n(A.慌张 B.紧张）\n③你的病好得不 还应该再休息几天。 (A.彻底 B.完全）\n我实在不敢 这么贵重的礼物。 (A.承受 B.接受）\n3 画线连接可以搭配的词语\n(1) (2)\n冒 生命 形状 平衡\n游览 压力 气候 相似\n承受 名胜 营养 严肃\n威胁 风险 态度 恶劣\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n返航途中遇 恶劣、风浪、慌张、\n险的经历 沉、威胁、平衡、翻\n“鬼谷”的 窄、游览、发抖、摔、\n故事 滚、风险、谨慎、安全\n压力效应 责任感、承受、压力\nHSK 标准教程5（下）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-069",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-070",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-071",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-26-01",
+      "lessonId": "hsk5l-lesson-26",
+      "lessonNumber": 26,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 选择合适的词语填空",
+        "Bai tap",
+        "寂寞 至于 耽误 提倡 一律出色",
+        "现在饭馆都 节约，不浪费食物，“光盘”的意思就是把点的菜",
+        "吃光。",
+        "上次约刘经理见面，路上堵车， 了很长时间，这次可别再出问",
+        "题了。",
+        "③按规定，小动物 不准带上飞机。",
+        "26",
+        "你属于哪",
+        "她有些 想让我到她那儿陪她聊聊天。",
+        "一",
+        "他顶住了压力， 地发挥了自己的水平，打败了强敌。",
+        "种",
+        "你们两口子吵架归吵架，不 要闹离婚吧？ 一",
+        "忙",
+        "选择正确答案",
+        "为了保证病人的休息，午饭后 不准探视（tanshi，tham）。",
+        "（A.一律B.都）",
+        "②你怎么 的？不是说好了周末和小丽见面的吗？怎么又不去了？",
+        "(A.搞 B.做）",
+        "③因为有大雾，飞机不能起飞。 了您的宝贵时间，非常抱歉！",
+        "（A.耽误B.影响）",
+        "4马向阳在那儿当县长时， 地完成了任务。 （A.出色B.优秀）",
+        "3 给括号里的词选择适当的位置",
+        "①看到房间满是灰尘，他发起A了愁，刚B坐了十C个D小时火车，实在",
+        "没力气收拾了。 （来）",
+        "②我A找刘明天来B当导演，其实是C有点儿D的。 （冒险）",
+        "③A按学校B规定，缺课60节以上的学生C不允许D参加考试。 (一律)",
+        "小丽A地完成了B比赛的各项动作，C取得了第一名D的好成绩。（出色）",
+        "4 根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "三种“忙” 被动、奴隶、主动、虚伪",
+        "大导演的拍 纪录片、雇、出色、一连、",
+        "摄经历 耽误、投资、沟通、灵魂 www.nhantriviet.com/GiaoTrinhChuanHSk",
+        "比尔·盖茨的 为期、一律、寂寞、效率、",
+        "“闭关” 思考",
+        "HSK 标准教程5（下）"
+      ],
+      "contentOcr": "练习1 选择合适的词语填空\nBai tap\n寂寞 至于 耽误 提倡 一律出色\n现在饭馆都 节约，不浪费食物，“光盘”的意思就是把点的菜\n吃光。\n上次约刘经理见面，路上堵车， 了很长时间，这次可别再出问\n题了。\n③按规定，小动物 不准带上飞机。\n26\n你属于哪\n她有些 想让我到她那儿陪她聊聊天。\n一\n他顶住了压力， 地发挥了自己的水平，打败了强敌。\n种\n你们两口子吵架归吵架，不 要闹离婚吧？ 一\n忙\n选择正确答案\n为了保证病人的休息，午饭后 不准探视（tanshi，tham）。\n（A.一律B.都）\n②你怎么 的？不是说好了周末和小丽见面的吗？怎么又不去了？\n(A.搞 B.做）\n③因为有大雾，飞机不能起飞。 了您的宝贵时间，非常抱歉！\n（A.耽误B.影响）\n4马向阳在那儿当县长时， 地完成了任务。 （A.出色B.优秀）\n3 给括号里的词选择适当的位置\n①看到房间满是灰尘，他发起A了愁，刚B坐了十C个D小时火车，实在\n没力气收拾了。 （来）\n②我A找刘明天来B当导演，其实是C有点儿D的。 （冒险）\n③A按学校B规定，缺课60节以上的学生C不允许D参加考试。 (一律)\n小丽A地完成了B比赛的各项动作，C取得了第一名D的好成绩。（出色）\n4 根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n三种“忙” 被动、奴隶、主动、虚伪\n大导演的拍 纪录片、雇、出色、一连、\n摄经历 耽误、投资、沟通、灵魂 www.nhantriviet.com/GiaoTrinhChuanHSk\n比尔·盖茨的 为期、一律、寂寞、效率、\n“闭关” 思考\nHSK 标准教程5（下）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-077",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-078",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-079",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-27-01",
+      "lessonId": "hsk5l-lesson-27",
+      "lessonNumber": 27,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "把握 发挥 观察 教训 因素 眼睁睁",
+        "吸取 才能避免以后再次发生同样的问题。",
+        "工作压力太大、不能兼顾（jiangu，cung luicquan tam）工作和家庭是影",
+        "响幸福感的重要",
+        "③希望你在比赛中 好，赛出好成绩！",
+        "只有做好准备的人才能 住机会。",
+        "你就这样 地看着他摔倒了？！",
+        "仔细 周围的大自然，你会发现很多有意思的东西。",
+        "选择正确答案",
+        "这几次考试我都考得不太好，觉得有点儿 (A.灰心 B.死心）",
+        "在国外工作 ，我一直很想念我的家乡和家人。",
+        "(A.时期 B.期间）",
+        "如果有变动，请 24小时告诉我。 (A.事先 B.提前）",
+        "你要想清楚，这样做的 很严重! （A.后果 B.结果）",
+        "给括号里的词选择适当的位置",
+        "你A说得这么复杂，我B觉得他C能D听懂。 (未必)",
+        "②A我看，老板没有糟糕的，B关键C你D怎样去和他沟通。 （在于）",
+        "3 在很多A家庭中，夫妻B同时C工作并D做家务。 （双方)",
+        "④开始学滑雪A的时候，我花了很长时间B学习C怎么停D。 （下来）",
+        "27",
+        "下棋",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "父亲与我 教练、答应、损失、",
+        "下棋 眼睁睁、灰心",
+        "吸取、未必、因素、",
+        "输的原因 在于、否认、观察、",
+        "失去、把握",
+        "原则、必然、事先、",
+        "下棋与人生",
+        "舍不得、后果"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n把握 发挥 观察 教训 因素 眼睁睁\n吸取 才能避免以后再次发生同样的问题。\n工作压力太大、不能兼顾（jiangu，cung luicquan tam）工作和家庭是影\n响幸福感的重要\n③希望你在比赛中 好，赛出好成绩！\n只有做好准备的人才能 住机会。\n你就这样 地看着他摔倒了？！\n仔细 周围的大自然，你会发现很多有意思的东西。\n选择正确答案\n这几次考试我都考得不太好，觉得有点儿 (A.灰心 B.死心）\n在国外工作 ，我一直很想念我的家乡和家人。\n(A.时期 B.期间）\n如果有变动，请 24小时告诉我。 (A.事先 B.提前）\n你要想清楚，这样做的 很严重! （A.后果 B.结果）\n给括号里的词选择适当的位置\n你A说得这么复杂，我B觉得他C能D听懂。 (未必)\n②A我看，老板没有糟糕的，B关键C你D怎样去和他沟通。 （在于）\n3 在很多A家庭中，夫妻B同时C工作并D做家务。 （双方)\n④开始学滑雪A的时候，我花了很长时间B学习C怎么停D。 （下来）\n27\n下棋\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n父亲与我 教练、答应、损失、\n下棋 眼睁睁、灰心\n吸取、未必、因素、\n输的原因 在于、否认、观察、\n失去、把握\n原则、必然、事先、\n下棋与人生\n舍不得、后果",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-085",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-086",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-28-01",
+      "lessonId": "hsk5l-lesson-28",
+      "lessonNumber": 28,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap www.nhantriviet.com/GiaoTrinhChuanHSk",
+        "参考范围 具体 乐观 陆续 显然",
+        "①因为天气影响，我们的活动推迟了， 时间再等通知。",
+        "②会议快要开始了，代表们 走进了会场。",
+        "③这次比赛是在全国 内举行的。",
+        "HSK 标准教程5（下）",
+        "前两局棋输给爸爸，他 并不担心。",
+        "不管遇到什么困难，都要 地面对生活。",
+        "这只是我个人意见，仅供你",
+        "选择正确答案",
+        "这个玩具是我爸爸亲手为我 的。 (A.制作 B.制造）",
+        "②我们 他明天9点能出发，那么10点可以到这儿。",
+        "（A.假设 B.假如）",
+        "我们已经安全地 目的地了。 (A.达到 B.到达）",
+        "来我们公司工作，你的前途一片 （A.光明 B.明亮）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "—届 答案 失去 锻炼",
+        "一堆 学生 制定 公司",
+        "一份 优势 缺乏 家庭",
+        "一种 垃圾 成立 法律",
+        "4 根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "刘辰的烦恼 届、乐观、优势",
+        "简历、体验、从此、初中、",
+        "刘辰的机会",
+        "成长",
+        "制作、假设、反应、陆续、",
+        "节目现场",
+        "堆、具体",
+        "求职的结果 显然、成立、前途、缺乏",
+        "28"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap www.nhantriviet.com/GiaoTrinhChuanHSk\n参考范围 具体 乐观 陆续 显然\n①因为天气影响，我们的活动推迟了， 时间再等通知。\n②会议快要开始了，代表们 走进了会场。\n③这次比赛是在全国 内举行的。\nHSK 标准教程5（下）\n前两局棋输给爸爸，他 并不担心。\n不管遇到什么困难，都要 地面对生活。\n这只是我个人意见，仅供你\n选择正确答案\n这个玩具是我爸爸亲手为我 的。 (A.制作 B.制造）\n②我们 他明天9点能出发，那么10点可以到这儿。\n（A.假设 B.假如）\n我们已经安全地 目的地了。 (A.达到 B.到达）\n来我们公司工作，你的前途一片 （A.光明 B.明亮）\n3 画线连接可以搭配的词语\n(1) (2)\n—届 答案 失去 锻炼\n一堆 学生 制定 公司\n一份 优势 缺乏 家庭\n一种 垃圾 成立 法律\n4 根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n刘辰的烦恼 届、乐观、优势\n简历、体验、从此、初中、\n刘辰的机会\n成长\n制作、假设、反应、陆续、\n节目现场\n堆、具体\n求职的结果 显然、成立、前途、缺乏\n28",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-094",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-094",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-094",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-094",
+          "rowIndex": 36
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-094",
+          "rowIndex": 37
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-094",
+          "rowIndex": 38
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-095",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-096",
+          "rowIndex": 0
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-29-01",
+      "lessonId": "hsk5l-lesson-29",
+      "lessonNumber": 29,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "电池妨碍 利润培养 资金 不见得",
+        "太晚了，我先走了，不 您休息。",
+        "我的手机 不行了，得去换一块。",
+        "③让他们俩在一起多待一会儿吧， 一下感情。",
+        "我们这个是薄利多销，本来就没有多少 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "你们上次赢了，这次就肯定也能赢吗？我看",
+        "这次活动，学校为我们提供了 支持。",
+        "HSK 标准教程5（下）",
+        "选择正确答案",
+        "她的汉语说得很好，我的发音 她。 (A.不如 B.没有）",
+        "②我建议你别去看那个演出，我已经看过了，很",
+        "(A.倒霉 B.糟糕）",
+        "③最后老师的话 他改变了主意。 （A.促进 B.促使）",
+        "阳台、卧室的整体感觉都不错。但是桌子摆这儿，明显不",
+        "(A.合理 B.有理）",
+        "给括号里的词选择适当的位置",
+        "听说展览馆最近A有个B小人书展，C我们周末去D看看吧。 （不如)",
+        "2 他A上周B迟到，C这周D不来了？！ （干脆）",
+        "③A你B小心一点，C受伤就D麻烦了。 （万一)",
+        "大家A都选的B就C是D最好的。 （不见得）",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "建伟书店的 公寓、利润、媒体、",
+        "经营情况 不如",
+        "亲友的建议 干脆、热心、傻",
+        "商业、促使、妨碍、",
+        "建伟的反应",
+        "促进、万一、不见得"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n电池妨碍 利润培养 资金 不见得\n太晚了，我先走了，不 您休息。\n我的手机 不行了，得去换一块。\n③让他们俩在一起多待一会儿吧， 一下感情。\n我们这个是薄利多销，本来就没有多少 www.nhantriviet.com/GiaoTrinhChuanHSK\n你们上次赢了，这次就肯定也能赢吗？我看\n这次活动，学校为我们提供了 支持。\nHSK 标准教程5（下）\n选择正确答案\n她的汉语说得很好，我的发音 她。 (A.不如 B.没有）\n②我建议你别去看那个演出，我已经看过了，很\n(A.倒霉 B.糟糕）\n③最后老师的话 他改变了主意。 （A.促进 B.促使）\n阳台、卧室的整体感觉都不错。但是桌子摆这儿，明显不\n(A.合理 B.有理）\n给括号里的词选择适当的位置\n听说展览馆最近A有个B小人书展，C我们周末去D看看吧。 （不如)\n2 他A上周B迟到，C这周D不来了？！ （干脆）\n③A你B小心一点，C受伤就D麻烦了。 （万一)\n大家A都选的B就C是D最好的。 （不见得）\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n建伟书店的 公寓、利润、媒体、\n经营情况 不如\n亲友的建议 干脆、热心、傻\n商业、促使、妨碍、\n建伟的反应\n促进、万一、不见得",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-102",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-103",
+          "rowIndex": 20
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-30-01",
+      "lessonId": "hsk5l-lesson-30",
+      "lessonNumber": 30,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Baitap",
+        "实用 接近 落后 逃避 延长",
+        "①遇到困难不应该 ，应该积极地面对。",
+        "②由于报名的考生太多，学校决定适当 报名时间。",
+        "③公司在产品包装、宣传推广和销售等方面积累了相当丰富、 的",
+        "经验。",
+        "中国各地区经济发展水平不平衡，中西部 于东南沿海地区。",
+        "5参加本届运动会的运动员人数 一万人。",
+        "选择正确答案",
+        "①你听谁说刘方要结婚了？消息 吗？ (A.的确 B.确实）",
+        "②主任临时有点儿事，下午的会 到明天了。（A.延长 B.推迟）",
+        "③让孩子 到自己的意见受到尊重，这一点很重要。",
+        "(A.体会 B.感想）",
+        "他 就看不见这些美丽的花呀。 (A.本质 B.根本）",
+        "HSK 标准教程5（下）",
+        "3 画线连接可以搭配的词语",
+        "(1） (2)",
+        "设备 惊人 说话 落后",
+        "体会 笨重 经济 和平",
+        "概念 深刻 方法 巧妙",
+        "效率 抽象 世界 实用",
+        "4 根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "沙丁鱼的运输 环境、适应、岸、",
+        "问题 口感、销售、涨",
+        "延长、损失、改善、",
+        "如何提高沙丁",
+        "无意、巧妙、实用、",
+        "鱼的存活率",
+        "逃避、不断、比例",
+        "体会、核心、刺激、",
+        "“鱼效应”",
+        "活力、落后、危机感、",
+        "的启发",
+        "有利、状态"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBaitap\n实用 接近 落后 逃避 延长\n①遇到困难不应该 ，应该积极地面对。\n②由于报名的考生太多，学校决定适当 报名时间。\n③公司在产品包装、宣传推广和销售等方面积累了相当丰富、 的\n经验。\n中国各地区经济发展水平不平衡，中西部 于东南沿海地区。\n5参加本届运动会的运动员人数 一万人。\n选择正确答案\n①你听谁说刘方要结婚了？消息 吗？ (A.的确 B.确实）\n②主任临时有点儿事，下午的会 到明天了。（A.延长 B.推迟）\n③让孩子 到自己的意见受到尊重，这一点很重要。\n(A.体会 B.感想）\n他 就看不见这些美丽的花呀。 (A.本质 B.根本）\nHSK 标准教程5（下）\n3 画线连接可以搭配的词语\n(1） (2)\n设备 惊人 说话 落后\n体会 笨重 经济 和平\n概念 深刻 方法 巧妙\n效率 抽象 世界 实用\n4 根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n沙丁鱼的运输 环境、适应、岸、\n问题 口感、销售、涨\n延长、损失、改善、\n如何提高沙丁\n无意、巧妙、实用、\n鱼的存活率\n逃避、不断、比例\n体会、核心、刺激、\n“鱼效应”\n活力、落后、危机感、\n的启发\n有利、状态",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-110",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-111",
+          "rowIndex": 20
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-31-01",
+      "lessonId": "hsk5l-lesson-31",
+      "lessonNumber": 31,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 选择合适的词语填空",
+        "Bai tap",
+        "迫切 无所谓 了不起 标志 处理 赞成",
+        "每次比赛之前，我都要仔细记一些比赛线路周围的",
+        "大家都不 让刘研去负责上海的项目。",
+        "③平时很多问题都是他去 的，别人根本不会。",
+        "如果新工作有发展空间，工资低一点儿也",
+        "公司 需要开发出适合亚洲市场的新产品。",
+        "不就是买了个新手机吗？有什么 的。",
+        "选择正确答案",
+        "没想到，主任的态度很 不同意他去。 （A.冷淡B.清淡）",
+        "②当经理有什么 的。 （A.了不起B.不得了）",
+        "③你自己一个人去花园里玩儿，妈妈 了吗？ （A.赞成B.同意）",
+        "挺好的工作为什么要辞职？你怎么这么 啊？ （A.糊涂B.模糊）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "出示 消息 待人 模糊",
+        "赞成 资料 图像 谦虚",
+        "编辑 意见 愿望 犹豫",
+        "报告 证件 动作 迫切",
+        "HSK 标准教程5（下）",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "编辑、领导、心情、",
+        "朋友是如何请好",
+        "改天、兴趣、轻易、",
+        "假的",
+        "利用、处理",
+        "社区、驾驶、标志、",
+        "心理学家的实验 拒绝、接受、步骤、",
+        "赞成、签字",
+        "迫切、犹豫、冷淡、",
+        "如何向人提出",
+        "答应、无所谓、模糊、",
+        "请求",
+        "台阶",
+        "“放低身段”的 了不起、通常、缩短距",
+        "好处 离、看不起、谦虚"
+      ],
+      "contentOcr": "练习1 选择合适的词语填空\nBai tap\n迫切 无所谓 了不起 标志 处理 赞成\n每次比赛之前，我都要仔细记一些比赛线路周围的\n大家都不 让刘研去负责上海的项目。\n③平时很多问题都是他去 的，别人根本不会。\n如果新工作有发展空间，工资低一点儿也\n公司 需要开发出适合亚洲市场的新产品。\n不就是买了个新手机吗？有什么 的。\n选择正确答案\n没想到，主任的态度很 不同意他去。 （A.冷淡B.清淡）\n②当经理有什么 的。 （A.了不起B.不得了）\n③你自己一个人去花园里玩儿，妈妈 了吗？ （A.赞成B.同意）\n挺好的工作为什么要辞职？你怎么这么 啊？ （A.糊涂B.模糊）\n3 画线连接可以搭配的词语\n(1) (2)\n出示 消息 待人 模糊\n赞成 资料 图像 谦虚\n编辑 意见 愿望 犹豫\n报告 证件 动作 迫切\nHSK 标准教程5（下）\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n编辑、领导、心情、\n朋友是如何请好\n改天、兴趣、轻易、\n假的\n利用、处理\n社区、驾驶、标志、\n心理学家的实验 拒绝、接受、步骤、\n赞成、签字\n迫切、犹豫、冷淡、\n如何向人提出\n答应、无所谓、模糊、\n请求\n台阶\n“放低身段”的 了不起、通常、缩短距\n好处 离、看不起、谦虚",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-120",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-121",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-32-01",
+      "lessonId": "hsk5l-lesson-32",
+      "lessonNumber": 32,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "鼓舞 公布 消失 幻想 不安幸运",
+        "小时候，他常 着自己有一天也能成为一名导演。",
+        "②船翻了，他很 地抱住一根木头，游到一个小岛上。",
+        "大赛的作品将被放在网上，由网友打分，比赛结果于四月十五",
+        "日",
+        "4谈判的成功给了他极大的",
+        "接到电话，她感到有些 急忙连夜赶回家中。",
+        "记录、保存将要 的事物是摄影非常重要的作用。",
+        "HSK 标准教程5（下）",
+        "选择正确答案",
+        "虽然我不同意你的看法，但我还是 你的选择。",
+        "(A.尊敬 B.尊重）",
+        "②作品充分地表达了作者内心 的情感。 (A.真实 B.确实）",
+        "③那个城市的基础 还不够完善。 (A.设施 B.设备）",
+        "这次考试能否通过，我实在没什么 (A.把握 B.掌握）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "贡献 幻想 态度 密切",
+        "放弃 力量 话题 不安",
+        "改变 人心 联系 消极",
+        "鼓舞 命运 心神 敏感",
+        "4 根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "污染对动植物 消失、自然界、破坏、",
+        "的危害 砍、沙漠、真实",
+        "污染对人类的 水资源、短缺、疾病、",
+        "危害 数据",
+        "造成污染的 工业农业、生产、",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 原因 汽车尾气、垃圾",
+        "保护环境的 设施、能源、逐步、",
+        "措施 转变、尽量、私家车",
+        "32",
+        "身边的环保"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n鼓舞 公布 消失 幻想 不安幸运\n小时候，他常 着自己有一天也能成为一名导演。\n②船翻了，他很 地抱住一根木头，游到一个小岛上。\n大赛的作品将被放在网上，由网友打分，比赛结果于四月十五\n日\n4谈判的成功给了他极大的\n接到电话，她感到有些 急忙连夜赶回家中。\n记录、保存将要 的事物是摄影非常重要的作用。\nHSK 标准教程5（下）\n选择正确答案\n虽然我不同意你的看法，但我还是 你的选择。\n(A.尊敬 B.尊重）\n②作品充分地表达了作者内心 的情感。 (A.真实 B.确实）\n③那个城市的基础 还不够完善。 (A.设施 B.设备）\n这次考试能否通过，我实在没什么 (A.把握 B.掌握）\n3 画线连接可以搭配的词语\n(1) (2)\n贡献 幻想 态度 密切\n放弃 力量 话题 不安\n改变 人心 联系 消极\n鼓舞 命运 心神 敏感\n4 根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n污染对动植物 消失、自然界、破坏、\n的危害 砍、沙漠、真实\n污染对人类的 水资源、短缺、疾病、\n危害 数据\n造成污染的 工业农业、生产、\nwww.nhantriviet.com/GiaoTrinhChuanHSK 原因 汽车尾气、垃圾\n保护环境的 设施、能源、逐步、\n措施 转变、尽量、私家车\n32\n身边的环保",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-128",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-129",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-130",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-33-01",
+      "lessonId": "hsk5l-lesson-33",
+      "lessonNumber": 33,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 选择合适的词语填空",
+        "Bai tap",
+        "保险 缓解 赔偿拥挤 咨询 展开",
+        "1每当体育馆有比赛举行，周围的交通就会出现 情况。",
+        "②手术有风险，小明父母 了许多专家后，还是决定做。",
+        "③为了赢得顾客，双方一定会在服务方面 竞争。",
+        "小李办事太马虎，你派他去可不太",
+        "车的问题已经处理好了，保险公司正在办理 手续。 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "道路修通后，灾民饮水困难的问题得到了",
+        "HSK 标准教程5（下）",
+        "选择正确答案",
+        "①学校规定，旷课达到60节以上的学生 其考试的资格。",
+        "（A.取消B.消失）",
+        "②汽油明天要涨价了， 加油站又有车在排队加油呢。",
+        "（A.难怪B.难道）",
+        "③一个好的领导能 听取不同的意见。 (A.谦虚B.虚心）",
+        "④调查发现，有60%的人 表示愿意选择公交出行。",
+        "(A.明确B.清楚)",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "展开 影响 缓解 胜利",
+        "扩大 方案 取消 矛盾",
+        "归纳 辩论 赔偿 限制",
+        "批准 观点 期待 损失",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "城市交通的 拥堵、新建/加宽道路、",
+        "问题 跟不上",
+        "启发詹森的 照常、健身、图省事、",
+        "一件事 撞倒、受伤",
+        "增设、红绿灯、取消、",
+        "詹森的妙招",
+        "通道、行人、难怪、",
+        "及其效果",
+        "与其、公交、缓解",
+        "33",
+        "以堵治堵"
+      ],
+      "contentOcr": "练习1 选择合适的词语填空\nBai tap\n保险 缓解 赔偿拥挤 咨询 展开\n1每当体育馆有比赛举行，周围的交通就会出现 情况。\n②手术有风险，小明父母 了许多专家后，还是决定做。\n③为了赢得顾客，双方一定会在服务方面 竞争。\n小李办事太马虎，你派他去可不太\n车的问题已经处理好了，保险公司正在办理 手续。 www.nhantriviet.com/GiaoTrinhChuanHSK\n道路修通后，灾民饮水困难的问题得到了\nHSK 标准教程5（下）\n选择正确答案\n①学校规定，旷课达到60节以上的学生 其考试的资格。\n（A.取消B.消失）\n②汽油明天要涨价了， 加油站又有车在排队加油呢。\n（A.难怪B.难道）\n③一个好的领导能 听取不同的意见。 (A.谦虚B.虚心）\n④调查发现，有60%的人 表示愿意选择公交出行。\n(A.明确B.清楚)\n3 画线连接可以搭配的词语\n(1) (2)\n展开 影响 缓解 胜利\n扩大 方案 取消 矛盾\n归纳 辩论 赔偿 限制\n批准 观点 期待 损失\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n城市交通的 拥堵、新建/加宽道路、\n问题 跟不上\n启发詹森的 照常、健身、图省事、\n一件事 撞倒、受伤\n增设、红绿灯、取消、\n詹森的妙招\n通道、行人、难怪、\n及其效果\n与其、公交、缓解\n33\n以堵治堵",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-136",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-137",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-138",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-34-01",
+      "lessonId": "hsk5l-lesson-34",
+      "lessonNumber": 34,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "（2）他把纸铺（pu，trai）A，笔拿B好，准备C练习D书法。",
+        "（3）那件事情已经都A传B了C，大家都知道D了。",
+        "（二）词语搭配",
+        "动词 宾语 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "动物/孩子/病人/",
+        "接触",
+        "大自然/社会/新信息",
+        "爱惜 羽毛/身体/生命/粮食",
+        "HSK 标准教程5（下）",
+        "定语 十 中心语",
+        "明显/突出/唯一（的） 特征",
+        "唯一（的） 办法/选择/结果/爱/角色",
+        "光滑的 表面/皮肤/羽毛",
+        "干燥的 表面/皮肤/环境/空气/气候",
+        "状语 + 中心语",
+        "痛快地 哭/笑/吃/喝/骂",
+        "热情地 迎接",
+        "数量词 + 名词",
+        "一只/一双/一对 翅膀",
+        "—把 梳子",
+        "（三）词语辨析",
+        "反复一重复",
+        "反复 重复",
+        "共 都有不止一次的意思。",
+        "同点",
+        "如：这件事情你已经反复/重复说过好几遍了。",
+        "1.副词，一遍一遍地。 1.动词，指又一次做同样的事情。",
+        "如：它们只要一有时间，就会情",
+        "不自禁地背过头去，反复地 如：我没听清，请你再重复一遍。",
+        "啄着羽毛。",
+        "不同 2.动词，不利的情况重新出现。 2.动词，同样的东西再次出现。",
+        "点 如：这种病容易反复。 如：这两个练习题重复了。",
+        "3.名词，重复出现的不好的情况。",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 如：对这个问题，他思想上可 3.没有这个用法。",
+        "能还有反复。",
+        "34",
+        "做一做：选词填空 鸟儿的护肤术",
+        "反复 重复",
+        "（1）我已经 讲了多少次，你竞然还是忘了！",
+        "（2）这个实验我已经 过两次了。",
+        "（3）经过 实验，他们终于成功了。",
+        "（4）他的病情出现了 ，情况不太乐观。",
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "昆虫 秘密 概括 光滑 痛快 唯一",
+        "①那件事将是我一生中 的遗憾。",
+        "②李将军这次去北京的行动是 的。",
+        "③你好容易来一趟，我们今晚一定要喝个",
+        "有些 和鸟类一样有翅膀。",
+        "经常使用我们的肥皂，您的皮肤将变得更加",
+        "6这次会议的精神可以 为三点。",
+        "选择正确答案",
+        "①我们要 粮食，不要浪费。 (A.爱惜 B.爱护）",
+        "她总是 带着伞，说“不怕一万，就怕万一”",
+        "(A.随手 B.随身)",
+        "③警察一把把小偷给 住了。 (A.拿 B.抓）",
+        "④这个地区的动植物 多，数量大。 (A.种类 B.类型）",
+        "HSK 标准教程5（下）",
+        "画线连接可以搭配的词语",
+        "(1) (2)",
+        "一只 肥皂 接触 大自然",
+        "一把 翅膀 迎接 财物",
+        "一块 昆虫 爱惜 机会",
+        "一双 梳子 抓住 挑战",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "接触、特征、翅膀、",
+        "鸟儿的特征",
+        "昆虫、唯一",
+        "羽毛的作用",
+        "关键、甚至、总之",
+        "背过头去、反复、随身、",
+        "保养羽毛的",
+        "抓、种类、概括、张开、",
+        "方法",
+        "干燥、秘密"
+      ],
+      "contentOcr": "（2）他把纸铺（pu，trai）A，笔拿B好，准备C练习D书法。\n（3）那件事情已经都A传B了C，大家都知道D了。\n（二）词语搭配\n动词 宾语 www.nhantriviet.com/GiaoTrinhChuanHSK\n动物/孩子/病人/\n接触\n大自然/社会/新信息\n爱惜 羽毛/身体/生命/粮食\nHSK 标准教程5（下）\n定语 十 中心语\n明显/突出/唯一（的） 特征\n唯一（的） 办法/选择/结果/爱/角色\n光滑的 表面/皮肤/羽毛\n干燥的 表面/皮肤/环境/空气/气候\n状语 + 中心语\n痛快地 哭/笑/吃/喝/骂\n热情地 迎接\n数量词 + 名词\n一只/一双/一对 翅膀\n—把 梳子\n（三）词语辨析\n反复一重复\n反复 重复\n共 都有不止一次的意思。\n同点\n如：这件事情你已经反复/重复说过好几遍了。\n1.副词，一遍一遍地。 1.动词，指又一次做同样的事情。\n如：它们只要一有时间，就会情\n不自禁地背过头去，反复地 如：我没听清，请你再重复一遍。\n啄着羽毛。\n不同 2.动词，不利的情况重新出现。 2.动词，同样的东西再次出现。\n点 如：这种病容易反复。 如：这两个练习题重复了。\n3.名词，重复出现的不好的情况。\nwww.nhantriviet.com/GiaoTrinhChuanHSK 如：对这个问题，他思想上可 3.没有这个用法。\n能还有反复。\n34\n做一做：选词填空 鸟儿的护肤术\n反复 重复\n（1）我已经 讲了多少次，你竞然还是忘了！\n（2）这个实验我已经 过两次了。\n（3）经过 实验，他们终于成功了。\n（4）他的病情出现了 ，情况不太乐观。\n练习 选择合适的词语填空\nBai tap\n昆虫 秘密 概括 光滑 痛快 唯一\n①那件事将是我一生中 的遗憾。\n②李将军这次去北京的行动是 的。\n③你好容易来一趟，我们今晚一定要喝个\n有些 和鸟类一样有翅膀。\n经常使用我们的肥皂，您的皮肤将变得更加\n6这次会议的精神可以 为三点。\n选择正确答案\n①我们要 粮食，不要浪费。 (A.爱惜 B.爱护）\n她总是 带着伞，说“不怕一万，就怕万一”\n(A.随手 B.随身)\n③警察一把把小偷给 住了。 (A.拿 B.抓）\n④这个地区的动植物 多，数量大。 (A.种类 B.类型）\nHSK 标准教程5（下）\n画线连接可以搭配的词语\n(1) (2)\n一只 肥皂 接触 大自然\n一把 翅膀 迎接 财物\n一块 昆虫 爱惜 机会\n一双 梳子 抓住 挑战\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n接触、特征、翅膀、\n鸟儿的特征\n昆虫、唯一\n羽毛的作用\n关键、甚至、总之\n背过头去、反复、随身、\n保养羽毛的\n抓、种类、概括、张开、\n方法\n干燥、秘密",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-144",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-145",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-146",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-147",
+          "rowIndex": 18
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-35-01",
+      "lessonId": "hsk5l-lesson-35",
+      "lessonNumber": 35,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Bai tap",
+        "测验 根本 内部 疲劳 系统 自动",
+        "①有时候，睡觉并不一定能缓解",
+        "②你的电脑太慢了，应该去给 做一下升级。",
+        "其实他是位盲人， 看不见你的动作。",
+        "楼下新装了一台 售货机。",
+        "一位心理学家找来两个7岁的孩子进行一项心理",
+        "这是我们公司 的问题，我们自己来解决吧。",
+        "选择正确答案",
+        "这是你第几次错了？！怎么不 教训呢？ （A.吸取B.吸收）",
+        "②你太激动了，最好 一下你的情绪。 (A.限制 B.控制）",
+        "③是他 提出要去参加这次比赛的。 (A.自动 B.主动）",
+        "今天的比赛 良好，没有球迷闹事。 （A.秩序 B.规则）",
+        "HSK 标准教程5（下）",
+        "画线连接可以搭配的词语",
+        "(1) (2)",
+        "—壶 玻璃 恢复 水分",
+        "—根 开水 了解 秩序",
+        "一块 天空 补充 状况",
+        "一片 管子 遵守 疲劳",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "运动之后 歇、肌肉、恢复、湿润",
+        "人出汗与大",
+        "指挥、赶快、片、运输",
+        "树“出汗”",
+        "吸收、控制、管子、",
+        "大树怎么",
+        "根本、自动、特殊、",
+        "“出汗”",
+        "状况、秩序"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBai tap\n测验 根本 内部 疲劳 系统 自动\n①有时候，睡觉并不一定能缓解\n②你的电脑太慢了，应该去给 做一下升级。\n其实他是位盲人， 看不见你的动作。\n楼下新装了一台 售货机。\n一位心理学家找来两个7岁的孩子进行一项心理\n这是我们公司 的问题，我们自己来解决吧。\n选择正确答案\n这是你第几次错了？！怎么不 教训呢？ （A.吸取B.吸收）\n②你太激动了，最好 一下你的情绪。 (A.限制 B.控制）\n③是他 提出要去参加这次比赛的。 (A.自动 B.主动）\n今天的比赛 良好，没有球迷闹事。 （A.秩序 B.规则）\nHSK 标准教程5（下）\n画线连接可以搭配的词语\n(1) (2)\n—壶 玻璃 恢复 水分\n—根 开水 了解 秩序\n一块 天空 补充 状况\n一片 管子 遵守 疲劳\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n运动之后 歇、肌肉、恢复、湿润\n人出汗与大\n指挥、赶快、片、运输\n树“出汗”\n吸收、控制、管子、\n大树怎么\n根本、自动、特殊、\n“出汗”\n状况、秩序",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-154",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-155",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5l-practice-36-01",
+      "lessonId": "hsk5l-lesson-36",
+      "lessonNumber": 36,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 选择合适的词语填空",
+        "Baitap",
+        "熟练结合 不然自豪庆祝 在乎",
+        "①我们的产品改善了许多人的生活，这是我们非常 的事情。",
+        "②这项规定是 了我校的实际情况而制定的。",
+        "老李对儿子面试没被录取的事显得满不",
+        "4国庆节期间，本市会举行大规模的 活动。",
+        "多亏了这条铁路， 这么多煤炭怎么运出去？",
+        "6我觉得你们的动作好像还不太 还得多练习练习。",
+        "HSK 标准教程5（下）",
+        "选择正确答案",
+        "①一连取得两场胜利，李岩 得不得了，以为冠军非他莫属了。",
+        "(A.自豪 B.骄傲）",
+        "②对于他们这种做法，我 自己的意见。 (A.保留 B.保存）",
+        "看到五星红旗在赛场上升起，我的眼圈 了。（A.潮湿 B.湿润）",
+        "他是个工作狂，生活中 工作还是工作。 (A.除非 B.除了）",
+        "3 画线连接可以搭配的词语",
+        "(1) (2)",
+        "结合 实际 气候 熟练",
+        "应付 观点 服装 潮湿",
+        "装饰 街道 情况 紧急",
+        "保留 挑战 动作 鲜艳",
+        "根据下面的提示词复述课文内容",
+        "内容提示 重点词语 课文复述",
+        "老舍先生养",
+        "除非、种（zhong）、奋斗",
+        "什么样的花",
+        "老舍养花的 在乎、剪枝、捡、装饰、",
+        "乐趣与辛苦 结合、紧急、抢救",
+        "喜干、浇水、潮湿、",
+        "老舍养花的",
+        "换盆、熟练、长虫、",
+        "经验",
+        "应付",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 老舍分享养 赏花、庆祝、保留、",
+        "花的快乐 劳动果实、夸",
+        "老舍为什么 有喜有悲、反正、",
+        "感谢花草 感谢、热爱",
+        "36",
+        "老舍与养花"
+      ],
+      "contentOcr": "练习 选择合适的词语填空\nBaitap\n熟练结合 不然自豪庆祝 在乎\n①我们的产品改善了许多人的生活，这是我们非常 的事情。\n②这项规定是 了我校的实际情况而制定的。\n老李对儿子面试没被录取的事显得满不\n4国庆节期间，本市会举行大规模的 活动。\n多亏了这条铁路， 这么多煤炭怎么运出去？\n6我觉得你们的动作好像还不太 还得多练习练习。\nHSK 标准教程5（下）\n选择正确答案\n①一连取得两场胜利，李岩 得不得了，以为冠军非他莫属了。\n(A.自豪 B.骄傲）\n②对于他们这种做法，我 自己的意见。 (A.保留 B.保存）\n看到五星红旗在赛场上升起，我的眼圈 了。（A.潮湿 B.湿润）\n他是个工作狂，生活中 工作还是工作。 (A.除非 B.除了）\n3 画线连接可以搭配的词语\n(1) (2)\n结合 实际 气候 熟练\n应付 观点 服装 潮湿\n装饰 街道 情况 紧急\n保留 挑战 动作 鲜艳\n根据下面的提示词复述课文内容\n内容提示 重点词语 课文复述\n老舍先生养\n除非、种（zhong）、奋斗\n什么样的花\n老舍养花的 在乎、剪枝、捡、装饰、\n乐趣与辛苦 结合、紧急、抢救\n喜干、浇水、潮湿、\n老舍养花的\n换盆、熟练、长虫、\n经验\n应付\nwww.nhantriviet.com/GiaoTrinhChuanHSK 老舍分享养 赏花、庆祝、保留、\n花的快乐 劳动果实、夸\n老舍为什么 有喜有悲、反正、\n感谢花草 感谢、热爱\n36\n老舍与养花",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 36
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 37
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-162",
+          "rowIndex": 38
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-163",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk5l-source-page-164",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

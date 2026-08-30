@@ -1,5 +1,4 @@
 import assessmentData from "../content/hsk1-textbook-json/shared/assessment-items.json" with { type: "json" };
-import characterData from "../content/hsk1-textbook-json/shared/characters.json" with { type: "json" };
 import dialogueData from "../content/hsk1-textbook-json/shared/dialogues.json" with { type: "json" };
 import grammarData from "../content/hsk1-textbook-json/shared/grammar-points.json" with { type: "json" };
 import lexemeData from "../content/hsk1-textbook-json/shared/lexemes.json" with { type: "json" };
@@ -70,16 +69,49 @@ export type HskExercise = {
   type: "meaning" | "listening" | "pinyin";
   instruction: string;
   prompt: string;
+  pinyin?: string;
+  note?: string;
   speakText?: string;
   options: string[];
-  answer: string;
+  answer: string | null;
 };
 
 export type HskWritingCharacter = {
+  id: string;
+  word: string;
   hanzi: string;
   pinyin: string;
   meaning: string;
 };
+
+const HANZI_GLYPH_PATTERN = /[\u3400-\u9fff]/u;
+
+export function buildHskWritingCharacters(
+  vocabulary: HskVocabularyItem[],
+): HskWritingCharacter[] {
+  const usedGlyphs = new Set<string>();
+
+  return vocabulary.map((word) => {
+    const glyphs = Array.from(word.hanzi).filter((glyph) => HANZI_GLYPH_PATTERN.test(glyph));
+    if (!glyphs.length) {
+      throw new Error(`Từ vựng ${word.id} không có chữ Hán để tạo bài luyện viết`);
+    }
+
+    const unusedIndex = glyphs.findIndex((glyph) => !usedGlyphs.has(glyph));
+    const glyphIndex = unusedIndex >= 0 ? unusedIndex : 0;
+    const hanzi = glyphs[glyphIndex];
+    const syllables = word.pinyin.split(/\s+/u).filter(Boolean);
+    usedGlyphs.add(hanzi);
+
+    return {
+      id: word.id,
+      word: word.hanzi,
+      hanzi,
+      pinyin: syllables[glyphIndex] ?? word.pinyin,
+      meaning: word.meaning,
+    };
+  });
+}
 
 export type HskLessonContent = {
   id: string;
@@ -101,6 +133,7 @@ export type HskLessonContent = {
   contentStatus: "draft" | "review" | "published" | "archived";
   languageReviewStatus: "pending" | "approved" | "changes-requested";
   audioAvailable: boolean;
+  guidedPlaceholders?: Array<"vocabulary" | "dialogue" | "pronunciation" | "writing">;
 };
 
 type RawLessonSection = {
@@ -155,13 +188,6 @@ type RawGrammarPoint = {
   exampleDialogueRefs: string[];
 };
 
-type RawCharacter = {
-  id: string;
-  glyph: string;
-  pinyin: string;
-  meaningVi: string;
-};
-
 type RawAssessment = {
   id: string;
   type: "multiple-choice" | "select-pinyin";
@@ -203,9 +229,6 @@ const DIALOGUES = new Map(
 );
 const GRAMMAR_POINTS = new Map(
   (grammarData.items as RawGrammarPoint[]).map((item) => [`grammar-point:${item.id}`, item]),
-);
-const CHARACTERS = new Map(
-  (characterData.items as RawCharacter[]).map((item) => [`character:${item.id}`, item]),
 );
 const ASSESSMENTS = new Map(
   (assessmentData.items as RawAssessment[]).map((item) => [`assessment-item:${item.id}`, item]),
@@ -338,6 +361,17 @@ function composeLesson(raw: RawLesson): HskLessonContent {
   const pronunciation = getSectionRefs(raw, "pronunciation").map((ref) =>
     requireEntity(PRONUNCIATION_TOPICS, ref, raw.id),
   );
+  const vocabulary = getSectionRefs(raw, "vocabulary").map((ref) => {
+    const lexeme = requireEntity(LEXEMES, ref, raw.id);
+    return {
+      id: lexeme.id,
+      hanzi: lexeme.simplified,
+      pinyin: lexeme.pinyin,
+      meaning: lexeme.senses[0]?.meaningVi ?? "",
+      wordClass: WORD_CLASS_LABELS[lexeme.wordClass] ?? lexeme.wordClass,
+      ...findVocabularyExample(lexeme, dialogues),
+    };
+  });
   return {
     id: raw.slug,
     sourceId: raw.id,
@@ -349,17 +383,7 @@ function composeLesson(raw: RawLesson): HskLessonContent {
     summary: raw.metadata.summaryVi,
     minutes: raw.metadata.estimatedMinutes,
     modes: ["vocabulary", "exercise", "pronunciation", "hanzi"],
-    vocabulary: getSectionRefs(raw, "vocabulary").map((ref) => {
-      const lexeme = requireEntity(LEXEMES, ref, raw.id);
-      return {
-        id: lexeme.id,
-        hanzi: lexeme.simplified,
-        pinyin: lexeme.pinyin,
-        meaning: lexeme.senses[0]?.meaningVi ?? "",
-        wordClass: WORD_CLASS_LABELS[lexeme.wordClass] ?? lexeme.wordClass,
-        ...findVocabularyExample(lexeme, dialogues),
-      };
-    }),
+    vocabulary,
     grammar: getSectionRefs(raw, "grammar").map((ref) =>
       toGrammarPoint(requireEntity(GRAMMAR_POINTS, ref, raw.id)),
     ),
@@ -368,14 +392,7 @@ function composeLesson(raw: RawLesson): HskLessonContent {
     exercises: getSectionRefs(raw, "practice").map((ref) =>
       toExercise(requireEntity(ASSESSMENTS, ref, raw.id)),
     ),
-    writingCharacters: getSectionRefs(raw, "writing").map((ref) => {
-      const character = requireEntity(CHARACTERS, ref, raw.id);
-      return {
-        hanzi: character.glyph,
-        pinyin: character.pinyin,
-        meaning: character.meaningVi,
-      };
-    }),
+    writingCharacters: buildHskWritingCharacters(vocabulary),
     contentStatus: raw.status,
     languageReviewStatus: raw.editorial.languageReviewStatus,
     audioAvailable: pronunciation.every((item) => item.audioStatus === "available"),

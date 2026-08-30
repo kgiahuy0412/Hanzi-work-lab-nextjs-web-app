@@ -1,0 +1,445 @@
+{
+  "schemaVersion": "1.0.0",
+  "grammarPoints": [
+    {
+      "id": "hsk2-tb-l01-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sourceNumber": 1,
+      "titleZh": "助动词“要”",
+      "titleVi": "Trợ động từ 要",
+      "sourcePageRef": "hsk2-tb-source-page-018",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l01-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sourceNumber": 2,
+      "titleZh": "程度副词“最”",
+      "titleVi": "Phó từ chỉ mức độ 最",
+      "sourcePageRef": "hsk2-tb-source-page-018",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l01-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "sourceNumber": 3,
+      "titleZh": "概数的表达：几、多",
+      "titleVi": "Cách diễn tả số ước lượng: 几 và 多",
+      "sourcePageRef": "hsk2-tb-source-page-018",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l02-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sourceNumber": 1,
+      "titleZh": "用“是不是”的问句",
+      "titleVi": "Câu hỏi với 是不是",
+      "sourcePageRef": "hsk2-tb-source-page-026",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l02-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sourceNumber": 2,
+      "titleZh": "代词“每”",
+      "titleVi": "Đại từ 每",
+      "sourcePageRef": "hsk2-tb-source-page-026",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l02-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "sourceNumber": 3,
+      "titleZh": "疑问代词“多”",
+      "titleVi": "Đại từ nghi vấn 多",
+      "sourcePageRef": "hsk2-tb-source-page-026",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l03-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sourceNumber": 1,
+      "titleZh": "“的”字短语",
+      "titleVi": "Cụm từ có 的",
+      "sourcePageRef": "hsk2-tb-source-page-034",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l03-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sourceNumber": 2,
+      "titleZh": "一下",
+      "titleVi": "Cách dùng 一下",
+      "sourcePageRef": "hsk2-tb-source-page-034",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l03-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "sourceNumber": 3,
+      "titleZh": "语气副词“真”",
+      "titleVi": "Phó từ ngữ khí 真",
+      "sourcePageRef": "hsk2-tb-source-page-034",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l04-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sourceNumber": 1,
+      "titleZh": "“是……的”句：强调施事",
+      "titleVi": "Cấu trúc 是……的: nhấn mạnh chủ thể thực hiện hành động",
+      "sourcePageRef": "hsk2-tb-source-page-042",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l04-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sourceNumber": 2,
+      "titleZh": "表示时间：……的时候",
+      "titleVi": "Cấu trúc diễn tả thời gian: ……的时候",
+      "sourcePageRef": "hsk2-tb-source-page-042",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l04-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "sourceNumber": 3,
+      "titleZh": "时间副词“已经”",
+      "titleVi": "Phó từ chỉ thời gian 已经",
+      "sourcePageRef": "hsk2-tb-source-page-042",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l05-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sourceNumber": 1,
+      "titleZh": "副词“就”",
+      "titleVi": "Phó từ 就",
+      "sourcePageRef": "hsk2-tb-source-page-050",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l05-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sourceNumber": 2,
+      "titleZh": "语气副词“还”（1）",
+      "titleVi": "Phó từ ngữ khí 还 (1)",
+      "sourcePageRef": "hsk2-tb-source-page-050",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l05-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "sourceNumber": 3,
+      "titleZh": "程度副词“有点儿”",
+      "titleVi": "Phó từ chỉ mức độ 有点儿",
+      "sourcePageRef": "hsk2-tb-source-page-050",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l06-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sourceNumber": 1,
+      "titleZh": "疑问代词“怎么”",
+      "titleVi": "Đại từ nghi vấn 怎么",
+      "sourcePageRef": "hsk2-tb-source-page-058",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l06-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sourceNumber": 2,
+      "titleZh": "量词的重叠",
+      "titleVi": "Sự lặp lại lượng từ",
+      "sourcePageRef": "hsk2-tb-source-page-058",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l06-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "sourceNumber": 3,
+      "titleZh": "关联词“因为……，所以……”",
+      "titleVi": "Cấu trúc 因为……，所以……",
+      "sourcePageRef": "hsk2-tb-source-page-058",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sourceNumber": 1,
+      "titleZh": "语气副词“还”（2）",
+      "titleVi": "Phó từ ngữ khí 还 (2)",
+      "sourcePageRef": "hsk2-tb-source-page-066",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sourceNumber": 2,
+      "titleZh": "时间副词“就”",
+      "titleVi": "Phó từ chỉ thời gian 就",
+      "sourcePageRef": "hsk2-tb-source-page-066",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sourceNumber": 3,
+      "titleZh": "离",
+      "titleVi": "Động từ 离",
+      "sourcePageRef": "hsk2-tb-source-page-066",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-grammar-04",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "sourceNumber": 4,
+      "titleZh": "语气助词“呢”",
+      "titleVi": "Trợ từ ngữ khí 呢",
+      "sourcePageRef": "hsk2-tb-source-page-066",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sourceNumber": 1,
+      "titleZh": "疑问句“……，好吗？”",
+      "titleVi": "Câu hỏi có cấu trúc: ……，好吗？",
+      "sourcePageRef": "hsk2-tb-source-page-074",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sourceNumber": 2,
+      "titleZh": "副词“再”",
+      "titleVi": "Phó từ 再",
+      "sourcePageRef": "hsk2-tb-source-page-074",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sourceNumber": 3,
+      "titleZh": "兼语句",
+      "titleVi": "Câu kiêm ngữ",
+      "sourcePageRef": "hsk2-tb-source-page-074",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-grammar-04",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "sourceNumber": 4,
+      "titleZh": "动词的重叠",
+      "titleVi": "Sự lặp lại động từ",
+      "sourcePageRef": "hsk2-tb-source-page-074",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l09-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sourceNumber": 1,
+      "titleZh": "结果补语",
+      "titleVi": "Bổ ngữ chỉ kết quả",
+      "sourcePageRef": "hsk2-tb-source-page-082",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l09-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sourceNumber": 2,
+      "titleZh": "介词“从”",
+      "titleVi": "Giới từ 从",
+      "sourcePageRef": "hsk2-tb-source-page-082",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l09-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "sourceNumber": 3,
+      "titleZh": "“第”表示顺序",
+      "titleVi": "Cách diễn tả thứ tự bằng 第……",
+      "sourcePageRef": "hsk2-tb-source-page-082",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l10-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "sourceNumber": 1,
+      "titleZh": "祈使句：不要……了；别……了",
+      "titleVi": "Câu cầu khiến: 不要……了 / 别……了",
+      "sourcePageRef": "hsk2-tb-source-page-090",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l10-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "sourceNumber": 2,
+      "titleZh": "介词“对”",
+      "titleVi": "Giới từ 对",
+      "sourcePageRef": "hsk2-tb-source-page-090",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l11-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sourceNumber": 1,
+      "titleZh": "动词结构做定语",
+      "titleVi": "Cấu trúc có động từ hoặc cụm động từ làm định ngữ",
+      "sourcePageRef": "hsk2-tb-source-page-098",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l11-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sourceNumber": 2,
+      "titleZh": "“比”字句（1）",
+      "titleVi": "Câu có từ 比 (1)",
+      "sourcePageRef": "hsk2-tb-source-page-098",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l11-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "sourceNumber": 3,
+      "titleZh": "助动词“可能”",
+      "titleVi": "Trợ động từ 可能",
+      "sourcePageRef": "hsk2-tb-source-page-098",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l12-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "sourceNumber": 1,
+      "titleZh": "状态程度补语",
+      "titleVi": "Bổ ngữ chỉ trạng thái",
+      "sourcePageRef": "hsk2-tb-source-page-106",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l12-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "sourceNumber": 2,
+      "titleZh": "“比”字句（2）",
+      "titleVi": "Câu có từ 比 (2)",
+      "sourcePageRef": "hsk2-tb-source-page-106",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sourceNumber": 1,
+      "titleZh": "动态助词“着”",
+      "titleVi": "Trợ từ động thái 着",
+      "sourcePageRef": "hsk2-tb-source-page-114",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sourceNumber": 2,
+      "titleZh": "反问句“不是……吗？”",
+      "titleVi": "Câu hỏi phản vấn: 不是……吗？",
+      "sourcePageRef": "hsk2-tb-source-page-114",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "sourceNumber": 3,
+      "titleZh": "介词“往”",
+      "titleVi": "Giới từ 往",
+      "sourcePageRef": "hsk2-tb-source-page-114",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l14-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sourceNumber": 1,
+      "titleZh": "动态助词“过”",
+      "titleVi": "Trợ từ động thái 过",
+      "sourcePageRef": "hsk2-tb-source-page-122",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l14-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sourceNumber": 2,
+      "titleZh": "关联词“虽然……，但是……”",
+      "titleVi": "Cấu trúc 虽然……，但是……",
+      "sourcePageRef": "hsk2-tb-source-page-122",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l14-grammar-03",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "sourceNumber": 3,
+      "titleZh": "动量补语“次”",
+      "titleVi": "Bổ ngữ chỉ tần suất 次",
+      "sourcePageRef": "hsk2-tb-source-page-122",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l15-grammar-01",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "sourceNumber": 1,
+      "titleZh": "动作的状态：“要……了”",
+      "titleVi": "Cấu trúc diễn tả trạng thái sắp xảy ra của hành động: 要……了",
+      "sourcePageRef": "hsk2-tb-source-page-130",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l15-grammar-02",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "sourceNumber": 2,
+      "titleZh": "“都……了”",
+      "titleVi": "Cấu trúc 都……了",
+      "sourcePageRef": "hsk2-tb-source-page-130",
+      "sourceEvidence": "table-of-contents-and-grammar-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    }
+  ]
+}

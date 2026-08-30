@@ -1,0 +1,125 @@
+{
+  "id": "hsk5l-lesson-21",
+  "number": 21,
+  "unitId": "hsk5l-unit-07",
+  "titleZh": "汉字叔叔：一个美国人的汉字情缘",
+  "titleVi": "Tình yêu chữ Hán của \"ông chú người Mỹ\"",
+  "sourcePdfPages": {
+    "start": 31,
+    "end": 39
+  },
+  "sourcePrintedPages": {
+    "start": 30,
+    "end": 38
+  },
+  "audioTracks": [
+    "21-1",
+    "21-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 31,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身1 说说你母语所使用的文字和中文有什么不同。简单介绍一下你在学习汉字"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 31,
+      "rowIndex": 14,
+      "matchedTextOcr": "课文汉字叔叔：一个美国人的汉字情缘 （657字） 21-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 33,
+      "rowIndex": 30,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 37,
+      "rowIndex": 1,
+      "matchedTextOcr": "练习1 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 38,
+      "rowIndex": 12,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 39,
+      "rowIndex": 1,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-21-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-21-01",
+    "hsk5l-annotation-21-01",
+    "hsk5l-practice-21-01",
+    "hsk5l-extension-21-01",
+    "hsk5l-application-21-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0007",
+    "hsk5l-lexeme-0042",
+    "hsk5l-lexeme-0043",
+    "hsk5l-lexeme-0076",
+    "hsk5l-lexeme-0129",
+    "hsk5l-lexeme-0197",
+    "hsk5l-lexeme-0202",
+    "hsk5l-lexeme-0212",
+    "hsk5l-lexeme-0217",
+    "hsk5l-lexeme-0223",
+    "hsk5l-lexeme-0246",
+    "hsk5l-lexeme-0251",
+    "hsk5l-lexeme-0277",
+    "hsk5l-lexeme-0281",
+    "hsk5l-lexeme-0319",
+    "hsk5l-lexeme-0345",
+    "hsk5l-lexeme-0352",
+    "hsk5l-lexeme-0371",
+    "hsk5l-lexeme-0377",
+    "hsk5l-lexeme-0392",
+    "hsk5l-lexeme-0397",
+    "hsk5l-lexeme-0406",
+    "hsk5l-lexeme-0422",
+    "hsk5l-lexeme-0430",
+    "hsk5l-lexeme-0442",
+    "hsk5l-lexeme-0481",
+    "hsk5l-lexeme-0485",
+    "hsk5l-lexeme-0499"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-013",
+    "hsk5l-beyond-level-020",
+    "hsk5l-beyond-level-027",
+    "hsk5l-beyond-level-031",
+    "hsk5l-beyond-level-050",
+    "hsk5l-beyond-level-055",
+    "hsk5l-beyond-level-091",
+    "hsk5l-beyond-level-107",
+    "hsk5l-beyond-level-111",
+    "hsk5l-beyond-level-125",
+    "hsk5l-beyond-level-138",
+    "hsk5l-beyond-level-148"
+  ],
+  "vocabularyCount": 28,
+  "beyondLevelVocabularyCount": 12,
+  "allVocabularyCount": 40,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

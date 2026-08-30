@@ -1,0 +1,78 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-07",
+  "lessonNumber": 7,
+  "status": "review",
+  "title": {
+    "zh": "你家离公司远吗？",
+    "pinyin": "nǐ jiā lí gōng sī yuǎn ma ？",
+    "vi": "Nhà chị có ở xa công ty không?"
+  },
+  "source": {
+    "pdfPages": [
+      67,
+      75
+    ],
+    "printedPages": [
+      67,
+      75
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-067",
+      "hsk2-wb-source-page-068",
+      "hsk2-wb-source-page-069",
+      "hsk2-wb-source-page-070",
+      "hsk2-wb-source-page-071",
+      "hsk2-wb-source-page-072",
+      "hsk2-wb-source-page-073",
+      "hsk2-wb-source-page-074",
+      "hsk2-wb-source-page-075"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-07-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-07-listening-part-1",
+        "hsk2-wb-lesson-07-listening-part-2",
+        "hsk2-wb-lesson-07-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-07-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-07-reading-part-1",
+        "hsk2-wb-lesson-07-reading-part-2",
+        "hsk2-wb-lesson-07-reading-part-3",
+        "hsk2-wb-lesson-07-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-07-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-07-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-07-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-07-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

@@ -1,0 +1,355 @@
+{
+  "schemaVersion": "1.0.0",
+  "assets": [
+    {
+      "id": "hsk4u-tb-audio-l01-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "01-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-01-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l01-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "01-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-01-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l01-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "01-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-01-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l01-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "01-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-01-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l01-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "01-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-01-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l02-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "02-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-02-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l02-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "02-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-02-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l02-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "02-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-02-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l02-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "02-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-02-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l02-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "02-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-02-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l03-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "03-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-03-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l03-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "03-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-03-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l03-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "03-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-03-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l03-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "03-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-03-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l03-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "03-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-03-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l04-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "04-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-04-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l04-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "04-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-04-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l04-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "04-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-04-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l04-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "04-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-04-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l04-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "04-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-04-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l05-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "05-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-05-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l05-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "05-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-05-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l05-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "05-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-05-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l05-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "05-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-05-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l05-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "05-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-05-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l06-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "06-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-06-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l06-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "06-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-06-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l06-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "06-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-06-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l06-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "06-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-06-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l06-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "06-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-06-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l07-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "07-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-07-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l07-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "07-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-07-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l07-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "07-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-07-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l07-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "07-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-07-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l07-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "07-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-07-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l08-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "08-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-08-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l08-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "08-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-08-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l08-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "08-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-08-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l08-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "08-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-08-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l08-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "08-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-08-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l09-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "09-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-09-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l09-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "09-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-09-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l09-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "09-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-09-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l09-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "09-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-09-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l09-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "09-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-09-text-5"
+    },
+    {
+      "id": "hsk4u-tb-audio-l10-text-1",
+      "kind": "audio",
+      "sourceTrackCode": "10-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-10-text-1"
+    },
+    {
+      "id": "hsk4u-tb-audio-l10-text-2",
+      "kind": "audio",
+      "sourceTrackCode": "10-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-10-text-2"
+    },
+    {
+      "id": "hsk4u-tb-audio-l10-text-3",
+      "kind": "audio",
+      "sourceTrackCode": "10-3",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-10-text-3"
+    },
+    {
+      "id": "hsk4u-tb-audio-l10-text-4",
+      "kind": "audio",
+      "sourceTrackCode": "10-4",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-10-text-4"
+    },
+    {
+      "id": "hsk4u-tb-audio-l10-text-5",
+      "kind": "audio",
+      "sourceTrackCode": "10-5",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk4u-tb-lesson-10-text-5"
+    }
+  ]
+}

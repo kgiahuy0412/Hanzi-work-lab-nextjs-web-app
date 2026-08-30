@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-15",
+  "lessonNumber": 15,
+  "status": "review",
+  "title": {
+    "zh": "新年就要到了。",
+    "pinyin": "xīn nián jiù yào dào le 。",
+    "vi": "Năm mới sắp đến rồi."
+  },
+  "source": {
+    "pdfPages": [
+      139,
+      148
+    ],
+    "printedPages": [
+      139,
+      148
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-139",
+      "hsk2-wb-source-page-140",
+      "hsk2-wb-source-page-141",
+      "hsk2-wb-source-page-142",
+      "hsk2-wb-source-page-143",
+      "hsk2-wb-source-page-144",
+      "hsk2-wb-source-page-145",
+      "hsk2-wb-source-page-146",
+      "hsk2-wb-source-page-147",
+      "hsk2-wb-source-page-148"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-15-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-15-listening-part-1",
+        "hsk2-wb-lesson-15-listening-part-2",
+        "hsk2-wb-lesson-15-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-15-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-15-reading-part-1",
+        "hsk2-wb-lesson-15-reading-part-2",
+        "hsk2-wb-lesson-15-reading-part-3",
+        "hsk2-wb-lesson-15-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-15-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-15-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-15-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-15-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schemaVersion": "1.0.0",
+  "pronunciationTopics": [
+    {
+      "id": "hsk2-tb-l01-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-01",
+      "titleZh": "双音节词语的重音",
+      "pinyin": "shuāng yīn jié cí yǔ de zhòng yīn",
+      "subtopicsZh": [
+        "中重格式",
+        "重轻格式"
+      ],
+      "sourcePageRef": "hsk2-tb-source-page-020",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l02-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-02",
+      "titleZh": "三音节词语的重音",
+      "pinyin": "sān yīn jié cí yǔ de zhòng yīn",
+      "subtopicsZh": [
+        "中轻重格式",
+        "中重轻格式",
+        "重轻轻格式"
+      ],
+      "sourcePageRef": "hsk2-tb-source-page-028",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l03-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-03",
+      "titleZh": "四音节词语的重音",
+      "pinyin": "sì yīn jié cí yǔ de zhòng yīn",
+      "subtopicsZh": [
+        "不含轻声音节的四音节词语",
+        "含轻声音节的四音节词语"
+      ],
+      "sourcePageRef": "hsk2-tb-source-page-036",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l04-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-04",
+      "titleZh": "句子的语法重音（1）",
+      "pinyin": "jù zi de yǔ fǎ zhòng yīn （1）",
+      "subtopicsZh": [
+        "谓语重读",
+        "补语重读"
+      ],
+      "sourcePageRef": "hsk2-tb-source-page-044",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l05-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-05",
+      "titleZh": "句子的语法重音（2）",
+      "pinyin": "jù zi de yǔ fǎ zhòng yīn （2）",
+      "subtopicsZh": [
+        "定语重读",
+        "状语重读"
+      ],
+      "sourcePageRef": "hsk2-tb-source-page-052",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l06-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-06",
+      "titleZh": "句子的逻辑重音",
+      "pinyin": "jù zi de luó jí zhòng yīn",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-060",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l07-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-07",
+      "titleZh": "汉语的基本句调",
+      "pinyin": "hàn yǔ de jī běn jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-068",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l08-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-08",
+      "titleZh": "陈述句的句调",
+      "pinyin": "chén shù jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-076",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l09-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-09",
+      "titleZh": "是非疑问句的句调",
+      "pinyin": "shì fēi yí wèn jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-084",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l10-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-10",
+      "titleZh": "特指问句的句调",
+      "pinyin": "tè zhǐ wèn jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-092",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l11-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-11",
+      "titleZh": "正反问句的句调",
+      "pinyin": "zhèng fǎn wèn jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-100",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l12-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-12",
+      "titleZh": "选择问句的句调",
+      "pinyin": "xuǎn zé wèn jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-108",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l13-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-13",
+      "titleZh": "祈使句的句调",
+      "pinyin": "qí shǐ jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-116",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l14-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-14",
+      "titleZh": "感叹句的句调",
+      "pinyin": "gǎn tàn jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-124",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    },
+    {
+      "id": "hsk2-tb-l15-pronunciation",
+      "lessonRef": "hsk2-tb-lesson-15",
+      "titleZh": "用“吧”和“吗”构成的疑问句的句调",
+      "pinyin": "yòng “ ba ” hé “ ma ” gòu chéng de yí wèn jù de jù diào",
+      "subtopicsZh": [],
+      "sourcePageRef": "hsk2-tb-source-page-132",
+      "sourceEvidence": "table-of-contents-and-pronunciation-page",
+      "transcriptionStatus": "heading-normalized-needs-editorial-review"
+    }
+  ]
+}

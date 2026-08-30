@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import { HskLessonWorkspace } from "@/components/hsk-lesson-workspace";
-import { getHskLessonContent, normalizeHskLevelParam } from "@/lib/hsk-lesson-content";
+import { getHskLearningLessonContent } from "@/lib/hsk-learning-content";
 
 type HskLessonPageProps = {
   params: Promise<{ level: string; lesson: string }>;
@@ -9,7 +9,7 @@ type HskLessonPageProps = {
 
 async function getLessonFromParams(params: HskLessonPageProps["params"]) {
   const { level, lesson } = await params;
-  return getHskLessonContent(normalizeHskLevelParam(level), lesson);
+  return getHskLearningLessonContent(level, lesson);
 }
 
 export async function generateMetadata({ params }: HskLessonPageProps): Promise<Metadata> {

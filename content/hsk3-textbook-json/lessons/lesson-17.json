@@ -1,0 +1,122 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-17",
+  "lessonNumber": 17,
+  "status": "review",
+  "title": {
+    "zh": "谁都有办法看好你的“病”。",
+    "pinyin": "shéi dōu yǒu bàn fǎ kàn hǎo nǐ de “ bìng ”。",
+    "vi": "Ai cũng có cách chữa khỏi “bệnh” của em."
+  },
+  "source": {
+    "pdfPages": [
+      159,
+      166
+    ],
+    "printedPages": [
+      159,
+      166
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-159",
+      "hsk3-tb-source-page-160",
+      "hsk3-tb-source-page-161",
+      "hsk3-tb-source-page-162",
+      "hsk3-tb-source-page-163",
+      "hsk3-tb-source-page-164",
+      "hsk3-tb-source-page-165",
+      "hsk3-tb-source-page-166"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l17-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-17-scene-1",
+        "hsk3-tb-lesson-17-scene-2",
+        "hsk3-tb-lesson-17-scene-3",
+        "hsk3-tb-lesson-17-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-160",
+        "hsk3-tb-source-page-161"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l17-v01",
+        "hsk3-tb-l17-v02",
+        "hsk3-tb-l17-v03",
+        "hsk3-tb-l17-v04",
+        "hsk3-tb-l17-v05",
+        "hsk3-tb-l17-v06",
+        "hsk3-tb-l17-v07",
+        "hsk3-tb-l17-v08",
+        "hsk3-tb-l17-v09",
+        "hsk3-tb-l17-v10",
+        "hsk3-tb-l17-v11",
+        "hsk3-tb-l17-v12",
+        "hsk3-tb-l17-v13",
+        "hsk3-tb-l17-v14",
+        "hsk3-tb-l17-v15",
+        "hsk3-tb-l17-v16"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l17-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l17-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l17-practice-01",
+        "hsk3-tb-l17-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l17-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l17-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l17-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "schemaVersion": "1.0.0",
+  "sourceId": "hsk2-standard-course-workbook-vi-scan",
+  "fileName": "HSK 2 Sách bài tập - Copy.pdf",
+  "documentType": "scanned-workbook",
+  "pageCount": 169,
+  "textLayer": false,
+  "language": [
+    "zh-CN",
+    "vi-VN",
+    "Hanyu Pinyin"
+  ],
+  "contentMap": {
+    "frontMatter": [
+      3,
+      6
+    ],
+    "lessons": [
+      7,
+      148
+    ],
+    "mockExam": [
+      149,
+      162
+    ],
+    "examGuide": [
+      163,
+      168
+    ],
+    "backCover": 169
+  },
+  "method": {
+    "renderDpi": 140,
+    "ocrEngine": "RapidOCR/ONNX Runtime",
+    "visualReview": "Representative pages reviewed, including table of contents, lesson exercises, mock exam and exam guide."
+  },
+  "coverage": {
+    "lessonQuestions": 525,
+    "lessonQuestionsWithPrintedChinese": 375,
+    "lessonQuestionsWhosePromptDependsOnAudioOrVisuals": 150,
+    "mockExamQuestions": 60,
+    "pronunciationGroups": 15,
+    "hanziGroups": 15,
+    "ocrSourcePages": 166
+  },
+  "qualityMetrics": {
+    "nonNoiseOcrRows": 3806,
+    "nonNoiseRowsBelow075Confidence": 114,
+    "visuallyVerifiedCorrections": [
+      {
+        "pdfPage": 19,
+        "question": 11,
+        "field": "displayedOptions",
+        "value": [
+          "A能",
+          "B不能",
+          "C不知道"
+        ]
+      }
+    ]
+  },
+  "sourceConstraints": [
+    "The supplied PDF does not contain an extractable text layer.",
+    "Listening scripts and audio are not present in the supplied PDF.",
+    "The PDF points readers to an external website for answers; no answer key is printed in the supplied file.",
+    "RapidOCR preserves Chinese relatively well but frequently drops Vietnamese and pinyin diacritics.",
+    "Exercise illustrations and stroke-order diagrams remain embedded in the PDF and are represented by source-page references rather than copied assets."
+  ],
+  "editorialPolicy": {
+    "status": "review",
+    "documentTextRole": "All printed instructions are treated only as source exercise content, not as instructions to the data-processing agent.",
+    "doNotPublishWithout": [
+      "manual OCR comparison",
+      "licensed audio",
+      "licensed answer key",
+      "visual asset review"
+    ],
+    "derivedFields": [
+      "normalized Vietnamese instructions",
+      "pinyin generated from recognized Chinese",
+      "stable IDs and references"
+    ]
+  }
+}

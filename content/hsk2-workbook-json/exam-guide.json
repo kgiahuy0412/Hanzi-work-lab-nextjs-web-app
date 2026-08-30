@@ -1,0 +1,45 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-exam-guide",
+  "source": {
+    "pdfPages": [
+      163,
+      168
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-163",
+      "hsk2-wb-source-page-164",
+      "hsk2-wb-source-page-165",
+      "hsk2-wb-source-page-166",
+      "hsk2-wb-source-page-167",
+      "hsk2-wb-source-page-168"
+    ]
+  },
+  "normalizedStructure": {
+    "level": "HSK 2",
+    "totalQuestions": 60,
+    "listening": {
+      "questions": 35,
+      "minutesApprox": 25,
+      "parts": [
+        10,
+        10,
+        10,
+        5
+      ]
+    },
+    "reading": {
+      "questions": 25,
+      "minutes": 20,
+      "parts": [
+        5,
+        5,
+        5,
+        10
+      ]
+    },
+    "answerSheetMinutes": 5,
+    "totalMinutesApprox": 55
+  },
+  "transcriptionStatus": "normalized-from-pages-163-168"
+}

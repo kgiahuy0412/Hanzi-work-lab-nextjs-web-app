@@ -1,0 +1,78 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-12",
+  "lessonNumber": 12,
+  "status": "review",
+  "title": {
+    "zh": "你穿得太少了。",
+    "pinyin": "nǐ chuān dé tài shǎo le 。",
+    "vi": "Anh mặc ít quần áo quá."
+  },
+  "source": {
+    "pdfPages": [
+      112,
+      120
+    ],
+    "printedPages": [
+      112,
+      120
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-112",
+      "hsk2-wb-source-page-113",
+      "hsk2-wb-source-page-114",
+      "hsk2-wb-source-page-115",
+      "hsk2-wb-source-page-116",
+      "hsk2-wb-source-page-117",
+      "hsk2-wb-source-page-118",
+      "hsk2-wb-source-page-119",
+      "hsk2-wb-source-page-120"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-12-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-12-listening-part-1",
+        "hsk2-wb-lesson-12-listening-part-2",
+        "hsk2-wb-lesson-12-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-12-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-12-reading-part-1",
+        "hsk2-wb-lesson-12-reading-part-2",
+        "hsk2-wb-lesson-12-reading-part-3",
+        "hsk2-wb-lesson-12-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-12-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-12-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-12-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-12-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

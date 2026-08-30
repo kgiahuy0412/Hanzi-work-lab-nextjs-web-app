@@ -1,0 +1,174 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4u-tb-lesson-09",
+  "lessonNumber": 9,
+  "status": "review",
+  "title": {
+    "zh": "阳光总在风雨后",
+    "pinyin": "yáng guāng zǒng zài fēng yǔ hòu",
+    "vi": "Sau cơn mưa trời lại sáng"
+  },
+  "source": {
+    "pdfPages": [
+      110,
+      123
+    ],
+    "printedPages": [
+      110,
+      123
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4u-tb-source-page-110",
+      "hsk4u-tb-source-page-111",
+      "hsk4u-tb-source-page-112",
+      "hsk4u-tb-source-page-113",
+      "hsk4u-tb-source-page-114",
+      "hsk4u-tb-source-page-115",
+      "hsk4u-tb-source-page-116",
+      "hsk4u-tb-source-page-117",
+      "hsk4u-tb-source-page-118",
+      "hsk4u-tb-source-page-119",
+      "hsk4u-tb-source-page-120",
+      "hsk4u-tb-source-page-121",
+      "hsk4u-tb-source-page-122",
+      "hsk4u-tb-source-page-123"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4u-tb-l09-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4u-tb-lesson-09-text-1",
+        "hsk4u-tb-lesson-09-text-2",
+        "hsk4u-tb-lesson-09-text-3",
+        "hsk4u-tb-lesson-09-text-4",
+        "hsk4u-tb-lesson-09-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4u-tb-source-page-111",
+        "hsk4u-tb-source-page-112",
+        "hsk4u-tb-source-page-117"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4u-tb-l09-v01",
+        "hsk4u-tb-l09-v02",
+        "hsk4u-tb-l09-v03",
+        "hsk4u-tb-l09-v04",
+        "hsk4u-tb-l09-v05",
+        "hsk4u-tb-l09-v06",
+        "hsk4u-tb-l09-v07",
+        "hsk4u-tb-l09-v08",
+        "hsk4u-tb-l09-v09",
+        "hsk4u-tb-l09-v10",
+        "hsk4u-tb-l09-v11",
+        "hsk4u-tb-l09-v12",
+        "hsk4u-tb-l09-v13",
+        "hsk4u-tb-l09-v14",
+        "hsk4u-tb-l09-v15",
+        "hsk4u-tb-l09-v16",
+        "hsk4u-tb-l09-v17",
+        "hsk4u-tb-l09-v18",
+        "hsk4u-tb-l09-v19",
+        "hsk4u-tb-l09-v20",
+        "hsk4u-tb-l09-v21",
+        "hsk4u-tb-l09-v22",
+        "hsk4u-tb-l09-v23",
+        "hsk4u-tb-l09-v24",
+        "hsk4u-tb-l09-v25",
+        "hsk4u-tb-l09-v26",
+        "hsk4u-tb-l09-v27",
+        "hsk4u-tb-l09-v28",
+        "hsk4u-tb-l09-v29",
+        "hsk4u-tb-l09-v30",
+        "hsk4u-tb-l09-v31"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4u-tb-l09-pinyin-transcript-01",
+        "hsk4u-tb-l09-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4u-tb-l09-annotation-01",
+        "hsk4u-tb-l09-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4u-tb-l09-practice-01",
+        "hsk4u-tb-l09-practice-02",
+        "hsk4u-tb-l09-practice-03",
+        "hsk4u-tb-l09-practice-04",
+        "hsk4u-tb-l09-practice-05",
+        "hsk4u-tb-l09-practice-06"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4u-tb-comparison-09"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l09-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4u-tb-same-character-09"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4u-tb-l09-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4u-tb-l09-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4u-tb-culture-09"
+      ],
+      "pageBlockRefs": [
+        "hsk4u-tb-l09-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4u-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

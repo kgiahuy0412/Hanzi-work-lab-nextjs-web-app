@@ -1,0 +1,2466 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "machine-translated-needs-language-review",
+  "lexemeMeanings": {
+    "hsk4l-tb-l11-v01": "thông thạo",
+    "hsk4l-tb-l11-v02": "Tuyệt vời",
+    "hsk4l-tb-l11-v03": "ngữ pháp",
+    "hsk4l-tb-l11-v04": "Chính xác",
+    "hsk4l-tb-l11-v05": "lời nói",
+    "hsk4l-tb-l11-v06": "thậm chí",
+    "hsk4l-tb-l11-v07": "đọc",
+    "hsk4l-tb-l11-v08": "Có đủ thời gian",
+    "hsk4l-tb-l11-v09": "phức tạp",
+    "hsk4l-tb-l11-v10": "phải",
+    "hsk4l-tb-l11-v11": "điền vào chỗ trống",
+    "hsk4l-tb-l11-v12": "Đoán",
+    "hsk4l-tb-l11-v13": "Nếu không",
+    "hsk4l-tb-l11-v14": "phòng khách",
+    "hsk4l-tb-l11-v15": "không có vấn đề gì",
+    "hsk4l-tb-l11-v16": "tạp chí",
+    "hsk4l-tb-l11-v17": "nổi tiếng",
+    "hsk4l-tb-l11-v18": "trang",
+    "hsk4l-tb-l11-v19": "tăng lên",
+    "hsk4l-tb-l11-v20": "Bài viết",
+    "hsk4l-tb-l11-v21": "của",
+    "hsk4l-tb-l11-v22": "nội dung",
+    "hsk4l-tb-l11-v23": "Tuy nhiên",
+    "hsk4l-tb-l11-v24": "ý kiến",
+    "hsk4l-tb-l11-v25": "giống nhau",
+    "hsk4l-tb-l11-v26": "đặt hàng",
+    "hsk4l-tb-l11-v27": "thể hiện",
+    "hsk4l-tb-l11-v28": "phát triển",
+    "hsk4l-tb-l11-v29": "Đồng thời",
+    "hsk4l-tb-l11-v30": "Tuyệt vời",
+    "hsk4l-tb-l12-v01": "quy định",
+    "hsk4l-tb-l12-v02": "chết",
+    "hsk4l-tb-l12-v03": "Thật đáng tiếc",
+    "hsk4l-tb-l12-v04": "Tất cả",
+    "hsk4l-tb-l12-v05": "có lẽ",
+    "hsk4l-tb-l12-v06": "thảo luận",
+    "hsk4l-tb-l12-v07": "và",
+    "hsk4l-tb-l12-v08": "muối",
+    "hsk4l-tb-l12-v09": "cái thìa",
+    "hsk4l-tb-l12-v10": "bảo vệ",
+    "hsk4l-tb-l12-v11": "chức năng",
+    "hsk4l-tb-l12-v12": "Không thể",
+    "hsk4l-tb-l12-v13": "lễ hội",
+    "hsk4l-tb-l12-v14": "Chi tiết",
+    "hsk4l-tb-l12-v15": "giải thích",
+    "hsk4l-tb-l12-v16": "cho",
+    "hsk4l-tb-l12-v17": "lá",
+    "hsk4l-tb-l12-v18": "giáo dục",
+    "hsk4l-tb-l12-v19": "sử dụng",
+    "hsk4l-tb-l12-v20": "ngôn ngữ",
+    "hsk4l-tb-l12-v21": "trực tiếp",
+    "hsk4l-tb-l12-v22": "nguyên nhân",
+    "hsk4l-tb-l12-v23": "sự hiểu lầm",
+    "hsk4l-tb-l12-v24": "Thân thiện",
+    "hsk4l-tb-l12-v25": "Nhận được kết quả gấp đôi với một nửa nỗ lực",
+    "hsk4l-tb-l12-v26": "Lưu",
+    "hsk4l-tb-l12-v27": "sức mạnh",
+    "hsk4l-tb-l12-v28": "Ngược lại",
+    "hsk4l-tb-l12-v29": "Nhiệm vụ",
+    "hsk4l-tb-l12-v30": "ý kiến",
+    "hsk4l-tb-l12-v31": "cẩn thận",
+    "hsk4l-tb-l12-v32": "đạt được",
+    "hsk4l-tb-l13-v01": "Kinh kịch",
+    "hsk4l-tb-l13-v02": "diễn viên",
+    "hsk4l-tb-l13-v03": "khán giả",
+    "hsk4l-tb-l13-v04": "dày",
+    "hsk4l-tb-l13-v05": "hiệu suất",
+    "hsk4l-tb-l13-v06": "Có lẽ",
+    "hsk4l-tb-l13-v07": "từ",
+    "hsk4l-tb-l13-v08": "khắp nơi",
+    "hsk4l-tb-l13-v09": "Thỉnh thoảng",
+    "hsk4l-tb-l13-v10": "ngạc nhiên",
+    "hsk4l-tb-l13-v11": "Khái niệm cơ bản",
+    "hsk4l-tb-l13-v12": "hiệu suất",
+    "hsk4l-tb-l13-v13": "bình thường",
+    "hsk4l-tb-l13-v14": "Áp dụng",
+    "hsk4l-tb-l13-v15": "thú vị",
+    "hsk4l-tb-l13-v16": "hạnh phúc",
+    "hsk4l-tb-l13-v17": "tiếp tục",
+    "hsk4l-tb-l13-v18": "bởi",
+    "hsk4l-tb-l13-v19": "thảo luận",
+    "hsk4l-tb-l13-v20": "khoảng",
+    "hsk4l-tb-l13-v21": "nhà hàng",
+    "hsk4l-tb-l13-v22": "túi giấy",
+    "hsk4l-tb-l13-v23": "Internet",
+    "hsk4l-tb-l13-v24": "thực hiện",
+    "hsk4l-tb-l13-v25": "Lỗi",
+    "hsk4l-tb-l13-v26": "Với",
+    "hsk4l-tb-l13-v27": "mười",
+    "hsk4l-tb-l13-v28": "chung",
+    "hsk4l-tb-l13-v29": "một phần",
+    "hsk4l-tb-l13-v30": "hơi",
+    "hsk4l-tb-l13-v31": "đắng",
+    "hsk4l-tb-l13-v32": "tỉnh",
+    "hsk4l-tb-l14-v01": "chuyến công tác",
+    "hsk4l-tb-l14-v02": "khăn tắm",
+    "hsk4l-tb-l14-v03": "kem đánh răng",
+    "hsk4l-tb-l14-v04": "nặng nề",
+    "hsk4l-tb-l14-v05": "được rồi",
+    "hsk4l-tb-l14-v06": "tỉnh",
+    "hsk4l-tb-l14-v07": "sự ô nhiễm",
+    "hsk4l-tb-l14-v08": "phòng tắm",
+    "hsk4l-tb-l14-v09": "dơ bẩn",
+    "hsk4l-tb-l14-v10": "xin lỗi",
+    "hsk4l-tb-l14-v11": "trống rỗng",
+    "hsk4l-tb-l14-v12": "cái hộp",
+    "hsk4l-tb-l14-v13": "Ném",
+    "hsk4l-tb-l14-v14": "đến",
+    "hsk4l-tb-l14-v15": "tốc độ",
+    "hsk4l-tb-l14-v16": "trái đất",
+    "hsk4l-tb-l14-v17": "Kể từ khi",
+    "hsk4l-tb-l14-v18": "dừng lại",
+    "hsk4l-tb-l14-v19": "tự hào",
+    "hsk4l-tb-l14-v20": "mục đích",
+    "hsk4l-tb-l14-v21": "ấm áp",
+    "hsk4l-tb-l14-v22": "túi nhựa",
+    "hsk4l-tb-l14-v23": "Vì vậy",
+    "hsk4l-tb-l14-v24": "khuyến khích",
+    "hsk4l-tb-l14-v25": "từ chối",
+    "hsk4l-tb-l14-v26": "giảm bớt",
+    "hsk4l-tb-l14-v27": "số lượng",
+    "hsk4l-tb-l14-v28": "nhiệt độ",
+    "hsk4l-tb-l14-v29": "đi xe",
+    "hsk4l-tb-l14-v30": "thua",
+    "hsk4l-tb-l14-v31": "thùng rác",
+    "hsk4l-tb-l14-v32": "đẹp",
+    "hsk4l-tb-l15-v01": "Chơi piano",
+    "hsk4l-tb-l15-v02": "tuyệt vời",
+    "hsk4l-tb-l15-v03": "cháu trai",
+    "hsk4l-tb-l15-v04": "kỳ nghỉ đông",
+    "hsk4l-tb-l15-v05": "cha",
+    "hsk4l-tb-l15-v06": "đồng hồ báo thức",
+    "hsk4l-tb-l15-v07": "chiếc nhẫn",
+    "hsk4l-tb-l15-v08": "thức dậy",
+    "hsk4l-tb-l15-v09": "vội vã",
+    "hsk4l-tb-l15-v10": "nhà vệ sinh",
+    "hsk4l-tb-l15-v11": "chỉ trích",
+    "hsk4l-tb-l15-v12": "làm",
+    "hsk4l-tb-l15-v13": "quản lý",
+    "hsk4l-tb-l15-v14": "tiêm",
+    "hsk4l-tb-l15-v15": "y tá",
+    "hsk4l-tb-l15-v16": "khen ngợi",
+    "hsk4l-tb-l15-v17": "Mười triệu",
+    "hsk4l-tb-l15-v18": "nghi ngờ",
+    "hsk4l-tb-l15-v19": "cố tình",
+    "hsk4l-tb-l15-v20": "gõ cửa",
+    "hsk4l-tb-l15-v21": "tổ chức",
+    "hsk4l-tb-l15-v22": "phù hợp",
+    "hsk4l-tb-l15-v23": "nói dối",
+    "hsk4l-tb-l15-v24": "bọn trẻ",
+    "hsk4l-tb-l15-v25": "sai",
+    "hsk4l-tb-l15-v26": "trái và phải",
+    "hsk4l-tb-l15-v27": "lười biếng",
+    "hsk4l-tb-l15-v28": "ngu ngốc",
+    "hsk4l-tb-l15-v29": "bất cẩn",
+    "hsk4l-tb-l15-v30": "tự hào",
+    "hsk4l-tb-l15-v31": "Có hại",
+    "hsk4l-tb-l16-v01": "Blog",
+    "hsk4l-tb-l16-v02": "thị thực",
+    "hsk4l-tb-l16-v03": "Đăng ký",
+    "hsk4l-tb-l16-v04": "bàn",
+    "hsk4l-tb-l16-v05": "Fax",
+    "hsk4l-tb-l16-v06": "con số",
+    "hsk4l-tb-l16-v07": "chuyến thăm",
+    "hsk4l-tb-l16-v08": "vui mừng",
+    "hsk4l-tb-l16-v09": "chàng trai trẻ",
+    "hsk4l-tb-l16-v10": "phóng viên",
+    "hsk4l-tb-l16-v11": "đại diện",
+    "hsk4l-tb-l16-v12": "tôi sợ",
+    "hsk4l-tb-l16-v13": "Thất vọng",
+    "hsk4l-tb-l16-v14": "Ngoại ô",
+    "hsk4l-tb-l16-v15": "cuối cùng",
+    "hsk4l-tb-l16-v16": "Vâng",
+    "hsk4l-tb-l16-v17": "hướng dẫn viên du lịch",
+    "hsk4l-tb-l16-v18": "lịch sự",
+    "hsk4l-tb-l16-v19": "tha thứ",
+    "hsk4l-tb-l16-v20": "treo",
+    "hsk4l-tb-l16-v21": "Thông cảm",
+    "hsk4l-tb-l16-v22": "đẩy",
+    "hsk4l-tb-l16-v23": "Xem trước",
+    "hsk4l-tb-l16-v24": "tiêu điểm",
+    "hsk4l-tb-l16-v25": "cẩu thả",
+    "hsk4l-tb-l16-v26": "tự tin",
+    "hsk4l-tb-l16-v27": "bình tĩnh",
+    "hsk4l-tb-l16-v28": "thua",
+    "hsk4l-tb-l16-v29": "Hãy chú ý đến",
+    "hsk4l-tb-l16-v30": "Dám",
+    "hsk4l-tb-l16-v31": "tôn trọng",
+    "hsk4l-tb-l17-v01": "Anna",
+    "hsk4l-tb-l17-v02": "Ngày thiếu nhi",
+    "hsk4l-tb-l17-v03": "Vạn Lý Trường Thành",
+    "hsk4l-tb-l17-v04": "phát sóng",
+    "hsk4l-tb-l17-v05": "chụp ảnh",
+    "hsk4l-tb-l17-v06": "đổ",
+    "hsk4l-tb-l17-v07": "Mão",
+    "hsk4l-tb-l17-v08": "ôm",
+    "hsk4l-tb-l17-v09": "khô",
+    "hsk4l-tb-l17-v10": "nghiêm khắc",
+    "hsk4l-tb-l17-v11": "khó chịu",
+    "hsk4l-tb-l17-v12": "chuyến đi",
+    "hsk4l-tb-l17-v13": "kỳ nghỉ hè",
+    "hsk4l-tb-l17-v14": "hổ",
+    "hsk4l-tb-l17-v15": "dân số",
+    "hsk4l-tb-l17-v16": "xếp hàng",
+    "hsk4l-tb-l17-v17": "Sống động",
+    "hsk4l-tb-l17-v18": "xã hội",
+    "hsk4l-tb-l17-v19": "sự cạnh tranh",
+    "hsk4l-tb-l17-v20": "rừng",
+    "hsk4l-tb-l17-v21": "trái",
+    "hsk4l-tb-l17-v22": "ấm áp",
+    "hsk4l-tb-l17-v23": "đại dương",
+    "hsk4l-tb-l17-v24": "đáy",
+    "hsk4l-tb-l17-v25": "nàng tiên cá",
+    "hsk4l-tb-l17-v26": "km",
+    "hsk4l-tb-l17-v27": "vẫn còn",
+    "hsk4l-tb-l17-v28": "sắp xếp",
+    "hsk4l-tb-l17-v29": "giấc mơ",
+    "hsk4l-tb-l18-v01": "đất đai",
+    "hsk4l-tb-l18-v02": "ngọn lửa",
+    "hsk4l-tb-l18-v03": "tác giả",
+    "hsk4l-tb-l18-v04": "vận chuyển",
+    "hsk4l-tb-l18-v05": "Công nghệ",
+    "hsk4l-tb-l18-v06": "liệu",
+    "hsk4l-tb-l18-v07": "giây",
+    "hsk4l-tb-l18-v08": "đường",
+    "hsk4l-tb-l18-v09": "Không thể chịu đựng được",
+    "hsk4l-tb-l18-v10": "nhật ký",
+    "hsk4l-tb-l18-v11": "an toàn",
+    "hsk4l-tb-l18-v12": "Mật khẩu",
+    "hsk4l-tb-l18-v13": "cho phép",
+    "hsk4l-tb-l18-v14": "chỗ ngồi",
+    "hsk4l-tb-l18-v15": "cầu",
+    "hsk4l-tb-l18-v16": "nguy hiểm",
+    "hsk4l-tb-l18-v17": "Sau đó",
+    "hsk4l-tb-l18-v18": "cảnh sát",
+    "hsk4l-tb-l18-v19": "bắt",
+    "hsk4l-tb-l18-v20": "mặn",
+    "hsk4l-tb-l18-v21": "nước khoáng",
+    "hsk4l-tb-l18-v22": "thanh toán",
+    "hsk4l-tb-l18-v23": "Thang máy",
+    "hsk4l-tb-l18-v24": "bị mất",
+    "hsk4l-tb-l18-v25": "địa chỉ",
+    "hsk4l-tb-l18-v26": "vị trí",
+    "hsk4l-tb-l18-v27": "thế kỷ",
+    "hsk4l-tb-l18-v28": "bưu điện",
+    "hsk4l-tb-l18-v29": "nhận được",
+    "hsk4l-tb-l18-v30": "phong bì",
+    "hsk4l-tb-l18-v31": "trang web",
+    "hsk4l-tb-l18-v32": "thông tin",
+    "hsk4l-tb-l19-v01": "học kỳ",
+    "hsk4l-tb-l19-v02": "sinh ra",
+    "hsk4l-tb-l19-v03": "giới tính",
+    "hsk4l-tb-l19-v04": "xin lỗi",
+    "hsk4l-tb-l19-v05": "In",
+    "hsk4l-tb-l19-v06": "sao chép",
+    "hsk4l-tb-l19-v07": "bánh bao",
+    "hsk4l-tb-l19-v08": "Con dao",
+    "hsk4l-tb-l19-v09": "phá vỡ",
+    "hsk4l-tb-l19-v10": "cất cánh",
+    "hsk4l-tb-l19-v11": "cắt tóc",
+    "hsk4l-tb-l19-v12": "bánh hấp",
+    "hsk4l-tb-l19-v13": "thay đổi",
+    "hsk4l-tb-l19-v14": "nói xin chào",
+    "hsk4l-tb-l19-v15": "mặc",
+    "hsk4l-tb-l19-v16": "kính",
+    "hsk4l-tb-l19-v17": "khiêu vũ",
+    "hsk4l-tb-l19-v18": "Quốc tịch",
+    "hsk4l-tb-l19-v19": "nhặt lên",
+    "hsk4l-tb-l19-v20": "cánh tay",
+    "hsk4l-tb-l19-v21": "rẽ",
+    "hsk4l-tb-l19-v22": "thuê",
+    "hsk4l-tb-l19-v23": "ồn ào",
+    "hsk4l-tb-l19-v24": "phòng bếp",
+    "hsk4l-tb-l19-v25": "chủ nhà",
+    "hsk4l-tb-l19-v26": "Bận",
+    "hsk4l-tb-l19-v27": "kungfu",
+    "hsk4l-tb-l19-v28": "bóng bàn",
+    "hsk4l-tb-l19-v29": "cầu lông",
+    "hsk4l-tb-l19-v30": "lĩnh vực",
+    "hsk4l-tb-l19-v31": "bị cấm",
+    "hsk4l-tb-l19-v32": "chỗ ngồi",
+    "hsk4l-tb-l20-v01": "sông Dương Tử",
+    "hsk4l-tb-l20-v02": "chuyến bay",
+    "hsk4l-tb-l20-v03": "Sân bay thủ đô",
+    "hsk4l-tb-l20-v04": "đường cao tốc",
+    "hsk4l-tb-l20-v05": "thẻ lên máy bay",
+    "hsk4l-tb-l20-v06": "vốn",
+    "hsk4l-tb-l20-v07": "du lịch",
+    "hsk4l-tb-l20-v08": "kỳ lạ",
+    "hsk4l-tb-l20-v09": "Nghèo",
+    "hsk4l-tb-l20-v10": "đối diện",
+    "hsk4l-tb-l20-v11": "vịt quay",
+    "hsk4l-tb-l20-v12": "Xin chúc mừng",
+    "hsk4l-tb-l20-v13": "đủ điều kiện",
+    "hsk4l-tb-l20-v14": "Chúc mừng",
+    "hsk4l-tb-l20-v15": "quốc gia",
+    "hsk4l-tb-l20-v16": "ăn mặc",
+    "hsk4l-tb-l20-v17": "trò đùa",
+    "hsk4l-tb-l20-v18": "lưu lại",
+    "hsk4l-tb-l20-v19": "chìa khóa",
+    "hsk4l-tb-l20-v20": "Rốt cuộc",
+    "hsk4l-tb-l20-v21": "cây",
+    "hsk4l-tb-l20-v22": "súp",
+    "hsk4l-tb-l20-v23": "đối thoại",
+    "hsk4l-tb-l20-v24": "tiếng quan thoại",
+    "hsk4l-tb-l20-v25": "Đồ ăn nhẹ",
+    "hsk4l-tb-l20-v26": "dọn dẹp",
+    "hsk4l-tb-l20-v27": "khởi hành",
+    "hsk4l-tb-l20-v28": "vị cay",
+    "hsk4l-tb-l20-v29": "thơm",
+    "hsk4l-tb-l20-v30": "Axit"
+  },
+  "textTitles": {
+    "hsk4l-tb-lesson-11-text-1": {
+      "translationVi": "Mark giới thiệu phương pháp học tiếng Trung của mình",
+      "pinyin": "mǎkè jièshào zìjǐ xuéxí hànyǔ de fāngfǎ"
+    },
+    "hsk4l-tb-lesson-11-text-2": {
+      "translationVi": "Xiaoxia và Xiaoyu trò chuyện về tình hình thi cử",
+      "pinyin": "xiǎoxià hé xiǎoyǔ liáo kǎoshì de qíngkuàng"
+    },
+    "hsk4l-tb-lesson-11-text-3": {
+      "translationVi": "Xiao Li nói với Xiao Lin về lợi ích của việc đọc sách",
+      "pinyin": "xiǎo lǐ gàosù xiǎolín yuèdú de hǎochù"
+    },
+    "hsk4l-tb-lesson-12-text-1": {
+      "translationVi": "Giám đốc Vương gặp khó khăn trong kinh doanh",
+      "pinyin": "wáng jīnglǐ zuò shēngyì yù dàole kùnnán"
+    },
+    "hsk4l-tb-lesson-12-text-2": {
+      "translationVi": "Cô Gao dạy con gái cách giặt quần áo",
+      "pinyin": "gāo lǎoshī gàosù nǚ'ér xǐ yīfú de fāngfǎ"
+    },
+    "hsk4l-tb-lesson-12-text-3": {
+      "translationVi": "Thầy Gao học hỏi phương pháp giáo dục của Giáo sư Vương",
+      "pinyin": "gāo lǎoshī xuéxí wáng jiàoshòu de jiàoyù fāngfǎ"
+    },
+    "hsk4l-tb-lesson-13-text-1": {
+      "translationVi": "Xiaoyu và Xiaoxia đang nói về việc ông nội của Xiaoxia biểu diễn Kinh kịch",
+      "pinyin": "xiǎoyǔ hé xiǎoxià zài liáo xiǎoxià de yéyé biǎoyǎn jīngjù de qíngkuàng"
+    },
+    "hsk4l-tb-lesson-13-text-2": {
+      "translationVi": "Xiaoyu và Mark đang trò chuyện về Kinh kịch",
+      "pinyin": "xiǎoyǔ hé mǎkè zài liáo jīngjù"
+    },
+    "hsk4l-tb-lesson-13-text-3": {
+      "translationVi": "Cô giáo Lý và hiệu trưởng đang bàn bạc công việc",
+      "pinyin": "lǐ lǎoshī hé xiàozhǎng zài tán gōngzuò"
+    },
+    "hsk4l-tb-lesson-14-text-1": {
+      "translationVi": "Li Jin đang đi công tác, Wang Jing và Li Jin đang trò chuyện",
+      "pinyin": "lǐ jìn yào chūchāi, wáng jìng hé lǐ jìn zài liáotiān er"
+    },
+    "hsk4l-tb-lesson-14-text-2": {
+      "translationVi": "Người quản lý và người phục vụ đang nói chuyện về công việc",
+      "pinyin": "jīnglǐ hé fúwùyuán zài tán gōngzuò"
+    },
+    "hsk4l-tb-lesson-14-text-3": {
+      "translationVi": "Sun Yue và Wang Jing đang nói về Bảo vệ môi trường Guanding",
+      "pinyin": "sūn yuè hé wáng jìng zài liáo guān dīng huánbǎo de shìqíng"
+    },
+    "hsk4l-tb-lesson-15-text-1": {
+      "translationVi": "Cô giáo Li đề nghị Wang Jing giúp con cô phát triển những thói quen tốt",
+      "pinyin": "lǐ lǎoshī jiànyì wángjìngràng háizǐ yǎng chéng hǎo xíguàn"
+    },
+    "hsk4l-tb-lesson-15-text-2": {
+      "translationVi": "Wang Jing đề nghị Sun Yue dạy các con cách sắp xếp thời gian",
+      "pinyin": "wáng jìng jiànyì sūn yuè jiàoyù háizǐ xuéhuì ānpái shíjiān"
+    },
+    "hsk4l-tb-lesson-15-text-3": {
+      "translationVi": "Wang Jing và Sun Yue bàn cách khen ngợi trẻ em",
+      "pinyin": "wáng jìng hé sūn yuè tǎolùn biǎoyáng háizǐ de fāngfǎ"
+    },
+    "hsk4l-tb-lesson-16-text-1": {
+      "translationVi": "Xiaoxia gặp rắc rối khi đi du học",
+      "pinyin": "xiǎoxià chūguó liúxué yù dàole wèntí"
+    },
+    "hsk4l-tb-lesson-16-text-2": {
+      "translationVi": "Sếp Vương kể cho Li Jin kinh nghiệm thành công của mình",
+      "pinyin": "wáng lǎobǎn gàosù lǐ jìn zìjǐ chénggōng de jīngyàn"
+    },
+    "hsk4l-tb-lesson-16-text-3": {
+      "translationVi": "Tiểu Lâm xấu hổ từ chối bạn bè",
+      "pinyin": "xiǎolín bù hǎoyìsi jùjué péngyǒu"
+    },
+    "hsk4l-tb-lesson-17-text-1": {
+      "translationVi": "Xiaoxia và Anna đang trò chuyện về thời tiết",
+      "pinyin": "xiǎoxià hé ānnà zài liáotiān qì"
+    },
+    "hsk4l-tb-lesson-17-text-2": {
+      "translationVi": "Tiểu Lâm và Tiểu Lý đang nói chuyện về con chó của Tiểu Lý",
+      "pinyin": "xiǎolín hé xiǎo lǐ zài liáo xiǎo lǐ de gǒu"
+    },
+    "hsk4l-tb-lesson-17-text-3": {
+      "translationVi": "Mark và Xiaoxia đang nói về động vật",
+      "pinyin": "mǎkè hé xiǎoxià zài liáo dòngwù"
+    },
+    "hsk4l-tb-lesson-18-text-1": {
+      "translationVi": "Wang Jing đã giới thiệu một cuốn sách cho Sun Yue",
+      "pinyin": "wáng jìng gěi sūn yuè tuījiàn yī běn shū"
+    },
+    "hsk4l-tb-lesson-18-text-2": {
+      "translationVi": "Thầy Lý và thầy Cao đang nói về sự phát triển của máy tính và công nghệ Internet",
+      "pinyin": "lǐ lǎoshī hé gāo lǎoshī zài liáo diànnǎo hé hùliánwǎng jìshù de fǎ zhǎn"
+    },
+    "hsk4l-tb-lesson-18-text-3": {
+      "translationVi": "Wang Jing và Sun Yue đang nói về những giấc mơ",
+      "pinyin": "wáng jìng hé sūn yuè zài liáo guānyú mèng de qíngkuàng"
+    },
+    "hsk4l-tb-lesson-19-text-1": {
+      "translationVi": "Mark nộp đơn xin tiếp tục học ở trường vào học kỳ tới",
+      "pinyin": "mǎkè shēnqǐng xià gè xuéqí jìxù zài xuéxiào xuéxí"
+    },
+    "hsk4l-tb-lesson-19-text-2": {
+      "translationVi": "Vương Tĩnh bị thương ở tay khi làm bánh bao",
+      "pinyin": "wáng jìng zuò jiǎozǐ shí shǒu shòushāngle"
+    },
+    "hsk4l-tb-lesson-19-text-3": {
+      "translationVi": "Anna giúp Mark luyện tập những bước nhảy của anh ấy",
+      "pinyin": "ānnà bāngzhù mǎkè liànxí wǔdǎo dòngzuò"
+    },
+    "hsk4l-tb-lesson-20-text-1": {
+      "translationVi": "Tiểu Trương đi Bắc Kinh. Một người bạn đã đưa Xiao Zhang đến sân bay.",
+      "pinyin": "xiǎo zhāng qù běijīng, péngyǒu sòng xiǎo zhāng qù jīchǎng"
+    },
+    "hsk4l-tb-lesson-20-text-2": {
+      "translationVi": "Vợ chồng Sun Yue dự định đưa con gái đi du lịch trong kỳ nghỉ đông",
+      "pinyin": "sūn yuè hé zhàngfū jìhuà fàng hánjià dài nǚ'ér qù lǚxíng"
+    },
+    "hsk4l-tb-lesson-20-text-3": {
+      "translationVi": "Anna giới thiệu trải nghiệm du lịch Lệ Giang của Mark",
+      "pinyin": "ānnà xiàng mǎkè jièshào qù lìjiāng lǚxíng de jīngyàn"
+    }
+  },
+  "textLines": {
+    "hsk4l-tb-lesson-11-text-1": [
+      {
+        "translationVi": "Bạn mới ở Trung Quốc được một năm và bạn có thể nói tiếng Trung rất trôi chảy. Thật tuyệt vời!",
+        "pinyin": "nǐ lái zhōngguó cái yī nián, hànyǔ jiù shuō dé zhème liúlì, zhēn lìhài!"
+      },
+      {
+        "translationVi": "Cảm ơn! Thực sự thì ngữ pháp của tôi không tốt lắm và nhiều câu còn chưa chính xác.",
+        "pinyin": "xièxiè! qíshí wǒ de yǔfǎ bù tài hǎo, hěnduō jùzǐ shuō dé dōu bù tài zhǔnquè."
+      },
+      {
+        "translationVi": "Nhưng tôi nghĩ bạn không gặp vấn đề gì khi giao tiếp với người Trung Quốc. Bạn đã làm điều đó như thế nào?",
+        "pinyin": "dànshì wǒ kàn nǐ gēn zhōngguó rén jiāoliú méishénme wèntí, nǐ shì zěnme zuò dào de?"
+      },
+      {
+        "translationVi": "Hãy kết bạn nhiều hơn với người Trung Quốc và trò chuyện với họ thường xuyên, kỹ năng nghe nói của bạn sẽ tự nhiên được cải thiện rất nhiều. Ngoài ra, tôi khuyên bạn nên chú ý đọc báo tiếng Trung để có thể học được nhiều từ mới.",
+        "pinyin": "píngshí duō jiāo yīxiē zhōngguó péngyǒu, jīngcháng hé tāmen liáotiān er, tīng shuō nénglì zìrán jiù néng dédào hěn dà de tígāo. lìngwài, wǒ jiànyì nǐ jiānchí kàn zhòng wén bàozhǐ, zhèyàng néng xué dào hěnduō xīn cíyǔ."
+      }
+    ],
+    "hsk4l-tb-lesson-11-text-2": [
+      {
+        "translationVi": "Kỳ thi đã kết thúc, bạn có hài lòng với kết quả của mình không?",
+        "pinyin": "kǎoshì jiéshùle, nǐ duì zìjǐ de chéngjì mǎnyì ma?"
+      },
+      {
+        "translationVi": "Thành thật mà nói, tôi không hài lòng lắm. Có quá nhiều câu hỏi trong bài kiểm tra đọc này và tôi đã không hoàn thành chúng.",
+        "pinyin": "shuō zhēn de, wǒ bù tài mǎnyì. zhè cì yuèdú kǎoshì de tí tài duōle, wǒ méi zuò wán."
+      },
+      {
+        "translationVi": "Hai giờ là đủ thời gian, phải không?",
+        "pinyin": "liǎng gè xiǎoshí de shíjiān yīnggāi láidéjí ba?"
+      },
+      {
+        "translationVi": "Lần này chủ yếu là do tôi làm những câu hỏi khó và phức tạp hơn trước và mất quá nhiều thời gian. Dù sau này tôi đã biết những câu hỏi đơn giản nhưng không có đủ thời gian nên cuối cùng tôi phải bỏ cuộc.",
+        "pinyin": "zhè cì zhǔyào shi yīnwèi wǒ xiān zuòle bǐjiào nán, bǐjiào fùzá de tí, jiéguǒ huāle tài duō shíjiān, hòumiàn jiǎndān de tí wǒ suīrán huì, kěshì shíjiān láibují, zuìhòu zhǐhǎo fàngqìle."
+      },
+      {
+        "translationVi": "Thực tế là tôi đã làm bài thi không tốt lắm. Có một số câu hỏi điền vào chỗ trống mà tôi không biết trả lời thế nào và có một số câu hỏi trắc nghiệm. Tôi thực sự không biết nên chọn cái nào nên tôi chỉ đoán một câu trả lời, nhưng tôi không đoán được câu nào đúng.",
+        "pinyin": "qíshí wǒ kǎo dé yě bù zě me yàng. yǒu jǐ gè tiánkòng tí bù huì zuò, yǒu jǐ gè xuǎnzé tí, shízài xiǎng bù chūlái gāi xuǎn nǎge, jiù suíbiàn cāile yīgè dá'àn, jiéguǒ yīgè dōu méi cāi duì."
+      },
+      {
+        "translationVi": "Dường như muốn làm tốt bài thi, bạn không chỉ phải ôn tập kỹ mà còn phải chú ý đến phương pháp làm bài. Nếu không, bạn sẽ không có thời gian để làm những câu hỏi mà bạn biết cách làm.",
+        "pinyin": "kàn lái yào xiǎng kǎo hǎo, bùdàn yào rènzhēn fùxí, hái dé zhùyì kǎoshì de fāngfǎ, fǒuzé, huì zuò de tí yě méi shíjiān zuòle."
+      }
+    ],
+    "hsk4l-tb-lesson-11-text-3": [
+      {
+        "translationVi": "Tại sao sách ở khắp mọi nơi trong phòng khách của bạn? Bạn có thích đọc tất cả những cuốn sách này?",
+        "pinyin": "nǐ de kètīng lǐ zěnme dàochù shì shū a? zhèxiē shū nǐ dōu xǐhuān kàn ma?"
+      },
+      {
+        "translationVi": "Tất nhiên là tôi đọc sách hàng ngày. Dù là tạp chí thông thường hay tiểu thuyết nổi tiếng, chỉ cần bạn mở chúng ra, bạn sẽ thấy trên thế giới có rất nhiều điều thú vị và rất nhiều cuộc sống khác nhau.",
+        "pinyin": "dāngrán, wǒ měitiān dū yào kànshū. wúlùn shì pǔtōng zázhì, háishì zhùmíng xiǎoshuō, zhǐyào dǎkāi tāmen, jiù huì fāxiàn, shìjiè shàng yǒu nàme duō yǒuyìsi de shìqíng, yǒu nàme duō bù yīyàng de shēnghuó."
+      },
+      {
+        "translationVi": "Tôi chưa bao giờ nghĩ rằng bạn có thể bận rộn với công việc đến vậy mà vẫn đọc sách hàng ngày.",
+        "pinyin": "xiǎngbùdào nǐ gōngzuò nàme máng, hái néng měitiān jiānchí yuèdú."
+      },
+      {
+        "translationVi": "Nếu bạn đọc một trang sách trong 3 phút, bạn có thể đọc được 10 trang trong nửa giờ. Nếu bạn dành nửa giờ để đọc mỗi ngày, bạn có thể đọc được 300 trang trong một tháng, gần bằng một cuốn sách.",
+        "pinyin": "rúguǒ 3 fēnzhōng dú yī yè shū, bàn gè xiǎoshí jiù kěyǐ dú 10 yè. měitiān huā bàn gè xiǎoshí lái dúshū, yīgè yuè jiù kěyǐ dú 300 yè, chàbùduō jiùshì yī běn shūle."
+      },
+      {
+        "translationVi": "Đúng vậy, một người thực sự yêu thích việc đọc luôn có thể tìm được thời gian để đọc.",
+        "pinyin": "shì a, yīgè zhēnzhèng ài kànshū de rén zǒng néng zhǎo chū shíjiān lái yuèdú."
+      },
+      {
+        "translationVi": "Việc đọc sách, ngoài việc nâng cao kiến ​​thức, còn có thể giúp tôi giảm căng thẳng và trở nên thoải mái hơn.",
+        "pinyin": "jiānchí yuèdú, chúle néng zēngjiā zhīshì wài, hái néng bāngzhù wǒ jiǎnqīng yālì, rén yě huì biàn dé qīngsōng qǐlái."
+      }
+    ],
+    "hsk4l-tb-lesson-11-text-4": [
+      {
+        "translationVi": "Theo khảo sát, những người có kỹ năng đọc tốt và vốn từ vựng mới không chỉ dễ tìm được việc làm mà còn có mức lương cao hơn 20. Điều wenzhang dt. bãi vân. Làm thế nào chúng ta có thể cải thiện khả năng đọc của mình một cách hiệu quả? Ghi chép đọc là một trong những cách tốt. Có nhiều loại ghi chú đọc. Đơn giản nhất là viết ra những từ, câu mà bạn thích hoặc cho là hữu ích. 22. Nội dung neirong dt. nội dung. Ngoài ra, sau khi đọc một bài báo hoặc một cuốn sách, bạn cũng có thể viết ra nội dung chính và suy nghĩ của riêng mình. Tuy nhiên, bạn không thể hoàn toàn tin tưởng vào nội dung cuốn sách mà phải có chính kiến, nhận định của riêng mình. Việc ghi chú đọc sẽ giúp ích rất nhiều trong việc cải thiện khả năng đọc của bạn.",
+        "pinyin": "gēnjù diàochá, yuèdú nénglì hǎo de rén, shēngcí bùdàn róngyì zhǎodào gōngzuò, érqiě gōngzī yě bǐ 20. wénzhāng wenzhang dt. bai van, jiào gāo. zěnme cáinéng yǒuxiào tígāo zìyǐ de yuè 21. zhī dú nénglì ne? zuò dúshū bǐjì jiùshì qízhōng yī zhǒng hǎo fāngfǎ. dúshū bǐjì yǒu hěnduō zhǒng, zuì jiǎndān de jiùshì bǎ zìjǐ xǐhuān huòzhě juédé yǒu 22. nèiróng neirong dt. noi dung yòng de cíyǔ hé jùzǐ jì xiàlái. lìngwài, zài 23. rán'ér ran'ér24. kànfǎ kanfä kàn wán yī piān wénzhāng huò yī běn shū zhīhòu, hái kěyǐ bǎ tā de zhǔyào nèiróng hé zìjǐ de xiǎngfǎ xiě xiàlái. rán'ér, nǐ bùnéng wánquán xiāngxìn shūběn shàng de nèiróng, yào yǒu zìjǐ de kànfǎ hé pànduàn. jiānchí zuò dúshū bǐjì, duì tígāo yuèdú nénglì yǒu hěn dà bāngzhù."
+      }
+    ],
+    "hsk4l-tb-lesson-11-text-5": [
+      {
+        "translationVi": "“Đọc sách hay (ho), đọc sách (häo) hay, đọc từ mới cũng hay (hao). Mặc dù câu này chỉ sử dụng 25. cùng một xiangtongtt.giong nhau, ba chữ Hán giống nhau, nhưng thứ tự 26. khác nhau thể hiện ý nghĩa khác nhau. Trước hết, “đọc 27. có nghĩa là đọc tốt” có nghĩa là việc đọc có nhiều lợi ích; thứ hai, thời gian của mỗi người đều có hạn và không thể 28. phát triển yangchéngdgt.hinh thanh/có thể đọc mọi cuốn sách trên thế giới nên phải đọc sách hay; cuối cùng, “đọc tốt” có nghĩa là 29. Đồng thời tongshilien.dong thoi,hon chúng ta phải phát triển thói quen đọc sách và biến việc đọc thực sự trở thành sở thích của mình. Đọc sách có rất nhiều 30. lợi ích tuyệt vời. Nó có thể làm phong phú thêm kiến ​​thức của bạn và cho phép bạn tìm ra giải pháp cho các vấn đề; đồng thời, nó còn có thể làm phong phú thêm cảm xúc của bạn và khiến cuộc sống của bạn trở nên thú vị hơn. Vì vậy, hãy biến việc đọc thành thói quen của bạn!",
+        "pinyin": "“dúshū hǎo (ho), dú hǎo (häo) shū, shēngcí hǎo (hao) dúshū”. suīrán zhè jù huà zhǐ yòngle 25. xiāngtóng xiangtongtt.giong nhau, sān gè xiāngtóng de hànzì, dànshì bùtóng de shùnxù 26. shùnxù què biǎoshì liǎo bùtóng de yìsi. shǒuxiān,“dú 27. biǎo shì shū hǎo” shuō de shì dúshū yǒu hěnduō hǎochù; qícì, měi gèrén de shíjiān dōu shì yǒuxiàn de, bùkě 28. yǎng chéng yangchéngdgt.hinh thanh/néng bǎ shìjiè shàng měi yī běn shū dōu dú wán, suǒyǐ yào dú hǎo de shū; zuìhòu,“hǎo dúshū” jiùshì 29. tóngshí tongshilien.dong thoi,hon yào yǎng chéng yuèdú de xíguàn, shǐ dúshū zhēnzhèng chéngwéi zìjǐ de xìngqù àihào. yuèdú yǒu xǔduō hǎo 30. jīngcǎi jingcai chù, tā néng fēngfù nǐ de zhīshì, ràng nǐ zhǎodào jiějué wèntí de bànfǎ; tóngshí, tā hái huì fēngfù nǐ de qínggǎn, shǐ nǐ de shēnghuó gèng jīngcǎi. suǒyǐ, ràng yuèdú chéngwéi nǐ de xíguàn ba!"
+      }
+    ],
+    "hsk4l-tb-lesson-12-text-1": [
+      {
+        "translationVi": "Tôi nghe nói bạn vẫn chưa kết thúc công việc kinh doanh này.",
+        "pinyin": "tīng shuō zhè cì shēngyì nǐ dào xiànzài hái méi tán chéng."
+      },
+      {
+        "translationVi": "Theo kinh nghiệm trước đây của tôi, việc đàm phán đáng lẽ phải hoàn thành từ lâu. Tôi không biết lần này đã xảy ra chuyện gì.",
+        "pinyin": "àn wǒ yǐqián de jīngyàn, zǎo yīnggāi tán chéngle, zhè cì wǒ yě bù zhīdào nǎ'er chūle wèntí."
+      },
+      {
+        "translationVi": "Có câu nói rằng “quy định và kinh nghiệm đã chết, nhưng con người còn sống”. Khi “quy định” và “kinh nghiệm” không thể giải quyết được vấn đề thì bạn nên thay đổi thái độ và suy nghĩ của mình.",
+        "pinyin": "yǒu jù huà jiào “guīdìng hé jīngyàn shì sǐ de, rén shì huó de”. dāng “guīdìng” hé “jīngyàn” bùnéng jiějué wèntí shí, jiànyì nǐ gǎibiàn yīxià zìjǐ de tàidù hé xiǎngfǎ."
+      },
+      {
+        "translationVi": "Nhiều khi tôi đã quen làm mọi việc dựa trên kinh nghiệm trong quá khứ. Thật không may, kinh nghiệm không phải lúc nào cũng đúng.",
+        "pinyin": "hěnduō shíhòu, wǒ dū xíguàn gēnjù guòqù de jīngyàn zuòshì, kěxí, jīngyàn bùshì quánbù dōu shì duì de."
+      },
+      {
+        "translationVi": "Khi gặp một vấn đề không thể giải quyết được, chúng ta nên cố gắng đi theo con đường mà mình chưa từng đi. Có lẽ chúng ta có thể tìm ra cách giải quyết vấn đề.",
+        "pinyin": "yù dào bùnéng jiějué de wèntí shí, wǒmen yīnggāi shìzhe zǒu zǒu yǐqián cónglái méi zǒuguò de lù, yěxǔ zhèyàng jiù néng zhǎodào jiějué wèntí de fāngfǎle."
+      },
+      {
+        "translationVi": "Được rồi, tôi sẽ thảo luận lại với các đồng nghiệp của mình, hy vọng có thể kịp thời tìm ra vấn đề và tìm ra giải pháp chính xác cho vấn đề.",
+        "pinyin": "hǎo, wǒ zài gēn tóngshì shāngliáng shāngliáng, xīwàng néng jíshí fāxiàn wèntí, bìngqiě zhǔnquè de zhǎodào jiějué wèntí de fāngfǎ."
+      }
+    ],
+    "hsk4l-tb-lesson-12-text-2": [
+      {
+        "translationVi": "Mẹ ơi nhìn cái quần con vừa mua này. Tại sao màu sắc trở nên xấu xí sau khi giặt?",
+        "pinyin": "mā, nín kàn wǒ gāng mǎi de kùzǐ, xǐ wán yǐhòu yánsè zěnme biàn dé zhème nánkàn ne?"
+      },
+      {
+        "translationVi": "Có vẻ như màu sắc đã nhạt đi. Nếu bạn thêm một ít muối vào nước khi giặt, nó sẽ dừng lại.",
+        "pinyin": "kàn lái shì diào yánsèle, nǐ xǐ de shíhòu zài shuǐ lǐjiādiǎn er yán jiù bù huì zhèyàngle."
+      },
+      {
+        "translationVi": "Cho muối vào? ! Không phải muối dùng để nấu ăn sao? Nó cũng có thể giữ cho màu sắc của quần áo không bị phai?",
+        "pinyin": "fàng yán?! yán bùshì yòng lái zuò fàn de ma? nándào tā hái néng ràng yīfú bù diào yánsè?"
+      },
+      {
+        "translationVi": "chắc chắn. Một số quần áo sẽ bị phai màu khi giặt lần đầu. Trên thực tế, có nhiều cách để giải quyết vấn đề này. Thêm một thìa muối vào nước trước khi giặt là cách dễ nhất. Dùng nước muối để giặt quần áo mới, để dù có mặc lâu hay giặt bao nhiêu lần thì màu sắc cũng không dễ phai.",
+        "pinyin": "dāngrán. yǒuxiē yīfú dì yī cì xǐ de shíhòu huì diào yánsè, qíshí, yǒu hěnduō fāngfǎ kěyǐ jiějué zhège wèntí. zài shuǐ lǐ jiā sháo yán zài xǐ shì zuì jiǎndān de fāngfǎ. yòng yánshuǐ lái xǐ xīn yīfú, zhèyàng chuān dé zài jiǔ, xǐ de cìshù zài duō, yīfú yě bù róngyì diào yánsè."
+      },
+      {
+        "translationVi": "Đây là lần đầu tiên tôi nghe nói muối có thể bảo vệ màu sắc của quần áo. Thực sự có rất nhiều kiến ​​thức trong cuộc sống không thể học được trong sách giáo khoa.",
+        "pinyin": "wǒ dì yī cì tīng shuō yán yǒu bǎohù yīfú yánsè de zuòyòng, shēnghuó zhōng hái zhēnyǒu bù shǎo kèběn shàng wúfǎ xué dào de zhīshì."
+      },
+      {
+        "translationVi": "Trên thực tế, câu trả lời cho nhiều câu hỏi có thể được tìm thấy trong cuộc sống. Nhưng điều này đòi hỏi bạn phải khám phá bằng con mắt và tóm tắt bằng trái tim.",
+        "pinyin": "shíjì shang, hěnduō wèntí de dá'àn dōu kěyǐ cóng shēnghuó zhōng zhǎodào. dàn zhè xūyào nǐ yòng yǎnjīng qù fāxiàn, yòngxīn qù zǒngjié."
+      }
+    ],
+    "hsk4l-tb-lesson-12-text-3": [
+      {
+        "translationVi": "Giáo sư Vương, sau khi nghe bài giảng hôm nay của cô, cuối cùng tôi cũng hiểu tại sao lớp của cô lại được sinh viên yêu thích đến vậy.",
+        "pinyin": "wáng jiàoshòu, jīntiān tīng wán nín de zhè jié kè, wǒ zhōngyú míngbái wèishéme nín de kè nàme shòu xuéshēng huānyíngle."
+      },
+      {
+        "translationVi": "Cảm ơn! Bạn có thể cho tôi biết thêm về những gì bạn nghĩ về lớp học của tôi?",
+        "pinyin": "xièxiè! nín néng xiángxì tán tán duì wǒ de kè de kànfǎ ma?"
+      },
+      {
+        "translationVi": "Tôi thấy rằng bạn hiểu rất rõ về học sinh của mình và bạn luôn có thể sử dụng cách đơn giản nhất để giải thích những vấn đề phức tạp một cách rõ ràng để mọi học sinh đều có thể hiểu được. Điều này thực sự đáng để chúng tôi học hỏi.",
+        "pinyin": "wǒ fāxiàn nín duì xuéshēng tèbié liǎojiě, érqiě zǒng shì néng yòng zuì jiǎndān de fāngfǎ bǎ fùzá de wèntí jiěshì qīngchǔ, ràng měi gè xuéshēng dōu néng tīng dǒng, zhè yīdiǎn zhēnshi zhídé wǒmen hǎohǎo er xuéxí."
+      },
+      {
+        "translationVi": "Bất kể ở đâu, điều này chỉ là do tôi biết tương đối rõ trình độ năng lực của từng học sinh.",
+        "pinyin": "nǎlǐ nǎlǐ, zhè zhǐshì yīnwèi wǒ duì měi gè xuéshēng de nénglì shuǐpíng bǐjiào liǎojiě."
+      },
+      {
+        "translationVi": "Vậy theo bạn, điều khó nhất đối với giáo viên là gì?",
+        "pinyin": "nà nín rènwéi duìyú lǎoshī lái shuō, shénme shì zuì nán zuò dào de?"
+      },
+      {
+        "translationVi": "Trên đời không có chiếc lá nào giống hệt nhau, cũng như vậy, trên đời cũng không có người giống hệt nhau. Vì vậy, khi giáo dục học sinh, chúng ta phải lựa chọn những phương pháp khác nhau tùy theo đặc điểm của học sinh. Tôi nghĩ đây là điều khó thực hiện nhất.",
+        "pinyin": "shìjiè shàng méiyǒu wánquán xiāngtóng de yèzǐ, tóngyàng de, shìjiè shàng yě méiyǒu wánquán yīyàng de rén. suǒyǐ, zài jiàoyù xuéshēng shí, yào gēnjù xuéshēng de tèdiǎn xuǎn zhái bu tóng de fāngfǎ, wǒ xiǎng zhè yīnggāi shì zuì bù róngyì zuò dào de."
+      }
+    ],
+    "hsk4l-tb-lesson-12-text-4": [
+      {
+        "translationVi": "Ai cũng có thể sử dụng ngôn ngữ, nhưng sử dụng ngôn ngữ như thế nào để nói tốt lại là một nghệ thuật. Bằng cách nhìn vào cách một người nói, bạn thường có thể đánh giá chính xác hơn người đó là người như thế nào. Có người nói ra bất cứ điều gì trong lòng họ nghĩ, cho dù đó là khuyết điểm của người khác, họ cũng sẽ thẳng thắn nói ra. Mặc dù những người như vậy rất trung thực nhưng họ có thể gây ra hiểu lầm; Một số người cũng có thể nhìn thấy khuyết điểm của người khác, nhưng họ sẽ không trực tiếp chỉ ra khuyết điểm mà nhắc nhở họ bằng những phương pháp khác để họ nhận thức được khuyết điểm của bản thân. Những người như vậy sẽ khiến mọi người cảm thấy thân thiện hơn.",
+        "pinyin": "rén rén dūhuì shǐyòng yǔyán, dànshì zěnme yòng yǔyán bǎ huàshuō hǎo què shì yī mén yìshù. kàn yīgè rén zěnme shuōhuà, wǎngwǎng kěyǐ bǐjiào zhǔnquè de pànduàn chū tā shì yīgè shénme yàng de rén. yǒu de rén xīnlǐ zěnme xiǎng, zuǐ shàng jiù zěnme shuō, jíshǐ shì biérén de quēdiǎn, tā yě huì zhíjiē shuō chūlái, zhèyàng de rén suīrán hěn chéngshí, dànshì kěnéng huì yǐnqǐ biérén de wùhuì; yǒu de rén suīrán yě kàn dàole biérén de quēdiǎn, dàn què bù huì zhíjiē zhǐchū lái, ér shì tōngguò bié de fāngfǎ lái tíxǐng, ràng tā rènshí dào zìjǐ de quēdiǎn, zhèyàng de rén huì ràng rén juédé gèng yǒuhǎo."
+      }
+    ],
+    "hsk4l-tb-lesson-12-text-5": [
+      {
+        "translationVi": "Dù làm gì cũng phải chú ý đến phương pháp, nhất là khi học tập. Sử dụng đúng*25.get gấp đôi kết quả với một nửa phương pháp, chúng ta có thể thực hiện mọi việc \"với kết quả gấp đôi với một nửa nỗ lực\", nghĩa là chúng ta có thể tiết kiệm thời gian, sử dụng ít nỗ lực hơn và đạt được kết quả tốt hơn. Ngược lại, nếu làm sai phương pháp, thời gian có thể gấp năm, thậm chí gấp mười lần để hoàn thành nhiệm vụ, kết quả là “nửa kết quả nhưng nỗ lực gấp đôi”. Một điều cần được nhắc nhở là phương pháp của người khác có thể rất hiệu quả nhưng có thể không phù hợp với bạn. Vì vậy, chúng ta nên cân nhắc kỹ lưỡng trong khi lắng nghe ý kiến ​​​​của người khác, sau đó tùy theo các tình huống khác nhau mà lựa chọn các phương pháp khác nhau để đạt được kết quả tốt nhất.",
+        "pinyin": "wúlùn zuò shénme shìqíng, dōu yào zhùyì fāngfǎ, xuéxí yóuqí shì zhèyàng. shǐyòng zhèngquè*25. shìbàngōngbèi shibangongbci de fāngfǎ, wǒmen zuò qǐ shì lái néng “shìbàngōngbèi”, yě jiùshì shuō, néng jiéyuē shíjiān, yòng jiào shǎo de lìqì, qǔdé gèng hǎo de xiàoguǒ. xiāngfǎn, rúguǒ fāngfǎ bùduì, kěnéng huā wǔ bèi shènzhì shí bèi de shíjiān dōu bùnéng wánchéng rènwù, jiéguǒ biàn chéngle “shìbèigōngbàn”. yǒu yīdiǎn xūyào tíxǐng dàjiā, biérén de fāngfǎ yěxǔ hěn yǒuxiào, dànshì bìng bù yīdìng shìhé zìjǐ. yīncǐ, wǒmen yīnggāi zài tīngqǔ biérén yìjiàn de tóng*32. dádào shí, zǐxì kǎolǜ yīxià, zài gēnjù bùtóng de qíngkuàng xuǎn zhái bu tóng de fāngfǎ, zhèyàng cáinéng dádào zuì hǎo de xiàoguǒ."
+      }
+    ],
+    "hsk4l-tb-lesson-13-text-1": [
+      {
+        "translationVi": "Tiểu Hạ, ông nội con hát Kinh kịch rất chuyên nghiệp. Tôi tưởng anh ấy là diễn viên Kinh kịch.",
+        "pinyin": "xiǎoxià, nǐ yéyé jīngjù chàng dé zhēn zhuānyè, wǒ hái yǐwéi tā shì jīngjù yǎnyuán ne."
+      },
+      {
+        "translationVi": "Đúng vậy, anh ấy vốn là một diễn viên Kinh kịch. Anh ấy rất nổi tiếng ở vùng chúng tôi khi còn trẻ và được khán giả vô cùng yêu mến.",
+        "pinyin": "duì a, tā běnlái jiùshì jīngjù yǎnyuán, niánqīng shí zài wǒmen nà'er hěn yǒumíng, shēn shòu guānzhòngmen de xǐ'ài."
+      },
+      {
+        "translationVi": "Ông nội của bạn chắc hẳn có tình cảm sâu sắc với Kinh kịch.",
+        "pinyin": "nǐ yéyé yīdìng duì jīngjù yǒuzhe hěn shēnhòu de gǎnqíng."
+      },
+      {
+        "translationVi": "Đúng vậy, anh ấy bắt đầu biểu diễn trên sân khấu khi mới 8 tuổi và đã hát được hơn 60 năm. Tình yêu của anh dành cho nghệ thuật này chưa bao giờ thay đổi.",
+        "pinyin": "shì ya, tā 8 suì jiù kāishǐ shàngtái yǎnchū, dào xiànzài dàgài chàngle 60 duōniánle, tā duì zhè mén yìshù de xǐ'ài cónglái méiyǒu gǎibiànguò."
+      },
+      {
+        "translationVi": "Vậy sở thích nghe Kinh kịch của bạn cũng bị ảnh hưởng bởi ông nội bạn?",
+        "pinyin": "zhème shuō nǐ xǐhuān tīng jīngjù yěshì shòule nǐ yéyé de yǐngxiǎng?"
+      },
+      {
+        "translationVi": "Tôi từng đến xem các buổi biểu diễn của anh ấy khi còn nhỏ. Thường thì anh ấy còn kể cho tôi nghe nhiều câu chuyện lịch sử trong Kinh kịch, giúp tôi học hỏi được nhiều kiến ​​thức.",
+        "pinyin": "wǒ xiǎoshíhòu jīngcháng qù kàn tā de yǎnchū. píngshí tā hái gěi wǒ jiǎng hěnduō jīngjù lǐ de lìshǐ gùshì, ràng wǒ xué dàole hěnduō zhīshì."
+      }
+    ],
+    "hsk4l-tb-lesson-13-text-2": [
+      {
+        "translationVi": "Tôi chưa bao giờ nghĩ rằng bạn, một du học sinh đến từ Mỹ, lại có thể hát Kinh kịch hay đến thế.",
+        "pinyin": "zhēn méi xiǎngdào nǐ yīgè láizì měiguó de wàiguó liúxuéshēng, néng bǎ jīngjù chàng dé zhème hǎo."
+      },
+      {
+        "translationVi": "Tôi thường theo dõi TV để học hát Kinh kịch, sau đó tôi",
+        "pinyin": "wǒ chángcháng gēnzhe diànshì xué chàng jīngjù, ránhòu yī"
+      }
+    ],
+    "hsk4l-tb-lesson-13-text-3": [
+      {
+        "translationVi": "Hiệu trưởng vì sinh viên nước ngoài không hiểu Trung Quốc",
+        "pinyin": "xiàozhǎng, yīnwèi wàiguó liúxuéshēng bù liǎojiě zhōngguó"
+      }
+    ],
+    "hsk4l-tb-lesson-13-text-4": [
+      {
+        "translationVi": "Đũa có lịch sử hơn 3.000 năm ở Trung Quốc. Người nước ngoài không dễ dàng sử dụng đũa để ăn. Vì vậy, một số nhà hàng Trung Quốc ở nước ngoài cung cấp hướng dẫn chi tiết về cách sử dụng đũa trên túi giấy đựng đũa. Tuy nhiên, nếu bạn nghĩ rằng mọi người dân Trung Quốc đều biết cách sử dụng đũa đúng cách thì bạn đã nhầm. Có người đã đặc biệt thực hiện một cuộc khảo sát trên Internet và phát hiện ra rằng cứ sáu người Trung Quốc thì có một người sử dụng đũa không đúng cách. Nếu bạn muốn sử dụng đũa đúng cách thì",
+        "pinyin": "kuàizǐ zài zhōngguó dàyuē yǐjīng yǒu 3000 duōnián de lìshǐle. duì wàiguó rén lái shuō, shǐyòng kuàizǐ chīfàn bìng bù róngyì, suǒyǐ, guówài de yīxiē zhōngguó cāntīng zài fàng kuàizǐ de zhǐdài shàng huì tígōng shǐyòng kuàizǐ de xiángxì shuōmíng. bùguò, rúguǒ nǐ rènwéi měi gè zhōngguó rén dūhuì zhèngquè shǐyòng kuàizǐ, nà jiù cuòle. yǒurén zài hùliánwǎng shàng zhuānmén jìnxíngguò diàochá, jiéguǒ fāxiàn měi liù gè zhōngguó rén zhōng jiù yǒu yīgè shǐyòng kuàizǐ de fāngfǎ shì cuòwù de. rúguǒ nǐ xiǎng zhèngquè shǐyòng kuàizǐ, nà"
+      }
+    ],
+    "hsk4l-tb-lesson-13-text-5": [
+      {
+        "translationVi": "Trà có lịch sử hàng ngàn năm ở Trung Quốc và là đồ uống phổ biến nhất ở Trung Quốc. Vào thời xa xưa, trà được coi là một loại thuốc hơn là một loại đồ uống. Sau này, khi hiểu biết của người dân về trà ngày càng sâu sắc, họ dần bắt đầu coi trà như một loại thức uống giải khát.",
+        "pinyin": "chá zài zhōngguó yǒu jǐ qiān nián de lìshǐ, shì zhōngguó zuì chángjiàn de yǐnliào. zuìzǎo de shíhòu, chá zhǐshì bèi dàng zuò yī zhǒng yào, ér bùshì yǐnliào. hòulái, suízhe rénmen duì chá de rènshí de jiāshēn, màn man kāishǐ bǎ tā dàng zuò jiěkě de yǐnliào, zhè cái màn man yǒule zhōngguó de"
+      }
+    ],
+    "hsk4l-tb-lesson-14-text-1": [
+      {
+        "translationVi": "Đây là khăn tắm, kem đánh răng và bàn chải đánh răng bạn sẽ mang theo trong chuyến công tác ngày mai. Đặt chúng vào hộp.",
+        "pinyin": "zhè shì míngtiān nǐ chūchāi yào dài de máojīn, yágāo hé yáshuā, bǎ tāmen fàng dào xiāngzǐ lǐ ba."
+      },
+      {
+        "translationVi": "Bạn không cần phải mang theo những thứ này, khách sạn sẽ cung cấp miễn phí. Hơn nữa, cái hộp đã đủ nặng rồi!",
+        "pinyin": "bùyòng ná zhèxiē, bīnguǎn dūhuì miǎnfèi tígōng de. zàishuō, xiāngzǐ yǐjīng gòu zhòng dele!"
+      },
+      {
+        "translationVi": "Tất nhiên tôi biết có họ trong khách sạn. Không phải bạn luôn nói rằng bạn muốn bảo vệ môi trường sao? Bây giờ hãy bắt đầu với những điều nhỏ nhặt xung quanh chúng ta.",
+        "pinyin": "wǒ dāngrán zhīdào bīnguǎn li yǒu. nǐ bùshì yīzhí shuō yào bǎohù huánjìng ma? xiànzài jiù cóng shēnbiān de xiǎoshì zuò qǐ ba."
+      },
+      {
+        "translationVi": "Được, không vấn đề gì. Ngày mai tôi có chuyến bay lúc 10 giờ sáng. Bạn có thể chở tôi đến sân bay được không?",
+        "pinyin": "xíng, méi wèntí. wǒ míngtiān shàngwǔ 10 diǎn de fēijī, nǐ néng kāichē bǎ wǒ sòng dào jīchǎng ma?"
+      },
+      {
+        "translationVi": "Thật là một ùn tắc giao thông nghiêm trọng trên đường vào thời điểm đó! Tốt hơn hết bạn nên đi tàu điện ngầm đến sân bay. Điều này không chỉ tiết kiệm tiền nhiên liệu mà còn không gây ô nhiễm không khí.",
+        "pinyin": "nàgè shíjiān lùshàng dǔchē duō yánzhòng a! nǐ háishì zuò dìtiě qù jīchǎng ba. zhèyàng bùjǐn shěngyóu qián, érqiě hái bù huì wūrǎn kōngqì."
+      },
+      {
+        "translationVi": "Được rồi tôi sẽ nghe lời bạn.",
+        "pinyin": "hǎo, nà jiù tīng nǐ de."
+      }
+    ],
+    "hsk4l-tb-lesson-14-text-2": [
+      {
+        "translationVi": "Tiểu Vương, sao phòng tắm lại bẩn thế này? Điều này sẽ để lại ấn tượng xấu với khách nên hãy nhanh chóng dọn dẹp nó.",
+        "pinyin": "xiǎo wáng, wèishēngjiān zěnme nàme zàng a? zhè huì gěi kèrén liú xià bù hǎo de yìnxiàng, kuài qù dǎsǎo yīxià."
+      },
+      {
+        "translationVi": "Giám đốc, tôi rất xin lỗi. Hôm nay cửa hàng bận quá nên tôi không có thời gian dọn dẹp.",
+        "pinyin": "jīnglǐ, shízài bàoqiàn. jīntiān diàn lǐ tài mángle, wǒ hái méi láidéjí dǎsǎo."
+      },
+      {
+        "translationVi": "Dưới gầm bàn có vài chai nước uống rỗng và hộp các tông.",
+        "pinyin": "nà zhāng zhuōzǐ xiàmiàn hái yǒu yīxiē kōng yǐnliào píngzǐ hé zhǐ hé zǐ."
+      },
+      {
+        "translationVi": "Được rồi, tôi sẽ vứt chúng đi ngay bây giờ.",
+        "pinyin": "hǎo de, wǒ mǎshàng jiù qù bǎ tāmen rēng diào."
+      },
+      {
+        "translationVi": "Bạn phải chú ý đến vấn đề này trong tương lai. Dù có bao nhiêu khách hàng hay kinh doanh bận rộn đến mấy thì chúng ta cũng phải đảm bảo nhà hàng sạch sẽ, hợp vệ sinh.",
+        "pinyin": "yǐhòu nǐ yīdìng dé zhùyì zhège wèntí, bùguǎn kèrén duōduō, shēngyì duōmáng, wǒmen dōu yào bǎozhèng cāntīng gānjìng wèishēng."
+      },
+      {
+        "translationVi": "Đừng lo lắng, quản lý, tôi sẽ hoàn thành nó nhanh nhất có thể. Nhưng chúng ta thực sự nên thuê thêm vài người phục vụ nữa.",
+        "pinyin": "jīnglǐ nín fàngxīn, wǒ yīdìng yǐ zuì kuài de sùdù wánchéng. bùguò zánmen zhēn de yīnggāi zài duō zhāopìn jǐ gè fúwùyuánle."
+      }
+    ],
+    "hsk4l-tb-lesson-14-text-3": [
+      {
+        "translationVi": "Tôi nghe tin sáng nay sẽ có một sự kiện mang tên \"Giờ Trái đất\" vào ngày mai. Bạn có biết về sự kiện này?",
+        "pinyin": "zǎoshang tīng xīnwén shuōmíngtiān yǒu yīgè jiào “dìqiú yī xiǎoshí” de huódòng, nǐ duì zhège huódòng liǎojiě ma?"
+      },
+      {
+        "translationVi": "Sự kiện này diễn ra hàng năm và lần đầu tiên bắt đầu vào năm 2007. Nhiều người sẽ tắt đèn trong một giờ vào tối mai để ủng hộ sự kiện này. Bạn không thấy thông báo ở cửa à? Công ty chúng tôi cũng tham gia.",
+        "pinyin": "zhège huódòng nián nián dōu yǒu, zuìzǎo shì cóng 2007 nián kāishǐ de. míng tiān wǎnshàng hěnduō rén dūhuì guān dēng yī xiǎoshí, zhīchí zhège huódòng. nǐ méi kàn dào ménkǒu de tōngzhī ma? wǒmen gōngsī yě cānjiā."
+      },
+      {
+        "translationVi": "Thật sự? Rất tốt! Vì tối mai công ty sẽ tắt đèn và điện nên chúng tôi chắc chắn không phải làm thêm giờ.",
+        "pinyin": "zhēn de ma? tài hǎole! jìrán míngtiān wǎnshàng gōngsī huì guān dēng tíngdiàn, nàme wǒmen kěndìng bùyòng jiābānle."
+      },
+      {
+        "translationVi": "Nhìn bạn tự hào biết bao! Tưởng bạn vui vì ủng hộ bảo vệ môi trường nhưng hóa ra là vì bạn không phải làm thêm giờ!",
+        "pinyin": "kàn nǐ déyì de yàngzǐ! hái yǐwéi nǐ gāoxìng shì wèile zhīchí huánbǎo, yuánlái shì yīn wéi bùyòng jiābān a!"
+      },
+      {
+        "translationVi": "Tất nhiên là tôi ủng hộ việc bảo vệ môi trường! Nhân tiện, tại sao lại có sự kiện như vậy?",
+        "pinyin": "huánjìng bǎohù wǒ dāngrán yě zhīchíle! duìle, wèishéme huì yǒu zhème yīgè huódòng a?"
+      },
+      {
+        "translationVi": "Trên thực tế, mục đích khá đơn giản là nhắc nhở mọi người tiết kiệm điện và mong thu hút sự chú ý của mọi người đến vấn đề nóng lên của khí hậu.",
+        "pinyin": "qíshí mùdì tǐng jiǎndān de, jiùshì tíxǐng rénmen jiéyuē yòng diàn, xīwàng yǐnqǐ rénmen duì qìhòu biàn nuǎn wèntí de guānzhù."
+      }
+    ],
+    "hsk4l-tb-lesson-14-text-4": [
+      {
+        "translationVi": "Túi ni lông mang lại sự tiện lợi cho cuộc sống của con người và được mọi người đón nhận. Tuy nhiên, việc sử dụng rộng rãi chúng cũng gây ra vấn đề ô nhiễm môi trường nghiêm trọng. Do đó, một số quốc gia 24. khuyến khích các siêu thị và trung tâm mua sắm không cung cấp túi nhựa miễn phí cho khách hàng, đồng thời khuyến khích mọi người mua những túi mua sắm có thể bị từ chối sử dụng nhiều lần. Mỗi chúng ta đều có trách nhiệm bảo vệ môi trường. Vì vậy, hãy tiết kiệm việc sử dụng túi nhựa, hoặc mang theo túi đựng đồ của riêng mình khi đi mua sắm, thậm chí từ chối sử dụng túi nhựa. Dù đây là việc nhỏ nhưng làm như vậy có thể làm giảm số lượng túi nilon được sử dụng và có tác dụng rất lớn trong việc bảo vệ môi trường.",
+        "pinyin": "sùliào dài jǐ rénmen de shēnghuó dài lái fāng shēngcí biàn, shòudào rénmen de pǔbiàn huānyíng, kěshì,22. sùliào dài suliaodai dt. tui nilong, tā de dàliàng shǐyòng yě dài láile yánzhòng de huánjìng 23. yúshì wūrǎn wèntí. yúshì, yīxiē guójiā guīdìng,24. gǔlì chāoshì, shāngchǎng bùnéng wéi gùkè tígōng miǎnfèi sùliào dài, bìngqiě gǔlì dàjiā gòumǎi kěyǐ duō cì 25. jùjué shǐyòng de gòuwù dài. wǒmen měi gèrén dōu yǒu zérèn bǎohù huánjìng, yīncǐ, qǐng dàjiā jiéyuē shǐ 27. shùliàng yòng sùliào dài, huòzhě gòuwù shí zì bèi gòuwù dài, shènzhì jùjué shǐyòng sùliào dài. suīrán zhè shì yī jiàn hěn xiǎo de shì, dàn zhèyàng zuò kěyǐ jiǎnshǎo sùliào dài de shǐyòng shùliàng, duì huánjìng bǎohù yǒu hěn dà de zuòyòng."
+      }
+    ],
+    "hsk4l-tb-lesson-14-text-5": [
+      {
+        "translationVi": "Bảo vệ môi trường trái đất không phải là điều xa vời và khó thực hiện. Thực ra chúng ta chỉ cần chú ý đến những điều nhỏ nhặt xung quanh mình mà thôi. 29. Đi xe cũng được. Ví dụ, vào mùa hè, hãy bật điều hòa ở nhiệt độ cao hơn và nhớ tắt điều hòa, máy tính khi ra ngoài. Điều này có thể tiết kiệm điện; lái xe ít hơn, đi xe đạp nhiều hơn hoặc đi tàu điện ngầm và xe buýt, có thể làm giảm ô nhiễm không khí; và hình thành thói quen vứt rác vào thùng rác. Đây là những việc nhỏ mỗi chúng ta có thể làm nhưng lại mang lại kết quả thực sự. Trái đất là ngôi nhà chung của chúng ta. Chỉ bằng cách cùng nhau giảm thiểu ô nhiễm và bảo vệ môi trường, ngôi nhà của chúng ta mới có thể trở nên đẹp hơn.",
+        "pinyin": "bǎohù dìqiú huánjìng, bìng bùshì yī jiàn lí shēngcí wǒmen hěn yuǎn, hěn nán zuò dào de shìqíng. shíjì shang, wǒmen zhǐ xū zhùyì yīxià shēnbiān de xiǎoshì jiù 29. chéngzuò kěyǐ. lìrú, xiàtiān bǎ kòngtiáo de wēndù kāi dé gāo yīxiē, chūmén shí jìdé guān kòngtiáo hé diànnǎo,31. lèsè tǒng lajitongdt.thung rac zhèyàng kěyǐ jiéyuē yòng diàn; shǎo kāichē, duō qí chē huòzhě chéngzuò dìtiě hé gōnggòng qìchē, zhèyàng néng jiàngdī kōngqì wūrǎn; hái yǒu yǎng chéng bǎ lèsè diū jìn lèsè tǒng de xíguàn shénme de. zhèxiē shì wǒmen měi gèrén dōu nénggòu zuò dào de xiǎoshì, dàn què yǒu shí shízài zài de xiàoguǒ. dìqiú shì wǒmen gòngtóng de jiā, zhǐyǒu dàjiā gòngtóng nǔlì, jiǎnshǎo wūrǎn, bǎohù huánjìng, cáinéng shǐ wǒmen de jiā biàn dé gèng měilì."
+      }
+    ],
+    "hsk4l-tb-lesson-15-text-1": [
+      {
+        "translationVi": "Cậu bé chơi piano và hát cùng một lúc là ai? Thật là một chương trình tuyệt vời!",
+        "pinyin": "nàgè yībiān dàn gāngqín yībiān chànggē de nán háizǐ shì shéi? biǎoyǎn dé zhēn bàng!"
+      },
+      {
+        "translationVi": "Đó là cháu trai của tôi. Anh cũng từng biểu diễn một lần trong bữa tiệc đêm giao thừa trước kỳ nghỉ đông năm ngoái.",
+        "pinyin": "shì wǒ sūnzǐ. qùnián hánjià qián de xīnnián wǎnhuì tā yě biǎoyǎnguò yīcì."
+      },
+      {
+        "translationVi": "Tôi nhớ ra, đứa trẻ này rất thông minh và dễ thương, bạn đã dạy nó rất tốt!",
+        "pinyin": "wǒ xiǎng qǐláile, zhè háizǐ yòu cōngmíng yòu kě'ài, nǐmen jiàoyù dé zhēn hǎo!"
+      },
+      {
+        "translationVi": "Đó là vì bố mẹ anh ấy đã giáo dục anh ấy rất tốt. Cha mẹ là những giáo viên quan trọng nhất của con cái họ. Cha mẹ anh không chỉ dạy anh kiến ​​thức mà còn dành thời gian dài giúp anh hình thành những thói quen rất tốt. Bây giờ anh ấy",
+        "pinyin": "shì tā fùmǔ jiàoyù dé hǎo. fùmǔ shì háizǐ zuì zhòngyào de lǎoshī. tā fùmǔ bùjǐn jiào tā zhīshì, érqiě hái huāle hěn cháng shíjiān bāngzhù tā yǎng chéngle fēicháng hǎo de xíguàn, xiànzài tā"
+      }
+    ],
+    "hsk4l-tb-lesson-15-text-2": [
+      {
+        "translationVi": "Tôi thấy bạn trông không ổn; tối qua bạn không được nghỉ ngơi tốt à?",
+        "pinyin": "kàn nǐ liǎnsè bù tài hǎo; shì bùshì zuó wǎn méi xiūxí hǎo?"
+      },
+      {
+        "translationVi": "Quên nó đi. Con gái tôi đã làm bài tập về nhà lúc 11 giờ tối qua.",
+        "pinyin": "biétíle. wǒ nǚ'ér zuó wǎn zuò zuo yè yòu zuò dào 11. diǎn."
+      },
+      {
+        "translationVi": "Đi ngủ quá muộn không tốt cho sức khỏe của con bạn. Gần đây con bạn có quá nhiều bài tập về nhà không?",
+        "pinyin": "shuìjiào tài wǎn duì háizǐ de shēntǐ méiyǒu hǎochù. zuìjìn háizǐ zuòyè shì bùshì tài duōle?"
+      },
+      {
+        "translationVi": "Nguyên nhân chính là do cô ấy làm việc chậm. Ví dụ, cô ấy sẽ không thức dậy khi đồng hồ báo thức reo vào buổi sáng. Tôi vội đưa cháu đi học kịp giờ, cháu vội đi vệ sinh. Mỗi ngày chỉ trích cô ấy vì những điều nhỏ nhặt này khiến cả hai chúng tôi đều cảm thấy khó chịu.",
+        "pinyin": "zhǔyào shi tā zuòshìqíng bǐjiào màn, bǐrú zǎoshang nàozhōng xiǎngle tā bù xǐng, wǒ gǎn shíjiān sòng tā shàngxué, tā yòu jízhuó shàng cèsuǒ. měitiān yīnwèi zhèxiē xiǎoshì pīpíng tā, nòng dé wǒ liǎ xīnqíng dōu bù hǎo."
+      },
+      {
+        "translationVi": "Trẻ em làm việc chậm thường là do chúng không quản lý được thời gian của mình. Bạn nên dạy con quản lý thời gian.",
+        "pinyin": "háizǐ zuò shì màn, wǎngwǎng shì yīnwèi tāmen bù huì ānpái zìjǐ de shíjiān. nǐ yīnggāi ràng háizǐ xuéhuì guǎnlǐ shíjiān."
+      },
+      {
+        "translationVi": "Có vẻ như có điều gì đó không ổn với phương pháp giáo dục của tôi. Tôi thường thấy cô ấy làm mọi việc một cách chậm rãi và luôn muốn làm điều đó cho cô ấy. Trong tương lai, cô phải học cách sắp xếp thời gian và làm những việc của riêng mình.",
+        "pinyin": "kàn lái háishì wǒ de jiàoyù fāngfǎ yǒu wèntí. píngshí kàn tā zuò shìqíng màn, zǒng xiǎng tì tā zuò, yǐhòu dé ràng tā xuéhuì ānpái shíjiān, zìjǐ de shìqíng zìjǐ zuò."
+      }
+    ],
+    "hsk4l-tb-lesson-15-text-3": [
+      {
+        "translationVi": "Ngày mai tôi phải đưa con trai tôi đến bệnh viện để tiêm. Nghĩ đến nó khiến tôi đau đầu. Anh ấy sợ tiêm thuốc và khóc rất nhiều mỗi khi tiêm.",
+        "pinyin": "míngtiān yòu yào dài wǒ érzǐ qù yīyuàn dǎzhēn, xiǎng xiǎng wǒ jiù tóuténg. tā jiù pà dǎzhēn, měi cì dǎzhēn dōu kū dé tèbié lìhài."
+      },
+      {
+        "translationVi": "Tôi nhớ khi con gái tôi còn nhỏ, tôi đưa cháu đến bệnh viện để tiêm. Lúc đầu, cô sợ đến mức suýt khóc. Tôi thì thầm với y tá rằng con gái tôi rất dũng cảm và không hề sợ tiêm thuốc. Sau khi nghe điều này, con gái tôi lập tức ngừng khóc.",
+        "pinyin": "jìdé wǒ nǚ'ér xiǎoshíhòu, dài tā qù yīyuàn dǎzhēn, gāng kāishǐ, tā hàipà dé yào kū. wǒ jiù xiǎoshēng de hé hùshì shuō wǒ nǚ'ér hěn yǒnggǎn, yīdiǎn er yě bùpà dǎzhēn, nǚ'ér tīngle yǐhòu mǎshàng jiù bù kūle."
+      },
+      {
+        "translationVi": "Hóa ra sự động viên và khen ngợi rất có ích cho trẻ. Tôi sẽ thử nó lần sau.",
+        "pinyin": "yuánlái gǔlì hé biǎoyáng duì xiǎo hái'ér tǐng yǒuyòng de, xià cì wǒ yěshì shì."
+      },
+      {
+        "translationVi": "Tuy nhiên, khen ngợi cũng là một nghệ thuật. Đừng khen ngợi quá nhiều. Khen ngợi quá nhiều có thể gây áp lực cho trẻ. Nó không những không khuyến khích được mà còn có thể khiến trẻ nghi ngờ khả năng của mình và trở nên kém tự tin.",
+        "pinyin": "bùguò biǎoyáng yě shì yī mén yìshù, biǎoyáng qiān wàn bùyào tài duō,guò duō de biǎoyáng kěnéng huì gěi háizǐ dài lái yālì. bùjǐn qǐ bù dào gǔlì de zuòyòng, hái kěnéng ràng háizǐ huáiyí zìjǐ de nénglì, biàn dé méiyǒu xìnxīn."
+      },
+      {
+        "translationVi": "Vậy làm sao để khen ngợi trẻ hiệu quả hơn?",
+        "pinyin": "nà zěnme biǎoyáng háizǐ cái huì gèng yǒu xiàoguǒ ne?"
+      },
+      {
+        "translationVi": "Tôi nghĩ khen ngợi phải kịp thời, khen ngợi không chỉ nhìn vào kết quả mà còn nhìn vào quá trình, để khuyến khích sự nhiệt tình của anh ấy và khiến anh ấy dũng cảm, không ngại khó khăn.",
+        "pinyin": "wǒ rènwéi biǎoyáng yào jíshí, érqiě biǎoyáng bùjǐn jǐn yào kàn jiéguǒ, gèng yào kàn guòchéng, zhèyàng cáinéng gǔlì tā de jījíxìng, ràng tā biàn dé yǒnggǎn, bùpà kùnnán."
+      }
+    ],
+    "hsk4l-tb-lesson-15-text-4": [
+      {
+        "translationVi": "Khi một số trẻ không đạt được điều mình muốn, chúng sẽ khóc, ném đồ đạc hoặc cố tình đánh đập để thu hút sự chú ý của cha mẹ. Trong trường hợp này, cha mẹ không nên tức giận trước mà nên dừng việc đang làm, giải quyết mọi việc với con, trò chuyện với con và tìm ra vấn đề của con. Sự quan tâm của cha mẹ có thể khiến trẻ cảm thấy vui vẻ. Khi giáo dục trẻ, bạn nên lựa chọn phương pháp giáo dục phù hợp. Tốt nhất không nên nói dối trẻ để giải quyết vấn đề. Nguyên nhân là do trẻ thiếu khả năng phán đoán. Khi thấy cha mẹ nói dối, chúng cũng sẽ học cách nói dối.",
+        "pinyin": "yǒu de háizǐ zài dé bù dào zìjǐ xiǎng yào de dōngxī de shíhòu, huì tōngguò kū, rēng dōngxī huòzhě gùyì qiāodǎ lái yǐnqǐ fùmǔ de zhùyì. zài zhè zhǒng qíngkuàng xià, jiànyì fùmǔ xiān bùyào shēngqì, yīnggāi tíng xiàshǒu zhōng de shìqíng, péi háizǐ zhěnglǐ zhěnglǐ dōngxī, hé tāmen liáo liáotiān er, nòng qīngchǔ tāmen de wèntí. fùmǔ de guānxīn, kěyǐ ràng háizǐ xīnqíng yúkuài qǐlái. jiàoyù háizǐ yīnggāi xuǎnzé héshì de jiàoyù fāngfǎ, zuì hǎo bùyào wèi liǎo jiějué wèntí ér piàn háizǐ, zhè shì yīnwèi értóng quēshǎo pànduàn nénglì, kàn dào fùmǔ piàn rén, tāmen yě huì xuézhe shuō jiǎ huà."
+      }
+    ],
+    "hsk4l-tb-lesson-15-text-5": [
+      {
+        "translationVi": "Trẻ khoảng bảy tuổi thường hiếu động, không thể ngồi yên nên khi dạy trẻ ở độ tuổi này, giáo viên phải tìm cách khơi dậy sự hứng thú của trẻ. Chỉ khi bạn làm cho các em thấy nội dung bạn dạy thú vị thì các em mới sẵn sàng học tập chăm chỉ. Khi trẻ chưa hiểu, bạn nên động viên trẻ nhiều hơn và đừng chỉ trích trẻ bằng những từ như “lười biếng”, “ngu ngốc”, “bất cẩn”. Điều này không tốt cho sự phát triển bình thường của chúng. Hơn nữa, nên áp dụng các phương pháp giáo dục khác nhau cho trẻ có những tính cách khác nhau. Nếu đứa trẻ tự hào, cần phải làm cho nó hiểu rằng vẫn còn rất nhiều kiến ​​thức phải học; nếu trẻ nhút nhát thì nên khuyến khích trẻ thường xuyên bày tỏ quan điểm của mình để mọi trẻ đều có thể phát triển lành mạnh.",
+        "pinyin": "qī suì zuǒyòu de értóng pǔbiàn hǎo dòng, zuò bù zhù, suǒyǐ lǎoshī zài jiào zhège niánlíng duàn de háizǐ shí, yīdìng yào xiǎng bànfǎ yǐnqǐ tāmen de xìngqù. zhǐyǒu ràng tāmen juédé nǐ jiào de nèiróng yǒuqù, tāmen cái huì yuànyì nǔlì xuéxí. dāng háizǐ bù míngbái shí, yīnggāi duō gǔlì tā, bùyào yòng “lǎn”“bèn”“cūxīn” zhè zhǒng cí pīpíng tā, zhèyàng duì tāmen de zhèngcháng fāzhǎn bù hǎo. érqiě, duì bùtóng xìnggé de háizǐ yào shǐyòng bùtóng de jiàoyù fāngfǎ. rúguǒ háizǐ bǐjiào jiāo'ào, yīnggāi ràng tā míngbái hái yǒu hěnduō zhīshì xūyào xuéxí; yàoshi háizǐ xìnggé yǒuxiē hàixiū, jiù yào jīngcháng gǔlì tā shuō chū zìjǐ de kànfǎ, zhèyàng cáinéng ràng měi yīgè háizǐ dōu jiànkāng de fāzhǎn."
+      }
+    ],
+    "hsk4l-tb-lesson-16-text-1": [
+      {
+        "translationVi": "Bạn sắp tốt nghiệp với bằng thạc sĩ? Kế hoạch của bạn cho tương lai là gì?",
+        "pinyin": "nǐ mǎshàng jiù yào shuòshì bìyèle ba? jiānglái yǒu shé me dǎsuàn?"
+      },
+      {
+        "translationVi": "Tôi muốn đi du học để lấy bằng tiến sĩ. và đang chuẩn bị các giấy tờ cần thiết để xin thị thực.",
+        "pinyin": "wǒ xiǎng chūguó dú bóshì, yīzhí zài zhǔnbèi bàn qiānzhèng xūyào de cáiliào."
+      },
+      {
+        "translationVi": "Hiện nay nguyên liệu được chuẩn bị như thế nào?",
+        "pinyin": "xiànzài cáiliào zhǔnbèi dé zěnme yàngle?"
+      },
+      {
+        "translationVi": "Bảng điểm và hộ chiếu đã sẵn sàng. Ngoài ra, tôi đã liên hệ với các trường đại học nước ngoài và điền vào các mẫu đơn đăng ký.",
+        "pinyin": "chéngjì zhèngmíng hé hùzhào yǐjīng zhǔnbèi hǎole, lìngwài, hái gēn guówài de dàxué qǔdéle liánxì, tiánxiěle bàomíng biǎogé."
+      },
+      {
+        "translationVi": "Chắc cũng phải có thư mời của trường đại học nước ngoài chứ nhỉ? Họ đã gửi fax cho bạn thư mời chưa?",
+        "pinyin": "hái yīnggāi yǒu guówài dàxué gěi nǐ de yāoqǐng xìn ba? tāmen bǎ yāoqǐng xìn chuánzhēn gěi nǐle ma?"
+      },
+      {
+        "translationVi": "Không, tuần sau tôi phải đến đại sứ quán để xin visa. Tôi nên làm gì?",
+        "pinyin": "méiyǒu a, xià gè xīngqí wǒ jiù yào qù shǐguǎn bàn qiānzhèngle, zhè kě zěnme bàn?"
+      },
+      {
+        "translationVi": "Đây là một vấn đề lớn và tôi không biết nhiều về nó. Hãy để tôi kiểm tra số điện thoại của trường cho bạn. Bạn có thể gọi và hỏi.",
+        "pinyin": "zhè kěshì gè dà wèntí, wǒ yě bù tài qīngchǔ. wǒ bāng nǐ chá yīxià xuéxiào de diànhuà hàomǎ, nǐ dǎ diànhuà wèn yīxià ba."
+      }
+    ],
+    "hsk4l-tb-lesson-16-text-2": [
+      {
+        "translationVi": "Cảm ơn bạn đã đưa tôi đến thăm công ty của bạn. Tôi rất vui mừng trong chuyến thăm và tôi có một câu hỏi mà tôi luôn muốn hỏi bạn.",
+        "pinyin": "xièxiè nín dài wǒ cānguān nín de gōngsī. zài cānguān guòchéng zhōng wǒ hěn jīdòng, yǒu gè wèntí yīzhí xiǎng wèn nín."
+      },
+      {
+        "translationVi": "ĐƯỢC RỒI! Chàng trai ơi, hãy cùng ăn dưa hấu và nói chuyện nhé.",
+        "pinyin": "hǎo a! xiǎohuǒzǐ, zánmen yībiān chī xīguā, yībiān liáo."
+      },
+      {
+        "translationVi": "Chỉ mới mười năm kể từ khi bạn bắt đầu làm việc sau khi tốt nghiệp đại học. Làm thế nào bạn kiếm được nhiều tiền như vậy cho công ty? Điều này thực sự làm tôi ngạc nhiên. Tôi muốn học hỏi kinh nghiệm thành công của bạn.",
+        "pinyin": "nín cóng dàxué bìyè kāishǐ gōngzuò, dào xiànzài cái shí nián shíjiān, zěnme gěi gōngsī zhuànle zhème duō qián? zhè ràng wǒ fēicháng chījīng. wǒ xiǎng xiàng nín xuéxí yīxià chénggōng de jīngyàn."
+      },
+      {
+        "translationVi": "Trước đây cũng có một phóng viên đã hỏi tôi câu hỏi này. Mặc dù bạn sẽ gặp nhiều áp lực và khó khăn khi kinh doanh nhưng mọi người đều có cơ hội như nhau. Bạn thấy đấy, có ba miếng dưa hấu có kích cỡ khác nhau. Chúng ta sử dụng kích thước của quả dưa hấu để tượng trưng cho số tiền. Nếu chúng ta bắt đầu ăn cùng nhau, bạn sẽ chọn món nào đầu tiên?",
+        "pinyin": "zhège wèntí yǐqián yīgè jìzhě yě wènguò wǒ. zuò shēngyì shí suīrán huì yù dào gè zhǒng yālì hé kùnnán, dànshì dàjiā de jīhuì dōu shì xiāngtóng de. nǐ kàn, zhè li yǒusān kuài dàxiǎo bùtóng de xīguā, wǒmen yòng xīguā de dàxiǎo dàibiǎo qián de duōshǎo, yàoshi wǒmen yīqǐ kai shǐ chī, nǐ huì xiān xuǎn nǎ kuài?"
+      },
+      {
+        "translationVi": "Tôi chắc chắn sẽ ăn miếng lớn nhất trước. Bạn có ăn miếng nhỏ trước và từ bỏ cơ hội ăn miếng lớn hơn không?",
+        "pinyin": "wǒ kěndìng xiān chī zuìdà de yīkuàile, nándào nín huì xiān chī xiǎo de, fàngqì chī dà kuài de jīhuì ma?"
+      },
+      {
+        "translationVi": "Tôi sẽ ăn miếng nhỏ nhất trước, vì trước khi bạn ăn hết miếng lớn nhất, tôi vẫn còn thời gian để ăn thêm một miếng nữa, và cuối cùng tôi sẽ ăn nhiều dưa hấu hơn bạn. Sau khi nghe câu trả lời của tôi, tôi e rằng bạn đã biết câu trả lời của tôi.",
+        "pinyin": "wǒ huì xiān chī zuìxiǎo de yīkuài, yīnwèi zài nǐ méi chī wán zuìdà dì nà kuài shí, wǒ hái yǒu shíjiān zài duō chī yīkuài, zuìhòu yīdìng bǐ nǐ chī de xīguā duō. tīng wán wǒ de huídá, kǒngpà nǐ yǐjīng zhīdào wǒ de dá'ànle ba."
+      }
+    ],
+    "hsk4l-tb-lesson-16-text-3": [
+      {
+        "translationVi": "Tôi sẽ không thể về nhà trong kỳ nghỉ lễ năm nay, và lần này bố mẹ tôi sẽ lại thất vọng. Kế hoạch của bạn là gì?",
+        "pinyin": "jīnnián fàngjià wǒ yòu huí bùliǎo jiāle, zhè cì wǒ fùmǔ yòu yào shīwàngle. nǐ yǒu shé me jìhuà?"
+      },
+      {
+        "translationVi": "Tôi dự định sống ở ngoại ô trong một tháng. Bạn chưa mua vé tàu à? Kế hoạch của bạn là gì?",
+        "pinyin": "wǒ jìhuà qù jiāoqū zhù yīgè yuè. nǐ bùshì yǐjīng mǎihǎo huǒchē piàole ma? nǐ dàodǐ zěnme dǎsuàn de ya?"
+      },
+      {
+        "translationVi": "Hôm qua, một người bạn tốt ở xa gọi điện và nói rằng anh ấy muốn đi du lịch và nhờ tôi làm hướng dẫn viên du lịch. Tôi thực sự xấu hổ khi từ chối.",
+        "pinyin": "zuótiān yīgè wàidì de hǎo péngyǒu dǎ diànhuà shuō yào lái lǚyóu, ràng wǒ dāng dǎoyóu, wǒ shízài bù hǎoyìsi jùjué."
+      },
+      {
+        "translationVi": "Trên thực tế, từ chối không có nghĩa là bạn không sẵn lòng giúp đỡ. Khi bạn gặp một vấn đề không thể giải quyết hoặc một nhiệm vụ không thể hoàn thành, việc từ chối chỉ thể hiện rằng bạn có trách nhiệm với bạn bè của mình. Đây cũng là thái độ có trách nhiệm với cha mẹ.",
+        "pinyin": "qíshí jùjué bìng bù biǎoshì bù yuànyì bāngmáng. yù dào jiějué bùliǎo de wèntí huòzhě wúfǎ wánchéng de rènwù shí, jùjué zhènghǎo shuōmíng nǐ duì péngyǒu fùzé. zhè yěshì duì nǐ fùmǔ fùzé de tàidù."
+      },
+      {
+        "translationVi": "Vì ai đó nhờ tôi giúp đỡ, điều đó có nghĩa là anh ấy thực sự cần tôi giúp đỡ. Tôi lo nếu tôi nói “không”, anh ấy sẽ hiểu lầm và buồn.",
+        "pinyin": "jìrán biérén zhǎo wǒ bāngmáng, shuōmíng tā zhēn de hěn xūyào wǒ de bāngzhù. wǒ dānxīn yàoshi shuō “bù” dehuà, huì ràng tā wùhuì hé shāngxīn."
+      },
+      {
+        "translationVi": "Đừng lo! Nếu bạn nói với bạn mình một cách phù hợp và lịch sự, chắc chắn anh ấy sẽ tha thứ cho bạn.",
+        "pinyin": "bié dānxīn! rúguǒ nǐ yòng yīgè jì héshì yòu lǐmào de fāngfǎ gàosù péngyǒu, tā yīdìng huì yuánliàng nǐ de."
+      }
+    ],
+    "hsk4l-tb-lesson-16-text-4": [
+      {
+        "translationVi": "Một số học sinh thường nói về “ngày mai” và “sẽ có từ mới”. Người ta thường nói ngày mai 20 sẽ làm xong bài tập. Nếu trượt phải ôn tập kỹ cho kỳ thi tiếp theo v.v. Thái độ thông cảm này sẽ lãng phí thời gian. Bạn không những không thể hoàn thành được việc gì cho đến cuối cùng mà còn không nhận được sự thông cảm từ người khác. Vì vậy đừng đẩy mọi thứ 23. xem trước đến \"ngày mai\", hãy bắt đầu mọi thứ từ bây giờ. 24. Những điểm chính zhongdiändt. trong diem, lấy việc học tiếng Trung làm ví dụ. Trước hết, bạn nên chú ý xem trước 25. cẩu thả trước giờ học và tìm ra những điểm mấu chốt để học ngày hôm sau; Chỉ cần làm được điều này, bạn sẽ có thể học tiếng Trung ngày càng tốt hơn và nói chuyện tự tin hơn.",
+        "pinyin": "yǒuxiē tóngxué jīngcháng bǎ “míngtiān” hé “jiāng shēngcí lái” guà zài zuǐ biān, cháng shuō zuòyè míngtiān zài wánchéng,20. guà xià cì kǎoshì yīdìng hǎohǎo er fùxí, děng děng. zhè 21. tóngqíng zhǒng tàidù huì làngfèi shíjiān, bùdàn huì ràng nǐ dào zuì 22. tuī hòu shénme shìqíng dōu zuò bùchéng, érqiě hái dé bù dào biérén de tóngqíng. suǒyǐ bùyào bǎ shénme shìqíng 23. yùxí dōu tuī dào “míngtiān”, yīqiè cóng xiànzài zuò qǐ.24. zhòngdiǎn zhongdiändt. trong diem, jiù ná xué hànyǔ lái shuō ba, shǒuxiān yào zhùyì kè qián 25. mǎhǔ yùxí, zhǎo chū dì èr tiān yào xuéxí de zhòngdiǎn; qícì, shàngkè shí yào rènzhēn tīng, bùnéng mǎhǔ; zuì 26. zìxìn zixin hòu, kè hòu yào jìdé fùxí. zhǐyào zhèyàng, hànyǔ jiù néng yuè xué yuè hǎo, yuè shuō yuè zìxìn."
+      }
+    ],
+    "hsk4l-tb-lesson-16-text-5": [
+      {
+        "translationVi": "Khi bạn cho rằng mình xuất sắc ở một khía cạnh nào đó, hãy bình tĩnh và đừng tự hào. Bởi vì thế giới rất lớn, \"Ngoài trời có thiên đường, ngoài thế giới có 28. Mất người.\" Rất có khả năng ai đó giỏi hơn bạn ở khía cạnh này. Chỉ vì bây giờ bạn là số một không có nghĩa là bạn sẽ luôn là số một. Cũng giống như một trò chơi, không có ai luôn thua và không có ai luôn thắng. Càng biết nhiều, chúng ta càng thấy mình không hiểu. Chúng ta nên chú ý đến sự tích lũy hàng ngày của mình và học hỏi thêm từ những người xung quanh. Nếu bạn dám thành thật nói những gì bạn không hiểu, điều đó không có nghĩa là bạn kém cỏi hơn người khác. Ngược lại, làm như vậy sẽ được người khác tôn trọng hơn.",
+        "pinyin": "dāng nǐ rènwéi zìjǐ zài nǎ fāngmiàn hěn yōuxiù shēngcí shí, qiān wàn yào lěngjìng, bùyào jiāo'ào. yīnwèi zhège shìjiè hěn dà,“tiānwàiyǒutiān, rén wài yǒu 28. shū rén”, hěn kěnéng yǒurén zài zhè fāngmiàn bǐ nǐ gèng lìhài. nǐ xiànzài shì dì yī, bìng bù biǎoshì nǐ yǒngyuǎn dōu shì dì yī. jiù xiàng bǐsài yīyàng, méiyǒu rén huì yǒngyuǎn shū, yě méiyǒu rén huì yīzhí yíng. wǒmen zhīdào de yuè duō, jiù huì fāxiàn zìjǐ bù dǒng de yě yuè duō. wǒmen yīnggāi zhòngshì píngshí de jīlěi, duō xiàng zhōuwéi de rén xuéxí. rúguǒ nǐ gǎn chéngshí dì shuō chū zìjǐ duì nǎ fāngmiàn bù liǎojiě, bìng bù shuōmíng zìjǐ bǐ biérén chà, xiāngfǎn, zhèyàng zuò gèng néng dédào biérén de zūnzhòng."
+      }
+    ],
+    "hsk4l-tb-lesson-17-text-1": [
+      {
+        "translationVi": "Trên lá sẽ có một lớp lá vàng dày, dường như mùa thu đã đến.",
+        "pinyin": "shàng jiù huì yǒuyī céng hòu hòu de huáng yè, kàn lái qiūtiān yǐjīng dàole."
+      },
+      {
+        "translationVi": "Tương Sơn những ngày này rất náo nhiệt. Khi nhiệt độ giảm xuống, lá của nhiều loại cây ở đây chuyển từ màu xanh sang màu vàng hoặc đỏ, thu hút nhiều khách du lịch. Chúng ta hãy đi và xem xét ngày hôm nay.",
+        "pinyin": "zhè jǐ tiān xiāngshān tèbié rènào, suízhe qìwēn de jiàngdī, nàlǐ xǔduō zhíwù de yèzǐ dōu yóu lǜ biàn huáng huòzhě biàn hóng, xīyǐnle hěnduō yóukè cānguān, zánmen jīntiān yě qù kàn kàn ba."
+      },
+      {
+        "translationVi": "Nhìn mây trên trời, hôm nay chắc chắn sẽ mưa to. Hơn nữa, trên núi Tương Sơn có quá nhiều người ngắm lá đỏ. Thay vào đó hãy đến Vạn Lý Trường Thành. Đài nói ở đó có nhiều chỗ ngắm lá đỏ rất đẹp.",
+        "pinyin": "nǐ kàn tiānshàng de yún, jīntiān kěndìng yǒu dàyǔ. zàishuō, xiāngshān shàng kàn hóngyè de rén tài duōle. zánmen gǎi dà qù chángchéng ba, guǎngbò lǐ shuō nàlǐ yěyǒu bù shǎo zhuānmén kàn hóngyè de hǎo dìfāng."
+      }
+    ],
+    "hsk4l-tb-lesson-17-text-2": [
+      {
+        "translationVi": "Con chó đen to lớn của bạn có bộ lông đẹp và thông minh quá. Tôi muốn ôm nó mỗi khi nhìn thấy nó.",
+        "pinyin": "nǐ de zhè zhǐ dà hēi gǒu máo zhēn piàoliang, érqiě zhème cōngmíng, měi cì jiànle dōu xiǎng bào yī bào tā."
+      },
+      {
+        "translationVi": "Chó là loài động vật rất thông minh. Chỉ cần bạn dành một chút thời gian để dạy chúng, chúng có thể học được rất nhiều điều.",
+        "pinyin": "gǒu shì hěn cōngmíng de dòngwù, zhǐyào shāowéi huā diǎn er shíjiān jiào jiào tā, tā jiù néng xuéhuì hěnduō dōngxī."
+      },
+      {
+        "translationVi": "Sau khi nghe những gì bạn nói, bây giờ tôi cũng muốn nuôi một con chó. Mỗi khi bạn yêu cầu nó làm điều gì đó, nó sẽ làm như thể hiểu được lời nói của bạn. Bạn có sử dụng phương pháp đặc biệt nào để dạy nó không?",
+        "pinyin": "tīng nǐ zhème yī shuō, wǒ xiànzài yě xiǎng yǎng yī zhǐ gǒule. měi cì nǐ ràng tā gànshénme, tā jiù xiàng néng tīng dǒng nǐ dehuà yīyàng qù zuò. nǐ jiào tā shì bùshì yòngle shénme tèbié de fāngfǎ?"
+      },
+      {
+        "translationVi": "Để nó hoàn thành một số nhiệm vụ, dạy nó một lần là chưa đủ. Bạn nên kiên nhẫn dạy đi dạy lại cho nó quen thì nó sẽ tuân thủ nghiêm ngặt yêu cầu của bạn.",
+        "pinyin": "yào ràng tā wánchéng yīxiē rènwù, zhǐ jiào yīcì shì bùgòu de, yīnggāi nàixīn dì yībiàn yī biàndì jiào gěi tā, shǐ tā shúxī, ránhòu tā jiù huì yángé ànzhào nǐ de yāoqiú zuòle."
+      },
+      {
+        "translationVi": "Có vẻ như không dễ dàng như suy nghĩ.",
+        "pinyin": "kàn lái méiyǒu xiǎng dì nàme róngyì."
+      },
+      {
+        "translationVi": "Chó là người bạn tốt của chúng ta. Họ có thể hiểu được lời nói và tâm trạng của mọi người. Nó sẽ luôn ở bên bạn khi bạn cảm thấy buồn.",
+        "pinyin": "gǒu shì wǒmen de hǎo péngyǒu, tā néng tīng dǒng rén dehuà, míngbái rén de xīnqíng. zài nǐ xīnlǐ nánshòu de shíhòu, tā huì yīzhí péizhe nǐ."
+      }
+    ],
+    "hsk4l-tb-lesson-17-text-3": [
+      {
+        "translationVi": "Tháng trước tôi đã đến Sở thú Bắc Kinh. Có khoảng 500 loài động vật ở đó. Tôi nghe hướng dẫn viên du lịch nói rằng Sở thú Bắc Kinh là một trong những vườn thú lớn nhất ở Châu Á.",
+        "pinyin": "shàng gè yuè wǒ qùle tàng běijīng dòngwùyuán, nàlǐ yuē yǒu 500 zhǒng dòngwù, tīng dǎoyóu shuì běijīng dòngwùyuán shì yàzhōu zuìdà de dòngwùyuán zhī yī."
+      },
+      {
+        "translationVi": "Tôi cũng đã đến đó một lần trong kỳ nghỉ hè năm ngoái. Tôi nhìn thấy ngựa, gấu trúc, hổ và các động vật khác ở đó. Tôi đặc biệt thích những chú gấu trúc, nhưng tiếc là lúc đó chúng hầu như đang ngủ.",
+        "pinyin": "qùnián fàng shǔjià de shíhòu, wǒ yě qùguò yīcì, wǒ zài nà'er kànle mǎ, xióngmāo, lǎohǔ děng dòngwù. wǒ tèbié xǐhuān xióngmāo, kěxí tāmen dāngshí dàduō zài shuìjiào."
+      },
+      {
+        "translationVi": "Ngày mình đi trùng với ngày tết thiếu nhi nên nhiều phụ huynh đưa con đi sở thú. Có rất nhiều người xếp hàng ở lối vào và sở thú rất sôi động. Những chú gấu trúc cũng trở nên rất sống động và tôi đã chụp rất nhiều ảnh về chúng.",
+        "pinyin": "wǒ qù dì nèitiān zhèng gǎn shàng liùyī értóng jié, xǔduō fùmǔ dàizhe háizǐ qù dòngwùyuán. rùkǒu chù páiduì de rén hěnduō, dòngwùyuán lǐ rènào jíle. xióngmāomen yě biàn dé tèbié huópō, wǒ hái gěi tāmen zhào liǎo bù shǎo zhàopiàn ne."
+      },
+      {
+        "translationVi": "Chú gấu trúc khổng lồ mập mạp và trông rất dễ thương.",
+        "pinyin": "dà xióngmāo shēnzǐ pàng pàng de, yàngzǐ kě'ài jíle."
+      }
+    ],
+    "hsk4l-tb-lesson-17-text-4": [
+      {
+        "translationVi": "Không có gì đáng ngạc nhiên khi có sự cạnh tranh không chỉ giữa con người trong xã hội mà còn giữa các loài thực vật khác nhau trong rừng. Thực vật cạnh tranh về ánh sáng mặt trời, không khí và nước. Một số cây cao có xu hướng nhận được nhiều ánh sáng mặt trời, không khí và nước hơn, trong khi những cây thấp còn lại chỉ có thể phát triển dưới những cây cao này. Do điều kiện khí hậu khác nhau, lá cây trông rất khác nhau trên khắp thế giới. Ở những nơi ấm áp và nhiều nước, lá có xu hướng mọc to và dày; ở những nơi có ánh nắng đặc biệt gay gắt và ít nước, lá có xu hướng mọc mỏng và dài.",
+        "pinyin": "bùjǐn shèhuì shàng de rén yǔ rén zhī jiān yǒu jìngzhēng, sēnlín lǐ de gè zhòng zhíwù zhī jiān yěyǒu jìngzhēng, zhè yīdiǎn er yě bù qíguài. zhíwù huì wèile yángguāng, kōngqì hé shuǐ ér jìngzhēng. yīxiē gāodà de zhíwù wǎngwǎng néng huòdé gèng duō de yángguāng, kōngqì hé shuǐ, ér shèng xià de yīxiē bǐjiào dī ǎi de zhíwù jiù zhǐ néng zhǎng zài zhèxiē gāodà zhíwù de xiàmiàn. yóuyú qìhòu tiáojiàn bùtóng, shìjiè gèdì zhíwù yèzǐ de yàngzǐ yě hěn bù xiāngtóng. zài nuǎnhuo, shuǐfèn bǐjiào duō dì dìfāng, yèzǐ wǎngwǎng zhǎng dé yòu dà yòu hòu; zài yángguāng tèbié lìhài, shuǐfèn shǎo dì dìfāng, yèzǐ jiù huì zhǎng dé yòu xì yòu zhǎng."
+      }
+    ],
+    "hsk4l-tb-lesson-17-text-5": [
+      {
+        "translationVi": "Khoảng 71% diện tích trái đất là đại dương xanh và nhiều loại thực vật, động vật sống trong thế giới dưới nước tuyệt đẹp. Tất cả chúng ta đều đã từng nghe những câu chuyện về nàng tiên cá khi còn nhỏ. Trên thực tế, thế giới dưới nước thực sự đẹp hơn những gì được viết ở *25. truyện nàng tiên cá. Nghiên cứu khoa học đã phát hiện ra rằng đáy đại dương có vẻ rất yên tĩnh nhưng không phải là không có âm thanh. Những loài động vật dưới đáy biển đã “nói” nhưng tai con người lại không nghe được. Ngoài ra, bạn vẫn có thể nhìn thấy mọi thứ ngay cả khi ở dưới đáy biển sâu vài km. Nhiều loài cá sẽ phát ra ánh sáng rực rỡ với nhiều màu sắc khác nhau, giống như những ngọn đèn được sắp xếp từng con một. Đẹp quá, cứ như trong mơ vậy.",
+        "pinyin": "dìqiú shàng dàyuē 71%dì dìfāng shì lán sè dì hǎiyáng, zài měilì dì hǎidǐ shìjiè lǐ, shēnghuózhe gè zhǒng gè yàng de zhíwù hé dòngwù. wǒmen xiǎoshíhòu dōu tīngguò měirényú de gùshì, qíshí zhēnzhèng dì hǎidǐ shìjiè bǐ*25. měirényú gùshì lǐ xiě de gèng měi. kēxué yánjiū fāxiàn, hǎiyáng dǐbù kàn shàngqù fēicháng ānjìng, rán'ér què bùshì yīdiǎn er shēngyīn yě méiyǒu, hǎidǐ de dòngwùmen yīzhí zài “shuōhuà”, zhǐ bùguò rén de ěrduǒ shì tīng bù dào de. lìngwài, jiùsuàn zài jǐ gōnglǐ shēn dì hǎidǐ yě réngrán néng kàn dào dōngxī, xǔduō yú huì fāchū gè zhǒng yánsè de liàngguāng, xiàng yīgè gè páiliè qǐlái de dēng, měi jíle, jiù xiàng zài mèng lǐ yīyàng."
+      }
+    ],
+    "hsk4l-tb-lesson-18-text-1": [
+      {
+        "translationVi": "Lần trước con gái tôi hỏi tôi máy bay cất cánh và hạ cánh như thế nào. Tôi thực sự không biết phải trả lời cô ấy như thế nào. Bây giờ cô ấy luôn có nhiều \"lý do\" khác nhau.",
+        "pinyin": "shàng cì nǚ'ér wèn wǒ fēijī shì zěnme qǐfēi hé jiàngluò de, zhēn bù zhīdào gāi zěnme huídá tā, tā xiànzài zǒng shì yǒu gè zhǒng gè yàng de “wèishéme”."
+      },
+      {
+        "translationVi": "Thế giới trong mắt trẻ thơ thật đẹp và lạ lùng. Có một cuốn sách tên là \"Một Trăm Ngàn Tại Sao Mới\" hiện đang bán rất chạy. Nội dung trong sách là tất cả những kiến ​​thức khoa học mà trẻ muốn biết. Tôi tin con gái bạn sẽ thích đọc nó.",
+        "pinyin": "háizǐ yǎnzhōng de shìjiè shì měilì hé qítè de. yǒuyī běn shū jiào “xīn shí wàn gè wèishéme”, xiànzài mài dé fēicháng huǒ. shū lǐ de nèiróng dōu shì értóng xiǎng zhīdào de kēxué zhīshì, xiāngxìn nǐ nǚ'ér yīdìng xǐhuān dú."
+      },
+      {
+        "translationVi": "Sun Yue: Không phải nó khác với \"One Hundred Thousand Whys\" mà chúng ta đã xem khi còn nhỏ sao? Tác giả là ai?",
+        "pinyin": "sūn yuè: nándào tā hé wǒmen xiǎoshíhòu kàn de “shí wàn gè wèishéme” bù yīyàng ma? zuòzhě shì shéi a?"
+      },
+      {
+        "translationVi": "Tôi không nhớ tên tác giả. Nội dung của “New One Hundred Thousand Whys” được cập nhật, giới thiệu nhiều kiến thức khoa học đa dạng, bao gồm trái đất, động vật, thực vật, giao thông,",
+        "pinyin": "zuòzhě de míng yǔ wǒ méi jì zhù.“xīn shí wàn gè wèishéme” de nèiróng gēngxīn, jièshàole gè zhǒng kēxué zhīshì, bāokuò dìqiú, dòngwù, zhíwù, jiāotōng,"
+      }
+    ],
+    "hsk4l-tb-lesson-18-text-2": [
+      {
+        "translationVi": "Khi sinh viên đại học ngày nay gặp phải một vấn đề không hiểu, họ có thể tra cứu ngay câu trả lời trên mạng và giải quyết vấn đề trong vài giây. Điều này thuận tiện hơn nhiều so với khi chúng tôi còn đi học.",
+        "pinyin": "xiànzài de dàxuéshēng yī yù dào bù míngbái de wèntí, kěyǐ mǎshàng zài wǎngshàng cházhǎo dá'àn, jǐ miǎo zhōng jiù bǎ wèntí jiějuéle, zhè bǐ wǒmen shàngxué de shíhòu fāngbiàn duōle."
+      },
+      {
+        "translationVi": "Ngày nay, con người, đặc biệt là sinh viên đại học đã bắt đầu sử dụng máy tính một cách rộng rãi và cuộc sống của họ không thể tách rời máy tính. Theo một cuộc khảo sát, khi 70% mọi người gặp phải một vấn đề nào đó, việc đầu tiên họ nghĩ đến là lên mạng để tìm câu trả lời.",
+        "pinyin": "xiànzài de rénmen, yóuqí shì dàxuéshēng kāishǐ pǔbiàn shǐyòng diànnǎo, tāmen de shēnghuó yǐjīng lì bù kāi diànnǎo. jù diàochá,70%de rén yù dào wèntí shí, shǒuxiān xiǎngdào de jiùshì shàngwǎng zhǎo dá'àn."
+      },
+      {
+        "translationVi": "Sự phát triển của máy tính và công nghệ Internet đã mang lại nhiều thay đổi trong cách học tập của học sinh. Tuy nhiên, việc nhìn vào máy tính hàng ngày thực sự gây mỏi mắt.",
+        "pinyin": "diànnǎo hé hùliánwǎng jìshù de fǎ zhǎn shǐ xuéshēngmen de xuéxí fāngshì fǎ shēng le hěnduō biànhuà, bùguò tiāntiān duìzhe diànnǎo kàn, yǎnjīng shízài shòu bùliǎo."
+      },
+      {
+        "translationVi": "Không chỉ cách học mà cách sống cũng có nhiều thay đổi. Ngày nay, ngày càng có nhiều sinh viên thích ghi nhật ký trực tuyến. Họ nói rằng bằng cách này họ có thể cập nhật cho bạn bè về cuộc sống của họ.",
+        "pinyin": "bùjǐn shì xuéxí fāngshì, érqiě lián shēnghuó fāngshì yě fāshēngle hěn dà gǎibiàn. xiànzài yuè lái yuè duō de xuéshēng xǐhuān zài wǎngshàng xiě rìjì, tāmen shuō zhèyàng kěyǐ ràng péngyǒu jíshí liǎojiě zìjǐ de shēnghuó."
+      },
+      {
+        "translationVi": "Đây là một ý tưởng tốt. Nó không chỉ có thể tạo điều kiện thuận lợi cho mọi người giao tiếp mà còn tiết kiệm giấy và bảo vệ môi trường. Nhưng sẽ không an toàn biết bao nếu người khác có thể xem nhật ký của tôi!",
+        "pinyin": "zhège bànfǎ bùcuò, jì néng fāngbiàn dàjiā de jiāoliú, hái néng jiéyuē yòng zhǐ, bǎohù huánjìng. dànshì rúguǒ biérén dōu néng kàn dào wǒ de rìjì dehuà, duō bù ānquán a!"
+      },
+      {
+        "translationVi": "放心吧,可以给网上的日记加密码,那样只有得到了允许,别人才能看到。",
+        "pinyin": "fàngxīn ba, kěyǐ gěi wǎngshàng de rìjì jiā mìmǎ, nàyàng zhǐyǒu dédàole yǔnxǔ, biérén cáinéng kàn dào."
+      }
+    ],
+    "hsk4l-tb-lesson-18-text-3": [
+      {
+        "translationVi": "Đêm qua tôi đã có một giấc mơ rất kỳ lạ. Tôi mơ thấy mình đang đi trên một cây cầu. Đang đi thì bỗng có một chiếc ô tô lao tới. Nó rất nguy hiểm. Sau đó tôi mơ thấy mình nhảy lên xe và bắt được kẻ xấu với cảnh sát.",
+        "pinyin": "wǒ zuótiān wǎnshàng zuòle yīgè tèbié qíguài de mèng, mèng dào zìjǐ zhèngzài yīzuò qiáo shàng zǒu, zǒuzhe zǒuzhe, túrán kāi guòlái yī liàng chē, fēicháng wéixiǎn, jiēzhe yòu mèng jiàn wǒ tiào dào chē shàng, gēn jǐngchá yīqǐ zhuā zhùle yīgè huàirén."
+      },
+      {
+        "translationVi": "Kỳ lạ thay, làm sao bạn có thể luôn nhớ được những gì mình đã mơ thấy? Tôi không nghĩ mình từng có một giấc mơ.",
+        "pinyin": "qíguài, nǐ zěnme zǒng néng jì zhù zìyǐ zuòle shénme mèng? wǒ hǎoxiàng cónglái méi zuòguò mèng."
+      },
+      {
+        "translationVi": "每个人都会做梦,区别只是有多有少。有的人睡醒之后还记得梦里的事情,有的人却记不清楚了。 Sở dĩ bạn nghĩ mình chưa bao giờ có ước mơ là vì bạn đã quên nó.",
+        "pinyin": "měi gèrén dūhuì zuòmèng, qūbié zhǐshì yǒu duō yǒu shǎo. yǒu de rén shuì xǐng zhīhòu hái jìdé mèng lǐ de shìqíng, yǒu de rén què jì bù qīngchǔle. nǐ zhī suǒyǐ juédé cónglái méi zuòguò mèng, zhǐ bùguò shì wàngjìle."
+      },
+      {
+        "translationVi": "Những gì bạn nói có lý, tôi thường ngủ cho đến khi bình minh.",
+        "pinyin": "nǐ shuō de yǒu dàolǐ, wǒ yībān dōu shì yī jué shuì dào dàliàng. hěnduō rén rènwéi zuòmèng shì shàngtiān yào gàosù tāmen jiānglái huì fāshēng de yīxiē shìqíng, kěnéng shàngtiān bùxiǎng ràng wǒ zhīdào ba."
+      },
+      {
+        "translationVi": "Nói chung, khi mọi người đi ngủ vào ban đêm, những gì họ cảm thấy trong cơ thể chính là những gì họ thường mơ về. Tôi nhớ có lần, tôi ăn bữa tối quá mặn, đêm đó tôi mơ thấy mình đang tìm nước khoáng ở các cửa hàng.",
+        "pinyin": "yībān wǎnshàng shuìjiào shí, shēntǐ gǎnjué dào shénme, rén jiù róngyì mèng dào shénme nèiróng. jìdé yǒu yīcì, wǒ wǎnfàn chī dé tài xián, nèitiān wǎnshàng jiù mèng jiàn zìyǐ dàochù zhǎo shāngdiàn mǎi kuàngquán shuǐ."
+      },
+      {
+        "translationVi": "Nhiều người đã cố gắng giải thích những giấc mơ và một số người thậm chí còn viết sách về chủ đề này. Thật không may, vẫn chưa có lời giải thích khoa học.",
+        "pinyin": "hěnduō rén dōu shìzhe duì mèng jìnxíng jiěshì, yǒuxiē rén shènzhì zhuānmén xiěguò zhè fāngmiàn de shū, kěxí dào xiànzài réngrán méiyǒu yīgè kēxué de shuōfǎ."
+      }
+    ],
+    "hsk4l-tb-lesson-18-text-4": [
+      {
+        "translationVi": "Ngày nay, điện thoại di động không chỉ rẻ hơn mà còn ngày càng hữu ích hơn. Gọi điện thoại và gửi tin nhắn văn bản đã trở thành phương thức liên lạc được sử dụng phổ biến. Ngoài ra, bạn cũng có thể sử dụng nó để nghe nhạc, xem phim, đọc sách, chơi game, trả tiền mua sắm, v.v., điều này hỗ trợ rất nhiều cho cuộc sống của mọi người. Ví dụ, khi bạn bị lạc, bạn chỉ cần sử dụng bản đồ điện thoại di động để kiểm tra địa chỉ là bạn sẽ biết ngay đường đi đến nơi đó. Điện thoại di động ngày nay giống một chiếc máy tính hơn, bạn có thể cầm trên tay. Cuộc sống của con người hiện đại ngày càng không thể tách rời khỏi điện thoại di động.",
+        "pinyin": "xiànzài shǒujī bùdàn jiàgé jiàngdīle, érqiě zuòyòng yě yuè lái yuè dà, dǎ diànhuà, fā duǎnxìn yǐjīng chéngle rénmen pǔbiàn shǐyòng de liánxì fāngfǎ. chú cǐ yǐwài, nǐ hái kěyǐ yòng tā lái tīng yīnyuè, kàn diànyǐng, yuèdú, wán er yóuxì, fùkuǎn gòuwù děng, zhè dàdà fāngbiànliǎo rénmen de shēnghuó. jǔ yīgè lì yú, mílù shí, zhǐyào yòng shǒujī dìtú chá yīxià dìzhǐ, mǎshàng jiù néng zhīdào zěnme qù nàgè dìdiǎn. xiànzài de shǒujī gèng xiàng shì yī bù kěyǐ ná zài shǒuzhōng de diànnǎo, xiàndài rén de shēnghuó yǐjīng yuè lái yuè lì bù kāi shǒujīle."
+      }
+    ],
+    "hsk4l-tb-lesson-18-text-5": [
+      {
+        "translationVi": "Trong thế kỷ 21, cuộc sống của chúng ta đã thay đổi đáng kể. Trước đây, để đến một đất nước cách xa hàng nghìn km bằng thuyền phải mất vài tháng, nhưng bây giờ chỉ mất chục giờ đi máy bay. Trước đây phải mất vài ngày để gửi một lá thư, nhưng bây giờ bạn thậm chí không cần phải đến bưu điện. Bạn chỉ cần lên mạng ở nhà và gửi email. Bạn bè ở xa chỉ mất chưa đầy một phút để nhận được, ngắn hơn thời gian viết một phong bì. Trước đây, phải mất vài ngày tin tức từ nơi khác mới được biết đến. Bây giờ, chỉ cần bạn mở trang web là bạn có thể nhận được bất kỳ thông tin nào ngay lập tức. Sự phát triển của khoa học công nghệ hiện đại khiến thế giới ngày càng thu nhỏ lại nên ngày nay người ta gọi trái đất là “ngôi làng toàn cầu”.",
+        "pinyin": "21 shìjì, wǒmen de shēnghuó fāshēngle jùdà biànhuà. jǐ qiān gōnglǐ yǐwài de guójiā, yǐqián zuò chuán xūyào jǐ gè yuè, xiànzài chéngzuò fēijī bùguò shí jǐ gè xiǎoshí. yuánlái jì xìn xūyào hǎo jǐ tiān, xiànzài lián yóujú dōu bùyòng qù, zhǐyào zài jiālǐ shàngwǎng fā gè diànzǐ yóujiàn, yòng bùliǎo yī fēnzhōng, yuǎn chǔ de péngyǒu jiù néng shōu dào, bǐ xiě xìnfēng yòng de shí wèn dōu duǎn. yǐqián wàidì de xīnwén yào jǐ tiān hòu cáinéng zhīdào, xiànzài zhǐyào dǎkāi wǎngzhàn, rènhé xìnxī dōu kěyǐ zài dì yī shíjiān huòdé. xiàndài kēxué jìshù de fǎ zhǎn ràng shìjiè biàn dé yuè lái yuè xiǎo, suǒyǐ xiànzài rénmen dōu bǎ dìqiú jiào zuò “dìqiúcūn”."
+      }
+    ],
+    "hsk4l-tb-lesson-19-text-1": [
+      {
+        "translationVi": "Xin chào thầy! Tôi hy vọng sẽ tiếp tục học ở đây vào học kỳ tới. Tôi có cần phải nộp đơn lại không?",
+        "pinyin": "lǎoshī, nín hǎo! wǒ xīwàng xià gè xuéqí zài zhèlǐ jìxù xuéxí, qǐngwèn hái xūyào chóngxīn shēnqǐng ma?"
+      },
+      {
+        "translationVi": "Đúng. Tôi sẽ cung cấp cho bạn một hình thức. Bạn phải điền ngày sinh, giới tính và số hộ chiếu cũng như địa chỉ liên hệ và số điện thoại liên lạc của bạn.",
+        "pinyin": "shì de. gěi nǐ biǎogé, chūshēng nián yue, xìngbié, hùzhào hàomǎ dōu yào tián, hái yǒu liánxì dìzhǐ, liánxì tún huà."
+      },
+      {
+        "translationVi": "Tôi thực sự xin lỗi. Tôi vô tình điền sai số hộ chiếu của mình. Bạn có thể cho tôi một mẫu đơn đăng ký mới được không?",
+        "pinyin": "zhēn bàoqiàn, wǒ bù xiǎoxīn bǎ hùzhào hàomǎ tián cuòle, nín néng zài gěi wǒ yī fèn xīn de shēnqǐng biǎo ma?"
+      },
+      {
+        "translationVi": "Không sao đâu, không cần phải xin lỗi, ai cũng có lúc mắc sai lầm. Đơn đăng ký đã bị người khác lấy đi. Tôi sẽ in lại một bản cho bạn. Vui lòng chờ. (Thầy Cao in và Mark điền vào mẫu.)",
+        "pinyin": "méiguānxì, bùyòng dàoqiàn, shéi dōu yǒu cūxīn tián cuò de shíhòu. shēnqǐng biǎo dōu bèi biérén ná zǒule, wǒ gěi nǐ chóngxīn dǎyìn yī fèn, nǐ děng yīxià.(gāo lǎoshī dǎyìn, mǎkè tián biǎo.)"
+      },
+      {
+        "translationVi": "Lần này tôi đã điền mọi thứ theo yêu cầu. Tôi còn cần phải làm gì nữa không?",
+        "pinyin": "zhè cì wǒ ànzhào yāoqiú dōu tiánxiě wánliǎo, qǐngwèn hái xūyào zuò bié de shìqíng ma?"
+      },
+      {
+        "translationVi": "Vui lòng đưa cho tôi hộ chiếu của bạn và chúng tôi sẽ sao chép nó.",
+        "pinyin": "qǐng bǎ nǐ de hùzhào gěi wǒ, wǒmen yào bǎ hùzhào fùyìn yīxià."
+      }
+    ],
+    "hsk4l-tb-lesson-19-text-2": [
+      {
+        "translationVi": "Ừ, sao tay cậu lại chảy máu thế? Đợi một chút, tôi sẽ gói nó lại cho bạn.",
+        "pinyin": "ya, nǐ de shǒu zěnme liúxuèle? děng yīxià, wǒ gěi nǐ bāo qǐlái."
+      },
+      {
+        "translationVi": "Không sao đâu, tôi muốn làm món bánh bao thịt cừu cho bạn. Tôi bị gãy tay khi dùng dao cắt thịt.",
+        "pinyin": "méiguānxì, wǒ xiǎng gěi nǐ zuò diǎn er yángròu jiǎozǐ, gāngcái yòng dāo qiē ròu de shíhòu bǎshǒu nòng pòle."
+      },
+      {
+        "translationVi": "Bạn đã quá bất cẩn nhưng điều đó có vẻ không nghiêm trọng và sẽ ổn trong vài ngày tới. Có một chút máu trên quần áo. Cởi quần áo ra và tôi sẽ giặt chúng cho bạn.",
+        "pinyin": "nǐ yě tài bù xiǎoxīnle, bùguò hǎoxiàng bù tài yánzhòng,guò jǐ tiān jiù hǎole. yīfú shàng yěyǒu yīdiǎn er xuè, nǐ bǎ yīfú tuō xiàlái, wǒ gěi nǐ xǐ xǐ."
+      },
+      {
+        "translationVi": "Có vẻ như hôm nay tôi sẽ không thể ăn bánh bao thịt cừu được.",
+        "pinyin": "kàn lái jīntiān chībùshàng yángròu jiǎozǐle."
+      },
+      {
+        "translationVi": "Vậy thì hãy ăn thứ khác nhé. Có một nhà hàng gần tiệm cắt tóc mà tôi thường tới. Bánh bao ở đó ngon lắm. Tôi sẽ mua một ít sau.",
+        "pinyin": "nà wǒmen jiù chī diǎn er bié de. wǒ cháng qù dì nà jiā lǐfǎ diàn fùjìn yǒu gè cāntīng, nàlǐ de bāozǐ hěn hào chī, wǒ yīhuǐ'er qù mǎi yīdiǎn er."
+      },
+      {
+        "translationVi": "Chà, trong túi tôi có mười mấy đồng tiền lẻ, đủ để mua bánh bao hấp.",
+        "pinyin": "hǎo ba, wǒ yīfú kǒudài li yǒu shí jǐ kuài língqián, mǎi bāozǐ yīnggāi gòu."
+      }
+    ],
+    "hsk4l-tb-lesson-19-text-3": [
+      {
+        "translationVi": "Sáng nay tôi chào bạn nhưng bạn không thấy. Tôi không mong đợi gặp lại bạn ở đây.",
+        "pinyin": "wǒ zǎoshang gēn nǐ dǎzhāohū, nǐ méi kànjiàn. xiǎngbùdào yòu zài zhè'er pèngjiàn nǐle."
+      },
+      {
+        "translationVi": "Tôi thực sự xin lỗi. Tôi không cố ý làm điều đó. Sáng nay tôi quên đeo kính nên không nhìn rõ được.",
+        "pinyin": "zhēnshi duìbùqǐ, wǒ bùshì gùyì de, jīntiān zǎoshang wǒ wàng dài yǎnjìngle, kàn bù qīngchǔ."
+      },
+      {
+        "translationVi": "Vừa rồi tôi thấy bạn nhảy múa Trung Hoa, nhưng tôi không nhận ra bạn nhảy giỏi đến thế! Bạn đã bao giờ học múa Trung Quốc ở nước bạn trước đây chưa?",
+        "pinyin": "gāngcái wǒ zài pángbiān kàn dào nǐ tiào zhōngguó wǔle, méi kàn chūlái nǐ tiào dé zhème hǎo! nándào nǐ yǐqián zài nǐmen guójiā jiùxuéguò zhōngguó wǔdǎo ma?"
+      },
+      {
+        "translationVi": "Mẹ tôi đã dạy tôi khiêu vũ trong hai năm khi tôi còn nhỏ nên tôi đã có chút nền tảng. Bên cạnh đó, múa không chỉ là một nghệ thuật mà còn là một “ngôn ngữ”. Ngôn ngữ này không liên quan gì đến quốc tịch và có thể được hiểu bởi mọi người ở bất kỳ quốc gia nào.",
+        "pinyin": "wǒ xiǎoshíhòu māmā jiào wǒ tiàoguò liǎng nián de wǔ, suǒyǐ shāowéi yǒudiǎn er jīchǔ. zàishuō, wǔdǎo bù yí shì yī mén yìshù, yěshì yī zhǒng “yǔyán”, zhè zhǒng yǔyán yǔ guójí wúguān, wúlùn nǎge guójiā de rén dōu néng kàn dǒng."
+      },
+      {
+        "translationVi": "Rất tốt! Tôi mới học nhảy kiểu này cách đây không lâu. Xin hãy giúp tôi xem chuyển động của tôi có đúng không.",
+        "pinyin": "tài hǎole! wǒ gāng xuéxí tiào zhè zhǒng wǔ méi duōjiǔ, nǐ bāng wǒ kàn kàn, wǒ de zhège dòngzuò duì bùduì."
+      },
+      {
+        "translationVi": "Động tác của bạn vẫn chưa chuẩn lắm. Hãy để tôi nhảy nó cho bạn. Nếu bạn nhìn kỹ, nó sẽ giống tôi",
+        "pinyin": "nǐ zhège dòngzuò zuò dé háishì bù tài biāozhǔn, wǒ gěi nǐ tiào yībiàn. nǐ zǐxì kànzhe, yīnggāi xiàng wǒ zhè"
+      },
+      {
+        "translationVi": "Đầu tiên hãy nâng cánh tay của bạn lên, sau đó là nâng chân lên và cuối cùng quay đầu sang phải.",
+        "pinyin": "xiān tái gēbó, ránhòu tái tuǐ, zuìhòu tou zài xiàng yòu zhuǎn yīxià."
+      }
+    ],
+    "hsk4l-tb-lesson-19-text-4": [
+      {
+        "translationVi": "Ngôi nhà mà Mark thuê năm ngoái rất gần đường, đối diện là các cửa hàng lớn nhỏ, môi trường xung quanh rất ồn ào. Vì vậy, trước khi nhà hết hạn, Mark bắt đầu lo lắng về việc đổi nhà. Một ngày nọ, anh nhìn thấy một tấm biển quảng cáo cho thuê nhà ở cổng khu cộng đồng. Quảng cáo nói rằng ngôi nhà có vị trí thuận tiện, xung quanh yên tĩnh và nhà bếp rộng. Nhìn chung anh rất hài lòng với ngôi nhà nên đã ghi lại số điện thoại di động của chủ nhà. Nhưng khi tôi gọi về nhà thì đường dây luôn bận. Ngày hôm sau, khi đi ngang qua cổng cộng đồng, anh xem kỹ tấm biển quảng cáo và phát hiện khi ghi số mình đã viết sai số.",
+        "pinyin": "mǎkè qùnián zū de fángzǐ lí mǎlù hěn jìn, duìmiàn yǒu dà dàxiǎo xiǎo de shāngdiàn, zhōuwéi huánjìng fēicháng chǎo. suǒyǐ, fángzǐ huán méi dào qí, mǎkè jiù kāishǐ zhāojí huàn fángzǐle. yǒu yītiān, tā zài xiǎoqū ménkǒu kàn dào yīgè zū fángzǐ de guǎnggào. guǎnggào shàng shuō fángzǐ jiāotōng fāngbiàn, zhōuwéi hěn ānjìng, chúfáng hěn dà. zǒng de lái shuō, zhè tào fángzǐ tā hěn mǎnyì, yúshì tā jiù jì xiàle fángdōng de shǒujī hàomǎ. kě huí jiā hòu dǎ diànhuà, diànhuà zǒng shì zhànxiàn. dì èr tiān, tā lùguò xiǎoqū ménkǒu shí, yòu zǐxì kànle yīxià guǎnggào, yuánlái zài jì hàomǎ de shíhòu xiě cuòle yīgè shùzì."
+      }
+    ],
+    "hsk4l-tb-lesson-19-text-5": [
+      {
+        "translationVi": "Nhiều người nước ngoài nghĩ rằng tất cả người Trung Quốc đều biết từ Kung Fu và Bóng bàn. Trên thực tế, ngày càng có nhiều người Trung Quốc yêu thích hai môn thể thao Kung Fu này. Người Trung Quốc đặc biệt thích chơi bóng bàn. Bạn sẽ tìm thấy bàn bóng bàn ở khắp mọi nơi ở Trung Quốc. Giống như bóng bàn, cầu lông, chạy 29. Cầu lông yumáoqiudt. Những môn thể thao như bước dài không đòi hỏi điều kiện cao nên đã trở thành lựa chọn tốt để mọi người tập luyện. Người ta thường nói “cuộc sống nằm ở thể thao”, nên rất nhiều người sẽ đến sân vận động chơi vài trận vào cuối tuần. Cái tên \"Ping 32. Seat Pong\" cũng rất thú vị. “Ping” và “Pong” là những âm thanh được tạo ra khi chơi bóng. Khi xem một trận đấu bóng bàn, đặc biệt là khi các đấu thủ đang giao bóng, khán giả phải im lặng, không được nói to, rời khỏi chỗ ngồi và đi lại xung quanh.",
+        "pinyin": "hěnduō wàiguó rén rènwéi suǒyǒu zhòng guó rén dūhuì shēngcí gōngfū hé pīngpāng qiú, qíshí zhǐshì xǐ'ài zhè liǎng zhǒng 27. gōngfū yùndòng de zhōngguó rén bǐjiào duō. zhōngguó rén tèbié xǐ 28. pīngpāng qiú pingpangqiudt.bong huān dǎ pīngpāng qiú, zài zhōngguó nǐ huì fāxiàn dàochù dōu yǒu pīngpāng qiú zhuō. xiàng pīngpāng qiú, yǔmáoqiú, pǎo 29. yǔmáoqiú yumáoqiudt.cau long bù děng yùndòng duì tiáojiàn yāoqiú bù gāo, suǒyǐ tāmen 30. chǎng dōu chéngwéi rénmen yùndòng bùcuò de xuǎnzé. rénmen cháng shuō “shēngmìng zàiyú yùndòng”, suǒyǐ hěnduō rén yī 31. jìnzhǐ dào zhōumò jiù huì dào tǐyùguǎn dǎ jǐ chǎng qiú.“pīng 32. zuòwèi pāng qiú” zhège míngzì yě hěn yǒuyìsi,“pīng” hé “pāng” jiùshì dǎqiú shí fāchū de shēngyīn. zài kàn pīngpāng qiú bǐsài shí, yóuqí shì zài yùndòngyuán fāqiú de shíhòu, guānzhòng yào ānjìng, jìnzhǐ dàshēng jiǎnghuà huòzhě líkāi zuòwèi suíbiàn zǒudòng."
+      }
+    ],
+    "hsk4l-tb-lesson-20-text-1": [
+      {
+        "translationVi": "Đã đến lúc tiếp nhiên liệu. Có trạm xăng trên đường tới sân bay không?",
+        "pinyin": "gāi jiāyóule, qù jīchǎng de lùshàng yǒu jiāyóu zhàn ma?"
+      },
+      {
+        "translationVi": "Tôi nhớ sau khi qua cầu sông Dương Tử, rẽ phải sẽ có một cái, cách đó khoảng bốn năm cây số.",
+        "pinyin": "wǒ jìdéguòle chángjiāng dàqiáo wǎng yòu yī guǎi jiù yǒu yīgè, dàgài yǒu sìwǔ gōnglǐ yuǎn."
+      },
+      {
+        "translationVi": "Được rồi, thế thì tôi yên tâm, đừng lái xe hết xăng. Chuyến bay của bạn đến Bắc Kinh lúc mấy giờ? Có đủ thời gian không?",
+        "pinyin": "hǎo, nà wǒ jiù fàngxīnle, bié kāizhe kāizhe méi yóule. nǐ qù běijīng de hángbān shì jǐ diǎn de? shíjiān láidéjí ma?"
+      },
+      {
+        "translationVi": "Chuyến bay ban đầu dự định cất cánh lúc 10 giờ, nhưng sau đó trên trang web của sân bay thông báo rằng chuyến bay bị hoãn lại một giờ, nên nếu chúng tôi đến trước 9 giờ 30 thì sẽ ổn thôi.",
+        "pinyin": "hángbān běnlái shì shí diǎn de, hòulái jīchǎng wǎngzhàn shàng tōngzhī tuīchíle yīgè xiǎoshí, suǒyǐ jiǔ diǎn bàn yǐqián dào jiù yīnggāi méi wèntí."
+      },
+      {
+        "translationVi": "Vừa rồi tôi hơi lo lắng rằng sẽ quá muộn. Sau khi đổ xăng một lúc, đi bộ 500m về phía Tây là đến đường cao tốc.",
+        "pinyin": "gāngcái wǒ hái yǒudiǎn er dānxīn láibují ne. yīhuǐ'er jiā wán yóu, wǎng xī zǒu wǔbǎi mǐ jiù néng shàng gāosù gōng"
+      }
+    ],
+    "hsk4l-tb-lesson-20-text-2": [
+      {
+        "translationVi": "Con gái tôi sẽ đi nghỉ đông vào tuần tới. Vậy chúng ta đưa cô ấy đi du lịch và thư giãn nhé?",
+        "pinyin": "nǚ'ér xià gè xīngqí jiù yào fàng hánjiàle, dào shíhòu zánmen dài tā qù lǚyóu, fàngsōng fàngsōng, zěnme yàng?"
+      },
+      {
+        "translationVi": "Con gái tôi thường có nhiều lớp và luôn nói muốn đi du lịch nhưng không có thời gian, thật đáng thương. Dịp nghỉ lễ này nên đưa bé đi chơi ở đâu?",
+        "pinyin": "píngshí nǚ'ér nàme duō kè, zǒng shì shuō xiǎng qù lǚxíng, dànshì méi shíjiān, guài kělián de. zhè cì fàngjià zánmen dài tā qù nǎ'er wán er bǐjiào hǎo ne?"
+      },
+      {
+        "translationVi": "Năm ngoái, đồng nghiệp của tôi đưa con trai đi Quảng Tây. Tôi nghe nói nó rất tốt nên chúng tôi sẽ đi Quảng Tây.",
+        "pinyin": "qùnián wǒ tóngshì dài tā érzǐ qù guǎngxī wán erle yī tàng, tīng shuō hěn bùcuò, wǒmen jiù qù guǎngxī ba."
+      },
+      {
+        "translationVi": "Được rồi, khí hậu ở đó rất khác so với miền bắc. Ngay cả trong mùa đông, trời rất ấm áp và bạn có thể ăn nhiều trái cây tươi. Tôi sẽ báo tin vui cho con gái tôi ngay khi nó quay về.",
+        "pinyin": "hǎo a, nàlǐ de qìhòu hé běifāng hěn bùtóng, jíshǐ shì dōngtiān, yě fēicháng nuǎnhuo, hái néng chī dào xǔduō xīnxiān de shuǐguǒ. děng nǚ'ér yī huílái wǒ jiù gàosù tā zhège hǎo xiāoxī."
+      },
+      {
+        "translationVi": "Đừng vội nói điều đó. Trưa chúng ta không phải đi nhà hàng đối diện ăn vịt quay để chúc mừng cô ấy thi đậu sao? Chẳng phải sẽ tốt hơn nếu nói cho cô ấy biết sao?",
+        "pinyin": "xiān bié zhāojí shuō. zhōngwǔ wǒmen bùshì yào qù duìmiàn de fàndiàn chī kǎoyā, zhùhè tā kǎoshì chéngjì dōu hégé ma? nà shíhòu zài gàosù tā, bùshì gèng hǎo?"
+      },
+      {
+        "translationVi": "Quả là một ý tưởng tuyệt vời, chắc chắn cô ấy sẽ rất vui khi biết được.",
+        "pinyin": "hǎo zhǔyì, dào shí tā zhīdàole kěndìng tèbié kāixīn."
+      }
+    ],
+    "hsk4l-tb-lesson-20-text-3": [
+      {
+        "translationVi": "Có phải tất cả những bức ảnh này được chụp trong chuyến đi đến Lệ Giang của bạn không? Cảnh sắc thiên nhiên ở đó đẹp quá!",
+        "pinyin": "zhème duō zhàopiàn, dōu shì nǐ zhè cì qù lìjiāng lǚxíng shí zhào de? nàlǐ de zìrán fēngjǐng kě zhēnměi!"
+      },
+      {
+        "translationVi": "Đúng vậy, phong cảnh của thị trấn nhỏ bốn mùa đều đẹp, môi trường cũng được bảo vệ tốt nên thu hút hàng nghìn khách du lịch đến du lịch mỗi năm.",
+        "pinyin": "shì a, xiǎochéng sìjì de fēngjǐng dōu hěn měi, érqiě huánjìng bǎohù dé yě hěn hǎo, yīncǐ měinián dōu xīyǐnzhe chéng qiān shàng wàn de yóukè qù nà'er lǚyóu."
+      },
+      {
+        "translationVi": "Người mà bạn đang nâng cốc chúc mừng trong bức ảnh này có phải là thiểu số không? Cô ấy ăn mặc rất đẹp.",
+        "pinyin": "zhè zhāng zhàopiàn shàng hé nǐ gānbēi dì nàgè rén shì shǎoshù mínzú ma? tā dǎbàn dé zhēn piàoliang."
+      },
+      {
+        "translationVi": "Cô ấy là hướng dẫn viên du lịch của chúng tôi, không phải là thiểu số. Cô ấy kể cho chúng tôi rất nhiều câu chuyện cười trên đường đi. Có lần tôi làm mất chìa khóa túi và cuối cùng cô ấy đã tìm lại được cho tôi. Bức ảnh này được chụp cùng nhau sau khi chúng tôi tìm thấy chìa khóa.",
+        "pinyin": "tā shì wǒmen de dǎoyóu, bùshì shǎoshù mínzú. yī lùshàng tā gěi wǒmen jiǎngle hěnduō yǒuqù de xiàohuà. yǒu yīcì wǒ bǎ cún bāo de yàoshi diūle, zuìhòu háishì tā bāng wǒ zhǎodào de. zhè zhāng zhàopiàn jiùshì zhǎodào yàoshi hòu, wǒmen yīqǐ zhào de."
+      },
+      {
+        "translationVi": "Tôi sẽ đến đó vào năm tới nếu có cơ hội. Hãy giới thiệu hướng dẫn viên du lịch của bạn cho tôi nhé. Nên đi du lịch Lệ Giang vào mùa nào?",
+        "pinyin": "míngnián wǒ yǒu jīhuì yě qù nà'er kàn kàn, dào shí bǎ nǐ de dǎoyóu jièshào gěi wǒ ba. jiùjìng nǎge jìjié qù lìjiāng lǚyóu bǐjiào hǎo ne?"
+      },
+      {
+        "translationVi": "Những mùa đẹp nhất ở đó là mùa xuân và mùa thu, nhưng lúc đó có nhiều người hơn. Thời điểm tốt hơn một chút là từ tháng 12 đến tháng 3 năm sau. Nếu bạn đến Lệ Giang trong thời gian này thì chi phí di chuyển, ăn uống và chỗ ở sẽ rất rẻ.",
+        "pinyin": "nà'er zuìměi de jìjié shì chūntiān hé qiūtiān, bùguò nà shíhòu rén bǐjiào duō. shāowéi hǎo yīdiǎn er de shíjiān shì měinián 12 yuè dào dì èr nián 3 yuè. zhè duàn shíjiān qù lìjiāng dehuà, wúlùn jiāotōng háishì chī, zhù dōu hěn piányí."
+      }
+    ],
+    "hsk4l-tb-lesson-20-text-4": [
+      {
+        "translationVi": "Khoảng cách giữa miền bắc và miền nam Trung Quốc là khoảng 5.500 km nên khí hậu giữa miền bắc và miền nam rất khác nhau. Hàng năm vào tháng 3, tháng 4, nếu đi tàu từ Bắc vào Nam, bạn sẽ thấy mỗi nơi có những phong tục khác nhau trên đường đi.",
+        "pinyin": "zhōngguó nánběi jùlí yuē 5500 gōnglǐ, yīncǐ nánběi qìhòu yǒu hěn dà qūbié. měinián sānsì yuèfèn de shíhòu, rúguǒ cóng běifāng zuò huǒchē dào nánfāng qù lǚyóu, yī lùshàng nǐ huì fāxiàn, bùtóng dì dìfāng yǒu bùtóng de"
+      },
+      {
+        "translationVi": "Cây cối ngoài cửa sổ lần lượt chuyển màu xanh. Có thể tuyết vẫn đang rơi ở phía bắc, nhưng ở phía nam trời đã xanh khắp nơi. Ẩm thực miền Nam rất đặc sắc, đặc biệt là món canh rất ngon và được nhiều người miền Bắc yêu thích. Ngoài ra, ngôn ngữ của miền Nam và miền Bắc cũng rất khác nhau. Ví dụ, khi bạn nói chuyện với người ở Thượng Hải, bạn sẽ thấy tiếng Thượng Hải nghe giống tiếng nước ngoài. Mặc dù người Thượng Hải cũng có thể nói tiếng phổ thông nhưng nếu bạn lắng nghe kỹ, nó vẫn mang hương vị Thượng Hải.",
+        "pinyin": "chuāngwài de shù yī kē yī kē de biàn lǜ, běifāng yěxǔ hái xiàzhe xuě, nánfāng què yǐjīng dàochù dōu shì lǜsèle. nánfāng cài hěn yǒu tèdiǎn, tèbié shì tāng, wèidào xiānměi, hěnduō běifāng rén dōu xǐhuān hē. lìngwài, nánfāng hé běifāng de yǔyán yěyǒu hěn dà bùtóng. bǐrú nǐ gēn shànghǎi rén duìhuà shí, huì fāxiàn shànghǎi huà tīng qǐlái jiù xiàng wàiyǔ yīyàng. suīrán shànghǎi rén yě huì jiǎng pǔtōnghuà, kěshì zǐxì tīng, háishì yǒu shànghǎi wèi er."
+      }
+    ],
+    "hsk4l-tb-lesson-20-text-5": [
+      {
+        "translationVi": "Một người phải đi du lịch khi có thời gian. Du lịch không chỉ làm phong phú thêm trải nghiệm của một người mà còn là một cách tốt để giải tỏa căng thẳng. Nhưng điều quan trọng nhất đối với tôi là việc đi du lịch cho tôi cơ hội nếm thử những món ăn vặt nổi tiếng từ nhiều nơi. Trong kỳ nghỉ, tôi đóng gói hành lý, mang theo bản đồ, mua vé tàu và lên đường đến nơi mình muốn. Nhắc tới đồ ăn, điều khiến tôi ấn tượng nhất chính là đồ ăn Hồ Nam. Đặc trưng của ẩm thực Hồ Nam là cay. Khác với vị cay ở những nơi khác, vị cay của ẩm thực Hồ Nam chủ yếu là mặn, cay và chua. Mặc dù có nhiều nhà hàng Hồ Nam trên khắp đất nước nhưng tốt nhất bạn nên đến đó và thử chúng. Sau mỗi chuyến đi, tôi bắt đầu công việc của mình tràn đầy năng lượng.",
+        "pinyin": "yīgè rén yǒu shíjiān yīdìng yào qù lǚxíng, lǚxíng bùjǐn néng fēngfù yīgè rén de jīnglì, érqiě shì hěn hǎo de jiǎn yā fāngfǎ. dàn duì wǒ lái shuō, zuì zhòngyào de shì lǚxíng néng ràng wǒ yǒu jīhuì cháng dào gèdì yǒumíng de xiǎochī. fàngjià de shíhòu, wǒ huì shōushí hǎo xínglǐ, dài shàng dìtú, mǎi zhāng huǒchē piào, xiàng mùdì dì chūfā. shuō qǐ chī de dōngxī, gěi wǒ yìnxiàng zuìshēn de shì húnán cài. húnán cài de tèdiǎn jiùshì là, yǔ qítā dìfāng de là bùtóng, húnán cài de là zhǔyào shi xián là, xiāng là hé suān là. suīrán quánguó gèdì dōu yǒu húnán fànguǎn er, dàn zuì hào huán shì zhíjiē qù nàlǐ cháng yī cháng. měi cì lǚ háng jiéshù hòu, wǒ dūhuì jīngshén bǎibèi dì kāishǐ wǒ de gōngzuò."
+      }
+    ]
+  },
+  "grammarPoints": {
+    "hsk4l-tb-l11-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "titleZh": "连",
+      "titleVi": "thậm chí",
+      "formula": "连",
+      "explanationVi": "\"Lian\" là một giới từ, thể hiện sự nhấn mạnh và cấu trúc \"Lian...also...\" được sử dụng phổ biến. Người nói minh họa một tình huống khác bằng cách nhấn mạnh một ví dụ cực đoan. \"Lian\" có thể được theo sau bởi chủ ngữ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）如果连你自己都不喜欢自己，又怎么能让别人喜欢你呢？",
+          "translationVi": "(1) Nếu bạn thậm chí còn không thích chính mình thì làm sao bạn có thể khiến người khác thích bạn?",
+          "pinyin": "(1) rúguǒ lián nǐ zìjǐ dōu bù xǐhuān zìjǐ, yòu zěnme néng ràng biérén xǐhuān nǐ ne?"
+        },
+        {
+          "hanzi": "(2）广告越来越多，几乎无处不在。不只是电视上有广告，公共汽车、地铁上也有很多广告，连我住的楼的电梯里都有三个广告。“连”的后边，也可以是前置的宾语。例如：",
+          "translationVi": "(2) Ngày càng có nhiều quảng cáo, hầu như ở khắp mọi nơi. Có những quảng cáo không chỉ trên TV mà còn trên xe buýt và tàu điện ngầm. Thậm chí còn có ba quảng cáo trong thang máy của tòa nhà nơi tôi sống. \"Lian\" cũng có thể được theo sau bởi tân ngữ đứng trước. Ví dụ:",
+          "pinyin": "(2) guǎnggào yuè lái yuè duō, jīhū wú chù bùzài. bù zhǐshì diànshì shàng yǒu guǎnggào, gōnggòng qìchē, dìtiě shàng yěyǒu hěnduō guǎnggào, lián wǒ zhù de lóu de diàntī lǐ dōu yǒusān gè guǎnggào.“lián” de hòubian, yě kěyǐ shì qián zhì de bīnyǔ. lìrú:"
+        },
+        {
+          "hanzi": "（3）你太厉害了！连中文报纸都看得懂。",
+          "translationVi": "(3) Bạn thật tuyệt vời! Tôi thậm chí có thể đọc báo Trung Quốc.",
+          "pinyin": "(3) nǐ tài lìhàile! lián zhòng wén bàozhǐ dōu kàn dé dǒng."
+        }
+      ]
+    },
+    "hsk4l-tb-l11-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "titleZh": "否则",
+      "titleVi": "Nếu không",
+      "formula": "否则",
+      "explanationVi": "\"Nếu không\", một từ kết hợp, có nghĩa là \"nếu nó không như vậy.\" Câu sau \"other\" thể hiện một suy luận từ câu trước hoặc cung cấp một giải pháp thay thế. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）他一定有重要的事找你，否则不会打这么多次电话来。",
+          "translationVi": "(1) Chắc chắn anh ấy có chuyện quan trọng cần gặp bạn, nếu không anh ấy đã không gọi điện nhiều lần như vậy.",
+          "pinyin": "(1) tā yīdìng yǒu zhòngyào de shì zhǎo nǐ, fǒuzé bù huì dǎ zhème duō cì diànhuà lái."
+        },
+        {
+          "hanzi": "（2）你最好下午四点前去公司找她，否则就明天早上再去。",
+          "translationVi": "(2) Tốt nhất bạn nên đến công ty tìm cô ấy trước bốn giờ chiều, nếu không sáng mai bạn sẽ phải đi.",
+          "pinyin": "(2) nǐ zuì hǎo xiàwǔ sì diǎn qián qù gōngsī zhǎo tā, fǒuzé jiù míngtiān zǎoshang zài qù."
+        },
+        {
+          "hanzi": "（3）看来要想考好，不但要认真复习，还得注意考试的方法，否则会做的题也没时间做了。",
+          "translationVi": "(3) Dường như muốn làm tốt bài thi, bạn không chỉ phải ôn tập kỹ mà còn phải chú ý đến phương pháp làm bài, nếu không bạn sẽ không có thời gian để làm những câu hỏi mà bạn đã biết cách làm.",
+          "pinyin": "(3) kàn lái yào xiǎng kǎo hǎo, bùdàn yào rènzhēn fùxí, hái dé zhùyì kǎoshì de fāngfǎ, fǒuzé huì zuò de tí yě méi shíjiān zuòle."
+        }
+      ]
+    },
+    "hsk4l-tb-l11-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "titleZh": "无论",
+      "titleVi": "không có vấn đề gì",
+      "formula": "无论",
+      "explanationVi": "“No Matter” là từ nối, biểu thị rằng kết quả hoặc kết luận sẽ không thay đổi trong bất kỳ điều kiện nào. \"Không có gì\" thường được sử dụng có thể là một đại từ nghi vấn chỉ bất kỳ tài liệu tham khảo nào. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）无论是普通杂志，还是著名小说，只要打开它们，就会发现，世界上有那么多有意思的事情，有那么多不一样的生活。",
+          "translationVi": "(1) Dù là một tạp chí bình thường hay một cuốn tiểu thuyết nổi tiếng, chỉ cần bạn mở nó ra, bạn sẽ thấy trên thế giới có rất nhiều điều thú vị và rất nhiều cuộc sống khác nhau.",
+          "pinyin": "(1) wúlùn shì pǔtōng zázhì, háishì zhùmíng xiǎoshuō, zhǐyào dǎkāi tāmen, jiù huì fāxiàn, shìjiè shàng yǒu nàme duō yǒuyìsi de shìqíng, yǒu nàme duō bù yīyàng de shēnghuó."
+        },
+        {
+          "hanzi": "（2）无论做什么事都要注意方法，正确的方法可以让我们做得更好。",
+          "translationVi": "(2) Dù làm việc gì chúng ta cũng phải chú ý đến phương pháp. Phương pháp đúng có thể khiến chúng ta làm tốt hơn.",
+          "pinyin": "(2) wúlùn zuò shénme shì dōu yào zhùyì fāngfǎ, zhèngquè de fāngfǎ kěyǐ ràng wǒmen zuò dé gèng hǎo."
+        },
+        {
+          "hanzi": "（3）这次比赛他已经打出了自己最好的水平，无论结果怎么样，我们都应该为他高兴。",
+          "translationVi": "(3) Anh ấy đã chơi hết sức mình trong trận đấu này. Dù kết quả thế nào chúng ta cũng nên mừng cho anh ấy.",
+          "pinyin": "(3) zhè cì bǐsài tā yǐjīng dǎchūle zìjǐ zuì hǎo de shuǐpíng, wúlùn jiéguǒ zěnme yàng, wǒmen dōu yīnggāi wèi tā gāoxìng."
+        }
+      ]
+    },
+    "hsk4l-tb-l11-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "titleZh": "然而",
+      "titleVi": "Tuy nhiên",
+      "formula": "然而",
+      "explanationVi": "\"Tuy nhiên\" là một từ kết hợp, được sử dụng ở đầu nửa sau của câu để biểu thị sự chuyển tiếp và chủ yếu được sử dụng trong ngôn ngữ viết. Có thể thêm dấu phẩy sau \"tuy nhiên\" để biểu thị sự tạm dừng. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）他虽然失败了很多次，然而一直没有放弃。",
+          "translationVi": "(1) Dù thất bại nhiều lần nhưng anh ấy chưa bao giờ bỏ cuộc.",
+          "pinyin": "(1) tā suīrán shībàile hěnduō cì, rán'ér yīzhí méiyǒu fàngqì."
+        },
+        {
+          "hanzi": "（2）很多人觉得自己的生活是幸福的，然而每个人对幸福的看法却不完全相同。",
+          "translationVi": "(2) Nhiều người cảm thấy cuộc sống của mình hạnh phúc nhưng quan điểm về hạnh phúc của mỗi người không hoàn toàn giống nhau.",
+          "pinyin": "(2) hěnduō rén juédé zìjǐ de shēnghuó shì xìngfú de, rán'ér měi gèrén duì xìngfú de kànfǎ què bù wánquán xiāngtóng."
+        },
+        {
+          "hanzi": "（3）另外，在看完一篇文章或一本书之后，还可以把它的主要内容和自己的想法写下来。然而，你不能完全相信书本上的内容，要有自己的看法和判断。",
+          "translationVi": "(3) Ngoài ra, sau khi đọc một bài báo hoặc một cuốn sách, bạn cũng có thể viết ra nội dung chính và suy nghĩ của riêng mình. Tuy nhiên, bạn không thể hoàn toàn tin tưởng vào nội dung cuốn sách mà phải có chính kiến, nhận định của riêng mình.",
+          "pinyin": "(3) lìngwài, zài kàn wán yī piān wénzhāng huò yī běn shū zhīhòu, hái kěyǐ bǎ tā de zhǔyào nèiróng hé zìjǐ de xiǎngfǎ xiě xiàlái. rán'ér, nǐ bùnéng wánquán xiāngxìn shūběn shàng de nèiróng, yào yǒu zìjǐ de kànfǎ hé pànduàn."
+        }
+      ]
+    },
+    "hsk4l-tb-l11-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "titleZh": "同时",
+      "titleVi": "Đồng thời",
+      "formula": "同时",
+      "explanationVi": "\"Đồng thời\" là sự kết hợp với một ý nghĩa xa hơn và thường được sử dụng với \"bạn, ye và huan\". Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）因为小孩子的想法没有那么复杂，所以他们总是很快乐。同时，小孩子也是最诚实的。",
+          "translationVi": "(1) Vì ý tưởng của trẻ không quá phức tạp nên trẻ luôn vui vẻ. Đồng thời, trẻ em cũng là đối tượng trung thực nhất.",
+          "pinyin": "(1) yīnwèi xiǎo háizǐ de xiǎngfǎ méiyǒu nàme fùzá, suǒyǐ tāmen zǒng shì hěn kuàilè. tóngshí, xiǎo háizǐ yěshì zuì chéngshí de."
+        },
+        {
+          "hanzi": "（2）阅读有许多好处，它能丰富你的知识，让你找到解决问题的办法；同时，它还会丰富你的情感，使你的生活更精彩。“同时”，名词，表示动作行为在同一个时间发生，常用结构为“在…（的）同时”。例如：",
+          "translationVi": "(2) Đọc sách có nhiều lợi ích. Nó có thể làm phong phú thêm kiến ​​thức của bạn và cho phép bạn tìm ra giải pháp cho các vấn đề; đồng thời, nó còn có thể làm phong phú thêm cảm xúc của bạn và khiến cuộc sống của bạn trở nên thú vị hơn. \"At the time\", một danh từ, có nghĩa là các hành động xảy ra cùng lúc và cấu trúc thường được sử dụng là \"at the time of...\". Ví dụ:",
+          "pinyin": "(2) yuèdú yǒu xǔduō hǎochù, tā néng fēngfù nǐ de zhīshì, ràng nǐ zhǎodào jiějué wèntí de bànfǎ; tóngshí, tā hái huì fēngfù nǐ de qínggǎn, shǐ nǐ de shēnghuó gèng jīngcǎi.“tóngshí”, míngcí, biǎoshì dòngzuò xíngwéi zài tóng yīgè shíjiān fāshēng, chángyòng jiégòu wèi “zài…(de) tóngshí”. lìrú:"
+        },
+        {
+          "hanzi": "（3）李教授讲的这个故事让人觉得好笑的同时，又让人觉得有些难过。",
+          "translationVi": "(3) Câu chuyện do giáo sư Lý kể khiến người ta vừa buồn cười vừa có chút buồn.",
+          "pinyin": "(3) lǐ jiàoshòu jiǎng de zhège gùshì ràng rén juédé hǎoxiào de tóngshí, yòu ràng rén juédé yǒuxiē nánguò."
+        }
+      ]
+    },
+    "hsk4l-tb-l12-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "titleZh": "并且",
+      "titleVi": "và",
+      "formula": "并且",
+      "explanationVi": "\"And\", một từ kết hợp, có thể được sử dụng để kết nối các động từ hoặc tính từ song song, v.v., chỉ ra rằng một số hành động đang diễn ra trên thế giới cùng một lúc hoặc một số thuộc tính tồn tại cùng một lúc. Bạn cũng có thể kết nối các câu để diễn đạt ý nghĩa sâu hơn. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）他做事很认真，并且有丰富的经验，让他负责很合适。",
+          "translationVi": "(1) Anh ấy rất nghiêm túc trong công việc và có nhiều kinh nghiệm. Việc anh ấy phải chịu trách nhiệm là phù hợp.",
+          "pinyin": "(1) tā zuòshì hěn rènzhēn, bìngqiě yǒu fēngfù de jīngyàn, ràng tā fùzé hěn héshì."
+        },
+        {
+          "hanzi": "（2）这种植物开的花比普通的花大很多，并且特别漂亮。",
+          "translationVi": "(2) Hoa của cây này lớn hơn nhiều so với hoa bình thường và đặc biệt đẹp.",
+          "pinyin": "(2) zhè zhòng zhíwù kāi de huā bǐ pǔtōng de huā dà hěnduō, bìngqiě tèbié piàoliang."
+        },
+        {
+          "hanzi": "（3）这房子家具全，电视、空调、冰箱都很新，并且价格也便宜，真的很值得考虑。",
+          "translationVi": "(3) Ngôi nhà này có đầy đủ tiện nghi, TV, máy lạnh, tủ lạnh đều mới, giá rẻ. Nó thực sự đáng xem xét.",
+          "pinyin": "(3) zhè fángzǐ jiājù quán, diànshì, kòngtiáo, bīngxiāng dōu hěn xīn, bìngqiě jiàgé yě piányí, zhēn de hěn zhídé kǎolǜ."
+        }
+      ]
+    },
+    "hsk4l-tb-l12-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "titleZh": "再……也……",
+      "titleVi": "lần nữa...cũng...",
+      "formula": "再……也……",
+      "explanationVi": "Cấu trúc \"Zai...Ye...\" thường được sử dụng trong các câu giả định thể hiện sự nhượng bộ. Theo sau \"Zai\" có thể là động từ, tính từ, câu, v.v. để diễn đạt ý nghĩa \"ngay cả khi, dù thế nào đi nữa\". Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）事情已经发生了，你再后悔也无法改变，别伤心了。",
+          "translationVi": "(1) Mọi chuyện đã xảy ra rồi. Dù có hối hận đến mấy cũng không thể thay đổi được. Đừng buồn.",
+          "pinyin": "(1) shìqíng yǐjīng fāshēngle, nǐ zài hòuhuǐ yě wúfǎ gǎibiàn, bié shāngxīnle."
+        },
+        {
+          "hanzi": "（2）用盐水来洗新衣服，这样穿得再久、洗的次数再多，衣服也不容易掉颜色。",
+          "translationVi": "(2) Dùng nước muối để giặt quần áo mới, để dù có mặc lâu hay giặt bao nhiêu lần thì màu sắc của quần áo cũng không dễ phai.",
+          "pinyin": "(2) yòng yánshuǐ lái xǐ xīn yīfú, zhèyàng chuān dé zài jiǔ, xǐ de cìshù zài duō, yīfú yě bù róngyì diào yánsè."
+        },
+        {
+          "hanzi": "（3）如果我们有什么看法或者意见，不管别人再怎么不同意、不支持，也应该说出来，让别人知道我们的想法和态度。",
+          "translationVi": "(3) Nếu có quan điểm, ý kiến ​​gì, dù người khác không đồng ý hay không ủng hộ mình như thế nào thì chúng ta cũng nên nói ra và cho người khác biết suy nghĩ, thái độ của mình.",
+          "pinyin": "(3) rúguǒ wǒmen yǒu shé me kànfǎ huòzhě yìjiàn, bùguǎn biérén zài zěnme bù tóngyì, bù zhīchí, yě yīnggāi shuō chūlái, ràng biérén zhīdào wǒmen de xiǎngfǎ hé tàidù."
+        }
+      ]
+    },
+    "hsk4l-tb-l12-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "titleZh": "对于",
+      "titleVi": "vì",
+      "formula": "对于",
+      "explanationVi": "\"For\", một giới từ, chỉ đối tượng liên quan đến một thái độ hoặc tình huống nhất định. “For” có thể được dùng trước hoặc sau chủ ngữ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）对于这件事，我跟大家的看法不同。",
+          "translationVi": "(1) Tôi có quan điểm khác về vấn đề này với những người khác.",
+          "pinyin": "(1) duìyú zhè jiàn shì, wǒ gēn dàjiā de kànfǎ bùtóng."
+        },
+        {
+          "hanzi": "（2）对于中国人来说，春节是一年之中最重要的节日，春节的时候人们会举行各种各样的迎新年活动。",
+          "translationVi": "(2) Đối với người Trung Quốc, Tết Nguyên Đán là lễ hội quan trọng nhất trong năm. Trong lễ hội mùa xuân, mọi người sẽ tổ chức nhiều hoạt động khác nhau để chào đón năm mới.",
+          "pinyin": "(2) duìyú zhōngguó rén lái shuō, chūnjié shì yī nián zhī zhōng zuì zhòngyào de jiérì, chūnjié de shíhòu rénmen huì jǔ háng gè zhǒng gè yàng de yíng xīnnián huódòng."
+        },
+        {
+          "hanzi": "（3）那您认为对于老师来说，什么是最难做到的？",
+          "translationVi": "(3) Theo bạn, điều khó khăn nhất của giáo viên là gì?",
+          "pinyin": "(3) nà nín rènwéi duìyú lǎoshī lái shuō, shénme shì zuì nán zuò dào de?"
+        }
+      ]
+    },
+    "hsk4l-tb-l12-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "titleZh": "名量词重叠",
+      "titleVi": "sự chồng chéo của danh từ và số lượng",
+      "formula": "名量词重叠",
+      "explanationVi": "Danh từ và số lượng trùng nhau, thường ở dạng \"\", thể hiện ý nghĩa của \"mọi\". Nó có thể được thực hiện sau khi trùng lặp các danh từ và số lượng. \"Chủ ngữ, thuộc tính và trạng từ của chủ ngữ nhưng không thể dùng làm thuộc tính của đối tượng và đối tượng. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）人人都会使用语言，但是怎么用语言把话说好却是一门艺术。",
+          "translationVi": "(1) Mọi người đều có thể sử dụng ngôn ngữ, nhưng sử dụng ngôn ngữ để nói tốt là một nghệ thuật.",
+          "pinyin": "(1) rén rén dūhuì shǐyòng yǔyán, dànshì zěnme yòng yǔyán bǎ huàshuō hǎo què shì yī mén yìshù."
+        },
+        {
+          "hanzi": "（2）白先生天天都去那家咖啡馆坐一会儿，因为他觉得，工作了一天，只有安静的地方才能让他得到放松。",
+          "translationVi": "(2) Anh Bai hàng ngày đến quán cà phê đó ngồi một lúc, vì anh cảm thấy chỉ có một nơi yên tĩnh mới có thể giúp anh thư giãn sau một ngày làm việc.",
+          "pinyin": "(2) bái xiānshēng tiāntiān dū qù nà jiā kāfēi guǎn zuò yīhuǐ'er, yīnwèi tā juédé, gōngzuòle yītiān, zhǐyǒu ānjìng dì dìfāng cáinéng ràng tā dédào fàngsōng."
+        },
+        {
+          "hanzi": "（3）做好小事是完成大事的第一步，因此，件件小事都应该被看成是一次学习的机会。",
+          "translationVi": "(3) Làm tốt việc nhỏ là bước đầu tiên để hoàn thành việc lớn. Vì vậy, mỗi việc nhỏ đều nên được coi là một cơ hội học hỏi.",
+          "pinyin": "(3) zuò hǎo xiǎoshì shì wánchéng dàshì de dì yī bù, yīncǐ, jiàn jiàn xiǎoshì dōu yīnggāi bèi kàn chéng shì yīcì xuéxí de jīhuì."
+        }
+      ]
+    },
+    "hsk4l-tb-l12-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-12",
+      "titleZh": "相反",
+      "titleVi": "Ngược lại",
+      "formula": "相反",
+      "explanationVi": "“Ngược lại” là liên từ dùng ở đầu hoặc giữa câu sau để diễn tả sự chuyển tiếp, tiến triển. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）如果还是使用以前的办法，不但不能解决任何问题，相反，会使问题变得更复杂。",
+          "translationVi": "(1) Nếu vẫn sử dụng cách trước không những không giải quyết được vấn đề gì mà ngược lại còn khiến vấn đề trở nên phức tạp hơn.",
+          "pinyin": "(1) rúguǒ háishì shǐyòng yǐqián de bànfǎ, bùdàn bùnéng jiějué rènhé wèntí, xiāngfǎn, huì shǐ wèntí biàn dé gèng fùzá."
+        },
+        {
+          "hanzi": "（2）使用正确的方法，我们做起事来能“事半功倍”相反，如果方法不对，可能花五倍甚至十倍的时间都不能完成任务，结果变成了“事倍功半”。“相反”，形容词，表示事物的两个方面互相对立或排斥，可做谓语，也可修饰名词。在修饰名词时，后面必须带“的”。例如：",
+          "translationVi": "(2) Sử dụng đúng phương pháp, chúng ta có thể làm được mọi việc với “kết quả gấp đôi với một nửa công sức”. Ngược lại, nếu phương pháp sai, thời gian có thể gấp năm, thậm chí mười lần để hoàn thành nhiệm vụ, kết quả sẽ trở thành “kết quả nhân đôi với kết quả gấp đôi”. “Đối lập” là một tính từ, chỉ ra rằng hai khía cạnh của sự vật đối lập hoặc loại trừ nhau. Nó có thể được sử dụng như một vị ngữ hoặc như một sửa đổi của danh từ. Khi sửa đổi danh từ thì phải có \"of\" theo sau. Ví dụ:",
+          "pinyin": "(2) shǐyòng zhèngquè de fāngfǎ, wǒmen zuò qǐ shì lái néng “shìbàngōngbèi” xiāngfǎn, rúguǒ fāngfǎ bùduì, kěnéng huā wǔ bèi shènzhì shí bèi de shíjiān dōu bùnéng wánchéng rènwù, jiéguǒ biàn chéngle “shìbèigōngbàn”.“xiāngfǎn”, xíngróngcí, biǎoshì shìwù de liǎng gè fāngmiàn hùxiāng duìlì huò páichì, kě zuò wèiyǔ, yě kě xiūshì míngcí. zài xiūshì míngcí shí, hòumiàn bìxū dài “de”. lìrú:"
+        },
+        {
+          "hanzi": "（3）调查结果和他们想的几乎完全相反，他们不得不改变原来的计划。",
+          "translationVi": "(3) Kết quả khảo sát gần như trái ngược hoàn toàn với những gì họ nghĩ và họ phải thay đổi kế hoạch ban đầu.",
+          "pinyin": "(3) diàochá jiéguǒ hé tāmen xiǎng de jīhū wánquán xiāngfǎn, tāmen bùdé bù gǎibiàn yuánlái de jìhuà."
+        }
+      ]
+    },
+    "hsk4l-tb-l13-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "titleZh": "大概",
+      "titleVi": "Có lẽ",
+      "formula": "大概",
+      "explanationVi": "\"Có lẽ\" là một trạng từ, biểu thị sự ước tính không chính xác về số lượng hoặc thời gian, đồng thời cũng biểu thị sự suy đoán về tình huống rất có thể xảy ra; nó cũng có thể là một tính từ, biểu thị rằng nó không chính xác lắm hoặc không chi tiết lắm. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）他8岁就开始上台演出，到现在大概唱了60多年了，他对这门艺术的喜爱从来没有改变过。",
+          "translationVi": "(1) Ông bắt đầu biểu diễn trên sân khấu từ năm 8 tuổi và đã đi hát được hơn 60 năm. Tình yêu của anh dành cho nghệ thuật này chưa bao giờ thay đổi.",
+          "pinyin": "(1) tā 8 suì jiù kāishǐ shàngtái yǎnchū, dào xiànzài dàgài chàngle 60 duōniánle, tā duì zhè mén yìshù de xǐ'ài cónglái méiyǒu gǎibiànguò."
+        },
+        {
+          "hanzi": "（2）你的这个关于举办传统文化节活动的计划，我想校长大概会同意。",
+          "translationVi": "(2) Tôi nghĩ hiệu trưởng có thể sẽ đồng ý với kế hoạch tổ chức lễ hội văn hóa truyền thống của bạn.",
+          "pinyin": "(2) nǐ de zhège guānyú jǔbàn chuántǒng wénhuà jié huódòng de jìhuà, wǒ xiǎng xiàozhǎng dàgài huì tóngyì."
+        },
+        {
+          "hanzi": "（3）经过这段时间的学习，他的汉语水平提高了不少，不但可以听懂一些较短的句子，还可以进行简单的交流，现在即使不用翻译也能理解大概的意思了。",
+          "translationVi": "(3) Sau thời gian học này, trình độ tiếng Trung của anh ấy đã tiến bộ rất nhiều. Bé không chỉ có thể hiểu một số câu ngắn hơn mà còn có thể thực hiện những giao tiếp đơn giản. Bây giờ anh ấy có thể hiểu được ý nghĩa chung mà không cần dịch.",
+          "pinyin": "(3) jīngguò zhè duàn shíjiān de xuéxí, tā de hànyǔ shuǐpíng tí gāo liǎo bù shǎo, bùdàn kěyǐ tīng dǒng yīxiē jiào duǎn de jùzǐ, hái kěyǐ jìnxíng jiǎndān de jiāoliú, xiànzài jíshǐ bu yòng fānyì yě néng lǐjiě dàgài de yìsile."
+        }
+      ]
+    },
+    "hsk4l-tb-l13-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "titleZh": "偶尔",
+      "titleVi": "Thỉnh thoảng",
+      "formula": "偶尔",
+      "explanationVi": "“Thỉnh thoảng” là trạng từ có nghĩa là điều gì đó rất hiếm khi xảy ra. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）我常常跟着电视学唱京剧，然后-遍-遍地练习，偶尔跟中国人一起唱上几句。",
+          "translationVi": "(1) Tôi thường học hát Kinh kịch trên TV, sau đó tập đi tập lại và thỉnh thoảng hát vài câu với người Trung Quốc.",
+          "pinyin": "(1) wǒ chángcháng gēnzhe diànshì xué chàng jīngjù, ránhòu-biàn-biàndì liànxí, ǒu'ěr gēn zhōngguó rén yīqǐ chàng shàng jǐ jù."
+        },
+        {
+          "hanzi": "（2）我们调查的近7000名上班族中，有64的人经常加班，28偶尔加班，而每次加班时间超过两小时的竞然有59。",
+          "translationVi": "(2) Trong số gần 7.000 nhân viên văn phòng chúng tôi khảo sát, 64% thường xuyên làm thêm giờ, 28% thỉnh thoảng làm thêm giờ và 59% làm thêm giờ hơn hai giờ mỗi lần.",
+          "pinyin": "(2) wǒmen diàochá de jìn 7000 míng shàngbān zú zhōng, yǒu 64 de rén jīngcháng jiābān,28 ǒu'ěr jiābān, ér měi cì jiābān shíjiān chāoguò liǎng xiǎoshí de jìng rán yǒu 59."
+        },
+        {
+          "hanzi": "（3）三叶草的叶子一般为三个，但偶尔也会出现四个叶子的，这种四个叶子的叫“四叶草”，因为很少见，所以有人说，找到这种“四叶草”的人会得到幸福。",
+          "translationVi": "(3) Cỏ ba lá thường có ba lá, nhưng thỉnh thoảng có tới bốn lá. Loại cỏ bốn lá này được gọi là “cỏ bốn lá”. Vì hiếm nên có người cho rằng ai tìm được loại “cỏ bốn lá” này sẽ rất vui mừng.",
+          "pinyin": "(3) sānyècǎo de yèzǐ yībān wèi sān gè, dàn ǒu'ěr yě huì chūxiàn sì gè yèzǐ de, zhè zhǒng sì gè yèzǐ de jiào “sì yè cǎo”, yīnwèi hěn shǎo jiàn, suǒyǐ yǒurén shuō, zhǎodào zhè zhǒng “sì yè cǎo” de rén huì dédào xìngfú."
+        }
+      ]
+    },
+    "hsk4l-tb-l13-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "titleZh": "由",
+      "titleVi": "bởi",
+      "formula": "由",
+      "explanationVi": "\"Bởi\", một giới từ, giới thiệu người chịu trách nhiệm làm việc gì đó. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）按照规定，这件事情应该由王大夫负责。",
+          "translationVi": "(1) Theo quy định, bác sĩ Vương phải chịu trách nhiệm về vấn đề này.",
+          "pinyin": "(1) ànzhào guīdìng, zhè jiàn shìqíng yīnggāi yóu wáng dàfū fùzé."
+        },
+        {
+          "hanzi": "（2）“幽默”这个词最早是由林语堂先生翻译过来的。",
+          "translationVi": "(2) Từ \"hài hước\" lần đầu tiên được dịch bởi ông Lin Yutang.",
+          "pinyin": "(2)“yōumò” zhège cí zuìzǎo shì yóu línyǔtáng xiānshēng fānyì guòlái de."
+        },
+        {
+          "hanzi": "（3）上次的春游活动你们办得非常有趣，大家都玩儿得很开心，这次活动继续由你负责，相信也一定会很成功。",
+          "translationVi": "(3) Chuyến đi chơi xuân vừa qua bạn tổ chức rất thú vị và mọi người đều có khoảng thời gian vui vẻ. Bạn sẽ tiếp tục chịu trách nhiệm về sự kiện này và tôi tin rằng nó sẽ thành công.",
+          "pinyin": "(3) shàng cì de chūnyóu huódòng nǐmen bàn dé fēicháng yǒuqù, dàjiā dōu wán er dé hěn kāixīn, zhè cì huódòng jìxù yóu nǐ fùzé, xiāngxìn yě yīdìng huì hěn chénggōng."
+        }
+      ]
+    },
+    "hsk4l-tb-l13-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "titleZh": "进行",
+      "titleVi": "thực hiện",
+      "formula": "进行",
+      "explanationVi": "\"Carry out\", một động từ, có nghĩa là tham gia vào một số hoạt động, công việc, v.v. Nó chủ yếu được sử dụng trước các động từ có hai âm tiết. Các động từ sau đây phải thể hiện hành vi trang trọng và nghiêm túc hơn. Những hành vi tạm thời và hàng ngày nói chung không cần phải \"thực hiện\". Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）大家请注意，现在休息十五分钟，十点半会议继续进行。",
+          "translationVi": "(1) Xin lưu ý rằng chúng ta đang nghỉ giải lao 15 phút và cuộc họp sẽ tiếp tục lúc 10:30.",
+          "pinyin": "(1) dàjiā qǐng zhùyì, xiànzài xiūxí shíwǔ fēnzhōng, shí diǎn bàn huìyì jìxù jìnxíng."
+        },
+        {
+          "hanzi": "（2）有人在互联网上专门进行过调查，结果发现每六个中国人中就有一个使用筷子的方法是错误的。",
+          "translationVi": "(2) Có người đã đặc biệt thực hiện một cuộc khảo sát trên Internet và phát hiện ra rằng cứ sáu người Trung Quốc thì có một người sử dụng đũa không đúng cách.",
+          "pinyin": "(2) yǒurén zài hùliánwǎng shàng zhuānmén jìnxíngguò diàochá, jiéguǒ fāxiàn měi liù gè zhōngguó rén zhōng jiù yǒu yīgè shǐyòng kuàizǐ de fāngfǎ shì cuòwù de."
+        },
+        {
+          "hanzi": "（3）成功的语言学习者，在学习方面往往都是积极主动的，他们会主动与他人进行交流，并且请别人帮助他们改错。",
+          "translationVi": "(3) Người học ngôn ngữ thành công thường chủ động trong học tập. Họ sẽ chủ động giao tiếp với người khác và nhờ người khác giúp họ sửa chữa lỗi lầm.",
+          "pinyin": "(3) chénggōng de yǔyán xuéxí zhě, zài xuéxí fāngmiàn wǎngwǎng dōu shì jījí zhǔdòng de, tāmen huì zhǔdòng yǔ tārén jìnxíng jiāoliú, bìngqiě qǐng biérén bāngzhù tāmen gǎi cuò."
+        }
+      ]
+    },
+    "hsk4l-tb-l13-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "titleZh": "随着",
+      "titleVi": "Với",
+      "formula": "随着",
+      "explanationVi": "“With” là giới từ, chỉ sự việc này là điều kiện để việc khác xảy ra. Nó thường được theo sau bởi một động từ có hai âm tiết với một từ bổ nghĩa. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）随着社会的发展，京剧也在改变，以适应不同年龄观众的需要。",
+          "translationVi": "(1) Cùng với sự phát triển của xã hội, Kinh kịch cũng đang thay đổi để thích ứng với nhu cầu của khán giả ở nhiều lứa tuổi khác nhau.",
+          "pinyin": "(1) suízhe shèhuì de fǎ zhǎn, jīngjù yě zài gǎibiàn, yǐ shìyìng bùtóng niánlíng guānzhòng de xūyào."
+        },
+        {
+          "hanzi": "（2）有些人喜欢为自己的生活做长远的计划。但是，随着年龄的增长，他们会发现生活总是在不停地变化，生活往往不会按照我们的计划来进行。",
+          "translationVi": "(2) Một số người thích lập kế hoạch dài hạn cho cuộc đời mình. Tuy nhiên, khi lớn lên, các em sẽ nhận thấy cuộc sống không ngừng thay đổi và cuộc sống thường không diễn ra theo đúng kế hoạch của chúng ta.",
+          "pinyin": "(2) yǒuxiē rén xǐhuān wèi zìjǐ de shēnghuó zuò chángyuǎn de jìhuà. dànshì, suízhe niánlíng de zēngzhǎng, tāmen huì fāxiàn shēnghuó zǒng shì zài bù tíng de biànhuà, shēnghuó wǎngwǎng bù huì ànzhào wǒmen de jìhuà lái jìnxíng."
+        }
+      ]
+    },
+    "hsk4l-tb-l14-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "titleZh": "够",
+      "titleVi": "đủ rồi",
+      "formula": "够",
+      "explanationVi": "đủ rồi",
+      "examples": [
+        {
+          "hanzi": "（1）客人来了，中国人一定妥把家里最好吃的东西拿出来请客人吃，并且让客人吃够、吃饱。",
+          "translationVi": "(1) Khi có khách đến, người Trung Quốc nhất định sẽ mang ra nhà những món ăn ngon nhất để chiêu đãi khách ăn, đảm bảo cho khách ăn đủ no.",
+          "pinyin": "(1) kèrén láile, zhōngguó rén yīdìng tuǒ bǎ jiālǐ zuì hào chī de dōngxī ná chūlái qǐng kèrén chī, bìngqiě ràng kèrén chī gòu, chī bǎo."
+        },
+        {
+          "hanzi": "（2）医生提醒我们，睡觉时间太长并不好，有时甚至会引起头疼，一般睡够八小时就可以了。“够”，副词，表示程度上达到了一定标准。“够+形容词”用于肯定句时，形容词后常加“的”。例如：",
+          "translationVi": "(2) Các bác sĩ nhắc nhở chúng ta rằng ngủ quá lâu không tốt, đôi khi còn có thể gây đau đầu. Nói chung, ngủ tám tiếng là đủ. “Đủ” là trạng từ, biểu thị mức độ đã đạt đến một tiêu chuẩn nhất định. Khi \"enough + tính từ\" được dùng trong câu khẳng định, \"的\" thường được thêm vào sau tính từ. Ví dụ:",
+          "pinyin": "(2) yīshēng tíxǐng wǒmen, shuìjiào shíjiān tài zhǎng bìng bù hǎo, yǒushí shènzhì huì yǐnqǐ tóuténg, yībān shuì gòu bā xiǎoshí jiù kěyǐle.“gòu”, fùcí, biǎoshì chéngdù shàng dádàole yīdìng biāozhǔn.“gòu +xíngróngcí” yòng yú kěndìng jù shí, xíngróngcí hòu cháng jiā “de”. lìrú:"
+        },
+        {
+          "hanzi": "（3）不用拿这些，宾馆都会免费提供的。再说，箱子已经够重的了！",
+          "translationVi": "(3) Bạn không cần mang theo những thứ này, khách sạn sẽ cung cấp miễn phí. Hơn nữa, cái hộp đã đủ nặng rồi!",
+          "pinyin": "(3) bùyòng ná zhèxiē, bīnguǎn dūhuì miǎnfèi tígōng de. zàishuō, xiāngzǐ yǐjīng gòu zhòng dele!"
+        }
+      ]
+    },
+    "hsk4l-tb-l14-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "titleZh": "以",
+      "titleVi": "đến",
+      "formula": "以",
+      "explanationVi": "“Yi” là giới từ, có nghĩa là dựa vào, có nghĩa là “dùng, lấy”. Cấu trúc phổ biến là \"to... động từ\". Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）经理您放心，我一定以最快的速度完成。",
+          "translationVi": "(1) Người quản lý, đừng lo lắng, tôi sẽ hoàn thành nó nhanh nhất có thể.",
+          "pinyin": "(1) jīnglǐ nín fàngxīn, wǒ yīdìng yǐ zuì kuài de sùdù wánchéng."
+        },
+        {
+          "hanzi": "（2）事情做到“差不多”就觉得满意的人往往不会成功，只有以严格的标准来要求自己才会让自己变得更优秀。是”。例如：",
+          "translationVi": "(2) Những người cảm thấy hài lòng khi mọi việc “gần như” sẽ thường không thành công. Chỉ bằng cách yêu cầu bản thân với những tiêu chuẩn nghiêm ngặt, bạn mới có thể trở nên tốt hơn. Có\". Ví dụ:",
+          "pinyin": "(2) shìqíng zuò dào “chàbùduō” jiù juédé mǎnyì de rén wǎngwǎng bù huì chénggōng, zhǐyǒu yǐ yángé de biāozhǔn lái yāoqiú zìjǐ cái huì ràng zìjǐ biàn dé gèng yōuxiù. shì”. lìrú:"
+        },
+        {
+          "hanzi": "（3）我们应该以那些敢说真话的人为镜子，这样才能及时发现自己的缺点。“以”，连词，表示目的。相当于“用来、为的是”。一般用在后一分句的句首，主语必须相同。例如：",
+          "translationVi": "(3) Chúng ta nên lấy những người dám nói sự thật làm tấm gương soi, để kịp thời phát hiện ra khuyết điểm của mình. “With” là liên từ thể hiện mục đích. Tương đương với \"dùng cho\". Thường được dùng ở đầu mệnh đề sau, chủ ngữ phải giống nhau. Ví dụ:",
+          "pinyin": "(3) wǒmen yīnggāi yǐ nàxiē gǎn shuō zhēn huà de rénwéi jìngzǐ, zhèyàng cáinéng jíshí fāxiàn zìjǐ de quēdiǎn.“yǐ”, liáncí, biǎoshì mùdì. xiāngdāng yú “yòng lái, wèi de shì”. yībān yòng zài hòu yī fēn jù de jù shǒu, zhǔyǔ bìxū xiāngtóng. lìrú:"
+        }
+      ]
+    },
+    "hsk4l-tb-l14-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "titleZh": "既然",
+      "titleVi": "Kể từ khi",
+      "formula": "既然",
+      "explanationVi": "“Since” là liên từ dùng trong mệnh đề đầu tiên của một câu phức, có nghĩa là “bởi vì sự thật đã như thế này rồi”. Mệnh đề sau thường được dùng với các từ như “Jiu, Ye, Huân” để diễn đạt kết luận rút ra dựa trên tình huống trước đó. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）：你既然不愿意打球，为什么还要打？我是不得不打啊，因为这些大我又胖了好儿斤。",
+          "translationVi": "(1): Không muốn chơi thì sao còn chơi? Tôi phải đánh bại họ vì họ quá to và tôi tăng cân rất nhiều.",
+          "pinyin": "(1): nǐ jìrán bù yuànyì dǎqiú, wèishéme hái yào dǎ? wǒ shì bùdé bù dǎ a, yīnwèi zhèxiē dà wǒ yòu pàngle hǎo er jīn."
+        },
+        {
+          "hanzi": "（2）：真抱，明天我得出差，不能参加明天的会议了。既然这样，就只好安排在下周了。",
+          "translationVi": "(2): Xin lỗi, ngày mai tôi phải đi công tác và không thể tham dự cuộc họp ngày mai. Trong trường hợp này, chúng ta phải sắp xếp nó vào tuần tới.",
+          "pinyin": "(2): zhēn bào, míngtiān wǒ dé chūchāi, bùnéng cānjiā míngtiān de huìyìle. jìrán zhèyàng, jiù zhǐhǎo ānpái zàixià zhōule."
+        },
+        {
+          "hanzi": "（3）既然明天晚上公司会关灯停电，那么我们肯定不用加班了。",
+          "translationVi": "(3) Vì tối mai công ty sẽ tắt đèn và cắt điện nên chúng tôi chắc chắn không phải làm thêm giờ.",
+          "pinyin": "(3) jìrán míngtiān wǎnshàng gōngsī huì guān dēng tíngdiàn, nàme wǒmen kěndìng bùyòng jiābānle."
+        }
+      ]
+    },
+    "hsk4l-tb-l14-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "titleZh": "于是",
+      "titleVi": "sau đó",
+      "formula": "于是",
+      "explanationVi": "\"So\" là liên từ dùng ở mệnh đề cuối cùng của câu phức để chỉ sự việc sau xảy ra ngay sau sự việc trước đó và nhìn chung có mối quan hệ kế tiếp. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）听爷爷奶奶说，我妹妹出生那天，正好下了一场大雪，于是我爸妈就给她取名叫夏雪。",
+          "translationVi": "(1) Tôi nghe ông bà ngoại kể rằng hôm em gái tôi chào đời trời có tuyết rơi dày đặc nên bố mẹ tôi đặt tên là Xia Xue.",
+          "pinyin": "(1) tīng yéyé nǎinai shuō, wǒ mèimei chūshēng nèitiān, zhènghǎo xiàle yī chǎng dàxuě, yúshì wǒ bà mā jiù gěi tā qǔ míng jiào xià xuě."
+        },
+        {
+          "hanzi": "（2）他是一位著名的记者，五年里，他去了亚洲许多国家，尝遍了各地的美食。回国后，他用一年的时间整理材料，于是就有了这本关于亚洲美食的书。",
+          "translationVi": "(2) Anh ấy là một nhà báo nổi tiếng. Trong 5 năm qua, anh đã đến nhiều nước ở châu Á và nếm thử những món ăn ngon từ khắp nơi trên thế giới. Sau khi trở về Trung Quốc, ông dành một năm sưu tầm tài liệu và nhờ đó ông có được cuốn sách về ẩm thực châu Á này.",
+          "pinyin": "(2) tā shì yī wèi zhùmíng de jìzhě, wǔ nián lǐ, tā qùle yàzhōu xǔduō guójiā, cháng biànle gèdì dì měishí. huíguó hòu, tā yòng yī nián de shíjiān zhěnglǐ cáiliào, yúshì jiù yǒule zhè běn guānyú yàzhōu měishí de shū."
+        },
+        {
+          "hanzi": "（3）可是，它的大量使用也带来了严重的环境污染问题。于是，一些国家规定，超市、商场不能为顾客提供免费塑料袋，并且鼓励大家购买可以多次使用的购物袋。",
+          "translationVi": "(3) Tuy nhiên, việc sử dụng rộng rãi cũng gây ra vấn đề ô nhiễm môi trường nghiêm trọng. Vì vậy, một số quốc gia quy định siêu thị, trung tâm thương mại không được cung cấp túi nhựa miễn phí cho khách hàng, đồng thời khuyến khích mọi người mua túi mua hàng có thể sử dụng được nhiều lần.",
+          "pinyin": "(3) kěshì, tā de dàliàng shǐyòng yě dài láile yánzhòng de huánjìng wūrǎn wèntí. yúshì, yīxiē guójiā guīdìng, chāoshì, shāngchǎng bùnéng wéi gùkè tígōng miǎnfèi sùliào dài, bìngqiě gǔlì dàjiā gòumǎi kěyǐ duō cì shǐyòng de gòuwù dài."
+        }
+      ]
+    },
+    "hsk4l-tb-l14-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-14",
+      "titleZh": "什么的",
+      "titleVi": "cái gì đó",
+      "formula": "什么的",
+      "explanationVi": "\"Cái gì\" là một hạt. Nó được sử dụng sau một ví dụ để chỉ ra rằng có những tình huống tương tự như ví dụ đó. Nó thường được sử dụng trong ngôn ngữ nói, ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）既然你不喜欢新闻专业，那就考虑考虑其他专业吧，中文，国际关系什么的，我和你爸都不反对。",
+          "translationVi": "(1) Vì con không thích báo chí nên hãy xem xét các chuyên ngành khác, chẳng hạn như tiếng Trung Quốc, quan hệ quốc tế, v.v. Cha con và mẹ không phản đối.",
+          "pinyin": "(1) jìrán nǐ bù xǐhuān xīnwén zhuānyè, nà jiù kǎolǜ kǎolǜ qítā zhuānyè ba, zhōngwén, guójì guānxì shénme de, wǒ hé nǐ bà dōu bù fǎnduì."
+        },
+        {
+          "hanzi": "（2）我们去趟超市吧，明天出去玩儿得买点儿饼干和面包。好，还有矿泉水、果汁什么的。",
+          "translationVi": "(2) Hãy đi siêu thị. Chúng ta cần mua một ít bánh quy và bánh mì cho chuyến đi chơi ngày mai. Được rồi, còn có nước khoáng, nước trái cây, v.v.",
+          "pinyin": "(2) wǒmen qù tàng chāoshì ba, míngtiān chūqù wán er dé mǎidiǎn er bǐnggān huò miànbāo. hǎo, hái yǒu kuàngquán shuǐ, guǒzhī shénme de."
+        },
+        {
+          "hanzi": "（3）实际上，我们只需注意一下身边的小事就可以。例如，夏天把空调的温度开得高一些，出门时记得关空调和电脑，这样可以节约用电；少开车，多骑车或者乘坐地铁和公共汽车，这样能降低空气污染；还有养成把垃圾丢进垃圾桶的习惯什么的。",
+          "translationVi": "(3) Thực ra chúng ta chỉ cần để ý đến những điều nhỏ nhặt xung quanh mình thôi. Ví dụ, vào mùa hè, hãy bật điều hòa ở nhiệt độ cao hơn và nhớ tắt điều hòa, máy tính khi ra ngoài, điều này có thể tiết kiệm điện; lái xe ít hơn, đi xe đạp nhiều hơn hoặc đi tàu điện ngầm và xe buýt, có thể làm giảm ô nhiễm không khí; và hình thành thói quen vứt rác vào thùng rác.",
+          "pinyin": "(3) shíjì shang, wǒmen zhǐ xū zhùyì yīxià shēnbiān de xiǎoshì jiù kěyǐ. lìrú, xiàtiān bǎ kòngtiáo de wēndù kāi dé gāo yīxiē, chūmén shí jìdé guān kòngtiáo hé diànnǎo, zhèyàng kěyǐ jiéyuē yòng diàn; shǎo kāichē, duō qí chē huòzhě chéngzuò dìtiě hé gōnggòng qìchē, zhèyàng néng jiàngdī kōngqì wūrǎn; hái yǒu yǎng chéng bǎ lèsè diū jìn lèsè tǒng de xíguàn shénme de."
+        }
+      ]
+    },
+    "hsk4l-tb-l15-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "titleZh": "想起来",
+      "titleVi": "nghĩ về nó",
+      "formula": "想起来",
+      "explanationVi": "\"Get up\", một động từ, có thể được sử dụng như một bổ ngữ xu hướng hoặc một bổ sung có thể có sau động từ để chỉ hướng của hành động từ dưới lên trên. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）你这样躺着看书对眼睛不好，快坐起来！",
+          "translationVi": "(1) Nằm đọc sách như vậy sẽ không tốt cho mắt. Ngồi dậy nhanh lên!",
+          "pinyin": "(1) nǐ zhèyàng tǎngzhe kànshū duì yǎnjīng bù hǎo, kuài zuò qǐlái!"
+        },
+        {
+          "hanzi": "（2）需要长时间坐着工作的人，一小时左右一定要站起来活动活动。“起来”如果用在动词“想”后，引中表示从记忆中寻找出以前的人或事。例如：",
+          "translationVi": "(2) Những người cần ngồi làm việc lâu phải đứng dậy và di chuyển trong vòng một giờ hoặc lâu hơn. Nếu \"get up\" được dùng sau động từ \"think\", phần đầu có nghĩa là tìm kiếm người hoặc đồ vật trước đó trong trí nhớ. Ví dụ:",
+          "pinyin": "(2) xūyào cháng shíjiān zuòzhe gōngzuò de rén, yī xiǎoshí zuǒyòu yīdìng yào zhàn qǐlái huódòng huódòng.“qǐlái” rúguǒ yòng zài dòngcí “xiǎng” hòu, yǐn zhōng biǎoshì cóng jìyì zhōng xúnzhǎo chū yǐqián de rén huò shì. lìrú:"
+        },
+        {
+          "hanzi": "（3）我突然想起来得去银行，所以不能陪你去大使馆了。",
+          "translationVi": "(3) Tôi chợt nhớ ra mình phải đến ngân hàng nên không thể cùng bạn đến đại sứ quán được.",
+          "pinyin": "(3) wǒ túrán xiǎngqǐ láidé qù yínháng, suǒyǐ bùnéng péi nǐ qù dàshǐ guǎnle."
+        }
+      ]
+    },
+    "hsk4l-tb-l15-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "titleZh": "弄",
+      "titleVi": "làm",
+      "formula": "弄",
+      "explanationVi": "“Nong” là động từ có nghĩa là “làm”. Nó có thể đại diện cho ý nghĩa của các động từ khác và thường được sử dụng trong ngôn ngữ nói. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）：关于那个新闻的材料你准备好了吗？我们开会时要用。都弄（准备）好了，马上给您送过去。",
+          "translationVi": "(1): Bạn đã chuẩn bị tài liệu cho tin đó chưa? Chúng tôi sử dụng nó khi chúng tôi có cuộc họp. Tất cả đã sẵn sàng và sẽ được gửi cho bạn ngay lập tức.",
+          "pinyin": "(1): guānyú nàgè xīnwén de cáiliào nǐ zhǔnbèi hǎole ma? wǒmen kāihuì shí yào yòng. dōu nòng (zhǔnbèi) hǎole, mǎshàng gěi nín sòng guòqù."
+        },
+        {
+          "hanzi": "（2）一会儿搬沙发的时候要小心点儿，别弄（碰）坏了。：没问题，我会注意看着脚下的。",
+          "translationVi": "(2) Hãy cẩn thận để không làm gãy ghế sofa khi bạn di chuyển nó sau này. : Không sao đâu, tôi sẽ cẩn thận bước đi.",
+          "pinyin": "(2) yīhuǐ'er bān shāfā de shíhòu yào xiǎoxīn diǎn er, bié nòng (pèng) huàile.: méi wèntí, wǒ huì zhùyì kànzhe jiǎoxià de."
+        },
+        {
+          "hanzi": "（3）每天因为这些小事批评她，弄（批评）得我俩心情都不好。",
+          "translationVi": "(3) Hàng ngày chỉ trích cô ấy vì những điều nhỏ nhặt này khiến cả hai chúng tôi đều cảm thấy khó chịu.",
+          "pinyin": "(3) měitiān yīnwèi zhèxiē xiǎoshì pīpíng tā, nòng (pīpíng) dé wǒ liǎ xīnqíng dōu bù hǎo."
+        }
+      ]
+    },
+    "hsk4l-tb-l15-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "titleZh": "千万",
+      "titleVi": "Mười triệu",
+      "formula": "千万",
+      "explanationVi": "\"Mười triệu\" là một trạng từ, có nghĩa là \"phải, chắc chắn\" và thường được theo sau bởi một dạng phủ định. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）不过表扬也是一门艺术，表扬千万不要太多，过多的表扬可能会给孩子带来压力。",
+          "translationVi": "(1) Tuy nhiên, khen ngợi cũng là một nghệ thuật. Đừng khen ngợi quá nhiều. Khen ngợi quá nhiều có thể gây áp lực cho trẻ.",
+          "pinyin": "(1) bùguò biǎoyáng yěshì yī mén yìshù, biǎoyáng qiān wàn bùyào tài duō,guò duō de biǎoyáng kěnéng huì gěi háizǐ dài lái yālì."
+        },
+        {
+          "hanzi": "（2）我要等她生日那天再送给她这个礼物，你现在千万别告诉她。",
+          "translationVi": "(2) Tôi sẽ đợi đến sinh nhật cô ấy để tặng cô ấy món quà này. Bạn không được nói với cô ấy bây giờ.",
+          "pinyin": "(2) wǒ yào děng tā shēngrì nèitiān zàisòng gěi tā zhège lǐwù, nǐ xiànzài qiān wàn bié gàosù tā."
+        },
+        {
+          "hanzi": "（3）每个人都应该记住这句话：“开车千万别喝酒，喝酒千万别开车。”",
+          "translationVi": "(3) Mọi người nên nhớ câu này: “Không bao giờ uống rượu khi lái xe, và không bao giờ lái xe khi đã uống rượu”.",
+          "pinyin": "(3) měi gèrén dōu yīnggāi jì zhù zhè jù huà:“kāichē qiān wàn bié hējiǔ, hējiǔ qiān wàn bié kāichē.”"
+        }
+      ]
+    },
+    "hsk4l-tb-l15-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "titleZh": "来",
+      "titleVi": "Hãy đến",
+      "formula": "来",
+      "explanationVi": "“Come” là động từ được dùng trước động từ khác với ý nghĩa “làm gì đó”. Nó thường được sử dụng trong ngôn ngữ nói. Nếu không dùng \"ask\" thì nghĩa của câu không thay đổi. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）这个沙发这么大，你们两个肯定抬不动，我来帮你们一起抬。",
+          "translationVi": "(1) Chiếc ghế sofa này lớn đến mức hai người chắc chắn sẽ không thể nhấc nổi nó. Hãy để tôi giúp bạn nâng nó cùng nhau.",
+          "pinyin": "(1) zhège shāfā zhème dà, nǐmen liǎng gè kěndìng tái bù dòng, wǒ lái bāng nǐmen yīqǐ tái."
+        },
+        {
+          "hanzi": "（2）小王经验比较丰富，并且做事认真，这次就让他来负责吧。",
+          "translationVi": "(2) Tiểu Vương là người có nhiều kinh nghiệm và tận tâm hơn nên lần này hãy để anh ấy đảm nhiệm.",
+          "pinyin": "(2) xiǎo wáng jīngyàn bǐjiào fēngfù, bìngqiě zuòshì rènzhēn, zhè cì jiù ràng tā lái fùzé ba."
+        },
+        {
+          "hanzi": "（3）有的孩子在得不到自己想要的东西的时候，会通过哭、扔东西或者故意敲打来引起父母的注意。",
+          "translationVi": "(3) Khi một số trẻ không đạt được thứ mình muốn, chúng sẽ khóc, ném đồ đạc hoặc cố tình đánh đập để thu hút sự chú ý của cha mẹ.",
+          "pinyin": "(3) yǒu de háizǐ zài dé bù dào zìjǐ xiǎng yào de dōngxī de shíhòu, huì tōngguò kū, rēng dōngxī huòzhě gùyì qiāodǎ lái yǐnqǐ fùmǔ de zhùyì."
+        }
+      ]
+    },
+    "hsk4l-tb-l15-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-15",
+      "titleZh": "左右",
+      "titleVi": "trái và phải",
+      "formula": "左右",
+      "explanationVi": "\"Trái hoặc phải\" là một danh từ. Nó chỉ được sử dụng sau một bộ định lượng để chỉ ra rằng nó nhiều hơn hoặc ít hơn một số lượng nhất định. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）网上买的那本书估计三天左右就能到，你收到了记得给我打个电话说一声。",
+          "translationVi": "(1) Cuốn sách bạn mua trực tuyến dự kiến sẽ đến tay bạn trong khoảng ba ngày nữa. Khi nào nhận được bạn vui lòng gọi điện báo cho mình nhé.",
+          "pinyin": "(1) wǎngshàng mǎi dì nà běn shū gūjì sān tiān zuǒyòu jiù néng dào, nǐ shōu dàole jìdé gěi wǒ dǎ gè diànhuà shuō yīshēng."
+        },
+        {
+          "hanzi": "（2）这儿不能停车，前方500米左右有个免费停车场，您可以把车停到那儿。",
+          "translationVi": "(2) Không được phép đậu xe ở đây. Có bãi đậu xe miễn phí cách đó khoảng 500 m. Bạn có thể đỗ xe ở đó.",
+          "pinyin": "(2) zhè'er bùnéng tíngchē, qiánfāng 500 mǐ zuǒyòu yǒu gè miǎnfèi tíngchē chǎng, nín kěyǐ bǎ chē tíng dào nà'er."
+        },
+        {
+          "hanzi": "（3）七岁左右的儿童普遍好动，坐不住，所以老师在教这个年龄段的孩子时，一定要想办法引起他们的兴趣。",
+          "translationVi": "(3) Trẻ khoảng bảy tuổi thường bồn chồn, không thể ngồi yên nên giáo viên phải tìm cách khơi dậy sự hứng thú của trẻ khi dạy trẻ ở độ tuổi này.",
+          "pinyin": "(3) qī suì zuǒyòu de értóng pǔbiàn hǎo dòng, zuò bù zhù, suǒyǐ lǎoshī zài jiào zhège niánlíng duàn de háizǐ shí, yīdìng yào xiǎng bànfǎ yǐnqǐ tāmen de xìngqù."
+        }
+      ]
+    },
+    "hsk4l-tb-l16-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "titleZh": "可",
+      "titleVi": "Có",
+      "formula": "可",
+      "explanationVi": "\"Ke\", một trạng từ, thể hiện sự nhấn mạnh và cũng có thể được dùng để nhấn mạnh giọng điệu trong câu hỏi. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）这可是个大问题，我也不太清楚。",
+          "translationVi": "(1) Đây là một vấn đề lớn và tôi không biết nhiều về nó.",
+          "pinyin": "(1) zhè kěshì gè dà wèntí, wǒ yě bù tài qīngchǔ."
+        },
+        {
+          "hanzi": "（2）下个星期我就要去使馆办签证了，这可怎么办？",
+          "translationVi": "(2) Tôi sẽ đến đại sứ quán để xin thị thực vào tuần tới. Tôi nên làm gì?",
+          "pinyin": "(2) xià gè xīngqí wǒ jiù yào qù shǐguǎn bàn qiānzhèngle, zhè kě zěnme bàn?"
+        },
+        {
+          "hanzi": "（3）我办了一张那个理发店的会员卡，理发可节约了不少钱。",
+          "translationVi": "(3) Tôi đã nhận được thẻ thành viên của tiệm cắt tóc đó và tiết kiệm được rất nhiều tiền khi cắt tóc.",
+          "pinyin": "(3) wǒ bànle yī zhāng nàgè lǐfǎ diàn de huìyuán kǎ, lǐfǎ kě jié yuē liǎo bù shǎo qián."
+        }
+      ]
+    },
+    "hsk4l-tb-l16-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "titleZh": "恐怕",
+      "titleVi": "tôi sợ",
+      "formula": "恐怕",
+      "explanationVi": "“Sợ” là động từ có nghĩa là “lo lắng”. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）我的工作经验还比较少，那份工作我恐怕完成不了。",
+          "translationVi": "(1) Tôi vẫn còn tương đối ít kinh nghiệm làm việc. Tôi sợ tôi sẽ không thể hoàn thành công việc đó.",
+          "pinyin": "(1) wǒ de gōngzuò jīngyàn hái bǐjiào shǎo, nà fèn gōngzuò wǒ kǒngpà wánchéng bùliǎo."
+        },
+        {
+          "hanzi": "（2）这几个动作我恐怕做得不标准，所以比赛前要多多练习。“恐怕”，副词，表示“估计，而且有点儿担心”的意思。例如：",
+          "translationVi": "(2) Tôi e rằng mình làm chưa chuẩn các động tác này nên cần phải luyện tập nhiều hơn trước khi thi đấu. \"Tôi sợ\", một trạng từ, có nghĩa là \"ước tính và hơi lo lắng\". Ví dụ:",
+          "pinyin": "(2) zhè jǐ gè dòngzuò wǒ kǒngpà zuò dé bù biāozhǔn, suǒyǐ bǐsài qián yào duōduō liànxí.“kǒngpà”, fùcí, biǎoshì “gūjì, érqiě yǒudiǎn er dānxīn” de yìsi. lìrú:"
+        },
+        {
+          "hanzi": "（3）这个会议室的座位恐怕不够，还是换到旁边那个大的吧。",
+          "translationVi": "(3) Tôi e rằng phòng họp này không đủ chỗ nên tôi nên chuyển sang phòng lớn hơn bên cạnh.",
+          "pinyin": "(3) zhège huìyì shì de zuòwèi kǒngpà bùgòu, háishì huàn dào pángbiān nàgè dà de ba."
+        }
+      ]
+    },
+    "hsk4l-tb-l16-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "titleZh": "到底",
+      "titleVi": "cuối cùng",
+      "formula": "到底",
+      "explanationVi": "\"To end\" là động từ có nghĩa là \"cho đến hết, cho đến hết\". Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）今天我一定陪你逛街逛到底，保证让你买到合适的衣服。",
+          "translationVi": "(1) Hôm nay tôi sẽ đi mua sắm với bạn để đảm bảo rằng bạn mua được quần áo phù hợp.",
+          "pinyin": "(1) jīntiān wǒ yīdìng péi nǐ guàngjiē guàng dàodǐ, bǎozhèng ràng nǐ mǎi dào héshì de yīfú."
+        },
+        {
+          "hanzi": "（2）要是你觉得情人节只送巧克力还不够浪漫，那就再带她看《将爱情进行到底》这个爱情电影吧。“到底”，副词，用在疑问句或者带疑问代词的非疑问句中，表示“进一步探究”的意思。不能用于带“吗”的是非疑问句中。例如：",
+          "translationVi": "(2) Nếu bạn cho rằng chỉ tặng sôcôla trong ngày lễ tình nhân là chưa đủ lãng mạn thì hãy đưa cô ấy đi xem bộ phim tình cảm “Love to the End”. “Cuối cùng” là trạng từ dùng trong câu nghi vấn hoặc câu không thẩm vấn có đại từ nghi vấn mang ý nghĩa “thăm dò thêm”. Nó không thể được sử dụng trong câu hỏi có hoặc không với \"?\". Ví dụ:",
+          "pinyin": "(2) yàoshi nǐ juédé qíngrén jié zhǐ sòng qiǎokèlì hái bùgòu làngmàn, nà jiù zài dài tā kàn “jiāng àiqíng jìnxíng dàodǐ” zhège àiqíng diànyǐng ba.“dàodǐ”, fùcí, yòng zài yíwènjù huòzhě dài yíwèn dàicí de fēi yíwènjù zhōng, biǎoshì “jìnyībù tànjiù” de yìsi. bùnéng yòng yú dài “ma” de shìfēi yíwènjù zhōng. lìrú:"
+        },
+        {
+          "hanzi": "（3）你不是已经买好火车票了吗？你到底怎么打算的呀？",
+          "translationVi": "(3) Bạn chưa mua vé tàu à? Kế hoạch của bạn là gì?",
+          "pinyin": "(3) nǐ bùshì yǐjīng mǎihǎo huǒchē piàole ma? nǐ dàodǐ zěnme dǎsuàn de ya?"
+        }
+      ]
+    },
+    "hsk4l-tb-l16-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "titleZh": "拿……来说",
+      "titleVi": "Lấy ví dụ",
+      "formula": "拿……来说",
+      "explanationVi": "Bạn có thể sử dụng “take” làm giới từ trong cấu trúc “take it” để giới thiệu sự việc hoặc tình huống mà bạn muốn giải thích. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）这次招聘很多人符合公司的要求，拿他来说，他不仅专业符合职业要求，而且还有工作经验。",
+          "translationVi": "(1) Nhiều người được tuyển dụng lần này đáp ứng được yêu cầu của công ty. Chẳng hạn, anh ta không chỉ có chuyên môn, đáp ứng yêu cầu chuyên môn mà còn có kinh nghiệm làm việc.",
+          "pinyin": "(1) zhè cì zhāopìn hěnduō rén fúhé gōngsī de yāoqiú, ná tā lái shuō, tā bùjǐn zhuānyè fúhé zhíyè yāoqiú, érqiě hái yǒu gōngzuò jīngyàn."
+        },
+        {
+          "hanzi": "（2）如果一个汉字中有“；”这个部分，说明这个字的意思很可能和水有关系，拿“河、流、洗、汁”这儿个字来说，它们都跟水有关。",
+          "translationVi": "(2) Nếu chữ Hán có phần “;” nghĩa là ý nghĩa của chữ đó rất có thể liên quan đến nước. Lấy các từ “sông, suối, rửa, nước trái cây” làm ví dụ, chúng đều liên quan đến nước.",
+          "pinyin": "(2) rúguǒ yīgè hànzì zhōng yǒu “;” zhège bùfèn, shuōmíng zhège zì de yìsi hěn kěnéng hé shuǐ yǒuguānxì, ná “hé, liú, xǐ, zhī” zhè'er gè zì lái shuō, tāmen dōu gēn shuǐ yǒu guān."
+        },
+        {
+          "hanzi": "（3）所以不要把什么事情都推到“明天”，一切从现在做起。就拿学汉语来说吧，首先要注意课前预习，找出第二天要学习的重",
+          "translationVi": "(3) Vì vậy đừng đẩy mọi việc đến “ngày mai”, hãy bắt đầu mọi việc ngay từ bây giờ. Lấy việc học tiếng Trung làm ví dụ. Trước hết các bạn phải chú ý xem trước trước khi đến lớp và tìm hiểu những ý chính cần học ngày hôm sau.",
+          "pinyin": "(3) suǒyǐ bùyào bǎ shénme shìqíng dōu tuī dào “míngtiān”, yīqiè cóng xiànzài zuò qǐ. jiù ná xué hànyǔ lái shuō ba, shǒuxiān yào zhùyì kè qián yùxí, zhǎo chū dì èr tiān yào xuéxí de zhòng"
+        }
+      ]
+    },
+    "hsk4l-tb-l16-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-16",
+      "titleZh": "敢",
+      "titleVi": "Dám",
+      "formula": "敢",
+      "explanationVi": "\"Dare\" là một động từ có thể được sử dụng. Nó được dùng trước một động từ để diễn tả rằng bạn chắc chắn sẽ làm điều gì đó. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）我们应该把那些敢说真话的人当成“镜子”，这样才能及时发现自己的缺点。",
+          "translationVi": "(1) Chúng ta nên coi những người dám nói lên sự thật là những “tấm gương” để kịp thời phát hiện ra khuyết điểm của mình.",
+          "pinyin": "(1) wǒmen yīnggāi bǎ nàxiē gǎn shuō zhēn huà de rén dàngchéng “jìngzǐ”, zhèyàng cáinéng jíshí fāxiàn zìjǐ de quēdiǎn."
+        },
+        {
+          "hanzi": "（2）小时候我总喜欢躺在床上看书，结果眼睛越来越不好，所以从那儿以后我就不敢再躺着看书了。",
+          "translationVi": "(2) Khi còn nhỏ, tôi luôn thích nằm trên giường và đọc sách. Kết quả là thị lực của tôi ngày càng kém, từ đó trở đi tôi không dám nằm đọc sách nữa.",
+          "pinyin": "(2) xiǎoshíhòu wǒ zǒng xǐhuān tǎng zài chuángshàng kànshū, jiéguǒ yǎnjīng yuè lái yuè bù hǎo, suǒyǐ cóng nà'er yǐhòu wǒ jiù bù gǎn zài tǎngzhe kànshūle."
+        },
+        {
+          "hanzi": "（3）如果你敢诚实地说出白己对哪方面不了解，并不说明自己比别人差，相反，这样做更能得到别人的尊重。",
+          "translationVi": "(3) Nếu bạn dám thành thật nói những gì bạn không hiểu, điều đó không có nghĩa là bạn kém hơn người khác. Ngược lại, làm như vậy sẽ được người khác tôn trọng hơn.",
+          "pinyin": "(3) rúguǒ nǐ gǎn chéngshí dì shuō chū bái jǐ duì nǎ fāngmiàn bù liǎojiě, bìng bù shuōmíng zìjǐ bǐ biérén chà, xiāngfǎn, zhèyàng zuò gèng néng dédào biérén de zūnzhòng."
+        }
+      ]
+    },
+    "hsk4l-tb-l17-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "titleZh": "倒",
+      "titleVi": "đổ",
+      "formula": "倒",
+      "explanationVi": "“Đổ” là động từ dùng để nghiêng cái thùng để đồ bên trong chảy ra. Ví dụ: kể từ",
+      "examples": [
+        {
+          "hanzi": "（1）麻烦你给我倒杯咖啡吧，困死我了。",
+          "translationVi": "(1) Bạn có thể rót cho tôi một tách cà phê được không? Tôi buồn ngủ quá.",
+          "pinyin": "(1) máfan nǐ gěi wǒ dào bēi kāfēi ba, kùn sǐ wǒle."
+        },
+        {
+          "hanzi": "（2）你怎么咳嗽得这么厉害？我给你倒杯水吧。“倒”，副词，表示跟意料相反、含责怪语气或表示让步。有时说“倒是”。例如：",
+          "translationVi": "(2) Tại sao bạn ho dữ dội như vậy? Để tôi lấy cho bạn cốc nước. \"Đảo ngược\" là một trạng từ, biểu thị điều trái ngược với những gì được mong đợi, giọng điệu đổ lỗi hoặc nhượng bộ. Đôi khi người ta nói \"điều đó đúng\". Ví dụ:",
+          "pinyin": "(2) nǐ zěnme késòu dé zhème lìhài? wǒ gěi nǐ dào bēi shuǐ ba.“dào”, fùcí, biǎoshì gēn yìliào xiāngfǎn, hán zéguài yǔqì huò biǎoshì ràngbù. yǒushí shuō “dǎoshì”. lìrú:"
+        },
+        {
+          "hanzi": "（3）我以为坐出租车会快些，没想到倒比骑车还慢。（跟意料相反）",
+          "translationVi": "(3) Tôi tưởng đi taxi sẽ nhanh hơn nhưng không ngờ nó lại chậm hơn đi xe đạp. (Trái ngược với mong đợi)",
+          "pinyin": "(3) wǒ yǐwéi zuò chūzū chē huì kuài xiē, méi xiǎngdào dào bǐ qí chē hái màn.(gēn yìliào xiāngfǎn)"
+        }
+      ]
+    },
+    "hsk4l-tb-l17-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "titleZh": "干",
+      "titleVi": "khô",
+      "formula": "干",
+      "explanationVi": "\"Qian ()\" là một động từ, làm (điều gì đó), có nghĩa là tham gia vào một loại nghề nghiệp, công việc hoặc hoạt động nào đó. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）每次你让它干什么，它就像能听懂你的话一样去做。",
+          "translationVi": "(1) Mỗi khi bạn yêu cầu nó làm điều gì đó, nó sẽ làm như thể hiểu được lời bạn nói.",
+          "pinyin": "(1) měi cì nǐ ràng tā gànshénme, tā jiù xiàng néng tīng dǒng nǐ dehuà yīyàng qù zuò."
+        },
+        {
+          "hanzi": "（2）：你这篇报道写得很好，以后要继续努力。谢谢您，我一定会好好儿干的。",
+          "translationVi": "(2): Bạn viết báo cáo này rất hay. Bạn phải tiếp tục làm việc chăm chỉ trong tương lai. Cảm ơn bạn, tôi sẽ làm hết sức mình.",
+          "pinyin": "(2): nǐ zhè piān bàodào xiě dé hěn hǎo, yǐhòu yào jìxù nǔlì. xièxiè nín, wǒ yīdìng huì hǎohǎo er gàn de."
+        },
+        {
+          "hanzi": "（3）干工作的时候一定要认真、仔细，要注意到计划上的每一个地方，否则就很容易出问题。注意：“干”读时是形容词，表示没有水分或水分很少。“干（儿）（）”是名词，意思是“经过加工去掉了水分的食品”。例如：",
+          "translationVi": "(3) Khi làm việc phải nghiêm túc, cẩn thận, chú ý đến từng phần của kế hoạch, nếu không sẽ dễ xảy ra vấn đề. Lưu ý: “Khô” được phát âm như một tính từ, nghĩa là không có độ ẩm hoặc có rất ít độ ẩm. \"Qian (er) ()\" là một danh từ, có nghĩa là \"thực phẩm đã được chế biến để loại bỏ độ ẩm\". Ví dụ:",
+          "pinyin": "(3) gàn gōngzuò de shíhòu yīdìng yào rènzhēn, zǐxì, yào zhùyì dào jìhuà shàng de měi yīgè dìfāng, fǒuzé jiù hěn róngyì chū wèntí. zhùyì:“gàn” dú shí shì xíngróngcí, biǎoshì méiyǒu shuǐfèn huò shuǐfèn hěn shǎo.“gàn (er)()” shì míngcí, yìsi shì “jīngguò jiāgōng qùdiàole shuǐfèn de shípǐn”. lìrú:"
+        }
+      ]
+    },
+    "hsk4l-tb-l17-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "titleZh": "趟",
+      "titleVi": "chuyến đi",
+      "formula": "趟",
+      "explanationVi": "\"chuyến đi\" là một bộ định lượng, cho biết số chuyến đi khứ hồi. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）上个月我去了趟北京动物园，那里约有500种动物。",
+          "translationVi": "Tháng trước tôi đã đến Sở thú Bắc Kinh một chuyến; ở đó có khoảng 500 loài động vật.",
+          "pinyin": "(1) shàng ge yuè wǒ qù le tàng běijīng dòngwùyuán, nàli yuē yǒu wǔbǎi zhǒng dòngwù."
+        },
+        {
+          "hanzi": "（2）我要出趟差，你能帮我照顾一下我的小狗吗？",
+          "translationVi": "Tôi sắp đi công tác một chuyến, bạn có thể giúp tôi chăm sóc chú chó nhỏ được không?",
+          "pinyin": "(2) wǒ yào chū tàng chāi, nǐ néng bāng wǒ zhàogù yíxià wǒ de xiǎogǒu ma?"
+        },
+        {
+          "hanzi": "（3）A：马上就要放暑假了，你有什么安排吗？B：我打算先回一趟家，看看我奶奶，然后回学校准备研究生考试。",
+          "translationVi": "A: Sắp nghỉ hè rồi, bạn có kế hoạch gì không? B: Tôi định về nhà một chuyến thăm bà, sau đó quay lại trường chuẩn bị thi cao học.",
+          "pinyin": "(3) A: mǎshàng jiù yào fàng shǔjià le, nǐ yǒu shénme ānpái ma? B: wǒ dǎsuàn xiān huí yí tàng jiā, kànkan wǒ nǎinai, ránhòu huí xuéxiào zhǔnbèi yánjiūshēng kǎoshì."
+        }
+      ]
+    },
+    "hsk4l-tb-l17-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "titleZh": "为了……而……",
+      "titleVi": "vì lợi ích của...",
+      "formula": "为了……而……",
+      "explanationVi": "Trong cấu trúc “for…and”, mệnh đề trước diễn tả mục đích hành động của mệnh đề sau. “For” được theo sau bởi một từ hoặc cụm từ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）植物会为了阳光、空气和水而竞争。",
+          "translationVi": "(1) Cây cối cạnh tranh ánh sáng, không khí và nước.",
+          "pinyin": "(1) zhíwù huì wèile yángguāng, kōngqì hé shuǐ ér jìngzhēng."
+        },
+        {
+          "hanzi": "（2）北风与南风为了比谁更有能力而吵了起来。它们决定，谁能把人们身上的大衣脱掉，谁就赢了。",
+          "translationVi": "(2) Gió bắc và gió nam tranh nhau xem ai có tài hơn. Họ quyết định ai có thể cởi áo khoác của mọi người sẽ thắng.",
+          "pinyin": "(2) běi fēng yǔ nán fēng wèile bǐ shéi gèng yǒu nénglì ér chǎole qǐlái. tāmen juédìng, shéi néng bǎ rénmen shēnshang de dàyī tuō diào, shéi jiù yíngle."
+        },
+        {
+          "hanzi": "（3）自然界中，不少动物和植物为了保护自己而改变身体的颜色或样子，使自己成为周围环境的一部分。",
+          "translationVi": "(3) Trong tự nhiên, nhiều loài động vật và thực vật thay đổi màu sắc hoặc hình dáng bên ngoài của cơ thể để bảo vệ bản thân và hòa nhập với môi trường xung quanh.",
+          "pinyin": "(3) zìránjiè zhōng, bù shǎo dòngwù hé zhíwù wèile bǎohù zìjǐ ér gǎibiàn shēntǐ de yánsè huò yàngzǐ, shǐ zìjǐ chéngwéi zhōuwéi huánjìng de yībùfèn."
+        }
+      ]
+    },
+    "hsk4l-tb-l17-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "titleZh": "仍然",
+      "titleVi": "vẫn còn",
+      "formula": "仍然",
+      "explanationVi": "“Still” là trạng từ, có nghĩa là tình trạng như trước, không thay đổi. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）就算在几公里深的海底也仍然能看到东西。",
+          "translationVi": "(1) Bạn vẫn có thể nhìn thấy mọi thứ ngay cả khi ở dưới đáy biển sâu vài km.",
+          "pinyin": "(1) jiùsuàn zài jǐ gōnglǐ shēn dì hǎidǐ yě réngrán néng kàn dào dōngxī."
+        },
+        {
+          "hanzi": "（2）人比动物聪明，但动物仍然有很多值得人学习的地方。",
+          "translationVi": "(2) Con người thông minh hơn động vật, nhưng động vật vẫn còn nhiều điều để học hỏi.",
+          "pinyin": "(2) rén bǐ dòngwù cōngmíng, dàn dòngwù réngrán yǒu hěnduō zhídé rén xuéxí dì dìfāng."
+        },
+        {
+          "hanzi": "（3）足球决赛时，如果90分钟后仍然是0比0，按照规定，可以进行加时赛来决定输赢。",
+          "translationVi": "(3) Trong trận chung kết bóng đá, nếu sau 90 phút mà tỷ số vẫn là 0-0 thì theo quy định, có thể thi đấu hiệp phụ để phân định kết quả.",
+          "pinyin": "(3) zúqiú juésài shí, rúguǒ 90 fēnzhōng hòu réngrán shì 0 bǐ 0, ànzhào guīdìng, kěyǐ jìnxíng jiā shí sài lái juédìng shūyíng."
+        }
+      ]
+    },
+    "hsk4l-tb-l18-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "titleZh": "是否",
+      "titleVi": "liệu",
+      "formula": "是否",
+      "explanationVi": "\"Whether\", trạng từ, có hay không, thường được sử dụng trong ngôn ngữ viết. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）不过她这么小，这本书我不知道她是否能读懂。",
+          "translationVi": "(1) Nhưng cô ấy còn trẻ quá, tôi không biết cô ấy có đọc được cuốn sách này không.",
+          "pinyin": "(1) bùguò tā zhème xiǎo, zhè běn shū wǒ bù zhīdào tā shìfǒu néng dú dǒng."
+        },
+        {
+          "hanzi": "（2）有人认为有“夫妻相”的夫妻家庭生活幸福，实际上，婚姻是否幸福跟这个没有关系。",
+          "translationVi": "(2) Một số người cho rằng những cặp vợ chồng có “diện mạo vợ chồng” thì có cuộc sống gia đình hạnh phúc. Thực ra, hôn nhân có hạnh phúc hay không chẳng liên quan gì cả.",
+          "pinyin": "(2) yǒurén rènwéi yǒu “fūqī xiāng” de fūqī jiātíng shēnghuó xìngfú, shíjì shang, hūnyīn shìfǒu xìngfú gēn zhège méiyǒu guānxì."
+        },
+        {
+          "hanzi": "（3）现在，如果要问人们选择职业时主要考虑的是什么，不少人会以收入多少作为标准。当然，也有人主要看自己是否喜欢这份工作。",
+          "translationVi": "(3) Bây giờ, nếu bạn muốn hỏi mọi người xem những cân nhắc chính của họ khi lựa chọn nghề nghiệp là gì, nhiều người sẽ lấy thu nhập làm tiêu chí. Tất nhiên, một số người chủ yếu nhìn vào việc họ có thích công việc này không.",
+          "pinyin": "(3) xiànzài, rúguǒ yào wèn rénmen xuǎnzé zhíyè shí zhǔyào kǎolǜ de shì shénme, bù shǎo rén huì yǐ shōurù duōshǎo zuòwéi biāozhǔn. dāngrán, yěyǒu rén zhǔyào kàn zìjǐ shìfǒu xǐhuān zhè fèn gōngzuò."
+        }
+      ]
+    },
+    "hsk4l-tb-l18-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "titleZh": "受不了",
+      "titleVi": "Không thể chịu đựng được",
+      "formula": "受不了",
+      "explanationVi": "\"Can'tstand it\" có nghĩa là không thể chịu đựng được (đau đớn, đau khổ, áp lực, bất hạnh, thái độ, tính khí nóng nảy, v.v.) và thường được dùng trước danh từ hoặc cụm danh từ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）：我们再去对面的商店看看吧。我真的受不了你了，你到底还要逛多久？",
+          "translationVi": "(1): Chúng ta hãy đến cửa hàng đối diện lần nữa nhé. Tôi thực sự không thể chịu đựng được bạn nữa. Bạn định đi chơi trong bao lâu?",
+          "pinyin": "(1): wǒmen zài qù duìmiàn de shāngdiàn kàn kàn ba. wǒ zhēn de shòu bùliǎo nǐle, nǐ dàodǐ hái yào guàng duōjiǔ?"
+        },
+        {
+          "hanzi": "（2）不过天天对着电脑看，眼睛实在受不了。",
+          "translationVi": "(2) Nhưng việc nhìn vào máy tính hàng ngày thực sự khiến mắt tôi không chịu nổi.",
+          "pinyin": "(2) bùguò tiāntiān duìzhe diànnǎo kàn, yǎnjīng shízài shòu bùliǎo."
+        },
+        {
+          "hanzi": "（3）：真受不了这样的老师！一个简单的动作让我们练二三十遍。他对你们严格些好，这样可以让你们打好基础。",
+          "translationVi": "(3): Tôi thực sự không thể chịu nổi loại giáo viên này! Chúng ta hãy tập một động tác đơn giản hai mươi hay ba mươi lần. Thà anh ấy nghiêm khắc với bạn thì bạn mới có thể đặt nền móng tốt.",
+          "pinyin": "(3): zhēn shòu bùliǎo zhèyàng de lǎoshī! yīgè jiǎndān de dòngzuò ràng wǒmen liàn èrsānshí biàn. tā duì nǐmen yángé xiē hǎo, zhèyàng kěyǐ ràng nǐmen dǎ hǎo jīchǔ."
+        }
+      ]
+    },
+    "hsk4l-tb-l18-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "titleZh": "接着",
+      "titleVi": "Sau đó",
+      "formula": "接着",
+      "explanationVi": "\"Tiếp tục\", trạng từ, theo sau (đúng lúc), biểu thị rằng một tình huống khác xảy ra ngay sau tình huống trước đó. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）这本书的内容非常有趣，你看完以后先不要还，我接着看。",
+          "translationVi": "(1) Nội dung của cuốn sách này rất thú vị. Đừng trả lại sau khi bạn đọc xong. Tôi sẽ tiếp tục đọc.",
+          "pinyin": "(1) zhè běn shū de nèiróng fēicháng yǒuqù, nǐ kàn wán yǐhòu xiān bùyào hái, wǒ jiēzhe kàn."
+        },
+        {
+          "hanzi": "（2）我昨天晚上做了一个特别奇怪的梦，梦到自己正在一座桥上走，走着走着，突然开过来一辆车，非常危险，接着又梦见我跳到车上，跟警察一起抓住了一个坏人。",
+          "translationVi": "(2) Đêm qua tôi có một giấc mơ rất kỳ lạ. Tôi mơ thấy mình đang đi trên một cây cầu. Đang đi thì bỗng có một chiếc ô tô lao tới. Nó rất nguy hiểm. Sau đó tôi mơ thấy mình nhảy lên xe và bắt được kẻ xấu với cảnh sát.",
+          "pinyin": "(2) wǒ zuótiān wǎnshàng zuòle yīgè tèbié qíguài de mèng, mèng dào zìjǐ zhèngzài yīzuò qiáo shàng zǒu, zǒuzhe zǒuzhe, túrán kāi guòlái yī liàng chē, fēicháng wéixiǎn, jiēzhe yòu mèng jiàn wǒ tiào dào chē shàng, gēn jǐngchá yīqǐ zhuā zhùle yīgè huàirén."
+        },
+        {
+          "hanzi": "（3）妻子问：“老公，怎么不见你和老王打网球了呢？”丈夫说：“你愿意和一个赢了就得意，输了就不高兴的人打球吗？”“当然不愿意。我明白了，”妻子接着说，“老王也不愿意跟这样的人打。”",
+          "translationVi": "(3) Người vợ hỏi: “Chồng ơi, sao em không thấy anh và Lão Vương chơi quần vợt?” Người chồng nói: “Em có sẵn sàng chơi với một người kiêu ngạo khi thắng và không vui khi thua không?” \"Đương nhiên là không. Tôi hiểu,\" người vợ tiếp tục, \"Lão Vương không muốn chơi với một người như vậy.\"",
+          "pinyin": "(3) qīzǐ wèn:“lǎogōng, zěnme bùjiàn nǐ hé lǎo wáng dǎ wǎngqiúle ne?” zhàngfū shuō:“nǐ yuànyì hé yīgè yíngle jiù déyì, shūle jiù bù gāoxìng de rén dǎqiú ma?”“dāngrán bù yuànyì. wǒ míngbáile,” qīzǐ jiēzhe shuō,“lǎo wáng yě bù yuànyì gēn zhèyàng de rén dǎ.”"
+        }
+      ]
+    },
+    "hsk4l-tb-l18-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "titleZh": "除此以外",
+      "titleVi": "Ngoài điều này",
+      "formula": "除此以外",
+      "explanationVi": "\"Ngoại trừ điều này\" tương đương với \"ngoại trừ điều này (đề cập đến nội dung đã đề cập trước đó)\" và thường được sử dụng trong ngôn ngữ viết. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）他和弟弟同一天出生，兄弟俩长得很像，但除此以外几乎再找不到其他共同点。",
+          "translationVi": "(1) Anh ấy và em trai anh ấy sinh cùng ngày. Hai anh em trông rất giống nhau nhưng ngoài điều đó ra thì hầu như không có điểm chung nào khác.",
+          "pinyin": "(1) tā hé dìdì tóngyī tiān chūshēng, xiōngdì liǎ zhǎng dé hěn xiàng, dàn chú cǐ yǐwài jīhū zài zhǎo bù dào qítā gòngtóng diǎn."
+        },
+        {
+          "hanzi": "（2）北方人过年时爱吃饺子，是因为饺子味道鲜美，除此以外，还因为人们忙了一年，过年时全家人坐在一起包饺子，是很好的交流机会。",
+          "translationVi": "(2) Người miền Bắc thích ăn bánh bao trong dịp Tết Nguyên Đán vì chúng rất ngon. Ngoài ra, mọi người đã bận rộn trong một năm. Trong dịp Tết Nguyên Đán, cả gia đình cùng nhau ngồi làm bánh bao, đây là cơ hội tốt để giao lưu.",
+          "pinyin": "(2) běifāng rén guònián shí ài chī jiǎozǐ, shì yīnwèi jiǎozǐ wèidào xiānměi, chú cǐ yǐwài, hái yīn wéi rénmen mángle yī nián, guònián shí quánjiā rén zuò zài yīqǐ bāo jiǎozǐ, shì hěn hǎo de jiāoliú jīhuì."
+        },
+        {
+          "hanzi": "（3）……打电话、发短信已经成了人们普遍使用的联系方法。除此以外，你还可以用它来听音乐、看电影、阅读、玩儿游戏、付款购物等，这大大方便了人们的生活。",
+          "translationVi": "(3)...Gọi điện và gửi tin nhắn đã trở thành phương thức liên lạc được mọi người sử dụng phổ biến. Ngoài ra, bạn cũng có thể sử dụng nó để nghe nhạc, xem phim, đọc sách, chơi game, trả tiền mua sắm, v.v., điều này hỗ trợ rất nhiều cho cuộc sống của mọi người.",
+          "pinyin": "(3)……dǎ diànhuà, fā duǎnxìn yǐjīng chéngle rénmen pǔbiàn shǐyòng de liánxì fāngfǎ. chú cǐ yǐwài, nǐ hái kěyǐ yòng tā lái tīng yīnyuè, kàn diànyǐng, yuèdú, wán er yóuxì, fùkuǎn gòuwù děng, zhè dàdà fāngbiànliǎo rénmen de shēnghuó."
+        }
+      ]
+    },
+    "hsk4l-tb-l18-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-18",
+      "titleZh": "把……叫作……",
+      "titleVi": "gọi...",
+      "formula": "把……叫作……",
+      "explanationVi": "\"Gọi nó đi...\" theo sau là tên trước đó. “Ba” thường được theo sau bởi một danh từ, đại từ hoặc cụm danh từ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）现代科学技术的发展让世界变得越来越小，所以现在人们都把地球叫作“地球村”。",
+          "translationVi": "(1) Sự phát triển của khoa học công nghệ hiện đại khiến thế giới ngày càng thu nhỏ lại nên ngày nay người ta gọi trái đất là “ngôi làng toàn cầu”.",
+          "pinyin": "(1) xiàndài kēxué jìshù de fǎ zhǎn ràng shìjiè biàn dé yuè lái yuè xiǎo, suǒyǐ xiànzài rénmen dōu bǎ dìqiú jiào zuò “dìqiúcūn”."
+        },
+        {
+          "hanzi": "（2）黄河是中国第二大河，从中国西部流向东部，全长5464公里，人们把它叫作“母亲河”。",
+          "translationVi": "(2) Hoàng Hà là con sông lớn thứ hai ở Trung Quốc. Nó chảy từ phía tây Trung Quốc sang phía đông với tổng chiều dài 5.464 km. Người ta gọi nó là “Sông Mẹ”.",
+          "pinyin": "(2) huánghé shì zhōngguó dì èr dàhé, cóng zhōngguó xībù liúxiàng dōngbù, quán zhǎng 5464 gōnglǐ, rénmen bǎ tā jiào zuò “mǔqīn hé”."
+        },
+        {
+          "hanzi": "（3）中国人搬了新家后，一般都会邀请亲戚朋友到家里来吃顿饭，热闹-一下。人们把这个习惯叫作“暖房”。",
+          "translationVi": "(3) Sau khi người Trung Quốc chuyển đến nơi ở mới, họ thường mời người thân và bạn bè đến nhà dùng bữa và không khí sôi động. Người ta gọi thói quen này là “nhà nóng”.",
+          "pinyin": "(3) zhōngguó rén bānle xīnjiā hòu, yībān dūhuì yāoqǐng qīnqī péngyǒu dào jiālǐ lái chī dùn fàn, rènào-yīxià. rénmen bǎ zhège xíguàn jiào zuò “nuǎnfáng”."
+        }
+      ]
+    },
+    "hsk4l-tb-l19-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "titleZh": "疑问代词活用表示任指",
+      "titleVi": "Việc sử dụng liên hợp các đại từ nghi vấn để diễn đạt bất kỳ sự tham khảo nào",
+      "formula": "疑问代词活用表示任指",
+      "explanationVi": "Các đại từ nghi vấn như \"cái gì, ai, cái nào, ở đâu, ở đâu, như thế nào\" có thể diễn tả bất kỳ sự tham chiếu, so sánh, cái ở giữa, cái một, cách sử dụng. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）没关系，不用道歉，谁都有粗心填错的时候。",
+          "translationVi": "(1) Không sao đâu, không cần phải xin lỗi, ai cũng có lúc điền sai thông tin một cách bất cẩn.",
+          "pinyin": "(1) méiguānxì, bùyòng dàoqiàn, shéi dōu yǒu cūxīn tián cuò de shíhòu."
+        },
+        {
+          "hanzi": "（2）昨天我做了一个奇怪的梦，但是早上起来怎么想都想不起来。",
+          "translationVi": "(2) Hôm qua tôi có một giấc mơ kỳ lạ nhưng khi thức dậy vào buổi sáng tôi không thể nhớ được.",
+          "pinyin": "(2) zuótiān wǒ zuòle yīgè qíguài de mèng, dànshì zǎoshang qǐlái zěnme xiǎng dōu xiǎng bù qǐlái."
+        },
+        {
+          "hanzi": "（3）“世界上没有免费的午餐”这句话是说，什么东西都要通过努力才能得到。",
+          "translationVi": "(3) “Trên đời không có bữa trưa miễn phí” nghĩa là mọi thứ đều phải có được bằng sự chăm chỉ.",
+          "pinyin": "(3)“shìjiè shàng méiyǒu miǎnfèi de wǔcān” zhè jù huà shì shuō, shénme dōngxī dū yào tōngguò nǔlì cáinéng dédào."
+        }
+      ]
+    },
+    "hsk4l-tb-l19-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "titleZh": "上",
+      "titleVi": "trên",
+      "formula": "上",
+      "explanationVi": "\"Shang\" là một động từ, được sử dụng như một bổ ngữ xu hướng sau động từ và theo nghĩa rộng, nó có nghĩa là hành động đã đạt được mục tiêu; hoặc như một sự bổ sung có thể có, nó có nghĩa là liệu hành động đó có thể đạt được mục tiêu hay không. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）看来今天吃不上羊肉饺子了。",
+          "translationVi": "(1) Có vẻ như hôm nay chúng ta không thể ăn bánh bao thịt cừu.",
+          "pinyin": "(1) kàn lái jīntiān chībùshàng yángròu jiǎozǐle."
+        },
+        {
+          "hanzi": "（2）现在堵车这么厉害，看来今天坐不上8点那趟去上海的飞机了。",
+          "translationVi": "(2) Tình trạng ùn tắc giao thông hiện nay rất nghiêm trọng. Có vẻ như hôm nay tôi không thể bắt chuyến bay lúc 8 giờ tới Thượng Hải.",
+          "pinyin": "(2) xiànzài dǔchē zhème lìhài, kàn lái jīntiān zuò bù shàng 8 diǎn nà tàng qù shànghǎi de fēijīle."
+        },
+        {
+          "hanzi": "（3）一听到哥哥考上了经济专业的博士，我们全家都特别高兴。",
+          "translationVi": "(3) Cả nhà chúng tôi rất vui mừng khi nghe tin anh tôi đỗ Tiến sĩ. trong Kinh tế học.",
+          "pinyin": "(3) yī tīng dào gēgē kǎo shàngle jīngjì zhuānyè de bóshì, wǒmen quánjiā dōu tèbié gāoxìng."
+        }
+      ]
+    },
+    "hsk4l-tb-l19-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "titleZh": "出来",
+      "titleVi": "đi ra ngoài",
+      "formula": "出来",
+      "explanationVi": "\"Đi ra\" là một động từ. Nó có thể được sử dụng như một bổ ngữ xu hướng sau động từ để diễn tả rằng một hành động nhất định sẽ thay đổi trạng thái của một thứ gì đó từ không thành gì, từ che giấu sang lộ diện. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）有的人心里有什么看法或意见，嘴上就会直接说出来。",
+          "translationVi": "(1) Một số người sẽ trực tiếp bày tỏ quan điểm hoặc ý kiến của mình bằng miệng.",
+          "pinyin": "(1) yǒu de rén xīn li yǒu shé me kànfǎ huò yìjiàn, zuǐ shàng jiù huì zhíjiē shuō chūlái."
+        },
+        {
+          "hanzi": "（2）你要的那篇文章我已经翻译出来了，你方便的时候就来取吧。",
+          "translationVi": "(2) Tôi đã dịch bài viết bạn muốn. Hãy đến và nhận nó một cách thuận tiện.",
+          "pinyin": "(2) nǐ yào dì nà piān wénzhāng wǒ yǐjīng fānyì chūláile, nǐ fāngbiàn de shíhòu jiù lái qǔ ba."
+        },
+        {
+          "hanzi": "（3）刚才我在旁边看到你跳中国舞了，没看出来你跳得这么好！",
+          "translationVi": "(3) Tôi vừa thấy bạn nhảy múa Trung Hoa gần đó, nhưng tôi không nhận ra bạn nhảy giỏi đến thế!",
+          "pinyin": "(3) gāngcái wǒ zài pángbiān kàn dào nǐ tiào zhōngguó wǔle, méi kàn chūlái nǐ tiào dé zhème hǎo!"
+        }
+      ]
+    },
+    "hsk4l-tb-l19-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "titleZh": "总的来说",
+      "titleVi": "nói chung",
+      "formula": "总的来说",
+      "explanationVi": "“Nói chung” thường được dùng như một thán từ để bình luận về tình hình chung hoặc tình huống chính. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）广告上说房子交通方便，周围很安静，厨房很大。总的来说，这套房子他很满意，于是他就记下了房东的手机号码。",
+          "translationVi": "(1) Quảng cáo nói nhà có giao thông thuận tiện, xung quanh yên tĩnh, bếp rộng. Nhìn chung anh rất hài lòng với ngôi nhà nên đã ghi lại số điện thoại di động của chủ nhà.",
+          "pinyin": "(1) guǎnggào shàng shuō fángzǐ jiāotōng fāngbiàn, zhōuwéi hěn ānjìng, chúfáng hěn dà. zǒng de lái shuō, zhè tào fángzǐ tā hěn mǎnyì, yúshì tā jiù jì xiàle fángdōng de shǒujī hàomǎ."
+        },
+        {
+          "hanzi": "（2）这个公司的工资虽然不算很高，但是奖金很多，所以总的来说收入还不错。",
+          "translationVi": "(2) Ở công ty này lương tuy không cao nhưng lại có nhiều tiền thưởng nên nhìn chung thu nhập khá tốt.",
+          "pinyin": "(2) zhège gōngsī de gōngzī suīrán bù suàn hěn gāo, dànshì jiǎngjīn hěnduō, suǒyǐ zǒng de lái shuō shōurù hái bùcuò."
+        },
+        {
+          "hanzi": "（3）很多人问去丽江旅游怎么样，总的来说，丽江景色不错，那里的人也很热情，去那里旅游是个不错的选择。",
+          "translationVi": "(3) Nhiều người hỏi du lịch Lệ Giang như thế nào. Nói chung phong cảnh ở Lệ Giang rất đẹp và người dân ở đó rất nhiệt tình. Đó là một lựa chọn tốt để đi du lịch ở đó.",
+          "pinyin": "(3) hěnduō rén wèn qù lìjiāng lǚyóu zěnme yàng, zǒng de lái shuō, lìjiāng jǐngsè bùcuò, nàlǐ de rén yě hěn rèqíng, qù nàlǐ lǚyóu shìgè bùcuò de xuǎnzé."
+        }
+      ]
+    },
+    "hsk4l-tb-l19-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-19",
+      "titleZh": "在于",
+      "titleVi": "nằm ở",
+      "formula": "在于",
+      "explanationVi": "\"In\", một động từ, thường được sử dụng trong ngôn ngữ viết để chỉ ra bản chất của sự vật và có nghĩa là \"chính xác, chính xác\". Chủ ngữ của \"is\" thường là một danh từ và phải được theo sau bởi một danh từ, động từ hoặc mệnh đề làm tân ngữ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）人们常说“生命在于运动”，所以很多人一到周末就会到体育馆打几场球。",
+          "translationVi": "(1) Người ta thường nói “cuộc sống nằm ở thể thao”, nên rất nhiều người đến sân vận động để chơi vài trận vào cuối tuần.",
+          "pinyin": "(1) rénmen cháng shuō “shēngmìng zàiyú yùndòng”, suǒyǐ hěnduō rén yī dào zhōumò jiù huì dào tǐyùguǎn dǎ jǐ chǎng qiú."
+        },
+        {
+          "hanzi": "（2）选择职业的关键在于兴趣，当你喜欢做一件事情的时候，你会带着热情去工作，就不会感到累，更不会觉得有太大的压力。",
+          "translationVi": "(2) Chìa khóa để chọn nghề là sở thích. Khi thích làm điều gì đó, bạn sẽ làm việc với sự nhiệt tình và không cảm thấy mệt mỏi hay chịu quá nhiều áp lực.",
+          "pinyin": "(2) xuǎnzé zhíyè de guānjiàn zàiyú xìngqù, dāng nǐ xǐhuān zuò yī jiàn shìqíng de shíhòu, nǐ huì dài zháo rèqíng qù gōngzuò, jiù bù huì gǎndào lèi, gèng bù huì juédé yǒu tài dà de yālì."
+        },
+        {
+          "hanzi": "（3）没有人能一生都顺顺利利、没有失败。区别在于有的人能接受失败，找到失败的原因并继续努力；而有的人却在失败面前停下了脚步。",
+          "translationVi": "(3) Không ai có thể có một cuộc sống suôn sẻ mà không gặp thất bại. Điểm khác biệt là một số người có thể chấp nhận thất bại, tìm ra nguyên nhân thất bại và tiếp tục làm việc chăm chỉ; trong khi có người lại dừng lại khi đối mặt với thất bại.",
+          "pinyin": "(3) méiyǒu rén néng yīshēng dōu shùn shùnlì lì, méiyǒu shībài. qūbié zàiyú yǒu de rén néng jiēshòu shībài, zhǎodào shībài de yuányīn bìng jìxù nǔlì; ér yǒu de rén què zài shībài miànqián tíng xiàle jiǎobù."
+        }
+      ]
+    },
+    "hsk4l-tb-l20-grammar-01": {
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "titleZh": "动词+着+动词+着",
+      "titleVi": "Động từ + di chuyển + Động từ + di chuyển",
+      "formula": "动词+着+动词+着",
+      "explanationVi": "Động từ tương tự được sử dụng trong cấu trúc \"động từ+động từ+động từ+động từ\". Động từ này thường là động từ đơn âm tiết. Cấu trúc này thường được theo sau bởi một động từ khác, biểu thị rằng một hành động khác xảy ra trong khi một hành động đang diễn ra. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）好，那我就放心了，别开着开着没油了。",
+          "translationVi": "(1) Được rồi, vậy thì tôi yên tâm, đừng lái xe hết xăng.",
+          "pinyin": "(1) hǎo, nà wǒ jiù fàngxīnle, bié kāizhe kāizhe méi yóule."
+        },
+        {
+          "hanzi": "（2）她讲着讲着自己就先笑了，而大家却不明白她到底为什么笑。",
+          "translationVi": "(2) Cô ấy cười đầu tiên khi đang nói, nhưng không ai hiểu tại sao cô ấy lại cười.",
+          "pinyin": "(2) tā jiǎng zhuó jiǎngzhe zìjǐ jiù xiān xiàole, ér dàjiā què bù míngbái tā dàodǐ wèishéme xiào."
+        },
+        {
+          "hanzi": "（3）晚上躺在草地上看星星的感觉非常棒，有时候躺着躺着就安静地睡着了。",
+          "translationVi": "(3) Cảm giác thật tuyệt khi nằm trên bãi cỏ và ngắm sao vào ban đêm. Đôi khi tôi ngủ thiếp đi khi đang nằm.",
+          "pinyin": "(3) wǎnshàng tǎng zài cǎodì shàng kàn xīngxīng de gǎnjué fēicháng bàng, yǒu shíhòu tǎngzhe tǎngzhe jiù ānjìng de shuìzhele."
+        }
+      ]
+    },
+    "hsk4l-tb-l20-grammar-02": {
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "titleZh": "一……就……",
+      "titleVi": "Ngay khi...chỉ...",
+      "formula": "一……就……",
+      "explanationVi": "Cấu trúc Just...\" có thể có nghĩa là hai sự việc xảy ra cùng một lúc. Chủ ngữ của hai sự việc có thể giống hoặc khác nhau. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）100年前，塑料一出现就受到人们的普遍欢迎。",
+          "translationVi": "(1) 100 năm trước, nhựa nhìn chung được người dân đón nhận ngay khi chúng xuất hiện.",
+          "pinyin": "(1)100 nián qián, sùliào yī chūxiàn jiù shòudào rénmen de pǔbiàn huānyíng."
+        },
+        {
+          "hanzi": "（2）等女儿一回来我就告诉她这个好消息。表示条件，“就”后面表示在前一个条件下产生的情况。两种成分的主语可以相同，也可不同。例如：",
+          "translationVi": "(2) Tôi sẽ báo tin vui cho con gái tôi ngay khi nó trở về. Biểu thị một điều kiện và \"jiu\" theo sau là \"jiu\" biểu thị một tình huống xảy ra theo điều kiện trước đó. Chủ đề của hai thành phần có thể giống nhau hoặc khác nhau. Ví dụ:",
+          "pinyin": "(2) děng nǚ'ér yī huílái wǒ jiù gàosù tā zhège hǎo xiāoxī. biǎoshì tiáojiàn,“jiù” hòumiàn biǎoshì zài qián yīgè tiáojiàn xià chǎnshēng de qíngkuàng. liǎng zhǒng chéngfèn de zhǔyǔ kěyǐ xiāngtóng, yě kě bùtóng. lìrú:"
+        },
+        {
+          "hanzi": "（3）儿子小时候一说话就脸红，回答老师问题的时候声音也很小，我当时很为他担心。",
+          "translationVi": "(3) Khi con trai tôi còn nhỏ, mỗi khi nói chuyện nó sẽ đỏ mặt và giọng rất trầm khi trả lời các câu hỏi của giáo viên. Lúc đó tôi rất lo lắng cho anh ấy.",
+          "pinyin": "(3) érzǐ xiǎoshíhòu yī shuōhuà jiù liǎnhóng, huídá lǎoshī wèntí de shíhòu shēngyīn yě hěn xiǎo, wǒ dāngshí hěn wèi tā dānxīn."
+        }
+      ]
+    },
+    "hsk4l-tb-l20-grammar-03": {
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "titleZh": "究竟",
+      "titleVi": "Rốt cuộc",
+      "formula": "究竟",
+      "explanationVi": "“Cuối cùng” là một trạng từ. Nó được dùng trong câu nghi vấn hoặc câu không thẩm vấn có đại từ nghi vấn để diễn đạt sự điều tra và củng cố giọng điệu nghi vấn. Nó chủ yếu được sử dụng trong ngôn ngữ viết. Nếu chủ ngữ là đại từ nghi vấn, “cuối cùng” chỉ có thể được đặt trước chủ ngữ. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）究竟哪个季节去丽江旅游比较好呢？",
+          "translationVi": "(1) Đi du lịch Lệ Giang vào mùa nào đẹp?",
+          "pinyin": "(1) jiùjìng nǎge jìjié qù lìjiāng lǚyóu bǐjiào hǎo ne?"
+        },
+        {
+          "hanzi": "（2）随着科学技术的发展，很多问题已经得到解决。但有些问题我们仍然无法回答，例如，生命究竞从哪里来？",
+          "translationVi": "(2) Với sự phát triển của khoa học công nghệ, nhiều vấn đề đã được giải quyết. Nhưng có một số câu hỏi chúng tôi vẫn chưa thể trả lời. Ví dụ, sự sống đến từ đâu?",
+          "pinyin": "(2) suízhe kēxué jìshù de fǎ zhǎn, hěnduō wèntí yǐjīng dédào jiějué. dàn yǒuxiē wèntí wǒmen réngrán wúfǎ huídá, lìrú, shēngmìng jiū jìng cóng nǎlǐ lái?"
+        },
+        {
+          "hanzi": "（3）学习时，不仅要知道答案是什么，还要弄清楚答案究竟是怎么得来的，只有这样，才能把问题真正弄懂。",
+          "translationVi": "(3) Khi học, bạn không chỉ phải biết câu trả lời là gì mà còn phải tìm hiểu làm thế nào để có được câu trả lời đó. Chỉ bằng cách này bạn mới có thể thực sự hiểu được vấn đề.",
+          "pinyin": "(3) xuéxí shí, bùjǐn yào zhīdào dá'àn shì shénme, hái yào nòng qīngchǔ dá'àn jiùjìng shì zěnme dé lái de, zhǐyǒu zhèyàng, cáinéng bǎ wèntí zhēnzhèng nòng dǒng."
+        }
+      ]
+    },
+    "hsk4l-tb-l20-grammar-04": {
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "titleZh": "起来",
+      "titleVi": "đứng dậy",
+      "formula": "起来",
+      "explanationVi": "\"Thức dậy\" là một động từ. Nó có thể được sử dụng như một bổ ngữ xu hướng sau động từ. Nó có thể chỉ ra hướng của hành động từ dưới lên trên. Nó cũng có thể được mở rộng để chỉ ra rằng hành động bắt đầu và tiếp tục. Nó cũng có thể được mở rộng để chỉ ra rằng người nói đánh giá con người hoặc sự vật từ một khía cạnh nhất định. Ví dụ:",
+      "examples": [
+        {
+          "hanzi": "（1）你先把桌子上的东西拿起来，我擦完之后你再放下来。",
+          "translationVi": "(1) Bạn nhặt đồ trên bàn trước, sau đó bạn đặt chúng xuống sau khi tôi lau xong.",
+          "pinyin": "(1) nǐ xiān bǎ zhuōzǐ shàng de dōngxī ná qǐlái, wǒ cā wán zhīhòu nǐ zài fàng xiàlái."
+        },
+        {
+          "hanzi": "（2）邻居小王最近一定遇到了很多开心的事，你听，他又唱起来了。",
+          "translationVi": "(2) Hàng xóm Tiểu Vương của tôi dạo gần đây chắc gặp nhiều chuyện vui lắm. Nghe này, anh ấy lại bắt đầu hát.",
+          "pinyin": "(2) línjū xiǎo wáng zuìjìn yīdìng yù dàole hěnduō kāixīn de shì, nǐ tīng, tā yòu chàng qǐláile."
+        },
+        {
+          "hanzi": "（3）比如你跟上海人对话时，会发现上海话听起来就像外语一样。",
+          "translationVi": "(3) Ví dụ, khi bạn nói chuyện với người ở Thượng Hải, bạn sẽ thấy tiếng Thượng Hải nghe giống tiếng nước ngoài.",
+          "pinyin": "(3) bǐrú nǐ gēn shànghǎi rén duìhuà shí, huì fāxiàn shànghǎi huà tīng qǐlái jiù xiàng wàiyǔ yīyàng."
+        }
+      ]
+    },
+    "hsk4l-tb-l20-grammar-05": {
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "titleZh": "动词+起",
+      "titleVi": "động từ + bắt đầu",
+      "formula": "动词+起",
+      "explanationVi": "Cấu trúc \"động từ + bắt đầu\" biểu thị hành động liên quan đến điều gì đó. Các động từ nói chung là một số ngoại động từ như \"nói, nói, nói, hỏi, đề cập, nói, nhớ lại\". \"Động từ + bắt đầu\" thường được theo sau bởi một danh từ. ví dụ",
+      "examples": [
+        {
+          "hanzi": "（1）说起吃的东西，给我印象最深的是湖南菜。",
+          "translationVi": "(1) Nhắc đến ẩm thực, điều khiến tôi ấn tượng nhất chính là ẩm thực Hồ Nam.",
+          "pinyin": "(1) shuō qǐ chī de dōngxī, gěi wǒ yìnxiàng zuìshēn de shì húnán cài."
+        },
+        {
+          "hanzi": "（2）聊起那场网球比赛，他们俩就兴奋得停不下来了。",
+          "translationVi": "(2) Khi nói về trận đấu quần vợt, họ hào hứng đến mức không thể dừng lại.",
+          "pinyin": "(2) liáo qǐ nà chǎng wǎngqiú bǐsài, tāmen liǎ jiù xīngfèn dé tíng bù xiàláile."
+        },
+        {
+          "hanzi": "（3）要是有人问起那件事，你就告诉他你还没接到通知，也不清楚怎么回事。",
+          "translationVi": "(3) Nếu có ai hỏi về việc đó, hãy nói với họ rằng bạn chưa được thông báo và bạn không biết chuyện gì đã xảy ra.",
+          "pinyin": "(3) yàoshi yǒurén wèn qǐ nà jiàn shì, nǐ jiù gàosù tā nǐ hái méi jiē dào tōngzhī, yě bù qīngchǔ zěnme huí shì."
+        }
+      ]
+    }
+  }
+}

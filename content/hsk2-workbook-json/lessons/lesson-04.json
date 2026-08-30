@@ -1,0 +1,79 @@
+{
+  "$schema": "../schemas/workbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-wb-lesson-04",
+  "lessonNumber": 4,
+  "status": "review",
+  "title": {
+    "zh": "这个工作是他帮我介绍的。",
+    "pinyin": "zhè ge gōng zuò shì tā bāng wǒ jiè shào de 。",
+    "vi": "Ông ấy đã giới thiệu giúp tôi công việc này."
+  },
+  "source": {
+    "pdfPages": [
+      37,
+      46
+    ],
+    "printedPages": [
+      37,
+      46
+    ],
+    "sourcePageRefs": [
+      "hsk2-wb-source-page-037",
+      "hsk2-wb-source-page-038",
+      "hsk2-wb-source-page-039",
+      "hsk2-wb-source-page-040",
+      "hsk2-wb-source-page-041",
+      "hsk2-wb-source-page-042",
+      "hsk2-wb-source-page-043",
+      "hsk2-wb-source-page-044",
+      "hsk2-wb-source-page-045",
+      "hsk2-wb-source-page-046"
+    ]
+  },
+  "sections": [
+    {
+      "id": "hsk2-wb-lesson-04-listening",
+      "type": "listening",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-04-listening-part-1",
+        "hsk2-wb-lesson-04-listening-part-2",
+        "hsk2-wb-lesson-04-listening-part-3"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-04-reading",
+      "type": "reading",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-04-reading-part-1",
+        "hsk2-wb-lesson-04-reading-part-2",
+        "hsk2-wb-lesson-04-reading-part-3",
+        "hsk2-wb-lesson-04-reading-part-4"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-04-pronunciation-section",
+      "type": "pronunciation",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-04-pronunciation"
+      ]
+    },
+    {
+      "id": "hsk2-wb-lesson-04-hanzi-section",
+      "type": "hanzi",
+      "exerciseGroupRefs": [
+        "hsk2-wb-lesson-04-hanzi"
+      ]
+    }
+  ],
+  "answerStatus": "not-provided-in-source-pdf",
+  "editorial": {
+    "publicationReady": false,
+    "requiredActions": [
+      "Đối chiếu các dòng OCR với trang PDF.",
+      "Bổ sung tệp audio theo mã track.",
+      "Bổ sung đáp án từ nguồn được cấp phép.",
+      "Trích xuất hoặc thay thế hình minh họa bằng asset có quyền sử dụng."
+    ]
+  }
+}

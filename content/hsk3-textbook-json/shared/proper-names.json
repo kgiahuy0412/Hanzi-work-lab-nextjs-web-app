@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "properNames": [
+    {
+      "id": "hsk3-tb-l01-proper-01",
+      "lessonRef": "hsk3-tb-lesson-01",
+      "hanzi": "小丽",
+      "pinyin": "xiǎo lì",
+      "sourceTextOcrRaw": "1.小丽Xidoli chi Le (ten nguoi)",
+      "sourcePageRef": "hsk3-tb-source-page-018",
+      "sourceRowIndexes": [
+        16
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l01-proper-02",
+      "lessonRef": "hsk3-tb-lesson-01",
+      "hanzi": "小刚",
+      "pinyin": "xiǎo gāng",
+      "sourceTextOcrRaw": "2.小刚Xiaoganganh Curong (ten nguoi)",
+      "sourcePageRef": "hsk3-tb-source-page-018",
+      "sourceRowIndexes": [
+        17
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l02-proper-01",
+      "lessonRef": "hsk3-tb-lesson-02",
+      "hanzi": "周",
+      "pinyin": "zhōu",
+      "sourceTextOcrRaw": "1.周 Zhou Chau (ho)",
+      "sourcePageRef": "hsk3-tb-source-page-028",
+      "sourceRowIndexes": [
+        27
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l02-proper-02",
+      "lessonRef": "hsk3-tb-lesson-02",
+      "hanzi": "周明",
+      "pinyin": "zhōu míng",
+      "sourceTextOcrRaw": "2.周明 Zhou Ming ChauMinh (ten nguoi)",
+      "sourcePageRef": "hsk3-tb-source-page-028",
+      "sourceRowIndexes": [
+        28
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l04-proper-01",
+      "lessonRef": "hsk3-tb-lesson-04",
+      "hanzi": "小明",
+      "pinyin": "xiǎo míng",
+      "sourceTextOcrRaw": "1.小明 Xidoming ban Minh (ten nguroi)",
+      "sourcePageRef": "hsk3-tb-source-page-046",
+      "sourceRowIndexes": [
+        16
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l04-proper-02",
+      "lessonRef": "hsk3-tb-lesson-04",
+      "hanzi": "马可",
+      "pinyin": "mǎ kě",
+      "sourceTextOcrRaw": "2.马可 Make Marco",
+      "sourcePageRef": "hsk3-tb-source-page-046",
+      "sourceRowIndexes": [
+        17
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l09-proper-01",
+      "lessonRef": "hsk3-tb-lesson-09",
+      "hanzi": "大山",
+      "pinyin": "dà shān",
+      "sourceTextOcrRaw": "1.大山 Dashan DaiSon (ten nguoi)",
+      "sourcePageRef": "hsk3-tb-source-page-089",
+      "sourceRowIndexes": [
+        18
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk3-tb-l09-proper-02",
+      "lessonRef": "hsk3-tb-lesson-09",
+      "hanzi": "李静",
+      "pinyin": "lǐ jìng",
+      "sourceTextOcrRaw": "2.李静Li JingLyTinh（tennguroi)",
+      "sourcePageRef": "hsk3-tb-source-page-089",
+      "sourceRowIndexes": [
+        20
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "id": "hsk5l-lesson-30",
+  "number": 30,
+  "unitId": "hsk5l-unit-10",
+  "titleZh": "竞争让市场更高效",
+  "titleVi": "Cạnh tranh khiến thị trường phát triển.",
+  "sourcePdfPages": {
+    "start": 105,
+    "end": 113
+  },
+  "sourcePrintedPages": {
+    "start": 104,
+    "end": 112
+  },
+  "audioTracks": [
+    "30-1",
+    "30-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 105,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身 你觉得这幅图片想告诉我们什么？说说你对这幅图片的理解。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 105,
+      "rowIndex": 9,
+      "matchedTextOcr": "课文竞争让市场更高效 （607字） 30-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 107,
+      "rowIndex": 12,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 110,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 选择合适的词语填空"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 111,
+      "rowIndex": 21,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 112,
+      "rowIndex": 7,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-30-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-30-01",
+    "hsk5l-annotation-30-01",
+    "hsk5l-practice-30-01",
+    "hsk5l-extension-30-01",
+    "hsk5l-application-30-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0003",
+    "hsk5l-lexeme-0015",
+    "hsk5l-lexeme-0016",
+    "hsk5l-lexeme-0022",
+    "hsk5l-lexeme-0062",
+    "hsk5l-lexeme-0082",
+    "hsk5l-lexeme-0113",
+    "hsk5l-lexeme-0116",
+    "hsk5l-lexeme-0118",
+    "hsk5l-lexeme-0133",
+    "hsk5l-lexeme-0151",
+    "hsk5l-lexeme-0152",
+    "hsk5l-lexeme-0194",
+    "hsk5l-lexeme-0209",
+    "hsk5l-lexeme-0247",
+    "hsk5l-lexeme-0300",
+    "hsk5l-lexeme-0325",
+    "hsk5l-lexeme-0329",
+    "hsk5l-lexeme-0338",
+    "hsk5l-lexeme-0358",
+    "hsk5l-lexeme-0366",
+    "hsk5l-lexeme-0415",
+    "hsk5l-lexeme-0438",
+    "hsk5l-lexeme-0443",
+    "hsk5l-lexeme-0448"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-022",
+    "hsk5l-beyond-level-049",
+    "hsk5l-beyond-level-052",
+    "hsk5l-beyond-level-082",
+    "hsk5l-beyond-level-086",
+    "hsk5l-beyond-level-096",
+    "hsk5l-beyond-level-117",
+    "hsk5l-beyond-level-120",
+    "hsk5l-beyond-level-123",
+    "hsk5l-beyond-level-124",
+    "hsk5l-beyond-level-129"
+  ],
+  "vocabularyCount": 25,
+  "beyondLevelVocabularyCount": 11,
+  "allVocabularyCount": 36,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

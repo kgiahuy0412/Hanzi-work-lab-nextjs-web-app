@@ -1,0 +1,113 @@
+{
+  "schemaVersion": "1.0.0",
+  "properNames": [
+    {
+      "id": "hsk4u-tb-l01-proper-01",
+      "lessonRef": "hsk4u-tb-lesson-01",
+      "hanzi": "孙月",
+      "pinyin": "sūn yuè",
+      "sourceTextOcrRaw": "1.孙月 Sun Yue Ton Nguyel 3.李进 LY Jn Ly Tien (ten nguoi)",
+      "sourcePageRef": "hsk4u-tb-source-page-011",
+      "sourceRowIndexes": [
+        22
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l01-proper-02",
+      "lessonRef": "hsk4u-tb-lesson-01",
+      "hanzi": "李进",
+      "pinyin": "lǐ jìn",
+      "sourceTextOcrRaw": "1.孙月 Sun Yue Ton Nguyel 3.李进 LY Jn Ly Tien (ten nguoi)",
+      "sourcePageRef": "hsk4u-tb-source-page-011",
+      "sourceRowIndexes": [
+        22
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l01-proper-03",
+      "lessonRef": "hsk4u-tb-lesson-01",
+      "hanzi": "王静",
+      "pinyin": "wáng jìng",
+      "sourceTextOcrRaw": "2.王静Wang JingVuongTinh",
+      "sourcePageRef": "hsk4u-tb-source-page-011",
+      "sourceRowIndexes": [
+        24
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l02-proper-01",
+      "lessonRef": "hsk4u-tb-lesson-02",
+      "hanzi": "马克",
+      "pinyin": "mǎ kè",
+      "sourceTextOcrRaw": "2.马克 Make Mark",
+      "sourcePageRef": "hsk4u-tb-source-page-023",
+      "sourceRowIndexes": [
+        25
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l02-proper-02",
+      "lessonRef": "hsk4u-tb-lesson-02",
+      "hanzi": "张远",
+      "pinyin": "zhāng yuǎn",
+      "sourceTextOcrRaw": "4.张远 ZhangYuänTruongVien",
+      "sourcePageRef": "hsk4u-tb-source-page-023",
+      "sourceRowIndexes": [
+        49
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l02-proper-03",
+      "lessonRef": "hsk4u-tb-lesson-02",
+      "hanzi": "上海",
+      "pinyin": "shàng hǎi",
+      "sourceTextOcrRaw": "会。聚会就在学校门口那个饭 5.上海 Shanghäi ThuongHai",
+      "sourcePageRef": "hsk4u-tb-source-page-023",
+      "sourceRowIndexes": [
+        51
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l03-proper-01",
+      "lessonRef": "hsk4u-tb-lesson-03",
+      "hanzi": "小雨",
+      "pinyin": "xiǎo yǔ",
+      "sourceTextOcrRaw": "1. 小雨XidoyuTiu Vi",
+      "sourcePageRef": "hsk4u-tb-source-page-035",
+      "sourceRowIndexes": [
+        22
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l09-proper-01",
+      "lessonRef": "hsk4u-tb-lesson-09",
+      "hanzi": "王红",
+      "pinyin": "wáng hóng",
+      "sourceTextOcrRaw": "弃是一种聪明的选择。 王红 Wang Hong",
+      "sourcePageRef": "hsk4u-tb-source-page-112",
+      "sourceRowIndexes": [
+        23
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-l09-proper-02",
+      "lessonRef": "hsk4u-tb-lesson-09",
+      "hanzi": "爱迪生",
+      "pinyin": "ài dí shēng",
+      "sourceTextOcrRaw": "就算只有1%的希望，我们也要做出 爱迪生 Aidisheng",
+      "sourcePageRef": "hsk4u-tb-source-page-117",
+      "sourceRowIndexes": [
+        34
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    }
+  ]
+}

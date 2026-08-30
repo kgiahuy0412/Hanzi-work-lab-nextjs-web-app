@@ -1,0 +1,178 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk4l-tb-lesson-13",
+  "lessonNumber": 13,
+  "status": "review",
+  "title": {
+    "zh": "喝着茶看京剧",
+    "pinyin": "hē zhe chá kàn jīng jù",
+    "vi": "Uống trà trong lúc xem Kinh kịch"
+  },
+  "source": {
+    "pdfPages": [
+      36,
+      49
+    ],
+    "printedPages": [
+      36,
+      49
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk4l-tb-source-page-036",
+      "hsk4l-tb-source-page-037",
+      "hsk4l-tb-source-page-038",
+      "hsk4l-tb-source-page-039",
+      "hsk4l-tb-source-page-040",
+      "hsk4l-tb-source-page-041",
+      "hsk4l-tb-source-page-042",
+      "hsk4l-tb-source-page-043",
+      "hsk4l-tb-source-page-044",
+      "hsk4l-tb-source-page-045",
+      "hsk4l-tb-source-page-046",
+      "hsk4l-tb-source-page-047",
+      "hsk4l-tb-source-page-048",
+      "hsk4l-tb-source-page-049"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk4l-tb-l13-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk4l-tb-lesson-13-text-1",
+        "hsk4l-tb-lesson-13-text-2",
+        "hsk4l-tb-lesson-13-text-3",
+        "hsk4l-tb-lesson-13-text-4",
+        "hsk4l-tb-lesson-13-text-5"
+      ],
+      "sourcePageRefs": [
+        "hsk4l-tb-source-page-037",
+        "hsk4l-tb-source-page-038",
+        "hsk4l-tb-source-page-039",
+        "hsk4l-tb-source-page-043",
+        "hsk4l-tb-source-page-044"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk4l-tb-l13-v01",
+        "hsk4l-tb-l13-v02",
+        "hsk4l-tb-l13-v03",
+        "hsk4l-tb-l13-v04",
+        "hsk4l-tb-l13-v05",
+        "hsk4l-tb-l13-v06",
+        "hsk4l-tb-l13-v07",
+        "hsk4l-tb-l13-v08",
+        "hsk4l-tb-l13-v09",
+        "hsk4l-tb-l13-v10",
+        "hsk4l-tb-l13-v11",
+        "hsk4l-tb-l13-v12",
+        "hsk4l-tb-l13-v13",
+        "hsk4l-tb-l13-v14",
+        "hsk4l-tb-l13-v15",
+        "hsk4l-tb-l13-v16",
+        "hsk4l-tb-l13-v17",
+        "hsk4l-tb-l13-v18",
+        "hsk4l-tb-l13-v19",
+        "hsk4l-tb-l13-v20",
+        "hsk4l-tb-l13-v21",
+        "hsk4l-tb-l13-v22",
+        "hsk4l-tb-l13-v23",
+        "hsk4l-tb-l13-v24",
+        "hsk4l-tb-l13-v25",
+        "hsk4l-tb-l13-v26",
+        "hsk4l-tb-l13-v27",
+        "hsk4l-tb-l13-v28",
+        "hsk4l-tb-l13-v29",
+        "hsk4l-tb-l13-v30",
+        "hsk4l-tb-l13-v31",
+        "hsk4l-tb-l13-v32"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk4l-tb-l13-pinyin-transcript-01",
+        "hsk4l-tb-l13-pinyin-transcript-02"
+      ]
+    },
+    {
+      "type": "annotation",
+      "contentRefs": [
+        "hsk4l-tb-l13-annotation-01",
+        "hsk4l-tb-l13-annotation-02"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk4l-tb-l13-practice-01",
+        "hsk4l-tb-l13-practice-02",
+        "hsk4l-tb-l13-practice-03",
+        "hsk4l-tb-l13-practice-04",
+        "hsk4l-tb-l13-practice-05",
+        "hsk4l-tb-l13-practice-06",
+        "hsk4l-tb-l13-practice-07"
+      ]
+    },
+    {
+      "type": "comparison",
+      "contentRefs": [
+        "hsk4l-tb-comparison-13"
+      ],
+      "pageBlockRefs": [
+        "hsk4l-tb-l13-comparison-01"
+      ]
+    },
+    {
+      "type": "same-character-words",
+      "contentRefs": [
+        "hsk4l-tb-same-character-13"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk4l-tb-l13-extension-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk4l-tb-l13-application-01"
+      ]
+    },
+    {
+      "type": "culture",
+      "contentRefs": [
+        "hsk4l-tb-culture-13"
+      ],
+      "pageBlockRefs": [
+        "hsk4l-tb-l13-culture-01"
+      ]
+    },
+    {
+      "type": "answer-key",
+      "contentRefs": [
+        "hsk4l-tb-answer-key"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "included-as-page-level-ocr-in-appendix",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và pinyin với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

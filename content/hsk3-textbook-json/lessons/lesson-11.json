@@ -1,0 +1,125 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-11",
+  "lessonNumber": 11,
+  "status": "review",
+  "title": {
+    "zh": "别忘了把空调关了。",
+    "pinyin": "bié wàng le bǎ kōng tiáo guān le 。",
+    "vi": "Đừng quên tắt máy điều hòa không khí nhé."
+  },
+  "source": {
+    "pdfPages": [
+      106,
+      113
+    ],
+    "printedPages": [
+      106,
+      113
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-106",
+      "hsk3-tb-source-page-107",
+      "hsk3-tb-source-page-108",
+      "hsk3-tb-source-page-109",
+      "hsk3-tb-source-page-110",
+      "hsk3-tb-source-page-111",
+      "hsk3-tb-source-page-112",
+      "hsk3-tb-source-page-113"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l11-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-11-scene-1",
+        "hsk3-tb-lesson-11-scene-2",
+        "hsk3-tb-lesson-11-scene-3",
+        "hsk3-tb-lesson-11-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-107",
+        "hsk3-tb-source-page-108"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l11-v01",
+        "hsk3-tb-l11-v02",
+        "hsk3-tb-l11-v03",
+        "hsk3-tb-l11-v04",
+        "hsk3-tb-l11-v05",
+        "hsk3-tb-l11-v06",
+        "hsk3-tb-l11-v07",
+        "hsk3-tb-l11-v08",
+        "hsk3-tb-l11-v09",
+        "hsk3-tb-l11-v10",
+        "hsk3-tb-l11-v11",
+        "hsk3-tb-l11-v12",
+        "hsk3-tb-l11-v13",
+        "hsk3-tb-l11-v14",
+        "hsk3-tb-l11-v15",
+        "hsk3-tb-l11-v16",
+        "hsk3-tb-l11-v17",
+        "hsk3-tb-l11-v18",
+        "hsk3-tb-l11-v19"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l11-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l11-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l11-practice-01",
+        "hsk3-tb-l11-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l11-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l11-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l11-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

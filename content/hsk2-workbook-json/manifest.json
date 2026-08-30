@@ -1,0 +1,138 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "hsk2-standard-course-workbook-vi-v1",
+  "title": "Bộ dữ liệu JSON từ Giáo trình chuẩn HSK 2 — Sách bài tập",
+  "description": "Dữ liệu 15 bài, đề mô phỏng, hướng dẫn thi, nhóm bài tập, câu hỏi, media placeholder và bằng chứng OCR theo trang.",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN",
+    "pinyinSystem": "hanyu-pinyin-diacritic"
+  },
+  "status": "review",
+  "sourceRef": "source-analysis.json",
+  "curriculumRef": "curriculum.json",
+  "files": [
+    {
+      "path": "schemas/workbook-lesson.schema.json",
+      "kind": "schema"
+    },
+    {
+      "path": "source-analysis.json",
+      "kind": "source-analysis"
+    },
+    {
+      "path": "curriculum.json",
+      "kind": "curriculum"
+    },
+    {
+      "path": "shared/source-pages.json",
+      "kind": "ocr-evidence"
+    },
+    {
+      "path": "shared/exercise-groups.json",
+      "kind": "shared-content",
+      "entity": "exercise-group"
+    },
+    {
+      "path": "shared/exercise-items.json",
+      "kind": "shared-content",
+      "entity": "exercise-item"
+    },
+    {
+      "path": "shared/media-assets.json",
+      "kind": "shared-content",
+      "entity": "media"
+    },
+    {
+      "path": "mock-exam.json",
+      "kind": "mock-exam"
+    },
+    {
+      "path": "exam-guide.json",
+      "kind": "exam-guide"
+    },
+    {
+      "path": "lessons/lesson-01.json",
+      "kind": "lesson",
+      "lessonNumber": 1
+    },
+    {
+      "path": "lessons/lesson-02.json",
+      "kind": "lesson",
+      "lessonNumber": 2
+    },
+    {
+      "path": "lessons/lesson-03.json",
+      "kind": "lesson",
+      "lessonNumber": 3
+    },
+    {
+      "path": "lessons/lesson-04.json",
+      "kind": "lesson",
+      "lessonNumber": 4
+    },
+    {
+      "path": "lessons/lesson-05.json",
+      "kind": "lesson",
+      "lessonNumber": 5
+    },
+    {
+      "path": "lessons/lesson-06.json",
+      "kind": "lesson",
+      "lessonNumber": 6
+    },
+    {
+      "path": "lessons/lesson-07.json",
+      "kind": "lesson",
+      "lessonNumber": 7
+    },
+    {
+      "path": "lessons/lesson-08.json",
+      "kind": "lesson",
+      "lessonNumber": 8
+    },
+    {
+      "path": "lessons/lesson-09.json",
+      "kind": "lesson",
+      "lessonNumber": 9
+    },
+    {
+      "path": "lessons/lesson-10.json",
+      "kind": "lesson",
+      "lessonNumber": 10
+    },
+    {
+      "path": "lessons/lesson-11.json",
+      "kind": "lesson",
+      "lessonNumber": 11
+    },
+    {
+      "path": "lessons/lesson-12.json",
+      "kind": "lesson",
+      "lessonNumber": 12
+    },
+    {
+      "path": "lessons/lesson-13.json",
+      "kind": "lesson",
+      "lessonNumber": 13
+    },
+    {
+      "path": "lessons/lesson-14.json",
+      "kind": "lesson",
+      "lessonNumber": 14
+    },
+    {
+      "path": "lessons/lesson-15.json",
+      "kind": "lesson",
+      "lessonNumber": 15
+    }
+  ],
+  "counts": {
+    "lessons": 15,
+    "lessonExerciseGroups": 135,
+    "lessonQuestions": 525,
+    "mockExamQuestions": 60,
+    "mediaPlaceholders": 31,
+    "ocrSourcePages": 166
+  }
+}

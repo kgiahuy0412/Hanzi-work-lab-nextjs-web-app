@@ -1,0 +1,123 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-tb-lesson-01",
+  "lessonNumber": 1,
+  "status": "review",
+  "title": {
+    "zh": "九月去北京旅游最好。",
+    "pinyin": "jiǔ yuè qù běi jīng lǚ yóu zuì hǎo。",
+    "vi": "Nếu đi Bắc Kinh để du lịch thì tốt nhất là đi vào tháng chín."
+  },
+  "source": {
+    "pdfPages": [
+      15,
+      22
+    ],
+    "printedPages": [
+      15,
+      22
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk2-tb-source-page-015",
+      "hsk2-tb-source-page-016",
+      "hsk2-tb-source-page-017",
+      "hsk2-tb-source-page-018",
+      "hsk2-tb-source-page-019",
+      "hsk2-tb-source-page-020",
+      "hsk2-tb-source-page-021",
+      "hsk2-tb-source-page-022"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk2-tb-l01-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk2-tb-lesson-01-scene-1",
+        "hsk2-tb-lesson-01-scene-2",
+        "hsk2-tb-lesson-01-scene-3",
+        "hsk2-tb-lesson-01-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk2-tb-source-page-016",
+        "hsk2-tb-source-page-017"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk2-tb-l01-v01",
+        "hsk2-tb-l01-v02",
+        "hsk2-tb-l01-v03",
+        "hsk2-tb-l01-v04",
+        "hsk2-tb-l01-v05",
+        "hsk2-tb-l01-v06",
+        "hsk2-tb-l01-v07",
+        "hsk2-tb-l01-v08",
+        "hsk2-tb-l01-v09",
+        "hsk2-tb-l01-v10",
+        "hsk2-tb-l01-v11",
+        "hsk2-tb-l01-v12"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": []
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk2-tb-l01-grammar-01",
+        "hsk2-tb-l01-grammar-02",
+        "hsk2-tb-l01-grammar-03"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l01-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk2-tb-l01-practice-01"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk2-tb-l01-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk2-tb-l01-application-01"
+      ]
+    },
+    {
+      "type": "pronunciation",
+      "contentRefs": [
+        "hsk2-tb-l01-pronunciation"
+      ],
+      "sourceBlockRefs": [
+        "hsk2-tb-l01-pronunciation-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

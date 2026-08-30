@@ -1,0 +1,295 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-standard-course-textbook",
+  "title": "Giáo trình chuẩn HSK 3",
+  "lessonCount": 20,
+  "lessons": [
+    {
+      "lessonNumber": 1,
+      "lessonRef": "lessons/lesson-01.json",
+      "titleZh": "周末你有什么打算？",
+      "titleVi": "Anh dự định làm gì vào cuối tuần vậy?",
+      "pdfPages": [
+        17,
+        26
+      ],
+      "printedPages": [
+        17,
+        26
+      ]
+    },
+    {
+      "lessonNumber": 2,
+      "lessonRef": "lessons/lesson-02.json",
+      "titleZh": "他什么时候回来？",
+      "titleVi": "Khi nào anh ấy quay về?",
+      "pdfPages": [
+        27,
+        35
+      ],
+      "printedPages": [
+        27,
+        35
+      ]
+    },
+    {
+      "lessonNumber": 3,
+      "lessonRef": "lessons/lesson-03.json",
+      "titleZh": "桌子上放着很多饮料。",
+      "titleVi": "Trên bàn có rất nhiều thức uống.",
+      "pdfPages": [
+        36,
+        44
+      ],
+      "printedPages": [
+        36,
+        44
+      ]
+    },
+    {
+      "lessonNumber": 4,
+      "lessonRef": "lessons/lesson-04.json",
+      "titleZh": "她总是笑着跟客人说话。",
+      "titleVi": "Cô ấy luôn cười khi nói chuyện với khách hàng.",
+      "pdfPages": [
+        45,
+        52
+      ],
+      "printedPages": [
+        45,
+        52
+      ]
+    },
+    {
+      "lessonNumber": 5,
+      "lessonRef": "lessons/lesson-05.json",
+      "titleZh": "我最近越来越胖了。",
+      "titleVi": "Dạo này em ngày càng béo ra.",
+      "pdfPages": [
+        53,
+        60
+      ],
+      "printedPages": [
+        53,
+        60
+      ]
+    },
+    {
+      "lessonNumber": 6,
+      "lessonRef": "lessons/lesson-06.json",
+      "titleZh": "怎么突然找不到了？",
+      "titleVi": "Sao bỗng dưng lại không tìm thấy?",
+      "pdfPages": [
+        62,
+        70
+      ],
+      "printedPages": [
+        62,
+        70
+      ]
+    },
+    {
+      "lessonNumber": 7,
+      "lessonRef": "lessons/lesson-07.json",
+      "titleZh": "我跟她都认识五年了。",
+      "titleVi": "Tôi và cô ấy quen nhau được năm năm rồi.",
+      "pdfPages": [
+        71,
+        79
+      ],
+      "printedPages": [
+        71,
+        79
+      ]
+    },
+    {
+      "lessonNumber": 8,
+      "lessonRef": "lessons/lesson-08.json",
+      "titleZh": "你去哪儿我就去哪儿。",
+      "titleVi": "Em đi đâu thì anh đi đến đó.",
+      "pdfPages": [
+        80,
+        87
+      ],
+      "printedPages": [
+        80,
+        87
+      ]
+    },
+    {
+      "lessonNumber": 9,
+      "lessonRef": "lessons/lesson-09.json",
+      "titleZh": "她的汉语说得跟中国人一样好。",
+      "titleVi": "Cô ấy nói tiếng Trung Quốc hay như người Trung Quốc vậy.",
+      "pdfPages": [
+        88,
+        96
+      ],
+      "printedPages": [
+        88,
+        96
+      ]
+    },
+    {
+      "lessonNumber": 10,
+      "lessonRef": "lessons/lesson-10.json",
+      "titleZh": "数学比历史难多了。",
+      "titleVi": "Môn Toán khó hơn môn Lịch sử nhiều.",
+      "pdfPages": [
+        97,
+        104
+      ],
+      "printedPages": [
+        97,
+        104
+      ]
+    },
+    {
+      "lessonNumber": 11,
+      "lessonRef": "lessons/lesson-11.json",
+      "titleZh": "别忘了把空调关了。",
+      "titleVi": "Đừng quên tắt máy điều hòa không khí nhé.",
+      "pdfPages": [
+        106,
+        113
+      ],
+      "printedPages": [
+        106,
+        113
+      ]
+    },
+    {
+      "lessonNumber": 12,
+      "lessonRef": "lessons/lesson-12.json",
+      "titleZh": "把重要的东西放在我这儿吧。",
+      "titleVi": "Hãy để những đồ quan trọng ở chỗ tôi đi.",
+      "pdfPages": [
+        114,
+        122
+      ],
+      "printedPages": [
+        114,
+        122
+      ]
+    },
+    {
+      "lessonNumber": 13,
+      "lessonRef": "lessons/lesson-13.json",
+      "titleZh": "我是走回来的。",
+      "titleVi": "Anh đi bộ về.",
+      "pdfPages": [
+        123,
+        131
+      ],
+      "printedPages": [
+        123,
+        131
+      ]
+    },
+    {
+      "lessonNumber": 14,
+      "lessonRef": "lessons/lesson-14.json",
+      "titleZh": "你把水果拿过来。",
+      "titleVi": "Cậu hãy mang trái cây đến đây.",
+      "pdfPages": [
+        132,
+        140
+      ],
+      "printedPages": [
+        132,
+        140
+      ]
+    },
+    {
+      "lessonNumber": 15,
+      "lessonRef": "lessons/lesson-15.json",
+      "titleZh": "其他都没什么问题。",
+      "titleVi": "Những câu khác đều không có vấn đề gì.",
+      "pdfPages": [
+        141,
+        149
+      ],
+      "printedPages": [
+        141,
+        149
+      ]
+    },
+    {
+      "lessonNumber": 16,
+      "lessonRef": "lessons/lesson-16.json",
+      "titleZh": "我现在累得下了班就想睡觉。",
+      "titleVi": "Bây giờ tôi mệt đến nỗi chỉ muốn đi ngủ sau khi hết giờ làm việc.",
+      "pdfPages": [
+        151,
+        158
+      ],
+      "printedPages": [
+        151,
+        158
+      ]
+    },
+    {
+      "lessonNumber": 17,
+      "lessonRef": "lessons/lesson-17.json",
+      "titleZh": "谁都有办法看好你的“病”。",
+      "titleVi": "Ai cũng có cách chữa khỏi “bệnh” của em.",
+      "pdfPages": [
+        159,
+        166
+      ],
+      "printedPages": [
+        159,
+        166
+      ]
+    },
+    {
+      "lessonNumber": 18,
+      "lessonRef": "lessons/lesson-18.json",
+      "titleZh": "我相信他们会同意的。",
+      "titleVi": "Tôi tin họ sẽ đồng ý.",
+      "pdfPages": [
+        167,
+        172
+      ],
+      "printedPages": [
+        167,
+        174
+      ]
+    },
+    {
+      "lessonNumber": 19,
+      "lessonRef": "lessons/lesson-19.json",
+      "titleZh": "你没看出来吗？",
+      "titleVi": "Anh không nhìn ra được à?",
+      "pdfPages": [
+        173,
+        181
+      ],
+      "printedPages": [
+        175,
+        183
+      ]
+    },
+    {
+      "lessonNumber": 20,
+      "lessonRef": "lessons/lesson-20.json",
+      "titleZh": "我被他影响了。",
+      "titleVi": "Mình chịu ảnh hưởng từ anh ấy.",
+      "pdfPages": [
+        182,
+        190
+      ],
+      "printedPages": [
+        184,
+        192
+      ]
+    }
+  ],
+  "cultureRefs": [
+    "hsk3-tb-culture-01",
+    "hsk3-tb-culture-02",
+    "hsk3-tb-culture-03",
+    "hsk3-tb-culture-04"
+  ],
+  "appendixRef": "appendices/vocabulary-summary.json"
+}

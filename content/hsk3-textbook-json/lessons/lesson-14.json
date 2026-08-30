@@ -1,0 +1,123 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-14",
+  "lessonNumber": 14,
+  "status": "review",
+  "title": {
+    "zh": "你把水果拿过来。",
+    "pinyin": "nǐ bǎ shuǐ guǒ ná guò lái 。",
+    "vi": "Cậu hãy mang trái cây đến đây."
+  },
+  "source": {
+    "pdfPages": [
+      132,
+      140
+    ],
+    "printedPages": [
+      132,
+      140
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-132",
+      "hsk3-tb-source-page-133",
+      "hsk3-tb-source-page-134",
+      "hsk3-tb-source-page-135",
+      "hsk3-tb-source-page-136",
+      "hsk3-tb-source-page-137",
+      "hsk3-tb-source-page-138",
+      "hsk3-tb-source-page-139",
+      "hsk3-tb-source-page-140"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l14-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-14-scene-1",
+        "hsk3-tb-lesson-14-scene-2",
+        "hsk3-tb-lesson-14-scene-3",
+        "hsk3-tb-lesson-14-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-133",
+        "hsk3-tb-source-page-134"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l14-v01",
+        "hsk3-tb-l14-v02",
+        "hsk3-tb-l14-v03",
+        "hsk3-tb-l14-v04",
+        "hsk3-tb-l14-v05",
+        "hsk3-tb-l14-v06",
+        "hsk3-tb-l14-v07",
+        "hsk3-tb-l14-v08",
+        "hsk3-tb-l14-v09",
+        "hsk3-tb-l14-v10",
+        "hsk3-tb-l14-v11",
+        "hsk3-tb-l14-v12",
+        "hsk3-tb-l14-v13",
+        "hsk3-tb-l14-v14",
+        "hsk3-tb-l14-v15",
+        "hsk3-tb-l14-v16",
+        "hsk3-tb-l14-v17"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l14-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l14-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l14-practice-01"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l14-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l14-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l14-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

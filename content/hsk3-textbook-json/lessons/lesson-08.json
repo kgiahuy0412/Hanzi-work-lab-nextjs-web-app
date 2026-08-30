@@ -1,0 +1,123 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-08",
+  "lessonNumber": 8,
+  "status": "review",
+  "title": {
+    "zh": "你去哪儿我就去哪儿。",
+    "pinyin": "nǐ qù nǎ ér wǒ jiù qù nǎ ér 。",
+    "vi": "Em đi đâu thì anh đi đến đó."
+  },
+  "source": {
+    "pdfPages": [
+      80,
+      87
+    ],
+    "printedPages": [
+      80,
+      87
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-080",
+      "hsk3-tb-source-page-081",
+      "hsk3-tb-source-page-082",
+      "hsk3-tb-source-page-083",
+      "hsk3-tb-source-page-084",
+      "hsk3-tb-source-page-085",
+      "hsk3-tb-source-page-086",
+      "hsk3-tb-source-page-087"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l08-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-08-scene-1",
+        "hsk3-tb-lesson-08-scene-2",
+        "hsk3-tb-lesson-08-scene-3",
+        "hsk3-tb-lesson-08-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-081",
+        "hsk3-tb-source-page-082"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l08-v01",
+        "hsk3-tb-l08-v02",
+        "hsk3-tb-l08-v03",
+        "hsk3-tb-l08-v04",
+        "hsk3-tb-l08-v05",
+        "hsk3-tb-l08-v06",
+        "hsk3-tb-l08-v07",
+        "hsk3-tb-l08-v08",
+        "hsk3-tb-l08-v09",
+        "hsk3-tb-l08-v10",
+        "hsk3-tb-l08-v11",
+        "hsk3-tb-l08-v12",
+        "hsk3-tb-l08-v13",
+        "hsk3-tb-l08-v14",
+        "hsk3-tb-l08-v15",
+        "hsk3-tb-l08-v16",
+        "hsk3-tb-l08-v17"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l08-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l08-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l08-practice-01",
+        "hsk3-tb-l08-practice-02"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l08-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l08-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l08-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

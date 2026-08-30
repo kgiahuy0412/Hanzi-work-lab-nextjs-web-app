@@ -1,0 +1,222 @@
+{
+  "schemaVersion": "1.0.0",
+  "assets": [
+    {
+      "id": "hsk2-wb-audio-l01-listening",
+      "kind": "audio",
+      "sourceTrackCode": "01-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-01-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l01-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "01-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-01-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l02-listening",
+      "kind": "audio",
+      "sourceTrackCode": "02-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-02-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l02-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "02-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-02-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l03-listening",
+      "kind": "audio",
+      "sourceTrackCode": "03-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-03-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l03-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "03-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-03-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l04-listening",
+      "kind": "audio",
+      "sourceTrackCode": "04-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-04-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l04-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "04-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-04-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l05-listening",
+      "kind": "audio",
+      "sourceTrackCode": "05-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-05-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l05-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "05-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-05-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l06-listening",
+      "kind": "audio",
+      "sourceTrackCode": "06-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-06-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l06-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "06-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-06-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l07-listening",
+      "kind": "audio",
+      "sourceTrackCode": "07-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-07-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l07-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "07-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-07-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l08-listening",
+      "kind": "audio",
+      "sourceTrackCode": "08-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-08-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l08-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "08-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-08-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l09-listening",
+      "kind": "audio",
+      "sourceTrackCode": "09-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-09-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l09-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "09-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-09-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l10-listening",
+      "kind": "audio",
+      "sourceTrackCode": "10-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-10-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l10-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "10-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-10-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l11-listening",
+      "kind": "audio",
+      "sourceTrackCode": "11-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-11-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l11-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "11-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-11-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l12-listening",
+      "kind": "audio",
+      "sourceTrackCode": "12-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-12-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l12-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "12-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-12-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l13-listening",
+      "kind": "audio",
+      "sourceTrackCode": "13-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-13-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l13-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "13-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-13-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l14-listening",
+      "kind": "audio",
+      "sourceTrackCode": "14-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-14-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l14-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "14-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-14-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-l15-listening",
+      "kind": "audio",
+      "sourceTrackCode": "15-1",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-15-listening"
+    },
+    {
+      "id": "hsk2-wb-audio-l15-pronunciation",
+      "kind": "audio",
+      "sourceTrackCode": "15-2",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-lesson-15-pronunciation"
+    },
+    {
+      "id": "hsk2-wb-audio-mock-listening",
+      "kind": "audio",
+      "sourceTrackCode": "mock-exam-listening",
+      "availability": "not-in-supplied-pdf",
+      "requiredBy": "hsk2-wb-mock-exam-01"
+    }
+  ]
+}

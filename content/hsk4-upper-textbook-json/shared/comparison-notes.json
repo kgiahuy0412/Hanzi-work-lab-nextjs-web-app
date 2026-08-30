@@ -1,0 +1,135 @@
+{
+  "schemaVersion": "1.0.0",
+  "comparisons": [
+    {
+      "id": "hsk4u-tb-comparison-01",
+      "lessonRef": "hsk4u-tb-lesson-01",
+      "terms": [
+        "刚",
+        "刚才"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l01-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-02",
+      "lessonRef": "hsk4u-tb-lesson-02",
+      "terms": [
+        "差不多",
+        "几乎"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l02-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-03",
+      "lessonRef": "hsk4u-tb-lesson-03",
+      "terms": [
+        "另",
+        "另外"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l03-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-04",
+      "lessonRef": "hsk4u-tb-lesson-04",
+      "terms": [
+        "原来",
+        "本来"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l04-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-05",
+      "lessonRef": "hsk4u-tb-lesson-05",
+      "terms": [
+        "尤其",
+        "特别"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l05-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-06",
+      "lessonRef": "hsk4u-tb-lesson-06",
+      "terms": [
+        "值得",
+        "值"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l06-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-07",
+      "lessonRef": "hsk4u-tb-lesson-07",
+      "terms": [
+        "估计",
+        "可能"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l07-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-08",
+      "lessonRef": "hsk4u-tb-lesson-08",
+      "terms": [
+        "往往",
+        "经常"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l08-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-09",
+      "lessonRef": "hsk4u-tb-lesson-09",
+      "terms": [
+        "通过",
+        "经过"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l09-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4u-tb-comparison-10",
+      "lessonRef": "hsk4u-tb-lesson-10",
+      "terms": [
+        "不过",
+        "但是"
+      ],
+      "source": "table-of-contents-and-lesson-comparison-block",
+      "pageBlockRefs": [
+        "hsk4u-tb-l10-comparison-01"
+      ],
+      "transcriptionStatus": "heading-verified-body-ocr-needs-editorial-review"
+    }
+  ]
+}

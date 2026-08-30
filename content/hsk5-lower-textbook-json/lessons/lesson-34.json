@@ -1,0 +1,119 @@
+{
+  "id": "hsk5l-lesson-34",
+  "number": 34,
+  "unitId": "hsk5l-unit-12",
+  "titleZh": "鸟儿的护肤术",
+  "titleVi": "Cách loài chim bảo vệ da",
+  "sourcePdfPages": {
+    "start": 141,
+    "end": 148
+  },
+  "sourcePrintedPages": {
+    "start": 140,
+    "end": 147
+  },
+  "audioTracks": [
+    "34-1",
+    "34-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 141,
+      "rowIndex": 2,
+      "matchedTextOcr": "热身 请看下面的图片，试着找出本课跟它们有关的生词。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 141,
+      "rowIndex": 7,
+      "matchedTextOcr": "课文 鸟儿的护肤术 （661字） 34-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "注释",
+      "pdfPage": 143,
+      "rowIndex": 15,
+      "matchedTextOcr": "注释（一）词语例释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 144,
+      "rowIndex": 23,
+      "matchedTextOcr": "（2）他把纸铺（pu，trai）A，笔拿B好，准备C练习D书法。"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 147,
+      "rowIndex": 19,
+      "matchedTextOcr": "扩展 话题 HSK（五级）话题分类词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 148,
+      "rowIndex": 7,
+      "matchedTextOcr": "运用 背景分析："
+    }
+  ],
+  "textIds": [
+    "hsk5l-text-34-01"
+  ],
+  "blockIds": [
+    "hsk5l-warmup-34-01",
+    "hsk5l-annotation-34-01",
+    "hsk5l-practice-34-01",
+    "hsk5l-extension-34-01",
+    "hsk5l-application-34-01"
+  ],
+  "lexemeIds": [
+    "hsk5l-lexeme-0001",
+    "hsk5l-lexeme-0051",
+    "hsk5l-lexeme-0052",
+    "hsk5l-lexeme-0078",
+    "hsk5l-lexeme-0100",
+    "hsk5l-lexeme-0105",
+    "hsk5l-lexeme-0115",
+    "hsk5l-lexeme-0120",
+    "hsk5l-lexeme-0142",
+    "hsk5l-lexeme-0193",
+    "hsk5l-lexeme-0210",
+    "hsk5l-lexeme-0228",
+    "hsk5l-lexeme-0252",
+    "hsk5l-lexeme-0344",
+    "hsk5l-lexeme-0354",
+    "hsk5l-lexeme-0361",
+    "hsk5l-lexeme-0370",
+    "hsk5l-lexeme-0372",
+    "hsk5l-lexeme-0383",
+    "hsk5l-lexeme-0427",
+    "hsk5l-lexeme-0472",
+    "hsk5l-lexeme-0480",
+    "hsk5l-lexeme-0497"
+  ],
+  "beyondLevelLexemeIds": [
+    "hsk5l-beyond-level-003",
+    "hsk5l-beyond-level-005",
+    "hsk5l-beyond-level-018",
+    "hsk5l-beyond-level-051",
+    "hsk5l-beyond-level-065",
+    "hsk5l-beyond-level-068",
+    "hsk5l-beyond-level-093",
+    "hsk5l-beyond-level-097",
+    "hsk5l-beyond-level-132",
+    "hsk5l-beyond-level-153",
+    "hsk5l-beyond-level-161"
+  ],
+  "vocabularyCount": 23,
+  "beyondLevelVocabularyCount": 11,
+  "allVocabularyCount": 34,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

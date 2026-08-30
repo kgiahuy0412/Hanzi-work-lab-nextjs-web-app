@@ -1,0 +1,174 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "hsk2-standard-course-workbook",
+  "title": "Giáo trình chuẩn HSK 2 — Sách bài tập",
+  "lessonCount": 15,
+  "lessons": [
+    {
+      "lessonNumber": 1,
+      "lessonRef": "lessons/lesson-01.json",
+      "titleZh": "九月去北京旅游最好。",
+      "titleVi": "Nếu đi Bắc Kinh để du lịch thì tốt nhất là đi vào tháng chín.",
+      "pdfPages": [
+        7,
+        16
+      ]
+    },
+    {
+      "lessonNumber": 2,
+      "lessonRef": "lessons/lesson-02.json",
+      "titleZh": "我每天六点起床。",
+      "titleVi": "Hằng ngày tôi thức dậy lúc 6 giờ.",
+      "pdfPages": [
+        17,
+        26
+      ]
+    },
+    {
+      "lessonNumber": 3,
+      "lessonRef": "lessons/lesson-03.json",
+      "titleZh": "左边那个红色的是我的。",
+      "titleVi": "Ly màu đỏ ở bên trái là của tôi.",
+      "pdfPages": [
+        27,
+        36
+      ]
+    },
+    {
+      "lessonNumber": 4,
+      "lessonRef": "lessons/lesson-04.json",
+      "titleZh": "这个工作是他帮我介绍的。",
+      "titleVi": "Ông ấy đã giới thiệu giúp tôi công việc này.",
+      "pdfPages": [
+        37,
+        46
+      ]
+    },
+    {
+      "lessonNumber": 5,
+      "lessonRef": "lessons/lesson-05.json",
+      "titleZh": "就买这件吧。",
+      "titleVi": "Mua chiếc áo này đi.",
+      "pdfPages": [
+        47,
+        56
+      ]
+    },
+    {
+      "lessonNumber": 6,
+      "lessonRef": "lessons/lesson-06.json",
+      "titleZh": "你怎么不吃了？",
+      "titleVi": "Sao anh không ăn nữa?",
+      "pdfPages": [
+        57,
+        66
+      ]
+    },
+    {
+      "lessonNumber": 7,
+      "lessonRef": "lessons/lesson-07.json",
+      "titleZh": "你家离公司远吗？",
+      "titleVi": "Nhà chị có ở xa công ty không?",
+      "pdfPages": [
+        67,
+        75
+      ]
+    },
+    {
+      "lessonNumber": 8,
+      "lessonRef": "lessons/lesson-08.json",
+      "titleZh": "让我想想再告诉你。",
+      "titleVi": "Để mình suy nghĩ rồi sẽ nói cho bạn biết.",
+      "pdfPages": [
+        76,
+        84
+      ]
+    },
+    {
+      "lessonNumber": 9,
+      "lessonRef": "lessons/lesson-09.json",
+      "titleZh": "题太多，我没做完。",
+      "titleVi": "Câu hỏi quá nhiều nên mình không làm hết.",
+      "pdfPages": [
+        85,
+        93
+      ]
+    },
+    {
+      "lessonNumber": 10,
+      "lessonRef": "lessons/lesson-10.json",
+      "titleZh": "别找了，手机在桌子上呢。",
+      "titleVi": "Đừng tìm nữa, điện thoại di động ở trên bàn kìa.",
+      "pdfPages": [
+        94,
+        102
+      ]
+    },
+    {
+      "lessonNumber": 11,
+      "lessonRef": "lessons/lesson-11.json",
+      "titleZh": "他比我大三岁。",
+      "titleVi": "Anh ấy lớn hơn mình ba tuổi.",
+      "pdfPages": [
+        103,
+        111
+      ]
+    },
+    {
+      "lessonNumber": 12,
+      "lessonRef": "lessons/lesson-12.json",
+      "titleZh": "你穿得太少了。",
+      "titleVi": "Anh mặc ít quần áo quá.",
+      "pdfPages": [
+        112,
+        120
+      ]
+    },
+    {
+      "lessonNumber": 13,
+      "lessonRef": "lessons/lesson-13.json",
+      "titleZh": "门开着呢。",
+      "titleVi": "Cửa đang mở.",
+      "pdfPages": [
+        121,
+        129
+      ]
+    },
+    {
+      "lessonNumber": 14,
+      "lessonRef": "lessons/lesson-14.json",
+      "titleZh": "你看过这个电影吗？",
+      "titleVi": "Cậu đã từng xem phim đó chưa?",
+      "pdfPages": [
+        130,
+        138
+      ]
+    },
+    {
+      "lessonNumber": 15,
+      "lessonRef": "lessons/lesson-15.json",
+      "titleZh": "新年就要到了。",
+      "titleVi": "Năm mới sắp đến rồi.",
+      "pdfPages": [
+        139,
+        148
+      ]
+    }
+  ],
+  "supplements": [
+    {
+      "ref": "mock-exam.json",
+      "pdfPages": [
+        149,
+        162
+      ]
+    },
+    {
+      "ref": "exam-guide.json",
+      "pdfPages": [
+        163,
+        168
+      ]
+    }
+  ]
+}

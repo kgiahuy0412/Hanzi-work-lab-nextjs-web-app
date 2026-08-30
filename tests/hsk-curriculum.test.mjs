@@ -6,7 +6,7 @@ import React from "react";
 import { renderToStaticMarkup } from "react-dom/server";
 import { createServer } from "vite";
 
-test("HSK curriculum exposes the 15 textbook lessons and keeps later levels as previews", async () => {
+test("HSK curriculum exposes 15 HSK 1 lessons and 15 HSK 2 textbook lessons", async () => {
   const curriculumModule = await import("../lib/hsk-curriculum.ts").catch(() => null);
   assert.ok(curriculumModule, "the HSK curriculum should be available");
 
@@ -16,20 +16,41 @@ test("HSK curriculum exposes the 15 textbook lessons and keeps later levels as p
     ["HSK 1", "HSK 2", "HSK 3", "HSK 4", "HSK 5", "HSK 6", "HSK 7–9"],
   );
   assert.equal(HSK_CURRICULUM[0].topics.length, 3);
-  assert.ok(HSK_CURRICULUM.slice(1).every((level) => level.topics.length >= 4));
+  assert.equal(HSK_CURRICULUM[1].topics.length, 3);
+  assert.ok(HSK_CURRICULUM.slice(2).every((level) => level.topics.length >= 4));
   assert.ok(HSK_CURRICULUM.every((level) => level.topics.every((topic) => topic.lessons.length >= 3)));
+  assert.ok(HSK_CURRICULUM.every((level) => level.topics.every((topic) => (
+    topic.lessons.every((lesson) => lesson.writing === lesson.vocabulary)
+  ))));
   assert.equal(HSK_CURRICULUM[0].topics.flatMap((topic) => topic.lessons).length, 15);
+  assert.equal(HSK_CURRICULUM[1].topics.flatMap((topic) => topic.lessons).length, 15);
+  assert.ok(HSK_CURRICULUM[1].topics.flatMap((topic) => topic.lessons).every((lesson) => lesson.kind === "textbook" && lesson.available));
   assert.equal(HSK_CURRICULUM[0].topics[0].title, "Nền tảng & Làm quen");
   assert.deepEqual(HSK_CURRICULUM[0].topics[0].lessons[0], {
     id: "hsk1-bai-01-chao-anh",
     lessonNumber: 1,
     title: "Chào anh!",
+    kind: "textbook",
     vocabulary: 6,
     grammar: 0,
     dialogues: 3,
     writing: 6,
     minutes: 25,
     guidedSteps: 15,
+    available: true,
+  });
+  assert.deepEqual(HSK_CURRICULUM[1].topics[0].lessons[0], {
+    id: "hsk2-tb-lesson-01",
+    lessonNumber: 1,
+    title: "Nếu đi Bắc Kinh để du lịch thì tốt nhất là đi vào tháng chín.",
+    kind: "textbook",
+    vocabulary: 12,
+    grammar: 3,
+    dialogues: 4,
+    writing: 12,
+    exercises: 4,
+    minutes: 27,
+    guidedSteps: 27,
     available: true,
   });
 });
@@ -66,7 +87,7 @@ test("HSK curriculum renders the reference hierarchy and a working lesson destin
   assert.match(html, />Nền tảng &amp; Làm quen</);
   assert.match(html, />Bài 1: Chào anh!</);
   assert.match(html, /6 từ vựng/);
-  assert.match(html, /0 ngữ pháp/);
+  assert.doesNotMatch(html, /0 ngữ pháp/);
   assert.match(html, /3 hội thoại/);
   assert.match(html, /href="\/hsk\/1\/hsk1-bai-01-chao-anh"/);
 });

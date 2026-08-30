@@ -1,0 +1,120 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk3-tb-lesson-07",
+  "lessonNumber": 7,
+  "status": "review",
+  "title": {
+    "zh": "我跟她都认识五年了。",
+    "pinyin": "wǒ gēn tā dōu rèn shí wǔ nián le 。",
+    "vi": "Tôi và cô ấy quen nhau được năm năm rồi."
+  },
+  "source": {
+    "pdfPages": [
+      71,
+      79
+    ],
+    "printedPages": [
+      71,
+      79
+    ],
+    "missingPrintedPages": [],
+    "sourcePageRefs": [
+      "hsk3-tb-source-page-071",
+      "hsk3-tb-source-page-072",
+      "hsk3-tb-source-page-073",
+      "hsk3-tb-source-page-074",
+      "hsk3-tb-source-page-075",
+      "hsk3-tb-source-page-076",
+      "hsk3-tb-source-page-077",
+      "hsk3-tb-source-page-078",
+      "hsk3-tb-source-page-079"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk3-tb-l07-warmup-01"
+      ]
+    },
+    {
+      "type": "texts",
+      "contentRefs": [
+        "hsk3-tb-lesson-07-scene-1",
+        "hsk3-tb-lesson-07-scene-2",
+        "hsk3-tb-lesson-07-scene-3",
+        "hsk3-tb-lesson-07-scene-4"
+      ],
+      "sourcePageRefs": [
+        "hsk3-tb-source-page-072",
+        "hsk3-tb-source-page-073"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk3-tb-l07-v01",
+        "hsk3-tb-l07-v02",
+        "hsk3-tb-l07-v03",
+        "hsk3-tb-l07-v04",
+        "hsk3-tb-l07-v05",
+        "hsk3-tb-l07-v06",
+        "hsk3-tb-l07-v07",
+        "hsk3-tb-l07-v08",
+        "hsk3-tb-l07-v09",
+        "hsk3-tb-l07-v10",
+        "hsk3-tb-l07-v11",
+        "hsk3-tb-l07-v12"
+      ]
+    },
+    {
+      "type": "pinyin-transcript",
+      "contentRefs": [
+        "hsk3-tb-l07-pinyin-transcript-01"
+      ]
+    },
+    {
+      "type": "grammar",
+      "contentRefs": [
+        "hsk3-tb-l07-grammar-01"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk3-tb-l07-practice-01",
+        "hsk3-tb-l07-practice-02",
+        "hsk3-tb-l07-practice-03"
+      ]
+    },
+    {
+      "type": "hanzi",
+      "contentRefs": [
+        "hsk3-tb-l07-hanzi-01"
+      ]
+    },
+    {
+      "type": "application",
+      "contentRefs": [
+        "hsk3-tb-l07-application-01"
+      ]
+    },
+    {
+      "type": "idiom",
+      "contentRefs": [
+        "hsk3-tb-l07-idiom-01"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "answerStatus": "not-provided-in-source-pdf",
+    "sourceGapStatus": "complete-page-range",
+    "requiredActions": [
+      "Đối chiếu OCR tiếng Trung, tiếng Việt và tên riêng với PDF.",
+      "Bổ sung audio theo mã track.",
+      "Rà soát quyền sử dụng hình minh họa."
+    ]
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schemaVersion": "1.0.0",
+  "properNames": [
+    {
+      "id": "hsk4l-tb-l11-proper-01",
+      "lessonRef": "hsk4l-tb-lesson-11",
+      "hanzi": "大卫",
+      "pinyin": "dà wèi",
+      "sourceTextOcrRaw": "大卫：你太厉害了！连中文报纸都看得懂。 大卫 Dawei David",
+      "sourcePageRef": "hsk4l-tb-source-page-011",
+      "sourceRowIndexes": [
+        21
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l13-proper-01",
+      "lessonRef": "hsk4l-tb-lesson-13",
+      "hanzi": "广东省",
+      "pinyin": "guǎng dōng shěng",
+      "sourceTextOcrRaw": "广东省 Guangdong Sheng",
+      "sourcePageRef": "hsk4l-tb-source-page-044",
+      "sourceRowIndexes": [
+        19
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-proper-01",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "hanzi": "安娜",
+      "pinyin": "ān nà",
+      "sourceTextOcrRaw": "1.安娜 Anna Anna (ten",
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        19
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-proper-02",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "hanzi": "香山",
+      "pinyin": "xiāng shān",
+      "sourceTextOcrRaw": "去吧。 2.香山 Xiang Shan Huong",
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        21
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-proper-03",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "hanzi": "长城",
+      "pinyin": "cháng chéng",
+      "sourceTextOcrRaw": "3.长城Changchéng",
+      "sourcePageRef": "hsk4l-tb-source-page-095",
+      "sourceRowIndexes": [
+        24
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-proper-04",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "hanzi": "亚洲",
+      "pinyin": "yà zhōu",
+      "sourceTextOcrRaw": "共才有一千多只吧。 1.亚洲 Yazhou",
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        24
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l17-proper-05",
+      "lessonRef": "hsk4l-tb-lesson-17",
+      "hanzi": "六一儿童节",
+      "pinyin": "liù yī ér tóng jié",
+      "sourceTextOcrRaw": "2.六一儿童节Livyi Ertongjié",
+      "sourcePageRef": "hsk4l-tb-source-page-096",
+      "sourceRowIndexes": [
+        27
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-proper-01",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "hanzi": "长江",
+      "pinyin": "cháng jiāng",
+      "sourceTextOcrRaw": "小张：一会儿我自己进去换登机牌，你就不 1.长江 Changjiang",
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        23
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-proper-02",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "hanzi": "长江大桥",
+      "pinyin": "cháng jiāng dà qiáo",
+      "sourceTextOcrRaw": "2.长江大桥ChángjiangDaqiáo 3.首都机场Shoudu Jichang",
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        28
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    },
+    {
+      "id": "hsk4l-tb-l20-proper-03",
+      "lessonRef": "hsk4l-tb-lesson-20",
+      "hanzi": "首都机场",
+      "pinyin": "shǒu dū jī chǎng",
+      "sourceTextOcrRaw": "2.长江大桥ChángjiangDaqiáo 3.首都机场Shoudu Jichang",
+      "sourcePageRef": "hsk4l-tb-source-page-136",
+      "sourceRowIndexes": [
+        28
+      ],
+      "transcriptionStatus": "ocr-needs-editorial-review"
+    }
+  ]
+}
