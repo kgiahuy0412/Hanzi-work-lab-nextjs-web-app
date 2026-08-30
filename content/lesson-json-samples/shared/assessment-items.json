@@ -1,0 +1,290 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "assessment-item",
+  "items": [
+    {
+      "id": "item-meaning-ni-hao",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "objectiveTags": [
+        "recognize-greeting"
+      ],
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-ni-hao",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-ni-hao-hello",
+          "text": "xin chào"
+        },
+        {
+          "id": "option-ni-hao-thanks",
+          "text": "cảm ơn"
+        },
+        {
+          "id": "option-ni-hao-goodbye",
+          "text": "tạm biệt"
+        },
+        {
+          "id": "option-ni-hao-sorry",
+          "text": "xin lỗi"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-ni-hao-hello"
+      },
+      "feedback": {
+        "correctVi": "Chính xác. 你好 là lời chào trung tính và phổ biến.",
+        "incorrectVi": "Hãy nhớ 你 là bạn và 好 là tốt/khỏe; cả cụm dùng để chào."
+      },
+      "status": "review"
+    },
+    {
+      "id": "item-listen-ni-hao",
+      "type": "listen-select-hanzi",
+      "skill": "listening",
+      "difficulty": 1,
+      "objectiveTags": [
+        "recognize-greeting-audio"
+      ],
+      "instructionVi": "Nghe và chọn chữ Hán",
+      "prompt": {
+        "kind": "media",
+        "ref": "media:media-audio-ni-hao-word",
+        "replayLimit": null,
+        "playbackRates": [
+          0.75,
+          1
+        ]
+      },
+      "options": [
+        {
+          "id": "option-listen-ni-hao",
+          "text": "你好"
+        },
+        {
+          "id": "option-listen-wo",
+          "text": "我"
+        },
+        {
+          "id": "option-listen-shi",
+          "text": "是"
+        },
+        {
+          "id": "option-listen-ming-zi",
+          "text": "名字"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-listen-ni-hao"
+      },
+      "feedback": {
+        "correctVi": "Đúng. Bạn đã nhận ra âm nǐ hǎo.",
+        "incorrectVi": "Nghe lại hai âm tiết nǐ và hǎo ở tốc độ chậm."
+      },
+      "availabilityRule": {
+        "requiresApprovedMedia": true,
+        "fallback": "block-item"
+      },
+      "status": "review"
+    },
+    {
+      "id": "item-pinyin-jin-du",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 2,
+      "objectiveTags": [
+        "read-workplace-vocabulary"
+      ],
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-jin-du",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-pinyin-jin-du",
+          "text": "jìndù"
+        },
+        {
+          "id": "option-pinyin-jin-tu",
+          "text": "jìntú"
+        },
+        {
+          "id": "option-pinyin-qing-du",
+          "text": "qīngdù"
+        },
+        {
+          "id": "option-pinyin-jing-du",
+          "text": "jīngdù"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-pinyin-jin-du"
+      },
+      "feedback": {
+        "correctVi": "Đúng. Cả 进 và 度 đều mang thanh 4 trong từ này.",
+        "incorrectVi": "Đọc tách jìn + dù rồi ghép lại thành jìndù."
+      },
+      "status": "review"
+    },
+    {
+      "id": "item-fill-progress-eighty",
+      "type": "fill-blank",
+      "skill": "reading",
+      "difficulty": 2,
+      "objectiveTags": [
+        "report-progress"
+      ],
+      "instructionVi": "Điền từ phù hợp vào câu",
+      "prompt": {
+        "kind": "text",
+        "hanzi": "已经____百分之八十了。",
+        "pinyin": "Yǐjīng ____ bǎifēnzhī bāshí le.",
+        "translationVi": "Đã hoàn thành 80% rồi."
+      },
+      "acceptedResponses": [
+        {
+          "text": "完成",
+          "normalization": "trim-nfc"
+        }
+      ],
+      "feedback": {
+        "correctVi": "Đúng. 完成 diễn tả phần công việc đã hoàn tất.",
+        "incorrectVi": "Câu cần động từ mang nghĩa hoàn thành: 完成."
+      },
+      "status": "review"
+    },
+    {
+      "id": "item-reorder-report-progress",
+      "type": "reorder-sentence",
+      "skill": "writing",
+      "difficulty": 2,
+      "objectiveTags": [
+        "report-progress"
+      ],
+      "instructionVi": "Sắp xếp thành câu báo cáo tự nhiên",
+      "prompt": {
+        "kind": "sentence",
+        "ref": "sentence:sentence-report-latest-progress"
+      },
+      "tokens": [
+        {
+          "id": "token-report-wo",
+          "text": "我"
+        },
+        {
+          "id": "token-report-lai",
+          "text": "来"
+        },
+        {
+          "id": "token-report-huibao",
+          "text": "汇报一下"
+        },
+        {
+          "id": "token-report-latest",
+          "text": "最新进度"
+        }
+      ],
+      "correctResponse": {
+        "tokenIds": [
+          "token-report-wo",
+          "token-report-lai",
+          "token-report-huibao",
+          "token-report-latest"
+        ]
+      },
+      "feedback": {
+        "correctVi": "Câu hoàn chỉnh: 我来汇报一下最新进度。",
+        "incorrectVi": "Đặt chủ ngữ trước, sau đó là ý định báo cáo và nội dung cần báo cáo."
+      },
+      "status": "review"
+    },
+    {
+      "id": "item-work-scenario-response",
+      "type": "scenario-choice",
+      "skill": "workplace-response",
+      "difficulty": 3,
+      "objectiveTags": [
+        "report-progress",
+        "commit-next-update"
+      ],
+      "instructionVi": "Chọn phản hồi chuyên nghiệp nhất",
+      "prompt": {
+        "kind": "scenario",
+        "contextVi": "Quản lý hỏi liệu hạng mục có thể hoàn thành trước khi tan làm hay không.",
+        "questionVi": "Bạn nên trả lời thế nào?"
+      },
+      "options": [
+        {
+          "id": "option-scenario-vague",
+          "hanzi": "差不多了。",
+          "pinyin": "Chàbuduō le.",
+          "translationVi": "Gần xong rồi."
+        },
+        {
+          "id": "option-scenario-specific",
+          "hanzi": "已经完成百分之八十了，我今天下班前发给您。",
+          "pinyin": "Yǐjīng wánchéng bǎifēnzhī bāshí le, wǒ jīntiān xiàbān qián fā gěi nín.",
+          "translationVi": "Đã hoàn thành 80%; tôi sẽ gửi anh/chị trước khi tan làm hôm nay."
+        },
+        {
+          "id": "option-scenario-avoid",
+          "hanzi": "我不知道。",
+          "pinyin": "Wǒ bù zhīdào.",
+          "translationVi": "Tôi không biết."
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-scenario-specific"
+      },
+      "feedback": {
+        "correctVi": "Phản hồi này vừa nêu trạng thái cụ thể vừa cam kết mốc tiếp theo.",
+        "incorrectVi": "Trong công việc, hãy nêu tiến độ đo được và thời điểm cập nhật tiếp theo."
+      },
+      "status": "review"
+    },
+    {
+      "id": "item-listening-progress-true-false",
+      "type": "listen-judge",
+      "skill": "listening",
+      "difficulty": 2,
+      "objectiveTags": [
+        "understand-progress-update"
+      ],
+      "instructionVi": "Nghe và xác định nhận định đúng hay sai",
+      "prompt": {
+        "kind": "media",
+        "ref": "media:media-audio-work-progress-turn-02",
+        "statementVi": "Nhân viên nói công việc đã hoàn thành 80%."
+      },
+      "options": [
+        {
+          "id": "option-judge-true",
+          "text": "Đúng"
+        },
+        {
+          "id": "option-judge-false",
+          "text": "Sai"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-judge-true"
+      },
+      "feedback": {
+        "correctVi": "Đúng. 百分之八十 nghĩa là 80 phần trăm.",
+        "incorrectVi": "Nghe lại cụm 百分之八十 ở giữa câu."
+      },
+      "availabilityRule": {
+        "requiresApprovedMedia": true,
+        "fallback": "block-item"
+      },
+      "status": "review"
+    }
+  ]
+}

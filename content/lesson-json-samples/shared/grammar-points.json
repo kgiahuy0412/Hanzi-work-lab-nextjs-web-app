@@ -1,0 +1,90 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "grammar-point",
+  "items": [
+    {
+      "id": "grammar-shi-identity",
+      "kind": "grammar",
+      "titleVi": "Câu giới thiệu với 是",
+      "formula": "S + 是 + N",
+      "explanationVi": "Dùng 是 để giới thiệu hoặc xác nhận danh tính, nghề nghiệp, quốc tịch và vai trò.",
+      "constraintsVi": [
+        "Không dùng 是 trực tiếp trước tính từ trong mẫu miêu tả cơ bản.",
+        "Dùng 不是 để phủ định danh tính hoặc thông tin."
+      ],
+      "exampleSentenceRefs": [
+        "sentence:sentence-i-am-anna",
+        "sentence:sentence-i-am-colleague"
+      ],
+      "commonMistakes": [
+        {
+          "wrong": "我是很好。",
+          "correct": "我很好。",
+          "explanationVi": "Tính từ 好 không cần 是 trong mẫu câu này."
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "grammar-question-with-ne",
+      "kind": "grammar",
+      "titleVi": "Hỏi lại ngắn gọn với 呢",
+      "formula": "Danh từ/đại từ + 呢？",
+      "explanationVi": "Dùng 呢 để hỏi lại thông tin tương tự vừa được nhắc đến, ví dụ hỏi tên hoặc tình trạng của người đối thoại.",
+      "constraintsVi": [
+        "Cần có ngữ cảnh trước đó để người nghe hiểu phần thông tin bị lược bỏ."
+      ],
+      "exampleSentenceRefs": [
+        "sentence:sentence-and-you"
+      ],
+      "commonMistakes": [],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "status": "review"
+    },
+    {
+      "id": "usage-report-progress",
+      "kind": "usage-note",
+      "titleVi": "Báo tiến độ bằng con số cụ thể",
+      "formula": "已经完成 + tỷ lệ + 了",
+      "explanationVi": "Nêu phần đã hoàn thành trước, sau đó bổ sung mốc gửi kết quả hoặc việc còn lại để người quản lý dễ ra quyết định.",
+      "constraintsVi": [
+        "Không chỉ nói 快了 hoặc 差不多 khi người nghe cần mốc cụ thể.",
+        "Nếu có nguy cơ trễ, phải nêu thời điểm cập nhật tiếp theo."
+      ],
+      "exampleSentenceRefs": [
+        "sentence:sentence-progress-eighty",
+        "sentence:sentence-send-before-off-work"
+      ],
+      "commonMistakes": [],
+      "standardMappings": [],
+      "status": "review"
+    },
+    {
+      "id": "usage-ask-deadline",
+      "kind": "usage-note",
+      "titleVi": "Xác nhận hạn chót lịch sự",
+      "formula": "请问，截止日期是什么时候？",
+      "explanationVi": "Dùng 请问 để mở lời lịch sự rồi hỏi rõ thời điểm phải hoàn thành.",
+      "constraintsVi": [
+        "Nên xác nhận lại ngày và giờ nếu công việc có rủi ro hiểu nhầm."
+      ],
+      "exampleSentenceRefs": [
+        "sentence:sentence-ask-deadline"
+      ],
+      "commonMistakes": [],
+      "standardMappings": [],
+      "status": "review"
+    }
+  ]
+}

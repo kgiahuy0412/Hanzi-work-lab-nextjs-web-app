@@ -1,0 +1,2223 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "dialogue",
+  "items": [
+    {
+      "id": "dialogue-hsk1-l01-01",
+      "titleVi": "Bài 1 - Hội thoại 1",
+      "settingVi": "Chào hỏi khi gặp mặt",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l01-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你好！",
+          "pinyin": "nǐ hǎo！",
+          "translationVi": "Chào anh!"
+        },
+        {
+          "id": "turn-hsk1-l01-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "你好！",
+          "pinyin": "nǐ hǎo！",
+          "translationVi": "Chào anh!"
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-01-1",
+      "source": {
+        "trackId": "01-1",
+        "printedPage": 14,
+        "pdfPage": 14
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l01-02",
+      "titleVi": "Bài 1 - Hội thoại 2",
+      "settingVi": "Chào hỏi lịch sự và chào một nhóm",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l01-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "您好！",
+          "pinyin": "nín hǎo！",
+          "translationVi": "Chào ông!"
+        },
+        {
+          "id": "turn-hsk1-l01-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "你们好！",
+          "pinyin": "nǐ men hǎo！",
+          "translationVi": "Chào các anh chị!"
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-01-2",
+      "source": {
+        "trackId": "01-2",
+        "printedPage": 14,
+        "pdfPage": 14
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l01-03",
+      "titleVi": "Bài 1 - Hội thoại 3",
+      "settingVi": "Xin lỗi và đáp lại",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l01-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "对不起！",
+          "pinyin": "duì bù qǐ！",
+          "translationVi": "Xin lỗi!"
+        },
+        {
+          "id": "turn-hsk1-l01-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "没关系！",
+          "pinyin": "méi guān xì！",
+          "translationVi": "Không sao đâu!"
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-01-3",
+      "source": {
+        "trackId": "01-3",
+        "printedPage": 14,
+        "pdfPage": 14
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l02-01",
+      "titleVi": "Bài 2 - Hội thoại 1",
+      "settingVi": "Cảm ơn và đáp lại",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l02-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "谢谢！",
+          "pinyin": "xiè xiè！",
+          "translationVi": "Cảm ơn!"
+        },
+        {
+          "id": "turn-hsk1-l02-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "不谢！",
+          "pinyin": "bù xiè！",
+          "translationVi": "Không cần cảm ơn đâu!"
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-02-1",
+      "source": {
+        "trackId": "02-1",
+        "printedPage": 20,
+        "pdfPage": 20
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l02-02",
+      "titleVi": "Bài 2 - Hội thoại 2",
+      "settingVi": "Cảm ơn lịch sự",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l02-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "谢谢你！",
+          "pinyin": "xiè xiè nǐ！",
+          "translationVi": "Cảm ơn cô!"
+        },
+        {
+          "id": "turn-hsk1-l02-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "不客气！",
+          "pinyin": "bú kè qì！",
+          "translationVi": "Đừng khách sáo!"
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-02-2",
+      "source": {
+        "trackId": "02-2",
+        "printedPage": 20,
+        "pdfPage": 20
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l02-03",
+      "titleVi": "Bài 2 - Hội thoại 3",
+      "settingVi": "Chào tạm biệt",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l02-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "再见！",
+          "pinyin": "zài jiàn！",
+          "translationVi": "Tạm biệt!"
+        },
+        {
+          "id": "turn-hsk1-l02-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "再见！",
+          "pinyin": "zài jiàn！",
+          "translationVi": "Tạm biệt!"
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-02-3",
+      "source": {
+        "trackId": "02-3",
+        "printedPage": 20,
+        "pdfPage": 20
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l03-01",
+      "titleVi": "Bài 3 - Hội thoại 1",
+      "settingVi": "Ở trường",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l03-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你叫什么名字？",
+          "pinyin": "nǐ jiào shén me míng zì？",
+          "translationVi": "Cô tên gì?"
+        },
+        {
+          "id": "turn-hsk1-l03-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我叫李月。",
+          "pinyin": "wǒ jiào lǐ yuè。",
+          "translationVi": "Tôi tên là Lý Nguyệt."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-03-1",
+      "source": {
+        "trackId": "03-1",
+        "printedPage": 26,
+        "pdfPage": 26
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l03-02",
+      "titleVi": "Bài 3 - Hội thoại 2",
+      "settingVi": "Trong lớp học",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l03-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你是老师吗？",
+          "pinyin": "nǐ shì lǎo shī ma？",
+          "translationVi": "Cô là giáo viên phải không?"
+        },
+        {
+          "id": "turn-hsk1-l03-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我不是老师，我是学生。",
+          "pinyin": "wǒ bú shì lǎo shī， wǒ shì xué shēng。",
+          "translationVi": "Không phải, tôi là học sinh."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-03-2",
+      "source": {
+        "trackId": "03-2",
+        "printedPage": 27,
+        "pdfPage": 27
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l03-03",
+      "titleVi": "Bài 3 - Hội thoại 3",
+      "settingVi": "Ở trường",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l03-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你是中国人吗？",
+          "pinyin": "nǐ shì zhōng guó rén ma？",
+          "translationVi": "Bạn là người Trung Quốc phải không?"
+        },
+        {
+          "id": "turn-hsk1-l03-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我不是中国人，我是美国人。",
+          "pinyin": "wǒ bú shì zhōng guó rén， wǒ shì měi guó rén。",
+          "translationVi": "Không phải, mình là người Mỹ."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-03-3",
+      "source": {
+        "trackId": "03-3",
+        "printedPage": 27,
+        "pdfPage": 27
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l04-01",
+      "titleVi": "Bài 4 - Hội thoại 1",
+      "settingVi": "Trong lớp học",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l04-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "她是谁？",
+          "pinyin": "tā shì shuí？",
+          "translationVi": "Cô ấy là ai vậy?"
+        },
+        {
+          "id": "turn-hsk1-l04-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "她是我的汉语老师，她叫李月。",
+          "pinyin": "tā shì wǒ de hàn yǔ lǎo shī， tā jiào lǐ yuè。",
+          "translationVi": "Đó là cô giáo tiếng Trung của tôi, cô tên là Lý Nguyệt."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-04-1",
+      "source": {
+        "trackId": "04-1",
+        "printedPage": 34,
+        "pdfPage": 34
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l04-02",
+      "titleVi": "Bài 4 - Hội thoại 2",
+      "settingVi": "Ở thư viện",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l04-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你是哪国人？",
+          "pinyin": "nǐ shì nǎ guó rén？",
+          "translationVi": "Anh là người nước nào?"
+        },
+        {
+          "id": "turn-hsk1-l04-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我是美国人。你呢？",
+          "pinyin": "wǒ shì měi guó rén。 nǐ ne？",
+          "translationVi": "Tôi là người Mỹ. Còn cô?"
+        },
+        {
+          "id": "turn-hsk1-l04-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "我是中国人。",
+          "pinyin": "wǒ shì zhōng guó rén。",
+          "translationVi": "Tôi là người Trung Quốc."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-04-2",
+      "source": {
+        "trackId": "04-2",
+        "printedPage": 35,
+        "pdfPage": 35
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l04-03",
+      "titleVi": "Bài 4 - Hội thoại 3",
+      "settingVi": "Xem ảnh",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l04-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "他是谁？",
+          "pinyin": "tā shì shuí？",
+          "translationVi": "Anh ấy là ai?"
+        },
+        {
+          "id": "turn-hsk1-l04-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "他是我同学。",
+          "pinyin": "tā shì wǒ tóng xué。",
+          "translationVi": "Đó là bạn cùng lớp của tôi."
+        },
+        {
+          "id": "turn-hsk1-l04-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "她呢？她是你同学吗？",
+          "pinyin": "tā ne？ tā shì nǐ tóng xué ma？",
+          "translationVi": "Còn cô ấy? Cô ấy cũng là bạn cùng lớp của cô à?"
+        },
+        {
+          "id": "turn-hsk1-l04-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "她不是我同学，她是我朋友。",
+          "pinyin": "tā bú shì wǒ tóng xué， tā shì wǒ péng yǒu。",
+          "translationVi": "Không phải, cô ấy là bạn tôi."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-04-3",
+      "source": {
+        "trackId": "04-3",
+        "printedPage": 35,
+        "pdfPage": 35
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l05-01",
+      "titleVi": "Bài 5 - Hội thoại 1",
+      "settingVi": "Ở trường",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l05-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你家有几口人？",
+          "pinyin": "nǐ jiā yǒu jǐ kǒu rén？",
+          "translationVi": "Nhà anh có mấy người?"
+        },
+        {
+          "id": "turn-hsk1-l05-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我家有三口人。",
+          "pinyin": "wǒ jiā yǒu sān kǒu rén。",
+          "translationVi": "Nhà tôi có ba người."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-05-1",
+      "source": {
+        "trackId": "05-1",
+        "printedPage": 42,
+        "pdfPage": 42
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l05-02",
+      "titleVi": "Bài 5 - Hội thoại 2",
+      "settingVi": "Trong văn phòng",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l05-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你女儿几岁了？",
+          "pinyin": "nǐ nǚ ér jǐ suì le？",
+          "translationVi": "Con gái cô mấy tuổi rồi?"
+        },
+        {
+          "id": "turn-hsk1-l05-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "她今年四岁了。",
+          "pinyin": "tā jīn nián sì suì le。",
+          "translationVi": "Năm nay cháu bốn tuổi rồi."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-05-2",
+      "source": {
+        "trackId": "05-2",
+        "printedPage": 43,
+        "pdfPage": 43
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l05-03",
+      "titleVi": "Bài 5 - Hội thoại 3",
+      "settingVi": "Trong văn phòng",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l05-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "李老师多大了？",
+          "pinyin": "lǐ lǎo shī duō dà le？",
+          "translationVi": "Cô Lý bao nhiêu tuổi rồi?"
+        },
+        {
+          "id": "turn-hsk1-l05-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "她今年五十岁了。",
+          "pinyin": "tā jīn nián wǔ shí suì le。",
+          "translationVi": "Năm nay cô ấy 50 tuổi rồi."
+        },
+        {
+          "id": "turn-hsk1-l05-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "她女儿呢？",
+          "pinyin": "tā nǚ ér ne？",
+          "translationVi": "Còn con gái cô ấy?"
+        },
+        {
+          "id": "turn-hsk1-l05-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "她女儿今年二十岁。",
+          "pinyin": "tā nǚ ér jīn nián èr shí suì。",
+          "translationVi": "Con gái cô ấy năm nay 20 tuổi."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-05-3",
+      "source": {
+        "trackId": "05-3",
+        "printedPage": 43,
+        "pdfPage": 43
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l06-01",
+      "titleVi": "Bài 6 - Hội thoại 1",
+      "settingVi": "Ở trường",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l06-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你会说汉语吗？",
+          "pinyin": "nǐ huì shuō hàn yǔ ma？",
+          "translationVi": "Em có biết nói tiếng Trung không?"
+        },
+        {
+          "id": "turn-hsk1-l06-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我会说汉语。",
+          "pinyin": "wǒ huì shuō hàn yǔ。",
+          "translationVi": "Em có biết."
+        },
+        {
+          "id": "turn-hsk1-l06-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你妈妈会说汉语吗？",
+          "pinyin": "nǐ mā mā huì shuō hàn yǔ ma？",
+          "translationVi": "Mẹ em biết nói tiếng Trung không?"
+        },
+        {
+          "id": "turn-hsk1-l06-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "她不会说。",
+          "pinyin": "tā bú huì shuō。",
+          "translationVi": "Mẹ em thì không."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-06-1",
+      "source": {
+        "trackId": "06-1",
+        "printedPage": 52,
+        "pdfPage": 50
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l06-02",
+      "titleVi": "Bài 6 - Hội thoại 2",
+      "settingVi": "Trong nhà bếp",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l06-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "中国菜好吃吗？",
+          "pinyin": "zhōng guó cài hǎo chī ma？",
+          "translationVi": "Món ăn Trung Quốc có ngon không?"
+        },
+        {
+          "id": "turn-hsk1-l06-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "中国菜很好吃。",
+          "pinyin": "zhōng guó cài hěn hǎo chī。",
+          "translationVi": "Rất ngon."
+        },
+        {
+          "id": "turn-hsk1-l06-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你会做中国菜吗？",
+          "pinyin": "nǐ huì zuò zhōng guó cài ma？",
+          "translationVi": "Anh có biết nấu món Trung Quốc không?"
+        },
+        {
+          "id": "turn-hsk1-l06-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我不会做。",
+          "pinyin": "wǒ bú huì zuò。",
+          "translationVi": "Tôi không biết."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-06-2",
+      "source": {
+        "trackId": "06-2",
+        "printedPage": 53,
+        "pdfPage": 51
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l06-03",
+      "titleVi": "Bài 6 - Hội thoại 3",
+      "settingVi": "Ở thư viện",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l06-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你会写汉字吗？",
+          "pinyin": "nǐ huì xiě hàn zì ma？",
+          "translationVi": "Anh có biết viết chữ Hán không?"
+        },
+        {
+          "id": "turn-hsk1-l06-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我会写。",
+          "pinyin": "wǒ huì xiě。",
+          "translationVi": "Tôi có biết."
+        },
+        {
+          "id": "turn-hsk1-l06-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "这个字怎么写？",
+          "pinyin": "zhè ge zì zěn me xiě？",
+          "translationVi": "Vậy chữ này viết thế nào?"
+        },
+        {
+          "id": "turn-hsk1-l06-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "对不起，这个字我会读，不会写。",
+          "pinyin": "duì bù qǐ， zhè ge zì wǒ huì dú， bú huì xiě。",
+          "translationVi": "Xin lỗi, chữ này tôi biết đọc nhưng không biết viết."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-06-3",
+      "source": {
+        "trackId": "06-3",
+        "printedPage": 53,
+        "pdfPage": 51
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l07-01",
+      "titleVi": "Bài 7 - Hội thoại 1",
+      "settingVi": "Ở ngân hàng",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l07-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "请问，今天几号？",
+          "pinyin": "qǐng wèn， jīn tiān jǐ hào？",
+          "translationVi": "Xin hỏi hôm nay là ngày mấy?"
+        },
+        {
+          "id": "turn-hsk1-l07-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "今天九月一号。",
+          "pinyin": "jīn tiān jiǔ yuè yī hào。",
+          "translationVi": "Ngày 1 tháng 9."
+        },
+        {
+          "id": "turn-hsk1-l07-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "今天星期几？",
+          "pinyin": "jīn tiān xīng qī jǐ？",
+          "translationVi": "Hôm nay là thứ mấy?"
+        },
+        {
+          "id": "turn-hsk1-l07-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "星期三。",
+          "pinyin": "xīng qī sān。",
+          "translationVi": "Thứ tư."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-07-1",
+      "source": {
+        "trackId": "07-1",
+        "printedPage": 60,
+        "pdfPage": 58
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l07-02",
+      "titleVi": "Bài 7 - Hội thoại 2",
+      "settingVi": "Xem lịch",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l07-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "昨天是几月几号？",
+          "pinyin": "zuó tiān shì jǐ yuè jǐ hào？",
+          "translationVi": "Hôm qua là ngày mấy tháng mấy?"
+        },
+        {
+          "id": "turn-hsk1-l07-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "昨天是八月三十一号，星期二。",
+          "pinyin": "zuó tiān shì bā yuè sān shí yī hào， xīng qī èr。",
+          "translationVi": "Hôm qua là thứ ba, ngày 31 tháng 8."
+        },
+        {
+          "id": "turn-hsk1-l07-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "明天呢？",
+          "pinyin": "míng tiān ne？",
+          "translationVi": "Còn ngày mai?"
+        },
+        {
+          "id": "turn-hsk1-l07-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "明天是九月二号，星期四。",
+          "pinyin": "míng tiān shì jiǔ yuè èr hào， xīng qī sì。",
+          "translationVi": "Ngày mai là thứ năm, ngày 2 tháng 9."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-07-2",
+      "source": {
+        "trackId": "07-2",
+        "printedPage": 61,
+        "pdfPage": 59
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l07-03",
+      "titleVi": "Bài 7 - Hội thoại 3",
+      "settingVi": "Ở quán cà phê",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l07-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "明天星期六，你去学校吗？",
+          "pinyin": "míng tiān xīng qī liù， nǐ qù xué xiào ma？",
+          "translationVi": "Ngày mai là thứ bảy, bạn có đến trường không?"
+        },
+        {
+          "id": "turn-hsk1-l07-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我去学校。",
+          "pinyin": "wǒ qù xué xiào。",
+          "translationVi": "Có, tôi đến trường."
+        },
+        {
+          "id": "turn-hsk1-l07-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你去学校做什么？",
+          "pinyin": "nǐ qù xué xiào zuò shén me？",
+          "translationVi": "Bạn đến trường để làm gì?"
+        },
+        {
+          "id": "turn-hsk1-l07-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我去学校看书。",
+          "pinyin": "wǒ qù xué xiào kàn shū。",
+          "translationVi": "Để đọc sách."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-07-3",
+      "source": {
+        "trackId": "07-3",
+        "printedPage": 61,
+        "pdfPage": 59
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l08-01",
+      "titleVi": "Bài 8 - Hội thoại 1",
+      "settingVi": "Ở quán ăn",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l08-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你想喝什么？",
+          "pinyin": "nǐ xiǎng hē shén me？",
+          "translationVi": "Cô muốn uống gì?"
+        },
+        {
+          "id": "turn-hsk1-l08-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我想喝茶。",
+          "pinyin": "wǒ xiǎng hē chá。",
+          "translationVi": "Tôi muốn uống trà."
+        },
+        {
+          "id": "turn-hsk1-l08-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你想吃什么？",
+          "pinyin": "nǐ xiǎng chī shén me？",
+          "translationVi": "Cô muốn dùng món gì?"
+        },
+        {
+          "id": "turn-hsk1-l08-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我想吃米饭。",
+          "pinyin": "wǒ xiǎng chī mǐ fàn。",
+          "translationVi": "Tôi muốn ăn cơm."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-08-1",
+      "source": {
+        "trackId": "08-1",
+        "printedPage": 68,
+        "pdfPage": 66
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l08-02",
+      "titleVi": "Bài 8 - Hội thoại 2",
+      "settingVi": "Trong phòng khách",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l08-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "下午你想做什么？",
+          "pinyin": "xià wǔ nǐ xiǎng zuò shén me？",
+          "translationVi": "Buổi chiều bạn muốn làm gì?"
+        },
+        {
+          "id": "turn-hsk1-l08-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "下午我想去商店。",
+          "pinyin": "xià wǔ wǒ xiǎng qù shāng diàn。",
+          "translationVi": "Buổi chiều mình muốn đến cửa hàng."
+        },
+        {
+          "id": "turn-hsk1-l08-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你想买什么？",
+          "pinyin": "nǐ xiǎng mǎi shén me？",
+          "translationVi": "Bạn muốn mua gì?"
+        },
+        {
+          "id": "turn-hsk1-l08-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我想买一个杯子。",
+          "pinyin": "wǒ xiǎng mǎi yí gè bēi zi。",
+          "translationVi": "Mình muốn mua một cái ly."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-08-2",
+      "source": {
+        "trackId": "08-2",
+        "printedPage": 69,
+        "pdfPage": 67
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l08-03",
+      "titleVi": "Bài 8 - Hội thoại 3",
+      "settingVi": "Ở cửa hàng",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l08-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你好！这个杯子多少钱？",
+          "pinyin": "nǐ hǎo！ zhè ge bēi zi duō shǎo qián？",
+          "translationVi": "Chào cô! Cái ly này bao nhiêu tiền?"
+        },
+        {
+          "id": "turn-hsk1-l08-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "二十八块。",
+          "pinyin": "èr shí bā kuài。",
+          "translationVi": "28 đồng."
+        },
+        {
+          "id": "turn-hsk1-l08-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "那个杯子多少钱？",
+          "pinyin": "nà ge bēi zi duō shǎo qián？",
+          "translationVi": "Còn cái ly đó?"
+        },
+        {
+          "id": "turn-hsk1-l08-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "那个杯子十八块钱。",
+          "pinyin": "nà ge bēi zi shí bā kuài qián。",
+          "translationVi": "Ly đó 18 đồng."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-08-3",
+      "source": {
+        "trackId": "08-3",
+        "printedPage": 69,
+        "pdfPage": 67
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l09-01",
+      "titleVi": "Bài 9 - Hội thoại 1",
+      "settingVi": "Ở nhà",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l09-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "小猫在哪儿？",
+          "pinyin": "xiǎo māo zài nǎ ér？",
+          "translationVi": "Con mèo đâu rồi?"
+        },
+        {
+          "id": "turn-hsk1-l09-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "小猫在那儿。",
+          "pinyin": "xiǎo māo zài nà ér。",
+          "translationVi": "Nó ở đằng kia."
+        },
+        {
+          "id": "turn-hsk1-l09-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "小狗在哪儿？",
+          "pinyin": "xiǎo gǒu zài nǎ ér？",
+          "translationVi": "Còn con chó đâu?"
+        },
+        {
+          "id": "turn-hsk1-l09-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "小狗在椅子下面。",
+          "pinyin": "xiǎo gǒu zài yǐ zi xià miàn。",
+          "translationVi": "Ở dưới ghế dựa."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-09-1",
+      "source": {
+        "trackId": "09-1",
+        "printedPage": 76,
+        "pdfPage": 74
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l09-02",
+      "titleVi": "Bài 9 - Hội thoại 2",
+      "settingVi": "Ở bến xe",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l09-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你在哪儿工作？",
+          "pinyin": "nǐ zài nǎ ér gōng zuò？",
+          "translationVi": "Anh làm việc ở đâu?"
+        },
+        {
+          "id": "turn-hsk1-l09-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我在学校工作。",
+          "pinyin": "wǒ zài xué xiào gōng zuò。",
+          "translationVi": "Tôi làm việc ở trường học."
+        },
+        {
+          "id": "turn-hsk1-l09-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你儿子在哪儿工作？",
+          "pinyin": "nǐ ér zi zài nǎ ér gōng zuò？",
+          "translationVi": "Vậy còn con trai anh?"
+        },
+        {
+          "id": "turn-hsk1-l09-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我儿子在医院工作，他是医生。",
+          "pinyin": "wǒ ér zi zài yī yuàn gōng zuò， tā shì yī shēng。",
+          "translationVi": "Con trai tôi làm việc ở bệnh viện, nó là bác sĩ."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-09-2",
+      "source": {
+        "trackId": "09-2",
+        "printedPage": 77,
+        "pdfPage": 75
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l09-03",
+      "titleVi": "Bài 9 - Hội thoại 3",
+      "settingVi": "Gọi điện thoại",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l09-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你爸爸在家吗？",
+          "pinyin": "nǐ bà bà zài jiā ma？",
+          "translationVi": "Cha cô có ở nhà không?"
+        },
+        {
+          "id": "turn-hsk1-l09-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "不在家。",
+          "pinyin": "bù zài jiā。",
+          "translationVi": "Không có."
+        },
+        {
+          "id": "turn-hsk1-l09-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "他在哪儿呢？",
+          "pinyin": "tā zài nǎ ér ne？",
+          "translationVi": "Ông ấy đâu rồi?"
+        },
+        {
+          "id": "turn-hsk1-l09-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "他在医院。",
+          "pinyin": "tā zài yī yuàn。",
+          "translationVi": "Ông ấy ở bệnh viện."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-09-3",
+      "source": {
+        "trackId": "09-3",
+        "printedPage": 77,
+        "pdfPage": 75
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l10-01",
+      "titleVi": "Bài 10 - Hội thoại 1",
+      "settingVi": "Trong văn phòng",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l10-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "桌子上有什么？",
+          "pinyin": "zhuō zi shàng yǒu shén me？",
+          "translationVi": "Trên bàn có gì?"
+        },
+        {
+          "id": "turn-hsk1-l10-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "桌子上有一个电脑和一本书。",
+          "pinyin": "zhuō zi shàng yǒu yí gè diàn nǎo hé yī běn shū。",
+          "translationVi": "Có một chiếc máy vi tính và một quyển sách."
+        },
+        {
+          "id": "turn-hsk1-l10-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "杯子在哪儿？",
+          "pinyin": "bēi zi zài nǎ ér？",
+          "translationVi": "Vậy cái ly đâu?"
+        },
+        {
+          "id": "turn-hsk1-l10-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "杯子在桌子里。",
+          "pinyin": "bēi zi zài zhuō zi lǐ。",
+          "translationVi": "Ở trong bàn."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-10-1",
+      "source": {
+        "trackId": "10-1",
+        "printedPage": 84,
+        "pdfPage": 82
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l10-02",
+      "titleVi": "Bài 10 - Hội thoại 2",
+      "settingVi": "Ở phòng tập thể dục",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l10-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "前面那个人叫什么名字？",
+          "pinyin": "qián miàn nà ge rén jiào shén me míng zì？",
+          "translationVi": "Người ở phía trước tên gì?"
+        },
+        {
+          "id": "turn-hsk1-l10-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "她叫王方，在医院工作。",
+          "pinyin": "tā jiào wáng fāng， zài yī yuàn gōng zuò。",
+          "translationVi": "Cô ấy tên là Vương Phương, làm việc ở bệnh viện."
+        },
+        {
+          "id": "turn-hsk1-l10-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "后面那个人呢？他叫什么名字？",
+          "pinyin": "hòu miàn nà ge rén ne？ tā jiào shén me míng zì？",
+          "translationVi": "Còn người ở phía sau? Anh ấy tên gì?"
+        },
+        {
+          "id": "turn-hsk1-l10-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "他叫谢朋，在商店工作。",
+          "pinyin": "tā jiào xiè péng， zài shāng diàn gōng zuò。",
+          "translationVi": "Anh ấy tên Tạ Bằng, làm việc ở cửa hàng."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-10-2",
+      "source": {
+        "trackId": "10-2",
+        "printedPage": 85,
+        "pdfPage": 83
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l10-03",
+      "titleVi": "Bài 10 - Hội thoại 3",
+      "settingVi": "Ở thư viện",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l10-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "这儿有人吗？",
+          "pinyin": "zhè ér yǒu rén ma？",
+          "translationVi": "Chỗ này có ai ngồi chưa?"
+        },
+        {
+          "id": "turn-hsk1-l10-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "没有。",
+          "pinyin": "méi yǒu。",
+          "translationVi": "Chưa."
+        },
+        {
+          "id": "turn-hsk1-l10-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "我能坐这儿吗？",
+          "pinyin": "wǒ néng zuò zhè ér ma？",
+          "translationVi": "Tôi có thể ngồi ở đây không?"
+        },
+        {
+          "id": "turn-hsk1-l10-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "请坐。",
+          "pinyin": "qǐng zuò。",
+          "translationVi": "Được, xin mời."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-10-3",
+      "source": {
+        "trackId": "10-3",
+        "printedPage": 85,
+        "pdfPage": 83
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l11-01",
+      "titleVi": "Bài 11 - Hội thoại 1",
+      "settingVi": "Ở thư viện",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l11-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "现在几点？",
+          "pinyin": "xiàn zài jǐ diǎn？",
+          "translationVi": "Bây giờ là mấy giờ rồi?"
+        },
+        {
+          "id": "turn-hsk1-l11-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "现在十点十分。",
+          "pinyin": "xiàn zài shí diǎn shí fēn。",
+          "translationVi": "10 giờ 10 phút."
+        },
+        {
+          "id": "turn-hsk1-l11-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "中午几点吃饭？",
+          "pinyin": "zhōng wǔ jǐ diǎn chī fàn？",
+          "translationVi": "Mấy giờ thì ăn cơm trưa?"
+        },
+        {
+          "id": "turn-hsk1-l11-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "十二点吃饭。",
+          "pinyin": "shí èr diǎn chī fàn。",
+          "translationVi": "12 giờ ăn cơm."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-11-1",
+      "source": {
+        "trackId": "11-1",
+        "printedPage": 94,
+        "pdfPage": 92
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l11-02",
+      "titleVi": "Bài 11 - Hội thoại 2",
+      "settingVi": "Ở nhà",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l11-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "爸爸什么时候回家？",
+          "pinyin": "bà bà shén me shí hòu huí jiā？",
+          "translationVi": "Chừng nào cha mới về đến nhà?"
+        },
+        {
+          "id": "turn-hsk1-l11-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "下午五点。",
+          "pinyin": "xià wǔ wǔ diǎn。",
+          "translationVi": "5 giờ chiều."
+        },
+        {
+          "id": "turn-hsk1-l11-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "我们什么时候去看电影？",
+          "pinyin": "wǒ men shén me shí hòu qù kàn diàn yǐng？",
+          "translationVi": "Khi nào chúng ta đi xem phim?"
+        },
+        {
+          "id": "turn-hsk1-l11-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "六点三十分。",
+          "pinyin": "liù diǎn sān shí fēn。",
+          "translationVi": "6 giờ 30 phút."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-11-2",
+      "source": {
+        "trackId": "11-2",
+        "printedPage": 95,
+        "pdfPage": 93
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l11-03",
+      "titleVi": "Bài 11 - Hội thoại 3",
+      "settingVi": "Ở nhà",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l11-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "我星期一去北京。",
+          "pinyin": "wǒ xīng qī yī qù běi jīng。",
+          "translationVi": "Thứ hai tôi sẽ đi Bắc Kinh."
+        },
+        {
+          "id": "turn-hsk1-l11-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "你想在北京住几天？",
+          "pinyin": "nǐ xiǎng zài běi jīng zhù jǐ tiān？",
+          "translationVi": "Anh định ở Bắc Kinh mấy ngày?"
+        },
+        {
+          "id": "turn-hsk1-l11-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "住三天。",
+          "pinyin": "zhù sān tiān。",
+          "translationVi": "Ba ngày."
+        },
+        {
+          "id": "turn-hsk1-l11-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "星期五前能回家吗？",
+          "pinyin": "xīng qī wǔ qián néng huí jiā ma？",
+          "translationVi": "Anh có thể về nhà trước thứ sáu không?"
+        },
+        {
+          "id": "turn-hsk1-l11-d03-05",
+          "speakerId": "speaker-a",
+          "hanzi": "能。",
+          "pinyin": "néng。",
+          "translationVi": "Có thể."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-11-3",
+      "source": {
+        "trackId": "11-3",
+        "printedPage": 95,
+        "pdfPage": 93
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l12-01",
+      "titleVi": "Bài 12 - Hội thoại 1",
+      "settingVi": "Trên đường",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l12-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "昨天北京的天气怎么样？",
+          "pinyin": "zuó tiān běi jīng de tiān qì zěn me yàng？",
+          "translationVi": "Hôm qua thời tiết ở Bắc Kinh thế nào?"
+        },
+        {
+          "id": "turn-hsk1-l12-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "太热了。",
+          "pinyin": "tài rè le。",
+          "translationVi": "Nóng lắm."
+        },
+        {
+          "id": "turn-hsk1-l12-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "明天呢？明天天气怎么样？",
+          "pinyin": "míng tiān ne？ míng tiān tiān qì zěn me yàng？",
+          "translationVi": "Còn ngày mai? Thời tiết ngày mai thế nào?"
+        },
+        {
+          "id": "turn-hsk1-l12-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "明天天气很好，不冷不热。",
+          "pinyin": "míng tiān tiān qì hěn hǎo， bù lěng bù rè。",
+          "translationVi": "Ngày mai thời tiết rất đẹp, không lạnh cũng không nóng."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-12-1",
+      "source": {
+        "trackId": "12-1",
+        "printedPage": 102,
+        "pdfPage": 100
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l12-02",
+      "titleVi": "Bài 12 - Hội thoại 2",
+      "settingVi": "Ở phòng tập thể dục",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l12-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "今天会下雨吗？",
+          "pinyin": "jīn tiān huì xià yǔ ma？",
+          "translationVi": "Hôm nay có mưa không?"
+        },
+        {
+          "id": "turn-hsk1-l12-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "今天不会下雨。",
+          "pinyin": "jīn tiān bú huì xià yǔ。",
+          "translationVi": "Hôm nay không mưa."
+        },
+        {
+          "id": "turn-hsk1-l12-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "王小姐今天会来吗？",
+          "pinyin": "wáng xiǎo jiě jīn tiān huì lái ma？",
+          "translationVi": "Hôm nay cô Vương có đến không?"
+        },
+        {
+          "id": "turn-hsk1-l12-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "不会来，天气太冷了。",
+          "pinyin": "bú huì lái， tiān qì tài lěng le。",
+          "translationVi": "Không đến, trời lạnh quá."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-12-2",
+      "source": {
+        "trackId": "12-2",
+        "printedPage": 103,
+        "pdfPage": 101
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l12-03",
+      "titleVi": "Bài 12 - Hội thoại 3",
+      "settingVi": "Trong phòng bệnh",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l12-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你身体怎么样？",
+          "pinyin": "nǐ shēn tǐ zěn me yàng？",
+          "translationVi": "Sức khỏe của anh thế nào?"
+        },
+        {
+          "id": "turn-hsk1-l12-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我身体不太好。天气太热了，不爱吃饭。",
+          "pinyin": "wǒ shēn tǐ bù tài hǎo。 tiān qì tài rè le， bù ài chī fàn。",
+          "translationVi": "Tôi không được khỏe lắm. Trời nóng quá, tôi chẳng muốn ăn cơm."
+        },
+        {
+          "id": "turn-hsk1-l12-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你多吃些水果，多喝水。",
+          "pinyin": "nǐ duō chī xiē shuǐ guǒ， duō hē shuǐ。",
+          "translationVi": "Anh hãy ăn thêm trái cây và uống thêm nước."
+        },
+        {
+          "id": "turn-hsk1-l12-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "谢谢你，医生。",
+          "pinyin": "xiè xiè nǐ， yī shēng。",
+          "translationVi": "Cảm ơn bác sĩ."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-12-3",
+      "source": {
+        "trackId": "12-3",
+        "printedPage": 103,
+        "pdfPage": 101
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l13-01",
+      "titleVi": "Bài 13 - Hội thoại 1",
+      "settingVi": "Gọi điện thoại",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l13-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "喂，你在做什么呢？",
+          "pinyin": "wèi， nǐ zài zuò shén me ne？",
+          "translationVi": "A lô, anh đang làm gì?"
+        },
+        {
+          "id": "turn-hsk1-l13-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我在看书呢。",
+          "pinyin": "wǒ zài kàn shū ne。",
+          "translationVi": "Tôi đang đọc sách."
+        },
+        {
+          "id": "turn-hsk1-l13-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "大卫也在看书吗？",
+          "pinyin": "dà wèi yě zài kàn shū ma？",
+          "translationVi": "David cũng đang đọc sách à?"
+        },
+        {
+          "id": "turn-hsk1-l13-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "他没看书，他在学做中国菜呢。",
+          "pinyin": "tā méi kàn shū， tā zài xué zuò zhōng guó cài ne。",
+          "translationVi": "Không phải, anh ấy đang học nấu món ăn Trung Quốc."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-13-1",
+      "source": {
+        "trackId": "13-1",
+        "printedPage": 110,
+        "pdfPage": 108
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l13-02",
+      "titleVi": "Bài 13 - Hội thoại 2",
+      "settingVi": "Ở quán cà phê",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l13-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "昨天上午你在做什么呢？",
+          "pinyin": "zuó tiān shàng wǔ nǐ zài zuò shén me ne？",
+          "translationVi": "Chị làm gì vào sáng hôm qua?"
+        },
+        {
+          "id": "turn-hsk1-l13-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我在睡觉呢。你呢？",
+          "pinyin": "wǒ zài shuì jiào ne。 nǐ ne？",
+          "translationVi": "Tôi ngủ. Còn cô?"
+        },
+        {
+          "id": "turn-hsk1-l13-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "我在家看电视呢。你喜欢看电视吗？",
+          "pinyin": "wǒ zài jiā kàn diàn shì ne。 nǐ xǐ huān kàn diàn shì ma？",
+          "translationVi": "Tôi xem ti vi ở nhà. Chị có thích xem ti vi không?"
+        },
+        {
+          "id": "turn-hsk1-l13-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我不喜欢看电视，我喜欢看电影。",
+          "pinyin": "wǒ bù xǐ huān kàn diàn shì， wǒ xǐ huān kàn diàn yǐng。",
+          "translationVi": "Không, tôi thích xem phim."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-13-2",
+      "source": {
+        "trackId": "13-2",
+        "printedPage": 111,
+        "pdfPage": 109
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l13-03",
+      "titleVi": "Bài 13 - Hội thoại 3",
+      "settingVi": "Trong văn phòng của trường",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l13-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "八二三零四一五五，这是李老师的电话吗？",
+          "pinyin": "bā èr sān líng sì yī wǔ wǔ， zhè shì lǐ lǎo shī de diàn huà ma？",
+          "translationVi": "82304155, đây là số điện thoại của cô Lý phải không?"
+        },
+        {
+          "id": "turn-hsk1-l13-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "不是。她的电话是八二三零四一五六。",
+          "pinyin": "bú shì。 tā de diàn huà shì bā èr sān líng sì yī wǔ liù。",
+          "translationVi": "Không phải. Số của cô ấy là 82304156."
+        },
+        {
+          "id": "turn-hsk1-l13-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "好，我现在给她打电话。",
+          "pinyin": "hǎo， wǒ xiàn zài gěi tā dǎ diàn huà。",
+          "translationVi": "Được, bây giờ tôi gọi điện cho cô ấy."
+        },
+        {
+          "id": "turn-hsk1-l13-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "她在工作呢，你下午打吧。",
+          "pinyin": "tā zài gōng zuò ne， nǐ xià wǔ dǎ ba。",
+          "translationVi": "Cô ấy đang làm việc, buổi chiều anh hãy gọi."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-13-3",
+      "source": {
+        "trackId": "13-3",
+        "printedPage": 111,
+        "pdfPage": 109
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l14-01",
+      "titleVi": "Bài 14 - Hội thoại 1",
+      "settingVi": "Ở ký túc xá",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l14-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "昨天上午你去哪儿了？",
+          "pinyin": "zuó tiān shàng wǔ nǐ qù nǎ ér le？",
+          "translationVi": "Sáng hôm qua bạn đi đâu?"
+        },
+        {
+          "id": "turn-hsk1-l14-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我去商店买东西了。",
+          "pinyin": "wǒ qù shāng diàn mǎi dōng xī le。",
+          "translationVi": "Mình đến cửa hàng mua đồ."
+        },
+        {
+          "id": "turn-hsk1-l14-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你买什么了？",
+          "pinyin": "nǐ mǎi shén me le？",
+          "translationVi": "Bạn mua gì?"
+        },
+        {
+          "id": "turn-hsk1-l14-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我买了一点儿苹果。",
+          "pinyin": "wǒ mǎi le yì diǎn ér píng guǒ。",
+          "translationVi": "Mình mua một ít táo."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-14-1",
+      "source": {
+        "trackId": "14-1",
+        "printedPage": 116,
+        "pdfPage": 114
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l14-02",
+      "titleVi": "Bài 14 - Hội thoại 2",
+      "settingVi": "Trong công ty",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l14-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你看见张先生了吗？",
+          "pinyin": "nǐ kàn jiàn zhāng xiān shēng le ma？",
+          "translationVi": "Anh có thấy ông Trương không?"
+        },
+        {
+          "id": "turn-hsk1-l14-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "看见了，他去学开车了。",
+          "pinyin": "kàn jiàn le， tā qù xué kāi chē le。",
+          "translationVi": "Có, ông ấy đi học lái xe rồi."
+        },
+        {
+          "id": "turn-hsk1-l14-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "他什么时候能回来？",
+          "pinyin": "tā shén me shí hòu néng huí lái？",
+          "translationVi": "Khi nào ông ấy quay lại?"
+        },
+        {
+          "id": "turn-hsk1-l14-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "四十分钟后回来。",
+          "pinyin": "sì shí fēn zhōng hòu huí lái。",
+          "translationVi": "40 phút nữa."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-14-2",
+      "source": {
+        "trackId": "14-2",
+        "printedPage": 117,
+        "pdfPage": 115
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l14-03",
+      "titleVi": "Bài 14 - Hội thoại 3",
+      "settingVi": "Trước cửa hàng",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l14-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "王方的衣服太漂亮了！",
+          "pinyin": "wáng fāng de yī fú tài piào liàng le！",
+          "translationVi": "Quần áo của Vương Phương đẹp quá!"
+        },
+        {
+          "id": "turn-hsk1-l14-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "是啊，她买了不少衣服。",
+          "pinyin": "shì a， tā mǎi le bù shǎo yī fú。",
+          "translationVi": "Đúng vậy, cô ấy mua nhiều quần áo lắm."
+        },
+        {
+          "id": "turn-hsk1-l14-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你买什么了？",
+          "pinyin": "nǐ mǎi shén me le？",
+          "translationVi": "Còn bạn mua những gì?"
+        },
+        {
+          "id": "turn-hsk1-l14-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我没买，这些都是王方的东西。",
+          "pinyin": "wǒ méi mǎi， zhè xiē dōu shì wáng fāng de dōng xī。",
+          "translationVi": "Mình không mua gì cả, những thứ này đều là đồ của Vương Phương."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-14-3",
+      "source": {
+        "trackId": "14-3",
+        "printedPage": 117,
+        "pdfPage": 115
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l15-01",
+      "titleVi": "Bài 15 - Hội thoại 1",
+      "settingVi": "Ở bàn ăn",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l15-d01-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你和李小姐是什么时候认识的？",
+          "pinyin": "nǐ hé lǐ xiǎo jiě shì shén me shí hòu rèn shí de？",
+          "translationVi": "Cô và cô Lý quen nhau khi nào?"
+        },
+        {
+          "id": "turn-hsk1-l15-d01-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我们是二零一一年九月认识的。",
+          "pinyin": "wǒ men shì èr líng yī yī nián jiǔ yuè rèn shí de。",
+          "translationVi": "Chúng tôi quen nhau vào tháng 9 năm 2011."
+        },
+        {
+          "id": "turn-hsk1-l15-d01-03",
+          "speakerId": "speaker-a",
+          "hanzi": "你们在哪儿认识的？",
+          "pinyin": "nǐ men zài nǎ ér rèn shí de？",
+          "translationVi": "Các cô quen nhau ở đâu?"
+        },
+        {
+          "id": "turn-hsk1-l15-d01-04",
+          "speakerId": "speaker-b",
+          "hanzi": "我们是在学校认识的，她是我大学同学。",
+          "pinyin": "wǒ men shì zài xué xiào rèn shí de， tā shì wǒ dà xué tóng xué。",
+          "translationVi": "Ở trường. Cô ấy là bạn cùng lớp đại học của tôi."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-15-1",
+      "source": {
+        "trackId": "15-1",
+        "printedPage": 124,
+        "pdfPage": 122
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l15-02",
+      "titleVi": "Bài 15 - Hội thoại 2",
+      "settingVi": "Trước khách sạn",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l15-d02-01",
+          "speakerId": "speaker-a",
+          "hanzi": "你们是怎么来饭店的？",
+          "pinyin": "nǐ men shì zěn me lái fàn diàn de？",
+          "translationVi": "Anh chị đến khách sạn bằng cách nào?"
+        },
+        {
+          "id": "turn-hsk1-l15-d02-02",
+          "speakerId": "speaker-b",
+          "hanzi": "我们是坐出租车来的。",
+          "pinyin": "wǒ men shì zuò chū zū chē lái de。",
+          "translationVi": "Chúng tôi đi taxi đến."
+        },
+        {
+          "id": "turn-hsk1-l15-d02-03",
+          "speakerId": "speaker-a",
+          "hanzi": "李先生呢？",
+          "pinyin": "lǐ xiān shēng ne？",
+          "translationVi": "Còn ông Lý?"
+        },
+        {
+          "id": "turn-hsk1-l15-d02-04",
+          "speakerId": "speaker-b",
+          "hanzi": "他是和朋友一起开车来的。",
+          "pinyin": "tā shì hé péng yǒu yì qǐ kāi chē lái de。",
+          "translationVi": "Ông ấy và bạn cùng lái xe đến đây."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-15-2",
+      "source": {
+        "trackId": "15-2",
+        "printedPage": 125,
+        "pdfPage": 123
+      },
+      "status": "review"
+    },
+    {
+      "id": "dialogue-hsk1-l15-03",
+      "titleVi": "Bài 15 - Hội thoại 3",
+      "settingVi": "Trong công ty",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-a",
+          "displayName": "A"
+        },
+        {
+          "id": "speaker-b",
+          "displayName": "B"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-hsk1-l15-d03-01",
+          "speakerId": "speaker-a",
+          "hanzi": "很高兴认识您！李小姐。",
+          "pinyin": "hěn gāo xìng rèn shí nín！ lǐ xiǎo jiě。",
+          "translationVi": "Cô Lý, rất vui được biết cô."
+        },
+        {
+          "id": "turn-hsk1-l15-d03-02",
+          "speakerId": "speaker-b",
+          "hanzi": "认识你我也很高兴！",
+          "pinyin": "rèn shí nǐ wǒ yě hěn gāo xìng！",
+          "translationVi": "Tôi cũng rất vui được biết anh!"
+        },
+        {
+          "id": "turn-hsk1-l15-d03-03",
+          "speakerId": "speaker-a",
+          "hanzi": "听张先生说，您是坐飞机来北京的？",
+          "pinyin": "tīng zhāng xiān shēng shuō， nín shì zuò fēi jī lái běi jīng de？",
+          "translationVi": "Nghe ông Trương nói cô đáp máy bay đến Bắc Kinh, phải không?"
+        },
+        {
+          "id": "turn-hsk1-l15-d03-04",
+          "speakerId": "speaker-b",
+          "hanzi": "是的。",
+          "pinyin": "shì de。",
+          "translationVi": "Đúng vậy."
+        }
+      ],
+      "fullAudioRef": "media:media-hsk1-track-15-3",
+      "source": {
+        "trackId": "15-3",
+        "printedPage": 125,
+        "pdfPage": 123
+      },
+      "status": "review"
+    }
+  ]
+}

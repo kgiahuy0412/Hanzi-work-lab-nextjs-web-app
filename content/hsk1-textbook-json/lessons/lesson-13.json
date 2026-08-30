@@ -1,0 +1,248 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-hsk1-13",
+  "slug": "hsk1-bai-13-anh-ay-dang-hoc-nau-mon-trung-quoc",
+  "profile": "hsk-foundation",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-hsk-standard-1",
+    "levelId": "hsk-1",
+    "lessonNumber": 13,
+    "titleVi": "Anh ấy đang học nấu món ăn Trung Quốc.",
+    "titleZh": "他在学做中国菜呢。",
+    "heroHanzi": "他在学做中国菜呢。",
+    "summaryVi": "Dữ liệu bài 13 được chuyển đổi từ Giáo trình chuẩn HSK 1.",
+    "estimatedMinutes": 29,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "source": {
+      "printedPages": [
+        110,
+        115
+      ],
+      "pdfPages": [
+        108,
+        113
+      ],
+      "missingPrintedPages": []
+    }
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-hsk1-l13-dialogue",
+      "skill": "speaking",
+      "descriptionVi": "Thực hiện các mẫu hội thoại trọng tâm của Bài 13."
+    },
+    {
+      "id": "objective-hsk1-l13-vocabulary",
+      "skill": "reading",
+      "descriptionVi": "Nhận biết 11 mục từ mới của bài."
+    },
+    {
+      "id": "objective-hsk1-l13-writing",
+      "skill": "writing",
+      "descriptionVi": "Luyện viết 3 chữ Hán trọng tâm."
+    }
+  ],
+  "prerequisites": [
+    "lesson:lesson-hsk1-12"
+  ],
+  "sections": [
+    {
+      "id": "section-hsk1-l13-introduction",
+      "type": "introduction",
+      "titleVi": "Giới thiệu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 13 · HSK 1",
+        "heroHanzi": "他在学做中国菜呢。",
+        "summaryVi": "Anh ấy đang học nấu món ăn Trung Quốc.",
+        "sourcePrintedPages": [
+          110,
+          115
+        ],
+        "sourcePdfPages": [
+          108,
+          113
+        ]
+      }
+    },
+    {
+      "id": "section-hsk1-l13-dialogue",
+      "type": "dialogue",
+      "titleVi": "Bài học và hội thoại",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "dialogue:dialogue-hsk1-l13-01",
+        "dialogue:dialogue-hsk1-l13-02",
+        "dialogue:dialogue-hsk1-l13-03"
+      ],
+      "presentation": {
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": false,
+        "audioUnavailableReason": "missing-source-audio"
+      }
+    },
+    {
+      "id": "section-hsk1-l13-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ mới",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l13-01",
+        "lexeme:lex-hsk1-l13-02",
+        "lexeme:lex-hsk1-l13-03",
+        "lexeme:lex-hsk1-l13-04",
+        "lexeme:lex-hsk1-l13-05",
+        "lexeme:lex-hsk1-l13-06",
+        "lexeme:lex-hsk1-l13-07",
+        "lexeme:lex-hsk1-l13-08",
+        "lexeme:lex-hsk1-l13-09",
+        "lexeme:lex-hsk1-l13-10",
+        "lexeme:lex-hsk1-l13-11"
+      ]
+    },
+    {
+      "id": "section-hsk1-l13-grammar",
+      "type": "grammar",
+      "titleVi": "Chú thích ngữ pháp",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "grammar-point:grammar-hsk1-l13-01",
+        "grammar-point:grammar-hsk1-l13-02",
+        "grammar-point:grammar-hsk1-l13-03",
+        "grammar-point:grammar-hsk1-l13-04"
+      ],
+      "sourceAvailability": "available"
+    },
+    {
+      "id": "section-hsk1-l13-listening",
+      "type": "listening",
+      "titleVi": "Nghe theo track giáo trình",
+      "required": false,
+      "estimatedMinutes": 0,
+      "itemRefs": [
+        "media:media-hsk1-track-13-1",
+        "media:media-hsk1-track-13-2",
+        "media:media-hsk1-track-13-3"
+      ],
+      "availability": "blocked-missing-audio-files"
+    },
+    {
+      "id": "section-hsk1-l13-pronunciation",
+      "type": "pronunciation",
+      "titleVi": "Phần ghép âm",
+      "required": true,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "pronunciation-topic:pronunciation-hsk1-l13"
+      ]
+    },
+    {
+      "id": "section-hsk1-l13-writing",
+      "type": "writing",
+      "titleVi": "Chữ Hán",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "character:char-hsk1-u65e5",
+        "character:char-hsk1-u76ee",
+        "character:char-hsk1-u4e60"
+      ],
+      "strokeAssetStatus": "use-hanzi-writer-runtime-data"
+    },
+    {
+      "id": "section-hsk1-l13-practice",
+      "type": "practice",
+      "titleVi": "Luyện tập và vận dụng",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "assessment-item:assessment-hsk1-l13-meaning",
+        "assessment-item:assessment-hsk1-l13-pinyin"
+      ],
+      "sourceActivityTypes": [
+        "warm-up-image-match",
+        "role-play-source-dialogues",
+        "answer-situational-questions",
+        "pair-or-group-application"
+      ],
+      "provenance": {
+        "sourceActivities": "summarized-from-book",
+        "assessmentItems": "derived-not-verbatim"
+      }
+    },
+    {
+      "id": "section-hsk1-l13-flashcard",
+      "type": "flashcard",
+      "titleVi": "Flashcard",
+      "required": false,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l13-01",
+        "lexeme:lex-hsk1-l13-02",
+        "lexeme:lex-hsk1-l13-03",
+        "lexeme:lex-hsk1-l13-04",
+        "lexeme:lex-hsk1-l13-05",
+        "lexeme:lex-hsk1-l13-06",
+        "lexeme:lex-hsk1-l13-07",
+        "lexeme:lex-hsk1-l13-08",
+        "lexeme:lex-hsk1-l13-09",
+        "lexeme:lex-hsk1-l13-10",
+        "lexeme:lex-hsk1-l13-11"
+      ],
+      "generatedFromSectionId": "section-hsk1-l13-vocabulary"
+    },
+    {
+      "id": "section-hsk1-l13-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Hoàn thành Bài 13",
+        "messageVi": "Bạn đã hoàn thành nội dung 他在学做中国菜呢。"
+      }
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-hsk1-l13-introduction",
+      "section-hsk1-l13-dialogue",
+      "section-hsk1-l13-vocabulary",
+      "section-hsk1-l13-pronunciation",
+      "section-hsk1-l13-writing",
+      "section-hsk1-l13-practice",
+      "section-hsk1-l13-grammar"
+    ],
+    "minimumPracticeScorePercent": 50,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "blocked-missing-file",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Dữ liệu được chuyển đổi từ bản PDF scan do người dùng cung cấp.",
+      "Pinyin ở các câu hội thoại được tạo tự động và cần được biên tập ngôn ngữ kiểm tra trước khi xuất bản.",
+      "Bài tập trắc nghiệm là dữ liệu suy diễn từ từ vựng nguồn, không phải bản chép nguyên văn bài tập trong sách."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

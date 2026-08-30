@@ -1,0 +1,307 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "pronunciation-topic",
+  "items": [
+    {
+      "id": "pronunciation-hsk1-l01",
+      "lessonNumber": 1,
+      "topicsVi": [
+        "Thanh mẫu và vận mẫu cơ bản (1)",
+        "Bốn thanh điệu tiếng Trung",
+        "Cấu tạo âm tiết tiếng Trung",
+        "Biến điệu khi hai âm tiết thanh 3 đứng liền nhau"
+      ],
+      "source": {
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l02",
+      "lessonNumber": 2,
+      "topicsVi": [
+        "Thanh mẫu và vận mẫu cơ bản (2)",
+        "Thanh nhẹ",
+        "Quy tắc ghi dấu thanh và cách viết giản lược"
+      ],
+      "source": {
+        "printedPages": [
+          20,
+          25
+        ],
+        "pdfPages": [
+          20,
+          25
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l03",
+      "lessonNumber": 3,
+      "topicsVi": [
+        "Phân biệt thanh mẫu j, q, x với z, c, s",
+        "Phân biệt vận mẫu i, u, ü",
+        "Biến điệu của 不",
+        "Quy tắc ghép ü với j, q, x"
+      ],
+      "source": {
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l04",
+      "lessonNumber": 4,
+      "topicsVi": [
+        "Phân biệt thanh mẫu zh, ch, sh, r",
+        "Phân biệt vận mẫu mũi trước n và mũi sau ng",
+        "Biến điệu của 一",
+        "Cách dùng y và w trong pinyin"
+      ],
+      "source": {
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l05",
+      "lessonNumber": 5,
+      "topicsVi": [
+        "Âm cuốn lưỡi 儿化",
+        "Phân biệt vận mẫu bắt đầu bằng i, u, ü",
+        "Phân biệt thanh mẫu bật hơi và không bật hơi",
+        "Dấu cách âm trong pinyin"
+      ],
+      "source": {
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l06",
+      "lessonNumber": 6,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ hai âm tiết: thanh 1 + thanh 1/2/3/4"
+      ],
+      "source": {
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l07",
+      "lessonNumber": 7,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ hai âm tiết: thanh 2 + thanh 1/2/3/4"
+      ],
+      "source": {
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l08",
+      "lessonNumber": 8,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ hai âm tiết: thanh 3 + thanh 1/2/3/4"
+      ],
+      "source": {
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l09",
+      "lessonNumber": 9,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ hai âm tiết: thanh 4 + thanh 1/2/3/4"
+      ],
+      "source": {
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l10",
+      "lessonNumber": 10,
+      "topicsVi": [
+        "Cách đọc âm tiết mang thanh nhẹ",
+        "Cách đọc từ láy",
+        "Cách đọc từ có hậu tố 们, 子 hoặc 头"
+      ],
+      "source": {
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l11",
+      "lessonNumber": 11,
+      "topicsVi": [
+        "Chức năng và cách đọc thanh nhẹ"
+      ],
+      "source": {
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l12",
+      "lessonNumber": 12,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ ba âm tiết: bắt đầu bằng thanh 1"
+      ],
+      "source": {
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l13",
+      "lessonNumber": 13,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ ba âm tiết: bắt đầu bằng thanh 2"
+      ],
+      "source": {
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l14",
+      "lessonNumber": 14,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ ba âm tiết: bắt đầu bằng thanh 3"
+      ],
+      "source": {
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    },
+    {
+      "id": "pronunciation-hsk1-l15",
+      "lessonNumber": 15,
+      "topicsVi": [
+        "Kết hợp thanh điệu của từ ba âm tiết: bắt đầu bằng thanh 4"
+      ],
+      "source": {
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ]
+      },
+      "audioStatus": "missing-source-audio",
+      "status": "review"
+    }
+  ]
+}

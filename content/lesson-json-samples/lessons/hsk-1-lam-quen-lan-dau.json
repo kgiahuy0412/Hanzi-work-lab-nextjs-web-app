@@ -1,0 +1,352 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-hsk1-first-meeting",
+  "slug": "hsk-1-lam-quen-lan-dau",
+  "profile": "hsk-foundation",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-hsk",
+    "levelId": "hsk-1",
+    "topicId": "topic-chao-hoi-lam-quen",
+    "lessonNumber": 1,
+    "titleVi": "Làm quen lần đầu",
+    "titleZh": "第一次见面",
+    "heroHanzi": "你好",
+    "summaryVi": "Chào hỏi, hỏi tên và giới thiệu bản thân trong lần gặp đầu tiên.",
+    "situationVi": "Hai người mới gặp nhau trước giờ học hoặc trong ngày đầu đi làm.",
+    "estimatedMinutes": 15,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "tags": [
+      "hsk-1",
+      "greeting",
+      "introduction"
+    ],
+    "standardMappings": [
+      {
+        "framework": "GF0025-2021",
+        "level": "1",
+        "dimensions": [
+          "syllable",
+          "character",
+          "vocabulary",
+          "grammar"
+        ]
+      }
+    ]
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-greet-new-person",
+      "skill": "speaking",
+      "descriptionVi": "Chào người mới gặp bằng 你好 với ngữ điệu tự nhiên."
+    },
+    {
+      "id": "objective-ask-and-tell-name",
+      "skill": "speaking",
+      "descriptionVi": "Hỏi và trả lời tên bằng 叫什么名字 và 我叫…."
+    },
+    {
+      "id": "objective-recognize-introduction",
+      "skill": "listening",
+      "descriptionVi": "Nhận ra các từ 你好, 我, 你, 叫, 名字 và 是 trong câu ngắn."
+    },
+    {
+      "id": "objective-write-foundation-characters",
+      "skill": "writing",
+      "descriptionVi": "Quan sát, tô và tự viết các chữ 你, 好 và 我."
+    }
+  ],
+  "prerequisites": [],
+  "sections": [
+    {
+      "id": "section-hsk1-introduction",
+      "type": "introduction",
+      "titleVi": "Giới thiệu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 1 · HSK 1",
+        "heroHanzi": "你好",
+        "summaryVi": "Bạn sẽ hoàn thành một lượt làm quen ngắn bằng tiếng Trung.",
+        "tipVi": "Nghe trọn câu trước, sau đó mới nhìn pinyin và bản dịch.",
+        "objectiveIds": [
+          "objective-greet-new-person",
+          "objective-ask-and-tell-name",
+          "objective-recognize-introduction",
+          "objective-write-foundation-characters"
+        ]
+      }
+    },
+    {
+      "id": "section-hsk1-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ vựng",
+      "required": true,
+      "estimatedMinutes": 4,
+      "presentation": {
+        "mode": "guided-cards",
+        "showPinyinByDefault": true,
+        "allowSaveForReview": true
+      },
+      "items": [
+        {
+          "id": "lesson-word-hsk1-ni-hao",
+          "lexemeRef": "lexeme:lex-ni-hao",
+          "senseId": "sense-ni-hao-greeting",
+          "exampleSentenceRef": "sentence:sentence-first-greeting",
+          "role": "new",
+          "sortOrder": 1,
+          "teachingNoteVi": "Khi nói liền, nǐ hǎo thường được phát gần giống ní hǎo do biến điệu thanh 3."
+        },
+        {
+          "id": "lesson-word-hsk1-wo",
+          "lexemeRef": "lexeme:lex-wo",
+          "senseId": "sense-wo-speaker",
+          "exampleSentenceRef": "sentence:sentence-i-am-anna",
+          "role": "new",
+          "sortOrder": 2
+        },
+        {
+          "id": "lesson-word-hsk1-ni",
+          "lexemeRef": "lexeme:lex-ni",
+          "senseId": "sense-ni-listener",
+          "exampleSentenceRef": "sentence:sentence-ask-name",
+          "role": "new",
+          "sortOrder": 3
+        },
+        {
+          "id": "lesson-word-hsk1-jiao",
+          "lexemeRef": "lexeme:lex-jiao",
+          "senseId": "sense-jiao-be-called",
+          "exampleSentenceRef": "sentence:sentence-i-am-xiaoming",
+          "role": "new",
+          "sortOrder": 4
+        },
+        {
+          "id": "lesson-word-hsk1-ming-zi",
+          "lexemeRef": "lexeme:lex-ming-zi",
+          "senseId": "sense-ming-zi-name",
+          "exampleSentenceRef": "sentence:sentence-ask-name",
+          "role": "new",
+          "sortOrder": 5
+        },
+        {
+          "id": "lesson-word-hsk1-shi",
+          "lexemeRef": "lexeme:lex-shi",
+          "senseId": "sense-shi-copula",
+          "exampleSentenceRef": "sentence:sentence-i-am-anna",
+          "role": "new",
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "id": "section-hsk1-grammar",
+      "type": "grammar",
+      "titleVi": "Ngữ pháp",
+      "required": true,
+      "estimatedMinutes": 2,
+      "itemRefs": [
+        "grammar-point:grammar-shi-identity",
+        "grammar-point:grammar-question-with-ne"
+      ],
+      "presentation": {
+        "showFormula": true,
+        "showCommonMistakes": true,
+        "allowAudioExamples": true
+      }
+    },
+    {
+      "id": "section-hsk1-dialogue",
+      "type": "dialogue",
+      "titleVi": "Hội thoại",
+      "required": true,
+      "estimatedMinutes": 2,
+      "itemRefs": [
+        "dialogue:dialogue-first-meeting"
+      ],
+      "presentation": {
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": true,
+        "allowPlayTurn": true,
+        "shadowingPauseMs": 1800
+      }
+    },
+    {
+      "id": "section-hsk1-pronunciation",
+      "type": "pronunciation",
+      "titleVi": "Phát âm",
+      "required": true,
+      "estimatedMinutes": 1,
+      "targets": [
+        {
+          "id": "pronunciation-ni-hao-tone-sandhi",
+          "sourceRef": "lexeme:lex-ni-hao",
+          "focus": "third-tone-sandhi",
+          "modelPinyin": "ní hǎo",
+          "explanationVi": "Hai thanh 3 đứng liền nhau: âm tiết đầu thường chuyển gần thành thanh 2 khi nói.",
+          "audioRef": "media:media-audio-ni-hao-word",
+          "completionMode": "self-confirmed-shadowing"
+        },
+        {
+          "id": "pronunciation-jiao-fourth-tone",
+          "sourceRef": "lexeme:lex-jiao",
+          "focus": "fourth-tone",
+          "modelPinyin": "jiào",
+          "explanationVi": "Hạ giọng dứt khoát ở thanh 4; không kéo thành thanh ngang.",
+          "audioRef": null,
+          "completionMode": "self-confirmed-shadowing"
+        }
+      ],
+      "scoring": {
+        "type": "none",
+        "reasonVi": "MVP không thu âm hoặc chấm điểm giọng nói bằng AI."
+      }
+    },
+    {
+      "id": "section-hsk1-writing",
+      "type": "writing",
+      "titleVi": "Luyện viết",
+      "required": true,
+      "estimatedMinutes": 2,
+      "items": [
+        {
+          "characterRef": "character:char-ni",
+          "sortOrder": 1,
+          "modes": [
+            "watch",
+            "trace",
+            "quiz"
+          ]
+        },
+        {
+          "characterRef": "character:char-hao",
+          "sortOrder": 2,
+          "modes": [
+            "watch",
+            "trace",
+            "quiz"
+          ]
+        },
+        {
+          "characterRef": "character:char-wo",
+          "sortOrder": 3,
+          "modes": [
+            "watch",
+            "trace",
+            "quiz"
+          ]
+        }
+      ],
+      "completion": {
+        "requiredMode": "trace",
+        "minimumCharacters": 3
+      }
+    },
+    {
+      "id": "section-hsk1-practice",
+      "type": "practice",
+      "titleVi": "Luyện tập",
+      "required": true,
+      "estimatedMinutes": 2,
+      "itemRefs": [
+        "assessment-item:item-meaning-ni-hao",
+        "assessment-item:item-listen-ni-hao"
+      ],
+      "delivery": {
+        "selection": "all",
+        "shuffleItems": false,
+        "shuffleOptions": true,
+        "feedbackTiming": "after-each-item",
+        "allowRetry": true
+      },
+      "scoring": {
+        "maximumScore": 2,
+        "passScore": 1
+      }
+    },
+    {
+      "id": "section-hsk1-flashcard",
+      "type": "flashcard",
+      "titleVi": "Flashcard",
+      "required": false,
+      "estimatedMinutes": 1,
+      "templateRefs": [
+        "flashcard-template:flashcard-lexeme-recognition",
+        "flashcard-template:flashcard-listening-recall",
+        "flashcard-template:flashcard-hanzi-writing"
+      ],
+      "sourceSectionId": "section-hsk1-vocabulary",
+      "dailyLimit": {
+        "free": 20,
+        "vip": null
+      }
+    },
+    {
+      "id": "section-hsk1-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Hoàn thành bài học!",
+        "messageVi": "Bạn đã hoàn thành lượt làm quen đầu tiên bằng tiếng Trung.",
+        "computedMetrics": [
+          "newLexemeCount",
+          "grammarPointCount",
+          "writingCharacterCount",
+          "practiceScore"
+        ]
+      },
+      "nextActions": [
+        {
+          "id": "next-hsk1-flashcard",
+          "labelVi": "Ôn bằng flashcard",
+          "action": "open-section",
+          "targetId": "section-hsk1-flashcard"
+        },
+        {
+          "id": "next-hsk-curriculum",
+          "labelVi": "Về lộ trình HSK",
+          "action": "navigate",
+          "href": "/courses?view=hsk"
+        }
+      ]
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-hsk1-introduction",
+      "section-hsk1-vocabulary",
+      "section-hsk1-grammar",
+      "section-hsk1-dialogue",
+      "section-hsk1-pronunciation",
+      "section-hsk1-writing",
+      "section-hsk1-practice"
+    ],
+    "minimumPracticeScorePercent": 50,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "pending",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Nội dung mẫu dùng để thử schema, chưa phải bản HSK thương mại đã thẩm định."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

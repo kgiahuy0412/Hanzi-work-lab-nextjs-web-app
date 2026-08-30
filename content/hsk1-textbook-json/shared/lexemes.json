@@ -1,0 +1,5510 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "lexeme",
+  "items": [
+    {
+      "id": "lex-hsk1-l01-01",
+      "simplified": "你",
+      "pinyin": "nǐ",
+      "pinyinNumeric": "ni3",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l01-01-01",
+          "meaningVi": "anh; chị; bạn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 1,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l01-02",
+      "simplified": "好",
+      "pinyin": "hǎo",
+      "pinyinNumeric": "hao3",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l01-02-01",
+          "meaningVi": "khỏe; tốt",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 1,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l01-03",
+      "simplified": "您",
+      "pinyin": "nín",
+      "pinyinNumeric": "nin2",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l01-03-01",
+          "meaningVi": "ông; bà; ngài (lịch sự)",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 1,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l01-04",
+      "simplified": "你们",
+      "pinyin": "nǐmen",
+      "pinyinNumeric": "ni3 men5",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l01-04-01",
+          "meaningVi": "các anh; các chị; các bạn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 1,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l01-05",
+      "simplified": "对不起",
+      "pinyin": "duìbuqǐ",
+      "pinyinNumeric": "dui4 bu4 qi3",
+      "wordClass": "phrase",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l01-05-01",
+          "meaningVi": "xin lỗi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 1,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l01-06",
+      "simplified": "没关系",
+      "pinyin": "méi guānxi",
+      "pinyinNumeric": "mei2 guan1 xi4",
+      "wordClass": "phrase",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l01-06-01",
+          "meaningVi": "không sao; không có vấn đề gì",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 1,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          14,
+          19
+        ],
+        "pdfPages": [
+          14,
+          19
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l02-01",
+      "simplified": "谢谢",
+      "pinyin": "xièxie",
+      "pinyinNumeric": "xie4 xie4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l02-01-01",
+          "meaningVi": "cảm ơn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 2,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          20,
+          25
+        ],
+        "pdfPages": [
+          20,
+          25
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l02-02",
+      "simplified": "不",
+      "pinyin": "bù",
+      "pinyinNumeric": "bu4",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l02-02-01",
+          "meaningVi": "không; không cần; đừng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 2,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          20,
+          25
+        ],
+        "pdfPages": [
+          20,
+          25
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l02-03",
+      "simplified": "不客气",
+      "pinyin": "bú kèqi",
+      "pinyinNumeric": "bu2 ke4 qi4",
+      "wordClass": "phrase",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l02-03-01",
+          "meaningVi": "đừng khách sáo",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 2,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          20,
+          25
+        ],
+        "pdfPages": [
+          20,
+          25
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l02-04",
+      "simplified": "再见",
+      "pinyin": "zàijiàn",
+      "pinyinNumeric": "zai4 jian4",
+      "wordClass": "phrase",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l02-04-01",
+          "meaningVi": "tạm biệt",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 2,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          20,
+          25
+        ],
+        "pdfPages": [
+          20,
+          25
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-01",
+      "simplified": "叫",
+      "pinyin": "jiào",
+      "pinyinNumeric": "jiao4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-01-01",
+          "meaningVi": "tên là; gọi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-02",
+      "simplified": "什么",
+      "pinyin": "shénme",
+      "pinyinNumeric": "shen2 me5",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-02-01",
+          "meaningVi": "gì; cái gì",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-03",
+      "simplified": "名字",
+      "pinyin": "míngzi",
+      "pinyinNumeric": "ming2 zi4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-03-01",
+          "meaningVi": "tên",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-04",
+      "simplified": "我",
+      "pinyin": "wǒ",
+      "pinyinNumeric": "wo3",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-04-01",
+          "meaningVi": "tôi; ta; mình",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-05",
+      "simplified": "是",
+      "pinyin": "shì",
+      "pinyinNumeric": "shi4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-05-01",
+          "meaningVi": "là",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-06",
+      "simplified": "老师",
+      "pinyin": "lǎoshī",
+      "pinyinNumeric": "lao3 shi1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-06-01",
+          "meaningVi": "thầy giáo; cô giáo",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-07",
+      "simplified": "吗",
+      "pinyin": "ma",
+      "pinyinNumeric": "ma5",
+      "wordClass": "particle",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-07-01",
+          "meaningVi": "trợ từ cuối câu hỏi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-08",
+      "simplified": "学生",
+      "pinyin": "xué shēng",
+      "pinyinNumeric": "xue2 sheng1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-08-01",
+          "meaningVi": "học sinh",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-09",
+      "simplified": "人",
+      "pinyin": "rén",
+      "pinyinNumeric": "ren2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-09-01",
+          "meaningVi": "người",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-10",
+      "simplified": "李月",
+      "pinyin": "Lǐ Yuè",
+      "pinyinNumeric": "li3 yue4",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-10-01",
+          "meaningVi": "Lý Nguyệt (tên người)",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-11",
+      "simplified": "中国",
+      "pinyin": "Zhōngguó",
+      "pinyinNumeric": "zhong1 guo2",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-11-01",
+          "meaningVi": "Trung Quốc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l03-12",
+      "simplified": "美国",
+      "pinyin": "Měiguó",
+      "pinyinNumeric": "mei3 guo2",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l03-12-01",
+          "meaningVi": "Mỹ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 3,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-01",
+      "simplified": "她",
+      "pinyin": "tā",
+      "pinyinNumeric": "ta1",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-01-01",
+          "meaningVi": "cô ấy; bà ấy",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-02",
+      "simplified": "谁",
+      "pinyin": "shuí",
+      "pinyinNumeric": "shui2",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-02-01",
+          "meaningVi": "ai",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-03",
+      "simplified": "的",
+      "pinyin": "de",
+      "pinyinNumeric": "de5",
+      "wordClass": "particle",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-03-01",
+          "meaningVi": "trợ từ dùng sau định ngữ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-04",
+      "simplified": "汉语",
+      "pinyin": "Hànyǔ",
+      "pinyinNumeric": "han4 yu3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-04-01",
+          "meaningVi": "tiếng Trung Quốc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-05",
+      "simplified": "哪",
+      "pinyin": "nǎ",
+      "pinyinNumeric": "na3",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-05-01",
+          "meaningVi": "nào",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-06",
+      "simplified": "国",
+      "pinyin": "guó",
+      "pinyinNumeric": "guo2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-06-01",
+          "meaningVi": "quốc gia; đất nước",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-07",
+      "simplified": "呢",
+      "pinyin": "ne",
+      "pinyinNumeric": "ne5",
+      "wordClass": "particle",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-07-01",
+          "meaningVi": "trợ từ cuối câu hỏi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-08",
+      "simplified": "他",
+      "pinyin": "tā",
+      "pinyinNumeric": "ta1",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-08-01",
+          "meaningVi": "anh ấy; ông ấy",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-09",
+      "simplified": "同学",
+      "pinyin": "tóngxué",
+      "pinyinNumeric": "tong2 xue2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-09-01",
+          "meaningVi": "bạn cùng lớp",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l04-10",
+      "simplified": "朋友",
+      "pinyin": "péngyou",
+      "pinyinNumeric": "peng2 you3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l04-10-01",
+          "meaningVi": "bạn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 4,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-01",
+      "simplified": "家",
+      "pinyin": "jiā",
+      "pinyinNumeric": "jia1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-01-01",
+          "meaningVi": "nhà; gia đình",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-02",
+      "simplified": "有",
+      "pinyin": "yǒu",
+      "pinyinNumeric": "you3",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-02-01",
+          "meaningVi": "có",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-03",
+      "simplified": "口",
+      "pinyin": "kǒu",
+      "pinyinNumeric": "kou3",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-03-01",
+          "meaningVi": "lượng từ dùng cho người trong gia đình",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-04",
+      "simplified": "女儿",
+      "pinyin": "nǚ'ér",
+      "pinyinNumeric": "nv3 er2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-04-01",
+          "meaningVi": "con gái",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-05",
+      "simplified": "几",
+      "pinyin": "jǐ",
+      "pinyinNumeric": "ji3",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-05-01",
+          "meaningVi": "mấy",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-06",
+      "simplified": "岁",
+      "pinyin": "suì",
+      "pinyinNumeric": "sui4",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-06-01",
+          "meaningVi": "tuổi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-07",
+      "simplified": "了",
+      "pinyin": "le",
+      "pinyinNumeric": "le5",
+      "wordClass": "particle",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-07-01",
+          "meaningVi": "trợ từ chỉ thay đổi hoặc tình huống mới",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-08",
+      "simplified": "今年",
+      "pinyin": "jīnnián",
+      "pinyinNumeric": "jin1 nian2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-08-01",
+          "meaningVi": "năm nay",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-09",
+      "simplified": "多",
+      "pinyin": "duō",
+      "pinyinNumeric": "duo1",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-09-01",
+          "meaningVi": "bao nhiêu; chỉ mức độ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l05-10",
+      "simplified": "大",
+      "pinyin": "dà",
+      "pinyinNumeric": "da4",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l05-10-01",
+          "meaningVi": "lớn; bao nhiêu tuổi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 5,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-01",
+      "simplified": "会",
+      "pinyin": "huì",
+      "pinyinNumeric": "hui4",
+      "wordClass": "modal-verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-01-01",
+          "meaningVi": "biết; có khả năng do học mà có",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-02",
+      "simplified": "说",
+      "pinyin": "shuō",
+      "pinyinNumeric": "shuo1",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-02-01",
+          "meaningVi": "nói",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-03",
+      "simplified": "妈妈",
+      "pinyin": "māma",
+      "pinyinNumeric": "ma1 ma1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-03-01",
+          "meaningVi": "mẹ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-04",
+      "simplified": "菜",
+      "pinyin": "cài",
+      "pinyinNumeric": "cai4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-04-01",
+          "meaningVi": "món ăn; thức ăn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-05",
+      "simplified": "很",
+      "pinyin": "hěn",
+      "pinyinNumeric": "hen3",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-05-01",
+          "meaningVi": "rất",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-06",
+      "simplified": "好吃",
+      "pinyin": "hǎochī",
+      "pinyinNumeric": "hao3 chi1",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-06-01",
+          "meaningVi": "ngon",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-07",
+      "simplified": "做",
+      "pinyin": "zuò",
+      "pinyinNumeric": "zuo4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-07-01",
+          "meaningVi": "làm; nấu",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-08",
+      "simplified": "写",
+      "pinyin": "xiě",
+      "pinyinNumeric": "xie3",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-08-01",
+          "meaningVi": "viết",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-09",
+      "simplified": "汉字",
+      "pinyin": "Hànzì",
+      "pinyinNumeric": "han4 zi4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-09-01",
+          "meaningVi": "chữ Hán",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-10",
+      "simplified": "字",
+      "pinyin": "zì",
+      "pinyinNumeric": "zi4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-10-01",
+          "meaningVi": "chữ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-11",
+      "simplified": "怎么",
+      "pinyin": "zěnme",
+      "pinyinNumeric": "zen3 me5",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-11-01",
+          "meaningVi": "thế nào; bằng cách nào",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l06-12",
+      "simplified": "读",
+      "pinyin": "dú",
+      "pinyinNumeric": "du2",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l06-12-01",
+          "meaningVi": "đọc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 6,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-01",
+      "simplified": "请",
+      "pinyin": "qǐng",
+      "pinyinNumeric": "qing3",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-01-01",
+          "meaningVi": "mời; xin",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-02",
+      "simplified": "问",
+      "pinyin": "wèn",
+      "pinyinNumeric": "wen4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-02-01",
+          "meaningVi": "hỏi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-03",
+      "simplified": "今天",
+      "pinyin": "jīntiān",
+      "pinyinNumeric": "jin1 tian1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-03-01",
+          "meaningVi": "hôm nay",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-04",
+      "simplified": "号",
+      "pinyin": "hào",
+      "pinyinNumeric": "hao4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-04-01",
+          "meaningVi": "ngày; số",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-05",
+      "simplified": "月",
+      "pinyin": "yuè",
+      "pinyinNumeric": "yue4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-05-01",
+          "meaningVi": "tháng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-06",
+      "simplified": "星期",
+      "pinyin": "xīngqī",
+      "pinyinNumeric": "xing1 qi1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-06-01",
+          "meaningVi": "tuần; thứ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-07",
+      "simplified": "昨天",
+      "pinyin": "zuótiān",
+      "pinyinNumeric": "zuo2 tian1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-07-01",
+          "meaningVi": "hôm qua",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-08",
+      "simplified": "明天",
+      "pinyin": "míngtiān",
+      "pinyinNumeric": "ming2 tian1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-08-01",
+          "meaningVi": "ngày mai",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-09",
+      "simplified": "去",
+      "pinyin": "qù",
+      "pinyinNumeric": "qu4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-09-01",
+          "meaningVi": "đi; đi đến",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-10",
+      "simplified": "学校",
+      "pinyin": "xuéxiào",
+      "pinyinNumeric": "xue2 xiao4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-10-01",
+          "meaningVi": "trường học",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-11",
+      "simplified": "看",
+      "pinyin": "kàn",
+      "pinyinNumeric": "kan4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-11-01",
+          "meaningVi": "nhìn; xem; đọc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l07-12",
+      "simplified": "书",
+      "pinyin": "shū",
+      "pinyinNumeric": "shu1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l07-12-01",
+          "meaningVi": "sách",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 7,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-01",
+      "simplified": "想",
+      "pinyin": "xiǎng",
+      "pinyinNumeric": "xiang3",
+      "wordClass": "modal-verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-01-01",
+          "meaningVi": "muốn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-02",
+      "simplified": "喝",
+      "pinyin": "hē",
+      "pinyinNumeric": "he1",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-02-01",
+          "meaningVi": "uống",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-03",
+      "simplified": "茶",
+      "pinyin": "chá",
+      "pinyinNumeric": "cha2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-03-01",
+          "meaningVi": "trà",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-04",
+      "simplified": "吃",
+      "pinyin": "chī",
+      "pinyinNumeric": "chi1",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-04-01",
+          "meaningVi": "ăn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-05",
+      "simplified": "米饭",
+      "pinyin": "mǐfàn",
+      "pinyinNumeric": "mi3 fan4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-05-01",
+          "meaningVi": "cơm",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-06",
+      "simplified": "下午",
+      "pinyin": "xiàwǔ",
+      "pinyinNumeric": "xia4 wu3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-06-01",
+          "meaningVi": "buổi chiều",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-07",
+      "simplified": "商店",
+      "pinyin": "shāngdiàn",
+      "pinyinNumeric": "shang1 dian4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-07-01",
+          "meaningVi": "cửa hàng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-08",
+      "simplified": "买",
+      "pinyin": "mǎi",
+      "pinyinNumeric": "mai3",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-08-01",
+          "meaningVi": "mua",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-09",
+      "simplified": "个",
+      "pinyin": "gè",
+      "pinyinNumeric": "ge4",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-09-01",
+          "meaningVi": "cái; chiếc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-10",
+      "simplified": "杯子",
+      "pinyin": "bēizi",
+      "pinyinNumeric": "bei1 zi5",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-10-01",
+          "meaningVi": "ly; tách",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-11",
+      "simplified": "这",
+      "pinyin": "zhè",
+      "pinyinNumeric": "zhe4",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-11-01",
+          "meaningVi": "này; đây",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-12",
+      "simplified": "多少",
+      "pinyin": "duōshao",
+      "pinyinNumeric": "duo1 shao3",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-12-01",
+          "meaningVi": "bao nhiêu",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-13",
+      "simplified": "钱",
+      "pinyin": "qián",
+      "pinyinNumeric": "qian2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-13-01",
+          "meaningVi": "tiền",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 13,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-14",
+      "simplified": "块",
+      "pinyin": "kuài",
+      "pinyinNumeric": "kuai4",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-14-01",
+          "meaningVi": "đồng; đơn vị tiền tệ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 14,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l08-15",
+      "simplified": "那",
+      "pinyin": "nà",
+      "pinyinNumeric": "na4",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l08-15-01",
+          "meaningVi": "kia; đó",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 8,
+        "sourceOrdinal": 15,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-01",
+      "simplified": "小",
+      "pinyin": "xiǎo",
+      "pinyinNumeric": "xiao3",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-01-01",
+          "meaningVi": "nhỏ; bé",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-02",
+      "simplified": "猫",
+      "pinyin": "māo",
+      "pinyinNumeric": "mao1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-02-01",
+          "meaningVi": "mèo",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-03",
+      "simplified": "在",
+      "pinyin": "zài",
+      "pinyinNumeric": "zai4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-03-01",
+          "meaningVi": "ở; tại; đang có mặt",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-04",
+      "simplified": "那儿",
+      "pinyin": "nàr",
+      "pinyinNumeric": "na4 er2",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-04-01",
+          "meaningVi": "chỗ đó",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-05",
+      "simplified": "狗",
+      "pinyin": "gǒu",
+      "pinyinNumeric": "gou3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-05-01",
+          "meaningVi": "chó",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-06",
+      "simplified": "椅子",
+      "pinyin": "yǐzi",
+      "pinyinNumeric": "yi3 zi5",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-06-01",
+          "meaningVi": "ghế dựa",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-07",
+      "simplified": "下面",
+      "pinyin": "xiàmiàn",
+      "pinyinNumeric": "xia4 mian4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-07-01",
+          "meaningVi": "bên dưới; phía dưới",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": "下"
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-08",
+      "simplified": "哪儿",
+      "pinyin": "nǎr",
+      "pinyinNumeric": "na3 er2",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-08-01",
+          "meaningVi": "đâu",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-09",
+      "simplified": "工作",
+      "pinyin": "gōngzuò",
+      "pinyinNumeric": "gong1 zuo4",
+      "wordClass": "verb-noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-09-01",
+          "meaningVi": "làm việc; công việc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-10",
+      "simplified": "儿子",
+      "pinyin": "érzi",
+      "pinyinNumeric": "er2 zi5",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-10-01",
+          "meaningVi": "con trai",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-11",
+      "simplified": "医院",
+      "pinyin": "yīyuàn",
+      "pinyinNumeric": "yi1 yuan4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-11-01",
+          "meaningVi": "bệnh viện",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-12",
+      "simplified": "医生",
+      "pinyin": "yīshēng",
+      "pinyinNumeric": "yi1 sheng1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-12-01",
+          "meaningVi": "bác sĩ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l09-13",
+      "simplified": "爸爸",
+      "pinyin": "bàba",
+      "pinyinNumeric": "ba4 ba4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l09-13-01",
+          "meaningVi": "cha; bố",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 9,
+        "sourceOrdinal": 13,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-01",
+      "simplified": "桌子",
+      "pinyin": "zhuōzi",
+      "pinyinNumeric": "zhuo1 zi5",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-01-01",
+          "meaningVi": "cái bàn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-02",
+      "simplified": "上",
+      "pinyin": "shàng",
+      "pinyinNumeric": "shang4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-02-01",
+          "meaningVi": "trên; phía trên",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-03",
+      "simplified": "电脑",
+      "pinyin": "diànnǎo",
+      "pinyinNumeric": "dian4 nao3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-03-01",
+          "meaningVi": "máy vi tính",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-04",
+      "simplified": "和",
+      "pinyin": "hé",
+      "pinyinNumeric": "he2",
+      "wordClass": "conjunction",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-04-01",
+          "meaningVi": "và",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-05",
+      "simplified": "本",
+      "pinyin": "běn",
+      "pinyinNumeric": "ben3",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-05-01",
+          "meaningVi": "quyển; cuốn",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-06",
+      "simplified": "里",
+      "pinyin": "lǐ",
+      "pinyinNumeric": "li3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-06-01",
+          "meaningVi": "trong; bên trong",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-07",
+      "simplified": "前面",
+      "pinyin": "qiánmiàn",
+      "pinyinNumeric": "qian2 mian4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-07-01",
+          "meaningVi": "phía trước",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-08",
+      "simplified": "后面",
+      "pinyin": "hòumiàn",
+      "pinyinNumeric": "hou4 mian4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-08-01",
+          "meaningVi": "phía sau",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-09",
+      "simplified": "这儿",
+      "pinyin": "zhèr",
+      "pinyinNumeric": "zhe4 er2",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-09-01",
+          "meaningVi": "chỗ này; ở đây",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-10",
+      "simplified": "没有",
+      "pinyin": "méiyǒu",
+      "pinyinNumeric": "mei2 you3",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-10-01",
+          "meaningVi": "không có",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-11",
+      "simplified": "能",
+      "pinyin": "néng",
+      "pinyinNumeric": "neng2",
+      "wordClass": "modal-verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-11-01",
+          "meaningVi": "có thể",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-12",
+      "simplified": "坐",
+      "pinyin": "zuò",
+      "pinyinNumeric": "zuo4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-12-01",
+          "meaningVi": "ngồi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-13",
+      "simplified": "王方",
+      "pinyin": "Wáng Fāng",
+      "pinyinNumeric": "wang2 fang1",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-13-01",
+          "meaningVi": "Vương Phương (tên người)",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 13,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l10-14",
+      "simplified": "谢朋",
+      "pinyin": "Xiè Péng",
+      "pinyinNumeric": "xie4 peng2",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l10-14-01",
+          "meaningVi": "Tạ Bằng (tên người)",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 10,
+        "sourceOrdinal": 14,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-01",
+      "simplified": "现在",
+      "pinyin": "xiànzài",
+      "pinyinNumeric": "xian4 zai4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-01-01",
+          "meaningVi": "bây giờ; hiện tại",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-02",
+      "simplified": "点",
+      "pinyin": "diǎn",
+      "pinyinNumeric": "dian3",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-02-01",
+          "meaningVi": "giờ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-03",
+      "simplified": "分",
+      "pinyin": "fēn",
+      "pinyinNumeric": "fen1",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-03-01",
+          "meaningVi": "phút",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-04",
+      "simplified": "中午",
+      "pinyin": "zhōngwǔ",
+      "pinyinNumeric": "zhong1 wu3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-04-01",
+          "meaningVi": "buổi trưa",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-05",
+      "simplified": "吃饭",
+      "pinyin": "chīfàn",
+      "pinyinNumeric": "chi1 fan4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-05-01",
+          "meaningVi": "ăn cơm",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-06",
+      "simplified": "时候",
+      "pinyin": "shíhou",
+      "pinyinNumeric": "shi2 hou4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-06-01",
+          "meaningVi": "lúc; khi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-07",
+      "simplified": "回",
+      "pinyin": "huí",
+      "pinyinNumeric": "hui2",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-07-01",
+          "meaningVi": "về; trở về",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-08",
+      "simplified": "我们",
+      "pinyin": "wǒmen",
+      "pinyinNumeric": "wo3 men5",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-08-01",
+          "meaningVi": "chúng ta; chúng tôi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-09",
+      "simplified": "电影",
+      "pinyin": "diànyǐng",
+      "pinyinNumeric": "dian4 ying3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-09-01",
+          "meaningVi": "phim",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-10",
+      "simplified": "住",
+      "pinyin": "zhù",
+      "pinyinNumeric": "zhu4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-10-01",
+          "meaningVi": "ở; cư trú",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-11",
+      "simplified": "前",
+      "pinyin": "qián",
+      "pinyinNumeric": "qian2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-11-01",
+          "meaningVi": "trước",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l11-12",
+      "simplified": "北京",
+      "pinyin": "Běijīng",
+      "pinyinNumeric": "bei3 jing1",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l11-12-01",
+          "meaningVi": "Bắc Kinh",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 11,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-01",
+      "simplified": "天气",
+      "pinyin": "tiānqì",
+      "pinyinNumeric": "tian1 qi4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-01-01",
+          "meaningVi": "thời tiết",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-02",
+      "simplified": "怎么样",
+      "pinyin": "zěnmeyàng",
+      "pinyinNumeric": "zen3 me5 yang4",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-02-01",
+          "meaningVi": "như thế nào",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-03",
+      "simplified": "太",
+      "pinyin": "tài",
+      "pinyinNumeric": "tai4",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-03-01",
+          "meaningVi": "quá; lắm",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-04",
+      "simplified": "太……了",
+      "pinyin": "tài...le",
+      "pinyinNumeric": "tai4 … … le5",
+      "wordClass": "pattern",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-04-01",
+          "meaningVi": "quá; lắm",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-05",
+      "simplified": "热",
+      "pinyin": "rè",
+      "pinyinNumeric": "re4",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-05-01",
+          "meaningVi": "nóng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-06",
+      "simplified": "冷",
+      "pinyin": "lěng",
+      "pinyinNumeric": "leng3",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-06-01",
+          "meaningVi": "lạnh",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-07",
+      "simplified": "下雨",
+      "pinyin": "xiàyǔ",
+      "pinyinNumeric": "xia4 yu3",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-07-01",
+          "meaningVi": "mưa; đổ mưa",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": "下"
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-08",
+      "simplified": "小姐",
+      "pinyin": "xiǎojiě",
+      "pinyinNumeric": "xiao3 jie3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-08-01",
+          "meaningVi": "cô; tiểu thư",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-09",
+      "simplified": "来",
+      "pinyin": "lái",
+      "pinyinNumeric": "lai2",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-09-01",
+          "meaningVi": "đến; tới",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-10",
+      "simplified": "身体",
+      "pinyin": "shēntǐ",
+      "pinyinNumeric": "shen1 ti3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-10-01",
+          "meaningVi": "sức khỏe; cơ thể",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-11",
+      "simplified": "爱",
+      "pinyin": "ài",
+      "pinyinNumeric": "ai4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-11-01",
+          "meaningVi": "yêu; thích",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-12",
+      "simplified": "些",
+      "pinyin": "xiē",
+      "pinyinNumeric": "xie1",
+      "wordClass": "measure-word",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-12-01",
+          "meaningVi": "một ít; một vài",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-13",
+      "simplified": "水果",
+      "pinyin": "shuǐguǒ",
+      "pinyinNumeric": "shui3 guo3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-13-01",
+          "meaningVi": "trái cây",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 13,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l12-14",
+      "simplified": "水",
+      "pinyin": "shuǐ",
+      "pinyinNumeric": "shui3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l12-14-01",
+          "meaningVi": "nước",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 12,
+        "sourceOrdinal": 14,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-01",
+      "simplified": "喂",
+      "pinyin": "wèi",
+      "pinyinNumeric": "wei4",
+      "wordClass": "interjection",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-01-01",
+          "meaningVi": "a lô; này",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-02",
+      "simplified": "也",
+      "pinyin": "yě",
+      "pinyinNumeric": "ye3",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-02-01",
+          "meaningVi": "cũng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-03",
+      "simplified": "学习",
+      "pinyin": "xuéxí",
+      "pinyinNumeric": "xue2 xi2",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-03-01",
+          "meaningVi": "học; học tập",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": "学"
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-04",
+      "simplified": "上午",
+      "pinyin": "shàngwǔ",
+      "pinyinNumeric": "shang4 wu3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-04-01",
+          "meaningVi": "buổi sáng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-05",
+      "simplified": "睡觉",
+      "pinyin": "shuìjiào",
+      "pinyinNumeric": "shui4 jiao4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-05-01",
+          "meaningVi": "ngủ",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-06",
+      "simplified": "电视",
+      "pinyin": "diànshì",
+      "pinyinNumeric": "dian4 shi4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-06-01",
+          "meaningVi": "ti vi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-07",
+      "simplified": "喜欢",
+      "pinyin": "xǐhuan",
+      "pinyinNumeric": "xi3 huan1",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-07-01",
+          "meaningVi": "thích",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-08",
+      "simplified": "给",
+      "pinyin": "gěi",
+      "pinyinNumeric": "gei3",
+      "wordClass": "preposition",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-08-01",
+          "meaningVi": "cho; với",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-09",
+      "simplified": "打电话",
+      "pinyin": "dǎ diànhuà",
+      "pinyinNumeric": "da3 dian4 hua4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-09-01",
+          "meaningVi": "gọi điện thoại",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-10",
+      "simplified": "吧",
+      "pinyin": "ba",
+      "pinyinNumeric": "ba5",
+      "wordClass": "particle",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-10-01",
+          "meaningVi": "trợ từ biểu thị đề nghị; thỉnh cầu",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l13-11",
+      "simplified": "大卫",
+      "pinyin": "Dàwèi",
+      "pinyinNumeric": "da4 wei4",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l13-11-01",
+          "meaningVi": "David (tên người)",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 13,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-01",
+      "simplified": "东西",
+      "pinyin": "dōngxi",
+      "pinyinNumeric": "dong1 xi1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-01-01",
+          "meaningVi": "đồ; đồ đạc",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-02",
+      "simplified": "一点儿",
+      "pinyin": "yìdiǎnr",
+      "pinyinNumeric": "yi4 dian3 er2",
+      "wordClass": "quantity",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-02-01",
+          "meaningVi": "một ít; một chút",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-03",
+      "simplified": "苹果",
+      "pinyin": "píngguǒ",
+      "pinyinNumeric": "ping2 guo3",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-03-01",
+          "meaningVi": "táo",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-04",
+      "simplified": "看见",
+      "pinyin": "kànjiàn",
+      "pinyinNumeric": "kan4 jian4",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-04-01",
+          "meaningVi": "nhìn thấy",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-05",
+      "simplified": "先生",
+      "pinyin": "xiānsheng",
+      "pinyinNumeric": "xian1 sheng1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-05-01",
+          "meaningVi": "ông; ngài",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-06",
+      "simplified": "开",
+      "pinyin": "kāi",
+      "pinyinNumeric": "kai1",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-06-01",
+          "meaningVi": "lái; mở",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-07",
+      "simplified": "车",
+      "pinyin": "chē",
+      "pinyinNumeric": "che1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-07-01",
+          "meaningVi": "xe",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-08",
+      "simplified": "回来",
+      "pinyin": "huílai",
+      "pinyinNumeric": "hui2 lai2",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-08-01",
+          "meaningVi": "quay về; trở lại",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-09",
+      "simplified": "分钟",
+      "pinyin": "fēnzhōng",
+      "pinyinNumeric": "fen1 zhong1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-09-01",
+          "meaningVi": "phút",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-10",
+      "simplified": "后",
+      "pinyin": "hòu",
+      "pinyinNumeric": "hou4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-10-01",
+          "meaningVi": "sau",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 10,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-11",
+      "simplified": "衣服",
+      "pinyin": "yīfu",
+      "pinyinNumeric": "yi1 fu2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-11-01",
+          "meaningVi": "quần áo",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 11,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-12",
+      "simplified": "漂亮",
+      "pinyin": "piàoliang",
+      "pinyinNumeric": "piao4 liang4",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-12-01",
+          "meaningVi": "đẹp",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 12,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-13",
+      "simplified": "啊",
+      "pinyin": "a",
+      "pinyinNumeric": "a5",
+      "wordClass": "particle",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-13-01",
+          "meaningVi": "trợ từ ngữ khí",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 13,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-14",
+      "simplified": "少",
+      "pinyin": "shǎo",
+      "pinyinNumeric": "shao3",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-14-01",
+          "meaningVi": "ít",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 14,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-15",
+      "simplified": "不少",
+      "pinyin": "bùshǎo",
+      "pinyinNumeric": "bu4 shao3",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-15-01",
+          "meaningVi": "nhiều; không ít",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 15,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-16",
+      "simplified": "这些",
+      "pinyin": "zhèxiē",
+      "pinyinNumeric": "zhe4 xie1",
+      "wordClass": "pronoun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-16-01",
+          "meaningVi": "những thứ này; những điều này",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 16,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-17",
+      "simplified": "都",
+      "pinyin": "dōu",
+      "pinyinNumeric": "dou1",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-17-01",
+          "meaningVi": "đều",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 17,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l14-18",
+      "simplified": "张",
+      "pinyin": "zhāng",
+      "pinyinNumeric": "zhang1",
+      "wordClass": "proper-noun",
+      "kind": "proper-noun",
+      "senses": [
+        {
+          "id": "sense-hsk1-l14-18-01",
+          "meaningVi": "Trương (họ người Trung Quốc)",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 14,
+        "sourceOrdinal": 18,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-01",
+      "simplified": "认识",
+      "pinyin": "rènshi",
+      "pinyinNumeric": "ren4 shi2",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-01-01",
+          "meaningVi": "quen; biết",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 1,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-02",
+      "simplified": "年",
+      "pinyin": "nián",
+      "pinyinNumeric": "nian2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-02-01",
+          "meaningVi": "năm",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 2,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-03",
+      "simplified": "大学",
+      "pinyin": "dàxué",
+      "pinyinNumeric": "da4 xue2",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-03-01",
+          "meaningVi": "đại học",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 3,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-04",
+      "simplified": "饭店",
+      "pinyin": "fàndiàn",
+      "pinyinNumeric": "fan4 dian4",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-04-01",
+          "meaningVi": "khách sạn; nhà hàng",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 4,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-05",
+      "simplified": "出租车",
+      "pinyin": "chūzūchē",
+      "pinyinNumeric": "chu1 zu1 che1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-05-01",
+          "meaningVi": "taxi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 5,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-06",
+      "simplified": "一起",
+      "pinyin": "yìqǐ",
+      "pinyinNumeric": "yi4 qi3",
+      "wordClass": "adverb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-06-01",
+          "meaningVi": "cùng nhau",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 6,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": true,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-07",
+      "simplified": "高兴",
+      "pinyin": "gāoxìng",
+      "pinyinNumeric": "gao1 xing4",
+      "wordClass": "adjective",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-07-01",
+          "meaningVi": "vui; phấn khởi",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 7,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-08",
+      "simplified": "听",
+      "pinyin": "tīng",
+      "pinyinNumeric": "ting1",
+      "wordClass": "verb",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-08-01",
+          "meaningVi": "nghe",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 8,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hsk1-l15-09",
+      "simplified": "飞机",
+      "pinyin": "fēijī",
+      "pinyinNumeric": "fei1 ji1",
+      "wordClass": "noun",
+      "kind": "vocabulary",
+      "senses": [
+        {
+          "id": "sense-hsk1-l15-09-01",
+          "meaningVi": "máy bay",
+          "register": "neutral"
+        }
+      ],
+      "source": {
+        "book": "Giáo trình chuẩn HSK 1",
+        "lessonNumber": 15,
+        "sourceOrdinal": 9,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "markedWithAsterisk": false,
+        "relatedForm": null
+      },
+      "audioRefs": [],
+      "status": "review"
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-office-report-progress",
+  "slug": "bao-tien-do-voi-quan-ly",
+  "profile": "industry-workplace",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-van-phong-hanh-chinh",
+    "moduleId": "module-phoi-hop-cong-viec",
+    "lessonNumber": 5,
+    "titleVi": "Báo tiến độ với quản lý",
+    "titleZh": "向经理汇报进度",
+    "summaryVi": "Nêu phần đã hoàn thành, việc còn lại và mốc gửi kết quả một cách rõ ràng.",
+    "situationVi": "Quản lý hỏi tiến độ vào cuối ngày làm việc.",
+    "estimatedMinutes": 12,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "workplace-response"
+    ],
+    "tags": [
+      "office",
+      "project-management",
+      "progress-report"
+    ],
+    "coverMediaRef": "media:media-image-office-progress"
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-understand-progress-question",
+      "skill": "listening",
+      "descriptionVi": "Hiểu câu hỏi về trạng thái hoặc tiến độ dự án."
+    },
+    {
+      "id": "objective-report-progress-specific",
+      "skill": "workplace-response",
+      "descriptionVi": "Báo phần trăm đã hoàn thành và công việc còn lại bằng thông tin cụ thể."
+    },
+    {
+      "id": "objective-commit-next-update",
+      "skill": "speaking",
+      "descriptionVi": "Cam kết thời điểm gửi kết quả hoặc cập nhật tiếp theo."
+    }
+  ],
+  "prerequisites": [
+    {
+      "type": "lesson",
+      "id": "lesson-office-receive-task",
+      "required": false
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-office-progress-introduction",
+      "type": "introduction",
+      "titleVi": "Tình huống",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 05 · Văn phòng",
+        "scenarioVi": "Quản lý cần biết dự án có kịp hạn để quyết định bước tiếp theo.",
+        "challengeVi": "Hãy trả lời bằng trạng thái đo được và một mốc cập nhật cụ thể.",
+        "objectiveIds": [
+          "objective-understand-progress-question",
+          "objective-report-progress-specific",
+          "objective-commit-next-update"
+        ]
+      }
+    },
+    {
+      "id": "section-office-progress-video",
+      "type": "scenario-video",
+      "titleVi": "Video mở đầu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "itemRefs": [
+        "media:media-video-work-progress"
+      ],
+      "presentation": {
+        "startWithSubtitles": false,
+        "subtitleTracks": [
+          "hanzi",
+          "pinyin",
+          "vi"
+        ],
+        "allowSentenceLoop": true,
+        "allowPlaybackRates": [
+          0.75,
+          1
+        ]
+      }
+    },
+    {
+      "id": "section-office-progress-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ vựng",
+      "required": true,
+      "estimatedMinutes": 3,
+      "presentation": {
+        "mode": "carousel",
+        "showPinyinByDefault": true,
+        "allowSaveForReview": true
+      },
+      "items": [
+        {
+          "id": "lesson-word-office-xiang-mu",
+          "lexemeRef": "lexeme:lex-xiang-mu",
+          "senseId": "sense-xiang-mu-project",
+          "exampleSentenceRef": "sentence:sentence-project-progress-question",
+          "role": "review",
+          "sortOrder": 1
+        },
+        {
+          "id": "lesson-word-office-jin-du",
+          "lexemeRef": "lexeme:lex-jin-du",
+          "senseId": "sense-jin-du-progress",
+          "exampleSentenceRef": "sentence:sentence-report-latest-progress",
+          "role": "new",
+          "sortOrder": 2,
+          "teachingNoteVi": "Dùng cho tiến độ công việc, đơn hàng, sản xuất hoặc dự án."
+        },
+        {
+          "id": "lesson-word-office-wan-cheng",
+          "lexemeRef": "lexeme:lex-wan-cheng",
+          "senseId": "sense-wan-cheng-complete",
+          "exampleSentenceRef": "sentence:sentence-progress-eighty",
+          "role": "new",
+          "sortOrder": 3
+        },
+        {
+          "id": "lesson-word-office-hui-bao",
+          "lexemeRef": "lexeme:lex-hui-bao",
+          "senseId": "sense-hui-bao-report",
+          "exampleSentenceRef": "sentence:sentence-report-latest-progress",
+          "role": "new",
+          "sortOrder": 4
+        },
+        {
+          "id": "lesson-word-office-deadline",
+          "lexemeRef": "lexeme:lex-jie-zhi-ri-qi",
+          "senseId": "sense-jie-zhi-ri-qi-deadline",
+          "exampleSentenceRef": "sentence:sentence-ask-deadline",
+          "role": "review",
+          "sortOrder": 5
+        },
+        {
+          "id": "lesson-word-office-tong-shi",
+          "lexemeRef": "lexeme:lex-tong-shi",
+          "senseId": "sense-tong-shi-colleague",
+          "exampleSentenceRef": "sentence:sentence-i-am-colleague",
+          "role": "incidental",
+          "sortOrder": 6
+        }
+      ]
+    },
+    {
+      "id": "section-office-progress-dialogue",
+      "type": "dialogue",
+      "titleVi": "Hội thoại",
+      "required": true,
+      "estimatedMinutes": 2,
+      "itemRefs": [
+        "dialogue:dialogue-work-progress"
+      ],
+      "presentation": {
+        "showSpeakerRole": true,
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": true,
+        "allowPlayTurn": true,
+        "shadowingPauseMs": 2200
+      }
+    },
+    {
+      "id": "section-office-progress-notes",
+      "type": "usage-notes",
+      "titleVi": "Ghi chú cách dùng",
+      "required": true,
+      "estimatedMinutes": 1,
+      "itemRefs": [
+        "grammar-point:usage-report-progress",
+        "grammar-point:usage-ask-deadline"
+      ],
+      "presentation": {
+        "showFormula": true,
+        "showConstraints": true,
+        "showCommonMistakes": true
+      }
+    },
+    {
+      "id": "section-office-progress-listening",
+      "type": "listening",
+      "titleVi": "Luyện nghe",
+      "required": true,
+      "estimatedMinutes": 1,
+      "itemRefs": [
+        "assessment-item:item-listening-progress-true-false"
+      ],
+      "delivery": {
+        "autoplay": false,
+        "replayLimit": null,
+        "playbackRates": [
+          0.75,
+          1
+        ],
+        "hideTranscriptUntilAnswered": true
+      }
+    },
+    {
+      "id": "section-office-progress-practice",
+      "type": "practice",
+      "titleVi": "Xử lý tình huống",
+      "required": true,
+      "estimatedMinutes": 2,
+      "itemRefs": [
+        "assessment-item:item-pinyin-jin-du",
+        "assessment-item:item-fill-progress-eighty",
+        "assessment-item:item-reorder-report-progress",
+        "assessment-item:item-work-scenario-response"
+      ],
+      "delivery": {
+        "selection": "all",
+        "shuffleItems": false,
+        "shuffleOptions": true,
+        "feedbackTiming": "after-each-item",
+        "allowRetry": true
+      },
+      "scoring": {
+        "maximumScore": 4,
+        "passScore": 3
+      }
+    },
+    {
+      "id": "section-office-progress-flashcard",
+      "type": "flashcard",
+      "titleVi": "Ôn nhanh",
+      "required": false,
+      "estimatedMinutes": 1,
+      "templateRefs": [
+        "flashcard-template:flashcard-lexeme-recognition",
+        "flashcard-template:flashcard-listening-recall",
+        "flashcard-template:flashcard-sentence-shadowing"
+      ],
+      "sourceSectionId": "section-office-progress-vocabulary"
+    },
+    {
+      "id": "section-office-progress-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Bạn đã hoàn thành ca báo tiến độ",
+        "messageVi": "Hãy dùng công thức: trạng thái cụ thể → phần còn lại → mốc cập nhật tiếp theo.",
+        "computedMetrics": [
+          "newLexemeCount",
+          "listeningScore",
+          "practiceScore",
+          "savedReviewItems"
+        ]
+      },
+      "nextActions": [
+        {
+          "id": "next-office-practice",
+          "labelVi": "Luyện một ca tương tự",
+          "action": "navigate",
+          "href": "/practice"
+        },
+        {
+          "id": "next-office-course",
+          "labelVi": "Về lộ trình",
+          "action": "navigate",
+          "href": "/courses/van-phong-hanh-chinh"
+        }
+      ]
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-office-progress-introduction",
+      "section-office-progress-video",
+      "section-office-progress-vocabulary",
+      "section-office-progress-dialogue",
+      "section-office-progress-notes",
+      "section-office-progress-listening",
+      "section-office-progress-practice"
+    ],
+    "minimumPracticeScorePercent": 75,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "approved",
+    "industryReviewStatus": "pending",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Mẫu dùng nội dung video tiến độ đã có trong ứng dụng.",
+      "Cần người thành thạo Quan thoại và người có kinh nghiệm văn phòng duyệt trước khi xuất bản thương mại."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
-import { ArrowRight, Award, CheckCircle2, ChevronDown, ChevronUp, Crown, Gamepad2, Headphones, LockKeyhole } from "lucide-react";
+import { ArrowRight, Award, CheckCircle2, Crown, Gamepad2, Headphones } from "lucide-react";
 import { LessonChallengePanel } from "@/components/lesson-challenge";
 import { LessonVocabularyDeck } from "@/components/lesson-vocabulary-deck";
 import { VideoLearningPlayer } from "@/components/video-learning-player";
@@ -34,24 +34,12 @@ export function LessonWorkspace({
   const scenarioVideo = getLessonScenarioVideo(course.slug, lesson.slug);
   const baseTabs: LessonTab[] = scenarioVideo ? ["Tình huống", "Từ vựng", "Hội thoại", "Ghi chú"] : ["Từ vựng", "Hội thoại", "Ghi chú"];
   const [tab, setTab] = useState<LessonTab>(scenarioVideo ? "Tình huống" : "Từ vựng");
-  const [pendingLesson, setPendingLesson] = useState<string | null>(null);
   const [challengePassed, setChallengePassed] = useState(!lesson.challenge);
-  const [mobileLessonsOpen, setMobileLessonsOpen] = useState(false);
   const tabs = lesson.challenge ? [...baseTabs, "Kiểm tra" as const] : baseTabs;
-  const moduleGroups = lessons.reduce<Array<{ slug: string; title: string; order: number; lessons: LessonSummary[] }>>((groups, item) => {
-    const current = groups[groups.length - 1];
-    if (!current || current.slug !== item.moduleSlug) {
-      groups.push({ slug: item.moduleSlug, title: item.moduleTitle, order: item.moduleOrder, lessons: [item] });
-    } else {
-      current.lessons.push(item);
-    }
-    return groups;
-  }, []);
   const lessonNumber = lesson.order + 1;
   const tabIndex = tabs.indexOf(tab);
   const completed = progress?.completionPercent === 100;
   const requiresChallengePass = Boolean(lesson.challenge) && !challengePassed;
-  const viewerHasVip = access.source === "vip";
   const lessonHref = `/learn/${course.slug}?lesson=${lesson.slug}`;
   const returnTo = dailyFlow ? withDailySessionFlow(lessonHref) : lessonHref;
   const completionReturnTo = dailyFlow ? `${returnTo}#daily-next` : returnTo;
@@ -76,35 +64,7 @@ export function LessonWorkspace({
     return () => window.clearTimeout(timer);
   }, [access.allowed, authenticated, course.slug, lesson.slug]);
 
-  return <div className="lesson-shell">
-    <aside className="lesson-sidebar">
-      <div className="lesson-sidebar-header"><span>Lộ trình đang học</span><h2>{course.title}</h2><p>{lessons.length} bài đã xuất bản · {lessons.filter((item) => item.isFree).length} bài học thử</p><button aria-controls="lesson-course-navigation" aria-expanded={mobileLessonsOpen} className="lesson-sidebar-toggle" onClick={() => setMobileLessonsOpen((open) => !open)} type="button"><span>Bài {lessonNumber} / {lessons.length}</span>{mobileLessonsOpen ? <ChevronUp size={18} /> : <ChevronDown size={18} />}</button></div>
-      <nav className={`lesson-nav${mobileLessonsOpen ? " mobile-open" : ""}`} id="lesson-course-navigation" aria-label="Danh sách bài học">{moduleGroups.map((group) => <section className="lesson-module-group" key={group.slug}>
-        <div className="lesson-module-title"><span>Module {group.order + 1}</span><strong>{group.title}</strong></div>
-        {group.lessons.map((item) => {
-          const active = item.slug === lesson.slug;
-          const locked = !item.isFree && !viewerHasVip;
-          const pending = pendingLesson === item.slug && item.slug !== lesson.slug;
-          return <Link
-            aria-busy={pending || undefined}
-            aria-current={active ? "page" : undefined}
-            className={`${active ? "active" : ""}${pending ? " pending" : ""}`}
-            href={`/learn/${course.slug}?lesson=${item.slug}`}
-            key={item.slug}
-            onClick={() => {
-              if (!active) setPendingLesson(item.slug);
-            }}
-            prefetch
-          >
-            <span className="lesson-number">{item.order + 1}</span>
-            <span className="lesson-nav-copy"><strong>{item.title}</strong><span>{active ? "Đang học" : item.isFree ? "Học thử" : viewerHasVip ? "VIP đã mở" : "VIP"}</span></span>
-            {pending ? <span aria-hidden="true" className="lesson-nav-spinner" /> : locked ? <LockKeyhole className="lesson-lock" size={14} /> : null}
-          </Link>;
-        })}
-      </section>)}</nav>
-    </aside>
-
-    <section className="lesson-main">
+  return <section className="lesson-main">
       <div className="lesson-header-card">
         <div className="lesson-heading-row"><div><span className="section-kicker">Bài {String(lessonNumber).padStart(2, "0")} · {lesson.estimatedMinutes} phút · {lesson.situation}</span><h1>{lesson.title}</h1><p>{lesson.summary}</p></div><div className="lesson-progress-badge"><strong>{lessonNumber} / {lessons.length}</strong><span>Trong lộ trình</span></div></div>
         {access.allowed ? <div className="lesson-tabs" role="tablist" aria-label="Nội dung bài học">{tabs.map((item, index) => <button
@@ -175,6 +135,5 @@ export function LessonWorkspace({
           </Link>
         </section> : null}
       </div>}
-    </section>
-  </div>;
+  </section>;
 }

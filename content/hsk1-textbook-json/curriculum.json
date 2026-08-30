@@ -1,0 +1,44 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "curriculum-hsk-standard-course-1",
+  "titleVi": "Giáo trình chuẩn HSK 1",
+  "titleZh": "HSK 标准教程 1",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN"
+  },
+  "lessonRefs": [
+    "lesson:lesson-hsk1-01",
+    "lesson:lesson-hsk1-02",
+    "lesson:lesson-hsk1-03",
+    "lesson:lesson-hsk1-04",
+    "lesson:lesson-hsk1-05",
+    "lesson:lesson-hsk1-06",
+    "lesson:lesson-hsk1-07",
+    "lesson:lesson-hsk1-08",
+    "lesson:lesson-hsk1-09",
+    "lesson:lesson-hsk1-10",
+    "lesson:lesson-hsk1-11",
+    "lesson:lesson-hsk1-12",
+    "lesson:lesson-hsk1-13",
+    "lesson:lesson-hsk1-14",
+    "lesson:lesson-hsk1-15"
+  ],
+  "cultureNoteRefs": [
+    "culture-note:culture-asking-age",
+    "culture-note:culture-chinese-names",
+    "culture-note:culture-communication-tools"
+  ],
+  "counts": {
+    "lessons": 15,
+    "indexedVocabularyItems": 172,
+    "dialogues": 45,
+    "grammarPoints": 45,
+    "pronunciationTopicGroups": 15,
+    "characters": 52,
+    "cultureNotes": 3,
+    "derivedAssessmentItems": 30,
+    "referencedAudioTracks": 45
+  },
+  "status": "review"
+}

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "himi-lesson-json-samples-v1",
+  "title": "Bộ dữ liệu JSON mẫu cho toàn bộ trải nghiệm học Himi Chinese",
+  "description": "Dữ liệu mẫu tách kho nội dung chuẩn khỏi cấu trúc bài học và hoạt động luyện tập. Các file này chưa được nối vào runtime hiện tại.",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN",
+    "pinyinSystem": "hanyu-pinyin-diacritic"
+  },
+  "referenceConvention": {
+    "format": "{entity-type}:{stable-id}",
+    "examples": [
+      "lexeme:lex-ni-hao",
+      "sentence:sentence-first-greeting",
+      "media:media-video-work-progress"
+    ]
+  },
+  "files": [
+    {
+      "path": "schemas/lesson.schema.json",
+      "kind": "schema",
+      "description": "JSON Schema tối thiểu cho file bài học"
+    },
+    {
+      "path": "shared/lexemes.json",
+      "kind": "shared-content",
+      "entity": "lexeme"
+    },
+    {
+      "path": "shared/characters.json",
+      "kind": "shared-content",
+      "entity": "character"
+    },
+    {
+      "path": "shared/sentences.json",
+      "kind": "shared-content",
+      "entity": "sentence"
+    },
+    {
+      "path": "shared/grammar-points.json",
+      "kind": "shared-content",
+      "entity": "grammar-point"
+    },
+    {
+      "path": "shared/dialogues.json",
+      "kind": "shared-content",
+      "entity": "dialogue"
+    },
+    {
+      "path": "shared/media-assets.json",
+      "kind": "shared-content",
+      "entity": "media"
+    },
+    {
+      "path": "shared/assessment-items.json",
+      "kind": "shared-content",
+      "entity": "assessment-item"
+    },
+    {
+      "path": "shared/flashcard-templates.json",
+      "kind": "shared-content",
+      "entity": "flashcard-template"
+    },
+    {
+      "path": "lessons/hsk-1-lam-quen-lan-dau.json",
+      "kind": "lesson",
+      "profile": "hsk-foundation"
+    },
+    {
+      "path": "lessons/van-phong-bao-tien-do.json",
+      "kind": "lesson",
+      "profile": "industry-workplace"
+    },
+    {
+      "path": "lessons/on-tap-giao-tiep-cong-viec.json",
+      "kind": "lesson",
+      "profile": "review"
+    },
+    {
+      "path": "activities/listening-lesson.json",
+      "kind": "activity",
+      "profile": "listening"
+    },
+    {
+      "path": "activities/writing-lesson.json",
+      "kind": "activity",
+      "profile": "writing"
+    },
+    {
+      "path": "activities/video-lesson.json",
+      "kind": "activity",
+      "profile": "video"
+    },
+    {
+      "path": "activities/practice-scenario.json",
+      "kind": "activity",
+      "profile": "work-scenario"
+    },
+    {
+      "path": "activities/game-lesson.json",
+      "kind": "activity",
+      "profile": "game"
+    },
+    {
+      "path": "activities/review-session.json",
+      "kind": "activity",
+      "profile": "spaced-review"
+    },
+    {
+      "path": "progress/example-learning-events.json",
+      "kind": "progress-example",
+      "description": "Ví dụ tách sự kiện học khỏi dữ liệu nội dung"
+    }
+  ],
+  "lessonProfiles": {
+    "hsk-foundation": {
+      "requiredSections": [
+        "introduction",
+        "vocabulary",
+        "grammar",
+        "dialogue",
+        "pronunciation",
+        "writing",
+        "practice",
+        "flashcard",
+        "completion"
+      ]
+    },
+    "industry-workplace": {
+      "requiredSections": [
+        "introduction",
+        "scenario-video",
+        "vocabulary",
+        "dialogue",
+        "usage-notes",
+        "listening",
+        "practice",
+        "flashcard",
+        "completion"
+      ]
+    },
+    "review": {
+      "requiredSections": [
+        "introduction",
+        "review-queue",
+        "practice",
+        "completion"
+      ]
+    }
+  },
+  "publicationRules": [
+    "Mọi ID phải ổn định và duy nhất trong loại entity của nó.",
+    "Mọi reference phải trỏ tới entity tồn tại.",
+    "Nội dung tiếng Trung xuất bản phải có pinyin và bản dịch Việt, trừ khi activity chủ ý ẩn chúng.",
+    "Audio chỉ được gửi cho người học khi reviewStatus là approved.",
+    "Bài tập phải có đáp án hợp lệ và các phương án không trùng nhau.",
+    "Mọi bài xuất bản phải có ít nhất một objective và một completionRule.",
+    "Nội dung VIP phải được lọc ở server trước khi tạo delivery document."
+  ]
+}

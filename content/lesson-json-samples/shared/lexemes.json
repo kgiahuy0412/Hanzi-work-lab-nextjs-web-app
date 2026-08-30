@@ -1,0 +1,334 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "lexeme",
+  "items": [
+    {
+      "id": "lex-ni-hao",
+      "simplified": "你好",
+      "traditional": "你好",
+      "pinyin": "nǐ hǎo",
+      "pinyinNumeric": "ni3 hao3",
+      "wordClass": "phrase",
+      "characterRefs": [
+        "character:char-ni",
+        "character:char-hao"
+      ],
+      "senses": [
+        {
+          "id": "sense-ni-hao-greeting",
+          "meaningVi": "xin chào",
+          "register": "neutral",
+          "domains": [
+            "daily",
+            "workplace"
+          ]
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "audioRefs": [
+        "media:media-audio-ni-hao-word"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "lex-wo",
+      "simplified": "我",
+      "traditional": "我",
+      "pinyin": "wǒ",
+      "pinyinNumeric": "wo3",
+      "wordClass": "pronoun",
+      "characterRefs": [
+        "character:char-wo"
+      ],
+      "senses": [
+        {
+          "id": "sense-wo-speaker",
+          "meaningVi": "tôi; mình",
+          "register": "neutral",
+          "domains": [
+            "daily",
+            "workplace"
+          ]
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-ni",
+      "simplified": "你",
+      "traditional": "你",
+      "pinyin": "nǐ",
+      "pinyinNumeric": "ni3",
+      "wordClass": "pronoun",
+      "characterRefs": [
+        "character:char-ni"
+      ],
+      "senses": [
+        {
+          "id": "sense-ni-listener",
+          "meaningVi": "bạn",
+          "register": "neutral",
+          "domains": [
+            "daily",
+            "workplace"
+          ]
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-jiao",
+      "simplified": "叫",
+      "traditional": "叫",
+      "pinyin": "jiào",
+      "pinyinNumeric": "jiao4",
+      "wordClass": "verb",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-jiao-be-called",
+          "meaningVi": "tên là; được gọi là",
+          "register": "neutral",
+          "domains": [
+            "introduction"
+          ]
+        },
+        {
+          "id": "sense-jiao-call",
+          "meaningVi": "gọi; kêu",
+          "register": "neutral",
+          "domains": [
+            "daily"
+          ]
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-ming-zi",
+      "simplified": "名字",
+      "traditional": "名字",
+      "pinyin": "míngzi",
+      "pinyinNumeric": "ming2 zi5",
+      "wordClass": "noun",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-ming-zi-name",
+          "meaningVi": "tên",
+          "register": "neutral",
+          "domains": [
+            "introduction"
+          ]
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-shi",
+      "simplified": "是",
+      "traditional": "是",
+      "pinyin": "shì",
+      "pinyinNumeric": "shi4",
+      "wordClass": "verb",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-shi-copula",
+          "meaningVi": "là",
+          "register": "neutral",
+          "domains": [
+            "daily",
+            "workplace"
+          ]
+        }
+      ],
+      "standardMappings": [
+        {
+          "framework": "GF0025-2021",
+          "level": "1"
+        }
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-tong-shi",
+      "simplified": "同事",
+      "traditional": "同事",
+      "pinyin": "tóngshì",
+      "pinyinNumeric": "tong2 shi4",
+      "wordClass": "noun",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-tong-shi-colleague",
+          "meaningVi": "đồng nghiệp",
+          "register": "neutral",
+          "domains": [
+            "workplace"
+          ]
+        }
+      ],
+      "standardMappings": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-xiang-mu",
+      "simplified": "项目",
+      "traditional": "項目",
+      "pinyin": "xiàngmù",
+      "pinyinNumeric": "xiang4 mu4",
+      "wordClass": "noun",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-xiang-mu-project",
+          "meaningVi": "dự án; hạng mục",
+          "register": "professional",
+          "domains": [
+            "office",
+            "project-management"
+          ]
+        }
+      ],
+      "standardMappings": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-jin-du",
+      "simplified": "进度",
+      "traditional": "進度",
+      "pinyin": "jìndù",
+      "pinyinNumeric": "jin4 du4",
+      "wordClass": "noun",
+      "characterRefs": [
+        "character:char-jin",
+        "character:char-du"
+      ],
+      "senses": [
+        {
+          "id": "sense-jin-du-progress",
+          "meaningVi": "tiến độ",
+          "register": "professional",
+          "domains": [
+            "office",
+            "factory",
+            "project-management"
+          ]
+        }
+      ],
+      "standardMappings": [],
+      "audioRefs": [
+        "media:media-audio-jin-du-word"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "lex-wan-cheng",
+      "simplified": "完成",
+      "traditional": "完成",
+      "pinyin": "wánchéng",
+      "pinyinNumeric": "wan2 cheng2",
+      "wordClass": "verb",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-wan-cheng-complete",
+          "meaningVi": "hoàn thành",
+          "register": "neutral",
+          "domains": [
+            "workplace",
+            "daily"
+          ]
+        }
+      ],
+      "standardMappings": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-hui-bao",
+      "simplified": "汇报",
+      "traditional": "匯報",
+      "pinyin": "huìbào",
+      "pinyinNumeric": "hui4 bao4",
+      "wordClass": "verb",
+      "characterRefs": [
+        "character:char-bao"
+      ],
+      "senses": [
+        {
+          "id": "sense-hui-bao-report",
+          "meaningVi": "báo cáo; báo cáo lại",
+          "register": "professional",
+          "domains": [
+            "office",
+            "factory"
+          ]
+        }
+      ],
+      "standardMappings": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "lex-jie-zhi-ri-qi",
+      "simplified": "截止日期",
+      "traditional": "截止日期",
+      "pinyin": "jiézhǐ rìqī",
+      "pinyinNumeric": "jie2 zhi3 ri4 qi1",
+      "wordClass": "noun",
+      "characterRefs": [],
+      "senses": [
+        {
+          "id": "sense-jie-zhi-ri-qi-deadline",
+          "meaningVi": "hạn chót",
+          "register": "professional",
+          "domains": [
+            "office",
+            "project-management"
+          ]
+        }
+      ],
+      "standardMappings": [],
+      "audioRefs": [],
+      "status": "review"
+    }
+  ]
+}

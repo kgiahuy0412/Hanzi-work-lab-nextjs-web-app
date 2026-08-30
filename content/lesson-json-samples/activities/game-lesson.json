@@ -1,0 +1,103 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "game-workplace-vocabulary-island",
+  "type": "game-lesson",
+  "status": "review",
+  "metadata": {
+    "slug": "dao-tu-vung-cong-viec",
+    "titleVi": "Đảo từ vựng công việc",
+    "summaryVi": "Ôn mặt chữ, nghĩa, âm thanh và phản xạ bằng các vòng chơi ngắn.",
+    "estimatedMinutes": 5,
+    "accessTier": "free",
+    "skills": [
+      "listening",
+      "reading",
+      "writing"
+    ]
+  },
+  "contentPool": {
+    "lexemeRefs": [
+      "lexeme:lex-tong-shi",
+      "lexeme:lex-xiang-mu",
+      "lexeme:lex-jin-du",
+      "lexeme:lex-wan-cheng",
+      "lexeme:lex-hui-bao",
+      "lexeme:lex-jie-zhi-ri-qi"
+    ],
+    "sentenceRefs": [
+      "sentence:sentence-project-progress-question",
+      "sentence:sentence-progress-eighty",
+      "sentence:sentence-send-before-off-work"
+    ]
+  },
+  "stations": [
+    {
+      "id": "game-station-memory",
+      "type": "memory-match",
+      "titleVi": "Ghép chữ với nghĩa",
+      "sortOrder": 1,
+      "config": {
+        "pairCount": 6,
+        "leftField": "simplified",
+        "rightField": "selectedSense.meaningVi",
+        "timeLimitSeconds": null
+      }
+    },
+    {
+      "id": "game-station-listen",
+      "type": "listen-select",
+      "titleVi": "Nghe và chọn chữ",
+      "sortOrder": 2,
+      "config": {
+        "questionCount": 6,
+        "optionCount": 4,
+        "requiresApprovedAudio": true,
+        "onMissingAudio": "skip-target"
+      }
+    },
+    {
+      "id": "game-station-slice",
+      "type": "writing-slice",
+      "titleVi": "Chém đúng từ",
+      "sortOrder": 3,
+      "config": {
+        "roundSeconds": 45,
+        "promptField": "meaningVi",
+        "targetField": "simplified",
+        "wrongTargetPenalty": 1,
+        "comboThreshold": 3
+      }
+    }
+  ],
+  "scoring": {
+    "points": {
+      "correct": 100,
+      "comboBonus": 25,
+      "incorrect": -25
+    },
+    "masteryThresholdPercent": 80,
+    "saveBestScore": true
+  },
+  "completionRule": {
+    "type": "station-completion",
+    "minimumCompletedStations": 1
+  },
+  "progress": {
+    "aggregateFields": [
+      "bestScoreByStation",
+      "attemptCountByStation",
+      "masteredLexemeIds",
+      "lastPlayedAt"
+    ],
+    "events": [
+      "game-started",
+      "game-answer-submitted",
+      "game-station-completed"
+    ]
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

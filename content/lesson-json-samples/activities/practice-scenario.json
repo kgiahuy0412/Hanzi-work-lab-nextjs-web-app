@@ -1,0 +1,101 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "scenario-office-report-delay-risk",
+  "type": "work-practice-scenario",
+  "status": "review",
+  "metadata": {
+    "industryId": "office",
+    "slug": "bao-tien-do-khi-co-nguy-co-tre",
+    "titleVi": "Báo tiến độ khi có nguy cơ trễ",
+    "briefVi": "Báo sớm, nêu mức hoàn thành và đưa mốc cập nhật tiếp theo.",
+    "durationMinutes": 7,
+    "level": "Thực tế",
+    "accessTier": "free",
+    "sortOrder": 1
+  },
+  "context": {
+    "settingVi": "Cuối ngày, quản lý hỏi liệu hạng mục có kịp hạn vào sáng hôm sau hay không.",
+    "learnerRoleVi": "Nhân viên phụ trách hạng mục",
+    "counterpartRoleVi": "Quản lý",
+    "successCriteriaVi": [
+      "Nêu tiến độ bằng thông tin cụ thể",
+      "Không che giấu rủi ro",
+      "Đưa ra mốc cập nhật hoặc bàn giao tiếp theo"
+    ]
+  },
+  "targetLanguage": {
+    "keySentenceRef": "sentence:sentence-progress-eighty",
+    "supportingSentenceRefs": [
+      "sentence:sentence-project-progress-question",
+      "sentence:sentence-send-before-off-work",
+      "sentence:sentence-report-latest-progress"
+    ],
+    "lexemeRefs": [
+      "lexeme:lex-xiang-mu",
+      "lexeme:lex-jin-du",
+      "lexeme:lex-wan-cheng",
+      "lexeme:lex-hui-bao",
+      "lexeme:lex-jie-zhi-ri-qi"
+    ],
+    "usageNoteRefs": [
+      "grammar-point:usage-report-progress",
+      "grammar-point:usage-ask-deadline"
+    ]
+  },
+  "exerciseSequence": [
+    {
+      "id": "scenario-step-listen",
+      "stage": "listen",
+      "assessmentItemRef": "assessment-item:item-listening-progress-true-false",
+      "required": true
+    },
+    {
+      "id": "scenario-step-build",
+      "stage": "build-response",
+      "assessmentItemRef": "assessment-item:item-reorder-report-progress",
+      "required": true
+    },
+    {
+      "id": "scenario-step-decide",
+      "stage": "choose-response",
+      "assessmentItemRef": "assessment-item:item-work-scenario-response",
+      "required": true
+    }
+  ],
+  "audioPolicy": {
+    "requiresApprovedAudio": true,
+    "hideUnapprovedAudioFromLearners": true,
+    "playbackRates": [
+      0.78,
+      1
+    ],
+    "fallback": "show-recoverable-unavailable-message"
+  },
+  "feedback": {
+    "successVi": "Bạn đã báo trạng thái rõ ràng và đưa được mốc cập nhật tiếp theo.",
+    "retryVi": "Hãy thêm một con số hoặc mốc thời gian cụ thể vào phản hồi.",
+    "showExplanationAfterEachStep": true
+  },
+  "completionRule": {
+    "type": "required-exercises",
+    "requiredExerciseIds": [
+      "scenario-step-listen",
+      "scenario-step-build",
+      "scenario-step-decide"
+    ],
+    "passPercent": 67
+  },
+  "versioning": {
+    "contentVersion": 1,
+    "snapshotOnEverySave": true,
+    "restoreCreatesNewDraft": true
+  },
+  "editorial": {
+    "languageReviewStatus": "pending",
+    "industryReviewStatus": "pending",
+    "audioReviewStatus": "approved",
+    "reviewPriority": "normal",
+    "reviewerId": null,
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

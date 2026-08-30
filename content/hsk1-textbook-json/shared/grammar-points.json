@@ -1,0 +1,1041 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "grammar-point",
+  "items": [
+    {
+      "id": "grammar-hsk1-l03-01",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 什么",
+      "formula": "Chủ ngữ + động từ + 什么 (+ danh từ)?",
+      "explanationVi": "Dùng 什么 để hỏi sự vật, nội dung hoặc tên gọi chưa biết.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l03-01"
+      ],
+      "source": {
+        "lessonNumber": 3,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l03-02",
+      "kind": "grammar",
+      "titleVi": "Câu chữ 是",
+      "formula": "Chủ ngữ + 是 / 不是 + danh từ",
+      "explanationVi": "Dùng 是 để xác nhận danh tính, nghề nghiệp hoặc quốc tịch; phủ định bằng 不是.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l03-01"
+      ],
+      "source": {
+        "lessonNumber": 3,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l03-03",
+      "kind": "grammar",
+      "titleVi": "Câu hỏi với 吗",
+      "formula": "Câu trần thuật + 吗？",
+      "explanationVi": "Thêm 吗 vào cuối câu trần thuật để tạo câu hỏi đúng-sai.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l03-01"
+      ],
+      "source": {
+        "lessonNumber": 3,
+        "printedPages": [
+          26,
+          33
+        ],
+        "pdfPages": [
+          26,
+          33
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l04-01",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 谁 và 哪",
+      "formula": "谁 / 哪 + danh từ",
+      "explanationVi": "Dùng 谁 để hỏi người và 哪 để lựa chọn người, nước hoặc sự vật cụ thể.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l04-01"
+      ],
+      "source": {
+        "lessonNumber": 4,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l04-02",
+      "kind": "grammar",
+      "titleVi": "Trợ từ kết cấu 的",
+      "formula": "Định ngữ + 的 + danh từ",
+      "explanationVi": "Đặt 的 sau thành phần bổ nghĩa để biểu thị quan hệ sở hữu hoặc đặc điểm.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l04-01"
+      ],
+      "source": {
+        "lessonNumber": 4,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l04-03",
+      "kind": "grammar",
+      "titleVi": "Trợ từ nghi vấn 呢 (1)",
+      "formula": "Danh từ / đại từ + 呢？",
+      "explanationVi": "Dùng 呢 để hỏi lại cùng một thông tin đã xuất hiện trong ngữ cảnh.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l04-01"
+      ],
+      "source": {
+        "lessonNumber": 4,
+        "printedPages": [
+          34,
+          41
+        ],
+        "pdfPages": [
+          34,
+          41
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l05-01",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 几",
+      "formula": "几 + lượng từ + danh từ？",
+      "explanationVi": "Dùng 几 khi dự đoán câu trả lời là một số lượng tương đối nhỏ.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l05-01"
+      ],
+      "source": {
+        "lessonNumber": 5,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "sourceStatus": "reconstructed-from-toc-because-printed-pages-44-45-are-missing"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l05-02",
+      "kind": "grammar",
+      "titleVi": "Các số dưới 100",
+      "formula": "十位数 + 十 + 个位数",
+      "explanationVi": "Ghép số hàng chục với 十 rồi thêm hàng đơn vị khi cần.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l05-01"
+      ],
+      "source": {
+        "lessonNumber": 5,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "sourceStatus": "reconstructed-from-toc-because-printed-pages-44-45-are-missing"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l05-03",
+      "kind": "grammar",
+      "titleVi": "了 biểu thị sự thay đổi",
+      "formula": "Câu miêu tả + 了",
+      "explanationVi": "Đặt 了 ở cuối câu để cho biết trạng thái mới hoặc tình huống đã thay đổi.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l05-01"
+      ],
+      "source": {
+        "lessonNumber": 5,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "sourceStatus": "reconstructed-from-toc-because-printed-pages-44-45-are-missing"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l05-04",
+      "kind": "grammar",
+      "titleVi": "Hỏi tuổi với 多大",
+      "formula": "Chủ ngữ + 多大 + 了？",
+      "explanationVi": "Dùng 多大 để hỏi tuổi của người lớn; với trẻ nhỏ thường dùng 几岁.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l05-01"
+      ],
+      "source": {
+        "lessonNumber": 5,
+        "printedPages": [
+          42,
+          50
+        ],
+        "pdfPages": [
+          42,
+          48
+        ],
+        "sourceStatus": "reconstructed-from-toc-because-printed-pages-44-45-are-missing"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l06-01",
+      "kind": "grammar",
+      "titleVi": "Động từ năng nguyện 会 (1)",
+      "formula": "Chủ ngữ + 会 / 不会 + động từ",
+      "explanationVi": "Dùng 会 để diễn tả năng lực có được nhờ học tập hoặc luyện tập.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l06-01"
+      ],
+      "source": {
+        "lessonNumber": 6,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l06-02",
+      "kind": "grammar",
+      "titleVi": "Câu có vị ngữ là tính từ",
+      "formula": "Chủ ngữ + phó từ mức độ + tính từ",
+      "explanationVi": "Tính từ có thể trực tiếp làm vị ngữ; thường có 很 và không dùng 是.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l06-01"
+      ],
+      "source": {
+        "lessonNumber": 6,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l06-03",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 怎么 (1)",
+      "formula": "怎么 + động từ？",
+      "explanationVi": "Đặt 怎么 trước động từ để hỏi cách thức thực hiện hành động.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l06-01"
+      ],
+      "source": {
+        "lessonNumber": 6,
+        "printedPages": [
+          52,
+          59
+        ],
+        "pdfPages": [
+          50,
+          57
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l07-01",
+      "kind": "grammar",
+      "titleVi": "Cách diễn tả ngày tháng (1)",
+      "formula": "月 + 日/号 + 星期",
+      "explanationVi": "Nói đơn vị lớn trước đơn vị nhỏ: tháng, ngày rồi thứ; văn nói thường dùng 号.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l07-01"
+      ],
+      "source": {
+        "lessonNumber": 7,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l07-02",
+      "kind": "grammar",
+      "titleVi": "Câu có vị ngữ là danh từ",
+      "formula": "Chủ ngữ + danh từ chỉ ngày, giờ hoặc tuổi",
+      "explanationVi": "Trong các câu nêu ngày tháng, giờ hoặc tuổi, cụm danh từ có thể trực tiếp làm vị ngữ.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l07-01"
+      ],
+      "source": {
+        "lessonNumber": 7,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l07-03",
+      "kind": "grammar",
+      "titleVi": "Câu liên động (1)",
+      "formula": "去 + nơi chốn + động từ",
+      "explanationVi": "Động từ sau diễn tả mục đích của việc đi đến một địa điểm.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l07-01"
+      ],
+      "source": {
+        "lessonNumber": 7,
+        "printedPages": [
+          60,
+          67
+        ],
+        "pdfPages": [
+          58,
+          65
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l08-01",
+      "kind": "grammar",
+      "titleVi": "Động từ năng nguyện 想",
+      "formula": "Chủ ngữ + 想 + động từ",
+      "explanationVi": "Dùng 想 để nói mong muốn hoặc dự định.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l08-01"
+      ],
+      "source": {
+        "lessonNumber": 8,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l08-02",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 多少",
+      "formula": "多少 + danh từ？",
+      "explanationVi": "Dùng 多少 để hỏi số lượng khi không giả định một phạm vi nhỏ.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l08-01"
+      ],
+      "source": {
+        "lessonNumber": 8,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l08-03",
+      "kind": "grammar",
+      "titleVi": "Lượng từ 个 và 口",
+      "formula": "Số từ + lượng từ + danh từ",
+      "explanationVi": "个 là lượng từ thông dụng; 口 dùng cho số người trong gia đình.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l08-01"
+      ],
+      "source": {
+        "lessonNumber": 8,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l08-04",
+      "kind": "grammar",
+      "titleVi": "Cách diễn đạt số tiền",
+      "formula": "Số + 块 (+ 钱)",
+      "explanationVi": "Dùng 块 trong khẩu ngữ để chỉ đơn vị tiền; 钱 có thể được lược khi ngữ cảnh rõ.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l08-01"
+      ],
+      "source": {
+        "lessonNumber": 8,
+        "printedPages": [
+          68,
+          75
+        ],
+        "pdfPages": [
+          66,
+          73
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l09-01",
+      "kind": "grammar",
+      "titleVi": "Động từ 在",
+      "formula": "Chủ ngữ + 在 + nơi chốn",
+      "explanationVi": "Dùng 在 làm động từ để cho biết người hoặc vật đang ở đâu.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l09-01"
+      ],
+      "source": {
+        "lessonNumber": 9,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l09-02",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 哪儿",
+      "formula": "Chủ ngữ + 在 + 哪儿？",
+      "explanationVi": "Dùng 哪儿 để hỏi địa điểm chưa biết.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l09-01"
+      ],
+      "source": {
+        "lessonNumber": 9,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l09-03",
+      "kind": "grammar",
+      "titleVi": "Giới từ 在",
+      "formula": "Chủ ngữ + 在 + nơi chốn + động từ",
+      "explanationVi": "Đặt cụm 在 + nơi chốn trước động từ để chỉ địa điểm hành động diễn ra.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l09-01"
+      ],
+      "source": {
+        "lessonNumber": 9,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l09-04",
+      "kind": "grammar",
+      "titleVi": "Trợ từ nghi vấn 呢 (2)",
+      "formula": "Chủ đề + 呢？",
+      "explanationVi": "Dùng 呢 để hỏi vị trí hoặc tình trạng của một người/vật đã được nhắc đến.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l09-01"
+      ],
+      "source": {
+        "lessonNumber": 9,
+        "printedPages": [
+          76,
+          83
+        ],
+        "pdfPages": [
+          74,
+          81
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l10-01",
+      "kind": "grammar",
+      "titleVi": "Câu chữ 有 biểu thị tồn tại",
+      "formula": "Nơi chốn + 有 + người/vật",
+      "explanationVi": "Dùng 有 để nói một người hoặc vật tồn tại ở một địa điểm.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l10-01"
+      ],
+      "source": {
+        "lessonNumber": 10,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l10-02",
+      "kind": "grammar",
+      "titleVi": "Liên từ 和",
+      "formula": "Danh từ + 和 + danh từ",
+      "explanationVi": "Dùng 和 để nối các danh từ hoặc cụm danh từ cùng chức năng.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l10-01"
+      ],
+      "source": {
+        "lessonNumber": 10,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l10-03",
+      "kind": "grammar",
+      "titleVi": "Động từ năng nguyện 能",
+      "formula": "Chủ ngữ + 能 / 不能 + động từ",
+      "explanationVi": "Dùng 能 để nói khả năng do điều kiện cho phép hoặc xin phép.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l10-01"
+      ],
+      "source": {
+        "lessonNumber": 10,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l10-04",
+      "kind": "grammar",
+      "titleVi": "Câu cầu khiến với 请",
+      "formula": "请 + động từ",
+      "explanationVi": "Đặt 请 trước động từ để tạo lời mời hoặc yêu cầu lịch sự.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l10-01"
+      ],
+      "source": {
+        "lessonNumber": 10,
+        "printedPages": [
+          84,
+          92
+        ],
+        "pdfPages": [
+          82,
+          90
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l11-01",
+      "kind": "grammar",
+      "titleVi": "Cách diễn tả thời gian",
+      "formula": "Giờ + 点 + phút + 分",
+      "explanationVi": "Nêu giờ trước phút; khi không có phút có thể chỉ nói số giờ với 点.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l11-01"
+      ],
+      "source": {
+        "lessonNumber": 11,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l11-02",
+      "kind": "grammar",
+      "titleVi": "Từ chỉ thời gian làm trạng ngữ",
+      "formula": "Chủ ngữ + thời gian + động từ",
+      "explanationVi": "Đặt từ chỉ thời gian trước động từ để nêu thời điểm hành động.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l11-01"
+      ],
+      "source": {
+        "lessonNumber": 11,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l11-03",
+      "kind": "grammar",
+      "titleVi": "Danh từ 前",
+      "formula": "Thời gian / sự kiện + 前",
+      "explanationVi": "Đặt 前 sau một mốc để diễn tả trước mốc đó.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l11-01"
+      ],
+      "source": {
+        "lessonNumber": 11,
+        "printedPages": [
+          94,
+          101
+        ],
+        "pdfPages": [
+          92,
+          99
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l12-01",
+      "kind": "grammar",
+      "titleVi": "Đại từ nghi vấn 怎么样",
+      "formula": "Chủ đề + 怎么样？",
+      "explanationVi": "Dùng 怎么样 để hỏi tình trạng, đặc điểm hoặc đánh giá chung.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l12-01"
+      ],
+      "source": {
+        "lessonNumber": 12,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l12-02",
+      "kind": "grammar",
+      "titleVi": "Câu có vị ngữ là kết cấu chủ-vị",
+      "formula": "Chủ ngữ lớn + cụm chủ-vị",
+      "explanationVi": "Một cụm chủ-vị có thể làm vị ngữ để mô tả một bộ phận hoặc phương diện của chủ ngữ lớn.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l12-01"
+      ],
+      "source": {
+        "lessonNumber": 12,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l12-03",
+      "kind": "grammar",
+      "titleVi": "Phó từ mức độ 太",
+      "formula": "太 + tính từ + 了",
+      "explanationVi": "Cấu trúc 太……了 biểu thị mức độ rất cao, thường mang sắc thái cảm thán.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l12-01"
+      ],
+      "source": {
+        "lessonNumber": 12,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l12-04",
+      "kind": "grammar",
+      "titleVi": "Động từ năng nguyện 会 (2)",
+      "formula": "会 + động từ",
+      "explanationVi": "Ngoài năng lực đã học, 会 còn dùng để dự đoán khả năng một việc sẽ xảy ra.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l12-01"
+      ],
+      "source": {
+        "lessonNumber": 12,
+        "printedPages": [
+          102,
+          109
+        ],
+        "pdfPages": [
+          100,
+          107
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l13-01",
+      "kind": "grammar",
+      "titleVi": "Từ cảm thán 喂",
+      "formula": "喂，……",
+      "explanationVi": "Dùng 喂 khi mở đầu cuộc gọi hoặc gọi sự chú ý; ngữ điệu tùy tình huống.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l13-01"
+      ],
+      "source": {
+        "lessonNumber": 13,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l13-02",
+      "kind": "grammar",
+      "titleVi": "在……呢 biểu thị hành động đang diễn ra",
+      "formula": "Chủ ngữ + 在 + động từ + 呢",
+      "explanationVi": "在 và 呢 bao quanh vị ngữ để nhấn mạnh hành động đang tiếp diễn.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l13-01"
+      ],
+      "source": {
+        "lessonNumber": 13,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l13-03",
+      "kind": "grammar",
+      "titleVi": "Cách đọc số điện thoại",
+      "formula": "Đọc từng chữ số; 一 thường đọc yāo",
+      "explanationVi": "Số điện thoại được đọc từng số; để tránh nhầm, chữ số 1 thường đọc là yāo.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l13-01"
+      ],
+      "source": {
+        "lessonNumber": 13,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l13-04",
+      "kind": "grammar",
+      "titleVi": "Trợ từ ngữ khí 吧",
+      "formula": "Câu đề nghị / mệnh lệnh + 吧",
+      "explanationVi": "Dùng 吧 để làm lời đề nghị, thỉnh cầu hoặc mệnh lệnh nhẹ hơn.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l13-01"
+      ],
+      "source": {
+        "lessonNumber": 13,
+        "printedPages": [
+          110,
+          115
+        ],
+        "pdfPages": [
+          108,
+          113
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l14-01",
+      "kind": "grammar",
+      "titleVi": "了 biểu thị sự việc đã xảy ra hoặc hoàn thành",
+      "formula": "Động từ + 了 + tân ngữ",
+      "explanationVi": "Đặt 了 sau động từ để biểu thị hành động đã xảy ra hoặc hoàn tất.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l14-01"
+      ],
+      "source": {
+        "lessonNumber": 14,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l14-02",
+      "kind": "grammar",
+      "titleVi": "Danh từ 后",
+      "formula": "Khoảng thời gian / sự kiện + 后",
+      "explanationVi": "Đặt 后 sau mốc hoặc khoảng thời gian để diễn tả sau đó.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l14-01"
+      ],
+      "source": {
+        "lessonNumber": 14,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l14-03",
+      "kind": "grammar",
+      "titleVi": "Trợ từ ngữ khí 啊",
+      "formula": "Câu khẳng định / cảm thán + 啊",
+      "explanationVi": "Dùng 啊 ở cuối câu để khẳng định, cảm thán hoặc làm giọng nói tự nhiên hơn.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l14-01"
+      ],
+      "source": {
+        "lessonNumber": 14,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l14-04",
+      "kind": "grammar",
+      "titleVi": "Phó từ 都",
+      "formula": "Chủ ngữ số nhiều + 都 + vị ngữ",
+      "explanationVi": "Dùng 都 để nói mọi thành viên trong phạm vi đã nêu đều có cùng đặc điểm hoặc hành động.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l14-01"
+      ],
+      "source": {
+        "lessonNumber": 14,
+        "printedPages": [
+          116,
+          123
+        ],
+        "pdfPages": [
+          114,
+          121
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l15-01",
+      "kind": "grammar",
+      "titleVi": "Câu 是……的",
+      "formula": "Chủ ngữ + 是 + thời gian / địa điểm / cách thức + động từ + 的",
+      "explanationVi": "Dùng 是……的 để nhấn mạnh thời gian, địa điểm hoặc cách thức của hành động đã xảy ra.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l15-01"
+      ],
+      "source": {
+        "lessonNumber": 15,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    },
+    {
+      "id": "grammar-hsk1-l15-02",
+      "kind": "grammar",
+      "titleVi": "Cách diễn tả ngày tháng (2)",
+      "formula": "年 + 月 + 日/号 + 星期",
+      "explanationVi": "Khi có năm, tiếp tục nói theo thứ tự từ đơn vị lớn đến nhỏ.",
+      "exampleDialogueRefs": [
+        "dialogue:dialogue-hsk1-l15-01"
+      ],
+      "source": {
+        "lessonNumber": 15,
+        "printedPages": [
+          124,
+          130
+        ],
+        "pdfPages": [
+          122,
+          128
+        ],
+        "sourceStatus": "directly-supported"
+      },
+      "status": "review"
+    }
+  ]
+}

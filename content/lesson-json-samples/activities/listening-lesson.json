@@ -1,0 +1,110 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "listening-hsk1-greetings",
+  "type": "listening-lesson",
+  "status": "review",
+  "metadata": {
+    "levelId": "hsk-1",
+    "order": 1,
+    "titleVi": "Nghe lời chào và giới thiệu",
+    "descriptionVi": "Nghe từ hoặc câu ngắn rồi nhận diện chữ Hán và ý chính.",
+    "estimatedMinutes": 6,
+    "exerciseCount": 10,
+    "skills": [
+      "listening"
+    ],
+    "accessTier": "free"
+  },
+  "objectives": [
+    {
+      "id": "objective-listen-greeting-words",
+      "descriptionVi": "Nhận ra các từ chào hỏi và giới thiệu khi không nhìn pinyin."
+    },
+    {
+      "id": "objective-distinguish-short-utterances",
+      "descriptionVi": "Phân biệt từ đơn và câu ngắn có âm gần nhau."
+    }
+  ],
+  "contentPool": {
+    "targetLexemeRefs": [
+      "lexeme:lex-ni-hao",
+      "lexeme:lex-wo",
+      "lexeme:lex-ni",
+      "lexeme:lex-jiao",
+      "lexeme:lex-ming-zi",
+      "lexeme:lex-shi"
+    ],
+    "targetSentenceRefs": [
+      "sentence:sentence-first-greeting",
+      "sentence:sentence-i-am-anna",
+      "sentence:sentence-ask-name",
+      "sentence:sentence-i-am-xiaoming"
+    ],
+    "explicitAssessmentItemRefs": [
+      "assessment-item:item-listen-ni-hao"
+    ]
+  },
+  "roundBuilder": {
+    "questionCount": 10,
+    "types": [
+      {
+        "type": "listen-select-hanzi",
+        "weight": 6
+      },
+      {
+        "type": "listen-select-meaning",
+        "weight": 2
+      },
+      {
+        "type": "listen-judge",
+        "weight": 2
+      }
+    ],
+    "distractorRules": {
+      "preferredSource": "same-lesson",
+      "fallbackSource": "same-level",
+      "uniqueBy": "display-text",
+      "maximumOptions": 4
+    },
+    "mediaRules": {
+      "requiresApprovedAudio": true,
+      "onMissingAudio": "exclude-target"
+    }
+  },
+  "player": {
+    "autoplay": false,
+    "replayLimit": null,
+    "playbackRates": [
+      0.75,
+      1
+    ],
+    "showWaveform": true,
+    "showTranscript": "after-answer",
+    "showPinyin": "after-answer",
+    "showTranslation": "after-answer"
+  },
+  "completionRule": {
+    "type": "attempt-completed",
+    "minimumAnsweredItems": 10,
+    "passPercent": 70
+  },
+  "progress": {
+    "aggregateFields": [
+      "bestScore",
+      "attemptCount",
+      "lastCompletedAt"
+    ],
+    "events": [
+      "listening-started",
+      "audio-played",
+      "assessment-answered",
+      "listening-completed"
+    ]
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "pending",
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

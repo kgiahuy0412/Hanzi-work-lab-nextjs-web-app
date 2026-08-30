@@ -1,0 +1,254 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-hsk1-12",
+  "slug": "hsk1-bai-12-ngay-mai-thoi-tiet-the-nao",
+  "profile": "hsk-foundation",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-hsk-standard-1",
+    "levelId": "hsk-1",
+    "lessonNumber": 12,
+    "titleVi": "Ngày mai thời tiết thế nào?",
+    "titleZh": "明天天气怎么样？",
+    "heroHanzi": "明天天气怎么样？",
+    "summaryVi": "Dữ liệu bài 12 được chuyển đổi từ Giáo trình chuẩn HSK 1.",
+    "estimatedMinutes": 29,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "source": {
+      "printedPages": [
+        102,
+        109
+      ],
+      "pdfPages": [
+        100,
+        107
+      ],
+      "missingPrintedPages": []
+    }
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-hsk1-l12-dialogue",
+      "skill": "speaking",
+      "descriptionVi": "Thực hiện các mẫu hội thoại trọng tâm của Bài 12."
+    },
+    {
+      "id": "objective-hsk1-l12-vocabulary",
+      "skill": "reading",
+      "descriptionVi": "Nhận biết 14 mục từ mới của bài."
+    },
+    {
+      "id": "objective-hsk1-l12-writing",
+      "skill": "writing",
+      "descriptionVi": "Luyện viết 3 chữ Hán trọng tâm."
+    }
+  ],
+  "prerequisites": [
+    "lesson:lesson-hsk1-11"
+  ],
+  "sections": [
+    {
+      "id": "section-hsk1-l12-introduction",
+      "type": "introduction",
+      "titleVi": "Giới thiệu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 12 · HSK 1",
+        "heroHanzi": "明天天气怎么样？",
+        "summaryVi": "Ngày mai thời tiết thế nào?",
+        "sourcePrintedPages": [
+          102,
+          109
+        ],
+        "sourcePdfPages": [
+          100,
+          107
+        ]
+      }
+    },
+    {
+      "id": "section-hsk1-l12-dialogue",
+      "type": "dialogue",
+      "titleVi": "Bài học và hội thoại",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "dialogue:dialogue-hsk1-l12-01",
+        "dialogue:dialogue-hsk1-l12-02",
+        "dialogue:dialogue-hsk1-l12-03"
+      ],
+      "presentation": {
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": false,
+        "audioUnavailableReason": "missing-source-audio"
+      }
+    },
+    {
+      "id": "section-hsk1-l12-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ mới",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l12-01",
+        "lexeme:lex-hsk1-l12-02",
+        "lexeme:lex-hsk1-l12-03",
+        "lexeme:lex-hsk1-l12-04",
+        "lexeme:lex-hsk1-l12-05",
+        "lexeme:lex-hsk1-l12-06",
+        "lexeme:lex-hsk1-l12-07",
+        "lexeme:lex-hsk1-l12-08",
+        "lexeme:lex-hsk1-l12-09",
+        "lexeme:lex-hsk1-l12-10",
+        "lexeme:lex-hsk1-l12-11",
+        "lexeme:lex-hsk1-l12-12",
+        "lexeme:lex-hsk1-l12-13",
+        "lexeme:lex-hsk1-l12-14"
+      ]
+    },
+    {
+      "id": "section-hsk1-l12-grammar",
+      "type": "grammar",
+      "titleVi": "Chú thích ngữ pháp",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "grammar-point:grammar-hsk1-l12-01",
+        "grammar-point:grammar-hsk1-l12-02",
+        "grammar-point:grammar-hsk1-l12-03",
+        "grammar-point:grammar-hsk1-l12-04"
+      ],
+      "sourceAvailability": "available"
+    },
+    {
+      "id": "section-hsk1-l12-listening",
+      "type": "listening",
+      "titleVi": "Nghe theo track giáo trình",
+      "required": false,
+      "estimatedMinutes": 0,
+      "itemRefs": [
+        "media:media-hsk1-track-12-1",
+        "media:media-hsk1-track-12-2",
+        "media:media-hsk1-track-12-3"
+      ],
+      "availability": "blocked-missing-audio-files"
+    },
+    {
+      "id": "section-hsk1-l12-pronunciation",
+      "type": "pronunciation",
+      "titleVi": "Phần ghép âm",
+      "required": true,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "pronunciation-topic:pronunciation-hsk1-l12"
+      ]
+    },
+    {
+      "id": "section-hsk1-l12-writing",
+      "type": "writing",
+      "titleVi": "Chữ Hán",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "character:char-hsk1-u5929",
+        "character:char-hsk1-u6c14",
+        "character:char-hsk1-u96e8"
+      ],
+      "strokeAssetStatus": "use-hanzi-writer-runtime-data"
+    },
+    {
+      "id": "section-hsk1-l12-practice",
+      "type": "practice",
+      "titleVi": "Luyện tập và vận dụng",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "assessment-item:assessment-hsk1-l12-meaning",
+        "assessment-item:assessment-hsk1-l12-pinyin"
+      ],
+      "sourceActivityTypes": [
+        "warm-up-image-match",
+        "role-play-source-dialogues",
+        "answer-situational-questions",
+        "pair-or-group-application"
+      ],
+      "provenance": {
+        "sourceActivities": "summarized-from-book",
+        "assessmentItems": "derived-not-verbatim"
+      }
+    },
+    {
+      "id": "section-hsk1-l12-flashcard",
+      "type": "flashcard",
+      "titleVi": "Flashcard",
+      "required": false,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l12-01",
+        "lexeme:lex-hsk1-l12-02",
+        "lexeme:lex-hsk1-l12-03",
+        "lexeme:lex-hsk1-l12-04",
+        "lexeme:lex-hsk1-l12-05",
+        "lexeme:lex-hsk1-l12-06",
+        "lexeme:lex-hsk1-l12-07",
+        "lexeme:lex-hsk1-l12-08",
+        "lexeme:lex-hsk1-l12-09",
+        "lexeme:lex-hsk1-l12-10",
+        "lexeme:lex-hsk1-l12-11",
+        "lexeme:lex-hsk1-l12-12",
+        "lexeme:lex-hsk1-l12-13",
+        "lexeme:lex-hsk1-l12-14"
+      ],
+      "generatedFromSectionId": "section-hsk1-l12-vocabulary"
+    },
+    {
+      "id": "section-hsk1-l12-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Hoàn thành Bài 12",
+        "messageVi": "Bạn đã hoàn thành nội dung 明天天气怎么样？"
+      }
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-hsk1-l12-introduction",
+      "section-hsk1-l12-dialogue",
+      "section-hsk1-l12-vocabulary",
+      "section-hsk1-l12-pronunciation",
+      "section-hsk1-l12-writing",
+      "section-hsk1-l12-practice",
+      "section-hsk1-l12-grammar"
+    ],
+    "minimumPracticeScorePercent": 50,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "blocked-missing-file",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Dữ liệu được chuyển đổi từ bản PDF scan do người dùng cung cấp.",
+      "Pinyin ở các câu hội thoại được tạo tự động và cần được biên tập ngôn ngữ kiểm tra trước khi xuất bản.",
+      "Bài tập trắc nghiệm là dữ liệu suy diễn từ từ vựng nguồn, không phải bản chép nguyên văn bài tập trong sách."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

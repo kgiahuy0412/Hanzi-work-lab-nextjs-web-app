@@ -1,0 +1,33 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "culture-note",
+  "items": [
+    {
+      "id": "culture-asking-age",
+      "titleZh": "中国人对年龄的询问方法",
+      "titleVi": "Cách hỏi tuổi của người Trung Quốc",
+      "printedPage": 51,
+      "pdfPage": 49,
+      "summaryVi": "Tuổi thường được hỏi trong giao tiếp. Với trẻ dưới 10 tuổi dùng 几岁, với người gần tuổi dùng 多大, và với người lớn tuổi dùng 您今年多大年纪了 để thể hiện kính trọng.",
+      "lessonAfter": 5
+    },
+    {
+      "id": "culture-chinese-names",
+      "titleZh": "中国人姓名的特点",
+      "titleVi": "Họ tên của người Trung Quốc",
+      "printedPage": 93,
+      "pdfPage": 91,
+      "summaryVi": "Họ thường đứng trước tên. Họ có thể một hoặc nhiều chữ; khi xưng hô có thể đặt họ trước chức danh, như 李老师 hoặc 王医生.",
+      "lessonAfter": 10
+    },
+    {
+      "id": "culture-communication-tools",
+      "titleZh": "中国人经常使用的通信工具",
+      "titleVi": "Các phương tiện liên lạc thường dùng của người Trung Quốc",
+      "printedPage": 131,
+      "pdfPage": 129,
+      "summaryVi": "Sách giới thiệu điện thoại bàn và điện thoại di động, độ dài số điện thoại và cách đọc số theo từng chữ số; chữ số 1 thường đọc yāo để tránh nhầm.",
+      "lessonAfter": 15
+    }
+  ]
+}

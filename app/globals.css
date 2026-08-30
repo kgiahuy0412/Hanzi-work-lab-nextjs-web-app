@@ -5,6 +5,9 @@
 @import "./home-portal.css";
 @import "./writing-studio.css";
 @import "./listening-studio.css";
+@import "./hsk-curriculum.css";
+@import "./hsk-lesson.css";
+@import "./hsk-guided-lesson.css";
 
 :root {
   --ink: #16342f;
@@ -3182,6 +3185,8 @@ body:has(.admin-page) > .mobile-nav {
 }
 
 .game-journey-station {
+  --game-station-rest-transform: translate(-50%, calc(-50% - 10px)) scale(1);
+  --game-station-hover-transform: translate(-50%, calc(-50% - 18px)) scale(1.045);
   width: clamp(184px, 13vw, 208px);
   min-height: clamp(154px, 10.6vw, 170px);
   padding: 0;
@@ -3194,14 +3199,22 @@ body:has(.admin-page) > .mobile-nav {
   background: transparent;
   font: inherit;
   text-align: center;
-  transform: translate(-50%, calc(-50% - 10px));
-  transition: transform .22s ease, filter .22s ease;
+  transform: var(--game-station-rest-transform);
+  transform-origin: 50% 58%;
+  transition:
+    transform .48s cubic-bezier(.16, 1, .3, 1),
+    filter .36s ease;
+  will-change: transform;
 }
 
-.game-journey-station:hover {
+.game-journey-station:is(:hover, :focus-visible) {
   z-index: 5;
-  filter: none;
-  transform: translate(-50%, calc(-50% - 14px));
+  filter: drop-shadow(0 16px 18px rgba(34, 75, 63, .16));
+  transform: var(--game-station-hover-transform);
+}
+
+.game-journey-station:active {
+  transition-duration: .12s;
 }
 
 .game-journey-station-number {
@@ -3212,6 +3225,7 @@ body:has(.admin-page) > .mobile-nav {
   left: 4px;
   top: -3px;
   font-size: 13px;
+  transition: transform .46s cubic-bezier(.16, 1, .3, 1), box-shadow .36s ease;
 }
 
 .game-journey-station-visual {
@@ -3232,10 +3246,18 @@ body:has(.admin-page) > .mobile-nav {
   display: block;
   object-fit: contain;
   filter: none;
-  transition: transform .3s ease;
+  transform-origin: 50% 72%;
+  transition: transform .52s cubic-bezier(.16, 1, .3, 1), filter .36s ease;
 }
 
-.game-journey-station:hover .game-journey-station-visual > img { transform: scale(1.045); }
+.game-journey-station:is(:hover, :focus-visible) .game-journey-station-visual > img {
+  filter: saturate(1.04);
+  transform: translateY(-3px) scale(1.035);
+}
+
+.game-journey-station:is(:hover, :focus-visible) .game-journey-station-number {
+  transform: translate(-2px, -3px) rotate(-4deg) scale(1.06);
+}
 
 .game-journey-station-icon {
   width: 32px;
@@ -3808,6 +3830,8 @@ body:has(.admin-page) > .mobile-nav {
   .game-journey-station.station-5,
   .game-journey-station.station-6,
   .game-journey-station.station-7 {
+    --game-station-rest-transform: none;
+    --game-station-hover-transform: translateY(-4px) scale(1.012);
     width: 100%;
     min-height: 134px;
     padding: 12px 18px 12px 12px;
@@ -3823,11 +3847,11 @@ body:has(.admin-page) > .mobile-nav {
     background: rgba(255, 255, 255, .9);
     box-shadow: 0 12px 28px rgba(42, 77, 65, .08);
     text-align: left;
-    transform: none;
+    transform: var(--game-station-rest-transform);
   }
 
   .game-journey-station:nth-child(even) { margin-left: 5%; width: 95%; }
-  .game-journey-station:hover { transform: translateY(-2px); }
+  .game-journey-station:is(:hover, :focus-visible) { transform: var(--game-station-hover-transform); }
 
   .game-journey-station-number {
     width: 42px;
@@ -3917,8 +3941,6 @@ body:has(.admin-page) > .mobile-nav {
   .game-catalog-card,
   .game-card-visual img,
   .game-journey-featured-card button,
-  .game-journey-station,
-  .game-journey-station-visual > img,
   .memory-grid button,
   .flashcard-3d-inner {
     transition: none;
@@ -4116,31 +4138,161 @@ button { color: inherit; }
 .filter-chip.active { color: #fff; border-color: var(--forest); background: var(--forest); }
 .explorer-count { margin: 0 0 16px; color: var(--ink-soft); font-size: 12px; }
 .empty-state { padding: 60px; text-align: center; border: 1px dashed #bdcec4; border-radius: 20px; background: #fff; }
+
+/* Course roadmap */
+.course-roadmap-page { min-height: 760px; padding: 18px 0 92px; background: #fbfcfa; }
+.course-roadmap-shell { width: min(1280px, calc(100% - 44px)); }
+.course-roadmap-header { min-height: 112px; padding: 0 4px 14px; display: flex; align-items: center; justify-content: space-between; gap: 30px; border-bottom: 1px solid #e4e9e5; }
+.course-roadmap-eyebrow { display: block; margin-bottom: 7px; color: #667a74; font-size: 13px; font-weight: 620; }
+.course-roadmap-header h1 { margin: 0; color: #10463e; font-size: clamp(29px, 3vw, 38px); font-weight: 760; line-height: 1.12; letter-spacing: -.035em; }
+.course-roadmap-progress-row { margin-top: 14px; display: grid; grid-template-columns: auto minmax(150px, 390px) auto; align-items: center; gap: 18px; color: #405a54; }
+.course-roadmap-progress-row strong { font-size: 14px; font-weight: 720; }
+.course-roadmap-progress-row small { color: #6f817c; font-size: 11px; font-weight: 720; }
+.course-roadmap-progress-track { height: 7px; overflow: hidden; border-radius: 999px; background: #e7ebe8; }
+.course-roadmap-progress-track > span { height: 100%; display: block; border-radius: inherit; background: #08796d; transition: width .3s ease; }
+.course-roadmap-switch { min-height: 44px; padding: 0 8px; display: inline-flex; align-items: center; gap: 9px; color: #08786d; font-size: 14px; font-weight: 700; white-space: nowrap; }
+.course-roadmap-switch:hover { color: #065d55; }
+.course-roadmap-layout { padding-top: 20px; display: grid; grid-template-columns: minmax(0, 1fr) 294px; align-items: start; gap: 34px; }
+.course-roadmap-stages { min-width: 0; display: grid; gap: 18px; }
+.roadmap-stage { min-width: 0; display: grid; grid-template-columns: 58px minmax(0, 1fr); position: relative; }
+.roadmap-stage-rail { min-height: 86px; position: relative; display: flex; justify-content: center; }
+.roadmap-stage:not(:last-child) .roadmap-stage-rail::after { content: ""; width: 2px; position: absolute; top: 53px; bottom: -29px; border-radius: 2px; background: #d8dfdb; }
+.roadmap-stage.is-completed:not(:last-child) .roadmap-stage-rail::after,
+.roadmap-stage.is-active:not(:last-child) .roadmap-stage-rail::after { background: #8bc7ba; }
+.roadmap-stage-marker { width: 46px; height: 46px; margin-top: 12px; z-index: 1; display: grid; place-items: center; color: #60716c; border-radius: 50%; background: #e8ebe9; box-shadow: 0 3px 8px rgba(20, 65, 57, .09); font-size: 20px; font-weight: 760; }
+.roadmap-stage-marker.is-completed,
+.roadmap-stage-marker.is-active { color: #fff; background: #0a7468; }
+.roadmap-stage-marker.is-active { box-shadow: 0 0 0 5px #edf7f3, 0 4px 10px rgba(8, 100, 88, .2); }
+.roadmap-stage-card { min-width: 0; overflow: hidden; border: 1px solid #dfe5e1; border-radius: 13px; background: #fff; box-shadow: 0 2px 7px rgba(23, 60, 53, .035); }
+details.roadmap-stage-card > summary { display: grid; grid-template-columns: minmax(0, 1fr) 30px; align-items: center; cursor: pointer; list-style: none; }
+details.roadmap-stage-card > summary::-webkit-details-marker { display: none; }
+details.roadmap-stage-card > summary:focus-visible { outline-offset: -4px; }
+.roadmap-stage.is-active .roadmap-stage-card { border-color: #91c9bd; box-shadow: 0 6px 20px rgba(35, 101, 88, .07); }
+.roadmap-stage.is-locked .roadmap-stage-card { color: #73817d; background: rgba(255,255,255,.72); }
+.roadmap-stage-summary { min-height: 84px; display: grid; grid-template-columns: 176px minmax(0, 1fr) auto; align-items: center; gap: 20px; }
+.roadmap-stage-image { width: 176px; height: 84px; position: relative; overflow: hidden; background: #e9f0ec; }
+.roadmap-stage-image img { object-fit: cover; }
+.roadmap-stage.is-locked .roadmap-stage-image img { filter: saturate(.55); opacity: .78; }
+.roadmap-stage-copy { min-width: 0; padding-block: 13px; }
+.roadmap-stage-copy h2 { margin: 0; overflow: hidden; color: #183f38; font-size: 18px; font-weight: 720; line-height: 1.25; letter-spacing: -.018em; text-overflow: ellipsis; white-space: nowrap; }
+.roadmap-stage-copy p { margin: 6px 0 0; color: #6a7b76; font-size: 12px; }
+.roadmap-stage-status { min-height: 31px; margin-right: 16px; padding: 0 13px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; border: 1px solid transparent; border-radius: 999px; font-size: 11px; font-weight: 700; white-space: nowrap; }
+.roadmap-stage-status.is-completed { color: #488276; border-color: #d8ebe5; background: #eff7f4; }
+.roadmap-stage-status.is-active { color: #08796d; background: #e4f4ef; }
+.roadmap-stage-status.is-vip { color: #8b5f1d; border-color: #f2d59e; background: #fff7e8; }
+.roadmap-stage-status.is-locked { color: #707a77; border-color: #e1e4e2; background: #f5f6f5; }
+.roadmap-stage-expand { color: #6f817c; transition: transform .2s ease; }
+details[open].roadmap-stage-card .roadmap-stage-expand { transform: rotate(90deg); }
+.roadmap-lesson-list { margin: 0 12px 12px; overflow: hidden; border: 1px solid #e2e7e4; border-radius: 9px; background: #fff; }
+.roadmap-lesson-row { min-height: 51px; padding: 0 16px; display: grid; grid-template-columns: 25px minmax(0, 1fr) 72px minmax(0, 165px) 19px; align-items: center; gap: 10px; color: #556660; border-bottom: 1px solid #e6e9e7; font-size: 12px; }
+.roadmap-lesson-row:last-child { border-bottom: 0; }
+a.roadmap-lesson-row { transition: color .18s ease, background .18s ease; }
+a.roadmap-lesson-row:hover { color: #0b665c; background: #f5faf8; }
+.roadmap-lesson-state { width: 19px; height: 19px; display: grid; place-items: center; color: #75827e; border-radius: 50%; }
+.roadmap-lesson-row.is-completed .roadmap-lesson-state { color: #fff; background: #36aa50; }
+.roadmap-lesson-row.is-current { min-height: 57px; color: #0a7066; background: #eaf7f3; }
+.roadmap-lesson-row.is-current .roadmap-lesson-state { color: #08796d; }
+.roadmap-lesson-row.is-current .roadmap-lesson-state svg { stroke-width: 2.4; }
+.roadmap-lesson-row.is-vip-locked { color: #77684c; background: #fffaf0; }
+.roadmap-lesson-row.is-vip-locked .roadmap-lesson-state { color: #ad7b28; }
+.roadmap-lesson-row.is-locked { color: #78837f; background: #fcfcfb; }
+.roadmap-lesson-copy { min-width: 0; display: flex; align-items: center; gap: 8px; }
+.roadmap-lesson-copy > span { color: #64746f; white-space: nowrap; }
+.roadmap-lesson-copy > i { color: #9ca7a3; font-style: normal; }
+.roadmap-lesson-copy > strong { min-width: 0; overflow: hidden; font-weight: 620; text-overflow: ellipsis; white-space: nowrap; }
+.roadmap-lesson-row.is-current .roadmap-lesson-copy > strong { color: #076d63; font-weight: 740; }
+.roadmap-lesson-minutes { color: #697974; text-align: right; white-space: nowrap; }
+.roadmap-lesson-cta { min-height: 40px; padding: 0 18px; display: inline-flex; align-items: center; justify-content: center; color: #fff; border-radius: 9px; background: #08796d; font-size: 12px; font-weight: 760; white-space: nowrap; box-shadow: 0 6px 15px rgba(8, 109, 97, .16); }
+.roadmap-lesson-cta:hover { background: #065f57; }
+.roadmap-lesson-vip { min-height: 36px; padding: 0 13px; display: inline-flex; align-items: center; justify-content: center; gap: 6px; color: #8d611e; border: 1px solid #edcf98; border-radius: 9px; background: #fff; font-size: 11px; font-weight: 760; white-space: nowrap; }
+.roadmap-lesson-chevron { color: #78908a; }
+.course-roadmap-aside { min-width: 0; position: sticky; top: 100px; display: grid; gap: 24px; }
+.course-roadmap-overview { padding: 22px 24px 12px; border: 1px solid #dfe5e1; border-radius: 16px; background: rgba(255,255,255,.86); box-shadow: 0 5px 18px rgba(31, 71, 63, .04); }
+.course-roadmap-overview h2 { margin: 0 0 12px; color: #183f38; font-size: 19px; font-weight: 720; }
+.roadmap-overview-stat { min-height: 85px; display: grid; grid-template-columns: 38px 1fr; align-items: center; gap: 12px; border-bottom: 1px solid #e4e8e5; }
+.roadmap-overview-stat:last-of-type { border-bottom: 0; }
+.roadmap-overview-stat > span { color: #5f6f6b; }
+.roadmap-overview-stat p { margin: 0; display: grid; gap: 4px; color: #6d7c78; font-size: 12px; line-height: 1.35; }
+.roadmap-overview-stat strong { color: #263f3a; font-size: 15px; font-weight: 740; }
+.roadmap-signin-note { min-height: 43px; margin-top: 3px; display: flex; align-items: center; justify-content: space-between; gap: 8px; color: #08796d; border-top: 1px solid #e4e8e5; font-size: 11px; font-weight: 720; }
+.course-roadmap-coach { min-height: 198px; display: grid; grid-template-columns: 118px minmax(0, 1fr); align-items: end; position: relative; }
+.course-roadmap-coach-image { width: 148px; height: 148px; margin-left: -15px; z-index: 1; object-fit: contain; }
+.course-roadmap-coach-bubble { min-height: 100px; margin: 0 0 12px -3px; padding: 20px 17px 16px; position: relative; color: #3d4b47; border: 1px solid #f1ce78; border-radius: 13px; background: #fffaf0; box-shadow: 0 7px 20px rgba(104, 78, 24, .06); }
+.course-roadmap-coach-bubble::before { content: ""; width: 12px; height: 12px; position: absolute; top: 40px; left: -7px; border-bottom: 1px solid #f1ce78; border-left: 1px solid #f1ce78; background: #fffaf0; transform: rotate(45deg); }
+.course-roadmap-coach-bubble > svg { position: absolute; top: -33px; left: -20px; color: #ffad19; }
+.course-roadmap-coach-bubble p { margin: 0; font-size: 13px; font-weight: 620; line-height: 1.55; }
+.course-roadmap-coach-bubble a { margin-top: 9px; display: inline-flex; align-items: center; gap: 3px; color: #9b6819; font-size: 11px; font-weight: 760; }
+
+@media (max-width: 1060px) {
+  .course-roadmap-layout { grid-template-columns: minmax(0, 1fr) 260px; gap: 22px; }
+  .roadmap-stage-summary { grid-template-columns: 145px minmax(0, 1fr) auto; gap: 15px; }
+  .roadmap-stage-image { width: 145px; }
+  .roadmap-lesson-row { grid-template-columns: 25px minmax(0, 1fr) 64px minmax(0, 140px) 19px; padding-inline: 12px; gap: 8px; }
+  .roadmap-lesson-cta { padding-inline: 12px; }
+}
+
+@media (max-width: 900px) {
+  .course-roadmap-layout { grid-template-columns: 1fr; }
+  .course-roadmap-aside { position: static; grid-template-columns: minmax(0, 1fr) minmax(280px, .85fr); }
+  .course-roadmap-coach { min-height: 170px; }
+}
+
+@media (max-width: 720px) {
+  .course-roadmap-page { padding: 18px 0 104px; }
+  .course-roadmap-shell { width: min(100% - 28px, 640px); }
+  .course-roadmap-header { min-height: 0; padding: 0 0 20px; align-items: flex-start; flex-direction: column; gap: 9px; }
+  .course-roadmap-header h1 { font-size: 28px; }
+  .course-roadmap-progress-row { width: 100%; margin-top: 15px; grid-template-columns: auto minmax(100px, 1fr) auto; gap: 11px; }
+  .course-roadmap-switch { min-height: 40px; padding: 0; }
+  .course-roadmap-layout { padding-top: 22px; }
+  .roadmap-stage { grid-template-columns: 38px minmax(0, 1fr); }
+  .roadmap-stage-marker { width: 34px; height: 34px; margin-top: 16px; font-size: 15px; }
+  .roadmap-stage-marker svg { width: 17px; height: 17px; }
+  .roadmap-stage:not(:last-child) .roadmap-stage-rail::after { top: 53px; bottom: -27px; }
+  .roadmap-stage-summary { min-height: 78px; grid-template-columns: 112px minmax(0, 1fr); gap: 13px; }
+  .roadmap-stage-image { width: 112px; height: 78px; grid-row: 1 / span 2; }
+  .roadmap-stage-copy { padding: 10px 8px 0 0; }
+  .roadmap-stage-copy h2 { font-size: 15px; white-space: normal; }
+  .roadmap-stage-copy p { margin-top: 3px; font-size: 10px; }
+  .roadmap-stage-status { min-height: 25px; width: fit-content; margin: 0 8px 8px 0; padding: 0 9px; grid-column: 2; font-size: 9px; }
+  details.roadmap-stage-card > summary { grid-template-columns: minmax(0, 1fr) 23px; }
+  .roadmap-lesson-list { margin: 0 7px 7px; }
+  .roadmap-lesson-row { min-height: 61px; padding: 9px 10px; grid-template-columns: 23px minmax(0, 1fr) 16px; grid-template-rows: auto auto; gap: 4px 7px; }
+  .roadmap-lesson-state { grid-column: 1; grid-row: 1 / span 2; }
+  .roadmap-lesson-copy { grid-column: 2; grid-row: 1; flex-wrap: wrap; gap: 5px; }
+  .roadmap-lesson-copy > strong { width: 100%; flex-basis: 100%; white-space: normal; }
+  .roadmap-lesson-copy > i { display: none; }
+  .roadmap-lesson-minutes { grid-column: 2; grid-row: 2; text-align: left; font-size: 10px; }
+  .roadmap-lesson-cta,
+  .roadmap-lesson-vip { min-height: 44px; padding-inline: 12px; grid-column: 2 / 4; grid-row: 3; justify-self: start; }
+  .roadmap-lesson-chevron { grid-column: 3; grid-row: 1 / span 2; }
+  .roadmap-lesson-row.is-current,
+  .roadmap-lesson-row.is-vip-locked { grid-template-rows: auto auto auto; }
+  .course-roadmap-aside { grid-template-columns: 1fr; }
+  .course-roadmap-overview { padding: 20px 20px 9px; }
+  .roadmap-overview-stat { min-height: 72px; }
+  .course-roadmap-coach { width: min(360px, 100%); margin-inline: auto; }
+}
+
+@media (max-width: 430px) {
+  .course-roadmap-shell { width: calc(100% - 20px); }
+  .course-roadmap-eyebrow { font-size: 11px; }
+  .course-roadmap-header h1 { font-size: 25px; }
+  .course-roadmap-progress-row strong { font-size: 12px; }
+  .roadmap-stage { grid-template-columns: 31px minmax(0, 1fr); }
+  .roadmap-stage-marker { width: 29px; height: 29px; margin-top: 18px; font-size: 13px; }
+  .roadmap-stage-summary { grid-template-columns: 88px minmax(0, 1fr); gap: 10px; }
+  .roadmap-stage-image { width: 88px; }
+  .roadmap-stage-copy h2 { font-size: 13px; }
+  .roadmap-stage-status { padding-inline: 7px; }
+  .roadmap-stage-status svg { display: none; }
+  .course-roadmap-coach { grid-template-columns: 102px minmax(0, 1fr); }
+  .course-roadmap-coach-image { width: 126px; height: 126px; }
+  .course-roadmap-coach-bubble { padding: 17px 13px 14px; }
+}
+
 .lesson-page { min-height: 760px; padding-block: 34px 90px; }
 .lesson-breadcrumb { margin-bottom: 20px; display: flex; align-items: center; gap: 7px; color: var(--ink-soft); font-size: 12px; }
-.lesson-shell { display: grid; grid-template-columns: 270px 1fr; gap: 20px; align-items: start; }
-.lesson-sidebar { position: sticky; top: 100px; max-height: calc(100vh - 120px); overflow: hidden; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
-.lesson-sidebar-header { padding: 20px; color: #fff; background: var(--forest-deep); }
-.lesson-sidebar-header span { color: #bfe3d7; font-size: 10px; font-weight: 800; text-transform: uppercase; letter-spacing: .1em; }
-.lesson-sidebar-header h2 { margin: 6px 0 4px; font-size: 18px; }
-.lesson-sidebar-header p { margin: 0; color: rgba(255,255,255,.7); font-size: 11px; }
-.lesson-sidebar-toggle { display: none; }
-.lesson-nav { max-height: calc(100vh - 238px); padding: 10px; display: grid; gap: 12px; overflow-y: auto; }
-.lesson-module-group { display: grid; gap: 5px; }
-.lesson-module-title { padding: 5px 10px 7px; display: grid; gap: 2px; border-bottom: 1px solid #edf1ee; }
-.lesson-module-title span { color: var(--forest); font-size: 9px; font-weight: 850; text-transform: uppercase; letter-spacing: .1em; }
-.lesson-module-title strong { color: var(--ink-soft); font-size: 11px; line-height: 1.35; }
-.lesson-nav a { min-height: 54px; padding: 0 11px; display: flex; align-items: center; gap: 11px; cursor: pointer; text-align: left; border: 0; border-radius: 11px; background: transparent; }
-.lesson-nav a:hover { background: var(--sage-light); }
-.lesson-nav a.active { color: var(--forest-deep); background: var(--sage); }
-.lesson-nav a.pending { color: var(--forest-deep); background: var(--sage-light); }
-.lesson-number { width: 28px; height: 28px; display: grid; place-items: center; flex: 0 0 auto; border: 1px solid var(--line); border-radius: 9px; font-size: 10px; font-weight: 800; }
-.lesson-nav a.active .lesson-number { color: #fff; border-color: var(--forest); background: var(--forest); }
-.lesson-nav-copy { min-width: 0; flex: 1; display: grid; gap: 3px; }
-.lesson-nav-copy strong { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 12px; }
-.lesson-nav-copy span { color: var(--ink-soft); font-size: 10px; }
-.lesson-lock { color: #8fa29c; }
-.lesson-nav-spinner { width: 14px; height: 14px; flex: 0 0 auto; border: 2px solid rgba(23,107,91,.2); border-top-color: var(--forest); border-radius: 50%; }
 .lesson-main { min-width: 0; }
 .lesson-header-card { padding: 28px 30px; border: 1px solid var(--line); border-radius: 18px; background: #fff; }
 .lesson-heading-row { display: flex; justify-content: space-between; gap: 20px; align-items: flex-start; }
@@ -4158,15 +4310,6 @@ button { color: inherit; }
 .skeleton-block { display: block; color: transparent; border-radius: 999px; background: linear-gradient(100deg, #e8eeea 30%, #f6f8f6 50%, #e8eeea 70%); background-size: 220% 100%; }
 .header-account-skeleton { width: 116px; min-height: 34px; padding: 0; }
 .lesson-loading-breadcrumb { width: 170px; height: 12px; }
-.lesson-loading-sidebar-head { min-height: 126px; padding: 22px 20px; display: grid; align-content: center; gap: 11px; background: var(--forest-deep); }
-.lesson-loading-sidebar-head .skeleton-block { background: rgba(255,255,255,.18); }
-.lesson-loading-sidebar-head .skeleton-block:nth-child(1) { width: 42%; height: 8px; }
-.lesson-loading-sidebar-head .skeleton-block:nth-child(2) { width: 82%; height: 20px; }
-.lesson-loading-sidebar-head .skeleton-block:nth-child(3) { width: 64%; height: 9px; }
-.lesson-loading-nav { padding: 10px; display: grid; gap: 5px; }
-.lesson-loading-nav-item { min-height: 54px; padding: 11px; display: grid; align-content: center; gap: 8px; }
-.lesson-loading-nav-item .skeleton-block:first-child { width: 82%; height: 11px; }
-.lesson-loading-nav-item .skeleton-block:last-child { width: 45%; height: 8px; }
 .lesson-loading-header > .skeleton-block:nth-child(1) { width: 34%; height: 10px; }
 .lesson-loading-header > .skeleton-block:nth-child(2) { width: 62%; height: 38px; margin-top: 12px; }
 .lesson-loading-header > .skeleton-block:nth-child(3) { width: 78%; height: 12px; margin-top: 12px; }
@@ -4666,7 +4809,6 @@ button { color: inherit; }
   .continue-card { grid-column: 1 / -1; }
   .course-grid { grid-template-columns: repeat(2, 1fr); }
   .daily-section { gap: 32px; padding: 40px; }
-  .lesson-shell { grid-template-columns: 220px 1fr; }
   .vocab-row { grid-template-columns: 1fr auto; }
   .vocab-example { grid-column: 1 / -1; }
   .pricing-grid { grid-template-columns: 1fr 1fr; }
@@ -4756,16 +4898,6 @@ button { color: inherit; }
   .search-box { min-width: 0; }
   .explorer .course-grid { grid-template-columns: 1fr; }
   .lesson-page { padding-top: 20px; }
-  .lesson-shell { display: block; }
-  .lesson-sidebar { position: static; max-height: none; margin-bottom: 14px; }
-  .lesson-sidebar-header { padding: 16px 18px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; column-gap: 14px; }
-  .lesson-sidebar-header > span, .lesson-sidebar-header > h2, .lesson-sidebar-header > p { grid-column: 1; }
-  .lesson-sidebar-header h2 { margin-top: 4px; font-size: 16px; }
-  .lesson-sidebar-header p { font-size: 9px; }
-  .lesson-sidebar-toggle { min-height: 44px; padding: 0 11px; grid-column: 2; grid-row: 1 / span 3; display: inline-flex; align-items: center; gap: 7px; cursor: pointer; color: #fff; border: 1px solid rgba(255,255,255,.22); border-radius: 11px; background: rgba(255,255,255,.1); }
-  .lesson-sidebar-toggle span { color: inherit; font-size: 9px; letter-spacing: 0; white-space: nowrap; }
-  .lesson-nav { max-height: 0; padding-block: 0; display: grid; overflow: hidden; transition: max-height .24s ease, padding .24s ease; }
-  .lesson-nav.mobile-open { max-height: 320px; padding-block: 10px; overflow: auto; }
   .lesson-heading-row { display: block; }
   .lesson-progress-badge { width: fit-content; margin-top: 15px; }
   .lesson-header-card, .lesson-content-card { padding: 21px 18px; }
@@ -12530,6 +12662,16 @@ body:has(.auth-register-is-success) { overflow: hidden; }
     margin-bottom: 220px;
     --auth-pocket-x: 0px;
     --auth-pocket-y: 160px;
+  }
+
+  .auth-page-forgot-scene {
+    min-height: max(100dvh, 680px);
+    display: grid;
+    place-items: center;
+  }
+
+  .auth-page-forgot-scene .auth-card-forgot-scene {
+    margin: 0;
   }
 
   .auth-card-login-scene .auth-heading h1 { font-size: clamp(30px, 8.5vw, 38px); }

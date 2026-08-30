@@ -1,0 +1,143 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "media",
+  "items": [
+    {
+      "id": "media-audio-ni-hao-word",
+      "type": "audio",
+      "purpose": "word-pronunciation",
+      "locale": "zh-CN",
+      "speaker": {
+        "type": "tts",
+        "voiceId": null
+      },
+      "transcript": "你好",
+      "url": null,
+      "durationMs": null,
+      "checksumSha256": null,
+      "reviewStatus": "pending",
+      "rights": {
+        "owner": "Himi Chinese",
+        "license": "internal"
+      }
+    },
+    {
+      "id": "media-audio-jin-du-word",
+      "type": "audio",
+      "purpose": "word-pronunciation",
+      "locale": "zh-CN",
+      "speaker": {
+        "type": "tts",
+        "voiceId": null
+      },
+      "transcript": "进度",
+      "url": null,
+      "durationMs": null,
+      "checksumSha256": null,
+      "reviewStatus": "pending",
+      "rights": {
+        "owner": "Himi Chinese",
+        "license": "internal"
+      }
+    },
+    {
+      "id": "media-audio-first-greeting",
+      "type": "audio",
+      "purpose": "sentence-pronunciation",
+      "locale": "zh-CN",
+      "speaker": {
+        "type": "tts",
+        "voiceId": null
+      },
+      "transcript": "你好！",
+      "url": null,
+      "durationMs": null,
+      "checksumSha256": null,
+      "reviewStatus": "pending",
+      "rights": {
+        "owner": "Himi Chinese",
+        "license": "internal"
+      }
+    },
+    {
+      "id": "media-audio-first-meeting-full",
+      "type": "audio",
+      "purpose": "dialogue-full",
+      "locale": "zh-CN",
+      "speaker": {
+        "type": "multi-speaker",
+        "voiceId": null
+      },
+      "transcriptRef": "dialogue:dialogue-first-meeting",
+      "url": null,
+      "durationMs": null,
+      "checksumSha256": null,
+      "reviewStatus": "pending",
+      "rights": {
+        "owner": "Himi Chinese",
+        "license": "internal"
+      }
+    },
+    {
+      "id": "media-video-work-progress",
+      "type": "video",
+      "purpose": "scenario-video",
+      "locale": "zh-CN",
+      "url": "/assets/videos/work-progress/himi-work-progress-16x9.mp4",
+      "posterUrl": "/assets/videos/work-progress/himi-work-progress-poster-16x9.png",
+      "durationMs": 38000,
+      "transcriptRef": "dialogue:dialogue-work-progress",
+      "reviewStatus": "approved",
+      "rights": {
+        "owner": "Himi Chinese",
+        "license": "internal"
+      }
+    },
+    {
+      "id": "media-audio-work-progress-turn-01",
+      "type": "audio-segment",
+      "purpose": "dialogue-turn",
+      "parentMediaRef": "media:media-video-work-progress",
+      "locale": "zh-CN",
+      "transcript": "项目进展怎么样了？",
+      "startMs": 5800,
+      "endMs": 8128,
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "media-audio-work-progress-turn-02",
+      "type": "audio-segment",
+      "purpose": "dialogue-turn",
+      "parentMediaRef": "media:media-video-work-progress",
+      "locale": "zh-CN",
+      "transcript": "已经完成百分之八十了。",
+      "startMs": 16800,
+      "endMs": 19440,
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "media-audio-work-progress-turn-03",
+      "type": "audio-segment",
+      "purpose": "dialogue-turn",
+      "parentMediaRef": "media:media-video-work-progress",
+      "locale": "zh-CN",
+      "transcript": "我今天下班前发给您。",
+      "startMs": 27800,
+      "endMs": 30344,
+      "reviewStatus": "approved"
+    },
+    {
+      "id": "media-image-office-progress",
+      "type": "image",
+      "purpose": "lesson-cover",
+      "locale": null,
+      "url": "/assets/courses/himi-concepts/himi-office-administration.png",
+      "altVi": "Himi đồng hành cùng nhân viên đang báo cáo tiến độ công việc",
+      "reviewStatus": "pending",
+      "rights": {
+        "owner": "Himi Chinese",
+        "license": "internal"
+      }
+    }
+  ]
+}

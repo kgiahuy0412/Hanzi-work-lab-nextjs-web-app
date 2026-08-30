@@ -1,0 +1,120 @@
+{
+  "schemaVersion": "1.0.0",
+  "description": "Ví dụ sự kiện học bất biến. Dữ liệu này minh họa cấu trúc, không chứa người dùng thật.",
+  "events": [
+    {
+      "id": "event-demo-lesson-opened",
+      "actorId": "user-demo",
+      "verb": "lesson-opened",
+      "object": {
+        "type": "lesson",
+        "id": "lesson-hsk1-first-meeting"
+      },
+      "result": null,
+      "context": {
+        "sectionId": "section-hsk1-introduction",
+        "sessionId": "session-demo-001",
+        "contentVersion": 1,
+        "source": "web"
+      },
+      "occurredAt": "2026-08-30T01:00:00.000Z"
+    },
+    {
+      "id": "event-demo-audio-played",
+      "actorId": "user-demo",
+      "verb": "audio-played",
+      "object": {
+        "type": "media",
+        "id": "media-video-work-progress"
+      },
+      "result": {
+        "playbackRate": 0.75,
+        "positionMs": 5800
+      },
+      "context": {
+        "lessonId": "lesson-office-report-progress",
+        "sectionId": "section-office-progress-video",
+        "sessionId": "session-demo-002",
+        "contentVersion": 1,
+        "source": "web"
+      },
+      "occurredAt": "2026-08-30T01:05:00.000Z"
+    },
+    {
+      "id": "event-demo-assessment-answered",
+      "actorId": "user-demo",
+      "verb": "assessment-answered",
+      "object": {
+        "type": "assessment-item",
+        "id": "item-work-scenario-response"
+      },
+      "result": {
+        "response": {
+          "optionId": "option-scenario-specific"
+        },
+        "correct": true,
+        "score": 1,
+        "durationMs": 14500
+      },
+      "context": {
+        "lessonId": "lesson-office-report-progress",
+        "sectionId": "section-office-progress-practice",
+        "sessionId": "session-demo-002",
+        "contentVersion": 1,
+        "source": "web"
+      },
+      "occurredAt": "2026-08-30T01:08:00.000Z"
+    },
+    {
+      "id": "event-demo-character-traced",
+      "actorId": "user-demo",
+      "verb": "character-traced",
+      "object": {
+        "type": "character",
+        "id": "char-ni"
+      },
+      "result": {
+        "mode": "trace",
+        "completed": true,
+        "mistakeCount": 2
+      },
+      "context": {
+        "lessonId": "lesson-hsk1-first-meeting",
+        "sectionId": "section-hsk1-writing",
+        "sessionId": "session-demo-001",
+        "contentVersion": 1,
+        "source": "web"
+      },
+      "occurredAt": "2026-08-30T01:12:00.000Z"
+    },
+    {
+      "id": "event-demo-lesson-completed",
+      "actorId": "user-demo",
+      "verb": "lesson-completed",
+      "object": {
+        "type": "lesson",
+        "id": "lesson-office-report-progress"
+      },
+      "result": {
+        "completionPercent": 100,
+        "practiceScorePercent": 75,
+        "durationMs": 702000
+      },
+      "context": {
+        "sessionId": "session-demo-002",
+        "contentVersion": 1,
+        "source": "web"
+      },
+      "occurredAt": "2026-08-30T01:16:42.000Z"
+    }
+  ],
+  "derivedAggregateExample": {
+    "userId": "user-demo",
+    "lessonId": "lesson-office-report-progress",
+    "completionPercent": 100,
+    "bestPracticeScorePercent": 75,
+    "attemptCount": 1,
+    "lastOpenedAt": "2026-08-30T01:05:00.000Z",
+    "completedAt": "2026-08-30T01:16:42.000Z"
+  }
+}

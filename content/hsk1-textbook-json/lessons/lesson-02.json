@@ -1,0 +1,230 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-hsk1-02",
+  "slug": "hsk1-bai-02-cam-on-anh",
+  "profile": "hsk-foundation",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-hsk-standard-1",
+    "levelId": "hsk-1",
+    "lessonNumber": 2,
+    "titleVi": "Cảm ơn anh!",
+    "titleZh": "谢谢你！",
+    "heroHanzi": "谢谢你！",
+    "summaryVi": "Dữ liệu bài 2 được chuyển đổi từ Giáo trình chuẩn HSK 1.",
+    "estimatedMinutes": 25,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "source": {
+      "printedPages": [
+        20,
+        25
+      ],
+      "pdfPages": [
+        20,
+        25
+      ],
+      "missingPrintedPages": []
+    }
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-hsk1-l02-dialogue",
+      "skill": "speaking",
+      "descriptionVi": "Thực hiện các mẫu hội thoại trọng tâm của Bài 2."
+    },
+    {
+      "id": "objective-hsk1-l02-vocabulary",
+      "skill": "reading",
+      "descriptionVi": "Nhận biết 4 mục từ mới của bài."
+    },
+    {
+      "id": "objective-hsk1-l02-writing",
+      "skill": "writing",
+      "descriptionVi": "Luyện viết 5 chữ Hán trọng tâm."
+    }
+  ],
+  "prerequisites": [
+    "lesson:lesson-hsk1-01"
+  ],
+  "sections": [
+    {
+      "id": "section-hsk1-l02-introduction",
+      "type": "introduction",
+      "titleVi": "Giới thiệu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 2 · HSK 1",
+        "heroHanzi": "谢谢你！",
+        "summaryVi": "Cảm ơn anh!",
+        "sourcePrintedPages": [
+          20,
+          25
+        ],
+        "sourcePdfPages": [
+          20,
+          25
+        ]
+      }
+    },
+    {
+      "id": "section-hsk1-l02-dialogue",
+      "type": "dialogue",
+      "titleVi": "Bài học và hội thoại",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "dialogue:dialogue-hsk1-l02-01",
+        "dialogue:dialogue-hsk1-l02-02",
+        "dialogue:dialogue-hsk1-l02-03"
+      ],
+      "presentation": {
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": false,
+        "audioUnavailableReason": "missing-source-audio"
+      }
+    },
+    {
+      "id": "section-hsk1-l02-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ mới",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l02-01",
+        "lexeme:lex-hsk1-l02-02",
+        "lexeme:lex-hsk1-l02-03",
+        "lexeme:lex-hsk1-l02-04"
+      ]
+    },
+    {
+      "id": "section-hsk1-l02-grammar",
+      "type": "grammar",
+      "titleVi": "Chú thích ngữ pháp",
+      "required": false,
+      "estimatedMinutes": 0,
+      "itemRefs": [],
+      "sourceAvailability": "not-present-in-this-lesson"
+    },
+    {
+      "id": "section-hsk1-l02-listening",
+      "type": "listening",
+      "titleVi": "Nghe theo track giáo trình",
+      "required": false,
+      "estimatedMinutes": 0,
+      "itemRefs": [
+        "media:media-hsk1-track-02-1",
+        "media:media-hsk1-track-02-2",
+        "media:media-hsk1-track-02-3"
+      ],
+      "availability": "blocked-missing-audio-files"
+    },
+    {
+      "id": "section-hsk1-l02-pronunciation",
+      "type": "pronunciation",
+      "titleVi": "Phần ghép âm",
+      "required": true,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "pronunciation-topic:pronunciation-hsk1-l02"
+      ]
+    },
+    {
+      "id": "section-hsk1-l02-writing",
+      "type": "writing",
+      "titleVi": "Chữ Hán",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "character:char-hsk1-u53e3",
+        "character:char-hsk1-u89c1",
+        "character:char-hsk1-u5c71",
+        "character:char-hsk1-u5c0f",
+        "character:char-hsk1-u4e0d"
+      ],
+      "strokeAssetStatus": "use-hanzi-writer-runtime-data"
+    },
+    {
+      "id": "section-hsk1-l02-practice",
+      "type": "practice",
+      "titleVi": "Luyện tập và vận dụng",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "assessment-item:assessment-hsk1-l02-meaning",
+        "assessment-item:assessment-hsk1-l02-pinyin"
+      ],
+      "sourceActivityTypes": [
+        "warm-up-image-match",
+        "role-play-source-dialogues",
+        "answer-situational-questions",
+        "pair-or-group-application"
+      ],
+      "provenance": {
+        "sourceActivities": "summarized-from-book",
+        "assessmentItems": "derived-not-verbatim"
+      }
+    },
+    {
+      "id": "section-hsk1-l02-flashcard",
+      "type": "flashcard",
+      "titleVi": "Flashcard",
+      "required": false,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l02-01",
+        "lexeme:lex-hsk1-l02-02",
+        "lexeme:lex-hsk1-l02-03",
+        "lexeme:lex-hsk1-l02-04"
+      ],
+      "generatedFromSectionId": "section-hsk1-l02-vocabulary"
+    },
+    {
+      "id": "section-hsk1-l02-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Hoàn thành Bài 2",
+        "messageVi": "Bạn đã hoàn thành nội dung 谢谢你！"
+      }
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-hsk1-l02-introduction",
+      "section-hsk1-l02-dialogue",
+      "section-hsk1-l02-vocabulary",
+      "section-hsk1-l02-pronunciation",
+      "section-hsk1-l02-writing",
+      "section-hsk1-l02-practice"
+    ],
+    "minimumPracticeScorePercent": 50,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "blocked-missing-file",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Dữ liệu được chuyển đổi từ bản PDF scan do người dùng cung cấp.",
+      "Pinyin ở các câu hội thoại được tạo tự động và cần được biên tập ngôn ngữ kiểm tra trước khi xuất bản.",
+      "Bài tập trắc nghiệm là dữ liệu suy diễn từ từ vựng nguồn, không phải bản chép nguyên văn bài tập trong sách."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

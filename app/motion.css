@@ -33,7 +33,6 @@
 .start-lesson-button,
 .review-button,
 .course-card,
-.lesson-nav a,
 .learn-quick-actions a,
 .rail-nav a,
 .rail-support,
@@ -238,7 +237,6 @@
   .learning-trail { animation-delay: 195ms; }
 
   .lesson-tab-panel { animation: hw-rise 150ms var(--motion-ease) both; }
-  .lesson-nav-spinner { animation: hw-spin 650ms linear infinite; }
   .skeleton-block { animation: hw-shimmer 1.35s ease-in-out infinite; }
 
   .price-card:nth-child(2) { animation-delay: 45ms; }
@@ -278,10 +276,6 @@
     transform: translateX(3px);
   }
 
-  .lesson-nav a:hover {
-    transform: translateX(2px);
-  }
-
   .learn-quick-actions a:hover,
   .rail-nav a:hover,
   .topbar-icon:hover {
@@ -300,9 +294,6 @@
     left: 8px;
   }
 
-  .lesson-nav a:hover {
-    transform: none;
-  }
 }
 
 @media (max-width: 640px) {
@@ -399,5 +390,18 @@
     animation-iteration-count: 1 !important;
     transition-duration: .01ms !important;
     transition-delay: 0ms !important;
+  }
+
+  /* Keep the explicitly requested station hover feedback available. */
+  .game-journey-station {
+    transition-duration: .48s, .36s !important;
+  }
+
+  .game-journey-station-number {
+    transition-duration: .46s, .36s !important;
+  }
+
+  .game-journey-station-visual > img {
+    transition-duration: .52s, .36s !important;
   }
 }

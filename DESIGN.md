@@ -2,15 +2,13 @@
 name: Himi Chinese
 description: Tiếng Trung cho người đi làm, được dẫn dắt bằng những nhịp học ngắn và thân thiện.
 colors:
-  himi-teal: "#159f96"
-  himi-teal-deep: "#087a72"
-  pine: "#064f48"
-  action-coral: "#ff5b55"
-  progress-blue: "#1767e8"
-  warm-canvas: "#f8f7f2"
-  warm-surface: "#fffdf8"
-  ink-navy: "#071a35"
-  line-soft: "#d9dfda"
+  himi-red: "#FF4C3B"
+  himi-orange: "#FF8E2D"
+  mascot-black: "#222222"
+  clean-white: "#FFFFFF"
+  red-soft: "#FFF0EE"
+  orange-soft: "#FFF4E8"
+  line-soft: "#E8E1DE"
 typography:
   display:
     fontFamily: "Inter"
@@ -42,19 +40,19 @@ spacing:
   xl: "32px"
 components:
   button-primary:
-    backgroundColor: "{colors.action-coral}"
-    textColor: "#ffffff"
+    backgroundColor: "{colors.himi-red}"
+    textColor: "{colors.mascot-black}"
     rounded: "{rounded.control}"
     padding: "0 18px"
     height: "50px"
   card-feature:
-    backgroundColor: "{colors.himi-teal}"
-    textColor: "#ffffff"
+    backgroundColor: "{colors.clean-white}"
+    textColor: "{colors.mascot-black}"
     rounded: "{rounded.feature}"
     padding: "28px 36px"
   chip-active:
-    backgroundColor: "#e2f5f2"
-    textColor: "{colors.himi-teal-deep}"
+    backgroundColor: "{colors.red-soft}"
+    textColor: "{colors.mascot-black}"
     rounded: "999px"
     padding: "8px 14px"
 ---
@@ -67,38 +65,37 @@ components:
 
 Himi Chinese feels like a bright, well-organized learning studio built into the learner's workday. It combines adult productivity with the warmth of a mascot-led coach: task state is always explicit, interaction is tactile without becoming childish, and Chinese content receives enough scale to remain memorable.
 
-The system is light and calm at page scale, while saturated teal, coral, and blue identify the few moments that need action or concentration. Himi is useful—pointing to the next step, explaining a state, or celebrating progress—rather than scattered as decoration.
+The system is light and calm at page scale, while Himi Red and Himi Orange identify the few moments that need action or concentration. Himi is useful—pointing to the next step, explaining a state, or celebrating progress—rather than scattered as decoration.
 
 **Key Characteristics:**
 
-- Warm white work surfaces with strong pine-colored text.
-- Teal as the learning field, coral as the decisive action, blue as progress.
+- Clean white work surfaces with strong mascot-black text.
+- Himi Red as the decisive action and Himi Orange as the supporting accent.
 - Large Chinese characters paired with compact Vietnamese guidance.
 - Rounded, tactile controls and soft ambient depth.
 - Clear responsive reordering with one dominant action per view.
 
 ## Colors
 
-The palette balances quiet workplace neutrals with three purposeful learning signals.
+The palette follows the official Himi Chinese identity: energetic red, lively orange, mascot black, and clean white. Pale tints are derived only from red or orange for quiet surfaces.
 
 ### Primary
 
-- **Himi Teal:** the main interactive learning field and strongest brand surface.
-- **Deep Himi Teal:** navigation, active states, focus guidance, and primary text links.
+- **Himi Red (`#FF4C3B`):** primary calls to action, selected navigation, and the strongest branded emphasis.
+- **Mascot Black (`#222222`):** headings, body copy, icons, and readable foreground text on saturated brand surfaces.
 
 ### Secondary
 
-- **Action Coral:** decisive calls to action and the strongest response state.
-- **Progress Blue:** active progress, the next step, and informational emphasis.
+- **Himi Orange (`#FF8E2D`):** progress, supporting actions, highlights, and secondary navigation emphasis.
+- **Derived red/orange tints:** selected rows, chips, helper panels, and focus halos.
 
 ### Neutral
 
-- **Warm Canvas:** the calm page ground behind learning modules.
-- **Warm Surface:** cards, docks, and controls that sit above the canvas.
-- **Ink Navy:** high-contrast instructional text and keyboard focus rings.
-- **Soft Line:** separators and quiet structure where tonal grouping is insufficient.
+- **Clean White (`#FFFFFF`):** the default page canvas and card surface.
+- **Mascot Black (`#222222`):** the default text and icon color.
+- **Warm Gray Line (`#E8E1DE`):** quiet separation between white surfaces.
 
-**The Three Signals Rule.** Teal owns learning, coral owns action, and blue owns progress; do not assign them interchangeably inside one workflow.
+**The Two Signals Rule.** Red owns the main action and selected state; orange owns supporting actions and progress. Black and white provide structure and legibility. Functional success/error colors may appear only when their meaning would otherwise be unclear.
 
 ## Typography
 
@@ -128,8 +125,8 @@ The system uses a hybrid of tonal layering and soft ambient shadows. Most utilit
 
 ### Shadow Vocabulary
 
-- **Learning lift** (`0 28px 58px rgba(25,85,82,.17), 0 6px 16px rgba(18,52,49,.09)`): active task or vocabulary surface.
-- **Coach lift** (`0 24px 52px rgba(6,79,72,.20), 0 7px 16px rgba(7,26,53,.08)`): Himi guidance and daily phrase panels.
+- **Learning lift** (`0 28px 58px rgba(255,76,59,.14), 0 6px 16px rgba(34,34,34,.08)`): active task or vocabulary surface.
+- **Coach lift** (`0 24px 52px rgba(255,142,45,.16), 0 7px 16px rgba(34,34,34,.08)`): Himi guidance and daily phrase panels.
 
 **The Earned Lift Rule.** No more than one main panel and one supporting coach panel should appear lifted in the same viewport.
 
@@ -142,19 +139,19 @@ Controls use gently rounded 13–16px corners; content panels use 21–24px. Pil
 ### Buttons
 
 - **Shape:** tactile rounded rectangle (13–16px) with a minimum 44px height.
-- **Primary:** coral on white for decisive learning actions; deep teal is used when coral would compete with a response state.
-- **Hover / Focus:** a 2px upward lift may accompany hover; keyboard focus uses a clear navy or teal outline with offset.
-- **Secondary / Ghost:** warm surface or transparent background with pine/teal text and a visible focus state.
+- **Primary:** Himi Red with white copy for decisive learning actions; solid Himi Orange controls also use white copy.
+- **Hover / Focus:** a 2px upward lift may accompany hover; keyboard focus uses a mascot-black outline with a red halo.
+- **Secondary / Ghost:** Himi Orange, a pale orange tint, or a white surface with black text.
 
 ### Chips
 
-- **Style:** pale teal or warm neutral ground with dense, compact text.
-- **State:** active chips use deep teal text and a stronger tonal fill; status chips do not imitate primary buttons.
+- **Style:** pale red/orange or white ground with dense, compact black text.
+- **State:** active chips use Himi Red with mascot-black text; status chips do not imitate primary buttons.
 
 ### Cards / Containers
 
 - **Corner Style:** 21–24px for feature panels, 16–18px for utilities.
-- **Background:** warm surface, teal learning field, or pine coach field.
+- **Background:** clean white, a pale red tint, or a pale orange tint.
 - **Shadow Strategy:** flat by default; refer to Earned Lift.
 - **Border:** one soft line when needed to separate similar neutrals.
 - **Internal Padding:** 18–36px depending on hierarchy.
@@ -162,12 +159,12 @@ Controls use gently rounded 13–16px corners; content panels use 21–24px. Pil
 ### Inputs / Fields
 
 - **Style:** white or warm-surface fill, soft line stroke, 13–16px corners.
-- **Focus:** border shifts to deep teal and receives a visible outer outline.
+- **Focus:** border shifts to Himi Red and receives a visible mascot-black outline with a red halo.
 - **Error / Disabled:** error copy is explicit; disabled controls keep readable labels and reduce opacity without removing state.
 
 ### Navigation
 
-The desktop rail uses muted gray-green icons, a pale teal active field, and the Himi wordmark. The top bar stays visually quiet. Mobile navigation becomes a fixed bottom bar with icon-plus-label targets and a clearly colored active state.
+The desktop rail uses muted black/gray icons, a pale red active field, and the Himi wordmark. The top bar stays visually quiet. Mobile navigation becomes a fixed bottom bar with icon-plus-label targets and a red active indicator.
 
 ### Learning Card
 
@@ -179,7 +176,7 @@ The learning card gives Hanzi dominant scale, then pinyin, meaning, workplace ex
 
 - **Do** make the next useful action unmistakable within the first viewport.
 - **Do** let Himi explain or guide a real learning state.
-- **Do** use the three signal colors according to their named roles.
+- **Do** use red for the main action, orange for supporting emphasis, and black/white for structure.
 - **Do** keep Chinese, pinyin, and Vietnamese translation in a consistent reading ladder.
 
 ### Don't:

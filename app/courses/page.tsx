@@ -1,29 +1,39 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import { CourseGridSkeleton } from "@/components/course-catalog-skeleton";
-import { CourseExplorer } from "@/components/course-explorer";
-import { HimiSectionBanner } from "@/components/himi-section-banner";
+import { CourseLibraryView, type CourseLibraryViewName } from "@/components/course-library-view";
 import { listPublishedCourses } from "@/lib/course-repository";
+import { HSK_CURRICULUM } from "@/lib/hsk-curriculum";
 
-export const metadata: Metadata = { title: "Lộ trình chuyên ngành" };
+export const metadata: Metadata = {
+  title: "Giáo trình HSK & lộ trình chuyên ngành",
+  description: "Học theo cấp độ HSK hoặc chọn lộ trình tiếng Trung phù hợp với công việc của bạn.",
+};
+
+type CoursesSearchParams = {
+  view?: string | string[];
+};
+
+function firstValue(value: string | string[] | undefined) {
+  return Array.isArray(value) ? value[0] : value;
+}
 
 async function CourseCatalog() {
   const courses = await listPublishedCourses();
-  return <CourseExplorer courses={courses} />;
+  return <CourseLibraryView courses={courses} hskCurriculum={HSK_CURRICULUM} view="catalog" />;
 }
 
-export default function CoursesPage() {
-  return <main className="course-library-page">
-    <section className="section-shell himi-banner-shell">
-      <HimiSectionBanner
-        description="Khám phá lộ trình theo ngành để dùng tiếng Trung hiệu quả trong công việc thực tế."
-        titleId="course-library-title"
-        titleLines={["Bạn muốn dùng tiếng", "Trung để làm gì?"]}
-        variant="courses"
-      />
-    </section>
-    <div id="course-catalog">
+export default async function CoursesPage({
+  searchParams = Promise.resolve({}),
+}: {
+  searchParams?: Promise<CoursesSearchParams>;
+}) {
+  const params = await searchParams;
+  const view: CourseLibraryViewName = firstValue(params.view) === "hsk" ? "hsk" : "catalog";
+
+  return <main className="course-library-page hsk-curriculum-page">
+    {view === "hsk" ? <CourseLibraryView courses={[]} hskCurriculum={HSK_CURRICULUM} view="hsk" /> : <div id="course-catalog">
       <Suspense fallback={<CourseGridSkeleton />}><CourseCatalog /></Suspense>
-    </div>
+    </div>}
   </main>;
 }

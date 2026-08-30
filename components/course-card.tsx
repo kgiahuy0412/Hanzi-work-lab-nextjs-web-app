@@ -26,6 +26,6 @@ export function CourseCard({ course, priority = false }: { course: Course; prior
   </>;
 
   return course.availability === "available"
-    ? <Link className="course-card" href={`/learn/${course.slug}`} prefetch>{content}</Link>
+    ? <Link className="course-card" href={`/courses/${course.slug}`} prefetch>{content}</Link>
     : <article className="course-card course-card-coming" aria-label={`${course.title} đang được biên soạn`}>{content}</article>;
 }

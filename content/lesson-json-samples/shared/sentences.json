@@ -1,0 +1,238 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "sentence",
+  "items": [
+    {
+      "id": "sentence-first-greeting",
+      "hanzi": "你好！",
+      "pinyin": "Nǐ hǎo!",
+      "translationVi": "Xin chào!",
+      "register": "neutral",
+      "domains": [
+        "introduction"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-ni-hao"
+      ],
+      "grammarRefs": [],
+      "audioRefs": [
+        "media:media-audio-first-greeting"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "sentence-i-am-anna",
+      "hanzi": "我是安娜。",
+      "pinyin": "Wǒ shì Ānnà.",
+      "translationVi": "Tôi là Anna.",
+      "register": "neutral",
+      "domains": [
+        "introduction"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-wo",
+        "lexeme:lex-shi"
+      ],
+      "grammarRefs": [
+        "grammar-point:grammar-shi-identity"
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-ask-name",
+      "hanzi": "你叫什么名字？",
+      "pinyin": "Nǐ jiào shénme míngzi?",
+      "translationVi": "Bạn tên là gì?",
+      "register": "neutral",
+      "domains": [
+        "introduction"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-ni",
+        "lexeme:lex-jiao",
+        "lexeme:lex-ming-zi"
+      ],
+      "grammarRefs": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-i-am-xiaoming",
+      "hanzi": "我叫小明。",
+      "pinyin": "Wǒ jiào Xiǎomíng.",
+      "translationVi": "Tôi tên là Tiểu Minh.",
+      "register": "neutral",
+      "domains": [
+        "introduction"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-wo",
+        "lexeme:lex-jiao"
+      ],
+      "grammarRefs": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-and-you",
+      "hanzi": "你呢？",
+      "pinyin": "Nǐ ne?",
+      "translationVi": "Còn bạn?",
+      "register": "neutral",
+      "domains": [
+        "introduction"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-ni"
+      ],
+      "grammarRefs": [
+        "grammar-point:grammar-question-with-ne"
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-nice-to-meet",
+      "hanzi": "很高兴认识你。",
+      "pinyin": "Hěn gāoxìng rènshi nǐ.",
+      "translationVi": "Rất vui được làm quen với bạn.",
+      "register": "polite",
+      "domains": [
+        "introduction",
+        "workplace"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-ni"
+      ],
+      "grammarRefs": [],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-i-am-colleague",
+      "hanzi": "我是新来的同事。",
+      "pinyin": "Wǒ shì xīn lái de tóngshì.",
+      "translationVi": "Tôi là đồng nghiệp mới.",
+      "register": "professional",
+      "domains": [
+        "workplace"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-wo",
+        "lexeme:lex-shi",
+        "lexeme:lex-tong-shi"
+      ],
+      "grammarRefs": [
+        "grammar-point:grammar-shi-identity"
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-project-progress-question",
+      "hanzi": "项目进展怎么样了？",
+      "pinyin": "Xiàngmù jìnzhǎn zěnmeyàng le?",
+      "translationVi": "Dự án tiến triển thế nào rồi?",
+      "register": "professional",
+      "domains": [
+        "office",
+        "project-management"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-xiang-mu",
+        "lexeme:lex-jin-du"
+      ],
+      "grammarRefs": [],
+      "audioRefs": [
+        "media:media-audio-work-progress-turn-01"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "sentence-progress-eighty",
+      "hanzi": "已经完成百分之八十了。",
+      "pinyin": "Yǐjīng wánchéng bǎifēnzhī bāshí le.",
+      "translationVi": "Đã hoàn thành 80% rồi.",
+      "register": "professional",
+      "domains": [
+        "office",
+        "project-management"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-jin-du",
+        "lexeme:lex-wan-cheng"
+      ],
+      "grammarRefs": [
+        "grammar-point:usage-report-progress"
+      ],
+      "audioRefs": [
+        "media:media-audio-work-progress-turn-02"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "sentence-send-before-off-work",
+      "hanzi": "我今天下班前发给您。",
+      "pinyin": "Wǒ jīntiān xiàbān qián fā gěi nín.",
+      "translationVi": "Tôi sẽ gửi cho anh/chị trước khi tan làm hôm nay.",
+      "register": "professional-polite",
+      "domains": [
+        "office",
+        "project-management"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-wo",
+        "lexeme:lex-hui-bao"
+      ],
+      "grammarRefs": [
+        "grammar-point:usage-report-progress"
+      ],
+      "audioRefs": [
+        "media:media-audio-work-progress-turn-03"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "sentence-ask-deadline",
+      "hanzi": "请问，截止日期是什么时候？",
+      "pinyin": "Qǐngwèn, jiézhǐ rìqī shì shénme shíhou?",
+      "translationVi": "Xin hỏi, hạn chót là khi nào?",
+      "register": "professional-polite",
+      "domains": [
+        "office",
+        "project-management"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-jie-zhi-ri-qi",
+        "lexeme:lex-shi"
+      ],
+      "grammarRefs": [
+        "grammar-point:usage-ask-deadline"
+      ],
+      "audioRefs": [],
+      "status": "review"
+    },
+    {
+      "id": "sentence-report-latest-progress",
+      "hanzi": "我来汇报一下最新进度。",
+      "pinyin": "Wǒ lái huìbào yíxià zuìxīn jìndù.",
+      "translationVi": "Tôi xin báo cáo nhanh tiến độ mới nhất.",
+      "register": "professional",
+      "domains": [
+        "office",
+        "factory"
+      ],
+      "lexemeRefs": [
+        "lexeme:lex-wo",
+        "lexeme:lex-hui-bao",
+        "lexeme:lex-jin-du"
+      ],
+      "grammarRefs": [
+        "grammar-point:usage-report-progress"
+      ],
+      "audioRefs": [],
+      "status": "review"
+    }
+  ]
+}

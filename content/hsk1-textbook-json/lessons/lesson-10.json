@@ -1,0 +1,255 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-hsk1-10",
+  "slug": "hsk1-bai-10-toi-co-the-ngoi-o-day-khong",
+  "profile": "hsk-foundation",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-hsk-standard-1",
+    "levelId": "hsk-1",
+    "lessonNumber": 10,
+    "titleVi": "Tôi có thể ngồi ở đây được không?",
+    "titleZh": "我能坐这儿吗？",
+    "heroHanzi": "我能坐这儿吗？",
+    "summaryVi": "Dữ liệu bài 10 được chuyển đổi từ Giáo trình chuẩn HSK 1.",
+    "estimatedMinutes": 29,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "source": {
+      "printedPages": [
+        84,
+        92
+      ],
+      "pdfPages": [
+        82,
+        90
+      ],
+      "missingPrintedPages": []
+    }
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-hsk1-l10-dialogue",
+      "skill": "speaking",
+      "descriptionVi": "Thực hiện các mẫu hội thoại trọng tâm của Bài 10."
+    },
+    {
+      "id": "objective-hsk1-l10-vocabulary",
+      "skill": "reading",
+      "descriptionVi": "Nhận biết 14 mục từ mới của bài."
+    },
+    {
+      "id": "objective-hsk1-l10-writing",
+      "skill": "writing",
+      "descriptionVi": "Luyện viết 4 chữ Hán trọng tâm."
+    }
+  ],
+  "prerequisites": [
+    "lesson:lesson-hsk1-09"
+  ],
+  "sections": [
+    {
+      "id": "section-hsk1-l10-introduction",
+      "type": "introduction",
+      "titleVi": "Giới thiệu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 10 · HSK 1",
+        "heroHanzi": "我能坐这儿吗？",
+        "summaryVi": "Tôi có thể ngồi ở đây được không?",
+        "sourcePrintedPages": [
+          84,
+          92
+        ],
+        "sourcePdfPages": [
+          82,
+          90
+        ]
+      }
+    },
+    {
+      "id": "section-hsk1-l10-dialogue",
+      "type": "dialogue",
+      "titleVi": "Bài học và hội thoại",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "dialogue:dialogue-hsk1-l10-01",
+        "dialogue:dialogue-hsk1-l10-02",
+        "dialogue:dialogue-hsk1-l10-03"
+      ],
+      "presentation": {
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": false,
+        "audioUnavailableReason": "missing-source-audio"
+      }
+    },
+    {
+      "id": "section-hsk1-l10-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ mới",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l10-01",
+        "lexeme:lex-hsk1-l10-02",
+        "lexeme:lex-hsk1-l10-03",
+        "lexeme:lex-hsk1-l10-04",
+        "lexeme:lex-hsk1-l10-05",
+        "lexeme:lex-hsk1-l10-06",
+        "lexeme:lex-hsk1-l10-07",
+        "lexeme:lex-hsk1-l10-08",
+        "lexeme:lex-hsk1-l10-09",
+        "lexeme:lex-hsk1-l10-10",
+        "lexeme:lex-hsk1-l10-11",
+        "lexeme:lex-hsk1-l10-12",
+        "lexeme:lex-hsk1-l10-13",
+        "lexeme:lex-hsk1-l10-14"
+      ]
+    },
+    {
+      "id": "section-hsk1-l10-grammar",
+      "type": "grammar",
+      "titleVi": "Chú thích ngữ pháp",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "grammar-point:grammar-hsk1-l10-01",
+        "grammar-point:grammar-hsk1-l10-02",
+        "grammar-point:grammar-hsk1-l10-03",
+        "grammar-point:grammar-hsk1-l10-04"
+      ],
+      "sourceAvailability": "available"
+    },
+    {
+      "id": "section-hsk1-l10-listening",
+      "type": "listening",
+      "titleVi": "Nghe theo track giáo trình",
+      "required": false,
+      "estimatedMinutes": 0,
+      "itemRefs": [
+        "media:media-hsk1-track-10-1",
+        "media:media-hsk1-track-10-2",
+        "media:media-hsk1-track-10-3"
+      ],
+      "availability": "blocked-missing-audio-files"
+    },
+    {
+      "id": "section-hsk1-l10-pronunciation",
+      "type": "pronunciation",
+      "titleVi": "Phần ghép âm",
+      "required": true,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "pronunciation-topic:pronunciation-hsk1-l10"
+      ]
+    },
+    {
+      "id": "section-hsk1-l10-writing",
+      "type": "writing",
+      "titleVi": "Chữ Hán",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "character:char-hsk1-u4e0a",
+        "character:char-hsk1-u4e0b",
+        "character:char-hsk1-u672c",
+        "character:char-hsk1-u672b"
+      ],
+      "strokeAssetStatus": "use-hanzi-writer-runtime-data"
+    },
+    {
+      "id": "section-hsk1-l10-practice",
+      "type": "practice",
+      "titleVi": "Luyện tập và vận dụng",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "assessment-item:assessment-hsk1-l10-meaning",
+        "assessment-item:assessment-hsk1-l10-pinyin"
+      ],
+      "sourceActivityTypes": [
+        "warm-up-image-match",
+        "role-play-source-dialogues",
+        "answer-situational-questions",
+        "pair-or-group-application"
+      ],
+      "provenance": {
+        "sourceActivities": "summarized-from-book",
+        "assessmentItems": "derived-not-verbatim"
+      }
+    },
+    {
+      "id": "section-hsk1-l10-flashcard",
+      "type": "flashcard",
+      "titleVi": "Flashcard",
+      "required": false,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l10-01",
+        "lexeme:lex-hsk1-l10-02",
+        "lexeme:lex-hsk1-l10-03",
+        "lexeme:lex-hsk1-l10-04",
+        "lexeme:lex-hsk1-l10-05",
+        "lexeme:lex-hsk1-l10-06",
+        "lexeme:lex-hsk1-l10-07",
+        "lexeme:lex-hsk1-l10-08",
+        "lexeme:lex-hsk1-l10-09",
+        "lexeme:lex-hsk1-l10-10",
+        "lexeme:lex-hsk1-l10-11",
+        "lexeme:lex-hsk1-l10-12",
+        "lexeme:lex-hsk1-l10-13",
+        "lexeme:lex-hsk1-l10-14"
+      ],
+      "generatedFromSectionId": "section-hsk1-l10-vocabulary"
+    },
+    {
+      "id": "section-hsk1-l10-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Hoàn thành Bài 10",
+        "messageVi": "Bạn đã hoàn thành nội dung 我能坐这儿吗？"
+      }
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-hsk1-l10-introduction",
+      "section-hsk1-l10-dialogue",
+      "section-hsk1-l10-vocabulary",
+      "section-hsk1-l10-pronunciation",
+      "section-hsk1-l10-writing",
+      "section-hsk1-l10-practice",
+      "section-hsk1-l10-grammar"
+    ],
+    "minimumPracticeScorePercent": 50,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "blocked-missing-file",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Dữ liệu được chuyển đổi từ bản PDF scan do người dùng cung cấp.",
+      "Pinyin ở các câu hội thoại được tạo tự động và cần được biên tập ngôn ngữ kiểm tra trước khi xuất bản.",
+      "Bài tập trắc nghiệm là dữ liệu suy diễn từ từ vựng nguồn, không phải bản chép nguyên văn bài tập trong sách."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

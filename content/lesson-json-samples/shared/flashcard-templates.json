@@ -1,0 +1,117 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "flashcard-template",
+  "items": [
+    {
+      "id": "flashcard-lexeme-recognition",
+      "titleVi": "Nhìn chữ nhớ nghĩa",
+      "sourceEntity": "lexeme",
+      "front": [
+        "simplified",
+        "audioAction"
+      ],
+      "back": [
+        "pinyin",
+        "selectedSense.meaningVi",
+        "lessonOccurrence.exampleSentence"
+      ],
+      "selfAssessment": [
+        {
+          "id": "again",
+          "labelVi": "Chưa nhớ",
+          "score": 0
+        },
+        {
+          "id": "hard",
+          "labelVi": "Khó",
+          "score": 1
+        },
+        {
+          "id": "good",
+          "labelVi": "Đã nhớ",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "flashcard-listening-recall",
+      "titleVi": "Nghe nhớ mặt chữ",
+      "sourceEntity": "lexeme",
+      "front": [
+        "approvedAudioAction"
+      ],
+      "back": [
+        "simplified",
+        "pinyin",
+        "selectedSense.meaningVi"
+      ],
+      "availabilityRule": {
+        "requiresApprovedMedia": true,
+        "fallbackTemplateRef": "flashcard-template:flashcard-lexeme-recognition"
+      },
+      "selfAssessment": [
+        {
+          "id": "again",
+          "labelVi": "Chưa nhận ra",
+          "score": 0
+        },
+        {
+          "id": "good",
+          "labelVi": "Đã nhận ra",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "flashcard-hanzi-writing",
+      "titleVi": "Nhớ nghĩa tự viết chữ",
+      "sourceEntity": "character",
+      "front": [
+        "meaningVi",
+        "pinyin"
+      ],
+      "back": [
+        "glyph",
+        "strokeAnimationAction",
+        "mnemonicVi"
+      ],
+      "selfAssessment": [
+        {
+          "id": "again",
+          "labelVi": "Viết chưa đúng",
+          "score": 0
+        },
+        {
+          "id": "good",
+          "labelVi": "Viết được",
+          "score": 2
+        }
+      ]
+    },
+    {
+      "id": "flashcard-sentence-shadowing",
+      "titleVi": "Nghe và nói theo câu",
+      "sourceEntity": "sentence",
+      "front": [
+        "approvedAudioAction"
+      ],
+      "back": [
+        "hanzi",
+        "pinyin",
+        "translationVi"
+      ],
+      "selfAssessment": [
+        {
+          "id": "again",
+          "labelVi": "Chưa theo kịp",
+          "score": 0
+        },
+        {
+          "id": "good",
+          "labelVi": "Nói theo được",
+          "score": 2
+        }
+      ]
+    }
+  ]
+}

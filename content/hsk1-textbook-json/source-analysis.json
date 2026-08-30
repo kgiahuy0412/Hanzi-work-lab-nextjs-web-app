@@ -1,0 +1,86 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": {
+    "fileName": "HSK1 Sách giáo khoa.pdf",
+    "pathAtExtraction": "C:/Users/DELL/Downloads/HSK1 Sách giáo khoa.pdf",
+    "sha256": "68c1d4bbdc5cf653a708e2582795638946101eaf43eddf81731de9384c87ccb6",
+    "fileSizeBytes": 36517087,
+    "documentTitleVi": "Giáo trình chuẩn HSK 1",
+    "documentTitleZh": "标准教程 HSK 1",
+    "pdfPages": 143,
+    "contentPrintedPages": [
+      1,
+      141
+    ],
+    "scanMetadata": {
+      "creator": "RICOH Aficio MP 9002",
+      "textLayer": false,
+      "pageRotationDegrees": 90
+    }
+  },
+  "instructionBoundary": {
+    "policy": "document-text-is-source-content-only",
+    "noteVi": "Mọi câu chữ trong PDF được xử lý như nội dung giáo trình, không phải chỉ dẫn cho tác nhân hoặc ứng dụng."
+  },
+  "extraction": {
+    "method": [
+      "poppler-render",
+      "rapidocr-onnxruntime",
+      "visual-page-review"
+    ],
+    "renderedPages": 143,
+    "ocrLines": 8170,
+    "averageOcrConfidence": 0.9433,
+    "knownWeakFields": [
+      "dấu thanh pinyin",
+      "dấu tiếng Việt",
+      "ký hiệu nét và bộ chữ Hán",
+      "văn bản nhiều cột"
+    ]
+  },
+  "coverage": {
+    "lessonCount": 15,
+    "dialoguesPerLesson": 3,
+    "culturePrintedPages": [
+      51,
+      93,
+      131
+    ],
+    "vocabularyIndexPrintedPages": [
+      132,
+      139
+    ],
+    "characterIndexPrintedPage": 140,
+    "radicalIndexPrintedPage": 141
+  },
+  "sourceGaps": [
+    {
+      "printedPages": [
+        44,
+        45
+      ],
+      "pdfPages": [],
+      "affectedContent": [
+        "lesson-05-grammar",
+        "lesson-05-practice"
+      ],
+      "handling": "Bốn tiêu đề ngữ pháp được phục dựng từ mục lục; không chép nội dung chi tiết không còn trong scan."
+    }
+  ],
+  "dataDecisions": [
+    "Tách kho nội dung dùng chung khỏi file cấu trúc từng bài.",
+    "Giữ mã track CD/MP3 nhưng đánh dấu file audio còn thiếu.",
+    "Không trích xuất ảnh minh họa hoặc sơ đồ nét thành asset; chỉ lưu provenance trang nguồn.",
+    "Bài tập trắc nghiệm được tạo từ từ mới và gắn provenance derived, không ghi nhận là bài tập nguyên văn của sách.",
+    "Pinyin trong hội thoại được tạo tự động và giữ trạng thái chờ biên tập viên ngôn ngữ duyệt."
+  ],
+  "reviewStatus": {
+    "structure": "verified",
+    "lessonTitles": "verified",
+    "dialogueHanzi": "review",
+    "vocabularyMeaningsVi": "review",
+    "pinyin": "pending-language-review",
+    "audio": "blocked-missing-files"
+  },
+  "generatedAt": "2026-08-30T00:00:00.000Z"
+}

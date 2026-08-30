@@ -1,0 +1,111 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "dialogue",
+  "items": [
+    {
+      "id": "dialogue-first-meeting",
+      "titleVi": "Làm quen lần đầu",
+      "settingVi": "Hai học viên mới gặp nhau trước giờ học.",
+      "register": "neutral",
+      "speakers": [
+        {
+          "id": "speaker-xiaoming",
+          "displayName": "小明",
+          "roleVi": "Học viên mới"
+        },
+        {
+          "id": "speaker-anna",
+          "displayName": "安娜",
+          "roleVi": "Học viên mới"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-first-meeting-01",
+          "speakerId": "speaker-xiaoming",
+          "sentenceRef": "sentence:sentence-first-greeting"
+        },
+        {
+          "id": "turn-first-meeting-02",
+          "speakerId": "speaker-anna",
+          "sentenceRef": "sentence:sentence-ask-name"
+        },
+        {
+          "id": "turn-first-meeting-03",
+          "speakerId": "speaker-xiaoming",
+          "sentenceRef": "sentence:sentence-i-am-xiaoming"
+        },
+        {
+          "id": "turn-first-meeting-04",
+          "speakerId": "speaker-xiaoming",
+          "sentenceRef": "sentence:sentence-and-you"
+        },
+        {
+          "id": "turn-first-meeting-05",
+          "speakerId": "speaker-anna",
+          "sentenceRef": "sentence:sentence-i-am-anna"
+        },
+        {
+          "id": "turn-first-meeting-06",
+          "speakerId": "speaker-anna",
+          "sentenceRef": "sentence:sentence-nice-to-meet"
+        }
+      ],
+      "fullAudioRef": "media:media-audio-first-meeting-full",
+      "learningTargets": [
+        "Chào người mới gặp",
+        "Hỏi và trả lời tên",
+        "Kết thúc lượt giới thiệu lịch sự"
+      ],
+      "status": "review"
+    },
+    {
+      "id": "dialogue-work-progress",
+      "titleVi": "Báo tiến độ với quản lý",
+      "settingVi": "Quản lý hỏi trạng thái dự án vào cuối ngày làm việc.",
+      "register": "professional",
+      "speakers": [
+        {
+          "id": "speaker-manager",
+          "displayName": "经理",
+          "roleVi": "Quản lý"
+        },
+        {
+          "id": "speaker-employee",
+          "displayName": "员工",
+          "roleVi": "Nhân viên"
+        }
+      ],
+      "turns": [
+        {
+          "id": "turn-work-progress-01",
+          "speakerId": "speaker-manager",
+          "sentenceRef": "sentence:sentence-project-progress-question",
+          "startMs": 5800,
+          "endMs": 8128
+        },
+        {
+          "id": "turn-work-progress-02",
+          "speakerId": "speaker-employee",
+          "sentenceRef": "sentence:sentence-progress-eighty",
+          "startMs": 16800,
+          "endMs": 19440
+        },
+        {
+          "id": "turn-work-progress-03",
+          "speakerId": "speaker-employee",
+          "sentenceRef": "sentence:sentence-send-before-off-work",
+          "startMs": 27800,
+          "endMs": 30344
+        }
+      ],
+      "fullAudioRef": "media:media-video-work-progress",
+      "learningTargets": [
+        "Hỏi trạng thái dự án",
+        "Báo phần trăm đã hoàn thành",
+        "Cam kết thời điểm gửi kết quả"
+      ],
+      "status": "review"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-review-workplace-communication",
+  "slug": "on-tap-giao-tiep-cong-viec",
+  "profile": "review",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-giao-tiep-cong-so",
+    "moduleId": "module-review-foundation",
+    "lessonNumber": 6,
+    "titleVi": "Ôn tập giao tiếp công việc",
+    "titleZh": "职场沟通复习",
+    "summaryVi": "Ôn từ, câu và phản xạ đã học dựa trên lịch sử làm bài của từng người.",
+    "situationVi": "Phiên ôn tổng hợp sau một nhóm bài công sở.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "listening",
+      "reading",
+      "writing",
+      "workplace-response"
+    ],
+    "tags": [
+      "review",
+      "spaced-repetition",
+      "workplace"
+    ]
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-recall-workplace-lexemes",
+      "skill": "reading",
+      "descriptionVi": "Nhớ lại nghĩa và pinyin của nhóm từ công việc đã học."
+    },
+    {
+      "id": "objective-retry-weak-items",
+      "skill": "listening",
+      "descriptionVi": "Làm lại các mục từng trả lời sai hoặc đã đến lịch ôn."
+    },
+    {
+      "id": "objective-transfer-to-scenario",
+      "skill": "workplace-response",
+      "descriptionVi": "Vận dụng từ và mẫu câu vào một phản hồi công việc hoàn chỉnh."
+    }
+  ],
+  "prerequisites": [
+    {
+      "type": "module-progress",
+      "minimumOpenedLessons": 2,
+      "required": true
+    }
+  ],
+  "sections": [
+    {
+      "id": "section-review-introduction",
+      "type": "introduction",
+      "titleVi": "Khởi động ôn tập",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Phiên ôn cá nhân hóa",
+        "summaryVi": "Nội dung được lấy từ những từ đã đến lịch ôn và những câu bạn từng làm sai.",
+        "objectiveIds": [
+          "objective-recall-workplace-lexemes",
+          "objective-retry-weak-items",
+          "objective-transfer-to-scenario"
+        ]
+      }
+    },
+    {
+      "id": "section-review-queue",
+      "type": "review-queue",
+      "titleVi": "Hàng đợi ôn tập",
+      "required": true,
+      "estimatedMinutes": 4,
+      "selectionRules": {
+        "maximumItems": 12,
+        "sources": [
+          {
+            "type": "due-review-items",
+            "weight": 5
+          },
+          {
+            "type": "previously-wrong-assessments",
+            "weight": 4
+          },
+          {
+            "type": "recent-new-lexemes",
+            "weight": 2
+          }
+        ],
+        "fallbackRefs": [
+          "lexeme:lex-jin-du",
+          "lexeme:lex-wan-cheng",
+          "lexeme:lex-hui-bao",
+          "lexeme:lex-jie-zhi-ri-qi"
+        ]
+      },
+      "templateRefs": [
+        "flashcard-template:flashcard-lexeme-recognition",
+        "flashcard-template:flashcard-listening-recall"
+      ]
+    },
+    {
+      "id": "section-review-practice",
+      "type": "practice",
+      "titleVi": "Kiểm tra chuyển giao",
+      "required": true,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "assessment-item:item-pinyin-jin-du",
+        "assessment-item:item-fill-progress-eighty",
+        "assessment-item:item-work-scenario-response"
+      ],
+      "delivery": {
+        "selection": "adaptive",
+        "minimumItems": 3,
+        "maximumItems": 6,
+        "shuffleOptions": true,
+        "feedbackTiming": "after-each-item",
+        "allowRetry": true
+      },
+      "scoring": {
+        "passPercent": 70,
+        "onWrong": "schedule-earlier-review"
+      }
+    },
+    {
+      "id": "section-review-completion",
+      "type": "completion",
+      "titleVi": "Tổng kết ôn tập",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Phiên ôn đã hoàn thành",
+        "messageVi": "Các mục vừa đánh giá đã được xếp lại lịch theo kết quả mới.",
+        "computedMetrics": [
+          "reviewedItemCount",
+          "rememberedItemCount",
+          "wrongItemCount",
+          "nextReviewAt"
+        ]
+      },
+      "nextActions": [
+        {
+          "id": "next-review-today",
+          "labelVi": "Về trang học hôm nay",
+          "action": "navigate",
+          "href": "/"
+        }
+      ]
+    }
+  ],
+  "completionRule": {
+    "type": "required-sections",
+    "requiredSectionIds": [
+      "section-review-introduction",
+      "section-review-queue",
+      "section-review-practice"
+    ],
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

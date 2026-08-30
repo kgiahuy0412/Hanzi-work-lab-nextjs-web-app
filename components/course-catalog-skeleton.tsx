@@ -1,5 +1,3 @@
-import { HimiSectionBanner } from "@/components/himi-section-banner";
-
 export function CourseGridSkeleton() {
   return <section aria-hidden="true" className="section-shell explorer course-catalog-skeleton">
     <div className="explorer-toolbar">
@@ -24,16 +22,13 @@ export function CourseGridSkeleton() {
 }
 
 export function CoursesPageSkeleton() {
-  return <main aria-busy="true" className="course-library-page">
-    <span className="sr-only" role="status">Đang tải thư viện lộ trình…</span>
-    <section className="section-shell himi-banner-shell">
-      <HimiSectionBanner
-        description="Khám phá lộ trình theo ngành để dùng tiếng Trung hiệu quả trong công việc thực tế."
-        titleId="course-library-loading-title"
-        titleLines={["Bạn muốn dùng tiếng", "Trung để làm gì?"]}
-        variant="courses"
-      />
-    </section>
+  return <main aria-busy="true" className="course-library-page hsk-curriculum-page">
+    <span className="sr-only" role="status">Đang tải danh sách lộ trình…</span>
+    <header aria-hidden="true" className="section-shell industry-course-heading course-catalog-heading course-catalog-heading-skeleton">
+      <span className="skeleton-block" />
+      <span className="skeleton-block" />
+      <span className="skeleton-block" />
+    </header>
     <CourseGridSkeleton />
   </main>;
 }

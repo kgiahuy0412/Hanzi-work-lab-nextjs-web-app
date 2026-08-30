@@ -36,7 +36,7 @@ test("home page contains the Himi Chinese daily review studio", async () => {
 
 test("prototype includes learner, VIP and admin routes", async () => {
   const files = await Promise.all([read("app/courses/page.tsx"), read("app/vip/page.tsx"), read("app/admin/page.tsx")]);
-  assert.match(files[0], /CourseExplorer/);
+  assert.match(files[0], /CourseLibraryView/);
   assert.match(files[1], /getVipUpgradeOverview/);
   assert.match(files[1], /Gửi yêu cầu kích hoạt/);
   assert.match(files[1], /beta thủ công và chưa thu tiền tự động/);
@@ -438,6 +438,8 @@ test("writing route flows from six HSK topics to one lesson and the writing stud
   assert.match(studio, /Xem nét/);
   assert.match(studio, /Tô theo/);
   assert.match(studio, /Tự viết/);
+  assert.match(studio, /import HanziWriter from "hanzi-writer"/);
+  assert.doesNotMatch(studio, /import\("hanzi-writer"\)/);
   assert.match(styles, /\.writing-topic-grid/);
   assert.match(styles, /\.writing-single-lesson/);
   assert.match(styles, /\.himi-writing-session-header/);

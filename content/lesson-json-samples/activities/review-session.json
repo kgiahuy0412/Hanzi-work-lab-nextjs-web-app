@@ -1,0 +1,99 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "review-session-workplace-due-items",
+  "type": "spaced-review-session",
+  "status": "review",
+  "metadata": {
+    "titleVi": "Ôn từ đến hạn",
+    "summaryVi": "Phiên ôn được tạo từ lịch SRS và lỗi gần đây của người học.",
+    "targetMinutes": 5,
+    "accessTier": "free"
+  },
+  "queueBuilder": {
+    "maximumItems": 12,
+    "priorities": [
+      {
+        "source": "overdue-review-items",
+        "weight": 10
+      },
+      {
+        "source": "wrong-in-last-seven-days",
+        "weight": 8
+      },
+      {
+        "source": "saved-by-learner",
+        "weight": 6
+      },
+      {
+        "source": "new-from-recent-lessons",
+        "weight": 2
+      }
+    ],
+    "contentMix": {
+      "lexeme": 0.6,
+      "sentence": 0.25,
+      "character": 0.15
+    },
+    "fallbackContentRefs": [
+      "lexeme:lex-jin-du",
+      "lexeme:lex-wan-cheng",
+      "lexeme:lex-hui-bao",
+      "sentence:sentence-progress-eighty",
+      "character:char-jin",
+      "character:char-du"
+    ]
+  },
+  "templateSelection": [
+    {
+      "templateRef": "flashcard-template:flashcard-lexeme-recognition",
+      "weight": 5
+    },
+    {
+      "templateRef": "flashcard-template:flashcard-listening-recall",
+      "weight": 3,
+      "condition": "approved-audio-available"
+    },
+    {
+      "templateRef": "flashcard-template:flashcard-hanzi-writing",
+      "weight": 2
+    },
+    {
+      "templateRef": "flashcard-template:flashcard-sentence-shadowing",
+      "weight": 2,
+      "condition": "approved-audio-available"
+    }
+  ],
+  "ratingScale": [
+    {
+      "id": "again",
+      "labelVi": "Chưa nhớ",
+      "nextInterval": "reset"
+    },
+    {
+      "id": "hard",
+      "labelVi": "Khó",
+      "nextInterval": "shorter"
+    },
+    {
+      "id": "good",
+      "labelVi": "Đã nhớ",
+      "nextInterval": "normal"
+    }
+  ],
+  "completionRule": {
+    "type": "queue-exhausted",
+    "minimumReviewedItems": 1
+  },
+  "result": {
+    "computedMetrics": [
+      "reviewedCount",
+      "rememberedCount",
+      "againCount",
+      "nextDueAt"
+    ],
+    "nextAction": {
+      "labelVi": "Về trang học hôm nay",
+      "href": "/"
+    }
+  }
+}

@@ -15,22 +15,29 @@ import {
   Crown,
   Flame,
   Gamepad2,
+  Handshake,
   Home,
+  LayoutGrid,
+  LogOut,
   PenLine,
   Settings,
+  Smartphone,
   Sparkles,
+  UserRound,
 } from "lucide-react";
 import { BrandLogoImage, BrandMark, BrandWordmark } from "@/components/brand-logo";
+import { getInternalNavigationHref } from "@/lib/navigation-progress";
 
 type LearnerShellUser = {
   displayName: string;
+  email: string;
   role: "learner" | "editor" | "reviewer" | "admin";
   unreadNotificationCount: number;
 } | null;
 
 const learnerRailItems = [
   { href: "/", label: "Học tập", icon: Home, matches: (pathname: string) => pathname === "/" },
-  { href: "/courses", label: "Lộ trình", icon: BookOpen, matches: (pathname: string) => pathname.startsWith("/courses") || pathname.startsWith("/learn") },
+  { href: "/courses", label: "Lộ trình", icon: BookOpen, matches: (pathname: string) => pathname.startsWith("/courses") || pathname.startsWith("/learn") || pathname.startsWith("/hsk") },
   { href: "/games", label: "Trò chơi", icon: Gamepad2, matches: (pathname: string) => pathname.startsWith("/games") },
 ];
 
@@ -69,7 +76,7 @@ function isStandaloneRoute(pathname: string): boolean {
   return standalonePrefixes.some((prefix) => pathname === prefix || pathname.startsWith(`${prefix}/`));
 }
 
-function isPlainNavigation(event: MouseEvent<HTMLAnchorElement>): boolean {
+function isPlainNavigation(event: MouseEvent<HTMLElement>): boolean {
   return event.button === 0 && !event.altKey && !event.ctrlKey && !event.metaKey && !event.shiftKey;
 }
 
@@ -81,8 +88,11 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const [railExpanded, setRailExpanded] = useState(true);
   const [practiceMenuOpen, setPracticeMenuOpen] = useState(false);
   const [practiceTriggerSelected, setPracticeTriggerSelected] = useState(false);
+  const [accountMenuOpen, setAccountMenuOpen] = useState(false);
   const practiceAutoExpandedRef = useRef(false);
   const routeProgressStartedAtRef = useRef<number | null>(null);
+  const accountMenuRef = useRef<HTMLDivElement>(null);
+  const accountMenuButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     let handle: number | undefined;
@@ -149,14 +159,38 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
     };
   }, [pathname, pendingHref]);
 
+  useEffect(() => {
+    if (!accountMenuOpen) return;
+
+    const closeOnOutsidePointer = (event: PointerEvent) => {
+      if (!accountMenuRef.current?.contains(event.target as Node)) setAccountMenuOpen(false);
+    };
+    const closeOnEscape = (event: KeyboardEvent) => {
+      if (event.key !== "Escape") return;
+      setAccountMenuOpen(false);
+      accountMenuButtonRef.current?.focus();
+    };
+
+    document.addEventListener("pointerdown", closeOnOutsidePointer);
+    document.addEventListener("keydown", closeOnEscape);
+    return () => {
+      document.removeEventListener("pointerdown", closeOnOutsidePointer);
+      document.removeEventListener("keydown", closeOnEscape);
+    };
+  }, [accountMenuOpen]);
+
   const prepareRoute = (href: string) => router.prefetch(href);
-  const beginRoute = (event: MouseEvent<HTMLAnchorElement>, href: string) => {
+  const beginRoute = (event: MouseEvent<HTMLElement>, href: string) => {
     if (!isPlainNavigation(event)) return;
     setPracticeTriggerSelected(false);
     if (pathname === href) return;
     routeProgressStartedAtRef.current = event.timeStamp;
     setRouteProgressCompleting(false);
     setPendingHref(href);
+  };
+  const captureContentNavigation = (event: MouseEvent<HTMLDivElement>) => {
+    const href = getInternalNavigationHref(event);
+    if (href) beginRoute(event, href);
   };
   const restoreAutoCollapsedRail = () => {
     if (!practiceAutoExpandedRef.current) return;
@@ -199,6 +233,15 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
     setPracticeMenuOpen(next);
     setPracticeTriggerSelected(next);
   };
+  const toggleAccountMenu = () => {
+    setPracticeMenuOpen(false);
+    setPracticeTriggerSelected(false);
+    setAccountMenuOpen((current) => !current);
+  };
+  const closeAccountMenuAndNavigate = (event: MouseEvent<HTMLElement>, href: string) => {
+    setAccountMenuOpen(false);
+    beginRoute(event, href);
+  };
   if (isStandaloneRoute(pathname)) {
     return <div className="standalone-route-shell">{children}</div>;
   }
@@ -235,7 +278,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
     );
   };
   return (
-    <div aria-busy={navigating} className={`learner-app-shell ${pathname === "/" ? "is-home-route" : ""} ${railExpanded ? "is-rail-expanded" : "is-rail-collapsed"}`.trim()}>
+    <div aria-busy={navigating} className={`learner-app-shell ${pathname === "/" ? "is-home-route" : ""} ${railExpanded ? "is-rail-expanded" : "is-rail-collapsed"}`.trim()} onClickCapture={captureContentNavigation}>
       <a className="skip-link" href="#learner-main-content">Bỏ qua điều hướng</a>
       <aside className="learn-rail" id="learner-navigation-rail" aria-label="Điều hướng học tập">
         <button
@@ -342,10 +385,59 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
             <Bell aria-hidden="true" size={19} />
             {user?.unreadNotificationCount ? <span aria-hidden="true" className="topbar-notification-count">{Math.min(user.unreadNotificationCount, 99)}</span> : null}
           </Link>
-          <Link aria-label={user ? `Mở tài khoản của ${displayName}` : "Đăng nhập"} className="user-chip" href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch>
+          {user ? <div className="account-menu-anchor" ref={accountMenuRef}>
+            <button
+              aria-controls="learner-account-menu"
+              aria-expanded={accountMenuOpen}
+              aria-haspopup="dialog"
+              aria-label={`Mở tài khoản của ${displayName}`}
+              className={`user-chip ${accountMenuOpen ? "is-open" : ""}`.trim()}
+              onClick={toggleAccountMenu}
+              ref={accountMenuButtonRef}
+              type="button"
+            >
+              <span aria-hidden="true">{initials(displayName)}</span>
+              <strong>{displayName}</strong>
+            </button>
+
+            <div
+              aria-hidden={!accountMenuOpen}
+              aria-label="Menu tài khoản"
+              className={`account-menu-popover ${accountMenuOpen ? "is-open" : ""}`.trim()}
+              id="learner-account-menu"
+              inert={!accountMenuOpen}
+              role="dialog"
+            >
+              <div className="account-menu-identity">
+                <strong>{displayName}</strong>
+                <span>{user.email}</span>
+              </div>
+              <nav aria-label="Lối tắt tài khoản" className="account-menu-links">
+                <Link href="/" onClick={(event) => closeAccountMenuAndNavigate(event, "/")} prefetch>
+                  <LayoutGrid aria-hidden="true" size={20} /><span>Bảng học tập</span>
+                </Link>
+                <Link href="/account" onClick={(event) => closeAccountMenuAndNavigate(event, "/account")} prefetch>
+                  <UserRound aria-hidden="true" size={20} /><span>Hồ sơ</span>
+                </Link>
+                <button onClick={() => setAccountMenuOpen(false)} type="button">
+                  <Handshake aria-hidden="true" size={20} /><span>Giới thiệu bạn bè</span>
+                </button>
+                <Link href="/account#account-information" onClick={(event) => closeAccountMenuAndNavigate(event, "/account")} prefetch>
+                  <Settings aria-hidden="true" size={20} /><span>Cài đặt</span>
+                </Link>
+                <button onClick={() => setAccountMenuOpen(false)} type="button">
+                  <Smartphone aria-hidden="true" size={20} /><span>Tải ứng dụng</span>
+                </button>
+              </nav>
+              <form action="/api/auth/logout" className="account-menu-logout" method="post">
+                <input name="returnTo" type="hidden" value="/" />
+                <button type="submit"><LogOut aria-hidden="true" size={20} /><span>Đăng xuất</span></button>
+              </form>
+            </div>
+          </div> : <Link aria-label="Đăng nhập" className="user-chip" href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch>
             <span aria-hidden="true">{initials(displayName)}</span>
             <strong>{displayName}</strong>
-          </Link>
+          </Link>}
         </div>
       </header>
 
@@ -361,7 +453,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
 
       <nav className="learner-mobile-nav" aria-label="Điều hướng học tập trên điện thoại">
         <Link aria-current={visualPathname === "/" ? "page" : undefined} className={visualPathname === "/" ? "active" : ""} href="/" onClick={(event) => beginRoute(event, "/")} onPointerEnter={() => prepareRoute("/")} prefetch><Home aria-hidden="true" size={20} /><span>Hôm nay</span></Link>
-        <Link aria-current={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") ? "page" : undefined} className={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") ? "active" : ""} href="/courses" onClick={(event) => beginRoute(event, "/courses")} onPointerEnter={() => prepareRoute("/courses")} prefetch><BookOpen aria-hidden="true" size={20} /><span>Lộ trình</span></Link>
+        <Link aria-current={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") || visualPathname.startsWith("/hsk") ? "page" : undefined} className={visualPathname.startsWith("/courses") || visualPathname.startsWith("/learn") || visualPathname.startsWith("/hsk") ? "active" : ""} href="/courses" onClick={(event) => beginRoute(event, "/courses")} onPointerEnter={() => prepareRoute("/courses")} prefetch><BookOpen aria-hidden="true" size={20} /><span>Lộ trình</span></Link>
         <div className={`mobile-practice-group ${practiceMenuOpen ? "is-open" : ""}`.trim()}>
           <button
             aria-controls="mobile-practice-menu"

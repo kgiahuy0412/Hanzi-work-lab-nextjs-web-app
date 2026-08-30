@@ -24,3 +24,21 @@ test("listening hub presents HSK and scenario practice as two accessible modes",
   assert.match(html, />Theo cấp độ HSK</);
   assert.match(html, />Theo tình huống</);
 });
+
+test("listening hub opens the HSK level selected from the curriculum", async (t) => {
+  const server = await createServer({
+    appType: "custom",
+    configFile: false,
+    resolve: { alias: { "@": process.cwd() } },
+    root: process.cwd(),
+    server: { middlewareMode: true },
+  });
+  t.after(() => server.close());
+
+  const { default: ListeningPage } = await server.ssrLoadModule("/app/listening/page.tsx");
+  const page = await ListeningPage({ searchParams: Promise.resolve({ level: "hsk-4" }) });
+  const html = renderToStaticMarkup(React.createElement(React.Fragment, null, page));
+
+  assert.match(html, /aria-label="HSK 4:[^"]*" aria-pressed="true"/);
+  assert.match(html, />HSK 4 · 4 bài học</);
+});

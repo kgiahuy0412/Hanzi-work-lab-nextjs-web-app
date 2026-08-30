@@ -1,0 +1,255 @@
+{
+  "$schema": "../schemas/lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "lesson-hsk1-08",
+  "slug": "hsk1-bai-08-toi-muon-uong-tra",
+  "profile": "hsk-foundation",
+  "status": "review",
+  "metadata": {
+    "courseId": "course-hsk-standard-1",
+    "levelId": "hsk-1",
+    "lessonNumber": 8,
+    "titleVi": "Tôi muốn uống trà.",
+    "titleZh": "我想喝茶。",
+    "heroHanzi": "我想喝茶。",
+    "summaryVi": "Dữ liệu bài 8 được chuyển đổi từ Giáo trình chuẩn HSK 1.",
+    "estimatedMinutes": 29,
+    "skills": [
+      "listening",
+      "speaking",
+      "reading",
+      "writing"
+    ],
+    "source": {
+      "printedPages": [
+        68,
+        75
+      ],
+      "pdfPages": [
+        66,
+        73
+      ],
+      "missingPrintedPages": []
+    }
+  },
+  "access": {
+    "tier": "free",
+    "previewSectionIds": []
+  },
+  "objectives": [
+    {
+      "id": "objective-hsk1-l08-dialogue",
+      "skill": "speaking",
+      "descriptionVi": "Thực hiện các mẫu hội thoại trọng tâm của Bài 8."
+    },
+    {
+      "id": "objective-hsk1-l08-vocabulary",
+      "skill": "reading",
+      "descriptionVi": "Nhận biết 15 mục từ mới của bài."
+    },
+    {
+      "id": "objective-hsk1-l08-writing",
+      "skill": "writing",
+      "descriptionVi": "Luyện viết 2 chữ Hán trọng tâm."
+    }
+  ],
+  "prerequisites": [
+    "lesson:lesson-hsk1-07"
+  ],
+  "sections": [
+    {
+      "id": "section-hsk1-l08-introduction",
+      "type": "introduction",
+      "titleVi": "Giới thiệu",
+      "required": true,
+      "estimatedMinutes": 1,
+      "content": {
+        "kickerVi": "Bài 8 · HSK 1",
+        "heroHanzi": "我想喝茶。",
+        "summaryVi": "Tôi muốn uống trà.",
+        "sourcePrintedPages": [
+          68,
+          75
+        ],
+        "sourcePdfPages": [
+          66,
+          73
+        ]
+      }
+    },
+    {
+      "id": "section-hsk1-l08-dialogue",
+      "type": "dialogue",
+      "titleVi": "Bài học và hội thoại",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "dialogue:dialogue-hsk1-l08-01",
+        "dialogue:dialogue-hsk1-l08-02",
+        "dialogue:dialogue-hsk1-l08-03"
+      ],
+      "presentation": {
+        "showPinyinByDefault": true,
+        "showTranslationByDefault": true,
+        "allowPlayAll": false,
+        "audioUnavailableReason": "missing-source-audio"
+      }
+    },
+    {
+      "id": "section-hsk1-l08-vocabulary",
+      "type": "vocabulary",
+      "titleVi": "Từ mới",
+      "required": true,
+      "estimatedMinutes": 5,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l08-01",
+        "lexeme:lex-hsk1-l08-02",
+        "lexeme:lex-hsk1-l08-03",
+        "lexeme:lex-hsk1-l08-04",
+        "lexeme:lex-hsk1-l08-05",
+        "lexeme:lex-hsk1-l08-06",
+        "lexeme:lex-hsk1-l08-07",
+        "lexeme:lex-hsk1-l08-08",
+        "lexeme:lex-hsk1-l08-09",
+        "lexeme:lex-hsk1-l08-10",
+        "lexeme:lex-hsk1-l08-11",
+        "lexeme:lex-hsk1-l08-12",
+        "lexeme:lex-hsk1-l08-13",
+        "lexeme:lex-hsk1-l08-14",
+        "lexeme:lex-hsk1-l08-15"
+      ]
+    },
+    {
+      "id": "section-hsk1-l08-grammar",
+      "type": "grammar",
+      "titleVi": "Chú thích ngữ pháp",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "grammar-point:grammar-hsk1-l08-01",
+        "grammar-point:grammar-hsk1-l08-02",
+        "grammar-point:grammar-hsk1-l08-03",
+        "grammar-point:grammar-hsk1-l08-04"
+      ],
+      "sourceAvailability": "available"
+    },
+    {
+      "id": "section-hsk1-l08-listening",
+      "type": "listening",
+      "titleVi": "Nghe theo track giáo trình",
+      "required": false,
+      "estimatedMinutes": 0,
+      "itemRefs": [
+        "media:media-hsk1-track-08-1",
+        "media:media-hsk1-track-08-2",
+        "media:media-hsk1-track-08-3"
+      ],
+      "availability": "blocked-missing-audio-files"
+    },
+    {
+      "id": "section-hsk1-l08-pronunciation",
+      "type": "pronunciation",
+      "titleVi": "Phần ghép âm",
+      "required": true,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "pronunciation-topic:pronunciation-hsk1-l08"
+      ]
+    },
+    {
+      "id": "section-hsk1-l08-writing",
+      "type": "writing",
+      "titleVi": "Chữ Hán",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "character:char-hsk1-u5c11",
+        "character:char-hsk1-u4e2a"
+      ],
+      "strokeAssetStatus": "use-hanzi-writer-runtime-data"
+    },
+    {
+      "id": "section-hsk1-l08-practice",
+      "type": "practice",
+      "titleVi": "Luyện tập và vận dụng",
+      "required": true,
+      "estimatedMinutes": 4,
+      "itemRefs": [
+        "assessment-item:assessment-hsk1-l08-meaning",
+        "assessment-item:assessment-hsk1-l08-pinyin"
+      ],
+      "sourceActivityTypes": [
+        "warm-up-image-match",
+        "role-play-source-dialogues",
+        "answer-situational-questions",
+        "pair-or-group-application"
+      ],
+      "provenance": {
+        "sourceActivities": "summarized-from-book",
+        "assessmentItems": "derived-not-verbatim"
+      }
+    },
+    {
+      "id": "section-hsk1-l08-flashcard",
+      "type": "flashcard",
+      "titleVi": "Flashcard",
+      "required": false,
+      "estimatedMinutes": 3,
+      "itemRefs": [
+        "lexeme:lex-hsk1-l08-01",
+        "lexeme:lex-hsk1-l08-02",
+        "lexeme:lex-hsk1-l08-03",
+        "lexeme:lex-hsk1-l08-04",
+        "lexeme:lex-hsk1-l08-05",
+        "lexeme:lex-hsk1-l08-06",
+        "lexeme:lex-hsk1-l08-07",
+        "lexeme:lex-hsk1-l08-08",
+        "lexeme:lex-hsk1-l08-09",
+        "lexeme:lex-hsk1-l08-10",
+        "lexeme:lex-hsk1-l08-11",
+        "lexeme:lex-hsk1-l08-12",
+        "lexeme:lex-hsk1-l08-13",
+        "lexeme:lex-hsk1-l08-14",
+        "lexeme:lex-hsk1-l08-15"
+      ],
+      "generatedFromSectionId": "section-hsk1-l08-vocabulary"
+    },
+    {
+      "id": "section-hsk1-l08-completion",
+      "type": "completion",
+      "titleVi": "Hoàn thành",
+      "required": true,
+      "estimatedMinutes": 0,
+      "summary": {
+        "titleVi": "Hoàn thành Bài 8",
+        "messageVi": "Bạn đã hoàn thành nội dung 我想喝茶。"
+      }
+    }
+  ],
+  "completionRule": {
+    "type": "combined",
+    "requiredSectionIds": [
+      "section-hsk1-l08-introduction",
+      "section-hsk1-l08-dialogue",
+      "section-hsk1-l08-vocabulary",
+      "section-hsk1-l08-pronunciation",
+      "section-hsk1-l08-writing",
+      "section-hsk1-l08-practice",
+      "section-hsk1-l08-grammar"
+    ],
+    "minimumPracticeScorePercent": 50,
+    "allowManualCompletion": false
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "audioReviewStatus": "blocked-missing-file",
+    "reviewerIds": [],
+    "sourceNotes": [
+      "Dữ liệu được chuyển đổi từ bản PDF scan do người dùng cung cấp.",
+      "Pinyin ở các câu hội thoại được tạo tự động và cần được biên tập ngôn ngữ kiểm tra trước khi xuất bản.",
+      "Bài tập trắc nghiệm là dữ liệu suy diễn từ từ vựng nguồn, không phải bản chép nguyên văn bài tập trong sách."
+    ],
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

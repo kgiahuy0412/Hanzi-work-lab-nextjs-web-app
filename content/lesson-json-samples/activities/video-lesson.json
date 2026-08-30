@@ -1,0 +1,114 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "video-lesson-work-progress",
+  "type": "video-lesson",
+  "status": "review",
+  "metadata": {
+    "slug": "bao-tien-do-voi-quan-ly",
+    "titleVi": "Báo tiến độ công việc với quản lý",
+    "summaryVi": "Nghe, tua theo câu và nói theo ba mẫu câu báo tiến độ thiết yếu.",
+    "category": "Công sở",
+    "level": "HSK 2",
+    "contentType": "Tình huống",
+    "estimatedMinutes": 5,
+    "accessTier": "free"
+  },
+  "mediaRef": "media:media-video-work-progress",
+  "lessonBindings": [
+    {
+      "lessonRef": "lesson:lesson-office-report-progress",
+      "sectionId": "section-office-progress-video",
+      "relation": "scenario-introduction"
+    }
+  ],
+  "objectives": [
+    {
+      "id": "objective-video-hear-progress-question",
+      "descriptionVi": "Nghe được câu hỏi về tiến độ dự án."
+    },
+    {
+      "id": "objective-video-report-percentage",
+      "descriptionVi": "Nói theo câu báo phần trăm công việc đã hoàn thành."
+    },
+    {
+      "id": "objective-video-commit-deadline",
+      "descriptionVi": "Nói theo câu cam kết thời điểm gửi kết quả."
+    }
+  ],
+  "timeline": [
+    {
+      "id": "video-segment-progress-01",
+      "sentenceRef": "sentence:sentence-project-progress-question",
+      "speakerRoleVi": "Quản lý",
+      "startMs": 5800,
+      "endMs": 8128,
+      "sceneStartMs": 5000,
+      "sceneEndMs": 16000,
+      "keyword": "进展"
+    },
+    {
+      "id": "video-segment-progress-02",
+      "sentenceRef": "sentence:sentence-progress-eighty",
+      "speakerRoleVi": "Nhân viên",
+      "startMs": 16800,
+      "endMs": 19440,
+      "sceneStartMs": 16000,
+      "sceneEndMs": 27000,
+      "keyword": "百分之八十"
+    },
+    {
+      "id": "video-segment-progress-03",
+      "sentenceRef": "sentence:sentence-send-before-off-work",
+      "speakerRoleVi": "Nhân viên",
+      "startMs": 27800,
+      "endMs": 30344,
+      "sceneStartMs": 27000,
+      "sceneEndMs": 38000,
+      "keyword": "下班前"
+    }
+  ],
+  "practicePrompts": [
+    {
+      "id": "video-prompt-first-listen",
+      "stage": "before",
+      "textVi": "Nghe lượt đầu không mở pinyin."
+    },
+    {
+      "id": "video-prompt-shadow",
+      "stage": "during",
+      "textVi": "Lặp từng câu và nói theo trong khoảng nghỉ."
+    },
+    {
+      "id": "video-prompt-transfer",
+      "stage": "after",
+      "textVi": "Đổi 80% thành tiến độ thật của một công việc bạn đang làm."
+    }
+  ],
+  "player": {
+    "subtitleTracks": [
+      "hanzi",
+      "pinyin",
+      "vi"
+    ],
+    "allowSentenceSeek": true,
+    "allowSentenceLoop": true,
+    "shadowingPauseMs": 2200,
+    "playbackRates": [
+      0.75,
+      1,
+      1.25
+    ]
+  },
+  "completionRule": {
+    "type": "combined",
+    "minimumWatchPercent": 80,
+    "minimumShadowedSegments": 2
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "languageReviewStatus": "pending",
+    "mediaReviewStatus": "approved",
+    "rightsReviewStatus": "approved",
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

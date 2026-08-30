@@ -1,0 +1,890 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "character",
+  "items": [
+    {
+      "id": "char-hsk1-u4e00",
+      "glyph": "一",
+      "unicodeCodePoint": "U+4E00",
+      "pinyin": "yī",
+      "meaningVi": "một",
+      "sourceLessonNumber": 1,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "一",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e8c",
+      "glyph": "二",
+      "unicodeCodePoint": "U+4E8C",
+      "pinyin": "èr",
+      "meaningVi": "hai",
+      "sourceLessonNumber": 1,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "二",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e09",
+      "glyph": "三",
+      "unicodeCodePoint": "U+4E09",
+      "pinyin": "sān",
+      "meaningVi": "ba",
+      "sourceLessonNumber": 1,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "三",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5341",
+      "glyph": "十",
+      "unicodeCodePoint": "U+5341",
+      "pinyin": "shí",
+      "meaningVi": "mười",
+      "sourceLessonNumber": 1,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "十",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u516b",
+      "glyph": "八",
+      "unicodeCodePoint": "U+516B",
+      "pinyin": "bā",
+      "meaningVi": "tám",
+      "sourceLessonNumber": 1,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "八",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u516d",
+      "glyph": "六",
+      "unicodeCodePoint": "U+516D",
+      "pinyin": "liù",
+      "meaningVi": "sáu",
+      "sourceLessonNumber": 1,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "六",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u53e3",
+      "glyph": "口",
+      "unicodeCodePoint": "U+53E3",
+      "pinyin": "kǒu",
+      "meaningVi": "miệng; lượng từ",
+      "sourceLessonNumber": 2,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "口",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u89c1",
+      "glyph": "见",
+      "unicodeCodePoint": "U+89C1",
+      "pinyin": "jiàn",
+      "meaningVi": "thấy",
+      "sourceLessonNumber": 2,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "见",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5c71",
+      "glyph": "山",
+      "unicodeCodePoint": "U+5C71",
+      "pinyin": "shān",
+      "meaningVi": "núi",
+      "sourceLessonNumber": 2,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "山",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5c0f",
+      "glyph": "小",
+      "unicodeCodePoint": "U+5C0F",
+      "pinyin": "xiǎo",
+      "meaningVi": "nhỏ",
+      "sourceLessonNumber": 2,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "小",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e0d",
+      "glyph": "不",
+      "unicodeCodePoint": "U+4E0D",
+      "pinyin": "bù",
+      "meaningVi": "không",
+      "sourceLessonNumber": 2,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "不",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u6708",
+      "glyph": "月",
+      "unicodeCodePoint": "U+6708",
+      "pinyin": "yuè",
+      "meaningVi": "tháng; mặt trăng",
+      "sourceLessonNumber": 3,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "月",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5fc3",
+      "glyph": "心",
+      "unicodeCodePoint": "U+5FC3",
+      "pinyin": "xīn",
+      "meaningVi": "tim; lòng",
+      "sourceLessonNumber": 3,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "心",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e2d",
+      "glyph": "中",
+      "unicodeCodePoint": "U+4E2D",
+      "pinyin": "zhōng",
+      "meaningVi": "giữa; Trung",
+      "sourceLessonNumber": 3,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "中",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4eba",
+      "glyph": "人",
+      "unicodeCodePoint": "U+4EBA",
+      "pinyin": "rén",
+      "meaningVi": "người",
+      "sourceLessonNumber": 3,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "人",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e03",
+      "glyph": "七",
+      "unicodeCodePoint": "U+4E03",
+      "pinyin": "qī",
+      "meaningVi": "bảy",
+      "sourceLessonNumber": 4,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "七",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u513f",
+      "glyph": "儿",
+      "unicodeCodePoint": "U+513F",
+      "pinyin": "ér",
+      "meaningVi": "con; hậu tố",
+      "sourceLessonNumber": 4,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "儿",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u51e0",
+      "glyph": "几",
+      "unicodeCodePoint": "U+51E0",
+      "pinyin": "jǐ",
+      "meaningVi": "mấy",
+      "sourceLessonNumber": 4,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "几",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e5d",
+      "glyph": "九",
+      "unicodeCodePoint": "U+4E5D",
+      "pinyin": "jiǔ",
+      "meaningVi": "chín",
+      "sourceLessonNumber": 4,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "九",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u6c34",
+      "glyph": "水",
+      "unicodeCodePoint": "U+6C34",
+      "pinyin": "shuǐ",
+      "meaningVi": "nước",
+      "sourceLessonNumber": 5,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "水",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5973",
+      "glyph": "女",
+      "unicodeCodePoint": "U+5973",
+      "pinyin": "nǚ",
+      "meaningVi": "nữ",
+      "sourceLessonNumber": 5,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "女",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e86",
+      "glyph": "了",
+      "unicodeCodePoint": "U+4E86",
+      "pinyin": "le",
+      "meaningVi": "trợ từ",
+      "sourceLessonNumber": 5,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "了",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5927",
+      "glyph": "大",
+      "unicodeCodePoint": "U+5927",
+      "pinyin": "dà",
+      "meaningVi": "lớn",
+      "sourceLessonNumber": 5,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "大",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e1c",
+      "glyph": "东",
+      "unicodeCodePoint": "U+4E1C",
+      "pinyin": "dōng",
+      "meaningVi": "đông",
+      "sourceLessonNumber": 6,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "东",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u6211",
+      "glyph": "我",
+      "unicodeCodePoint": "U+6211",
+      "pinyin": "wǒ",
+      "meaningVi": "tôi",
+      "sourceLessonNumber": 6,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "我",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u897f",
+      "glyph": "西",
+      "unicodeCodePoint": "U+897F",
+      "pinyin": "xī",
+      "meaningVi": "tây",
+      "sourceLessonNumber": 6,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "西",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u56db",
+      "glyph": "四",
+      "unicodeCodePoint": "U+56DB",
+      "pinyin": "sì",
+      "meaningVi": "bốn",
+      "sourceLessonNumber": 7,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "四",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e94",
+      "glyph": "五",
+      "unicodeCodePoint": "U+4E94",
+      "pinyin": "wǔ",
+      "meaningVi": "năm",
+      "sourceLessonNumber": 7,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "五",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e66",
+      "glyph": "书",
+      "unicodeCodePoint": "U+4E66",
+      "pinyin": "shū",
+      "meaningVi": "sách",
+      "sourceLessonNumber": 7,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "书",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5c11",
+      "glyph": "少",
+      "unicodeCodePoint": "U+5C11",
+      "pinyin": "shǎo",
+      "meaningVi": "ít",
+      "sourceLessonNumber": 8,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "少",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e2a",
+      "glyph": "个",
+      "unicodeCodePoint": "U+4E2A",
+      "pinyin": "gè",
+      "meaningVi": "lượng từ thông dụng",
+      "sourceLessonNumber": 8,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "个",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5728",
+      "glyph": "在",
+      "unicodeCodePoint": "U+5728",
+      "pinyin": "zài",
+      "meaningVi": "ở; tại",
+      "sourceLessonNumber": 9,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "在",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5b50",
+      "glyph": "子",
+      "unicodeCodePoint": "U+5B50",
+      "pinyin": "zi",
+      "meaningVi": "con; hậu tố",
+      "sourceLessonNumber": 9,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "子",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5de5",
+      "glyph": "工",
+      "unicodeCodePoint": "U+5DE5",
+      "pinyin": "gōng",
+      "meaningVi": "công việc",
+      "sourceLessonNumber": 9,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "工",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e0a",
+      "glyph": "上",
+      "unicodeCodePoint": "U+4E0A",
+      "pinyin": "shàng",
+      "meaningVi": "trên",
+      "sourceLessonNumber": 10,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "上",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e0b",
+      "glyph": "下",
+      "unicodeCodePoint": "U+4E0B",
+      "pinyin": "xià",
+      "meaningVi": "dưới",
+      "sourceLessonNumber": 10,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "下",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u672c",
+      "glyph": "本",
+      "unicodeCodePoint": "U+672C",
+      "pinyin": "běn",
+      "meaningVi": "gốc; lượng từ sách",
+      "sourceLessonNumber": 10,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "本",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u672b",
+      "glyph": "末",
+      "unicodeCodePoint": "U+672B",
+      "pinyin": "mò",
+      "meaningVi": "cuối",
+      "sourceLessonNumber": 10,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "末",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5348",
+      "glyph": "午",
+      "unicodeCodePoint": "U+5348",
+      "pinyin": "wǔ",
+      "meaningVi": "trưa",
+      "sourceLessonNumber": 11,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "午",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u7535",
+      "glyph": "电",
+      "unicodeCodePoint": "U+7535",
+      "pinyin": "diàn",
+      "meaningVi": "điện",
+      "sourceLessonNumber": 11,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "电",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5929",
+      "glyph": "天",
+      "unicodeCodePoint": "U+5929",
+      "pinyin": "tiān",
+      "meaningVi": "trời; ngày",
+      "sourceLessonNumber": 12,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "天",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u6c14",
+      "glyph": "气",
+      "unicodeCodePoint": "U+6C14",
+      "pinyin": "qì",
+      "meaningVi": "khí",
+      "sourceLessonNumber": 12,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "气",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u96e8",
+      "glyph": "雨",
+      "unicodeCodePoint": "U+96E8",
+      "pinyin": "yǔ",
+      "meaningVi": "mưa",
+      "sourceLessonNumber": 12,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "雨",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u65e5",
+      "glyph": "日",
+      "unicodeCodePoint": "U+65E5",
+      "pinyin": "rì",
+      "meaningVi": "ngày; mặt trời",
+      "sourceLessonNumber": 13,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "日",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u76ee",
+      "glyph": "目",
+      "unicodeCodePoint": "U+76EE",
+      "pinyin": "mù",
+      "meaningVi": "mắt",
+      "sourceLessonNumber": 13,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "目",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u4e60",
+      "glyph": "习",
+      "unicodeCodePoint": "U+4E60",
+      "pinyin": "xí",
+      "meaningVi": "học; luyện",
+      "sourceLessonNumber": 13,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "习",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5f00",
+      "glyph": "开",
+      "unicodeCodePoint": "U+5F00",
+      "pinyin": "kāi",
+      "meaningVi": "mở; lái",
+      "sourceLessonNumber": 14,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "开",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u8f66",
+      "glyph": "车",
+      "unicodeCodePoint": "U+8F66",
+      "pinyin": "chē",
+      "meaningVi": "xe",
+      "sourceLessonNumber": 14,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "车",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u56de",
+      "glyph": "回",
+      "unicodeCodePoint": "U+56DE",
+      "pinyin": "huí",
+      "meaningVi": "về",
+      "sourceLessonNumber": 14,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "回",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u5e74",
+      "glyph": "年",
+      "unicodeCodePoint": "U+5E74",
+      "pinyin": "nián",
+      "meaningVi": "năm",
+      "sourceLessonNumber": 15,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "年",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u51fa",
+      "glyph": "出",
+      "unicodeCodePoint": "U+51FA",
+      "pinyin": "chū",
+      "meaningVi": "ra",
+      "sourceLessonNumber": 15,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "出",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    },
+    {
+      "id": "char-hsk1-u98de",
+      "glyph": "飞",
+      "unicodeCodePoint": "U+98DE",
+      "pinyin": "fēi",
+      "meaningVi": "bay",
+      "sourceLessonNumber": 15,
+      "sourceSummaryPrintedPage": 140,
+      "sourceSummaryPdfPage": 138,
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "飞",
+        "bundled": false
+      },
+      "sourceStrokeDiagramStatus": "scan-only-not-digitized",
+      "status": "review"
+    }
+  ]
+}

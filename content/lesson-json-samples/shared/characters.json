@@ -1,0 +1,206 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "character",
+  "items": [
+    {
+      "id": "char-ni",
+      "glyph": "你",
+      "unicodeCodePoint": "U+4F60",
+      "traditionalVariants": [
+        "你"
+      ],
+      "pinyin": [
+        "nǐ"
+      ],
+      "meaningVi": [
+        "bạn"
+      ],
+      "radical": {
+        "glyph": "亻",
+        "nameVi": "nhân đứng",
+        "kangxiNumber": 9
+      },
+      "totalStrokes": 7,
+      "structure": "left-right",
+      "components": [
+        "亻",
+        "尔"
+      ],
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "你",
+        "bundled": false
+      },
+      "mnemonicVi": "Bộ nhân đứng gợi người; 尔 là thành phần biểu âm trong chữ.",
+      "status": "review"
+    },
+    {
+      "id": "char-hao",
+      "glyph": "好",
+      "unicodeCodePoint": "U+597D",
+      "traditionalVariants": [
+        "好"
+      ],
+      "pinyin": [
+        "hǎo",
+        "hào"
+      ],
+      "meaningVi": [
+        "tốt",
+        "khỏe",
+        "thích"
+      ],
+      "radical": {
+        "glyph": "女",
+        "nameVi": "nữ",
+        "kangxiNumber": 38
+      },
+      "totalStrokes": 6,
+      "structure": "left-right",
+      "components": [
+        "女",
+        "子"
+      ],
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "好",
+        "bundled": false
+      },
+      "mnemonicVi": "Ghép 女 và 子 để ghi nhớ mặt chữ; nghĩa cụ thể phụ thuộc ngữ cảnh.",
+      "status": "review"
+    },
+    {
+      "id": "char-wo",
+      "glyph": "我",
+      "unicodeCodePoint": "U+6211",
+      "traditionalVariants": [
+        "我"
+      ],
+      "pinyin": [
+        "wǒ"
+      ],
+      "meaningVi": [
+        "tôi",
+        "mình"
+      ],
+      "radical": {
+        "glyph": "戈",
+        "nameVi": "qua",
+        "kangxiNumber": 62
+      },
+      "totalStrokes": 7,
+      "structure": "single",
+      "components": [
+        "我"
+      ],
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "我",
+        "bundled": false
+      },
+      "mnemonicVi": "Học theo toàn thể chữ và nhịp bảy nét, không tách nghĩa máy móc từ các thành phần.",
+      "status": "review"
+    },
+    {
+      "id": "char-jin",
+      "glyph": "进",
+      "unicodeCodePoint": "U+8FDB",
+      "traditionalVariants": [
+        "進"
+      ],
+      "pinyin": [
+        "jìn"
+      ],
+      "meaningVi": [
+        "tiến",
+        "đi vào"
+      ],
+      "radical": {
+        "glyph": "辶",
+        "nameVi": "sước",
+        "kangxiNumber": 162
+      },
+      "totalStrokes": 7,
+      "structure": "left-bottom-enclosure",
+      "components": [
+        "井",
+        "辶"
+      ],
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "进",
+        "bundled": false
+      },
+      "mnemonicVi": "Bộ sước gợi chuyển động về phía trước.",
+      "status": "review"
+    },
+    {
+      "id": "char-du",
+      "glyph": "度",
+      "unicodeCodePoint": "U+5EA6",
+      "traditionalVariants": [
+        "度"
+      ],
+      "pinyin": [
+        "dù",
+        "duó"
+      ],
+      "meaningVi": [
+        "mức độ",
+        "đo lường"
+      ],
+      "radical": {
+        "glyph": "广",
+        "nameVi": "nghiễm",
+        "kangxiNumber": 53
+      },
+      "totalStrokes": 9,
+      "structure": "semi-enclosed",
+      "components": [
+        "广",
+        "廿",
+        "又"
+      ],
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "度",
+        "bundled": false
+      },
+      "mnemonicVi": "Quan sát phần 广 bao phía trên trước khi luyện các nét bên trong.",
+      "status": "review"
+    },
+    {
+      "id": "char-bao",
+      "glyph": "报",
+      "unicodeCodePoint": "U+62A5",
+      "traditionalVariants": [
+        "報"
+      ],
+      "pinyin": [
+        "bào"
+      ],
+      "meaningVi": [
+        "báo",
+        "báo cáo"
+      ],
+      "radical": {
+        "glyph": "扌",
+        "nameVi": "thủ đứng",
+        "kangxiNumber": 64
+      },
+      "totalStrokes": 7,
+      "structure": "left-right",
+      "components": [
+        "扌",
+        "𠬝"
+      ],
+      "strokeData": {
+        "provider": "hanzi-writer",
+        "externalKey": "报",
+        "bundled": false
+      },
+      "mnemonicVi": "Giữ phần 扌 hẹp để phần bên phải đủ chỗ và cân đối.",
+      "status": "review"
+    }
+  ]
+}

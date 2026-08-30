@@ -4,12 +4,19 @@ import { useMemo, useState } from "react";
 import { AnimatePresence, motion, useReducedMotion } from "motion/react";
 import { ChevronRight, Search } from "lucide-react";
 import { CourseCard } from "@/components/course-card";
+import { HskCourseCard } from "@/components/hsk-course-card";
 import type { Course } from "@/lib/content-types";
 
 const filters = ["Tất cả", "Nền tảng", "Văn phòng", "Nhà máy", "Logistics", "Kinh doanh", "Dịch vụ"];
 const ease = [0.22, 1, 0.36, 1] as const;
 
-export function CourseExplorer({ courses }: { courses: Course[] }) {
+export function CourseExplorer({
+  courses,
+  includeHskCard = false,
+}: {
+  courses: Course[];
+  includeHskCard?: boolean;
+}) {
   const [query, setQuery] = useState("");
   const [filter, setFilter] = useState("Tất cả");
   const reduceMotion = useReducedMotion();
@@ -21,7 +28,12 @@ export function CourseExplorer({ courses }: { courses: Course[] }) {
       return matchesFilter && (!normalized || haystack.includes(normalized));
     });
   }, [courses, filter, query]);
-  const availableCount = visibleCourses.filter((course) => course.availability === "available").length;
+  const normalizedQuery = query.trim().toLowerCase();
+  const showHskCard = includeHskCard
+    && (filter === "Tất cả" || filter === "Nền tảng")
+    && (!normalizedQuery || "giáo trình hsk 汉语水平考试 cấp độ nền tảng".includes(normalizedQuery));
+  const availableCount = visibleCourses.filter((course) => course.availability === "available").length + (showHskCard ? 1 : 0);
+  const resultCount = visibleCourses.length + (showHskCard ? 1 : 0);
 
   return <section className="section-shell explorer">
     <div className="explorer-toolbar">
@@ -32,15 +44,23 @@ export function CourseExplorer({ courses }: { courses: Course[] }) {
           className={`filter-chip ${filter === item ? "active" : ""}`}
           key={item}
           onClick={() => setFilter(item)}
+          tabIndex={0}
           type="button"
           whileTap={reduceMotion ? undefined : { scale: 0.97 }}
         >{item}</motion.button>)}</div>
         <span aria-hidden="true" className="filter-scroll-cue"><ChevronRight size={17} /></span>
       </div>
     </div>
-    <motion.p animate={{ opacity: 1 }} aria-live="polite" className="explorer-count" initial={false} key={`${visibleCourses.length}-${availableCount}`}>{availableCount} lộ trình đang mở · {visibleCourses.length - availableCount} lộ trình trong kế hoạch</motion.p>
+    <motion.p animate={{ opacity: 1 }} aria-live="polite" className="explorer-count" initial={false} key={`${resultCount}-${availableCount}`}>{availableCount} lộ trình đang mở · {resultCount - availableCount} lộ trình trong kế hoạch</motion.p>
     <AnimatePresence initial={false} mode="popLayout">
-      {visibleCourses.length ? <motion.div className="course-grid" layout key="course-grid">{visibleCourses.map((course, index) => <motion.div
+      {resultCount ? <motion.div className="course-grid" layout key="course-grid">{showHskCard ? <motion.div
+        animate={{ opacity: 1, scale: 1, y: 0 }}
+        className="course-motion-item"
+        initial={reduceMotion ? false : { opacity: 0, scale: 0.985, y: 10 }}
+        key="hsk-curriculum"
+        layout
+        transition={{ duration: 0.2, ease }}
+      ><HskCourseCard /></motion.div> : null}{visibleCourses.map((course, index) => <motion.div
         animate={{ opacity: 1, scale: 1, y: 0 }}
         className="course-motion-item"
         exit={reduceMotion ? undefined : { opacity: 0, scale: 0.985, y: -6 }}

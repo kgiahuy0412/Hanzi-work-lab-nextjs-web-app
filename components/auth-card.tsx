@@ -11,7 +11,7 @@ import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from "@/lib/auth-validation"
 
 gsap.registerPlugin(useGSAP);
 
-type AuthMode = "login" | "register" | "admin";
+type AuthMode = "login" | "register" | "forgot-password" | "admin";
 
 const errorMessages: Record<string, string> = {
   duplicate: "Email này đã được sử dụng.",
@@ -31,7 +31,7 @@ const errorMessages: Record<string, string> = {
 
 type RegisterState = "idle" | "submitting" | "success";
 
-export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo }: { mode: AuthMode; error?: string; initialRegisterSuccess?: boolean; returnTo: string }) {
+export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo, sent = false }: { mode: AuthMode; error?: string; initialRegisterSuccess?: boolean; returnTo: string; sent?: boolean }) {
   const [motionRun, setMotionRun] = useState(0);
   const [passwordActive, setPasswordActive] = useState(false);
   const [registerState, setRegisterState] = useState<RegisterState>(initialRegisterSuccess ? "success" : "idle");
@@ -41,15 +41,24 @@ export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo
   const registering = mode === "register";
   const admin = mode === "admin";
   const learnerLogin = mode === "login";
-  const learnerAuth = learnerLogin || registering;
-  const title = registering ? "Tạo tài khoản học" : admin ? "Đăng nhập quản trị" : "Sẵn sàng cho ca học hôm nay?";
+  const forgotPassword = mode === "forgot-password";
+  const learnerAuth = learnerLogin || registering || forgotPassword;
+  const title = registering
+    ? "Tạo tài khoản học"
+    : forgotPassword
+      ? "Đặt lại mật khẩu"
+      : admin
+        ? "Đăng nhập quản trị"
+        : "Sẵn sàng cho ca học hôm nay?";
   const description = registering
     ? "Tạo tài khoản để đồng bộ bài học, Luyện ca, trò chơi và lịch ôn trên các thiết bị của bạn."
+    : forgotPassword
+      ? "Nhập email đã đăng ký. Nếu tài khoản tồn tại, Himi Chinese sẽ gửi một liên kết dùng một lần."
     : admin
       ? "Console dành cho biên tập viên, kiểm duyệt viên và quản trị viên đã được phân quyền."
       : "Đăng nhập để tiếp tục đúng bài đang học.";
   const Icon = registering ? UserPlus : admin ? ShieldCheck : KeyRound;
-  const action = registering ? "/api/auth/register" : "/api/auth/login";
+  const action = registering ? "/api/auth/register" : forgotPassword ? "/api/auth/forgot-password" : "/api/auth/login";
   const notice = error === "password_changed" || error === "password_reset";
   const visibleError = registerError ?? error;
 
@@ -119,6 +128,7 @@ export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo
           rotation: -.7,
           scaleX: .36,
           scaleY: .27,
+          xPercent: cardXPercent,
           y: pocketY - 8,
         }, 2.18)
         .to(card, {
@@ -128,6 +138,7 @@ export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo
           rotation: .24,
           scaleX: .96,
           scaleY: .985,
+          xPercent: cardXPercent,
           y: -16,
         }, 2.38)
         .to(card, {
@@ -137,6 +148,7 @@ export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo
           rotation: 0,
           scaleX: 1,
           scaleY: 1,
+          xPercent: cardXPercent,
           y: 0,
         }, 2.82)
         .to(foreground, { autoAlpha: 0, duration: .42, ease: "power2.out", scale: 1.004, y: -4 }, 3.02)
@@ -220,7 +232,7 @@ export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo
     }
   };
 
-  return <main className={`auth-page auth-gsap-motion ${learnerAuth ? "auth-page-login-scene" : ""} ${passwordActive ? "auth-password-is-active" : ""} ${registerState === "success" ? "auth-register-is-success" : ""}`.trim()} ref={authRootRef}>
+  return <main className={`auth-page auth-gsap-motion ${learnerAuth ? "auth-page-login-scene" : ""} ${forgotPassword ? "auth-page-forgot-scene" : ""} ${passwordActive ? "auth-password-is-active" : ""} ${registerState === "success" ? "auth-register-is-success" : ""}`.trim()} ref={authRootRef}>
     {learnerAuth ? <>
       <div aria-hidden="true" className="auth-login-scene-art" />
       <div aria-hidden="true" className="auth-login-scene-foreground" />
@@ -240,25 +252,28 @@ export function AuthCard({ mode, error, initialRegisterSuccess = false, returnTo
         </div>
       </div>
     </section> : null}
-    <section className={`auth-card ${admin ? "auth-card-admin" : ""} ${learnerAuth ? "auth-card-login-scene" : ""} ${registering ? "auth-card-register-scene" : ""}`.trim()}>
+    <section className={`auth-card ${admin ? "auth-card-admin" : ""} ${learnerAuth ? "auth-card-login-scene" : ""} ${registering ? "auth-card-register-scene" : ""} ${forgotPassword ? "auth-card-forgot-scene" : ""}`.trim()}>
     {!learnerAuth ? <div className="auth-brand"><BrandMark priority /><BrandWordmark /></div> : null}
     {!learnerAuth ? <div className="auth-icon"><Icon size={24} /></div> : null}
     <div className="auth-heading"><span>{admin ? "Himi Chinese Console" : "Tài khoản Himi Chinese"}</span><h1>{title}</h1><p>{description}</p></div>
     {visibleError && errorMessages[visibleError] ? <p className={notice ? "auth-notice" : "auth-error"} role="status">{errorMessages[visibleError]}</p> : null}
+    {sent ? <p className="auth-notice" role="status">Nếu email khớp với một tài khoản, liên kết đặt lại mật khẩu đã được gửi. Hãy kiểm tra cả thư rác.</p> : null}
     <form action={action} className="auth-form" method="post" onSubmit={handleRegisterSubmit}>
-      <input name="returnTo" type="hidden" value={returnTo} />
+      {!forgotPassword ? <input name="returnTo" type="hidden" value={returnTo} /> : null}
       {admin ? <input name="mode" type="hidden" value="admin" /> : null}
       {registering ? <label><span>Họ và tên</span><span className="auth-input-shell"><UserRound aria-hidden="true" size={18} /><input autoComplete="name" maxLength={120} minLength={2} name="displayName" placeholder="Nhập họ và tên của bạn" required type="text" /></span></label> : null}
       <label><span>Email</span><span className="auth-input-shell"><Mail aria-hidden="true" size={18} /><input autoCapitalize="none" autoComplete="email" inputMode="email" maxLength={255} name="email" placeholder={learnerAuth ? "Nhập email của bạn" : undefined} required type="email" /></span></label>
-      <label><span>Mật khẩu</span><span className="auth-input-shell"><LockKeyhole aria-hidden="true" size={18} /><input autoComplete={registering ? "new-password" : "current-password"} maxLength={MAX_PASSWORD_LENGTH} minLength={MIN_PASSWORD_LENGTH} name="password" onBlur={handlePasswordBlur} onFocus={() => setPasswordActive(true)} placeholder={learnerAuth ? "Nhập mật khẩu của bạn" : undefined} required type="password" /></span></label>
+      {!forgotPassword ? <label><span>Mật khẩu</span><span className="auth-input-shell"><LockKeyhole aria-hidden="true" size={18} /><input autoComplete={registering ? "new-password" : "current-password"} maxLength={MAX_PASSWORD_LENGTH} minLength={MIN_PASSWORD_LENGTH} name="password" onBlur={handlePasswordBlur} onFocus={() => setPasswordActive(true)} placeholder={learnerAuth ? "Nhập mật khẩu của bạn" : undefined} required type="password" /></span></label> : null}
       {registering ? <label><span>Nhập lại mật khẩu</span><span className="auth-input-shell"><LockKeyhole aria-hidden="true" size={18} /><input autoComplete="new-password" maxLength={MAX_PASSWORD_LENGTH} minLength={MIN_PASSWORD_LENGTH} name="confirmPassword" onBlur={handlePasswordBlur} onFocus={() => setPasswordActive(true)} placeholder="Nhập lại mật khẩu" required type="password" /></span></label> : null}
-      <button className="button button-primary button-full" disabled={registerState === "submitting"} type="submit"><span>{registerState === "submitting" ? "Đang tạo tài khoản..." : registering ? "Tạo tài khoản" : "Đăng nhập"}</span>{learnerAuth ? <ArrowRight aria-hidden="true" size={18} /> : null}</button>
+      <button className="button button-primary button-full" disabled={registerState === "submitting"} type="submit"><span>{registerState === "submitting" ? "Đang tạo tài khoản..." : registering ? "Tạo tài khoản" : forgotPassword ? "Gửi liên kết đặt lại" : "Đăng nhập"}</span>{learnerAuth ? <ArrowRight aria-hidden="true" size={18} /> : null}</button>
     </form>
     <div className="auth-switch">
       {admin
         ? <><Link href="/login">Đăng nhập người học</Link><span>·</span><Link href="/">Về trang chủ</Link></>
         : registering
           ? <p>Đã có tài khoản? <Link href={`/login?returnTo=${encodeURIComponent(returnTo)}`}>Đăng nhập</Link></p>
+          : forgotPassword
+            ? <p><Link href={`/login?returnTo=${encodeURIComponent(returnTo)}`}>Quay lại đăng nhập</Link></p>
           : <div><p><Link href="/forgot-password">Quên mật khẩu?</Link></p><p>Chưa có tài khoản? <Link href={`/register?returnTo=${encodeURIComponent(returnTo)}`}>Đăng ký ngay</Link></p></div>}
     </div>
   </section></main>;

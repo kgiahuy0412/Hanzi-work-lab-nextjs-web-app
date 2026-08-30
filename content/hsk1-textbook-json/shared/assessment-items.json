@@ -1,0 +1,1056 @@
+{
+  "schemaVersion": "1.0.0",
+  "entityType": "assessment-item",
+  "items": [
+    {
+      "id": "assessment-hsk1-l01-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l01-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l01-meaning-1",
+          "text": "anh; chị; bạn"
+        },
+        {
+          "id": "option-assessment-hsk1-l01-meaning-2",
+          "text": "khỏe; tốt"
+        },
+        {
+          "id": "option-assessment-hsk1-l01-meaning-3",
+          "text": "ông; bà; ngài (lịch sự)"
+        },
+        {
+          "id": "option-assessment-hsk1-l01-meaning-4",
+          "text": "các anh; các chị; các bạn"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l01-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l01-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l01-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l01-pinyin-1",
+          "text": "nǐ"
+        },
+        {
+          "id": "option-assessment-hsk1-l01-pinyin-2",
+          "text": "hǎo"
+        },
+        {
+          "id": "option-assessment-hsk1-l01-pinyin-3",
+          "text": "nín"
+        },
+        {
+          "id": "option-assessment-hsk1-l01-pinyin-4",
+          "text": "nǐmen"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l01-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l02-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l02-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l02-meaning-1",
+          "text": "cảm ơn"
+        },
+        {
+          "id": "option-assessment-hsk1-l02-meaning-2",
+          "text": "không; không cần; đừng"
+        },
+        {
+          "id": "option-assessment-hsk1-l02-meaning-3",
+          "text": "đừng khách sáo"
+        },
+        {
+          "id": "option-assessment-hsk1-l02-meaning-4",
+          "text": "tạm biệt"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l02-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l02-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l02-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l02-pinyin-1",
+          "text": "xièxie"
+        },
+        {
+          "id": "option-assessment-hsk1-l02-pinyin-2",
+          "text": "bù"
+        },
+        {
+          "id": "option-assessment-hsk1-l02-pinyin-3",
+          "text": "bú kèqi"
+        },
+        {
+          "id": "option-assessment-hsk1-l02-pinyin-4",
+          "text": "zàijiàn"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l02-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l03-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l03-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l03-meaning-1",
+          "text": "tên là; gọi"
+        },
+        {
+          "id": "option-assessment-hsk1-l03-meaning-2",
+          "text": "gì; cái gì"
+        },
+        {
+          "id": "option-assessment-hsk1-l03-meaning-3",
+          "text": "tên"
+        },
+        {
+          "id": "option-assessment-hsk1-l03-meaning-4",
+          "text": "tôi; ta; mình"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l03-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l03-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l03-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l03-pinyin-1",
+          "text": "jiào"
+        },
+        {
+          "id": "option-assessment-hsk1-l03-pinyin-2",
+          "text": "shénme"
+        },
+        {
+          "id": "option-assessment-hsk1-l03-pinyin-3",
+          "text": "míngzi"
+        },
+        {
+          "id": "option-assessment-hsk1-l03-pinyin-4",
+          "text": "wǒ"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l03-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l04-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l04-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l04-meaning-1",
+          "text": "cô ấy; bà ấy"
+        },
+        {
+          "id": "option-assessment-hsk1-l04-meaning-2",
+          "text": "ai"
+        },
+        {
+          "id": "option-assessment-hsk1-l04-meaning-3",
+          "text": "trợ từ dùng sau định ngữ"
+        },
+        {
+          "id": "option-assessment-hsk1-l04-meaning-4",
+          "text": "tiếng Trung Quốc"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l04-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l04-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l04-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l04-pinyin-1",
+          "text": "tā"
+        },
+        {
+          "id": "option-assessment-hsk1-l04-pinyin-2",
+          "text": "shuí"
+        },
+        {
+          "id": "option-assessment-hsk1-l04-pinyin-3",
+          "text": "de"
+        },
+        {
+          "id": "option-assessment-hsk1-l04-pinyin-4",
+          "text": "Hànyǔ"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l04-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l05-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l05-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l05-meaning-1",
+          "text": "nhà; gia đình"
+        },
+        {
+          "id": "option-assessment-hsk1-l05-meaning-2",
+          "text": "có"
+        },
+        {
+          "id": "option-assessment-hsk1-l05-meaning-3",
+          "text": "lượng từ dùng cho người trong gia đình"
+        },
+        {
+          "id": "option-assessment-hsk1-l05-meaning-4",
+          "text": "con gái"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l05-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l05-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l05-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l05-pinyin-1",
+          "text": "jiā"
+        },
+        {
+          "id": "option-assessment-hsk1-l05-pinyin-2",
+          "text": "yǒu"
+        },
+        {
+          "id": "option-assessment-hsk1-l05-pinyin-3",
+          "text": "kǒu"
+        },
+        {
+          "id": "option-assessment-hsk1-l05-pinyin-4",
+          "text": "nǚ'ér"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l05-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l06-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l06-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l06-meaning-1",
+          "text": "biết; có khả năng do học mà có"
+        },
+        {
+          "id": "option-assessment-hsk1-l06-meaning-2",
+          "text": "nói"
+        },
+        {
+          "id": "option-assessment-hsk1-l06-meaning-3",
+          "text": "mẹ"
+        },
+        {
+          "id": "option-assessment-hsk1-l06-meaning-4",
+          "text": "món ăn; thức ăn"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l06-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l06-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l06-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l06-pinyin-1",
+          "text": "huì"
+        },
+        {
+          "id": "option-assessment-hsk1-l06-pinyin-2",
+          "text": "shuō"
+        },
+        {
+          "id": "option-assessment-hsk1-l06-pinyin-3",
+          "text": "māma"
+        },
+        {
+          "id": "option-assessment-hsk1-l06-pinyin-4",
+          "text": "cài"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l06-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l07-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l07-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l07-meaning-1",
+          "text": "mời; xin"
+        },
+        {
+          "id": "option-assessment-hsk1-l07-meaning-2",
+          "text": "hỏi"
+        },
+        {
+          "id": "option-assessment-hsk1-l07-meaning-3",
+          "text": "hôm nay"
+        },
+        {
+          "id": "option-assessment-hsk1-l07-meaning-4",
+          "text": "ngày; số"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l07-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l07-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l07-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l07-pinyin-1",
+          "text": "qǐng"
+        },
+        {
+          "id": "option-assessment-hsk1-l07-pinyin-2",
+          "text": "wèn"
+        },
+        {
+          "id": "option-assessment-hsk1-l07-pinyin-3",
+          "text": "jīntiān"
+        },
+        {
+          "id": "option-assessment-hsk1-l07-pinyin-4",
+          "text": "hào"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l07-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l08-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l08-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l08-meaning-1",
+          "text": "muốn"
+        },
+        {
+          "id": "option-assessment-hsk1-l08-meaning-2",
+          "text": "uống"
+        },
+        {
+          "id": "option-assessment-hsk1-l08-meaning-3",
+          "text": "trà"
+        },
+        {
+          "id": "option-assessment-hsk1-l08-meaning-4",
+          "text": "ăn"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l08-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l08-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l08-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l08-pinyin-1",
+          "text": "xiǎng"
+        },
+        {
+          "id": "option-assessment-hsk1-l08-pinyin-2",
+          "text": "hē"
+        },
+        {
+          "id": "option-assessment-hsk1-l08-pinyin-3",
+          "text": "chá"
+        },
+        {
+          "id": "option-assessment-hsk1-l08-pinyin-4",
+          "text": "chī"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l08-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l09-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l09-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l09-meaning-1",
+          "text": "nhỏ; bé"
+        },
+        {
+          "id": "option-assessment-hsk1-l09-meaning-2",
+          "text": "mèo"
+        },
+        {
+          "id": "option-assessment-hsk1-l09-meaning-3",
+          "text": "ở; tại; đang có mặt"
+        },
+        {
+          "id": "option-assessment-hsk1-l09-meaning-4",
+          "text": "chỗ đó"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l09-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l09-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l09-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l09-pinyin-1",
+          "text": "xiǎo"
+        },
+        {
+          "id": "option-assessment-hsk1-l09-pinyin-2",
+          "text": "māo"
+        },
+        {
+          "id": "option-assessment-hsk1-l09-pinyin-3",
+          "text": "zài"
+        },
+        {
+          "id": "option-assessment-hsk1-l09-pinyin-4",
+          "text": "nàr"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l09-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l10-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l10-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l10-meaning-1",
+          "text": "cái bàn"
+        },
+        {
+          "id": "option-assessment-hsk1-l10-meaning-2",
+          "text": "trên; phía trên"
+        },
+        {
+          "id": "option-assessment-hsk1-l10-meaning-3",
+          "text": "máy vi tính"
+        },
+        {
+          "id": "option-assessment-hsk1-l10-meaning-4",
+          "text": "và"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l10-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l10-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l10-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l10-pinyin-1",
+          "text": "zhuōzi"
+        },
+        {
+          "id": "option-assessment-hsk1-l10-pinyin-2",
+          "text": "shàng"
+        },
+        {
+          "id": "option-assessment-hsk1-l10-pinyin-3",
+          "text": "diànnǎo"
+        },
+        {
+          "id": "option-assessment-hsk1-l10-pinyin-4",
+          "text": "hé"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l10-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l11-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l11-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l11-meaning-1",
+          "text": "bây giờ; hiện tại"
+        },
+        {
+          "id": "option-assessment-hsk1-l11-meaning-2",
+          "text": "giờ"
+        },
+        {
+          "id": "option-assessment-hsk1-l11-meaning-3",
+          "text": "phút"
+        },
+        {
+          "id": "option-assessment-hsk1-l11-meaning-4",
+          "text": "buổi trưa"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l11-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l11-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l11-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l11-pinyin-1",
+          "text": "xiànzài"
+        },
+        {
+          "id": "option-assessment-hsk1-l11-pinyin-2",
+          "text": "diǎn"
+        },
+        {
+          "id": "option-assessment-hsk1-l11-pinyin-3",
+          "text": "fēn"
+        },
+        {
+          "id": "option-assessment-hsk1-l11-pinyin-4",
+          "text": "zhōngwǔ"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l11-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l12-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l12-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l12-meaning-1",
+          "text": "thời tiết"
+        },
+        {
+          "id": "option-assessment-hsk1-l12-meaning-2",
+          "text": "như thế nào"
+        },
+        {
+          "id": "option-assessment-hsk1-l12-meaning-3",
+          "text": "quá; lắm"
+        },
+        {
+          "id": "option-assessment-hsk1-l12-meaning-4",
+          "text": "nóng"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l12-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l12-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l12-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l12-pinyin-1",
+          "text": "tiānqì"
+        },
+        {
+          "id": "option-assessment-hsk1-l12-pinyin-2",
+          "text": "zěnmeyàng"
+        },
+        {
+          "id": "option-assessment-hsk1-l12-pinyin-3",
+          "text": "tài"
+        },
+        {
+          "id": "option-assessment-hsk1-l12-pinyin-4",
+          "text": "rè"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l12-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l13-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l13-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l13-meaning-1",
+          "text": "a lô; này"
+        },
+        {
+          "id": "option-assessment-hsk1-l13-meaning-2",
+          "text": "cũng"
+        },
+        {
+          "id": "option-assessment-hsk1-l13-meaning-3",
+          "text": "học; học tập"
+        },
+        {
+          "id": "option-assessment-hsk1-l13-meaning-4",
+          "text": "buổi sáng"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l13-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l13-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l13-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l13-pinyin-1",
+          "text": "wèi"
+        },
+        {
+          "id": "option-assessment-hsk1-l13-pinyin-2",
+          "text": "yě"
+        },
+        {
+          "id": "option-assessment-hsk1-l13-pinyin-3",
+          "text": "xuéxí"
+        },
+        {
+          "id": "option-assessment-hsk1-l13-pinyin-4",
+          "text": "shàngwǔ"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l13-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l14-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l14-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l14-meaning-1",
+          "text": "đồ; đồ đạc"
+        },
+        {
+          "id": "option-assessment-hsk1-l14-meaning-2",
+          "text": "một ít; một chút"
+        },
+        {
+          "id": "option-assessment-hsk1-l14-meaning-3",
+          "text": "táo"
+        },
+        {
+          "id": "option-assessment-hsk1-l14-meaning-4",
+          "text": "nhìn thấy"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l14-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l14-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l14-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l14-pinyin-1",
+          "text": "dōngxi"
+        },
+        {
+          "id": "option-assessment-hsk1-l14-pinyin-2",
+          "text": "yìdiǎnr"
+        },
+        {
+          "id": "option-assessment-hsk1-l14-pinyin-3",
+          "text": "píngguǒ"
+        },
+        {
+          "id": "option-assessment-hsk1-l14-pinyin-4",
+          "text": "kànjiàn"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l14-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l15-meaning",
+      "type": "multiple-choice",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn nghĩa đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l15-01",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l15-meaning-1",
+          "text": "quen; biết"
+        },
+        {
+          "id": "option-assessment-hsk1-l15-meaning-2",
+          "text": "năm"
+        },
+        {
+          "id": "option-assessment-hsk1-l15-meaning-3",
+          "text": "đại học"
+        },
+        {
+          "id": "option-assessment-hsk1-l15-meaning-4",
+          "text": "khách sạn; nhà hàng"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l15-meaning-1"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    },
+    {
+      "id": "assessment-hsk1-l15-pinyin",
+      "type": "select-pinyin",
+      "skill": "reading",
+      "difficulty": 1,
+      "instructionVi": "Chọn pinyin đúng",
+      "prompt": {
+        "kind": "lexeme",
+        "ref": "lexeme:lex-hsk1-l15-02",
+        "display": "hanzi"
+      },
+      "options": [
+        {
+          "id": "option-assessment-hsk1-l15-pinyin-1",
+          "text": "rènshi"
+        },
+        {
+          "id": "option-assessment-hsk1-l15-pinyin-2",
+          "text": "nián"
+        },
+        {
+          "id": "option-assessment-hsk1-l15-pinyin-3",
+          "text": "dàxué"
+        },
+        {
+          "id": "option-assessment-hsk1-l15-pinyin-4",
+          "text": "fàndiàn"
+        }
+      ],
+      "correctResponse": {
+        "optionId": "option-assessment-hsk1-l15-pinyin-2"
+      },
+      "provenance": "derived-from-source-vocabulary",
+      "status": "draft"
+    }
+  ]
+}

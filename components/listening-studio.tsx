@@ -40,8 +40,14 @@ import {
 
 const ROUND_LENGTH = 10;
 
-export function ListeningStudio({ modeSwitcher }: { modeSwitcher?: ReactNode }) {
-  const [studio, setStudio] = useState(() => createInitialListeningState(LEVELS[0].id));
+export function ListeningStudio({
+  initialLevelId,
+  modeSwitcher,
+}: {
+  initialLevelId?: string;
+  modeSwitcher?: ReactNode;
+}) {
+  const [studio, setStudio] = useState(() => createInitialListeningState(initialLevelId ?? LEVELS[0].id));
   const [slowPlayback, setSlowPlayback] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [audioSupported, setAudioSupported] = useState(true);

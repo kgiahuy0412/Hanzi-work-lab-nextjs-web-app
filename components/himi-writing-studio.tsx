@@ -2,7 +2,7 @@
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import type HanziWriter from "hanzi-writer";
+import HanziWriter from "hanzi-writer";
 import {
   ArrowLeft,
   ArrowRight,
@@ -105,13 +105,18 @@ export function HimiWritingStudio({ topic }: { topic: WritingTopic }) {
     let canceled = false;
     const board = boardRef.current;
     if (!board) return;
+    const updateStatus = (message: string) => {
+      window.queueMicrotask(() => {
+        if (!canceled) setStatus(message);
+      });
+    };
 
     board.replaceChildren();
 
-    void import("hanzi-writer").then(({ default: HanziWriterClass }) => {
+    try {
       if (canceled || !boardRef.current) return;
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-      const writer = HanziWriterClass.create(boardRef.current, selected.hanzi, {
+      const writer = HanziWriter.create(boardRef.current, selected.hanzi, {
         width: canvasSize,
         height: canvasSize,
         padding: Math.round(canvasSize * 0.09),
@@ -130,18 +135,18 @@ export function HimiWritingStudio({ topic }: { topic: WritingTopic }) {
         strokeAnimationSpeed: 1.25,
         delayBetweenStrokes: 360,
         onLoadCharDataError: () => {
-          if (!canceled) setStatus("Chưa tải được dữ liệu nét. Hãy kiểm tra kết nối rồi thử lại.");
+          updateStatus("Chưa tải được dữ liệu nét. Hãy kiểm tra kết nối rồi thử lại.");
         },
       });
       writerRef.current = writer;
 
       if (mode === "watch") {
-        setStatus(reduceMotion ? "Đã hiển thị cấu trúc chữ." : "Theo dõi nét đỏ đang dẫn đường nhé.");
+        updateStatus(reduceMotion ? "Đã hiển thị cấu trúc chữ." : "Theo dõi nét đỏ đang dẫn đường nhé.");
         if (!reduceMotion) void writer.animateCharacter();
         return;
       }
 
-      setStatus(getModeMessage(mode));
+      updateStatus(getModeMessage(mode));
       void writer.quiz({
         leniency: mode === "trace" ? 1.35 : 0.95,
         showHintAfterMisses: mode === "trace" ? 1 : 3,
@@ -171,9 +176,9 @@ export function HimiWritingStudio({ topic }: { topic: WritingTopic }) {
           });
         },
       });
-    }).catch(() => {
-      if (!canceled) setStatus("Không thể mở bàn luyện viết lúc này. Hãy tải lại trang.");
-    });
+    } catch {
+      updateStatus("Không thể mở bàn luyện viết lúc này. Hãy tải lại trang.");
+    }
 
     return () => {
       canceled = true;

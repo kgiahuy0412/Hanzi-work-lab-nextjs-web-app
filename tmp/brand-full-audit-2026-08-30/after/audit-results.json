@@ -1,0 +1,3686 @@
+{
+  "desktop": [
+    {
+      "name": "home",
+      "route": "/",
+      "file": "01-home.jpg",
+      "heading": "Nói tiếngTrung trongđời sống thật",
+      "href": "http://localhost:3103/",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          57
+        ],
+        [
+          "rgb(101,94,91)",
+          33
+        ],
+        [
+          "rgb(9,47,42)",
+          9
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          2
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "courses",
+      "route": "/courses",
+      "file": "02-courses.jpg",
+      "heading": "Chọn chủ đề bạn muốn học",
+      "href": "http://localhost:3103/courses",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          161
+        ],
+        [
+          "rgb(98,91,88)",
+          87
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgb(255,76,59)",
+          10
+        ],
+        [
+          "rgba(255,253,247,0.9)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "courses-hsk",
+      "route": "/courses?view=hsk",
+      "file": "03-hsk-curriculum.jpg",
+      "heading": "Lộ trình bài học HSK 1",
+      "href": "http://localhost:3103/courses?view=hsk",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          118
+        ],
+        [
+          "rgb(101,113,123)",
+          70
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgb(138,147,157)",
+          18
+        ],
+        [
+          "rgb(135,145,155)",
+          16
+        ],
+        [
+          "rgb(81,91,103)",
+          12
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          9
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(119,128,138)",
+          6
+        ],
+        [
+          "rgb(105,118,130)",
+          6
+        ],
+        [
+          "rgb(69,102,96)",
+          5
+        ],
+        [
+          "rgb(79,109,104)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "industry-course",
+      "route": "/courses/van-phong-hanh-chinh",
+      "file": "04-course-roadmap.jpg",
+      "heading": "Lộ trình Văn phòng & hành chính",
+      "href": "http://localhost:3103/courses/van-phong-hanh-chinh",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          80
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgb(117,130,126)",
+          25
+        ],
+        [
+          "rgb(98,91,88)",
+          24
+        ],
+        [
+          "rgb(120,131,127)",
+          15
+        ],
+        [
+          "rgb(115,129,125)",
+          15
+        ],
+        [
+          "rgb(112,122,119)",
+          15
+        ],
+        [
+          "rgb(255,76,59)",
+          12
+        ],
+        [
+          "rgb(120,144,138)",
+          12
+        ],
+        [
+          "rgb(95,111,107)",
+          11
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(156,167,163)",
+          6
+        ]
+      ]
+    },
+    {
+      "name": "industry-lesson",
+      "route": "/learn/van-phong-hanh-chinh?lesson=chao-hoi-tai-noi-lam-viec",
+      "file": "05-lesson-workspace.jpg",
+      "heading": "",
+      "href": "http://localhost:3103/learn/van-phong-hanh-chinh?lesson=chao-hoi-tai-noi-lam-viec",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          50
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgba(0,0,0,0)",
+          19
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,76,59)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-lesson",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau",
+      "file": "06-hsk-lesson.jpg",
+      "heading": "Bài 1: Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          74
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          20
+        ],
+        [
+          "rgb(94,113,108)",
+          13
+        ],
+        [
+          "rgb(100,120,114)",
+          10
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          5
+        ],
+        [
+          "rgb(98,91,88)",
+          4
+        ],
+        [
+          "rgb(122,137,133)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(103,129,123)",
+          1
+        ],
+        [
+          "rgb(108,127,121)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-flashcard",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau/flashcard",
+      "file": "07-hsk-flashcard.jpg",
+      "heading": "Bài 1: Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau/flashcard",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          69
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgb(94,113,108)",
+          13
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          11
+        ],
+        [
+          "rgb(100,120,114)",
+          10
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          5
+        ],
+        [
+          "rgb(98,91,88)",
+          4
+        ],
+        [
+          "rgb(122,137,133)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(103,129,123)",
+          1
+        ],
+        [
+          "rgb(108,127,121)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-play",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau/play",
+      "file": "08-hsk-play.jpg",
+      "heading": "Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau/play",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(101,113,110)",
+          32
+        ],
+        [
+          "rgb(34,34,34)",
+          24
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          21
+        ],
+        [
+          "rgb(122,135,131)",
+          5
+        ],
+        [
+          "rgb(53,72,67)",
+          4
+        ],
+        [
+          "rgb(109,124,120)",
+          4
+        ],
+        [
+          "rgb(82,103,98)",
+          4
+        ],
+        [
+          "rgb(255,255,255)",
+          2
+        ],
+        [
+          "rgb(104,116,112)",
+          2
+        ],
+        [
+          "rgb(124,137,133)",
+          2
+        ],
+        [
+          "rgb(84,100,95)",
+          1
+        ],
+        [
+          "rgb(28,60,54)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-quiz",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau/quiz",
+      "file": "09-hsk-quiz.jpg",
+      "heading": "Bài 1: Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau/quiz",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          78
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgb(94,113,108)",
+          13
+        ],
+        [
+          "rgb(100,120,114)",
+          10
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          5
+        ],
+        [
+          "rgb(98,91,88)",
+          4
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(103,129,123)",
+          1
+        ],
+        [
+          "rgb(115,130,126)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "listening",
+      "route": "/listening",
+      "file": "10-listening-hsk.jpg",
+      "heading": "Nghe rõ từng câu.Phản xạ tự nhiên hơn.",
+      "href": "http://localhost:3103/listening",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          139
+        ],
+        [
+          "rgb(98,91,88)",
+          29
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(255,76,59)",
+          16
+        ],
+        [
+          "rgb(255,255,255)",
+          12
+        ],
+        [
+          "rgb(73,103,95)",
+          7
+        ],
+        [
+          "rgb(106,127,121)",
+          7
+        ],
+        [
+          "rgb(80,108,101)",
+          4
+        ],
+        [
+          "rgb(120,144,137)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(105,128,121)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "listening-scenario",
+      "route": "/listening?mode=scenario",
+      "file": "11-listening-scenario.jpg",
+      "heading": "Luyện đúng cảnh.Nói tự nhiên hơn.",
+      "href": "http://localhost:3103/listening?mode=scenario",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          110
+        ],
+        [
+          "rgb(111,129,124)",
+          32
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(255,76,59)",
+          19
+        ],
+        [
+          "rgb(98,91,88)",
+          15
+        ],
+        [
+          "rgb(102,122,116)",
+          12
+        ],
+        [
+          "rgb(70,95,88)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(169,104,11)",
+          6
+        ],
+        [
+          "rgb(168,99,8)",
+          5
+        ],
+        [
+          "rgb(113,129,125)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "file": "12-practice-redirect.jpg",
+      "heading": "Luyện đúng cảnh.Nói tự nhiên hơn.",
+      "href": "http://localhost:3103/listening?mode=scenario",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          110
+        ],
+        [
+          "rgb(111,129,124)",
+          32
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(255,76,59)",
+          19
+        ],
+        [
+          "rgb(98,91,88)",
+          15
+        ],
+        [
+          "rgb(102,122,116)",
+          12
+        ],
+        [
+          "rgb(70,95,88)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(169,104,11)",
+          6
+        ],
+        [
+          "rgb(168,99,8)",
+          5
+        ],
+        [
+          "rgb(113,129,125)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "games",
+      "route": "/games",
+      "file": "13-games.jpg",
+      "heading": "Trung tâm trò chơi Himi",
+      "href": "http://localhost:3103/games",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          92
+        ],
+        [
+          "rgb(101,94,91)",
+          34
+        ],
+        [
+          "rgb(85,112,104)",
+          28
+        ],
+        [
+          "rgb(255,76,59)",
+          11
+        ],
+        [
+          "rgb(98,91,88)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(113,131,124)",
+          1
+        ],
+        [
+          "rgb(100,119,111)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "videos",
+      "route": "/videos",
+      "file": "14-videos.jpg",
+      "heading": "Nghe dễ hơn.Nhớ lâu hơn.",
+      "href": "http://localhost:3103/videos",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          210
+        ],
+        [
+          "rgb(255,255,255)",
+          58
+        ],
+        [
+          "rgb(255,76,59)",
+          40
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(15,85,73)",
+          13
+        ],
+        [
+          "rgb(100,117,111)",
+          13
+        ],
+        [
+          "rgb(130,144,140)",
+          13
+        ],
+        [
+          "rgb(96,115,109)",
+          12
+        ],
+        [
+          "rgb(106,125,119)",
+          5
+        ],
+        [
+          "rgb(106,123,118)",
+          5
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "video-detail",
+      "route": "/videos/mua-do-o-cua-hang-tien-loi",
+      "file": "15-video-detail.jpg",
+      "heading": "Mua đồ ở cửa hàng tiện lợi",
+      "href": "http://localhost:3103/videos/mua-do-o-cua-hang-tien-loi",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          101
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(255,255,255)",
+          17
+        ],
+        [
+          "rgb(83,108,102)",
+          16
+        ],
+        [
+          "rgb(255,76,59)",
+          14
+        ],
+        [
+          "rgb(101,119,113)",
+          10
+        ],
+        [
+          "rgb(140,77,71)",
+          8
+        ],
+        [
+          "rgb(127,145,139)",
+          6
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          5
+        ],
+        [
+          "rgb(119,134,129)",
+          3
+        ],
+        [
+          "rgb(123,140,135)",
+          3
+        ],
+        [
+          "rgb(104,121,115)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "writing",
+      "route": "/writing",
+      "file": "16-writing.jpg",
+      "heading": "Chọn cấp độ.Viết từng nét thật chắc.",
+      "href": "http://localhost:3103/writing",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          143
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(116,134,129)",
+          18
+        ],
+        [
+          "rgb(110,129,124)",
+          18
+        ],
+        [
+          "rgb(98,91,88)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          2
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "writing-hsk-1",
+      "route": "/writing/hsk-1",
+      "file": "17-writing-topic.jpg",
+      "heading": "Nét cơ bản và lời chào",
+      "href": "http://localhost:3103/writing/hsk-1",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          72
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(255,76,59)",
+          16
+        ],
+        [
+          "rgb(113,131,126)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(69,109,101)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "writing-practice",
+      "route": "/writing/hsk-1/practice",
+      "file": "18-writing-practice.jpg",
+      "heading": "Nét cơ bản và lời chào",
+      "href": "http://localhost:3103/writing/hsk-1/practice",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          140
+        ],
+        [
+          "rgb(101,94,91)",
+          21
+        ],
+        [
+          "rgb(255,76,59)",
+          15
+        ],
+        [
+          "rgb(106,126,121)",
+          13
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(118,144,138)",
+          5
+        ],
+        [
+          "rgb(132,146,142)",
+          5
+        ],
+        [
+          "rgb(97,119,113)",
+          3
+        ],
+        [
+          "rgb(155,112,27)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(110,129,125)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "vip",
+      "route": "/vip",
+      "file": "19-vip.jpg",
+      "heading": "Học liền mạch.Mở trọn hành trình.",
+      "href": "http://localhost:3103/vip",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          75
+        ],
+        [
+          "rgb(101,94,91)",
+          38
+        ],
+        [
+          "rgb(255,76,59)",
+          21
+        ],
+        [
+          "rgb(98,91,88)",
+          21
+        ],
+        [
+          "rgb(255,255,255)",
+          12
+        ],
+        [
+          "rgba(255,255,255,0.72)",
+          6
+        ],
+        [
+          "rgb(191,227,215)",
+          6
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgba(255,255,255,0.68)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "login",
+      "route": "/login",
+      "file": "20-login.jpg",
+      "heading": "Nói tiếngTrung trongđời sống thật",
+      "href": "http://localhost:3103/",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          57
+        ],
+        [
+          "rgb(101,94,91)",
+          33
+        ],
+        [
+          "rgb(9,47,42)",
+          9
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          2
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "register",
+      "route": "/register",
+      "file": "21-register.jpg",
+      "heading": "Nói tiếngTrung trongđời sống thật",
+      "href": "http://localhost:3103/",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          57
+        ],
+        [
+          "rgb(101,94,91)",
+          33
+        ],
+        [
+          "rgb(9,47,42)",
+          9
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          2
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "forgot-password",
+      "route": "/forgot-password",
+      "file": "22-forgot-password.jpg",
+      "heading": "Đặt lại mật khẩu",
+      "href": "http://localhost:3103/forgot-password",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgb(98,91,88)",
+          15
+        ],
+        [
+          "rgb(255,76,59)",
+          10
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "reset-password",
+      "route": "/reset-password",
+      "file": "23-reset-password.jpg",
+      "heading": "Chọn mật khẩu mới",
+      "href": "http://localhost:3103/reset-password",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          22
+        ],
+        [
+          "rgb(98,91,88)",
+          15
+        ],
+        [
+          "rgb(255,76,59)",
+          9
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "verify-email",
+      "route": "/verify-email",
+      "file": "24-verify-email.jpg",
+      "heading": "Kiểm tra hộp thư",
+      "href": "http://localhost:3103/verify-email",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgb(98,91,88)",
+          15
+        ],
+        [
+          "rgb(255,76,59)",
+          10
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "account",
+      "route": "/account",
+      "file": "25-account.jpg",
+      "heading": "Tài khoản của tôi",
+      "href": "http://localhost:3103/account",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          42
+        ],
+        [
+          "rgb(101,94,91)",
+          38
+        ],
+        [
+          "rgb(8,122,109)",
+          18
+        ],
+        [
+          "rgb(16,61,55)",
+          17
+        ],
+        [
+          "rgb(255,255,255)",
+          12
+        ],
+        [
+          "rgb(8,116,102)",
+          11
+        ],
+        [
+          "rgb(92,102,100)",
+          10
+        ],
+        [
+          "rgb(7,88,79)",
+          9
+        ],
+        [
+          "rgb(100,112,109)",
+          6
+        ],
+        [
+          "rgb(83,96,94)",
+          5
+        ],
+        [
+          "rgb(8,126,112)",
+          5
+        ],
+        [
+          "rgb(7,95,84)",
+          4
+        ]
+      ]
+    },
+    {
+      "name": "notifications",
+      "route": "/notifications",
+      "file": "26-notifications.jpg",
+      "heading": "Thông báo",
+      "href": "http://localhost:3103/notifications",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          47
+        ],
+        [
+          "rgb(101,94,91)",
+          38
+        ],
+        [
+          "rgb(255,76,59)",
+          17
+        ],
+        [
+          "rgb(11,113,101)",
+          10
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(98,91,88)",
+          5
+        ],
+        [
+          "rgb(11,121,108)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(82,106,100)",
+          2
+        ],
+        [
+          "rgb(9,47,42)",
+          1
+        ],
+        [
+          "rgb(92,112,106)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "file": "27-privacy.jpg",
+      "heading": "Chính sách bảo mật",
+      "href": "http://localhost:3103/privacy",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgb(98,91,88)",
+          19
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "file": "28-terms.jpg",
+      "heading": "Điều khoản sử dụng",
+      "href": "http://localhost:3103/terms",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgb(98,91,88)",
+          19
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "admin-login",
+      "route": "/admin/login",
+      "file": "29-admin-login.jpg",
+      "heading": "Tổng quan vận hành",
+      "href": "http://localhost:3103/admin",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          160
+        ],
+        [
+          "rgb(112,118,128)",
+          42
+        ],
+        [
+          "rgb(146,151,160)",
+          40
+        ],
+        [
+          "rgb(255,76,59)",
+          28
+        ],
+        [
+          "rgb(86,92,101)",
+          28
+        ],
+        [
+          "rgb(48,52,58)",
+          21
+        ],
+        [
+          "rgb(98,91,88)",
+          13
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(155,159,167)",
+          9
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          8
+        ],
+        [
+          "rgb(65,70,78)",
+          8
+        ],
+        [
+          "rgb(109,114,123)",
+          8
+        ]
+      ]
+    },
+    {
+      "name": "admin",
+      "route": "/admin",
+      "file": "30-admin-dashboard.jpg",
+      "heading": "Tổng quan vận hành",
+      "href": "http://localhost:3103/admin",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          160
+        ],
+        [
+          "rgb(112,118,128)",
+          42
+        ],
+        [
+          "rgb(146,151,160)",
+          40
+        ],
+        [
+          "rgb(255,76,59)",
+          28
+        ],
+        [
+          "rgb(86,92,101)",
+          28
+        ],
+        [
+          "rgb(48,52,58)",
+          21
+        ],
+        [
+          "rgb(98,91,88)",
+          13
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(155,159,167)",
+          9
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          8
+        ],
+        [
+          "rgb(65,70,78)",
+          8
+        ],
+        [
+          "rgb(109,114,123)",
+          8
+        ]
+      ]
+    },
+    {
+      "name": "admin-analytics",
+      "route": "/admin/analytics",
+      "file": "31-admin-analytics.jpg",
+      "heading": "Thống kê",
+      "href": "http://localhost:3103/admin/analytics",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          141
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(255,76,59)",
+          17
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          5
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(119,125,134)",
+          4
+        ],
+        [
+          "rgb(35,38,44)",
+          4
+        ],
+        [
+          "rgb(160,165,173)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(154,159,168)",
+          2
+        ],
+        [
+          "rgb(45,48,54)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "admin-courses",
+      "route": "/admin/courses",
+      "file": "32-admin-courses.jpg",
+      "heading": "Lộ trình học",
+      "href": "http://localhost:3103/admin/courses",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          58
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(86,92,101)",
+          28
+        ],
+        [
+          "rgb(48,52,58)",
+          14
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,76,59)",
+          9
+        ],
+        [
+          "rgb(98,91,88)",
+          8
+        ],
+        [
+          "rgb(35,114,95)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(155,159,167)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "admin-course-detail",
+      "route": "/admin/courses/8a5f3395-05db-4972-8b11-5495e956728e",
+      "file": "33-admin-course-detail.jpg",
+      "heading": "Văn phòng & hành chính",
+      "href": "http://localhost:3103/admin/courses/8a5f3395-05db-4972-8b11-5495e956728e",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          71
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgb(255,76,59)",
+          6
+        ],
+        [
+          "rgb(98,91,88)",
+          5
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(52,56,63)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(104,110,119)",
+          3
+        ],
+        [
+          "rgb(41,44,50)",
+          3
+        ],
+        [
+          "rgb(125,90,83)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "admin-module-detail",
+      "route": "/admin/modules/a263d391-aade-4d90-926f-5d2fb8e79c8e",
+      "file": "34-admin-module-detail.jpg",
+      "heading": "Giao tiếp văn phòng căn bản",
+      "href": "http://localhost:3103/admin/modules/a263d391-aade-4d90-926f-5d2fb8e79c8e",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          69
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgb(98,91,88)",
+          7
+        ],
+        [
+          "rgb(52,56,63)",
+          6
+        ],
+        [
+          "rgb(35,114,95)",
+          6
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(104,110,119)",
+          3
+        ],
+        [
+          "rgb(41,44,50)",
+          3
+        ],
+        [
+          "rgb(150,155,164)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "admin-lesson-detail",
+      "route": "/admin/lessons/4e8a921d-2a35-4b5f-8ad9-18c19887e3d0",
+      "file": "35-admin-lesson-detail.jpg",
+      "heading": "Chào hỏi tại nơi làm việc",
+      "href": "http://localhost:3103/admin/lessons/4e8a921d-2a35-4b5f-8ad9-18c19887e3d0",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          1554
+        ],
+        [
+          "rgb(98,91,88)",
+          503
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(104,110,119)",
+          3
+        ],
+        [
+          "rgb(125,90,83)",
+          3
+        ],
+        [
+          "rgb(154,159,168)",
+          2
+        ],
+        [
+          "rgb(45,48,54)",
+          2
+        ],
+        [
+          "rgb(255,76,59)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "admin-practice",
+      "route": "/admin/practice",
+      "file": "36-admin-practice.jpg",
+      "heading": "Kho Luyện ca",
+      "href": "http://localhost:3103/admin/practice",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          60
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(98,91,88)",
+          13
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(52,56,63)",
+          7
+        ],
+        [
+          "rgb(35,114,95)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          5
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(255,76,59)",
+          3
+        ],
+        [
+          "rgb(154,159,168)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "admin-practice-industry",
+      "route": "/admin/practice/industries/c4b43d93-1d64-44c5-9469-7ee7ed1d71d3",
+      "file": "37-admin-practice-industry.jpg",
+      "heading": "Văn phòng",
+      "href": "http://localhost:3103/admin/practice/industries/c4b43d93-1d64-44c5-9469-7ee7ed1d71d3",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          82
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          8
+        ],
+        [
+          "rgb(98,91,88)",
+          5
+        ],
+        [
+          "rgb(35,114,95)",
+          5
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(52,56,63)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(104,110,119)",
+          3
+        ],
+        [
+          "rgb(41,44,50)",
+          3
+        ],
+        [
+          "rgb(125,90,83)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "admin-practice-scenario",
+      "route": "/admin/practice/scenarios/b68f85ef-a337-4187-a5f2-2ba299e34b65",
+      "file": "38-admin-practice-scenario.jpg",
+      "heading": "Báo tiến độ khi sắp trễ hạn",
+      "href": "http://localhost:3103/admin/practice/scenarios/b68f85ef-a337-4187-a5f2-2ba299e34b65",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          173
+        ],
+        [
+          "rgb(98,91,88)",
+          68
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(8,114,95)",
+          27
+        ],
+        [
+          "rgb(79,85,95)",
+          15
+        ],
+        [
+          "rgb(255,255,255)",
+          14
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,76,59)",
+          11
+        ],
+        [
+          "rgb(150,155,164)",
+          11
+        ],
+        [
+          "rgb(41,44,50)",
+          5
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "admin-subscriptions",
+      "route": "/admin/subscriptions",
+      "file": "39-admin-subscriptions.jpg",
+      "heading": "VIP & Thanh toán",
+      "href": "http://localhost:3103/admin/subscriptions",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          227
+        ],
+        [
+          "rgb(255,255,255)",
+          55
+        ],
+        [
+          "rgb(112,118,128)",
+          45
+        ],
+        [
+          "rgb(98,91,88)",
+          40
+        ],
+        [
+          "rgb(255,76,59)",
+          30
+        ],
+        [
+          "rgb(79,85,95)",
+          13
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          10
+        ],
+        [
+          "rgb(155,159,167)",
+          10
+        ],
+        [
+          "rgb(86,92,101)",
+          10
+        ],
+        [
+          "rgb(54,59,67)",
+          9
+        ],
+        [
+          "rgb(146,152,160)",
+          9
+        ]
+      ]
+    },
+    {
+      "name": "admin-team",
+      "route": "/admin/team",
+      "file": "40-admin-team.jpg",
+      "heading": "Đội nội dung",
+      "href": "http://localhost:3103/admin/team",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          68
+        ],
+        [
+          "rgb(112,118,128)",
+          43
+        ],
+        [
+          "rgb(98,91,88)",
+          25
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(79,85,95)",
+          8
+        ],
+        [
+          "rgb(255,255,255)",
+          5
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(154,159,168)",
+          2
+        ],
+        [
+          "rgb(45,48,54)",
+          2
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "admin-users",
+      "route": "/admin/users",
+      "file": "41-admin-users.jpg",
+      "heading": "Quản lý người dùng",
+      "href": "http://localhost:3103/admin/users",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(86,92,101)",
+          99
+        ],
+        [
+          "rgb(255,255,255)",
+          44
+        ],
+        [
+          "rgb(34,34,34)",
+          35
+        ],
+        [
+          "rgb(112,118,128)",
+          35
+        ],
+        [
+          "rgb(102,109,118)",
+          30
+        ],
+        [
+          "rgb(255,76,59)",
+          20
+        ],
+        [
+          "rgb(148,153,161)",
+          16
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(61,66,74)",
+          9
+        ],
+        [
+          "rgb(52,56,63)",
+          8
+        ],
+        [
+          "rgb(25,112,92)",
+          6
+        ],
+        [
+          "rgb(155,159,167)",
+          5
+        ]
+      ]
+    },
+    {
+      "name": "admin-vocabulary",
+      "route": "/admin/vocabulary",
+      "file": "42-admin-vocabulary.jpg",
+      "heading": "Kho từ vựng",
+      "href": "http://localhost:3103/admin/vocabulary",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          644
+        ],
+        [
+          "rgb(255,76,59)",
+          304
+        ],
+        [
+          "rgb(98,91,88)",
+          301
+        ],
+        [
+          "rgb(52,56,63)",
+          300
+        ],
+        [
+          "rgb(112,118,128)",
+          43
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(154,159,168)",
+          2
+        ],
+        [
+          "rgb(45,48,54)",
+          2
+        ],
+        [
+          "rgb(41,44,50)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "admin-vocabulary-detail",
+      "route": "/admin/vocabulary/95db224b-76da-4320-b7e8-df1ffbe9bbb1",
+      "file": "43-admin-vocabulary-detail.jpg",
+      "heading": "上报",
+      "href": "http://localhost:3103/admin/vocabulary/95db224b-76da-4320-b7e8-df1ffbe9bbb1",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(112,118,128)",
+          43
+        ],
+        [
+          "rgb(34,34,34)",
+          42
+        ],
+        [
+          "rgb(77,83,93)",
+          12
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgb(113,119,128)",
+          4
+        ],
+        [
+          "rgb(164,168,176)",
+          3
+        ],
+        [
+          "rgb(104,110,119)",
+          3
+        ],
+        [
+          "rgb(125,90,83)",
+          3
+        ],
+        [
+          "rgb(154,159,168)",
+          2
+        ],
+        [
+          "rgb(45,48,54)",
+          2
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          1
+        ]
+      ]
+    }
+  ],
+  "mobile": [
+    {
+      "name": "home",
+      "route": "/",
+      "file": "01-home.jpg",
+      "heading": "Nói tiếngTrung trongđời sống thật",
+      "href": "http://localhost:3103/",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          38
+        ],
+        [
+          "rgb(102,122,116)",
+          26
+        ],
+        [
+          "rgb(9,47,42)",
+          9
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(255,76,59)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "courses",
+      "route": "/courses",
+      "file": "02-courses.jpg",
+      "heading": "Chọn chủ đề bạn muốn học",
+      "href": "http://localhost:3103/courses",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          142
+        ],
+        [
+          "rgb(98,91,88)",
+          87
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(255,76,59)",
+          9
+        ],
+        [
+          "rgba(255,253,247,0.9)",
+          8
+        ],
+        [
+          "rgb(10,111,97)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "courses-hsk",
+      "route": "/courses?view=hsk",
+      "file": "03-courses-hsk.jpg",
+      "heading": "Lộ trình bài học HSK 1",
+      "href": "http://localhost:3103/courses?view=hsk",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          99
+        ],
+        [
+          "rgb(101,113,123)",
+          70
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(138,147,157)",
+          18
+        ],
+        [
+          "rgb(135,145,155)",
+          16
+        ],
+        [
+          "rgb(81,91,103)",
+          12
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          9
+        ],
+        [
+          "rgb(119,128,138)",
+          6
+        ],
+        [
+          "rgb(105,118,130)",
+          6
+        ],
+        [
+          "rgb(69,102,96)",
+          5
+        ],
+        [
+          "rgb(79,109,104)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "industry-course",
+      "route": "/courses/van-phong-hanh-chinh",
+      "file": "04-industry-course.jpg",
+      "heading": "Lộ trình Văn phòng & hành chính",
+      "href": "http://localhost:3103/courses/van-phong-hanh-chinh",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          61
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(117,130,126)",
+          25
+        ],
+        [
+          "rgb(98,91,88)",
+          24
+        ],
+        [
+          "rgb(120,131,127)",
+          15
+        ],
+        [
+          "rgb(115,129,125)",
+          15
+        ],
+        [
+          "rgb(120,144,138)",
+          12
+        ],
+        [
+          "rgb(255,76,59)",
+          11
+        ],
+        [
+          "rgb(95,111,107)",
+          11
+        ],
+        [
+          "rgb(96,113,108)",
+          3
+        ],
+        [
+          "rgb(112,122,119)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "industry-lesson",
+      "route": "/learn/van-phong-hanh-chinh?lesson=chao-hoi-tai-noi-lam-viec",
+      "file": "05-industry-lesson.jpg",
+      "heading": "",
+      "href": "http://localhost:3103/learn/van-phong-hanh-chinh?lesson=chao-hoi-tai-noi-lam-viec",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          31
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgba(0,0,0,0)",
+          19
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-lesson",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau",
+      "file": "06-hsk-lesson.jpg",
+      "heading": "Bài 1: Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          54
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          20
+        ],
+        [
+          "rgb(94,113,108)",
+          13
+        ],
+        [
+          "rgb(100,120,114)",
+          10
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgb(98,91,88)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(103,129,123)",
+          1
+        ],
+        [
+          "rgb(108,127,121)",
+          1
+        ],
+        [
+          "rgb(116,131,127)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-flashcard",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau/flashcard",
+      "file": "07-hsk-flashcard.jpg",
+      "heading": "Bài 1: Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau/flashcard",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          49
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(94,113,108)",
+          13
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          11
+        ],
+        [
+          "rgb(100,120,114)",
+          10
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgb(98,91,88)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(103,129,123)",
+          1
+        ],
+        [
+          "rgb(108,127,121)",
+          1
+        ],
+        [
+          "rgb(116,131,127)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-play",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau/play",
+      "file": "08-hsk-play.jpg",
+      "heading": "Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau/play",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(101,113,110)",
+          32
+        ],
+        [
+          "rgb(34,34,34)",
+          23
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          20
+        ],
+        [
+          "rgb(122,135,131)",
+          5
+        ],
+        [
+          "rgb(53,72,67)",
+          4
+        ],
+        [
+          "rgb(109,124,120)",
+          4
+        ],
+        [
+          "rgb(82,103,98)",
+          4
+        ],
+        [
+          "rgb(255,255,255)",
+          2
+        ],
+        [
+          "rgb(124,137,133)",
+          2
+        ],
+        [
+          "rgb(84,100,95)",
+          1
+        ],
+        [
+          "rgb(28,60,54)",
+          1
+        ],
+        [
+          "rgb(98,91,88)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "hsk-quiz",
+      "route": "/hsk/1/hsk-1-lam-quen-lan-dau/quiz",
+      "file": "09-hsk-quiz.jpg",
+      "heading": "Bài 1: Làm quen lần đầu",
+      "href": "http://localhost:3103/hsk/1/hsk-1-lam-quen-lan-dau/quiz",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          59
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(94,113,108)",
+          12
+        ],
+        [
+          "rgb(100,120,114)",
+          10
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          4
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgb(98,91,88)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(103,129,123)",
+          1
+        ],
+        [
+          "rgb(115,130,126)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "listening",
+      "route": "/listening",
+      "file": "10-listening.jpg",
+      "heading": "Nghe rõ từng câu.Phản xạ tự nhiên hơn.",
+      "href": "http://localhost:3103/listening",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          115
+        ],
+        [
+          "rgb(98,91,88)",
+          28
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(255,76,59)",
+          15
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgb(73,103,95)",
+          7
+        ],
+        [
+          "rgb(106,127,121)",
+          7
+        ],
+        [
+          "rgb(80,108,101)",
+          4
+        ],
+        [
+          "rgb(120,144,137)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(105,128,121)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "listening-scenario",
+      "route": "/listening?mode=scenario",
+      "file": "11-listening-scenario.jpg",
+      "heading": "Luyện đúng cảnh.Nói tự nhiên hơn.",
+      "href": "http://localhost:3103/listening?mode=scenario",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          86
+        ],
+        [
+          "rgb(111,129,124)",
+          32
+        ],
+        [
+          "rgb(255,76,59)",
+          18
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(98,91,88)",
+          14
+        ],
+        [
+          "rgb(70,95,88)",
+          8
+        ],
+        [
+          "rgb(169,104,11)",
+          6
+        ],
+        [
+          "rgb(168,99,8)",
+          5
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(10,52,46)",
+          1
+        ],
+        [
+          "rgb(85,107,101)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "practice",
+      "route": "/practice",
+      "file": "12-practice.jpg",
+      "heading": "Luyện đúng cảnh.Nói tự nhiên hơn.",
+      "href": "http://localhost:3103/listening?mode=scenario",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          86
+        ],
+        [
+          "rgb(111,129,124)",
+          32
+        ],
+        [
+          "rgb(255,76,59)",
+          18
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(98,91,88)",
+          14
+        ],
+        [
+          "rgb(70,95,88)",
+          8
+        ],
+        [
+          "rgb(169,104,11)",
+          6
+        ],
+        [
+          "rgb(168,99,8)",
+          5
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(10,52,46)",
+          1
+        ],
+        [
+          "rgb(85,107,101)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "games",
+      "route": "/games",
+      "file": "13-games.jpg",
+      "heading": "Trung tâm trò chơi Himi",
+      "href": "http://localhost:3103/games",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          72
+        ],
+        [
+          "rgb(85,112,104)",
+          28
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(255,76,59)",
+          10
+        ],
+        [
+          "rgb(98,91,88)",
+          8
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(113,131,124)",
+          1
+        ],
+        [
+          "rgb(100,119,111)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "videos",
+      "route": "/videos",
+      "file": "14-videos.jpg",
+      "heading": "Nghe dễ hơn.Nhớ lâu hơn.",
+      "href": "http://localhost:3103/videos",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          188
+        ],
+        [
+          "rgb(255,255,255)",
+          53
+        ],
+        [
+          "rgb(255,76,59)",
+          39
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(15,85,73)",
+          13
+        ],
+        [
+          "rgb(100,117,111)",
+          13
+        ],
+        [
+          "rgb(130,144,140)",
+          13
+        ],
+        [
+          "rgb(96,115,109)",
+          12
+        ],
+        [
+          "rgb(106,125,119)",
+          5
+        ],
+        [
+          "rgb(106,123,118)",
+          5
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "video-detail",
+      "route": "/videos/mua-do-o-cua-hang-tien-loi",
+      "file": "15-video-detail.jpg",
+      "heading": "Mua đồ ở cửa hàng tiện lợi",
+      "href": "http://localhost:3103/videos/mua-do-o-cua-hang-tien-loi",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          79
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(83,108,102)",
+          16
+        ],
+        [
+          "rgb(255,76,59)",
+          13
+        ],
+        [
+          "rgb(255,255,255)",
+          12
+        ],
+        [
+          "rgb(101,119,113)",
+          10
+        ],
+        [
+          "rgb(140,77,71)",
+          8
+        ],
+        [
+          "rgb(127,145,139)",
+          6
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          5
+        ],
+        [
+          "rgb(119,134,129)",
+          3
+        ],
+        [
+          "rgb(123,140,135)",
+          3
+        ],
+        [
+          "rgb(104,121,115)",
+          3
+        ]
+      ]
+    },
+    {
+      "name": "writing",
+      "route": "/writing",
+      "file": "16-writing.jpg",
+      "heading": "Chọn cấp độ.Viết từng nét thật chắc.",
+      "href": "http://localhost:3103/writing",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          120
+        ],
+        [
+          "rgb(116,134,129)",
+          18
+        ],
+        [
+          "rgb(110,129,124)",
+          18
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(98,91,88)",
+          8
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(255,76,59)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "writing-hsk-1",
+      "route": "/writing/hsk-1",
+      "file": "17-writing-hsk-1.jpg",
+      "heading": "Nét cơ bản và lời chào",
+      "href": "http://localhost:3103/writing/hsk-1",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          50
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(255,76,59)",
+          15
+        ],
+        [
+          "rgb(113,131,126)",
+          12
+        ],
+        [
+          "rgb(69,109,101)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "writing-practice",
+      "route": "/writing/hsk-1/practice",
+      "file": "18-writing-practice.jpg",
+      "heading": "Nét cơ bản và lời chào",
+      "href": "http://localhost:3103/writing/hsk-1/practice",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          118
+        ],
+        [
+          "rgb(102,122,116)",
+          17
+        ],
+        [
+          "rgb(255,76,59)",
+          14
+        ],
+        [
+          "rgb(106,126,121)",
+          11
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          7
+        ],
+        [
+          "rgb(118,144,138)",
+          5
+        ],
+        [
+          "rgb(132,146,142)",
+          5
+        ],
+        [
+          "rgb(97,119,113)",
+          3
+        ],
+        [
+          "rgb(155,112,27)",
+          3
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(110,129,125)",
+          2
+        ],
+        [
+          "rgb(71,112,105)",
+          2
+        ]
+      ]
+    },
+    {
+      "name": "vip",
+      "route": "/vip",
+      "file": "19-vip.jpg",
+      "heading": "Học liền mạch.Mở trọn hành trình.",
+      "href": "http://localhost:3103/vip",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          59
+        ],
+        [
+          "rgb(102,122,116)",
+          27
+        ],
+        [
+          "rgb(98,91,88)",
+          21
+        ],
+        [
+          "rgb(255,76,59)",
+          20
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgba(255,255,255,0.72)",
+          6
+        ],
+        [
+          "rgb(191,227,215)",
+          6
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgba(255,255,255,0.68)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "login",
+      "route": "/login",
+      "file": "20-login.jpg",
+      "heading": "Nói tiếngTrung trongđời sống thật",
+      "href": "http://localhost:3103/",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          38
+        ],
+        [
+          "rgb(102,122,116)",
+          26
+        ],
+        [
+          "rgb(9,47,42)",
+          9
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(255,76,59)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "register",
+      "route": "/register",
+      "file": "21-register.jpg",
+      "heading": "Nói tiếngTrung trongđời sống thật",
+      "href": "http://localhost:3103/",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          38
+        ],
+        [
+          "rgb(102,122,116)",
+          26
+        ],
+        [
+          "rgb(9,47,42)",
+          9
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(98,91,88)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(255,76,59)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "forgot-password",
+      "route": "/forgot-password",
+      "file": "22-forgot-password.jpg",
+      "heading": "Đặt lại mật khẩu",
+      "href": "http://localhost:3103/forgot-password",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgb(98,91,88)",
+          25
+        ],
+        [
+          "rgb(255,76,59)",
+          10
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "reset-password",
+      "route": "/reset-password",
+      "file": "23-reset-password.jpg",
+      "heading": "Chọn mật khẩu mới",
+      "href": "http://localhost:3103/reset-password",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(98,91,88)",
+          25
+        ],
+        [
+          "rgb(34,34,34)",
+          22
+        ],
+        [
+          "rgb(255,76,59)",
+          9
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "verify-email",
+      "route": "/verify-email",
+      "file": "24-verify-email.jpg",
+      "heading": "Kiểm tra hộp thư",
+      "href": "http://localhost:3103/verify-email",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgb(98,91,88)",
+          25
+        ],
+        [
+          "rgb(255,76,59)",
+          10
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "account",
+      "route": "/account",
+      "file": "25-account.jpg",
+      "heading": "Tài khoản của tôi",
+      "href": "http://localhost:3103/account",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(102,122,116)",
+          31
+        ],
+        [
+          "rgb(34,34,34)",
+          23
+        ],
+        [
+          "rgb(8,122,109)",
+          18
+        ],
+        [
+          "rgb(16,61,55)",
+          17
+        ],
+        [
+          "rgb(8,116,102)",
+          11
+        ],
+        [
+          "rgb(92,102,100)",
+          10
+        ],
+        [
+          "rgb(7,88,79)",
+          9
+        ],
+        [
+          "rgb(255,255,255)",
+          7
+        ],
+        [
+          "rgb(100,112,109)",
+          6
+        ],
+        [
+          "rgb(83,96,94)",
+          5
+        ],
+        [
+          "rgb(8,126,112)",
+          5
+        ],
+        [
+          "rgb(7,95,84)",
+          4
+        ]
+      ]
+    },
+    {
+      "name": "notifications",
+      "route": "/notifications",
+      "file": "26-notifications.jpg",
+      "heading": "Thông báo",
+      "href": "http://localhost:3103/notifications",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(102,122,116)",
+          31
+        ],
+        [
+          "rgb(34,34,34)",
+          28
+        ],
+        [
+          "rgb(255,76,59)",
+          16
+        ],
+        [
+          "rgb(11,113,101)",
+          10
+        ],
+        [
+          "rgb(98,91,88)",
+          5
+        ],
+        [
+          "rgb(11,121,108)",
+          4
+        ],
+        [
+          "rgb(255,118,24)",
+          2
+        ],
+        [
+          "rgb(82,106,100)",
+          2
+        ],
+        [
+          "rgb(255,255,255)",
+          1
+        ],
+        [
+          "rgb(9,47,42)",
+          1
+        ],
+        [
+          "rgb(92,112,106)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "privacy",
+      "route": "/privacy",
+      "file": "27-privacy.jpg",
+      "heading": "Chính sách bảo mật",
+      "href": "http://localhost:3103/privacy",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(98,91,88)",
+          29
+        ],
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "terms",
+      "route": "/terms",
+      "file": "28-terms.jpg",
+      "heading": "Điều khoản sử dụng",
+      "href": "http://localhost:3103/terms",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(98,91,88)",
+          29
+        ],
+        [
+          "rgb(34,34,34)",
+          26
+        ],
+        [
+          "rgba(255,255,255,0.6)",
+          9
+        ],
+        [
+          "color(srgb0.8266670.8266670.826667)",
+          7
+        ],
+        [
+          "rgb(255,255,255)",
+          6
+        ],
+        [
+          "rgb(255,76,59)",
+          4
+        ],
+        [
+          "rgba(255,255,255,0.4)",
+          3
+        ],
+        [
+          "rgba(255,255,255,0.58)",
+          1
+        ]
+      ]
+    },
+    {
+      "name": "admin-login",
+      "route": "/admin/login",
+      "file": "29-admin-login.jpg",
+      "heading": "Tổng quan vận hành",
+      "href": "http://localhost:3103/admin",
+      "overflowX": false,
+      "topTextColors": [
+        [
+          "rgb(34,34,34)",
+          152
+        ],
+        [
+          "rgb(146,151,160)",
+          40
+        ],
+        [
+          "rgb(112,118,128)",
+          35
+        ],
+        [
+          "rgb(255,76,59)",
+          28
+        ],
+        [
+          "rgb(86,92,101)",
+          28
+        ],
+        [
+          "rgb(48,52,58)",
+          21
+        ],
+        [
+          "rgb(98,91,88)",
+          13
+        ],
+        [
+          "rgb(77,83,93)",
+          11
+        ],
+        [
+          "rgb(155,159,167)",
+          9
+        ],
+        [
+          "color(srgb0.7573330.2519220.203922)",
+          8
+        ],
+        [
+          "rgb(65,70,78)",
+          8
+        ],
+        [
+          "rgb(109,114,123)",
+          8
+        ]
+      ]
+    }
+  ]
+}

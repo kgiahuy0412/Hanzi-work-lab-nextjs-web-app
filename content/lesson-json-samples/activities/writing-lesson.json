@@ -1,0 +1,108 @@
+{
+  "schemaVersion": "1.0.0",
+  "id": "writing-hsk1-greeting-characters",
+  "type": "writing-lesson",
+  "status": "review",
+  "metadata": {
+    "levelId": "hsk-1",
+    "titleVi": "Nét cơ bản và lời chào",
+    "summaryVi": "Quan sát bút thuận, tô theo và tự viết ba chữ nền tảng.",
+    "estimatedMinutes": 8,
+    "skills": [
+      "writing"
+    ],
+    "accessTier": "free"
+  },
+  "objectives": [
+    {
+      "id": "objective-watch-stroke-order",
+      "descriptionVi": "Nhận biết điểm bắt đầu và thứ tự nét của từng chữ."
+    },
+    {
+      "id": "objective-trace-foundation-characters",
+      "descriptionVi": "Tô đúng ba chữ 你, 好 và 我 theo nét mờ."
+    },
+    {
+      "id": "objective-write-from-memory",
+      "descriptionVi": "Tự viết ít nhất hai chữ mà không hiện nét mẫu."
+    }
+  ],
+  "characterItems": [
+    {
+      "id": "writing-item-ni",
+      "characterRef": "character:char-ni",
+      "sortOrder": 1,
+      "requiredModes": [
+        "watch",
+        "trace"
+      ],
+      "optionalModes": [
+        "quiz"
+      ],
+      "practicePromptVi": "Giữ phần 亻 hẹp và thẳng trước khi viết 尔."
+    },
+    {
+      "id": "writing-item-hao",
+      "characterRef": "character:char-hao",
+      "sortOrder": 2,
+      "requiredModes": [
+        "watch",
+        "trace"
+      ],
+      "optionalModes": [
+        "quiz"
+      ],
+      "practicePromptVi": "Cân bằng 女 bên trái và 子 bên phải."
+    },
+    {
+      "id": "writing-item-wo",
+      "characterRef": "character:char-wo",
+      "sortOrder": 3,
+      "requiredModes": [
+        "watch",
+        "trace"
+      ],
+      "optionalModes": [
+        "quiz"
+      ],
+      "practicePromptVi": "Theo dõi đủ bảy nét và giữ phần móc cuối rõ ràng."
+    }
+  ],
+  "writerConfig": {
+    "showOutlineInWatch": true,
+    "showOutlineInTrace": true,
+    "showOutlineInQuiz": false,
+    "traceLeniency": 1.35,
+    "quizLeniency": 0.95,
+    "hintAfterMistakes": {
+      "trace": 1,
+      "quiz": 3
+    },
+    "storeRawStrokeCoordinates": false,
+    "privacyNoteVi": "MVP chỉ lưu trạng thái hoàn thành, không lưu đường bút chi tiết của người học."
+  },
+  "completionRule": {
+    "type": "character-mode-completion",
+    "minimumTracedCharacters": 3,
+    "minimumQuizCharacters": 2
+  },
+  "progress": {
+    "aggregateFields": [
+      "completedCharacterIds",
+      "completedModesByCharacter",
+      "lastPracticedAt"
+    ],
+    "events": [
+      "writing-mode-started",
+      "character-traced",
+      "character-quiz-completed",
+      "writing-lesson-completed"
+    ]
+  },
+  "editorial": {
+    "contentVersion": 1,
+    "characterDataReviewStatus": "pending",
+    "languageReviewStatus": "pending",
+    "updatedAt": "2026-08-30T00:00:00.000Z"
+  }
+}

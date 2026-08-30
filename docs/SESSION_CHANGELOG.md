@@ -1,5 +1,25 @@
 # Nhật ký bàn giao phiên làm việc
 
+## 2026-08-29 — Chi tiết lộ trình cho 7 chuyên ngành
+
+### Phần đã thay đổi
+
+- Thêm route `/courses/[slug]` cho toàn bộ 7 chuyên ngành; thẻ khóa học tại `/courses` nay mở trang tổng quan lộ trình trước khi vào bài học.
+- Tạo mô hình lộ trình dùng dữ liệu khóa học thật: 24 bài được chia thành 4 chặng, đồng bộ bài đã hoàn thành, bài kế tiếp, thời lượng, tỷ lệ tiến độ và quyền VIP của người học.
+- Triển khai giao diện bám ảnh tham chiếu với timeline 4 chặng, chặng hiện tại mở 6 bài, trạng thái hoàn thành/đang học/khóa, CTA vào đúng bài, thẻ tổng quan và gợi ý từ Himi.
+- Bổ sung responsive desktop/mobile, trạng thái đăng nhập và liên kết nâng cấp VIP. Mobile không tràn ngang và CTA chính giữ vùng chạm cao 44 px.
+- Thêm test hồi quy cho mô hình tuần tự, rào VIP, fallback không database, liên kết từ danh mục và route tĩnh của cả 7 chuyên ngành.
+- Hoàn tất Design QA bằng ảnh trình duyệt desktop/mobile và hai ảnh đối chiếu trực tiếp với nguồn; kết quả không còn khác biệt P0/P1/P2.
+
+### Kiểm tra
+
+- Test riêng lộ trình: 4/4 passed.
+- HTTP smoke test: cả 7 route `/courses/[slug]` trả `200` và có giao diện lộ trình.
+- `npm run build`: passed; route động `/courses/:slug` xuất hiện trong output.
+- `npm run lint`: 0 errors; còn 1 warning không thuộc thay đổi này trong `tests/hsk-curriculum.test.mjs`.
+- `npm test`: 118/122 passed; 4 assertion cũ trong `tests/rendered-html.test.mjs` đang không khớp các màn hình Home/Games đã được thay đổi độc lập.
+- `npx tsc --noEmit`: còn 4 lỗi có sẵn trong `lib/admin-analytics-service.ts`; không có lỗi TypeScript từ các file lộ trình.
+
 ## 2026-08-10 — Staging Cloudflare và E2E xuyên suốt
 
 ### Phần đã thay đổi

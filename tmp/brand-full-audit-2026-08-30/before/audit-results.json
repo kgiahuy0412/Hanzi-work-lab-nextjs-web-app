@@ -1,0 +1,4777 @@
+[
+  {
+    "name": "01-home",
+    "path": "/",
+    "actualUrl": "http://[::1]:3103/",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/01-home.jpg",
+    "heading": "Nói tiếngTrung trongđời sống thật",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard home-portal-dashboard",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        255
+      ],
+      [
+        "rgb(101, 94, 91)",
+        203
+      ],
+      [
+        "rgb(9, 47, 42)",
+        118
+      ],
+      [
+        "rgb(0, 0, 0)",
+        69
+      ],
+      [
+        "rgb(255, 255, 255)",
+        40
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(98, 91, 88)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        7
+      ],
+      [
+        "rgb(255, 142, 45)",
+        7
+      ],
+      [
+        "rgb(255, 76, 59)",
+        7
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        5
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "color(srgb 1 0.875922 0.769412)",
+        4
+      ],
+      [
+        "color(srgb 1 0.298039 0.231373 / 0.16)",
+        4
+      ],
+      [
+        "color(srgb 0.133333 0.133333 0.133333 / 0.1)",
+        4
+      ],
+      [
+        "color(srgb 1 0.556863 0.176471 / 0.24)",
+        4
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.97)",
+        1
+      ],
+      [
+        "rgb(7, 11, 10)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "02-courses",
+    "path": "/courses",
+    "actualUrl": "http://[::1]:3103/courses",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/02-courses.jpg",
+    "heading": "Chọn chủ đề bạn muốn học",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "course-library-page hsk-curriculum-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        780
+      ],
+      [
+        "rgb(98, 91, 88)",
+        554
+      ],
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(0, 0, 0)",
+        202
+      ],
+      [
+        "rgb(232, 225, 222)",
+        136
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(255, 76, 59)",
+        59
+      ],
+      [
+        "rgb(255, 255, 255)",
+        55
+      ],
+      [
+        "rgba(255, 253, 247, 0.9)",
+        48
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgba(255, 255, 255, 0.9)",
+        8
+      ],
+      [
+        "rgb(237, 241, 238)",
+        8
+      ],
+      [
+        "rgba(5, 48, 42, 0.08)",
+        7
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        4
+      ],
+      [
+        "color(srgb 1 0.875922 0.769412)",
+        4
+      ],
+      [
+        "rgb(255, 142, 45)",
+        3
+      ],
+      [
+        "rgba(255, 255, 255, 0.97)",
+        2
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "03-hsk-curriculum",
+    "path": "/courses?view=hsk",
+    "actualUrl": "http://[::1]:3103/courses?view=hsk",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/03-hsk-curriculum.jpg",
+    "heading": "Lộ trình bài học HSK 1",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "course-library-page hsk-curriculum-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        579
+      ],
+      [
+        "rgb(101, 113, 123)",
+        469
+      ],
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(0, 0, 0)",
+        185
+      ],
+      [
+        "rgb(138, 147, 157)",
+        120
+      ],
+      [
+        "rgb(135, 145, 155)",
+        109
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(255, 255, 255)",
+        53
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        53
+      ],
+      [
+        "rgb(81, 91, 103)",
+        48
+      ],
+      [
+        "rgb(119, 128, 138)",
+        36
+      ],
+      [
+        "rgb(105, 118, 130)",
+        36
+      ],
+      [
+        "rgb(242, 244, 245)",
+        27
+      ],
+      [
+        "rgb(69, 102, 96)",
+        26
+      ],
+      [
+        "rgb(231, 233, 236)",
+        24
+      ],
+      [
+        "rgb(230, 232, 234)",
+        24
+      ],
+      [
+        "rgb(213, 238, 233)",
+        20
+      ],
+      [
+        "rgb(52, 66, 77)",
+        18
+      ],
+      [
+        "rgb(79, 109, 104)",
+        16
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(98, 91, 88)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ]
+    ]
+  },
+  {
+    "name": "04-course-roadmap",
+    "path": "/courses/van-phong-hanh-chinh",
+    "actualUrl": "http://[::1]:3103/courses/van-phong-hanh-chinh",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/04-course-roadmap.jpg",
+    "heading": "Lộ trình Văn phòng & hành chính",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "course-roadmap-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        311
+      ],
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(117, 130, 126)",
+        170
+      ],
+      [
+        "rgb(0, 0, 0)",
+        166
+      ],
+      [
+        "rgb(112, 122, 119)",
+        90
+      ],
+      [
+        "rgb(120, 131, 127)",
+        86
+      ],
+      [
+        "rgb(120, 144, 138)",
+        84
+      ],
+      [
+        "rgb(115, 129, 125)",
+        78
+      ],
+      [
+        "rgb(95, 111, 107)",
+        74
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(255, 255, 255)",
+        54
+      ],
+      [
+        "rgb(8, 121, 109)",
+        42
+      ],
+      [
+        "rgb(8, 120, 109)",
+        41
+      ],
+      [
+        "rgb(100, 116, 111)",
+        36
+      ],
+      [
+        "rgb(156, 167, 163)",
+        36
+      ],
+      [
+        "rgb(105, 121, 116)",
+        36
+      ],
+      [
+        "rgb(24, 63, 56)",
+        30
+      ],
+      [
+        "rgb(106, 123, 118)",
+        24
+      ],
+      [
+        "rgb(111, 129, 124)",
+        20
+      ],
+      [
+        "rgb(64, 90, 84)",
+        18
+      ],
+      [
+        "rgb(96, 113, 108)",
+        18
+      ],
+      [
+        "rgb(109, 124, 120)",
+        18
+      ]
+    ]
+  },
+  {
+    "name": "05-lesson-workspace",
+    "path": "/learn/van-phong-hanh-chinh?lesson=chao-hoi-tai-noi-lam-viec",
+    "actualUrl": "http://[::1]:3103/learn/van-phong-hanh-chinh?lesson=chao-hoi-tai-noi-lam-viec",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/05-lesson-workspace.jpg",
+    "heading": "Chào hỏi tại nơi làm việc",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "lesson-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        270
+      ],
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(9, 47, 42)",
+        136
+      ],
+      [
+        "rgb(0, 0, 0)",
+        111
+      ],
+      [
+        "rgb(255, 255, 255)",
+        99
+      ],
+      [
+        "rgb(255, 76, 59)",
+        83
+      ],
+      [
+        "rgb(98, 91, 88)",
+        68
+      ],
+      [
+        "rgb(0, 133, 119)",
+        26
+      ],
+      [
+        "rgb(232, 225, 222)",
+        14
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(113, 130, 125)",
+        12
+      ],
+      [
+        "rgb(213, 221, 216)",
+        12
+      ],
+      [
+        "rgb(207, 219, 213)",
+        8
+      ],
+      [
+        "rgb(221, 228, 223)",
+        8
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(7, 61, 53)",
+        6
+      ],
+      [
+        "rgb(0, 141, 125)",
+        6
+      ],
+      [
+        "rgb(83, 104, 98)",
+        6
+      ],
+      [
+        "rgb(112, 129, 124)",
+        6
+      ],
+      [
+        "rgb(16, 63, 55)",
+        6
+      ],
+      [
+        "rgb(103, 120, 115)",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "06-hsk-lesson",
+    "path": "/hsk/1/hsk-1-lam-quen-lan-dau",
+    "actualUrl": "http://[::1]:3103/hsk/1/hsk-1-lam-quen-lan-dau",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/06-hsk-lesson.jpg",
+    "heading": "Bài 1: Làm quen lần đầu",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "hsk-lesson-page",
+    "topColors": [
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(34, 34, 34)",
+        152
+      ],
+      [
+        "rgb(255, 255, 255)",
+        129
+      ],
+      [
+        "rgb(8, 111, 102)",
+        123
+      ],
+      [
+        "rgb(20, 60, 54)",
+        105
+      ],
+      [
+        "rgb(0, 0, 0)",
+        104
+      ],
+      [
+        "rgb(94, 113, 108)",
+        73
+      ],
+      [
+        "rgb(100, 120, 114)",
+        67
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(97, 120, 115)",
+        24
+      ],
+      [
+        "rgb(14, 143, 129)",
+        24
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(216, 233, 229)",
+        12
+      ],
+      [
+        "rgb(122, 137, 133)",
+        12
+      ],
+      [
+        "rgb(223, 230, 228)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ],
+      [
+        "rgb(200, 224, 218)",
+        8
+      ],
+      [
+        "rgb(207, 225, 221)",
+        8
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(103, 129, 123)",
+        6
+      ],
+      [
+        "rgb(108, 127, 121)",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "07-hsk-flashcard",
+    "path": "/hsk/1/hsk-1-lam-quen-lan-dau/flashcard",
+    "actualUrl": "http://[::1]:3103/hsk/1/hsk-1-lam-quen-lan-dau/flashcard",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/07-hsk-flashcard.jpg",
+    "heading": "Bài 1: Làm quen lần đầu",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "hsk-lesson-page",
+    "topColors": [
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(34, 34, 34)",
+        152
+      ],
+      [
+        "rgb(255, 255, 255)",
+        103
+      ],
+      [
+        "rgb(20, 60, 54)",
+        100
+      ],
+      [
+        "rgb(0, 0, 0)",
+        97
+      ],
+      [
+        "rgb(94, 113, 108)",
+        73
+      ],
+      [
+        "rgb(8, 111, 102)",
+        72
+      ],
+      [
+        "rgb(100, 120, 114)",
+        67
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(97, 120, 115)",
+        24
+      ],
+      [
+        "rgb(14, 143, 129)",
+        19
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(216, 233, 229)",
+        12
+      ],
+      [
+        "rgb(122, 137, 133)",
+        12
+      ],
+      [
+        "rgb(223, 230, 228)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ],
+      [
+        "rgb(207, 225, 221)",
+        8
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(103, 129, 123)",
+        6
+      ],
+      [
+        "rgb(108, 127, 121)",
+        6
+      ],
+      [
+        "rgb(116, 131, 127)",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "08-hsk-play",
+    "path": "/hsk/1/hsk-1-lam-quen-lan-dau/play",
+    "actualUrl": "http://[::1]:3103/hsk/1/hsk-1-lam-quen-lan-dau/play",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/08-hsk-play.jpg",
+    "heading": "Làm quen lần đầu",
+    "legacy": [],
+    "pageClass": "hsk-guided-main is-introduction",
+    "topColors": [
+      [
+        "rgb(101, 113, 110)",
+        212
+      ],
+      [
+        "rgb(8, 120, 97)",
+        129
+      ],
+      [
+        "rgb(255, 255, 255)",
+        66
+      ],
+      [
+        "rgb(37, 62, 58)",
+        64
+      ],
+      [
+        "rgb(0, 0, 0)",
+        60
+      ],
+      [
+        "rgb(122, 135, 131)",
+        33
+      ],
+      [
+        "rgb(53, 72, 67)",
+        27
+      ],
+      [
+        "rgb(109, 124, 120)",
+        24
+      ],
+      [
+        "rgb(82, 103, 98)",
+        22
+      ],
+      [
+        "rgb(9, 47, 42)",
+        18
+      ],
+      [
+        "rgb(217, 233, 228)",
+        16
+      ],
+      [
+        "rgb(104, 116, 112)",
+        12
+      ],
+      [
+        "rgb(124, 137, 133)",
+        12
+      ],
+      [
+        "rgb(18, 173, 127)",
+        8
+      ],
+      [
+        "rgb(84, 100, 95)",
+        6
+      ],
+      [
+        "rgb(28, 60, 54)",
+        6
+      ],
+      [
+        "rgb(98, 115, 111)",
+        6
+      ],
+      [
+        "rgb(217, 227, 224)",
+        4
+      ],
+      [
+        "rgb(251, 252, 251)",
+        3
+      ],
+      [
+        "rgba(255, 255, 255, 0.97)",
+        2
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "rgb(228, 233, 231)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "09-hsk-quiz",
+    "path": "/hsk/1/hsk-1-lam-quen-lan-dau/quiz",
+    "actualUrl": "http://[::1]:3103/hsk/1/hsk-1-lam-quen-lan-dau/quiz",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/09-hsk-quiz.jpg",
+    "heading": "Bài 1: Làm quen lần đầu",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "hsk-lesson-page",
+    "topColors": [
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(34, 34, 34)",
+        152
+      ],
+      [
+        "rgb(20, 60, 54)",
+        150
+      ],
+      [
+        "rgb(0, 0, 0)",
+        100
+      ],
+      [
+        "rgb(255, 255, 255)",
+        97
+      ],
+      [
+        "rgb(94, 113, 108)",
+        72
+      ],
+      [
+        "rgb(100, 120, 114)",
+        67
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(8, 111, 102)",
+        28
+      ],
+      [
+        "rgb(97, 120, 115)",
+        24
+      ],
+      [
+        "rgb(14, 143, 129)",
+        19
+      ],
+      [
+        "rgb(220, 229, 226)",
+        16
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(216, 233, 229)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(103, 129, 123)",
+        6
+      ],
+      [
+        "rgb(115, 130, 126)",
+        6
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        4
+      ]
+    ]
+  },
+  {
+    "name": "10-listening-hsk",
+    "path": "/listening",
+    "actualUrl": "http://[::1]:3103/listening",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/10-listening-hsk.jpg",
+    "heading": "Nghe rõ từng câu.Phản xạ tự nhiên hơn.",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard listening-studio",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        767
+      ],
+      [
+        "rgb(0, 0, 0)",
+        162
+      ],
+      [
+        "rgb(98, 91, 88)",
+        150
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(255, 76, 59)",
+        113
+      ],
+      [
+        "rgb(255, 255, 255)",
+        80
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(232, 225, 222)",
+        52
+      ],
+      [
+        "rgb(73, 103, 95)",
+        42
+      ],
+      [
+        "rgb(106, 127, 121)",
+        42
+      ],
+      [
+        "rgb(80, 108, 101)",
+        24
+      ],
+      [
+        "rgb(120, 144, 137)",
+        24
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(105, 128, 121)",
+        12
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        10
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(255, 142, 45)",
+        6
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "color(srgb 1 0.875922 0.769412)",
+        4
+      ],
+      [
+        "rgba(199, 220, 216, 0.82)",
+        4
+      ]
+    ]
+  },
+  {
+    "name": "11-listening-scenario",
+    "path": "/listening?mode=scenario",
+    "actualUrl": "http://[::1]:3103/listening?mode=scenario",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/11-listening-scenario.jpg",
+    "heading": "Luyện đúng cảnh.Nói tự nhiên hơn.",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard practice-dashboard listening-scenario-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        331
+      ],
+      [
+        "rgb(111, 129, 124)",
+        212
+      ],
+      [
+        "rgb(9, 47, 42)",
+        171
+      ],
+      [
+        "rgb(0, 0, 0)",
+        130
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(102, 122, 116)",
+        81
+      ],
+      [
+        "rgb(34, 68, 61)",
+        75
+      ],
+      [
+        "rgb(71, 99, 92)",
+        67
+      ],
+      [
+        "rgb(255, 255, 255)",
+        62
+      ],
+      [
+        "rgb(70, 95, 88)",
+        52
+      ],
+      [
+        "rgb(8, 115, 103)",
+        47
+      ],
+      [
+        "rgb(7, 94, 84)",
+        40
+      ],
+      [
+        "rgb(169, 104, 11)",
+        40
+      ],
+      [
+        "rgb(8, 117, 104)",
+        36
+      ],
+      [
+        "rgb(168, 99, 8)",
+        34
+      ],
+      [
+        "rgb(23, 78, 70)",
+        33
+      ],
+      [
+        "rgb(98, 91, 88)",
+        30
+      ],
+      [
+        "rgb(113, 129, 125)",
+        18
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(232, 225, 222)",
+        12
+      ],
+      [
+        "rgb(23, 63, 56)",
+        12
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "12-practice-redirect",
+    "path": "/practice",
+    "actualUrl": "http://[::1]:3103/listening?mode=scenario",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/12-practice-redirect.jpg",
+    "heading": "Luyện đúng cảnh.Nói tự nhiên hơn.",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard practice-dashboard listening-scenario-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        331
+      ],
+      [
+        "rgb(111, 129, 124)",
+        212
+      ],
+      [
+        "rgb(9, 47, 42)",
+        171
+      ],
+      [
+        "rgb(0, 0, 0)",
+        130
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(102, 122, 116)",
+        81
+      ],
+      [
+        "rgb(34, 68, 61)",
+        75
+      ],
+      [
+        "rgb(71, 99, 92)",
+        67
+      ],
+      [
+        "rgb(255, 255, 255)",
+        62
+      ],
+      [
+        "rgb(70, 95, 88)",
+        52
+      ],
+      [
+        "rgb(8, 115, 103)",
+        47
+      ],
+      [
+        "rgb(7, 94, 84)",
+        40
+      ],
+      [
+        "rgb(169, 104, 11)",
+        40
+      ],
+      [
+        "rgb(8, 117, 104)",
+        36
+      ],
+      [
+        "rgb(168, 99, 8)",
+        34
+      ],
+      [
+        "rgb(23, 78, 70)",
+        33
+      ],
+      [
+        "rgb(98, 91, 88)",
+        30
+      ],
+      [
+        "rgb(113, 129, 125)",
+        18
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(232, 225, 222)",
+        12
+      ],
+      [
+        "rgb(23, 63, 56)",
+        12
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ]
+    ]
+  },
+  {
+    "name": "13-games",
+    "path": "/games",
+    "actualUrl": "http://[::1]:3103/games",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/13-games.jpg",
+    "heading": "Trung tâm trò chơi Himi",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard game-center-dashboard",
+    "topColors": [
+      [
+        "rgb(101, 94, 91)",
+        210
+      ],
+      [
+        "rgb(85, 112, 104)",
+        182
+      ],
+      [
+        "rgb(22, 63, 56)",
+        180
+      ],
+      [
+        "rgb(34, 34, 34)",
+        152
+      ],
+      [
+        "rgb(9, 47, 42)",
+        132
+      ],
+      [
+        "rgb(0, 0, 0)",
+        112
+      ],
+      [
+        "rgb(255, 255, 255)",
+        75
+      ],
+      [
+        "rgb(104, 122, 115)",
+        47
+      ],
+      [
+        "rgb(11, 117, 106)",
+        29
+      ],
+      [
+        "rgba(255, 255, 255, 0.82)",
+        28
+      ],
+      [
+        "rgb(11, 113, 102)",
+        27
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(8, 120, 109)",
+        13
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(113, 131, 124)",
+        6
+      ],
+      [
+        "rgb(100, 119, 111)",
+        6
+      ],
+      [
+        "rgb(18, 63, 55)",
+        6
+      ],
+      [
+        "rgb(101, 118, 111)",
+        6
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ]
+    ]
+  },
+  {
+    "name": "14-videos",
+    "path": "/videos",
+    "actualUrl": "http://[::1]:3103/videos",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/14-videos.jpg",
+    "heading": "Nghe dễ hơn.Nhớ lâu hơn.",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "video-library-page",
+    "topColors": [
+      [
+        "rgb(11, 61, 53)",
+        617
+      ],
+      [
+        "rgb(255, 255, 255)",
+        359
+      ],
+      [
+        "rgb(0, 0, 0)",
+        285
+      ],
+      [
+        "rgb(34, 34, 34)",
+        260
+      ],
+      [
+        "rgb(8, 125, 112)",
+        260
+      ],
+      [
+        "rgb(23, 107, 91)",
+        235
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(15, 85, 73)",
+        78
+      ],
+      [
+        "rgb(100, 117, 111)",
+        78
+      ],
+      [
+        "rgb(130, 144, 140)",
+        78
+      ],
+      [
+        "rgb(96, 115, 109)",
+        72
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(221, 230, 225)",
+        52
+      ],
+      [
+        "rgba(255, 255, 255, 0.8)",
+        52
+      ],
+      [
+        "rgb(234, 245, 239)",
+        39
+      ],
+      [
+        "rgb(106, 123, 118)",
+        33
+      ],
+      [
+        "rgb(106, 125, 119)",
+        29
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        17
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(220, 235, 226)",
+        13
+      ],
+      [
+        "rgb(255, 100, 92)",
+        13
+      ],
+      [
+        "rgb(230, 236, 232)",
+        13
+      ]
+    ]
+  },
+  {
+    "name": "15-video-detail",
+    "path": "/videos/mua-do-o-cua-hang-tien-loi",
+    "actualUrl": "http://[::1]:3103/videos/mua-do-o-cua-hang-tien-loi",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/15-video-detail.jpg",
+    "heading": "Mua đồ ở cửa hàng tiện lợi",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "video-detail-page is-study-studio",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        242
+      ],
+      [
+        "rgb(11, 61, 53)",
+        203
+      ],
+      [
+        "rgb(0, 0, 0)",
+        139
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(255, 255, 255)",
+        111
+      ],
+      [
+        "rgb(83, 108, 102)",
+        94
+      ],
+      [
+        "rgb(9, 47, 42)",
+        64
+      ],
+      [
+        "rgb(101, 119, 113)",
+        60
+      ],
+      [
+        "rgb(8, 127, 114)",
+        46
+      ],
+      [
+        "rgb(140, 77, 71)",
+        46
+      ],
+      [
+        "rgb(127, 145, 139)",
+        42
+      ],
+      [
+        "rgb(23, 107, 91)",
+        40
+      ],
+      [
+        "rgb(18, 63, 55)",
+        30
+      ],
+      [
+        "rgb(12, 92, 82)",
+        30
+      ],
+      [
+        "rgb(119, 134, 129)",
+        18
+      ],
+      [
+        "rgb(123, 140, 135)",
+        18
+      ],
+      [
+        "rgb(104, 121, 115)",
+        18
+      ],
+      [
+        "rgb(8, 125, 112)",
+        18
+      ],
+      [
+        "rgb(219, 229, 223)",
+        16
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(223, 231, 227)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ]
+    ]
+  },
+  {
+    "name": "16-writing",
+    "path": "/writing",
+    "actualUrl": "http://[::1]:3103/writing",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/16-writing.jpg",
+    "heading": "Chọn cấp độ.Viết từng nét thật chắc.",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard writing-catalog-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        260
+      ],
+      [
+        "rgb(9, 47, 42)",
+        228
+      ],
+      [
+        "rgb(255, 255, 255)",
+        196
+      ],
+      [
+        "rgb(18, 61, 54)",
+        192
+      ],
+      [
+        "rgb(0, 0, 0)",
+        144
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(116, 134, 129)",
+        120
+      ],
+      [
+        "rgb(110, 129, 124)",
+        120
+      ],
+      [
+        "rgb(101, 123, 118)",
+        42
+      ],
+      [
+        "rgba(20, 83, 72, 0.11)",
+        24
+      ],
+      [
+        "rgb(243, 248, 245)",
+        24
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ],
+      [
+        "rgb(12, 129, 116)",
+        8
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgb(98, 91, 88)",
+        6
+      ],
+      [
+        "rgba(255, 255, 255, 0.95)",
+        6
+      ],
+      [
+        "rgb(237, 240, 237)",
+        6
+      ],
+      [
+        "rgb(255, 87, 77)",
+        6
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        4
+      ]
+    ]
+  },
+  {
+    "name": "17-writing-topic",
+    "path": "/writing/hsk-1",
+    "actualUrl": "http://[::1]:3103/writing/hsk-1",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/17-writing-topic.jpg",
+    "heading": "Nét cơ bản và lời chào",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard writing-lesson-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        242
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(9, 47, 42)",
+        108
+      ],
+      [
+        "rgb(12, 129, 116)",
+        101
+      ],
+      [
+        "rgb(113, 131, 126)",
+        79
+      ],
+      [
+        "rgb(0, 0, 0)",
+        76
+      ],
+      [
+        "rgb(255, 255, 255)",
+        60
+      ],
+      [
+        "rgb(18, 61, 54)",
+        36
+      ],
+      [
+        "rgba(12, 129, 116, 0.11)",
+        24
+      ],
+      [
+        "rgb(69, 109, 101)",
+        18
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(101, 123, 118)",
+        12
+      ],
+      [
+        "rgb(232, 225, 222)",
+        8
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "rgba(255, 255, 255, 0.8)",
+        6
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        4
+      ],
+      [
+        "color(srgb 1 0.875922 0.769412)",
+        4
+      ],
+      [
+        "rgba(20, 83, 72, 0.11)",
+        4
+      ],
+      [
+        "rgb(255, 142, 45)",
+        3
+      ],
+      [
+        "rgba(255, 255, 255, 0.97)",
+        2
+      ]
+    ]
+  },
+  {
+    "name": "18-writing-practice",
+    "path": "/writing/hsk-1/practice",
+    "actualUrl": "http://[::1]:3103/writing/hsk-1/practice",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/18-writing-practice.jpg",
+    "heading": "Nét cơ bản và lời chào",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": "learner-dashboard himi-writing-studio",
+    "topColors": [
+      [
+        "rgb(9, 47, 42)",
+        351
+      ],
+      [
+        "rgb(34, 34, 34)",
+        242
+      ],
+      [
+        "rgb(18, 61, 54)",
+        145
+      ],
+      [
+        "rgb(0, 0, 0)",
+        144
+      ],
+      [
+        "rgb(101, 94, 91)",
+        120
+      ],
+      [
+        "rgb(12, 129, 116)",
+        88
+      ],
+      [
+        "rgb(106, 126, 121)",
+        83
+      ],
+      [
+        "rgb(255, 255, 255)",
+        78
+      ],
+      [
+        "rgb(233, 67, 59)",
+        51
+      ],
+      [
+        "rgb(132, 146, 142)",
+        30
+      ],
+      [
+        "rgb(118, 144, 138)",
+        29
+      ],
+      [
+        "rgba(20, 83, 72, 0.11)",
+        24
+      ],
+      [
+        "rgb(97, 119, 113)",
+        20
+      ],
+      [
+        "rgb(229, 232, 227)",
+        20
+      ],
+      [
+        "rgb(155, 112, 27)",
+        20
+      ],
+      [
+        "rgba(255, 87, 77, 0.17)",
+        16
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(110, 129, 125)",
+        12
+      ],
+      [
+        "rgb(71, 112, 105)",
+        12
+      ],
+      [
+        "rgb(109, 128, 123)",
+        12
+      ],
+      [
+        "rgb(255, 87, 77)",
+        9
+      ],
+      [
+        "rgb(255, 90, 79)",
+        9
+      ]
+    ]
+  },
+  {
+    "name": "19-vip",
+    "path": "/vip",
+    "actualUrl": "http://[::1]:3103/vip",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/19-vip.jpg",
+    "heading": "Học liền mạch.Mở trọn hành trình.",
+    "legacy": [
+      {
+        "property": "color",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderTopColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderRightColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderBottomColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "borderLeftColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      },
+      {
+        "property": "outlineColor",
+        "selector": "strong",
+        "text": "Himi",
+        "value": "rgb(255, 91, 85)"
+      }
+    ],
+    "pageClass": null,
+    "topColors": [
+      [
+        "rgb(101, 94, 91)",
+        232
+      ],
+      [
+        "rgb(9, 47, 42)",
+        168
+      ],
+      [
+        "rgb(34, 34, 34)",
+        154
+      ],
+      [
+        "rgb(255, 76, 59)",
+        150
+      ],
+      [
+        "rgb(98, 91, 88)",
+        111
+      ],
+      [
+        "rgb(0, 0, 0)",
+        101
+      ],
+      [
+        "rgb(255, 255, 255)",
+        62
+      ],
+      [
+        "rgb(191, 227, 215)",
+        42
+      ],
+      [
+        "rgba(255, 255, 255, 0.72)",
+        32
+      ],
+      [
+        "rgb(232, 225, 222)",
+        23
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        14
+      ],
+      [
+        "rgb(255, 118, 24)",
+        14
+      ],
+      [
+        "rgb(18, 61, 54)",
+        6
+      ],
+      [
+        "rgb(255, 91, 85)",
+        6
+      ],
+      [
+        "color(srgb 1 0.875922 0.769412)",
+        5
+      ],
+      [
+        "rgb(230, 235, 232)",
+        4
+      ],
+      [
+        "color(srgb 1 0.858196 0.736471)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.92)",
+        4
+      ],
+      [
+        "rgba(199, 220, 216, 0.82)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.15)",
+        4
+      ],
+      [
+        "rgb(255, 142, 45)",
+        3
+      ],
+      [
+        "rgba(255, 255, 255, 0.97)",
+        2
+      ]
+    ]
+  },
+  {
+    "name": "20-login",
+    "path": "/login",
+    "actualUrl": "http://[::1]:3103/login",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/20-login.jpg",
+    "heading": "Sẵn sàng cho ca học hôm nay?",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion auth-page-login-scene",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        147
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(0, 0, 0)",
+        33
+      ],
+      [
+        "rgb(98, 91, 88)",
+        29
+      ],
+      [
+        "rgb(255, 76, 59)",
+        23
+      ],
+      [
+        "rgb(18, 63, 56)",
+        14
+      ],
+      [
+        "rgb(216, 225, 221)",
+        8
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        4
+      ],
+      [
+        "rgba(25, 99, 84, 0.16)",
+        4
+      ],
+      [
+        "rgba(210, 152, 111, 0.24)",
+        4
+      ],
+      [
+        "rgb(255, 255, 255)",
+        2
+      ],
+      [
+        "rgba(255, 255, 255, 0.9)",
+        2
+      ],
+      [
+        "rgb(255, 250, 240)",
+        1
+      ],
+      [
+        "rgba(255, 252, 244, 0.82)",
+        1
+      ],
+      [
+        "rgba(255, 253, 247, 0.984)",
+        1
+      ],
+      [
+        "rgb(231, 232, 226)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "21-register",
+    "path": "/register",
+    "actualUrl": "http://[::1]:3103/register",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/21-register.jpg",
+    "heading": "Tạo tài khoản học",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion auth-page-login-scene",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        187
+      ],
+      [
+        "rgb(114, 145, 136)",
+        98
+      ],
+      [
+        "rgb(0, 0, 0)",
+        38
+      ],
+      [
+        "rgb(255, 76, 59)",
+        17
+      ],
+      [
+        "rgb(98, 91, 88)",
+        17
+      ],
+      [
+        "rgb(216, 225, 221)",
+        16
+      ],
+      [
+        "rgb(18, 63, 56)",
+        14
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        4
+      ],
+      [
+        "rgba(25, 99, 84, 0.16)",
+        4
+      ],
+      [
+        "rgba(210, 152, 111, 0.24)",
+        4
+      ],
+      [
+        "rgba(255, 255, 255, 0.9)",
+        4
+      ],
+      [
+        "rgb(255, 255, 255)",
+        2
+      ],
+      [
+        "rgb(255, 250, 240)",
+        1
+      ],
+      [
+        "rgba(255, 252, 244, 0.82)",
+        1
+      ],
+      [
+        "rgba(255, 253, 247, 0.984)",
+        1
+      ],
+      [
+        "rgb(231, 232, 226)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "22-forgot-password",
+    "path": "/forgot-password",
+    "actualUrl": "http://[::1]:3103/forgot-password",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/22-forgot-password.jpg",
+    "heading": "Đặt lại mật khẩu",
+    "legacy": [],
+    "pageClass": "auth-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        125
+      ],
+      [
+        "rgb(255, 76, 59)",
+        74
+      ],
+      [
+        "rgb(0, 0, 0)",
+        64
+      ],
+      [
+        "rgb(98, 91, 88)",
+        63
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        38
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(232, 225, 222)",
+        4
+      ],
+      [
+        "rgb(213, 223, 218)",
+        4
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.1)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "23-reset-password",
+    "path": "/reset-password",
+    "actualUrl": "http://[::1]:3103/reset-password",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/23-reset-password.jpg",
+    "heading": "Chọn mật khẩu mới",
+    "legacy": [],
+    "pageClass": "auth-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        109
+      ],
+      [
+        "rgb(255, 76, 59)",
+        63
+      ],
+      [
+        "rgb(98, 91, 88)",
+        63
+      ],
+      [
+        "rgb(0, 0, 0)",
+        60
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        37
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(232, 225, 222)",
+        4
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.1)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "24-verify-email",
+    "path": "/verify-email",
+    "actualUrl": "http://[::1]:3103/verify-email",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/24-verify-email.jpg",
+    "heading": "Kiểm tra hộp thư",
+    "legacy": [],
+    "pageClass": "auth-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        125
+      ],
+      [
+        "rgb(255, 76, 59)",
+        69
+      ],
+      [
+        "rgb(0, 0, 0)",
+        64
+      ],
+      [
+        "rgb(98, 91, 88)",
+        63
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        38
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(232, 225, 222)",
+        4
+      ],
+      [
+        "rgb(213, 223, 218)",
+        4
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "color(srgb 1 0.875922 0.769412)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.1)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "25-account",
+    "path": "/account",
+    "actualUrl": "http://[::1]:3103/login?returnTo=/account&error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/25-account.jpg",
+    "heading": "Sẵn sàng cho ca học hôm nay?",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion auth-page-login-scene",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        147
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(0, 0, 0)",
+        34
+      ],
+      [
+        "rgb(98, 91, 88)",
+        29
+      ],
+      [
+        "rgb(255, 76, 59)",
+        23
+      ],
+      [
+        "rgb(18, 63, 56)",
+        14
+      ],
+      [
+        "rgb(216, 225, 221)",
+        8
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        4
+      ],
+      [
+        "rgba(25, 99, 84, 0.16)",
+        4
+      ],
+      [
+        "rgba(210, 152, 111, 0.24)",
+        4
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(255, 255, 255)",
+        2
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(255, 255, 255, 0.9)",
+        2
+      ],
+      [
+        "rgb(255, 250, 240)",
+        1
+      ],
+      [
+        "rgba(255, 252, 244, 0.82)",
+        1
+      ],
+      [
+        "rgba(255, 253, 247, 0.984)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(231, 232, 226)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "26-notifications",
+    "path": "/notifications",
+    "actualUrl": "http://[::1]:3103/login?returnTo=%2Fnotifications",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/26-notifications.jpg",
+    "heading": "Sẵn sàng cho ca học hôm nay?",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion auth-page-login-scene",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        147
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(0, 0, 0)",
+        33
+      ],
+      [
+        "rgb(98, 91, 88)",
+        29
+      ],
+      [
+        "rgb(255, 76, 59)",
+        23
+      ],
+      [
+        "rgb(18, 63, 56)",
+        14
+      ],
+      [
+        "rgb(216, 225, 221)",
+        8
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        4
+      ],
+      [
+        "rgba(25, 99, 84, 0.16)",
+        4
+      ],
+      [
+        "rgba(210, 152, 111, 0.24)",
+        4
+      ],
+      [
+        "rgb(255, 255, 255)",
+        2
+      ],
+      [
+        "rgba(255, 255, 255, 0.9)",
+        2
+      ],
+      [
+        "rgb(255, 250, 240)",
+        1
+      ],
+      [
+        "rgba(255, 252, 244, 0.82)",
+        1
+      ],
+      [
+        "rgba(255, 253, 247, 0.984)",
+        1
+      ],
+      [
+        "rgb(231, 232, 226)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "27-privacy",
+    "path": "/privacy",
+    "actualUrl": "http://[::1]:3103/privacy",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/27-privacy.jpg",
+    "heading": "Chính sách bảo mật",
+    "legacy": [],
+    "pageClass": "legal-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        69
+      ],
+      [
+        "rgb(0, 0, 0)",
+        66
+      ],
+      [
+        "rgb(21, 58, 52)",
+        63
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(98, 91, 88)",
+        51
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        37
+      ],
+      [
+        "rgb(86, 106, 100)",
+        30
+      ],
+      [
+        "rgb(255, 76, 59)",
+        17
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        8
+      ],
+      [
+        "rgb(11, 121, 108)",
+        6
+      ],
+      [
+        "rgb(94, 113, 108)",
+        6
+      ],
+      [
+        "rgb(8, 117, 104)",
+        6
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(228, 234, 230)",
+        5
+      ],
+      [
+        "rgb(219, 229, 223)",
+        4
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.1)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "28-terms",
+    "path": "/terms",
+    "actualUrl": "http://[::1]:3103/terms",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/28-terms.jpg",
+    "heading": "Điều khoản sử dụng",
+    "legacy": [],
+    "pageClass": "legal-page",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        69
+      ],
+      [
+        "rgb(0, 0, 0)",
+        66
+      ],
+      [
+        "rgb(21, 58, 52)",
+        63
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(98, 91, 88)",
+        51
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        37
+      ],
+      [
+        "rgb(86, 106, 100)",
+        30
+      ],
+      [
+        "rgb(255, 76, 59)",
+        17
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        8
+      ],
+      [
+        "rgb(11, 121, 108)",
+        6
+      ],
+      [
+        "rgb(94, 113, 108)",
+        6
+      ],
+      [
+        "rgb(8, 117, 104)",
+        6
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(228, 234, 230)",
+        5
+      ],
+      [
+        "rgb(219, 229, 223)",
+        4
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.1)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "29-admin-login",
+    "path": "/admin/login",
+    "actualUrl": "http://[::1]:3103/admin/login",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/29-admin-login.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        73
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.1)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "30-admin-dashboard",
+    "path": "/admin",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/30-admin-dashboard.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "31-admin-analytics",
+    "path": "/admin/analytics",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/31-admin-analytics.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "32-admin-courses",
+    "path": "/admin/courses",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/32-admin-courses.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "33-admin-course-detail",
+    "path": "/admin/courses/demo",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/33-admin-course-detail.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "34-admin-module-detail",
+    "path": "/admin/modules/demo",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/34-admin-module-detail.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "35-admin-lesson-detail",
+    "path": "/admin/lessons/demo",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/35-admin-lesson-detail.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "36-admin-practice",
+    "path": "/admin/practice",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required&returnTo=/admin/practice",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/36-admin-practice.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "37-admin-practice-industry",
+    "path": "/admin/practice/industries/demo",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required&returnTo=/admin/practice",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/37-admin-practice-industry.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "38-admin-practice-scenario",
+    "path": "/admin/practice/scenarios/demo",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required&returnTo=/admin/practice",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/38-admin-practice-scenario.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "39-admin-subscriptions",
+    "path": "/admin/subscriptions",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/39-admin-subscriptions.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "40-admin-team",
+    "path": "/admin/team",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/40-admin-team.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "41-admin-users",
+    "path": "/admin/users",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/41-admin-users.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "42-admin-vocabulary",
+    "path": "/admin/vocabulary",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/42-admin-vocabulary.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  },
+  {
+    "name": "43-admin-vocabulary-detail",
+    "path": "/admin/vocabulary/demo",
+    "actualUrl": "http://[::1]:3103/admin/login?error=required",
+    "shotPath": "tmp/brand-full-audit-2026-08-30/before/43-admin-vocabulary-detail.jpg",
+    "heading": "Đăng nhập quản trị",
+    "legacy": [],
+    "pageClass": "auth-page auth-gsap-motion",
+    "topColors": [
+      [
+        "rgb(34, 34, 34)",
+        163
+      ],
+      [
+        "rgb(0, 0, 0)",
+        74
+      ],
+      [
+        "rgb(255, 76, 59)",
+        73
+      ],
+      [
+        "rgb(98, 91, 88)",
+        69
+      ],
+      [
+        "rgba(255, 255, 255, 0.6)",
+        54
+      ],
+      [
+        "rgb(114, 145, 136)",
+        49
+      ],
+      [
+        "rgb(216, 233, 228)",
+        42
+      ],
+      [
+        "rgb(255, 255, 255)",
+        39
+      ],
+      [
+        "rgba(255, 255, 255, 0.4)",
+        17
+      ],
+      [
+        "rgba(34, 34, 34, 0.08)",
+        12
+      ],
+      [
+        "rgb(213, 223, 218)",
+        8
+      ],
+      [
+        "rgba(255, 255, 255, 0.58)",
+        6
+      ],
+      [
+        "rgb(239, 197, 189)",
+        4
+      ],
+      [
+        "rgb(232, 225, 222)",
+        3
+      ],
+      [
+        "rgb(139, 63, 53)",
+        2
+      ],
+      [
+        "rgba(251, 250, 245, 0.9)",
+        1
+      ],
+      [
+        "rgba(223, 232, 226, 0.85)",
+        1
+      ],
+      [
+        "rgba(255, 255, 255, 0.94)",
+        1
+      ],
+      [
+        "color(srgb 0.757333 0.251922 0.203922)",
+        1
+      ],
+      [
+        "color(srgb 1 0.957882 0.953882)",
+        1
+      ],
+      [
+        "rgb(255, 242, 239)",
+        1
+      ],
+      [
+        "rgb(13, 52, 46)",
+        1
+      ]
+    ]
+  }
+]
