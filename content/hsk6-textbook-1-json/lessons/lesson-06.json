@@ -1,0 +1,131 @@
+{
+  "id": "hsk6t1-lesson-06",
+  "number": 6,
+  "unitId": "hsk6t1-unit-02",
+  "titleZh": "当好职场插班生",
+  "titleVi": "Hãy là học sinh giỏi tại nơi làm việc",
+  "sourcePdfPages": {
+    "start": 65,
+    "end": 73
+  },
+  "sourcePrintedPages": {
+    "start": 65,
+    "end": 73
+  },
+  "audioTracks": [
+    "06-1",
+    "06-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 65,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1 当你到了一个新环境时（比如转学到一个新的班级、刚加入一个新的球队或"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 66,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文 当好职场插班生 （785字） 06-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 68,
+      "rowIndex": 2,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 70,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 72,
+      "rowIndex": 28,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 73,
+      "rowIndex": 2,
+      "matchedTextOcr": "扩展 词汇：熟悉下列词语搭配 当好职场插班生"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-06-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-06-01",
+    "hsk6t1-annotation-06-01",
+    "hsk6t1-practice-06-01",
+    "hsk6t1-application-06-01",
+    "hsk6t1-extension-06-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0039",
+    "hsk6t1-lexeme-0059",
+    "hsk6t1-lexeme-0068",
+    "hsk6t1-lexeme-0101",
+    "hsk6t1-lexeme-0123",
+    "hsk6t1-lexeme-0125",
+    "hsk6t1-lexeme-0127",
+    "hsk6t1-lexeme-0135",
+    "hsk6t1-lexeme-0140",
+    "hsk6t1-lexeme-0145",
+    "hsk6t1-lexeme-0146",
+    "hsk6t1-lexeme-0148",
+    "hsk6t1-lexeme-0155",
+    "hsk6t1-lexeme-0196",
+    "hsk6t1-lexeme-0210",
+    "hsk6t1-lexeme-0215",
+    "hsk6t1-lexeme-0242",
+    "hsk6t1-lexeme-0280",
+    "hsk6t1-lexeme-0296",
+    "hsk6t1-lexeme-0307",
+    "hsk6t1-lexeme-0316",
+    "hsk6t1-lexeme-0318",
+    "hsk6t1-lexeme-0358",
+    "hsk6t1-lexeme-0364",
+    "hsk6t1-lexeme-0367",
+    "hsk6t1-lexeme-0381",
+    "hsk6t1-lexeme-0428",
+    "hsk6t1-lexeme-0440",
+    "hsk6t1-lexeme-0462",
+    "hsk6t1-lexeme-0472",
+    "hsk6t1-lexeme-0508",
+    "hsk6t1-lexeme-0538",
+    "hsk6t1-lexeme-0550",
+    "hsk6t1-lexeme-0571",
+    "hsk6t1-lexeme-0589",
+    "hsk6t1-lexeme-0593",
+    "hsk6t1-lexeme-0594",
+    "hsk6t1-lexeme-0648",
+    "hsk6t1-lexeme-0662",
+    "hsk6t1-lexeme-0698",
+    "hsk6t1-lexeme-0743",
+    "hsk6t1-lexeme-0812",
+    "hsk6t1-lexeme-0844",
+    "hsk6t1-lexeme-0846",
+    "hsk6t1-lexeme-0877"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-009"
+  ],
+  "vocabularyCount": 45,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 46,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

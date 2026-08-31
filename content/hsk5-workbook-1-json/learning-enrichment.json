@@ -1,0 +1,193 @@
+{
+  "status": "editorially-enriched-for-learning-ui",
+  "unitTitlesVi": {
+    "hsk5w1-unit-01": "Hiểu cuộc sống",
+    "hsk5w1-unit-02": "Bàn chuyện xưa và nay",
+    "hsk5w1-unit-03": "Lắng nghe câu chuyện",
+    "hsk5w1-unit-04": "Đến gần khoa học",
+    "hsk5w1-unit-05": "Nhìn ra thế giới",
+    "hsk5w1-unit-06": "Tu dưỡng bản thân"
+  },
+  "lessons": {
+    "hsk5w1-lesson-01": {
+      "titleVi": "Những chi tiết của tình yêu",
+      "vocabulary": [
+        { "hanzi": "等待", "pinyin": "děng dài", "meaningVi": "Chờ đợi" },
+        { "hanzi": "抱怨", "pinyin": "bào yuàn", "meaningVi": "Phàn nàn" },
+        { "hanzi": "对比", "pinyin": "duì bǐ", "meaningVi": "Đối chiếu, so sánh" },
+        { "hanzi": "如何", "pinyin": "rú hé", "meaningVi": "Như thế nào" },
+        { "hanzi": "不耐烦", "pinyin": "bù nài fán", "meaningVi": "Mất kiên nhẫn" }
+      ]
+    },
+    "hsk5w1-lesson-02": {
+      "titleVi": "Để lại một chùm chìa khóa cho cha mẹ",
+      "vocabulary": [
+        { "hanzi": "装修", "pinyin": "zhuāng xiū", "meaningVi": "Sửa sang, trang trí nội thất" },
+        { "hanzi": "以来", "pinyin": "yǐ lái", "meaningVi": "Kể từ" },
+        { "hanzi": "卧室", "pinyin": "wò shì", "meaningVi": "Phòng ngủ" },
+        { "hanzi": "想象", "pinyin": "xiǎng xiàng", "meaningVi": "Tưởng tượng" },
+        { "hanzi": "亮", "pinyin": "liàng", "meaningVi": "Sáng" }
+      ]
+    },
+    "hsk5w1-lesson-03": {
+      "titleVi": "Cuộc đời có lựa chọn, mọi thứ đều có thể thay đổi",
+      "vocabulary": [
+        { "hanzi": "撞", "pinyin": "zhuàng", "meaningVi": "Va, đâm vào" },
+        { "hanzi": "发愁", "pinyin": "fā chóu", "meaningVi": "Lo lắng, buồn rầu" },
+        { "hanzi": "盼望", "pinyin": "pàn wàng", "meaningVi": "Mong đợi" },
+        { "hanzi": "太太", "pinyin": "tài tai", "meaningVi": "Vợ, bà" },
+        { "hanzi": "未来", "pinyin": "wèi lái", "meaningVi": "Tương lai" }
+      ]
+    },
+    "hsk5w1-lesson-04": {
+      "titleVi": "Tử Lộ cõng gạo",
+      "vocabulary": [
+        { "hanzi": "孝顺", "pinyin": "xiào shùn", "meaningVi": "Hiếu thuận" },
+        { "hanzi": "惭愧", "pinyin": "cán kuì", "meaningVi": "Hổ thẹn, xấu hổ" },
+        { "hanzi": "满足", "pinyin": "mǎn zú", "meaningVi": "Thỏa mãn, đáp ứng" },
+        { "hanzi": "决心", "pinyin": "jué xīn", "meaningVi": "Quyết tâm" },
+        { "hanzi": "成就", "pinyin": "chéng jiù", "meaningVi": "Thành tựu" }
+      ]
+    },
+    "hsk5w1-lesson-05": {
+      "titleVi": "Nước suối Tế Nam",
+      "vocabulary": [
+        { "hanzi": "传说", "pinyin": "chuán shuō", "meaningVi": "Truyền thuyết" },
+        { "hanzi": "流传", "pinyin": "liú chuán", "meaningVi": "Lưu truyền" },
+        { "hanzi": "悠久", "pinyin": "yōu jiǔ", "meaningVi": "Lâu đời" },
+        { "hanzi": "优美", "pinyin": "yōu měi", "meaningVi": "Đẹp, tao nhã" },
+        { "hanzi": "充满", "pinyin": "chōng mǎn", "meaningVi": "Tràn đầy" }
+      ]
+    },
+    "hsk5w1-lesson-06": {
+      "titleVi": "Nguồn gốc đêm giao thừa",
+      "vocabulary": [
+        { "hanzi": "节日", "pinyin": "jié rì", "meaningVi": "Ngày lễ" },
+        { "hanzi": "意义", "pinyin": "yì yì", "meaningVi": "Ý nghĩa" },
+        { "hanzi": "表达", "pinyin": "biǎo dá", "meaningVi": "Biểu đạt" },
+        { "hanzi": "风俗", "pinyin": "fēng sú", "meaningVi": "Phong tục" },
+        { "hanzi": "纷纷", "pinyin": "fēn fēn", "meaningVi": "Lần lượt, liên tiếp" }
+      ]
+    },
+    "hsk5w1-lesson-07": {
+      "titleVi": "Hai câu chuyện thành ngữ",
+      "vocabulary": [
+        { "hanzi": "智慧", "pinyin": "zhì huì", "meaningVi": "Trí tuệ" },
+        { "hanzi": "尽力", "pinyin": "jìn lì", "meaningVi": "Cố gắng hết sức" },
+        { "hanzi": "善于", "pinyin": "shàn yú", "meaningVi": "Giỏi về" },
+        { "hanzi": "反应", "pinyin": "fǎn yìng", "meaningVi": "Phản ứng" },
+        { "hanzi": "分别", "pinyin": "fēn bié", "meaningVi": "Phân biệt; lần lượt" }
+      ]
+    },
+    "hsk5w1-lesson-08": {
+      "titleVi": "Nghĩa xưa và nay của “sáng ba chiều bốn”",
+      "vocabulary": [
+        { "hanzi": "相处", "pinyin": "xiāng chǔ", "meaningVi": "Chung sống, đối xử với nhau" },
+        { "hanzi": "对方", "pinyin": "duì fāng", "meaningVi": "Đối phương" },
+        { "hanzi": "调皮", "pinyin": "tiáo pí", "meaningVi": "Nghịch ngợm" },
+        { "hanzi": "行为", "pinyin": "xíng wéi", "meaningVi": "Hành vi" },
+        { "hanzi": "似乎", "pinyin": "sì hū", "meaningVi": "Dường như" }
+      ]
+    },
+    "hsk5w1-lesson-09": {
+      "titleVi": "Một Lỗ Tấn khác biệt",
+      "vocabulary": [
+        { "hanzi": "表现", "pinyin": "biǎo xiàn", "meaningVi": "Biểu hiện" },
+        { "hanzi": "大方", "pinyin": "dà fang", "meaningVi": "Hào phóng; tự nhiên" },
+        { "hanzi": "形象", "pinyin": "xíng xiàng", "meaningVi": "Hình tượng" },
+        { "hanzi": "作为", "pinyin": "zuò wéi", "meaningVi": "Với tư cách; hành vi" },
+        { "hanzi": "曾经", "pinyin": "céng jīng", "meaningVi": "Đã từng" }
+      ]
+    },
+    "hsk5w1-lesson-10": {
+      "titleVi": "Kỳ tích của cuộc tranh luận",
+      "vocabulary": [
+        { "hanzi": "争论", "pinyin": "zhēng lùn", "meaningVi": "Tranh luận" },
+        { "hanzi": "差距", "pinyin": "chā jù", "meaningVi": "Khoảng cách, chênh lệch" },
+        { "hanzi": "成熟", "pinyin": "chéng shú", "meaningVi": "Trưởng thành, chín chắn" },
+        { "hanzi": "逐渐", "pinyin": "zhú jiàn", "meaningVi": "Dần dần" },
+        { "hanzi": "改进", "pinyin": "gǎi jìn", "meaningVi": "Cải tiến" }
+      ]
+    },
+    "hsk5w1-lesson-11": {
+      "titleVi": "Tác hại của đồng hồ báo thức",
+      "vocabulary": [
+        { "hanzi": "失眠", "pinyin": "shī mián", "meaningVi": "Mất ngủ" },
+        { "hanzi": "精神", "pinyin": "jīng shén", "meaningVi": "Tinh thần" },
+        { "hanzi": "危害", "pinyin": "wēi hài", "meaningVi": "Nguy hại" },
+        { "hanzi": "规律", "pinyin": "guī lǜ", "meaningVi": "Quy luật" },
+        { "hanzi": "避免", "pinyin": "bì miǎn", "meaningVi": "Tránh" }
+      ]
+    },
+    "hsk5w1-lesson-12": {
+      "titleVi": "Người dùng nước ngoài sử dụng WeChat",
+      "vocabulary": [
+        { "hanzi": "明星", "pinyin": "míng xīng", "meaningVi": "Ngôi sao" },
+        { "hanzi": "推广", "pinyin": "tuī guǎng", "meaningVi": "Quảng bá" },
+        { "hanzi": "宣传", "pinyin": "xuān chuán", "meaningVi": "Tuyên truyền, giới thiệu" },
+        { "hanzi": "销售", "pinyin": "xiāo shòu", "meaningVi": "Bán hàng" },
+        { "hanzi": "经营", "pinyin": "jīng yíng", "meaningVi": "Kinh doanh" }
+      ]
+    },
+    "hsk5w1-lesson-13": {
+      "titleVi": "Cưa bỏ “đáy giỏ” của cuộc sống",
+      "vocabulary": [
+        { "hanzi": "训练", "pinyin": "xùn liàn", "meaningVi": "Huấn luyện" },
+        { "hanzi": "重复", "pinyin": "chóng fù", "meaningVi": "Lặp lại" },
+        { "hanzi": "缺乏", "pinyin": "quē fá", "meaningVi": "Thiếu, thiếu hụt" },
+        { "hanzi": "造成", "pinyin": "zào chéng", "meaningVi": "Gây ra" },
+        { "hanzi": "何况", "pinyin": "hé kuàng", "meaningVi": "Huống chi" }
+      ]
+    },
+    "hsk5w1-lesson-14": {
+      "titleVi": "Tứ hợp viện Bắc Kinh",
+      "vocabulary": [
+        { "hanzi": "接待", "pinyin": "jiē dài", "meaningVi": "Tiếp đón" },
+        { "hanzi": "日常", "pinyin": "rì cháng", "meaningVi": "Hằng ngày" },
+        { "hanzi": "组成", "pinyin": "zǔ chéng", "meaningVi": "Tạo thành" },
+        { "hanzi": "关闭", "pinyin": "guān bì", "meaningVi": "Đóng lại" },
+        { "hanzi": "打交道", "pinyin": "dǎ jiāo dao", "meaningVi": "Giao thiệp" }
+      ]
+    },
+    "hsk5w1-lesson-15": {
+      "titleVi": "Bàn việc binh trên giấy",
+      "vocabulary": [
+        { "hanzi": "毛病", "pinyin": "máo bìng", "meaningVi": "Khuyết điểm; bệnh" },
+        { "hanzi": "道理", "pinyin": "dào lǐ", "meaningVi": "Đạo lý, lý lẽ" },
+        { "hanzi": "阻止", "pinyin": "zǔ zhǐ", "meaningVi": "Ngăn cản" },
+        { "hanzi": "独立", "pinyin": "dú lì", "meaningVi": "Độc lập" },
+        { "hanzi": "宝贵", "pinyin": "bǎo guì", "meaningVi": "Quý báu" }
+      ]
+    },
+    "hsk5w1-lesson-16": {
+      "titleVi": "Cân nặng và ăn kiêng",
+      "vocabulary": [
+        { "hanzi": "营养", "pinyin": "yíng yǎng", "meaningVi": "Dinh dưỡng" },
+        { "hanzi": "措施", "pinyin": "cuò shī", "meaningVi": "Biện pháp" },
+        { "hanzi": "苗条", "pinyin": "miáo tiao", "meaningVi": "Thon thả" },
+        { "hanzi": "明显", "pinyin": "míng xiǎn", "meaningVi": "Rõ ràng" },
+        { "hanzi": "趋势", "pinyin": "qū shì", "meaningVi": "Xu hướng" }
+      ]
+    },
+    "hsk5w1-lesson-17": {
+      "titleVi": "Rời đi vào thời khắc đẹp nhất",
+      "vocabulary": [
+        { "hanzi": "婚礼", "pinyin": "hūn lǐ", "meaningVi": "Lễ cưới" },
+        { "hanzi": "主持", "pinyin": "zhǔ chí", "meaningVi": "Chủ trì, dẫn chương trình" },
+        { "hanzi": "深刻", "pinyin": "shēn kè", "meaningVi": "Sâu sắc" },
+        { "hanzi": "度过", "pinyin": "dù guò", "meaningVi": "Trải qua" },
+        { "hanzi": "魅力", "pinyin": "mèi lì", "meaningVi": "Sức hấp dẫn" }
+      ]
+    },
+    "hsk5w1-lesson-18": {
+      "titleVi": "Nghệ thuật trừu tượng có đẹp không?",
+      "vocabulary": [
+        { "hanzi": "作品", "pinyin": "zuò pǐn", "meaningVi": "Tác phẩm" },
+        { "hanzi": "欣赏", "pinyin": "xīn shǎng", "meaningVi": "Thưởng thức, đánh giá cao" },
+        { "hanzi": "业余", "pinyin": "yè yú", "meaningVi": "Nghiệp dư" },
+        { "hanzi": "自由", "pinyin": "zì yóu", "meaningVi": "Tự do" },
+        { "hanzi": "活跃", "pinyin": "huó yuè", "meaningVi": "Sôi nổi, năng động" }
+      ]
+    }
+  }
+}

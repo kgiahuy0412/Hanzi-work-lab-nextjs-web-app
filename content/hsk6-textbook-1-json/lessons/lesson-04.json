@@ -1,0 +1,131 @@
+{
+  "id": "hsk6t1-lesson-04",
+  "number": 4,
+  "unitId": "hsk6t1-unit-01",
+  "titleZh": "完美的胜利",
+  "titleVi": "Chiến thắng hoàn hảo",
+  "sourcePdfPages": {
+    "start": 44,
+    "end": 52
+  },
+  "sourcePrintedPages": {
+    "start": 44,
+    "end": 52
+  },
+  "audioTracks": [
+    "04-1",
+    "04-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 44,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1 给下面的词语选择对应的图片，并回答下面的问题。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 45,
+      "rowIndex": 2,
+      "matchedTextOcr": "课文完美的胜利（750字） 04-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 47,
+      "rowIndex": 3,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 49,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 51,
+      "rowIndex": 16,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 52,
+      "rowIndex": 2,
+      "matchedTextOcr": "扩展 词汇：熟悉下列词语的语素义"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-04-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-04-01",
+    "hsk6t1-annotation-04-01",
+    "hsk6t1-practice-04-01",
+    "hsk6t1-application-04-01",
+    "hsk6t1-extension-04-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0010",
+    "hsk6t1-lexeme-0024",
+    "hsk6t1-lexeme-0040",
+    "hsk6t1-lexeme-0057",
+    "hsk6t1-lexeme-0058",
+    "hsk6t1-lexeme-0067",
+    "hsk6t1-lexeme-0074",
+    "hsk6t1-lexeme-0080",
+    "hsk6t1-lexeme-0086",
+    "hsk6t1-lexeme-0090",
+    "hsk6t1-lexeme-0104",
+    "hsk6t1-lexeme-0105",
+    "hsk6t1-lexeme-0124",
+    "hsk6t1-lexeme-0136",
+    "hsk6t1-lexeme-0144",
+    "hsk6t1-lexeme-0157",
+    "hsk6t1-lexeme-0166",
+    "hsk6t1-lexeme-0180",
+    "hsk6t1-lexeme-0206",
+    "hsk6t1-lexeme-0212",
+    "hsk6t1-lexeme-0268",
+    "hsk6t1-lexeme-0270",
+    "hsk6t1-lexeme-0323",
+    "hsk6t1-lexeme-0371",
+    "hsk6t1-lexeme-0383",
+    "hsk6t1-lexeme-0422",
+    "hsk6t1-lexeme-0429",
+    "hsk6t1-lexeme-0432",
+    "hsk6t1-lexeme-0441",
+    "hsk6t1-lexeme-0444",
+    "hsk6t1-lexeme-0457",
+    "hsk6t1-lexeme-0518",
+    "hsk6t1-lexeme-0523",
+    "hsk6t1-lexeme-0540",
+    "hsk6t1-lexeme-0546",
+    "hsk6t1-lexeme-0597",
+    "hsk6t1-lexeme-0609",
+    "hsk6t1-lexeme-0616",
+    "hsk6t1-lexeme-0629",
+    "hsk6t1-lexeme-0665",
+    "hsk6t1-lexeme-0680",
+    "hsk6t1-lexeme-0742",
+    "hsk6t1-lexeme-0788",
+    "hsk6t1-lexeme-0831",
+    "hsk6t1-lexeme-0880"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-014"
+  ],
+  "vocabularyCount": 45,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 46,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-37",
+  "lessonNumber": 37,
+  "status": "review",
+  "title": {
+    "zh": "警察的故事",
+    "pinyin": "jǐng chá de gù shì",
+    "vi": "Chuyện của cảnh sát"
+  },
+  "themeRef": "hsk6-v2-theme-10",
+  "source": {
+    "pdfPages": [
+      176,
+      186
+    ],
+    "printedPages": [
+      176,
+      186
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-176",
+      "hsk6-v2-source-page-177",
+      "hsk6-v2-source-page-178",
+      "hsk6-v2-source-page-179",
+      "hsk6-v2-source-page-180",
+      "hsk6-v2-source-page-181",
+      "hsk6-v2-source-page-182",
+      "hsk6-v2-source-page-183",
+      "hsk6-v2-source-page-184",
+      "hsk6-v2-source-page-185",
+      "hsk6-v2-source-page-186"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l37-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l37-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l37-v001",
+        "hsk6-v2-l37-v002",
+        "hsk6-v2-l37-v003",
+        "hsk6-v2-l37-v004",
+        "hsk6-v2-l37-v005",
+        "hsk6-v2-l37-v006",
+        "hsk6-v2-l37-v007",
+        "hsk6-v2-l37-v008",
+        "hsk6-v2-l37-v009",
+        "hsk6-v2-l37-v010",
+        "hsk6-v2-l37-v011",
+        "hsk6-v2-l37-v012",
+        "hsk6-v2-l37-v013",
+        "hsk6-v2-l37-v014",
+        "hsk6-v2-l37-v015",
+        "hsk6-v2-l37-v016",
+        "hsk6-v2-l37-v017",
+        "hsk6-v2-l37-v018",
+        "hsk6-v2-l37-v019",
+        "hsk6-v2-l37-v020",
+        "hsk6-v2-l37-v021",
+        "hsk6-v2-l37-v022",
+        "hsk6-v2-l37-v023",
+        "hsk6-v2-l37-v024",
+        "hsk6-v2-l37-v025",
+        "hsk6-v2-l37-v026",
+        "hsk6-v2-l37-v027",
+        "hsk6-v2-l37-v028",
+        "hsk6-v2-l37-v029",
+        "hsk6-v2-l37-v030",
+        "hsk6-v2-l37-v031",
+        "hsk6-v2-l37-v032",
+        "hsk6-v2-l37-v033",
+        "hsk6-v2-l37-v034",
+        "hsk6-v2-l37-v035",
+        "hsk6-v2-l37-v036",
+        "hsk6-v2-l37-v037",
+        "hsk6-v2-l37-v038",
+        "hsk6-v2-l37-v039",
+        "hsk6-v2-l37-v040",
+        "hsk6-v2-l37-v041",
+        "hsk6-v2-l37-v042",
+        "hsk6-v2-l37-v043",
+        "hsk6-v2-l37-v044",
+        "hsk6-v2-l37-v045",
+        "hsk6-v2-l37-v046",
+        "hsk6-v2-l37-v047",
+        "hsk6-v2-l37-v048",
+        "hsk6-v2-l37-v049",
+        "hsk6-v2-l37-v050",
+        "hsk6-v2-l37-v051",
+        "hsk6-v2-l37-v052",
+        "hsk6-v2-l37-v053",
+        "hsk6-v2-l37-v054",
+        "hsk6-v2-l37-v055"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l37-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l37-lp-01",
+        "hsk6-v2-l37-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l37-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l37-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l37-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l37-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l37-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l37-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l37-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

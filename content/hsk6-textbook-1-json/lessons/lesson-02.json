@@ -1,0 +1,129 @@
+{
+  "id": "hsk6t1-lesson-02",
+  "number": 2,
+  "unitId": "hsk6t1-unit-01",
+  "titleZh": "父母之爱",
+  "titleVi": "Tình yêu của ba mẹ",
+  "sourcePdfPages": {
+    "start": 24,
+    "end": 32
+  },
+  "sourcePrintedPages": {
+    "start": 24,
+    "end": 32
+  },
+  "audioTracks": [
+    "02-1",
+    "02-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 24,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身 中国有句俗话：“打是亲，骂是爱”，你能理解吗？下面这些事情中，你觉"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 25,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文父母之爱（701字）02-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 27,
+      "rowIndex": 2,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 29,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 31,
+      "rowIndex": 21,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 32,
+      "rowIndex": 3,
+      "matchedTextOcr": "扩展 词汇：看图片，熟悉下列表示动作的词语"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-02-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-02-01",
+    "hsk6t1-annotation-02-01",
+    "hsk6t1-practice-02-01",
+    "hsk6t1-application-02-01",
+    "hsk6t1-extension-02-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0006",
+    "hsk6t1-lexeme-0017",
+    "hsk6t1-lexeme-0030",
+    "hsk6t1-lexeme-0033",
+    "hsk6t1-lexeme-0064",
+    "hsk6t1-lexeme-0066",
+    "hsk6t1-lexeme-0083",
+    "hsk6t1-lexeme-0108",
+    "hsk6t1-lexeme-0130",
+    "hsk6t1-lexeme-0181",
+    "hsk6t1-lexeme-0190",
+    "hsk6t1-lexeme-0226",
+    "hsk6t1-lexeme-0230",
+    "hsk6t1-lexeme-0236",
+    "hsk6t1-lexeme-0248",
+    "hsk6t1-lexeme-0260",
+    "hsk6t1-lexeme-0273",
+    "hsk6t1-lexeme-0275",
+    "hsk6t1-lexeme-0279",
+    "hsk6t1-lexeme-0320",
+    "hsk6t1-lexeme-0352",
+    "hsk6t1-lexeme-0399",
+    "hsk6t1-lexeme-0410",
+    "hsk6t1-lexeme-0438",
+    "hsk6t1-lexeme-0439",
+    "hsk6t1-lexeme-0467",
+    "hsk6t1-lexeme-0469",
+    "hsk6t1-lexeme-0493",
+    "hsk6t1-lexeme-0548",
+    "hsk6t1-lexeme-0637",
+    "hsk6t1-lexeme-0651",
+    "hsk6t1-lexeme-0654",
+    "hsk6t1-lexeme-0673",
+    "hsk6t1-lexeme-0675",
+    "hsk6t1-lexeme-0700",
+    "hsk6t1-lexeme-0708",
+    "hsk6t1-lexeme-0712",
+    "hsk6t1-lexeme-0741",
+    "hsk6t1-lexeme-0773",
+    "hsk6t1-lexeme-0787",
+    "hsk6t1-lexeme-0798",
+    "hsk6t1-lexeme-0859",
+    "hsk6t1-lexeme-0882"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-007"
+  ],
+  "vocabularyCount": 43,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 44,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

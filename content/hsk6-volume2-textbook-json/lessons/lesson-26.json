@@ -1,0 +1,158 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-26",
+  "lessonNumber": 26,
+  "status": "review",
+  "title": {
+    "zh": "奇异的灯光",
+    "pinyin": "qí yì de dēng guāng",
+    "vi": "Ánh sáng kỳ lạ"
+  },
+  "themeRef": "hsk6-v2-theme-07",
+  "source": {
+    "pdfPages": [
+      62,
+      70
+    ],
+    "printedPages": [
+      62,
+      70
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-062",
+      "hsk6-v2-source-page-063",
+      "hsk6-v2-source-page-064",
+      "hsk6-v2-source-page-065",
+      "hsk6-v2-source-page-066",
+      "hsk6-v2-source-page-067",
+      "hsk6-v2-source-page-068",
+      "hsk6-v2-source-page-069",
+      "hsk6-v2-source-page-070"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l26-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l26-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l26-v001",
+        "hsk6-v2-l26-v002",
+        "hsk6-v2-l26-v003",
+        "hsk6-v2-l26-v004",
+        "hsk6-v2-l26-v005",
+        "hsk6-v2-l26-v006",
+        "hsk6-v2-l26-v007",
+        "hsk6-v2-l26-v008",
+        "hsk6-v2-l26-v009",
+        "hsk6-v2-l26-v010",
+        "hsk6-v2-l26-v011",
+        "hsk6-v2-l26-v012",
+        "hsk6-v2-l26-v013",
+        "hsk6-v2-l26-v014",
+        "hsk6-v2-l26-v015",
+        "hsk6-v2-l26-v016",
+        "hsk6-v2-l26-v017",
+        "hsk6-v2-l26-v018",
+        "hsk6-v2-l26-v019",
+        "hsk6-v2-l26-v020",
+        "hsk6-v2-l26-v021",
+        "hsk6-v2-l26-v022",
+        "hsk6-v2-l26-v023",
+        "hsk6-v2-l26-v024",
+        "hsk6-v2-l26-v025",
+        "hsk6-v2-l26-v026",
+        "hsk6-v2-l26-v027",
+        "hsk6-v2-l26-v028",
+        "hsk6-v2-l26-v029",
+        "hsk6-v2-l26-v030",
+        "hsk6-v2-l26-v031",
+        "hsk6-v2-l26-v032",
+        "hsk6-v2-l26-v033",
+        "hsk6-v2-l26-v034",
+        "hsk6-v2-l26-v035",
+        "hsk6-v2-l26-v036",
+        "hsk6-v2-l26-v037",
+        "hsk6-v2-l26-v038",
+        "hsk6-v2-l26-v039",
+        "hsk6-v2-l26-v040",
+        "hsk6-v2-l26-v041",
+        "hsk6-v2-l26-v042",
+        "hsk6-v2-l26-v043",
+        "hsk6-v2-l26-v044",
+        "hsk6-v2-l26-v045",
+        "hsk6-v2-l26-v046",
+        "hsk6-v2-l26-v047",
+        "hsk6-v2-l26-v048",
+        "hsk6-v2-l26-v049",
+        "hsk6-v2-l26-v050",
+        "hsk6-v2-l26-v051"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l26-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l26-lp-01",
+        "hsk6-v2-l26-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l26-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l26-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l26-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l26-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l26-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l26-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l26-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

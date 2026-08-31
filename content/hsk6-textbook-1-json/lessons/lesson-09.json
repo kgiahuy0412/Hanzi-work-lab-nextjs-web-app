@@ -1,0 +1,131 @@
+{
+  "id": "hsk6t1-lesson-09",
+  "number": 9,
+  "unitId": "hsk6t1-unit-03",
+  "titleZh": "不用手机的日子",
+  "titleVi": "Một ngày không sử dụng điện thoại di động",
+  "sourcePdfPages": {
+    "start": 96,
+    "end": 106
+  },
+  "sourcePrintedPages": {
+    "start": 96,
+    "end": 106
+  },
+  "audioTracks": [
+    "09-1",
+    "09-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 96,
+      "rowIndex": 4,
+      "matchedTextOcr": "热身 你经常玩儿手机吗？对你来说，手机有什么用途？请在下面的选项中划出，"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 97,
+      "rowIndex": 2,
+      "matchedTextOcr": "课文不用手机的日子（844字）09-1 用手机的"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 100,
+      "rowIndex": 2,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 102,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 104,
+      "rowIndex": 15,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 105,
+      "rowIndex": 1,
+      "matchedTextOcr": "扩展 病句类型：搭配不当 不用手机的日子"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-09-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-09-01",
+    "hsk6t1-annotation-09-01",
+    "hsk6t1-practice-09-01",
+    "hsk6t1-application-09-01",
+    "hsk6t1-extension-09-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0001",
+    "hsk6t1-lexeme-0002",
+    "hsk6t1-lexeme-0003",
+    "hsk6t1-lexeme-0016",
+    "hsk6t1-lexeme-0022",
+    "hsk6t1-lexeme-0047",
+    "hsk6t1-lexeme-0055",
+    "hsk6t1-lexeme-0072",
+    "hsk6t1-lexeme-0132",
+    "hsk6t1-lexeme-0193",
+    "hsk6t1-lexeme-0200",
+    "hsk6t1-lexeme-0204",
+    "hsk6t1-lexeme-0224",
+    "hsk6t1-lexeme-0282",
+    "hsk6t1-lexeme-0337",
+    "hsk6t1-lexeme-0362",
+    "hsk6t1-lexeme-0391",
+    "hsk6t1-lexeme-0392",
+    "hsk6t1-lexeme-0409",
+    "hsk6t1-lexeme-0412",
+    "hsk6t1-lexeme-0434",
+    "hsk6t1-lexeme-0445",
+    "hsk6t1-lexeme-0446",
+    "hsk6t1-lexeme-0478",
+    "hsk6t1-lexeme-0606",
+    "hsk6t1-lexeme-0617",
+    "hsk6t1-lexeme-0624",
+    "hsk6t1-lexeme-0625",
+    "hsk6t1-lexeme-0634",
+    "hsk6t1-lexeme-0649",
+    "hsk6t1-lexeme-0659",
+    "hsk6t1-lexeme-0660",
+    "hsk6t1-lexeme-0685",
+    "hsk6t1-lexeme-0701",
+    "hsk6t1-lexeme-0717",
+    "hsk6t1-lexeme-0747",
+    "hsk6t1-lexeme-0750",
+    "hsk6t1-lexeme-0754",
+    "hsk6t1-lexeme-0810",
+    "hsk6t1-lexeme-0821",
+    "hsk6t1-lexeme-0828",
+    "hsk6t1-lexeme-0832",
+    "hsk6t1-lexeme-0851",
+    "hsk6t1-lexeme-0857",
+    "hsk6t1-lexeme-0870",
+    "hsk6t1-lexeme-0875",
+    "hsk6t1-lexeme-0893"
+  ],
+  "supplementalLexemeIds": [],
+  "vocabularyCount": 47,
+  "supplementalVocabularyCount": 0,
+  "allVocabularyCount": 47,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

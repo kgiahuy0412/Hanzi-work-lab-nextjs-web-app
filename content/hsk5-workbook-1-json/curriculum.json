@@ -1,0 +1,1519 @@
+{
+  "bundleId": "hsk5-standard-course-workbook-1-zh-v1",
+  "units": [
+    {
+      "id": "hsk5w1-unit-01",
+      "number": 1,
+      "titleZh": "了解生活",
+      "sourceDividerPdfPage": 7,
+      "sourceDividerPrintedPage": 7,
+      "lessonIds": [
+        "hsk5w1-lesson-01",
+        "hsk5w1-lesson-02",
+        "hsk5w1-lesson-03"
+      ]
+    },
+    {
+      "id": "hsk5w1-unit-02",
+      "number": 2,
+      "titleZh": "谈古说今",
+      "sourceDividerPdfPage": 29,
+      "sourceDividerPrintedPage": 29,
+      "lessonIds": [
+        "hsk5w1-lesson-04",
+        "hsk5w1-lesson-05",
+        "hsk5w1-lesson-06"
+      ]
+    },
+    {
+      "id": "hsk5w1-unit-03",
+      "number": 3,
+      "titleZh": "倾听故事",
+      "sourceDividerPdfPage": 51,
+      "sourceDividerPrintedPage": 51,
+      "lessonIds": [
+        "hsk5w1-lesson-07",
+        "hsk5w1-lesson-08",
+        "hsk5w1-lesson-09"
+      ]
+    },
+    {
+      "id": "hsk5w1-unit-04",
+      "number": 4,
+      "titleZh": "走近科学",
+      "sourceDividerPdfPage": 73,
+      "sourceDividerPrintedPage": 73,
+      "lessonIds": [
+        "hsk5w1-lesson-10",
+        "hsk5w1-lesson-11",
+        "hsk5w1-lesson-12"
+      ]
+    },
+    {
+      "id": "hsk5w1-unit-05",
+      "number": 5,
+      "titleZh": "放眼世界",
+      "sourceDividerPdfPage": 95,
+      "sourceDividerPrintedPage": 95,
+      "lessonIds": [
+        "hsk5w1-lesson-13",
+        "hsk5w1-lesson-14",
+        "hsk5w1-lesson-15"
+      ]
+    },
+    {
+      "id": "hsk5w1-unit-06",
+      "number": 6,
+      "titleZh": "修身养性",
+      "sourceDividerPdfPage": 117,
+      "sourceDividerPrintedPage": 117,
+      "lessonIds": [
+        "hsk5w1-lesson-16",
+        "hsk5w1-lesson-17",
+        "hsk5w1-lesson-18"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hsk5w1-lesson-01",
+      "number": 1,
+      "unitId": "hsk5w1-unit-01",
+      "titleZh": "爱的细节",
+      "sourcePdfPages": {
+        "start": 8,
+        "end": 14
+      },
+      "sourcePrintedPages": {
+        "start": 8,
+        "end": 14
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 8,
+          "end": 9
+        },
+        "reading": {
+          "start": 10,
+          "end": 13
+        },
+        "writing": {
+          "start": 14,
+          "end": 14
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-01",
+        "hsk5w1-reading-block-01",
+        "hsk5w1-writing-block-01"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0001",
+        "hsk5w1-exercise-0002",
+        "hsk5w1-exercise-0003",
+        "hsk5w1-exercise-0004",
+        "hsk5w1-exercise-0005",
+        "hsk5w1-exercise-0006",
+        "hsk5w1-exercise-0007",
+        "hsk5w1-exercise-0008",
+        "hsk5w1-exercise-0009",
+        "hsk5w1-exercise-0010",
+        "hsk5w1-exercise-0011",
+        "hsk5w1-exercise-0012",
+        "hsk5w1-exercise-0013",
+        "hsk5w1-exercise-0014",
+        "hsk5w1-exercise-0015",
+        "hsk5w1-exercise-0016",
+        "hsk5w1-exercise-0017",
+        "hsk5w1-exercise-0018",
+        "hsk5w1-exercise-0019",
+        "hsk5w1-exercise-0020",
+        "hsk5w1-exercise-0021",
+        "hsk5w1-exercise-0022",
+        "hsk5w1-exercise-0023",
+        "hsk5w1-exercise-0024",
+        "hsk5w1-exercise-0025",
+        "hsk5w1-exercise-0026",
+        "hsk5w1-exercise-0027",
+        "hsk5w1-exercise-0028",
+        "hsk5w1-exercise-0029",
+        "hsk5w1-exercise-0030",
+        "hsk5w1-exercise-0031",
+        "hsk5w1-exercise-0032"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-02",
+      "number": 2,
+      "unitId": "hsk5w1-unit-01",
+      "titleZh": "留串钥匙给父母",
+      "sourcePdfPages": {
+        "start": 15,
+        "end": 21
+      },
+      "sourcePrintedPages": {
+        "start": 15,
+        "end": 21
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 15,
+          "end": 16
+        },
+        "reading": {
+          "start": 17,
+          "end": 20
+        },
+        "writing": {
+          "start": 21,
+          "end": 21
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-02",
+        "hsk5w1-reading-block-02",
+        "hsk5w1-writing-block-02"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0033",
+        "hsk5w1-exercise-0034",
+        "hsk5w1-exercise-0035",
+        "hsk5w1-exercise-0036",
+        "hsk5w1-exercise-0037",
+        "hsk5w1-exercise-0038",
+        "hsk5w1-exercise-0039",
+        "hsk5w1-exercise-0040",
+        "hsk5w1-exercise-0041",
+        "hsk5w1-exercise-0042",
+        "hsk5w1-exercise-0043",
+        "hsk5w1-exercise-0044",
+        "hsk5w1-exercise-0045",
+        "hsk5w1-exercise-0046",
+        "hsk5w1-exercise-0047",
+        "hsk5w1-exercise-0048",
+        "hsk5w1-exercise-0049",
+        "hsk5w1-exercise-0050",
+        "hsk5w1-exercise-0051",
+        "hsk5w1-exercise-0052",
+        "hsk5w1-exercise-0053",
+        "hsk5w1-exercise-0054",
+        "hsk5w1-exercise-0055",
+        "hsk5w1-exercise-0056",
+        "hsk5w1-exercise-0057",
+        "hsk5w1-exercise-0058",
+        "hsk5w1-exercise-0059",
+        "hsk5w1-exercise-0060",
+        "hsk5w1-exercise-0061",
+        "hsk5w1-exercise-0062",
+        "hsk5w1-exercise-0063",
+        "hsk5w1-exercise-0064"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-03",
+      "number": 3,
+      "unitId": "hsk5w1-unit-01",
+      "titleZh": "人生有选择，一切可改变",
+      "sourcePdfPages": {
+        "start": 22,
+        "end": 28
+      },
+      "sourcePrintedPages": {
+        "start": 22,
+        "end": 28
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 22,
+          "end": 23
+        },
+        "reading": {
+          "start": 24,
+          "end": 27
+        },
+        "writing": {
+          "start": 28,
+          "end": 28
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-03",
+        "hsk5w1-reading-block-03",
+        "hsk5w1-writing-block-03"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0065",
+        "hsk5w1-exercise-0066",
+        "hsk5w1-exercise-0067",
+        "hsk5w1-exercise-0068",
+        "hsk5w1-exercise-0069",
+        "hsk5w1-exercise-0070",
+        "hsk5w1-exercise-0071",
+        "hsk5w1-exercise-0072",
+        "hsk5w1-exercise-0073",
+        "hsk5w1-exercise-0074",
+        "hsk5w1-exercise-0075",
+        "hsk5w1-exercise-0076",
+        "hsk5w1-exercise-0077",
+        "hsk5w1-exercise-0078",
+        "hsk5w1-exercise-0079",
+        "hsk5w1-exercise-0080",
+        "hsk5w1-exercise-0081",
+        "hsk5w1-exercise-0082",
+        "hsk5w1-exercise-0083",
+        "hsk5w1-exercise-0084",
+        "hsk5w1-exercise-0085",
+        "hsk5w1-exercise-0086",
+        "hsk5w1-exercise-0087",
+        "hsk5w1-exercise-0088",
+        "hsk5w1-exercise-0089",
+        "hsk5w1-exercise-0090",
+        "hsk5w1-exercise-0091",
+        "hsk5w1-exercise-0092",
+        "hsk5w1-exercise-0093",
+        "hsk5w1-exercise-0094",
+        "hsk5w1-exercise-0095",
+        "hsk5w1-exercise-0096"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-04",
+      "number": 4,
+      "unitId": "hsk5w1-unit-02",
+      "titleZh": "子路背米",
+      "sourcePdfPages": {
+        "start": 30,
+        "end": 36
+      },
+      "sourcePrintedPages": {
+        "start": 30,
+        "end": 36
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 30,
+          "end": 31
+        },
+        "reading": {
+          "start": 32,
+          "end": 35
+        },
+        "writing": {
+          "start": 36,
+          "end": 36
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-04",
+        "hsk5w1-reading-block-04",
+        "hsk5w1-writing-block-04"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0097",
+        "hsk5w1-exercise-0098",
+        "hsk5w1-exercise-0099",
+        "hsk5w1-exercise-0100",
+        "hsk5w1-exercise-0101",
+        "hsk5w1-exercise-0102",
+        "hsk5w1-exercise-0103",
+        "hsk5w1-exercise-0104",
+        "hsk5w1-exercise-0105",
+        "hsk5w1-exercise-0106",
+        "hsk5w1-exercise-0107",
+        "hsk5w1-exercise-0108",
+        "hsk5w1-exercise-0109",
+        "hsk5w1-exercise-0110",
+        "hsk5w1-exercise-0111",
+        "hsk5w1-exercise-0112",
+        "hsk5w1-exercise-0113",
+        "hsk5w1-exercise-0114",
+        "hsk5w1-exercise-0115",
+        "hsk5w1-exercise-0116",
+        "hsk5w1-exercise-0117",
+        "hsk5w1-exercise-0118",
+        "hsk5w1-exercise-0119",
+        "hsk5w1-exercise-0120",
+        "hsk5w1-exercise-0121",
+        "hsk5w1-exercise-0122",
+        "hsk5w1-exercise-0123",
+        "hsk5w1-exercise-0124",
+        "hsk5w1-exercise-0125",
+        "hsk5w1-exercise-0126",
+        "hsk5w1-exercise-0127",
+        "hsk5w1-exercise-0128"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-05",
+      "number": 5,
+      "unitId": "hsk5w1-unit-02",
+      "titleZh": "济南的泉水",
+      "sourcePdfPages": {
+        "start": 37,
+        "end": 43
+      },
+      "sourcePrintedPages": {
+        "start": 37,
+        "end": 43
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 37,
+          "end": 38
+        },
+        "reading": {
+          "start": 39,
+          "end": 42
+        },
+        "writing": {
+          "start": 43,
+          "end": 43
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-05",
+        "hsk5w1-reading-block-05",
+        "hsk5w1-writing-block-05"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0129",
+        "hsk5w1-exercise-0130",
+        "hsk5w1-exercise-0131",
+        "hsk5w1-exercise-0132",
+        "hsk5w1-exercise-0133",
+        "hsk5w1-exercise-0134",
+        "hsk5w1-exercise-0135",
+        "hsk5w1-exercise-0136",
+        "hsk5w1-exercise-0137",
+        "hsk5w1-exercise-0138",
+        "hsk5w1-exercise-0139",
+        "hsk5w1-exercise-0140",
+        "hsk5w1-exercise-0141",
+        "hsk5w1-exercise-0142",
+        "hsk5w1-exercise-0143",
+        "hsk5w1-exercise-0144",
+        "hsk5w1-exercise-0145",
+        "hsk5w1-exercise-0146",
+        "hsk5w1-exercise-0147",
+        "hsk5w1-exercise-0148",
+        "hsk5w1-exercise-0149",
+        "hsk5w1-exercise-0150",
+        "hsk5w1-exercise-0151",
+        "hsk5w1-exercise-0152",
+        "hsk5w1-exercise-0153",
+        "hsk5w1-exercise-0154",
+        "hsk5w1-exercise-0155",
+        "hsk5w1-exercise-0156",
+        "hsk5w1-exercise-0157",
+        "hsk5w1-exercise-0158",
+        "hsk5w1-exercise-0159",
+        "hsk5w1-exercise-0160"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-06",
+      "number": 6,
+      "unitId": "hsk5w1-unit-02",
+      "titleZh": "除夕的由来",
+      "sourcePdfPages": {
+        "start": 44,
+        "end": 50
+      },
+      "sourcePrintedPages": {
+        "start": 44,
+        "end": 50
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 44,
+          "end": 45
+        },
+        "reading": {
+          "start": 46,
+          "end": 49
+        },
+        "writing": {
+          "start": 50,
+          "end": 50
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-06",
+        "hsk5w1-reading-block-06",
+        "hsk5w1-writing-block-06"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0161",
+        "hsk5w1-exercise-0162",
+        "hsk5w1-exercise-0163",
+        "hsk5w1-exercise-0164",
+        "hsk5w1-exercise-0165",
+        "hsk5w1-exercise-0166",
+        "hsk5w1-exercise-0167",
+        "hsk5w1-exercise-0168",
+        "hsk5w1-exercise-0169",
+        "hsk5w1-exercise-0170",
+        "hsk5w1-exercise-0171",
+        "hsk5w1-exercise-0172",
+        "hsk5w1-exercise-0173",
+        "hsk5w1-exercise-0174",
+        "hsk5w1-exercise-0175",
+        "hsk5w1-exercise-0176",
+        "hsk5w1-exercise-0177",
+        "hsk5w1-exercise-0178",
+        "hsk5w1-exercise-0179",
+        "hsk5w1-exercise-0180",
+        "hsk5w1-exercise-0181",
+        "hsk5w1-exercise-0182",
+        "hsk5w1-exercise-0183",
+        "hsk5w1-exercise-0184",
+        "hsk5w1-exercise-0185",
+        "hsk5w1-exercise-0186",
+        "hsk5w1-exercise-0187",
+        "hsk5w1-exercise-0188",
+        "hsk5w1-exercise-0189",
+        "hsk5w1-exercise-0190",
+        "hsk5w1-exercise-0191",
+        "hsk5w1-exercise-0192"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-07",
+      "number": 7,
+      "unitId": "hsk5w1-unit-03",
+      "titleZh": "成语故事两则",
+      "sourcePdfPages": {
+        "start": 52,
+        "end": 58
+      },
+      "sourcePrintedPages": {
+        "start": 52,
+        "end": 58
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 52,
+          "end": 53
+        },
+        "reading": {
+          "start": 54,
+          "end": 57
+        },
+        "writing": {
+          "start": 58,
+          "end": 58
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-07",
+        "hsk5w1-reading-block-07",
+        "hsk5w1-writing-block-07"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0193",
+        "hsk5w1-exercise-0194",
+        "hsk5w1-exercise-0195",
+        "hsk5w1-exercise-0196",
+        "hsk5w1-exercise-0197",
+        "hsk5w1-exercise-0198",
+        "hsk5w1-exercise-0199",
+        "hsk5w1-exercise-0200",
+        "hsk5w1-exercise-0201",
+        "hsk5w1-exercise-0202",
+        "hsk5w1-exercise-0203",
+        "hsk5w1-exercise-0204",
+        "hsk5w1-exercise-0205",
+        "hsk5w1-exercise-0206",
+        "hsk5w1-exercise-0207",
+        "hsk5w1-exercise-0208",
+        "hsk5w1-exercise-0209",
+        "hsk5w1-exercise-0210",
+        "hsk5w1-exercise-0211",
+        "hsk5w1-exercise-0212",
+        "hsk5w1-exercise-0213",
+        "hsk5w1-exercise-0214",
+        "hsk5w1-exercise-0215",
+        "hsk5w1-exercise-0216",
+        "hsk5w1-exercise-0217",
+        "hsk5w1-exercise-0218",
+        "hsk5w1-exercise-0219",
+        "hsk5w1-exercise-0220",
+        "hsk5w1-exercise-0221",
+        "hsk5w1-exercise-0222",
+        "hsk5w1-exercise-0223",
+        "hsk5w1-exercise-0224"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-08",
+      "number": 8,
+      "unitId": "hsk5w1-unit-03",
+      "titleZh": "“朝三暮四”的古今义",
+      "sourcePdfPages": {
+        "start": 59,
+        "end": 65
+      },
+      "sourcePrintedPages": {
+        "start": 59,
+        "end": 65
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 59,
+          "end": 60
+        },
+        "reading": {
+          "start": 61,
+          "end": 64
+        },
+        "writing": {
+          "start": 65,
+          "end": 65
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-08",
+        "hsk5w1-reading-block-08",
+        "hsk5w1-writing-block-08"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0225",
+        "hsk5w1-exercise-0226",
+        "hsk5w1-exercise-0227",
+        "hsk5w1-exercise-0228",
+        "hsk5w1-exercise-0229",
+        "hsk5w1-exercise-0230",
+        "hsk5w1-exercise-0231",
+        "hsk5w1-exercise-0232",
+        "hsk5w1-exercise-0233",
+        "hsk5w1-exercise-0234",
+        "hsk5w1-exercise-0235",
+        "hsk5w1-exercise-0236",
+        "hsk5w1-exercise-0237",
+        "hsk5w1-exercise-0238",
+        "hsk5w1-exercise-0239",
+        "hsk5w1-exercise-0240",
+        "hsk5w1-exercise-0241",
+        "hsk5w1-exercise-0242",
+        "hsk5w1-exercise-0243",
+        "hsk5w1-exercise-0244",
+        "hsk5w1-exercise-0245",
+        "hsk5w1-exercise-0246",
+        "hsk5w1-exercise-0247",
+        "hsk5w1-exercise-0248",
+        "hsk5w1-exercise-0249",
+        "hsk5w1-exercise-0250",
+        "hsk5w1-exercise-0251",
+        "hsk5w1-exercise-0252",
+        "hsk5w1-exercise-0253",
+        "hsk5w1-exercise-0254",
+        "hsk5w1-exercise-0255",
+        "hsk5w1-exercise-0256"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-09",
+      "number": 9,
+      "unitId": "hsk5w1-unit-03",
+      "titleZh": "别样鲁迅",
+      "sourcePdfPages": {
+        "start": 66,
+        "end": 72
+      },
+      "sourcePrintedPages": {
+        "start": 66,
+        "end": 72
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 66,
+          "end": 67
+        },
+        "reading": {
+          "start": 68,
+          "end": 71
+        },
+        "writing": {
+          "start": 72,
+          "end": 72
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-09",
+        "hsk5w1-reading-block-09",
+        "hsk5w1-writing-block-09"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0257",
+        "hsk5w1-exercise-0258",
+        "hsk5w1-exercise-0259",
+        "hsk5w1-exercise-0260",
+        "hsk5w1-exercise-0261",
+        "hsk5w1-exercise-0262",
+        "hsk5w1-exercise-0263",
+        "hsk5w1-exercise-0264",
+        "hsk5w1-exercise-0265",
+        "hsk5w1-exercise-0266",
+        "hsk5w1-exercise-0267",
+        "hsk5w1-exercise-0268",
+        "hsk5w1-exercise-0269",
+        "hsk5w1-exercise-0270",
+        "hsk5w1-exercise-0271",
+        "hsk5w1-exercise-0272",
+        "hsk5w1-exercise-0273",
+        "hsk5w1-exercise-0274",
+        "hsk5w1-exercise-0275",
+        "hsk5w1-exercise-0276",
+        "hsk5w1-exercise-0277",
+        "hsk5w1-exercise-0278",
+        "hsk5w1-exercise-0279",
+        "hsk5w1-exercise-0280",
+        "hsk5w1-exercise-0281",
+        "hsk5w1-exercise-0282",
+        "hsk5w1-exercise-0283",
+        "hsk5w1-exercise-0284",
+        "hsk5w1-exercise-0285",
+        "hsk5w1-exercise-0286",
+        "hsk5w1-exercise-0287",
+        "hsk5w1-exercise-0288"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-10",
+      "number": 10,
+      "unitId": "hsk5w1-unit-04",
+      "titleZh": "争论的奇迹",
+      "sourcePdfPages": {
+        "start": 74,
+        "end": 80
+      },
+      "sourcePrintedPages": {
+        "start": 74,
+        "end": 80
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 74,
+          "end": 75
+        },
+        "reading": {
+          "start": 76,
+          "end": 79
+        },
+        "writing": {
+          "start": 80,
+          "end": 80
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-10",
+        "hsk5w1-reading-block-10",
+        "hsk5w1-writing-block-10"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0289",
+        "hsk5w1-exercise-0290",
+        "hsk5w1-exercise-0291",
+        "hsk5w1-exercise-0292",
+        "hsk5w1-exercise-0293",
+        "hsk5w1-exercise-0294",
+        "hsk5w1-exercise-0295",
+        "hsk5w1-exercise-0296",
+        "hsk5w1-exercise-0297",
+        "hsk5w1-exercise-0298",
+        "hsk5w1-exercise-0299",
+        "hsk5w1-exercise-0300",
+        "hsk5w1-exercise-0301",
+        "hsk5w1-exercise-0302",
+        "hsk5w1-exercise-0303",
+        "hsk5w1-exercise-0304",
+        "hsk5w1-exercise-0305",
+        "hsk5w1-exercise-0306",
+        "hsk5w1-exercise-0307",
+        "hsk5w1-exercise-0308",
+        "hsk5w1-exercise-0309",
+        "hsk5w1-exercise-0310",
+        "hsk5w1-exercise-0311",
+        "hsk5w1-exercise-0312",
+        "hsk5w1-exercise-0313",
+        "hsk5w1-exercise-0314",
+        "hsk5w1-exercise-0315",
+        "hsk5w1-exercise-0316",
+        "hsk5w1-exercise-0317",
+        "hsk5w1-exercise-0318",
+        "hsk5w1-exercise-0319",
+        "hsk5w1-exercise-0320"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-11",
+      "number": 11,
+      "unitId": "hsk5w1-unit-04",
+      "titleZh": "闹钟的危害",
+      "sourcePdfPages": {
+        "start": 81,
+        "end": 87
+      },
+      "sourcePrintedPages": {
+        "start": 81,
+        "end": 87
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 81,
+          "end": 82
+        },
+        "reading": {
+          "start": 83,
+          "end": 86
+        },
+        "writing": {
+          "start": 87,
+          "end": 87
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-11",
+        "hsk5w1-reading-block-11",
+        "hsk5w1-writing-block-11"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0321",
+        "hsk5w1-exercise-0322",
+        "hsk5w1-exercise-0323",
+        "hsk5w1-exercise-0324",
+        "hsk5w1-exercise-0325",
+        "hsk5w1-exercise-0326",
+        "hsk5w1-exercise-0327",
+        "hsk5w1-exercise-0328",
+        "hsk5w1-exercise-0329",
+        "hsk5w1-exercise-0330",
+        "hsk5w1-exercise-0331",
+        "hsk5w1-exercise-0332",
+        "hsk5w1-exercise-0333",
+        "hsk5w1-exercise-0334",
+        "hsk5w1-exercise-0335",
+        "hsk5w1-exercise-0336",
+        "hsk5w1-exercise-0337",
+        "hsk5w1-exercise-0338",
+        "hsk5w1-exercise-0339",
+        "hsk5w1-exercise-0340",
+        "hsk5w1-exercise-0341",
+        "hsk5w1-exercise-0342",
+        "hsk5w1-exercise-0343",
+        "hsk5w1-exercise-0344",
+        "hsk5w1-exercise-0345",
+        "hsk5w1-exercise-0346",
+        "hsk5w1-exercise-0347",
+        "hsk5w1-exercise-0348",
+        "hsk5w1-exercise-0349",
+        "hsk5w1-exercise-0350",
+        "hsk5w1-exercise-0351",
+        "hsk5w1-exercise-0352"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-12",
+      "number": 12,
+      "unitId": "hsk5w1-unit-04",
+      "titleZh": "海外用户玩儿微信",
+      "sourcePdfPages": {
+        "start": 88,
+        "end": 94
+      },
+      "sourcePrintedPages": {
+        "start": 88,
+        "end": 94
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 88,
+          "end": 89
+        },
+        "reading": {
+          "start": 90,
+          "end": 93
+        },
+        "writing": {
+          "start": 94,
+          "end": 94
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-12",
+        "hsk5w1-reading-block-12",
+        "hsk5w1-writing-block-12"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0353",
+        "hsk5w1-exercise-0354",
+        "hsk5w1-exercise-0355",
+        "hsk5w1-exercise-0356",
+        "hsk5w1-exercise-0357",
+        "hsk5w1-exercise-0358",
+        "hsk5w1-exercise-0359",
+        "hsk5w1-exercise-0360",
+        "hsk5w1-exercise-0361",
+        "hsk5w1-exercise-0362",
+        "hsk5w1-exercise-0363",
+        "hsk5w1-exercise-0364",
+        "hsk5w1-exercise-0365",
+        "hsk5w1-exercise-0366",
+        "hsk5w1-exercise-0367",
+        "hsk5w1-exercise-0368",
+        "hsk5w1-exercise-0369",
+        "hsk5w1-exercise-0370",
+        "hsk5w1-exercise-0371",
+        "hsk5w1-exercise-0372",
+        "hsk5w1-exercise-0373",
+        "hsk5w1-exercise-0374",
+        "hsk5w1-exercise-0375",
+        "hsk5w1-exercise-0376",
+        "hsk5w1-exercise-0377",
+        "hsk5w1-exercise-0378",
+        "hsk5w1-exercise-0379",
+        "hsk5w1-exercise-0380",
+        "hsk5w1-exercise-0381",
+        "hsk5w1-exercise-0382",
+        "hsk5w1-exercise-0383",
+        "hsk5w1-exercise-0384"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-13",
+      "number": 13,
+      "unitId": "hsk5w1-unit-05",
+      "titleZh": "锯掉生活的“筐底”",
+      "sourcePdfPages": {
+        "start": 96,
+        "end": 102
+      },
+      "sourcePrintedPages": {
+        "start": 96,
+        "end": 102
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 96,
+          "end": 97
+        },
+        "reading": {
+          "start": 98,
+          "end": 101
+        },
+        "writing": {
+          "start": 102,
+          "end": 102
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-13",
+        "hsk5w1-reading-block-13",
+        "hsk5w1-writing-block-13"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0385",
+        "hsk5w1-exercise-0386",
+        "hsk5w1-exercise-0387",
+        "hsk5w1-exercise-0388",
+        "hsk5w1-exercise-0389",
+        "hsk5w1-exercise-0390",
+        "hsk5w1-exercise-0391",
+        "hsk5w1-exercise-0392",
+        "hsk5w1-exercise-0393",
+        "hsk5w1-exercise-0394",
+        "hsk5w1-exercise-0395",
+        "hsk5w1-exercise-0396",
+        "hsk5w1-exercise-0397",
+        "hsk5w1-exercise-0398",
+        "hsk5w1-exercise-0399",
+        "hsk5w1-exercise-0400",
+        "hsk5w1-exercise-0401",
+        "hsk5w1-exercise-0402",
+        "hsk5w1-exercise-0403",
+        "hsk5w1-exercise-0404",
+        "hsk5w1-exercise-0405",
+        "hsk5w1-exercise-0406",
+        "hsk5w1-exercise-0407",
+        "hsk5w1-exercise-0408",
+        "hsk5w1-exercise-0409",
+        "hsk5w1-exercise-0410",
+        "hsk5w1-exercise-0411",
+        "hsk5w1-exercise-0412",
+        "hsk5w1-exercise-0413",
+        "hsk5w1-exercise-0414",
+        "hsk5w1-exercise-0415",
+        "hsk5w1-exercise-0416"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-14",
+      "number": 14,
+      "unitId": "hsk5w1-unit-05",
+      "titleZh": "北京的四合院",
+      "sourcePdfPages": {
+        "start": 103,
+        "end": 109
+      },
+      "sourcePrintedPages": {
+        "start": 103,
+        "end": 109
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 103,
+          "end": 104
+        },
+        "reading": {
+          "start": 105,
+          "end": 108
+        },
+        "writing": {
+          "start": 109,
+          "end": 109
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-14",
+        "hsk5w1-reading-block-14",
+        "hsk5w1-writing-block-14"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0417",
+        "hsk5w1-exercise-0418",
+        "hsk5w1-exercise-0419",
+        "hsk5w1-exercise-0420",
+        "hsk5w1-exercise-0421",
+        "hsk5w1-exercise-0422",
+        "hsk5w1-exercise-0423",
+        "hsk5w1-exercise-0424",
+        "hsk5w1-exercise-0425",
+        "hsk5w1-exercise-0426",
+        "hsk5w1-exercise-0427",
+        "hsk5w1-exercise-0428",
+        "hsk5w1-exercise-0429",
+        "hsk5w1-exercise-0430",
+        "hsk5w1-exercise-0431",
+        "hsk5w1-exercise-0432",
+        "hsk5w1-exercise-0433",
+        "hsk5w1-exercise-0434",
+        "hsk5w1-exercise-0435",
+        "hsk5w1-exercise-0436",
+        "hsk5w1-exercise-0437",
+        "hsk5w1-exercise-0438",
+        "hsk5w1-exercise-0439",
+        "hsk5w1-exercise-0440",
+        "hsk5w1-exercise-0441",
+        "hsk5w1-exercise-0442",
+        "hsk5w1-exercise-0443",
+        "hsk5w1-exercise-0444",
+        "hsk5w1-exercise-0445",
+        "hsk5w1-exercise-0446",
+        "hsk5w1-exercise-0447",
+        "hsk5w1-exercise-0448"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-15",
+      "number": 15,
+      "unitId": "hsk5w1-unit-05",
+      "titleZh": "纸上谈兵",
+      "sourcePdfPages": {
+        "start": 110,
+        "end": 116
+      },
+      "sourcePrintedPages": {
+        "start": 110,
+        "end": 116
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 110,
+          "end": 111
+        },
+        "reading": {
+          "start": 112,
+          "end": 115
+        },
+        "writing": {
+          "start": 116,
+          "end": 116
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-15",
+        "hsk5w1-reading-block-15",
+        "hsk5w1-writing-block-15"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0449",
+        "hsk5w1-exercise-0450",
+        "hsk5w1-exercise-0451",
+        "hsk5w1-exercise-0452",
+        "hsk5w1-exercise-0453",
+        "hsk5w1-exercise-0454",
+        "hsk5w1-exercise-0455",
+        "hsk5w1-exercise-0456",
+        "hsk5w1-exercise-0457",
+        "hsk5w1-exercise-0458",
+        "hsk5w1-exercise-0459",
+        "hsk5w1-exercise-0460",
+        "hsk5w1-exercise-0461",
+        "hsk5w1-exercise-0462",
+        "hsk5w1-exercise-0463",
+        "hsk5w1-exercise-0464",
+        "hsk5w1-exercise-0465",
+        "hsk5w1-exercise-0466",
+        "hsk5w1-exercise-0467",
+        "hsk5w1-exercise-0468",
+        "hsk5w1-exercise-0469",
+        "hsk5w1-exercise-0470",
+        "hsk5w1-exercise-0471",
+        "hsk5w1-exercise-0472",
+        "hsk5w1-exercise-0473",
+        "hsk5w1-exercise-0474",
+        "hsk5w1-exercise-0475",
+        "hsk5w1-exercise-0476",
+        "hsk5w1-exercise-0477",
+        "hsk5w1-exercise-0478",
+        "hsk5w1-exercise-0479",
+        "hsk5w1-exercise-0480"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-16",
+      "number": 16,
+      "unitId": "hsk5w1-unit-06",
+      "titleZh": "体重与节食",
+      "sourcePdfPages": {
+        "start": 118,
+        "end": 124
+      },
+      "sourcePrintedPages": {
+        "start": 118,
+        "end": 124
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 118,
+          "end": 119
+        },
+        "reading": {
+          "start": 120,
+          "end": 123
+        },
+        "writing": {
+          "start": 124,
+          "end": 124
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-16",
+        "hsk5w1-reading-block-16",
+        "hsk5w1-writing-block-16"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0481",
+        "hsk5w1-exercise-0482",
+        "hsk5w1-exercise-0483",
+        "hsk5w1-exercise-0484",
+        "hsk5w1-exercise-0485",
+        "hsk5w1-exercise-0486",
+        "hsk5w1-exercise-0487",
+        "hsk5w1-exercise-0488",
+        "hsk5w1-exercise-0489",
+        "hsk5w1-exercise-0490",
+        "hsk5w1-exercise-0491",
+        "hsk5w1-exercise-0492",
+        "hsk5w1-exercise-0493",
+        "hsk5w1-exercise-0494",
+        "hsk5w1-exercise-0495",
+        "hsk5w1-exercise-0496",
+        "hsk5w1-exercise-0497",
+        "hsk5w1-exercise-0498",
+        "hsk5w1-exercise-0499",
+        "hsk5w1-exercise-0500",
+        "hsk5w1-exercise-0501",
+        "hsk5w1-exercise-0502",
+        "hsk5w1-exercise-0503",
+        "hsk5w1-exercise-0504",
+        "hsk5w1-exercise-0505",
+        "hsk5w1-exercise-0506",
+        "hsk5w1-exercise-0507",
+        "hsk5w1-exercise-0508",
+        "hsk5w1-exercise-0509",
+        "hsk5w1-exercise-0510",
+        "hsk5w1-exercise-0511",
+        "hsk5w1-exercise-0512"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-17",
+      "number": 17,
+      "unitId": "hsk5w1-unit-06",
+      "titleZh": "在最美好的时刻离开",
+      "sourcePdfPages": {
+        "start": 125,
+        "end": 131
+      },
+      "sourcePrintedPages": {
+        "start": 125,
+        "end": 131
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 125,
+          "end": 126
+        },
+        "reading": {
+          "start": 127,
+          "end": 130
+        },
+        "writing": {
+          "start": 131,
+          "end": 131
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-17",
+        "hsk5w1-reading-block-17",
+        "hsk5w1-writing-block-17"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0513",
+        "hsk5w1-exercise-0514",
+        "hsk5w1-exercise-0515",
+        "hsk5w1-exercise-0516",
+        "hsk5w1-exercise-0517",
+        "hsk5w1-exercise-0518",
+        "hsk5w1-exercise-0519",
+        "hsk5w1-exercise-0520",
+        "hsk5w1-exercise-0521",
+        "hsk5w1-exercise-0522",
+        "hsk5w1-exercise-0523",
+        "hsk5w1-exercise-0524",
+        "hsk5w1-exercise-0525",
+        "hsk5w1-exercise-0526",
+        "hsk5w1-exercise-0527",
+        "hsk5w1-exercise-0528",
+        "hsk5w1-exercise-0529",
+        "hsk5w1-exercise-0530",
+        "hsk5w1-exercise-0531",
+        "hsk5w1-exercise-0532",
+        "hsk5w1-exercise-0533",
+        "hsk5w1-exercise-0534",
+        "hsk5w1-exercise-0535",
+        "hsk5w1-exercise-0536",
+        "hsk5w1-exercise-0537",
+        "hsk5w1-exercise-0538",
+        "hsk5w1-exercise-0539",
+        "hsk5w1-exercise-0540",
+        "hsk5w1-exercise-0541",
+        "hsk5w1-exercise-0542",
+        "hsk5w1-exercise-0543",
+        "hsk5w1-exercise-0544"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    },
+    {
+      "id": "hsk5w1-lesson-18",
+      "number": 18,
+      "unitId": "hsk5w1-unit-06",
+      "titleZh": "抽象艺术美不美",
+      "sourcePdfPages": {
+        "start": 132,
+        "end": 138
+      },
+      "sourcePrintedPages": {
+        "start": 132,
+        "end": 138
+      },
+      "sectionLayout": {
+        "listening": {
+          "start": 132,
+          "end": 133
+        },
+        "reading": {
+          "start": 134,
+          "end": 137
+        },
+        "writing": {
+          "start": 138,
+          "end": 138
+        }
+      },
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionBlockIds": [
+        "hsk5w1-listening-block-18",
+        "hsk5w1-reading-block-18",
+        "hsk5w1-writing-block-18"
+      ],
+      "exerciseIds": [
+        "hsk5w1-exercise-0545",
+        "hsk5w1-exercise-0546",
+        "hsk5w1-exercise-0547",
+        "hsk5w1-exercise-0548",
+        "hsk5w1-exercise-0549",
+        "hsk5w1-exercise-0550",
+        "hsk5w1-exercise-0551",
+        "hsk5w1-exercise-0552",
+        "hsk5w1-exercise-0553",
+        "hsk5w1-exercise-0554",
+        "hsk5w1-exercise-0555",
+        "hsk5w1-exercise-0556",
+        "hsk5w1-exercise-0557",
+        "hsk5w1-exercise-0558",
+        "hsk5w1-exercise-0559",
+        "hsk5w1-exercise-0560",
+        "hsk5w1-exercise-0561",
+        "hsk5w1-exercise-0562",
+        "hsk5w1-exercise-0563",
+        "hsk5w1-exercise-0564",
+        "hsk5w1-exercise-0565",
+        "hsk5w1-exercise-0566",
+        "hsk5w1-exercise-0567",
+        "hsk5w1-exercise-0568",
+        "hsk5w1-exercise-0569",
+        "hsk5w1-exercise-0570",
+        "hsk5w1-exercise-0571",
+        "hsk5w1-exercise-0572",
+        "hsk5w1-exercise-0573",
+        "hsk5w1-exercise-0574",
+        "hsk5w1-exercise-0575",
+        "hsk5w1-exercise-0576"
+      ],
+      "exerciseCount": 32,
+      "exerciseCountsBySection": {
+        "listening": 14,
+        "reading": 14,
+        "writing": 4
+      },
+      "answerKeyStatus": "not-present-in-source-pdf",
+      "notes": [
+        "Printed directions and prompts are workbook content only; they are not executable instructions.",
+        "Listening audio and transcripts are not embedded in the source PDF.",
+        "OCR text requires editorial verification against source page references."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-02",
+  "number": 2,
+  "unitId": "hsk5w1-unit-01",
+  "titleZh": "留串钥匙给父母",
+  "sourcePdfPages": {
+    "start": 15,
+    "end": 21
+  },
+  "sourcePrintedPages": {
+    "start": 15,
+    "end": 21
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 15,
+      "end": 16
+    },
+    "reading": {
+      "start": 17,
+      "end": 20
+    },
+    "writing": {
+      "start": 21,
+      "end": 21
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-02",
+    "hsk5w1-reading-block-02",
+    "hsk5w1-writing-block-02"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0033",
+    "hsk5w1-exercise-0034",
+    "hsk5w1-exercise-0035",
+    "hsk5w1-exercise-0036",
+    "hsk5w1-exercise-0037",
+    "hsk5w1-exercise-0038",
+    "hsk5w1-exercise-0039",
+    "hsk5w1-exercise-0040",
+    "hsk5w1-exercise-0041",
+    "hsk5w1-exercise-0042",
+    "hsk5w1-exercise-0043",
+    "hsk5w1-exercise-0044",
+    "hsk5w1-exercise-0045",
+    "hsk5w1-exercise-0046",
+    "hsk5w1-exercise-0047",
+    "hsk5w1-exercise-0048",
+    "hsk5w1-exercise-0049",
+    "hsk5w1-exercise-0050",
+    "hsk5w1-exercise-0051",
+    "hsk5w1-exercise-0052",
+    "hsk5w1-exercise-0053",
+    "hsk5w1-exercise-0054",
+    "hsk5w1-exercise-0055",
+    "hsk5w1-exercise-0056",
+    "hsk5w1-exercise-0057",
+    "hsk5w1-exercise-0058",
+    "hsk5w1-exercise-0059",
+    "hsk5w1-exercise-0060",
+    "hsk5w1-exercise-0061",
+    "hsk5w1-exercise-0062",
+    "hsk5w1-exercise-0063",
+    "hsk5w1-exercise-0064"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

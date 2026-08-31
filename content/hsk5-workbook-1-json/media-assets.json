@@ -1,0 +1,293 @@
+{
+  "bundleId": "hsk5-standard-course-workbook-1-zh-v1",
+  "mediaAssets": [
+    {
+      "id": "hsk5w1-audio-01-1",
+      "lessonNumber": 1,
+      "type": "audio",
+      "trackLabel": "01-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-01-2",
+      "lessonNumber": 1,
+      "type": "audio",
+      "trackLabel": "01-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-02-1",
+      "lessonNumber": 2,
+      "type": "audio",
+      "trackLabel": "02-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-02-2",
+      "lessonNumber": 2,
+      "type": "audio",
+      "trackLabel": "02-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-03-1",
+      "lessonNumber": 3,
+      "type": "audio",
+      "trackLabel": "03-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-03-2",
+      "lessonNumber": 3,
+      "type": "audio",
+      "trackLabel": "03-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-04-1",
+      "lessonNumber": 4,
+      "type": "audio",
+      "trackLabel": "04-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-04-2",
+      "lessonNumber": 4,
+      "type": "audio",
+      "trackLabel": "04-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-05-1",
+      "lessonNumber": 5,
+      "type": "audio",
+      "trackLabel": "05-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-05-2",
+      "lessonNumber": 5,
+      "type": "audio",
+      "trackLabel": "05-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-06-1",
+      "lessonNumber": 6,
+      "type": "audio",
+      "trackLabel": "06-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-06-2",
+      "lessonNumber": 6,
+      "type": "audio",
+      "trackLabel": "06-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-07-1",
+      "lessonNumber": 7,
+      "type": "audio",
+      "trackLabel": "07-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-07-2",
+      "lessonNumber": 7,
+      "type": "audio",
+      "trackLabel": "07-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-08-1",
+      "lessonNumber": 8,
+      "type": "audio",
+      "trackLabel": "08-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-08-2",
+      "lessonNumber": 8,
+      "type": "audio",
+      "trackLabel": "08-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-09-1",
+      "lessonNumber": 9,
+      "type": "audio",
+      "trackLabel": "09-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-09-2",
+      "lessonNumber": 9,
+      "type": "audio",
+      "trackLabel": "09-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-10-1",
+      "lessonNumber": 10,
+      "type": "audio",
+      "trackLabel": "10-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-10-2",
+      "lessonNumber": 10,
+      "type": "audio",
+      "trackLabel": "10-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-11-1",
+      "lessonNumber": 11,
+      "type": "audio",
+      "trackLabel": "11-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-11-2",
+      "lessonNumber": 11,
+      "type": "audio",
+      "trackLabel": "11-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-12-1",
+      "lessonNumber": 12,
+      "type": "audio",
+      "trackLabel": "12-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-12-2",
+      "lessonNumber": 12,
+      "type": "audio",
+      "trackLabel": "12-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-13-1",
+      "lessonNumber": 13,
+      "type": "audio",
+      "trackLabel": "13-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-13-2",
+      "lessonNumber": 13,
+      "type": "audio",
+      "trackLabel": "13-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-14-1",
+      "lessonNumber": 14,
+      "type": "audio",
+      "trackLabel": "14-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-14-2",
+      "lessonNumber": 14,
+      "type": "audio",
+      "trackLabel": "14-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-15-1",
+      "lessonNumber": 15,
+      "type": "audio",
+      "trackLabel": "15-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-15-2",
+      "lessonNumber": 15,
+      "type": "audio",
+      "trackLabel": "15-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-16-1",
+      "lessonNumber": 16,
+      "type": "audio",
+      "trackLabel": "16-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-16-2",
+      "lessonNumber": 16,
+      "type": "audio",
+      "trackLabel": "16-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-17-1",
+      "lessonNumber": 17,
+      "type": "audio",
+      "trackLabel": "17-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-17-2",
+      "lessonNumber": 17,
+      "type": "audio",
+      "trackLabel": "17-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-18-1",
+      "lessonNumber": 18,
+      "type": "audio",
+      "trackLabel": "18-1",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    },
+    {
+      "id": "hsk5w1-audio-18-2",
+      "lessonNumber": 18,
+      "type": "audio",
+      "trackLabel": "18-2",
+      "availability": "required-by-listening-exercises-not-embedded-in-source-pdf",
+      "file": null
+    }
+  ]
+}

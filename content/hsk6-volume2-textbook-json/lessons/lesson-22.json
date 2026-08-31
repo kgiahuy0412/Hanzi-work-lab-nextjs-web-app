@@ -1,0 +1,160 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-22",
+  "lessonNumber": 22,
+  "status": "review",
+  "title": {
+    "zh": "2050年的汽车什么样？",
+    "pinyin": "2050 nián de qì chē shén me yàng？",
+    "vi": "Xe hơi năm 2050 sẽ như thế nào?"
+  },
+  "themeRef": "hsk6-v2-theme-06",
+  "source": {
+    "pdfPages": [
+      23,
+      32
+    ],
+    "printedPages": [
+      23,
+      32
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-023",
+      "hsk6-v2-source-page-024",
+      "hsk6-v2-source-page-025",
+      "hsk6-v2-source-page-026",
+      "hsk6-v2-source-page-027",
+      "hsk6-v2-source-page-028",
+      "hsk6-v2-source-page-029",
+      "hsk6-v2-source-page-030",
+      "hsk6-v2-source-page-031",
+      "hsk6-v2-source-page-032"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l22-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l22-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l22-v001",
+        "hsk6-v2-l22-v002",
+        "hsk6-v2-l22-v003",
+        "hsk6-v2-l22-v004",
+        "hsk6-v2-l22-v005",
+        "hsk6-v2-l22-v006",
+        "hsk6-v2-l22-v007",
+        "hsk6-v2-l22-v008",
+        "hsk6-v2-l22-v009",
+        "hsk6-v2-l22-v010",
+        "hsk6-v2-l22-v011",
+        "hsk6-v2-l22-v012",
+        "hsk6-v2-l22-v013",
+        "hsk6-v2-l22-v014",
+        "hsk6-v2-l22-v015",
+        "hsk6-v2-l22-v016",
+        "hsk6-v2-l22-v017",
+        "hsk6-v2-l22-v018",
+        "hsk6-v2-l22-v019",
+        "hsk6-v2-l22-v020",
+        "hsk6-v2-l22-v021",
+        "hsk6-v2-l22-v022",
+        "hsk6-v2-l22-v023",
+        "hsk6-v2-l22-v024",
+        "hsk6-v2-l22-v025",
+        "hsk6-v2-l22-v026",
+        "hsk6-v2-l22-v027",
+        "hsk6-v2-l22-v028",
+        "hsk6-v2-l22-v029",
+        "hsk6-v2-l22-v030",
+        "hsk6-v2-l22-v031",
+        "hsk6-v2-l22-v032",
+        "hsk6-v2-l22-v033",
+        "hsk6-v2-l22-v034",
+        "hsk6-v2-l22-v035",
+        "hsk6-v2-l22-v036",
+        "hsk6-v2-l22-v037",
+        "hsk6-v2-l22-v038",
+        "hsk6-v2-l22-v039",
+        "hsk6-v2-l22-v040",
+        "hsk6-v2-l22-v041",
+        "hsk6-v2-l22-v042",
+        "hsk6-v2-l22-v043",
+        "hsk6-v2-l22-v044",
+        "hsk6-v2-l22-v045",
+        "hsk6-v2-l22-v046",
+        "hsk6-v2-l22-v047",
+        "hsk6-v2-l22-v048",
+        "hsk6-v2-l22-v049",
+        "hsk6-v2-l22-v050",
+        "hsk6-v2-l22-v051",
+        "hsk6-v2-l22-v052"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l22-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l22-lp-01",
+        "hsk6-v2-l22-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l22-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l22-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l22-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l22-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l22-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l22-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l22-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

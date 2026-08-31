@@ -1,0 +1,126 @@
+{
+  "id": "hsk6t1-lesson-08",
+  "number": 8,
+  "unitId": "hsk6t1-unit-02",
+  "titleZh": "遇见原来的我",
+  "titleVi": "Gặp lại tôi của ngày xưa",
+  "sourcePdfPages": {
+    "start": 85,
+    "end": 94
+  },
+  "sourcePrintedPages": {
+    "start": 85,
+    "end": 94
+  },
+  "audioTracks": [
+    "08-1",
+    "08-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 85,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 86,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文遇见原来的我（932字）08-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 88,
+      "rowIndex": 31,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 91,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 93,
+      "rowIndex": 14,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 94,
+      "rowIndex": 3,
+      "matchedTextOcr": "扩展 词汇：熟悉下列反义词"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-08-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-08-01",
+    "hsk6t1-annotation-08-01",
+    "hsk6t1-practice-08-01",
+    "hsk6t1-application-08-01",
+    "hsk6t1-extension-08-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0008",
+    "hsk6t1-lexeme-0034",
+    "hsk6t1-lexeme-0036",
+    "hsk6t1-lexeme-0088",
+    "hsk6t1-lexeme-0097",
+    "hsk6t1-lexeme-0103",
+    "hsk6t1-lexeme-0107",
+    "hsk6t1-lexeme-0120",
+    "hsk6t1-lexeme-0165",
+    "hsk6t1-lexeme-0199",
+    "hsk6t1-lexeme-0235",
+    "hsk6t1-lexeme-0239",
+    "hsk6t1-lexeme-0256",
+    "hsk6t1-lexeme-0299",
+    "hsk6t1-lexeme-0309",
+    "hsk6t1-lexeme-0331",
+    "hsk6t1-lexeme-0390",
+    "hsk6t1-lexeme-0452",
+    "hsk6t1-lexeme-0490",
+    "hsk6t1-lexeme-0517",
+    "hsk6t1-lexeme-0531",
+    "hsk6t1-lexeme-0544",
+    "hsk6t1-lexeme-0573",
+    "hsk6t1-lexeme-0613",
+    "hsk6t1-lexeme-0644",
+    "hsk6t1-lexeme-0652",
+    "hsk6t1-lexeme-0677",
+    "hsk6t1-lexeme-0693",
+    "hsk6t1-lexeme-0719",
+    "hsk6t1-lexeme-0727",
+    "hsk6t1-lexeme-0737",
+    "hsk6t1-lexeme-0740",
+    "hsk6t1-lexeme-0744",
+    "hsk6t1-lexeme-0749",
+    "hsk6t1-lexeme-0777",
+    "hsk6t1-lexeme-0784",
+    "hsk6t1-lexeme-0814"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-002",
+    "hsk6t1-supplemental-003",
+    "hsk6t1-supplemental-005",
+    "hsk6t1-supplemental-016"
+  ],
+  "vocabularyCount": 37,
+  "supplementalVocabularyCount": 4,
+  "allVocabularyCount": 41,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

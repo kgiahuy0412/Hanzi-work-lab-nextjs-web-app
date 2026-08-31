@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-03",
+  "number": 3,
+  "unitId": "hsk5w1-unit-01",
+  "titleZh": "人生有选择，一切可改变",
+  "sourcePdfPages": {
+    "start": 22,
+    "end": 28
+  },
+  "sourcePrintedPages": {
+    "start": 22,
+    "end": 28
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 22,
+      "end": 23
+    },
+    "reading": {
+      "start": 24,
+      "end": 27
+    },
+    "writing": {
+      "start": 28,
+      "end": 28
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-03",
+    "hsk5w1-reading-block-03",
+    "hsk5w1-writing-block-03"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0065",
+    "hsk5w1-exercise-0066",
+    "hsk5w1-exercise-0067",
+    "hsk5w1-exercise-0068",
+    "hsk5w1-exercise-0069",
+    "hsk5w1-exercise-0070",
+    "hsk5w1-exercise-0071",
+    "hsk5w1-exercise-0072",
+    "hsk5w1-exercise-0073",
+    "hsk5w1-exercise-0074",
+    "hsk5w1-exercise-0075",
+    "hsk5w1-exercise-0076",
+    "hsk5w1-exercise-0077",
+    "hsk5w1-exercise-0078",
+    "hsk5w1-exercise-0079",
+    "hsk5w1-exercise-0080",
+    "hsk5w1-exercise-0081",
+    "hsk5w1-exercise-0082",
+    "hsk5w1-exercise-0083",
+    "hsk5w1-exercise-0084",
+    "hsk5w1-exercise-0085",
+    "hsk5w1-exercise-0086",
+    "hsk5w1-exercise-0087",
+    "hsk5w1-exercise-0088",
+    "hsk5w1-exercise-0089",
+    "hsk5w1-exercise-0090",
+    "hsk5w1-exercise-0091",
+    "hsk5w1-exercise-0092",
+    "hsk5w1-exercise-0093",
+    "hsk5w1-exercise-0094",
+    "hsk5w1-exercise-0095",
+    "hsk5w1-exercise-0096"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

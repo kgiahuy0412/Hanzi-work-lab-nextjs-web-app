@@ -1,0 +1,322 @@
+[
+  {
+    "id": "hsk6-v2-track-21-1",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "trackCode": "21-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-21-2",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "trackCode": "21-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-22-1",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "trackCode": "22-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-22-2",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "trackCode": "22-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-23-1",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "trackCode": "23-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-23-2",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "trackCode": "23-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-24-1",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "trackCode": "24-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-24-2",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "trackCode": "24-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-25-1",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "trackCode": "25-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-25-2",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "trackCode": "25-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-26-1",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "trackCode": "26-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-26-2",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "trackCode": "26-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-27-1",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "trackCode": "27-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-27-2",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "trackCode": "27-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-28-1",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "trackCode": "28-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-28-2",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "trackCode": "28-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-29-1",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "trackCode": "29-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-29-2",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "trackCode": "29-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-30-1",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "trackCode": "30-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-30-2",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "trackCode": "30-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-31-1",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "trackCode": "31-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-31-2",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "trackCode": "31-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-32-1",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "trackCode": "32-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-32-2",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "trackCode": "32-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-33-1",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "trackCode": "33-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-33-2",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "trackCode": "33-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-34-1",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "trackCode": "34-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-34-2",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "trackCode": "34-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-35-1",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "trackCode": "35-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-35-2",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "trackCode": "35-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-36-1",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "trackCode": "36-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-36-2",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "trackCode": "36-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-37-1",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "trackCode": "37-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-37-2",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "trackCode": "37-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-38-1",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "trackCode": "38-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-38-2",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "trackCode": "38-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-39-1",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "trackCode": "39-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-39-2",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "trackCode": "39-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-40-1",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "trackCode": "40-1",
+    "kind": "article-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  },
+  {
+    "id": "hsk6-v2-track-40-2",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "trackCode": "40-2",
+    "kind": "vocabulary-audio",
+    "availability": "placeholder-only",
+    "note": "Audio được nhắc trong sách nhưng không được nhúng trong PDF nguồn."
+  }
+]

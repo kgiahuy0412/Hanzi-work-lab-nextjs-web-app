@@ -1,0 +1,920 @@
+{
+  "bundleId": "hsk6-standard-course-textbook-1-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk6t1-application-01-01",
+      "lessonId": "hsk6t1-lesson-01",
+      "lessonNumber": 1,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "这篇课文通过家庭生活中的一件小事告诉我们：虽然父母是孩子的启蒙",
+        "van dung",
+        "老师，可有时孩子也是父母的老师。要想当好父母，首先要约束好自己的言",
+        "行。请参考练习5，把课文缩写成300字左右的短文。",
+        "HSK 标准教程6（上）"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n这篇课文通过家庭生活中的一件小事告诉我们：虽然父母是孩子的启蒙\nvan dung\n老师，可有时孩子也是父母的老师。要想当好父母，首先要约束好自己的言\n行。请参考练习5，把课文缩写成300字左右的短文。\nHSK 标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-02-01",
+      "lessonId": "hsk6t1-lesson-02",
+      "lessonNumber": 2,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 学完了这篇课文，请想一想，父母对孩子的爱只是简单的爱吗？有时候",
+        "van dung",
+        "父母的做法可能孩子不理解，但其实都是对孩子的爱。你跟父母之间有这样",
+        "的故事吗？请以“父母给我的爱”为题，写一篇不少于300字的文章。文章中",
+        "请写清楚事情发生的前因后果，以及怎样通过这件事情感受到了父母之爱。",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "运用 写一写\nPhan 学完了这篇课文，请想一想，父母对孩子的爱只是简单的爱吗？有时候\nvan dung\n父母的做法可能孩子不理解，但其实都是对孩子的爱。你跟父母之间有这样\n的故事吗？请以“父母给我的爱”为题，写一篇不少于300字的文章。文章中\n请写清楚事情发生的前因后果，以及怎样通过这件事情感受到了父母之爱。\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-03-01",
+      "lessonId": "hsk6t1-lesson-03",
+      "lessonNumber": 3,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 这篇课文讲述了发生在中秋节前的一个感人的故事，请参考练习5，",
+        "van dung",
+        "把课文缩写成300字左右的短文。缩写时请注意写清楚时间，地点，人物",
+        "（“我”、男人、女儿）的特点和性格，事情的发生、发展和结局。"
+      ],
+      "contentOcr": "运用 写一写\nPhan 这篇课文讲述了发生在中秋节前的一个感人的故事，请参考练习5，\nvan dung\n把课文缩写成300字左右的短文。缩写时请注意写清楚时间，地点，人物\n（“我”、男人、女儿）的特点和性格，事情的发生、发展和结局。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-04-01",
+      "lessonId": "hsk6t1-lesson-04",
+      "lessonNumber": 4,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 这篇小故事告诉我们一个道理：化敌为友，就是最大的胜利。请参考练",
+        "van dung",
+        "习5，把课文缩写成300字左右的短文。缩写时注意写清楚故事发生的起因、",
+        "经过、结果，最后要点明这个故事告诉我们的道理。",
+        "HSK 标准教程6（上）"
+      ],
+      "contentOcr": "运用 写一写\nPhan 这篇小故事告诉我们一个道理：化敌为友，就是最大的胜利。请参考练\nvan dung\n习5，把课文缩写成300字左右的短文。缩写时注意写清楚故事发生的起因、\n经过、结果，最后要点明这个故事告诉我们的道理。\nHSK 标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-05-01",
+      "lessonId": "hsk6t1-lesson-05",
+      "lessonNumber": 5,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 请对3～4个不同年龄、不同国家、不同职业的对象进行调查，主题是调",
+        "van dung",
+        "查“你为什么学习外语”，将调查内容填入表中，课上向同学汇报，同时将",
+        "调查内容写成一篇不少于300字的调查报告。",
+        "国家 年龄 职业 学习外语的原因 现在的学习方式（利与弊）",
+        "5"
+      ],
+      "contentOcr": "运用 写一写\nPhan 请对3～4个不同年龄、不同国家、不同职业的对象进行调查，主题是调\nvan dung\n查“你为什么学习外语”，将调查内容填入表中，课上向同学汇报，同时将\n调查内容写成一篇不少于300字的调查报告。\n国家 年龄 职业 学习外语的原因 现在的学习方式（利与弊）\n5",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-06-01",
+      "lessonId": "hsk6t1-lesson-06",
+      "lessonNumber": 6,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 这篇课文通过“我”进入职场初期的经历，告诉我们在刚进入职场时可",
+        "van dung",
+        "能会遇到一些不公平的对待，可是如果我们不放弃，坚持努力，一定会得到",
+        "大家的认可。你在进入一个新的团体时（比如：公司、球队、班级、乐队等",
+        "等），是否也遇到过类似的情况，你是怎样做的？最后的结果如何？参考课",
+        "文以“初入…”为题，写一篇300字左右的短文。",
+        "6"
+      ],
+      "contentOcr": "运用 写一写\nPhan 这篇课文通过“我”进入职场初期的经历，告诉我们在刚进入职场时可\nvan dung\n能会遇到一些不公平的对待，可是如果我们不放弃，坚持努力，一定会得到\n大家的认可。你在进入一个新的团体时（比如：公司、球队、班级、乐队等\n等），是否也遇到过类似的情况，你是怎样做的？最后的结果如何？参考课\n文以“初入…”为题，写一篇300字左右的短文。\n6",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-07-01",
+      "lessonId": "hsk6t1-lesson-07",
+      "lessonNumber": 7,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 这篇课文告诉我们，敏锐的判断力来自实践和挫折。那么你是怎样在",
+        "van dung",
+        "实践和挫折中提升自己的判断力的？请以“判断力来自哪里”为题，结合自",
+        "已的实际经历写一篇不少于300字的文章。（提示：你在做什么事情时犹豫",
+        "不决？什么因素促使你做出了决定？事实证明这个决策是否正确？通过这件",
+        "事，你明白了什么道理？这件事是如何提升你的判断力的？）"
+      ],
+      "contentOcr": "运用 写一写\nPhan 这篇课文告诉我们，敏锐的判断力来自实践和挫折。那么你是怎样在\nvan dung\n实践和挫折中提升自己的判断力的？请以“判断力来自哪里”为题，结合自\n已的实际经历写一篇不少于300字的文章。（提示：你在做什么事情时犹豫\n不决？什么因素促使你做出了决定？事实证明这个决策是否正确？通过这件\n事，你明白了什么道理？这件事是如何提升你的判断力的？）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 19
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-08-01",
+      "lessonId": "hsk6t1-lesson-08",
+      "lessonNumber": 8,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "van dung",
+        "题，哲学家们有不同的见解，这篇课文介绍了不同的哲学家对本体的认识和",
+        "观点，请参考练习5，把课文缩写成300字左右的短文。",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "运用 写一写\nPhan\nvan dung\n题，哲学家们有不同的见解，这篇课文介绍了不同的哲学家对本体的认识和\n观点，请参考练习5，把课文缩写成300字左右的短文。\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-09-01",
+      "lessonId": "hsk6t1-lesson-09",
+      "lessonNumber": 9,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "有人说“手机、电脑等高科技产品已经控制了人们的生活”，你是否也",
+        "van dung",
+        "像这篇课文所描述的那样成了它们的奴隶？要想改变这种状况，你有什么好",
+        "的建议吗？请以“如何离开手机”为题，结合自己的实际写一篇不少于300字",
+        "的文章。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n有人说“手机、电脑等高科技产品已经控制了人们的生活”，你是否也\nvan dung\n像这篇课文所描述的那样成了它们的奴隶？要想改变这种状况，你有什么好\n的建议吗？请以“如何离开手机”为题，结合自己的实际写一篇不少于300字\n的文章。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 21
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-10-01",
+      "lessonId": "hsk6t1-lesson-10",
+      "lessonNumber": 10,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "这篇课文介绍了富有魅力的中国饮食文化，分别从饮食文化的历史发",
+        "van dung",
+        "展、食材栽培和选择、就餐方式等几个方面进行了介绍，请参考练习5，把课",
+        "文缩写成300字左右的短文。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n这篇课文介绍了富有魅力的中国饮食文化，分别从饮食文化的历史发\nvan dung\n展、食材栽培和选择、就餐方式等几个方面进行了介绍，请参考练习5，把课\n文缩写成300字左右的短文。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-11-01",
+      "lessonId": "hsk6t1-lesson-11",
+      "lessonNumber": 11,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "van dung",
+        "钱小奇家几只可爱的猫，描述了主人与猫之间的感情，同时告诉我们主人不",
+        "在家时猫在做什么。请参考练习5，把课文缩写成300字左右的短文。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\nvan dung\n钱小奇家几只可爱的猫，描述了主人与猫之间的感情，同时告诉我们主人不\n在家时猫在做什么。请参考练习5，把课文缩写成300字左右的短文。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-12-01",
+      "lessonId": "hsk6t1-lesson-12",
+      "lessonNumber": 12,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 这篇课文告诉我们什么是白噪音，大自然中有哪些白噪音，白噪音会带",
+        "van dung",
+        "来什么样的暗示以及白噪音有哪些作用。请参考练习5，把课文缩写成300字",
+        "左右的短文。"
+      ],
+      "contentOcr": "运用 写一写\nPhan 这篇课文告诉我们什么是白噪音，大自然中有哪些白噪音，白噪音会带\nvan dung\n来什么样的暗示以及白噪音有哪些作用。请参考练习5，把课文缩写成300字\n左右的短文。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 7
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-13-01",
+      "lessonId": "hsk6t1-lesson-13",
+      "lessonNumber": 13,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "这篇课文介绍了中国旅行指南发展的历程，同时告诉我们旅行指南一",
+        "Bunpuen",
+        "般包括哪些内容，有什么作用。你常旅游吗？你也经常用到旅行指南吗？",
+        "请参照本文内容，以“我最喜欢的一本旅行指南”为题，介绍一本你最喜",
+        "欢的旅行指南。说清楚这本指南包括的内容以及你喜欢它的原因。文章不",
+        "少于400字。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n这篇课文介绍了中国旅行指南发展的历程，同时告诉我们旅行指南一\nBunpuen\n般包括哪些内容，有什么作用。你常旅游吗？你也经常用到旅行指南吗？\n请参照本文内容，以“我最喜欢的一本旅行指南”为题，介绍一本你最喜\n欢的旅行指南。说清楚这本指南包括的内容以及你喜欢它的原因。文章不\n少于400字。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-14-01",
+      "lessonId": "hsk6t1-lesson-14",
+      "lessonNumber": 14,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写 背着电饭锅拍北极",
+        "Phan 这篇课文讲述了王建男大学毕业以后的经历，从取得事业成功，到毅然",
+        "van dung",
+        "辞职离开，再到恋上北极，他的经历很传奇，也带给人们思考：我们究竞为",
+        "了什么活着？请参考练习5，把课文缩写成400字左右的短文。"
+      ],
+      "contentOcr": "运用 写一写 背着电饭锅拍北极\nPhan 这篇课文讲述了王建男大学毕业以后的经历，从取得事业成功，到毅然\nvan dung\n辞职离开，再到恋上北极，他的经历很传奇，也带给人们思考：我们究竞为\n了什么活着？请参考练习5，把课文缩写成400字左右的短文。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 4
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-15-01",
+      "lessonId": "hsk6t1-lesson-15",
+      "lessonNumber": 15,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "这篇课文介绍了中国云南的哈尼梯田，请模仿课文以“我熟悉",
+        "van dung",
+        "的…·”为题介绍你所熟悉的一处名胜古迹或自然风景。内容尽量包括",
+        "“地理位置、周边环境、历史变迁、人文或白然价值”等方面。写一篇不",
+        "少于400字的文章。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n这篇课文介绍了中国云南的哈尼梯田，请模仿课文以“我熟悉\nvan dung\n的…·”为题介绍你所熟悉的一处名胜古迹或自然风景。内容尽量包括\n“地理位置、周边环境、历史变迁、人文或白然价值”等方面。写一篇不\n少于400字的文章。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-16-01",
+      "lessonId": "hsk6t1-lesson-16",
+      "lessonNumber": 16,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "为了保护和宣传野生动物，徐健成立了IBE，专门为野生动物拍照，他们",
+        "van dung",
+        "的作品不但摄影技术高超，还带有浓厚的科考性质。请参考练习5，把课文缩",
+        "写成400字左右的短文。",
+        "HSK 标准教程6（上）"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n为了保护和宣传野生动物，徐健成立了IBE，专门为野生动物拍照，他们\nvan dung\n的作品不但摄影技术高超，还带有浓厚的科考性质。请参考练习5，把课文缩\n写成400字左右的短文。\nHSK 标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-17-01",
+      "lessonId": "hsk6t1-lesson-17",
+      "lessonNumber": 17,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "这篇课文讲了一个很有趣的自然现象，为什么人类打苍蝇很难，小猫却",
+        "van dung",
+        "很容易就能抓到苍蝇？这主要是由于一个CFF值在起作用。请参考练习5，把",
+        "课文缩写成400字左右的短文。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n这篇课文讲了一个很有趣的自然现象，为什么人类打苍蝇很难，小猫却\nvan dung\n很容易就能抓到苍蝇？这主要是由于一个CFF值在起作用。请参考练习5，把\n课文缩写成400字左右的短文。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-18-01",
+      "lessonId": "hsk6t1-lesson-18",
+      "lessonNumber": 18,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 你自己养过花或别的植物吗？请根据自已的经历描述一种植物生长",
+        "van dung",
+        "的过程，比如植物的生长环境、生长过程（种下种子、发芽、开花、结",
+        "果）、植物带给你的感受或启发等。请以“我养过的……”为题，字数不",
+        "少于400字。",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "运用 写一写\nPhan 你自己养过花或别的植物吗？请根据自已的经历描述一种植物生长\nvan dung\n的过程，比如植物的生长环境、生长过程（种下种子、发芽、开花、结\n果）、植物带给你的感受或启发等。请以“我养过的……”为题，字数不\n少于400字。\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-19-01",
+      "lessonId": "hsk6t1-lesson-19",
+      "lessonNumber": 19,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan 这篇文章给我们描述了一个奇妙的深海世界，在没有阳光、压力很大的 无阳光的深海世界",
+        "van dung",
+        "海底，生活着一群奇特的生物，它们靠什么生存，它们有什么奇特的本领。",
+        "还有什么人类未知的领域。请参考练习5把课文缩写成400字左右的短文。"
+      ],
+      "contentOcr": "运用 写一写\nPhan 这篇文章给我们描述了一个奇妙的深海世界，在没有阳光、压力很大的 无阳光的深海世界\nvan dung\n海底，生活着一群奇特的生物，它们靠什么生存，它们有什么奇特的本领。\n还有什么人类未知的领域。请参考练习5把课文缩写成400字左右的短文。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 6
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-application-20-01",
+      "lessonId": "hsk6t1-lesson-20",
+      "lessonNumber": 20,
+      "type": "application",
+      "labelZh": "运用",
+      "contentOcrLines": [
+        "运用 写一写",
+        "Phan",
+        "这篇课文告诉我们这样一个道理“做人不要欲望太多，不要贪婪。东西",
+        "van dung",
+        "不是你的就不要去争夺，就是争来，也守不住。倒不如付出一分努力，得到",
+        "的故事，可以从故事发生的时间、地点、背景、事情经过、给人的启发等几",
+        "方面来讲述，请以“争来的东西守不住”为题，字数不少于400字。"
+      ],
+      "contentOcr": "运用 写一写\nPhan\n这篇课文告诉我们这样一个道理“做人不要欲望太多，不要贪婪。东西\nvan dung\n不是你的就不要去争夺，就是争来，也守不住。倒不如付出一分努力，得到\n的故事，可以从故事发生的时间、地点、背景、事情经过、给人的启发等几\n方面来讲述，请以“争来的东西守不住”为题，字数不少于400字。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 9
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

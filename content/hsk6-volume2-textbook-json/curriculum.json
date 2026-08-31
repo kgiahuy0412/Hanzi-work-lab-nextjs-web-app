@@ -1,0 +1,367 @@
+{
+  "schemaVersion": "1.0.0",
+  "themes": [
+    {
+      "id": "hsk6-v2-theme-06",
+      "themeNumber": 6,
+      "titleZh": "趣味世界",
+      "titleVi": "Thế giới thú vị",
+      "lessonRefs": [
+        "hsk6-v2-lesson-21",
+        "hsk6-v2-lesson-22",
+        "hsk6-v2-lesson-23",
+        "hsk6-v2-lesson-24"
+      ]
+    },
+    {
+      "id": "hsk6-v2-theme-07",
+      "themeNumber": 7,
+      "titleZh": "经典阅读",
+      "titleVi": "Đọc các tác phẩm kinh điển",
+      "lessonRefs": [
+        "hsk6-v2-lesson-25",
+        "hsk6-v2-lesson-26",
+        "hsk6-v2-lesson-27",
+        "hsk6-v2-lesson-28"
+      ]
+    },
+    {
+      "id": "hsk6-v2-theme-08",
+      "themeNumber": 8,
+      "titleZh": "人体探秘",
+      "titleVi": "Khám phá bí mật cơ thể người",
+      "lessonRefs": [
+        "hsk6-v2-lesson-29",
+        "hsk6-v2-lesson-30",
+        "hsk6-v2-lesson-31",
+        "hsk6-v2-lesson-32"
+      ]
+    },
+    {
+      "id": "hsk6-v2-theme-09",
+      "themeNumber": 9,
+      "titleZh": "古今博览",
+      "titleVi": "Tinh thông kim cổ",
+      "lessonRefs": [
+        "hsk6-v2-lesson-33",
+        "hsk6-v2-lesson-34",
+        "hsk6-v2-lesson-35",
+        "hsk6-v2-lesson-36"
+      ]
+    },
+    {
+      "id": "hsk6-v2-theme-10",
+      "themeNumber": 10,
+      "titleZh": "热点追踪",
+      "titleVi": "Theo dấu các chủ đề nóng hổi",
+      "lessonRefs": [
+        "hsk6-v2-lesson-37",
+        "hsk6-v2-lesson-38",
+        "hsk6-v2-lesson-39",
+        "hsk6-v2-lesson-40"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "lessonRef": "hsk6-v2-lesson-21",
+      "number": 21,
+      "titleZh": "未来商店",
+      "titleVi": "Cửa hàng tương lai",
+      "startPage": 14,
+      "endPage": 22,
+      "integratedNotes": [
+        "以免",
+        "嫌"
+      ],
+      "wordDistinction": "不免—未免",
+      "discourseRhetoric": "篇章（1）：省略",
+      "extension": "词汇：名词"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-22",
+      "number": 22,
+      "titleZh": "2050年的汽车什么样？",
+      "titleVi": "Xe hơi năm 2050 sẽ như thế nào?",
+      "startPage": 23,
+      "endPage": 32,
+      "integratedNotes": [
+        "动不动",
+        "甲乙丙丁……"
+      ],
+      "wordDistinction": "担保—保证",
+      "discourseRhetoric": "篇章（2）：词汇衔接",
+      "extension": "词汇：（1）反义词；（2）词语搭配"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-23",
+      "number": 23,
+      "titleZh": "大数据时代",
+      "titleVi": "Thời đại dữ liệu lớn",
+      "startPage": 33,
+      "endPage": 41,
+      "integratedNotes": [
+        "加以",
+        "大大、远远"
+      ],
+      "wordDistinction": "万分—十分",
+      "discourseRhetoric": "修辞（1）：仿词",
+      "extension": "词汇：近义词"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-24",
+      "number": 24,
+      "titleZh": "体育明星们的离奇遭遇",
+      "titleVi": "Cảnh ngộ ly kỳ của các ngôi sao thể thao",
+      "startPage": 42,
+      "endPage": 51,
+      "integratedNotes": [
+        "紧缩句",
+        "特意"
+      ],
+      "wordDistinction": "特意—故意",
+      "discourseRhetoric": "修辞（2）：比拟",
+      "extension": "词汇：词语搭配"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-25",
+      "number": 25,
+      "titleZh": "草船借箭",
+      "titleVi": "Thuyền cỏ mượn tên",
+      "startPage": 52,
+      "endPage": 61,
+      "integratedNotes": [
+        "即将",
+        "能A就A"
+      ],
+      "wordDistinction": "大致—大体",
+      "discourseRhetoric": "篇章（3）：替代",
+      "extension": "词汇：词语的语素义"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-26",
+      "number": 26,
+      "titleZh": "奇异的灯光",
+      "titleVi": "Ánh sáng kỳ lạ",
+      "startPage": 62,
+      "endPage": 70,
+      "integratedNotes": [
+        "别说",
+        "来来回回"
+      ],
+      "wordDistinction": "挨—受",
+      "discourseRhetoric": "修辞（3）：比喻",
+      "extension": "词汇：（1）名词；（2）文学方面的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-27",
+      "number": 27,
+      "titleZh": "完璧归赵",
+      "titleVi": "Trả ngọc nguyên vẹn cho nước Triệu",
+      "startPage": 71,
+      "endPage": 80,
+      "integratedNotes": [
+        "左……右……",
+        "不成"
+      ],
+      "wordDistinction": "一贯—一直",
+      "discourseRhetoric": "修辞（4）：引用",
+      "extension": "词汇：（1）反义词；（2）学业方面的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-28",
+      "number": 28,
+      "titleZh": "高山流水遇知音",
+      "titleVi": "Cao sơn lưu thủy gặp tri âm",
+      "startPage": 81,
+      "endPage": 91,
+      "integratedNotes": [
+        "与“个”相关的格式",
+        "向来"
+      ],
+      "wordDistinction": "气势—气魄",
+      "discourseRhetoric": "修辞（5）：婉曲",
+      "extension": "词汇：（1）词语的语素义；（2）动物生活方面的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-29",
+      "number": 29,
+      "titleZh": "“笑”的备忘录",
+      "titleVi": "Bản ghi nhớ việc cười",
+      "startPage": 92,
+      "endPage": 102,
+      "integratedNotes": [
+        "预先",
+        "……也好，……也罢"
+      ],
+      "wordDistinction": "诸—各",
+      "discourseRhetoric": "修辞（6）：设问",
+      "extension": "词汇：（1）近义词；（2）政治方面的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-30",
+      "number": 30,
+      "titleZh": "你睡好了吗？",
+      "titleVi": "Bạn ngủ ngon không?",
+      "startPage": 103,
+      "endPage": 111,
+      "integratedNotes": [
+        "不时",
+        "多多少少"
+      ],
+      "wordDistinction": "容忍—忍受",
+      "discourseRhetoric": "篇章（4）：连接",
+      "extension": "词汇：名词"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-31",
+      "number": 31,
+      "titleZh": "运动的学问",
+      "titleVi": "Kiến thức tập thể dục",
+      "startPage": 112,
+      "endPage": 121,
+      "integratedNotes": [
+        "逐",
+        "归根到底"
+      ],
+      "wordDistinction": "胡乱—随便",
+      "discourseRhetoric": "修辞（7）：大词小用",
+      "extension": "词汇：词语的语素义"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-32",
+      "number": 32,
+      "titleZh": "有时，不妨悲伤",
+      "titleVi": "Đôi lúc cũng nên buồn",
+      "startPage": 122,
+      "endPage": 133,
+      "integratedNotes": [
+        "哪怕",
+        "反之"
+      ],
+      "wordDistinction": "许可—允许",
+      "discourseRhetoric": "修辞（8）：排比",
+      "extension": "词汇：词语搭配"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-33",
+      "number": 33,
+      "titleZh": "怀念慢生活",
+      "titleVi": "Nhớ lúc sống chậm",
+      "startPage": 134,
+      "endPage": 142,
+      "integratedNotes": [
+        "A的A，B的B",
+        "一时"
+      ],
+      "wordDistinction": "现场—当场",
+      "discourseRhetoric": "修辞（9）：借代",
+      "extension": "词汇：词语的语素义"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-34",
+      "number": 34,
+      "titleZh": "为文物而生的人",
+      "titleVi": "Một người dành cả cuộc đời cho các di vật văn hóa",
+      "startPage": 143,
+      "endPage": 153,
+      "integratedNotes": [
+        "尚且",
+        "当"
+      ],
+      "wordDistinction": "温和—温柔",
+      "discourseRhetoric": "篇章（5）：过渡",
+      "extension": "词汇：表示人物身份的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-35",
+      "number": 35,
+      "titleZh": "走近木版年画",
+      "titleVi": "Đến với tranh Tết mộc bản",
+      "startPage": 154,
+      "endPage": 164,
+      "integratedNotes": [
+        "终究",
+        "愈……愈……"
+      ],
+      "wordDistinction": "连年—连续",
+      "discourseRhetoric": "篇章（6）：重复关键词，推进主题",
+      "extension": "词汇：词语的语素义"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-36",
+      "number": 36,
+      "titleZh": "中国古代书院",
+      "titleVi": "Trường học Trung Quốc thời xưa",
+      "startPage": 165,
+      "endPage": 175,
+      "integratedNotes": [
+        "一经",
+        "本着+名词"
+      ],
+      "wordDistinction": "截止—终止",
+      "discourseRhetoric": "篇章（7）：论点+例证",
+      "extension": "词汇：（1）词语搭配；（2）词语的语素义"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-37",
+      "number": 37,
+      "titleZh": "警察的故事",
+      "titleVi": "Chuyện của cảnh sát",
+      "startPage": 176,
+      "endPage": 186,
+      "integratedNotes": [
+        "为……起见",
+        "暂且"
+      ],
+      "wordDistinction": "恐惧—恐怖",
+      "discourseRhetoric": "篇章（8）：照应",
+      "extension": "词汇：词语的语素义"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-38",
+      "number": 38,
+      "titleZh": "慧眼捕捉商机",
+      "titleVi": "Tuệ nhãn nắm bắt thời cơ",
+      "startPage": 187,
+      "endPage": 197,
+      "integratedNotes": [
+        "屡次",
+        "依据"
+      ],
+      "wordDistinction": "就近—附近",
+      "discourseRhetoric": "修辞（10）：反复",
+      "extension": "词汇：（1）医学方面的词语；（2）金融方面的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-39",
+      "number": 39,
+      "titleZh": "互联网时代的生活",
+      "titleVi": "Cuộc sống trong thời đại Internet",
+      "startPage": 198,
+      "endPage": 207,
+      "integratedNotes": [
+        "任意",
+        "尚未"
+      ],
+      "wordDistinction": "乐趣—兴趣",
+      "discourseRhetoric": "修辞（11）：夸张",
+      "extension": "词汇：（1）法律方面的词语；（2）政治方面的词语"
+    },
+    {
+      "lessonRef": "hsk6-v2-lesson-40",
+      "number": 40,
+      "titleZh": "人类超能力会改变世界纪录吗？",
+      "titleVi": "Siêu năng lực của con người có làm thay đổi kỷ lục thế giới?",
+      "startPage": 208,
+      "endPage": 218,
+      "integratedNotes": [
+        "（把）……放在眼里",
+        "不无"
+      ],
+      "wordDistinction": "顽强—坚强",
+      "discourseRhetoric": "篇章（9）：先总说，再分说",
+      "extension": "词汇：（1）军事方面的词语；（2）政治方面的词语"
+    }
+  ]
+}

@@ -1,0 +1,2683 @@
+{
+  "bundleId": "hsk6-standard-course-textbook-1-vi-v1",
+  "units": [
+    {
+      "id": "hsk6t1-unit-01",
+      "number": 1,
+      "titleZh": "生活点滴",
+      "titleVi": "Những việc nhỏ nhất trong cuộc sống",
+      "sourceDividerPdfPage": 13,
+      "sourceDividerPrintedPage": 13,
+      "lessonIds": [
+        "hsk6t1-lesson-01",
+        "hsk6t1-lesson-02",
+        "hsk6t1-lesson-03",
+        "hsk6t1-lesson-04"
+      ]
+    },
+    {
+      "id": "hsk6t1-unit-02",
+      "number": 2,
+      "titleZh": "不甘平庸",
+      "titleVi": "Không cam chịu tầm thường",
+      "sourceDividerPdfPage": 53,
+      "sourceDividerPrintedPage": 53,
+      "lessonIds": [
+        "hsk6t1-lesson-05",
+        "hsk6t1-lesson-06",
+        "hsk6t1-lesson-07",
+        "hsk6t1-lesson-08"
+      ]
+    },
+    {
+      "id": "hsk6t1-unit-03",
+      "number": 3,
+      "titleZh": "多彩社会",
+      "titleVi": "Xã hội nhiều màu sắc",
+      "sourceDividerPdfPage": 95,
+      "sourceDividerPrintedPage": 95,
+      "lessonIds": [
+        "hsk6t1-lesson-09",
+        "hsk6t1-lesson-10",
+        "hsk6t1-lesson-11",
+        "hsk6t1-lesson-12"
+      ]
+    },
+    {
+      "id": "hsk6t1-unit-04",
+      "number": 4,
+      "titleZh": "走遍天下",
+      "titleVi": "Đi khắp thế giới",
+      "sourceDividerPdfPage": 135,
+      "sourceDividerPrintedPage": 135,
+      "lessonIds": [
+        "hsk6t1-lesson-13",
+        "hsk6t1-lesson-14",
+        "hsk6t1-lesson-15",
+        "hsk6t1-lesson-16"
+      ]
+    },
+    {
+      "id": "hsk6t1-unit-05",
+      "number": 5,
+      "titleZh": "美丽家园",
+      "titleVi": "Quê hương xinh đẹp",
+      "sourceDividerPdfPage": 177,
+      "sourceDividerPrintedPage": 177,
+      "lessonIds": [
+        "hsk6t1-lesson-17",
+        "hsk6t1-lesson-18",
+        "hsk6t1-lesson-19",
+        "hsk6t1-lesson-20"
+      ]
+    }
+  ],
+  "lessons": [
+    {
+      "id": "hsk6t1-lesson-01",
+      "number": 1,
+      "unitId": "hsk6t1-unit-01",
+      "titleZh": "孩子给我们的启示",
+      "titleVi": "Điều con trẻ dạy chúng ta",
+      "sourcePdfPages": {
+        "start": 14,
+        "end": 23
+      },
+      "sourcePrintedPages": {
+        "start": 14,
+        "end": 23
+      },
+      "audioTracks": [
+        "01-1",
+        "01-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 14,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 在你跟父母（或孩子）的关系中，遇到过下列情况吗？如果遇到，想一想该"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 15,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文孩子给我们的启示（698字）01-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 17,
+          "rowIndex": 1,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 19,
+          "rowIndex": 15,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 21,
+          "rowIndex": 24,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 22,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 病句类型：词语误用（一）"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-01-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-01-01",
+        "hsk6t1-annotation-01-01",
+        "hsk6t1-practice-01-01",
+        "hsk6t1-application-01-01",
+        "hsk6t1-extension-01-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0049",
+        "hsk6t1-lexeme-0095",
+        "hsk6t1-lexeme-0142",
+        "hsk6t1-lexeme-0149",
+        "hsk6t1-lexeme-0176",
+        "hsk6t1-lexeme-0192",
+        "hsk6t1-lexeme-0208",
+        "hsk6t1-lexeme-0219",
+        "hsk6t1-lexeme-0274",
+        "hsk6t1-lexeme-0285",
+        "hsk6t1-lexeme-0314",
+        "hsk6t1-lexeme-0322",
+        "hsk6t1-lexeme-0401",
+        "hsk6t1-lexeme-0512",
+        "hsk6t1-lexeme-0513",
+        "hsk6t1-lexeme-0545",
+        "hsk6t1-lexeme-0551",
+        "hsk6t1-lexeme-0561",
+        "hsk6t1-lexeme-0577",
+        "hsk6t1-lexeme-0590",
+        "hsk6t1-lexeme-0598",
+        "hsk6t1-lexeme-0610",
+        "hsk6t1-lexeme-0612",
+        "hsk6t1-lexeme-0630",
+        "hsk6t1-lexeme-0633",
+        "hsk6t1-lexeme-0731",
+        "hsk6t1-lexeme-0736",
+        "hsk6t1-lexeme-0761",
+        "hsk6t1-lexeme-0765",
+        "hsk6t1-lexeme-0766",
+        "hsk6t1-lexeme-0796",
+        "hsk6t1-lexeme-0835"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-008",
+        "hsk6t1-supplemental-010"
+      ],
+      "vocabularyCount": 32,
+      "supplementalVocabularyCount": 2,
+      "allVocabularyCount": 34,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-02",
+      "number": 2,
+      "unitId": "hsk6t1-unit-01",
+      "titleZh": "父母之爱",
+      "titleVi": "Tình yêu của ba mẹ",
+      "sourcePdfPages": {
+        "start": 24,
+        "end": 32
+      },
+      "sourcePrintedPages": {
+        "start": 24,
+        "end": 32
+      },
+      "audioTracks": [
+        "02-1",
+        "02-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 24,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 中国有句俗话：“打是亲，骂是爱”，你能理解吗？下面这些事情中，你觉"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 25,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文父母之爱（701字）02-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 27,
+          "rowIndex": 2,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 29,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 31,
+          "rowIndex": 21,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 32,
+          "rowIndex": 3,
+          "matchedTextOcr": "扩展 词汇：看图片，熟悉下列表示动作的词语"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-02-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-02-01",
+        "hsk6t1-annotation-02-01",
+        "hsk6t1-practice-02-01",
+        "hsk6t1-application-02-01",
+        "hsk6t1-extension-02-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0006",
+        "hsk6t1-lexeme-0017",
+        "hsk6t1-lexeme-0030",
+        "hsk6t1-lexeme-0033",
+        "hsk6t1-lexeme-0064",
+        "hsk6t1-lexeme-0066",
+        "hsk6t1-lexeme-0083",
+        "hsk6t1-lexeme-0108",
+        "hsk6t1-lexeme-0130",
+        "hsk6t1-lexeme-0181",
+        "hsk6t1-lexeme-0190",
+        "hsk6t1-lexeme-0226",
+        "hsk6t1-lexeme-0230",
+        "hsk6t1-lexeme-0236",
+        "hsk6t1-lexeme-0248",
+        "hsk6t1-lexeme-0260",
+        "hsk6t1-lexeme-0273",
+        "hsk6t1-lexeme-0275",
+        "hsk6t1-lexeme-0279",
+        "hsk6t1-lexeme-0320",
+        "hsk6t1-lexeme-0352",
+        "hsk6t1-lexeme-0399",
+        "hsk6t1-lexeme-0410",
+        "hsk6t1-lexeme-0438",
+        "hsk6t1-lexeme-0439",
+        "hsk6t1-lexeme-0467",
+        "hsk6t1-lexeme-0469",
+        "hsk6t1-lexeme-0493",
+        "hsk6t1-lexeme-0548",
+        "hsk6t1-lexeme-0637",
+        "hsk6t1-lexeme-0651",
+        "hsk6t1-lexeme-0654",
+        "hsk6t1-lexeme-0673",
+        "hsk6t1-lexeme-0675",
+        "hsk6t1-lexeme-0700",
+        "hsk6t1-lexeme-0708",
+        "hsk6t1-lexeme-0712",
+        "hsk6t1-lexeme-0741",
+        "hsk6t1-lexeme-0773",
+        "hsk6t1-lexeme-0787",
+        "hsk6t1-lexeme-0798",
+        "hsk6t1-lexeme-0859",
+        "hsk6t1-lexeme-0882"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-007"
+      ],
+      "vocabularyCount": 43,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-03",
+      "number": 3,
+      "unitId": "hsk6t1-unit-01",
+      "titleZh": "一盒月饼",
+      "titleVi": "Một hộp bánh Trung thu",
+      "sourcePdfPages": {
+        "start": 33,
+        "end": 43
+      },
+      "sourcePrintedPages": {
+        "start": 33,
+        "end": 43
+      },
+      "audioTracks": [
+        "03-1",
+        "03-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 33,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 根据图片回答问题。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 34,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文 一盒月饼（713字））03-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 36,
+          "rowIndex": 3,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 38,
+          "rowIndex": 25,
+          "matchedTextOcr": "练习1 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 41,
+          "rowIndex": 3,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 41,
+          "rowIndex": 8,
+          "matchedTextOcr": "扩展 1 病句类型：词语误用（二）"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-03-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-03-01",
+        "hsk6t1-annotation-03-01",
+        "hsk6t1-practice-03-01",
+        "hsk6t1-application-03-01",
+        "hsk6t1-extension-03-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0012",
+        "hsk6t1-lexeme-0020",
+        "hsk6t1-lexeme-0052",
+        "hsk6t1-lexeme-0069",
+        "hsk6t1-lexeme-0075",
+        "hsk6t1-lexeme-0076",
+        "hsk6t1-lexeme-0111",
+        "hsk6t1-lexeme-0137",
+        "hsk6t1-lexeme-0143",
+        "hsk6t1-lexeme-0161",
+        "hsk6t1-lexeme-0168",
+        "hsk6t1-lexeme-0185",
+        "hsk6t1-lexeme-0227",
+        "hsk6t1-lexeme-0250",
+        "hsk6t1-lexeme-0253",
+        "hsk6t1-lexeme-0265",
+        "hsk6t1-lexeme-0286",
+        "hsk6t1-lexeme-0300",
+        "hsk6t1-lexeme-0395",
+        "hsk6t1-lexeme-0431",
+        "hsk6t1-lexeme-0453",
+        "hsk6t1-lexeme-0463",
+        "hsk6t1-lexeme-0505",
+        "hsk6t1-lexeme-0507",
+        "hsk6t1-lexeme-0509",
+        "hsk6t1-lexeme-0515",
+        "hsk6t1-lexeme-0528",
+        "hsk6t1-lexeme-0559",
+        "hsk6t1-lexeme-0615",
+        "hsk6t1-lexeme-0686",
+        "hsk6t1-lexeme-0694",
+        "hsk6t1-lexeme-0695",
+        "hsk6t1-lexeme-0703",
+        "hsk6t1-lexeme-0710",
+        "hsk6t1-lexeme-0715",
+        "hsk6t1-lexeme-0726",
+        "hsk6t1-lexeme-0728",
+        "hsk6t1-lexeme-0751",
+        "hsk6t1-lexeme-0775",
+        "hsk6t1-lexeme-0778",
+        "hsk6t1-lexeme-0795",
+        "hsk6t1-lexeme-0861",
+        "hsk6t1-lexeme-0864"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-017"
+      ],
+      "vocabularyCount": 43,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-04",
+      "number": 4,
+      "unitId": "hsk6t1-unit-01",
+      "titleZh": "完美的胜利",
+      "titleVi": "Chiến thắng hoàn hảo",
+      "sourcePdfPages": {
+        "start": 44,
+        "end": 52
+      },
+      "sourcePrintedPages": {
+        "start": 44,
+        "end": 52
+      },
+      "audioTracks": [
+        "04-1",
+        "04-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 44,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 给下面的词语选择对应的图片，并回答下面的问题。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 45,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文完美的胜利（750字） 04-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 47,
+          "rowIndex": 3,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 49,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 51,
+          "rowIndex": 16,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 52,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 词汇：熟悉下列词语的语素义"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-04-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-04-01",
+        "hsk6t1-annotation-04-01",
+        "hsk6t1-practice-04-01",
+        "hsk6t1-application-04-01",
+        "hsk6t1-extension-04-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0010",
+        "hsk6t1-lexeme-0024",
+        "hsk6t1-lexeme-0040",
+        "hsk6t1-lexeme-0057",
+        "hsk6t1-lexeme-0058",
+        "hsk6t1-lexeme-0067",
+        "hsk6t1-lexeme-0074",
+        "hsk6t1-lexeme-0080",
+        "hsk6t1-lexeme-0086",
+        "hsk6t1-lexeme-0090",
+        "hsk6t1-lexeme-0104",
+        "hsk6t1-lexeme-0105",
+        "hsk6t1-lexeme-0124",
+        "hsk6t1-lexeme-0136",
+        "hsk6t1-lexeme-0144",
+        "hsk6t1-lexeme-0157",
+        "hsk6t1-lexeme-0166",
+        "hsk6t1-lexeme-0180",
+        "hsk6t1-lexeme-0206",
+        "hsk6t1-lexeme-0212",
+        "hsk6t1-lexeme-0268",
+        "hsk6t1-lexeme-0270",
+        "hsk6t1-lexeme-0323",
+        "hsk6t1-lexeme-0371",
+        "hsk6t1-lexeme-0383",
+        "hsk6t1-lexeme-0422",
+        "hsk6t1-lexeme-0429",
+        "hsk6t1-lexeme-0432",
+        "hsk6t1-lexeme-0441",
+        "hsk6t1-lexeme-0444",
+        "hsk6t1-lexeme-0457",
+        "hsk6t1-lexeme-0518",
+        "hsk6t1-lexeme-0523",
+        "hsk6t1-lexeme-0540",
+        "hsk6t1-lexeme-0546",
+        "hsk6t1-lexeme-0597",
+        "hsk6t1-lexeme-0609",
+        "hsk6t1-lexeme-0616",
+        "hsk6t1-lexeme-0629",
+        "hsk6t1-lexeme-0665",
+        "hsk6t1-lexeme-0680",
+        "hsk6t1-lexeme-0742",
+        "hsk6t1-lexeme-0788",
+        "hsk6t1-lexeme-0831",
+        "hsk6t1-lexeme-0880"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-014"
+      ],
+      "vocabularyCount": 45,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 46,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-05",
+      "number": 5,
+      "unitId": "hsk6t1-unit-02",
+      "titleZh": "学一门外语需要理由吗？",
+      "titleVi": "Học ngoại ngữ cần lý do ư?",
+      "sourcePdfPages": {
+        "start": 54,
+        "end": 64
+      },
+      "sourcePrintedPages": {
+        "start": 54,
+        "end": 64
+      },
+      "audioTracks": [
+        "05-1",
+        "05-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 54,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 你为什么学习汉语？请从下面的选项中找出答案，如果都不是你的答案，请"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 55,
+          "rowIndex": 4,
+          "matchedTextOcr": "课文学一门外语需要理由吗（832字）05-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 57,
+          "rowIndex": 28,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 60,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 62,
+          "rowIndex": 15,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 63,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 病句类型：成分残缺"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-05-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-05-01",
+        "hsk6t1-annotation-05-01",
+        "hsk6t1-practice-05-01",
+        "hsk6t1-application-05-01",
+        "hsk6t1-extension-05-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0032",
+        "hsk6t1-lexeme-0037",
+        "hsk6t1-lexeme-0081",
+        "hsk6t1-lexeme-0112",
+        "hsk6t1-lexeme-0139",
+        "hsk6t1-lexeme-0141",
+        "hsk6t1-lexeme-0158",
+        "hsk6t1-lexeme-0171",
+        "hsk6t1-lexeme-0174",
+        "hsk6t1-lexeme-0182",
+        "hsk6t1-lexeme-0191",
+        "hsk6t1-lexeme-0233",
+        "hsk6t1-lexeme-0255",
+        "hsk6t1-lexeme-0262",
+        "hsk6t1-lexeme-0291",
+        "hsk6t1-lexeme-0302",
+        "hsk6t1-lexeme-0304",
+        "hsk6t1-lexeme-0342",
+        "hsk6t1-lexeme-0347",
+        "hsk6t1-lexeme-0349",
+        "hsk6t1-lexeme-0386",
+        "hsk6t1-lexeme-0388",
+        "hsk6t1-lexeme-0394",
+        "hsk6t1-lexeme-0451",
+        "hsk6t1-lexeme-0496",
+        "hsk6t1-lexeme-0502",
+        "hsk6t1-lexeme-0536",
+        "hsk6t1-lexeme-0555",
+        "hsk6t1-lexeme-0565",
+        "hsk6t1-lexeme-0574",
+        "hsk6t1-lexeme-0575",
+        "hsk6t1-lexeme-0614",
+        "hsk6t1-lexeme-0623",
+        "hsk6t1-lexeme-0674",
+        "hsk6t1-lexeme-0714",
+        "hsk6t1-lexeme-0718",
+        "hsk6t1-lexeme-0722",
+        "hsk6t1-lexeme-0758",
+        "hsk6t1-lexeme-0774",
+        "hsk6t1-lexeme-0811",
+        "hsk6t1-lexeme-0842",
+        "hsk6t1-lexeme-0866",
+        "hsk6t1-lexeme-0876"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-018"
+      ],
+      "vocabularyCount": 43,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-06",
+      "number": 6,
+      "unitId": "hsk6t1-unit-02",
+      "titleZh": "当好职场插班生",
+      "titleVi": "Hãy là học sinh giỏi tại nơi làm việc",
+      "sourcePdfPages": {
+        "start": 65,
+        "end": 73
+      },
+      "sourcePrintedPages": {
+        "start": 65,
+        "end": 73
+      },
+      "audioTracks": [
+        "06-1",
+        "06-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 65,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 当你到了一个新环境时（比如转学到一个新的班级、刚加入一个新的球队或"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 66,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文 当好职场插班生 （785字） 06-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 68,
+          "rowIndex": 2,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 70,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 72,
+          "rowIndex": 28,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 73,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 词汇：熟悉下列词语搭配 当好职场插班生"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-06-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-06-01",
+        "hsk6t1-annotation-06-01",
+        "hsk6t1-practice-06-01",
+        "hsk6t1-application-06-01",
+        "hsk6t1-extension-06-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0039",
+        "hsk6t1-lexeme-0059",
+        "hsk6t1-lexeme-0068",
+        "hsk6t1-lexeme-0101",
+        "hsk6t1-lexeme-0123",
+        "hsk6t1-lexeme-0125",
+        "hsk6t1-lexeme-0127",
+        "hsk6t1-lexeme-0135",
+        "hsk6t1-lexeme-0140",
+        "hsk6t1-lexeme-0145",
+        "hsk6t1-lexeme-0146",
+        "hsk6t1-lexeme-0148",
+        "hsk6t1-lexeme-0155",
+        "hsk6t1-lexeme-0196",
+        "hsk6t1-lexeme-0210",
+        "hsk6t1-lexeme-0215",
+        "hsk6t1-lexeme-0242",
+        "hsk6t1-lexeme-0280",
+        "hsk6t1-lexeme-0296",
+        "hsk6t1-lexeme-0307",
+        "hsk6t1-lexeme-0316",
+        "hsk6t1-lexeme-0318",
+        "hsk6t1-lexeme-0358",
+        "hsk6t1-lexeme-0364",
+        "hsk6t1-lexeme-0367",
+        "hsk6t1-lexeme-0381",
+        "hsk6t1-lexeme-0428",
+        "hsk6t1-lexeme-0440",
+        "hsk6t1-lexeme-0462",
+        "hsk6t1-lexeme-0472",
+        "hsk6t1-lexeme-0508",
+        "hsk6t1-lexeme-0538",
+        "hsk6t1-lexeme-0550",
+        "hsk6t1-lexeme-0571",
+        "hsk6t1-lexeme-0589",
+        "hsk6t1-lexeme-0593",
+        "hsk6t1-lexeme-0594",
+        "hsk6t1-lexeme-0648",
+        "hsk6t1-lexeme-0662",
+        "hsk6t1-lexeme-0698",
+        "hsk6t1-lexeme-0743",
+        "hsk6t1-lexeme-0812",
+        "hsk6t1-lexeme-0844",
+        "hsk6t1-lexeme-0846",
+        "hsk6t1-lexeme-0877"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-009"
+      ],
+      "vocabularyCount": 45,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 46,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-07",
+      "number": 7,
+      "unitId": "hsk6t1-unit-02",
+      "titleZh": "我的人生我做主。",
+      "titleVi": "Tôi làm chủ cuộc đời tôi.",
+      "sourcePdfPages": {
+        "start": 74,
+        "end": 84
+      },
+      "sourcePrintedPages": {
+        "start": 74,
+        "end": 84
+      },
+      "audioTracks": [
+        "07-1",
+        "07-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 74,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 当你在为一件事情犹豫不决时，有的人却能很快就做出正确的决定。这种做"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 75,
+          "rowIndex": 5,
+          "matchedTextOcr": "课文我的人生我做主（739字）07-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 77,
+          "rowIndex": 36,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 80,
+          "rowIndex": 3,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 82,
+          "rowIndex": 13,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 82,
+          "rowIndex": 20,
+          "matchedTextOcr": "扩展 病句类型：语序不当"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-07-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-07-01",
+        "hsk6t1-annotation-07-01",
+        "hsk6t1-practice-07-01",
+        "hsk6t1-application-07-01",
+        "hsk6t1-extension-07-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0015",
+        "hsk6t1-lexeme-0019",
+        "hsk6t1-lexeme-0051",
+        "hsk6t1-lexeme-0070",
+        "hsk6t1-lexeme-0099",
+        "hsk6t1-lexeme-0100",
+        "hsk6t1-lexeme-0117",
+        "hsk6t1-lexeme-0138",
+        "hsk6t1-lexeme-0151",
+        "hsk6t1-lexeme-0209",
+        "hsk6t1-lexeme-0257",
+        "hsk6t1-lexeme-0263",
+        "hsk6t1-lexeme-0297",
+        "hsk6t1-lexeme-0305",
+        "hsk6t1-lexeme-0308",
+        "hsk6t1-lexeme-0312",
+        "hsk6t1-lexeme-0348",
+        "hsk6t1-lexeme-0360",
+        "hsk6t1-lexeme-0366",
+        "hsk6t1-lexeme-0374",
+        "hsk6t1-lexeme-0397",
+        "hsk6t1-lexeme-0403",
+        "hsk6t1-lexeme-0411",
+        "hsk6t1-lexeme-0450",
+        "hsk6t1-lexeme-0459",
+        "hsk6t1-lexeme-0549",
+        "hsk6t1-lexeme-0560",
+        "hsk6t1-lexeme-0569",
+        "hsk6t1-lexeme-0570",
+        "hsk6t1-lexeme-0639",
+        "hsk6t1-lexeme-0661",
+        "hsk6t1-lexeme-0666",
+        "hsk6t1-lexeme-0681",
+        "hsk6t1-lexeme-0707",
+        "hsk6t1-lexeme-0764",
+        "hsk6t1-lexeme-0767",
+        "hsk6t1-lexeme-0768",
+        "hsk6t1-lexeme-0776",
+        "hsk6t1-lexeme-0779",
+        "hsk6t1-lexeme-0781",
+        "hsk6t1-lexeme-0797",
+        "hsk6t1-lexeme-0830",
+        "hsk6t1-lexeme-0850",
+        "hsk6t1-lexeme-0852",
+        "hsk6t1-lexeme-0894"
+      ],
+      "supplementalLexemeIds": [],
+      "vocabularyCount": 45,
+      "supplementalVocabularyCount": 0,
+      "allVocabularyCount": 45,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-08",
+      "number": 8,
+      "unitId": "hsk6t1-unit-02",
+      "titleZh": "遇见原来的我",
+      "titleVi": "Gặp lại tôi của ngày xưa",
+      "sourcePdfPages": {
+        "start": 85,
+        "end": 94
+      },
+      "sourcePrintedPages": {
+        "start": 85,
+        "end": 94
+      },
+      "audioTracks": [
+        "08-1",
+        "08-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 85,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 86,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文遇见原来的我（932字）08-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 88,
+          "rowIndex": 31,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 91,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 93,
+          "rowIndex": 14,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 94,
+          "rowIndex": 3,
+          "matchedTextOcr": "扩展 词汇：熟悉下列反义词"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-08-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-08-01",
+        "hsk6t1-annotation-08-01",
+        "hsk6t1-practice-08-01",
+        "hsk6t1-application-08-01",
+        "hsk6t1-extension-08-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0008",
+        "hsk6t1-lexeme-0034",
+        "hsk6t1-lexeme-0036",
+        "hsk6t1-lexeme-0088",
+        "hsk6t1-lexeme-0097",
+        "hsk6t1-lexeme-0103",
+        "hsk6t1-lexeme-0107",
+        "hsk6t1-lexeme-0120",
+        "hsk6t1-lexeme-0165",
+        "hsk6t1-lexeme-0199",
+        "hsk6t1-lexeme-0235",
+        "hsk6t1-lexeme-0239",
+        "hsk6t1-lexeme-0256",
+        "hsk6t1-lexeme-0299",
+        "hsk6t1-lexeme-0309",
+        "hsk6t1-lexeme-0331",
+        "hsk6t1-lexeme-0390",
+        "hsk6t1-lexeme-0452",
+        "hsk6t1-lexeme-0490",
+        "hsk6t1-lexeme-0517",
+        "hsk6t1-lexeme-0531",
+        "hsk6t1-lexeme-0544",
+        "hsk6t1-lexeme-0573",
+        "hsk6t1-lexeme-0613",
+        "hsk6t1-lexeme-0644",
+        "hsk6t1-lexeme-0652",
+        "hsk6t1-lexeme-0677",
+        "hsk6t1-lexeme-0693",
+        "hsk6t1-lexeme-0719",
+        "hsk6t1-lexeme-0727",
+        "hsk6t1-lexeme-0737",
+        "hsk6t1-lexeme-0740",
+        "hsk6t1-lexeme-0744",
+        "hsk6t1-lexeme-0749",
+        "hsk6t1-lexeme-0777",
+        "hsk6t1-lexeme-0784",
+        "hsk6t1-lexeme-0814"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-002",
+        "hsk6t1-supplemental-003",
+        "hsk6t1-supplemental-005",
+        "hsk6t1-supplemental-016"
+      ],
+      "vocabularyCount": 37,
+      "supplementalVocabularyCount": 4,
+      "allVocabularyCount": 41,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-09",
+      "number": 9,
+      "unitId": "hsk6t1-unit-03",
+      "titleZh": "不用手机的日子",
+      "titleVi": "Một ngày không sử dụng điện thoại di động",
+      "sourcePdfPages": {
+        "start": 96,
+        "end": 106
+      },
+      "sourcePrintedPages": {
+        "start": 96,
+        "end": 106
+      },
+      "audioTracks": [
+        "09-1",
+        "09-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 96,
+          "rowIndex": 4,
+          "matchedTextOcr": "热身 你经常玩儿手机吗？对你来说，手机有什么用途？请在下面的选项中划出，"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 97,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文不用手机的日子（844字）09-1 用手机的"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 100,
+          "rowIndex": 2,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 102,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 104,
+          "rowIndex": 15,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 105,
+          "rowIndex": 1,
+          "matchedTextOcr": "扩展 病句类型：搭配不当 不用手机的日子"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-09-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-09-01",
+        "hsk6t1-annotation-09-01",
+        "hsk6t1-practice-09-01",
+        "hsk6t1-application-09-01",
+        "hsk6t1-extension-09-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0001",
+        "hsk6t1-lexeme-0002",
+        "hsk6t1-lexeme-0003",
+        "hsk6t1-lexeme-0016",
+        "hsk6t1-lexeme-0022",
+        "hsk6t1-lexeme-0047",
+        "hsk6t1-lexeme-0055",
+        "hsk6t1-lexeme-0072",
+        "hsk6t1-lexeme-0132",
+        "hsk6t1-lexeme-0193",
+        "hsk6t1-lexeme-0200",
+        "hsk6t1-lexeme-0204",
+        "hsk6t1-lexeme-0224",
+        "hsk6t1-lexeme-0282",
+        "hsk6t1-lexeme-0337",
+        "hsk6t1-lexeme-0362",
+        "hsk6t1-lexeme-0391",
+        "hsk6t1-lexeme-0392",
+        "hsk6t1-lexeme-0409",
+        "hsk6t1-lexeme-0412",
+        "hsk6t1-lexeme-0434",
+        "hsk6t1-lexeme-0445",
+        "hsk6t1-lexeme-0446",
+        "hsk6t1-lexeme-0478",
+        "hsk6t1-lexeme-0606",
+        "hsk6t1-lexeme-0617",
+        "hsk6t1-lexeme-0624",
+        "hsk6t1-lexeme-0625",
+        "hsk6t1-lexeme-0634",
+        "hsk6t1-lexeme-0649",
+        "hsk6t1-lexeme-0659",
+        "hsk6t1-lexeme-0660",
+        "hsk6t1-lexeme-0685",
+        "hsk6t1-lexeme-0701",
+        "hsk6t1-lexeme-0717",
+        "hsk6t1-lexeme-0747",
+        "hsk6t1-lexeme-0750",
+        "hsk6t1-lexeme-0754",
+        "hsk6t1-lexeme-0810",
+        "hsk6t1-lexeme-0821",
+        "hsk6t1-lexeme-0828",
+        "hsk6t1-lexeme-0832",
+        "hsk6t1-lexeme-0851",
+        "hsk6t1-lexeme-0857",
+        "hsk6t1-lexeme-0870",
+        "hsk6t1-lexeme-0875",
+        "hsk6t1-lexeme-0893"
+      ],
+      "supplementalLexemeIds": [],
+      "vocabularyCount": 47,
+      "supplementalVocabularyCount": 0,
+      "allVocabularyCount": 47,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-10",
+      "number": 10,
+      "unitId": "hsk6t1-unit-03",
+      "titleZh": "全球化视野中的中国饮食",
+      "titleVi": "Thức ăn Trung Quốc trong xu thế toàn cầu hóa",
+      "sourcePdfPages": {
+        "start": 107,
+        "end": 115
+      },
+      "sourcePrintedPages": {
+        "start": 107,
+        "end": 115
+      },
+      "audioTracks": [
+        "10-1",
+        "10-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 107,
+          "rowIndex": 4,
+          "matchedTextOcr": "热身1 下面各种食材你认识吗？从下列选项中找出合适的答案填在图片右边并给"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 108,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文全球化视野中的中国饮食（771字）10-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 110,
+          "rowIndex": 20,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 113,
+          "rowIndex": 2,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 115,
+          "rowIndex": 12,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 115,
+          "rowIndex": 18,
+          "matchedTextOcr": "扩展 词汇：熟悉下列地理方面的词语"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-10-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-10-01",
+        "hsk6t1-annotation-10-01",
+        "hsk6t1-practice-10-01",
+        "hsk6t1-application-10-01",
+        "hsk6t1-extension-10-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0007",
+        "hsk6t1-lexeme-0122",
+        "hsk6t1-lexeme-0126",
+        "hsk6t1-lexeme-0147",
+        "hsk6t1-lexeme-0154",
+        "hsk6t1-lexeme-0186",
+        "hsk6t1-lexeme-0195",
+        "hsk6t1-lexeme-0201",
+        "hsk6t1-lexeme-0247",
+        "hsk6t1-lexeme-0261",
+        "hsk6t1-lexeme-0276",
+        "hsk6t1-lexeme-0287",
+        "hsk6t1-lexeme-0295",
+        "hsk6t1-lexeme-0301",
+        "hsk6t1-lexeme-0310",
+        "hsk6t1-lexeme-0319",
+        "hsk6t1-lexeme-0321",
+        "hsk6t1-lexeme-0361",
+        "hsk6t1-lexeme-0369",
+        "hsk6t1-lexeme-0423",
+        "hsk6t1-lexeme-0425",
+        "hsk6t1-lexeme-0470",
+        "hsk6t1-lexeme-0480",
+        "hsk6t1-lexeme-0485",
+        "hsk6t1-lexeme-0487",
+        "hsk6t1-lexeme-0497",
+        "hsk6t1-lexeme-0498",
+        "hsk6t1-lexeme-0530",
+        "hsk6t1-lexeme-0532",
+        "hsk6t1-lexeme-0533",
+        "hsk6t1-lexeme-0552",
+        "hsk6t1-lexeme-0558",
+        "hsk6t1-lexeme-0604",
+        "hsk6t1-lexeme-0620",
+        "hsk6t1-lexeme-0638",
+        "hsk6t1-lexeme-0640",
+        "hsk6t1-lexeme-0641",
+        "hsk6t1-lexeme-0682",
+        "hsk6t1-lexeme-0690",
+        "hsk6t1-lexeme-0716",
+        "hsk6t1-lexeme-0763",
+        "hsk6t1-lexeme-0771",
+        "hsk6t1-lexeme-0783",
+        "hsk6t1-lexeme-0793",
+        "hsk6t1-lexeme-0799",
+        "hsk6t1-lexeme-0803",
+        "hsk6t1-lexeme-0818",
+        "hsk6t1-lexeme-0820",
+        "hsk6t1-lexeme-0833",
+        "hsk6t1-lexeme-0855"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-006"
+      ],
+      "vocabularyCount": 50,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 51,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-11",
+      "number": 11,
+      "unitId": "hsk6t1-unit-03",
+      "titleZh": "我不在时，猫在干什么？",
+      "titleVi": "Các chú mèo làm gì khi tôi đi vắng?",
+      "sourcePdfPages": {
+        "start": 116,
+        "end": 125
+      },
+      "sourcePrintedPages": {
+        "start": 116,
+        "end": 125
+      },
+      "audioTracks": [
+        "11-1",
+        "11-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 116,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 你养过猫吗？猫喜欢做什么？请找出与下列图片相对应的内容。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 117,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文我不在时，猫在干什么（845字）11-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 119,
+          "rowIndex": 20,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 122,
+          "rowIndex": 3,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 124,
+          "rowIndex": 3,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 124,
+          "rowIndex": 8,
+          "matchedTextOcr": "扩展 病句类型：表意不明"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-11-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-11-01",
+        "hsk6t1-annotation-11-01",
+        "hsk6t1-practice-11-01",
+        "hsk6t1-application-11-01",
+        "hsk6t1-extension-11-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0011",
+        "hsk6t1-lexeme-0077",
+        "hsk6t1-lexeme-0078",
+        "hsk6t1-lexeme-0085",
+        "hsk6t1-lexeme-0118",
+        "hsk6t1-lexeme-0170",
+        "hsk6t1-lexeme-0173",
+        "hsk6t1-lexeme-0238",
+        "hsk6t1-lexeme-0246",
+        "hsk6t1-lexeme-0311",
+        "hsk6t1-lexeme-0324",
+        "hsk6t1-lexeme-0326",
+        "hsk6t1-lexeme-0330",
+        "hsk6t1-lexeme-0339",
+        "hsk6t1-lexeme-0341",
+        "hsk6t1-lexeme-0365",
+        "hsk6t1-lexeme-0370",
+        "hsk6t1-lexeme-0375",
+        "hsk6t1-lexeme-0400",
+        "hsk6t1-lexeme-0408",
+        "hsk6t1-lexeme-0418",
+        "hsk6t1-lexeme-0424",
+        "hsk6t1-lexeme-0426",
+        "hsk6t1-lexeme-0430",
+        "hsk6t1-lexeme-0448",
+        "hsk6t1-lexeme-0458",
+        "hsk6t1-lexeme-0465",
+        "hsk6t1-lexeme-0473",
+        "hsk6t1-lexeme-0479",
+        "hsk6t1-lexeme-0503",
+        "hsk6t1-lexeme-0526",
+        "hsk6t1-lexeme-0529",
+        "hsk6t1-lexeme-0541",
+        "hsk6t1-lexeme-0579",
+        "hsk6t1-lexeme-0618",
+        "hsk6t1-lexeme-0647",
+        "hsk6t1-lexeme-0667",
+        "hsk6t1-lexeme-0679",
+        "hsk6t1-lexeme-0723",
+        "hsk6t1-lexeme-0748",
+        "hsk6t1-lexeme-0841",
+        "hsk6t1-lexeme-0881",
+        "hsk6t1-lexeme-0891"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-004"
+      ],
+      "vocabularyCount": 43,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-12",
+      "number": 12,
+      "unitId": "hsk6t1-unit-03",
+      "titleZh": "我们都爱白噪音。",
+      "titleVi": "Chúng ta đều yêu tiếng ồn trắng.",
+      "sourcePdfPages": {
+        "start": 126,
+        "end": 134
+      },
+      "sourcePrintedPages": {
+        "start": 126,
+        "end": 134
+      },
+      "audioTracks": [
+        "12-1",
+        "12-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 126,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 下面的各种情况，你更习惯哪一种？请选择。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 127,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文我们都爱白噪音（835字）12-1 都爱白"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 129,
+          "rowIndex": 23,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 132,
+          "rowIndex": 2,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 134,
+          "rowIndex": 3,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 134,
+          "rowIndex": 8,
+          "matchedTextOcr": "扩展 词汇：熟悉下列词语搭配"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-12-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-12-01",
+        "hsk6t1-annotation-12-01",
+        "hsk6t1-practice-12-01",
+        "hsk6t1-application-12-01",
+        "hsk6t1-extension-12-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0004",
+        "hsk6t1-lexeme-0023",
+        "hsk6t1-lexeme-0053",
+        "hsk6t1-lexeme-0060",
+        "hsk6t1-lexeme-0061",
+        "hsk6t1-lexeme-0079",
+        "hsk6t1-lexeme-0131",
+        "hsk6t1-lexeme-0216",
+        "hsk6t1-lexeme-0217",
+        "hsk6t1-lexeme-0243",
+        "hsk6t1-lexeme-0278",
+        "hsk6t1-lexeme-0283",
+        "hsk6t1-lexeme-0284",
+        "hsk6t1-lexeme-0292",
+        "hsk6t1-lexeme-0313",
+        "hsk6t1-lexeme-0315",
+        "hsk6t1-lexeme-0334",
+        "hsk6t1-lexeme-0345",
+        "hsk6t1-lexeme-0351",
+        "hsk6t1-lexeme-0363",
+        "hsk6t1-lexeme-0382",
+        "hsk6t1-lexeme-0414",
+        "hsk6t1-lexeme-0436",
+        "hsk6t1-lexeme-0454",
+        "hsk6t1-lexeme-0464",
+        "hsk6t1-lexeme-0486",
+        "hsk6t1-lexeme-0547",
+        "hsk6t1-lexeme-0580",
+        "hsk6t1-lexeme-0587",
+        "hsk6t1-lexeme-0599",
+        "hsk6t1-lexeme-0608",
+        "hsk6t1-lexeme-0632",
+        "hsk6t1-lexeme-0635",
+        "hsk6t1-lexeme-0678",
+        "hsk6t1-lexeme-0733",
+        "hsk6t1-lexeme-0738",
+        "hsk6t1-lexeme-0760",
+        "hsk6t1-lexeme-0792",
+        "hsk6t1-lexeme-0794",
+        "hsk6t1-lexeme-0807",
+        "hsk6t1-lexeme-0816",
+        "hsk6t1-lexeme-0836",
+        "hsk6t1-lexeme-0890"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-001"
+      ],
+      "vocabularyCount": 43,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-13",
+      "number": 13,
+      "unitId": "hsk6t1-unit-04",
+      "titleZh": "从旅游指南看世事变迁",
+      "titleVi": "Nhìn thế sự đổi thay qua trang sách cẩm nang du lịch",
+      "sourcePdfPages": {
+        "start": 136,
+        "end": 146
+      },
+      "sourcePrintedPages": {
+        "start": 136,
+        "end": 146
+      },
+      "audioTracks": [
+        "13-1",
+        "13-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 136,
+          "rowIndex": 4,
+          "matchedTextOcr": "热身 旅游指南包括哪些内容？请选择填空。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 137,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文从旅游指南看世事变迁（868字） 13-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 139,
+          "rowIndex": 26,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 142,
+          "rowIndex": 3,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 144,
+          "rowIndex": 10,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 144,
+          "rowIndex": 18,
+          "matchedTextOcr": "扩展 病句类型：逻辑不通"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-13-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-13-01",
+        "hsk6t1-annotation-13-01",
+        "hsk6t1-practice-13-01",
+        "hsk6t1-application-13-01",
+        "hsk6t1-extension-13-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0014",
+        "hsk6t1-lexeme-0041",
+        "hsk6t1-lexeme-0042",
+        "hsk6t1-lexeme-0043",
+        "hsk6t1-lexeme-0073",
+        "hsk6t1-lexeme-0087",
+        "hsk6t1-lexeme-0129",
+        "hsk6t1-lexeme-0150",
+        "hsk6t1-lexeme-0183",
+        "hsk6t1-lexeme-0187",
+        "hsk6t1-lexeme-0188",
+        "hsk6t1-lexeme-0211",
+        "hsk6t1-lexeme-0281",
+        "hsk6t1-lexeme-0328",
+        "hsk6t1-lexeme-0329",
+        "hsk6t1-lexeme-0355",
+        "hsk6t1-lexeme-0368",
+        "hsk6t1-lexeme-0380",
+        "hsk6t1-lexeme-0407",
+        "hsk6t1-lexeme-0435",
+        "hsk6t1-lexeme-0491",
+        "hsk6t1-lexeme-0514",
+        "hsk6t1-lexeme-0519",
+        "hsk6t1-lexeme-0520",
+        "hsk6t1-lexeme-0525",
+        "hsk6t1-lexeme-0535",
+        "hsk6t1-lexeme-0553",
+        "hsk6t1-lexeme-0554",
+        "hsk6t1-lexeme-0563",
+        "hsk6t1-lexeme-0584",
+        "hsk6t1-lexeme-0601",
+        "hsk6t1-lexeme-0607",
+        "hsk6t1-lexeme-0664",
+        "hsk6t1-lexeme-0670",
+        "hsk6t1-lexeme-0684",
+        "hsk6t1-lexeme-0699",
+        "hsk6t1-lexeme-0705",
+        "hsk6t1-lexeme-0724",
+        "hsk6t1-lexeme-0732",
+        "hsk6t1-lexeme-0739",
+        "hsk6t1-lexeme-0752",
+        "hsk6t1-lexeme-0753",
+        "hsk6t1-lexeme-0785",
+        "hsk6t1-lexeme-0790",
+        "hsk6t1-lexeme-0815",
+        "hsk6t1-lexeme-0826",
+        "hsk6t1-lexeme-0847",
+        "hsk6t1-lexeme-0862",
+        "hsk6t1-lexeme-0883",
+        "hsk6t1-lexeme-0884",
+        "hsk6t1-lexeme-0886"
+      ],
+      "supplementalLexemeIds": [],
+      "vocabularyCount": 51,
+      "supplementalVocabularyCount": 0,
+      "allVocabularyCount": 51,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-14",
+      "number": 14,
+      "unitId": "hsk6t1-unit-04",
+      "titleZh": "背着电饭锅拍北极",
+      "titleVi": "Vác nồi cơm điện đi chụp ảnh Bắc Cực",
+      "sourcePdfPages": {
+        "start": 147,
+        "end": 155
+      },
+      "sourcePrintedPages": {
+        "start": 147,
+        "end": 155
+      },
+      "audioTracks": [
+        "14-1",
+        "14-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 147,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 你去过北极吗？你印象中北极人的生活是什么样的？请看图片了解一下。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 148,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文 背着电饭锅拍北极（844字）14-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 150,
+          "rowIndex": 31,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 152,
+          "rowIndex": 22,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 155,
+          "rowIndex": 0,
+          "matchedTextOcr": "运用 写一写 背着电饭锅拍北极"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 155,
+          "rowIndex": 5,
+          "matchedTextOcr": "扩展 词汇：熟悉下列反义词"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-14-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-14-01",
+        "hsk6t1-annotation-14-01",
+        "hsk6t1-practice-14-01",
+        "hsk6t1-application-14-01",
+        "hsk6t1-extension-14-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0018",
+        "hsk6t1-lexeme-0025",
+        "hsk6t1-lexeme-0028",
+        "hsk6t1-lexeme-0056",
+        "hsk6t1-lexeme-0082",
+        "hsk6t1-lexeme-0113",
+        "hsk6t1-lexeme-0114",
+        "hsk6t1-lexeme-0116",
+        "hsk6t1-lexeme-0119",
+        "hsk6t1-lexeme-0121",
+        "hsk6t1-lexeme-0159",
+        "hsk6t1-lexeme-0194",
+        "hsk6t1-lexeme-0207",
+        "hsk6t1-lexeme-0214",
+        "hsk6t1-lexeme-0221",
+        "hsk6t1-lexeme-0229",
+        "hsk6t1-lexeme-0251",
+        "hsk6t1-lexeme-0254",
+        "hsk6t1-lexeme-0303",
+        "hsk6t1-lexeme-0317",
+        "hsk6t1-lexeme-0336",
+        "hsk6t1-lexeme-0356",
+        "hsk6t1-lexeme-0359",
+        "hsk6t1-lexeme-0377",
+        "hsk6t1-lexeme-0378",
+        "hsk6t1-lexeme-0379",
+        "hsk6t1-lexeme-0385",
+        "hsk6t1-lexeme-0404",
+        "hsk6t1-lexeme-0415",
+        "hsk6t1-lexeme-0420",
+        "hsk6t1-lexeme-0449",
+        "hsk6t1-lexeme-0488",
+        "hsk6t1-lexeme-0500",
+        "hsk6t1-lexeme-0522",
+        "hsk6t1-lexeme-0591",
+        "hsk6t1-lexeme-0605",
+        "hsk6t1-lexeme-0696",
+        "hsk6t1-lexeme-0702",
+        "hsk6t1-lexeme-0734",
+        "hsk6t1-lexeme-0756",
+        "hsk6t1-lexeme-0770",
+        "hsk6t1-lexeme-0802",
+        "hsk6t1-lexeme-0804",
+        "hsk6t1-lexeme-0805",
+        "hsk6t1-lexeme-0838",
+        "hsk6t1-lexeme-0839",
+        "hsk6t1-lexeme-0843",
+        "hsk6t1-lexeme-0845",
+        "hsk6t1-lexeme-0867"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-013"
+      ],
+      "vocabularyCount": 49,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 50,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-15",
+      "number": 15,
+      "unitId": "hsk6t1-unit-04",
+      "titleZh": "山脉上的雕刻",
+      "titleVi": "Các tác phẩm điêu khắc trên dãy núi",
+      "sourcePdfPages": {
+        "start": 156,
+        "end": 166
+      },
+      "sourcePrintedPages": {
+        "start": 156,
+        "end": 166
+      },
+      "audioTracks": [
+        "15-1",
+        "15-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 156,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 给下面的词语选择合适的图片。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 157,
+          "rowIndex": 4,
+          "matchedTextOcr": "课文 山脉上的雕刻（783字））15-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 159,
+          "rowIndex": 25,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 162,
+          "rowIndex": 3,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 164,
+          "rowIndex": 11,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 164,
+          "rowIndex": 18,
+          "matchedTextOcr": "扩展 病句类型：成分余"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-15-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-15-01",
+        "hsk6t1-annotation-15-01",
+        "hsk6t1-practice-15-01",
+        "hsk6t1-application-15-01",
+        "hsk6t1-extension-15-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0062",
+        "hsk6t1-lexeme-0071",
+        "hsk6t1-lexeme-0098",
+        "hsk6t1-lexeme-0115",
+        "hsk6t1-lexeme-0152",
+        "hsk6t1-lexeme-0162",
+        "hsk6t1-lexeme-0163",
+        "hsk6t1-lexeme-0223",
+        "hsk6t1-lexeme-0240",
+        "hsk6t1-lexeme-0245",
+        "hsk6t1-lexeme-0266",
+        "hsk6t1-lexeme-0267",
+        "hsk6t1-lexeme-0344",
+        "hsk6t1-lexeme-0373",
+        "hsk6t1-lexeme-0376",
+        "hsk6t1-lexeme-0396",
+        "hsk6t1-lexeme-0466",
+        "hsk6t1-lexeme-0482",
+        "hsk6t1-lexeme-0494",
+        "hsk6t1-lexeme-0504",
+        "hsk6t1-lexeme-0506",
+        "hsk6t1-lexeme-0524",
+        "hsk6t1-lexeme-0534",
+        "hsk6t1-lexeme-0567",
+        "hsk6t1-lexeme-0582",
+        "hsk6t1-lexeme-0586",
+        "hsk6t1-lexeme-0588",
+        "hsk6t1-lexeme-0592",
+        "hsk6t1-lexeme-0631",
+        "hsk6t1-lexeme-0668",
+        "hsk6t1-lexeme-0689",
+        "hsk6t1-lexeme-0709",
+        "hsk6t1-lexeme-0711",
+        "hsk6t1-lexeme-0720",
+        "hsk6t1-lexeme-0746",
+        "hsk6t1-lexeme-0757",
+        "hsk6t1-lexeme-0759",
+        "hsk6t1-lexeme-0769",
+        "hsk6t1-lexeme-0780",
+        "hsk6t1-lexeme-0822",
+        "hsk6t1-lexeme-0827",
+        "hsk6t1-lexeme-0853",
+        "hsk6t1-lexeme-0869",
+        "hsk6t1-lexeme-0871",
+        "hsk6t1-lexeme-0885",
+        "hsk6t1-lexeme-0888"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-012"
+      ],
+      "vocabularyCount": 46,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 47,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-16",
+      "number": 16,
+      "unitId": "hsk6t1-unit-04",
+      "titleZh": "徐健和他的野生动物摄影师们",
+      "titleVi": "Từ Kiện và các nhà nhiếp ảnh động vật hoang dã",
+      "sourcePdfPages": {
+        "start": 167,
+        "end": 176
+      },
+      "sourcePrintedPages": {
+        "start": 167,
+        "end": 176
+      },
+      "audioTracks": [
+        "16-1",
+        "16-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 167,
+          "rowIndex": 4,
+          "matchedTextOcr": "热身 看下列图片，熟悉相应的动物的名称。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 168,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文 徐健和他的野生动物摄影师们 （898字） 16-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 170,
+          "rowIndex": 34,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 173,
+          "rowIndex": 23,
+          "matchedTextOcr": "练习1 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 175,
+          "rowIndex": 22,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 176,
+          "rowIndex": 2,
+          "matchedTextOcr": "扩展 词汇：熟悉下列近义词"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-16-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-16-01",
+        "hsk6t1-annotation-16-01",
+        "hsk6t1-practice-16-01",
+        "hsk6t1-application-16-01",
+        "hsk6t1-extension-16-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0013",
+        "hsk6t1-lexeme-0021",
+        "hsk6t1-lexeme-0027",
+        "hsk6t1-lexeme-0044",
+        "hsk6t1-lexeme-0050",
+        "hsk6t1-lexeme-0093",
+        "hsk6t1-lexeme-0102",
+        "hsk6t1-lexeme-0156",
+        "hsk6t1-lexeme-0179",
+        "hsk6t1-lexeme-0228",
+        "hsk6t1-lexeme-0269",
+        "hsk6t1-lexeme-0290",
+        "hsk6t1-lexeme-0333",
+        "hsk6t1-lexeme-0384",
+        "hsk6t1-lexeme-0387",
+        "hsk6t1-lexeme-0393",
+        "hsk6t1-lexeme-0398",
+        "hsk6t1-lexeme-0405",
+        "hsk6t1-lexeme-0417",
+        "hsk6t1-lexeme-0427",
+        "hsk6t1-lexeme-0461",
+        "hsk6t1-lexeme-0477",
+        "hsk6t1-lexeme-0499",
+        "hsk6t1-lexeme-0537",
+        "hsk6t1-lexeme-0595",
+        "hsk6t1-lexeme-0621",
+        "hsk6t1-lexeme-0645",
+        "hsk6t1-lexeme-0646",
+        "hsk6t1-lexeme-0658",
+        "hsk6t1-lexeme-0691",
+        "hsk6t1-lexeme-0692",
+        "hsk6t1-lexeme-0706",
+        "hsk6t1-lexeme-0730",
+        "hsk6t1-lexeme-0735",
+        "hsk6t1-lexeme-0762",
+        "hsk6t1-lexeme-0782",
+        "hsk6t1-lexeme-0834",
+        "hsk6t1-lexeme-0837",
+        "hsk6t1-lexeme-0848",
+        "hsk6t1-lexeme-0849",
+        "hsk6t1-lexeme-0858",
+        "hsk6t1-lexeme-0865",
+        "hsk6t1-lexeme-0887",
+        "hsk6t1-lexeme-0892"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-015"
+      ],
+      "vocabularyCount": 44,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 45,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-17",
+      "number": 17,
+      "unitId": "hsk6t1-unit-05",
+      "titleZh": "小动物眼中的慢世界",
+      "titleVi": "Thế giới chậm trong mắt động vật nhỏ",
+      "sourcePdfPages": {
+        "start": 178,
+        "end": 187
+      },
+      "sourcePrintedPages": {
+        "start": 178,
+        "end": 187
+      },
+      "audioTracks": [
+        "17-1",
+        "17-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 178,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 结合图片思考下面的问题，选择你认为正确的答案。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 179,
+          "rowIndex": 5,
+          "matchedTextOcr": "课文 小动物眼中的慢世界（845字） 17-1 眼"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 181,
+          "rowIndex": 2,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 183,
+          "rowIndex": 8,
+          "matchedTextOcr": "练习 1 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 185,
+          "rowIndex": 6,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 185,
+          "rowIndex": 12,
+          "matchedTextOcr": "扩展 工电 病句类型：句式杂"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-17-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-17-01",
+        "hsk6t1-annotation-17-01",
+        "hsk6t1-practice-17-01",
+        "hsk6t1-application-17-01",
+        "hsk6t1-extension-17-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0029",
+        "hsk6t1-lexeme-0031",
+        "hsk6t1-lexeme-0035",
+        "hsk6t1-lexeme-0046",
+        "hsk6t1-lexeme-0054",
+        "hsk6t1-lexeme-0089",
+        "hsk6t1-lexeme-0091",
+        "hsk6t1-lexeme-0106",
+        "hsk6t1-lexeme-0109",
+        "hsk6t1-lexeme-0110",
+        "hsk6t1-lexeme-0169",
+        "hsk6t1-lexeme-0172",
+        "hsk6t1-lexeme-0177",
+        "hsk6t1-lexeme-0225",
+        "hsk6t1-lexeme-0232",
+        "hsk6t1-lexeme-0234",
+        "hsk6t1-lexeme-0244",
+        "hsk6t1-lexeme-0249",
+        "hsk6t1-lexeme-0332",
+        "hsk6t1-lexeme-0338",
+        "hsk6t1-lexeme-0433",
+        "hsk6t1-lexeme-0455",
+        "hsk6t1-lexeme-0456",
+        "hsk6t1-lexeme-0460",
+        "hsk6t1-lexeme-0468",
+        "hsk6t1-lexeme-0471",
+        "hsk6t1-lexeme-0484",
+        "hsk6t1-lexeme-0511",
+        "hsk6t1-lexeme-0539",
+        "hsk6t1-lexeme-0543",
+        "hsk6t1-lexeme-0566",
+        "hsk6t1-lexeme-0568",
+        "hsk6t1-lexeme-0578",
+        "hsk6t1-lexeme-0596",
+        "hsk6t1-lexeme-0600",
+        "hsk6t1-lexeme-0602",
+        "hsk6t1-lexeme-0603",
+        "hsk6t1-lexeme-0642",
+        "hsk6t1-lexeme-0653",
+        "hsk6t1-lexeme-0669",
+        "hsk6t1-lexeme-0676",
+        "hsk6t1-lexeme-0687",
+        "hsk6t1-lexeme-0713",
+        "hsk6t1-lexeme-0856"
+      ],
+      "supplementalLexemeIds": [],
+      "vocabularyCount": 44,
+      "supplementalVocabularyCount": 0,
+      "allVocabularyCount": 44,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-18",
+      "number": 18,
+      "unitId": "hsk6t1-unit-05",
+      "titleZh": "神奇的丝瓜",
+      "titleVi": "Quả mướp thần kỳ",
+      "sourcePdfPages": {
+        "start": 188,
+        "end": 196
+      },
+      "sourcePrintedPages": {
+        "start": 188,
+        "end": 196
+      },
+      "audioTracks": [
+        "18-1",
+        "18-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 188,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 根据下图选择合适的名称填入相应的位置。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 189,
+          "rowIndex": 6,
+          "matchedTextOcr": "课文 神奇的丝瓜（846字）18-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 191,
+          "rowIndex": 18,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 193,
+          "rowIndex": 20,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 195,
+          "rowIndex": 18,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 196,
+          "rowIndex": 3,
+          "matchedTextOcr": "扩展 词汇：熟悉下列近义词"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-18-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-18-01",
+        "hsk6t1-annotation-18-01",
+        "hsk6t1-practice-18-01",
+        "hsk6t1-application-18-01",
+        "hsk6t1-extension-18-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0005",
+        "hsk6t1-lexeme-0009",
+        "hsk6t1-lexeme-0038",
+        "hsk6t1-lexeme-0045",
+        "hsk6t1-lexeme-0063",
+        "hsk6t1-lexeme-0096",
+        "hsk6t1-lexeme-0128",
+        "hsk6t1-lexeme-0160",
+        "hsk6t1-lexeme-0164",
+        "hsk6t1-lexeme-0175",
+        "hsk6t1-lexeme-0178",
+        "hsk6t1-lexeme-0197",
+        "hsk6t1-lexeme-0205",
+        "hsk6t1-lexeme-0218",
+        "hsk6t1-lexeme-0222",
+        "hsk6t1-lexeme-0271",
+        "hsk6t1-lexeme-0288",
+        "hsk6t1-lexeme-0294",
+        "hsk6t1-lexeme-0343",
+        "hsk6t1-lexeme-0354",
+        "hsk6t1-lexeme-0357",
+        "hsk6t1-lexeme-0413",
+        "hsk6t1-lexeme-0419",
+        "hsk6t1-lexeme-0421",
+        "hsk6t1-lexeme-0442",
+        "hsk6t1-lexeme-0475",
+        "hsk6t1-lexeme-0481",
+        "hsk6t1-lexeme-0489",
+        "hsk6t1-lexeme-0562",
+        "hsk6t1-lexeme-0572",
+        "hsk6t1-lexeme-0581",
+        "hsk6t1-lexeme-0585",
+        "hsk6t1-lexeme-0611",
+        "hsk6t1-lexeme-0622",
+        "hsk6t1-lexeme-0643",
+        "hsk6t1-lexeme-0650",
+        "hsk6t1-lexeme-0704",
+        "hsk6t1-lexeme-0721",
+        "hsk6t1-lexeme-0725",
+        "hsk6t1-lexeme-0755",
+        "hsk6t1-lexeme-0789",
+        "hsk6t1-lexeme-0817",
+        "hsk6t1-lexeme-0819",
+        "hsk6t1-lexeme-0860",
+        "hsk6t1-lexeme-0872",
+        "hsk6t1-lexeme-0873",
+        "hsk6t1-lexeme-0878"
+      ],
+      "supplementalLexemeIds": [
+        "hsk6t1-supplemental-011"
+      ],
+      "vocabularyCount": 47,
+      "supplementalVocabularyCount": 1,
+      "allVocabularyCount": 48,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-19",
+      "number": 19,
+      "unitId": "hsk6t1-unit-05",
+      "titleZh": "无阳光的深海世界",
+      "titleVi": "Thế giới biển sâu không ánh mặt trời",
+      "sourcePdfPages": {
+        "start": 197,
+        "end": 206
+      },
+      "sourcePrintedPages": {
+        "start": 197,
+        "end": 206
+      },
+      "audioTracks": [
+        "19-1",
+        "19-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 197,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身 对照图片熟悉下列生物名称。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 198,
+          "rowIndex": 3,
+          "matchedTextOcr": "课文 无阳光的深海世界 （892字）.19-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 200,
+          "rowIndex": 31,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 203,
+          "rowIndex": 7,
+          "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 205,
+          "rowIndex": 2,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 205,
+          "rowIndex": 7,
+          "matchedTextOcr": "扩展 病句类型：歧义句"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-19-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-19-01",
+        "hsk6t1-annotation-19-01",
+        "hsk6t1-practice-19-01",
+        "hsk6t1-application-19-01",
+        "hsk6t1-extension-19-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0026",
+        "hsk6t1-lexeme-0084",
+        "hsk6t1-lexeme-0092",
+        "hsk6t1-lexeme-0094",
+        "hsk6t1-lexeme-0133",
+        "hsk6t1-lexeme-0134",
+        "hsk6t1-lexeme-0167",
+        "hsk6t1-lexeme-0189",
+        "hsk6t1-lexeme-0202",
+        "hsk6t1-lexeme-0252",
+        "hsk6t1-lexeme-0259",
+        "hsk6t1-lexeme-0264",
+        "hsk6t1-lexeme-0272",
+        "hsk6t1-lexeme-0289",
+        "hsk6t1-lexeme-0293",
+        "hsk6t1-lexeme-0306",
+        "hsk6t1-lexeme-0346",
+        "hsk6t1-lexeme-0350",
+        "hsk6t1-lexeme-0372",
+        "hsk6t1-lexeme-0406",
+        "hsk6t1-lexeme-0416",
+        "hsk6t1-lexeme-0437",
+        "hsk6t1-lexeme-0447",
+        "hsk6t1-lexeme-0492",
+        "hsk6t1-lexeme-0510",
+        "hsk6t1-lexeme-0516",
+        "hsk6t1-lexeme-0521",
+        "hsk6t1-lexeme-0556",
+        "hsk6t1-lexeme-0557",
+        "hsk6t1-lexeme-0564",
+        "hsk6t1-lexeme-0576",
+        "hsk6t1-lexeme-0583",
+        "hsk6t1-lexeme-0619",
+        "hsk6t1-lexeme-0628",
+        "hsk6t1-lexeme-0636",
+        "hsk6t1-lexeme-0663",
+        "hsk6t1-lexeme-0688",
+        "hsk6t1-lexeme-0745",
+        "hsk6t1-lexeme-0786",
+        "hsk6t1-lexeme-0806",
+        "hsk6t1-lexeme-0813",
+        "hsk6t1-lexeme-0823",
+        "hsk6t1-lexeme-0824",
+        "hsk6t1-lexeme-0825",
+        "hsk6t1-lexeme-0854",
+        "hsk6t1-lexeme-0874"
+      ],
+      "supplementalLexemeIds": [],
+      "vocabularyCount": 46,
+      "supplementalVocabularyCount": 0,
+      "allVocabularyCount": 46,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    },
+    {
+      "id": "hsk6t1-lesson-20",
+      "number": 20,
+      "unitId": "hsk6t1-unit-05",
+      "titleZh": "金鸡窝",
+      "titleVi": "Ổ gà vàng",
+      "sourcePdfPages": {
+        "start": 207,
+        "end": 215
+      },
+      "sourcePrintedPages": {
+        "start": 207,
+        "end": 215
+      },
+      "audioTracks": [
+        "20-1",
+        "20-2"
+      ],
+      "contentStatus": "ocr-needs-editorial-review",
+      "sectionMarkers": [
+        {
+          "sectionType": "warmup",
+          "labelZh": "热身",
+          "pdfPage": 207,
+          "rowIndex": 3,
+          "matchedTextOcr": "热身1 根据下面这幅图，选择合适的词语在短文中填空。"
+        },
+        {
+          "sectionType": "text",
+          "labelZh": "课文",
+          "pdfPage": 208,
+          "rowIndex": 2,
+          "matchedTextOcr": "课文金鸡窝（831字）20-1"
+        },
+        {
+          "sectionType": "annotation",
+          "labelZh": "综合注释",
+          "pdfPage": 210,
+          "rowIndex": 17,
+          "matchedTextOcr": "注释（一）综合注释"
+        },
+        {
+          "sectionType": "practice",
+          "labelZh": "练习",
+          "pdfPage": 213,
+          "rowIndex": 3,
+          "matchedTextOcr": "练习 1 模仿例子，写出更多的词语"
+        },
+        {
+          "sectionType": "application",
+          "labelZh": "运用",
+          "pdfPage": 215,
+          "rowIndex": 3,
+          "matchedTextOcr": "运用 写一写"
+        },
+        {
+          "sectionType": "extension",
+          "labelZh": "扩展",
+          "pdfPage": 215,
+          "rowIndex": 10,
+          "matchedTextOcr": "扩展 词汇：看图片，熟悉下列名词"
+        }
+      ],
+      "textIds": [
+        "hsk6t1-text-20-01"
+      ],
+      "blockIds": [
+        "hsk6t1-warmup-20-01",
+        "hsk6t1-annotation-20-01",
+        "hsk6t1-practice-20-01",
+        "hsk6t1-application-20-01",
+        "hsk6t1-extension-20-01"
+      ],
+      "lexemeIds": [
+        "hsk6t1-lexeme-0048",
+        "hsk6t1-lexeme-0065",
+        "hsk6t1-lexeme-0153",
+        "hsk6t1-lexeme-0184",
+        "hsk6t1-lexeme-0198",
+        "hsk6t1-lexeme-0203",
+        "hsk6t1-lexeme-0213",
+        "hsk6t1-lexeme-0220",
+        "hsk6t1-lexeme-0231",
+        "hsk6t1-lexeme-0237",
+        "hsk6t1-lexeme-0241",
+        "hsk6t1-lexeme-0258",
+        "hsk6t1-lexeme-0277",
+        "hsk6t1-lexeme-0298",
+        "hsk6t1-lexeme-0325",
+        "hsk6t1-lexeme-0327",
+        "hsk6t1-lexeme-0335",
+        "hsk6t1-lexeme-0340",
+        "hsk6t1-lexeme-0353",
+        "hsk6t1-lexeme-0389",
+        "hsk6t1-lexeme-0402",
+        "hsk6t1-lexeme-0443",
+        "hsk6t1-lexeme-0474",
+        "hsk6t1-lexeme-0476",
+        "hsk6t1-lexeme-0483",
+        "hsk6t1-lexeme-0495",
+        "hsk6t1-lexeme-0501",
+        "hsk6t1-lexeme-0527",
+        "hsk6t1-lexeme-0542",
+        "hsk6t1-lexeme-0626",
+        "hsk6t1-lexeme-0627",
+        "hsk6t1-lexeme-0655",
+        "hsk6t1-lexeme-0656",
+        "hsk6t1-lexeme-0657",
+        "hsk6t1-lexeme-0671",
+        "hsk6t1-lexeme-0672",
+        "hsk6t1-lexeme-0683",
+        "hsk6t1-lexeme-0697",
+        "hsk6t1-lexeme-0729",
+        "hsk6t1-lexeme-0772",
+        "hsk6t1-lexeme-0791",
+        "hsk6t1-lexeme-0800",
+        "hsk6t1-lexeme-0801",
+        "hsk6t1-lexeme-0808",
+        "hsk6t1-lexeme-0809",
+        "hsk6t1-lexeme-0829",
+        "hsk6t1-lexeme-0840",
+        "hsk6t1-lexeme-0863",
+        "hsk6t1-lexeme-0868",
+        "hsk6t1-lexeme-0879",
+        "hsk6t1-lexeme-0889"
+      ],
+      "supplementalLexemeIds": [],
+      "vocabularyCount": 51,
+      "supplementalVocabularyCount": 0,
+      "allVocabularyCount": 51,
+      "notes": [
+        "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+        "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-21",
+  "lessonNumber": 21,
+  "status": "review",
+  "title": {
+    "zh": "未来商店",
+    "pinyin": "wèi lái shāng diàn",
+    "vi": "Cửa hàng tương lai"
+  },
+  "themeRef": "hsk6-v2-theme-06",
+  "source": {
+    "pdfPages": [
+      14,
+      22
+    ],
+    "printedPages": [
+      14,
+      22
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-014",
+      "hsk6-v2-source-page-015",
+      "hsk6-v2-source-page-016",
+      "hsk6-v2-source-page-017",
+      "hsk6-v2-source-page-018",
+      "hsk6-v2-source-page-019",
+      "hsk6-v2-source-page-020",
+      "hsk6-v2-source-page-021",
+      "hsk6-v2-source-page-022"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l21-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l21-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l21-v001",
+        "hsk6-v2-l21-v002",
+        "hsk6-v2-l21-v003",
+        "hsk6-v2-l21-v004",
+        "hsk6-v2-l21-v005",
+        "hsk6-v2-l21-v006",
+        "hsk6-v2-l21-v007",
+        "hsk6-v2-l21-v008",
+        "hsk6-v2-l21-v009",
+        "hsk6-v2-l21-v010",
+        "hsk6-v2-l21-v011",
+        "hsk6-v2-l21-v012",
+        "hsk6-v2-l21-v013",
+        "hsk6-v2-l21-v014",
+        "hsk6-v2-l21-v015",
+        "hsk6-v2-l21-v016",
+        "hsk6-v2-l21-v017",
+        "hsk6-v2-l21-v018",
+        "hsk6-v2-l21-v019",
+        "hsk6-v2-l21-v020",
+        "hsk6-v2-l21-v021",
+        "hsk6-v2-l21-v022",
+        "hsk6-v2-l21-v023",
+        "hsk6-v2-l21-v024",
+        "hsk6-v2-l21-v025",
+        "hsk6-v2-l21-v026",
+        "hsk6-v2-l21-v027",
+        "hsk6-v2-l21-v028",
+        "hsk6-v2-l21-v029",
+        "hsk6-v2-l21-v030",
+        "hsk6-v2-l21-v031",
+        "hsk6-v2-l21-v032",
+        "hsk6-v2-l21-v033",
+        "hsk6-v2-l21-v034",
+        "hsk6-v2-l21-v035",
+        "hsk6-v2-l21-v036",
+        "hsk6-v2-l21-v037",
+        "hsk6-v2-l21-v038",
+        "hsk6-v2-l21-v039",
+        "hsk6-v2-l21-v040",
+        "hsk6-v2-l21-v041",
+        "hsk6-v2-l21-v042",
+        "hsk6-v2-l21-v043",
+        "hsk6-v2-l21-v044",
+        "hsk6-v2-l21-v045",
+        "hsk6-v2-l21-v046",
+        "hsk6-v2-l21-v047",
+        "hsk6-v2-l21-v048",
+        "hsk6-v2-l21-v049",
+        "hsk6-v2-l21-v050",
+        "hsk6-v2-l21-v051",
+        "hsk6-v2-l21-v052",
+        "hsk6-v2-l21-v053",
+        "hsk6-v2-l21-v054"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l21-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l21-lp-01",
+        "hsk6-v2-l21-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l21-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l21-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l21-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l21-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l21-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l21-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l21-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

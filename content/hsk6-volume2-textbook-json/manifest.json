@@ -1,0 +1,181 @@
+{
+  "schemaVersion": "1.0.0",
+  "bundleId": "hsk6-standard-course-volume2-vi-v1",
+  "title": "Bộ dữ liệu JSON từ Giáo trình chuẩn HSK 6 - Tập 2",
+  "description": "Dữ liệu 20 bài (21-40), bài khóa, từ mới, các điểm chú thích/ngôn ngữ, bài tập, mở rộng, media placeholder và bằng chứng OCR theo trang.",
+  "locale": {
+    "interface": "vi-VN",
+    "learning": "zh-CN",
+    "pinyinSystem": "hanyu-pinyin-diacritic"
+  },
+  "status": "review",
+  "sourceRef": "source-analysis.json",
+  "curriculumRef": "curriculum.json",
+  "files": [
+    {
+      "path": "schemas/textbook-lesson.schema.json",
+      "kind": "schema"
+    },
+    {
+      "path": "source-analysis.json",
+      "kind": "source-analysis"
+    },
+    {
+      "path": "curriculum.json",
+      "kind": "curriculum"
+    },
+    {
+      "path": "quality-report.json",
+      "kind": "quality-report"
+    },
+    {
+      "path": "hsk6-volume2-textbook.json",
+      "kind": "combined-export"
+    },
+    {
+      "path": "shared/source-pages.json",
+      "kind": "ocr-evidence"
+    },
+    {
+      "path": "shared/articles.json",
+      "kind": "shared-content",
+      "entity": "article"
+    },
+    {
+      "path": "shared/lexemes.json",
+      "kind": "shared-content",
+      "entity": "lexeme"
+    },
+    {
+      "path": "shared/language-points.json",
+      "kind": "shared-content",
+      "entity": "language-point"
+    },
+    {
+      "path": "shared/section-blocks.json",
+      "kind": "shared-content",
+      "entity": "section-block"
+    },
+    {
+      "path": "shared/media-assets.json",
+      "kind": "shared-content",
+      "entity": "media"
+    },
+    {
+      "path": "appendices/vocabulary-index.json",
+      "kind": "appendix"
+    },
+    {
+      "path": "lessons/lesson-21.json",
+      "kind": "lesson",
+      "lessonNumber": 21
+    },
+    {
+      "path": "lessons/lesson-22.json",
+      "kind": "lesson",
+      "lessonNumber": 22
+    },
+    {
+      "path": "lessons/lesson-23.json",
+      "kind": "lesson",
+      "lessonNumber": 23
+    },
+    {
+      "path": "lessons/lesson-24.json",
+      "kind": "lesson",
+      "lessonNumber": 24
+    },
+    {
+      "path": "lessons/lesson-25.json",
+      "kind": "lesson",
+      "lessonNumber": 25
+    },
+    {
+      "path": "lessons/lesson-26.json",
+      "kind": "lesson",
+      "lessonNumber": 26
+    },
+    {
+      "path": "lessons/lesson-27.json",
+      "kind": "lesson",
+      "lessonNumber": 27
+    },
+    {
+      "path": "lessons/lesson-28.json",
+      "kind": "lesson",
+      "lessonNumber": 28
+    },
+    {
+      "path": "lessons/lesson-29.json",
+      "kind": "lesson",
+      "lessonNumber": 29
+    },
+    {
+      "path": "lessons/lesson-30.json",
+      "kind": "lesson",
+      "lessonNumber": 30
+    },
+    {
+      "path": "lessons/lesson-31.json",
+      "kind": "lesson",
+      "lessonNumber": 31
+    },
+    {
+      "path": "lessons/lesson-32.json",
+      "kind": "lesson",
+      "lessonNumber": 32
+    },
+    {
+      "path": "lessons/lesson-33.json",
+      "kind": "lesson",
+      "lessonNumber": 33
+    },
+    {
+      "path": "lessons/lesson-34.json",
+      "kind": "lesson",
+      "lessonNumber": 34
+    },
+    {
+      "path": "lessons/lesson-35.json",
+      "kind": "lesson",
+      "lessonNumber": 35
+    },
+    {
+      "path": "lessons/lesson-36.json",
+      "kind": "lesson",
+      "lessonNumber": 36
+    },
+    {
+      "path": "lessons/lesson-37.json",
+      "kind": "lesson",
+      "lessonNumber": 37
+    },
+    {
+      "path": "lessons/lesson-38.json",
+      "kind": "lesson",
+      "lessonNumber": 38
+    },
+    {
+      "path": "lessons/lesson-39.json",
+      "kind": "lesson",
+      "lessonNumber": 39
+    },
+    {
+      "path": "lessons/lesson-40.json",
+      "kind": "lesson",
+      "lessonNumber": 40
+    }
+  ],
+  "counts": {
+    "themes": 5,
+    "lessons": 20,
+    "articles": 20,
+    "articleParagraphs": 148,
+    "lexemes": 1040,
+    "languagePoints": 100,
+    "sectionBlocks": 118,
+    "mediaPlaceholders": 40,
+    "ocrSourcePages": 257,
+    "appendixPages": 39
+  }
+}

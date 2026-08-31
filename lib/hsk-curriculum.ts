@@ -28,7 +28,16 @@ import hsk4UpperCurriculumData from "../content/hsk4-upper-textbook-json/curricu
 import hsk4UpperLexemeData from "../content/hsk4-upper-textbook-json/shared/lexemes.json" with { type: "json" };
 import hsk4UpperTextData from "../content/hsk4-upper-textbook-json/shared/texts.json" with { type: "json" };
 import hsk5LowerCurriculumData from "../content/hsk5-lower-textbook-json/curriculum.json" with { type: "json" };
+import hsk5Workbook1CurriculumData from "../content/hsk5-workbook-1-json/curriculum.json" with { type: "json" };
+import hsk6Volume1CurriculumData from "../content/hsk6-textbook-1-json/curriculum.json" with { type: "json" };
+import hsk6Volume2CurriculumData from "../content/hsk6-volume2-textbook-json/curriculum.json" with { type: "json" };
 import { HSK5_LOWER_TEXTBOOK_LESSONS } from "./hsk5-lower-textbook-content.ts";
+import {
+  HSK5_WORKBOOK_1_LESSONS,
+  HSK5_WORKBOOK_1_UNIT_TITLES_VI,
+} from "./hsk5-workbook-1-content.ts";
+import { HSK6_VOLUME1_TEXTBOOK_LESSONS } from "./hsk6-volume1-textbook-content.ts";
+import { HSK6_VOLUME2_TEXTBOOK_LESSONS } from "./hsk6-volume2-textbook-content.ts";
 
 export type HskTopicIcon = "message" | "people" | "clock" | "food" | "travel" | "work" | "book" | "globe";
 
@@ -44,6 +53,7 @@ export type HskCurriculumLesson = {
   listening?: number;
   reading?: number;
   exercises?: number;
+  scoredExercises?: boolean;
   minutes: number;
   guidedSteps: number;
   available: boolean;
@@ -355,6 +365,119 @@ const HSK_5_TEXTBOOK_TOPICS: HskCurriculumTopic[] = RAW_HSK_5_CURRICULUM.units.m
   }),
 }));
 
+type RawHsk5WorkbookCurriculum = {
+  units: Array<{
+    id: string;
+    titleZh: string;
+    lessonIds: string[];
+  }>;
+};
+
+const RAW_HSK_5_WORKBOOK_1_CURRICULUM = hsk5Workbook1CurriculumData as unknown as RawHsk5WorkbookCurriculum;
+const HSK_5_WORKBOOK_1_LESSONS_BY_ID = new Map(
+  HSK5_WORKBOOK_1_LESSONS.map((lesson) => [lesson.id, lesson]),
+);
+
+const HSK_5_WORKBOOK_1_TOPICS: HskCurriculumTopic[] = RAW_HSK_5_WORKBOOK_1_CURRICULUM.units.map((unit, index) => ({
+  id: unit.id,
+  title: HSK5_WORKBOOK_1_UNIT_TITLES_VI[unit.id] ?? unit.titleZh,
+  icon: HSK_5_TOPIC_ICONS[index % HSK_5_TOPIC_ICONS.length],
+  lessons: unit.lessonIds.map((lessonId) => {
+    const lesson = HSK_5_WORKBOOK_1_LESSONS_BY_ID.get(lessonId);
+    if (!lesson) throw new Error(`Chủ đề HSK 5 workbook tham chiếu bài học không tồn tại: ${lessonId}`);
+    return {
+      id: lesson.id,
+      lessonNumber: lesson.lessonNumber,
+      title: lesson.title,
+      kind: "workbook" as const,
+      vocabulary: lesson.vocabulary.length,
+      grammar: lesson.grammar.length,
+      dialogues: lesson.dialogues.length,
+      writing: lesson.writingCharacters.length,
+      listening: 14,
+      reading: 14,
+      exercises: lesson.exercises.length,
+      scoredExercises: true,
+      minutes: lesson.minutes,
+      guidedSteps: lesson.vocabulary.length
+        + lesson.grammar.length
+        + lesson.dialogues.length
+        + lesson.exercises.length
+        + 4,
+      available: true,
+    };
+  }),
+}));
+
+type RawHsk6Curriculum = {
+  themes: Array<{
+    id: string;
+    titleVi: string;
+    lessonRefs: string[];
+  }>;
+};
+
+type RawHsk6Volume1Curriculum = {
+  units: Array<{
+    id: string;
+    titleVi: string;
+    lessonIds: string[];
+  }>;
+};
+
+const RAW_HSK_6_VOLUME_1_CURRICULUM = hsk6Volume1CurriculumData as unknown as RawHsk6Volume1Curriculum;
+const RAW_HSK_6_VOLUME_2_CURRICULUM = hsk6Volume2CurriculumData as unknown as RawHsk6Curriculum;
+const HSK_6_VOLUME_1_LESSONS_BY_ID = new Map(
+  HSK6_VOLUME1_TEXTBOOK_LESSONS.map((lesson) => [lesson.id, lesson]),
+);
+const HSK_6_VOLUME_2_LESSONS_BY_ID = new Map(
+  HSK6_VOLUME2_TEXTBOOK_LESSONS.map((lesson) => [lesson.id, lesson]),
+);
+const HSK_6_TOPIC_ICONS: HskTopicIcon[] = ["globe", "book", "people", "travel", "message"];
+
+function hsk6CurriculumLesson(lesson: (typeof HSK6_VOLUME1_TEXTBOOK_LESSONS)[number]) {
+  return {
+    id: lesson.id,
+    lessonNumber: lesson.lessonNumber,
+    title: lesson.title,
+    kind: "textbook" as const,
+    vocabulary: lesson.vocabulary.length,
+    grammar: lesson.grammar.length,
+    dialogues: lesson.dialogues.length,
+    writing: lesson.writingCharacters.length,
+    exercises: lesson.exercises.length,
+    minutes: lesson.minutes,
+    guidedSteps: lesson.vocabulary.length
+      + lesson.grammar.length
+      + lesson.dialogues.length
+      + lesson.exercises.length
+      + 4,
+    available: true,
+  };
+}
+
+const HSK_6_VOLUME_1_TOPICS: HskCurriculumTopic[] = RAW_HSK_6_VOLUME_1_CURRICULUM.units.map((unit, index) => ({
+  id: unit.id,
+  title: unit.titleVi,
+  icon: HSK_6_TOPIC_ICONS[index % HSK_6_TOPIC_ICONS.length],
+  lessons: unit.lessonIds.map((lessonId) => {
+    const lesson = HSK_6_VOLUME_1_LESSONS_BY_ID.get(lessonId);
+    if (!lesson) throw new Error(`Chủ đề HSK 6 Tập 1 tham chiếu bài học không tồn tại: ${lessonId}`);
+    return hsk6CurriculumLesson(lesson);
+  }),
+}));
+
+const HSK_6_VOLUME_2_TOPICS: HskCurriculumTopic[] = RAW_HSK_6_VOLUME_2_CURRICULUM.themes.map((theme, index) => ({
+  id: theme.id,
+  title: theme.titleVi,
+  icon: HSK_6_TOPIC_ICONS[index % HSK_6_TOPIC_ICONS.length],
+  lessons: theme.lessonRefs.map((lessonId) => {
+    const lesson = HSK_6_VOLUME_2_LESSONS_BY_ID.get(lessonId);
+    if (!lesson) throw new Error(`Chủ đề HSK 6 tham chiếu bài học không tồn tại: ${lessonId}`);
+    return hsk6CurriculumLesson(lesson);
+  }),
+}));
+
 function hsk2TextbookTopic(
   id: string,
   title: string,
@@ -466,20 +589,15 @@ export const HSK_CURRICULUM: HskCurriculumLevel[] = [
     id: "hsk-5",
     label: "HSK 5",
     symbol: "伍",
-    description: "18 bài (Bài 19–36) từ Giáo trình chuẩn HSK 5 - Tập 2, có từ vựng, bài khóa, ngữ pháp, phát âm, luyện viết và bài tập tương tác.",
-    topics: HSK_5_TEXTBOOK_TOPICS,
+    description: "18 bài Sách bài tập HSK 5 - Tập 1 và 18 bài Giáo trình chuẩn HSK 5 - Tập 2, có đầy đủ các chế độ học tương tác.",
+    topics: [...HSK_5_WORKBOOK_1_TOPICS, ...HSK_5_TEXTBOOK_TOPICS],
   },
   {
     id: "hsk-6",
     label: "HSK 6",
     symbol: "陆",
-    description: "Hiểu sắc thái, tổng hợp thông tin và diễn đạt chuyên sâu.",
-    topics: [
-      makeTopic("hsk-6", "ngon-ngu-hoc-thuat", "Ngôn ngữ học thuật", "book", ["Khái niệm trừu tượng", "Quan hệ nhân quả", "So sánh học thuật", "Tổng hợp nguồn"], 24),
-      makeTopic("hsk-6", "phan-tich-xa-hoi", "Phân tích xã hội", "globe", ["Đọc dữ liệu xã hội", "Giải thích hiện tượng", "Đánh giá tác động", "Đề xuất chính sách"], 23),
-      makeTopic("hsk-6", "quan-tri-chien-luoc", "Quản trị & Chiến lược", "work", ["Xác định ưu tiên", "Phân bổ nguồn lực", "Quản trị rủi ro", "Đánh giá hiệu quả"], 24),
-      makeTopic("hsk-6", "tranh-luan-nang-cao", "Tranh luận nâng cao", "message", ["Xây dựng lập trường", "Phân tích phản đề", "Bảo vệ luận điểm", "Điều phối thảo luận"], 23),
-    ],
+    description: "40 bài từ Giáo trình chuẩn HSK 6 - Tập 1 và Tập 2, có từ vựng, bài khóa, điểm ngôn ngữ, phát âm, luyện viết và bài tập tương tác.",
+    topics: [...HSK_6_VOLUME_1_TOPICS, ...HSK_6_VOLUME_2_TOPICS],
   },
   {
     id: "hsk-7-9",

@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-09",
+  "number": 9,
+  "unitId": "hsk5w1-unit-03",
+  "titleZh": "别样鲁迅",
+  "sourcePdfPages": {
+    "start": 66,
+    "end": 72
+  },
+  "sourcePrintedPages": {
+    "start": 66,
+    "end": 72
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 66,
+      "end": 67
+    },
+    "reading": {
+      "start": 68,
+      "end": 71
+    },
+    "writing": {
+      "start": 72,
+      "end": 72
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-09",
+    "hsk5w1-reading-block-09",
+    "hsk5w1-writing-block-09"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0257",
+    "hsk5w1-exercise-0258",
+    "hsk5w1-exercise-0259",
+    "hsk5w1-exercise-0260",
+    "hsk5w1-exercise-0261",
+    "hsk5w1-exercise-0262",
+    "hsk5w1-exercise-0263",
+    "hsk5w1-exercise-0264",
+    "hsk5w1-exercise-0265",
+    "hsk5w1-exercise-0266",
+    "hsk5w1-exercise-0267",
+    "hsk5w1-exercise-0268",
+    "hsk5w1-exercise-0269",
+    "hsk5w1-exercise-0270",
+    "hsk5w1-exercise-0271",
+    "hsk5w1-exercise-0272",
+    "hsk5w1-exercise-0273",
+    "hsk5w1-exercise-0274",
+    "hsk5w1-exercise-0275",
+    "hsk5w1-exercise-0276",
+    "hsk5w1-exercise-0277",
+    "hsk5w1-exercise-0278",
+    "hsk5w1-exercise-0279",
+    "hsk5w1-exercise-0280",
+    "hsk5w1-exercise-0281",
+    "hsk5w1-exercise-0282",
+    "hsk5w1-exercise-0283",
+    "hsk5w1-exercise-0284",
+    "hsk5w1-exercise-0285",
+    "hsk5w1-exercise-0286",
+    "hsk5w1-exercise-0287",
+    "hsk5w1-exercise-0288"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

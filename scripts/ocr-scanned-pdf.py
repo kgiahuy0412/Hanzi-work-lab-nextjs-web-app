@@ -48,15 +48,19 @@ def main() -> None:
         image = cv2.imread(str(path))
         if image is None:
             raise ValueError(f"Unable to read image: {path}")
+        original_height, original_width = image.shape[:2]
+        ocr_scale = 1.0
         if args.max_height and image.shape[0] > args.max_height:
-            scale = args.max_height / image.shape[0]
-            image = cv2.resize(image, None, fx=scale, fy=scale, interpolation=cv2.INTER_AREA)
+            ocr_scale = args.max_height / image.shape[0]
+            image = cv2.resize(image, None, fx=ocr_scale, fy=ocr_scale, interpolation=cv2.INTER_AREA)
         result, elapsed = engine(image)
         lines = []
         for box, text, confidence in result or []:
             lines.append(
                 {
-                    "box": [[float(x), float(y)] for x, y in box],
+                    # Store boxes in the coordinate system of the rendered source
+                    # image so OCR shards can safely use different resize limits.
+                    "box": [[float(x) / ocr_scale, float(y) / ocr_scale] for x, y in box],
                     "text": text,
                     "confidence": float(confidence),
                 }
@@ -66,6 +70,11 @@ def main() -> None:
             {
                 "page": int(path.stem.rsplit("-", 1)[-1]),
                 "image": path.name,
+                "imageWidth": original_width,
+                "imageHeight": original_height,
+                "ocrWidth": image.shape[1],
+                "ocrHeight": image.shape[0],
+                "ocrScale": round(ocr_scale, 8),
                 "elapsedSeconds": elapsed,
                 "wallSeconds": round(time.perf_counter() - started, 3),
                 "lines": lines,

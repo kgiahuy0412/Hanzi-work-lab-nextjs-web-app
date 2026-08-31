@@ -1,0 +1,162 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-24",
+  "lessonNumber": 24,
+  "status": "review",
+  "title": {
+    "zh": "体育明星们的离奇遭遇",
+    "pinyin": "tǐ yù míng xīng men de lí qí zāo yù",
+    "vi": "Cảnh ngộ ly kỳ của các ngôi sao thể thao"
+  },
+  "themeRef": "hsk6-v2-theme-06",
+  "source": {
+    "pdfPages": [
+      42,
+      51
+    ],
+    "printedPages": [
+      42,
+      51
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-042",
+      "hsk6-v2-source-page-043",
+      "hsk6-v2-source-page-044",
+      "hsk6-v2-source-page-045",
+      "hsk6-v2-source-page-046",
+      "hsk6-v2-source-page-047",
+      "hsk6-v2-source-page-048",
+      "hsk6-v2-source-page-049",
+      "hsk6-v2-source-page-050",
+      "hsk6-v2-source-page-051"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l24-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l24-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l24-v001",
+        "hsk6-v2-l24-v002",
+        "hsk6-v2-l24-v003",
+        "hsk6-v2-l24-v004",
+        "hsk6-v2-l24-v005",
+        "hsk6-v2-l24-v006",
+        "hsk6-v2-l24-v007",
+        "hsk6-v2-l24-v008",
+        "hsk6-v2-l24-v009",
+        "hsk6-v2-l24-v010",
+        "hsk6-v2-l24-v011",
+        "hsk6-v2-l24-v012",
+        "hsk6-v2-l24-v013",
+        "hsk6-v2-l24-v014",
+        "hsk6-v2-l24-v015",
+        "hsk6-v2-l24-v016",
+        "hsk6-v2-l24-v017",
+        "hsk6-v2-l24-v018",
+        "hsk6-v2-l24-v019",
+        "hsk6-v2-l24-v020",
+        "hsk6-v2-l24-v021",
+        "hsk6-v2-l24-v022",
+        "hsk6-v2-l24-v023",
+        "hsk6-v2-l24-v024",
+        "hsk6-v2-l24-v025",
+        "hsk6-v2-l24-v026",
+        "hsk6-v2-l24-v027",
+        "hsk6-v2-l24-v028",
+        "hsk6-v2-l24-v029",
+        "hsk6-v2-l24-v030",
+        "hsk6-v2-l24-v031",
+        "hsk6-v2-l24-v032",
+        "hsk6-v2-l24-v033",
+        "hsk6-v2-l24-v034",
+        "hsk6-v2-l24-v035",
+        "hsk6-v2-l24-v036",
+        "hsk6-v2-l24-v037",
+        "hsk6-v2-l24-v038",
+        "hsk6-v2-l24-v039",
+        "hsk6-v2-l24-v040",
+        "hsk6-v2-l24-v041",
+        "hsk6-v2-l24-v042",
+        "hsk6-v2-l24-v043",
+        "hsk6-v2-l24-v044",
+        "hsk6-v2-l24-v045",
+        "hsk6-v2-l24-v046",
+        "hsk6-v2-l24-v047",
+        "hsk6-v2-l24-v048",
+        "hsk6-v2-l24-v049",
+        "hsk6-v2-l24-v050",
+        "hsk6-v2-l24-v051",
+        "hsk6-v2-l24-v052",
+        "hsk6-v2-l24-v053",
+        "hsk6-v2-l24-v054"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l24-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l24-lp-01",
+        "hsk6-v2-l24-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l24-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l24-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l24-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l24-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l24-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l24-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l24-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

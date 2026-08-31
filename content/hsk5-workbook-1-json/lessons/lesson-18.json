@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-18",
+  "number": 18,
+  "unitId": "hsk5w1-unit-06",
+  "titleZh": "抽象艺术美不美",
+  "sourcePdfPages": {
+    "start": 132,
+    "end": 138
+  },
+  "sourcePrintedPages": {
+    "start": 132,
+    "end": 138
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 132,
+      "end": 133
+    },
+    "reading": {
+      "start": 134,
+      "end": 137
+    },
+    "writing": {
+      "start": 138,
+      "end": 138
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-18",
+    "hsk5w1-reading-block-18",
+    "hsk5w1-writing-block-18"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0545",
+    "hsk5w1-exercise-0546",
+    "hsk5w1-exercise-0547",
+    "hsk5w1-exercise-0548",
+    "hsk5w1-exercise-0549",
+    "hsk5w1-exercise-0550",
+    "hsk5w1-exercise-0551",
+    "hsk5w1-exercise-0552",
+    "hsk5w1-exercise-0553",
+    "hsk5w1-exercise-0554",
+    "hsk5w1-exercise-0555",
+    "hsk5w1-exercise-0556",
+    "hsk5w1-exercise-0557",
+    "hsk5w1-exercise-0558",
+    "hsk5w1-exercise-0559",
+    "hsk5w1-exercise-0560",
+    "hsk5w1-exercise-0561",
+    "hsk5w1-exercise-0562",
+    "hsk5w1-exercise-0563",
+    "hsk5w1-exercise-0564",
+    "hsk5w1-exercise-0565",
+    "hsk5w1-exercise-0566",
+    "hsk5w1-exercise-0567",
+    "hsk5w1-exercise-0568",
+    "hsk5w1-exercise-0569",
+    "hsk5w1-exercise-0570",
+    "hsk5w1-exercise-0571",
+    "hsk5w1-exercise-0572",
+    "hsk5w1-exercise-0573",
+    "hsk5w1-exercise-0574",
+    "hsk5w1-exercise-0575",
+    "hsk5w1-exercise-0576"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

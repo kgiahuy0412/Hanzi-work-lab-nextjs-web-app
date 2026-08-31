@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-01",
+  "number": 1,
+  "unitId": "hsk5w1-unit-01",
+  "titleZh": "爱的细节",
+  "sourcePdfPages": {
+    "start": 8,
+    "end": 14
+  },
+  "sourcePrintedPages": {
+    "start": 8,
+    "end": 14
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 8,
+      "end": 9
+    },
+    "reading": {
+      "start": 10,
+      "end": 13
+    },
+    "writing": {
+      "start": 14,
+      "end": 14
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-01",
+    "hsk5w1-reading-block-01",
+    "hsk5w1-writing-block-01"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0001",
+    "hsk5w1-exercise-0002",
+    "hsk5w1-exercise-0003",
+    "hsk5w1-exercise-0004",
+    "hsk5w1-exercise-0005",
+    "hsk5w1-exercise-0006",
+    "hsk5w1-exercise-0007",
+    "hsk5w1-exercise-0008",
+    "hsk5w1-exercise-0009",
+    "hsk5w1-exercise-0010",
+    "hsk5w1-exercise-0011",
+    "hsk5w1-exercise-0012",
+    "hsk5w1-exercise-0013",
+    "hsk5w1-exercise-0014",
+    "hsk5w1-exercise-0015",
+    "hsk5w1-exercise-0016",
+    "hsk5w1-exercise-0017",
+    "hsk5w1-exercise-0018",
+    "hsk5w1-exercise-0019",
+    "hsk5w1-exercise-0020",
+    "hsk5w1-exercise-0021",
+    "hsk5w1-exercise-0022",
+    "hsk5w1-exercise-0023",
+    "hsk5w1-exercise-0024",
+    "hsk5w1-exercise-0025",
+    "hsk5w1-exercise-0026",
+    "hsk5w1-exercise-0027",
+    "hsk5w1-exercise-0028",
+    "hsk5w1-exercise-0029",
+    "hsk5w1-exercise-0030",
+    "hsk5w1-exercise-0031",
+    "hsk5w1-exercise-0032"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

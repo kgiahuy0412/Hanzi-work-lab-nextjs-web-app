@@ -1,0 +1,158 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-23",
+  "lessonNumber": 23,
+  "status": "review",
+  "title": {
+    "zh": "大数据时代",
+    "pinyin": "dà shù jù shí dài",
+    "vi": "Thời đại dữ liệu lớn"
+  },
+  "themeRef": "hsk6-v2-theme-06",
+  "source": {
+    "pdfPages": [
+      33,
+      41
+    ],
+    "printedPages": [
+      33,
+      41
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-033",
+      "hsk6-v2-source-page-034",
+      "hsk6-v2-source-page-035",
+      "hsk6-v2-source-page-036",
+      "hsk6-v2-source-page-037",
+      "hsk6-v2-source-page-038",
+      "hsk6-v2-source-page-039",
+      "hsk6-v2-source-page-040",
+      "hsk6-v2-source-page-041"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l23-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l23-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l23-v001",
+        "hsk6-v2-l23-v002",
+        "hsk6-v2-l23-v003",
+        "hsk6-v2-l23-v004",
+        "hsk6-v2-l23-v005",
+        "hsk6-v2-l23-v006",
+        "hsk6-v2-l23-v007",
+        "hsk6-v2-l23-v008",
+        "hsk6-v2-l23-v009",
+        "hsk6-v2-l23-v010",
+        "hsk6-v2-l23-v011",
+        "hsk6-v2-l23-v012",
+        "hsk6-v2-l23-v013",
+        "hsk6-v2-l23-v014",
+        "hsk6-v2-l23-v015",
+        "hsk6-v2-l23-v016",
+        "hsk6-v2-l23-v017",
+        "hsk6-v2-l23-v018",
+        "hsk6-v2-l23-v019",
+        "hsk6-v2-l23-v020",
+        "hsk6-v2-l23-v021",
+        "hsk6-v2-l23-v022",
+        "hsk6-v2-l23-v023",
+        "hsk6-v2-l23-v024",
+        "hsk6-v2-l23-v025",
+        "hsk6-v2-l23-v026",
+        "hsk6-v2-l23-v027",
+        "hsk6-v2-l23-v028",
+        "hsk6-v2-l23-v029",
+        "hsk6-v2-l23-v030",
+        "hsk6-v2-l23-v031",
+        "hsk6-v2-l23-v032",
+        "hsk6-v2-l23-v033",
+        "hsk6-v2-l23-v034",
+        "hsk6-v2-l23-v035",
+        "hsk6-v2-l23-v036",
+        "hsk6-v2-l23-v037",
+        "hsk6-v2-l23-v038",
+        "hsk6-v2-l23-v039",
+        "hsk6-v2-l23-v040",
+        "hsk6-v2-l23-v041",
+        "hsk6-v2-l23-v042",
+        "hsk6-v2-l23-v043",
+        "hsk6-v2-l23-v044",
+        "hsk6-v2-l23-v045",
+        "hsk6-v2-l23-v046",
+        "hsk6-v2-l23-v047",
+        "hsk6-v2-l23-v048",
+        "hsk6-v2-l23-v049",
+        "hsk6-v2-l23-v050",
+        "hsk6-v2-l23-v051"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l23-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l23-lp-01",
+        "hsk6-v2-l23-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l23-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l23-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l23-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l23-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l23-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l23-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l23-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

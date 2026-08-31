@@ -1,0 +1,826 @@
+{
+  "bundleId": "hsk5-standard-course-workbook-1-zh-v1",
+  "blocks": [
+    {
+      "id": "hsk5w1-writing-block-01",
+      "lessonId": "hsk5w1-lesson-01",
+      "lessonNumber": 1,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 14,
+        "end": 14
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-014"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-014",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-014",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.她 这次的 放弃了 居然 机会",
+        "30.从来没 他们 吵过架 为 任何事",
+        "31.肩膀上 我 吧 靠在 睡一会儿",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "等待、抱怨、对比、如何、不耐烦"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.她 这次的 放弃了 居然 机会\n30.从来没 他们 吵过架 为 任何事\n31.肩膀上 我 吧 靠在 睡一会儿\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n等待、抱怨、对比、如何、不耐烦",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-02",
+      "lessonId": "hsk5w1-lesson-02",
+      "lessonNumber": 2,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 21,
+        "end": 21
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-021"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-021",
+          "rowIndex": 2
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-021",
+          "rowIndex": 9
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "三、书写 留串钥匙给父母",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.挣了 出去 打工 这次 不少钱",
+        "30.让 我 家的温暖 妻子的微笑 感受到",
+        "31.飘来 窗外 歌声 一阵阵 动听的",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "装修、以来、卧室、想象、亮"
+      ],
+      "contentOcr": "三、书写 留串钥匙给父母\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.挣了 出去 打工 这次 不少钱\n30.让 我 家的温暖 妻子的微笑 感受到\n31.飘来 窗外 歌声 一阵阵 动听的\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n装修、以来、卧室、想象、亮",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-03",
+      "lessonId": "hsk5w1-lesson-03",
+      "lessonNumber": 3,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 28,
+        "end": 28
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-028"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-028",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-028",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表 这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.我 干活儿 随时 可以 开始",
+        "30.就是 我 对 新工作的要求 待遇稳定",
+        "31.让 感受到 雨后的彩虹 一种平静 他",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "撞、发愁、盼望、太太、未来"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表 这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.我 干活儿 随时 可以 开始\n30.就是 我 对 新工作的要求 待遇稳定\n31.让 感受到 雨后的彩虹 一种平静 他\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n撞、发愁、盼望、太太、未来",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-04",
+      "lessonId": "hsk5w1-lesson-04",
+      "lessonNumber": 4,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 36,
+        "end": 36
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-036"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-036",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-036",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表 这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.让她 坏脾气 不少委屈 我的 受了",
+        "30.网上阅读的人 喜欢 8% 只 占到",
+        "31.近千年的 在中国 这是个 民间故事 流传了",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "孝顺、惭愧、满足、决心、成就"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表 这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.让她 坏脾气 不少委屈 我的 受了\n30.网上阅读的人 喜欢 8% 只 占到\n31.近千年的 在中国 这是个 民间故事 流传了\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n孝顺、惭愧、满足、决心、成就",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-05",
+      "lessonId": "hsk5w1-lesson-05",
+      "lessonNumber": 5,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 43,
+        "end": 43
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-043"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-043",
+          "rowIndex": 3
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-043",
+          "rowIndex": 10
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "济南的泉水",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.强烈的 两种颜色 对比 形成了 这",
+        "30.两千多年前的 于 皮影戏 西汉时期 产生",
+        "31.往往 能 一个人的心态 脸上的表情 反映",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "传说、流传、悠久、优美、充满"
+      ],
+      "contentOcr": "济南的泉水\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.强烈的 两种颜色 对比 形成了 这\n30.两千多年前的 于 皮影戏 西汉时期 产生\n31.往往 能 一个人的心态 脸上的表情 反映\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n传说、流传、悠久、优美、充满",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-06",
+      "lessonId": "hsk5w1-lesson-06",
+      "lessonNumber": 6,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 50,
+        "end": 50
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-050"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-050",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-050",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表 这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.会 这东西 有用处的 以后说不定 还",
+        "30.下午 跳舞 整个 他们 都在",
+        "31.楼房 代替了 方盒子 似的 北京原有的平房",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "节日、意义、表达、风俗、纷纷"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表 这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.会 这东西 有用处的 以后说不定 还\n30.下午 跳舞 整个 他们 都在\n31.楼房 代替了 方盒子 似的 北京原有的平房\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n节日、意义、表达、风俗、纷纷",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-07",
+      "lessonId": "hsk5w1-lesson-07",
+      "lessonNumber": 7,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 58,
+        "end": 58
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-058"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-058",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-058",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.我 了 五六支箭 连续 射",
+        "30.一定能 寻找到 相信 你 最终的结论",
+        "31.他说这话 反应过来 我 完全没有 的时候",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "智慧、尽力、善于、反应、分别"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.我 了 五六支箭 连续 射\n30.一定能 寻找到 相信 你 最终的结论\n31.他说这话 反应过来 我 完全没有 的时候\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n智慧、尽力、善于、反应、分别",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-08",
+      "lessonId": "hsk5w1-lesson-08",
+      "lessonNumber": 8,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 65,
+        "end": 65
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-065"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-065",
+          "rowIndex": 3
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-065",
+          "rowIndex": 10
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "三、书写",
+        "朝三暮四一的古今义",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.固定的 产品 有 这种 消费群体",
+        "30.把 完整地 请你 昨晚的经历 叙述一遍",
+        "31.不 家庭的财力 他的需要 满足 能",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "相处、对方、调皮、行为、似乎"
+      ],
+      "contentOcr": "三、书写\n朝三暮四一的古今义\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.固定的 产品 有 这种 消费群体\n30.把 完整地 请你 昨晚的经历 叙述一遍\n31.不 家庭的财力 他的需要 满足 能\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n相处、对方、调皮、行为、似乎",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-09",
+      "lessonId": "hsk5w1-lesson-09",
+      "lessonNumber": 9,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 72,
+        "end": 72
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-072"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-072",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-072",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.因为 而 他 戒了酒 胃病",
+        "30.地道的 你 这 快尝尝 传统点心",
+        "31.他 平均 要 招待一次客人 每两个星期",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "表现、大方、形象、作为、曾经"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.因为 而 他 戒了酒 胃病\n30.地道的 你 这 快尝尝 传统点心\n31.他 平均 要 招待一次客人 每两个星期\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n表现、大方、形象、作为、曾经",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-10",
+      "lessonId": "hsk5w1-lesson-10",
+      "lessonNumber": 10,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 80,
+        "end": 80
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-080"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-080",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-080",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表 这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.由此 或许 将 走向精彩 你的人生",
+        "30.都是 进行的 整个讨论 围绕 去留问题",
+        "31.始终表现 很稳定 得 这位 年轻人",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "争论、差距、成熟、逐渐、改进"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表 这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.由此 或许 将 走向精彩 你的人生\n30.都是 进行的 整个讨论 围绕 去留问题\n31.始终表现 很稳定 得 这位 年轻人\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n争论、差距、成熟、逐渐、改进",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-11",
+      "lessonId": "hsk5w1-lesson-11",
+      "lessonNumber": 11,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 87,
+        "end": 87
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-087"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-087",
+          "rowIndex": 3
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-087",
+          "rowIndex": 10
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "闹钟的危害",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.脚步 享受生活 为了 是 放慢",
+        "30.是 很 人偶尔 正常的 情绪低落",
+        "31.一般 都 持续的时间 雷阵雨 较短",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "失眠、精神、危害、规律、避免"
+      ],
+      "contentOcr": "闹钟的危害\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.脚步 享受生活 为了 是 放慢\n30.是 很 人偶尔 正常的 情绪低落\n31.一般 都 持续的时间 雷阵雨 较短\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n失眠、精神、危害、规律、避免",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-12",
+      "lessonId": "hsk5w1-lesson-12",
+      "lessonNumber": 12,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 94,
+        "end": 94
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-094"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-094",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-094",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表 这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.我曾经 一项 做过 调查 针对留学生",
+        "30.我 请给 一次 的机会 实现愿望",
+        "31.用筷子 盘子 你不要 以及桌面 敲打碗",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "明星、推广、宣传、销售、经营"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表 这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.我曾经 一项 做过 调查 针对留学生\n30.我 请给 一次 的机会 实现愿望\n31.用筷子 盘子 你不要 以及桌面 敲打碗\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n明星、推广、宣传、销售、经营",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-13",
+      "lessonId": "hsk5w1-lesson-13",
+      "lessonNumber": 13,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 102,
+        "end": 102
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-102"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-102",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-102",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表 这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.我们的 运动项目 缺乏 在室内进行的 训练学校",
+        "30.影响了 的 暂停行为 一再重复 比赛的气氛",
+        "31.受 宣传推广活动 这次的 是 他们公司的启发",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "训练、重复、缺乏、造成、何况"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表 这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.我们的 运动项目 缺乏 在室内进行的 训练学校\n30.影响了 的 暂停行为 一再重复 比赛的气氛\n31.受 宣传推广活动 这次的 是 他们公司的启发\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n训练、重复、缺乏、造成、何况",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-14",
+      "lessonId": "hsk5w1-lesson-14",
+      "lessonNumber": 14,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 109,
+        "end": 109
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-109"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-109",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-109",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "14",
+        "北京的四合院",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.北京四合院 很具有 样式 的 代表性",
+        "30.功能 该产品 基本 具备了 已经",
+        "31.那位亲切的长辈 帮助 我很 曾经给我的 感激",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "接待、日常、组成、关闭、打交道"
+      ],
+      "contentOcr": "14\n北京的四合院\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.北京四合院 很具有 样式 的 代表性\n30.功能 该产品 基本 具备了 已经\n31.那位亲切的长辈 帮助 我很 曾经给我的 感激\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n接待、日常、组成、关闭、打交道",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-15",
+      "lessonId": "hsk5w1-lesson-15",
+      "lessonNumber": 15,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 116,
+        "end": 116
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-116"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-116",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-116",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.他对 很深的 这种军事理论 理解 有",
+        "30.都 谁 轻视 别人 没有资格",
+        "31.这个故事 那些 讽刺的是 不懂得 灵活变通的人",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "毛病、道理、阻止、独立、宝贵"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.他对 很深的 这种军事理论 理解 有\n30.都 谁 轻视 别人 没有资格\n31.这个故事 那些 讽刺的是 不懂得 灵活变通的人\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n毛病、道理、阻止、独立、宝贵",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-16",
+      "lessonId": "hsk5w1-lesson-16",
+      "lessonNumber": 16,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 124,
+        "end": 124
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-124"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-124",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-124",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候是的",
+        "这篇论文是什么时候发表的？",
+        "29.有 来报名 总共 这次 两百多人",
+        "30.采取 治疗方法 医生 中医的 决定",
+        "31.小刘 可靠 不太 办事 经理觉得",
+        "第二部分",
+        "第32题：写短文。",
+        "营养、措施、苗条、明显、趋势"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候是的\n这篇论文是什么时候发表的？\n29.有 来报名 总共 这次 两百多人\n30.采取 治疗方法 医生 中医的 决定\n31.小刘 可靠 不太 办事 经理觉得\n第二部分\n第32题：写短文。\n营养、措施、苗条、明显、趋势",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-17",
+      "lessonId": "hsk5w1-lesson-17",
+      "lessonNumber": 17,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 131,
+        "end": 131
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-131"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-131",
+          "rowIndex": 3
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-131",
+          "rowIndex": 10
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "三、书写",
+        "在最美好的时刻离开",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.他要给 时间 更多的 争取 自己",
+        "30.刚 给我 推荐了 老刘 一份工作",
+        "31.被人 这是 细节 忽视的 最容易",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "婚礼、主持、深刻、度过、魅力"
+      ],
+      "contentOcr": "三、书写\n在最美好的时刻离开\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.他要给 时间 更多的 争取 自己\n30.刚 给我 推荐了 老刘 一份工作\n31.被人 这是 细节 忽视的 最容易\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n婚礼、主持、深刻、度过、魅力",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk5w1-writing-block-18",
+      "lessonId": "hsk5w1-lesson-18",
+      "lessonNumber": 18,
+      "sectionType": "writing",
+      "sourcePdfPages": {
+        "start": 138,
+        "end": 138
+      },
+      "sourcePageIds": [
+        "hsk5w1-source-page-138"
+      ],
+      "parts": [
+        {
+          "part": 1,
+          "headingOcr": "第一部分",
+          "sourcePageId": "hsk5w1-source-page-138",
+          "rowIndex": 4
+        },
+        {
+          "part": 2,
+          "headingOcr": "第二部分",
+          "sourcePageId": "hsk5w1-source-page-138",
+          "rowIndex": 11
+        }
+      ],
+      "audioTrackReferences": [],
+      "contentOcrLines": [
+        "HSK",
+        "标准教程5（上）练习册",
+        "三、书写",
+        "第一部分",
+        "第29-31题：完成句子。",
+        "例如：发表这篇论文 什么时候 是的",
+        "这篇论文是什么时候发表的？",
+        "29.印象 给我 上海 留下了 极其深刻的",
+        "30.他也 再等了 一分钟 哪怕是 不愿意",
+        "31.便 成语 出自 “画龙点晴” 关于他的传说",
+        "第二部分",
+        "第32题：写短文。",
+        "32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。",
+        "作品、欣赏、业余、自由、活跃"
+      ],
+      "contentOcr": "HSK\n标准教程5（上）练习册\n三、书写\n第一部分\n第29-31题：完成句子。\n例如：发表这篇论文 什么时候 是的\n这篇论文是什么时候发表的？\n29.印象 给我 上海 留下了 极其深刻的\n30.他也 再等了 一分钟 哪怕是 不愿意\n31.便 成语 出自 “画龙点晴” 关于他的传说\n第二部分\n第32题：写短文。\n32.请结合下列词语（要全部使用，顺序不分先后），写一篇80字左右的短文。\n作品、欣赏、业余、自由、活跃",
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

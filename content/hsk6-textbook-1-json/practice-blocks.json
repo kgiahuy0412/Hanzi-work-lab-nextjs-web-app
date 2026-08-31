@@ -1,0 +1,5915 @@
+{
+  "bundleId": "hsk6-standard-course-textbook-1-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk6t1-practice-01-01",
+      "lessonId": "hsk6t1-lesson-01",
+      "lessonNumber": 1,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：反问：询问 提问 疑问 问题",
+        "爽快：",
+        "打架：",
+        "亲密：",
+        "反驳：",
+        "用所给词语或结构改写句子",
+        "听到这个消息，大家非常兴奋，忍不住欢呼起来。（异常）",
+        "②他做得最好吃的菜是西红柿炒鸡蛋。（拿手）",
+        "③我的工作就是不断提醒食品厂加强卫生管理。（督促）",
+        "HSK",
+        "标准教程6（上）",
+        "④这个老师很严格，谁不做作业都不行。（严厉）",
+        "③我非常希望能马上回家见到妈妈。（巴不得）",
+        "③这件事情太复杂了，我一个人根本处理不了。（别提多………了）",
+        "3 选择合适的词语填空",
+        "和睦 绅士 爽快 宽容 十足",
+        "我老公是个热心人，别人有事需要帮忙时，他总是 地答应；",
+        "我老公也很 ，能原谅伤害过他的人，几乎跟所有的人都能 相",
+        "处；我老公还很 ，不管是挤汽车，还是上电梯，都坚持女士优先，",
+        "风度 ，我身边的朋友都美慕我找了个好老公。",
+        "别扭 亲密 嘲笑 当面 反问",
+        "2 我和小丽关系很融洽，从来没闹过 可突然有一天，我听说",
+        "小丽在背后 我长得又胖又丑，我非常吃惊，马上要找她 问",
+        "个究竟。小丽听了我的话后，笑了，她 道：“你觉得我会说那样",
+        "的话吗？一定是有人嫉妒我们关系好，故意那么说的。”我的疑惑没有",
+        "了，我们仍然是 的朋友。",
+        "阅读语段，模仿造句",
+        "1 这天晚上，两个孩子做完作业，开始滔滔不绝地聊了起来，一个",
+        "说，我不喜欢王朵朵，她就喜欢跟穿得漂亮的同学一起玩儿，还老嘲笑",
+        "别人。另一个说我讨厌高春来，他最会讨好老师了·.·",
+        "刚一下课，他们就争论起来，一个说",
+        "另一个说",
+        "2 人们常说，启蒙老师的重要性不可忽视，父母就是孩子的第一任老",
+        "师，这话确实不假，可如果这次不是女儿反驳我，我还意识不到，我们",
+        "自己的做法和对孩子的要求实行的是两套标准，那就是对自己宽容，对",
+        "孩子严厉。",
+        "人们常说“有钱就有幸福”，这话确实不假，可如果",
+        "根据提示，简述课文主要内容",
+        "孩子给我们的启示",
+        "①“我”和老公的态度：",
+        "天天要来“我们”家，“我",
+        "②林林的态度：",
+        "们”全家的态度怎么样？",
+        "③全家别提多····了",
+        "①变得异常",
+        "天天到来之前，林林有什么 .收拾得·",
+        "变化？ ③……··摆放得·",
+        "④什么好事都…··",
+        "天天来了之后，两个孩子表 早上.，上学……，做作业…·",
+        "现如何？ 不..，不....·.，关系..·",
+        "①一个说··，另一个说···",
+        "两个孩子做错了什么？",
+        "2 “我”严肃地说：",
+        "父母怎样教育他们？",
+        "③老公附和：",
+        "孩子的疑惑是什么？ ①女儿反问：“你们不是也………吗？”",
+        "大人有什么做错了的地方？ ②两套标准：对自己，对孩子··",
+        "这个故事告诉我们什么",
+        "想当好父母，首先要.··",
+        "道理？"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：反问：询问 提问 疑问 问题\n爽快：\n打架：\n亲密：\n反驳：\n用所给词语或结构改写句子\n听到这个消息，大家非常兴奋，忍不住欢呼起来。（异常）\n②他做得最好吃的菜是西红柿炒鸡蛋。（拿手）\n③我的工作就是不断提醒食品厂加强卫生管理。（督促）\nHSK\n标准教程6（上）\n④这个老师很严格，谁不做作业都不行。（严厉）\n③我非常希望能马上回家见到妈妈。（巴不得）\n③这件事情太复杂了，我一个人根本处理不了。（别提多………了）\n3 选择合适的词语填空\n和睦 绅士 爽快 宽容 十足\n我老公是个热心人，别人有事需要帮忙时，他总是 地答应；\n我老公也很 ，能原谅伤害过他的人，几乎跟所有的人都能 相\n处；我老公还很 ，不管是挤汽车，还是上电梯，都坚持女士优先，\n风度 ，我身边的朋友都美慕我找了个好老公。\n别扭 亲密 嘲笑 当面 反问\n2 我和小丽关系很融洽，从来没闹过 可突然有一天，我听说\n小丽在背后 我长得又胖又丑，我非常吃惊，马上要找她 问\n个究竟。小丽听了我的话后，笑了，她 道：“你觉得我会说那样\n的话吗？一定是有人嫉妒我们关系好，故意那么说的。”我的疑惑没有\n了，我们仍然是 的朋友。\n阅读语段，模仿造句\n1 这天晚上，两个孩子做完作业，开始滔滔不绝地聊了起来，一个\n说，我不喜欢王朵朵，她就喜欢跟穿得漂亮的同学一起玩儿，还老嘲笑\n别人。另一个说我讨厌高春来，他最会讨好老师了·.·\n刚一下课，他们就争论起来，一个说\n另一个说\n2 人们常说，启蒙老师的重要性不可忽视，父母就是孩子的第一任老\n师，这话确实不假，可如果这次不是女儿反驳我，我还意识不到，我们\n自己的做法和对孩子的要求实行的是两套标准，那就是对自己宽容，对\n孩子严厉。\n人们常说“有钱就有幸福”，这话确实不假，可如果\n根据提示，简述课文主要内容\n孩子给我们的启示\n①“我”和老公的态度：\n天天要来“我们”家，“我\n②林林的态度：\n们”全家的态度怎么样？\n③全家别提多····了\n①变得异常\n天天到来之前，林林有什么 .收拾得·\n变化？ ③……··摆放得·\n④什么好事都…··\n天天来了之后，两个孩子表 早上.，上学……，做作业…·\n现如何？ 不..，不....·.，关系..·\n①一个说··，另一个说···\n两个孩子做错了什么？\n2 “我”严肃地说：\n父母怎样教育他们？\n③老公附和：\n孩子的疑惑是什么？ ①女儿反问：“你们不是也………吗？”\n大人有什么做错了的地方？ ②两套标准：对自己，对孩子··\n这个故事告诉我们什么\n想当好父母，首先要.··\n道理？",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-019",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-020",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-021",
+          "rowIndex": 23
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-02-01",
+      "lessonId": "hsk6t1-lesson-02",
+      "lessonNumber": 2,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：和葛：和睦 和气 和平 心平气和",
+        "脱离：",
+        "无比：",
+        "吃苦：",
+        "顿时：",
+        "用所给词语完成句子",
+        "①我喜欢旅行， （向往）",
+        "②那家饭馆的环境很不好，顾客们 （埋怨）",
+        "③看到这么精彩的表演，大家 （不由得）",
+        "4 中秋节，全家团圆在一起，妈妈 （无比）",
+        "一天没吃饭，我饿坏了， （恨不得）",
+        "他丢了工作，但怕妈妈担心，所以 （隐瞒）",
+        "HSK",
+        "标准教程6（上）",
+        "3 选择合适的词语填空",
+        "无精打采 隐瞒 反常 热泪盈眶 不由得",
+        "最近我的朋友小李有些 ，每天都 的，他以前",
+        "可是非常开朗的啊。我 担心起他来。于是我找了个机会跟他",
+        "说：“如果你遇到了什么困难，千万别 告诉我，我们一起",
+        "想办法解决吧！”听了我的话，小李感动得",
+        "酝酿 埋怨 近来 顿时 体谅",
+        "公司的事情比较多，我 已久的旅行也只能放弃了。",
+        "心中暗暗 老板太不 员工了。但反过来一想，只有公司发展好",
+        "了，我们才会有更好的未来。于是，那些不满的情绪 消失了。",
+        "阅读语段，模仿造句",
+        "1 记得刚开学的时候，宿舍里的同学一给家里打电话就哭鼻子，每到",
+        "节假日，大家更是片刻不停地往家赶。回家的快乐和被亲情包围的幸福",
+        "感染了我，我也恨不得马上飞到父母跟前，与他们团圆。",
+        "记得 的时候，我一 就",
+        "每到 ，我更是 。那些下班后急忙忙赶回家的人们",
+        "感染了我，我也恨不得",
+        "2 “孩子比在家时瘦多了，肯定是吃苦了，可她的变化还是挺让咱们",
+        "欣慰的。”接着是父亲的声音：“总有一天她会明白的，不吃苦，怎么",
+        "长本事？社会不需要只会享福的人。”",
+        "他现在开着豪华汽车，全身上下都是名牌，肯定是",
+        "可",
+        "r oon Xqu suni Su Aq poues",
+        "2",
+        "父母之爱",
+        "5 根据提示，简述课文主要内容",
+        "①父母感情.·",
+        "“我”的家庭是什么样的家庭？ ②父母对我的态度…···",
+        "③我的独立能力·",
+        "①心里的孤独感...·.",
+        "上大学后，“我”想家的感受是什",
+        "②别的同学·",
+        "么样的？",
+        "③我也恨不得··",
+        "①要没什么事，就…，在学",
+        "假期到来时，父母给“我”什么建",
+        "校…，．或找份.…",
+        "议？“我”能理解吗？",
+        "我无法……，心中暗暗",
+        "①在图书馆",
+        "“我”的假期是怎么度过的？",
+        "②给杂志社",
+        "“我”回家后，知道了什么真相？"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：和葛：和睦 和气 和平 心平气和\n脱离：\n无比：\n吃苦：\n顿时：\n用所给词语完成句子\n①我喜欢旅行， （向往）\n②那家饭馆的环境很不好，顾客们 （埋怨）\n③看到这么精彩的表演，大家 （不由得）\n4 中秋节，全家团圆在一起，妈妈 （无比）\n一天没吃饭，我饿坏了， （恨不得）\n他丢了工作，但怕妈妈担心，所以 （隐瞒）\nHSK\n标准教程6（上）\n3 选择合适的词语填空\n无精打采 隐瞒 反常 热泪盈眶 不由得\n最近我的朋友小李有些 ，每天都 的，他以前\n可是非常开朗的啊。我 担心起他来。于是我找了个机会跟他\n说：“如果你遇到了什么困难，千万别 告诉我，我们一起\n想办法解决吧！”听了我的话，小李感动得\n酝酿 埋怨 近来 顿时 体谅\n公司的事情比较多，我 已久的旅行也只能放弃了。\n心中暗暗 老板太不 员工了。但反过来一想，只有公司发展好\n了，我们才会有更好的未来。于是，那些不满的情绪 消失了。\n阅读语段，模仿造句\n1 记得刚开学的时候，宿舍里的同学一给家里打电话就哭鼻子，每到\n节假日，大家更是片刻不停地往家赶。回家的快乐和被亲情包围的幸福\n感染了我，我也恨不得马上飞到父母跟前，与他们团圆。\n记得 的时候，我一 就\n每到 ，我更是 。那些下班后急忙忙赶回家的人们\n感染了我，我也恨不得\n2 “孩子比在家时瘦多了，肯定是吃苦了，可她的变化还是挺让咱们\n欣慰的。”接着是父亲的声音：“总有一天她会明白的，不吃苦，怎么\n长本事？社会不需要只会享福的人。”\n他现在开着豪华汽车，全身上下都是名牌，肯定是\n可\nr oon Xqu suni Su Aq poues\n2\n父母之爱\n5 根据提示，简述课文主要内容\n①父母感情.·\n“我”的家庭是什么样的家庭？ ②父母对我的态度…···\n③我的独立能力·\n①心里的孤独感...·.\n上大学后，“我”想家的感受是什\n②别的同学·\n么样的？\n③我也恨不得··\n①要没什么事，就…，在学\n假期到来时，父母给“我”什么建\n校…，．或找份.…\n议？“我”能理解吗？\n我无法……，心中暗暗\n①在图书馆\n“我”的假期是怎么度过的？\n②给杂志社\n“我”回家后，知道了什么真相？",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-029",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-030",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-031",
+          "rowIndex": 20
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-03-01",
+      "lessonId": "hsk6t1-lesson-03",
+      "lessonNumber": 3,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 模仿例子，写出更多的词语",
+        "Bai tap 例：口音：声音 录音 拼音 音乐",
+        "朴实：",
+        "过于：",
+        "一流：",
+        "惦记：",
+        "H",
+        "盒月饼",
+        "用所给词语或结构改写句子",
+        "①我花了三天时间，把那篇文章从头到尾研究了一遍。（番）",
+        "②那个好心人修好了我的自行车。（把…·给…）",
+        "③他在北京居住了40多年，可以说是个地道的北京人了。（算得上）",
+        "晚餐会上，有中餐，有西餐，丰盛极了。（又是……又是……·）",
+        "要学好汉语，一定得努力，除此以外，没有别的好方法。（非………不可）",
+        "别烦我，我太忙了，让我安静一会儿吧。（着呢）",
+        "选择合适的词语填空",
+        "操劳骨干辜负月饼期望",
+        "大学毕业后，我到了一家贸易公司，工作努力勤奋，现在也算得上",
+        "是公司的 了。中秋节快到了，我打算给父母送盒 表达心",
+        "意，因为父母为我们 了半辈子，现在也该享享福了。我努力工作",
+        "就是为了不 父母对我的",
+        "拨起码 隐约 仍旧拜托",
+        "2 昨天我 打好朋友小王的电话，却一直无人接听，直到今天早",
+        "上 没有他的音信。我心中 有种不安的感觉，便给小王单位",
+        "打了个电话，想 他的同事查看一下小王的情况，同事告诉我，小",
+        "王的手机坏了， 要一个星期才能修好，知道小王没事，我就放心",
+        "了。",
+        "HSK",
+        "标准教程6（上）",
+        "4 阅读语段，模仿造句",
+        "我马上拨打张师傅的电话，却无人接听，给他发短信，他也不回，",
+        "直到下班，仍旧没有音信。",
+        "我 ，却",
+        "，他也 ，直到",
+        "仍旧",
+        "2 他见了我又是道歉又是感谢，说今天特别忙，手机没电了都不知",
+        "道。说着就要拆包裹，非要请我吃月饼不可。",
+        "上个星期我帮了同学一个忙，他见了我又是 又",
+        "是 ，说如果没有我，他真不知道该怎么办好",
+        "了。说着还递给我一个包装很漂亮的礼物，非",
+        "不可。",
+        "根据提示，简述课文主要内容",
+        "·模样 胡须：",
+        "“我”在公司楼下遇到的那个",
+        "②脸： 口音：",
+        "男人是什么样的？",
+        "③手：",
+        "①女儿在工作……·节快到了，",
+        "这个男人想拜托“我”做什 女儿想给··寄···",
+        "么？",
+        "③………请我代收…",
+        "他为什么找到“我”帮忙？ 斯斯文文、心眼儿、信誉",
+        "他的女儿工作怎么样？ 硕士、学位、一流、主管、骨干",
+        "“我”收到包裹后，做了什 拨打、发短信、不安、往工地跑、",
+        "么？ 找到",
+        "他跟“我”见面后，做了什 又是.…·又是.、非...不.可、",
+        "么？ 给女儿打电话",
+        "3",
+        "一盒月饼"
+      ],
+      "contentOcr": "练习1 模仿例子，写出更多的词语\nBai tap 例：口音：声音 录音 拼音 音乐\n朴实：\n过于：\n一流：\n惦记：\nH\n盒月饼\n用所给词语或结构改写句子\n①我花了三天时间，把那篇文章从头到尾研究了一遍。（番）\n②那个好心人修好了我的自行车。（把…·给…）\n③他在北京居住了40多年，可以说是个地道的北京人了。（算得上）\n晚餐会上，有中餐，有西餐，丰盛极了。（又是……又是……·）\n要学好汉语，一定得努力，除此以外，没有别的好方法。（非………不可）\n别烦我，我太忙了，让我安静一会儿吧。（着呢）\n选择合适的词语填空\n操劳骨干辜负月饼期望\n大学毕业后，我到了一家贸易公司，工作努力勤奋，现在也算得上\n是公司的 了。中秋节快到了，我打算给父母送盒 表达心\n意，因为父母为我们 了半辈子，现在也该享享福了。我努力工作\n就是为了不 父母对我的\n拨起码 隐约 仍旧拜托\n2 昨天我 打好朋友小王的电话，却一直无人接听，直到今天早\n上 没有他的音信。我心中 有种不安的感觉，便给小王单位\n打了个电话，想 他的同事查看一下小王的情况，同事告诉我，小\n王的手机坏了， 要一个星期才能修好，知道小王没事，我就放心\n了。\nHSK\n标准教程6（上）\n4 阅读语段，模仿造句\n我马上拨打张师傅的电话，却无人接听，给他发短信，他也不回，\n直到下班，仍旧没有音信。\n我 ，却\n，他也 ，直到\n仍旧\n2 他见了我又是道歉又是感谢，说今天特别忙，手机没电了都不知\n道。说着就要拆包裹，非要请我吃月饼不可。\n上个星期我帮了同学一个忙，他见了我又是 又\n是 ，说如果没有我，他真不知道该怎么办好\n了。说着还递给我一个包装很漂亮的礼物，非\n不可。\n根据提示，简述课文主要内容\n·模样 胡须：\n“我”在公司楼下遇到的那个\n②脸： 口音：\n男人是什么样的？\n③手：\n①女儿在工作……·节快到了，\n这个男人想拜托“我”做什 女儿想给··寄···\n么？\n③………请我代收…\n他为什么找到“我”帮忙？ 斯斯文文、心眼儿、信誉\n他的女儿工作怎么样？ 硕士、学位、一流、主管、骨干\n“我”收到包裹后，做了什 拨打、发短信、不安、往工地跑、\n么？ 找到\n他跟“我”见面后，做了什 又是.…·又是.、非...不.可、\n么？ 给女儿打电话\n3\n一盒月饼",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-038",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-038",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-038",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-038",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-038",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-038",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-039",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-040",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-04-01",
+      "lessonId": "hsk6t1-lesson-04",
+      "lessonNumber": 4,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：毫无：毫不 毫厘 丝毫 分毫",
+        "发觉：",
+        "猛烈：",
+        "眼光：",
+        "夕阳：",
+        "用所给词语完成句子",
+        "1我准备去图书馆好好复习功课， （不料）",
+        "②普普通通一顿饭花了这么多钱， （未免）",
+        "③没吃早饭，正饿得不得了时， （恰巧）",
+        "4 我将无比感激。 （倘若）",
+        "妈妈不在家，孩子 （乘机）",
+        "经过几十年的改革开放，中国经济 （举世瞩目）",
+        "HSK",
+        "标准教程6（上）",
+        "选择合适的词语填空",
+        "愤怒 留神摆脱对抗愚蠢",
+        "《猫和老鼠》是很多小朋友都喜欢看的动画片，它讲了一只聪明的老",
+        "鼠跟猫 的故事。每次小老鼠都能 猫的追赶，一不 一，猫",
+        "还会上老鼠的当，被老鼠笑话一番，猫虽然很 ，却也没有办法。小",
+        "老鼠用自己的智慧战胜了 的猫。",
+        "毫无 强迫 倘若 耗费 厌恶",
+        "②我们的态度会决定做事情的心情。 你对一件事 兴趣，",
+        "那么有人 你做时，你会觉得痛苦和 。而如果是你感兴趣的",
+        "事情，无论 多少时间和精力，心里也都是快乐的。",
+        "阅读语段，模仿造句",
+        "动物世界中，大象是最强大的，倘若你还想回来，必须战胜大象，",
+        "否则，你就永远留在动物世界吧。",
+        "没有人轻轻松松就能取得成功，倘若 必",
+        "须 ，否则，",
+        "2 它想，大象现在毫无抵抗能力，只要我在它身体的重要部位咬几",
+        "个洞，它就没命了，我不就战胜大象了吗？然而，看到大象悲惨的样",
+        "子，老鼠不忍下手，它觉得那样未免太过残忍，良心告诉它，应该救",
+        "大象。",
+        "地上有个很大的钱包，周围也没有别人，只要",
+        "钱包就 ，我不就 了吗？",
+        "然而，想到丢钱包的人着急的样子，我觉得那样做未免太",
+        "了，良心告诉我，应该把它还给它的主人。",
+        "完美的胜利",
+        "根据提示，简述课文主要内容",
+        "老鼠想当普通的动物，山神对 ①倘若··战胜大象",
+        "老鼠提出了什么条件？ ②否则·",
+        "老鼠的第一次尝试成功了吗？ 进入大象鼻子、打喷嚏、像子弹一",
+        "它是怎么做的？ 样被射出来",
+        "大象的反应是什么？ 蔑视、愤怒、愚蠢、可恶、踩扁",
+        "①大象（挣扎、窜、摆脱、悲伤、",
+        "害怕）",
+        "当大象落入打猎者的巨网时，",
+        "②老鼠想（毫无抵抗力、咬几个洞、",
+        "老鼠是怎么做的？",
+        "战胜，不忍下手、太过残忍）",
+        "③老鼠（锋利、咬断）",
+        "山神为什么说老鼠胜利了？ 化敌为友、举世瞩目"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：毫无：毫不 毫厘 丝毫 分毫\n发觉：\n猛烈：\n眼光：\n夕阳：\n用所给词语完成句子\n1我准备去图书馆好好复习功课， （不料）\n②普普通通一顿饭花了这么多钱， （未免）\n③没吃早饭，正饿得不得了时， （恰巧）\n4 我将无比感激。 （倘若）\n妈妈不在家，孩子 （乘机）\n经过几十年的改革开放，中国经济 （举世瞩目）\nHSK\n标准教程6（上）\n选择合适的词语填空\n愤怒 留神摆脱对抗愚蠢\n《猫和老鼠》是很多小朋友都喜欢看的动画片，它讲了一只聪明的老\n鼠跟猫 的故事。每次小老鼠都能 猫的追赶，一不 一，猫\n还会上老鼠的当，被老鼠笑话一番，猫虽然很 ，却也没有办法。小\n老鼠用自己的智慧战胜了 的猫。\n毫无 强迫 倘若 耗费 厌恶\n②我们的态度会决定做事情的心情。 你对一件事 兴趣，\n那么有人 你做时，你会觉得痛苦和 。而如果是你感兴趣的\n事情，无论 多少时间和精力，心里也都是快乐的。\n阅读语段，模仿造句\n动物世界中，大象是最强大的，倘若你还想回来，必须战胜大象，\n否则，你就永远留在动物世界吧。\n没有人轻轻松松就能取得成功，倘若 必\n须 ，否则，\n2 它想，大象现在毫无抵抗能力，只要我在它身体的重要部位咬几\n个洞，它就没命了，我不就战胜大象了吗？然而，看到大象悲惨的样\n子，老鼠不忍下手，它觉得那样未免太过残忍，良心告诉它，应该救\n大象。\n地上有个很大的钱包，周围也没有别人，只要\n钱包就 ，我不就 了吗？\n然而，想到丢钱包的人着急的样子，我觉得那样做未免太\n了，良心告诉我，应该把它还给它的主人。\n完美的胜利\n根据提示，简述课文主要内容\n老鼠想当普通的动物，山神对 ①倘若··战胜大象\n老鼠提出了什么条件？ ②否则·\n老鼠的第一次尝试成功了吗？ 进入大象鼻子、打喷嚏、像子弹一\n它是怎么做的？ 样被射出来\n大象的反应是什么？ 蔑视、愤怒、愚蠢、可恶、踩扁\n①大象（挣扎、窜、摆脱、悲伤、\n害怕）\n当大象落入打猎者的巨网时，\n②老鼠想（毫无抵抗力、咬几个洞、\n老鼠是怎么做的？\n战胜，不忍下手、太过残忍）\n③老鼠（锋利、咬断）\n山神为什么说老鼠胜利了？ 化敌为友、举世瞩目",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-049",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-050",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-051",
+          "rowIndex": 15
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-05-01",
+      "lessonId": "hsk6t1-lesson-05",
+      "lessonNumber": 5,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：拼命：救命 生命 寿命 命运",
+        "忍耐：",
+        "缓和：",
+        "客户：",
+        "思维：",
+        "用所给词语或结构改写句子",
+        "①为孩子的未来考虑，家长应该培养孩子独立的能力。（为…着想）",
+        "②商店增加了很多手推车，是为了便于顾客购物。（以）",
+        "③他只不过是不小心碰了你一下，你干吗生那么大的气啊？（无非）",
+        "④他并不比别人聪明，只是比别人更努力一些。（而已）",
+        "这个方法好是好，可实施起来太难了。（固然）",
+        "周末去郊外玩儿，走了一段时间后，我发现自己迷路了。（…·着·着）",
+        "5",
+        "学",
+        "3 选择合适的词语填空",
+        "一门外语需要理",
+        "兴致勃勃 迫不及待啥接连栋",
+        "1 朋友邀请我参加他们的新年晚会，他住在离我家不远的一",
+        "由",
+        "居民楼上。我 地前去参加。晚会上惊喜 不断，不但",
+        "吗",
+        "有好吃的、好喝的，朋友还为每位客人准备了一份礼物。我很想知道里 ？",
+        "边是 东西，就 地打开包装，原来是我最喜欢吃的巧",
+        "克力，晚会结束后，大家都高高兴兴地拿着礼物回家了。",
+        "依靠 动力 设置 持久 执行",
+        "学习一门外语，光 热情是远远不够的，那样的话，恐怕",
+        "难以 我们还应该根据自身的情况 短期和长期的学",
+        "习目标，制定详细的学习计划，有了目标就有了学习的 。短",
+        "期目标帮助我们一步一步逐渐提高，同时又不觉得太过吃力；长期目标",
+        "给我们指明了方向。最后，严格 学习计划也是非常重要的。",
+        "阅读语段，模仿造句",
+        "她极力忍耐着，“是这样，我必须了解学员，为学员着想，帮他策",
+        "划学习方案，以达成他的目标。”",
+        "球队教练说：“我必须 为 着想，帮",
+        "以",
+        "我的学习方式绝对对学习效果有利，当然弊端也不少：有利的方面",
+        "如上所说，弊端在于高兴了拼命学一阵子，不高兴了就搁在一边。",
+        "那个人绝对是个很好的人，当然 也不少，好的方面是",
+        "，缺点在于",
+        "HSK 标准教程6（上）",
+        "根据提示，简述课文主要内容",
+        "喜欢···.",
+        "“我”学习外语的原因是：",
+        "不依靠··，·看..…，阅读…··",
+        "那家机构认为学习外语必须",
+        "具体目标，比如：出国、职业··",
+        "有什么？",
+        "①在线··",
+        "最后“我”选择了什么方式 ②教学方法：···",
+        "学习，为什么？ ③没有人硬逼着我····",
+        "④没有人问我··",
+        "“我”的学习方式的利 ①利：",
+        "是： ②弊："
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：拼命：救命 生命 寿命 命运\n忍耐：\n缓和：\n客户：\n思维：\n用所给词语或结构改写句子\n①为孩子的未来考虑，家长应该培养孩子独立的能力。（为…着想）\n②商店增加了很多手推车，是为了便于顾客购物。（以）\n③他只不过是不小心碰了你一下，你干吗生那么大的气啊？（无非）\n④他并不比别人聪明，只是比别人更努力一些。（而已）\n这个方法好是好，可实施起来太难了。（固然）\n周末去郊外玩儿，走了一段时间后，我发现自己迷路了。（…·着·着）\n5\n学\n3 选择合适的词语填空\n一门外语需要理\n兴致勃勃 迫不及待啥接连栋\n1 朋友邀请我参加他们的新年晚会，他住在离我家不远的一\n由\n居民楼上。我 地前去参加。晚会上惊喜 不断，不但\n吗\n有好吃的、好喝的，朋友还为每位客人准备了一份礼物。我很想知道里 ？\n边是 东西，就 地打开包装，原来是我最喜欢吃的巧\n克力，晚会结束后，大家都高高兴兴地拿着礼物回家了。\n依靠 动力 设置 持久 执行\n学习一门外语，光 热情是远远不够的，那样的话，恐怕\n难以 我们还应该根据自身的情况 短期和长期的学\n习目标，制定详细的学习计划，有了目标就有了学习的 。短\n期目标帮助我们一步一步逐渐提高，同时又不觉得太过吃力；长期目标\n给我们指明了方向。最后，严格 学习计划也是非常重要的。\n阅读语段，模仿造句\n她极力忍耐着，“是这样，我必须了解学员，为学员着想，帮他策\n划学习方案，以达成他的目标。”\n球队教练说：“我必须 为 着想，帮\n以\n我的学习方式绝对对学习效果有利，当然弊端也不少：有利的方面\n如上所说，弊端在于高兴了拼命学一阵子，不高兴了就搁在一边。\n那个人绝对是个很好的人，当然 也不少，好的方面是\n，缺点在于\nHSK 标准教程6（上）\n根据提示，简述课文主要内容\n喜欢···.\n“我”学习外语的原因是：\n不依靠··，·看..…，阅读…··\n那家机构认为学习外语必须\n具体目标，比如：出国、职业··\n有什么？\n①在线··\n最后“我”选择了什么方式 ②教学方法：···\n学习，为什么？ ③没有人硬逼着我····\n④没有人问我··\n“我”的学习方式的利 ①利：\n是： ②弊：",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-060",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-061",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-062",
+          "rowIndex": 14
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-06-01",
+      "lessonId": "hsk6t1-lesson-06",
+      "lessonNumber": 6,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：就职：辞职 兼职 职业 职务",
+        "职位：",
+        "唯独：",
+        "才干：",
+        "敬业：",
+        "用所给词语完成句子",
+        "1别的事还可以放一放， （唯独）",
+        "②爸爸 从来没有闲下来的时候。（成天）",
+        "③失业了也没什么， （大不了)",
+        "4我的笔 怎么一转眼不见了呢？（明明）",
+        "没有床，只有一张沙发，你 (凑合)",
+        "每当我遇到困难时，他 （想方设法）",
+        "oono Au Sun u Aq paus",
+        "6",
+        "3 选择合适的词语填空 当好职场插班生",
+        "计较 搭档风气资深 创立",
+        "D 上个星期，我加入了学校篮球队，跟球队的 们一一认识之",
+        "后，我的训练生活就此开始。张教练在球队 之初就在这儿了，",
+        "他是一位富有经验的 篮球教练。我们球队的 非常好，大",
+        "家互相帮助，训练刻苦认真，没人喊累，没人抱怨，训练中受点儿伤也",
+        "都不 ，我很喜欢这个集体。",
+        "激情 全力以赴 想方设法 忙碌 凑合",
+        "同事小张非常敬业，他对待工作充满 ，总是 吊",
+        "色完成每一项任务，从来不 。最近，他接到一个新任务，为",
+        "一个新项目做前期准备。小张带领他们部门的员工 投入工",
+        "作，虽然很 却享受到了工作的快乐。",
+        "阅读语段，模仿造句",
+        "清早上班，和新同事一一认识后，我以为一天的工作就此开始，没",
+        "想到赵姐工作的第一件事是忙着彻茶和咖啡，给张哥端一碗，给孙姐送",
+        "一杯….我想这单位风气真好，明天这事我来做。",
+        "今天在办公室，我怎么也找不到自己的手机了，我以为",
+        "，没想到 ，我想",
+        "其实，进入新单位，作为一个职场插班生，这个过程，正是展示你",
+        "人格魅力的时候，遇到困难，也是你施展才能的时机。",
+        "其实，进入 作为 ，这个过程，正是",
+        "的时候，遇到 ，也是 的时机。",
+        "HSK",
+        "标准教程6（上）",
+        "根据提示，简述课文主要内容",
+        "说说“我”在这家公司的",
+        "职位以及公司的人员构成 咨询师、老手、新手、资深员工",
+        "情况。",
+        "给…···茶咖啡",
+        "上班第一天，其他老员工对",
+        "②唯独剩下",
+        "“我”和小林的态度如何？",
+        "③边缘化",
+        "“我”和小林的业务………，件",
+        "件………，有时候·",
+        "“我”和小林在公司的工作",
+        "②别人的工作……，成天……，·还有",
+        "与别人有何不同？为什么？",
+        "人…..",
+        "③我发现，领导分配业务时，·",
+        "“我”和小林如何对待自己 不计较、全力以赴、不怠慢、不敷衍、",
+        "的工作？ 想方设法、不凑合",
+        "①业务能力 年度考核··",
+        "“我们”在公司的处境有了",
+        "②客户. …热情起来",
+        "什么变化？",
+        "③接手···· 新人·",
+        "通过“职场插班生”的经历， ①展示···魅力",
+        "“我”有什么收获？ ②施展才能"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：就职：辞职 兼职 职业 职务\n职位：\n唯独：\n才干：\n敬业：\n用所给词语完成句子\n1别的事还可以放一放， （唯独）\n②爸爸 从来没有闲下来的时候。（成天）\n③失业了也没什么， （大不了)\n4我的笔 怎么一转眼不见了呢？（明明）\n没有床，只有一张沙发，你 (凑合)\n每当我遇到困难时，他 （想方设法）\noono Au Sun u Aq paus\n6\n3 选择合适的词语填空 当好职场插班生\n计较 搭档风气资深 创立\nD 上个星期，我加入了学校篮球队，跟球队的 们一一认识之\n后，我的训练生活就此开始。张教练在球队 之初就在这儿了，\n他是一位富有经验的 篮球教练。我们球队的 非常好，大\n家互相帮助，训练刻苦认真，没人喊累，没人抱怨，训练中受点儿伤也\n都不 ，我很喜欢这个集体。\n激情 全力以赴 想方设法 忙碌 凑合\n同事小张非常敬业，他对待工作充满 ，总是 吊\n色完成每一项任务，从来不 。最近，他接到一个新任务，为\n一个新项目做前期准备。小张带领他们部门的员工 投入工\n作，虽然很 却享受到了工作的快乐。\n阅读语段，模仿造句\n清早上班，和新同事一一认识后，我以为一天的工作就此开始，没\n想到赵姐工作的第一件事是忙着彻茶和咖啡，给张哥端一碗，给孙姐送\n一杯….我想这单位风气真好，明天这事我来做。\n今天在办公室，我怎么也找不到自己的手机了，我以为\n，没想到 ，我想\n其实，进入新单位，作为一个职场插班生，这个过程，正是展示你\n人格魅力的时候，遇到困难，也是你施展才能的时机。\n其实，进入 作为 ，这个过程，正是\n的时候，遇到 ，也是 的时机。\nHSK\n标准教程6（上）\n根据提示，简述课文主要内容\n说说“我”在这家公司的\n职位以及公司的人员构成 咨询师、老手、新手、资深员工\n情况。\n给…···茶咖啡\n上班第一天，其他老员工对\n②唯独剩下\n“我”和小林的态度如何？\n③边缘化\n“我”和小林的业务………，件\n件………，有时候·\n“我”和小林在公司的工作\n②别人的工作……，成天……，·还有\n与别人有何不同？为什么？\n人…..\n③我发现，领导分配业务时，·\n“我”和小林如何对待自己 不计较、全力以赴、不怠慢、不敷衍、\n的工作？ 想方设法、不凑合\n①业务能力 年度考核··\n“我们”在公司的处境有了\n②客户. …热情起来\n什么变化？\n③接手···· 新人·\n通过“职场插班生”的经历， ①展示···魅力\n“我”有什么收获？ ②施展才能",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-070",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-071",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-072",
+          "rowIndex": 27
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-07-01",
+      "lessonId": "hsk6t1-lesson-07",
+      "lessonNumber": 7,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：热门：冷门 专门 部门 门类",
+        "伤脑筋：",
+        "致使：",
+        "类似：",
+        "精确：",
+        "用所给词语完成句子",
+        "因为地址不清楚，所以信件无法送达。（致使）",
+        "②满18岁就代表着成人了，要承担起成年人的义务和责任。（意味着）",
+        "真相其实跟你想象的完全不同。（并非）",
+        "④我们应该勇敢地承认自己的错误。（勇于）",
+        "随着他的压力越来越大，他的精神越来越紧张。（伴随）",
+        "随着经济的发展，城市里汽车的数量越来越多。（日益）",
+        "3 选择合适的词语填空",
+        "成本及早 顾虑 伤脑筋 称心如意",
+        "最近，我在为租房子的事情 ，离单位近的吧，太贵了；便宜",
+        "的吧，每天花在路上的时间要三四个小时，时间 太高了。一个人",
+        "住吧，不安全；跟别人合租吧，又怕有矛盾。见此情形，朋友劝我：",
+        "“现在想找一个 的房子本来就很难，如果你再 重重，就更",
+        "找不到房子了。你前两天看的那个房子就不错，我看你还是 决定",
+        "吧，省得将来后悔。”",
+        "7",
+        "畏惧意志挫折机遇 勇于 我的人生我做主",
+        "2 人们常说：“失败是成功之母”。人的一生中总会遇到一些",
+        "只有不 失败， 面对困难，才会在实践中获得经验，增",
+        "强 力，进而抓住 ，获得成功。",
+        "4 课文中的“不要怕走弯路”是一种比喻的说法，阅读下列表示比喻的句",
+        "子，并模仿造句",
+        "①男人是山，女人是水。",
+        "男人 女人",
+        "②漂亮的姑娘像花儿一样。",
+        "漂亮的姑娘",
+        "③月亮像一个银色的盘子挂在天空上。",
+        "月亮",
+        "4一闪一闪的星星像调皮的孩子眨着眼睛。",
+        "星星",
+        "5他急得像热锅上的蚂蚁。",
+        "他急得",
+        "根据提示，简述课文主要内容",
+        "为什么小王最近为工作的事 ①目前的工作.…··",
+        "伤脑筋？ ②对.….感兴趣.，·可.……，怕·……",
+        "①对....缺",
+        "不敢想… iaoTrinhChuanHSK",
+        "什么原因使小王出现急躁、",
+        "紧张、顾虑重重的现象？ ②对.…···过度悲观 无法承受·",
+        "G",
+        "一旦选错，··",
+        "智慧<精确的判断力——经验的积累 www.nhantriviet.com/",
+        "乔布斯的智慧从哪里来？",
+        "—无数错误的判断",
+        "HSK 标准教程6（上）",
+        "做决定的能力是怎么得来 通过·………得来的，在这个过程中，人同",
+        "的？ 时具有了……，不畏惧…..…，勇于",
+        "为什么说生活中的不确定因 ①世界一流企业也会··",
+        "素日益增多？ ②金融危机使···不得不··",
+        "①经济环境……·……，企业寿命……，人们",
+        "为什么说无论你怎么选择，",
+        "要经历·…···",
+        "都不太可能选一份称心如意",
+        "2 ·……报考热门专业，以致·…",
+        "的工作安安稳稳过一辈子？",
+        "③新职业的出现，"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：热门：冷门 专门 部门 门类\n伤脑筋：\n致使：\n类似：\n精确：\n用所给词语完成句子\n因为地址不清楚，所以信件无法送达。（致使）\n②满18岁就代表着成人了，要承担起成年人的义务和责任。（意味着）\n真相其实跟你想象的完全不同。（并非）\n④我们应该勇敢地承认自己的错误。（勇于）\n随着他的压力越来越大，他的精神越来越紧张。（伴随）\n随着经济的发展，城市里汽车的数量越来越多。（日益）\n3 选择合适的词语填空\n成本及早 顾虑 伤脑筋 称心如意\n最近，我在为租房子的事情 ，离单位近的吧，太贵了；便宜\n的吧，每天花在路上的时间要三四个小时，时间 太高了。一个人\n住吧，不安全；跟别人合租吧，又怕有矛盾。见此情形，朋友劝我：\n“现在想找一个 的房子本来就很难，如果你再 重重，就更\n找不到房子了。你前两天看的那个房子就不错，我看你还是 决定\n吧，省得将来后悔。”\n7\n畏惧意志挫折机遇 勇于 我的人生我做主\n2 人们常说：“失败是成功之母”。人的一生中总会遇到一些\n只有不 失败， 面对困难，才会在实践中获得经验，增\n强 力，进而抓住 ，获得成功。\n4 课文中的“不要怕走弯路”是一种比喻的说法，阅读下列表示比喻的句\n子，并模仿造句\n①男人是山，女人是水。\n男人 女人\n②漂亮的姑娘像花儿一样。\n漂亮的姑娘\n③月亮像一个银色的盘子挂在天空上。\n月亮\n4一闪一闪的星星像调皮的孩子眨着眼睛。\n星星\n5他急得像热锅上的蚂蚁。\n他急得\n根据提示，简述课文主要内容\n为什么小王最近为工作的事 ①目前的工作.…··\n伤脑筋？ ②对.….感兴趣.，·可.……，怕·……\n①对....缺\n不敢想… iaoTrinhChuanHSK\n什么原因使小王出现急躁、\n紧张、顾虑重重的现象？ ②对.…···过度悲观 无法承受·\nG\n一旦选错，··\n智慧<精确的判断力——经验的积累 www.nhantriviet.com/\n乔布斯的智慧从哪里来？\n—无数错误的判断\nHSK 标准教程6（上）\n做决定的能力是怎么得来 通过·………得来的，在这个过程中，人同\n的？ 时具有了……，不畏惧…..…，勇于\n为什么说生活中的不确定因 ①世界一流企业也会··\n素日益增多？ ②金融危机使···不得不··\n①经济环境……·……，企业寿命……，人们\n为什么说无论你怎么选择，\n要经历·…···\n都不太可能选一份称心如意\n2 ·……报考热门专业，以致·…\n的工作安安稳稳过一辈子？\n③新职业的出现，",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-080",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-081",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-08-01",
+      "lessonId": "hsk6t1-lesson-08",
+      "lessonNumber": 8,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：更新：更改 更换 更替 变更",
+        "比喻：",
+        "昏迷：",
+        "思索：",
+        "崭新：",
+        "用所给词语或结构完成句子",
+        "①如果明天天气不好， （那么）",
+        "②日韩同学觉得汉字没那么难，可 （对……而言）",
+        "③同学们 （各抒已见）",
+        "经过一段时间的观察， （确信）",
+        "如果环境继续恶化，专家们 （推测）",
+        "青藏高原海拔很高，氧气稀薄，环境 （极端)",
+        "HSK",
+        "标准教程6（上）",
+        "3 选择合适的词语填空",
+        "各抒已见 见解 无忧无虑 思索 比喻",
+        "今天讨论课的话题是“幸福是什么？”同学们经过一番",
+        "后纷纷 。有人说：“幸福就是 地过日子。”有人把",
+        "幸福 为盛开的花儿，虽然美好，却很短暂；也有人认为幸福是",
+        "以物质为基础的。可以说，以上这些 其实代表了每个人不同的",
+        "价值观和人生观。",
+        "忧郁 遥远 呈现 譬如 器官",
+        "② 现代社会，人们的压力越来越大，精神类疾病日益增多。这类",
+        "疾病会 出不同的状态， ，有的人因为过于 而吃",
+        "药；有的人怀疑身边的人或事；还有的人出现幻觉··这类疾病离我",
+        "们并不 ，所以我们应该像关注身体 上的疾病一样去关",
+        "注心理问题。",
+        "把下面的句子按照正确顺序重新组合成语段",
+        "A.她一个人坐在这里",
+        "B.她想起去年的现在，她是和男朋友两个人坐在这地方",
+        "C.她当时心情是多么激动和欢快啊",
+        "D.心里像装着一块冰",
+        "E.可是一年后的今天",
+        "正确顺序：",
+        "5 根据提示，简述课文主要内容",
+        "①皮肤",
+        "从婴儿时期到现在，“你”",
+        "②酒窝",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 发生了什么变化？",
+        "③大脑",
+        "①婴儿",
+        "到底有多少个“你”？ ②现在",
+        "③以后",
+        "遇见原来的我",
+        "赫拉克利特：不管·，始终只有",
+        "关于本体的问题，哲学家",
+        "大卫·休谟：不同意……观点，…过程",
+        "们都有什么言论？",
+        "德里克·帕菲特：个人的本体并不是………·",
+        "假如休谟的观点是对的， 10年后…·遵守.··承诺",
+        "会带来什么样的问题？ 罪犯··受到惩罚",
+        "导致人们改变的因素有",
+        "整形、吃药、手术",
+        "哪些？",
+        "对普通人而言，本体的问题",
+        "是怎样的？"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：更新：更改 更换 更替 变更\n比喻：\n昏迷：\n思索：\n崭新：\n用所给词语或结构完成句子\n①如果明天天气不好， （那么）\n②日韩同学觉得汉字没那么难，可 （对……而言）\n③同学们 （各抒已见）\n经过一段时间的观察， （确信）\n如果环境继续恶化，专家们 （推测）\n青藏高原海拔很高，氧气稀薄，环境 （极端)\nHSK\n标准教程6（上）\n3 选择合适的词语填空\n各抒已见 见解 无忧无虑 思索 比喻\n今天讨论课的话题是“幸福是什么？”同学们经过一番\n后纷纷 。有人说：“幸福就是 地过日子。”有人把\n幸福 为盛开的花儿，虽然美好，却很短暂；也有人认为幸福是\n以物质为基础的。可以说，以上这些 其实代表了每个人不同的\n价值观和人生观。\n忧郁 遥远 呈现 譬如 器官\n② 现代社会，人们的压力越来越大，精神类疾病日益增多。这类\n疾病会 出不同的状态， ，有的人因为过于 而吃\n药；有的人怀疑身边的人或事；还有的人出现幻觉··这类疾病离我\n们并不 ，所以我们应该像关注身体 上的疾病一样去关\n注心理问题。\n把下面的句子按照正确顺序重新组合成语段\nA.她一个人坐在这里\nB.她想起去年的现在，她是和男朋友两个人坐在这地方\nC.她当时心情是多么激动和欢快啊\nD.心里像装着一块冰\nE.可是一年后的今天\n正确顺序：\n5 根据提示，简述课文主要内容\n①皮肤\n从婴儿时期到现在，“你”\n②酒窝\nwww.nhantriviet.com/GiaoTrinhChuanHSK 发生了什么变化？\n③大脑\n①婴儿\n到底有多少个“你”？ ②现在\n③以后\n遇见原来的我\n赫拉克利特：不管·，始终只有\n关于本体的问题，哲学家\n大卫·休谟：不同意……观点，…过程\n们都有什么言论？\n德里克·帕菲特：个人的本体并不是………·\n假如休谟的观点是对的， 10年后…·遵守.··承诺\n会带来什么样的问题？ 罪犯··受到惩罚\n导致人们改变的因素有\n整形、吃药、手术\n哪些？\n对普通人而言，本体的问题\n是怎样的？",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-091",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-092",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-093",
+          "rowIndex": 13
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-09-01",
+      "lessonId": "hsk6t1-lesson-09",
+      "lessonNumber": 9,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：受罪：受伤 受累 受骗 受气",
+        "智能：",
+        "安置：",
+        "防止：",
+        "精致：",
+        "用所给词语或结构改写句子",
+        "①她的脾气不好，经常不知道为什么突然就生气了。（说A就A）",
+        "②这么做不但能增加公司的利润，还能方便用户。（既…·…又…·）",
+        "③找了好几个地方都没找着，干脆不找了。（索性）",
+        "很多单位在年底就开始制定第二年的计划了。（着手）",
+        "今天不知道怎么了，堵得这么厉害，以前这里很少堵车。（往常）",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 考试时，我非常紧张，手心里都是汗。（·…·得要命）",
+        "3 选择合适的词语填空 不用手机的日子",
+        "案件 报警绑架 震惊 侦探",
+        "上个月，这里发生了一起令人 的 两个年轻人",
+        "了他们的同学，然后向同学的父母要一大笔钱。受害孩子的",
+        "家人 以后，警察迅速开展工作，他们派出一位非常有经验的",
+        "很快就抓住了那两个年轻人，救出了他们的同学。",
+        "着手 作息 干扰 四肢 狼吞虎咽",
+        "②我的 时间是这样的：早上6：00起床，先活动活动",
+        "然后做一顿营养丰富的早餐，我吃饭从来不 ，享受了美味的早",
+        "餐后，我 写我的新书，在没人 的情况下，我的写作进",
+        "度会很快，写着写着一天的时光不知不觉就过去了。",
+        "阅读语段，模仿造句",
+        "1 离开了手机，难道会死吗？何不尝试一下一周关机一天？说干就",
+        "干，索性这礼拜就开始。",
+        "丢了工作，难道 吗？何不 ？说",
+        "干就干， 就",
+        "跳舞是我的特长，我兴高采烈地跳起了摇滚，既能娱乐身心，又能",
+        "锻炼身体，一举两得。",
+        "是我的特长，我 既",
+        "又",
+        "HSK",
+        "标准教程6（上）",
+        "根据提示，简述课文主要内容",
+        "公司老板为什么开会时发火？",
+        "开会时，“我”在手机上看什么？ 一对年轻人",
+        "①看新闻",
+        "②发微信",
+        "为什么说“我”成了手机的奴隶？ ③拍照",
+        "充电",
+        "为了关机一天，“我”怎样安置自",
+        "包好、放在、收到",
+        "己的手机？",
+        "“我”如何出门锻炼的？ 公园、跳舞、既··…·",
+        "回家后，“我”又做了什么？ 打开、熬粥、往常..·"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：受罪：受伤 受累 受骗 受气\n智能：\n安置：\n防止：\n精致：\n用所给词语或结构改写句子\n①她的脾气不好，经常不知道为什么突然就生气了。（说A就A）\n②这么做不但能增加公司的利润，还能方便用户。（既…·…又…·）\n③找了好几个地方都没找着，干脆不找了。（索性）\n很多单位在年底就开始制定第二年的计划了。（着手）\n今天不知道怎么了，堵得这么厉害，以前这里很少堵车。（往常）\nwww.nhantriviet.com/GiaoTrinhChuanHSK 考试时，我非常紧张，手心里都是汗。（·…·得要命）\n3 选择合适的词语填空 不用手机的日子\n案件 报警绑架 震惊 侦探\n上个月，这里发生了一起令人 的 两个年轻人\n了他们的同学，然后向同学的父母要一大笔钱。受害孩子的\n家人 以后，警察迅速开展工作，他们派出一位非常有经验的\n很快就抓住了那两个年轻人，救出了他们的同学。\n着手 作息 干扰 四肢 狼吞虎咽\n②我的 时间是这样的：早上6：00起床，先活动活动\n然后做一顿营养丰富的早餐，我吃饭从来不 ，享受了美味的早\n餐后，我 写我的新书，在没人 的情况下，我的写作进\n度会很快，写着写着一天的时光不知不觉就过去了。\n阅读语段，模仿造句\n1 离开了手机，难道会死吗？何不尝试一下一周关机一天？说干就\n干，索性这礼拜就开始。\n丢了工作，难道 吗？何不 ？说\n干就干， 就\n跳舞是我的特长，我兴高采烈地跳起了摇滚，既能娱乐身心，又能\n锻炼身体，一举两得。\n是我的特长，我 既\n又\nHSK\n标准教程6（上）\n根据提示，简述课文主要内容\n公司老板为什么开会时发火？\n开会时，“我”在手机上看什么？ 一对年轻人\n①看新闻\n②发微信\n为什么说“我”成了手机的奴隶？ ③拍照\n充电\n为了关机一天，“我”怎样安置自\n包好、放在、收到\n己的手机？\n“我”如何出门锻炼的？ 公园、跳舞、既··…·\n回家后，“我”又做了什么？ 打开、熬粥、往常..·",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-102",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-103",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-104",
+          "rowIndex": 14
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-10-01",
+      "lessonId": "hsk6t1-lesson-10",
+      "lessonNumber": 10,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：就餐：合餐 分餐 餐桌 餐厅 全球化视野中的中国饮食",
+        "优异：",
+        "品种：",
+        "形态：",
+        "调料：",
+        "用所给词语或结构改写句子",
+        "①她的变化太大了，我跟她面对面都没认出来。（以至）",
+        "②就是我们的工作取得了很大的成绩，也不能骄傲。（即便………也……）",
+        "③所有见过她的人，没有不称赞她漂亮的。（凡是）",
+        "4一个国家的希望都在青少年身上。（所在）",
+        "虽然不是上下班高峰期，这里还是堵车。（照样）",
+        "他能取得这么好的成绩，是因为平时的勤学苦练。（得力于）",
+        "3 选择合适的词语填空",
+        "正宗 凡是烹饪 就餐 创新",
+        "妈妈是个 高手，能做出各种各样的美味佳肴。不管多么普",
+        "通的食材，只要经过妈妈的手，都能变成人间美味， 吃过的",
+        "人没有不称赞的。妈妈是山东人，不但能做出 的传统鲁菜，",
+        "更能 式地发明新的吃法，让我们全家人在 时，常常",
+        "充满了惊喜。",
+        "HSK",
+        "标准教程6（上）",
+        "区域 局限品种辽阔 鲜明",
+        "②中国历史悠久，土地 不同 ，不同民族的饮食不但",
+        "特色 ，而且 丰富。比如：南方人爱吃米饭，北方人爱吃",
+        "面食；山西人喜欢吃醋，四川人喜欢辣椒，等等，不过，随着各地人",
+        "员流动的增加，这种 逐渐被打破了。在全国各地的大小城市，",
+        "你都能吃到来自各处的各种美食。",
+        "阅读语段，模仿造句",
+        "中国的饮食文化历经数千年，始终具有魅力，是因为它不仅民族特",
+        "性鲜明，而且善于吸收不同国家、不同区域、不同民族的优异之处，以",
+        "至辉煌至今。",
+        "他们两个人结婚三十多年，始终相亲相爱，是因为他们不仅",
+        "而且 以至",
+        "在食材栽培方面，中华饮食坚持以本国物产为基本原料，同时合理引",
+        "进、培育外来品种，比如咖啡、柠檬、芒果等，凡是历史不够悠久的外来",
+        "食品，人们一般从食物名称上就能立即清晰地分辨出它的洋身份。",
+        "在学习汉语方面，我坚持 同时",
+        "，比如 ，凡是",
+        "根据提示，简述课文主要内容",
+        "中国饮食文化为什么具",
+        "不仅··…，而且·….……，以至···",
+        "有魅力？",
+        "中国文化的核心 “和”",
+        "原本",
+        "中华饮食的发展历程 食物 汉唐以后",
+        "近代",
+        "10",
+        "以·为基本原料",
+        "同时 全球化视野中的中国饮食",
+        "食材",
+        "凡是",
+        "中华饮食的发展历程 至于，因其…，甚至….",
+        "加工过程 ……照样……得力于….",
+        "先秦至唐代",
+        "就餐方式",
+        "南北朝时期",
+        "总结"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：就餐：合餐 分餐 餐桌 餐厅 全球化视野中的中国饮食\n优异：\n品种：\n形态：\n调料：\n用所给词语或结构改写句子\n①她的变化太大了，我跟她面对面都没认出来。（以至）\n②就是我们的工作取得了很大的成绩，也不能骄傲。（即便………也……）\n③所有见过她的人，没有不称赞她漂亮的。（凡是）\n4一个国家的希望都在青少年身上。（所在）\n虽然不是上下班高峰期，这里还是堵车。（照样）\n他能取得这么好的成绩，是因为平时的勤学苦练。（得力于）\n3 选择合适的词语填空\n正宗 凡是烹饪 就餐 创新\n妈妈是个 高手，能做出各种各样的美味佳肴。不管多么普\n通的食材，只要经过妈妈的手，都能变成人间美味， 吃过的\n人没有不称赞的。妈妈是山东人，不但能做出 的传统鲁菜，\n更能 式地发明新的吃法，让我们全家人在 时，常常\n充满了惊喜。\nHSK\n标准教程6（上）\n区域 局限品种辽阔 鲜明\n②中国历史悠久，土地 不同 ，不同民族的饮食不但\n特色 ，而且 丰富。比如：南方人爱吃米饭，北方人爱吃\n面食；山西人喜欢吃醋，四川人喜欢辣椒，等等，不过，随着各地人\n员流动的增加，这种 逐渐被打破了。在全国各地的大小城市，\n你都能吃到来自各处的各种美食。\n阅读语段，模仿造句\n中国的饮食文化历经数千年，始终具有魅力，是因为它不仅民族特\n性鲜明，而且善于吸收不同国家、不同区域、不同民族的优异之处，以\n至辉煌至今。\n他们两个人结婚三十多年，始终相亲相爱，是因为他们不仅\n而且 以至\n在食材栽培方面，中华饮食坚持以本国物产为基本原料，同时合理引\n进、培育外来品种，比如咖啡、柠檬、芒果等，凡是历史不够悠久的外来\n食品，人们一般从食物名称上就能立即清晰地分辨出它的洋身份。\n在学习汉语方面，我坚持 同时\n，比如 ，凡是\n根据提示，简述课文主要内容\n中国饮食文化为什么具\n不仅··…，而且·….……，以至···\n有魅力？\n中国文化的核心 “和”\n原本\n中华饮食的发展历程 食物 汉唐以后\n近代\n10\n以·为基本原料\n同时 全球化视野中的中国饮食\n食材\n凡是\n中华饮食的发展历程 至于，因其…，甚至….\n加工过程 ……照样……得力于….\n先秦至唐代\n就餐方式\n南北朝时期\n总结",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-113",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-114",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-11-01",
+      "lessonId": "hsk6t1-lesson-11",
+      "lessonNumber": 11,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：拜访：拜会 拜见 拜望 拜年",
+        "灵敏：",
+        "亲热：",
+        "镜头：",
+        "误差：",
+        "用所给词语或结构完成句子",
+        "1我不喜欢的东西 （统统）",
+        "②他的心情一点儿都没受这个坏消息的影响，",
+        "（该+动词+宾语+动词+宾语）",
+        "③上个周末我 ，我们聊得很高兴。（拜访）",
+        "④每个人都应该遵守学校纪律， （例外）",
+        "任何事情都 不要总依靠别人。（自力更生）",
+        "他游历过很多国家， （见多识广）",
+        "选择合适的词语填空",
+        "敏捷 流浪 亲热饲养教养",
+        "昨天，我在小区里遇到一只 狗，金色的毛发，动作 ，看",
+        "见我， 地跟在我身边。虽然它没有主人，但看起来很有",
+        "像个君子似的。我心里想：这么帅气的狗，主人怎么忍心扔掉呢？我们",
+        "人类一旦决定 一种动物，就要对它负责到底。",
+        "统统快活 凝视 扑趴",
+        "2 最近，家里的母猫生了几只小猫，小家伙们 而好动。我",
+        "一回家，它们就 过来，跟我玩耍。而母猫则 在沙发",
+        "上 着它的孩子们，眼神中充满了母爱。现在我每天最热切盼望",
+        "的就是早点儿回家看看它们，别的事情 都不重要。",
+        "11",
+        "把下列分句按叙述的次序排列成完整的句子",
+        "①A.小王压不住火气 我不在时，猫在干什么？",
+        "B.然后，又把脸趴在他的肩上",
+        "C.突然用拳头打丈夫的肩膀",
+        "D.哭了起来",
+        "②A.山上住着个种树的老爷爷",
+        "B.他的胡子很长",
+        "C.听说在很远很远的地方有一座山",
+        "D.白头发白眉毛白胡子",
+        "E.一直拖到地上",
+        "根据提示，简述课文主要内容",
+        "①大黄",
+        "描述一下钱小奇家的三只猫。 ②白白",
+        "③喜儿",
+        "①钱小奇对待猫",
+        "钱小奇跟三只猫的感情怎么样？",
+        "②猫对待钱小奇",
+        "为了弄清楚主人不在时，猫在做什 ①安摄像头",
+        "么，钱小奇采取了什么措施？ ②增加设备",
+        "①睡觉",
+        "主人不在时，猫到底在干吗？",
+        "②有规律",
+        "这套系统还帮过钱小奇什么忙？ 找到了…·· www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：拜访：拜会 拜见 拜望 拜年\n灵敏：\n亲热：\n镜头：\n误差：\n用所给词语或结构完成句子\n1我不喜欢的东西 （统统）\n②他的心情一点儿都没受这个坏消息的影响，\n（该+动词+宾语+动词+宾语）\n③上个周末我 ，我们聊得很高兴。（拜访）\n④每个人都应该遵守学校纪律， （例外）\n任何事情都 不要总依靠别人。（自力更生）\n他游历过很多国家， （见多识广）\n选择合适的词语填空\n敏捷 流浪 亲热饲养教养\n昨天，我在小区里遇到一只 狗，金色的毛发，动作 ，看\n见我， 地跟在我身边。虽然它没有主人，但看起来很有\n像个君子似的。我心里想：这么帅气的狗，主人怎么忍心扔掉呢？我们\n人类一旦决定 一种动物，就要对它负责到底。\n统统快活 凝视 扑趴\n2 最近，家里的母猫生了几只小猫，小家伙们 而好动。我\n一回家，它们就 过来，跟我玩耍。而母猫则 在沙发\n上 着它的孩子们，眼神中充满了母爱。现在我每天最热切盼望\n的就是早点儿回家看看它们，别的事情 都不重要。\n11\n把下列分句按叙述的次序排列成完整的句子\n①A.小王压不住火气 我不在时，猫在干什么？\nB.然后，又把脸趴在他的肩上\nC.突然用拳头打丈夫的肩膀\nD.哭了起来\n②A.山上住着个种树的老爷爷\nB.他的胡子很长\nC.听说在很远很远的地方有一座山\nD.白头发白眉毛白胡子\nE.一直拖到地上\n根据提示，简述课文主要内容\n①大黄\n描述一下钱小奇家的三只猫。 ②白白\n③喜儿\n①钱小奇对待猫\n钱小奇跟三只猫的感情怎么样？\n②猫对待钱小奇\n为了弄清楚主人不在时，猫在做什 ①安摄像头\n么，钱小奇采取了什么措施？ ②增加设备\n①睡觉\n主人不在时，猫到底在干吗？\n②有规律\n这套系统还帮过钱小奇什么忙？ 找到了…·· www.nhantriviet.com/GiaoTrinhChuanHSK\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-122",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-123",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-12-01",
+      "lessonId": "hsk6t1-lesson-12",
+      "lessonNumber": 12,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：解除：删除 免除 除掉 除去",
+        "务必：",
+        "延续：",
+        "后代：",
+        "功效：",
+        "用所给词语改写句子",
+        "有什么意见，你可以当面提出来，不要在背后议论。（不妨）",
+        "明天的会非常重要，大家一定要参加。（务必）",
+        "③他们实在没有别的办法，只好出去向别人借钱。（不得已）",
+        "①考虑到他出色的表现，公司决定让他担任部门经理。（鉴于）",
+        "他的病彻底治好了，全家都非常高兴。（愈）",
+        "孩子按道理应该孝顺父母。（理所当然）",
+        "选择合适的词语填空",
+        "波浪 抚摸 岩石 神经给予",
+        "人们喜欢在海边听 拍打 的声音，喜欢在森林里听鸟儿",
+        "的叫声，也喜欢听微风 树叶发出的沙沙声，因为这些声音可以让",
+        "紧张的 放松下来。这些声音是大自然 人们的宝贵礼物，可",
+        "以治疗很多神经系统疾病。",
+        "患者 障碍 症状 功效 辅助",
+        "对于有睡眠 的人来说，除了去医院接受治疗以外，一些",
+        "性治疗方法的 也很不错，比如：睡前喝一杯牛奶，听一",
+        "些轻柔的音乐，放松心情等等，都可以减轻 的",
+        "12",
+        "阅读语段，模仿造句 我们都爱白噪音",
+        "其实不论是鸟叫，还是虫叫，都是寻求异性时，不得已而采取的危",
+        "险举动，因为叫声暴露了自己，很容易惹祸。",
+        "不论 ，还是",
+        "都喜欢吃烤鸭，因为",
+        "2 既要延续后代，又要保护自己，那就只有用最大的声音，拼命呼",
+        "唤，同时竖起耳朵，提高警惕，有危险马上闭嘴。",
+        "学习汉语时，既要 又要",
+        "，那就只有 同时",
+        "根据提示，简述课文主要内容",
+        "①下雨的声音",
+        "②波浪拍打岩石的声音",
+        "文中提到了哪几种白噪音？ ③微风抚摸树叶的声音",
+        "4 鸟的叫声",
+        "会议室的嘈杂声",
+        "安全",
+        "白噪音给我们什么暗示？",
+        "②危险",
+        "寻找异性",
+        "鸟儿为什么要叫？",
+        "②延续后代",
+        "1 放松身心",
+        "神经系统疾病",
+        "白噪音有什么功效？ 2 治疗疾病",
+        "多动症患儿",
+        "③恢复工作效率",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：解除：删除 免除 除掉 除去\n务必：\n延续：\n后代：\n功效：\n用所给词语改写句子\n有什么意见，你可以当面提出来，不要在背后议论。（不妨）\n明天的会非常重要，大家一定要参加。（务必）\n③他们实在没有别的办法，只好出去向别人借钱。（不得已）\n①考虑到他出色的表现，公司决定让他担任部门经理。（鉴于）\n他的病彻底治好了，全家都非常高兴。（愈）\n孩子按道理应该孝顺父母。（理所当然）\n选择合适的词语填空\n波浪 抚摸 岩石 神经给予\n人们喜欢在海边听 拍打 的声音，喜欢在森林里听鸟儿\n的叫声，也喜欢听微风 树叶发出的沙沙声，因为这些声音可以让\n紧张的 放松下来。这些声音是大自然 人们的宝贵礼物，可\n以治疗很多神经系统疾病。\n患者 障碍 症状 功效 辅助\n对于有睡眠 的人来说，除了去医院接受治疗以外，一些\n性治疗方法的 也很不错，比如：睡前喝一杯牛奶，听一\n些轻柔的音乐，放松心情等等，都可以减轻 的\n12\n阅读语段，模仿造句 我们都爱白噪音\n其实不论是鸟叫，还是虫叫，都是寻求异性时，不得已而采取的危\n险举动，因为叫声暴露了自己，很容易惹祸。\n不论 ，还是\n都喜欢吃烤鸭，因为\n2 既要延续后代，又要保护自己，那就只有用最大的声音，拼命呼\n唤，同时竖起耳朵，提高警惕，有危险马上闭嘴。\n学习汉语时，既要 又要\n，那就只有 同时\n根据提示，简述课文主要内容\n①下雨的声音\n②波浪拍打岩石的声音\n文中提到了哪几种白噪音？ ③微风抚摸树叶的声音\n4 鸟的叫声\n会议室的嘈杂声\n安全\n白噪音给我们什么暗示？\n②危险\n寻找异性\n鸟儿为什么要叫？\n②延续后代\n1 放松身心\n神经系统疾病\n白噪音有什么功效？ 2 治疗疾病\n多动症患儿\n③恢复工作效率\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-132",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-133",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-13-01",
+      "lessonId": "hsk6t1-lesson-13",
+      "lessonNumber": 13,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：犹如：比如 例如 臂如 一如既往",
+        "生存：",
+        "简要：",
+        "趣味：",
+        "产业：",
+        "用所给词语或结构完成句子",
+        "后来我慢慢明白了父母的心。（起初）",
+        "2 ，他几乎没生过病。（和…相比）",
+        "③大学毕业以后， （若干）",
+        "4印度尼西亚被称为千岛之国， （遍布）",
+        "虽然他现在很成功，但 （一度)",
+        "为了公司的发展， （千方百计）",
+        "3 选择合适的词语填空",
+        "人士 版本 问世 简要序言",
+        "他是一位深受广大读者喜爱的作家。最近，他的又一本新书",
+        "了，在中外 的共同努力下，该书的中、外文 同时发行。",
+        "作者在 中 介绍了这本书的内容，除此以外，还对家人和朋",
+        "友的支持表示了感谢。",
+        "振兴 偏僻 人性产业 风土人情",
+        "2 随着中国经济的发展，旅游逐渐成为人们生活中必不可少的一",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 部分。人们不但关注那些著名的旅游城市，也把越来越多的目光投",
+        "向了 省份，那些地方独特的 吸引了越来越多的游客。",
+        "随着当地旅游 的 ，服务质量也有所提升，变得越",
+        "来越 化了。",
+        "13",
+        "给下列两组复句重新排序",
+        "从旅游指南看世事变迁",
+        "①A.因为我不但是北京人",
+        "B.看见过许多西方的名城",
+        "C.北京是美丽的，我知道",
+        "D.而且到过欧美",
+        "②A.我们无论认识什么事物",
+        "B.不但要看到它的正面",
+        "C.都必须全面地去看",
+        "D.而且要看到它的反面",
+        "E.否则，就不能有比较完整和正确的认识",
+        "根据提示，简述课文主要内容",
+        "起初，天气……，食物……，敌人·",
+        "从古到今，人类旅行的",
+        "人们不得不·",
+        "目的有什么变化？",
+        "后来，…，游山玩水，有了……···",
+        "开始，连都没有",
+        "1898年，· 为便于",
+        "说一说中国旅游指南的",
+        "问世 搜集信息",
+        "发展历程。",
+        "之后，《北平 趣味性，实用价值",
+        "旅行指南》 中、外文版本",
+        "是·的延伸和补充",
+        "改革开放前 游客主要是·.，服务对",
+        "象.",
+        "改革开放前后，旅游指 ··受到重视·变得越来",
+        "南有什么变化？ 越.·",
+        "改革开放后 1999年后，·……·成了主",
+        "流，大了……….，调整",
+        "了.…，增加了…·",
+        "HSK 标准教程6（上）",
+        "不仅介绍，还会介",
+        "内容 绍·… 更是必不可",
+        "说一说目前旅游指南的",
+        "少",
+        "内容和发展情况。",
+        "旅游网站··，卫星导航",
+        "发展",
+        "系统…….，使人们"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：犹如：比如 例如 臂如 一如既往\n生存：\n简要：\n趣味：\n产业：\n用所给词语或结构完成句子\n后来我慢慢明白了父母的心。（起初）\n2 ，他几乎没生过病。（和…相比）\n③大学毕业以后， （若干）\n4印度尼西亚被称为千岛之国， （遍布）\n虽然他现在很成功，但 （一度)\n为了公司的发展， （千方百计）\n3 选择合适的词语填空\n人士 版本 问世 简要序言\n他是一位深受广大读者喜爱的作家。最近，他的又一本新书\n了，在中外 的共同努力下，该书的中、外文 同时发行。\n作者在 中 介绍了这本书的内容，除此以外，还对家人和朋\n友的支持表示了感谢。\n振兴 偏僻 人性产业 风土人情\n2 随着中国经济的发展，旅游逐渐成为人们生活中必不可少的一\nwww.nhantriviet.com/GiaoTrinhChuanHSK 部分。人们不但关注那些著名的旅游城市，也把越来越多的目光投\n向了 省份，那些地方独特的 吸引了越来越多的游客。\n随着当地旅游 的 ，服务质量也有所提升，变得越\n来越 化了。\n13\n给下列两组复句重新排序\n从旅游指南看世事变迁\n①A.因为我不但是北京人\nB.看见过许多西方的名城\nC.北京是美丽的，我知道\nD.而且到过欧美\n②A.我们无论认识什么事物\nB.不但要看到它的正面\nC.都必须全面地去看\nD.而且要看到它的反面\nE.否则，就不能有比较完整和正确的认识\n根据提示，简述课文主要内容\n起初，天气……，食物……，敌人·\n从古到今，人类旅行的\n人们不得不·\n目的有什么变化？\n后来，…，游山玩水，有了……···\n开始，连都没有\n1898年，· 为便于\n说一说中国旅游指南的\n问世 搜集信息\n发展历程。\n之后，《北平 趣味性，实用价值\n旅行指南》 中、外文版本\n是·的延伸和补充\n改革开放前 游客主要是·.，服务对\n象.\n改革开放前后，旅游指 ··受到重视·变得越来\n南有什么变化？ 越.·\n改革开放后 1999年后，·……·成了主\n流，大了……….，调整\n了.…，增加了…·\nHSK 标准教程6（上）\n不仅介绍，还会介\n内容 绍·… 更是必不可\n说一说目前旅游指南的\n少\n内容和发展情况。\n旅游网站··，卫星导航\n发展\n系统…….，使人们",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-142",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-143",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 9
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-14-01",
+      "lessonId": "hsk6t1-lesson-14",
+      "lessonNumber": 14,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：专题：话题 主题 问题 题目",
+        "北极：",
+        "开拓：",
+        "释放：",
+        "鼓动：",
+        "n oono u un u q pauus",
+        "14",
+        "用所给词语或结构改写句子 背着电饭锅拍北极",
+        "①看到祖国需要自己，他毫不犹豫地回国了。（毅然）",
+        "②走自己的路，别在乎其他人怎么说。（在意）",
+        "③为了不引起误会，我再多说几句。（免得）",
+        "①知道我一个人在异国他乡，他常常打电话问候我。（时常）",
+        "条件有限，招待不周，你们凑合着住两天吧。（将就）",
+        "做点儿你能做的事情吧，难度太大的就不要做了。（力所能及）",
+        "选择合适的词语填空",
+        "毅然 捆绑在意支配疲惫",
+        "现代人生活、工作压力都很大，被事业、家庭 着，身",
+        "心 但大部分人很 自己已有的一切，没有勇气离",
+        "开固有的生活圈子。只有少数人会 决定换一种生活方式，做",
+        "自己愿意做的事情，自己 自己的时间和生命。",
+        "灾难 记载 刻不容缓 抢救捕捉",
+        "2 由于环境污染、全球变暖和人类无节制的 动物，世界上",
+        "动物的种类正日益减少，很多动物种群面临 性的毁灭。有些动",
+        "物，我们的后代可能只有在文字 中去了解了。因此，",
+        "正在消失的珍稀动物",
+        "HSK",
+        "标准教程6（上）",
+        "阅读语段，模仿造句",
+        "他先是办了家企业；不久他跨洋过海，到了加拿大；再后来，他恋",
+        "上了北极。",
+        "大学毕业以后，他先是 ；不久",
+        "；再后来，",
+        "2 他和妻子往返北极17次，支出很大，他们处处精打细算，千方百计",
+        "节省开支，免得多年的储蓄减少得太快，即使穿越辽阔的无人区，他们",
+        "也只租用最便宜的汽车。",
+        "因为需要帮助的孩子很多，他们处处",
+        "方百计 ，免得",
+        "即使 也",
+        "5 根据提示，简述课文主要内容",
+        "①大学毕业做过··",
+        "简述一下王建男的工作",
+        "②领导的报社成为…··",
+        "经历。",
+        "③身心疲惫，毅然决定··",
+        "辞职后，王建男有什么经历？ 先是·…，不久·…，再后·……",
+        "大约4000年前，途中遭遇………，最",
+        "书中一般是怎样描述北极",
+        "终退进…………，住……，用.……·",
+        "的？",
+        "存下来",
+        "①屋内.·.",
+        "现实的北极是什么样的？ ②连锁超市·",
+        "③年轻人···",
+        "现在，王建男专注于什么 不再在意…，只专注于·，采访专",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 事情？ 题····",
+        "为了节省开支，王建男夫妇 处处…..…，租用…·…，自带药品，将就",
+        "采取了什么措施？ 将就.……."
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：专题：话题 主题 问题 题目\n北极：\n开拓：\n释放：\n鼓动：\nn oono u un u q pauus\n14\n用所给词语或结构改写句子 背着电饭锅拍北极\n①看到祖国需要自己，他毫不犹豫地回国了。（毅然）\n②走自己的路，别在乎其他人怎么说。（在意）\n③为了不引起误会，我再多说几句。（免得）\n①知道我一个人在异国他乡，他常常打电话问候我。（时常）\n条件有限，招待不周，你们凑合着住两天吧。（将就）\n做点儿你能做的事情吧，难度太大的就不要做了。（力所能及）\n选择合适的词语填空\n毅然 捆绑在意支配疲惫\n现代人生活、工作压力都很大，被事业、家庭 着，身\n心 但大部分人很 自己已有的一切，没有勇气离\n开固有的生活圈子。只有少数人会 决定换一种生活方式，做\n自己愿意做的事情，自己 自己的时间和生命。\n灾难 记载 刻不容缓 抢救捕捉\n2 由于环境污染、全球变暖和人类无节制的 动物，世界上\n动物的种类正日益减少，很多动物种群面临 性的毁灭。有些动\n物，我们的后代可能只有在文字 中去了解了。因此，\n正在消失的珍稀动物\nHSK\n标准教程6（上）\n阅读语段，模仿造句\n他先是办了家企业；不久他跨洋过海，到了加拿大；再后来，他恋\n上了北极。\n大学毕业以后，他先是 ；不久\n；再后来，\n2 他和妻子往返北极17次，支出很大，他们处处精打细算，千方百计\n节省开支，免得多年的储蓄减少得太快，即使穿越辽阔的无人区，他们\n也只租用最便宜的汽车。\n因为需要帮助的孩子很多，他们处处\n方百计 ，免得\n即使 也\n5 根据提示，简述课文主要内容\n①大学毕业做过··\n简述一下王建男的工作\n②领导的报社成为…··\n经历。\n③身心疲惫，毅然决定··\n辞职后，王建男有什么经历？ 先是·…，不久·…，再后·……\n大约4000年前，途中遭遇………，最\n书中一般是怎样描述北极\n终退进…………，住……，用.……·\n的？\n存下来\n①屋内.·.\n现实的北极是什么样的？ ②连锁超市·\n③年轻人···\n现在，王建男专注于什么 不再在意…，只专注于·，采访专\nwww.nhantriviet.com/GiaoTrinhChuanHSK 事情？ 题····\n为了节省开支，王建男夫妇 处处…..…，租用…·…，自带药品，将就\n采取了什么措施？ 将就.…….",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-152",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-152",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-152",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-152",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-152",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-152",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-153",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-154",
+          "rowIndex": 32
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-15-01",
+      "lessonId": "hsk6t1-lesson-15",
+      "lessonNumber": 15,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：雕刻：雕塑 雕花 雕像 石雕",
+        "枯萎：",
+        "震撼：",
+        "辛勤：",
+        "珍稀：",
+        "用所给词语或结构改写句子",
+        "①几十年过去了，这个地方还是贫穷落后。（依旧）",
+        "②他们玩儿得兴高采烈，一会儿唱歌，一会儿跳舞。（时而………·，时而……··）",
+        "③他患上了一种非常少见的疾病，连最有经验的大夫都感到头疼。（罕见）",
+        "+他要做的事情，谁也拦不住，你们就别管他了。（阻拦）",
+        "她亲眼看到自己的家被大火烧掉了，内心非常痛苦。（目瞎）",
+        "由于小王做事能坚持到底、不放弃，所以最后取得了成功。",
+        "（锲而不舍）",
+        "选择合适的词语填空",
+        "庄稼 牲畜干旱 耕地枯萎",
+        "连续几个月没下雨，我国西部地区遭遇了几十年不遇的",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 大面积 ，人和 饮水困难，旱情十分严重。但",
+        "勤劳的农民们想方设法从各地运水来浇灌 ，使得农作物没有大",
+        "面积绝收。",
+        "15",
+        "山脉上的雕刻",
+        "珍稀审美生态遗产陶醉",
+        "九寨沟是中国第一个以保护自然风景为主要目的的自然保护区。它",
+        "像一幅美丽画卷展示在人们面前，令人 一。由于风景优美， 环",
+        "境良好，它获得了“世界自然 ”的称号。除了具有很高的 价",
+        "值，九寨沟还蕴藏着丰富、 的动植物资源。",
+        "阅读语段，模仿造句",
+        "尽管已目睹这奇迹无数次，但我每次身临其境，都会为哈尼族的山",
+        "民们在这重重叠叠的山脉上雕塑出的美丽画卷而震惊。",
+        "尽管 但",
+        "都",
+        "2 面对大山，山民们没有对抗，而是选择了服从—他们服从自然规",
+        "律，选择开辟梯田这种农耕方式，最终与大自然和谐相处。",
+        "面对",
+        "没有 而是选择",
+        "，最终",
+        "根据课文内容回答问题",
+        "…壮丽依旧，·",
+        "当中国西南遭遇干旱时，哈",
+        "……的天空，…·的白云，…·的",
+        "尼梯田怎么样？",
+        "树影，更衬托出.··",
+        "描述一下坐在车上遥望梯田 山顶…·，峡谷….，半山腰…．",
+        "时看到的风景。 村子下··",
+        "为什么“我”每次目睹哈尼 这是·的作品，它比长城…，比 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "梯田都感到震惊？ 宫殿…",
+        "HSK",
+        "标准教程6（上）",
+        "古老的曲子：·",
+        "这里的人为什么选择了",
+        "经过数十代人的锲而不舍·",
+        "梯田？",
+        "·…与大自然和谐相处",
+        "哈尼梯田有什么价值？ 以其….，．展示着",
+        "哈尼梯田体现了什么样的智 体现：和谐相处、对··的尊重",
+        "慧和精神？ 蕴含：人与自然、人类"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：雕刻：雕塑 雕花 雕像 石雕\n枯萎：\n震撼：\n辛勤：\n珍稀：\n用所给词语或结构改写句子\n①几十年过去了，这个地方还是贫穷落后。（依旧）\n②他们玩儿得兴高采烈，一会儿唱歌，一会儿跳舞。（时而………·，时而……··）\n③他患上了一种非常少见的疾病，连最有经验的大夫都感到头疼。（罕见）\n+他要做的事情，谁也拦不住，你们就别管他了。（阻拦）\n她亲眼看到自己的家被大火烧掉了，内心非常痛苦。（目瞎）\n由于小王做事能坚持到底、不放弃，所以最后取得了成功。\n（锲而不舍）\n选择合适的词语填空\n庄稼 牲畜干旱 耕地枯萎\n连续几个月没下雨，我国西部地区遭遇了几十年不遇的\nwww.nhantriviet.com/GiaoTrinhChuanHSK 大面积 ，人和 饮水困难，旱情十分严重。但\n勤劳的农民们想方设法从各地运水来浇灌 ，使得农作物没有大\n面积绝收。\n15\n山脉上的雕刻\n珍稀审美生态遗产陶醉\n九寨沟是中国第一个以保护自然风景为主要目的的自然保护区。它\n像一幅美丽画卷展示在人们面前，令人 一。由于风景优美， 环\n境良好，它获得了“世界自然 ”的称号。除了具有很高的 价\n值，九寨沟还蕴藏着丰富、 的动植物资源。\n阅读语段，模仿造句\n尽管已目睹这奇迹无数次，但我每次身临其境，都会为哈尼族的山\n民们在这重重叠叠的山脉上雕塑出的美丽画卷而震惊。\n尽管 但\n都\n2 面对大山，山民们没有对抗，而是选择了服从—他们服从自然规\n律，选择开辟梯田这种农耕方式，最终与大自然和谐相处。\n面对\n没有 而是选择\n，最终\n根据课文内容回答问题\n…壮丽依旧，·\n当中国西南遭遇干旱时，哈\n……的天空，…·的白云，…·的\n尼梯田怎么样？\n树影，更衬托出.··\n描述一下坐在车上遥望梯田 山顶…·，峡谷….，半山腰…．\n时看到的风景。 村子下··\n为什么“我”每次目睹哈尼 这是·的作品，它比长城…，比 www.nhantriviet.com/GiaoTrinhChuanHSK\n梯田都感到震惊？ 宫殿…\nHSK\n标准教程6（上）\n古老的曲子：·\n这里的人为什么选择了\n经过数十代人的锲而不舍·\n梯田？\n·…与大自然和谐相处\n哈尼梯田有什么价值？ 以其….，．展示着\n哈尼梯田体现了什么样的智 体现：和谐相处、对··的尊重\n慧和精神？ 蕴含：人与自然、人类",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-162",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-163",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 10
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-16-01",
+      "lessonId": "hsk6t1-lesson-16",
+      "lessonNumber": 16,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习1 模仿例子，写出更多的词语",
+        "Baitap 例：来历：经历 历史 简历 学历",
+        "濒临：",
+        "领袖：",
+        "识别： www.nhantriviet.com/GiaoTrinhChuanHsK",
+        "报酬：",
+        "HSK 标准教程6（上）",
+        "用所给词语完成句子",
+        "1请在信封上写清地址， （以便）",
+        "②他对中国非常了解，是个 （名副其实）",
+        "③很多年轻人都 （渴望）",
+        "4这些事实 （足以）",
+        "他从小就爱好写作，几十年来他一直 （致力于）",
+        "孩子长大后都忙于自己的工作，父母 （指望）",
+        "3 选择合适的词语填空",
+        "渴望 高超 昼夜完毕浓厚",
+        "一天的工作处理 ，她终于可以休息一下了。在不分",
+        "的忙碌之外，她非常 拥有一段属于自己的时间。安静地读点儿",
+        "书，去旅行，或者做自己喜欢做的事情。她对摄影有 的兴趣，",
+        "而且拍摄技术 ，如果有时间，她很想约上几个朋友，一起去野",
+        "外拍些照片。",
+        "童话畅销 足以 报酬 心甘情愿",
+        "我的朋友是个作家，他写的书很 自然他得到的",
+        "也不少。年轻女孩子喜欢他写的 式的爱情故事，虽然不真实，",
+        "但 带给人幻想和安慰。所以，每当他的新书出版，他的书迷们",
+        "都会 起大早排队去购买。",
+        "将下列句子及其解释连线，并体会插入语的用法",
+        "1他一个月的工资是我的三 A.到了月底，钱就都花光了。",
+        "倍，也就是说，",
+        "②他所有的辛劳都是心甘情 B.他一个月的工资相当于我三个",
+        "愿的，换句话说， 月的。",
+        "③他非名牌不穿，就是说， C.没有人强迫他。",
+        "④现在很多年轻人都是“月 D.他只穿名牌，不是名牌不穿。",
+        "光族”，也就是说，",
+        "16",
+        "根据课文内容回答问题",
+        "摄影师 徐健和他的野生动物摄影师们",
+        "徐健他们的工作是什么？",
+        "②博物学家",
+        "为什么大家对非洲生物的熟",
+        "悉程度远远大于自已的国 影像空白",
+        "家？",
+        "徐健他们以前希望自己为野 吸引·购买",
+        "生动物拍摄的照片可以怎 ②支撑··开支",
+        "样？结果呢？",
+        "①为…·提供服务，建…··影像库，",
+        "IBE的工作内容和工作方式",
+        "还原...·",
+        "分别是什么？",
+        "②分散，号召，聚在一起，集合式工作",
+        "每张照片都有·可供使用，精确统",
+        "为什么说IBE的作品带有浓",
+        "计，物种鉴别，动物行为分析，提",
+        "厚的科考性质？",
+        "交.调查报告"
+      ],
+      "contentOcr": "练习1 模仿例子，写出更多的词语\nBaitap 例：来历：经历 历史 简历 学历\n濒临：\n领袖：\n识别： www.nhantriviet.com/GiaoTrinhChuanHsK\n报酬：\nHSK 标准教程6（上）\n用所给词语完成句子\n1请在信封上写清地址， （以便）\n②他对中国非常了解，是个 （名副其实）\n③很多年轻人都 （渴望）\n4这些事实 （足以）\n他从小就爱好写作，几十年来他一直 （致力于）\n孩子长大后都忙于自己的工作，父母 （指望）\n3 选择合适的词语填空\n渴望 高超 昼夜完毕浓厚\n一天的工作处理 ，她终于可以休息一下了。在不分\n的忙碌之外，她非常 拥有一段属于自己的时间。安静地读点儿\n书，去旅行，或者做自己喜欢做的事情。她对摄影有 的兴趣，\n而且拍摄技术 ，如果有时间，她很想约上几个朋友，一起去野\n外拍些照片。\n童话畅销 足以 报酬 心甘情愿\n我的朋友是个作家，他写的书很 自然他得到的\n也不少。年轻女孩子喜欢他写的 式的爱情故事，虽然不真实，\n但 带给人幻想和安慰。所以，每当他的新书出版，他的书迷们\n都会 起大早排队去购买。\n将下列句子及其解释连线，并体会插入语的用法\n1他一个月的工资是我的三 A.到了月底，钱就都花光了。\n倍，也就是说，\n②他所有的辛劳都是心甘情 B.他一个月的工资相当于我三个\n愿的，换句话说， 月的。\n③他非名牌不穿，就是说， C.没有人强迫他。\n④现在很多年轻人都是“月 D.他只穿名牌，不是名牌不穿。\n光族”，也就是说，\n16\n根据课文内容回答问题\n摄影师 徐健和他的野生动物摄影师们\n徐健他们的工作是什么？\n②博物学家\n为什么大家对非洲生物的熟\n悉程度远远大于自已的国 影像空白\n家？\n徐健他们以前希望自己为野 吸引·购买\n生动物拍摄的照片可以怎 ②支撑··开支\n样？结果呢？\n①为…·提供服务，建…··影像库，\nIBE的工作内容和工作方式\n还原...·\n分别是什么？\n②分散，号召，聚在一起，集合式工作\n每张照片都有·可供使用，精确统\n为什么说IBE的作品带有浓\n计，物种鉴别，动物行为分析，提\n厚的科考性质？\n交.调查报告",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-173",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-173",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-173",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-173",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-173",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-173",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-174",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-175",
+          "rowIndex": 21
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-17-01",
+      "lessonId": "hsk6t1-lesson-17",
+      "lessonNumber": 17,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 1 模仿例子，写出更多的词语",
+        "Bai tap 例：跳跃：跳舞 跳高 跳远 跳水",
+        "瞄准：",
+        "视线：",
+        "周边：",
+        "迟钝：",
+        "用所给词语完成句子",
+        "①他 但他的计划被我识破了。（企图）",
+        "②听说有人找我， ？ （纳闷儿）",
+        "③我非常喜欢运动， 等等。 （比方说）",
+        "4如果你想洗衣服，我这里有台旧洗衣机，你 （姑且）",
+        "不好好发展经济， （势必）",
+        "看到家乡的巨大变化， （感慨）",
+        "3 选择合适的词语填空",
+        "东张西望 确切周边 企图动手",
+        "小偷在 偷东西时，总是先 ，看看 有没有",
+        "人注意自己，当 知道没人注意时，他们再 偷。如果在公",
+        "共场合看到这样可疑的人，一定要多加小心，注意保管好自已的财物。",
+        "HSK",
+        "标准教程6（上）",
+        "无能为力 本身 迟钝迟缓 新陈代谢",
+        "2 人类跟其他动物一样，随着年龄的增长，反应越来越 ，行",
+        "动越来越 。同样的，我们 的 也逐渐变慢。年",
+        "轻时，你轻而易举就能做到的动作，到了老年却 了。",
+        "阅读语段，模仿造句",
+        "有科学家推论，物种的CFF与其本身的体重和新陈代谢速率有关。",
+        "体型越小，信号传达到大脑所需时间越短；新陈代谢速率越高，说明传",
+        "递过程有更充足的能量支持。",
+        "有科学家推论，身高与 有关。父母的",
+        "越 ，孩子的 越 ，这说明",
+        "是会遗传的。",
+        "2 虽然它们没有博大精深的思想，不能进行深奥的思考，对强大的对",
+        "手无能为力，但对外部环境能迅速做出判断，使它们有了更多的生存机",
+        "会，这一优势真的实惠极了。",
+        "虽然他没有 不能 ，对 无",
+        "能为力，但 使 有了",
+        "5 根据提示，简述课文主要内容",
+        "人：动手、打不中",
+        "在打苍蝇方面，人和猫有什么",
+        "猫：一下子拍到",
+        "不同？为什么？",
+        "在苍蝇眼里、慢动作",
+        "小动物：接收的信息量",
+        "昆虫等小动物在接收信息方面",
+        "比如鸽子.··",
+        "跟人类有什么不同？",
+        "人类：反应…·、动作…",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 视觉感知、光刺激、闪烁、连续",
+        "什么是CFF？",
+        "的光、处理光线的速度",
+        "人和狗等动物的CFF有何不",
+        "CFF值：人、犬、苍蝇",
+        "同？",
+        "17",
+        "CFF与什么有关？ 体重、新陈代谢 小动物眼中的慢世界",
+        "苍蝇为什么能躲过人类的攻 对.…做出判断使..有了生存",
+        "击？ 机会",
+        "为什么小动物看上去更敏捷？ 信息处理速度"
+      ],
+      "contentOcr": "练习 1 模仿例子，写出更多的词语\nBai tap 例：跳跃：跳舞 跳高 跳远 跳水\n瞄准：\n视线：\n周边：\n迟钝：\n用所给词语完成句子\n①他 但他的计划被我识破了。（企图）\n②听说有人找我， ？ （纳闷儿）\n③我非常喜欢运动， 等等。 （比方说）\n4如果你想洗衣服，我这里有台旧洗衣机，你 （姑且）\n不好好发展经济， （势必）\n看到家乡的巨大变化， （感慨）\n3 选择合适的词语填空\n东张西望 确切周边 企图动手\n小偷在 偷东西时，总是先 ，看看 有没有\n人注意自己，当 知道没人注意时，他们再 偷。如果在公\n共场合看到这样可疑的人，一定要多加小心，注意保管好自已的财物。\nHSK\n标准教程6（上）\n无能为力 本身 迟钝迟缓 新陈代谢\n2 人类跟其他动物一样，随着年龄的增长，反应越来越 ，行\n动越来越 。同样的，我们 的 也逐渐变慢。年\n轻时，你轻而易举就能做到的动作，到了老年却 了。\n阅读语段，模仿造句\n有科学家推论，物种的CFF与其本身的体重和新陈代谢速率有关。\n体型越小，信号传达到大脑所需时间越短；新陈代谢速率越高，说明传\n递过程有更充足的能量支持。\n有科学家推论，身高与 有关。父母的\n越 ，孩子的 越 ，这说明\n是会遗传的。\n2 虽然它们没有博大精深的思想，不能进行深奥的思考，对强大的对\n手无能为力，但对外部环境能迅速做出判断，使它们有了更多的生存机\n会，这一优势真的实惠极了。\n虽然他没有 不能 ，对 无\n能为力，但 使 有了\n5 根据提示，简述课文主要内容\n人：动手、打不中\n在打苍蝇方面，人和猫有什么\n猫：一下子拍到\n不同？为什么？\n在苍蝇眼里、慢动作\n小动物：接收的信息量\n昆虫等小动物在接收信息方面\n比如鸽子.··\n跟人类有什么不同？\n人类：反应…·、动作…\nwww.nhantriviet.com/GiaoTrinhChuanHSK 视觉感知、光刺激、闪烁、连续\n什么是CFF？\n的光、处理光线的速度\n人和狗等动物的CFF有何不\nCFF值：人、犬、苍蝇\n同？\n17\nCFF与什么有关？ 体重、新陈代谢 小动物眼中的慢世界\n苍蝇为什么能躲过人类的攻 对.…做出判断使..有了生存\n击？ 机会\n为什么小动物看上去更敏捷？ 信息处理速度",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-183",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-184",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 5
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-18-01",
+      "lessonId": "hsk6t1-lesson-18",
+      "lessonNumber": 18,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：负担：承担 担任 担当 分担",
+        "随即：",
+        "照耀：",
+        "疲倦：",
+        "协调：",
+        "用所给词语改写句子",
+        "D时间紧迫，你们先走，然后我马上动身。（随即）",
+        "②这种产品一再降价，可就是卖不动，让人觉得不可思议。（愣）",
+        "③让我嫁给他，还不如让我一辈子不结婚。（宁愿）",
+        "HSK",
+        "标准教程6（上）",
+        "①我敢说这件事肯定是他干的，因为别人没有这个机会。（断定）",
+        "妈妈把午饭和课本一起放进我的书包里了。（连同）",
+        "希望你像以前一样继续关心支持我们。（一如既往）",
+        "3 选择合适的词语填空",
+        "土壤 照耀 花瓣 粒 滋润",
+        "找个空闲时间，找一块空地，种上几 种子。只要有肥沃",
+        "的 ，水的 ，阳光的 ，很快就能发芽开花了。",
+        "红色的 点缀在绿叶之间，让人看了心情愉快。",
+        "断定 负担 与日俱增 惊讶 疲倦",
+        "2 这个孩子已经连续十几天没来上课了，我的担心",
+        "他一定是出什么事了。放学后，我来到男孩儿的家，看到了",
+        "满脸 的妈妈，她刚看到我时，很 ，随即抱歉地说：",
+        "“最近孩子的父亲因为交通事故去世了，由于 不起学费，孩",
+        "子只好退学去打工。”听到这个消息，我的心沉重起来，真希望大家都",
+        "能伸出温暖的手帮助这个孩子渡过难关。",
+        "阅读语段，模仿造句",
+        "我心中难免不解：古人是怎么想的，愣是编出个拔苗助长的故事",
+        "来？要是我，宁愿用别的比喻。不解归不解，我每天工作疲倦了，都要",
+        "去看看那几棵丝瓜。",
+        "我心中难免生气：妈妈是怎么想的，愣是不让我 要",
+        "是我，宁愿 生气归生气，我还是",
+        "丝瓜长得很快，转眼间，瓜茎已经爬上了我们这幢楼陡峭的楼墙。",
+        "接着，它从一楼爬上了二楼，又从二楼爬上了三楼。瓜茎只有细绳一般",
+        "粗，却能输送足够的水分和养料，使得瓜茎挺拔，叶子茂盛。",
+        "孩子长得很快，转眼间，他已经 ，接着，他又",
+        "虽然他只有 ，却能 ，使得",
+        "18",
+        "神奇的丝瓜",
+        "根据提示，简述课文主要内容",
+        "描述一下丝瓜生长的环境。 土壤、水、阳光",
+        "种子→从土里冒出来",
+        "瓜茎爬楼",
+        "说一说丝瓜生长的过程。",
+        "开花→丝瓜→最初的瓜→后来的两个瓜",
+        "→最下面的瓜",
+        "最初长出来的瓜：",
+        "描述一下“我”对丝瓜担心",
+        "三楼那家窗外的两个瓜：",
+        "的过程。",
+        "两个大瓜瓜茎末梢上长出来的瓜：",
+        "有思想、有行动",
+        "丝瓜给“我”什么感觉？",
+        "靠什么……"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：负担：承担 担任 担当 分担\n随即：\n照耀：\n疲倦：\n协调：\n用所给词语改写句子\nD时间紧迫，你们先走，然后我马上动身。（随即）\n②这种产品一再降价，可就是卖不动，让人觉得不可思议。（愣）\n③让我嫁给他，还不如让我一辈子不结婚。（宁愿）\nHSK\n标准教程6（上）\n①我敢说这件事肯定是他干的，因为别人没有这个机会。（断定）\n妈妈把午饭和课本一起放进我的书包里了。（连同）\n希望你像以前一样继续关心支持我们。（一如既往）\n3 选择合适的词语填空\n土壤 照耀 花瓣 粒 滋润\n找个空闲时间，找一块空地，种上几 种子。只要有肥沃\n的 ，水的 ，阳光的 ，很快就能发芽开花了。\n红色的 点缀在绿叶之间，让人看了心情愉快。\n断定 负担 与日俱增 惊讶 疲倦\n2 这个孩子已经连续十几天没来上课了，我的担心\n他一定是出什么事了。放学后，我来到男孩儿的家，看到了\n满脸 的妈妈，她刚看到我时，很 ，随即抱歉地说：\n“最近孩子的父亲因为交通事故去世了，由于 不起学费，孩\n子只好退学去打工。”听到这个消息，我的心沉重起来，真希望大家都\n能伸出温暖的手帮助这个孩子渡过难关。\n阅读语段，模仿造句\n我心中难免不解：古人是怎么想的，愣是编出个拔苗助长的故事\n来？要是我，宁愿用别的比喻。不解归不解，我每天工作疲倦了，都要\n去看看那几棵丝瓜。\n我心中难免生气：妈妈是怎么想的，愣是不让我 要\n是我，宁愿 生气归生气，我还是\n丝瓜长得很快，转眼间，瓜茎已经爬上了我们这幢楼陡峭的楼墙。\n接着，它从一楼爬上了二楼，又从二楼爬上了三楼。瓜茎只有细绳一般\n粗，却能输送足够的水分和养料，使得瓜茎挺拔，叶子茂盛。\n孩子长得很快，转眼间，他已经 ，接着，他又\n虽然他只有 ，却能 ，使得\n18\n神奇的丝瓜\n根据提示，简述课文主要内容\n描述一下丝瓜生长的环境。 土壤、水、阳光\n种子→从土里冒出来\n瓜茎爬楼\n说一说丝瓜生长的过程。\n开花→丝瓜→最初的瓜→后来的两个瓜\n→最下面的瓜\n最初长出来的瓜：\n描述一下“我”对丝瓜担心\n三楼那家窗外的两个瓜：\n的过程。\n两个大瓜瓜茎末梢上长出来的瓜：\n有思想、有行动\n丝瓜给“我”什么感觉？\n靠什么……",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-193",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-194",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-195",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-19-01",
+      "lessonId": "hsk6t1-lesson-19",
+      "lessonNumber": 19,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 模仿例子，写出更多的词语",
+        "Bai tap 例：历来：从来 本来 原来 后来",
+        "维持：",
+        "准则：",
+        "场所：",
+        "广阔：",
+        "用所给词语完成句子",
+        "先提出计划， （进而）",
+        "②几十年来， (忍受)",
+        "③星期天他来找我， （偏偏）",
+        "④这个地方 （广阔）",
+        "® 闻名世界。 （众所周知）",
+        "各项工作 （有条不紊）",
+        "3 选择合适的词语填空",
+        "俗话历来 真理 众所周知",
+        "说：“独木不成林”，这句话告诉我们团结的重要性。",
+        "一根筷子很容易折断，可一把筷子就很难折断了，团结能使",
+        "我们 自身的局限，产生巨大的力量，所以“团结力量大”成为",
+        "人们都认可的",
+        "HSK",
+        "标准教程6（上）",
+        "异偏偏 展现古怪恍然大悟",
+        "）今天是周末，可经理 让我去加班，我满肚子不乐意，却也",
+        "没有办法。在公司门口，居然遇到了几个同事，我很 ，问：“周末",
+        "怎么还有这么多人来上班？”而他们看到我，神情都有些 。直",
+        "到走进办公室，鲜花和蛋糕 在我眼前，经理和同事们唱起了生",
+        "日歌，我才 ，原来今天是我的生日，他们为我准备了一个特别",
+        "的生日晚会。",
+        "4 为括号里的词语选择适当的位置",
+        "①A只有B不断努力，C梦想才能D实现。 （得以）",
+        "②通过A调查研究B发现问题，C找到D解决问题的方法。 （进而）",
+        "③经过讨论，A大家的意见B都统一了，C可D他不同意。 （偏偏）",
+        "A老校长B重视C学生们的D素质教育。 （历来）",
+        "A今年B入境旅游观光的C人数已超过D千万。 (据悉)",
+        "根据提示，简述课文主要内容",
+        "植物···.",
+        "为什么说万物生长靠太阳？",
+        "②动物",
+        "①科学家发现.·场所",
+        "几千米深的海底有生物吗？",
+        "②那里的生物.··",
+        "假说当………时，在………．作用下，·",
+        "深海的生物靠什么生存？ 转化成了…· ·借变化，吸",
+        "①这种细菌…··",
+        "描述一下深海耐高温细菌忍",
+        "②大部分植物和动物··",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 受高温的本领。",
+        "③多数细菌",
+        "深海中的生物还有什么使人 红冠蠕虫：·",
+        "迷惑不解的问题？ ②巨蛤、白蚌：",
+        "19"
+      ],
+      "contentOcr": "练习 模仿例子，写出更多的词语\nBai tap 例：历来：从来 本来 原来 后来\n维持：\n准则：\n场所：\n广阔：\n用所给词语完成句子\n先提出计划， （进而）\n②几十年来， (忍受)\n③星期天他来找我， （偏偏）\n④这个地方 （广阔）\n® 闻名世界。 （众所周知）\n各项工作 （有条不紊）\n3 选择合适的词语填空\n俗话历来 真理 众所周知\n说：“独木不成林”，这句话告诉我们团结的重要性。\n一根筷子很容易折断，可一把筷子就很难折断了，团结能使\n我们 自身的局限，产生巨大的力量，所以“团结力量大”成为\n人们都认可的\nHSK\n标准教程6（上）\n异偏偏 展现古怪恍然大悟\n）今天是周末，可经理 让我去加班，我满肚子不乐意，却也\n没有办法。在公司门口，居然遇到了几个同事，我很 ，问：“周末\n怎么还有这么多人来上班？”而他们看到我，神情都有些 。直\n到走进办公室，鲜花和蛋糕 在我眼前，经理和同事们唱起了生\n日歌，我才 ，原来今天是我的生日，他们为我准备了一个特别\n的生日晚会。\n4 为括号里的词语选择适当的位置\n①A只有B不断努力，C梦想才能D实现。 （得以）\n②通过A调查研究B发现问题，C找到D解决问题的方法。 （进而）\n③经过讨论，A大家的意见B都统一了，C可D他不同意。 （偏偏）\nA老校长B重视C学生们的D素质教育。 （历来）\nA今年B入境旅游观光的C人数已超过D千万。 (据悉)\n根据提示，简述课文主要内容\n植物···.\n为什么说万物生长靠太阳？\n②动物\n①科学家发现.·场所\n几千米深的海底有生物吗？\n②那里的生物.··\n假说当………时，在………．作用下，·\n深海的生物靠什么生存？ 转化成了…· ·借变化，吸\n①这种细菌…··\n描述一下深海耐高温细菌忍\n②大部分植物和动物··\nwww.nhantriviet.com/GiaoTrinhChuanHSK 受高温的本领。\n③多数细菌\n深海中的生物还有什么使人 红冠蠕虫：·\n迷惑不解的问题？ ②巨蛤、白蚌：\n19",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-203",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-204",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-practice-20-01",
+      "lessonId": "hsk6t1-lesson-20",
+      "lessonNumber": 20,
+      "type": "practice",
+      "labelZh": "练习",
+      "contentOcrLines": [
+        "练习 1 模仿例子，写出更多的词语",
+        "Bai tap 例：欲望：愿望 希望 失望 盼望",
+        "富裕：",
+        "隐蔽：",
+        "贪婪：",
+        "争夺：",
+        "用所给词语改写句子",
+        "①他们夫妻快到40岁才有了这个孩子，所以特别疼爱。（将近）",
+        "②上海那么大，再说你又不知道地址，怎么能找到他呢？（况且）",
+        "③他对中国京剧非常感兴趣，所以参加了一个京剧培训班。（颇）",
+        "④很明显他是喜欢你的，你怎么感觉不到呢？ （分明）",
+        "假期我们一起去欧洲玩儿一趟，怎么样？（咋）",
+        "为了安全，我宁愿绕远儿走大路。（宁肯）",
+        "3 选择合适的词语填空",
+        "勤俭 将近 祖父 富裕废寝忘食",
+        "我的 在 三十岁时才找到第一份工作，他很珍",
+        "惜这个机会，每天 地工作。加上祖母很 ，家里的",
+        "日子渐渐 起来。",
+        "坑瘤膝盖扎饶幸",
+        "2 上周的一个晚上，我骑着自行车回家，不小心掉进了一个",
+        "大 ，爬起来一看，原来是附近种树的人挖的。 摔破了，",
+        "手也被 破了，鲜血直流，还算 ，骨头没事。我只好推着",
+        "自行车一 一拐地走回了家。",
+        "HSK",
+        "标准教程6（上）",
+        "4 为括号里的词语选择适当的位置",
+        "①A晴天，B你出门时C干吗要D带把雨伞呢？ （大）",
+        "②与其A一个人生气，B不如C找个朋友D说出来更好。 （倒）",
+        "③A父亲年龄大了，B身体也不好，C我不放心D他一个人去旅行。",
+        "（况且）",
+        "④他A自己吃点儿亏，B也不愿C让朋友D吃亏。 （宁肯）",
+        "他A朝你这个方向B走来的，C你怎么D没看见他呢？ （分明）",
+        "5 根据提示，简述课文主要内容",
+        "①大石头、凹陷、鸟窝",
+        "姥姥村里的人把什么称为“金鸡",
+        "②古怪、红色、镶嵌····…小石头、",
+        "窝”？描述一下金鸡窝的样子。",
+        "像….、美观别致",
+        "宋家几兄弟、起早贪黑、废寝忘",
+        "背景",
+        "食、勤劳勤俭、日子富裕",
+        "时间 农历年将近",
+        "人物 宋家三祖爷",
+        "讲述一下那个久远的 发现一窝小鸡",
+        "传说。 ②捉小鸡，小鸡变金子",
+        "三祖爷受伤",
+        "事情经过",
+        "④再次找小鸡，没找到，发现",
+        "大石头",
+        "三祖爷治疗受伤的腿",
+        "这个故事给人们的启发 不要欲望太多，不要贪婪",
+        "20",
+        "金鸡窝"
+      ],
+      "contentOcr": "练习 1 模仿例子，写出更多的词语\nBai tap 例：欲望：愿望 希望 失望 盼望\n富裕：\n隐蔽：\n贪婪：\n争夺：\n用所给词语改写句子\n①他们夫妻快到40岁才有了这个孩子，所以特别疼爱。（将近）\n②上海那么大，再说你又不知道地址，怎么能找到他呢？（况且）\n③他对中国京剧非常感兴趣，所以参加了一个京剧培训班。（颇）\n④很明显他是喜欢你的，你怎么感觉不到呢？ （分明）\n假期我们一起去欧洲玩儿一趟，怎么样？（咋）\n为了安全，我宁愿绕远儿走大路。（宁肯）\n3 选择合适的词语填空\n勤俭 将近 祖父 富裕废寝忘食\n我的 在 三十岁时才找到第一份工作，他很珍\n惜这个机会，每天 地工作。加上祖母很 ，家里的\n日子渐渐 起来。\n坑瘤膝盖扎饶幸\n2 上周的一个晚上，我骑着自行车回家，不小心掉进了一个\n大 ，爬起来一看，原来是附近种树的人挖的。 摔破了，\n手也被 破了，鲜血直流，还算 ，骨头没事。我只好推着\n自行车一 一拐地走回了家。\nHSK\n标准教程6（上）\n4 为括号里的词语选择适当的位置\n①A晴天，B你出门时C干吗要D带把雨伞呢？ （大）\n②与其A一个人生气，B不如C找个朋友D说出来更好。 （倒）\n③A父亲年龄大了，B身体也不好，C我不放心D他一个人去旅行。\n（况且）\n④他A自己吃点儿亏，B也不愿C让朋友D吃亏。 （宁肯）\n他A朝你这个方向B走来的，C你怎么D没看见他呢？ （分明）\n5 根据提示，简述课文主要内容\n①大石头、凹陷、鸟窝\n姥姥村里的人把什么称为“金鸡\n②古怪、红色、镶嵌····…小石头、\n窝”？描述一下金鸡窝的样子。\n像….、美观别致\n宋家几兄弟、起早贪黑、废寝忘\n背景\n食、勤劳勤俭、日子富裕\n时间 农历年将近\n人物 宋家三祖爷\n讲述一下那个久远的 发现一窝小鸡\n传说。 ②捉小鸡，小鸡变金子\n三祖爷受伤\n事情经过\n④再次找小鸡，没找到，发现\n大石头\n三祖爷治疗受伤的腿\n这个故事给人们的启发 不要欲望太多，不要贪婪\n20\n金鸡窝",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-213",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-214",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

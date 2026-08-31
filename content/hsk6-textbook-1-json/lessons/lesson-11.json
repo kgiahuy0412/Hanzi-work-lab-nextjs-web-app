@@ -1,0 +1,129 @@
+{
+  "id": "hsk6t1-lesson-11",
+  "number": 11,
+  "unitId": "hsk6t1-unit-03",
+  "titleZh": "我不在时，猫在干什么？",
+  "titleVi": "Các chú mèo làm gì khi tôi đi vắng?",
+  "sourcePdfPages": {
+    "start": 116,
+    "end": 125
+  },
+  "sourcePrintedPages": {
+    "start": 116,
+    "end": 125
+  },
+  "audioTracks": [
+    "11-1",
+    "11-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 116,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1 你养过猫吗？猫喜欢做什么？请找出与下列图片相对应的内容。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 117,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文我不在时，猫在干什么（845字）11-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 119,
+      "rowIndex": 20,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 122,
+      "rowIndex": 3,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 124,
+      "rowIndex": 3,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 124,
+      "rowIndex": 8,
+      "matchedTextOcr": "扩展 病句类型：表意不明"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-11-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-11-01",
+    "hsk6t1-annotation-11-01",
+    "hsk6t1-practice-11-01",
+    "hsk6t1-application-11-01",
+    "hsk6t1-extension-11-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0011",
+    "hsk6t1-lexeme-0077",
+    "hsk6t1-lexeme-0078",
+    "hsk6t1-lexeme-0085",
+    "hsk6t1-lexeme-0118",
+    "hsk6t1-lexeme-0170",
+    "hsk6t1-lexeme-0173",
+    "hsk6t1-lexeme-0238",
+    "hsk6t1-lexeme-0246",
+    "hsk6t1-lexeme-0311",
+    "hsk6t1-lexeme-0324",
+    "hsk6t1-lexeme-0326",
+    "hsk6t1-lexeme-0330",
+    "hsk6t1-lexeme-0339",
+    "hsk6t1-lexeme-0341",
+    "hsk6t1-lexeme-0365",
+    "hsk6t1-lexeme-0370",
+    "hsk6t1-lexeme-0375",
+    "hsk6t1-lexeme-0400",
+    "hsk6t1-lexeme-0408",
+    "hsk6t1-lexeme-0418",
+    "hsk6t1-lexeme-0424",
+    "hsk6t1-lexeme-0426",
+    "hsk6t1-lexeme-0430",
+    "hsk6t1-lexeme-0448",
+    "hsk6t1-lexeme-0458",
+    "hsk6t1-lexeme-0465",
+    "hsk6t1-lexeme-0473",
+    "hsk6t1-lexeme-0479",
+    "hsk6t1-lexeme-0503",
+    "hsk6t1-lexeme-0526",
+    "hsk6t1-lexeme-0529",
+    "hsk6t1-lexeme-0541",
+    "hsk6t1-lexeme-0579",
+    "hsk6t1-lexeme-0618",
+    "hsk6t1-lexeme-0647",
+    "hsk6t1-lexeme-0667",
+    "hsk6t1-lexeme-0679",
+    "hsk6t1-lexeme-0723",
+    "hsk6t1-lexeme-0748",
+    "hsk6t1-lexeme-0841",
+    "hsk6t1-lexeme-0881",
+    "hsk6t1-lexeme-0891"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-004"
+  ],
+  "vocabularyCount": 43,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 44,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

@@ -1,0 +1,159 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-30",
+  "lessonNumber": 30,
+  "status": "review",
+  "title": {
+    "zh": "你睡好了吗？",
+    "pinyin": "nǐ shuì hǎo le ma？",
+    "vi": "Bạn ngủ ngon không?"
+  },
+  "themeRef": "hsk6-v2-theme-08",
+  "source": {
+    "pdfPages": [
+      103,
+      111
+    ],
+    "printedPages": [
+      103,
+      111
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-103",
+      "hsk6-v2-source-page-104",
+      "hsk6-v2-source-page-105",
+      "hsk6-v2-source-page-106",
+      "hsk6-v2-source-page-107",
+      "hsk6-v2-source-page-108",
+      "hsk6-v2-source-page-109",
+      "hsk6-v2-source-page-110",
+      "hsk6-v2-source-page-111"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l30-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l30-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l30-v001",
+        "hsk6-v2-l30-v002",
+        "hsk6-v2-l30-v003",
+        "hsk6-v2-l30-v004",
+        "hsk6-v2-l30-v005",
+        "hsk6-v2-l30-v006",
+        "hsk6-v2-l30-v007",
+        "hsk6-v2-l30-v008",
+        "hsk6-v2-l30-v009",
+        "hsk6-v2-l30-v010",
+        "hsk6-v2-l30-v011",
+        "hsk6-v2-l30-v012",
+        "hsk6-v2-l30-v013",
+        "hsk6-v2-l30-v014",
+        "hsk6-v2-l30-v015",
+        "hsk6-v2-l30-v016",
+        "hsk6-v2-l30-v017",
+        "hsk6-v2-l30-v018",
+        "hsk6-v2-l30-v019",
+        "hsk6-v2-l30-v020",
+        "hsk6-v2-l30-v021",
+        "hsk6-v2-l30-v022",
+        "hsk6-v2-l30-v023",
+        "hsk6-v2-l30-v024",
+        "hsk6-v2-l30-v025",
+        "hsk6-v2-l30-v026",
+        "hsk6-v2-l30-v027",
+        "hsk6-v2-l30-v028",
+        "hsk6-v2-l30-v029",
+        "hsk6-v2-l30-v030",
+        "hsk6-v2-l30-v031",
+        "hsk6-v2-l30-v032",
+        "hsk6-v2-l30-v033",
+        "hsk6-v2-l30-v034",
+        "hsk6-v2-l30-v035",
+        "hsk6-v2-l30-v036",
+        "hsk6-v2-l30-v037",
+        "hsk6-v2-l30-v038",
+        "hsk6-v2-l30-v039",
+        "hsk6-v2-l30-v040",
+        "hsk6-v2-l30-v041",
+        "hsk6-v2-l30-v042",
+        "hsk6-v2-l30-v043",
+        "hsk6-v2-l30-v044",
+        "hsk6-v2-l30-v045",
+        "hsk6-v2-l30-v046",
+        "hsk6-v2-l30-v047",
+        "hsk6-v2-l30-v048",
+        "hsk6-v2-l30-v049",
+        "hsk6-v2-l30-v050",
+        "hsk6-v2-l30-v051",
+        "hsk6-v2-l30-v052"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l30-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l30-lp-01",
+        "hsk6-v2-l30-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l30-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l30-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l30-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l30-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l30-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l30-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l30-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

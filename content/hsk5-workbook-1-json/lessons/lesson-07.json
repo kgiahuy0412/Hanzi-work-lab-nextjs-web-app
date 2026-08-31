@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-07",
+  "number": 7,
+  "unitId": "hsk5w1-unit-03",
+  "titleZh": "成语故事两则",
+  "sourcePdfPages": {
+    "start": 52,
+    "end": 58
+  },
+  "sourcePrintedPages": {
+    "start": 52,
+    "end": 58
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 52,
+      "end": 53
+    },
+    "reading": {
+      "start": 54,
+      "end": 57
+    },
+    "writing": {
+      "start": 58,
+      "end": 58
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-07",
+    "hsk5w1-reading-block-07",
+    "hsk5w1-writing-block-07"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0193",
+    "hsk5w1-exercise-0194",
+    "hsk5w1-exercise-0195",
+    "hsk5w1-exercise-0196",
+    "hsk5w1-exercise-0197",
+    "hsk5w1-exercise-0198",
+    "hsk5w1-exercise-0199",
+    "hsk5w1-exercise-0200",
+    "hsk5w1-exercise-0201",
+    "hsk5w1-exercise-0202",
+    "hsk5w1-exercise-0203",
+    "hsk5w1-exercise-0204",
+    "hsk5w1-exercise-0205",
+    "hsk5w1-exercise-0206",
+    "hsk5w1-exercise-0207",
+    "hsk5w1-exercise-0208",
+    "hsk5w1-exercise-0209",
+    "hsk5w1-exercise-0210",
+    "hsk5w1-exercise-0211",
+    "hsk5w1-exercise-0212",
+    "hsk5w1-exercise-0213",
+    "hsk5w1-exercise-0214",
+    "hsk5w1-exercise-0215",
+    "hsk5w1-exercise-0216",
+    "hsk5w1-exercise-0217",
+    "hsk5w1-exercise-0218",
+    "hsk5w1-exercise-0219",
+    "hsk5w1-exercise-0220",
+    "hsk5w1-exercise-0221",
+    "hsk5w1-exercise-0222",
+    "hsk5w1-exercise-0223",
+    "hsk5w1-exercise-0224"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

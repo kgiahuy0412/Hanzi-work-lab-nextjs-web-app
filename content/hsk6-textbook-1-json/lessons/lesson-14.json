@@ -1,0 +1,135 @@
+{
+  "id": "hsk6t1-lesson-14",
+  "number": 14,
+  "unitId": "hsk6t1-unit-04",
+  "titleZh": "背着电饭锅拍北极",
+  "titleVi": "Vác nồi cơm điện đi chụp ảnh Bắc Cực",
+  "sourcePdfPages": {
+    "start": 147,
+    "end": 155
+  },
+  "sourcePrintedPages": {
+    "start": 147,
+    "end": 155
+  },
+  "audioTracks": [
+    "14-1",
+    "14-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 147,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1 你去过北极吗？你印象中北极人的生活是什么样的？请看图片了解一下。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 148,
+      "rowIndex": 2,
+      "matchedTextOcr": "课文 背着电饭锅拍北极（844字）14-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 150,
+      "rowIndex": 31,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 152,
+      "rowIndex": 22,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 155,
+      "rowIndex": 0,
+      "matchedTextOcr": "运用 写一写 背着电饭锅拍北极"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 155,
+      "rowIndex": 5,
+      "matchedTextOcr": "扩展 词汇：熟悉下列反义词"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-14-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-14-01",
+    "hsk6t1-annotation-14-01",
+    "hsk6t1-practice-14-01",
+    "hsk6t1-application-14-01",
+    "hsk6t1-extension-14-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0018",
+    "hsk6t1-lexeme-0025",
+    "hsk6t1-lexeme-0028",
+    "hsk6t1-lexeme-0056",
+    "hsk6t1-lexeme-0082",
+    "hsk6t1-lexeme-0113",
+    "hsk6t1-lexeme-0114",
+    "hsk6t1-lexeme-0116",
+    "hsk6t1-lexeme-0119",
+    "hsk6t1-lexeme-0121",
+    "hsk6t1-lexeme-0159",
+    "hsk6t1-lexeme-0194",
+    "hsk6t1-lexeme-0207",
+    "hsk6t1-lexeme-0214",
+    "hsk6t1-lexeme-0221",
+    "hsk6t1-lexeme-0229",
+    "hsk6t1-lexeme-0251",
+    "hsk6t1-lexeme-0254",
+    "hsk6t1-lexeme-0303",
+    "hsk6t1-lexeme-0317",
+    "hsk6t1-lexeme-0336",
+    "hsk6t1-lexeme-0356",
+    "hsk6t1-lexeme-0359",
+    "hsk6t1-lexeme-0377",
+    "hsk6t1-lexeme-0378",
+    "hsk6t1-lexeme-0379",
+    "hsk6t1-lexeme-0385",
+    "hsk6t1-lexeme-0404",
+    "hsk6t1-lexeme-0415",
+    "hsk6t1-lexeme-0420",
+    "hsk6t1-lexeme-0449",
+    "hsk6t1-lexeme-0488",
+    "hsk6t1-lexeme-0500",
+    "hsk6t1-lexeme-0522",
+    "hsk6t1-lexeme-0591",
+    "hsk6t1-lexeme-0605",
+    "hsk6t1-lexeme-0696",
+    "hsk6t1-lexeme-0702",
+    "hsk6t1-lexeme-0734",
+    "hsk6t1-lexeme-0756",
+    "hsk6t1-lexeme-0770",
+    "hsk6t1-lexeme-0802",
+    "hsk6t1-lexeme-0804",
+    "hsk6t1-lexeme-0805",
+    "hsk6t1-lexeme-0838",
+    "hsk6t1-lexeme-0839",
+    "hsk6t1-lexeme-0843",
+    "hsk6t1-lexeme-0845",
+    "hsk6t1-lexeme-0867"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-013"
+  ],
+  "vocabularyCount": 49,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 50,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

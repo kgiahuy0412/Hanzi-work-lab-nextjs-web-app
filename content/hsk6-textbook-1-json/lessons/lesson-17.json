@@ -1,0 +1,128 @@
+{
+  "id": "hsk6t1-lesson-17",
+  "number": 17,
+  "unitId": "hsk6t1-unit-05",
+  "titleZh": "小动物眼中的慢世界",
+  "titleVi": "Thế giới chậm trong mắt động vật nhỏ",
+  "sourcePdfPages": {
+    "start": 178,
+    "end": 187
+  },
+  "sourcePrintedPages": {
+    "start": 178,
+    "end": 187
+  },
+  "audioTracks": [
+    "17-1",
+    "17-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 178,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身 结合图片思考下面的问题，选择你认为正确的答案。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 179,
+      "rowIndex": 5,
+      "matchedTextOcr": "课文 小动物眼中的慢世界（845字） 17-1 眼"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 181,
+      "rowIndex": 2,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 183,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 1 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 185,
+      "rowIndex": 6,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 185,
+      "rowIndex": 12,
+      "matchedTextOcr": "扩展 工电 病句类型：句式杂"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-17-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-17-01",
+    "hsk6t1-annotation-17-01",
+    "hsk6t1-practice-17-01",
+    "hsk6t1-application-17-01",
+    "hsk6t1-extension-17-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0029",
+    "hsk6t1-lexeme-0031",
+    "hsk6t1-lexeme-0035",
+    "hsk6t1-lexeme-0046",
+    "hsk6t1-lexeme-0054",
+    "hsk6t1-lexeme-0089",
+    "hsk6t1-lexeme-0091",
+    "hsk6t1-lexeme-0106",
+    "hsk6t1-lexeme-0109",
+    "hsk6t1-lexeme-0110",
+    "hsk6t1-lexeme-0169",
+    "hsk6t1-lexeme-0172",
+    "hsk6t1-lexeme-0177",
+    "hsk6t1-lexeme-0225",
+    "hsk6t1-lexeme-0232",
+    "hsk6t1-lexeme-0234",
+    "hsk6t1-lexeme-0244",
+    "hsk6t1-lexeme-0249",
+    "hsk6t1-lexeme-0332",
+    "hsk6t1-lexeme-0338",
+    "hsk6t1-lexeme-0433",
+    "hsk6t1-lexeme-0455",
+    "hsk6t1-lexeme-0456",
+    "hsk6t1-lexeme-0460",
+    "hsk6t1-lexeme-0468",
+    "hsk6t1-lexeme-0471",
+    "hsk6t1-lexeme-0484",
+    "hsk6t1-lexeme-0511",
+    "hsk6t1-lexeme-0539",
+    "hsk6t1-lexeme-0543",
+    "hsk6t1-lexeme-0566",
+    "hsk6t1-lexeme-0568",
+    "hsk6t1-lexeme-0578",
+    "hsk6t1-lexeme-0596",
+    "hsk6t1-lexeme-0600",
+    "hsk6t1-lexeme-0602",
+    "hsk6t1-lexeme-0603",
+    "hsk6t1-lexeme-0642",
+    "hsk6t1-lexeme-0653",
+    "hsk6t1-lexeme-0669",
+    "hsk6t1-lexeme-0676",
+    "hsk6t1-lexeme-0687",
+    "hsk6t1-lexeme-0713",
+    "hsk6t1-lexeme-0856"
+  ],
+  "supplementalLexemeIds": [],
+  "vocabularyCount": 44,
+  "supplementalVocabularyCount": 0,
+  "allVocabularyCount": 44,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

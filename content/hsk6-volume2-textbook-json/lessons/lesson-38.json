@@ -1,0 +1,162 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-38",
+  "lessonNumber": 38,
+  "status": "review",
+  "title": {
+    "zh": "慧眼捕捉商机",
+    "pinyin": "huì yǎn bǔ zhuō shāng jī",
+    "vi": "Tuệ nhãn nắm bắt thời cơ"
+  },
+  "themeRef": "hsk6-v2-theme-10",
+  "source": {
+    "pdfPages": [
+      187,
+      197
+    ],
+    "printedPages": [
+      187,
+      197
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-187",
+      "hsk6-v2-source-page-188",
+      "hsk6-v2-source-page-189",
+      "hsk6-v2-source-page-190",
+      "hsk6-v2-source-page-191",
+      "hsk6-v2-source-page-192",
+      "hsk6-v2-source-page-193",
+      "hsk6-v2-source-page-194",
+      "hsk6-v2-source-page-195",
+      "hsk6-v2-source-page-196",
+      "hsk6-v2-source-page-197"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l38-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l38-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l38-v001",
+        "hsk6-v2-l38-v002",
+        "hsk6-v2-l38-v003",
+        "hsk6-v2-l38-v004",
+        "hsk6-v2-l38-v005",
+        "hsk6-v2-l38-v006",
+        "hsk6-v2-l38-v007",
+        "hsk6-v2-l38-v008",
+        "hsk6-v2-l38-v009",
+        "hsk6-v2-l38-v010",
+        "hsk6-v2-l38-v011",
+        "hsk6-v2-l38-v012",
+        "hsk6-v2-l38-v013",
+        "hsk6-v2-l38-v014",
+        "hsk6-v2-l38-v015",
+        "hsk6-v2-l38-v016",
+        "hsk6-v2-l38-v017",
+        "hsk6-v2-l38-v018",
+        "hsk6-v2-l38-v019",
+        "hsk6-v2-l38-v020",
+        "hsk6-v2-l38-v021",
+        "hsk6-v2-l38-v022",
+        "hsk6-v2-l38-v023",
+        "hsk6-v2-l38-v024",
+        "hsk6-v2-l38-v025",
+        "hsk6-v2-l38-v026",
+        "hsk6-v2-l38-v027",
+        "hsk6-v2-l38-v028",
+        "hsk6-v2-l38-v029",
+        "hsk6-v2-l38-v030",
+        "hsk6-v2-l38-v031",
+        "hsk6-v2-l38-v032",
+        "hsk6-v2-l38-v033",
+        "hsk6-v2-l38-v034",
+        "hsk6-v2-l38-v035",
+        "hsk6-v2-l38-v036",
+        "hsk6-v2-l38-v037",
+        "hsk6-v2-l38-v038",
+        "hsk6-v2-l38-v039",
+        "hsk6-v2-l38-v040",
+        "hsk6-v2-l38-v041",
+        "hsk6-v2-l38-v042",
+        "hsk6-v2-l38-v043",
+        "hsk6-v2-l38-v044",
+        "hsk6-v2-l38-v045",
+        "hsk6-v2-l38-v046",
+        "hsk6-v2-l38-v047",
+        "hsk6-v2-l38-v048",
+        "hsk6-v2-l38-v049",
+        "hsk6-v2-l38-v050",
+        "hsk6-v2-l38-v051",
+        "hsk6-v2-l38-v052",
+        "hsk6-v2-l38-v053"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l38-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l38-lp-01",
+        "hsk6-v2-l38-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l38-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l38-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l38-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l38-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l38-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l38-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l38-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-14",
+  "number": 14,
+  "unitId": "hsk5w1-unit-05",
+  "titleZh": "北京的四合院",
+  "sourcePdfPages": {
+    "start": 103,
+    "end": 109
+  },
+  "sourcePrintedPages": {
+    "start": 103,
+    "end": 109
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 103,
+      "end": 104
+    },
+    "reading": {
+      "start": 105,
+      "end": 108
+    },
+    "writing": {
+      "start": 109,
+      "end": 109
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-14",
+    "hsk5w1-reading-block-14",
+    "hsk5w1-writing-block-14"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0417",
+    "hsk5w1-exercise-0418",
+    "hsk5w1-exercise-0419",
+    "hsk5w1-exercise-0420",
+    "hsk5w1-exercise-0421",
+    "hsk5w1-exercise-0422",
+    "hsk5w1-exercise-0423",
+    "hsk5w1-exercise-0424",
+    "hsk5w1-exercise-0425",
+    "hsk5w1-exercise-0426",
+    "hsk5w1-exercise-0427",
+    "hsk5w1-exercise-0428",
+    "hsk5w1-exercise-0429",
+    "hsk5w1-exercise-0430",
+    "hsk5w1-exercise-0431",
+    "hsk5w1-exercise-0432",
+    "hsk5w1-exercise-0433",
+    "hsk5w1-exercise-0434",
+    "hsk5w1-exercise-0435",
+    "hsk5w1-exercise-0436",
+    "hsk5w1-exercise-0437",
+    "hsk5w1-exercise-0438",
+    "hsk5w1-exercise-0439",
+    "hsk5w1-exercise-0440",
+    "hsk5w1-exercise-0441",
+    "hsk5w1-exercise-0442",
+    "hsk5w1-exercise-0443",
+    "hsk5w1-exercise-0444",
+    "hsk5w1-exercise-0445",
+    "hsk5w1-exercise-0446",
+    "hsk5w1-exercise-0447",
+    "hsk5w1-exercise-0448"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

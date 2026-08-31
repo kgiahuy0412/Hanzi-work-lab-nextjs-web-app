@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-16",
+  "number": 16,
+  "unitId": "hsk5w1-unit-06",
+  "titleZh": "体重与节食",
+  "sourcePdfPages": {
+    "start": 118,
+    "end": 124
+  },
+  "sourcePrintedPages": {
+    "start": 118,
+    "end": 124
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 118,
+      "end": 119
+    },
+    "reading": {
+      "start": 120,
+      "end": 123
+    },
+    "writing": {
+      "start": 124,
+      "end": 124
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-16",
+    "hsk5w1-reading-block-16",
+    "hsk5w1-writing-block-16"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0481",
+    "hsk5w1-exercise-0482",
+    "hsk5w1-exercise-0483",
+    "hsk5w1-exercise-0484",
+    "hsk5w1-exercise-0485",
+    "hsk5w1-exercise-0486",
+    "hsk5w1-exercise-0487",
+    "hsk5w1-exercise-0488",
+    "hsk5w1-exercise-0489",
+    "hsk5w1-exercise-0490",
+    "hsk5w1-exercise-0491",
+    "hsk5w1-exercise-0492",
+    "hsk5w1-exercise-0493",
+    "hsk5w1-exercise-0494",
+    "hsk5w1-exercise-0495",
+    "hsk5w1-exercise-0496",
+    "hsk5w1-exercise-0497",
+    "hsk5w1-exercise-0498",
+    "hsk5w1-exercise-0499",
+    "hsk5w1-exercise-0500",
+    "hsk5w1-exercise-0501",
+    "hsk5w1-exercise-0502",
+    "hsk5w1-exercise-0503",
+    "hsk5w1-exercise-0504",
+    "hsk5w1-exercise-0505",
+    "hsk5w1-exercise-0506",
+    "hsk5w1-exercise-0507",
+    "hsk5w1-exercise-0508",
+    "hsk5w1-exercise-0509",
+    "hsk5w1-exercise-0510",
+    "hsk5w1-exercise-0511",
+    "hsk5w1-exercise-0512"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

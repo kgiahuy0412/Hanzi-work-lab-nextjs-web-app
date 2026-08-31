@@ -77,7 +77,7 @@ export function HskCurriculumExplorer({
               vocabulary: lesson.vocabulary,
               pronunciation: lesson.vocabulary,
               exercises: lesson.exercises ?? 0,
-              scoredExercises: lesson.kind !== "workbook",
+              scoredExercises: lesson.scoredExercises ?? lesson.kind !== "workbook",
               writing: lesson.writing,
               guidedSteps: lesson.guidedSteps,
             }, parseHskLessonProgress(stored));

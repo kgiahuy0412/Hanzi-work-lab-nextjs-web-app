@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-13",
+  "number": 13,
+  "unitId": "hsk5w1-unit-05",
+  "titleZh": "锯掉生活的“筐底”",
+  "sourcePdfPages": {
+    "start": 96,
+    "end": 102
+  },
+  "sourcePrintedPages": {
+    "start": 96,
+    "end": 102
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 96,
+      "end": 97
+    },
+    "reading": {
+      "start": 98,
+      "end": 101
+    },
+    "writing": {
+      "start": 102,
+      "end": 102
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-13",
+    "hsk5w1-reading-block-13",
+    "hsk5w1-writing-block-13"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0385",
+    "hsk5w1-exercise-0386",
+    "hsk5w1-exercise-0387",
+    "hsk5w1-exercise-0388",
+    "hsk5w1-exercise-0389",
+    "hsk5w1-exercise-0390",
+    "hsk5w1-exercise-0391",
+    "hsk5w1-exercise-0392",
+    "hsk5w1-exercise-0393",
+    "hsk5w1-exercise-0394",
+    "hsk5w1-exercise-0395",
+    "hsk5w1-exercise-0396",
+    "hsk5w1-exercise-0397",
+    "hsk5w1-exercise-0398",
+    "hsk5w1-exercise-0399",
+    "hsk5w1-exercise-0400",
+    "hsk5w1-exercise-0401",
+    "hsk5w1-exercise-0402",
+    "hsk5w1-exercise-0403",
+    "hsk5w1-exercise-0404",
+    "hsk5w1-exercise-0405",
+    "hsk5w1-exercise-0406",
+    "hsk5w1-exercise-0407",
+    "hsk5w1-exercise-0408",
+    "hsk5w1-exercise-0409",
+    "hsk5w1-exercise-0410",
+    "hsk5w1-exercise-0411",
+    "hsk5w1-exercise-0412",
+    "hsk5w1-exercise-0413",
+    "hsk5w1-exercise-0414",
+    "hsk5w1-exercise-0415",
+    "hsk5w1-exercise-0416"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

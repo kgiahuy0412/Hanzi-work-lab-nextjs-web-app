@@ -1,0 +1,802 @@
+[
+  {
+    "id": "hsk6-v2-l21-lp-01",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "category": "integrated-note",
+    "titleZh": "以免",
+    "pinyinGenerated": "yǐ miǎn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l21-lp-02",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "category": "integrated-note",
+    "titleZh": "嫌",
+    "pinyinGenerated": "xián",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l21-lp-03",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "category": "word-distinction",
+    "titleZh": "不免—未免",
+    "pinyinGenerated": "bù miǎn — wèi miǎn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l21-lp-04",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（1）：省略",
+    "pinyinGenerated": "piān zhāng （1）： shěng lüè",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l21-lp-05",
+    "lessonRef": "hsk6-v2-lesson-21",
+    "category": "extension",
+    "titleZh": "词汇：名词",
+    "pinyinGenerated": "cí huì： míng cí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l22-lp-01",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "category": "integrated-note",
+    "titleZh": "动不动",
+    "pinyinGenerated": "dòng bù dòng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l22-lp-02",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "category": "integrated-note",
+    "titleZh": "甲乙丙丁……",
+    "pinyinGenerated": "jiǎ yǐ bǐng dīng ……",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l22-lp-03",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "category": "word-distinction",
+    "titleZh": "担保—保证",
+    "pinyinGenerated": "dān bǎo — bǎo zhèng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l22-lp-04",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（2）：词汇衔接",
+    "pinyinGenerated": "piān zhāng （2）： cí huì xián jiē",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l22-lp-05",
+    "lessonRef": "hsk6-v2-lesson-22",
+    "category": "extension",
+    "titleZh": "词汇：（1）反义词；（2）词语搭配",
+    "pinyinGenerated": "cí huì：（1） fǎn yì cí；（2） cí yǔ dā pèi",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l23-lp-01",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "category": "integrated-note",
+    "titleZh": "加以",
+    "pinyinGenerated": "jiā yǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l23-lp-02",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "category": "integrated-note",
+    "titleZh": "大大、远远",
+    "pinyinGenerated": "dà dà、 yuǎn yuǎn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l23-lp-03",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "category": "word-distinction",
+    "titleZh": "万分—十分",
+    "pinyinGenerated": "wàn fēn — shí fēn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l23-lp-04",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（1）：仿词",
+    "pinyinGenerated": "xiū cí （1）： fǎng cí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l23-lp-05",
+    "lessonRef": "hsk6-v2-lesson-23",
+    "category": "extension",
+    "titleZh": "词汇：近义词",
+    "pinyinGenerated": "cí huì： jìn yì cí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l24-lp-01",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "category": "integrated-note",
+    "titleZh": "紧缩句",
+    "pinyinGenerated": "jǐn suō jù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l24-lp-02",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "category": "integrated-note",
+    "titleZh": "特意",
+    "pinyinGenerated": "tè yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l24-lp-03",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "category": "word-distinction",
+    "titleZh": "特意—故意",
+    "pinyinGenerated": "tè yì — gù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l24-lp-04",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（2）：比拟",
+    "pinyinGenerated": "xiū cí （2）： bǐ nǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l24-lp-05",
+    "lessonRef": "hsk6-v2-lesson-24",
+    "category": "extension",
+    "titleZh": "词汇：词语搭配",
+    "pinyinGenerated": "cí huì： cí yǔ dā pèi",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l25-lp-01",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "category": "integrated-note",
+    "titleZh": "即将",
+    "pinyinGenerated": "jí jiāng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l25-lp-02",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "category": "integrated-note",
+    "titleZh": "能A就A",
+    "pinyinGenerated": "néng A jiù A",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l25-lp-03",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "category": "word-distinction",
+    "titleZh": "大致—大体",
+    "pinyinGenerated": "dà zhì — dà tǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l25-lp-04",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（3）：替代",
+    "pinyinGenerated": "piān zhāng （3）： tì dài",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l25-lp-05",
+    "lessonRef": "hsk6-v2-lesson-25",
+    "category": "extension",
+    "titleZh": "词汇：词语的语素义",
+    "pinyinGenerated": "cí huì： cí yǔ de yǔ sù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l26-lp-01",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "category": "integrated-note",
+    "titleZh": "别说",
+    "pinyinGenerated": "bié shuō",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l26-lp-02",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "category": "integrated-note",
+    "titleZh": "来来回回",
+    "pinyinGenerated": "lái lái huí huí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l26-lp-03",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "category": "word-distinction",
+    "titleZh": "挨—受",
+    "pinyinGenerated": "āi — shòu",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l26-lp-04",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（3）：比喻",
+    "pinyinGenerated": "xiū cí （3）： bǐ yù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l26-lp-05",
+    "lessonRef": "hsk6-v2-lesson-26",
+    "category": "extension",
+    "titleZh": "词汇：（1）名词；（2）文学方面的词语",
+    "pinyinGenerated": "cí huì：（1） míng cí；（2） wén xué fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l27-lp-01",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "category": "integrated-note",
+    "titleZh": "左……右……",
+    "pinyinGenerated": "zuǒ …… yòu ……",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l27-lp-02",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "category": "integrated-note",
+    "titleZh": "不成",
+    "pinyinGenerated": "bù chéng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l27-lp-03",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "category": "word-distinction",
+    "titleZh": "一贯—一直",
+    "pinyinGenerated": "yí guàn — yì zhí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l27-lp-04",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（4）：引用",
+    "pinyinGenerated": "xiū cí （4）： yǐn yòng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l27-lp-05",
+    "lessonRef": "hsk6-v2-lesson-27",
+    "category": "extension",
+    "titleZh": "词汇：（1）反义词；（2）学业方面的词语",
+    "pinyinGenerated": "cí huì：（1） fǎn yì cí；（2） xué yè fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l28-lp-01",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "category": "integrated-note",
+    "titleZh": "与“个”相关的格式",
+    "pinyinGenerated": "yǔ “gè” xiāng guān de gé shì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l28-lp-02",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "category": "integrated-note",
+    "titleZh": "向来",
+    "pinyinGenerated": "xiàng lái",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l28-lp-03",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "category": "word-distinction",
+    "titleZh": "气势—气魄",
+    "pinyinGenerated": "qì shì — qì pò",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l28-lp-04",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（5）：婉曲",
+    "pinyinGenerated": "xiū cí （5）： wǎn qū",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l28-lp-05",
+    "lessonRef": "hsk6-v2-lesson-28",
+    "category": "extension",
+    "titleZh": "词汇：（1）词语的语素义；（2）动物生活方面的词语",
+    "pinyinGenerated": "cí huì：（1） cí yǔ de yǔ sù yì；（2） dòng wù shēng huó fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l29-lp-01",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "category": "integrated-note",
+    "titleZh": "预先",
+    "pinyinGenerated": "yù xiān",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l29-lp-02",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "category": "integrated-note",
+    "titleZh": "……也好，……也罢",
+    "pinyinGenerated": "…… yě hǎo，…… yě bà",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l29-lp-03",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "category": "word-distinction",
+    "titleZh": "诸—各",
+    "pinyinGenerated": "zhū — gè",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l29-lp-04",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（6）：设问",
+    "pinyinGenerated": "xiū cí （6）： shè wèn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l29-lp-05",
+    "lessonRef": "hsk6-v2-lesson-29",
+    "category": "extension",
+    "titleZh": "词汇：（1）近义词；（2）政治方面的词语",
+    "pinyinGenerated": "cí huì：（1） jìn yì cí；（2） zhèng zhì fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l30-lp-01",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "category": "integrated-note",
+    "titleZh": "不时",
+    "pinyinGenerated": "bù shí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l30-lp-02",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "category": "integrated-note",
+    "titleZh": "多多少少",
+    "pinyinGenerated": "duō duō shǎo shǎo",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l30-lp-03",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "category": "word-distinction",
+    "titleZh": "容忍—忍受",
+    "pinyinGenerated": "róng rěn — rěn shòu",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l30-lp-04",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（4）：连接",
+    "pinyinGenerated": "piān zhāng （4）： lián jiē",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l30-lp-05",
+    "lessonRef": "hsk6-v2-lesson-30",
+    "category": "extension",
+    "titleZh": "词汇：名词",
+    "pinyinGenerated": "cí huì： míng cí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l31-lp-01",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "category": "integrated-note",
+    "titleZh": "逐",
+    "pinyinGenerated": "zhú",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l31-lp-02",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "category": "integrated-note",
+    "titleZh": "归根到底",
+    "pinyinGenerated": "guī gēn dào dǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l31-lp-03",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "category": "word-distinction",
+    "titleZh": "胡乱—随便",
+    "pinyinGenerated": "hú luàn — suí biàn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l31-lp-04",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（7）：大词小用",
+    "pinyinGenerated": "xiū cí （7）： dà cí xiǎo yòng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l31-lp-05",
+    "lessonRef": "hsk6-v2-lesson-31",
+    "category": "extension",
+    "titleZh": "词汇：词语的语素义",
+    "pinyinGenerated": "cí huì： cí yǔ de yǔ sù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l32-lp-01",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "category": "integrated-note",
+    "titleZh": "哪怕",
+    "pinyinGenerated": "nǎ pà",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l32-lp-02",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "category": "integrated-note",
+    "titleZh": "反之",
+    "pinyinGenerated": "fǎn zhī",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l32-lp-03",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "category": "word-distinction",
+    "titleZh": "许可—允许",
+    "pinyinGenerated": "xǔ kě — yǔn xǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l32-lp-04",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（8）：排比",
+    "pinyinGenerated": "xiū cí （8）： pái bǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l32-lp-05",
+    "lessonRef": "hsk6-v2-lesson-32",
+    "category": "extension",
+    "titleZh": "词汇：词语搭配",
+    "pinyinGenerated": "cí huì： cí yǔ dā pèi",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l33-lp-01",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "category": "integrated-note",
+    "titleZh": "A的A，B的B",
+    "pinyinGenerated": "A de A，B de B",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l33-lp-02",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "category": "integrated-note",
+    "titleZh": "一时",
+    "pinyinGenerated": "yī shí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l33-lp-03",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "category": "word-distinction",
+    "titleZh": "现场—当场",
+    "pinyinGenerated": "xiàn chǎng — dāng chǎng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l33-lp-04",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（9）：借代",
+    "pinyinGenerated": "xiū cí （9）： jiè dài",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l33-lp-05",
+    "lessonRef": "hsk6-v2-lesson-33",
+    "category": "extension",
+    "titleZh": "词汇：词语的语素义",
+    "pinyinGenerated": "cí huì： cí yǔ de yǔ sù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l34-lp-01",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "category": "integrated-note",
+    "titleZh": "尚且",
+    "pinyinGenerated": "shàng qiě",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l34-lp-02",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "category": "integrated-note",
+    "titleZh": "当",
+    "pinyinGenerated": "dāng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l34-lp-03",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "category": "word-distinction",
+    "titleZh": "温和—温柔",
+    "pinyinGenerated": "wēn hé — wēn róu",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l34-lp-04",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（5）：过渡",
+    "pinyinGenerated": "piān zhāng （5）： guò dù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l34-lp-05",
+    "lessonRef": "hsk6-v2-lesson-34",
+    "category": "extension",
+    "titleZh": "词汇：表示人物身份的词语",
+    "pinyinGenerated": "cí huì： biǎo shì rén wù shēn fèn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l35-lp-01",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "category": "integrated-note",
+    "titleZh": "终究",
+    "pinyinGenerated": "zhōng jiū",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l35-lp-02",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "category": "integrated-note",
+    "titleZh": "愈……愈……",
+    "pinyinGenerated": "yù …… yù ……",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l35-lp-03",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "category": "word-distinction",
+    "titleZh": "连年—连续",
+    "pinyinGenerated": "lián nián — lián xù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l35-lp-04",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（6）：重复关键词，推进主题",
+    "pinyinGenerated": "piān zhāng （6）： chóng fù guān jiàn cí， tuī jìn zhǔ tí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l35-lp-05",
+    "lessonRef": "hsk6-v2-lesson-35",
+    "category": "extension",
+    "titleZh": "词汇：词语的语素义",
+    "pinyinGenerated": "cí huì： cí yǔ de yǔ sù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l36-lp-01",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "category": "integrated-note",
+    "titleZh": "一经",
+    "pinyinGenerated": "yī jīng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l36-lp-02",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "category": "integrated-note",
+    "titleZh": "本着+名词",
+    "pinyinGenerated": "běn zhe + míng cí",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l36-lp-03",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "category": "word-distinction",
+    "titleZh": "截止—终止",
+    "pinyinGenerated": "jié zhǐ — zhōng zhǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l36-lp-04",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（7）：论点+例证",
+    "pinyinGenerated": "piān zhāng （7）： lùn diǎn + lì zhèng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l36-lp-05",
+    "lessonRef": "hsk6-v2-lesson-36",
+    "category": "extension",
+    "titleZh": "词汇：（1）词语搭配；（2）词语的语素义",
+    "pinyinGenerated": "cí huì：（1） cí yǔ dā pèi；（2） cí yǔ de yǔ sù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l37-lp-01",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "category": "integrated-note",
+    "titleZh": "为……起见",
+    "pinyinGenerated": "wèi …… qǐ jiàn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l37-lp-02",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "category": "integrated-note",
+    "titleZh": "暂且",
+    "pinyinGenerated": "zàn qiě",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l37-lp-03",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "category": "word-distinction",
+    "titleZh": "恐惧—恐怖",
+    "pinyinGenerated": "kǒng jù — kǒng bù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l37-lp-04",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（8）：照应",
+    "pinyinGenerated": "piān zhāng （8）： zhào yìng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l37-lp-05",
+    "lessonRef": "hsk6-v2-lesson-37",
+    "category": "extension",
+    "titleZh": "词汇：词语的语素义",
+    "pinyinGenerated": "cí huì： cí yǔ de yǔ sù yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l38-lp-01",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "category": "integrated-note",
+    "titleZh": "屡次",
+    "pinyinGenerated": "lǚ cì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l38-lp-02",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "category": "integrated-note",
+    "titleZh": "依据",
+    "pinyinGenerated": "yī jù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l38-lp-03",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "category": "word-distinction",
+    "titleZh": "就近—附近",
+    "pinyinGenerated": "jiù jìn — fù jìn",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l38-lp-04",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（10）：反复",
+    "pinyinGenerated": "xiū cí （10）： fǎn fù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l38-lp-05",
+    "lessonRef": "hsk6-v2-lesson-38",
+    "category": "extension",
+    "titleZh": "词汇：（1）医学方面的词语；（2）金融方面的词语",
+    "pinyinGenerated": "cí huì：（1） yī xué fāng miàn de cí yǔ；（2） jīn róng fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l39-lp-01",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "category": "integrated-note",
+    "titleZh": "任意",
+    "pinyinGenerated": "rèn yì",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l39-lp-02",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "category": "integrated-note",
+    "titleZh": "尚未",
+    "pinyinGenerated": "shàng wèi",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l39-lp-03",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "category": "word-distinction",
+    "titleZh": "乐趣—兴趣",
+    "pinyinGenerated": "lè qù — xìng qù",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l39-lp-04",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "category": "discourse-rhetoric",
+    "titleZh": "修辞（11）：夸张",
+    "pinyinGenerated": "xiū cí （11）： kuā zhāng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l39-lp-05",
+    "lessonRef": "hsk6-v2-lesson-39",
+    "category": "extension",
+    "titleZh": "词汇：（1）法律方面的词语；（2）政治方面的词语",
+    "pinyinGenerated": "cí huì：（1） fǎ lǜ fāng miàn de cí yǔ；（2） zhèng zhì fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l40-lp-01",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "category": "integrated-note",
+    "titleZh": "（把）……放在眼里",
+    "pinyinGenerated": "（bǎ）…… fàng zài yǎn lǐ",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l40-lp-02",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "category": "integrated-note",
+    "titleZh": "不无",
+    "pinyinGenerated": "bù wú",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l40-lp-03",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "category": "word-distinction",
+    "titleZh": "顽强—坚强",
+    "pinyinGenerated": "wán qiáng — jiān qiáng",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l40-lp-04",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "category": "discourse-rhetoric",
+    "titleZh": "篇章（9）：先总说，再分说",
+    "pinyinGenerated": "piān zhāng （9）： xiān zǒng shuō， zài fēn shuō",
+    "source": "printed-table-of-contents"
+  },
+  {
+    "id": "hsk6-v2-l40-lp-05",
+    "lessonRef": "hsk6-v2-lesson-40",
+    "category": "extension",
+    "titleZh": "词汇：（1）军事方面的词语；（2）政治方面的词语",
+    "pinyinGenerated": "cí huì：（1） jūn shì fāng miàn de cí yǔ；（2） zhèng zhì fāng miàn de cí yǔ",
+    "source": "printed-table-of-contents"
+  }
+]

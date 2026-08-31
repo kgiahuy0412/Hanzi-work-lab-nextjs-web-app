@@ -1,0 +1,458 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "review",
+  "summary": {
+    "lessonsChecked": 20,
+    "lessonsWithVocabularyNumberGaps": 0,
+    "lessonsWithWarnings": 4,
+    "lexemesWithoutVietnameseMeaning": 0
+  },
+  "lessons": [
+    {
+      "lessonNumber": 21,
+      "articleCharactersOcr": 828,
+      "articleCharactersPrinted": 897,
+      "articleParagraphs": 6,
+      "vocabularyDetected": 54,
+      "vocabularyNumberRange": [
+        1,
+        54
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 22,
+      "articleCharactersOcr": 898,
+      "articleCharactersPrinted": 986,
+      "articleParagraphs": 3,
+      "vocabularyDetected": 52,
+      "vocabularyNumberRange": [
+        1,
+        52
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 23,
+      "articleCharactersOcr": 950,
+      "articleCharactersPrinted": 1061,
+      "articleParagraphs": 4,
+      "vocabularyDetected": 51,
+      "vocabularyNumberRange": [
+        1,
+        51
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 24,
+      "articleCharactersOcr": 1030,
+      "articleCharactersPrinted": 1043,
+      "articleParagraphs": 2,
+      "vocabularyDetected": 54,
+      "vocabularyNumberRange": [
+        1,
+        54
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 25,
+      "articleCharactersOcr": 1076,
+      "articleCharactersPrinted": 1141,
+      "articleParagraphs": 4,
+      "vocabularyDetected": 53,
+      "vocabularyNumberRange": [
+        1,
+        53
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 26,
+      "articleCharactersOcr": 903,
+      "articleCharactersPrinted": 994,
+      "articleParagraphs": 5,
+      "vocabularyDetected": 51,
+      "vocabularyNumberRange": [
+        1,
+        51
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 27,
+      "articleCharactersOcr": 1005,
+      "articleCharactersPrinted": 1114,
+      "articleParagraphs": 8,
+      "vocabularyDetected": 50,
+      "vocabularyNumberRange": [
+        1,
+        50
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 28,
+      "articleCharactersOcr": 955,
+      "articleCharactersPrinted": 1072,
+      "articleParagraphs": 7,
+      "vocabularyDetected": 51,
+      "vocabularyNumberRange": [
+        1,
+        51
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 29,
+      "articleCharactersOcr": 1061,
+      "articleCharactersPrinted": 1154,
+      "articleParagraphs": 7,
+      "vocabularyDetected": 52,
+      "vocabularyNumberRange": [
+        1,
+        52
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 30,
+      "articleCharactersOcr": 1066,
+      "articleCharactersPrinted": 949,
+      "articleParagraphs": 14,
+      "vocabularyDetected": 52,
+      "vocabularyNumberRange": [
+        1,
+        52
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 31,
+      "articleCharactersOcr": 1144,
+      "articleCharactersPrinted": 1318,
+      "articleParagraphs": 25,
+      "vocabularyDetected": 54,
+      "vocabularyNumberRange": [
+        1,
+        54
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "extension"
+      ],
+      "warnings": [
+        "Chênh lệch lớn giữa số chữ OCR và số chữ in trong sách."
+      ]
+    },
+    {
+      "lessonNumber": 32,
+      "articleCharactersOcr": 1131,
+      "articleCharactersPrinted": 1264,
+      "articleParagraphs": 7,
+      "vocabularyDetected": 52,
+      "vocabularyNumberRange": [
+        1,
+        52
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": [
+        "Chênh lệch lớn giữa số chữ OCR và số chữ in trong sách."
+      ]
+    },
+    {
+      "lessonNumber": 33,
+      "articleCharactersOcr": 1424,
+      "articleCharactersPrinted": 1369,
+      "articleParagraphs": 3,
+      "vocabularyDetected": 56,
+      "vocabularyNumberRange": [
+        1,
+        56
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 34,
+      "articleCharactersOcr": 1260,
+      "articleCharactersPrinted": 1299,
+      "articleParagraphs": 11,
+      "vocabularyDetected": 51,
+      "vocabularyNumberRange": [
+        1,
+        51
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 35,
+      "articleCharactersOcr": 1355,
+      "articleCharactersPrinted": 1447,
+      "articleParagraphs": 4,
+      "vocabularyDetected": 50,
+      "vocabularyNumberRange": [
+        1,
+        50
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 36,
+      "articleCharactersOcr": 1221,
+      "articleCharactersPrinted": 1202,
+      "articleParagraphs": 4,
+      "vocabularyDetected": 50,
+      "vocabularyNumberRange": [
+        1,
+        50
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 37,
+      "articleCharactersOcr": 1394,
+      "articleCharactersPrinted": 1546,
+      "articleParagraphs": 15,
+      "vocabularyDetected": 55,
+      "vocabularyNumberRange": [
+        1,
+        55
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": [
+        "Chênh lệch lớn giữa số chữ OCR và số chữ in trong sách."
+      ]
+    },
+    {
+      "lessonNumber": 38,
+      "articleCharactersOcr": 1368,
+      "articleCharactersPrinted": 1519,
+      "articleParagraphs": 9,
+      "vocabularyDetected": 53,
+      "vocabularyNumberRange": [
+        1,
+        53
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": [
+        "Chênh lệch lớn giữa số chữ OCR và số chữ in trong sách."
+      ]
+    },
+    {
+      "lessonNumber": 39,
+      "articleCharactersOcr": 1376,
+      "articleCharactersPrinted": 1441,
+      "articleParagraphs": 2,
+      "vocabularyDetected": 48,
+      "vocabularyNumberRange": [
+        1,
+        48
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    },
+    {
+      "lessonNumber": 40,
+      "articleCharactersOcr": 1262,
+      "articleCharactersPrinted": 1367,
+      "articleParagraphs": 8,
+      "vocabularyDetected": 51,
+      "vocabularyNumberRange": [
+        1,
+        51
+      ],
+      "missingVocabularyNumbers": [],
+      "vocabularyWithoutVietnameseMeaning": 0,
+      "sectionTypesDetected": [
+        "warmup",
+        "integrated-notes",
+        "word-distinction",
+        "discourse-rhetoric",
+        "practice",
+        "extension"
+      ],
+      "warnings": []
+    }
+  ]
+}

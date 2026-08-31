@@ -1,0 +1,2405 @@
+{
+  "bundleId": "hsk6-standard-course-textbook-1-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk6t1-warmup-01-01",
+      "lessonId": "hsk6t1-lesson-01",
+      "lessonNumber": 1,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 在你跟父母（或孩子）的关系中，遇到过下列情况吗？如果遇到，想一想该",
+        "Phan 怎么办？如有更多情况，请补充说明。",
+        "khoi dong",
+        "STWP",
+        "LIES",
+        "父母不让孩子看电 父母教育孩子要诚 父母告诉孩子要多",
+        "视，自己却在看。 实，自己却说慌。 帮助别人，自己有",
+        "时候却怕麻烦不愿",
+        "意帮助别人。",
+        "有口 有口 有口",
+        "无口 无口 无口",
+        "想一想下列词语之间有什么联系。",
+        "女人、女士、女厕、女方、女生、女皇、女装、女性、",
+        "女",
+        "妇女、少女、美女、独生女、母女",
+        "无数、无边、无价、无声、无语、无法、无关、无私、",
+        "无",
+        "无悔、无望",
+        "醒 叫醒、吵醒、惊醒、推醒、睡醒",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 重视、忽视、轻视、环视、对视、相视、视觉、视线、",
+        "视",
+        "视而不见",
+        "孩子给我们"
+      ],
+      "contentOcr": "热身1 在你跟父母（或孩子）的关系中，遇到过下列情况吗？如果遇到，想一想该\nPhan 怎么办？如有更多情况，请补充说明。\nkhoi dong\nSTWP\nLIES\n父母不让孩子看电 父母教育孩子要诚 父母告诉孩子要多\n视，自己却在看。 实，自己却说慌。 帮助别人，自己有\n时候却怕麻烦不愿\n意帮助别人。\n有口 有口 有口\n无口 无口 无口\n想一想下列词语之间有什么联系。\n女人、女士、女厕、女方、女生、女皇、女装、女性、\n女\n妇女、少女、美女、独生女、母女\n无数、无边、无价、无声、无语、无法、无关、无私、\n无\n无悔、无望\n醒 叫醒、吵醒、惊醒、推醒、睡醒\nwww.nhantriviet.com/GiaoTrinhChuanHSK 重视、忽视、轻视、环视、对视、相视、视觉、视线、\n视\n视而不见\n孩子给我们",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-014",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-015",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-02-01",
+      "lessonId": "hsk6t1-lesson-02",
+      "lessonNumber": 2,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 中国有句俗话：“打是亲，骂是爱”，你能理解吗？下面这些事情中，你觉",
+        "Phan 得父母做得对不对？为什么？",
+        "khoi dong",
+        "帮孩子做所有的事情",
+        "为了了解孩子，偷看孩子的日记",
+        "让孩子分担家务",
+        "假期让孩子去打工赚自己的零花钱",
+        "对孩子的事情不闻不问",
+        "孩子做错了事情，打骂孩子",
+        "想一想下列词语之间有什么联系。",
+        "阳光、月光、星光、灯光、火光、发光、放光、光明、",
+        "光",
+        "光亮",
+        "亲爱、可爱、热爱、疼爱、友爱、恋爱、关爱、求爱、",
+        "爱",
+        "相爱、爱情、爱心、爱护、爱惜、爱好",
+        "自动、自豪、自觉、自私、自由、自愿、自信、自费、",
+        "自",
+        "自夸、自救、亲自、各自",
+        "放心、关心、小心、粗心、开心、耐心、伤心、专心、",
+        "信心、爱心、决心、热心、心情、心理、心脏",
+        "2",
+        "父母之爱"
+      ],
+      "contentOcr": "热身 中国有句俗话：“打是亲，骂是爱”，你能理解吗？下面这些事情中，你觉\nPhan 得父母做得对不对？为什么？\nkhoi dong\n帮孩子做所有的事情\n为了了解孩子，偷看孩子的日记\n让孩子分担家务\n假期让孩子去打工赚自己的零花钱\n对孩子的事情不闻不问\n孩子做错了事情，打骂孩子\n想一想下列词语之间有什么联系。\n阳光、月光、星光、灯光、火光、发光、放光、光明、\n光\n光亮\n亲爱、可爱、热爱、疼爱、友爱、恋爱、关爱、求爱、\n爱\n相爱、爱情、爱心、爱护、爱惜、爱好\n自动、自豪、自觉、自私、自由、自愿、自信、自费、\n自\n自夸、自救、亲自、各自\n放心、关心、小心、粗心、开心、耐心、伤心、专心、\n信心、爱心、决心、热心、心情、心理、心脏\n2\n父母之爱",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-024",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-025",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-025",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-03-01",
+      "lessonId": "hsk6t1-lesson-03",
+      "lessonNumber": 3,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 根据图片回答问题。",
+        "Phan",
+        "khoi dong",
+        "图中是什么食品？",
+        "②这是中国的什么节日？",
+        "③这个节日有什么活动和意义？",
+        "想一想下列词语之间有什么联系。",
+        "见面、会面、迎面、表面、片面、全面、方面、对面、",
+        "面",
+        "面对、面临、面前、面对面、爱面子",
+        "主要、主题、主讲、主持、主任、主席、主管、主导、",
+        "主",
+        "主机、主课、主流、主体、先入为主",
+        "欢喜、惊喜、可喜、欣喜、喜庆、喜悦、喜讯、喜剧、",
+        "喜",
+        "喜事、贺喜、欢天喜地、喜气洋洋",
+        "身体、身边、身影、身材、身心、转身、起身、随身、",
+        "身",
+        "自身、健身、瘦身、挺身而出",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "热身1 根据图片回答问题。\nPhan\nkhoi dong\n图中是什么食品？\n②这是中国的什么节日？\n③这个节日有什么活动和意义？\n想一想下列词语之间有什么联系。\n见面、会面、迎面、表面、片面、全面、方面、对面、\n面\n面对、面临、面前、面对面、爱面子\n主要、主题、主讲、主持、主任、主席、主管、主导、\n主\n主机、主课、主流、主体、先入为主\n欢喜、惊喜、可喜、欣喜、喜庆、喜悦、喜讯、喜剧、\n喜\n喜事、贺喜、欢天喜地、喜气洋洋\n身体、身边、身影、身材、身心、转身、起身、随身、\n身\n自身、健身、瘦身、挺身而出\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-033",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-034",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-034",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-04-01",
+      "lessonId": "hsk6t1-lesson-04",
+      "lessonNumber": 4,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 给下面的词语选择对应的图片，并回答下面的问题。",
+        "Phan",
+        "khoi dong ①老鼠 ②蝴蝶 ③猴子",
+        "老虎 大象 6猫",
+        "问题：上边的动物中，你觉得强大的是哪些？弱小的是哪些？你认为老鼠可",
+        "以战胜大象吗？如果可以，方法是什么？",
+        "想一想下列词语之间有什么联系。",
+        "宠物、人物、动物、植物、食物、事物、博物馆、",
+        "物",
+        "购物、读物、废物、药物、建筑物、物质",
+        "弱小、弱点、弱者、瘦弱、弱、体弱、微弱、减弱、",
+        "弱",
+        "柔弱、示弱、虚弱、老弱病残",
+        "悲伤、悲观、悲痛、悲剧、悲苦、悲惨、悲欢离合、",
+        "悲",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 可悲、乐极生悲",
+        "耗费、花费、浪费、消费、白费、费时、费心、费力、",
+        "费",
+        "费钱、费电、费劲、费尽心机",
+        "完美的胜利"
+      ],
+      "contentOcr": "热身1 给下面的词语选择对应的图片，并回答下面的问题。\nPhan\nkhoi dong ①老鼠 ②蝴蝶 ③猴子\n老虎 大象 6猫\n问题：上边的动物中，你觉得强大的是哪些？弱小的是哪些？你认为老鼠可\n以战胜大象吗？如果可以，方法是什么？\n想一想下列词语之间有什么联系。\n宠物、人物、动物、植物、食物、事物、博物馆、\n物\n购物、读物、废物、药物、建筑物、物质\n弱小、弱点、弱者、瘦弱、弱、体弱、微弱、减弱、\n弱\n柔弱、示弱、虚弱、老弱病残\n悲伤、悲观、悲痛、悲剧、悲苦、悲惨、悲欢离合、\n悲\nwww.nhantriviet.com/GiaoTrinhChuanHSK 可悲、乐极生悲\n耗费、花费、浪费、消费、白费、费时、费心、费力、\n费\n费钱、费电、费劲、费尽心机\n完美的胜利",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-044",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-045",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-05-01",
+      "lessonId": "hsk6t1-lesson-05",
+      "lessonNumber": 5,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 你为什么学习汉语？请从下面的选项中找出答案，如果都不是你的答案，请",
+        "Phan 在横线上补充说明。",
+        "khoi dong",
+        "3",
+        "为了找工作 大学的专业是中文",
+        "为了在中国旅行 我有中国朋友",
+        "你好",
+        "HELLO",
+        "对汉语感兴趣 为了显得很酷",
+        "其他原因：",
+        "想一想下列词语之间有什么联系。",
+        "原文、原来、原先、原地、原因、原有、原价、原版、",
+        "原",
+        "原始、原形、原状、原意",
+        "学员、服务员、售货员、售票员、演员、人员、职员、",
+        "员",
+        "运动员、店员、船员、员工",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 动力、精力、能力、压力、财力、脑力、体力、听力、",
+        "力",
+        "努力、尽力、出力、用力、力气、力量",
+        "持久、悠久、不久、长久、多久、好久、许久、永久、",
+        "久",
+        "久远、久别、日久天长",
+        "oon Aeu Sun u Aq pss",
+        "5",
+        "学",
+        "门"
+      ],
+      "contentOcr": "热身 你为什么学习汉语？请从下面的选项中找出答案，如果都不是你的答案，请\nPhan 在横线上补充说明。\nkhoi dong\n3\n为了找工作 大学的专业是中文\n为了在中国旅行 我有中国朋友\n你好\nHELLO\n对汉语感兴趣 为了显得很酷\n其他原因：\n想一想下列词语之间有什么联系。\n原文、原来、原先、原地、原因、原有、原价、原版、\n原\n原始、原形、原状、原意\n学员、服务员、售货员、售票员、演员、人员、职员、\n员\n运动员、店员、船员、员工\nwww.nhantriviet.com/GiaoTrinhChuanHSK 动力、精力、能力、压力、财力、脑力、体力、听力、\n力\n努力、尽力、出力、用力、力气、力量\n持久、悠久、不久、长久、多久、好久、许久、永久、\n久\n久远、久别、日久天长\noon Aeu Sun u Aq pss\n5\n学\n门",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-054",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-055",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-055",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-055",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-055",
+          "rowIndex": 3
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-06-01",
+      "lessonId": "hsk6t1-lesson-06",
+      "lessonNumber": 6,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 当你到了一个新环境时（比如转学到一个新的班级、刚加入一个新的球队或",
+        "Phan 团体、第一天工作等等），曾经受到热情欢迎还是冷淡对待？具体说一说你",
+        "khoi dong 当时的感受。",
+        "想一想下列词语之间有什么联系。",
+        "老手、新手、对手、帮手、高手、巧手、人手、生手、",
+        "手",
+        "歌手、好手、快手、能手、多面手",
+        "脸色、面色、气色、神色、喜色、眼色、变色、不动",
+        "色",
+        "声色、大惊失色、眉飞色舞",
+        "边缘化、丑化、美化、弱化、淡化、强化、软化、硬化、",
+        "化",
+        "绿化、多样化、大众化、现代化",
+        "旧式、老式、新式、中式、西式、欧式、美式、飞跃式、",
+        "式 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "花园式、家庭式",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "热身1 当你到了一个新环境时（比如转学到一个新的班级、刚加入一个新的球队或\nPhan 团体、第一天工作等等），曾经受到热情欢迎还是冷淡对待？具体说一说你\nkhoi dong 当时的感受。\n想一想下列词语之间有什么联系。\n老手、新手、对手、帮手、高手、巧手、人手、生手、\n手\n歌手、好手、快手、能手、多面手\n脸色、面色、气色、神色、喜色、眼色、变色、不动\n色\n声色、大惊失色、眉飞色舞\n边缘化、丑化、美化、弱化、淡化、强化、软化、硬化、\n化\n绿化、多样化、大众化、现代化\n旧式、老式、新式、中式、西式、欧式、美式、飞跃式、\n式 www.nhantriviet.com/GiaoTrinhChuanHSK\n花园式、家庭式\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-065",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-066",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-066",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-07-01",
+      "lessonId": "hsk6t1-lesson-07",
+      "lessonNumber": 7,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 当你在为一件事情犹豫不决时，有的人却能很快就做出正确的决定。这种做",
+        "Phan 决定的能力是怎么得来的呢？请在下列选项中选出你认为正确的答案，或者",
+        "kh?i dong 在横线上做出补充。",
+        "生下来就有的 通过不断实践得到的",
+        "在学校里学习的 在不断失败中学习到的",
+        "在不确定中提升了决策能力 性格不同造成的",
+        "补充：",
+        "想一想下列词语之间有什么联系。",
+        "做 做主、做伴、做客、做官、做人、做东、做演员",
+        "悲观、乐观、主观、客观、人生观、世界观、",
+        "观",
+        "历史观、观点、观念",
+        "www.nhantriviet.com/GiaoTrinhChuanHsK 悔恨、悔改、悔过、悔婚、悔不当初、悔过自新、",
+        "悔",
+        "反悔、后悔、追悔",
+        "勇于、急于、长于、乐于、苦于、难于、善于、",
+        "于",
+        "安于、敢于、属于、在于",
+        "7",
+        "我",
+        "的",
+        "人"
+      ],
+      "contentOcr": "热身 当你在为一件事情犹豫不决时，有的人却能很快就做出正确的决定。这种做\nPhan 决定的能力是怎么得来的呢？请在下列选项中选出你认为正确的答案，或者\nkh?i dong 在横线上做出补充。\n生下来就有的 通过不断实践得到的\n在学校里学习的 在不断失败中学习到的\n在不确定中提升了决策能力 性格不同造成的\n补充：\n想一想下列词语之间有什么联系。\n做 做主、做伴、做客、做官、做人、做东、做演员\n悲观、乐观、主观、客观、人生观、世界观、\n观\n历史观、观点、观念\nwww.nhantriviet.com/GiaoTrinhChuanHsK 悔恨、悔改、悔过、悔婚、悔不当初、悔过自新、\n悔\n反悔、后悔、追悔\n勇于、急于、长于、乐于、苦于、难于、善于、\n于\n安于、敢于、属于、在于\n7\n我\n的\n人",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-074",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-075",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-075",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-075",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-075",
+          "rowIndex": 4
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-08-01",
+      "lessonId": "hsk6t1-lesson-08",
+      "lessonNumber": 8,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1",
+        "Phan 观点你同意哪一个？",
+        "khoi dong",
+        "不管你变化了多少，始终只有一个你。",
+        "以前的你跟现在的你并不是同一个人。",
+        "人的思想最重要，本体并不是最重要的。",
+        "想一想下列词语之间有什么联系。",
+        "确信、相信、自信、坚信、可信、听信、信用、",
+        "信",
+        "信心、信任、信念、半信半疑",
+        "发现、表现、实现、再现、体现、展现、呈现、",
+        "现",
+        "现象、活灵活现",
+        "口述、讲述、复述、记述、论述、转述、自述、",
+        "平",
+        "陈述、表述、描述、阐述、述说",
+        "改变、变化、变动、变换、变样、变形、转变、",
+        "变 渐变、巨变、演变、变心、变种、千变万化、 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "一成不变",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "热身1\nPhan 观点你同意哪一个？\nkhoi dong\n不管你变化了多少，始终只有一个你。\n以前的你跟现在的你并不是同一个人。\n人的思想最重要，本体并不是最重要的。\n想一想下列词语之间有什么联系。\n确信、相信、自信、坚信、可信、听信、信用、\n信\n信心、信任、信念、半信半疑\n发现、表现、实现、再现、体现、展现、呈现、\n现\n现象、活灵活现\n口述、讲述、复述、记述、论述、转述、自述、\n平\n陈述、表述、描述、阐述、述说\n改变、变化、变动、变换、变样、变形、转变、\n变 渐变、巨变、演变、变心、变种、千变万化、 www.nhantriviet.com/GiaoTrinhChuanHSK\n一成不变\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-085",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-086",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-086",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-09-01",
+      "lessonId": "hsk6t1-lesson-09",
+      "lessonNumber": 9,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 你经常玩儿手机吗？对你来说，手机有什么用途？请在下面的选项中划出，",
+        "Phan 如果还有其他用途，请在横线上补充。",
+        "kh?i dong",
+        "NEWS",
+        "打电话 上网看新闻",
+        "拍照 看时间",
+        "听音乐 玩儿游戏",
+        "补充：",
+        "想一想下列词语之间有什么联系。",
+        "好玩儿、好闻、好卖、好使、好用、好听、好感、",
+        "好（ho）",
+        "好受、好过",
+        "报到、报道、报考、报信、报时、报警、报告、",
+        "报",
+        "报表、预报、回报、上报、通报",
+        "转发、转车、转告、转给、转交、转手、转卖、",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 转",
+        "转送、转运、转租、中转",
+        "何不、何处、何种、何人、何时、何地、何必、",
+        "何",
+        "何况、如何、为何",
+        "不"
+      ],
+      "contentOcr": "热身 你经常玩儿手机吗？对你来说，手机有什么用途？请在下面的选项中划出，\nPhan 如果还有其他用途，请在横线上补充。\nkh?i dong\nNEWS\n打电话 上网看新闻\n拍照 看时间\n听音乐 玩儿游戏\n补充：\n想一想下列词语之间有什么联系。\n好玩儿、好闻、好卖、好使、好用、好听、好感、\n好（ho）\n好受、好过\n报到、报道、报考、报信、报时、报警、报告、\n报\n报表、预报、回报、上报、通报\n转发、转车、转告、转给、转交、转手、转卖、\nwww.nhantriviet.com/GiaoTrinhChuanHSK 转\n转送、转运、转租、中转\n何不、何处、何种、何人、何时、何地、何必、\n何\n何况、如何、为何\n不",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-096",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-097",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-10-01",
+      "lessonId": "hsk6t1-lesson-10",
+      "lessonNumber": 10,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 下面各种食材你认识吗？从下列选项中找出合适的答案填在图片右边并给",
+        "Phan 它们归类。",
+        "khoi dong ①柠檬蒜鸡葱芒果鱼西红柿姜土豆",
+        "水果：",
+        "蔬菜：",
+        "禽肉：",
+        "调料：",
+        "想一想下列词语之间有什么联系。",
+        "饮食、零食、面食、肉食、甜食、素食、进食、食物、",
+        "食",
+        "食品、食堂、食用、丰衣足食",
+        "明确、明显、明白、明明、明知、说明、证明、表明、",
+        "明",
+        "指明、查明、问明、简明、鲜明",
+        "父系、母系、体系、派系、太阳系、水系、星系、",
+        "系 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "系列、系统",
+        "食品、产品、药品、物品、奖品、礼品、商品、甜品、",
+        "品",
+        "用品、纪念品、农产品、日用品、消费品",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "热身1 下面各种食材你认识吗？从下列选项中找出合适的答案填在图片右边并给\nPhan 它们归类。\nkhoi dong ①柠檬蒜鸡葱芒果鱼西红柿姜土豆\n水果：\n蔬菜：\n禽肉：\n调料：\n想一想下列词语之间有什么联系。\n饮食、零食、面食、肉食、甜食、素食、进食、食物、\n食\n食品、食堂、食用、丰衣足食\n明确、明显、明白、明明、明知、说明、证明、表明、\n明\n指明、查明、问明、简明、鲜明\n父系、母系、体系、派系、太阳系、水系、星系、\n系 www.nhantriviet.com/GiaoTrinhChuanHSK\n系列、系统\n食品、产品、药品、物品、奖品、礼品、商品、甜品、\n品\n用品、纪念品、农产品、日用品、消费品\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-107",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-108",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-108",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-11-01",
+      "lessonId": "hsk6t1-lesson-11",
+      "lessonNumber": 11,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 你养过猫吗？猫喜欢做什么？请找出与下列图片相对应的内容。",
+        "Phan",
+        "khoi dong",
+        "A.在窗台上晒太阳 B.在门口迎接主人 C.抓老鼠",
+        "D.梳理自己的毛发 E.喝水 F.睡觉",
+        "想一想下列词语之间有什么联系。",
+        "好动、好客、好奇、好强、好学、好胜、好战、爱好、",
+        "好（hao)",
+        "喜好",
+        "整理、梳理、管理、办理、护理、修理、自理、处理、",
+        "理",
+        "代理、理财、理发、经理",
+        "养花、养草、养猫、养狗、养鸡、养鱼、养育、饲养、",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 养",
+        "喂养、放养",
+        "急切、急忙、急诊、急病、急救、急事、急需、急用、",
+        "急",
+        "着急、紧急",
+        "11",
+        "我不在时"
+      ],
+      "contentOcr": "热身1 你养过猫吗？猫喜欢做什么？请找出与下列图片相对应的内容。\nPhan\nkhoi dong\nA.在窗台上晒太阳 B.在门口迎接主人 C.抓老鼠\nD.梳理自己的毛发 E.喝水 F.睡觉\n想一想下列词语之间有什么联系。\n好动、好客、好奇、好强、好学、好胜、好战、爱好、\n好（hao)\n喜好\n整理、梳理、管理、办理、护理、修理、自理、处理、\n理\n代理、理财、理发、经理\n养花、养草、养猫、养狗、养鸡、养鱼、养育、饲养、\nwww.nhantriviet.com/GiaoTrinhChuanHSK 养\n喂养、放养\n急切、急忙、急诊、急病、急救、急事、急需、急用、\n急\n着急、紧急\n11\n我不在时",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-116",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-117",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-117",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-12-01",
+      "lessonId": "hsk6t1-lesson-12",
+      "lessonNumber": 12,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 下面的各种情况，你更习惯哪一种？请选择。",
+        "Phan",
+        "khdi dong",
+        "在非常安静的环境",
+        "在下雨声中睡觉。",
+        "中睡觉。",
+        "（当周围突然安静时） （当周围突然安静时）",
+        "自己也不说话了。 依旧大声说话。",
+        "学习时最好一点儿声音",
+        "学习时开着背景音乐。",
+        "都没有。",
+        "想一想下列词语之间有什么联系。",
+        "世界、外界、学界、政界、自然界、文艺界、体育界、",
+        "界",
+        "教育界、新闻界、各界",
+        "机器、乐器、电器、充电器、警报器、飞行器、器材、",
+        "器",
+        "器械、器具",
+        "停止、中止、防止、禁止、阻止、劝止、止步、止渴、",
+        "止",
+        "止咳、止疼、止血",
+        "呼唤、呼叫、呼喊、呼救、呼声、欢呼、高呼、惊呼、",
+        "呼",
+        "称呼、招呼",
+        "12",
+        "我们"
+      ],
+      "contentOcr": "热身1 下面的各种情况，你更习惯哪一种？请选择。\nPhan\nkhdi dong\n在非常安静的环境\n在下雨声中睡觉。\n中睡觉。\n（当周围突然安静时） （当周围突然安静时）\n自己也不说话了。 依旧大声说话。\n学习时最好一点儿声音\n学习时开着背景音乐。\n都没有。\n想一想下列词语之间有什么联系。\n世界、外界、学界、政界、自然界、文艺界、体育界、\n界\n教育界、新闻界、各界\n机器、乐器、电器、充电器、警报器、飞行器、器材、\n器\n器械、器具\n停止、中止、防止、禁止、阻止、劝止、止步、止渴、\n止\n止咳、止疼、止血\n呼唤、呼叫、呼喊、呼救、呼声、欢呼、高呼、惊呼、\n呼\n称呼、招呼\n12\n我们",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-126",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-127",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-127",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-13-01",
+      "lessonId": "hsk6t1-lesson-13",
+      "lessonNumber": 13,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 旅游指南包括哪些内容？请选择填空。",
+        "Phan",
+        "khdi dong 名胜古迹地理环境 人文特色 酒店住宿特色饮食交通路线",
+        "想一想下列词语之间有什么联系。",
+        "起初、最初、当初、年初、月初、初步、初春、初夏、",
+        "初",
+        "初学、初恋、初创",
+        "居住、居民、居留、居家、安居、邻居、定居、同居、",
+        "居",
+        "分居、群居",
+        "类别、类型、种类、分类、门类、同类、人类、鸟类、",
+        "类",
+        "肉类、鱼类、指南类、旅游类",
+        "问世、去世、人世、世界、世道、世事、世上、世态、",
+        "世",
+        "举世瞩目、与世无争、人情世故",
+        "13"
+      ],
+      "contentOcr": "热身 旅游指南包括哪些内容？请选择填空。\nPhan\nkhdi dong 名胜古迹地理环境 人文特色 酒店住宿特色饮食交通路线\n想一想下列词语之间有什么联系。\n起初、最初、当初、年初、月初、初步、初春、初夏、\n初\n初学、初恋、初创\n居住、居民、居留、居家、安居、邻居、定居、同居、\n居\n分居、群居\n类别、类型、种类、分类、门类、同类、人类、鸟类、\n类\n肉类、鱼类、指南类、旅游类\n问世、去世、人世、世界、世道、世事、世上、世态、\n世\n举世瞩目、与世无争、人情世故\n13",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-136",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-137",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-14-01",
+      "lessonId": "hsk6t1-lesson-14",
+      "lessonNumber": 14,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 你去过北极吗？你印象中北极人的生活是什么样的？请看图片了解一下。",
+        "Phan",
+        "khdi dong 西伯科花",
+        "白令海峡 北极熊 雪屋",
+        "(Bailing Haixiá) (beijixiong) (xuewu)",
+        "北极圈 因纽特人 打猎",
+        "(beijlquan) (Yinniuteren) (dolie)",
+        "想一想下列词语之间有什么联系。",
+        "评论、言论、谈论、议论、讨论、辩论、结论、理论、",
+        "论",
+        "争论、论述、论文",
+        "访问、访友、拜访、出访、回访、来访、探访、走访、",
+        "访",
+        "家访",
+        "差（cha) 差别、差距、差异、差价、反差、色差、温差、时差",
+        "惊奇、惊动、惊喜、惊慌、惊吓、惊叫、惊人、惊险、",
+        "惊",
+        "惊心、吃惊、震惊、受惊",
+        "HSK 标准教程6（上）"
+      ],
+      "contentOcr": "热身1 你去过北极吗？你印象中北极人的生活是什么样的？请看图片了解一下。\nPhan\nkhdi dong 西伯科花\n白令海峡 北极熊 雪屋\n(Bailing Haixiá) (beijixiong) (xuewu)\n北极圈 因纽特人 打猎\n(beijlquan) (Yinniuteren) (dolie)\n想一想下列词语之间有什么联系。\n评论、言论、谈论、议论、讨论、辩论、结论、理论、\n论\n争论、论述、论文\n访问、访友、拜访、出访、回访、来访、探访、走访、\n访\n家访\n差（cha) 差别、差距、差异、差价、反差、色差、温差、时差\n惊奇、惊动、惊喜、惊慌、惊吓、惊叫、惊人、惊险、\n惊\n惊心、吃惊、震惊、受惊\nHSK 标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-147",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-148",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-15-01",
+      "lessonId": "hsk6t1-lesson-15",
+      "lessonNumber": 15,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 给下面的词语选择合适的图片。",
+        "Phan",
+        "B",
+        "khoi dong",
+        "森林senlin ②小溪xioxi ③山脉shanmai",
+        "④梯田titian 峡谷xiagu 瀑布pubu",
+        "想一想下列词语之间有什么联系。",
+        "干旱、干燥、干草、干花、干渴、干裂、干枯、风干、",
+        "干",
+        "晒干、晾干",
+        "饮水、饮茶、饮酒、饮料、饮食、冷饮、热饮、畅饮、",
+        "饮",
+        "饮水思源",
+        "依旧、仍旧、照旧、古旧、旧书、旧物、旧地、旧居、",
+        "旧",
+        "旧日、旧时、旧式、旧地重游",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 拥有、具有、含有、设有、留有、持有、保有、享有、",
+        "有 公有、国有、占有、原有、只有、专有、稀有、私有、",
+        "富有",
+        "15",
+        "山",
+        "脉上的"
+      ],
+      "contentOcr": "热身 给下面的词语选择合适的图片。\nPhan\nB\nkhoi dong\n森林senlin ②小溪xioxi ③山脉shanmai\n④梯田titian 峡谷xiagu 瀑布pubu\n想一想下列词语之间有什么联系。\n干旱、干燥、干草、干花、干渴、干裂、干枯、风干、\n干\n晒干、晾干\n饮水、饮茶、饮酒、饮料、饮食、冷饮、热饮、畅饮、\n饮\n饮水思源\n依旧、仍旧、照旧、古旧、旧书、旧物、旧地、旧居、\n旧\n旧日、旧时、旧式、旧地重游\nwww.nhantriviet.com/GiaoTrinhChuanHSK 拥有、具有、含有、设有、留有、持有、保有、享有、\n有 公有、国有、占有、原有、只有、专有、稀有、私有、\n富有\n15\n山\n脉上的",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-156",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-157",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-157",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-157",
+          "rowIndex": 3
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-16-01",
+      "lessonId": "hsk6t1-lesson-16",
+      "lessonNumber": 16,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 看下列图片，熟悉相应的动物的名称。",
+        "Phan",
+        "khoi dong",
+        "雪豹 赤斑羚 喜马拉雅旱獭 藏狐",
+        "xuebao chibanling Ximalayahanta zanghu",
+        "大熊猫 大紫胸鹦鹉 藏羚羊 耗牛",
+        "daxi6ngmao dazixiongyingwu zanglingyang mdoniu",
+        "想一想下列词语之间有什么联系。",
+        "野生、野外、野地、野餐、野花、野草、野菜、野马、",
+        "野",
+        "野牛、野狗、野猫、野兽、山野、田野",
+        "消亡、死亡、灭亡、危亡、兴亡、存亡、伤亡、亡国、",
+        "亡",
+        "亡故、亡友",
+        "暴露、表露、透露、流露、吐露心声、原形毕露、",
+        "露",
+        "露头、出头露面、风餐露宿",
+        "严峻、严厉、严格、严寒、严肃、严正、严办、严明、",
+        "严",
+        "严冬、严重",
+        "HSK 标准教程6（上）"
+      ],
+      "contentOcr": "热身 看下列图片，熟悉相应的动物的名称。\nPhan\nkhoi dong\n雪豹 赤斑羚 喜马拉雅旱獭 藏狐\nxuebao chibanling Ximalayahanta zanghu\n大熊猫 大紫胸鹦鹉 藏羚羊 耗牛\ndaxi6ngmao dazixiongyingwu zanglingyang mdoniu\n想一想下列词语之间有什么联系。\n野生、野外、野地、野餐、野花、野草、野菜、野马、\n野\n野牛、野狗、野猫、野兽、山野、田野\n消亡、死亡、灭亡、危亡、兴亡、存亡、伤亡、亡国、\n亡\n亡故、亡友\n暴露、表露、透露、流露、吐露心声、原形毕露、\n露\n露头、出头露面、风餐露宿\n严峻、严厉、严格、严寒、严肃、严正、严办、严明、\n严\n严冬、严重\nHSK 标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-167",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-168",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-17-01",
+      "lessonId": "hsk6t1-lesson-17",
+      "lessonNumber": 17,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 结合图片思考下面的问题，选择你认为正确的答案。",
+        "Phan",
+        "khoi dong 人为什么很难一下子拍到苍蝇（cangying，conruoi）？",
+        "口人太笨了 口苍蝇的视力很好",
+        "苍蝇飞得很快 口苍蝇有预感",
+        "口在苍蝇眼里，人的动作太慢了",
+        "想一想下列词语之间有什么联系。",
+        "接收、吸收、查收、收入、收到、收据、收发、收看、",
+        "收",
+        "收留、收录、收取、收集、收听、收养",
+        "体型、类型、大型、中型、小型、微型、巨型、型号、",
+        "型",
+        "成型、发型、新型、轻型、血型、原型",
+        "感知、感受、感觉、感到、灵感、快感、敏感、痛感、",
+        "感",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 同感、预感、语感",
+        "速率、频率、心率、比率、概率、汇率、利率、出生率、",
+        "率",
+        "死亡率、就业率、失业率、离婚率",
+        "17",
+        "小",
+        "动",
+        "物"
+      ],
+      "contentOcr": "热身 结合图片思考下面的问题，选择你认为正确的答案。\nPhan\nkhoi dong 人为什么很难一下子拍到苍蝇（cangying，conruoi）？\n口人太笨了 口苍蝇的视力很好\n苍蝇飞得很快 口苍蝇有预感\n口在苍蝇眼里，人的动作太慢了\n想一想下列词语之间有什么联系。\n接收、吸收、查收、收入、收到、收据、收发、收看、\n收\n收留、收录、收取、收集、收听、收养\n体型、类型、大型、中型、小型、微型、巨型、型号、\n型\n成型、发型、新型、轻型、血型、原型\n感知、感受、感觉、感到、灵感、快感、敏感、痛感、\n感\nwww.nhantriviet.com/GiaoTrinhChuanHSK 同感、预感、语感\n速率、频率、心率、比率、概率、汇率、利率、出生率、\n率\n死亡率、就业率、失业率、离婚率\n17\n小\n动\n物",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-178",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-179",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-179",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-179",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-179",
+          "rowIndex": 4
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-18-01",
+      "lessonId": "hsk6t1-lesson-18",
+      "lessonNumber": 18,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 根据下图选择合适的名称填入相应的位置。",
+        "Phan",
+        "khdi dong 丝瓜（sigua） 瓜茎（gua jing） 花瓣（huaban）",
+        "瓜叶（guaye） 土壤（turang）",
+        "想一想下列词语之间有什么联系。",
+        "随即、随着、随身、随手、随后、随从、随便、",
+        "随",
+        "随时、随口、随意、随地、跟随",
+        "神奇、好奇、新奇、稀奇、奇怪、奇妙、奇特、",
+        "奇",
+        "奇景、奇谈、奇迹、千奇百怪",
+        "转眼、转身、转头、转脸、转念、转变、转学、",
+        "转（zhuan)",
+        "转为、转瞬、好转、回转",
+        "坠落、降落、飘落、掉落、散落、洒落、日落、",
+        "落",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 落后、落下、落花、落叶、落地",
+        "18",
+        "神",
+        "奇",
+        "的",
+        "丝瓜"
+      ],
+      "contentOcr": "热身 根据下图选择合适的名称填入相应的位置。\nPhan\nkhdi dong 丝瓜（sigua） 瓜茎（gua jing） 花瓣（huaban）\n瓜叶（guaye） 土壤（turang）\n想一想下列词语之间有什么联系。\n随即、随着、随身、随手、随后、随从、随便、\n随\n随时、随口、随意、随地、跟随\n神奇、好奇、新奇、稀奇、奇怪、奇妙、奇特、\n奇\n奇景、奇谈、奇迹、千奇百怪\n转眼、转身、转头、转脸、转念、转变、转学、\n转（zhuan)\n转为、转瞬、好转、回转\n坠落、降落、飘落、掉落、散落、洒落、日落、\n落\nwww.nhantriviet.com/GiaoTrinhChuanHSK 落后、落下、落花、落叶、落地\n18\n神\n奇\n的\n丝瓜",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-188",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-189",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-189",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-189",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-189",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-189",
+          "rowIndex": 5
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-19-01",
+      "lessonId": "hsk6t1-lesson-19",
+      "lessonNumber": 19,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身 对照图片熟悉下列生物名称。",
+        "Phan",
+        "khoi dong",
+        "蛤蜊（géli） 蚌（bang） 蟹（xiè)",
+        "贝壳（beiké） 红冠蠕虫（hongguanruchong）",
+        "想一想下列词语之间有什么联系。",
+        "质疑、怀疑、多疑、生疑、可疑、无疑、猜疑、疑惑、",
+        "疑",
+        "疑心、疑点、疑难、疑问、半信半疑",
+        "地壳、地方、地图、地点、地球、地址、地理、地区、",
+        "地",
+        "地震、当地、陆地、土地、耕地",
+        "裂缝、裂开、裂口、裂片、分裂、干裂、破裂、",
+        "裂",
+        "四分五裂",
+        "探究、探求、探路、探索、探明、探讨、探险、探听、",
+        "探",
+        "试探",
+        "HSK",
+        "标准教程6（上）"
+      ],
+      "contentOcr": "热身 对照图片熟悉下列生物名称。\nPhan\nkhoi dong\n蛤蜊（géli） 蚌（bang） 蟹（xiè)\n贝壳（beiké） 红冠蠕虫（hongguanruchong）\n想一想下列词语之间有什么联系。\n质疑、怀疑、多疑、生疑、可疑、无疑、猜疑、疑惑、\n疑\n疑心、疑点、疑难、疑问、半信半疑\n地壳、地方、地图、地点、地球、地址、地理、地区、\n地\n地震、当地、陆地、土地、耕地\n裂缝、裂开、裂口、裂片、分裂、干裂、破裂、\n裂\n四分五裂\n探究、探求、探路、探索、探明、探讨、探险、探听、\n探\n试探\nHSK\n标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-197",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-198",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-198",
+          "rowIndex": 2
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-warmup-20-01",
+      "lessonId": "hsk6t1-lesson-20",
+      "lessonNumber": 20,
+      "type": "warmup",
+      "labelZh": "热身",
+      "contentOcrLines": [
+        "热身1 根据下面这幅图，选择合适的词语在短文中填空。",
+        "Phan",
+        "khoi dong 母鸡鸡仔（zi）鸡窝（wo）找食跟随",
+        "旁的草地上，一只 正带着一群小",
+        "处 吃，那些小鸡 妈妈走来走去，可爱极了。",
+        "想一想下列词语之间有什么联系。",
+        "得知、得到、得分、得力、得空、得救、得胜、得闲、",
+        "得",
+        "难得、取得、获得、赢得、求之不得、一举两得",
+        "久远、长远、深远、遥远、永远、远古、远见、",
+        "远",
+        "源远流长、为期不远",
+        "金子、金矿、金块、金条、黄金、纯金、金钱、美金、",
+        "金",
+        "资金、礼金、租金、押金、奖金、现金、金融",
+        "身强力壮、壮大、壮实、粗壮、健壮、精壮、少壮、",
+        "壮 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "壮年、茁壮、兵强马壮",
+        "HSK 标准教程6（上）"
+      ],
+      "contentOcr": "热身1 根据下面这幅图，选择合适的词语在短文中填空。\nPhan\nkhoi dong 母鸡鸡仔（zi）鸡窝（wo）找食跟随\n旁的草地上，一只 正带着一群小\n处 吃，那些小鸡 妈妈走来走去，可爱极了。\n想一想下列词语之间有什么联系。\n得知、得到、得分、得力、得空、得救、得胜、得闲、\n得\n难得、取得、获得、赢得、求之不得、一举两得\n久远、长远、深远、遥远、永远、远古、远见、\n远\n源远流长、为期不远\n金子、金矿、金块、金条、黄金、纯金、金钱、美金、\n金\n资金、礼金、租金、押金、奖金、现金、金融\n身强力壮、壮大、壮实、粗壮、健壮、精壮、少壮、\n壮 www.nhantriviet.com/GiaoTrinhChuanHSK\n壮年、茁壮、兵强马壮\nHSK 标准教程6（上）",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-207",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-208",
+          "rowIndex": 1
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}

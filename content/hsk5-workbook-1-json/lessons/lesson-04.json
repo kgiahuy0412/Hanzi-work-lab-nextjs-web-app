@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-04",
+  "number": 4,
+  "unitId": "hsk5w1-unit-02",
+  "titleZh": "子路背米",
+  "sourcePdfPages": {
+    "start": 30,
+    "end": 36
+  },
+  "sourcePrintedPages": {
+    "start": 30,
+    "end": 36
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 30,
+      "end": 31
+    },
+    "reading": {
+      "start": 32,
+      "end": 35
+    },
+    "writing": {
+      "start": 36,
+      "end": 36
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-04",
+    "hsk5w1-reading-block-04",
+    "hsk5w1-writing-block-04"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0097",
+    "hsk5w1-exercise-0098",
+    "hsk5w1-exercise-0099",
+    "hsk5w1-exercise-0100",
+    "hsk5w1-exercise-0101",
+    "hsk5w1-exercise-0102",
+    "hsk5w1-exercise-0103",
+    "hsk5w1-exercise-0104",
+    "hsk5w1-exercise-0105",
+    "hsk5w1-exercise-0106",
+    "hsk5w1-exercise-0107",
+    "hsk5w1-exercise-0108",
+    "hsk5w1-exercise-0109",
+    "hsk5w1-exercise-0110",
+    "hsk5w1-exercise-0111",
+    "hsk5w1-exercise-0112",
+    "hsk5w1-exercise-0113",
+    "hsk5w1-exercise-0114",
+    "hsk5w1-exercise-0115",
+    "hsk5w1-exercise-0116",
+    "hsk5w1-exercise-0117",
+    "hsk5w1-exercise-0118",
+    "hsk5w1-exercise-0119",
+    "hsk5w1-exercise-0120",
+    "hsk5w1-exercise-0121",
+    "hsk5w1-exercise-0122",
+    "hsk5w1-exercise-0123",
+    "hsk5w1-exercise-0124",
+    "hsk5w1-exercise-0125",
+    "hsk5w1-exercise-0126",
+    "hsk5w1-exercise-0127",
+    "hsk5w1-exercise-0128"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

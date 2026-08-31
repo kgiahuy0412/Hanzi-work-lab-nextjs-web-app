@@ -1,0 +1,129 @@
+{
+  "id": "hsk6t1-lesson-05",
+  "number": 5,
+  "unitId": "hsk6t1-unit-02",
+  "titleZh": "学一门外语需要理由吗？",
+  "titleVi": "Học ngoại ngữ cần lý do ư?",
+  "sourcePdfPages": {
+    "start": 54,
+    "end": 64
+  },
+  "sourcePrintedPages": {
+    "start": 54,
+    "end": 64
+  },
+  "audioTracks": [
+    "05-1",
+    "05-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 54,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身 你为什么学习汉语？请从下面的选项中找出答案，如果都不是你的答案，请"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 55,
+      "rowIndex": 4,
+      "matchedTextOcr": "课文学一门外语需要理由吗（832字）05-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 57,
+      "rowIndex": 28,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 60,
+      "rowIndex": 8,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 62,
+      "rowIndex": 15,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 63,
+      "rowIndex": 2,
+      "matchedTextOcr": "扩展 病句类型：成分残缺"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-05-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-05-01",
+    "hsk6t1-annotation-05-01",
+    "hsk6t1-practice-05-01",
+    "hsk6t1-application-05-01",
+    "hsk6t1-extension-05-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0032",
+    "hsk6t1-lexeme-0037",
+    "hsk6t1-lexeme-0081",
+    "hsk6t1-lexeme-0112",
+    "hsk6t1-lexeme-0139",
+    "hsk6t1-lexeme-0141",
+    "hsk6t1-lexeme-0158",
+    "hsk6t1-lexeme-0171",
+    "hsk6t1-lexeme-0174",
+    "hsk6t1-lexeme-0182",
+    "hsk6t1-lexeme-0191",
+    "hsk6t1-lexeme-0233",
+    "hsk6t1-lexeme-0255",
+    "hsk6t1-lexeme-0262",
+    "hsk6t1-lexeme-0291",
+    "hsk6t1-lexeme-0302",
+    "hsk6t1-lexeme-0304",
+    "hsk6t1-lexeme-0342",
+    "hsk6t1-lexeme-0347",
+    "hsk6t1-lexeme-0349",
+    "hsk6t1-lexeme-0386",
+    "hsk6t1-lexeme-0388",
+    "hsk6t1-lexeme-0394",
+    "hsk6t1-lexeme-0451",
+    "hsk6t1-lexeme-0496",
+    "hsk6t1-lexeme-0502",
+    "hsk6t1-lexeme-0536",
+    "hsk6t1-lexeme-0555",
+    "hsk6t1-lexeme-0565",
+    "hsk6t1-lexeme-0574",
+    "hsk6t1-lexeme-0575",
+    "hsk6t1-lexeme-0614",
+    "hsk6t1-lexeme-0623",
+    "hsk6t1-lexeme-0674",
+    "hsk6t1-lexeme-0714",
+    "hsk6t1-lexeme-0718",
+    "hsk6t1-lexeme-0722",
+    "hsk6t1-lexeme-0758",
+    "hsk6t1-lexeme-0774",
+    "hsk6t1-lexeme-0811",
+    "hsk6t1-lexeme-0842",
+    "hsk6t1-lexeme-0866",
+    "hsk6t1-lexeme-0876"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-018"
+  ],
+  "vocabularyCount": 43,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 44,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

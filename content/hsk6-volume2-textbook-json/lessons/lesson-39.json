@@ -1,0 +1,156 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-39",
+  "lessonNumber": 39,
+  "status": "review",
+  "title": {
+    "zh": "互联网时代的生活",
+    "pinyin": "hù lián wǎng shí dài de shēng huó",
+    "vi": "Cuộc sống trong thời đại Internet"
+  },
+  "themeRef": "hsk6-v2-theme-10",
+  "source": {
+    "pdfPages": [
+      198,
+      207
+    ],
+    "printedPages": [
+      198,
+      207
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-198",
+      "hsk6-v2-source-page-199",
+      "hsk6-v2-source-page-200",
+      "hsk6-v2-source-page-201",
+      "hsk6-v2-source-page-202",
+      "hsk6-v2-source-page-203",
+      "hsk6-v2-source-page-204",
+      "hsk6-v2-source-page-205",
+      "hsk6-v2-source-page-206",
+      "hsk6-v2-source-page-207"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l39-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l39-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l39-v001",
+        "hsk6-v2-l39-v002",
+        "hsk6-v2-l39-v003",
+        "hsk6-v2-l39-v004",
+        "hsk6-v2-l39-v005",
+        "hsk6-v2-l39-v006",
+        "hsk6-v2-l39-v007",
+        "hsk6-v2-l39-v008",
+        "hsk6-v2-l39-v009",
+        "hsk6-v2-l39-v010",
+        "hsk6-v2-l39-v011",
+        "hsk6-v2-l39-v012",
+        "hsk6-v2-l39-v013",
+        "hsk6-v2-l39-v014",
+        "hsk6-v2-l39-v015",
+        "hsk6-v2-l39-v016",
+        "hsk6-v2-l39-v017",
+        "hsk6-v2-l39-v018",
+        "hsk6-v2-l39-v019",
+        "hsk6-v2-l39-v020",
+        "hsk6-v2-l39-v021",
+        "hsk6-v2-l39-v022",
+        "hsk6-v2-l39-v023",
+        "hsk6-v2-l39-v024",
+        "hsk6-v2-l39-v025",
+        "hsk6-v2-l39-v026",
+        "hsk6-v2-l39-v027",
+        "hsk6-v2-l39-v028",
+        "hsk6-v2-l39-v029",
+        "hsk6-v2-l39-v030",
+        "hsk6-v2-l39-v031",
+        "hsk6-v2-l39-v032",
+        "hsk6-v2-l39-v033",
+        "hsk6-v2-l39-v034",
+        "hsk6-v2-l39-v035",
+        "hsk6-v2-l39-v036",
+        "hsk6-v2-l39-v037",
+        "hsk6-v2-l39-v038",
+        "hsk6-v2-l39-v039",
+        "hsk6-v2-l39-v040",
+        "hsk6-v2-l39-v041",
+        "hsk6-v2-l39-v042",
+        "hsk6-v2-l39-v043",
+        "hsk6-v2-l39-v044",
+        "hsk6-v2-l39-v045",
+        "hsk6-v2-l39-v046",
+        "hsk6-v2-l39-v047",
+        "hsk6-v2-l39-v048"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l39-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l39-lp-01",
+        "hsk6-v2-l39-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l39-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l39-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l39-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l39-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": [
+        "hsk6-v2-l39-practice"
+      ]
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l39-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l39-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

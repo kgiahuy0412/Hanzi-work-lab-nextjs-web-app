@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "hsk6-volume2-textbook-lesson.schema.json",
+  "title": "HSK 6 Standard Course Volume 2 lesson",
+  "type": "object",
+  "required": [
+    "schemaVersion",
+    "id",
+    "lessonNumber",
+    "title",
+    "source",
+    "sections",
+    "editorial"
+  ],
+  "properties": {
+    "schemaVersion": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "lessonNumber": {
+      "type": "integer",
+      "minimum": 21,
+      "maximum": 40
+    },
+    "status": {
+      "enum": [
+        "review",
+        "ready"
+      ]
+    },
+    "title": {
+      "type": "object",
+      "required": [
+        "zh",
+        "pinyin",
+        "vi"
+      ],
+      "properties": {
+        "zh": {
+          "type": "string"
+        },
+        "pinyin": {
+          "type": "string"
+        },
+        "vi": {
+          "type": "string"
+        }
+      }
+    },
+    "themeRef": {
+      "type": "string"
+    },
+    "source": {
+      "type": "object"
+    },
+    "sections": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "editorial": {
+      "type": "object"
+    }
+  }
+}

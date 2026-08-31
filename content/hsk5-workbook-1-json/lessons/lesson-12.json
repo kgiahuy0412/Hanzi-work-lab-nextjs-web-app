@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-12",
+  "number": 12,
+  "unitId": "hsk5w1-unit-04",
+  "titleZh": "海外用户玩儿微信",
+  "sourcePdfPages": {
+    "start": 88,
+    "end": 94
+  },
+  "sourcePrintedPages": {
+    "start": 88,
+    "end": 94
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 88,
+      "end": 89
+    },
+    "reading": {
+      "start": 90,
+      "end": 93
+    },
+    "writing": {
+      "start": 94,
+      "end": 94
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-12",
+    "hsk5w1-reading-block-12",
+    "hsk5w1-writing-block-12"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0353",
+    "hsk5w1-exercise-0354",
+    "hsk5w1-exercise-0355",
+    "hsk5w1-exercise-0356",
+    "hsk5w1-exercise-0357",
+    "hsk5w1-exercise-0358",
+    "hsk5w1-exercise-0359",
+    "hsk5w1-exercise-0360",
+    "hsk5w1-exercise-0361",
+    "hsk5w1-exercise-0362",
+    "hsk5w1-exercise-0363",
+    "hsk5w1-exercise-0364",
+    "hsk5w1-exercise-0365",
+    "hsk5w1-exercise-0366",
+    "hsk5w1-exercise-0367",
+    "hsk5w1-exercise-0368",
+    "hsk5w1-exercise-0369",
+    "hsk5w1-exercise-0370",
+    "hsk5w1-exercise-0371",
+    "hsk5w1-exercise-0372",
+    "hsk5w1-exercise-0373",
+    "hsk5w1-exercise-0374",
+    "hsk5w1-exercise-0375",
+    "hsk5w1-exercise-0376",
+    "hsk5w1-exercise-0377",
+    "hsk5w1-exercise-0378",
+    "hsk5w1-exercise-0379",
+    "hsk5w1-exercise-0380",
+    "hsk5w1-exercise-0381",
+    "hsk5w1-exercise-0382",
+    "hsk5w1-exercise-0383",
+    "hsk5w1-exercise-0384"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

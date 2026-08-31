@@ -56,12 +56,14 @@ test("HSK 5 lower textbook converts all lessons into the HSK 1 learning shape", 
 
   const hsk5 = curriculumModule.HSK_CURRICULUM.find((level) => level.id === "hsk-5");
   assert.ok(hsk5);
-  assert.equal(hsk5.topics.length, 6);
-  assert.equal(hsk5.topics.flatMap((topic) => topic.lessons).length, 18);
-  assert.ok(hsk5.description.includes("Bài 19–36"));
-  assert.ok(hsk5.topics.flatMap((topic) => topic.lessons).every((item) => item.kind === "textbook" && item.available));
-  assert.equal(hsk5.topics[0].lessons[0].id, lesson.id);
-  assert.equal(hsk5.topics[0].lessons[0].writing, hsk5.topics[0].lessons[0].vocabulary);
+  assert.equal(hsk5.topics.length, 12);
+  assert.equal(hsk5.topics.flatMap((topic) => topic.lessons).length, 36);
+  assert.ok(hsk5.description.includes("Giáo trình chuẩn HSK 5 - Tập 2"));
+  const textbookLessons = hsk5.topics.flatMap((topic) => topic.lessons).filter((item) => item.kind === "textbook");
+  assert.equal(textbookLessons.length, 18);
+  assert.ok(textbookLessons.every((item) => item.available));
+  assert.equal(textbookLessons[0].id, lesson.id);
+  assert.equal(textbookLessons[0].writing, textbookLessons[0].vocabulary);
 
   const sections = guidedModule.buildHskGuidedSections(lesson).map((section) => section.label);
   assert.deepEqual(sections, ["Giới thiệu", "Từ vựng", "Ngữ pháp", "Hội thoại", "Phát âm", "Luyện viết", "Luyện tập", "Hoàn thành"]);

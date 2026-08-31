@@ -1,0 +1,129 @@
+{
+  "id": "hsk6t1-lesson-07",
+  "number": 7,
+  "unitId": "hsk6t1-unit-02",
+  "titleZh": "我的人生我做主。",
+  "titleVi": "Tôi làm chủ cuộc đời tôi.",
+  "sourcePdfPages": {
+    "start": 74,
+    "end": 84
+  },
+  "sourcePrintedPages": {
+    "start": 74,
+    "end": 84
+  },
+  "audioTracks": [
+    "07-1",
+    "07-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 74,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身 当你在为一件事情犹豫不决时，有的人却能很快就做出正确的决定。这种做"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 75,
+      "rowIndex": 5,
+      "matchedTextOcr": "课文我的人生我做主（739字）07-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 77,
+      "rowIndex": 36,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 80,
+      "rowIndex": 3,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 82,
+      "rowIndex": 13,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 82,
+      "rowIndex": 20,
+      "matchedTextOcr": "扩展 病句类型：语序不当"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-07-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-07-01",
+    "hsk6t1-annotation-07-01",
+    "hsk6t1-practice-07-01",
+    "hsk6t1-application-07-01",
+    "hsk6t1-extension-07-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0015",
+    "hsk6t1-lexeme-0019",
+    "hsk6t1-lexeme-0051",
+    "hsk6t1-lexeme-0070",
+    "hsk6t1-lexeme-0099",
+    "hsk6t1-lexeme-0100",
+    "hsk6t1-lexeme-0117",
+    "hsk6t1-lexeme-0138",
+    "hsk6t1-lexeme-0151",
+    "hsk6t1-lexeme-0209",
+    "hsk6t1-lexeme-0257",
+    "hsk6t1-lexeme-0263",
+    "hsk6t1-lexeme-0297",
+    "hsk6t1-lexeme-0305",
+    "hsk6t1-lexeme-0308",
+    "hsk6t1-lexeme-0312",
+    "hsk6t1-lexeme-0348",
+    "hsk6t1-lexeme-0360",
+    "hsk6t1-lexeme-0366",
+    "hsk6t1-lexeme-0374",
+    "hsk6t1-lexeme-0397",
+    "hsk6t1-lexeme-0403",
+    "hsk6t1-lexeme-0411",
+    "hsk6t1-lexeme-0450",
+    "hsk6t1-lexeme-0459",
+    "hsk6t1-lexeme-0549",
+    "hsk6t1-lexeme-0560",
+    "hsk6t1-lexeme-0569",
+    "hsk6t1-lexeme-0570",
+    "hsk6t1-lexeme-0639",
+    "hsk6t1-lexeme-0661",
+    "hsk6t1-lexeme-0666",
+    "hsk6t1-lexeme-0681",
+    "hsk6t1-lexeme-0707",
+    "hsk6t1-lexeme-0764",
+    "hsk6t1-lexeme-0767",
+    "hsk6t1-lexeme-0768",
+    "hsk6t1-lexeme-0776",
+    "hsk6t1-lexeme-0779",
+    "hsk6t1-lexeme-0781",
+    "hsk6t1-lexeme-0797",
+    "hsk6t1-lexeme-0830",
+    "hsk6t1-lexeme-0850",
+    "hsk6t1-lexeme-0852",
+    "hsk6t1-lexeme-0894"
+  ],
+  "supplementalLexemeIds": [],
+  "vocabularyCount": 45,
+  "supplementalVocabularyCount": 0,
+  "allVocabularyCount": 45,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

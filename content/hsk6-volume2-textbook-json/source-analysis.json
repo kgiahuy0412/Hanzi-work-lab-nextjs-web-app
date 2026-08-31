@@ -1,0 +1,47 @@
+{
+  "schemaVersion": "1.0.0",
+  "source": {
+    "fileName": "source.pdf",
+    "originalPath": "C:\\Users\\DELL\\Downloads\\HSK6-20260830T131444Z-1-001\\HSK6\\HSK 6 Sách giáo khoa 2.pdf",
+    "workingCopyPath": "D:\\Code\\HiMi\\Hanzi-work-lab-nextjs-web-app\\tmp\\pdfs\\hsk6-volume2-analysis\\source.pdf",
+    "sha256": "9037a75c5ea1ccdf6ae9ea4f5e3fd9e1a4d4c32d6b89adc0e8de8837f33ddc38",
+    "pageCount": 257,
+    "pageSize": "approximately 572.6 x 807.9 pt",
+    "textLayer": false,
+    "scanDevice": "RICOH Aficio MP 9002"
+  },
+  "analysis": {
+    "book": "Giáo trình chuẩn HSK 6 - Tập 2",
+    "lessonNumbers": [
+      21,
+      40
+    ],
+    "lessonCount": 20,
+    "themeNumbers": [
+      6,
+      10
+    ],
+    "themeCount": 5,
+    "lessonPages": [
+      14,
+      218
+    ],
+    "vocabularyAppendixPages": [
+      219,
+      257
+    ],
+    "printedPageMatchesPdfPage": true
+  },
+  "method": {
+    "renderer": "Poppler pdftoppm at 130 DPI",
+    "ocr": "RapidOCR ONNX Runtime",
+    "pinyin": "generated with pypinyin from OCR/canonical Chinese text",
+    "titlesAndCurriculum": "manually transcribed from printed table of contents, pages 8-11"
+  },
+  "limitations": [
+    "PDF là ảnh scan nên toàn bộ bài khóa và nghĩa tiếng Việt cần được biên tập viên rà lại.",
+    "Pinyin tạo tự động có thể sai với từ đa âm.",
+    "Nghĩa tiếng Việt giữ dạng OCR thô và có thể có lỗi dấu hoặc xuống dòng.",
+    "Audio chỉ được tạo placeholder vì file MP3 không nằm trong PDF."
+  ]
+}

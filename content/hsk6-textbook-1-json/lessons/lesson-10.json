@@ -1,0 +1,136 @@
+{
+  "id": "hsk6t1-lesson-10",
+  "number": 10,
+  "unitId": "hsk6t1-unit-03",
+  "titleZh": "全球化视野中的中国饮食",
+  "titleVi": "Thức ăn Trung Quốc trong xu thế toàn cầu hóa",
+  "sourcePdfPages": {
+    "start": 107,
+    "end": 115
+  },
+  "sourcePrintedPages": {
+    "start": 107,
+    "end": 115
+  },
+  "audioTracks": [
+    "10-1",
+    "10-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 107,
+      "rowIndex": 4,
+      "matchedTextOcr": "热身1 下面各种食材你认识吗？从下列选项中找出合适的答案填在图片右边并给"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 108,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文全球化视野中的中国饮食（771字）10-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 110,
+      "rowIndex": 20,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 113,
+      "rowIndex": 2,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 115,
+      "rowIndex": 12,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 115,
+      "rowIndex": 18,
+      "matchedTextOcr": "扩展 词汇：熟悉下列地理方面的词语"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-10-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-10-01",
+    "hsk6t1-annotation-10-01",
+    "hsk6t1-practice-10-01",
+    "hsk6t1-application-10-01",
+    "hsk6t1-extension-10-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0007",
+    "hsk6t1-lexeme-0122",
+    "hsk6t1-lexeme-0126",
+    "hsk6t1-lexeme-0147",
+    "hsk6t1-lexeme-0154",
+    "hsk6t1-lexeme-0186",
+    "hsk6t1-lexeme-0195",
+    "hsk6t1-lexeme-0201",
+    "hsk6t1-lexeme-0247",
+    "hsk6t1-lexeme-0261",
+    "hsk6t1-lexeme-0276",
+    "hsk6t1-lexeme-0287",
+    "hsk6t1-lexeme-0295",
+    "hsk6t1-lexeme-0301",
+    "hsk6t1-lexeme-0310",
+    "hsk6t1-lexeme-0319",
+    "hsk6t1-lexeme-0321",
+    "hsk6t1-lexeme-0361",
+    "hsk6t1-lexeme-0369",
+    "hsk6t1-lexeme-0423",
+    "hsk6t1-lexeme-0425",
+    "hsk6t1-lexeme-0470",
+    "hsk6t1-lexeme-0480",
+    "hsk6t1-lexeme-0485",
+    "hsk6t1-lexeme-0487",
+    "hsk6t1-lexeme-0497",
+    "hsk6t1-lexeme-0498",
+    "hsk6t1-lexeme-0530",
+    "hsk6t1-lexeme-0532",
+    "hsk6t1-lexeme-0533",
+    "hsk6t1-lexeme-0552",
+    "hsk6t1-lexeme-0558",
+    "hsk6t1-lexeme-0604",
+    "hsk6t1-lexeme-0620",
+    "hsk6t1-lexeme-0638",
+    "hsk6t1-lexeme-0640",
+    "hsk6t1-lexeme-0641",
+    "hsk6t1-lexeme-0682",
+    "hsk6t1-lexeme-0690",
+    "hsk6t1-lexeme-0716",
+    "hsk6t1-lexeme-0763",
+    "hsk6t1-lexeme-0771",
+    "hsk6t1-lexeme-0783",
+    "hsk6t1-lexeme-0793",
+    "hsk6t1-lexeme-0799",
+    "hsk6t1-lexeme-0803",
+    "hsk6t1-lexeme-0818",
+    "hsk6t1-lexeme-0820",
+    "hsk6t1-lexeme-0833",
+    "hsk6t1-lexeme-0855"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-006"
+  ],
+  "vocabularyCount": 50,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 51,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

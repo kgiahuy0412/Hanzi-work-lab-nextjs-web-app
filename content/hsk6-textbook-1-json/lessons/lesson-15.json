@@ -1,0 +1,132 @@
+{
+  "id": "hsk6t1-lesson-15",
+  "number": 15,
+  "unitId": "hsk6t1-unit-04",
+  "titleZh": "山脉上的雕刻",
+  "titleVi": "Các tác phẩm điêu khắc trên dãy núi",
+  "sourcePdfPages": {
+    "start": 156,
+    "end": 166
+  },
+  "sourcePrintedPages": {
+    "start": 156,
+    "end": 166
+  },
+  "audioTracks": [
+    "15-1",
+    "15-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 156,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身 给下面的词语选择合适的图片。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 157,
+      "rowIndex": 4,
+      "matchedTextOcr": "课文 山脉上的雕刻（783字））15-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 159,
+      "rowIndex": 25,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 162,
+      "rowIndex": 3,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 164,
+      "rowIndex": 11,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 164,
+      "rowIndex": 18,
+      "matchedTextOcr": "扩展 病句类型：成分余"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-15-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-15-01",
+    "hsk6t1-annotation-15-01",
+    "hsk6t1-practice-15-01",
+    "hsk6t1-application-15-01",
+    "hsk6t1-extension-15-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0062",
+    "hsk6t1-lexeme-0071",
+    "hsk6t1-lexeme-0098",
+    "hsk6t1-lexeme-0115",
+    "hsk6t1-lexeme-0152",
+    "hsk6t1-lexeme-0162",
+    "hsk6t1-lexeme-0163",
+    "hsk6t1-lexeme-0223",
+    "hsk6t1-lexeme-0240",
+    "hsk6t1-lexeme-0245",
+    "hsk6t1-lexeme-0266",
+    "hsk6t1-lexeme-0267",
+    "hsk6t1-lexeme-0344",
+    "hsk6t1-lexeme-0373",
+    "hsk6t1-lexeme-0376",
+    "hsk6t1-lexeme-0396",
+    "hsk6t1-lexeme-0466",
+    "hsk6t1-lexeme-0482",
+    "hsk6t1-lexeme-0494",
+    "hsk6t1-lexeme-0504",
+    "hsk6t1-lexeme-0506",
+    "hsk6t1-lexeme-0524",
+    "hsk6t1-lexeme-0534",
+    "hsk6t1-lexeme-0567",
+    "hsk6t1-lexeme-0582",
+    "hsk6t1-lexeme-0586",
+    "hsk6t1-lexeme-0588",
+    "hsk6t1-lexeme-0592",
+    "hsk6t1-lexeme-0631",
+    "hsk6t1-lexeme-0668",
+    "hsk6t1-lexeme-0689",
+    "hsk6t1-lexeme-0709",
+    "hsk6t1-lexeme-0711",
+    "hsk6t1-lexeme-0720",
+    "hsk6t1-lexeme-0746",
+    "hsk6t1-lexeme-0757",
+    "hsk6t1-lexeme-0759",
+    "hsk6t1-lexeme-0769",
+    "hsk6t1-lexeme-0780",
+    "hsk6t1-lexeme-0822",
+    "hsk6t1-lexeme-0827",
+    "hsk6t1-lexeme-0853",
+    "hsk6t1-lexeme-0869",
+    "hsk6t1-lexeme-0871",
+    "hsk6t1-lexeme-0885",
+    "hsk6t1-lexeme-0888"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-012"
+  ],
+  "vocabularyCount": 46,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 47,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

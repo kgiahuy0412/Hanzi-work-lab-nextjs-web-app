@@ -1,0 +1,158 @@
+{
+  "$schema": "../schemas/textbook-lesson.schema.json",
+  "schemaVersion": "1.0.0",
+  "id": "hsk6-v2-lesson-34",
+  "lessonNumber": 34,
+  "status": "review",
+  "title": {
+    "zh": "为文物而生的人",
+    "pinyin": "wèi wén wù ér shēng de rén",
+    "vi": "Một người dành cả cuộc đời cho các di vật văn hóa"
+  },
+  "themeRef": "hsk6-v2-theme-09",
+  "source": {
+    "pdfPages": [
+      143,
+      153
+    ],
+    "printedPages": [
+      143,
+      153
+    ],
+    "sourcePageRefs": [
+      "hsk6-v2-source-page-143",
+      "hsk6-v2-source-page-144",
+      "hsk6-v2-source-page-145",
+      "hsk6-v2-source-page-146",
+      "hsk6-v2-source-page-147",
+      "hsk6-v2-source-page-148",
+      "hsk6-v2-source-page-149",
+      "hsk6-v2-source-page-150",
+      "hsk6-v2-source-page-151",
+      "hsk6-v2-source-page-152",
+      "hsk6-v2-source-page-153"
+    ]
+  },
+  "sections": [
+    {
+      "type": "warmup",
+      "contentRefs": [
+        "hsk6-v2-l34-warmup"
+      ]
+    },
+    {
+      "type": "article",
+      "contentRefs": [
+        "hsk6-v2-l34-article"
+      ]
+    },
+    {
+      "type": "vocabulary",
+      "contentRefs": [
+        "hsk6-v2-l34-v001",
+        "hsk6-v2-l34-v002",
+        "hsk6-v2-l34-v003",
+        "hsk6-v2-l34-v004",
+        "hsk6-v2-l34-v005",
+        "hsk6-v2-l34-v006",
+        "hsk6-v2-l34-v007",
+        "hsk6-v2-l34-v008",
+        "hsk6-v2-l34-v009",
+        "hsk6-v2-l34-v010",
+        "hsk6-v2-l34-v011",
+        "hsk6-v2-l34-v012",
+        "hsk6-v2-l34-v013",
+        "hsk6-v2-l34-v014",
+        "hsk6-v2-l34-v015",
+        "hsk6-v2-l34-v016",
+        "hsk6-v2-l34-v017",
+        "hsk6-v2-l34-v018",
+        "hsk6-v2-l34-v019",
+        "hsk6-v2-l34-v020",
+        "hsk6-v2-l34-v021",
+        "hsk6-v2-l34-v022",
+        "hsk6-v2-l34-v023",
+        "hsk6-v2-l34-v024",
+        "hsk6-v2-l34-v025",
+        "hsk6-v2-l34-v026",
+        "hsk6-v2-l34-v027",
+        "hsk6-v2-l34-v028",
+        "hsk6-v2-l34-v029",
+        "hsk6-v2-l34-v030",
+        "hsk6-v2-l34-v031",
+        "hsk6-v2-l34-v032",
+        "hsk6-v2-l34-v033",
+        "hsk6-v2-l34-v034",
+        "hsk6-v2-l34-v035",
+        "hsk6-v2-l34-v036",
+        "hsk6-v2-l34-v037",
+        "hsk6-v2-l34-v038",
+        "hsk6-v2-l34-v039",
+        "hsk6-v2-l34-v040",
+        "hsk6-v2-l34-v041",
+        "hsk6-v2-l34-v042",
+        "hsk6-v2-l34-v043",
+        "hsk6-v2-l34-v044",
+        "hsk6-v2-l34-v045",
+        "hsk6-v2-l34-v046",
+        "hsk6-v2-l34-v047",
+        "hsk6-v2-l34-v048",
+        "hsk6-v2-l34-v049",
+        "hsk6-v2-l34-v050",
+        "hsk6-v2-l34-v051"
+      ]
+    },
+    {
+      "type": "integrated-notes",
+      "contentRefs": [
+        "hsk6-v2-l34-integrated-notes"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l34-lp-01",
+        "hsk6-v2-l34-lp-02"
+      ]
+    },
+    {
+      "type": "word-distinction",
+      "contentRefs": [
+        "hsk6-v2-l34-word-distinction"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l34-lp-03"
+      ]
+    },
+    {
+      "type": "discourse-rhetoric",
+      "contentRefs": [
+        "hsk6-v2-l34-discourse-rhetoric"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l34-lp-04"
+      ]
+    },
+    {
+      "type": "practice",
+      "contentRefs": []
+    },
+    {
+      "type": "extension",
+      "contentRefs": [
+        "hsk6-v2-l34-extension"
+      ],
+      "languagePointRefs": [
+        "hsk6-v2-l34-lp-05"
+      ]
+    }
+  ],
+  "editorial": {
+    "publicationReady": false,
+    "articleOcrStatus": "review",
+    "vocabularyOcrStatus": "review",
+    "answerStatus": "not-structured",
+    "requiredActions": [
+      "Đối chiếu OCR bài khóa và nghĩa tiếng Việt với PDF.",
+      "Rà lại số thứ tự từ mới bị OCR bỏ sót.",
+      "Bổ sung các file MP3 theo mã track nếu có quyền sử dụng."
+    ]
+  }
+}

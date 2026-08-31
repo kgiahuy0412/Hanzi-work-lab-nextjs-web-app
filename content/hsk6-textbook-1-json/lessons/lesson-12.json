@@ -1,0 +1,129 @@
+{
+  "id": "hsk6t1-lesson-12",
+  "number": 12,
+  "unitId": "hsk6t1-unit-03",
+  "titleZh": "我们都爱白噪音。",
+  "titleVi": "Chúng ta đều yêu tiếng ồn trắng.",
+  "sourcePdfPages": {
+    "start": 126,
+    "end": 134
+  },
+  "sourcePrintedPages": {
+    "start": 126,
+    "end": 134
+  },
+  "audioTracks": [
+    "12-1",
+    "12-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 126,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1 下面的各种情况，你更习惯哪一种？请选择。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 127,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文我们都爱白噪音（835字）12-1 都爱白"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 129,
+      "rowIndex": 23,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 132,
+      "rowIndex": 2,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 134,
+      "rowIndex": 3,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 134,
+      "rowIndex": 8,
+      "matchedTextOcr": "扩展 词汇：熟悉下列词语搭配"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-12-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-12-01",
+    "hsk6t1-annotation-12-01",
+    "hsk6t1-practice-12-01",
+    "hsk6t1-application-12-01",
+    "hsk6t1-extension-12-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0004",
+    "hsk6t1-lexeme-0023",
+    "hsk6t1-lexeme-0053",
+    "hsk6t1-lexeme-0060",
+    "hsk6t1-lexeme-0061",
+    "hsk6t1-lexeme-0079",
+    "hsk6t1-lexeme-0131",
+    "hsk6t1-lexeme-0216",
+    "hsk6t1-lexeme-0217",
+    "hsk6t1-lexeme-0243",
+    "hsk6t1-lexeme-0278",
+    "hsk6t1-lexeme-0283",
+    "hsk6t1-lexeme-0284",
+    "hsk6t1-lexeme-0292",
+    "hsk6t1-lexeme-0313",
+    "hsk6t1-lexeme-0315",
+    "hsk6t1-lexeme-0334",
+    "hsk6t1-lexeme-0345",
+    "hsk6t1-lexeme-0351",
+    "hsk6t1-lexeme-0363",
+    "hsk6t1-lexeme-0382",
+    "hsk6t1-lexeme-0414",
+    "hsk6t1-lexeme-0436",
+    "hsk6t1-lexeme-0454",
+    "hsk6t1-lexeme-0464",
+    "hsk6t1-lexeme-0486",
+    "hsk6t1-lexeme-0547",
+    "hsk6t1-lexeme-0580",
+    "hsk6t1-lexeme-0587",
+    "hsk6t1-lexeme-0599",
+    "hsk6t1-lexeme-0608",
+    "hsk6t1-lexeme-0632",
+    "hsk6t1-lexeme-0635",
+    "hsk6t1-lexeme-0678",
+    "hsk6t1-lexeme-0733",
+    "hsk6t1-lexeme-0738",
+    "hsk6t1-lexeme-0760",
+    "hsk6t1-lexeme-0792",
+    "hsk6t1-lexeme-0794",
+    "hsk6t1-lexeme-0807",
+    "hsk6t1-lexeme-0816",
+    "hsk6t1-lexeme-0836",
+    "hsk6t1-lexeme-0890"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-001"
+  ],
+  "vocabularyCount": 43,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 44,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

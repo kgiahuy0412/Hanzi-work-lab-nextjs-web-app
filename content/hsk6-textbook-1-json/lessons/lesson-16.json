@@ -1,0 +1,130 @@
+{
+  "id": "hsk6t1-lesson-16",
+  "number": 16,
+  "unitId": "hsk6t1-unit-04",
+  "titleZh": "徐健和他的野生动物摄影师们",
+  "titleVi": "Từ Kiện và các nhà nhiếp ảnh động vật hoang dã",
+  "sourcePdfPages": {
+    "start": 167,
+    "end": 176
+  },
+  "sourcePrintedPages": {
+    "start": 167,
+    "end": 176
+  },
+  "audioTracks": [
+    "16-1",
+    "16-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 167,
+      "rowIndex": 4,
+      "matchedTextOcr": "热身 看下列图片，熟悉相应的动物的名称。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 168,
+      "rowIndex": 2,
+      "matchedTextOcr": "课文 徐健和他的野生动物摄影师们 （898字） 16-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 170,
+      "rowIndex": 34,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 173,
+      "rowIndex": 23,
+      "matchedTextOcr": "练习1 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 175,
+      "rowIndex": 22,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 176,
+      "rowIndex": 2,
+      "matchedTextOcr": "扩展 词汇：熟悉下列近义词"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-16-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-16-01",
+    "hsk6t1-annotation-16-01",
+    "hsk6t1-practice-16-01",
+    "hsk6t1-application-16-01",
+    "hsk6t1-extension-16-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0013",
+    "hsk6t1-lexeme-0021",
+    "hsk6t1-lexeme-0027",
+    "hsk6t1-lexeme-0044",
+    "hsk6t1-lexeme-0050",
+    "hsk6t1-lexeme-0093",
+    "hsk6t1-lexeme-0102",
+    "hsk6t1-lexeme-0156",
+    "hsk6t1-lexeme-0179",
+    "hsk6t1-lexeme-0228",
+    "hsk6t1-lexeme-0269",
+    "hsk6t1-lexeme-0290",
+    "hsk6t1-lexeme-0333",
+    "hsk6t1-lexeme-0384",
+    "hsk6t1-lexeme-0387",
+    "hsk6t1-lexeme-0393",
+    "hsk6t1-lexeme-0398",
+    "hsk6t1-lexeme-0405",
+    "hsk6t1-lexeme-0417",
+    "hsk6t1-lexeme-0427",
+    "hsk6t1-lexeme-0461",
+    "hsk6t1-lexeme-0477",
+    "hsk6t1-lexeme-0499",
+    "hsk6t1-lexeme-0537",
+    "hsk6t1-lexeme-0595",
+    "hsk6t1-lexeme-0621",
+    "hsk6t1-lexeme-0645",
+    "hsk6t1-lexeme-0646",
+    "hsk6t1-lexeme-0658",
+    "hsk6t1-lexeme-0691",
+    "hsk6t1-lexeme-0692",
+    "hsk6t1-lexeme-0706",
+    "hsk6t1-lexeme-0730",
+    "hsk6t1-lexeme-0735",
+    "hsk6t1-lexeme-0762",
+    "hsk6t1-lexeme-0782",
+    "hsk6t1-lexeme-0834",
+    "hsk6t1-lexeme-0837",
+    "hsk6t1-lexeme-0848",
+    "hsk6t1-lexeme-0849",
+    "hsk6t1-lexeme-0858",
+    "hsk6t1-lexeme-0865",
+    "hsk6t1-lexeme-0887",
+    "hsk6t1-lexeme-0892"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-015"
+  ],
+  "vocabularyCount": 44,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 45,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

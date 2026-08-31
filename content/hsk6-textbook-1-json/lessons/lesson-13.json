@@ -1,0 +1,135 @@
+{
+  "id": "hsk6t1-lesson-13",
+  "number": 13,
+  "unitId": "hsk6t1-unit-04",
+  "titleZh": "从旅游指南看世事变迁",
+  "titleVi": "Nhìn thế sự đổi thay qua trang sách cẩm nang du lịch",
+  "sourcePdfPages": {
+    "start": 136,
+    "end": 146
+  },
+  "sourcePrintedPages": {
+    "start": 136,
+    "end": 146
+  },
+  "audioTracks": [
+    "13-1",
+    "13-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 136,
+      "rowIndex": 4,
+      "matchedTextOcr": "热身 旅游指南包括哪些内容？请选择填空。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 137,
+      "rowIndex": 2,
+      "matchedTextOcr": "课文从旅游指南看世事变迁（868字） 13-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 139,
+      "rowIndex": 26,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 142,
+      "rowIndex": 3,
+      "matchedTextOcr": "练习 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 144,
+      "rowIndex": 10,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 144,
+      "rowIndex": 18,
+      "matchedTextOcr": "扩展 病句类型：逻辑不通"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-13-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-13-01",
+    "hsk6t1-annotation-13-01",
+    "hsk6t1-practice-13-01",
+    "hsk6t1-application-13-01",
+    "hsk6t1-extension-13-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0014",
+    "hsk6t1-lexeme-0041",
+    "hsk6t1-lexeme-0042",
+    "hsk6t1-lexeme-0043",
+    "hsk6t1-lexeme-0073",
+    "hsk6t1-lexeme-0087",
+    "hsk6t1-lexeme-0129",
+    "hsk6t1-lexeme-0150",
+    "hsk6t1-lexeme-0183",
+    "hsk6t1-lexeme-0187",
+    "hsk6t1-lexeme-0188",
+    "hsk6t1-lexeme-0211",
+    "hsk6t1-lexeme-0281",
+    "hsk6t1-lexeme-0328",
+    "hsk6t1-lexeme-0329",
+    "hsk6t1-lexeme-0355",
+    "hsk6t1-lexeme-0368",
+    "hsk6t1-lexeme-0380",
+    "hsk6t1-lexeme-0407",
+    "hsk6t1-lexeme-0435",
+    "hsk6t1-lexeme-0491",
+    "hsk6t1-lexeme-0514",
+    "hsk6t1-lexeme-0519",
+    "hsk6t1-lexeme-0520",
+    "hsk6t1-lexeme-0525",
+    "hsk6t1-lexeme-0535",
+    "hsk6t1-lexeme-0553",
+    "hsk6t1-lexeme-0554",
+    "hsk6t1-lexeme-0563",
+    "hsk6t1-lexeme-0584",
+    "hsk6t1-lexeme-0601",
+    "hsk6t1-lexeme-0607",
+    "hsk6t1-lexeme-0664",
+    "hsk6t1-lexeme-0670",
+    "hsk6t1-lexeme-0684",
+    "hsk6t1-lexeme-0699",
+    "hsk6t1-lexeme-0705",
+    "hsk6t1-lexeme-0724",
+    "hsk6t1-lexeme-0732",
+    "hsk6t1-lexeme-0739",
+    "hsk6t1-lexeme-0752",
+    "hsk6t1-lexeme-0753",
+    "hsk6t1-lexeme-0785",
+    "hsk6t1-lexeme-0790",
+    "hsk6t1-lexeme-0815",
+    "hsk6t1-lexeme-0826",
+    "hsk6t1-lexeme-0847",
+    "hsk6t1-lexeme-0862",
+    "hsk6t1-lexeme-0883",
+    "hsk6t1-lexeme-0884",
+    "hsk6t1-lexeme-0886"
+  ],
+  "supplementalLexemeIds": [],
+  "vocabularyCount": 51,
+  "supplementalVocabularyCount": 0,
+  "allVocabularyCount": 51,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

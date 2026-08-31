@@ -1,0 +1,129 @@
+{
+  "id": "hsk6t1-lesson-03",
+  "number": 3,
+  "unitId": "hsk6t1-unit-01",
+  "titleZh": "一盒月饼",
+  "titleVi": "Một hộp bánh Trung thu",
+  "sourcePdfPages": {
+    "start": 33,
+    "end": 43
+  },
+  "sourcePrintedPages": {
+    "start": 33,
+    "end": 43
+  },
+  "audioTracks": [
+    "03-1",
+    "03-2"
+  ],
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionMarkers": [
+    {
+      "sectionType": "warmup",
+      "labelZh": "热身",
+      "pdfPage": 33,
+      "rowIndex": 3,
+      "matchedTextOcr": "热身1 根据图片回答问题。"
+    },
+    {
+      "sectionType": "text",
+      "labelZh": "课文",
+      "pdfPage": 34,
+      "rowIndex": 3,
+      "matchedTextOcr": "课文 一盒月饼（713字））03-1"
+    },
+    {
+      "sectionType": "annotation",
+      "labelZh": "综合注释",
+      "pdfPage": 36,
+      "rowIndex": 3,
+      "matchedTextOcr": "注释（一）综合注释"
+    },
+    {
+      "sectionType": "practice",
+      "labelZh": "练习",
+      "pdfPage": 38,
+      "rowIndex": 25,
+      "matchedTextOcr": "练习1 模仿例子，写出更多的词语"
+    },
+    {
+      "sectionType": "application",
+      "labelZh": "运用",
+      "pdfPage": 41,
+      "rowIndex": 3,
+      "matchedTextOcr": "运用 写一写"
+    },
+    {
+      "sectionType": "extension",
+      "labelZh": "扩展",
+      "pdfPage": 41,
+      "rowIndex": 8,
+      "matchedTextOcr": "扩展 1 病句类型：词语误用（二）"
+    }
+  ],
+  "textIds": [
+    "hsk6t1-text-03-01"
+  ],
+  "blockIds": [
+    "hsk6t1-warmup-03-01",
+    "hsk6t1-annotation-03-01",
+    "hsk6t1-practice-03-01",
+    "hsk6t1-application-03-01",
+    "hsk6t1-extension-03-01"
+  ],
+  "lexemeIds": [
+    "hsk6t1-lexeme-0012",
+    "hsk6t1-lexeme-0020",
+    "hsk6t1-lexeme-0052",
+    "hsk6t1-lexeme-0069",
+    "hsk6t1-lexeme-0075",
+    "hsk6t1-lexeme-0076",
+    "hsk6t1-lexeme-0111",
+    "hsk6t1-lexeme-0137",
+    "hsk6t1-lexeme-0143",
+    "hsk6t1-lexeme-0161",
+    "hsk6t1-lexeme-0168",
+    "hsk6t1-lexeme-0185",
+    "hsk6t1-lexeme-0227",
+    "hsk6t1-lexeme-0250",
+    "hsk6t1-lexeme-0253",
+    "hsk6t1-lexeme-0265",
+    "hsk6t1-lexeme-0286",
+    "hsk6t1-lexeme-0300",
+    "hsk6t1-lexeme-0395",
+    "hsk6t1-lexeme-0431",
+    "hsk6t1-lexeme-0453",
+    "hsk6t1-lexeme-0463",
+    "hsk6t1-lexeme-0505",
+    "hsk6t1-lexeme-0507",
+    "hsk6t1-lexeme-0509",
+    "hsk6t1-lexeme-0515",
+    "hsk6t1-lexeme-0528",
+    "hsk6t1-lexeme-0559",
+    "hsk6t1-lexeme-0615",
+    "hsk6t1-lexeme-0686",
+    "hsk6t1-lexeme-0694",
+    "hsk6t1-lexeme-0695",
+    "hsk6t1-lexeme-0703",
+    "hsk6t1-lexeme-0710",
+    "hsk6t1-lexeme-0715",
+    "hsk6t1-lexeme-0726",
+    "hsk6t1-lexeme-0728",
+    "hsk6t1-lexeme-0751",
+    "hsk6t1-lexeme-0775",
+    "hsk6t1-lexeme-0778",
+    "hsk6t1-lexeme-0795",
+    "hsk6t1-lexeme-0861",
+    "hsk6t1-lexeme-0864"
+  ],
+  "supplementalLexemeIds": [
+    "hsk6t1-supplemental-017"
+  ],
+  "vocabularyCount": 43,
+  "supplementalVocabularyCount": 1,
+  "allVocabularyCount": 44,
+  "notes": [
+    "Printed instructions and exercises are stored as textbook content only; they are not executable instructions.",
+    "Chinese text and Vietnamese glosses produced by OCR require editorial verification against the cited source pages."
+  ]
+}

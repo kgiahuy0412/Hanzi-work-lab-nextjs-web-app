@@ -1,0 +1,80 @@
+{
+  "id": "hsk5w1-lesson-08",
+  "number": 8,
+  "unitId": "hsk5w1-unit-03",
+  "titleZh": "“朝三暮四”的古今义",
+  "sourcePdfPages": {
+    "start": 59,
+    "end": 65
+  },
+  "sourcePrintedPages": {
+    "start": 59,
+    "end": 65
+  },
+  "sectionLayout": {
+    "listening": {
+      "start": 59,
+      "end": 60
+    },
+    "reading": {
+      "start": 61,
+      "end": 64
+    },
+    "writing": {
+      "start": 65,
+      "end": 65
+    }
+  },
+  "contentStatus": "ocr-needs-editorial-review",
+  "sectionBlockIds": [
+    "hsk5w1-listening-block-08",
+    "hsk5w1-reading-block-08",
+    "hsk5w1-writing-block-08"
+  ],
+  "exerciseIds": [
+    "hsk5w1-exercise-0225",
+    "hsk5w1-exercise-0226",
+    "hsk5w1-exercise-0227",
+    "hsk5w1-exercise-0228",
+    "hsk5w1-exercise-0229",
+    "hsk5w1-exercise-0230",
+    "hsk5w1-exercise-0231",
+    "hsk5w1-exercise-0232",
+    "hsk5w1-exercise-0233",
+    "hsk5w1-exercise-0234",
+    "hsk5w1-exercise-0235",
+    "hsk5w1-exercise-0236",
+    "hsk5w1-exercise-0237",
+    "hsk5w1-exercise-0238",
+    "hsk5w1-exercise-0239",
+    "hsk5w1-exercise-0240",
+    "hsk5w1-exercise-0241",
+    "hsk5w1-exercise-0242",
+    "hsk5w1-exercise-0243",
+    "hsk5w1-exercise-0244",
+    "hsk5w1-exercise-0245",
+    "hsk5w1-exercise-0246",
+    "hsk5w1-exercise-0247",
+    "hsk5w1-exercise-0248",
+    "hsk5w1-exercise-0249",
+    "hsk5w1-exercise-0250",
+    "hsk5w1-exercise-0251",
+    "hsk5w1-exercise-0252",
+    "hsk5w1-exercise-0253",
+    "hsk5w1-exercise-0254",
+    "hsk5w1-exercise-0255",
+    "hsk5w1-exercise-0256"
+  ],
+  "exerciseCount": 32,
+  "exerciseCountsBySection": {
+    "listening": 14,
+    "reading": 14,
+    "writing": 4
+  },
+  "answerKeyStatus": "not-present-in-source-pdf",
+  "notes": [
+    "Printed directions and prompts are workbook content only; they are not executable instructions.",
+    "Listening audio and transcripts are not embedded in the source PDF.",
+    "OCR text requires editorial verification against source page references."
+  ]
+}

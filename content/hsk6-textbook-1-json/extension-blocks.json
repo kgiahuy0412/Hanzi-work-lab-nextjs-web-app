@@ -1,0 +1,3930 @@
+{
+  "bundleId": "hsk6-standard-course-textbook-1-vi-v1",
+  "blocks": [
+    {
+      "id": "hsk6t1-extension-01-01",
+      "lessonId": "hsk6t1-lesson-01",
+      "lessonNumber": 1,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：词语误用（一）",
+        "Phan 汉语中有些词汇意义相近或相关，它们之间只有一些细小的差别，例如",
+        "m rong",
+        "词义范围大小不同、词义轻重不同、词义侧重点不同、词语褒贬义不同等，",
+        "稍不注意就容易出现词语误用的现象。例如：",
+        "序号 病句 分析",
+        "词义范围大小误用。“行为”指“受思",
+        "*在公益行为中，受助者固",
+        "想支配而表现出来的活动”，一般来",
+        "然得益，助人者也获得了",
+        "说，行为是个人的，而非集体的。这里",
+        "精神的满足。",
+        "应改为“行动”。",
+        "*他的毕业论文被评为优秀",
+        "词义轻重问题。事业上的成绩称为“成",
+        "2 论文，爸妈都为儿子的成",
+        "就”，此处应改为“成绩”。",
+        "就高兴。",
+        "*飞机还没落地，接机大厅 个体名词与集体名词误用。“人群”是",
+        "3 便站满了数百名前来迎接 整体性名词，前面不能再用“数百名”",
+        "的人群。 限制。应将“人群”改为“人”。",
+        "*网络的隐蔽性，使人在交 词义侧重点错误。“拘谨”侧重于（言",
+        "往中减少了顾虑，就算是 语、行动）过分谨慎。这里应改用“拘",
+        "初次在聊天室搭话，也可 束”，“无所拘束”的意思是“不限制",
+        "以做到无所拘谨。 自己”。",
+        "*我们的晚会开得可喧闹了，",
+        "带褒贬义的词语误用。“喧闹”是贬义",
+        "大家玩儿得高兴极了，直到",
+        "词，应改为“热闹”。",
+        "凌晨才散。",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "①看到这样的事情，我惊讶得目瞪口呆，不信任这样离奇的事竞然",
+        "真的在我眼前发生了。",
+        "②这次比赛暴露出很多思维敏捷、口才出众、演讲能力强的学生。",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK ③他们觉得你刚工作，年龄又小，实际上你聪明，能力也很强，你",
+        "不能太衰弱了，要做生活的强者。",
+        "④越是到了冬天，我越爱迟到，这星期我迟到了好几次，老师批判",
+        "孩子给我们的启示",
+        "了我，弄得我好没面子。",
+        "每到上下班的时候，马路上一辆辆的车辆排成长龙，把马路堵得",
+        "水泄不通。",
+        "词汇：熟悉下列词语搭配",
+        "词汇 搭配 例句",
+        "留恋 十分留恋/留恋故土 飞机起飞了，对这片土地，我心中充满留恋。",
+        "开朗 性格开朗/心情开朗 她开朗乐观，热爱生活。",
+        "闲话 说闲话 大家在院里聊了会儿闲话，就回家了。",
+        "风趣 幽默风趣 王教授讲课十分风趣，选他的课的人特别多。",
+        "恩怨 个人恩怨/恩怨情仇 我们决定，为了工作，忘掉多年的恩怨。",
+        "娇气 太娇气了 她个子瘦小，却不娇气。",
+        "伶俐 口齿伶俐/聪明伶俐 他们有个聪明伶俐的好儿子。",
+        "挑剔 过分挑剔 她把自已打扮得很美，美得无可挑剔。",
+        "挑拨 挑拨离间 没有人能够挑拨我们之间的关系。",
+        "气质 有气质/气质优雅 他变得更英俊，也更有气质了。",
+        "容貌 容貌秀美 她不但有出众的容貌，而且心地善良。",
+        "福气有福气/福气大 一生没有遇到战争就是福气。"
+      ],
+      "contentOcr": "扩展 病句类型：词语误用（一）\nPhan 汉语中有些词汇意义相近或相关，它们之间只有一些细小的差别，例如\nm rong\n词义范围大小不同、词义轻重不同、词义侧重点不同、词语褒贬义不同等，\n稍不注意就容易出现词语误用的现象。例如：\n序号 病句 分析\n词义范围大小误用。“行为”指“受思\n*在公益行为中，受助者固\n想支配而表现出来的活动”，一般来\n然得益，助人者也获得了\n说，行为是个人的，而非集体的。这里\n精神的满足。\n应改为“行动”。\n*他的毕业论文被评为优秀\n词义轻重问题。事业上的成绩称为“成\n2 论文，爸妈都为儿子的成\n就”，此处应改为“成绩”。\n就高兴。\n*飞机还没落地，接机大厅 个体名词与集体名词误用。“人群”是\n3 便站满了数百名前来迎接 整体性名词，前面不能再用“数百名”\n的人群。 限制。应将“人群”改为“人”。\n*网络的隐蔽性，使人在交 词义侧重点错误。“拘谨”侧重于（言\n往中减少了顾虑，就算是 语、行动）过分谨慎。这里应改用“拘\n初次在聊天室搭话，也可 束”，“无所拘束”的意思是“不限制\n以做到无所拘谨。 自己”。\n*我们的晚会开得可喧闹了，\n带褒贬义的词语误用。“喧闹”是贬义\n大家玩儿得高兴极了，直到\n词，应改为“热闹”。\n凌晨才散。\n·练一练：指出下列句子的错误，并提出修改建议\n①看到这样的事情，我惊讶得目瞪口呆，不信任这样离奇的事竞然\n真的在我眼前发生了。\n②这次比赛暴露出很多思维敏捷、口才出众、演讲能力强的学生。\nwww.nhantriviet.com/GiaoTrinhChuanHSK ③他们觉得你刚工作，年龄又小，实际上你聪明，能力也很强，你\n不能太衰弱了，要做生活的强者。\n④越是到了冬天，我越爱迟到，这星期我迟到了好几次，老师批判\n孩子给我们的启示\n了我，弄得我好没面子。\n每到上下班的时候，马路上一辆辆的车辆排成长龙，把马路堵得\n水泄不通。\n词汇：熟悉下列词语搭配\n词汇 搭配 例句\n留恋 十分留恋/留恋故土 飞机起飞了，对这片土地，我心中充满留恋。\n开朗 性格开朗/心情开朗 她开朗乐观，热爱生活。\n闲话 说闲话 大家在院里聊了会儿闲话，就回家了。\n风趣 幽默风趣 王教授讲课十分风趣，选他的课的人特别多。\n恩怨 个人恩怨/恩怨情仇 我们决定，为了工作，忘掉多年的恩怨。\n娇气 太娇气了 她个子瘦小，却不娇气。\n伶俐 口齿伶俐/聪明伶俐 他们有个聪明伶俐的好儿子。\n挑剔 过分挑剔 她把自已打扮得很美，美得无可挑剔。\n挑拨 挑拨离间 没有人能够挑拨我们之间的关系。\n气质 有气质/气质优雅 他变得更英俊，也更有气质了。\n容貌 容貌秀美 她不但有出众的容貌，而且心地善良。\n福气有福气/福气大 一生没有遇到战争就是福气。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 36
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-022",
+          "rowIndex": 37
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-023",
+          "rowIndex": 19
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-02-01",
+      "lessonId": "hsk6t1-lesson-02",
+      "lessonNumber": 2,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：看图片，熟悉下列表示动作的词语",
+        "Phan",
+        "marong",
+        "珊 鞠躬",
+        "把面包开。 孩子给父母鞠躬。",
+        "扛",
+        "着老人过马路。 他扛着一个箱子。",
+        "飞翔",
+        "啃",
+        "天空中有一只飞翔的",
+        "孩子在啃苹果。",
+        "鸟儿。",
+        "搅拌",
+        "挎",
+        "把碗里的鸡蛋搅拌",
+        "她胳膊上挎着很多包。",
+        "一下。",
+        "敬礼 晾",
+        "他们在给领导敬礼。 外面晾着几件衣服。"
+      ],
+      "contentOcr": "扩展 词汇：看图片，熟悉下列表示动作的词语\nPhan\nmarong\n珊 鞠躬\n把面包开。 孩子给父母鞠躬。\n扛\n着老人过马路。 他扛着一个箱子。\n飞翔\n啃\n天空中有一只飞翔的\n孩子在啃苹果。\n鸟儿。\n搅拌\n挎\n把碗里的鸡蛋搅拌\n她胳膊上挎着很多包。\n一下。\n敬礼 晾\n他们在给领导敬礼。 外面晾着几件衣服。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-032",
+          "rowIndex": 21
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-03-01",
+      "lessonId": "hsk6t1-lesson-03",
+      "lessonNumber": 3,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 1 病句类型：词语误用（二）",
+        "Phan 词汇误用的情况还包括实词之间的误用、实词与虚词之间的误用、虚词",
+        "marong",
+        "的误用和滥用，另外，汉语部分词汇蕴含着感情色彩、语体色彩，感情色彩",
+        "及语体色彩的误用也是留学生容易出现的问题。例如：",
+        "序号 病句 分析",
+        "*整整一夜，我几乎没睡， 实词误用。“想”的意思是“开动脑",
+        "一直在回想他的话，可是 筋；思考”或者“推测”，用在本句都",
+        "不管他说什么，我也想自 不妥，应换用“认为”或“觉得”，意",
+        "思是“自己确定的看法或者判断”。",
+        "已没有错误。",
+        "*咱们毕业都25年了，一直 语体词误用。“奉”的意思“给；献给”，",
+        "2 没见你，你下次给我写信 “奉”是敬体词，只能用于下级对上级，晚",
+        "时，随信奉上你的照片。 辈对长辈。本句应改为“寄上”。",
+        "副词误用。副词“几乎”表示非常接近、",
+        "差不多。“大概”做形容词表示不十分详",
+        "*我大概每天下班后都要去 尽的、大致；做副词表示对数量、时间的 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "书店买书，然后再回家。 不太精确的估计，或者对情况的推测。本",
+        "句要表达的是“差不多”的意思，句中",
+        "“大概”应换为“几乎”。",
+        "HSK",
+        "标准教程6（上）",
+        "序号 病句 分析",
+        "*大企业招聘主要看实力， 带关联词的固定搭配误用。“无论/不",
+        "管…多多.…”是固定格式，",
+        "没有实力的话，无论来自",
+        "“多么”表示任何一种程度。“无论”",
+        "很有名的大学，人家也不",
+        "分句应改为“无论来自多么有名的大",
+        "要你。",
+        "学，…………”",
+        "*这个酒店服务质量之差有",
+        "成语误用。“有口皆碑”是褒义词，意",
+        "口皆碑，可是天晚了，我",
+        "5 思是人人称赞，这里错用。可改为“尽",
+        "们无处可去，只好硬着头",
+        "人皆知”。",
+        "皮住进去。",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "①因为是冬天，没有什么人到山上来玩儿。我站在山顶上，空气很",
+        "清凉。",
+        "②我的腿受伤了，不能去滑雪，我很眼红我的朋友们。",
+        "③到北京来的时候，我带来一个好玩儿的U盘，偶然，我的同屋也",
+        "带来一个。",
+        "有一天在书店，我看了一个小偷，偷了本书。",
+        "如果不修建这些水利工程，遇到严重的水旱灾害，其后果不可",
+        "思议。",
+        "2 词汇",
+        "（1）看图片，熟悉下列表示动作的词语",
+        "楼 拾",
+        "孩子亲热地楼着妈妈。 把地上的纸拾起来。",
+        "3",
+        "一盒月饼",
+        "投掷",
+        "拧",
+        "他正在准备投掷铅",
+        "把毛巾拧干。",
+        "球。",
+        "飘扬 绣",
+        "红旗迎风飘扬。 她很喜欢绣花儿。",
+        "泼",
+        "牵",
+        "泼水节时人们会互相泼",
+        "两个人手牵手。",
+        "水表示祝福。",
+        "掐 削",
+        "请不要掐花儿。 吃苹果时最好削皮。",
+        "（2）熟悉下列表示亲属称谓的词语",
+        "父亲的哥哥称为伯父，",
+        "伯母",
+        "伯父的妻子怎样称呼？",
+        "哥哥的妻子怎样称呼？ 嫂子",
+        "妻子的母亲怎样称呼？ 岳母",
+        "弟兄或其他同辈男性亲属",
+        "侄子",
+        "的儿子怎样称呼？"
+      ],
+      "contentOcr": "扩展 1 病句类型：词语误用（二）\nPhan 词汇误用的情况还包括实词之间的误用、实词与虚词之间的误用、虚词\nmarong\n的误用和滥用，另外，汉语部分词汇蕴含着感情色彩、语体色彩，感情色彩\n及语体色彩的误用也是留学生容易出现的问题。例如：\n序号 病句 分析\n*整整一夜，我几乎没睡， 实词误用。“想”的意思是“开动脑\n一直在回想他的话，可是 筋；思考”或者“推测”，用在本句都\n不管他说什么，我也想自 不妥，应换用“认为”或“觉得”，意\n思是“自己确定的看法或者判断”。\n已没有错误。\n*咱们毕业都25年了，一直 语体词误用。“奉”的意思“给；献给”，\n2 没见你，你下次给我写信 “奉”是敬体词，只能用于下级对上级，晚\n时，随信奉上你的照片。 辈对长辈。本句应改为“寄上”。\n副词误用。副词“几乎”表示非常接近、\n差不多。“大概”做形容词表示不十分详\n*我大概每天下班后都要去 尽的、大致；做副词表示对数量、时间的 www.nhantriviet.com/GiaoTrinhChuanHSK\n书店买书，然后再回家。 不太精确的估计，或者对情况的推测。本\n句要表达的是“差不多”的意思，句中\n“大概”应换为“几乎”。\nHSK\n标准教程6（上）\n序号 病句 分析\n*大企业招聘主要看实力， 带关联词的固定搭配误用。“无论/不\n管…多多.…”是固定格式，\n没有实力的话，无论来自\n“多么”表示任何一种程度。“无论”\n很有名的大学，人家也不\n分句应改为“无论来自多么有名的大\n要你。\n学，…………”\n*这个酒店服务质量之差有\n成语误用。“有口皆碑”是褒义词，意\n口皆碑，可是天晚了，我\n5 思是人人称赞，这里错用。可改为“尽\n们无处可去，只好硬着头\n人皆知”。\n皮住进去。\n·练一练：指出下列句子的错误，并提出修改建议\n①因为是冬天，没有什么人到山上来玩儿。我站在山顶上，空气很\n清凉。\n②我的腿受伤了，不能去滑雪，我很眼红我的朋友们。\n③到北京来的时候，我带来一个好玩儿的U盘，偶然，我的同屋也\n带来一个。\n有一天在书店，我看了一个小偷，偷了本书。\n如果不修建这些水利工程，遇到严重的水旱灾害，其后果不可\n思议。\n2 词汇\n（1）看图片，熟悉下列表示动作的词语\n楼 拾\n孩子亲热地楼着妈妈。 把地上的纸拾起来。\n3\n一盒月饼\n投掷\n拧\n他正在准备投掷铅\n把毛巾拧干。\n球。\n飘扬 绣\n红旗迎风飘扬。 她很喜欢绣花儿。\n泼\n牵\n泼水节时人们会互相泼\n两个人手牵手。\n水表示祝福。\n掐 削\n请不要掐花儿。 吃苹果时最好削皮。\n（2）熟悉下列表示亲属称谓的词语\n父亲的哥哥称为伯父，\n伯母\n伯父的妻子怎样称呼？\n哥哥的妻子怎样称呼？ 嫂子\n妻子的母亲怎样称呼？ 岳母\n弟兄或其他同辈男性亲属\n侄子\n的儿子怎样称呼？",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-041",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-042",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-043",
+          "rowIndex": 24
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-04-01",
+      "lessonId": "hsk6t1-lesson-04",
+      "lessonNumber": 4,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列词语的语素义",
+        "Phan",
+        "m8 rong 俯：低头 草：初步的",
+        "俯视 草案",
+        "视：看 案：记录计划、建议等的文件",
+        "偿：抵偿 畅：没有阻碍",
+        "偿还 畅通",
+        "还：归还 通：通行",
+        "敌：敌人 巩：结实",
+        "敌视 巩固",
+        "视：看待 固：结实",
+        "孤：单独 雇：出钱让别人给自已做事",
+        "孤立 雇佣",
+        "立：站 佣：雇佣",
+        "过：过分 解：废除",
+        "过奖 解雇",
+        "奖：勉励 雇：出钱让别人给自已做事",
+        "捍：保卫 表：表示",
+        "捍卫 表态",
+        "卫：保卫 态：态度",
+        "熟悉下列量词",
+        "磅：一磅黄油、一磅蛋糕",
+        "筐：一筐蔬菜、一筐水果",
+        "艘：一艘轮船、一艘军舰",
+        "丸：一丸药"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列词语的语素义\nPhan\nm8 rong 俯：低头 草：初步的\n俯视 草案\n视：看 案：记录计划、建议等的文件\n偿：抵偿 畅：没有阻碍\n偿还 畅通\n还：归还 通：通行\n敌：敌人 巩：结实\n敌视 巩固\n视：看待 固：结实\n孤：单独 雇：出钱让别人给自已做事\n孤立 雇佣\n立：站 佣：雇佣\n过：过分 解：废除\n过奖 解雇\n奖：勉励 雇：出钱让别人给自已做事\n捍：保卫 表：表示\n捍卫 表态\n卫：保卫 态：态度\n熟悉下列量词\n磅：一磅黄油、一磅蛋糕\n筐：一筐蔬菜、一筐水果\n艘：一艘轮船、一艘军舰\n丸：一丸药",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-052",
+          "rowIndex": 26
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-05-01",
+      "lessonId": "hsk6t1-lesson-05",
+      "lessonNumber": 5,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：成分残缺",
+        "Phan “成分残缺”指句中省略了不应省略的部分，致使句子结构不完整，影 学一门外语需要理由吗",
+        "响了表意的准确性。例如：",
+        "序号 病句 分析",
+        "主语残缺。前一分句的主语是“他”， ？",
+        "*他向国家捐献出了一张祖 后一分句的主语是“字画”，暗中更换",
+        "传的字画，具有极高的研 了主语，致使后一句缺少了主语，应改",
+        "究、保存价值。 为“这张字画具有极高的研究、保存价",
+        "值”。",
+        "谓语残缺。后半句缺少谓语动词“是”，应",
+        "*我们已办理了婚姻登记手",
+        "2 改为“我们真的是夫妻了”或者“我们是真",
+        "续，我们真的夫妻了。",
+        "的夫妻了”。",
+        "宾语残缺。因为宾语前有较长的定语，误",
+        "*我们将提前做好各项筹备工 把宾语前定语中的某一部分词语当作了宾",
+        "作，最终实现举办一届“有 语，没有写出句子真正的宾语。后半句应",
+        "特色、高水平”奥运会。 改为“最终实现举办一届“有特色、高水",
+        "平’奥运会的目标”。",
+        "*我读杂志的时候，看一张",
+        "补语残缺。“看”后缺少结果补语，应",
+        "广告，有话剧，我决定买",
+        "改为“看到一张广告”。",
+        "两张票。",
+        "关联词语残缺。根据句意，应在表示结",
+        "*就算肉再好吃，你也不准",
+        "果的小句前加“不然”，变为“不然以",
+        "吃太多，以后更胖了。",
+        "后更胖了”。",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "为了写好汉字，他每天抄写一篇短文，养成了书写规范、端正、",
+        "整洁。",
+        "②他边走边想，非常投入，突然路旁的河里有人喊“救命！”",
+        "③他的习惯是一边吃早饭，一边看报纸，对身体不好。",
+        "ScannedbyTiengTrungThayQuocTu",
+        "HSK",
+        "标准教程6（上）",
+        "4经过专家组分析论证，排除了人为破坏因素导致事故发生的可能性。",
+        "我觉得她好棒啊，居然把一件旧牛仔裤改造了一个洋气又实用的",
+        "背包。",
+        "词汇：熟悉下列近义词",
+        "安详 祥和 代理 代办",
+        "报仇 复仇 丰 丰富",
+        "报答 回报 抚养 养活",
+        "弊病 弊端 更正 改正",
+        "采纳 采用 供给 供应",
+        "参照 参考 宏伟 雄伟",
+        "操练 训练 混合 掺杂",
+        "充沛 充足 加剧 加重"
+      ],
+      "contentOcr": "扩展 病句类型：成分残缺\nPhan “成分残缺”指句中省略了不应省略的部分，致使句子结构不完整，影 学一门外语需要理由吗\n响了表意的准确性。例如：\n序号 病句 分析\n主语残缺。前一分句的主语是“他”， ？\n*他向国家捐献出了一张祖 后一分句的主语是“字画”，暗中更换\n传的字画，具有极高的研 了主语，致使后一句缺少了主语，应改\n究、保存价值。 为“这张字画具有极高的研究、保存价\n值”。\n谓语残缺。后半句缺少谓语动词“是”，应\n*我们已办理了婚姻登记手\n2 改为“我们真的是夫妻了”或者“我们是真\n续，我们真的夫妻了。\n的夫妻了”。\n宾语残缺。因为宾语前有较长的定语，误\n*我们将提前做好各项筹备工 把宾语前定语中的某一部分词语当作了宾\n作，最终实现举办一届“有 语，没有写出句子真正的宾语。后半句应\n特色、高水平”奥运会。 改为“最终实现举办一届“有特色、高水\n平’奥运会的目标”。\n*我读杂志的时候，看一张\n补语残缺。“看”后缺少结果补语，应\n广告，有话剧，我决定买\n改为“看到一张广告”。\n两张票。\n关联词语残缺。根据句意，应在表示结\n*就算肉再好吃，你也不准\n果的小句前加“不然”，变为“不然以\n吃太多，以后更胖了。\n后更胖了”。\n·练一练：指出下列句子的错误，并提出修改建议\n为了写好汉字，他每天抄写一篇短文，养成了书写规范、端正、\n整洁。\n②他边走边想，非常投入，突然路旁的河里有人喊“救命！”\n③他的习惯是一边吃早饭，一边看报纸，对身体不好。\nScannedbyTiengTrungThayQuocTu\nHSK\n标准教程6（上）\n4经过专家组分析论证，排除了人为破坏因素导致事故发生的可能性。\n我觉得她好棒啊，居然把一件旧牛仔裤改造了一个洋气又实用的\n背包。\n词汇：熟悉下列近义词\n安详 祥和 代理 代办\n报仇 复仇 丰 丰富\n报答 回报 抚养 养活\n弊病 弊端 更正 改正\n采纳 采用 供给 供应\n参照 参考 宏伟 雄伟\n操练 训练 混合 掺杂\n充沛 充足 加剧 加重",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-063",
+          "rowIndex": 37
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 0
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-064",
+          "rowIndex": 14
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-06-01",
+      "lessonId": "hsk6t1-lesson-06",
+      "lessonNumber": 6,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列词语搭配 当好职场插班生",
+        "Phan",
+        "词汇 搭配 例句",
+        "ma rong",
+        "性感 身材性感 她是一位性感明星。",
+        "澄清 澄清事实 他决心一定要澄清事情的真相。",
+        "他数年来的刻苦训练为赢得今天的大赛奠定",
+        "奠定 奠定基础",
+        "了基础。",
+        "即便动机是好的，如果方法不对，也会把事",
+        "动机 没有动机/动机不纯",
+        "情办坏。",
+        "断绝 断绝来往 和他那样的人断绝往来绝对是明智的。",
+        "旅游不光使我们增长见闻，还能让我们认识",
+        "见闻 旅游见闻/增长见闻",
+        "更多的朋友。",
+        "章程 公司章程 员工们都应该熟悉本公司的章程。",
+        "周年 结婚周年/周年庆典 明天是我们公司成立十周年庆典。",
+        "起草 起草文件 我起草了一个俱乐部章程，你再修改一下。",
+        "无赖 耍无赖 谁都不喜欢毫不讲理的无赖。",
+        "你有没有发现，咱们办公室的小王和小李关",
+        "暖昧 态度暖昧/关系暖昧",
+        "系有点儿暖昧。",
+        "只有不断完善社会保障制度，才能让人民生",
+        "后顾之忧",
+        "活没有后顾之忧。"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列词语搭配 当好职场插班生\nPhan\n词汇 搭配 例句\nma rong\n性感 身材性感 她是一位性感明星。\n澄清 澄清事实 他决心一定要澄清事情的真相。\n他数年来的刻苦训练为赢得今天的大赛奠定\n奠定 奠定基础\n了基础。\n即便动机是好的，如果方法不对，也会把事\n动机 没有动机/动机不纯\n情办坏。\n断绝 断绝来往 和他那样的人断绝往来绝对是明智的。\n旅游不光使我们增长见闻，还能让我们认识\n见闻 旅游见闻/增长见闻\n更多的朋友。\n章程 公司章程 员工们都应该熟悉本公司的章程。\n周年 结婚周年/周年庆典 明天是我们公司成立十周年庆典。\n起草 起草文件 我起草了一个俱乐部章程，你再修改一下。\n无赖 耍无赖 谁都不喜欢毫不讲理的无赖。\n你有没有发现，咱们办公室的小王和小李关\n暖昧 态度暖昧/关系暖昧\n系有点儿暖昧。\n只有不断完善社会保障制度，才能让人民生\n后顾之忧\n活没有后顾之忧。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-073",
+          "rowIndex": 27
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-07-01",
+      "lessonId": "hsk6t1-lesson-07",
+      "lessonNumber": 7,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：语序不当",
+        "Phan “语序不当”指句中词语顺序的排列或不符合语法规则，或不符合汉语",
+        "ma rong",
+        "的语言习惯。造成病句的主要原因有：定语、状语、宾语位置不当，多层定",
+        "语、多层状语语序错误，虚词位置不当，另外，“是”字句、“把”字句、",
+        "兼语句、“被”字句、比较句等特殊句式以及离合词使用时也容易出现语序",
+        "错误。例如：",
+        "7",
+        "序号 病句 分析 我的人生我做主",
+        "状语位置不当。后半句中“已经”和“给",
+        "*你不必给我打电话，已经",
+        "我”都是状语，正确的语序应该是“别人",
+        "别人给我打了。",
+        "已经[副词]给我[对象]打了”。",
+        "*地形图上的川藏线弯弯曲 宾语位置不当。“像极了”不能带宾",
+        "2 曲，像极了高原反应时极 语，后半句应改为“和高原反应时极速",
+        "速抖动的心电图谱。 抖动的心电图谱像极了”。",
+        "主语位置不当。句子主干是“中国",
+        "*郑晓龙执导的很多电视 人…·不陌生”，“不陌生”的对象是",
+        "3 剧，对中国人是不陌生 “郑晓龙执导的电视剧”，因此应改为",
+        "的。 “中国人对郑晓龙执导的很多电视剧是",
+        "不陌生的。”",
+        "*这事对她打击一定很大， “把”字句否定式语序错误。否定词应",
+        "4 她肯定会受不了，我把这 在“把”字前面，后半句应改为“我没",
+        "事没告诉她。 把这事告诉她”。",
+        "离合词与数量词搭配时出现语序错误。",
+        "*我们公司管理比较严格，没",
+        "“开会”是离合词，数量词常插入“动",
+        "5 有特殊情况不准迟到早退，",
+        "宾”之间，改为“每两个星期开一次",
+        "每两个星期一次开会。",
+        "会”。",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "1想着想着，他发怒起来。",
+        "②她不但说了那样，而且也做了那样。",
+        "③她不是看书就是写文章，每天到深夜都忙。",
+        "④我想去一起喝茶和我的朋友。",
+        "她很有绘画天赋，不光油画画得好，中国画也并比别人画得不差。",
+        "HSK",
+        "标准教程6（上）",
+        "词汇：熟悉下列近义词",
+        "取缔 取消 遭殃 倒霉",
+        "生疏 疏远 镇定 冷静",
+        "惋惜 可惜 自满 骄傲",
+        "诬陷 陷害 宰 杀",
+        "羞耻 耻辱 请柬 请帖",
+        "削弱 减弱 公正 公平",
+        "遗失 丢失 揍 打"
+      ],
+      "contentOcr": "扩展 病句类型：语序不当\nPhan “语序不当”指句中词语顺序的排列或不符合语法规则，或不符合汉语\nma rong\n的语言习惯。造成病句的主要原因有：定语、状语、宾语位置不当，多层定\n语、多层状语语序错误，虚词位置不当，另外，“是”字句、“把”字句、\n兼语句、“被”字句、比较句等特殊句式以及离合词使用时也容易出现语序\n错误。例如：\n7\n序号 病句 分析 我的人生我做主\n状语位置不当。后半句中“已经”和“给\n*你不必给我打电话，已经\n我”都是状语，正确的语序应该是“别人\n别人给我打了。\n已经[副词]给我[对象]打了”。\n*地形图上的川藏线弯弯曲 宾语位置不当。“像极了”不能带宾\n2 曲，像极了高原反应时极 语，后半句应改为“和高原反应时极速\n速抖动的心电图谱。 抖动的心电图谱像极了”。\n主语位置不当。句子主干是“中国\n*郑晓龙执导的很多电视 人…·不陌生”，“不陌生”的对象是\n3 剧，对中国人是不陌生 “郑晓龙执导的电视剧”，因此应改为\n的。 “中国人对郑晓龙执导的很多电视剧是\n不陌生的。”\n*这事对她打击一定很大， “把”字句否定式语序错误。否定词应\n4 她肯定会受不了，我把这 在“把”字前面，后半句应改为“我没\n事没告诉她。 把这事告诉她”。\n离合词与数量词搭配时出现语序错误。\n*我们公司管理比较严格，没\n“开会”是离合词，数量词常插入“动\n5 有特殊情况不准迟到早退，\n宾”之间，改为“每两个星期开一次\n每两个星期一次开会。\n会”。\n·练一练：指出下列句子的错误，并提出修改建议\n1想着想着，他发怒起来。\n②她不但说了那样，而且也做了那样。\n③她不是看书就是写文章，每天到深夜都忙。\n④我想去一起喝茶和我的朋友。\n她很有绘画天赋，不光油画画得好，中国画也并比别人画得不差。\nHSK\n标准教程6（上）\n词汇：熟悉下列近义词\n取缔 取消 遭殃 倒霉\n生疏 疏远 镇定 冷静\n惋惜 可惜 自满 骄傲\n诬陷 陷害 宰 杀\n羞耻 耻辱 请柬 请帖\n削弱 减弱 公正 公平\n遗失 丢失 揍 打",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-082",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-083",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-084",
+          "rowIndex": 10
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-08-01",
+      "lessonId": "hsk6t1-lesson-08",
+      "lessonNumber": 8,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列反义词",
+        "Phan",
+        "marong 动荡 稳定 简陋 豪华",
+        "服从 违抗 歌颂 批判",
+        "复活 灭亡 停滞 发展",
+        "高潮 低潮 推翻 建立",
+        "高尚 低俗 延期 提前",
+        "合并 解散 制止 允许",
+        "混浊 清澈"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列反义词\nPhan\nmarong 动荡 稳定 简陋 豪华\n服从 违抗 歌颂 批判\n复活 灭亡 停滞 发展\n高潮 低潮 推翻 建立\n高尚 低俗 延期 提前\n合并 解散 制止 允许\n混浊 清澈",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-094",
+          "rowIndex": 11
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-09-01",
+      "lessonId": "hsk6t1-lesson-09",
+      "lessonNumber": 9,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：搭配不当 不用手机的日子",
+        "Phan “搭配不当”指句中词语的搭配不符合语言习惯，不符合语法规则，",
+        "marong",
+        "强行搭配。搭配不当的情况是各种各样的，主语和谓语、主语和宾语、动",
+        "词和宾语、介词和宾语、关联词以及时态副词与动态助词等，都可能出现",
+        "搭配错误。定语、状语和中心语搭配不当等，也是不容忽视的易出病句的",
+        "类型。例如：",
+        "序号 病句 分析",
+        "*他们每年的粮食产量，除 “粮食产量”和谓语中心词“消",
+        "了自己消费以外，还要大 费”“卖”搭配不当，应改为“他们每",
+        "量卖给国家。 年生产的粮食”。",
+        "*告诉你一个好消息，我考 “考上了…··考试”动词和宾语搭配不",
+        "2",
+        "上了HSK四级考试。 当，应改为“通过了…··考试”。",
+        "*温度从24℃～26℃之间，",
+        "“在…·之间”是固定搭配，“从”应",
+        "3 是最适合这种植物生长",
+        "改为“在”。",
+        "的。",
+        "*他是个勤奋好学的学生， “一直在”表示动作状态持续，与",
+        "自从他选择了汉语，就一 “了”搭配不当，可删掉句末的",
+        "直在努力学习了。 “了”",
+        "*大家紧张地注视着拳击比",
+        "“渐渐”与中心词“爬起来”搭配不",
+        "赛的双方，蓝方先是被打",
+        "当，“渐渐”表示程度或数量逐步缓慢",
+        "倒，接着，他渐渐地爬了",
+        "增减，这里应换用“慢慢”。",
+        "起来....",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "①这里有“庐山第一景”之称，一年四季泉水叮咚、鸟语花香、青",
+        "松翠柏、云蒸雾绕。",
+        "②老板很赏识李朝阳温文尔雅的风度和丰富的知识，对他十分",
+        "器重。",
+        "HSK",
+        "标准教程6（上）",
+        "③他相信，凭着自己聪明能干的双手，一定能养活自己。",
+        "妈妈对于我不太信任，老把我当成孩子。",
+        "快过春节了，人们把自己的家打扫得又干净又整齐。",
+        "词汇：熟悉下列词语的语素义",
+        "无：没有 登：由低处上到高处",
+        "无知 登陆",
+        "知：知识 陆：陆地",
+        "破：突破，撤除 失：找不着",
+        "破例 失踪",
+        "例：规则 踪：踪迹",
+        "盛：兴盛 散：分开",
+        "盛产 散布",
+        "产：生产 布：排列",
+        "额：规定的数目 密：空隙小",
+        "额外 密封",
+        "外：以外 封：密闭，关住",
+        "埋：用土等物盖住 密：事物之间距离近",
+        "埋没 密度",
+        "没：隐藏 度：程度",
+        "扩：扩大 废：没用的",
+        "扩散 废墟",
+        "散：分散到各处 墟：荒废的地方"
+      ],
+      "contentOcr": "扩展 病句类型：搭配不当 不用手机的日子\nPhan “搭配不当”指句中词语的搭配不符合语言习惯，不符合语法规则，\nmarong\n强行搭配。搭配不当的情况是各种各样的，主语和谓语、主语和宾语、动\n词和宾语、介词和宾语、关联词以及时态副词与动态助词等，都可能出现\n搭配错误。定语、状语和中心语搭配不当等，也是不容忽视的易出病句的\n类型。例如：\n序号 病句 分析\n*他们每年的粮食产量，除 “粮食产量”和谓语中心词“消\n了自己消费以外，还要大 费”“卖”搭配不当，应改为“他们每\n量卖给国家。 年生产的粮食”。\n*告诉你一个好消息，我考 “考上了…··考试”动词和宾语搭配不\n2\n上了HSK四级考试。 当，应改为“通过了…··考试”。\n*温度从24℃～26℃之间，\n“在…·之间”是固定搭配，“从”应\n3 是最适合这种植物生长\n改为“在”。\n的。\n*他是个勤奋好学的学生， “一直在”表示动作状态持续，与\n自从他选择了汉语，就一 “了”搭配不当，可删掉句末的\n直在努力学习了。 “了”\n*大家紧张地注视着拳击比\n“渐渐”与中心词“爬起来”搭配不\n赛的双方，蓝方先是被打\n当，“渐渐”表示程度或数量逐步缓慢\n倒，接着，他渐渐地爬了\n增减，这里应换用“慢慢”。\n起来....\n·练一练：指出下列句子的错误，并提出修改建议\n①这里有“庐山第一景”之称，一年四季泉水叮咚、鸟语花香、青\n松翠柏、云蒸雾绕。\n②老板很赏识李朝阳温文尔雅的风度和丰富的知识，对他十分\n器重。\nHSK\n标准教程6（上）\n③他相信，凭着自己聪明能干的双手，一定能养活自己。\n妈妈对于我不太信任，老把我当成孩子。\n快过春节了，人们把自己的家打扫得又干净又整齐。\n词汇：熟悉下列词语的语素义\n无：没有 登：由低处上到高处\n无知 登陆\n知：知识 陆：陆地\n破：突破，撤除 失：找不着\n破例 失踪\n例：规则 踪：踪迹\n盛：兴盛 散：分开\n盛产 散布\n产：生产 布：排列\n额：规定的数目 密：空隙小\n额外 密封\n外：以外 封：密闭，关住\n埋：用土等物盖住 密：事物之间距离近\n埋没 密度\n没：隐藏 度：程度\n扩：扩大 废：没用的\n扩散 废墟\n散：分散到各处 墟：荒废的地方",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-105",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-106",
+          "rowIndex": 24
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-10-01",
+      "lessonId": "hsk6t1-lesson-10",
+      "lessonNumber": 10,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列地理方面的词语",
+        "Phan",
+        "ma rong",
+        "地理",
+        "术语 地貌 分区",
+        "边界 地势 地质 经纬 盆地 沼泽 海滨 支流 坡 温带 省会 边疆"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列地理方面的词语\nPhan\nma rong\n地理\n术语 地貌 分区\n边界 地势 地质 经纬 盆地 沼泽 海滨 支流 坡 温带 省会 边疆",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-115",
+          "rowIndex": 24
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-11-01",
+      "lessonId": "hsk6t1-lesson-11",
+      "lessonNumber": 11,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：表意不明",
+        "Phan",
+        "所谓“表意不明”，指读者弄不明白这句话的确切意思，很是费解。主",
+        "ma rong",
+        "要体现在指代不明上。例如：",
+        "序号 病句 分析",
+        "*醋最好不要和羊肉一起 后一个分句中的“它”指“醋”还是",
+        "吃，一起吃会使它的温补 “羊肉”不清楚，可将“它”改为“羊",
+        "作用大打折扣。 肉”。",
+        "“它”指啤酒，素有啤酒城之称的是",
+        "*慕尼黑的啤酒生产已有四 “慕尼黑”，第二、第三个分句在暗中",
+        "百多年历史了，它以清香 更换了主语，致使全句多处费解。应改",
+        "甘醇而遐迩闻名，因而素 为“慕尼黑生产啤酒已有四百多年历史",
+        "有“啤酒城”之称。 了，素有“啤酒城，之称，那里的啤酒",
+        "以清香甘醇而遐迩闻名。”",
+        "*唱好一首歌不容易，创作",
+        "最后的“这方面”指代不明，是“唱好",
+        "出一首好歌更不容易，她",
+        "歌”还是“创作出好歌”？应明确其中",
+        "是个文艺爱好者，平时在",
+        "之一。",
+        "这方面下了不少功夫。",
+        "“开刀的”可能是医生，也可能是病",
+        "www.nhantriviet.com/GiaoTrinhChuanHsK 4 *开刀的是他父亲。",
+        "人，指代不明，应补上确切的表述。",
+        "*记得吗，我和你认识的时 句中“还是个中学生”可以是“我”，",
+        "候，还是个中学生，充满 也可以是“你”，应在该分句前补上主",
+        "热情，充满理想。 语“我”或“你”。",
+        "11",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "①我一定说服妈妈和你一同去，这样你在路上就有个伴儿了。 我不在时，猫在干什么？",
+        "②今天师傅在班会上表扬了自己，但是我觉得还需要继续努力。",
+        "③小张和小王商量好了，他请他看电影，他请他吃饭。",
+        "④对学生会提出的建议，我举双手赞成。",
+        "我看见小李和他女朋友有说有笑地走过来，肩上背着双肩包。",
+        "词汇：看图片，熟悉下列名词",
+        "床单 膜",
+        "铺床单 保鲜膜",
+        "她正在给新床 家里的保鲜膜用",
+        "铺床单。 完了。",
+        "锤 话筒",
+        "一把锤子 一个话筒",
+        "帮我拿一把锤 桌子上放着一个",
+        "子过来。 话筒。",
+        "轮胎 钩子",
+        "一个轮胎 一个钩子",
+        "汽车的轮胎被 钩子上挂着几个",
+        "扎破了。 杯子。"
+      ],
+      "contentOcr": "扩展 病句类型：表意不明\nPhan\n所谓“表意不明”，指读者弄不明白这句话的确切意思，很是费解。主\nma rong\n要体现在指代不明上。例如：\n序号 病句 分析\n*醋最好不要和羊肉一起 后一个分句中的“它”指“醋”还是\n吃，一起吃会使它的温补 “羊肉”不清楚，可将“它”改为“羊\n作用大打折扣。 肉”。\n“它”指啤酒，素有啤酒城之称的是\n*慕尼黑的啤酒生产已有四 “慕尼黑”，第二、第三个分句在暗中\n百多年历史了，它以清香 更换了主语，致使全句多处费解。应改\n甘醇而遐迩闻名，因而素 为“慕尼黑生产啤酒已有四百多年历史\n有“啤酒城”之称。 了，素有“啤酒城，之称，那里的啤酒\n以清香甘醇而遐迩闻名。”\n*唱好一首歌不容易，创作\n最后的“这方面”指代不明，是“唱好\n出一首好歌更不容易，她\n歌”还是“创作出好歌”？应明确其中\n是个文艺爱好者，平时在\n之一。\n这方面下了不少功夫。\n“开刀的”可能是医生，也可能是病\nwww.nhantriviet.com/GiaoTrinhChuanHsK 4 *开刀的是他父亲。\n人，指代不明，应补上确切的表述。\n*记得吗，我和你认识的时 句中“还是个中学生”可以是“我”，\n候，还是个中学生，充满 也可以是“你”，应在该分句前补上主\n热情，充满理想。 语“我”或“你”。\n11\n·练一练：指出下列句子的错误，并提出修改建议\n①我一定说服妈妈和你一同去，这样你在路上就有个伴儿了。 我不在时，猫在干什么？\n②今天师傅在班会上表扬了自己，但是我觉得还需要继续努力。\n③小张和小王商量好了，他请他看电影，他请他吃饭。\n④对学生会提出的建议，我举双手赞成。\n我看见小李和他女朋友有说有笑地走过来，肩上背着双肩包。\n词汇：看图片，熟悉下列名词\n床单 膜\n铺床单 保鲜膜\n她正在给新床 家里的保鲜膜用\n铺床单。 完了。\n锤 话筒\n一把锤子 一个话筒\n帮我拿一把锤 桌子上放着一个\n子过来。 话筒。\n轮胎 钩子\n一个轮胎 一个钩子\n汽车的轮胎被 钩子上挂着几个\n扎破了。 杯子。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-124",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-125",
+          "rowIndex": 21
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-12-01",
+      "lessonId": "hsk6t1-lesson-12",
+      "lessonNumber": 12,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列词语搭配",
+        "Phan",
+        "词汇 搭配 例句",
+        "marong",
+        "1995年3月，国务院颁发通知，全国实行每",
+        "颁发 颁发证书/颁发奖状",
+        "周五天工作制。",
+        "人类不爱护环境，最终必将招致大自然疯",
+        "报复 报复心理/打击报复",
+        "狂的报复。",
+        "报销 凭票报销 因公出差车票可以报销。",
+        "备份 备份文件 这个文件很重要，记得及时做个备份。",
+        "听说有些国家对多植树的个人和家庭会给一",
+        "补贴 补贴家用/生活补贴",
+        "定的绿化补贴。",
+        "哺乳 哺乳动物/哺乳期 猫是哺乳动物吗？",
+        "巢穴 建造巢穴 出去捕食的鸟妈妈一直惦记着巢穴里的孩子。",
+        "处分 受处分 考试作弊当然要处分。",
+        "档案 人事档案 我们公司有非常完整的客户档案。",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 东道主 这次奥运会，东道主获得的金牌总数最多。",
+        "对称 不对称 中国很多传统建筑都是对称设计的。",
+        "进入考场后请先找到与准考证上号码对应的",
+        "对应 与·（相）对应",
+        "座位坐好。"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列词语搭配\nPhan\n词汇 搭配 例句\nmarong\n1995年3月，国务院颁发通知，全国实行每\n颁发 颁发证书/颁发奖状\n周五天工作制。\n人类不爱护环境，最终必将招致大自然疯\n报复 报复心理/打击报复\n狂的报复。\n报销 凭票报销 因公出差车票可以报销。\n备份 备份文件 这个文件很重要，记得及时做个备份。\n听说有些国家对多植树的个人和家庭会给一\n补贴 补贴家用/生活补贴\n定的绿化补贴。\n哺乳 哺乳动物/哺乳期 猫是哺乳动物吗？\n巢穴 建造巢穴 出去捕食的鸟妈妈一直惦记着巢穴里的孩子。\n处分 受处分 考试作弊当然要处分。\n档案 人事档案 我们公司有非常完整的客户档案。\nwww.nhantriviet.com/GiaoTrinhChuanHSK 东道主 这次奥运会，东道主获得的金牌总数最多。\n对称 不对称 中国很多传统建筑都是对称设计的。\n进入考场后请先找到与准考证上号码对应的\n对应 与·（相）对应\n座位坐好。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-134",
+          "rowIndex": 31
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-13-01",
+      "lessonId": "hsk6t1-lesson-13",
+      "lessonNumber": 13,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：逻辑不通",
+        "Phan",
+        "所谓逻辑不通，指句子在语法方面是正确的，但表达的意思或前后矛",
+        "marong",
+        "盾，或不符合概念、判断、推理等形式逻辑或事理逻辑。例如：",
+        "序号 病句 分析",
+        "*骑自行车可以锻炼身体， 关联词错用。前两个分句是原因，后一",
+        "还不用汽油，因为它是最 个分句是结果，关联词应改用“所以”",
+        "环保的交通工具。 或“因此”。",
+        "13",
+        "序号 病句 分析",
+        "从旅游指南看世事变迁",
+        "既然“下一步金融改革的重点之一是加",
+        "*下一步金融改革的重点之",
+        "快建立存款保险制度”说明“存款保险",
+        "一是加快建立存款保险制",
+        "制度”还没有建立，与后一分句“目前",
+        "度，目前存款保险制度建",
+        "存款保险制度建立接近成熟”语义前后",
+        "立接近成熟。",
+        "矛盾。",
+        "*人们更喜欢吃一些新鲜的 “梨”“桃”属于“瓜果”，出现了矛",
+        "梨、桃、瓜果，而不喜欢 盾，应将“瓜果”改为其他具体的水果",
+        "服用维生素C药丸。 名称。",
+        "*中国是个多民族国家，是 “中国是56个民族”判断不成立，应改",
+        "56个民族。 为“中国有56个民族”。",
+        "逻辑混乱。“杜绝”“不”构成双重否",
+        "*为了杜绝假冒伪劣产品不再 定，双重否定等于肯定，等于是说“为",
+        "流入市场，必须加强生产、 了让假冒伪劣商品流入市场，”，",
+        "流通环节的监督管理。 应改为“为了杜绝假冒伪劣产品流入市",
+        "场.”",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "1年轻人缺乏的就是理论水平不高和工作经验不足。",
+        "②晚会上表演了音乐、舞蹈、武术和很多文艺节目。",
+        "③由北京人民艺术剧院复排的大型历史话剧《蔡文姬》定于5月1日",
+        "在首都剧场上演，日前正在紧张的排练之中。",
+        "④在古代，这类音乐作品只有文字记载，没有乐谱资料，既无法演",
+        "奏，也无法演唱。",
+        "昨天是HSK考试报名截止日期的最后一天，还陆续有人前来",
+        "报名。",
+        "HSK",
+        "标准教程6（上）",
+        "2 词汇",
+        "（1）熟悉下列交通方面的词语",
+        "交通",
+        "工具 路桥 有关动词",
+        "轮船 隧道 立交桥 航行 航天 失事 托运",
+        "（2）熟悉下列农业方面的词语并选择填空",
+        "灌溉 化肥 水利 畜牧 杂交",
+        "①这个地区大面积种植了 水稻，为了方便 人们",
+        "兴修",
+        "②草原地区可以大力发展 业。",
+        "③使用 可以提高农作物单位面积的产量。"
+      ],
+      "contentOcr": "扩展 病句类型：逻辑不通\nPhan\n所谓逻辑不通，指句子在语法方面是正确的，但表达的意思或前后矛\nmarong\n盾，或不符合概念、判断、推理等形式逻辑或事理逻辑。例如：\n序号 病句 分析\n*骑自行车可以锻炼身体， 关联词错用。前两个分句是原因，后一\n还不用汽油，因为它是最 个分句是结果，关联词应改用“所以”\n环保的交通工具。 或“因此”。\n13\n序号 病句 分析\n从旅游指南看世事变迁\n既然“下一步金融改革的重点之一是加\n*下一步金融改革的重点之\n快建立存款保险制度”说明“存款保险\n一是加快建立存款保险制\n制度”还没有建立，与后一分句“目前\n度，目前存款保险制度建\n存款保险制度建立接近成熟”语义前后\n立接近成熟。\n矛盾。\n*人们更喜欢吃一些新鲜的 “梨”“桃”属于“瓜果”，出现了矛\n梨、桃、瓜果，而不喜欢 盾，应将“瓜果”改为其他具体的水果\n服用维生素C药丸。 名称。\n*中国是个多民族国家，是 “中国是56个民族”判断不成立，应改\n56个民族。 为“中国有56个民族”。\n逻辑混乱。“杜绝”“不”构成双重否\n*为了杜绝假冒伪劣产品不再 定，双重否定等于肯定，等于是说“为\n流入市场，必须加强生产、 了让假冒伪劣商品流入市场，”，\n流通环节的监督管理。 应改为“为了杜绝假冒伪劣产品流入市\n场.”\n·练一练：指出下列句子的错误，并提出修改建议\n1年轻人缺乏的就是理论水平不高和工作经验不足。\n②晚会上表演了音乐、舞蹈、武术和很多文艺节目。\n③由北京人民艺术剧院复排的大型历史话剧《蔡文姬》定于5月1日\n在首都剧场上演，日前正在紧张的排练之中。\n④在古代，这类音乐作品只有文字记载，没有乐谱资料，既无法演\n奏，也无法演唱。\n昨天是HSK考试报名截止日期的最后一天，还陆续有人前来\n报名。\nHSK\n标准教程6（上）\n2 词汇\n（1）熟悉下列交通方面的词语\n交通\n工具 路桥 有关动词\n轮船 隧道 立交桥 航行 航天 失事 托运\n（2）熟悉下列农业方面的词语并选择填空\n灌溉 化肥 水利 畜牧 杂交\n①这个地区大面积种植了 水稻，为了方便 人们\n兴修\n②草原地区可以大力发展 业。\n③使用 可以提高农作物单位面积的产量。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-144",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-145",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-146",
+          "rowIndex": 13
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-14-01",
+      "lessonId": "hsk6t1-lesson-14",
+      "lessonNumber": 14,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列反义词",
+        "Phan",
+        "贬低 抬高 全局 局部",
+        "mo rong",
+        "贬义 褒义 上级 下级",
+        "稠密 稀疏 上游 下游",
+        "丑恶 美好 压缩 扩张",
+        "反面 正面 油腻 清淡",
+        "放大 缩小 自卑 自信",
+        "奉献 索取 固体 液体",
+        "宏观 微观 外向 内向"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列反义词\nPhan\n贬低 抬高 全局 局部\nmo rong\n贬义 褒义 上级 下级\n稠密 稀疏 上游 下游\n丑恶 美好 压缩 扩张\n反面 正面 油腻 清淡\n放大 缩小 自卑 自信\n奉献 索取 固体 液体\n宏观 微观 外向 内向",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-155",
+          "rowIndex": 15
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-15-01",
+      "lessonId": "hsk6t1-lesson-15",
+      "lessonNumber": 15,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：成分余",
+        "Phan",
+        "成分余指句子结构已经完整了，句意已经明确了，又多出现不必要的",
+        "morong",
+        "词语，这就形成了成分余的病句。例如：",
+        "序号 病句 分析",
+        "*我们班同学，上课的时",
+        "候，我们都能专心听讲， 主语重复。应删掉第二个“我们”。",
+        "认真思考问题。",
+        "15",
+        "山脉上的雕刻",
+        "序号 病句 分析",
+        "*一想起我教过的学生，真",
+        "宾语重复。可删掉最后的“这些学生”，或",
+        "2 的打心眼里舍不得离开这",
+        "改为“他们”。",
+        "些学生。",
+        "副词重复。表示任指的词常用在“也”",
+        "“都”前面，但“也都”同时出现即为",
+        "*那个地方谁也都不想去。",
+        "余，本句可改为“那个地方谁也不想",
+        "去。”或者“那个地方谁都不想去。”",
+        "*我们碰到了一些困难，这",
+        "状语重复。“短时间内”和“很快”语",
+        "个问题短时间内不可能很",
+        "义重复，删去其中之一即可。",
+        "快得到解决。",
+        "*人们如果连续看电视超过 词义重复。“超过”和“多”重复，删",
+        "四个多小时，就会疲劳。 掉其中之一即可。",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "（1）我始终不明白，他为什么要那样做的原因。",
+        "（2）凡事要依靠群众，否则只靠自己，什么事也做不成。",
+        "（3）经法院审理，违约经营的张某被判赔偿原告经济损失5万多",
+        "余元。",
+        "（4）这幅画是祖上传下来的，出自于名家之手。",
+        "（5）根据美国某大学研究所发布的《2013全球幸福指数报告》显",
+        "示，丹麦成为世界最幸福的国家。",
+        "HSK 标准教程6（上）",
+        "2 词汇",
+        "（1）看图片，熟悉下列名词",
+        "泡沫 杂技",
+        "洗手时一定要把泡 表演杂技",
+        "沫清洗干净。 我喜欢看杂技表演。",
+        "书法 压岁钱",
+        "书法作品 ? 过春节时，大人要",
+        "这是一幅书法作品。 给孩子压岁钱。",
+        "身",
+        "塔 亭子",
+        "一座塔 一个亭子",
+        "远处有一座塔。 河边有一个小亭子。",
+        "（2）熟悉下列自然方面的词语",
+        "自然",
+        "天气 资源 宇宙",
+        "冰電 台风 气象 气压 淡水 天然气 太空"
+      ],
+      "contentOcr": "扩展 病句类型：成分余\nPhan\n成分余指句子结构已经完整了，句意已经明确了，又多出现不必要的\nmorong\n词语，这就形成了成分余的病句。例如：\n序号 病句 分析\n*我们班同学，上课的时\n候，我们都能专心听讲， 主语重复。应删掉第二个“我们”。\n认真思考问题。\n15\n山脉上的雕刻\n序号 病句 分析\n*一想起我教过的学生，真\n宾语重复。可删掉最后的“这些学生”，或\n2 的打心眼里舍不得离开这\n改为“他们”。\n些学生。\n副词重复。表示任指的词常用在“也”\n“都”前面，但“也都”同时出现即为\n*那个地方谁也都不想去。\n余，本句可改为“那个地方谁也不想\n去。”或者“那个地方谁都不想去。”\n*我们碰到了一些困难，这\n状语重复。“短时间内”和“很快”语\n个问题短时间内不可能很\n义重复，删去其中之一即可。\n快得到解决。\n*人们如果连续看电视超过 词义重复。“超过”和“多”重复，删\n四个多小时，就会疲劳。 掉其中之一即可。\n·练一练：指出下列句子的错误，并提出修改建议\n（1）我始终不明白，他为什么要那样做的原因。\n（2）凡事要依靠群众，否则只靠自己，什么事也做不成。\n（3）经法院审理，违约经营的张某被判赔偿原告经济损失5万多\n余元。\n（4）这幅画是祖上传下来的，出自于名家之手。\n（5）根据美国某大学研究所发布的《2013全球幸福指数报告》显\n示，丹麦成为世界最幸福的国家。\nHSK 标准教程6（上）\n2 词汇\n（1）看图片，熟悉下列名词\n泡沫 杂技\n洗手时一定要把泡 表演杂技\n沫清洗干净。 我喜欢看杂技表演。\n书法 压岁钱\n书法作品 ? 过春节时，大人要\n这是一幅书法作品。 给孩子压岁钱。\n身\n塔 亭子\n一座塔 一个亭子\n远处有一座塔。 河边有一个小亭子。\n（2）熟悉下列自然方面的词语\n自然\n天气 资源 宇宙\n冰電 台风 气象 气压 淡水 天然气 太空",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-164",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-165",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-166",
+          "rowIndex": 17
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-16-01",
+      "lessonId": "hsk6t1-lesson-16",
+      "lessonNumber": 16,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列近义词",
+        "Phan",
+        "marong 布告 公告 恐吓 威胁",
+        "诞辰 生日 谅解 原谅",
+        "发布 公布 勉励 鼓励",
+        "范畴 范围 藐视 蔑视",
+        "挥霍 浪费 洽谈 协商",
+        "坚固 牢固 谦逊 谦虚",
+        "奖赏 奖励 区分 区别"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列近义词\nPhan\nmarong 布告 公告 恐吓 威胁\n诞辰 生日 谅解 原谅\n发布 公布 勉励 鼓励\n范畴 范围 藐视 蔑视\n挥霍 浪费 洽谈 协商\n坚固 牢固 谦逊 谦虚\n奖赏 奖励 区分 区别",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-176",
+          "rowIndex": 10
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-17-01",
+      "lessonId": "hsk6t1-lesson-17",
+      "lessonNumber": 17,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 工电 病句类型：句式杂",
+        "Phan 同一内容，本来可以采用不同的方式表达，有时说话或写作时却错误地",
+        "morong",
+        "将两种说法揉到一起，就形成了句式或者结构的杂。句式混用、结构混用",
+        "是造成句式杂的主要原因。例如：",
+        "序号 病句 分析",
+        "“发觉”后面的宾语，应用陈述语气，",
+        "*我发觉，为什么只要你用 却用了疑问语气，这是把两种句子的语",
+        "功成绩就能提高了？ 气混杂在一起了，应改为“我发觉只要",
+        "你用功成绩就能提高。”",
+        "HSK",
+        "标准教程6（上）",
+        "序号 病句 分析",
+        "*做了演员以后，她一方面努 “她一方面努力提高自已的专业水平，一方",
+        "力提高自已的专业水平，一 面努力提高自已的文化修养”已经表述非常",
+        "2",
+        "方面努力提高自已的文化修 完整了，却又把这句话作为了“也是很重",
+        "养也是很重要的。 要”的主语，造成了病句。",
+        "*展览分为地震突袭、抗震",
+        "“分为部分”与“由.··组成”结构",
+        "救灾、灾后重建、美好家 混用，应改为“展览分为地震突袭、抗震",
+        "3 园四部分组成，充分显示 救灾、灾后重建、美好家园四部分”或者",
+        "了灾区人民不怕困难、自 “展览由地震突袭、抗震救灾、灾后重",
+        "强不息的精神。 建、美好家园四部分组成”。",
+        "“受……·（的）欢迎”和表示被动关系",
+        "*《消费者权益保护法》深",
+        "的书面语结构“为·所十动词”混",
+        "受广大消费者所欢迎，因",
+        "用，应改为“《消费者权益保护法》深",
+        "为它使消费者的权益得到",
+        "受广大消费者欢迎”或者“《消费者权",
+        "最大限度的保护。",
+        "益保护法》为广大消费者所欢迎”。",
+        "“黄曲霉素能够致癌”在这里是表意完",
+        "花生在潮湿条件下储存，",
+        "整准确的句式，却和由“使”构成的兼",
+        "会生长黄曲霉素，黄曲霉",
+        "语句混用，造成语病，应删掉“使人”",
+        "素能够使人致癌。",
+        "二字。",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "①这次参加比赛的，除了本校的学生，还有来自各国的留学生也参",
+        "加了比赛。",
+        "②即使我所做的哪怕只给大家带来一点点的快乐，我也会很高兴。",
+        "③父亲一直想让儿子学门手艺，他认为只要身怀绝技，一辈子才有",
+        "了铁饭碗。",
+        "她为人的正直、诚恳，做事的严谨、认真，在我心里给我留下了",
+        "深刻的印象。",
+        "钱虽然不多，却是我用汗水换来的，拿在手里似乎比从父母那里",
+        "得到的重得多了。",
+        "17",
+        "词汇：熟悉下列词语的语素义",
+        "小动物眼中的慢世界",
+        "导：带领 和：放弃矛盾",
+        "导向 和解",
+        "向：方向 解：消除",
+        "搏：对打 保：保护",
+        "搏斗 保养",
+        "斗：对打 养：休息，调理",
+        "苍：灰白色 腐：变坏",
+        "苍白 腐烂",
+        "一白：白色 烂：因微生物滋生，破坏了机体",
+        "陈：安放 表：表示",
+        "陈列 表决",
+        "列：排列 决：决定",
+        "腐：变坏 反：回",
+        "腐蚀 反思",
+        "蚀：损坏 思：思考",
+        "精：完美 罢：停止",
+        "精华 罢工",
+        "华：最好的 工：工作"
+      ],
+      "contentOcr": "扩展 工电 病句类型：句式杂\nPhan 同一内容，本来可以采用不同的方式表达，有时说话或写作时却错误地\nmorong\n将两种说法揉到一起，就形成了句式或者结构的杂。句式混用、结构混用\n是造成句式杂的主要原因。例如：\n序号 病句 分析\n“发觉”后面的宾语，应用陈述语气，\n*我发觉，为什么只要你用 却用了疑问语气，这是把两种句子的语\n功成绩就能提高了？ 气混杂在一起了，应改为“我发觉只要\n你用功成绩就能提高。”\nHSK\n标准教程6（上）\n序号 病句 分析\n*做了演员以后，她一方面努 “她一方面努力提高自已的专业水平，一方\n力提高自已的专业水平，一 面努力提高自已的文化修养”已经表述非常\n2\n方面努力提高自已的文化修 完整了，却又把这句话作为了“也是很重\n养也是很重要的。 要”的主语，造成了病句。\n*展览分为地震突袭、抗震\n“分为部分”与“由.··组成”结构\n救灾、灾后重建、美好家 混用，应改为“展览分为地震突袭、抗震\n3 园四部分组成，充分显示 救灾、灾后重建、美好家园四部分”或者\n了灾区人民不怕困难、自 “展览由地震突袭、抗震救灾、灾后重\n强不息的精神。 建、美好家园四部分组成”。\n“受……·（的）欢迎”和表示被动关系\n*《消费者权益保护法》深\n的书面语结构“为·所十动词”混\n受广大消费者所欢迎，因\n用，应改为“《消费者权益保护法》深\n为它使消费者的权益得到\n受广大消费者欢迎”或者“《消费者权\n最大限度的保护。\n益保护法》为广大消费者所欢迎”。\n“黄曲霉素能够致癌”在这里是表意完\n花生在潮湿条件下储存，\n整准确的句式，却和由“使”构成的兼\n会生长黄曲霉素，黄曲霉\n语句混用，造成语病，应删掉“使人”\n素能够使人致癌。\n二字。\n·练一练：指出下列句子的错误，并提出修改建议\n①这次参加比赛的，除了本校的学生，还有来自各国的留学生也参\n加了比赛。\n②即使我所做的哪怕只给大家带来一点点的快乐，我也会很高兴。\n③父亲一直想让儿子学门手艺，他认为只要身怀绝技，一辈子才有\n了铁饭碗。\n她为人的正直、诚恳，做事的严谨、认真，在我心里给我留下了\n深刻的印象。\n钱虽然不多，却是我用汗水换来的，拿在手里似乎比从父母那里\n得到的重得多了。\n17\n词汇：熟悉下列词语的语素义\n小动物眼中的慢世界\n导：带领 和：放弃矛盾\n导向 和解\n向：方向 解：消除\n搏：对打 保：保护\n搏斗 保养\n斗：对打 养：休息，调理\n苍：灰白色 腐：变坏\n苍白 腐烂\n一白：白色 烂：因微生物滋生，破坏了机体\n陈：安放 表：表示\n陈列 表决\n列：排列 决：决定\n腐：变坏 反：回\n腐蚀 反思\n蚀：损坏 思：思考\n精：完美 罢：停止\n精华 罢工\n华：最好的 工：工作",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-185",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 36
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 37
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 39
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 40
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-186",
+          "rowIndex": 41
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-187",
+          "rowIndex": 21
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-18-01",
+      "lessonId": "hsk6t1-lesson-18",
+      "lessonNumber": 18,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：熟悉下列近义词",
+        "Phan",
+        "marong 简化 精简 让步 妥协",
+        "觉悟 觉醒 擅自 私自",
+        "结局 结果 生效 有效",
+        "救济 救助 盛情 热情",
+        "局面 局势 瓦解 分解",
+        "廉洁 清廉 慰问 安慰",
+        "牵连 牵扯 支援 援助",
+        "废除 作废 资助 赞助"
+      ],
+      "contentOcr": "扩展 词汇：熟悉下列近义词\nPhan\nmarong 简化 精简 让步 妥协\n觉悟 觉醒 擅自 私自\n结局 结果 生效 有效\n救济 救助 盛情 热情\n局面 局势 瓦解 分解\n廉洁 清廉 慰问 安慰\n牵连 牵扯 支援 援助\n废除 作废 资助 赞助",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-196",
+          "rowIndex": 12
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-19-01",
+      "lessonId": "hsk6t1-lesson-19",
+      "lessonNumber": 19,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 病句类型：歧义句",
+        "Phan 正常情况下，一个句子只表达一个意思，如果一个句子在理解上会产生",
+        "marong",
+        "两种或两种以上的可能性，就是歧义句。例如：",
+        "序号 病句 分析",
+        "“前”做方位词，意思是“星期五之前”；",
+        "“前”做动词，意思是“前往”，即星期五这一",
+        "*上面通知说，让您",
+        "天去汇报。若消除歧义，句子可改为“上面通知",
+        "本周五前去汇报。",
+        "说，让您本周五以前去汇报。”或者“上面通知",
+        "说，让您本周五去汇报。”",
+        "兼有施受意义的词语“租”使本句话有两种理解：",
+        "*那时候我们同在一",
+        "“我向他租了一套房子”和“我租给他一套房",
+        "个城市，我还租了",
+        "子”。若消除歧义，句子可改为“我还跟他租了一",
+        "他一套房子呢。",
+        "套房子呢”或者“我还租给了他一套房子呢”。",
+        "“几个”在句中做定语，可以修饰“海归”，也",
+        "*几个海归投资的垃 可修饰“垃圾发电厂”。若消除歧义，可改为",
+        "圾发电厂很快将要 “几个海归投资的一座垃圾发电厂很快将要建成",
+        "建成投产。 投产。”或者“海归投资的几个垃圾发电厂很快",
+        "将要建成投产。”",
+        "根据停顿不同，有两种理解：“医生看到/我们非 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "*医生看到我们非常 常焦急”和“医生看到我们/非常焦急”。若消除",
+        "焦急，连忙把病人 歧义，可改为“医生看到我们非常焦急的样子，",
+        "的病情告诉我们。 连忙把病人的病情告诉我们。”或者“医生非常焦",
+        "急，看到我们，连忙把病人的病情告诉我们。”",
+        "HSK",
+        "标准教程6（上）",
+        "序号 病句 分析",
+        "句子有两种理解：“我们打败了师大女篮/得到",
+        "了冠军”和“我们打败了/师大女篮得到了冠",
+        "*我们打败了师大女",
+        "5 军”。若消除歧义，可改为“我们打败了师大女",
+        "篮得到了冠军。",
+        "篮，得到了冠军。”或者“我们打败了，师大女",
+        "篮得到了冠军。”",
+        "·练一练：指出下列句子的错误，并提出修改建议",
+        "①他背着爸爸和我买下了那栋房子。",
+        "②这个精致的玩具将作为今晚最受欢迎的客人的礼品送给他。",
+        "③我的车没有锁，在教室门口放着呢，你去骑吧。",
+        "④我看见她很高兴，就和她聊了起来。",
+        "他借了我两本书还没还呢。",
+        "词汇：熟悉下列词语搭配",
+        "词汇 搭配 例句",
+        "附属 附属中学 这所医院附属于医科大学。",
+        "杠杆 杠杆作用/经济杠杆 应充分发挥金融机构在经济发展中的杠杆作用。",
+        "疙瘩 面疙瘩/线疙瘩 他的眉头皱成了一个大疙瘩。",
+        "勾结 暗中勾结 他们勾结在一起，做了不少坏事。",
+        "贯彻 贯彻始终 我们公司一直贯彻公平、公正的原则。",
+        "混清 混清黑白/混清是非 对和错是不容混淆的。",
+        "机械 机械化 这个人做事太机械了，一点儿灵活性都没有。",
+        "冷却 自然冷却/冷却剂 岩浆冷却后就成了岩石。",
+        "www.nhantriviet.com/GiaoTrinhChuanHSK 媒介 传播媒介 苍蝇是传染疾病的媒介。",
+        "谜语 猜谜语 这个谜语我怎么也猜不出来，你快告诉我吧。",
+        "母语 母语教学 我的母语是汉语，你的母语呢？",
+        "排练 排练节目 为了这次演出，我们天天认真排练。"
+      ],
+      "contentOcr": "扩展 病句类型：歧义句\nPhan 正常情况下，一个句子只表达一个意思，如果一个句子在理解上会产生\nmarong\n两种或两种以上的可能性，就是歧义句。例如：\n序号 病句 分析\n“前”做方位词，意思是“星期五之前”；\n“前”做动词，意思是“前往”，即星期五这一\n*上面通知说，让您\n天去汇报。若消除歧义，句子可改为“上面通知\n本周五前去汇报。\n说，让您本周五以前去汇报。”或者“上面通知\n说，让您本周五去汇报。”\n兼有施受意义的词语“租”使本句话有两种理解：\n*那时候我们同在一\n“我向他租了一套房子”和“我租给他一套房\n个城市，我还租了\n子”。若消除歧义，句子可改为“我还跟他租了一\n他一套房子呢。\n套房子呢”或者“我还租给了他一套房子呢”。\n“几个”在句中做定语，可以修饰“海归”，也\n*几个海归投资的垃 可修饰“垃圾发电厂”。若消除歧义，可改为\n圾发电厂很快将要 “几个海归投资的一座垃圾发电厂很快将要建成\n建成投产。 投产。”或者“海归投资的几个垃圾发电厂很快\n将要建成投产。”\n根据停顿不同，有两种理解：“医生看到/我们非 www.nhantriviet.com/GiaoTrinhChuanHSK\n*医生看到我们非常 常焦急”和“医生看到我们/非常焦急”。若消除\n焦急，连忙把病人 歧义，可改为“医生看到我们非常焦急的样子，\n的病情告诉我们。 连忙把病人的病情告诉我们。”或者“医生非常焦\n急，看到我们，连忙把病人的病情告诉我们。”\nHSK\n标准教程6（上）\n序号 病句 分析\n句子有两种理解：“我们打败了师大女篮/得到\n了冠军”和“我们打败了/师大女篮得到了冠\n*我们打败了师大女\n5 军”。若消除歧义，可改为“我们打败了师大女\n篮得到了冠军。\n篮，得到了冠军。”或者“我们打败了，师大女\n篮得到了冠军。”\n·练一练：指出下列句子的错误，并提出修改建议\n①他背着爸爸和我买下了那栋房子。\n②这个精致的玩具将作为今晚最受欢迎的客人的礼品送给他。\n③我的车没有锁，在教室门口放着呢，你去骑吧。\n④我看见她很高兴，就和她聊了起来。\n他借了我两本书还没还呢。\n词汇：熟悉下列词语搭配\n词汇 搭配 例句\n附属 附属中学 这所医院附属于医科大学。\n杠杆 杠杆作用/经济杠杆 应充分发挥金融机构在经济发展中的杠杆作用。\n疙瘩 面疙瘩/线疙瘩 他的眉头皱成了一个大疙瘩。\n勾结 暗中勾结 他们勾结在一起，做了不少坏事。\n贯彻 贯彻始终 我们公司一直贯彻公平、公正的原则。\n混清 混清黑白/混清是非 对和错是不容混淆的。\n机械 机械化 这个人做事太机械了，一点儿灵活性都没有。\n冷却 自然冷却/冷却剂 岩浆冷却后就成了岩石。\nwww.nhantriviet.com/GiaoTrinhChuanHSK 媒介 传播媒介 苍蝇是传染疾病的媒介。\n谜语 猜谜语 这个谜语我怎么也猜不出来，你快告诉我吧。\n母语 母语教学 我的母语是汉语，你的母语呢？\n排练 排练节目 为了这次演出，我们天天认真排练。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 32
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 33
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 34
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-205",
+          "rowIndex": 35
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 1
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 2
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 3
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 4
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 5
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 6
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 7
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 8
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 9
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-206",
+          "rowIndex": 30
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    },
+    {
+      "id": "hsk6t1-extension-20-01",
+      "lessonId": "hsk6t1-lesson-20",
+      "lessonNumber": 20,
+      "type": "extension",
+      "labelZh": "扩展",
+      "contentOcrLines": [
+        "扩展 词汇：看图片，熟悉下列名词",
+        "Phan",
+        "marong 钻石",
+        "皮革",
+        "一颗钻石",
+        "皮革包",
+        "这件首饰非常昂贵，上面",
+        "他在皮革厂工作。",
+        "镶满了钻石。",
+        "导物启享",
+        "启事",
+        "吹哨",
+        "寻物启事",
+        "足球场上裁判员吹哨 本人不小老在食室（县）",
+        "导机， 维（拾）到了， 墙上贴着一张寻物启事。",
+        "的动作很帅。 息（付）副10元，",
+        "油漆 炊烟",
+        "刷油漆 傍晚时，村子里家家升起",
+        "用油漆刷墙。 了炊烟。",
+        "证书 火焰",
+        "荣誉证书 一团火焰 www.nhantriviet.com/GiaoTrinhChuanHSK",
+        "上学期间他获得了不少 红色的火焰让人感觉很温",
+        "荣誉证书。 暖。"
+      ],
+      "contentOcr": "扩展 词汇：看图片，熟悉下列名词\nPhan\nmarong 钻石\n皮革\n一颗钻石\n皮革包\n这件首饰非常昂贵，上面\n他在皮革厂工作。\n镶满了钻石。\n导物启享\n启事\n吹哨\n寻物启事\n足球场上裁判员吹哨 本人不小老在食室（县）\n导机， 维（拾）到了， 墙上贴着一张寻物启事。\n的动作很帅。 息（付）副10元，\n油漆 炊烟\n刷油漆 傍晚时，村子里家家升起\n用油漆刷墙。 了炊烟。\n证书 火焰\n荣誉证书 一团火焰 www.nhantriviet.com/GiaoTrinhChuanHSK\n上学期间他获得了不少 红色的火焰让人感觉很温\n荣誉证书。 暖。",
+      "sourceEvidence": [
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 10
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 11
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 12
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 13
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 14
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 15
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 16
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 17
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 18
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 19
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 20
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 21
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 22
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 23
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 24
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 25
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 26
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 27
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 28
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 29
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 30
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 31
+        },
+        {
+          "sourcePageId": "hsk6t1-source-page-215",
+          "rowIndex": 32
+        }
+      ],
+      "transcriptionStatus": "machine-transcribed-needs-editorial-review"
+    }
+  ]
+}
