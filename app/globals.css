@@ -3888,13 +3888,21 @@ body:has(.admin-page) > .mobile-nav {
 }
 
 @media (max-width: 720px) {
-  .game-center-shell.game-journey-shell { padding: 12px 12px 96px; }
+  .game-center-shell.game-journey-shell {
+    min-height: 100dvh;
+    padding:
+      max(12px, env(safe-area-inset-top))
+      max(12px, env(safe-area-inset-right))
+      calc(104px + env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+    overflow-x: clip;
+  }
   .game-journey-stage { padding: 23px 12px 25px; border-radius: 22px; }
   .game-journey-header { padding-inline: 8px; }
   .game-journey-header > span { font-size: 9px; }
   .game-journey-header h1 { margin-top: 11px; font-size: 39px; }
   .game-journey-header p { font-size: 13px; }
-  .game-journey-progress { min-height: 38px; margin-top: 14px; }
+  .game-journey-progress { min-height: 44px; margin-top: 14px; }
 
   .game-journey-featured { min-height: 310px; margin-top: 20px; }
   .game-journey-featured-card {
@@ -3935,6 +3943,76 @@ body:has(.admin-page) > .mobile-nav {
   .game-journey-featured { min-height: 0; }
   .game-journey-featured-card { min-height: 0; padding-right: 20px; }
   .game-journey-guide { display: none; }
+}
+
+@media (max-width: 390px) {
+  .game-center-shell.game-journey-shell {
+    padding-right: max(9px, env(safe-area-inset-right));
+    padding-left: max(9px, env(safe-area-inset-left));
+  }
+  .game-journey-stage { padding: 18px 9px 22px; border-radius: 20px; }
+  .game-journey-status { align-items: flex-start; flex-wrap: wrap; }
+  .game-progress-sync { flex: 1 1 130px; text-align: right; }
+  .game-journey-featured { margin-top: 16px; }
+  .game-journey-featured-card { padding: 18px 16px; border-radius: 20px; }
+  .game-journey-featured-number { width: 48px; height: 48px; margin: -8px 0 14px -5px; }
+  .game-journey-featured-card h2 { font-size: 25px; }
+  .game-journey-stations { gap: 12px; }
+  .game-journey-station,
+  .game-journey-station.station-2,
+  .game-journey-station.station-3,
+  .game-journey-station.station-4,
+  .game-journey-station.station-5,
+  .game-journey-station.station-6,
+  .game-journey-station.station-7 {
+    min-height: 104px;
+    padding: 8px;
+    grid-template-columns: 34px 86px minmax(0, 1fr);
+    gap: 7px;
+    border-radius: 17px;
+  }
+  .game-journey-station-number { width: 34px; height: 34px; border-width: 4px; }
+  .game-journey-station-visual { width: 86px; height: 70px; }
+  .game-journey-station-copy strong { padding-right: 4px; font-size: 12px; line-height: 1.3; }
+}
+
+@media (min-width: 560px) and (max-width: 720px) and (max-height: 500px) and (orientation: landscape) {
+  .game-center-shell.game-journey-shell {
+    padding-top: max(8px, env(safe-area-inset-top));
+    padding-right: max(10px, env(safe-area-inset-right));
+    padding-bottom: calc(82px + env(safe-area-inset-bottom));
+    padding-left: max(10px, env(safe-area-inset-left));
+  }
+  .game-journey-stage { padding: 16px; }
+  .game-journey-featured { min-height: 238px; margin-top: 16px; }
+  .game-journey-featured-card {
+    min-height: 224px;
+    padding: 18px 190px 18px 18px;
+  }
+  .game-journey-featured-number { width: 46px; height: 46px; margin: -7px 0 10px -6px; }
+  .game-journey-featured-card h2 { margin-block: 5px; font-size: 26px; }
+  .game-journey-featured-card p { display: none; }
+  .game-journey-featured-meta { margin-top: 8px; }
+  .game-journey-featured-card button { width: auto; min-height: 44px; margin-top: 10px; }
+  .game-journey-guide { width: 190px; right: 4px; }
+  .game-journey-stations { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+  .game-journey-station,
+  .game-journey-station.station-2,
+  .game-journey-station.station-3,
+  .game-journey-station.station-4,
+  .game-journey-station.station-5,
+  .game-journey-station.station-6,
+  .game-journey-station.station-7,
+  .game-journey-station:nth-child(even) {
+    width: 100%;
+    min-height: 108px;
+    margin-left: 0;
+    padding: 9px;
+    grid-template-columns: 34px 88px minmax(0, 1fr);
+    gap: 8px;
+  }
+  .game-journey-station-visual { width: 88px; height: 72px; }
+  .game-journey-skills { margin-top: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -4238,57 +4316,99 @@ a.roadmap-lesson-row:hover { color: #0b665c; background: #f5faf8; }
 }
 
 @media (max-width: 720px) {
-  .course-roadmap-page { padding: 18px 0 104px; }
-  .course-roadmap-shell { width: min(100% - 28px, 640px); }
-  .course-roadmap-header { min-height: 0; padding: 0 0 20px; align-items: flex-start; flex-direction: column; gap: 9px; }
-  .course-roadmap-header h1 { font-size: 28px; }
-  .course-roadmap-progress-row { width: 100%; margin-top: 15px; grid-template-columns: auto minmax(100px, 1fr) auto; gap: 11px; }
-  .course-roadmap-switch { min-height: 40px; padding: 0; }
-  .course-roadmap-layout { padding-top: 22px; }
-  .roadmap-stage { grid-template-columns: 38px minmax(0, 1fr); }
-  .roadmap-stage-marker { width: 34px; height: 34px; margin-top: 16px; font-size: 15px; }
+  .course-roadmap-page { min-height: 0; padding: max(12px, env(safe-area-inset-top)) env(safe-area-inset-right) calc(104px + env(safe-area-inset-bottom)) env(safe-area-inset-left); overflow-x: clip; }
+  .course-roadmap-shell { width: min(calc(100% - 24px), 640px); }
+  .course-roadmap-header { min-height: 0; padding: 0 0 18px; align-items: flex-start; flex-direction: column; gap: 10px; }
+  .course-roadmap-header > div { width: 100%; min-width: 0; }
+  .course-roadmap-header h1 { font-size: clamp(24px, 7vw, 28px); overflow-wrap: anywhere; }
+  .course-roadmap-progress-row { width: 100%; margin-top: 14px; grid-template-columns: auto minmax(72px, 1fr) auto; gap: 10px; }
+  .course-roadmap-progress-track { min-width: 0; }
+  .course-roadmap-switch { min-height: 44px; padding: 0 4px; }
+  .course-roadmap-layout { padding-top: 18px; gap: 18px; }
+  .course-roadmap-stages { gap: 14px; }
+  .roadmap-stage { grid-template-columns: 36px minmax(0, 1fr); }
+  .roadmap-stage-marker { width: 32px; height: 32px; margin-top: 18px; font-size: 14px; }
   .roadmap-stage-marker svg { width: 17px; height: 17px; }
   .roadmap-stage:not(:last-child) .roadmap-stage-rail::after { top: 53px; bottom: -27px; }
-  .roadmap-stage-summary { min-height: 78px; grid-template-columns: 112px minmax(0, 1fr); gap: 13px; }
-  .roadmap-stage-image { width: 112px; height: 78px; grid-row: 1 / span 2; }
-  .roadmap-stage-copy { padding: 10px 8px 0 0; }
-  .roadmap-stage-copy h2 { font-size: 15px; white-space: normal; }
-  .roadmap-stage-copy p { margin-top: 3px; font-size: 10px; }
-  .roadmap-stage-status { min-height: 25px; width: fit-content; margin: 0 8px 8px 0; padding: 0 9px; grid-column: 2; font-size: 9px; }
-  details.roadmap-stage-card > summary { grid-template-columns: minmax(0, 1fr) 23px; }
-  .roadmap-lesson-list { margin: 0 7px 7px; }
-  .roadmap-lesson-row { min-height: 61px; padding: 9px 10px; grid-template-columns: 23px minmax(0, 1fr) 16px; grid-template-rows: auto auto; gap: 4px 7px; }
+  .roadmap-stage-card { border-radius: 14px; }
+  .roadmap-stage-summary { min-height: 94px; grid-template-columns: clamp(92px, 26vw, 112px) minmax(0, 1fr); align-items: stretch; gap: clamp(10px, 3vw, 13px); }
+  .roadmap-stage-image { width: 100%; height: 100%; min-height: 94px; grid-row: 1 / span 2; }
+  .roadmap-stage-copy { align-self: end; padding: 12px 8px 3px 0; }
+  .roadmap-stage-copy h2 { font-size: 15px; line-height: 1.32; white-space: normal; }
+  .roadmap-stage-copy p { margin-top: 4px; font-size: 10px; line-height: 1.4; }
+  .roadmap-stage-status { min-height: 28px; width: fit-content; margin: 0 8px 9px 0; padding: 0 9px; align-self: start; grid-column: 2; font-size: 9.5px; }
+  details.roadmap-stage-card > summary { min-height: 44px; grid-template-columns: minmax(0, 1fr) 28px; }
+  .roadmap-stage-expand { width: 18px; height: 18px; }
+  .roadmap-lesson-list { margin: 0 8px 8px; border-radius: 10px; }
+  .roadmap-lesson-row { min-height: 68px; padding: 11px 12px; grid-template-columns: 24px minmax(0, 1fr) 20px; grid-template-rows: auto auto; align-items: center; gap: 3px 8px; font-size: 12px; }
   .roadmap-lesson-state { grid-column: 1; grid-row: 1 / span 2; }
-  .roadmap-lesson-copy { grid-column: 2; grid-row: 1; flex-wrap: wrap; gap: 5px; }
-  .roadmap-lesson-copy > strong { width: 100%; flex-basis: 100%; white-space: normal; }
+  .roadmap-lesson-copy { grid-column: 2; grid-row: 1; flex-wrap: wrap; gap: 3px 5px; }
+  .roadmap-lesson-copy > span { font-size: 10px; font-weight: 680; }
+  .roadmap-lesson-copy > strong { width: 100%; flex-basis: 100%; font-size: 13px; line-height: 1.35; white-space: normal; }
   .roadmap-lesson-copy > i { display: none; }
-  .roadmap-lesson-minutes { grid-column: 2; grid-row: 2; text-align: left; font-size: 10px; }
+  .roadmap-lesson-minutes { grid-column: 2; grid-row: 2; text-align: left; font-size: 10.5px; }
   .roadmap-lesson-cta,
-  .roadmap-lesson-vip { min-height: 44px; padding-inline: 12px; grid-column: 2 / 4; grid-row: 3; justify-self: start; }
+  .roadmap-lesson-vip { min-height: 44px; width: 100%; margin-top: 6px; padding-inline: 12px; grid-column: 2 / 4; grid-row: 3; justify-self: stretch; }
   .roadmap-lesson-chevron { grid-column: 3; grid-row: 1 / span 2; }
   .roadmap-lesson-row.is-current,
   .roadmap-lesson-row.is-vip-locked { grid-template-rows: auto auto auto; }
-  .course-roadmap-aside { grid-template-columns: 1fr; }
-  .course-roadmap-overview { padding: 20px 20px 9px; }
+  .course-roadmap-aside { grid-template-columns: 1fr; gap: 16px; }
+  .course-roadmap-overview { padding: 18px 18px 8px; border-radius: 14px; }
   .roadmap-overview-stat { min-height: 72px; }
   .course-roadmap-coach { width: min(360px, 100%); margin-inline: auto; }
+  .course-roadmap-coach-bubble > svg { top: -25px; left: 8px; }
+}
+
+@media (max-width: 720px) and (max-height: 500px) and (orientation: landscape) {
+  .course-roadmap-page { padding-top: max(8px, env(safe-area-inset-top)); }
+  .course-roadmap-header { padding-bottom: 12px; display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: 12px; }
+  .course-roadmap-header > div { grid-column: 1; grid-row: 1; }
+  .course-roadmap-eyebrow { margin-bottom: 3px; }
+  .course-roadmap-header h1 { font-size: 24px; }
+  .course-roadmap-progress-row { margin-top: 8px; }
+  .course-roadmap-switch { grid-column: 2; grid-row: 1; align-self: center; }
+  .course-roadmap-layout { padding-top: 12px; }
 }
 
 @media (max-width: 430px) {
-  .course-roadmap-shell { width: calc(100% - 20px); }
-  .course-roadmap-eyebrow { font-size: 11px; }
-  .course-roadmap-header h1 { font-size: 25px; }
+  .course-roadmap-shell { width: calc(100% - 16px); }
+  .course-roadmap-eyebrow { margin-bottom: 5px; font-size: 11px; }
+  .course-roadmap-header h1 { font-size: clamp(23px, 7.2vw, 26px); line-height: 1.18; }
   .course-roadmap-progress-row strong { font-size: 12px; }
-  .roadmap-stage { grid-template-columns: 31px minmax(0, 1fr); }
-  .roadmap-stage-marker { width: 29px; height: 29px; margin-top: 18px; font-size: 13px; }
-  .roadmap-stage-summary { grid-template-columns: 88px minmax(0, 1fr); gap: 10px; }
-  .roadmap-stage-image { width: 88px; }
-  .roadmap-stage-copy h2 { font-size: 13px; }
-  .roadmap-stage-status { padding-inline: 7px; }
+  .course-roadmap-progress-row small { font-size: 10px; }
+  .roadmap-stage { grid-template-columns: 30px minmax(0, 1fr); }
+  .roadmap-stage-marker { width: 28px; height: 28px; margin-top: 20px; font-size: 12px; }
+  .roadmap-stage-summary { min-height: 90px; grid-template-columns: clamp(76px, 23vw, 88px) minmax(0, 1fr); gap: 9px; }
+  .roadmap-stage-image { min-height: 90px; }
+  .roadmap-stage-copy { padding-right: 5px; }
+  .roadmap-stage-copy h2 { font-size: 14px; }
+  .roadmap-stage-status { margin-right: 5px; padding-inline: 7px; }
+  .roadmap-lesson-list { margin: 0 6px 6px; }
+  .roadmap-lesson-row { padding: 10px; grid-template-columns: 22px minmax(0, 1fr) 18px; gap-inline: 7px; }
+  .roadmap-lesson-cta,
+  .roadmap-lesson-vip { grid-column: 1 / -1; }
+  .course-roadmap-overview { padding-inline: 16px; }
+  .course-roadmap-coach { grid-template-columns: 90px minmax(0, 1fr); }
+  .course-roadmap-coach-image { width: 114px; height: 114px; margin-left: -12px; }
+  .course-roadmap-coach-bubble { min-height: 92px; padding: 17px 13px 14px; }
+}
+
+@media (max-width: 350px) {
+  .course-roadmap-shell { width: calc(100% - 12px); }
+  .course-roadmap-header h1 { font-size: 23px; }
+  .course-roadmap-progress-row { gap: 8px; }
+  .roadmap-stage { grid-template-columns: 27px minmax(0, 1fr); }
+  .roadmap-stage-marker { width: 25px; height: 25px; font-size: 11px; }
+  .roadmap-stage-summary { grid-template-columns: 70px minmax(0, 1fr); gap: 8px; }
+  .roadmap-stage-status { font-size: 9px; }
   .roadmap-stage-status svg { display: none; }
-  .course-roadmap-coach { grid-template-columns: 102px minmax(0, 1fr); }
-  .course-roadmap-coach-image { width: 126px; height: 126px; }
-  .course-roadmap-coach-bubble { padding: 17px 13px 14px; }
+  .roadmap-lesson-list { margin: 0 4px 4px; }
+  .roadmap-lesson-row { padding-inline: 8px; grid-template-columns: 20px minmax(0, 1fr) 16px; gap-inline: 6px; }
+  .roadmap-lesson-copy > strong { font-size: 12.5px; }
+  .course-roadmap-overview { padding-inline: 14px; }
+  .roadmap-overview-stat { grid-template-columns: 34px 1fr; gap: 9px; }
+  .course-roadmap-coach { grid-template-columns: 80px minmax(0, 1fr); }
+  .course-roadmap-coach-image { width: 102px; height: 102px; }
 }
 
 .lesson-page { min-height: 760px; padding-block: 34px 90px; }
@@ -10186,18 +10306,20 @@ body:has(.learner-app-shell) > .mobile-nav {
   height: 100%;
   position: absolute;
   inset: 0;
-  z-index: -2;
+  z-index: 0;
   object-fit: cover;
   object-position: center;
+  filter: saturate(.92) contrast(.97);
 }
 
 .writing-arena::after {
   content: "";
   position: absolute;
   inset: 0;
-  z-index: -1;
+  z-index: 1;
   pointer-events: none;
-  background: rgba(255, 252, 217, .06);
+  background:
+    linear-gradient(180deg, rgba(255, 253, 229, .22) 0%, rgba(255, 253, 229, .04) 28%, rgba(235, 245, 194, .08) 68%, rgba(216, 235, 170, .18) 100%);
 }
 
 .writing-game-back {
@@ -10759,8 +10881,15 @@ body:has(.learner-app-shell) > .mobile-nav {
 
 .writing-session-aside {
   padding-top: 7px;
+}
+
+.writing-session-details-content {
   display: grid;
   gap: 22px;
+}
+
+.writing-session-summary {
+  display: none;
 }
 
 .writing-current-word,
@@ -10936,7 +11065,7 @@ body:has(.learner-app-shell) > .mobile-nav {
     grid-template-columns: 1fr;
   }
 
-  .writing-session-aside {
+  .writing-session-details-content {
     grid-template-columns: 1fr 1fr;
   }
 
@@ -10955,7 +11084,11 @@ body:has(.learner-app-shell) > .mobile-nav {
     width: 100%;
     min-height: 100dvh;
     margin-left: 0;
-    padding: 12px;
+    padding:
+      max(12px, env(safe-area-inset-top))
+      max(12px, env(safe-area-inset-right))
+      max(12px, env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
   }
 
   .writing-game-dashboard {
@@ -10974,8 +11107,8 @@ body:has(.learner-app-shell) > .mobile-nav {
   }
 
   .writing-game-back {
-    width: 42px;
-    height: 42px;
+    width: 44px;
+    height: 44px;
     top: 10px;
     left: 10px;
     border-radius: 13px;
@@ -10993,7 +11126,7 @@ body:has(.learner-app-shell) > .mobile-nav {
   }
 
   .writing-arena-metrics small {
-    font-size: 6px;
+    font-size: 8px;
   }
 
   .writing-arena-topline {
@@ -11008,14 +11141,14 @@ body:has(.learner-app-shell) > .mobile-nav {
   }
 
   .writing-arena {
-    height: 520px;
-    min-height: 520px;
+    height: clamp(460px, 62dvh, 520px);
+    min-height: 460px;
     border-radius: 22px;
     box-shadow: 0 18px 38px rgba(26, 76, 60, .12);
   }
 
   .writing-arena-background {
-    object-position: 59% center;
+    object-position: 86% center;
   }
 
   .writing-falling-word {
@@ -11062,7 +11195,7 @@ body:has(.learner-app-shell) > .mobile-nav {
 
   .writing-answer-bar {
     position: sticky;
-    bottom: 77px;
+    bottom: max(8px, env(safe-area-inset-bottom));
     z-index: 40;
     padding: 12px 0 5px;
     background: rgba(251, 247, 237, .96);
@@ -11077,13 +11210,99 @@ body:has(.learner-app-shell) > .mobile-nav {
   }
 
   .writing-session-aside {
-    padding: 20px 18px;
-    grid-template-columns: 1fr;
-    gap: 17px;
+    padding: 0;
     border: 1px solid rgba(15, 89, 73, .12);
     border-radius: 20px;
-    background: #fffdf5;
+    background: rgba(255, 253, 245, .96);
     box-shadow: 0 16px 34px rgba(26, 76, 60, .09);
+    overflow: hidden;
+  }
+
+  .writing-session-summary {
+    min-height: 76px;
+    padding: 12px 14px;
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    cursor: pointer;
+    color: #0d4b42;
+    list-style: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .writing-session-summary::-webkit-details-marker {
+    display: none;
+  }
+
+  .writing-session-summary-icon {
+    width: 42px;
+    height: 42px;
+    flex: 0 0 42px;
+    display: grid;
+    place-items: center;
+    color: #087568;
+    border: 1px solid rgba(8, 117, 101, .16);
+    border-radius: 13px;
+    background: #edf7e8;
+  }
+
+  .writing-session-summary-copy {
+    min-width: 0;
+    flex: 1;
+    display: grid;
+    gap: 3px;
+  }
+
+  .writing-session-summary-copy small {
+    color: #60736d;
+    font-size: 9px;
+    font-weight: 760;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+  }
+
+  .writing-session-summary-copy strong {
+    overflow: hidden;
+    color: #123f37;
+    font-size: 13px;
+    line-height: 1.35;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .writing-session-summary-copy strong span {
+    font-family: "Microsoft YaHei", "PingFang SC", "Noto Sans CJK SC", sans-serif;
+    font-size: 20px;
+    font-weight: 650;
+  }
+
+  .writing-session-summary-action {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    color: #087568;
+    font-size: 10px;
+    font-weight: 780;
+  }
+
+  .writing-session-summary-action svg {
+    transition: transform .2s ease;
+  }
+
+  .writing-session-details[open] .writing-session-summary-action svg {
+    transform: rotate(180deg);
+  }
+
+  .writing-session-details-content {
+    padding: 18px;
+    grid-template-columns: 1fr;
+    gap: 17px;
+    border-top: 1px solid rgba(15, 89, 73, .1);
+    background: rgba(255, 253, 245, .82);
+  }
+
+  .writing-session-details:not([open]) > .writing-session-details-content {
+    display: none;
   }
 
   .writing-session-note {
@@ -11109,6 +11328,54 @@ body:has(.learner-app-shell) > .mobile-nav {
 
   .writing-current-word strong {
     font-size: 38px;
+  }
+}
+
+@media (max-width: 390px) {
+  .writing-page-shell {
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+  .writing-arena-metrics { right: 8px; gap: 4px; }
+  .writing-arena-metrics > span { min-width: 58px; padding-inline: 6px; }
+  .writing-arena-metrics strong { font-size: 15px; }
+  .writing-arena-topline { padding-right: 132px; }
+  .writing-arena { border-radius: 19px; }
+  .writing-falling-word { width: 105px; }
+  .writing-penguin { width: 150px; }
+  .writing-game-overlay { padding-inline: 15px; }
+  .writing-answer-bar > div { grid-template-columns: auto minmax(0, 1fr) 46px; }
+  .writing-answer-bar input { padding-inline: 8px; font-size: 16px; }
+}
+
+@media (min-width: 560px) and (max-width: 720px) and (max-height: 500px) and (orientation: landscape) {
+  .writing-page-shell {
+    padding-top: max(6px, env(safe-area-inset-top));
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+  .writing-arena { height: 300px; min-height: 300px; }
+  .writing-game-back { top: 7px; left: 7px; }
+  .writing-arena-metrics { top: 7px; right: 7px; }
+  .writing-arena-metrics > span { min-height: 46px; }
+  .writing-arena-topline { min-height: 50px; }
+  .writing-falling-word { width: 100px; min-height: 58px; }
+  .writing-penguin { width: 126px; top: 57%; }
+  .writing-target-ribbon { bottom: 9px; }
+  .writing-game-overlay { padding: 14px 18px; }
+  .writing-overlay-mark { width: 46px; height: 46px; }
+  .writing-game-overlay h2 { margin-block: 5px; font-size: 25px; }
+  .writing-primary-action { min-height: 44px; margin-top: 12px; }
+  .writing-answer-bar { padding-top: 7px; }
+  .writing-session-aside { padding: 0; }
+  .writing-session-details-content { padding: 14px; grid-template-columns: 1fr 1fr; }
+  .writing-session-note { grid-column: 1 / -1; }
+}
+
+@media (min-width: 721px) {
+  .writing-session-details:not([open]) > .writing-session-details-content {
+    display: grid;
   }
 }
 
@@ -11269,6 +11536,13 @@ body:has(.learner-app-shell) > .mobile-nav {
 .game-session-metrics strong { color: #0a4038; font-size: 20px; line-height: 1; }
 
 .game-session-world {
+  --game-accent: #0f8275;
+  --game-accent-soft: rgba(15, 130, 117, .16);
+  --game-world-glow: radial-gradient(circle at 14% 18%, rgba(255, 255, 255, .45), transparent 31%);
+  --game-world-wash: linear-gradient(135deg, rgba(236, 251, 245, .18), rgba(255, 246, 222, .12));
+  --game-world-pattern: radial-gradient(circle, rgba(15, 130, 117, .18) 0 2px, transparent 3px);
+  --game-world-pattern-size: 76px 76px;
+  --game-world-pattern-opacity: .5;
   width: min(1600px, 100%);
   height: 100%;
   min-height: 650px;
@@ -11278,10 +11552,110 @@ body:has(.learner-app-shell) > .mobile-nav {
   overflow: hidden;
   border-radius: 34px;
   background-color: #fffaf0;
-  background-image: url("/assets/games/game-island-session-bg.webp");
+  background-image:
+    var(--game-world-glow),
+    var(--game-world-wash),
+    url("/assets/games/game-island-session-bg.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.game-session-world::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: var(--game-world-pattern-opacity);
+  background-image: var(--game-world-pattern);
+  background-position: center;
+  background-repeat: repeat;
+  background-size: var(--game-world-pattern-size);
+  -webkit-mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .7) 18%, transparent 43%, transparent 57%, rgba(0, 0, 0, .7) 82%, #000 100%);
+  mask-image: linear-gradient(90deg, #000 0%, rgba(0, 0, 0, .7) 18%, transparent 43%, transparent 57%, rgba(0, 0, 0, .7) 82%, #000 100%);
+}
+
+.game-session-world.is-memory {
+  --game-accent: #ae5145;
+  --game-accent-soft: rgba(174, 81, 69, .17);
+  --game-world-glow:
+    radial-gradient(circle at 11% 22%, rgba(255, 142, 123, .36), transparent 29%),
+    radial-gradient(circle at 88% 30%, rgba(169, 140, 225, .28), transparent 31%);
+  --game-world-wash: linear-gradient(135deg, rgba(255, 236, 226, .42), rgba(247, 237, 255, .2) 54%, rgba(255, 244, 211, .28));
+  --game-world-pattern:
+    linear-gradient(rgba(189, 95, 80, .2) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(126, 96, 184, .18) 1px, transparent 1px);
+  --game-world-pattern-size: 74px 74px, 74px 74px;
+  --game-world-pattern-opacity: .58;
+}
+
+.game-session-world.is-connect {
+  --game-accent: #337ba1;
+  --game-accent-soft: rgba(51, 123, 161, .16);
+  --game-world-glow:
+    radial-gradient(circle at 9% 28%, rgba(79, 177, 212, .3), transparent 30%),
+    radial-gradient(circle at 91% 18%, rgba(94, 211, 189, .29), transparent 28%);
+  --game-world-wash: linear-gradient(145deg, rgba(222, 246, 255, .4), rgba(225, 255, 247, .2) 58%, rgba(239, 244, 255, .3));
+  --game-world-pattern:
+    radial-gradient(circle, rgba(51, 123, 161, .55) 0 3px, transparent 4px),
+    linear-gradient(35deg, transparent 48%, rgba(51, 123, 161, .19) 49%, rgba(51, 123, 161, .19) 51%, transparent 52%);
+  --game-world-pattern-size: 82px 82px, 126px 82px;
+  --game-world-pattern-opacity: .54;
+}
+
+.game-session-world.is-listen {
+  --game-accent: #966514;
+  --game-accent-soft: rgba(150, 101, 20, .16);
+  --game-world-glow:
+    radial-gradient(circle at 12% 18%, rgba(255, 197, 79, .34), transparent 28%),
+    radial-gradient(circle at 88% 36%, rgba(255, 218, 125, .32), transparent 32%);
+  --game-world-wash: linear-gradient(135deg, rgba(255, 247, 213, .48), rgba(255, 236, 191, .18) 48%, rgba(227, 251, 236, .25));
+  --game-world-pattern: repeating-radial-gradient(circle at 82% 42%, transparent 0 44px, rgba(150, 101, 20, .24) 45px 47px, transparent 48px 76px);
+  --game-world-pattern-size: cover;
+  --game-world-pattern-opacity: .62;
+}
+
+.game-session-world.is-write {
+  --game-accent: #7659a2;
+  --game-accent-soft: rgba(118, 89, 162, .16);
+  --game-world-glow:
+    radial-gradient(circle at 12% 22%, rgba(162, 125, 213, .3), transparent 29%),
+    radial-gradient(circle at 90% 18%, rgba(110, 205, 180, .22), transparent 30%);
+  --game-world-wash: linear-gradient(145deg, rgba(244, 233, 255, .44), rgba(237, 246, 255, .18) 55%, rgba(255, 239, 225, .26));
+  --game-world-pattern:
+    repeating-linear-gradient(0deg, transparent 0 50px, rgba(118, 89, 162, .2) 51px 52px),
+    linear-gradient(90deg, transparent 0 13%, rgba(205, 102, 100, .2) 13% 13.3%, transparent 13.3% 100%);
+  --game-world-pattern-size: 100% 100%, 100% 100%;
+  --game-world-pattern-opacity: .56;
+}
+
+.game-session-world.is-flash {
+  --game-accent: #8b579c;
+  --game-accent-soft: rgba(139, 87, 156, .16);
+  --game-world-glow:
+    radial-gradient(circle at 10% 20%, rgba(244, 148, 181, .3), transparent 30%),
+    radial-gradient(circle at 89% 24%, rgba(183, 143, 222, .3), transparent 31%);
+  --game-world-wash: linear-gradient(140deg, rgba(255, 231, 241, .42), rgba(242, 232, 255, .2) 55%, rgba(226, 249, 241, .24));
+  --game-world-pattern:
+    repeating-linear-gradient(135deg, rgba(139, 87, 156, .19) 0 2px, transparent 2px 34px),
+    repeating-linear-gradient(45deg, rgba(218, 111, 148, .14) 0 2px, transparent 2px 42px);
+  --game-world-pattern-size: 100px 100px, 126px 126px;
+  --game-world-pattern-opacity: .55;
+}
+
+.game-session-world.is-quiz {
+  --game-accent: #0c7469;
+  --game-accent-soft: rgba(12, 116, 105, .16);
+  --game-world-glow:
+    radial-gradient(circle at 10% 18%, rgba(255, 171, 91, .32), transparent 27%),
+    radial-gradient(circle at 89% 22%, rgba(73, 190, 169, .3), transparent 30%);
+  --game-world-wash: linear-gradient(135deg, rgba(222, 251, 240, .4), rgba(255, 239, 210, .2) 52%, rgba(255, 228, 221, .28));
+  --game-world-pattern:
+    radial-gradient(circle, rgba(12, 116, 105, .42) 0 3px, transparent 4px),
+    linear-gradient(28deg, transparent 47%, rgba(235, 145, 57, .3) 48% 52%, transparent 53%);
+  --game-world-pattern-size: 92px 78px, 116px 96px;
+  --game-world-pattern-opacity: .55;
 }
 
 .game-session-mascot {
@@ -11330,6 +11704,7 @@ body:has(.learner-app-shell) > .mobile-nav {
 }
 
 .game-instruction b { color: #0b7468; }
+.game-session-world .game-instruction b { color: var(--game-accent); }
 
 .memory-grid {
   width: min(860px, 100%);
@@ -11401,7 +11776,7 @@ body:has(.learner-app-shell) > .mobile-nav {
 .listen-prompt > button,
 .quiz-question > button {
   border: 7px solid #fff9e9;
-  background: #0d8579;
+  background: var(--game-accent);
   box-shadow: 0 7px 0 #cfc5aa, 0 16px 26px rgba(30, 98, 82, .18);
   transition: transform .18s ease, box-shadow .18s ease;
 }
@@ -11437,7 +11812,7 @@ body:has(.learner-app-shell) > .mobile-nav {
   min-height: 48px;
   border: 5px solid #fff9e9;
   border-radius: 18px;
-  background: #0b8276;
+  background: var(--game-accent);
   box-shadow: 0 5px 0 #cfc5aa, 0 13px 22px rgba(37, 101, 85, .17);
 }
 
@@ -11447,14 +11822,14 @@ body:has(.learner-app-shell) > .mobile-nav {
   background: #fffdf7;
   box-shadow: 0 6px 0 #ddd4be, 0 14px 24px rgba(65, 91, 71, .12);
 }
-.write-answer-form button { border-radius: 13px; background: #0b8276; }
+.write-answer-form button { border-radius: 13px; background: var(--game-accent); }
 
 .flashcard-3d { margin-top: 20px; }
 .flashcard-face {
   color: #fffdf4;
   border: 9px solid #fff8e7;
   border-radius: 30px;
-  background: #18a28f;
+  background: var(--game-accent);
   box-shadow: 0 9px 0 #d9cfb8, 0 24px 38px rgba(42, 89, 74, .18);
 }
 .flashcard-back { color: #173f37; border-color: #fff8e7; background: #fff3d1; }
@@ -11496,7 +11871,7 @@ body:has(.learner-app-shell) > .mobile-nav {
   transform: translateX(-50%);
 }
 .game-session-tip svg { color: #e4a62f; flex: 0 0 auto; }
-.game-session-tip strong { color: #0c7469; }
+.game-session-tip strong { color: var(--game-accent); }
 
 @media (max-width: 1250px) {
   .game-session-shell { padding-inline: 22px; }
@@ -11528,21 +11903,28 @@ body:has(.learner-app-shell) > .mobile-nav {
 }
 
 @media (max-width: 560px) {
-  .game-session-shell { padding: 10px 9px 20px; }
+  .game-session-shell {
+    padding:
+      max(10px, env(safe-area-inset-top))
+      max(9px, env(safe-area-inset-right))
+      max(20px, env(safe-area-inset-bottom))
+      max(9px, env(safe-area-inset-left));
+  }
   .game-session-hud { top: 10px; right: 10px; left: 10px; gap: 7px; }
-  .game-back-button { width: 38px; height: 38px; border-radius: 12px; }
-  .game-session-metrics { width: calc(100% - 45px); gap: 5px; }
-  .game-session-metrics > span { min-height: 46px; padding: 5px 4px; border-radius: 13px; }
+  .game-back-button { width: 44px; height: 44px; border-radius: 13px; }
+  .game-session-metrics { width: calc(100% - 51px); gap: 5px; }
+  .game-session-metrics > span { min-height: 48px; padding: 5px 4px; border-radius: 13px; }
   .game-session-metrics > span { justify-content: center; }
   .game-session-metrics > span > svg { display: none; }
   .game-session-metrics strong { font-size: 15px; }
-  .game-session-metrics small { font-size: 6px; }
+  .game-session-metrics small { font-size: 8px; }
   .game-session-world { min-height: 815px; border-radius: 23px; background-position: center top; }
+  .game-session-world::before { opacity: .4; }
   .game-session-world .game-play-card { width: 100%; min-height: 815px; padding: 72px 12px 120px; }
   .memory-grid { width: 100%; gap: 9px; }
   .memory-grid button { min-height: 105px; border-width: 5px; border-radius: 17px; }
   .memory-grid button span { font-size: 25px; }
-  .game-instruction { width: 100%; min-height: 52px; font-size: 9px; }
+  .game-instruction { width: 100%; min-height: 52px; font-size: 11px; }
   .game-instruction b { white-space: nowrap; }
   .connect-board { gap: 5px; }
   .connect-board button { padding-inline: 8px; }
@@ -11560,7 +11942,80 @@ body:has(.learner-app-shell) > .mobile-nav {
   .flash-audio-row,
   .flash-rating-actions { width: 100%; }
   .game-session-mascot { width: 105px; bottom: 128px; }
-  .game-session-tip { max-width: calc(100% - 125px); min-height: 42px; right: 10px; padding-inline: 12px; }
+  .game-session-tip { max-width: calc(100% - 125px); min-height: 44px; right: 10px; padding-inline: 12px; font-size: 10px; }
+}
+
+@media (max-width: 390px) {
+  .game-session-shell {
+    padding-right: max(6px, env(safe-area-inset-right));
+    padding-left: max(6px, env(safe-area-inset-left));
+  }
+  .game-session-hud { top: 7px; right: 7px; left: 7px; gap: 5px; }
+  .game-session-metrics { width: calc(100% - 49px); gap: 4px; }
+  .game-session-metrics > span { padding-inline: 3px; border-radius: 12px; }
+  .game-session-metrics strong { font-size: 14px; }
+  .game-session-metrics small { font-size: 7px; letter-spacing: .04em; }
+  .game-session-world { border-radius: 20px; }
+  .game-session-world .game-play-card { padding-inline: 8px; }
+  .memory-grid { gap: 7px; }
+  .memory-grid button { min-height: 94px; border-width: 4px; }
+  .game-instruction {
+    min-height: 62px;
+    padding: 9px 11px;
+    display: grid;
+    grid-template-columns: auto minmax(0, 1fr);
+    gap: 5px 8px;
+  }
+  .game-instruction b { margin-left: 0; grid-column: 2; }
+  .connect-board { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 6px; }
+  .connect-line-column { display: none; }
+  .connect-board button { padding-inline: 7px; }
+  .flashcard-3d { height: 260px; }
+  .flashcard-face { padding: 20px; }
+  .game-result { width: 100%; min-height: 390px; padding: 22px 16px; }
+  .game-result > div { width: 100%; flex-direction: column; }
+  .game-result button,
+  .game-result a { width: 100%; }
+  .game-session-mascot { width: 88px; }
+  .game-session-tip { max-width: calc(100% - 105px); }
+}
+
+@media (min-width: 560px) and (max-width: 900px) and (max-height: 500px) and (orientation: landscape) {
+  .game-session-shell {
+    padding-top: max(6px, env(safe-area-inset-top));
+    padding-right: max(8px, env(safe-area-inset-right));
+    padding-bottom: max(6px, env(safe-area-inset-bottom));
+    padding-left: max(8px, env(safe-area-inset-left));
+  }
+  .game-session-world { min-height: max(360px, calc(100dvh - 12px)); border-radius: 20px; background-size: cover; }
+  .game-session-hud { top: 7px; right: 8px; left: 8px; }
+  .game-back-button { width: 44px; height: 44px; }
+  .game-session-metrics { width: min(320px, calc(100% - 54px)); }
+  .game-session-metrics > span { min-height: 46px; }
+  .game-session-world .game-play-card {
+    width: min(620px, calc(100% - 108px));
+    min-height: max(360px, calc(100dvh - 12px));
+    padding: 64px 6px 58px;
+  }
+  .memory-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+  .memory-grid button { min-height: 90px; border-width: 4px; border-radius: 16px; }
+  .memory-grid button span { font-size: 24px; }
+  .game-instruction { min-height: 44px; margin-top: 10px; font-size: 9px; }
+  .connect-board { margin-top: 4px; }
+  .connect-board button { min-height: 48px; }
+  .listen-prompt,
+  .write-prompt,
+  .quiz-question { padding-top: 0; }
+  .listen-options,
+  .quiz-options { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .listen-options button,
+  .quiz-options button { min-height: 48px; }
+  .flashcard-3d { width: min(420px, 100%); height: 205px; margin-top: 4px; }
+  .flash-audio-row,
+  .flash-rating-actions { width: min(420px, 100%); margin-top: 8px; }
+  .game-result { min-height: 270px; margin-block: 0; padding: 20px; }
+  .game-session-mascot { width: 82px; left: 5px; bottom: 52px; }
+  .game-session-tip { max-width: 360px; min-height: 38px; right: 8px; bottom: 7px; font-size: 8px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

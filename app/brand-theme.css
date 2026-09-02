@@ -1576,7 +1576,21 @@ body {
 @media (max-width: 720px) {
   .home-portal-art::after {
     background:
-      linear-gradient(180deg, rgba(255, 255, 255, .28), transparent 38%),
-      linear-gradient(140deg, transparent 48%, color-mix(in srgb, var(--himi-orange) 10%, transparent));
+      linear-gradient(180deg,
+        rgba(255, 255, 255, .9) 0%,
+        rgba(255, 255, 255, .72) 19%,
+        rgba(255, 255, 255, .42) 34%,
+        rgba(255, 255, 255, .08) 49%,
+        transparent 60%),
+      linear-gradient(90deg,
+        rgba(255, 255, 255, .44) 0%,
+        rgba(255, 255, 255, .2) 64%,
+        transparent 100%),
+      radial-gradient(circle at 82% 56%, color-mix(in srgb, var(--himi-orange) 10%, transparent), transparent 30%);
+  }
+
+  .home-portal-copy > p {
+    color: color-mix(in srgb, var(--himi-black) 86%, var(--himi-white));
+    font-weight: 650;
   }
 }

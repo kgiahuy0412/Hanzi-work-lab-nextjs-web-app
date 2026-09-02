@@ -157,6 +157,7 @@ function JourneyTraveler({ targetGameId }: { targetGameId: GameId | null }) {
 }
 
 function GameFrame({
+  gameId,
   title,
   description,
   progress,
@@ -168,6 +169,7 @@ function GameFrame({
   onExit,
   children,
 }: {
+  gameId: Exclude<GameId, "slice">;
   title: string;
   description: string;
   progress: string;
@@ -182,7 +184,7 @@ function GameFrame({
   return (
     <main className="learner-dashboard game-center-dashboard game-session-dashboard game-immersive-dashboard">
       <div className="game-center-shell game-session-shell">
-        <section aria-label={title} className="game-session-world">
+        <section aria-label={title} className={`game-session-world is-${gameId}`} data-session-game={gameId}>
           <div className="game-session-sr-copy">
             <h1>{title}</h1>
             <p>{description}</p>
@@ -285,7 +287,7 @@ function MemoryGame({ onExit, onComplete }: { onExit: () => void; onComplete: (s
   };
 
   return (
-    <GameFrame description="Lật từng thẻ và tìm đúng cặp Hán tự – nghĩa Việt." mascotAlt="Cánh Cụt Himi cổ vũ trò ghép cặp" mascotSrc="/assets/games/memory-penguin-cutout.png" onExit={onExit} progress={`${matched.length} / ${words.length}`} roundValue={moves} score={score} title="Ghép cặp siêu tốc">
+    <GameFrame description="Lật từng thẻ và tìm đúng cặp Hán tự – nghĩa Việt." gameId="memory" mascotAlt="Cánh Cụt Himi cổ vũ trò ghép cặp" mascotSrc="/assets/games/memory-penguin-cutout.png" onExit={onExit} progress={`${matched.length} / ${words.length}`} roundValue={moves} score={score} title="Ghép cặp siêu tốc">
       <section className="game-play-card memory-game-stage">
         {finished ? <GameResult label="Bạn đã tìm đủ bốn cặp!" onExit={onExit} onRestart={restart} score={score} /> : (
           <>
@@ -347,7 +349,7 @@ function ConnectGame({ onExit, onComplete }: { onExit: () => void; onComplete: (
   };
 
   return (
-    <GameFrame description="Chọn một Hán tự bên trái, sau đó nối với pinyin đúng bên phải." mascotAlt="Cánh Cụt Himi đang nối chữ với âm" mascotSrc="/assets/games/connect-penguin-cutout.png" onExit={onExit} progress={`${matched.length} / ${words.length}`} roundLabel="lỗi" roundValue={mistakes} score={score} title="Nối nhanh chữ – âm">
+    <GameFrame description="Chọn một Hán tự bên trái, sau đó nối với pinyin đúng bên phải." gameId="connect" mascotAlt="Cánh Cụt Himi đang nối chữ với âm" mascotSrc="/assets/games/connect-penguin-cutout.png" onExit={onExit} progress={`${matched.length} / ${words.length}`} roundLabel="lỗi" roundValue={mistakes} score={score} title="Nối nhanh chữ – âm">
       <section className="game-play-card connect-game-stage">
         {finished ? <GameResult label="Các liên kết đã khớp hoàn toàn!" onExit={onExit} onRestart={restart} score={score} /> : (
           <>
@@ -413,7 +415,7 @@ function ListenGame({ onExit, onComplete }: { onExit: () => void; onComplete: (s
   };
 
   return (
-    <GameFrame description="Nghe từ tiếng Trung, sau đó chọn nghĩa tiếng Việt chính xác." mascotAlt="Cánh Cụt Himi luyện nghe" mascotSrc="/assets/games/listen-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="đúng" roundValue={correct} score={score} title="Nghe và chọn đúng">
+    <GameFrame description="Nghe từ tiếng Trung, sau đó chọn nghĩa tiếng Việt chính xác." gameId="listen" mascotAlt="Cánh Cụt Himi luyện nghe" mascotSrc="/assets/games/listen-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="đúng" roundValue={correct} score={score} title="Nghe và chọn đúng">
       <section className="game-play-card listen-game-stage">
         {finished ? <GameResult label={`Bạn nghe đúng ${correct}/${words.length} từ.`} onExit={onExit} onRestart={restart} score={correct * 200} /> : (
           <>
@@ -480,7 +482,7 @@ function WriteGame({ onExit, onComplete }: { onExit: () => void; onComplete: (sc
   };
 
   return (
-    <GameFrame description="Nhìn nghĩa tiếng Việt và nhập đúng Hán tự tương ứng." mascotAlt="Cánh Cụt Himi tập viết Hán tự" mascotSrc="/assets/games/write-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="đúng" roundValue={correct} score={score} title="Viết chữ theo nghĩa">
+    <GameFrame description="Nhìn nghĩa tiếng Việt và nhập đúng Hán tự tương ứng." gameId="write" mascotAlt="Cánh Cụt Himi tập viết Hán tự" mascotSrc="/assets/games/write-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="đúng" roundValue={correct} score={score} title="Viết chữ theo nghĩa">
       <section className="game-play-card write-game-stage">
         {finished ? <GameResult label="Bạn đã gọi lại đủ năm từ!" onExit={onExit} onRestart={restart} score={correct * 200} /> : (
           <>
@@ -536,7 +538,7 @@ function FlashcardGame({ onExit, onComplete }: { onExit: () => void; onComplete:
   };
 
   return (
-    <GameFrame description="Lật thẻ để xem nghĩa, nghe phát âm rồi tự đánh giá mức nhớ." mascotAlt="Cánh Cụt Himi ôn tập cùng flashcard" mascotSrc="/assets/games/flashcard-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="nhớ" roundValue={known} score={score} title="Flashcard 3D">
+    <GameFrame description="Lật thẻ để xem nghĩa, nghe phát âm rồi tự đánh giá mức nhớ." gameId="flash" mascotAlt="Cánh Cụt Himi ôn tập cùng flashcard" mascotSrc="/assets/games/flashcard-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="nhớ" roundValue={known} score={score} title="Flashcard 3D">
       <section className="game-play-card flash-game-stage">
         {finished ? <GameResult label={`Bạn nhớ chắc ${known}/${words.length} từ.`} onExit={onExit} onRestart={restart} score={known * 160} /> : (
           <>
@@ -597,7 +599,7 @@ function QuizGame({ onExit, onComplete }: { onExit: () => void; onComplete: (sco
   };
 
   return (
-    <GameFrame description="Một lượt kiểm tra ngắn kết hợp nhận diện chữ, nghĩa và phát âm." mascotAlt="Cánh Cụt Himi tham gia thử thách tổng hợp" mascotSrc="/assets/games/quiz-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="đúng" roundValue={correct} score={score} title="Thử thách tổng hợp">
+    <GameFrame description="Một lượt kiểm tra ngắn kết hợp nhận diện chữ, nghĩa và phát âm." gameId="quiz" mascotAlt="Cánh Cụt Himi tham gia thử thách tổng hợp" mascotSrc="/assets/games/quiz-penguin-cutout.png" onExit={onExit} progress={`${index + 1} / ${words.length}`} roundLabel="đúng" roundValue={correct} score={score} title="Thử thách tổng hợp">
       <section className="game-play-card quiz-game-stage">
         {finished ? <GameResult label={`Bạn trả lời đúng ${correct}/${words.length} câu.`} onExit={onExit} onRestart={restart} score={correct * 200} /> : (
           <>

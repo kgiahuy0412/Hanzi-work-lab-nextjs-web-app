@@ -11,7 +11,7 @@ colors:
   line-soft: "#E8E1DE"
 typography:
   display:
-    fontFamily: "Inter"
+    fontFamily: "Roboto"
     fontSize: "clamp(2rem, 4vw, 4rem)"
     fontWeight: 780
     lineHeight: 1.02
@@ -99,7 +99,7 @@ The palette follows the official Himi Chinese identity: energetic red, lively or
 
 ## Typography
 
-**Display Font:** Inter
+**Display Font:** Roboto
 **Body Font:** Inter
 **Chinese Font:** Inter
 

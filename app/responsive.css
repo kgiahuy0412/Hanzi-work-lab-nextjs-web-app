@@ -83,26 +83,25 @@ video {
   }
 
   .learner-app-shell .learn-topbar {
-    padding-left: max(var(--responsive-page-gutter), env(safe-area-inset-left));
-    padding-right: max(var(--responsive-page-gutter), env(safe-area-inset-right));
+    display: none;
   }
 
-  .learner-app-shell .topbar-actions,
-  .learner-app-shell .brand,
-  .learner-app-shell .user-chip {
-    min-width: 0;
+  .learner-app-shell .learner-shell-content {
+    padding-top: 0;
   }
 
   .learner-mobile-nav {
     left: max(8px, env(safe-area-inset-left));
     right: max(8px, env(safe-area-inset-right));
     padding-bottom: max(6px, env(safe-area-inset-bottom));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .learner-mobile-nav a {
     min-width: 0;
     min-height: 50px;
     overflow: hidden;
+    font-size: clamp(8px, 2.35vw, 10px);
   }
 
   .learner-mobile-nav a span {
@@ -178,52 +177,9 @@ video {
   }
 }
 
-/* Compact phones need the full wordmark and all three account actions to fit
- * in one row. The account action stays available; it becomes avatar-only. */
+/* Compact phones keep all six destinations reachable without horizontal
+ * scrolling. Labels stay single-line and the full cell remains tappable. */
 @media (max-width: 359px) {
-  .learner-app-shell .learn-topbar {
-    padding-left: max(8px, env(safe-area-inset-left));
-    padding-right: max(8px, env(safe-area-inset-right));
-  }
-
-  .learner-app-shell .learn-topbar .brand {
-    gap: 5px;
-    font-size: 16px;
-  }
-
-  .learner-app-shell .learn-topbar .brand-mark {
-    width: 40px;
-    height: 40px;
-    flex: 0 0 40px;
-    border-radius: 13px;
-  }
-
-  .learner-app-shell .brand-wordmark {
-    gap: .16em;
-    letter-spacing: -.045em;
-  }
-
-  .learner-app-shell .topbar-actions {
-    gap: 2px;
-    flex: 0 0 auto;
-  }
-
-  .learner-app-shell .streak-chip,
-  .learner-app-shell .topbar-icon,
-  .learner-app-shell .user-chip,
-  .learner-app-shell .user-chip > span {
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
-    min-height: 40px;
-  }
-
-  .learner-app-shell .streak-chip,
-  .learner-app-shell .user-chip {
-    padding: 0;
-    justify-content: center;
-  }
-
   .learner-mobile-nav {
     left: 6px;
     right: 6px;

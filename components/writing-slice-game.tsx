@@ -7,6 +7,7 @@ import {
   ArrowLeft,
   ArrowRight,
   Check,
+  ChevronDown,
   Heart,
   Keyboard,
   Pause,
@@ -497,30 +498,47 @@ export function WritingSliceGame({
             </form>
           </section>
 
-          <aside className="writing-session-aside">
-            <section className="writing-current-word">
-              <span>TỪ HIỆN TẠI</span>
-              <div>
-                <strong lang="zh-CN">{word.hanzi}</strong>
-                <button aria-label="Nghe phát âm" onClick={speakWord} type="button"><Volume2 size={18} /></button>
+          <aside className="writing-session-aside" aria-label="Thông tin lượt chơi">
+            <details className="writing-session-details">
+              <summary className="writing-session-summary">
+                <span aria-hidden="true" className="writing-session-summary-icon">
+                  <Sparkles size={18} />
+                </span>
+                <span className="writing-session-summary-copy">
+                  <small>Thông tin lượt chơi</small>
+                  <strong><span lang="zh-CN">{word.hanzi}</span> · {word.pinyin}</strong>
+                </span>
+                <span className="writing-session-summary-action">
+                  Chi tiết <ChevronDown aria-hidden="true" size={17} />
+                </span>
+              </summary>
+
+              <div className="writing-session-details-content">
+                <section className="writing-current-word">
+                  <span>TỪ HIỆN TẠI</span>
+                  <div>
+                    <strong lang="zh-CN">{word.hanzi}</strong>
+                    <button aria-label="Nghe phát âm" onClick={speakWord} type="button"><Volume2 size={18} /></button>
+                  </div>
+                  <b>{word.pinyin}</b>
+                  <p>{word.example}</p>
+                </section>
+
+                <section className="writing-howto">
+                  <span>NHỊP CHƠI</span>
+                  <ol>
+                    <li><b>01</b><span>Nhìn Hán tự và nghĩa gợi ý.</span></li>
+                    <li><b>02</b><span>Gõ pinyin trước khi từ chạm đất.</span></li>
+                    <li><b>03</b><span>Đúng từ để Cánh Cụt chém và giữ combo.</span></li>
+                  </ol>
+                </section>
+
+                <section className="writing-session-note">
+                  <span><Sparkles size={16} /> Mẹo lượt này</span>
+                  <p>Ưu tiên đúng âm trước. Dấu thanh sẽ được luyện lại ở lượt nâng cao.</p>
+                </section>
               </div>
-              <b>{word.pinyin}</b>
-              <p>{word.example}</p>
-            </section>
-
-            <section className="writing-howto">
-              <span>NHỊP CHƠI</span>
-              <ol>
-                <li><b>01</b><span>Nhìn Hán tự và nghĩa gợi ý.</span></li>
-                <li><b>02</b><span>Gõ pinyin trước khi từ chạm đất.</span></li>
-                <li><b>03</b><span>Đúng từ để Cánh Cụt chém và giữ combo.</span></li>
-              </ol>
-            </section>
-
-            <section className="writing-session-note">
-              <span><Sparkles size={16} /> Mẹo lượt này</span>
-              <p>Ưu tiên đúng âm trước. Dấu thanh sẽ được luyện lại ở lượt nâng cao.</p>
-            </section>
+            </details>
           </aside>
         </div>
       </div>

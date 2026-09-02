@@ -483,6 +483,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
         </div>
         <Link aria-current={visualPathname.startsWith("/games") ? "page" : undefined} className={visualPathname.startsWith("/games") ? "active" : ""} href="/games" onClick={(event) => beginRoute(event, "/games")} onPointerEnter={() => prepareRoute("/games")} prefetch><Gamepad2 aria-hidden="true" size={20} /><span>Trò chơi</span></Link>
         <Link aria-current={visualPathname.startsWith("/vip") ? "page" : undefined} className={visualPathname.startsWith("/vip") ? "active" : ""} href="/vip" onClick={(event) => beginRoute(event, "/vip")} onPointerEnter={() => prepareRoute("/vip")} prefetch><Crown aria-hidden="true" size={20} /><span>VIP</span></Link>
+        <Link aria-current={visualPathname.startsWith("/account") ? "page" : undefined} className={visualPathname.startsWith("/account") ? "active" : ""} href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch><UserRound aria-hidden="true" size={20} /><span>Tài khoản</span></Link>
       </nav>
     </div>
   );

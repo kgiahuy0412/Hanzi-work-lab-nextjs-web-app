@@ -1,3 +1,72 @@
+# Mobile Homepage — Option 1 Design QA
+
+## Evidence
+
+- Source visual truth: `C:/Users/Windows/.codex/generated_images/019fb6fe-431e-7c62-917c-2abef5ccee3c/exec-cf67e350-3072-496c-99b4-a661a24388a4.png`
+- Browser-rendered implementation: `C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/artifacts/design-qa/home-option-1-mobile.png`
+- Combined source/implementation comparison: `C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/artifacts/design-qa/home-option-1-comparison.png`
+- First implementation iteration: `C:/Users/Windows/Documents/INDIVIDUAL PROJECT/hanziwork/artifacts/design-qa/home-option-1-mobile-iteration-1.png`
+- Route: `http://localhost:3000/`
+
+## Normalization
+
+- Source pixels: 852 × 1846.
+- Implementation pixels: 390 × 844.
+- Browser viewport: 390 × 844 CSS pixels at device scale factor 1.
+- Comparison normalization: source downsampled to 390 × 844; implementation retained at native capture size.
+- State: anonymous learner, mobile navigation visible, animated home hero active, one live dialogue card visible.
+
+## Full-view comparison
+
+The selected mockup and implementation were combined side by side at the same normalized viewport. The implementation matches the selected hierarchy and rhythm: three-line Be Vietnam Pro headline, coral `Homi`, concise one-line support copy, coral primary CTA, orange route action, full-height city scene, live dialogue, mascot, and six-item mobile navigation.
+
+The implementation intentionally preserves the user's existing production background and animated Himi asset rather than replacing them with the generated mockup's altered illustration. This creates small subject-scale and dialogue-content differences while keeping the selected composition and requested product assets.
+
+## Focused comparison
+
+The hero's upper half was inspected in the combined image. The headline wraps exactly as selected—`Học tiếng Trung / vui hết ý / cùng Homi.`—with clear contrast, no clipping, and no horizontal overflow. The background now continues behind the copy and controls instead of starting at a separate hard horizontal boundary.
+
+## Required fidelity surfaces
+
+- Fonts and typography: Roboto 800 is loaded with the Vietnamese subset for clean stacked diacritics; the supporting copy remains in the product's Inter family.
+- Spacing and layout rhythm: headline, support copy, CTA, route action, dialogue, characters, mascot, and fixed navigation remain distinct at 390 × 844.
+- Colors and tokens: mascot black, Himi coral, orange secondary action, and existing navigation surfaces are preserved.
+- Image quality and asset fidelity: the existing responsive 1536/2K/4K city assets and corrected animated Himi GIF are reused directly; no placeholder or CSS-drawn visual was introduced.
+- Copy and content: the selected headline and concise support sentence are present verbatim.
+
+## Interaction and responsive checks
+
+- The primary CTA navigates to `/listening?mode=scenario` and browser back returns to the homepage.
+- The implementation has `scrollWidth: 390` at the 390px viewport, so no horizontal overflow is present.
+- The six-item mobile navigation remains visible above the safe area.
+- The browser console contains no warnings or application errors beyond normal Vite/React development messages.
+- Production build, focused homepage tests, and lint for the edited TypeScript/test files pass.
+
+## Comparison history
+
+### Iteration 1
+
+- Finding: [P2] The image began below the support copy with a visible horizontal boundary, so the upper copy area still read as a separate white slab.
+- Fix: extended the existing responsive artwork through the entire hero, adjusted its mobile focal point, and moved the dialogue card to retain the selected vertical rhythm.
+- Evidence: `home-option-1-mobile-iteration-1.png`.
+
+### Iteration 2
+
+- Finding: no remaining actionable P0, P1, or P2 visual or interaction differences. Production-image subject scale and rotating dialogue copy differ intentionally from the generated visual.
+- Evidence: `home-option-1-comparison.png`.
+
+## Findings
+
+No actionable P0, P1, or P2 findings remain.
+
+## Follow-up polish
+
+- [P3] None required for the selected option.
+
+final result: passed
+
+---
+
 # HSK Guided Lesson Design QA
 
 ## Evidence

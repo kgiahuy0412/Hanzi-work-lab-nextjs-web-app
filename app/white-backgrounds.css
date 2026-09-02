@@ -43,15 +43,14 @@ body:has(.learner-dashboard),
   background-color: #fffaf0;
 }
 
-/* These are full-canvas illustrations rather than content images. */
-.game-session-world,
+/* Keep the outer canvas white; the game arena itself owns its themed backdrop. */
 .writing-game-dashboard {
   background-color: #ffffff;
   background-image: none !important;
 }
 
 .writing-arena-background {
-  display: none;
+  display: block;
 }
 
 @media (max-width: 720px) {

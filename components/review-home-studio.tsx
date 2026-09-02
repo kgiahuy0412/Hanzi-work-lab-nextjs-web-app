@@ -106,11 +106,10 @@ export function ReviewHomeStudio({ verified = false }: ReviewHomeStudioProps) {
           transition={{ duration: .62, ease: [0.22, 1, 0.36, 1] }}
         >
           <h1 id="home-portal-title">
-            <span>Nói tiếng</span>
-            <span>Trung trong</span>
-            <span>đời sống thật</span>
+            <span>Mỗi ngày một tí,</span>
+            <span>tự tin cùng <em>Homi</em>.</span>
           </h1>
-          <p>Himi đưa bạn vào tình huống thật —<br />nghe, nói và phản xạ tự nhiên.</p>
+          <p>Tình huống thật. Phản xạ tự nhiên.</p>
 
           <div className="home-portal-actions">
             <Link className="home-portal-primary" href="/listening?mode=scenario" prefetch>
