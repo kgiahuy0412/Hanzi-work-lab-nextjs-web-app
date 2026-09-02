@@ -56,6 +56,7 @@ export function HskCurriculumExplorer({
   catalogHref?: string;
   curriculum: HskCurriculumLevel[];
 }) {
+  const visibleCurriculum = curriculum.filter((level) => level.id !== "hsk-7-9");
   const [activeLevelId, setActiveLevelId] = useState(curriculum[0].id);
   const activeLevel = curriculum.find((level) => level.id === activeLevelId) ?? curriculum[0];
   const [activeTopicId, setActiveTopicId] = useState(activeLevel.topics[0].id);
@@ -108,7 +109,7 @@ export function HskCurriculumExplorer({
 
   return <section className="section-shell hsk-curriculum" aria-labelledby="hsk-curriculum-title">
     <div aria-label="Chọn cấp độ HSK" className="hsk-level-tabs" role="group">
-      {curriculum.map((level) => <button
+      {visibleCurriculum.map((level) => <button
         aria-pressed={activeLevel.id === level.id}
         className={activeLevel.id === level.id ? "is-active" : ""}
         key={level.id}

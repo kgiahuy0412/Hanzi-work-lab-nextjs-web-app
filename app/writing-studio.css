@@ -15,6 +15,7 @@
 
 .writing-topic-heading > div > span,
 .writing-lesson-hero > div:first-child > span,
+.writing-lesson-list-heading > div > span,
 .writing-single-lesson-copy > span {
   display: inline-flex;
   align-items: center;
@@ -48,10 +49,32 @@
   border-radius: 26px;
   background: rgba(255,255,255,.95);
   box-shadow: 0 15px 40px rgba(29, 75, 64, .055);
-  transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+  transform-origin: center;
+  transition:
+    border-color 240ms ease,
+    background-color 240ms ease,
+    box-shadow 320ms ease,
+    transform 320ms cubic-bezier(.22, 1, .36, 1);
+  will-change: transform;
 }
 
-.writing-topic-card:hover { border-color: rgba(12,129,116,.24); box-shadow: 0 24px 55px rgba(29,75,64,.1); transform: translateY(-4px); }
+@media (hover: hover) {
+  .writing-topic-card:hover {
+    border-color: rgba(255, 87, 77, .28);
+    background-color: #fff;
+    box-shadow: 0 26px 58px rgba(57, 46, 43, .12);
+    transform: translateY(-6px) scale(1.01);
+  }
+
+  .writing-topic-card:hover .writing-topic-characters span {
+    box-shadow: 0 8px 18px rgba(255, 87, 77, .1);
+    transform: translateY(-2px) scale(1.025);
+  }
+
+  .writing-topic-card:hover .writing-topic-characters span:nth-child(2) { transition-delay: 25ms; }
+  .writing-topic-card:hover .writing-topic-characters span:nth-child(3) { transition-delay: 50ms; }
+  .writing-topic-card:hover .writing-topic-characters span:nth-child(4) { transition-delay: 75ms; }
+}
 .writing-topic-card-topline { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
 .writing-topic-card-topline > span { padding: 7px 11px; color: #fff; border-radius: 999px; background: var(--writing-teal); font-size: 11px; font-weight: 830; }
 .writing-topic-card-topline small { display: inline-flex; align-items: center; gap: 6px; color: #748681; font-size: 10px; font-weight: 730; }
@@ -67,6 +90,10 @@
   background: #f3f8f5;
   font-size: 26px;
   font-weight: 650;
+  transition:
+    background-color 240ms ease,
+    box-shadow 280ms ease,
+    transform 300ms cubic-bezier(.22, 1, .36, 1);
 }
 
 .writing-topic-card.is-level-2 .writing-topic-card-topline > span,
@@ -143,6 +170,190 @@
 .writing-single-lesson-action { display: grid; gap: 9px; }
 .writing-single-lesson-action > span { display: inline-flex; align-items: center; gap: 7px; color: #71837e; font-size: 11px; font-weight: 700; }
 .writing-single-lesson-action a { margin-top: 7px; }
+
+.writing-lesson-list-section {
+  max-width: 1320px;
+  margin: clamp(30px, 4vw, 48px) auto 0;
+}
+
+.writing-lesson-list-heading {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.writing-lesson-list-heading h2 {
+  margin: 8px 0 0;
+  color: var(--writing-ink);
+  font-size: clamp(27px, 3vw, 40px);
+  letter-spacing: -.035em;
+}
+
+.writing-lesson-list-heading > p {
+  max-width: 460px;
+  margin: 0;
+  color: var(--writing-muted);
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.writing-lesson-grid {
+  margin-top: 22px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.writing-lesson-card {
+  min-width: 0;
+  padding: 23px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(20, 83, 72, .11);
+  border-radius: 24px;
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 14px 38px rgba(29, 75, 64, .05);
+  transform-origin: center;
+  transition:
+    border-color 240ms ease,
+    background-color 240ms ease,
+    box-shadow 320ms ease,
+    transform 320ms cubic-bezier(.22, 1, .36, 1);
+  will-change: transform;
+}
+
+@media (hover: hover) {
+  .writing-lesson-card:hover {
+    border-color: rgba(255, 87, 77, .28);
+    background-color: #fff;
+    box-shadow: 0 24px 54px rgba(57, 46, 43, .11);
+    transform: translateY(-5px) scale(1.008);
+  }
+
+  .writing-lesson-card:hover .writing-lesson-card-characters span {
+    box-shadow: 0 7px 16px rgba(255, 87, 77, .09);
+    transform: translateY(-2px) scale(1.025);
+  }
+
+  .writing-lesson-card:hover .writing-lesson-card-characters span:nth-child(2) { transition-delay: 20ms; }
+  .writing-lesson-card:hover .writing-lesson-card-characters span:nth-child(3) { transition-delay: 40ms; }
+  .writing-lesson-card:hover .writing-lesson-card-characters span:nth-child(4) { transition-delay: 60ms; }
+  .writing-lesson-card:hover .writing-lesson-card-characters span:nth-child(5) { transition-delay: 80ms; }
+}
+
+.writing-lesson-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.writing-lesson-card-header > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--writing-teal);
+  font-size: 10px;
+  font-weight: 820;
+  letter-spacing: .045em;
+  text-transform: uppercase;
+}
+
+.writing-lesson-card-header small {
+  max-width: 48%;
+  overflow: hidden;
+  color: #7b8d88;
+  font-size: 10px;
+  font-weight: 680;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.writing-lesson-card-characters {
+  margin-top: 18px;
+  display: flex;
+  gap: 7px;
+}
+
+.writing-lesson-card-characters span {
+  width: 42px;
+  aspect-ratio: 1;
+  display: grid;
+  place-items: center;
+  color: var(--writing-ink);
+  border-radius: 13px;
+  background: #f2f8f5;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 23px;
+  font-weight: 650;
+  transition:
+    background-color 240ms ease,
+    box-shadow 280ms ease,
+    transform 300ms cubic-bezier(.22, 1, .36, 1);
+}
+
+.writing-lesson-card h3 {
+  margin: 17px 0 0;
+  color: var(--writing-ink);
+  font-size: 21px;
+  letter-spacing: -.025em;
+}
+
+.writing-lesson-card > p {
+  margin: 8px 0 0;
+  flex: 1;
+  color: var(--writing-muted);
+  font-size: 12px;
+  line-height: 1.62;
+}
+
+.writing-lesson-card-footer {
+  margin-top: 19px;
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-top: 1px solid #edf0ed;
+}
+
+.writing-lesson-card-footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 13px;
+}
+
+.writing-lesson-card-footer > div span {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: #71837e;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.writing-lesson-card-footer a {
+  min-height: 40px;
+  padding: 0 14px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex: 0 0 auto;
+  color: #fff;
+  border-radius: 12px;
+  background: var(--writing-red);
+  font-size: 10px;
+  font-weight: 800;
+  transition: transform 160ms ease, box-shadow 160ms ease;
+}
+
+.writing-lesson-card-footer a:hover {
+  box-shadow: 0 10px 24px rgba(255, 87, 77, .22);
+  transform: translateY(-2px);
+}
 
 .himi-writing-session-header {
   max-width: 1740px;
@@ -251,6 +462,13 @@
   font-size: 12px;
 }
 
+.himi-writing-search input:focus,
+.himi-writing-search input:focus-visible {
+  border: 0;
+  outline: 0;
+  box-shadow: none;
+}
+
 .himi-writing-search input::placeholder { color: #93a29e; }
 
 .himi-writing-groups {
@@ -282,8 +500,8 @@
 
 .himi-writing-character-grid {
   max-height: min(580px, calc(100dvh - 390px));
-  margin-top: 15px;
-  padding-right: 5px;
+  margin: 8px -6px -10px;
+  padding: 7px 6px 10px;
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 8px;
@@ -304,12 +522,35 @@
   border-radius: 15px;
   background: #fff;
   cursor: pointer;
-  transition: border-color 150ms ease, background-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+  transition:
+    color 220ms ease,
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 280ms ease,
+    transform 280ms cubic-bezier(.22, 1, .36, 1);
+  will-change: transform;
 }
 
-.himi-writing-character-grid button:hover {
-  border-color: #efaca5;
-  transform: translateY(-2px);
+@media (hover: hover) {
+  .himi-writing-character-grid button:hover {
+    border-color: #efaca5;
+    background-color: #fff8f6;
+    box-shadow: 0 10px 24px rgba(93, 54, 48, .12);
+    transform: translateY(-3px) scale(1.035);
+  }
+
+  .himi-writing-character-grid button.active:hover {
+    border-color: var(--writing-red);
+    box-shadow: 0 13px 28px rgba(255, 87, 77, .3);
+  }
+
+  .himi-writing-character-grid button:hover > span {
+    transform: translateY(-1px) scale(1.045);
+  }
+
+  .himi-writing-character-grid button:hover small {
+    transform: translateY(-1px);
+  }
 }
 
 .himi-writing-character-grid button.active {
@@ -326,12 +567,14 @@
   font-size: clamp(22px, 2.2vw, 30px);
   font-weight: 650;
   line-height: 1;
+  transition: transform 280ms cubic-bezier(.22, 1, .36, 1);
 }
 
 .himi-writing-character-grid button small {
   margin-top: 4px;
   color: #84928e;
   font-size: 9px;
+  transition: color 220ms ease, transform 280ms cubic-bezier(.22, 1, .36, 1);
 }
 
 .himi-writing-character-grid button.active small { color: rgba(255, 255, 255, .82); }
@@ -703,6 +946,14 @@
   .writing-topic-card { min-height: 0; padding: 20px; border-radius: 22px; }
   .writing-topic-card-footer { align-items: stretch; flex-direction: column; }
   .writing-topic-card-footer a { width: 100%; }
+  .writing-lesson-list-heading { align-items: start; flex-direction: column; gap: 9px; }
+  .writing-lesson-list-heading > p { text-align: left; }
+  .writing-lesson-grid { grid-template-columns: 1fr; gap: 12px; }
+  .writing-lesson-card { padding: 19px; border-radius: 21px; }
+  .writing-lesson-card-header { align-items: start; flex-direction: column; gap: 6px; }
+  .writing-lesson-card-header small { max-width: none; }
+  .writing-lesson-card-footer { align-items: stretch; flex-direction: column; }
+  .writing-lesson-card-footer a { width: 100%; }
   .writing-breadcrumbs { margin-bottom: 12px; }
   .writing-lesson-hero { padding: 25px 20px; gap: 24px; border-radius: 24px; }
   .writing-lesson-character-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
@@ -742,7 +993,6 @@
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .himi-writing-character-grid button,
   .himi-writing-board-actions button,
   .himi-writing-progress span,
   .himi-writing-daily-card > div span { transition: none; }

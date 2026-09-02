@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ArrowRight, BookOpen, PenLine } from "lucide-react";
 import { HimiSectionBanner } from "@/components/himi-section-banner";
-import { WRITING_TOPICS } from "@/lib/writing-content";
+import { getWritingLevels } from "@/lib/writing-content";
 
 export const metadata: Metadata = {
   title: "Luyện viết",
@@ -10,39 +10,42 @@ export const metadata: Metadata = {
 };
 
 export default function WritingPage() {
+  const levels = getWritingLevels();
+  const lessonCount = levels.reduce((total, level) => total + level.lessonCount, 0);
+
   return <main className="learner-dashboard writing-catalog-page">
     <HimiSectionBanner
       className="writing-catalog-banner"
-      description="Sáu chủ đề từ HSK 1 đến HSK 6, mỗi chủ đề gồm một bài học ngắn trước khi vào bàn luyện viết tương tác."
+      description={`Chọn trong ${lessonCount} bài học HSK 1–6 và luyện đúng những chữ xuất hiện trong từng bài trên bàn viết tương tác.`}
       titleId="writing-catalog-title"
-      titleLines={["Chọn cấp độ.", "Viết từng nét thật chắc."]}
+      titleLines={["Chọn bài đã học.", "Viết từng nét thật chắc."]}
       variant="writing"
     />
 
     <section className="writing-topic-section" aria-labelledby="writing-topic-heading">
       <div className="writing-topic-heading">
         <div>
-          <span>6 chủ đề · 6 bài học</span>
-          <h2 id="writing-topic-heading">Chủ đề theo cấp độ HSK</h2>
+          <span>6 cấp độ · {lessonCount} bài học</span>
+          <h2 id="writing-topic-heading">Bài luyện viết theo HSK</h2>
         </div>
-        <p>Bắt đầu từ cấp phù hợp với bạn. Mỗi bài đều có xem nét, tô theo và tự viết.</p>
+        <p>Chọn cấp độ rồi vào đúng bài đang học. Mỗi bài đều có xem nét, tô theo và tự viết.</p>
       </div>
 
       <div className="writing-topic-grid">
-        {WRITING_TOPICS.map((topic, index) => (
-          <article className={`writing-topic-card is-level-${index + 1}`} key={topic.slug}>
+        {levels.map((level, index) => (
+          <article className={`writing-topic-card is-level-${index + 1}`} key={level.id}>
             <div className="writing-topic-card-topline">
-              <span>{topic.level}</span>
-              <small><BookOpen aria-hidden="true" size={14} /> 1 bài học</small>
+              <span>{level.label}</span>
+              <small><BookOpen aria-hidden="true" size={14} /> {level.lessonCount} bài học</small>
             </div>
-            <div aria-label={`Các chữ trọng tâm: ${topic.characters.map((character) => character.hanzi).join(", ")}`} className="writing-topic-characters" lang="zh-CN">
-              {topic.characters.slice(0, 4).map((character) => <span key={character.hanzi}>{character.hanzi}</span>)}
+            <div aria-label={`Một số chữ trong cấp độ: ${level.previewCharacters.join(", ")}`} className="writing-topic-characters" lang="zh-CN">
+              {level.previewCharacters.map((character) => <span key={character}>{character}</span>)}
             </div>
-            <h3>{topic.title}</h3>
-            <p>{topic.summary}</p>
+            <h3>Luyện viết {level.label}</h3>
+            <p>{level.description}</p>
             <div className="writing-topic-card-footer">
-              <span><PenLine aria-hidden="true" size={15} /> {topic.characters.length} chữ trọng tâm</span>
-              <Link href={`/writing/${topic.slug}`} prefetch>Vào chủ đề <ArrowRight aria-hidden="true" size={17} /></Link>
+              <span><PenLine aria-hidden="true" size={15} /> {level.characterCount} lượt chữ</span>
+              <Link href={`/writing/${level.id}`} prefetch>Xem bài học <ArrowRight aria-hidden="true" size={17} /></Link>
             </div>
           </article>
         ))}

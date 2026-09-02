@@ -12,10 +12,17 @@ import {
   type GameProgressSnapshot,
   type PracticeProgressSnapshot,
 } from "./activity-progress.ts";
+import { aggregateListeningAttempts } from "./listening-performance.ts";
+import { summarizePracticePerformance } from "./practice-performance.ts";
 
 export async function getPracticeProgress(userId: string): Promise<PracticeProgressSnapshot> {
   const rows = await readDb((db) => db
-    .select({ scenarioId: practiceAttempts.scenarioId })
+    .select({
+      scenarioId: practiceAttempts.scenarioId,
+      correctAnswers: practiceAttempts.correctAnswers,
+      totalQuestions: practiceAttempts.totalQuestions,
+      totalReactionMs: practiceAttempts.totalReactionMs,
+    })
     .from(practiceAttempts)
     .where(eq(practiceAttempts.userId, userId)));
 
@@ -23,6 +30,8 @@ export async function getPracticeProgress(userId: string): Promise<PracticeProgr
   return {
     completedScenarioIds: Array.from(new Set(rows.map((row) => row.scenarioId))),
     attemptCount: rows.length,
+    ...aggregateListeningAttempts(rows),
+    ...summarizePracticePerformance(rows),
   };
 }
 
@@ -32,6 +41,7 @@ export async function recordPracticeAttempt(input: {
   industry: string;
   correctAnswers: number;
   totalQuestions: number;
+  totalReactionMs: number;
 }): Promise<PracticeProgressSnapshot> {
   await writeDb((db) => db.insert(practiceAttempts).values(input));
   return getPracticeProgress(input.userId);

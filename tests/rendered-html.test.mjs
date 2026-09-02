@@ -38,9 +38,10 @@ test("prototype includes learner, VIP and admin routes", async () => {
   const files = await Promise.all([read("app/courses/page.tsx"), read("app/vip/page.tsx"), read("app/admin/page.tsx")]);
   assert.match(files[0], /CourseLibraryView/);
   assert.match(files[1], /getVipUpgradeOverview/);
-  assert.match(files[1], /Gửi yêu cầu kích hoạt/);
-  assert.match(files[1], /beta thủ công và chưa thu tiền tự động/);
-  assert.match(files[1], /Từ yêu cầu đến lúc bắt đầu học/);
+  assert.match(files[1], /: "Nâng cấp";/);
+  assert.doesNotMatch(files[1], /Gửi yêu cầu kích hoạt/);
+  assert.match(files[1], /VipTransferFlow/);
+  assert.match(files[1], /Thanh toán một lần qua SePay/);
   assert.match(files[2], /Tổng quan vận hành/);
 });
 
@@ -146,7 +147,7 @@ test("staging deployment keeps secrets out of source and uses secure auth settin
   assert.doesNotMatch(wrangler, /DATABASE_URL|AUTH_SECRET|CLOUDINARY_URL/);
 });
 
-test("staging verification covers auth, VIP, notifications, audio and fixture cleanup", async () => {
+test("staging verification covers auth, SePay, notifications, audio and fixture cleanup", async () => {
   const [packageJsonSource, verification] = await Promise.all([
     read("package.json"),
     read("scripts/verify-staging.ts"),
@@ -156,8 +157,9 @@ test("staging verification covers auth, VIP, notifications, audio and fixture cl
   assert.match(packageJson.scripts["verify:staging"], /scripts\/verify-staging\.ts/);
   assert.match(verification, /\/api\/auth\/login/);
   assert.match(verification, /\/api\/auth\/register/);
-  assert.match(verification, /vip_request_approved/);
-  assert.match(verification, /VIP đã được kích hoạt/);
+  assert.match(verification, /\/api\/webhooks\/sepay/);
+  assert.match(verification, /sepay_pending_to_paid/);
+  assert.match(verification, /Thanh toán SePay thành công/);
   assert.match(verification, /practice-audio/);
   assert.match(verification, /cloudinary\.com/);
   assert.match(verification, /finally \{/);
@@ -415,33 +417,39 @@ test("games route renders the Cánh Cụt slice game and six video-inspired acti
   assert.equal((content.match(/id: "/g) ?? []).length, 12);
 });
 
-test("writing route flows from six HSK topics to one lesson and the writing studio", async () => {
-  const [catalog, lesson, practice, studio, content, styles] = await Promise.all([
+test("writing route flows from HSK levels to their lessons and the writing studio", async () => {
+  const [catalog, lessons, legacyPractice, practice, studio, content, styles] = await Promise.all([
     read("app/writing/page.tsx"),
     read("app/writing/[level]/page.tsx"),
     read("app/writing/[level]/practice/page.tsx"),
+    read("app/writing/[level]/[lesson]/practice/page.tsx"),
     read("components/himi-writing-studio.tsx"),
     read("lib/writing-content.ts"),
     read("app/writing-studio.css"),
   ]);
-  assert.match(catalog, /WRITING_TOPICS\.map/);
-  assert.match(catalog, /6 chủ đề · 6 bài học/);
-  assert.match(catalog, /href=\{`\/writing\/\$\{topic\.slug\}`\}/);
-  assert.equal((content.match(/slug: "hsk-[1-6]"/g) ?? []).length, 6);
-  assert.equal((content.match(/title: "/g) ?? []).length, 6);
-  assert.match(lesson, /getWritingTopic/);
-  assert.match(lesson, /Bài học duy nhất trong chủ đề/);
-  assert.match(lesson, /href=\{`\/writing\/\$\{topic\.slug\}\/practice`\}/);
+  assert.match(catalog, /getWritingLevels/);
+  assert.match(catalog, /\{lessonCount\} bài học/);
+  assert.match(catalog, /href=\{`\/writing\/\$\{level\.id\}`\}/);
+  assert.match(content, /WRITING_LEVEL_IDS/);
+  assert.match(content, /getHskLearningLessonContent/);
+  assert.match(lessons, /getWritingLessons/);
+  assert.match(lessons, /lessons\.map/);
+  assert.match(lessons, /href=\{`\/writing\/\$\{level\.id\}\/\$\{lesson\.id\}\/practice`\}/);
+  assert.match(legacyPractice, /redirect/);
   assert.match(practice, /HimiWritingStudio/);
   assert.match(practice, /notFound/);
   assert.match(studio, /topic\.characters/);
   assert.match(studio, /Xem nét/);
   assert.match(studio, /Tô theo/);
   assert.match(studio, /Tự viết/);
+  assert.match(studio, /writerRef\.current\.animateCharacter/);
+  assert.match(studio, /Đang phát lại thứ tự từng nét/);
+  assert.match(studio, /Đang tự động phát thứ tự từng nét/);
+  assert.doesNotMatch(studio, /prefers-reduced-motion/);
   assert.match(studio, /import HanziWriter from "hanzi-writer"/);
   assert.doesNotMatch(studio, /import\("hanzi-writer"\)/);
   assert.match(styles, /\.writing-topic-grid/);
-  assert.match(styles, /\.writing-single-lesson/);
+  assert.match(styles, /\.writing-lesson-grid/);
   assert.match(styles, /\.himi-writing-session-header/);
 });
 

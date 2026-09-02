@@ -4,7 +4,7 @@ import { and, asc, count, countDistinct, desc, eq, gt, ilike, inArray, isNotNull
 import { readDb, writeDb, type Database } from "../db/index.ts";
 import { auditLogs, paymentOrders, subscriptions, users, vipActivationRequests, vipPlans } from "../db/schema.ts";
 import type { MutationResult } from "./admin-content-service.ts";
-import { calculateVipEndsAt } from "./vip-subscription.ts";
+import { calculateVipPlanEndsAt } from "./vip-subscription.ts";
 
 function escapedSearch(value: string): string {
   return value.trim().slice(0, 120).replace(/[\\%_]/gu, "\\$&");
@@ -269,7 +269,7 @@ export async function deleteVipPlan(planId: string, actorId: string): Promise<Mu
 export async function grantOrExtendVipAccessInTransaction(tx: DbTransaction, input: {
   userId: string;
   planId: string;
-}, actorId: string): Promise<MutationResult> {
+}, actorId: string | null, source: "admin" | "sepay" = "admin"): Promise<MutationResult> {
     const now = new Date();
     const targetRows = await tx.select({
       id: users.id,
@@ -310,7 +310,7 @@ export async function grantOrExtendVipAccessInTransaction(tx: DbTransaction, inp
       or(isNull(subscriptions.endsAt), gt(subscriptions.endsAt, now)),
     )).orderBy(desc(subscriptions.endsAt), desc(subscriptions.createdAt)).for("update");
     const active = activeRows[0] ?? null;
-    const endsAt = calculateVipEndsAt(now, active?.endsAt ?? null, plan.durationDays);
+    const endsAt = calculateVipPlanEndsAt(now, active?.endsAt ?? null, plan.code, plan.durationDays);
     let subscriptionId: string;
     if (active) {
       await tx.update(subscriptions).set({
@@ -337,7 +337,9 @@ export async function grantOrExtendVipAccessInTransaction(tx: DbTransaction, inp
     }
     await tx.insert(auditLogs).values({
       actorId,
-      action: active ? "admin.subscription.extended" : "admin.subscription.granted",
+      action: source === "admin"
+        ? (active ? "admin.subscription.extended" : "admin.subscription.granted")
+        : (active ? "sepay.subscription.extended" : "sepay.subscription.granted"),
       entityType: "subscription",
       entityId: subscriptionId,
       metadata: {
@@ -346,8 +348,9 @@ export async function grantOrExtendVipAccessInTransaction(tx: DbTransaction, inp
         planId: plan.id,
         planCode: plan.code,
         durationDays: plan.durationDays,
+        source,
         previousEndsAt: active?.endsAt?.toISOString() ?? null,
-        endsAt: endsAt.toISOString(),
+        endsAt: endsAt?.toISOString() ?? null,
       },
     });
     return { ok: true, id: subscriptionId };

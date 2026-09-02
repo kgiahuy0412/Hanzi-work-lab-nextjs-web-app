@@ -33,6 +33,8 @@ export const users = pgTable("users", {
   email: varchar("email", { length: 255 }).notNull(),
   passwordHash: text("password_hash"),
   displayName: varchar("display_name", { length: 120 }),
+  avatarUrl: text("avatar_url"),
+  avatarPublicId: varchar("avatar_public_id", { length: 500 }),
   role: userRole("role").notNull().default("learner"),
   isActive: boolean("is_active").notNull().default(true),
   emailVerifiedAt: timestamp("email_verified_at", { withTimezone: true }),
@@ -171,6 +173,7 @@ export const practiceAttempts = pgTable("practice_attempts", {
   industry: varchar("industry", { length: 80 }).notNull(),
   correctAnswers: integer("correct_answers").notNull().default(0),
   totalQuestions: integer("total_questions").notNull().default(0),
+  totalReactionMs: integer("total_reaction_ms"),
   completedAt: timestamp("completed_at", { withTimezone: true }).notNull().defaultNow(),
 }, (table) => [
   index("practice_attempts_user_completed_idx").on(table.userId, table.completedAt),

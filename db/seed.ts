@@ -21,11 +21,12 @@ import { ecommerceLessons, ecommerceModules } from "../lib/ecommerce-course-seed
 import { factoryLessons, factoryModules } from "../lib/factory-course-seed.ts";
 import { logisticsLessons, logisticsModules } from "../lib/logistics-course-seed.ts";
 import { officeLessons, officeModules } from "../lib/office-course-seed.ts";
-import { getPracticeListeningStatement, practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
+import { getPracticeListeningStatement, getPracticeMeaningQuestion, practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
 import { detectPracticeAudioMime } from "../lib/practice-audio-validation.ts";
 import { restaurantLessons, restaurantModules } from "../lib/restaurant-course-seed.ts";
 import { salesLessons, salesModules } from "../lib/sales-course-seed.ts";
 import type { CourseSeedBundle } from "../lib/course-seed-types.ts";
+import { LIFETIME_VIP_PLAN_CODE, LIFETIME_VIP_STORAGE_DAYS } from "../lib/vip-plan.ts";
 
 const localEnvPath = resolve(process.cwd(), ".env.local");
 if (existsSync(localEnvPath)) process.loadEnvFile(localEnvPath);
@@ -54,6 +55,7 @@ const practiceAudioByExercise = new Map(
 );
 
 const planSeeds = [
+  { code: LIFETIME_VIP_PLAN_CODE, name: "VIP vĩnh viễn", durationDays: LIFETIME_VIP_STORAGE_DAYS, priceVnd: 1_090_000, discountPercent: 0, promotionLabel: null },
   { code: "VIP_1M", name: "VIP 1 tháng", durationDays: 30, priceVnd: 79_000, discountPercent: 0, promotionLabel: null },
   { code: "VIP_6M", name: "VIP 6 tháng", durationDays: 180, priceVnd: 329_000, discountPercent: 15, promotionLabel: "Tiết kiệm hơn theo kỳ 6 tháng" },
   { code: "VIP_12M", name: "VIP 1 năm", durationDays: 365, priceVnd: 549_000, discountPercent: 30, promotionLabel: "Ưu đãi tốt nhất trong năm" },
@@ -307,6 +309,7 @@ async function seed() {
 
       for (const [exerciseOrder, exercise] of scenario.exercises.entries()) {
         const listeningStatement = getPracticeListeningStatement(exercise, scenario);
+        const meaningQuestion = getPracticeMeaningQuestion(exercise);
         const [exerciseRow] = await tx.insert(practiceExerciseTable).values({
           scenarioId: scenarioRow.id,
           slug: exercise.id,
@@ -317,8 +320,8 @@ async function seed() {
           isStatementCorrect: listeningStatement.isCorrect,
           audioUrl: exercise.audioUrl ?? null,
           audioReviewStatus: exercise.audioUrl ? "approved" : "pending",
-          options: exercise.options,
-          correctOption: exercise.correctOption,
+          options: meaningQuestion.options,
+          correctOption: meaningQuestion.correctOption,
           explanation: exercise.explanation,
           sortOrder: exerciseOrder,
           updatedAt: publishedAt,
@@ -331,8 +334,8 @@ async function seed() {
             listeningText: listeningStatement.text,
             isStatementCorrect: listeningStatement.isCorrect,
             audioUrl: exercise.audioUrl ?? null,
-            options: exercise.options,
-            correctOption: exercise.correctOption,
+            options: meaningQuestion.options,
+            correctOption: meaningQuestion.correctOption,
             explanation: exercise.explanation,
             sortOrder: exerciseOrder,
             updatedAt: publishedAt,

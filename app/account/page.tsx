@@ -6,7 +6,6 @@ import {
   BadgeCheck,
   CalendarDays,
   ChevronRight,
-  CircleCheckBig,
   Clock3,
   Crown,
   Gift,
@@ -15,10 +14,12 @@ import {
   Mail,
   UserRound,
 } from "lucide-react";
+import { AccountAvatarUploader } from "@/components/account-avatar-uploader";
 import { cancelVipActivationRequestAction } from "@/app/vip/actions";
 import { getCurrentUser } from "@/lib/auth-session";
 import { MAX_PASSWORD_LENGTH, MIN_PASSWORD_LENGTH } from "@/lib/auth-validation";
 import { getPendingVipActivationRequest } from "@/lib/vip-activation-request-service";
+import { vipPlanDurationLabel } from "@/lib/vip-plan";
 import { getActiveVipSubscription, vipDaysRemaining } from "@/lib/vip-subscription";
 
 export const metadata: Metadata = { title: "Tài khoản" };
@@ -97,10 +98,11 @@ export default async function AccountPage({
         {params.error && accountErrors[params.error] ? <p className="auth-error account-feedback" role="alert">{accountErrors[params.error]}</p> : null}
 
         <section className="account-profile-hero" aria-labelledby="account-profile-name">
-          <div className="account-profile-avatar" aria-hidden="true">
-            <span>{initials(user.displayName)}</span>
-            <i><CircleCheckBig size={31} strokeWidth={2.5} /></i>
-          </div>
+          <AccountAvatarUploader
+            avatarUrl={user.avatarUrl}
+            displayName={user.displayName}
+            initials={initials(user.displayName)}
+          />
           <div className="account-profile-copy">
             <h2 id="account-profile-name">{user.displayName}</h2>
             <p>{roleLabels[user.role]} Himi Chinese</p>
@@ -126,7 +128,7 @@ export default async function AccountPage({
           <Clock3 size={21} />
           <div>
             <strong>Yêu cầu {pendingVipRequest.planName} đang chờ</strong>
-            <span>Đã gửi ngày {formatDate(pendingVipRequest.createdAt)} · {pendingVipRequest.durationDays} ngày</span>
+            <span>Đã gửi ngày {formatDate(pendingVipRequest.createdAt)} · {vipPlanDurationLabel(pendingVipRequest.planCode, pendingVipRequest.durationDays)}</span>
           </div>
           <form action={cancelVipActivationRequestAction}>
             <input name="requestId" type="hidden" value={pendingVipRequest.id} />

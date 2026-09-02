@@ -340,7 +340,7 @@ export function PracticeVersionHistory({ action, scenarioId, versions, versionCo
               {snapshot.exercises.map((exercise, exerciseIndex) => <div key={`${version.id}-${exercise.slug}`}>
                 <span>{String(exerciseIndex + 1).padStart(2, "0")}</span>
                 <div><strong>{exercise.eyebrow}</strong><small lang="zh">{exercise.listeningText || exercise.chinese || "Chưa có transcript"}</small></div>
-                <b className={exercise.isStatementCorrect ? "true" : "false"}>{exercise.isStatementCorrect === null ? "—" : exercise.isStatementCorrect ? "Đúng" : "Sai"}</b>
+                <b className="true">Đáp án {exercise.correctOption + 1}</b>
               </div>)}
             </div>
             {canRestore && !isLatest ? <form action={action} className="practice-version-restore-form">
@@ -627,15 +627,15 @@ export function PracticeExerciseForm({ action, exercise, scenarioId, nextOrder, 
     <input name="scenarioId" type="hidden" value={scenarioId} />
     {exercise ? <input name="exerciseId" type="hidden" value={exercise.id} /> : null}
     <div className="admin-form-grid two">
-      <label>Nhãn lượt nghe<input defaultValue={exercise?.eyebrow} maxLength={160} name="eyebrow" placeholder="Chọn cách phản hồi" required /></label>
+      <label>Nhãn lượt nghe<input defaultValue={exercise?.eyebrow} maxLength={160} name="eyebrow" placeholder="Nghe và chọn nghĩa" required /></label>
       <label>Slug<input defaultValue={exercise?.slug} maxLength={120} name="slug" placeholder="Tự tạo nếu để trống" /></label>
       <label>Thứ tự<input defaultValue={exercise?.sortOrder ?? nextOrder} max={10000} min={0} name="sortOrder" type="number" /></label>
       <label>Đáp án đúng (số thứ tự)<input defaultValue={(exercise?.correctOption ?? 0) + 1} max={8} min={1} name="correctOption" type="number" required /></label>
     </div>
-    <label>Câu hỏi<textarea defaultValue={exercise?.prompt} maxLength={4000} name="prompt" required rows={2} /></label>
+    <label>Câu hỏi<textarea defaultValue={exercise?.prompt} maxLength={4000} name="prompt" placeholder="Câu vừa nghe có nghĩa là gì?" required rows={2} /></label>
     <label>Câu tiếng Trung gợi ý<textarea defaultValue={exercise?.chinese ?? ""} lang="zh" maxLength={4000} name="chinese" rows={2} /></label>
     <label>Bản chép chính xác của audio<textarea defaultValue={exercise?.listeningText ?? ""} lang="zh" maxLength={4000} name="listeningText" placeholder="Nội dung người học sẽ thực sự nghe" required rows={2} /></label>
-    <label className="admin-check"><input defaultChecked={exercise?.isStatementCorrect ?? true} name="isStatementCorrect" type="checkbox" /> Câu trong audio phù hợp với tình huống (đáp án Đúng)</label>
+    <input name="isStatementCorrect" type="hidden" value="true" />
     <PracticeAudioUploader
       cloudinaryConfigured={cloudinaryConfigured}
       exerciseId={exercise?.id}
@@ -658,7 +658,7 @@ export function PracticeExerciseForm({ action, exercise, scenarioId, nextOrder, 
         : null}
     />
     <label>Audio URL cũ — chỉ giữ dữ liệu legacy<input defaultValue={exercise?.audioUrl ?? ""} maxLength={2000} name="audioUrl" placeholder="Audio mới cần upload qua Cloudinary để được kiểm duyệt" /></label>
-    <label>Các phương án — mỗi dòng một đáp án<textarea defaultValue={serializeStringList(exercise?.options)} maxLength={16000} name="options" placeholder={'目前可能会晚一天，我先向您汇报。\n不知道，明天再说吧。\n这不是我的问题。'} required rows={5} /></label>
+    <label>Các nghĩa tiếng Việt — mỗi dòng một đáp án<textarea defaultValue={serializeStringList(exercise?.options)} maxLength={16000} name="options" placeholder={'Tiến độ có thể chậm một ngày.\nTiến độ đã hoàn thành sớm.\nNgày mai sẽ bắt đầu công việc.'} required rows={5} /></label>
     <label>Giải thích<textarea defaultValue={exercise?.explanation} maxLength={4000} name="explanation" required rows={3} /></label>
     <label>Ghi chú phiên bản<input maxLength={500} name="changeNote" placeholder={exercise ? "Nêu lý do chỉnh lượt nghe" : "Thêm lượt nghe vào ca"} /></label>
     <button className={`button ${exercise ? "button-secondary" : "button-primary"}`} type="submit">{submitLabel}</button>

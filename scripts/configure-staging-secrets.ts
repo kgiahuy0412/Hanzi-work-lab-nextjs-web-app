@@ -7,7 +7,7 @@ const projectRoot = resolve(dirname(fileURLToPath(import.meta.url)), "..");
 const wranglerCli = resolve(projectRoot, "node_modules", "wrangler", "bin", "wrangler.js");
 const workerName = process.env.CLOUDFLARE_STAGING_WORKER_NAME?.trim() || "hanziwork-staging";
 
-function requiredEnvironmentValue(name: "DATABASE_URL" | "AUTH_SECRET" | "CLOUDINARY_URL" | "BREVO_API_KEY" | "BREVO_FROM_EMAIL") {
+function requiredEnvironmentValue(name: "DATABASE_URL" | "AUTH_SECRET" | "CLOUDINARY_URL" | "BREVO_API_KEY" | "BREVO_FROM_EMAIL" | "SEPAY_WEBHOOK_SECRET") {
   const value = process.env[name]?.trim();
   if (!value) throw new Error(`Thiếu ${name} trong file môi trường local.`);
   return value;
@@ -36,6 +36,10 @@ const secrets = {
   BREVO_API_KEY: requiredEnvironmentValue("BREVO_API_KEY"),
   BREVO_FROM_EMAIL: requiredEnvironmentValue("BREVO_FROM_EMAIL"),
   BREVO_FROM_NAME: process.env.BREVO_FROM_NAME?.trim() || "HanziWork",
+  SEPAY_WEBHOOK_SECRET: requiredEnvironmentValue("SEPAY_WEBHOOK_SECRET"),
+  SEPAY_BANK_CODE: process.env.SEPAY_BANK_CODE?.trim() || "ACB",
+  SEPAY_BANK_ACCOUNT_NUMBER: process.env.SEPAY_BANK_ACCOUNT_NUMBER?.trim() || "12897891",
+  SEPAY_BANK_ACCOUNT_NAME: process.env.SEPAY_BANK_ACCOUNT_NAME?.trim() || "LE CHAU KIET",
   NEXT_PUBLIC_APP_URL: stagingApplicationUrl(),
   AUTH_COOKIE_SECURE: "1",
   AUTH_TRUST_X_FORWARDED_FOR: "0",

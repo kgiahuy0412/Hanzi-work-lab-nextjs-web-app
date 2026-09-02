@@ -1,15 +1,17 @@
-import { and, eq, inArray, or } from "drizzle-orm";
+import { eq, inArray, or } from "drizzle-orm";
 import { readDb, writeDb } from "../db/index.ts";
 import {
   auditLogs,
+  paymentEvents,
+  paymentOrders,
   subscriptions,
   users,
   vipActivationRequests,
+  vipPlans,
 } from "../db/schema.ts";
 import { hashPassword } from "../lib/auth-crypto.ts";
 
 type RouteResult = { route: string; status: number; location?: string };
-type InputFields = Record<string, string>;
 
 function assert(condition: unknown, message: string): asserts condition {
   if (!condition) throw new Error(message);
@@ -28,34 +30,6 @@ function stagingBaseUrl() {
 function locationPath(response: Response) {
   const value = response.headers.get("location");
   return value ? new URL(value, baseUrl).pathname + new URL(value, baseUrl).search : undefined;
-}
-
-function inputFields(form: string): InputFields {
-  const fields: InputFields = {};
-  for (const match of form.matchAll(/<input\b[^>]*>/giu)) {
-    const tag = match[0];
-    const name = tag.match(/\bname="([^"]+)"/iu)?.[1];
-    if (!name) continue;
-    fields[name] = tag.match(/\bvalue="([^"]*)"/iu)?.[1] ?? "";
-  }
-  return fields;
-}
-
-function findForm(html: string, predicate: (form: string) => boolean) {
-  for (const match of html.matchAll(/<form\b[^>]*>[\s\S]*?<\/form>/giu)) {
-    if (predicate(match[0])) return match[0];
-  }
-  throw new Error("Không tìm thấy form Server Action cần kiểm tra.");
-}
-
-function actionPayload(form: string, overrides: InputFields) {
-  const fields = { ...inputFields(form), ...overrides };
-  const actionName = Object.keys(fields).find((name) => name.startsWith("$ACTION_ID_"));
-  assert(actionName, "Form không chứa Server Action id.");
-
-  const body = new FormData();
-  for (const [name, value] of Object.entries(fields)) body.set(name, value);
-  return body;
 }
 
 class BrowserSession {
@@ -130,8 +104,22 @@ const registrationEmail = `qa-staging-register-${runId}@example.com`;
 const qaEmails = [learnerEmail, adminEmail, registrationEmail];
 const password = `Qa!${crypto.randomUUID()}Aa1`;
 
-let requestId: string | null = null;
 let subscriptionId: string | null = null;
+
+async function signSepayWebhook(timestamp: string, rawBody: string) {
+  const secret = process.env.SEPAY_WEBHOOK_SECRET?.trim();
+  assert(secret, "Thiếu SEPAY_WEBHOOK_SECRET để kiểm tra staging.");
+  const key = await crypto.subtle.importKey(
+    "raw",
+    new TextEncoder().encode(secret),
+    { name: "HMAC", hash: "SHA-256" },
+    false,
+    ["sign"],
+  );
+  const digest = await crypto.subtle.sign("HMAC", key, new TextEncoder().encode(`${timestamp}.${rawBody}`));
+  const hex = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+  return `sha256=${hex}`;
+}
 
 async function setupUsers() {
   const passwordHash = await hashPassword(password);
@@ -186,54 +174,69 @@ async function verifyVipFlow() {
 
   const vipPage = await learner.request("/vip");
   assert(vipPage.status === 200, `VIP page cho learner trả ${vipPage.status}.`);
-  const vipHtml = await vipPage.text();
-  const requestForm = findForm(vipHtml, (form) => form.includes("vip-plan-request-form") && !form.includes("disabled"));
-  const requestFields = inputFields(requestForm);
-  assert(requestFields.planId, "Không tìm thấy planId trên VIP page.");
-  const requestResponse = await learner.request("/vip", {
+  const planRows = await readDb((db) => db.select({ id: vipPlans.id, priceVnd: vipPlans.priceVnd })
+    .from(vipPlans).where(eq(vipPlans.isActive, true)).limit(1));
+  const plan = planRows[0];
+  assert(plan, "Không tìm thấy gói VIP đang hoạt động.");
+  const orderResponse = await learner.request("/api/payments/sepay/orders", {
     method: "POST",
-    body: actionPayload(requestForm, { planId: requestFields.planId, userNote: "Staging E2E verification" }),
+    body: JSON.stringify({ planId: plan.id }),
+    headers: { "Content-Type": "application/json" },
   });
-  assert(requestResponse.status === 303, `Gửi yêu cầu VIP trả ${requestResponse.status}.`);
-  assert(locationPath(requestResponse) === "/vip?success=requested", "Gửi yêu cầu VIP redirect sai.");
+  assert(orderResponse.status === 201, `Tạo đơn SePay trả ${orderResponse.status}.`);
+  const orderBody = await orderResponse.json() as { order?: {
+    id: string;
+    amountVnd: number;
+    referenceCode: string;
+    bankAccount: { accountNumber: string };
+  } };
+  const order = orderBody.order;
+  assert(order, "API không trả đơn thanh toán SePay.");
 
-  const pendingRows = await readDb((db) => db.select({ id: vipActivationRequests.id })
-    .from(vipActivationRequests)
-    .innerJoin(users, eq(users.id, vipActivationRequests.userId))
-    .where(and(eq(users.email, learnerEmail), eq(vipActivationRequests.status, "pending")))
-    .limit(1));
-  requestId = pendingRows[0]?.id ?? null;
-  assert(requestId, "Yêu cầu VIP không được ghi vào PostgreSQL.");
+  const timestamp = String(Math.floor(Date.now() / 1_000));
+  const webhookPayload = JSON.stringify({
+    id: Number(`${Date.now()}`.slice(-10)),
+    gateway: process.env.SEPAY_BANK_CODE?.trim() || "ACB",
+    transactionDate: new Date().toLocaleString("sv-SE", { timeZone: "Asia/Ho_Chi_Minh" }),
+    accountNumber: order.bankAccount.accountNumber,
+    subAccount: "",
+    code: order.referenceCode,
+    content: `${order.referenceCode} staging verification`,
+    transferType: "in",
+    description: "HanziWork staging verification",
+    transferAmount: order.amountVnd,
+    accumulated: order.amountVnd,
+    referenceCode: `QA${Date.now()}`,
+  });
+  const webhookResponse = await fetch(new URL("/api/webhooks/sepay", baseUrl), {
+    method: "POST",
+    body: webhookPayload,
+    headers: {
+      "Content-Type": "application/json",
+      "X-SePay-Signature": await signSepayWebhook(timestamp, webhookPayload),
+      "X-SePay-Timestamp": timestamp,
+    },
+  });
+  assert(webhookResponse.status === 200, `Webhook SePay trả ${webhookResponse.status}.`);
+  assert((await webhookResponse.json() as { success?: boolean }).success === true, "Webhook SePay không trả success=true.");
+
+  const paidRows = await readDb((db) => db.select({
+    status: paymentOrders.status,
+    subscriptionId: paymentOrders.subscriptionId,
+  }).from(paymentOrders).where(eq(paymentOrders.id, order.id)).limit(1));
+  assert(paidRows[0]?.status === "paid", "Đơn SePay chưa chuyển paid trong PostgreSQL.");
+  subscriptionId = paidRows[0]?.subscriptionId ?? null;
+  assert(subscriptionId, "Webhook SePay chưa tạo subscription.");
 
   const subscriptionsPage = await admin.request("/admin/subscriptions");
   assert(subscriptionsPage.status === 200, `Admin subscriptions trả ${subscriptionsPage.status}.`);
   const subscriptionsHtml = await subscriptionsPage.text();
-  const learnerIndex = subscriptionsHtml.indexOf(learnerEmail);
-  assert(learnerIndex >= 0, "Hàng đợi admin không hiển thị learner QA.");
-  const articleStart = subscriptionsHtml.lastIndexOf("<article", learnerIndex);
-  const articleEnd = subscriptionsHtml.indexOf("</article>", learnerIndex);
-  assert(articleStart >= 0 && articleEnd > articleStart, "Không tách được yêu cầu VIP trong hàng đợi admin.");
-  const requestArticle = subscriptionsHtml.slice(articleStart, articleEnd + 10);
-  const approveForm = findForm(requestArticle, (form) => form.includes("Duyệt") && form.includes("requestId"));
-  const approveResponse = await admin.request("/admin/subscriptions", {
-    method: "POST",
-    body: actionPayload(approveForm, { requestId, adminNote: "Approved by staging E2E" }),
-  });
-  assert(approveResponse.status === 303, `Duyệt VIP trả ${approveResponse.status}.`);
-  assert(locationPath(approveResponse) === "/admin/subscriptions?success=vip_request_approved", "Duyệt VIP redirect sai.");
-
-  const approvedRows = await readDb((db) => db.select({
-    status: vipActivationRequests.status,
-    subscriptionId: vipActivationRequests.subscriptionId,
-  }).from(vipActivationRequests).where(eq(vipActivationRequests.id, requestId!)).limit(1));
-  assert(approvedRows[0]?.status === "approved", "Yêu cầu VIP chưa chuyển approved trong PostgreSQL.");
-  subscriptionId = approvedRows[0]?.subscriptionId ?? null;
-  assert(subscriptionId, "Duyệt VIP chưa tạo subscription.");
+  assert(subscriptionsHtml.includes(learnerEmail), "Admin subscriptions chưa hiển thị giao dịch SePay của learner QA.");
 
   const notificationPage = await learner.request("/notifications");
   assert(notificationPage.status === 200, `Notifications trả ${notificationPage.status}.`);
   const notificationHtml = await notificationPage.text();
-  assert(notificationHtml.includes("VIP đã được kích hoạt"), "Learner chưa nhận thông báo VIP.");
+  assert(notificationHtml.includes("Thanh toán SePay thành công"), "Learner chưa nhận thông báo thanh toán SePay.");
   assert(notificationHtml.includes("1</strong><span>chưa đọc"), "Unread count của thông báo VIP không đúng.");
 
   const accountPage = await learner.request("/account");
@@ -258,7 +261,7 @@ async function verifyVipFlow() {
     learnerLogin: "ok",
     adminLogin: "ok",
     learnerRbac: "blocked",
-    request: "pending_to_approved",
+    payment: "sepay_pending_to_paid",
     notification: "unread_created",
     entitlement: "active",
     audio: `redirect_${audioResponse.status}_cdn_${cloudinaryResponse.status}`,
@@ -277,6 +280,13 @@ async function cleanupFixtures() {
   const relatedEntityIds = [...userIds, ...requestIds, ...subscriptionIds];
 
   await writeDb((db) => db.transaction(async (tx) => {
+    const paymentRows = await tx.select({ id: paymentOrders.id }).from(paymentOrders).where(inArray(paymentOrders.userId, userIds));
+    const paymentIds = paymentRows.map((order) => order.id);
+    if (paymentIds.length > 0) {
+      await tx.delete(auditLogs).where(inArray(auditLogs.entityId, paymentIds));
+      await tx.delete(paymentEvents).where(inArray(paymentEvents.orderId, paymentIds));
+      await tx.delete(paymentOrders).where(inArray(paymentOrders.id, paymentIds));
+    }
     if (relatedEntityIds.length > 0) {
       await tx.delete(auditLogs).where(or(
         inArray(auditLogs.actorId, userIds),

@@ -1,4 +1,5 @@
 import { ListeningModeSwitcher } from "@/components/listening-mode-switcher";
+import { ListeningPerformanceSummary } from "@/components/listening-performance-summary";
 import { WorkPracticeHub } from "@/components/work-practice-hub";
 import { emptyPracticeProgress } from "@/lib/activity-progress";
 import { getPracticeProgress } from "@/lib/activity-progress-repository";
@@ -40,15 +41,26 @@ export async function ScenarioPractice({ scenario, session }: ScenarioPracticePr
   return (
     <main className="learner-dashboard practice-dashboard listening-scenario-page">
       <div className="practice-dashboard-frame">
-        <div className="listening-mode-shell">
-          <ListeningModeSwitcher activeMode="scenario" />
-        </div>
         <WorkPracticeHub
           authenticated={Boolean(user)}
           dailyFlow={dailyFlow}
           dailyNextStep={dailyNextStep}
           initialProgress={progress}
           initialScenarioId={initialScenarioId}
+          overviewHeader={
+            <div className="listening-mode-shell">
+              <ListeningModeSwitcher activeMode="scenario" />
+              <ListeningPerformanceSummary
+                authenticated={Boolean(user)}
+                initialScenarioPerformance={{
+                  correctAnswers: progress.correctAnswers ?? 0,
+                  totalQuestions: progress.totalQuestions ?? 0,
+                  totalReactionMs: progress.totalReactionMs ?? 0,
+                  reactionQuestions: progress.reactionQuestions ?? 0,
+                }}
+              />
+            </div>
+          }
           hasVip={catalog.hasVip}
           industries={catalog.industries}
           scenarios={catalog.scenarios}

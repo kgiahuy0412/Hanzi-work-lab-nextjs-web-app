@@ -2,7 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import { coreWorkplaceLessons } from "../lib/core-workplace-course-seed.ts";
 import { ecommerceLessons } from "../lib/ecommerce-course-seed.ts";
-import { getPracticeListeningStatement, practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
+import { getPracticeListeningStatement, getPracticeMeaningQuestion, practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
 import { getWeeklyChallenge } from "../lib/weekly-challenges.ts";
 import { factoryLessons } from "../lib/factory-course-seed.ts";
 import { logisticsLessons } from "../lib/logistics-course-seed.ts";
@@ -64,4 +64,14 @@ test("work scenarios create both correct and incorrect audio judgements", () => 
   assert.ok(statements.some((statement) => !statement.isCorrect));
   assert.ok(statements.every((statement) => statement.text.length > 0 && statement.correctText.length > 0));
   assert.ok(statements.every((statement) => /[㐀-鿿]/u.test(statement.text)));
+});
+
+test("every seeded audio offers four distinct Vietnamese meaning choices", () => {
+  const questions = practiceScenarios.flatMap((scenario) => (
+    scenario.exercises.map((exercise) => getPracticeMeaningQuestion(exercise))
+  ));
+  assert.ok(questions.every((question) => question.options.length === 4));
+  assert.ok(questions.every((question) => new Set(question.options).size === 4));
+  assert.ok(questions.every((question) => question.correctOption >= 0 && question.correctOption < 4));
+  assert.ok(questions.every((question) => question.options.every((option) => !/[㐀-鿿]/u.test(option))));
 });

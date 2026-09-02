@@ -1,6 +1,7 @@
 import { and, desc, eq, gt, isNull, lte, or } from "drizzle-orm";
 import { readDb, type Database } from "../db/index.ts";
 import { subscriptions, vipPlans } from "../db/schema.ts";
+import { isLifetimeVipPlan } from "./vip-plan.ts";
 
 const dayMilliseconds = 24 * 60 * 60 * 1_000;
 
@@ -19,6 +20,15 @@ export function calculateVipEndsAt(now: Date, currentEndsAt: Date | null, durati
   }
   const base = currentEndsAt && currentEndsAt.getTime() > now.getTime() ? currentEndsAt : now;
   return new Date(base.getTime() + durationDays * dayMilliseconds);
+}
+
+export function calculateVipPlanEndsAt(
+  now: Date,
+  currentEndsAt: Date | null,
+  planCode: string,
+  durationDays: number,
+): Date | null {
+  return isLifetimeVipPlan(planCode) ? null : calculateVipEndsAt(now, currentEndsAt, durationDays);
 }
 
 export function vipDaysRemaining(endsAt: Date | null, now = new Date()): number | null {

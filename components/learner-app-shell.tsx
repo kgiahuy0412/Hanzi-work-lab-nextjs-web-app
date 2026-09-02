@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState, type MouseEvent, type ReactNode } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import {
@@ -31,6 +32,7 @@ import { getInternalNavigationHref } from "@/lib/navigation-progress";
 type LearnerShellUser = {
   displayName: string;
   email: string;
+  avatarUrl: string | null;
   role: "learner" | "editor" | "reviewer" | "admin";
   unreadNotificationCount: number;
 } | null;
@@ -70,6 +72,14 @@ function initials(value: string): string {
     .map((part) => part[0])
     .join("")
     .toLocaleUpperCase("vi-VN") || "HW";
+}
+
+function UserChipAvatar({ avatarUrl, displayName }: { avatarUrl: string | null; displayName: string }) {
+  return <span aria-hidden="true" className={avatarUrl ? "has-image" : undefined}>
+    {avatarUrl
+      ? <Image alt="" fill sizes="42px" src={avatarUrl} unoptimized />
+      : initials(displayName)}
+  </span>;
 }
 
 function isStandaloneRoute(pathname: string): boolean {
@@ -396,7 +406,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
               ref={accountMenuButtonRef}
               type="button"
             >
-              <span aria-hidden="true">{initials(displayName)}</span>
+              <UserChipAvatar avatarUrl={user.avatarUrl} displayName={displayName} />
               <strong>{displayName}</strong>
             </button>
 
@@ -435,7 +445,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
               </form>
             </div>
           </div> : <Link aria-label="Đăng nhập" className="user-chip" href={profileHref} onClick={(event) => beginRoute(event, profileHref)} onPointerEnter={() => prepareRoute(profileHref)} prefetch>
-            <span aria-hidden="true">{initials(displayName)}</span>
+            <UserChipAvatar avatarUrl={null} displayName={displayName} />
             <strong>{displayName}</strong>
           </Link>}
         </div>

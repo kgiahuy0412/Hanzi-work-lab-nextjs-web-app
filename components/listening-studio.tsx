@@ -30,6 +30,11 @@ import {
   type ListeningProgress,
 } from "@/lib/listening-progress";
 import {
+  HSK_LISTENING_PERFORMANCE_KEY,
+  parseListeningPerformance,
+  recordListeningQuestion,
+} from "@/lib/listening-performance";
+import {
   advanceListeningQuestion,
   answerListeningQuestion,
   createInitialListeningState,
@@ -39,6 +44,7 @@ import {
 } from "@/lib/listening-studio-state";
 
 const ROUND_LENGTH = 10;
+const VISIBLE_LEVELS = LEVELS.filter((level) => level.id !== "hsk-7-9");
 
 export function ListeningStudio({
   initialLevelId,
@@ -47,15 +53,21 @@ export function ListeningStudio({
   initialLevelId?: string;
   modeSwitcher?: ReactNode;
 }) {
-  const [studio, setStudio] = useState(() => createInitialListeningState(initialLevelId ?? LEVELS[0].id));
+  const initialVisibleLevelId = initialLevelId && VISIBLE_LEVELS.some((level) => level.id === initialLevelId)
+    ? initialLevelId
+    : VISIBLE_LEVELS[0].id;
+  const [studio, setStudio] = useState(() => createInitialListeningState(initialVisibleLevelId));
   const [slowPlayback, setSlowPlayback] = useState(false);
   const [isSpeaking, setIsSpeaking] = useState(false);
+  const [answerReady, setAnswerReady] = useState(false);
   const [audioSupported, setAudioSupported] = useState(true);
   const [progress, setProgress] = useState<ListeningProgress>({});
   const [catalogMessage, setCatalogMessage] = useState("");
   const lessonSectionRef = useRef<HTMLElement>(null);
+  const answerStartedAtRef = useRef(0);
+  const answerLockedRef = useRef(true);
 
-  const currentLevel = getListeningLevel(studio.selectedLevelId) ?? LEVELS[0];
+  const currentLevel = getListeningLevel(studio.selectedLevelId) ?? VISIBLE_LEVELS[0];
   const currentLesson = studio.selectedLessonId
     ? getListeningLesson(currentLevel.id, studio.selectedLessonId)
     : undefined;
@@ -79,9 +91,24 @@ export function ListeningStudio({
     if (studio.view !== "intro") window.scrollTo({ top: 0, behavior: "auto" });
   }, [studio.view]);
 
-  const playWord = (word: ListeningWord | undefined = currentWord, slower = slowPlayback) => {
+  const playWord = (
+    word: ListeningWord | undefined = currentWord,
+    slower = slowPlayback,
+    opensAnswerWindow = false,
+  ) => {
+    const openAnswerWindow = () => {
+      if (!opensAnswerWindow) return;
+      answerStartedAtRef.current = window.performance.now();
+      answerLockedRef.current = false;
+      setAnswerReady(true);
+    };
+    if (opensAnswerWindow) {
+      answerLockedRef.current = true;
+      setAnswerReady(false);
+    }
     if (!word || typeof window === "undefined" || !("speechSynthesis" in window)) {
       setAudioSupported(false);
+      if (typeof window !== "undefined") openAnswerWindow();
       return;
     }
 
@@ -92,8 +119,14 @@ export function ListeningStudio({
     const voice = window.speechSynthesis.getVoices().find((item) => item.lang.toLocaleLowerCase().startsWith("zh"));
     if (voice) utterance.voice = voice;
     utterance.onstart = () => setIsSpeaking(true);
-    utterance.onend = () => setIsSpeaking(false);
-    utterance.onerror = () => setIsSpeaking(false);
+    utterance.onend = () => {
+      setIsSpeaking(false);
+      openAnswerWindow();
+    };
+    utterance.onerror = () => {
+      setIsSpeaking(false);
+      openAnswerWindow();
+    };
     window.speechSynthesis.speak(utterance);
   };
 
@@ -117,8 +150,10 @@ export function ListeningStudio({
     try {
       const next = startListeningLesson(studio, currentLevel, lesson);
       setStudio(next);
+      answerLockedRef.current = true;
+      setAnswerReady(false);
       setCatalogMessage("");
-      window.setTimeout(() => playWord(next.round[0].word), 120);
+      window.setTimeout(() => playWord(next.round[0].word, false, true), 120);
     } catch {
       setCatalogMessage("Không thể tạo bài luyện này. Hãy chọn lại một bài khác.");
       setStudio((current) => leaveListeningSession(current));
@@ -139,6 +174,22 @@ export function ListeningStudio({
   };
 
   const selectChoice = (choice: string) => {
+    if (!answerReady || isSpeaking || answerLockedRef.current || studio.answerStatus !== "idle" || !currentWord) return;
+    answerLockedRef.current = true;
+    const reactionMs = window.performance.now() - answerStartedAtRef.current;
+    try {
+      const currentPerformance = parseListeningPerformance(
+        window.localStorage.getItem(HSK_LISTENING_PERFORMANCE_KEY),
+      );
+      const nextPerformance = recordListeningQuestion(
+        currentPerformance,
+        choice === currentWord.hanzi,
+        reactionMs,
+      );
+      window.localStorage.setItem(HSK_LISTENING_PERFORMANCE_KEY, JSON.stringify(nextPerformance));
+    } catch {
+      // The exercise remains usable when private browsing blocks local storage.
+    }
     setStudio((current) => answerListeningQuestion(current, choice));
   };
 
@@ -146,15 +197,21 @@ export function ListeningStudio({
     const next = advanceListeningQuestion(studio);
     if (next.view === "complete" && studio.view === "session") {
       window.speechSynthesis?.cancel();
+      answerLockedRef.current = true;
+      setAnswerReady(false);
       if (currentLesson) saveResult(currentLesson.id, studio.score);
     } else if (next.view === "session") {
-      window.setTimeout(() => playWord(next.round[next.questionIndex].word), 100);
+      answerLockedRef.current = true;
+      setAnswerReady(false);
+      window.setTimeout(() => playWord(next.round[next.questionIndex].word, false, true), 100);
     }
     setStudio(next);
   };
 
   const returnToLessons = () => {
     window.speechSynthesis?.cancel();
+    answerLockedRef.current = true;
+    setAnswerReady(false);
     setStudio((current) => leaveListeningSession(current));
     revealLessonSection();
   };
@@ -192,11 +249,11 @@ export function ListeningStudio({
 
         <section className="listening-level-section" aria-labelledby="listening-level-title">
           <div className="listening-section-heading">
-            <div><h2 id="listening-level-title">Chọn cấp độ luyện nghe</h2><p>Từ nền tảng HSK 1 đến khả năng theo dõi lập luận chuyên sâu HSK 7–9.</p></div>
+            <div><h2 id="listening-level-title">Chọn cấp độ luyện nghe</h2><p>Từ nền tảng HSK 1 đến khả năng nghe hiểu nâng cao ở HSK 6.</p></div>
             <span>{currentLevel.words.length} từ trong bộ · 4 bài học</span>
           </div>
           <div className="listening-level-picker" role="group" aria-label="Chọn cấp độ luyện nghe">
-            {LEVELS.map((level) => (
+            {VISIBLE_LEVELS.map((level) => (
               <button
                 aria-label={`${level.label}: ${level.title}, ${level.lessons.length} bài học`}
                 aria-pressed={studio.selectedLevelId === level.id}
@@ -324,7 +381,7 @@ export function ListeningStudio({
               <button
                 aria-label={`Đáp án ${String.fromCharCode(65 + index)}: ${choice}`}
                 className={stateClass}
-                disabled={studio.answerStatus !== "idle"}
+                disabled={studio.answerStatus !== "idle" || !answerReady || isSpeaking}
                 key={choice}
                 onClick={() => selectChoice(choice)}
                 type="button"

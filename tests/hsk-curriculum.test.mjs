@@ -90,6 +90,7 @@ test("HSK curriculum renders the reference hierarchy and a working lesson destin
   assert.doesNotMatch(html, /0 ngữ pháp/);
   assert.match(html, /3 hội thoại/);
   assert.match(html, /href="\/hsk\/1\/hsk1-bai-01-chao-anh"/);
+  assert.doesNotMatch(html, />HSK 7–9</);
 });
 
 test("course library opens the HSK curriculum from a dedicated catalog card", async (t) => {

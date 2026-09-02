@@ -35,6 +35,112 @@ export type PracticeListeningContext = {
   exercises: PracticeExercise[] | null;
 };
 
+export type PracticeMeaningQuestion = {
+  options: string[];
+  correctOption: number;
+};
+
+const practiceListeningMeanings: Record<string, string> = {
+  "office-delay-1": "Hiện tại có thể chậm một ngày, tôi báo trước với anh/chị.",
+  "office-delay-2": "Tôi không biết, để ngày mai nói tiếp.",
+  "office-delay-3": "Tôi sẽ cập nhật tiến độ trước 5 giờ chiều nay.",
+  "office-meeting-1": "Cuộc họp lúc 2 giờ chiều ở phòng họp số 3, đúng không?",
+  "office-meeting-2": "Hôm nay có cuộc họp không?",
+  "office-meeting-3": "Tôi có cần mang báo cáo tới không?",
+  "office-extension-1": "Có thể lùi đến trưa mai không?",
+  "office-extension-2": "Hủy dữ liệu.",
+  "office-extension-3": "Được, tôi sẽ gửi cho anh/chị trước trưa mai.",
+  "office-handover-1": "Tài liệu đã sắp xếp xong, giờ chỉ chờ khách hàng xác nhận.",
+  "office-handover-2": "Khách hàng đã hủy.",
+  "office-handover-3": "Nếu có vấn đề, có thể liên hệ Tiểu Trần.",
+  "factory-stop-1": "Tôi tiếp tục khởi động máy.",
+  "factory-stop-2": "Tôi đã dừng máy để kiểm tra.",
+  "factory-stop-3": "Máy không cần kiểm tra.",
+  "factory-process-1": "Trước khi mở van, cần kiểm tra áp suất trước, đúng không?",
+  "factory-process-2": "Tôi biết rồi, không cần hỏi.",
+  "factory-process-3": "Cần kiểm tra áp suất trước, đúng không?",
+  "factory-handover-1": "Lô cuối vẫn chờ kiểm tra chất lượng; khi có kết quả hãy ghi lại.",
+  "factory-handover-2": "Kết quả không quan trọng.",
+  "factory-handover-3": "Hãy ghi lại kết quả.",
+  "warehouse-receive-1": "Thừa hai thùng.",
+  "warehouse-receive-2": "Thiếu hai thùng.",
+  "warehouse-receive-3": "Không cần xem phiếu giao hàng.",
+  "warehouse-shortage-1": "Hàng tồn kho ở đâu?",
+  "warehouse-shortage-2": "Vật tư này không đủ tồn kho, chỉ đáp ứng đơn hàng buổi sáng.",
+  "warehouse-shortage-3": "Hàng tồn kho ở đâu?",
+  "warehouse-dispatch-1": "Tôi xác nhận lại: lô hàng này xuất qua cửa nào?",
+  "warehouse-dispatch-2": "Không cần nói.",
+  "warehouse-dispatch-3": "Lô hàng này tổng cộng 20 kiện, đúng không?",
+  "sales-needs-1": "Dùng trong văn phòng hay trong xưởng?",
+  "sales-needs-2": "Anh/chị cần bao nhiêu cái?",
+  "sales-needs-3": "Anh/chị dự kiến cần số lượng bao nhiêu?",
+  "sales-quote-1": "Báo giá sẽ được gửi sau bảy ngày.",
+  "sales-quote-2": "Báo giá đã gửi, mức giá này chưa bao gồm phí vận chuyển.",
+  "sales-quote-3": "Báo giá sẽ được gửi sau bảy ngày.",
+  "sales-complaint-1": "Xin lỗi vì đã gây bất tiện cho anh/chị.",
+  "sales-complaint-2": "Đây không phải vấn đề của chúng tôi.",
+  "sales-complaint-3": "Tôi sẽ phản hồi trước 4 giờ chiều nay.",
+  "restaurant-arrival-1": "Anh/chị muốn uống gì?",
+  "restaurant-arrival-2": "Tổng cộng bốn người, đúng không?",
+  "restaurant-arrival-3": "Anh/chị tự tìm chỗ ngồi.",
+  "restaurant-allergy-1": "Tôi sẽ ghi nhận thông tin dị ứng trước, rồi nhờ bếp xác nhận theo quy trình.",
+  "restaurant-allergy-2": "Món này tuyệt đối an toàn.",
+  "restaurant-allergy-3": "Tôi sẽ ghi nhận thông tin dị ứng trước, rồi nhờ bếp xác nhận theo quy trình.",
+  "restaurant-delay-1": "Món ăn vẫn chưa xong.",
+  "restaurant-delay-2": "Trước tiên đối chiếu phiếu gọi món, sau đó xác nhận cách xử lý.",
+  "restaurant-delay-3": "Khi nào có tin thì nói tiếp.",
+  "ecommerce-listing-1": "Cứ đăng trước, sau này kiểm tra.",
+  "ecommerce-listing-2": "Tôi sẽ kiểm tra thông tin sản phẩm và ảnh biến thể trước, rồi sắp xếp đăng.",
+  "ecommerce-listing-3": "Cứ đăng trước, sau này kiểm tra.",
+  "ecommerce-quote-1": "Tôi sẽ thanh toán toàn bộ tiền hàng ngay bây giờ.",
+  "ecommerce-quote-2": "Vui lòng xác nhận số lượng tối thiểu, giá theo bậc và báo giá có gồm thuế, phí vận chuyển hay không.",
+  "ecommerce-quote-3": "Tôi sẽ thanh toán toàn bộ tiền hàng ngay bây giờ.",
+  "ecommerce-delay-1": "Tôi sẽ xác minh bất thường vận chuyển trước, rồi gửi yêu cầu hậu mãi theo chính sách nền tảng.",
+  "ecommerce-delay-2": "Hôm nay chắc chắn sẽ giao tới.",
+  "ecommerce-delay-3": "Tôi sẽ xác minh bất thường vận chuyển trước, rồi gửi yêu cầu hậu mãi theo chính sách nền tảng.",
+  "core-confirm-1": "Xin lỗi, vui lòng nói lại một lần nữa.",
+  "core-confirm-2": "Tôi đã nghe hiểu hết rồi.",
+  "core-confirm-3": "Theo tôi hiểu, cần nộp biểu mẫu trước thứ Sáu, đúng không?",
+  "core-priority-1": "Thời gian của hai nhiệm vụ bị trùng, hãy xác nhận việc nào ưu tiên.",
+  "core-priority-2": "Cả hai việc đều rất phiền.",
+  "core-priority-3": "Vui lòng để người phụ trách xác nhận thứ tự ưu tiên.",
+  "core-mistake-1": "Rất xin lỗi, tôi đã gửi nhầm tệp.",
+  "core-mistake-2": "Hệ thống khiến tôi gửi nhầm.",
+  "core-mistake-3": "Lần sau, trước khi gửi tôi sẽ kiểm tra số phiên bản và người nhận.",
+};
+
+const practiceMeaningPool = [...new Set(Object.values(practiceListeningMeanings))];
+
+export function getPracticeMeaningQuestion(exercise: PracticeExercise): PracticeMeaningQuestion {
+  const correctMeaning = practiceListeningMeanings[exercise.id];
+  if (!correctMeaning) return { options: exercise.options, correctOption: exercise.correctOption };
+  const storedCorrectOption = exercise.options.indexOf(correctMeaning);
+  const storedOptionsAreValid = storedCorrectOption >= 0
+    && exercise.options.length >= 2
+    && new Set(exercise.options).size === exercise.options.length
+    && exercise.options.every((option) => !containsHanzi(option));
+  if (storedOptionsAreValid && exercise.options.length >= 4) {
+    return { options: exercise.options.slice(0, 4), correctOption: storedCorrectOption };
+  }
+
+  const checksum = Array.from(exercise.id).reduce((total, character) => total + character.codePointAt(0)!, 0);
+  const options = storedOptionsAreValid ? [...exercise.options] : [correctMeaning];
+  for (let offset = 1; options.length < 4 && offset < practiceMeaningPool.length; offset += 1) {
+    const candidate = practiceMeaningPool[(checksum + (offset * 17)) % practiceMeaningPool.length];
+    if (!options.includes(candidate)) options.push(candidate);
+  }
+  if (storedOptionsAreValid) {
+    return { options, correctOption: options.indexOf(correctMeaning) };
+  }
+
+  const rotation = checksum % options.length;
+  const rotatedOptions = [...options.slice(rotation), ...options.slice(0, rotation)];
+  return {
+    options: rotatedOptions,
+    correctOption: rotatedOptions.indexOf(correctMeaning),
+  };
+}
+
 function containsHanzi(value: string | undefined): value is string {
   return Boolean(value && /[㐀-鿿]/u.test(value));
 }

@@ -23,6 +23,11 @@ test("listening hub presents HSK and scenario practice as two accessible modes",
   assert.match(html, /href="\/listening\?mode=scenario"/);
   assert.match(html, />Theo cấp độ HSK</);
   assert.match(html, />Theo tình huống</);
+  assert.match(html, />Báo cáo luyện nghe</);
+  assert.match(html, />Tổng số câu</);
+  assert.match(html, />Độ chính xác</);
+  assert.match(html, />Phản xạ trung bình</);
+  assert.doesNotMatch(html, /HSK 7–9: Nghe chuyên sâu/);
 });
 
 test("listening hub opens the HSK level selected from the curriculum", async (t) => {

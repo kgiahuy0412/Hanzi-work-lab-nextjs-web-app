@@ -11,6 +11,7 @@ export type AuthenticatedUser = {
   id: string;
   email: string;
   displayName: string;
+  avatarUrl: string | null;
   role: UserRole;
   emailVerified: boolean;
   unreadNotificationCount: number;
@@ -22,6 +23,7 @@ function toAuthenticatedUser(user: typeof users.$inferSelect): AuthenticatedUser
     id: user.id,
     email: user.email,
     displayName: user.displayName ?? user.email,
+    avatarUrl: user.avatarUrl,
     role: user.role,
     emailVerified: Boolean(user.emailVerifiedAt),
     unreadNotificationCount: 0,

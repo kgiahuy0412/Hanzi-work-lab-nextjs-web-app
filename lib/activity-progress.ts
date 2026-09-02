@@ -5,6 +5,12 @@ export type GameId = typeof gameIds[number];
 export type PracticeProgressSnapshot = {
   completedScenarioIds: string[];
   attemptCount: number;
+  correctAnswers: number;
+  totalQuestions: number;
+  totalReactionMs: number;
+  reactionQuestions: number;
+  accuracyPercent: number | null;
+  averageReactionMs: number | null;
 };
 
 export type GameProgressSnapshot = {
@@ -17,6 +23,12 @@ export type GameProgressSnapshot = {
 export const emptyPracticeProgress: PracticeProgressSnapshot = {
   completedScenarioIds: [],
   attemptCount: 0,
+  correctAnswers: 0,
+  totalQuestions: 0,
+  totalReactionMs: 0,
+  reactionQuestions: 0,
+  accuracyPercent: null,
+  averageReactionMs: null,
 };
 
 export const emptyGameProgress: GameProgressSnapshot = {

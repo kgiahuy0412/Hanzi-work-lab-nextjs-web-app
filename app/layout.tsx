@@ -25,6 +25,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
   const shellUser = user ? {
     displayName: user.displayName,
     email: user.email,
+    avatarUrl: user.avatarUrl,
     role: user.role,
     unreadNotificationCount: user.unreadNotificationCount,
   } : null;

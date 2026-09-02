@@ -1,64 +1,88 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
-import { ArrowLeft, ArrowRight, BookOpen, CheckCircle2, Clock3, PenLine } from "lucide-react";
-import { getWritingTopic, WRITING_TOPICS } from "@/lib/writing-content";
+import { ArrowLeft, ArrowRight, BookOpen, Clock3, PenLine } from "lucide-react";
+import { getWritingLevel, getWritingLessons, WRITING_LEVEL_IDS } from "@/lib/writing-content";
 
-type WritingTopicPageProps = {
+type WritingLevelPageProps = {
   params: Promise<{ level: string }>;
 };
 
 export function generateStaticParams() {
-  return WRITING_TOPICS.map((topic) => ({ level: topic.slug }));
+  return WRITING_LEVEL_IDS.map((level) => ({ level }));
 }
 
-export async function generateMetadata({ params }: WritingTopicPageProps): Promise<Metadata> {
-  const { level } = await params;
-  const topic = getWritingTopic(level);
-  if (!topic) return { title: "Không tìm thấy chủ đề luyện viết" };
+export async function generateMetadata({ params }: WritingLevelPageProps): Promise<Metadata> {
+  const { level: levelParam } = await params;
+  const level = getWritingLevel(levelParam);
+  if (!level) return { title: "Không tìm thấy cấp độ luyện viết" };
   return {
-    title: `${topic.level} — ${topic.title}`,
-    description: topic.summary,
+    title: `Luyện viết theo bài · ${level.label}`,
+    description: `Chọn một trong ${level.lessonCount} bài ${level.label} để luyện viết đúng từ vựng của bài.`,
   };
 }
 
-export default async function WritingTopicPage({ params }: WritingTopicPageProps) {
-  const { level } = await params;
-  const topic = getWritingTopic(level);
-  if (!topic) notFound();
+export default async function WritingLevelPage({ params }: WritingLevelPageProps) {
+  const { level: levelParam } = await params;
+  const level = getWritingLevel(levelParam);
+  if (!level) notFound();
+
+  const lessons = getWritingLessons(level.id);
+  const heroCharacters = lessons
+    .flatMap((lesson) => lesson.previewCharacters)
+    .filter((character, index, characters) => characters.indexOf(character) === index)
+    .slice(0, 6);
 
   return <main className="learner-dashboard writing-lesson-page">
     <nav aria-label="Điều hướng luyện viết" className="writing-breadcrumbs">
-      <Link href="/writing"><ArrowLeft aria-hidden="true" size={16} /> Danh sách chủ đề</Link>
+      <Link href="/writing"><ArrowLeft aria-hidden="true" size={16} /> Các cấp độ</Link>
       <span aria-hidden="true">/</span>
-      <strong>{topic.level}</strong>
+      <strong>{level.label}</strong>
     </nav>
 
     <header className="writing-lesson-hero">
       <div>
-        <span>{topic.level} · Chủ đề luyện viết</span>
-        <h1>{topic.title}</h1>
-        <p>{topic.summary}</p>
+        <span>{level.label} · {lessons.length} bài có thể luyện</span>
+        <h1>Luyện viết theo từng bài học</h1>
+        <p>Chọn đúng bài bạn đang học. Kho chữ và tiến độ luyện viết sẽ được tách riêng cho từng bài.</p>
       </div>
-      <div aria-label={`Các chữ trong bài: ${topic.characters.map((character) => character.hanzi).join(", ")}`} className="writing-lesson-character-strip" lang="zh-CN">
-        {topic.characters.map((character) => <span key={character.hanzi}>{character.hanzi}</span>)}
+      <div aria-label={`Một số chữ trong cấp độ: ${heroCharacters.join(", ")}`} className="writing-lesson-character-strip" lang="zh-CN">
+        {heroCharacters.map((character) => <span key={character}>{character}</span>)}
       </div>
     </header>
 
-    <section className="writing-single-lesson" aria-labelledby="writing-lesson-title">
-      <div className="writing-single-lesson-index"><BookOpen aria-hidden="true" size={24} /><span>Bài 01</span></div>
-      <div className="writing-single-lesson-copy">
-        <span>Bài học duy nhất trong chủ đề</span>
-        <h2 id="writing-lesson-title">{topic.title}</h2>
-        <p>Quan sát cấu trúc chữ, ghi nhớ quy tắc bút thuận rồi thực hành trực tiếp trên bàn viết.</p>
-        <ul>
-          {topic.outcomes.map((outcome) => <li key={outcome}><CheckCircle2 aria-hidden="true" size={17} /> {outcome}</li>)}
-        </ul>
+    <section className="writing-lesson-list-section" aria-labelledby="writing-lesson-list-title">
+      <div className="writing-lesson-list-heading">
+        <div>
+          <span>Danh sách bài học</span>
+          <h2 id="writing-lesson-list-title">Chọn bài để bắt đầu viết</h2>
+        </div>
+        <p>{lessons.length} bài · dữ liệu chữ lấy trực tiếp từ giáo trình {level.label}</p>
       </div>
-      <div className="writing-single-lesson-action">
-        <span><Clock3 aria-hidden="true" size={16} /> {topic.duration}</span>
-        <span><PenLine aria-hidden="true" size={16} /> {topic.characters.length} chữ</span>
-        <Link href={`/writing/${topic.slug}/practice`} prefetch>Bắt đầu bài học <ArrowRight aria-hidden="true" size={18} /></Link>
+
+      <div className="writing-lesson-grid">
+        {lessons.map((lesson) => (
+          <article className="writing-lesson-card" key={lesson.id}>
+            <div className="writing-lesson-card-header">
+              <span><BookOpen aria-hidden="true" size={16} /> {lesson.sourceLabel} · Bài {String(lesson.lessonNumber).padStart(2, "0")}</span>
+              <small>{lesson.topicTitle}</small>
+            </div>
+            <div aria-label={`Các chữ đầu tiên: ${lesson.previewCharacters.join(", ")}`} className="writing-lesson-card-characters" lang="zh-CN">
+              {lesson.previewCharacters.map((character, index) => <span key={`${character}-${index}`}>{character}</span>)}
+            </div>
+            <h3>{lesson.title}</h3>
+            <p>{lesson.summary}</p>
+            <div className="writing-lesson-card-footer">
+              <div>
+                <span><Clock3 aria-hidden="true" size={15} /> {lesson.minutes} phút</span>
+                <span><PenLine aria-hidden="true" size={15} /> {lesson.characterCount} chữ</span>
+              </div>
+              <Link href={`/writing/${level.id}/${lesson.id}/practice`} prefetch>
+                Luyện viết <ArrowRight aria-hidden="true" size={17} />
+              </Link>
+            </div>
+          </article>
+        ))}
       </div>
     </section>
   </main>;

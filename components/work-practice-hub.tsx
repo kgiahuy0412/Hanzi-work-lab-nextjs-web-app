@@ -1,13 +1,13 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState, type ReactNode } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import {
+  AudioLines,
   ArrowLeft,
   ArrowRight,
   BriefcaseBusiness,
-  Check,
   CheckCircle2,
   ChevronRight,
   Clock3,
@@ -21,6 +21,7 @@ import {
   Play,
   RotateCcw,
   ShoppingBag,
+  SlidersHorizontal,
   Store,
   Trophy,
   UtensilsCrossed,
@@ -39,7 +40,21 @@ import type {
   PracticeIndustryId,
   PracticeScenarioDto,
 } from "@/lib/practice-content";
-import { getPracticeListeningStatement } from "@/lib/practice-content";
+import { getPracticeListeningStatement, getPracticeMeaningQuestion } from "@/lib/practice-content";
+import {
+  combineListeningPerformance,
+  emptyListeningPerformance,
+  HSK_LISTENING_PERFORMANCE_KEY,
+  parseListeningPerformance,
+  SCENARIO_LISTENING_PERFORMANCE_KEY,
+  summarizeListeningPerformance,
+  type ListeningPerformanceTotals,
+} from "@/lib/listening-performance";
+import {
+  clampPracticeReactionMs,
+  formatPracticeReactionTime,
+  PRACTICE_ANSWER_WINDOW_MS,
+} from "@/lib/practice-performance";
 import type { WeeklyChallenge } from "@/lib/weekly-challenges";
 
 const COMPLETED_STORAGE_KEY = "hanziwork.practice.completed.v1";
@@ -68,13 +83,12 @@ const industryPhotos: Record<string, string> = {
 type HubMode = "catalog" | "session" | "complete" | "review";
 type ListeningPhase = "idle" | "playing" | "ready";
 type SaveState = "idle" | "saving" | "saved" | "error";
-
-function formatAudioDuration(seconds: number | null): string {
-  if (seconds === null) return "--:--";
-  const safeSeconds = Math.max(0, Math.round(seconds));
-  const minutes = Math.floor(safeSeconds / 60);
-  return `${minutes}:${String(safeSeconds % 60).padStart(2, "0")}`;
-}
+type StoredPracticePerformance = {
+  attemptCount: number;
+  correctAnswers: number;
+  totalQuestions: number;
+  totalReactionMs: number;
+};
 
 function readCompletedScenarios(): string[] {
   try {
@@ -83,6 +97,23 @@ function readCompletedScenarios(): string[] {
     return Array.isArray(parsed) ? parsed.filter((item): item is string => typeof item === "string") : [];
   } catch {
     return [];
+  }
+}
+
+function readStoredPerformance(): StoredPracticePerformance | null {
+  try {
+    const value = window.localStorage.getItem(SCENARIO_LISTENING_PERFORMANCE_KEY);
+    const parsed: unknown = value ? JSON.parse(value) : null;
+    if (!parsed || typeof parsed !== "object") return null;
+    const record = parsed as Record<string, unknown>;
+    if (![record.attemptCount, record.correctAnswers, record.totalQuestions, record.totalReactionMs]
+      .every((item) => Number.isInteger(item) && Number(item) >= 0)) return null;
+    const storedPerformance = record as StoredPracticePerformance;
+    if (storedPerformance.correctAnswers > storedPerformance.totalQuestions
+      || storedPerformance.totalReactionMs > storedPerformance.totalQuestions * PRACTICE_ANSWER_WINDOW_MS) return null;
+    return storedPerformance;
+  } catch {
+    return null;
   }
 }
 
@@ -95,6 +126,7 @@ export function WorkPracticeHub({
   dailyNextStep,
   initialProgress,
   initialScenarioId,
+  overviewHeader,
   hasVip,
   weeklyChallenge,
 }: {
@@ -106,6 +138,7 @@ export function WorkPracticeHub({
   dailyNextStep: DailyRecommendation | null;
   initialProgress: PracticeProgressSnapshot;
   initialScenarioId: string | null;
+  overviewHeader?: ReactNode;
   hasVip: boolean;
   weeklyChallenge: WeeklyChallenge;
 }) {
@@ -114,26 +147,60 @@ export function WorkPracticeHub({
   const [selectedScenarioId, setSelectedScenarioId] = useState(initialScenario?.id ?? "");
   const [mode, setMode] = useState<HubMode>("catalog");
   const [step, setStep] = useState(0);
-  const [selectedAnswer, setSelectedAnswer] = useState<boolean | null>(null);
+  const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
+  const [answerExpired, setAnswerExpired] = useState(false);
+  const [remainingAnswerMs, setRemainingAnswerMs] = useState(PRACTICE_ANSWER_WINDOW_MS);
+  const [reactionTimesMs, setReactionTimesMs] = useState<number[]>([]);
+  const [currentReactionMs, setCurrentReactionMs] = useState<number | null>(null);
   const [listeningPhase, setListeningPhase] = useState<ListeningPhase>("idle");
+  const [slowPlayback, setSlowPlayback] = useState(false);
   const [audioUnavailable, setAudioUnavailable] = useState(false);
   const [score, setScore] = useState(0);
   const [completedScenarios, setCompletedScenarios] = useState<string[]>(initialProgress.completedScenarioIds);
   const [attemptCount, setAttemptCount] = useState(initialProgress.attemptCount);
+  const [scenarioPerformance, setScenarioPerformance] = useState<ListeningPerformanceTotals>({
+    correctAnswers: initialProgress.correctAnswers ?? 0,
+    totalQuestions: initialProgress.totalQuestions ?? 0,
+    totalReactionMs: initialProgress.totalReactionMs ?? 0,
+    reactionQuestions: initialProgress.reactionQuestions ?? 0,
+  });
+  const [hskPerformance, setHskPerformance] = useState<ListeningPerformanceTotals>(emptyListeningPerformance);
   const [saveState, setSaveState] = useState<SaveState>("idle");
-  const [audioDurationSeconds, setAudioDurationSeconds] = useState<number | null>(null);
-  const [audioSource, setAudioSource] = useState<"file" | "device" | null>(null);
+  const [, setAudioDurationSeconds] = useState<number | null>(null);
+  const [, setAudioSource] = useState<"file" | "device" | null>(null);
   const [showUpgradeNote, setShowUpgradeNote] = useState(false);
   const [previewPlaying, setPreviewPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
   const preloadAudioRef = useRef<HTMLAudioElement | null>(null);
   const playbackIdRef = useRef(0);
   const playbackStartedAtRef = useRef(0);
+  const answerStartedAtRef = useRef(0);
+  const answerLockedRef = useRef(true);
+  const selectedAnswerRef = useRef<number | null>(null);
+  const currentReactionRef = useRef<number | null>(null);
   const sessionRef = useRef<HTMLElement | null>(null);
 
   useEffect(() => {
-    if (authenticated) return;
-    const timer = window.setTimeout(() => setCompletedScenarios(readCompletedScenarios()), 0);
+    const timer = window.setTimeout(() => {
+      try {
+        setHskPerformance(parseListeningPerformance(
+          window.localStorage.getItem(HSK_LISTENING_PERFORMANCE_KEY),
+        ));
+      } catch {
+        setHskPerformance(emptyListeningPerformance);
+      }
+      if (authenticated) return;
+      setCompletedScenarios(readCompletedScenarios());
+      const storedPerformance = readStoredPerformance();
+      if (!storedPerformance) return;
+      setAttemptCount(storedPerformance.attemptCount);
+      setScenarioPerformance({
+        correctAnswers: storedPerformance.correctAnswers,
+        totalQuestions: storedPerformance.totalQuestions,
+        totalReactionMs: storedPerformance.totalReactionMs,
+        reactionQuestions: storedPerformance.totalQuestions,
+      });
+    }, 0);
     return () => window.clearTimeout(timer);
   }, [authenticated]);
 
@@ -146,6 +213,10 @@ export function WorkPracticeHub({
     ?? scenarios[0];
   const exercises = selectedScenario?.exercises ?? EMPTY_EXERCISES;
   const exercise = exercises[step];
+  const meaningQuestion = useMemo(
+    () => exercise ? getPracticeMeaningQuestion(exercise) : null,
+    [exercise],
+  );
   const listeningStatement = exercise && selectedScenario
     ? getPracticeListeningStatement(exercise, selectedScenario)
     : null;
@@ -153,11 +224,43 @@ export function WorkPracticeHub({
   const currentIndustryPhoto = currentIndustry?.imageUrl
     ?? industryPhotos[activeIndustry]
     ?? industryPhotos.core;
-  const answerWasCorrect = selectedAnswer !== null
-    && listeningStatement !== null
-    && selectedAnswer === listeningStatement.isCorrect;
+  const answerRevealed = answerExpired;
+  const answerWasCorrect = answerRevealed
+    && selectedAnswer !== null
+    && meaningQuestion !== null
+    && selectedAnswer === meaningQuestion.correctOption;
+  const answerCountdownSeconds = Math.max(0, Math.ceil(remainingAnswerMs / 1_000));
+  const answerCountdownProgress = Math.max(0, Math.min(1, remainingAnswerMs / PRACTICE_ANSWER_WINDOW_MS));
+  const answeredQuestions = reactionTimesMs.length;
+  const sessionPerformance: ListeningPerformanceTotals = {
+    correctAnswers: score,
+    totalQuestions: answeredQuestions,
+    totalReactionMs: reactionTimesMs.reduce((total, milliseconds) => total + milliseconds, 0),
+    reactionQuestions: answeredQuestions,
+  };
+  const {
+    accuracyPercent: sessionAccuracyPercent,
+    averageReactionMs: sessionAverageReactionMs,
+  } = summarizeListeningPerformance(sessionPerformance);
+  const combinedPerformance = combineListeningPerformance(
+    scenarioPerformance,
+    hskPerformance,
+    mode === "session" ? sessionPerformance : emptyListeningPerformance,
+  );
+  const { accuracyPercent, averageReactionMs } = summarizeListeningPerformance(combinedPerformance);
   const dailyNextHref = dailyNextStep ? withDailySessionFlow(dailyNextStep.href) : "/games?session=today";
   const dailyNextIsSummary = dailyNextStep?.href.includes("#today-summary") ?? false;
+
+  const chooseListeningAnswer = useCallback((answerIndex: number) => {
+    if (answerLockedRef.current || answerRevealed || listeningPhase !== "ready" || !meaningQuestion) return;
+    answerLockedRef.current = true;
+    const reactionMs = clampPracticeReactionMs(window.performance.now() - answerStartedAtRef.current);
+    setRemainingAnswerMs(Math.max(0, PRACTICE_ANSWER_WINDOW_MS - reactionMs));
+    setCurrentReactionMs(reactionMs);
+    currentReactionRef.current = reactionMs;
+    selectedAnswerRef.current = answerIndex;
+    setSelectedAnswer(answerIndex);
+  }, [answerRevealed, listeningPhase, meaningQuestion]);
 
   useEffect(() => () => {
     playbackIdRef.current += 1;
@@ -194,20 +297,49 @@ export function WorkPracticeHub({
   }, [mode, step]);
 
   useEffect(() => {
-    if (mode !== "session" || listeningPhase !== "ready" || selectedAnswer !== null || !listeningStatement) return;
+    if (mode !== "session" || listeningPhase !== "ready" || answerRevealed || !meaningQuestion) return;
+    const optionCount = meaningQuestion.options.length;
 
     function handleKeyboardAnswer(event: KeyboardEvent) {
       if (event.altKey || event.ctrlKey || event.metaKey) return;
-      const key = event.key.toLocaleLowerCase("vi");
-      if (key !== "d" && key !== "s") return;
-      const answer = key === "d";
-      setSelectedAnswer(answer);
-      if (answer === listeningStatement?.isCorrect) setScore((value) => value + 1);
+      const answerIndex = Number(event.key) - 1;
+      if (!Number.isInteger(answerIndex) || answerIndex < 0 || answerIndex >= optionCount) return;
+      chooseListeningAnswer(answerIndex);
     }
 
     window.addEventListener("keydown", handleKeyboardAnswer);
     return () => window.removeEventListener("keydown", handleKeyboardAnswer);
-  }, [listeningPhase, listeningStatement, mode, selectedAnswer]);
+  }, [answerRevealed, chooseListeningAnswer, listeningPhase, meaningQuestion, mode]);
+
+  useEffect(() => {
+    if (mode !== "session" || listeningPhase !== "ready" || answerRevealed) return;
+
+    const updateCountdown = () => {
+      const elapsed = window.performance.now() - answerStartedAtRef.current;
+      setRemainingAnswerMs(Math.max(0, PRACTICE_ANSWER_WINDOW_MS - elapsed));
+    };
+    const expireAnswer = () => {
+      answerLockedRef.current = true;
+      setRemainingAnswerMs(0);
+      const reactionMs = currentReactionRef.current ?? PRACTICE_ANSWER_WINDOW_MS;
+      setCurrentReactionMs(reactionMs);
+      setReactionTimesMs((values) => [...values, reactionMs]);
+      if (selectedAnswerRef.current === meaningQuestion?.correctOption) {
+        setScore((value) => value + 1);
+      }
+      setAnswerExpired(true);
+    };
+    const elapsed = window.performance.now() - answerStartedAtRef.current;
+    const remaining = Math.max(0, PRACTICE_ANSWER_WINDOW_MS - elapsed);
+    updateCountdown();
+    const interval = window.setInterval(updateCountdown, 100);
+    const timeout = window.setTimeout(expireAnswer, remaining);
+
+    return () => {
+      window.clearInterval(interval);
+      window.clearTimeout(timeout);
+    };
+  }, [answerRevealed, listeningPhase, meaningQuestion, mode, step]);
 
   function chooseIndustry(industryId: PracticeIndustryId) {
     const firstScenario = scenarios.find((scenario) => scenario.industry === industryId);
@@ -255,7 +387,7 @@ export function WorkPracticeHub({
     window.speechSynthesis.speak(utterance);
   }
 
-  function playExerciseAudio(targetExercise: PracticeExercise, slow = false) {
+  function playExerciseAudio(targetExercise: PracticeExercise, slow = false, opensAnswerWindow = false) {
     stopCurrentAudio();
     const playbackId = playbackIdRef.current;
     const statement = getPracticeListeningStatement(targetExercise, selectedScenario);
@@ -263,12 +395,18 @@ export function WorkPracticeHub({
     setAudioDurationSeconds(null);
     setAudioSource(null);
     setListeningPhase("playing");
+    answerLockedRef.current = true;
     playbackStartedAtRef.current = window.performance.now();
 
     const finishPlayback = () => {
       if (playbackId !== playbackIdRef.current) return;
       const elapsedSeconds = (window.performance.now() - playbackStartedAtRef.current) / 1_000;
       if (Number.isFinite(elapsedSeconds) && elapsedSeconds > 0) setAudioDurationSeconds(elapsedSeconds);
+      if (opensAnswerWindow) {
+        answerStartedAtRef.current = window.performance.now();
+        answerLockedRef.current = false;
+        setRemainingAnswerMs(PRACTICE_ANSWER_WINDOW_MS);
+      }
       setListeningPhase("ready");
     };
 
@@ -334,16 +472,17 @@ export function WorkPracticeHub({
     setStep(0);
     setScore(0);
     setSelectedAnswer(null);
+    selectedAnswerRef.current = null;
+    setAnswerExpired(false);
+    setRemainingAnswerMs(PRACTICE_ANSWER_WINDOW_MS);
+    setReactionTimesMs([]);
+    setCurrentReactionMs(null);
+    setSlowPlayback(false);
+    currentReactionRef.current = null;
     setSaveState("idle");
     setShowUpgradeNote(false);
-    playExerciseAudio(selectedScenario.exercises[0]);
+    playExerciseAudio(selectedScenario.exercises[0], false, true);
     setMode("session");
-  }
-
-  function chooseListeningAnswer(answer: boolean) {
-    if (selectedAnswer !== null || listeningPhase !== "ready" || !listeningStatement) return;
-    setSelectedAnswer(answer);
-    if (answer === listeningStatement.isCorrect) setScore((value) => value + 1);
   }
 
   function syncScenarioProgress() {
@@ -356,6 +495,7 @@ export function WorkPracticeHub({
           scenarioId: selectedScenario.id,
           correctAnswers: score,
           totalQuestions: exercises.length,
+          totalReactionMs: reactionTimesMs.reduce((total, milliseconds) => total + milliseconds, 0),
         }),
         keepalive: true,
     }).then(async (response) => {
@@ -364,6 +504,12 @@ export function WorkPracticeHub({
       if (payload.progress) {
         setCompletedScenarios(payload.progress.completedScenarioIds);
         setAttemptCount(payload.progress.attemptCount);
+        setScenarioPerformance({
+          correctAnswers: payload.progress.correctAnswers,
+          totalQuestions: payload.progress.totalQuestions,
+          totalReactionMs: payload.progress.totalReactionMs,
+          reactionQuestions: payload.progress.reactionQuestions,
+        });
       }
       setSaveState("saved");
     }).catch(() => setSaveState("error"));
@@ -372,14 +518,41 @@ export function WorkPracticeHub({
   function completeScenario() {
     if (!selectedScenario) return;
     const nextCompleted = Array.from(new Set([...completedScenarios, selectedScenario.id]));
+    const completedAttempt: ListeningPerformanceTotals = {
+      correctAnswers: score,
+      totalQuestions: exercises.length,
+      totalReactionMs: reactionTimesMs.reduce((total, milliseconds) => total + milliseconds, 0),
+      reactionQuestions: exercises.length,
+    };
     setCompletedScenarios(nextCompleted);
     setAttemptCount((value) => value + 1);
 
     if (authenticated) {
+      setScenarioPerformance((current) => combineListeningPerformance(current, completedAttempt));
       syncScenarioProgress();
     } else {
       try {
         window.localStorage.setItem(COMPLETED_STORAGE_KEY, JSON.stringify(nextCompleted));
+        const storedPerformance = readStoredPerformance() ?? {
+          attemptCount: 0,
+          correctAnswers: 0,
+          totalQuestions: 0,
+          totalReactionMs: 0,
+        };
+        const nextPerformance: StoredPracticePerformance = {
+          attemptCount: storedPerformance.attemptCount + 1,
+          correctAnswers: storedPerformance.correctAnswers + score,
+          totalQuestions: storedPerformance.totalQuestions + exercises.length,
+          totalReactionMs: storedPerformance.totalReactionMs
+            + reactionTimesMs.reduce((total, milliseconds) => total + milliseconds, 0),
+        };
+      window.localStorage.setItem(SCENARIO_LISTENING_PERFORMANCE_KEY, JSON.stringify(nextPerformance));
+        setScenarioPerformance({
+          correctAnswers: nextPerformance.correctAnswers,
+          totalQuestions: nextPerformance.totalQuestions,
+          totalReactionMs: nextPerformance.totalReactionMs,
+          reactionQuestions: nextPerformance.totalQuestions,
+        });
       } catch {
         // The exercise remains usable when private browsing blocks local storage.
       }
@@ -389,7 +562,7 @@ export function WorkPracticeHub({
   }
 
   function nextExercise() {
-    if (selectedAnswer === null) return;
+    if (!answerRevealed) return;
     if (step >= exercises.length - 1) {
       stopCurrentAudio();
       completeScenario();
@@ -398,7 +571,13 @@ export function WorkPracticeHub({
     const nextStep = step + 1;
     setStep(nextStep);
     setSelectedAnswer(null);
-    playExerciseAudio(exercises[nextStep]);
+    selectedAnswerRef.current = null;
+    setAnswerExpired(false);
+    setRemainingAnswerMs(PRACTICE_ANSWER_WINDOW_MS);
+    setCurrentReactionMs(null);
+    setSlowPlayback(false);
+    currentReactionRef.current = null;
+    playExerciseAudio(exercises[nextStep], false, true);
   }
 
   function returnToCatalog() {
@@ -406,6 +585,13 @@ export function WorkPracticeHub({
     setMode("catalog");
     setStep(0);
     setSelectedAnswer(null);
+    selectedAnswerRef.current = null;
+    setAnswerExpired(false);
+    setRemainingAnswerMs(PRACTICE_ANSWER_WINDOW_MS);
+    setReactionTimesMs([]);
+    setCurrentReactionMs(null);
+    setSlowPlayback(false);
+    currentReactionRef.current = null;
     setListeningPhase("idle");
   }
 
@@ -414,11 +600,12 @@ export function WorkPracticeHub({
       <section className="work-practice-main" aria-labelledby={mode === "catalog" ? "practice-title" : undefined}>
         {mode === "catalog" ? (
           <>
+            {overviewHeader}
             <div className="practice-banner-shell">
               <HimiSectionBanner
-                description="Nghe tình huống công việc, phản xạ bằng tiếng Trung và sửa từng câu theo nhịp của bạn."
+                description="Nghe audio theo tình huống, chọn đúng nghĩa và cải thiện tốc độ hiểu tiếng Trung."
                 titleId="practice-title"
-                titleLines={["Luyện đúng cảnh.", "Nói tự nhiên hơn."]}
+                titleLines={["Nghe đúng ý.", "Phản xạ nhanh hơn."]}
                 variant="practice"
               />
             </div>
@@ -460,15 +647,14 @@ export function WorkPracticeHub({
           </section>
         ) : null}
 
-        {mode === "session" && selectedScenario && exercise && listeningStatement ? (
+        {mode === "session" && selectedScenario && exercise && listeningStatement && meaningQuestion ? (
           <section
-            aria-live="polite"
-            className="practice-session-card practice-listening-card"
+            className="practice-session-card practice-listening-card practice-meaning-session"
             ref={sessionRef}
             tabIndex={-1}
           >
-            <div className="practice-session-topline">
-              <span>Lượt nghe {step + 1} / {exercises.length}</span>
+            <div className="practice-meaning-session-nav">
+              <span>{String(step + 1).padStart(2, "0")} / {String(exercises.length).padStart(2, "0")}</span>
               <button aria-label="Thoát ca" className="practice-back-button" onClick={returnToCatalog} type="button">
                 <X size={17} />
               </button>
@@ -484,113 +670,152 @@ export function WorkPracticeHub({
               <span style={{ width: `${((step + 1) / exercises.length) * 100}%` }} />
             </div>
 
-            <div className="practice-listening-layout">
-              <aside className="listening-session-context">
-                <span>Ca {String(step + 1).padStart(2, "0")}</span>
-                <h2>{selectedScenario.title}</h2>
-                <p>{selectedScenario.context}</p>
-              </aside>
-
-              <div className={`practice-audio-stage ${listeningPhase}`} role="status">
-                <h2>Nghe cách nhân viên phản hồi</h2>
-                <span className="practice-audio-state">
-                  {listeningPhase === "playing" ? "Đang phát audio" : "Đã nghe xong"}
-                </span>
-                <button
-                  aria-label={listeningPhase === "playing" ? "Audio đang phát" : "Nghe lại câu vừa rồi"}
-                  className="practice-audio-orb"
-                  disabled={listeningPhase === "playing"}
-                  onClick={() => playExerciseAudio(exercise)}
-                  type="button"
+            {answerRevealed ? (
+              <div className="practice-meaning-outcome-shell">
+                <div
+                  className={`practice-listening-outcome ${answerWasCorrect ? "is-correct" : "is-review"}`}
+                  role="status"
                 >
-                  {listeningPhase === "playing"
-                    ? <Headphones size={42} strokeWidth={1.8} />
-                    : <RotateCcw size={50} strokeWidth={1.7} />}
-                </button>
-                <span
-                  className="practice-audio-time"
-                  aria-label={audioDurationSeconds === null ? "Đang đo thời lượng audio" : `Thời lượng audio ${Math.round(audioDurationSeconds)} giây`}
-                >
-                  {audioDurationSeconds === null && listeningPhase === "playing"
-                    ? "Đang đo thời lượng"
-                    : `0:00 — ${formatAudioDuration(audioDurationSeconds)}`}
-                </span>
-                <div className="practice-audio-controls">
-                  <button disabled={listeningPhase === "playing"} onClick={() => playExerciseAudio(exercise)} type="button">
-                    <Volume2 size={17} /> Nghe lại
-                  </button>
-                  <button disabled={listeningPhase === "playing"} onClick={() => playExerciseAudio(exercise, true)} type="button">
-                    <Gauge size={17} /> Nghe chậm 0.8×
-                  </button>
-                </div>
-                <small className={audioUnavailable ? "is-warning" : ""}>
-                  {audioUnavailable
-                    ? "Thiết bị chưa phát được giọng đọc. Bản chép sẽ hiện sau khi bạn chọn."
-                    : audioSource === "device"
-                      ? "Đang dùng giọng đọc trên thiết bị. Bản chép sẽ mở sau khi trả lời."
-                      : "Bản chép lời sẽ mở sau khi trả lời."}
-                </small>
-              </div>
-            </div>
-
-            {listeningPhase === "ready" ? (
-              <div className="listening-answer-panel">
-                <h3>Câu vừa nghe có phù hợp với tình huống này không?</h3>
-                <div className="binary-answer-grid">
-                  <button
-                    aria-pressed={selectedAnswer === true}
-                    className={`binary-answer-button ${selectedAnswer !== null ? (listeningStatement.isCorrect ? "correct" : selectedAnswer === true ? "incorrect" : "muted") : ""}`.trim()}
-                    disabled={selectedAnswer !== null}
-                    onClick={() => chooseListeningAnswer(true)}
-                    type="button"
-                  >
-                    <span><Check size={23} /></span>
-                    <span><strong>Đúng</strong><small>Phù hợp với tình huống</small></span>
-                    <kbd aria-hidden="true">D</kbd>
-                  </button>
-                  <button
-                    aria-pressed={selectedAnswer === false}
-                    className={`binary-answer-button ${selectedAnswer !== null ? (!listeningStatement.isCorrect ? "correct" : selectedAnswer === false ? "incorrect" : "muted") : ""}`.trim()}
-                    disabled={selectedAnswer !== null}
-                    onClick={() => chooseListeningAnswer(false)}
-                    type="button"
-                  >
-                    <span><X size={23} /></span>
-                    <span><strong>Sai</strong><small>Chưa phù hợp với tình huống</small></span>
-                    <kbd aria-hidden="true">S</kbd>
+                  <span className="practice-listening-outcome-icon">
+                    {answerWasCorrect
+                      ? <Trophy size={34} strokeWidth={1.8} />
+                      : selectedAnswer === null
+                        ? <Clock3 size={34} strokeWidth={1.8} />
+                        : <X size={34} strokeWidth={1.8} />}
+                  </span>
+                  <span className="practice-listening-outcome-kicker">
+                    {answerWasCorrect ? "Chúc mừng" : selectedAnswer === null ? "Hết thời gian" : "Cùng xem lại"}
+                  </span>
+                  <h2>
+                    {answerWasCorrect
+                      ? "Bạn đã chọn đúng!"
+                      : selectedAnswer === null
+                        ? "Đáp án đúng của câu này"
+                        : "Chưa đúng — đây là đáp án"}
+                  </h2>
+                  <p>
+                    {answerWasCorrect
+                      ? `Bạn phản xạ trong ${formatPracticeReactionTime(currentReactionMs)} và đã bắt đúng ý chính.`
+                      : selectedAnswer === null
+                        ? "Bạn chưa chọn đáp án trong 8 giây. Hãy nghe lại và ghi nhớ cách diễn đạt này."
+                        : `Phản xạ của bạn là ${formatPracticeReactionTime(currentReactionMs)}. Hãy đối chiếu lại ý nghĩa bên dưới.`}
+                  </p>
+                  <div className="practice-listening-outcome-answer">
+                    <span>Bạn vừa nghe</span>
+                    <strong lang="zh">{listeningStatement.text}</strong>
+                    <span>{answerWasCorrect ? "Ý nghĩa bạn đã chọn" : "Đáp án đúng"}</span>
+                    <strong>{meaningQuestion.options[meaningQuestion.correctOption]}</strong>
+                  </div>
+                  {!answerWasCorrect ? <p className="practice-listening-outcome-explanation">{exercise.explanation}</p> : null}
+                  <div className="practice-listening-outcome-controls">
+                    <button onClick={() => playExerciseAudio(exercise)} type="button">
+                      <Volume2 size={16} /> Nghe lại
+                    </button>
+                    <button onClick={() => playExerciseAudio(exercise, true)} type="button">
+                      <Gauge size={16} /> Nghe chậm 0.8×
+                    </button>
+                  </div>
+                  <button className="practice-listening-next" onClick={nextExercise} type="button">
+                    {step === exercises.length - 1 ? "Xem kết quả" : "Lượt tiếp theo"} <ArrowRight size={17} />
                   </button>
                 </div>
               </div>
             ) : (
-              <div className="listening-answer-lock"><Headphones size={17} /> Đáp án mở sau khi audio kết thúc</div>
-            )}
-
-            {selectedAnswer !== null ? (
-              <div className={`listening-feedback ${answerWasCorrect ? "correct" : ""}`} role="status">
-                <div className="listening-feedback-title">
-                  {answerWasCorrect ? <CheckCircle2 size={21} /> : <X size={21} />}
-                  <strong>{answerWasCorrect ? "Chính xác — bạn bắt đúng ý." : "Chưa đúng — nghe lại điểm mấu chốt."}</strong>
-                </div>
-                <div className="listening-transcript">
-                  <span>Bạn vừa nghe</span>
-                  <strong lang="zh">{listeningStatement.text}</strong>
-                </div>
-                {!listeningStatement.isCorrect ? (
-                  <div className="listening-correction">
-                    <span>Cách phù hợp hơn</span>
-                    <strong lang="zh">{listeningStatement.correctText}</strong>
+              <>
+                <div className="practice-meaning-audio" aria-live="polite">
+                  <span className="practice-meaning-prompt">
+                    {listeningPhase === "playing"
+                      ? "Nghe câu tiếng Trung"
+                      : selectedAnswer === null
+                        ? "Chọn ý nghĩa câu bạn vừa nghe"
+                        : "Đáp án đã được ghi nhận"}
+                  </span>
+                  <div className="practice-meaning-audio-row">
+                    <button
+                      aria-label={listeningPhase === "playing" ? "Audio đang phát" : "Nghe lại câu vừa rồi"}
+                      className={`practice-meaning-replay ${listeningPhase === "playing" ? "is-playing" : ""}`.trim()}
+                      disabled={listeningPhase === "playing" || selectedAnswer !== null}
+                      onClick={() => playExerciseAudio(exercise, slowPlayback, true)}
+                      type="button"
+                    >
+                      <Volume2 size={36} strokeWidth={2.1} />
+                    </button>
+                    {listeningPhase === "playing" ? (
+                      <AudioLines aria-hidden="true" className="practice-meaning-wave" size={38} strokeWidth={2.4} />
+                    ) : (
+                      <span
+                        aria-label={selectedAnswer === null
+                          ? `Còn ${answerCountdownSeconds} giây để trả lời`
+                          : `Đã chốt đáp án, còn ${answerCountdownSeconds} giây để xem kết quả`}
+                        className="listening-countdown practice-meaning-countdown"
+                        role="timer"
+                      >
+                        <svg aria-hidden="true" className="listening-countdown-ring" viewBox="0 0 100 100">
+                          <circle className="listening-countdown-ring-track" cx="50" cy="50" pathLength="100" r="46" />
+                          <circle
+                            className="listening-countdown-ring-value"
+                            cx="50"
+                            cy="50"
+                            pathLength="100"
+                            r="46"
+                            strokeDasharray="100"
+                            strokeDashoffset={(answerCountdownProgress * 100) - 100}
+                          />
+                        </svg>
+                        <strong aria-hidden="true">{answerCountdownSeconds}</strong>
+                      </span>
+                    )}
                   </div>
-                ) : null}
-                <div>
-                  <p>{listeningStatement.explanation}</p>
+                  <strong className="practice-meaning-replay-label">
+                    {listeningPhase === "playing" ? "Đang phát audio" : "Bấm để nghe lại"}
+                  </strong>
+                  <button
+                    aria-pressed={slowPlayback}
+                    className="practice-meaning-speed"
+                    disabled={listeningPhase === "playing" || selectedAnswer !== null}
+                    onClick={() => {
+                      const nextSlowPlayback = !slowPlayback;
+                      setSlowPlayback(nextSlowPlayback);
+                      playExerciseAudio(exercise, nextSlowPlayback, true);
+                    }}
+                    type="button"
+                  >
+                    <SlidersHorizontal aria-hidden="true" size={17} />
+                    {slowPlayback ? "Tốc độ chậm" : "Tốc độ thường"}
+                  </button>
+                  {audioUnavailable ? <small className="is-warning">Thiết bị chưa phát được giọng đọc.</small> : null}
                 </div>
-              </div>
-            ) : null}
-            <div className="practice-session-actions">
-              <button disabled={selectedAnswer === null} onClick={nextExercise} type="button">
-                {step === exercises.length - 1 ? "Xem kết quả" : "Lượt tiếp theo"} <ArrowRight size={17} />
-              </button>
-            </div>
+
+                <div className="practice-meaning-answer-area">
+                  <div className="scenario-options listening-meaning-options">
+                    {meaningQuestion.options.map((option, optionIndex) => {
+                      const selected = selectedAnswer === optionIndex;
+                      return (
+                        <button
+                          aria-label={`Đáp án ${String.fromCharCode(65 + optionIndex)}: ${option}`}
+                          aria-pressed={selected}
+                          className={selected ? "selected" : ""}
+                          disabled={listeningPhase !== "ready" || selectedAnswer !== null}
+                          key={`${exercise.id}-${optionIndex}`}
+                          onClick={() => chooseListeningAnswer(optionIndex)}
+                          type="button"
+                        >
+                          <span>{String.fromCharCode(65 + optionIndex)}</span>
+                          <strong>{option}</strong>
+                        </button>
+                      );
+                    })}
+                  </div>
+                  <small className="practice-meaning-helper">
+                    {listeningPhase === "playing"
+                      ? "Đáp án sẽ mở ngay khi audio kết thúc"
+                      : selectedAnswer === null
+                        ? "Chọn một đáp án trước khi vòng thời gian kết thúc"
+                        : "Đã ghi nhận lựa chọn và tốc độ phản xạ của bạn"}
+                  </small>
+                </div>
+              </>
+            )}
           </section>
         ) : null}
 
@@ -599,7 +824,11 @@ export function WorkPracticeHub({
             <span className="scenario-complete-icon"><Trophy size={31} /></span>
             <span className="practice-hub-kicker">Đã nghe xong ca</span>
             <h2>{selectedScenario.title}</h2>
-            <p>Bạn nghe và phán đoán đúng <strong>{score}/{exercises.length}</strong> lượt. Câu mẫu trọng tâm đã sẵn sàng để dùng khi gặp tình huống thật.</p>
+            <p>Bạn chọn đúng ý nghĩa <strong>{score}/{exercises.length}</strong> câu. Himi đã ghi lại cả độ chính xác và tốc độ phản xạ của phiên này.</p>
+            <div className="practice-result-metrics">
+              <div><CheckCircle2 size={20} /><span><strong>{sessionAccuracyPercent ?? 0}%</strong><small>Độ chính xác</small></span></div>
+              <div><Gauge size={20} /><span><strong>{formatPracticeReactionTime(sessionAverageReactionMs)}</strong><small>Phản xạ trung bình</small></span></div>
+            </div>
             <p className={`practice-sync-status is-${saveState}`} role="status">
               {saveState === "saving" ? "Đang đồng bộ kết quả với tài khoản…"
                 : saveState === "saved" ? authenticated ? "Đã đồng bộ với tài khoản của bạn." : "Đã lưu kết quả trên thiết bị này."
@@ -634,7 +863,7 @@ export function WorkPracticeHub({
                 <p className="practice-feature-brief">{selectedScenario.brief}</p>
                 <div className="practice-feature-meta">
                   <span><Clock3 size={16} /> {selectedScenario.durationMinutes} phút</span>
-                  <span><Headphones size={16} /> Nghe trước · Đúng/Sai</span>
+                  <span><Headphones size={16} /> Nghe · Chọn nghĩa · 8 giây</span>
                   <span className={selectedScenario.isFree ? "free" : "vip"}>
                     {selectedScenario.isFree ? <PackageCheck size={15} /> : <Crown size={15} />}
                     {selectedScenario.isFree ? "Miễn phí" : "VIP"}
@@ -704,6 +933,8 @@ export function WorkPracticeHub({
 
             <footer className="practice-catalog-footer">
               <span><BriefcaseBusiness size={20} /><strong>{completedScenarios.length}</strong> ca đã luyện</span>
+              <span><CheckCircle2 size={20} /><strong>{accuracyPercent === null ? "—" : `${accuracyPercent}%`}</strong> chính xác</span>
+              <span><Gauge size={20} /><strong>{formatPracticeReactionTime(averageReactionMs)}</strong> phản xạ TB</span>
               <button onClick={() => setMode("review")} type="button"><RotateCcw size={20} /><strong>{vocabulary.length}</strong> từ cần ôn</button>
               {hasVip
                 ? <span className="practice-catalog-vip active"><CheckCircle2 size={18} /> Kho VIP đã mở</span>

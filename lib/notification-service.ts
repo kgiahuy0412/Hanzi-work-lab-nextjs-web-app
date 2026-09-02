@@ -7,7 +7,7 @@ import { safeReturnTo } from "./auth-validation.ts";
 
 type DbTransaction = Parameters<Parameters<Database["transaction"]>[0]>[0];
 
-export type NotificationType = "vip_request_approved" | "vip_request_rejected" | "system";
+export type NotificationType = "payment_succeeded" | "vip_request_approved" | "vip_request_rejected" | "system";
 
 function bounded(value: string, maximum: number): string {
   return value.trim().slice(0, maximum);

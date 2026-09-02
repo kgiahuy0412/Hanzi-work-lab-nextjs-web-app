@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { ListeningModeSwitcher } from "@/components/listening-mode-switcher";
+import { ListeningPerformanceSummary } from "@/components/listening-performance-summary";
 import { ListeningStudio } from "@/components/listening-studio";
 import { getListeningLevel } from "@/lib/listening-content";
 
@@ -35,6 +36,11 @@ export default async function ListeningPage({
 
   return <ListeningStudio
     initialLevelId={initialLevelId}
-    modeSwitcher={<ListeningModeSwitcher activeMode="levels" />}
+    modeSwitcher={
+      <>
+        <ListeningModeSwitcher activeMode="levels" />
+        <ListeningPerformanceSummary />
+      </>
+    }
   />;
 }

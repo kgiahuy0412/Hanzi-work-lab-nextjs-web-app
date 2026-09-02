@@ -6,7 +6,7 @@ export type PracticeStaffRole = Extract<UserRole, "editor" | "reviewer" | "admin
 export type PracticeWorkflowActor = { id: string; role: PracticeStaffRole };
 
 export type PracticeReadinessItem = {
-  id: "industry" | "exercise_count" | "transcript" | "audio" | "audio_review" | "answers" | "truth_balance";
+  id: "industry" | "exercise_count" | "transcript" | "audio" | "audio_review" | "answers";
   label: string;
   detail: string;
   passed: boolean;
@@ -19,7 +19,6 @@ type ReadinessExercise = {
   audioReviewStatus: string;
   options: unknown;
   correctOption: number;
-  isStatementCorrect: boolean | null;
 };
 
 export function isPracticeStaffRole(role: UserRole | string | null | undefined): role is PracticeStaffRole {
@@ -64,7 +63,6 @@ export function assessPracticeReadiness(exercises: ReadinessExercise[], options:
     const options = Array.isArray(exercise.options) ? exercise.options.filter((option) => typeof option === "string") : [];
     return options.length >= 2 && exercise.correctOption >= 0 && exercise.correctOption < options.length;
   });
-  const truthValues = new Set(exercises.map((exercise) => exercise.isStatementCorrect));
   const items: PracticeReadinessItem[] = [
     {
       id: "industry",
@@ -98,15 +96,9 @@ export function assessPracticeReadiness(exercises: ReadinessExercise[], options:
     },
     {
       id: "answers",
-      label: "Đáp án hợp lệ",
-      detail: "Mỗi lượt cần tối thiểu 2 phương án và chỉ số đáp án nằm trong phạm vi.",
+      label: "Các nghĩa tiếng Việt hợp lệ",
+      detail: "Mỗi lượt cần tối thiểu 2 nghĩa để chọn và chỉ số đáp án đúng nằm trong phạm vi.",
       passed: exercises.length > 0 && validAnswers,
-    },
-    {
-      id: "truth_balance",
-      label: "Có cả Đúng và Sai",
-      detail: "Một ca phải có ít nhất một phát biểu phù hợp và một phát biểu chưa phù hợp.",
-      passed: truthValues.has(true) && truthValues.has(false),
     },
   ];
   return { ready: items.every((item) => item.passed), passed: items.filter((item) => item.passed).length, items };

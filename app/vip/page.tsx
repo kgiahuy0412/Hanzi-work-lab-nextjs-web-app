@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { AlertCircle, Check, Clock3, Crown, Send } from "lucide-react";
-import { cancelVipActivationRequestAction, requestVipActivationAction } from "@/app/vip/actions";
+import { AlertCircle, Check, Clock3, Crown } from "lucide-react";
+import { cancelVipActivationRequestAction } from "@/app/vip/actions";
 import { HimiSectionBanner } from "@/components/himi-section-banner";
+import { VipTransferFlow } from "@/components/vip-transfer-flow";
 import { getCurrentUser } from "@/lib/auth-session";
 import { getVipUpgradeOverview } from "@/lib/vip-activation-request-service";
+import { isLifetimeVipPlan, vipPlanAccessLabel, vipPlanDurationLabel } from "@/lib/vip-plan";
 import { vipDaysRemaining } from "@/lib/vip-subscription";
 
 export const metadata: Metadata = { title: "Gói Himi Chinese VIP" };
@@ -61,7 +63,15 @@ export default async function VipPage({
   const daysRemaining = active ? vipDaysRemaining(active.endsAt) : null;
   const notice = params.success ? noticeMessages[params.success] : null;
   const error = params.error ? errorMessages[params.error] : null;
-  const featuredPlanId = overview.plans.find((plan) => plan.durationDays >= 180)?.id ?? overview.plans[0]?.id;
+  const featuredPlanId = overview.plans.find((plan) => plan.code === "VIP_6M")?.id
+    ?? overview.plans.find((plan) => !isLifetimeVipPlan(plan.code) && plan.durationDays >= 180)?.id
+    ?? overview.plans[0]?.id;
+  const displayPlans = [...overview.plans].sort((left, right) => {
+    const leftLifetime = isLifetimeVipPlan(left.code);
+    const rightLifetime = isLifetimeVipPlan(right.code);
+    if (leftLifetime !== rightLifetime) return leftLifetime ? -1 : 1;
+    return left.durationDays - right.durationDays;
+  });
 
   return <main>
     <section className="section-shell himi-banner-shell vip-page-header"><HimiSectionBanner
@@ -91,18 +101,9 @@ export default async function VipPage({
     </section>
 
     <section className="section-shell pricing-grid vip-pricing-grid" aria-label="Các lựa chọn học">
-      <article className="price-card vip-plan-card is-free">
-        <span className="price-name">Học miễn phí</span>
-        <div className="price"><strong>0đ</strong></div>
-        <p className="price-description">Bắt đầu với các bài mở khóa sẵn và làm quen nhịp học trước khi nâng cấp.</p>
-        <ul className="feature-list">
-          {["Bài học thử trong Lộ trình", "Ca luyện mẫu", "Ôn tập từ đã học", "Không cần gửi yêu cầu"].map((feature) => <li key={feature}><Check size={15} />{feature}</li>)}
-        </ul>
-        <Link className="button button-full button-secondary" href="/courses">Tiếp tục học miễn phí</Link>
-      </article>
-
-      {overview.plans.map((plan) => {
+      {displayPlans.map((plan) => {
         const featured = plan.id === featuredPlanId;
+        const lifetime = isLifetimeVipPlan(plan.code);
         const isPendingPlan = pending?.planId === plan.id;
         const buttonText = isPendingPlan
           ? "Đang chờ duyệt"
@@ -110,21 +111,27 @@ export default async function VipPage({
             ? "Đổi sang gói này"
             : active
               ? "Yêu cầu gia hạn"
-              : "Gửi yêu cầu kích hoạt";
+              : "Nâng cấp";
         return <article className={`price-card vip-plan-card ${featured ? "featured" : ""}`} key={plan.id}>
           {featured ? <span className="price-badge">Được chọn nhiều</span> : null}
           <span className="price-name">{plan.name}</span>
-          <div className="price"><strong>{formatPrice(plan.priceVnd)}</strong><span>/ {plan.durationDays} ngày</span></div>
-          <p className="price-description">Mức dự kiến cho một lần kích hoạt. Yêu cầu này chưa tạo thanh toán tự động.</p>
+          <div className="price"><strong>{formatPrice(plan.priceVnd)}</strong><span>/ {vipPlanDurationLabel(plan.code, plan.durationDays).toLocaleLowerCase("vi-VN")}</span></div>
+          <p className="price-description">{lifetime
+            ? "Thanh toán một lần qua SePay để mở quyền học trọn đời. VIP được kích hoạt tự động sau khi đối soát."
+            : "Chuyển khoản qua SePay và nhận quyền học tự động ngay sau khi giao dịch được đối soát."}</p>
           <ul className="feature-list">{planBenefits(plan.benefits).map((feature) => <li key={feature}><Check size={15} />{feature}</li>)}</ul>
-          {user ? <form action={requestVipActivationAction} className="vip-plan-request-form">
-            <input name="planId" type="hidden" value={plan.id} />
-            <label><span>Ghi chú (không bắt buộc)</span><input disabled={isPendingPlan} maxLength={500} name="userNote" placeholder="Ví dụ: cần luyện ca văn phòng" /></label>
-            <button className={`button button-full ${featured ? "button-light" : "button-primary"}`} disabled={isPendingPlan} type="submit"><Send size={15} />{buttonText}</button>
-          </form> : <Link className={`button button-full ${featured ? "button-light" : "button-primary"}`} href="/login?returnTo=%2Fvip">Đăng nhập để gửi yêu cầu</Link>}
+          {user ? <VipTransferFlow
+            buttonText={buttonText}
+            durationLabel={vipPlanAccessLabel(plan.code, plan.durationDays)}
+            featured={featured}
+            isPendingPlan={isPendingPlan}
+            planCode={plan.code}
+            planId={plan.id}
+            planName={plan.name}
+            priceLabel={formatPrice(plan.priceVnd)}
+          /> : <Link className={`button button-full ${featured ? "button-light" : "button-primary"}`} href="/login?returnTo=%2Fvip">Đăng nhập để thanh toán</Link>}
         </article>;
       })}
     </section>
-
   </main>;
 }

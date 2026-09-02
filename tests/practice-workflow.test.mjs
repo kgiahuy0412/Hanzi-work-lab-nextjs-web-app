@@ -22,7 +22,7 @@ test("practice staff roles have a separated editorial workflow", () => {
   assert.equal(canTransitionAssignedPracticeScenario({ id: "admin-1", role: "admin" }, null, "review", "published"), true);
 });
 
-test("practice publishing requires audio, transcripts, valid answers and truth balance", () => {
+test("practice publishing requires audio, transcripts and valid meaning answers", () => {
   const complete = [
     { listeningText: "请确认时间。", audioAssetId: "audio-1", audioUrl: null, audioReviewStatus: "approved", options: ["A", "B"], correctOption: 0, isStatementCorrect: true },
     { listeningText: "不用检查。", audioAssetId: "audio-2", audioUrl: null, audioReviewStatus: "approved", options: ["A", "B"], correctOption: 1, isStatementCorrect: false },
@@ -30,5 +30,5 @@ test("practice publishing requires audio, transcripts, valid answers and truth b
   assert.equal(assessPracticeReadiness(complete).ready, true);
   assert.equal(assessPracticeReadiness(complete.map((item) => ({ ...item, audioAssetId: null }))).ready, false);
   assert.equal(assessPracticeReadiness(complete.map((item) => ({ ...item, audioReviewStatus: "pending" }))).ready, false);
-  assert.equal(assessPracticeReadiness(complete.map((item) => ({ ...item, isStatementCorrect: true }))).ready, false);
+  assert.equal(assessPracticeReadiness(complete.map((item) => ({ ...item, isStatementCorrect: true }))).ready, true);
 });

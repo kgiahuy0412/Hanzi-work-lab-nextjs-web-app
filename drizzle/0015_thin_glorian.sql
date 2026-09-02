@@ -1,0 +1,1 @@
+ALTER TABLE "practice_attempts" ADD COLUMN "total_reaction_ms" integer;

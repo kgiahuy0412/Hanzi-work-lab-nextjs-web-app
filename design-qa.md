@@ -68,6 +68,198 @@ final result: passed
 
 ---
 
+# Scenario Meaning Choice Redesign Design QA
+
+## Evidence
+
+- Source/current screen: `C:/Users/DELL/AppData/Local/Temp/codex-clipboard-172fdcff-1daa-49cd-b047-3fa1b9d10e44.png`
+- User-selected visual reference: `C:/Users/DELL/AppData/Local/Temp/codex-clipboard-eb5d8adc-2e67-4f12-8ea7-90a9193b80c9.png`
+- Browser-rendered implementation: `D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/.codex-artifacts/listening-redesign-1176x559.png`
+- Normalized implementation crop: `D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/.codex-artifacts/listening-redesign-cropped-1176x559.png`
+- Side-by-side reference/implementation comparison: `D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/.codex-artifacts/listening-redesign-comparison.png`
+- Route: `http://localhost:3000/listening?mode=scenario`
+
+## Normalization
+
+- Reference image: 1180 × 567 pixels.
+- Requested browser override: 1176 × 559; the Codex in-app Browser host reported a scaled 1755 × 834 CSS surface and 0.67 device pixel ratio.
+- State: active audio playback with waveform, speed control, and four visible meaning choices. The same screen was also checked in the 8-second countdown state.
+- The implementation capture was normalized to the reference aspect ratio before the side-by-side comparison. DOM measurements were used for overflow verification because the Codex host capture includes surrounding blank host-canvas pixels.
+
+## Full-view comparison
+
+The old split session was replaced by the reference's compact answer-first composition: a centered listening prompt, coral circular replay control, adjacent waveform/countdown, replay label, compact speed pill, and four large choices in a two-column grid. The learner navigation chrome is hidden only during this focused session, matching the reference's clean white canvas while retaining an accessible exit action.
+
+## Focused-region comparison
+
+The reference and implementation were combined in one image at equal visual scale. The focal stack, coral/peach audio control, pink waveform, dark replay label, pale outlined speed control, 2 × 2 answer grid, rounded card borders, and letter badges align closely. Vietnamese meanings are intentionally longer than the short Hanzi labels in the reference, so the implementation permits safe wrapping rather than forcing a one-line truncation.
+
+## Required fidelity surfaces
+
+- Typography: compact muted prompt, bold replay status, and clear answer labels follow the reference hierarchy while retaining Himi's existing font stack.
+- Spacing and rhythm: the audio stack occupies the upper interaction zone and the choices begin immediately below it, with 12px grid gaps and 84px desktop cards.
+- Colors: the primary orb uses Himi coral with a peach rim and soft shadow; secondary controls use the existing muted teal-gray palette.
+- Assets: the reference contains only interface icons. The implementation uses the existing Lucide icon library; no placeholder or drawn asset was introduced.
+- Content: the product remains “Nghe và chọn nghĩa”; all seeded scenario questions now provide four distinct Vietnamese meaning choices.
+
+## Interaction and responsive checks
+
+- Audio starts first; choices remain visible but locked until playback finishes.
+- The clockwise 8-second ring appears beside the replay control after audio playback.
+- Selecting an answer records reaction time and locks the choice while the countdown completes.
+- Correct, wrong, and unanswered results retain their existing congratulations/review forms.
+- Desktop DOM measurements report `bodyScrollWidth` equal to the viewport content width and the answer grid right edge within the document, with no horizontal overflow.
+- A 390 × 844 mobile viewport was exercised; the session switches to one answer per row and preserves the exit and result controls.
+- ESLint passed, all 15 focused listening/practice tests passed, and the production build completed successfully.
+
+## Comparison history
+
+### Iteration 1
+
+- Finding: [P1] The first redesign still sat inside the learner rail and top bar, unlike the clean reference canvas.
+- Fix: made only the active scenario session immersive and kept a subtle accessible exit action.
+
+- Finding: [P2] The initial vertical stack pushed the answer grid too low at the reference height.
+- Fix: reduced the listening stage height and top padding so the replay label, speed pill, and answers follow the reference rhythm.
+
+### Iteration 2
+
+- Finding: [P2] Long Vietnamese choices needed additional right-edge safety compared with the reference's short Hanzi labels.
+- Fix: added responsive horizontal answer padding plus safe text wrapping; DOM measurement confirms no document overflow.
+
+## Findings
+
+No actionable P0, P1, or P2 visual or interaction differences remain.
+
+## Follow-up polish
+
+- [P3] The exact Vietnamese distractor copy can be editorially shortened later without changing the finished layout.
+
+final result: passed
+
+---
+
+# Centered Listening Countdown And Outcome Forms Design QA
+
+## Evidence
+
+- Source visual truth: `C:/Users/DELL/AppData/Local/Temp/codex-clipboard-2e843e83-85e0-4b3b-9370-7dab7752c3a1.png`
+- Browser-rendered implementation: Codex in-app Browser captures at `http://localhost:3000/listening?mode=scenario`; the Browser capture API did not expose a local filesystem path.
+- States captured: active centered countdown, selected-answer countdown, no-answer review form, wrong-answer review form, and correct-answer congratulations form.
+
+## Normalization
+
+- Source image: 1902 × 918 pixels.
+- Desktop implementation viewport: 1910 × 1074 CSS pixels at reported device pixel ratio 0.8375.
+- Mobile implementation override: requested 390 × 844; the capture surface reported 582 × 1259 CSS pixels because of host scaling.
+- Comparisons were aligned by the app content region and interaction state rather than raw raster density. The countdown measured 132 × 132 CSS pixels on desktop and was horizontally centered in the interaction stage with a measured center delta of 0px.
+
+## Full-view comparison
+
+The implementation preserves the source screen's left scenario context, live metrics, large listening heading, restrained green typography, white canvas, and lower answer-choice area. Per the user's requested change, the countdown is intentionally moved from the answer heading's far edge to the center of the listening stage. At zero, that same central area becomes the result form, so the visual focus does not jump to a disconnected part of the page.
+
+## Focused-region comparison
+
+Focused Browser captures verified the changed interaction region. The active ring is prominent and centered; the selected choice stays visibly selected while the ring continues; the answer-review form contains the heard Chinese sentence, correct Vietnamese meaning, explanation, replay controls, and next action; the success form uses the same geometry with a green congratulations treatment. A focused comparison was necessary because these state transitions are the requested design rather than static page chrome.
+
+## Required fidelity surfaces
+
+- Fonts and typography: existing product font stacks and heading hierarchy are preserved; outcome titles use balanced wrapping and a mobile-specific size so Vietnamese copy stays inside the card.
+- Spacing and layout rhythm: the 132px countdown is centered in the existing listening column; result forms reuse that same focal area, with consistent 22px radii and compact inner spacing.
+- Colors and visual tokens: the countdown retains the requested black progress edge and red numeral; success uses the existing teal-green family, while wrong and timeout states use a restrained warm review surface.
+- Image quality and asset fidelity: no new raster assets were needed; existing Lucide icons already used by the product remain sharp at all tested sizes.
+- Copy and content: correct, wrong, and timeout forms use distinct Vietnamese feedback and always show the exact Chinese utterance plus the correct meaning where appropriate.
+
+## Interaction and responsive checks
+
+- Choosing an answer locks the options but does not reveal correctness or update current-question metrics before the timer reaches zero.
+- Correct choice at zero opens `Bạn đã chọn đúng!`; wrong choice opens `Chưa đúng — đây là đáp án`; no choice opens `Đáp án đúng của câu này`.
+- Reaction time is captured at the selection moment; an unanswered item records the full eight seconds.
+- Desktop and mobile result cards remain within their parent width with no document-level horizontal overflow.
+- Browser console and error-overlay checks reported no application errors.
+- ESLint, all 10 focused practice tests, production build, and diff whitespace validation pass.
+
+## Comparison history
+
+### Iteration 1
+
+- Finding: [P2] The first mobile capture placed the long review heading too close to the right edge.
+- Fix: constrained the outcome heading width, added safe wrapping, and reduced its mobile optical size.
+- Post-fix evidence: the second mobile measurement reports the heading fully within the result card and no horizontal overflow.
+
+### Iteration 2
+
+- Finding: no remaining actionable P0, P1, or P2 visual or interaction differences.
+
+## Findings
+
+No actionable P0, P1, or P2 findings remain.
+
+## Follow-up polish
+
+No P3 polish is required for the requested interaction.
+
+final result: passed
+
+---
+
+# Scenario Listening Countdown Ring Design QA
+
+## Evidence
+
+- Source visual truth path: `C:/Users/DELL/AppData/Local/Temp/codex-clipboard-3bf52cca-b6a0-43af-a12b-abb35e742413.png`.
+- Browser-rendered implementation screenshot: inline Codex in-app Browser capture from tab 3 at the active `6`-second state; the browser API did not expose a filesystem path for this capture.
+- Route: `http://localhost:3000/listening?mode=scenario`.
+
+## Normalization
+
+- Source image: 513 × 416 pixels, showing an isolated circular countdown at the full `8`-second state.
+- Desktop implementation capture: 2827 × 1603 pixels from a 1910 × 1074 CSS-pixel browser surface; the focused control measures 96 × 96 CSS pixels.
+- Responsive check: a 390 × 844 viewport override activates the compact 76 × 76 CSS-pixel control without horizontal overflow.
+- State comparison: the source establishes the full-ring shape, black border, red integer, and white center. The browser capture verifies the same component language while actively decreasing from `8` to `6`.
+
+## Full-view comparison
+
+The source and browser-rendered implementation were inspected together. The implementation keeps the circular countdown inside the existing answer heading, preserves the surrounding question and answer hierarchy, and removes the former pill timer and horizontal progress bar. Its scale is intentionally smaller than the isolated reference because it is an inline application control rather than a standalone canvas.
+
+## Focused-region comparison
+
+The focused timer matches the source's round geometry, white center, dark outer progress border, and red centered numeral. The implementation adds a light neutral track only where elapsed time has removed the dark progress stroke, making the countdown direction readable without changing the selected visual language.
+
+## Required fidelity surfaces
+
+- Fonts and typography: the integer uses the existing Himi sans-serif stack, a light optical weight, tabular numerals, and a 42px desktop / 34px mobile size that visually matches the source's red numeral proportion.
+- Spacing and layout rhythm: the ring remains perfectly square, starts at the top, stays aligned with the answer heading, and reduces to 76px on mobile without pushing the question or answers outside the viewport.
+- Colors and visual tokens: the active border is charcoal `#292b2a`, the elapsed track is neutral `#d8dddb`, the numeral is red `#ef242a`, and the center inherits the white page surface.
+- Image quality and asset fidelity: the target contains no photographic, illustrative, logo, or icon asset. The ring is a live progress visualization rendered at browser resolution, so it remains sharp at every density.
+- Copy and content: the visible fractional timer and horizontal progress copy were removed. Assistive labels still announce `Còn N giây để trả lời`, `Đã chốt đáp án`, or `Hết thời gian trả lời` as state changes.
+
+## Interaction and responsive checks
+
+- The control begins at `8` with a nearly full stroke and reaches `6` with approximately 75% of the stroke remaining.
+- The border transition updates every 100ms while the visible numeral changes once per second.
+- Answer selection and the 8-second automatic reveal behavior remain unchanged.
+- Desktop and mobile checks show no horizontal overflow from the ring.
+- Browser inspection found no error overlay or console errors in the exercise flow.
+
+## Comparison history
+
+### Iteration 1
+
+- Finding: no actionable P0, P1, or P2 visual or interaction differences. The smaller integrated size and light elapsed-time track are intentional product-context adaptations.
+
+## Findings
+
+No actionable P0, P1, or P2 findings remain.
+
+## Follow-up polish
+
+- [P3] None required for the requested countdown treatment.
+
+final result: passed
+
+---
+
 # Himi Brand Color Synchronization Design QA
 
 ## Evidence

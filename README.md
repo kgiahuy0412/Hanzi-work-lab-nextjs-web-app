@@ -53,7 +53,7 @@ npm run staging:secrets
 npm run verify:staging
 ```
 
-`staging:secrets` chỉ lấy `DATABASE_URL`, `AUTH_SECRET` và `CLOUDINARY_URL` từ `.env.local`, truyền qua stdin của Wrangler và tự đặt cookie/proxy ở chế độ HTTPS an toàn. `verify:staging` kiểm tra health, route công khai, đăng ký/đăng nhập, RBAC, yêu cầu–duyệt VIP, thông báo, entitlement và audio Cloudinary; tài khoản QA tạm luôn được xóa trong `finally`.
+`staging:secrets` lấy khóa database/auth/media/email cùng `SEPAY_WEBHOOK_SECRET` từ `.env.local`, truyền qua stdin của Wrangler và tự đặt cookie/proxy ở chế độ HTTPS an toàn. `verify:staging` kiểm tra health, route công khai, đăng ký/đăng nhập, RBAC, đơn–webhook SePay, thông báo, entitlement và audio Cloudinary; tài khoản QA tạm luôn được xóa trong `finally`.
 
 ## Công nghệ và cấu trúc
 
@@ -85,7 +85,16 @@ npm run verify:staging
 
 Khi chưa có `DATABASE_URL`, ứng dụng tự dùng catalog demo để frontend vẫn chạy được. Sau mỗi lần sửa `db/schema.ts`, chạy `npm run db:generate` để tạo migration mới rồi kiểm tra SQL trước khi migrate.
 
-Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chuyên sâu còn lại yêu cầu VIP. Việc kiểm tra quyền diễn ra ở server và nội dung bài VIP không được gửi xuống client ẩn danh. Tiến độ và lịch ôn đã lưu theo người dùng; SePay và nhận tiền thật vẫn chưa được kết nối. Không đưa khóa API vào Git và không bật thanh toán trước khi hoàn thành thông tin chủ thể kinh doanh, điều khoản sử dụng, bảo mật và hoàn tiền.
+Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chuyên sâu còn lại yêu cầu VIP. Việc kiểm tra quyền diễn ra ở server và nội dung bài VIP không được gửi xuống client ẩn danh. Tiến độ, lịch ôn và đơn thanh toán SePay được lưu theo người dùng. Không đưa khóa API vào Git và không bật nhận tiền thật trước khi hoàn thành thông tin chủ thể kinh doanh, điều khoản sử dụng, bảo mật và hoàn tiền.
+
+## Thanh toán SePay
+
+- Trang `/vip` tạo một `payment_order` có mã `HIMI…` duy nhất, hiển thị QR VietQR ACB theo đúng số tiền và tự kiểm tra trạng thái qua `GET /api/payments/sepay/orders/[orderId]`.
+- Endpoint nhận webhook là `POST /api/webhooks/sepay`. Trên SePay Dashboard, đặt URL production thành `https://<domain>/api/webhooks/sepay`, loại giao dịch **Tiền vào**, content type **JSON**, mục đích **Xác thực thanh toán** và lọc mã có tiền tố `HIMI`.
+- Chọn xác thực **HMAC-SHA256** trên SePay, lưu cùng secret vào `SEPAY_WEBHOOK_SECRET`. Endpoint kiểm tra chữ ký trên raw body, timestamp ±5 phút, tài khoản nhận, mã đơn và số tiền. Nếu chỉ dùng API Key, để HMAC secret trống và cấu hình `SEPAY_API_KEY`; không chạy production khi cả hai đều trống.
+- Cấu hình tài khoản bằng `SEPAY_BANK_CODE`, `SEPAY_BANK_ACCOUNT_NUMBER`, `SEPAY_BANK_ACCOUNT_NAME`. Mặc định hiện tại khớp QR ACB `12897891` — `LE CHAU KIET`; các biến `VIP_BANK_*` cũ vẫn được đọc làm fallback.
+- Webhook là idempotent theo ID giao dịch SePay. Giao dịch đúng sẽ đánh dấu đơn `paid`, kích hoạt/gia hạn VIP và tạo thông báo cho client; sai số tiền hoặc đến sau khi đơn hết hạn được chuyển sang `manual_review` thay vì tự cấp quyền.
+- Dùng SePay Test mode để gửi payload mô phỏng trước, sau đó thử một giao dịch thật giá trị nhỏ. SePay chỉ coi webhook thành công khi nhận HTTP 200 cùng JSON `{"success":true}`.
 
 ## Tài khoản và quyền quản trị
 

@@ -30,6 +30,7 @@ import {
 import { AdminConsoleHeader, AdminNotice } from "@/components/admin-console";
 import { requireAdminUser } from "@/lib/admin-auth";
 import { getAdminVipConsole } from "@/lib/admin-subscription-service";
+import { vipPlanDurationLabel } from "@/lib/vip-plan";
 import { vipDaysRemaining } from "@/lib/vip-subscription";
 
 export const metadata: Metadata = { title: "VIP & Thanh toán" };
@@ -109,7 +110,7 @@ export default async function AdminSubscriptionsPage({ searchParams }: {
       <article className="admin-panel">
         <div className="admin-vip-heading"><div><span>Danh mục sản phẩm</span><h2>Danh sách các gói VIP</h2><p>Gói tạm ngưng vẫn giữ nguyên quyền của người đã mua nhưng không xuất hiện cho lượt nâng cấp mới.</p></div><strong>{data.plans.length} gói</strong></div>
         <div className="admin-vip-plan-list">{data.plans.length ? data.plans.map((plan) => <article key={plan.id}>
-          <div className="admin-vip-plan-main"><span className={plan.isActive ? "is-active" : "is-paused"}>{plan.isActive ? "Đang hoạt động" : "Tạm ngưng"}</span><strong>{plan.name}</strong><small>{plan.code} · {plan.durationDays} ngày</small>{plan.promotionLabel ? <em>{plan.promotionLabel}</em> : null}</div>
+          <div className="admin-vip-plan-main"><span className={plan.isActive ? "is-active" : "is-paused"}>{plan.isActive ? "Đang hoạt động" : "Tạm ngưng"}</span><strong>{plan.name}</strong><small>{plan.code} · {vipPlanDurationLabel(plan.code, plan.durationDays)}</small>{plan.promotionLabel ? <em>{plan.promotionLabel}</em> : null}</div>
           <div className="admin-vip-plan-price"><strong>{formatAdminCurrency(plan.priceVnd)}</strong><span>{plan.discountPercent > 0 ? `Giảm ${plan.discountPercent}%` : "Giá tiêu chuẩn"}</span></div>
           <div className="admin-vip-plan-buyers"><strong>{plan.subscriberCount}</strong><span>người đã đăng ký</span></div>
           <div className="admin-vip-plan-actions">
@@ -128,7 +129,7 @@ export default async function AdminSubscriptionsPage({ searchParams }: {
         const eligible = request.isActive && Boolean(request.emailVerifiedAt) && request.planActive;
         return <article className="admin-vip-request" key={request.id}>
           <div className="admin-vip-request-main"><span className="admin-vip-avatar">{(request.displayName || request.email).trim().slice(0, 1).toUpperCase()}</span><div><strong>{request.displayName || "Chưa đặt tên"}</strong><span>{request.email}</span><small>Gửi lúc {formatAdminDateTime(request.createdAt)}</small></div></div>
-          <div className="admin-vip-request-plan"><span>Gói yêu cầu</span><strong>{request.planName}</strong><small>{request.durationDays} ngày · {formatAdminCurrency(request.priceVnd)}</small></div>
+          <div className="admin-vip-request-plan"><span>Gói yêu cầu</span><strong>{request.planName}</strong><small>{vipPlanDurationLabel(request.planCode, request.durationDays)} · {formatAdminCurrency(request.priceVnd)}</small></div>
           <div className="admin-vip-request-note"><span>Ghi chú người học</span><p>{request.userNote || "Không có ghi chú."}</p></div>
           <div className="admin-vip-request-actions">
             <form action={approveVipActivationRequestAction}><input name="requestId" type="hidden" value={request.id} /><input aria-label="Ghi chú khi duyệt" name="adminNote" placeholder="Ghi chú nội bộ" /><button className="button button-primary" disabled={!eligible} type="submit"><ShieldCheck size={15} /> Duyệt & kích hoạt</button></form>
@@ -159,7 +160,7 @@ export default async function AdminSubscriptionsPage({ searchParams }: {
         return <article className="admin-vip-member" key={learner.id}>
           <div className="admin-vip-identity"><span className="admin-vip-avatar">{(learner.displayName || learner.email).trim().slice(0, 1).toUpperCase()}</span><div><strong>{learner.displayName || "Chưa đặt tên"}</strong><span>{learner.email}</span><small>{learner.emailVerifiedAt ? "Email đã xác minh" : "Chưa xác minh email"} · {learner.isActive ? "Đang hoạt động" : "Đã khóa"}</small></div></div>
           <div className={`admin-vip-status ${subscription ? "is-active" : ""}`}><span>{subscription ? "VIP đang mở" : "Gói miễn phí"}</span><strong>{subscription?.planName ?? "Chưa kích hoạt"}</strong><small>{subscription ? `Đến ${formatDate(subscription.endsAt)}${daysRemaining === null ? "" : ` · còn ${daysRemaining} ngày`}` : "Nội dung VIP vẫn đang khóa"}</small></div>
-          <div className="admin-vip-actions"><form action={grantOrExtendVipAction} className="admin-vip-grant-form"><input name="userId" type="hidden" value={learner.id} /><label>Gói muốn {subscription ? "gia hạn" : "cấp"}<select defaultValue={subscription?.planId ?? data.activePlans[0]?.id} disabled={!eligible} name="planId" required>{data.activePlans.map((plan) => <option key={plan.id} value={plan.id}>{plan.name} · {plan.durationDays} ngày · {formatAdminCurrency(plan.priceVnd)}</option>)}</select></label><button className="button button-primary" disabled={!eligible} type="submit"><ShieldCheck size={15} /> {subscription ? "Gia hạn VIP" : "Cấp VIP"}</button></form>
+          <div className="admin-vip-actions"><form action={grantOrExtendVipAction} className="admin-vip-grant-form"><input name="userId" type="hidden" value={learner.id} /><label>Gói muốn {subscription ? "gia hạn" : "cấp"}<select defaultValue={subscription?.planId ?? data.activePlans[0]?.id} disabled={!eligible} name="planId" required>{data.activePlans.map((plan) => <option key={plan.id} value={plan.id}>{plan.name} · {vipPlanDurationLabel(plan.code, plan.durationDays)} · {formatAdminCurrency(plan.priceVnd)}</option>)}</select></label><button className="button button-primary" disabled={!eligible} type="submit"><ShieldCheck size={15} /> {subscription ? "Gia hạn VIP" : "Cấp VIP"}</button></form>
             {subscription ? <form action={revokeVipAction} className="admin-vip-revoke-form"><input name="userId" type="hidden" value={learner.id} /><label><input name="confirmRevoke" required type="checkbox" value="REVOKE" /> Xác nhận thu hồi ngay</label><button className="button button-danger" type="submit">Thu hồi</button></form> : null}
             {!eligible ? <small className="admin-vip-ineligible">Cần tài khoản đang hoạt động, email đã xác minh và ít nhất một gói đang mở.</small> : null}</div>
         </article>;

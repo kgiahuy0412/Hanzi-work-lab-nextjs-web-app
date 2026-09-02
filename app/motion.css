@@ -98,6 +98,33 @@
   height: 100%;
 }
 
+.course-card {
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  transform-origin: center bottom;
+  transition:
+    color var(--motion-fast) ease,
+    border-color 280ms ease,
+    background-color var(--motion-fast) ease,
+    box-shadow 420ms var(--motion-ease),
+    transform 420ms var(--motion-ease);
+}
+
+.course-card .course-cover-image,
+.hsk-entry-card .hsk-entry-mascot {
+  transition: transform 520ms var(--motion-ease), filter 280ms ease;
+}
+
+.course-card .course-tag,
+.course-card .course-body h2,
+.course-card .free-label {
+  transition: color 240ms ease, transform 420ms var(--motion-ease);
+}
+
+.course-card .course-cover-shade {
+  transition: background-color 360ms ease;
+}
+
 .course-card .course-hanzi {
   transform-origin: 70% 70%;
 }
@@ -256,16 +283,44 @@
     transform: translateY(-2px);
   }
 
-  .course-card:hover {
-    transform: translateY(-5px);
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) {
+    transform: translate3d(0, -8px, 0) scale(1.012);
   }
 
-  .course-card:hover .course-hanzi {
-    transform: translate3d(-2px, -2px, 0) scale(1.035);
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-cover-image {
+    transform: scale(1.06);
   }
 
-  .course-card:hover .icon-link {
-    transform: translate3d(2px, -2px, 0);
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .hsk-entry-mascot {
+    transform: translate3d(0, -7px, 0) scale(1.04);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-cover-shade {
+    background-color: rgba(5, 48, 42, .025);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-tag {
+    transform: translate3d(0, -2px, 0);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-hanzi {
+    transform: translate3d(-2px, -3px, 0) scale(1.045);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-body h2 {
+    color: var(--forest);
+    transform: translate3d(0, -1px, 0);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .icon-link {
+    color: #fff;
+    border-color: var(--forest);
+    background: var(--forest);
+    transform: translate3d(3px, -3px, 0) scale(1.04);
+  }
+
+  .course-card-coming:hover .course-cover-image {
+    transform: none;
   }
 
   .text-link:hover svg,
@@ -403,5 +458,81 @@
 
   .game-journey-station-visual > img {
     transition-duration: .52s, .36s !important;
+  }
+
+  /* Keep the explicitly requested writing catalog hover feedback available. */
+  .writing-topic-card {
+    transition-duration: 240ms, 240ms, 320ms, 320ms !important;
+  }
+
+  .writing-topic-characters span {
+    transition-duration: 240ms, 280ms, 300ms !important;
+  }
+
+  .writing-lesson-card {
+    transition-duration: 240ms, 240ms, 320ms, 320ms !important;
+  }
+
+  .writing-lesson-card-characters span {
+    transition-duration: 240ms, 280ms, 300ms !important;
+  }
+
+  .himi-writing-character-grid button {
+    transition-duration: 220ms, 220ms, 220ms, 280ms, 280ms !important;
+  }
+
+  .himi-writing-character-grid button > span {
+    transition-duration: 280ms !important;
+  }
+
+  .himi-writing-character-grid button small {
+    transition-duration: 220ms, 280ms !important;
+  }
+
+  /* Keep the requested card feedback, with a smaller travel distance. */
+  .course-card {
+    transition-duration: 180ms, 220ms, 180ms, 260ms, 260ms !important;
+  }
+
+  .course-card .course-cover-image,
+  .hsk-entry-card .hsk-entry-mascot {
+    transition-duration: 300ms, 180ms !important;
+  }
+
+  .course-card .course-tag,
+  .course-card .course-body h2,
+  .course-card .free-label,
+  .course-card .course-hanzi,
+  .course-card .icon-link {
+    transition-duration: 180ms, 240ms !important;
+  }
+
+  .course-card .course-cover-shade {
+    transition-duration: 220ms !important;
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) {
+    transform: translate3d(0, -4px, 0) scale(1.006);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-cover-image {
+    transform: scale(1.03);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .hsk-entry-mascot {
+    transform: translate3d(0, -3px, 0) scale(1.02);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .course-hanzi {
+    transform: translate3d(-1px, -1px, 0) scale(1.02);
+  }
+
+  .course-card:not(.course-card-coming):is(:hover, :focus-visible) .icon-link {
+    transform: translate3d(2px, -2px, 0) scale(1.02);
+  }
+
+  /* Preserve the explicitly requested, restrained VIP hover feedback. */
+  .vip-plan-request-form .button {
+    transition-duration: 220ms, 180ms, 180ms, 180ms !important;
   }
 }
