@@ -206,7 +206,7 @@ export function CourseRoadmap({
               alt="Himi nhắc bạn về mục tiêu tiếp theo"
               className="course-roadmap-coach-image"
               height={190}
-              src="/assets/mascot/penguin/penguin-hello.png"
+              src="/assets/mascot/himi-v2/himi-wave.webp"
               unoptimized
               width={190}
             />

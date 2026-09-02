@@ -203,7 +203,7 @@
   bottom: -19px;
   z-index: 4;
   display: block;
-  background: url("/assets/mascot/penguin/penguin-study-banner.gif") center / contain no-repeat;
+  background: url("/assets/mascot/himi-v2/himi-video.gif?v=fluid-50fps") center / contain no-repeat;
   filter: drop-shadow(0 15px 17px rgba(31, 69, 58, .16));
   animation: video-himi-float 3.4s ease-in-out infinite;
 }
@@ -882,7 +882,7 @@
   .video-radio-pulse,
   .video-radio-note,
   .video-radio-spark { animation: none; }
-  .video-radio-himi { background-image: url("/assets/mascot/penguin/penguin-study.png"); }
+  .video-radio-himi { background-image: url("/assets/mascot/himi-v2/himi-video.webp"); }
   .video-radio-pulse { opacity: .22; transform: scale(1); }
   .youtube-player-loading > span { animation: none; }
   .youtube-study-toolstrip button,

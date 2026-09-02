@@ -204,6 +204,92 @@
   gap: 26px;
 }
 
+.home-portal-quick-dock {
+  width: min(520px, 100%);
+  min-height: 96px;
+  margin-top: 24px;
+  padding: 7px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, .74);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, .86);
+  box-shadow: 0 18px 44px rgba(34, 34, 34, .12);
+  backdrop-filter: blur(22px) saturate(1.08);
+  -webkit-backdrop-filter: blur(22px) saturate(1.08);
+}
+
+.home-portal-quick-action {
+  min-width: 0;
+  min-height: 82px;
+  padding: 10px 8px 9px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 3px;
+  color: #343c42;
+  border-radius: 16px;
+  text-align: center;
+  text-decoration: none;
+  transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+}
+
+.home-portal-quick-action + .home-portal-quick-action::before {
+  width: 1px;
+  height: 64%;
+  position: absolute;
+  top: 18%;
+  left: -1px;
+  content: "";
+  background: rgba(34, 34, 34, .11);
+}
+
+.home-portal-quick-action svg {
+  margin-bottom: 3px;
+  color: #4c555d;
+}
+
+.home-portal-quick-action strong {
+  max-width: 100%;
+  overflow: hidden;
+  font-size: 14px;
+  font-weight: 800;
+  line-height: 1.2;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.home-portal-quick-action small {
+  color: #6d7479;
+  font-size: 11px;
+  font-weight: 620;
+  line-height: 1.25;
+}
+
+.home-portal-quick-action.is-primary {
+  color: #ee352d;
+  background: color-mix(in srgb, #ff4c3b 9%, #fff);
+}
+
+.home-portal-quick-action.is-primary svg {
+  color: #ff4c3b;
+}
+
+.home-portal-quick-action:hover,
+.home-portal-quick-action:active {
+  color: #ee352d;
+  background: color-mix(in srgb, #ff4c3b 8%, #fff);
+  transform: translateY(-1px);
+}
+
+.home-portal-quick-action:focus-visible {
+  outline: 3px solid rgba(255, 76, 59, .34);
+  outline-offset: -2px;
+}
+
 .home-portal-primary,
 .home-portal-secondary {
   min-height: 66px;
@@ -402,13 +488,13 @@
   .home-portal-himi-stage {
     width: clamp(142px, 40vw, 190px);
     right: 4px;
-    bottom: calc(var(--home-mobile-nav-clearance) - 8px);
+    bottom: calc(var(--home-mobile-nav-clearance) + 106px);
   }
 
   .home-portal-copy {
     width: 100%;
     min-height: max(100dvh, 720px);
-    padding: max(64px, calc(40px + env(safe-area-inset-top))) max(22px, calc(22px + env(safe-area-inset-right))) 280px max(22px, calc(22px + env(safe-area-inset-left)));
+    padding: max(64px, calc(40px + env(safe-area-inset-top))) max(22px, calc(22px + env(safe-area-inset-right))) calc(var(--home-mobile-nav-clearance) + 154px) max(22px, calc(22px + env(safe-area-inset-left)));
   }
 
   .home-portal-dashboard:has(.home-portal-success) .home-portal-copy {
@@ -431,9 +517,99 @@
   }
 
   .home-portal-actions {
-    width: 100%;
-    margin-top: 20px;
-    gap: 12px;
+    display: none;
+  }
+
+  .home-portal-quick-dock {
+    width: auto;
+    min-height: 116px;
+    margin-top: 0;
+    padding: 8px;
+    position: fixed;
+    right: max(14px, env(safe-area-inset-right));
+    bottom: calc(var(--home-mobile-nav-clearance) + 10px);
+    left: max(14px, env(safe-area-inset-left));
+    z-index: 7;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .76);
+    border-radius: 20px;
+    background: rgba(255, 255, 255, .9);
+    box-shadow: 0 18px 42px rgba(34, 34, 34, .16);
+    backdrop-filter: blur(22px) saturate(1.1);
+    -webkit-backdrop-filter: blur(22px) saturate(1.1);
+  }
+
+  .home-portal-quick-action {
+    min-width: 0;
+    min-height: 100px;
+    padding: 10px 5px 9px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 3px;
+    color: #343c42;
+    border-radius: 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: color 180ms ease, background-color 180ms ease, transform 180ms ease;
+    touch-action: manipulation;
+  }
+
+  .home-portal-quick-action + .home-portal-quick-action::before {
+    width: 1px;
+    height: 64%;
+    position: absolute;
+    top: 18%;
+    left: -1px;
+    content: "";
+    background: rgba(34, 34, 34, .11);
+  }
+
+  .home-portal-quick-action svg {
+    margin-bottom: 3px;
+    color: #4c555d;
+  }
+
+  .home-portal-quick-action strong {
+    max-width: 100%;
+    overflow: hidden;
+    font-size: clamp(12px, 3.45vw, 14px);
+    font-weight: 800;
+    line-height: 1.2;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .home-portal-quick-action small {
+    color: #6d7479;
+    font-size: clamp(10px, 2.8vw, 12px);
+    font-weight: 620;
+    line-height: 1.25;
+  }
+
+  .home-portal-quick-action.is-primary {
+    color: #ee352d;
+    background: color-mix(in srgb, #ff4c3b 9%, #fff);
+  }
+
+  .home-portal-quick-action.is-primary svg {
+    color: #ff4c3b;
+  }
+
+  .home-portal-quick-action:hover,
+  .home-portal-quick-action:active {
+    color: #ee352d;
+    background: color-mix(in srgb, #ff4c3b 8%, #fff);
+    transform: translateY(-1px);
+  }
+
+  .home-portal-quick-action:focus-visible {
+    outline: 3px solid rgba(255, 76, 59, .34);
+    outline-offset: -2px;
   }
 
   .home-portal-primary,
@@ -469,25 +645,9 @@
     white-space: normal;
   }
 
-  .home-portal-actions {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-
-  .home-portal-primary {
-    width: 100%;
-  }
-
-  .home-portal-secondary {
-    width: max-content;
-    padding-right: 0;
-    gap: 10px;
-    justify-content: flex-start;
-  }
-
-  .home-portal-primary,
-  .home-portal-secondary {
-    min-height: 52px;
+  .home-portal-quick-dock {
+    right: max(10px, env(safe-area-inset-right));
+    left: max(10px, env(safe-area-inset-left));
   }
 }
 
@@ -510,13 +670,17 @@
     font-size: 16px;
   }
 
-  .home-portal-secondary {
-    gap: 8px;
+  .home-portal-quick-dock {
+    min-height: 104px;
+    padding: 6px;
   }
 
-  .home-portal-secondary > span {
-    width: 44px;
-    height: 44px;
+  .home-portal-quick-action {
+    min-height: 92px;
+  }
+
+  .home-portal-quick-action strong {
+    font-size: 11px;
   }
 }
 
@@ -700,6 +864,10 @@
     gap: 8px;
   }
 
+  .home-portal-quick-dock {
+    display: none;
+  }
+
   .home-portal-primary,
   .home-portal-secondary {
     min-height: 48px;
@@ -759,7 +927,8 @@
   }
 
   .home-portal-primary,
-  .home-portal-secondary {
+  .home-portal-secondary,
+  .home-portal-quick-action {
     transition: none;
   }
 }

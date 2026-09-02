@@ -260,7 +260,7 @@ export function ListeningStudio({
     return (
       <main className="learner-dashboard listening-studio listening-complete-page">
         <section className="listening-complete" aria-labelledby="listening-complete-title">
-          <Image alt="Himi vui mừng khi bạn hoàn thành bài nghe" height={300} src="/assets/home/himi-current-static.webp" unoptimized width={300} />
+          <Image alt="Himi vui mừng khi bạn hoàn thành bài nghe" height={300} src="/assets/mascot/himi-v2/himi-celebrate.webp" unoptimized width={300} />
           <span className="listening-complete-eyebrow">{currentLevel.label} · {currentLesson.title}</span>
           <span className="listening-complete-score">{studio.score}/{ROUND_LENGTH}</span>
           <h1 id="listening-complete-title">Bạn đã hoàn thành bài luyện nghe.</h1>

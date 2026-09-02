@@ -1,3 +1,59 @@
+# Mobile Homepage — Option 3 Quick Practice Design QA
+
+## Evidence
+
+- Source visual truth: `C:/Users/Windows/.codex/generated_images/019fb6fe-431e-7c62-917c-2abef5ccee3c/exec-46435322-fffb-41e5-b704-d6e2d08fb1ea.png`, with the user's follow-up requirement that the title/image transition remain visibly curved.
+- Browser-rendered implementation: Codex in-app browser tab 5 capture, 2026-09-02, route `http://localhost:3000/`.
+- Browser viewport: 390 × 844 CSS pixels at device scale factor 1.
+- Source pixels: 852 × 1846; implementation capture: 390 × 844 pixels. Both were judged as unframed mobile content at equivalent portrait proportions.
+- State: anonymous learner, mobile navigation visible, home animation settled, live dialogue visible.
+
+## Full-view comparison
+
+The selected option 3 mockup and the browser-rendered homepage were inspected at the same mobile state. The implementation keeps the reference hierarchy: short two-line Homi headline, concise supporting sentence, full-height real-life scene, dialogue bubble, mascot, a unified three-action practice dock, and the existing six-item mobile navigation.
+
+The user's clarification restores a visibly curved copy-to-image boundary. The implementation creates that boundary from one oversized responsive ellipse, with a restrained white edge shadow and a light gradient underneath. It reads as a continuous soft arc without requiring a fixed curved bitmap or viewport-specific crop.
+
+## Focused comparison
+
+- Headline and transition: the Vietnamese diacritics render cleanly, `Homi` keeps the coral accent, and the white title field ends in a clear shallow curve before the scene becomes fully visible.
+- Quick-practice dock: the three equal columns, dividers, selected coral treatment, icon hierarchy, labels, and supporting microcopy follow the selected mockup.
+- Background and mascot: the existing approved Himi city scene and animated red-scarf mascot are reused rather than replacing product assets with generated approximations.
+
+## Required fidelity surfaces
+
+- Typography: the existing Roboto Vietnamese display face remains legible and balanced at 390px.
+- Layout: the practice dock is fixed above the mobile navigation with a 22px measured gap; the curve stays below the supporting copy and does not overlap the six-item navigation or create horizontal overflow.
+- Colors: Himi coral, charcoal text, translucent white surfaces, and the existing teal/orange scene accents are preserved.
+- Assets: production responsive background imagery and the existing animated Himi asset are reused; no placeholder or CSS-drawn illustration was introduced.
+- Copy: `Mỗi ngày một tí, tự tin cùng Homi.` and `Tình huống thật. Phản xạ tự nhiên.` remain unchanged.
+
+## Interaction and responsive checks
+
+- `Luyện nói` routes to `/listening?mode=scenario`.
+- `Nghe phản xạ` routes to `/listening`.
+- `Ôn từ` routes to `/hsk/1/hsk1-bai-01-chao-anh/flashcard`.
+- All three actions expose real links and retain keyboard focus treatment.
+- The 390 × 844 browser state has no horizontal overflow; labels remain readable and the action dock stays clear of the bottom navigation.
+- Browser console inspection returned no warnings or errors.
+- Production build, focused homepage responsive tests, lint, and diff whitespace validation pass.
+
+## Comparison history
+
+### User clarification
+
+- Finding: [P2] The first implementation used a straight soft fade, while the user clarified that a visible curved boundary was part of the desired composition.
+- Fix: added a responsive oversized ellipse above the artwork and reduced the former vertical wash so the arc remains visible. Post-fix browser evidence was inspected at 320 × 568, 390 × 844, and 430 × 932; all three states preserve the curve without horizontal overflow.
+
+### Final implementation
+
+- Finding: no actionable P0, P1, or P2 visual or interaction differences remain.
+- [P3] The production Himi mascot carries the familiar learning board instead of using the bare waving pose from the generated concept. This is an intentional product-asset reuse and does not affect the selected layout or task flow.
+
+final result: passed
+
+---
+
 # Mobile Homepage — Option 1 Design QA
 
 ## Evidence

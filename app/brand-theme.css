@@ -1574,14 +1574,30 @@ body {
 }
 
 @media (max-width: 720px) {
+  .home-portal-art::before {
+    --home-portal-curve-height: clamp(560px, 74vh, 660px);
+    width: max(620px, 170vw);
+    height: var(--home-portal-curve-height);
+    position: absolute;
+    top: calc(260px - var(--home-portal-curve-height));
+    left: 50%;
+    z-index: 1;
+    content: "";
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .97);
+    box-shadow: 0 22px 38px rgba(255, 255, 255, .34);
+    pointer-events: none;
+    transform: translateX(-50%);
+  }
+
   .home-portal-art::after {
+    z-index: 2;
     background:
       linear-gradient(180deg,
-        rgba(255, 255, 255, .9) 0%,
-        rgba(255, 255, 255, .72) 19%,
-        rgba(255, 255, 255, .42) 34%,
-        rgba(255, 255, 255, .08) 49%,
-        transparent 60%),
+        rgba(255, 255, 255, .12) 0%,
+        rgba(255, 255, 255, .1) 24%,
+        rgba(255, 255, 255, .04) 40%,
+        transparent 56%),
       linear-gradient(90deg,
         rgba(255, 255, 255, .44) 0%,
         rgba(255, 255, 255, .2) 64%,
