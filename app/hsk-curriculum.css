@@ -509,31 +509,16 @@
 .course-catalog-heading-skeleton .skeleton-block:nth-child(3) { width: min(620px, 90%); height: 13px; }
 
 .hsk-entry-cover {
-  background: #d5eee9;
+  background: #dfead4;
 }
 
-.hsk-entry-backdrop {
-  z-index: -3;
+.hsk-entry-cover-image {
   object-fit: cover;
-}
-
-.hsk-entry-mascot {
-  position: absolute;
-  right: 12px;
-  bottom: -42px;
-  z-index: -2;
-  width: 220px;
-  height: 220px;
-  object-fit: contain;
-  transition: transform 420ms cubic-bezier(.22, 1, .36, 1);
+  object-position: center;
 }
 
 .hsk-entry-card .course-cover-shade {
-  background: rgba(8, 119, 110, .04);
-}
-
-.hsk-entry-card:hover .hsk-entry-mascot {
-  transform: translateY(-4px) scale(1.025);
+  background: linear-gradient(90deg, rgba(55, 38, 18, .08), transparent 58%, rgba(37, 24, 10, .08));
 }
 
 .hsk-entry-hanzi {
@@ -622,7 +607,6 @@
   .course-catalog-heading { padding-top: 28px; }
   .course-catalog-heading h1 { font-size: 31px; }
   .industry-course-heading p { font-size: 12px; }
-  .hsk-entry-mascot { right: 2px; width: 205px; height: 205px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

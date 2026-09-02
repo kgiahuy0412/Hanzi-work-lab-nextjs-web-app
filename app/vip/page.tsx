@@ -73,7 +73,7 @@ export default async function VipPage({
     return left.durationDays - right.durationDays;
   });
 
-  return <main>
+  return <main className="vip-page">
     <section className="section-shell himi-banner-shell vip-page-header"><HimiSectionBanner
       description="Mở toàn bộ bài học, ca luyện và công cụ ôn tập để tiến bộ liền mạch cùng Himi."
       titleId="vip-page-title"

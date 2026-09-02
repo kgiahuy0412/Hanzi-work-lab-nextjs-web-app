@@ -901,7 +901,7 @@
 .himi-writing-rule-card strong { margin-top: 10px; display: block; color: #5a4928; font-size: 13px; }
 
 .himi-writing-studio button:focus-visible,
-.himi-writing-studio input:focus-visible {
+.himi-writing-studio input:not([type="search"]):focus-visible {
   outline: 3px solid rgba(255, 87, 77, .28);
   outline-offset: 3px;
 }
@@ -940,12 +940,28 @@
 
 @media (max-width: 720px) {
   .writing-catalog-page,
-  .writing-lesson-page { padding: 14px 12px 28px; }
+  .writing-lesson-page {
+    min-height: 100dvh;
+    padding:
+      max(14px, env(safe-area-inset-top))
+      max(12px, env(safe-area-inset-right))
+      calc(96px + env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+    overflow-x: clip;
+  }
+  .writing-topic-section { margin-top: 28px; }
   .writing-topic-heading { align-items: start; flex-direction: column; gap: 10px; }
-  .writing-topic-grid { grid-template-columns: 1fr; gap: 13px; }
-  .writing-topic-card { min-height: 0; padding: 20px; border-radius: 22px; }
+  .writing-topic-heading h2 { font-size: clamp(26px, 8.2vw, 34px); line-height: 1.08; }
+  .writing-topic-heading > p { font-size: 13px; line-height: 1.55; }
+  .writing-topic-grid { margin-top: 20px; grid-template-columns: 1fr; gap: 13px; }
+  .writing-topic-card { min-height: 0; padding: 18px; border-radius: 22px; }
+  .writing-topic-characters { margin-top: 17px; }
+  .writing-topic-characters span { width: clamp(45px, 13vw, 52px); border-radius: 14px; font-size: 25px; }
+  .writing-topic-card h3 { margin-top: 17px; font-size: 20px; }
+  .writing-topic-card > p { margin-top: 8px; }
+  .writing-topic-card-footer { margin-top: 18px; padding-top: 15px; }
   .writing-topic-card-footer { align-items: stretch; flex-direction: column; }
-  .writing-topic-card-footer a { width: 100%; }
+  .writing-topic-card-footer a { width: 100%; min-height: 44px; }
   .writing-lesson-list-heading { align-items: start; flex-direction: column; gap: 9px; }
   .writing-lesson-list-heading > p { text-align: left; }
   .writing-lesson-grid { grid-template-columns: 1fr; gap: 12px; }
@@ -955,16 +971,30 @@
   .writing-lesson-card-footer { align-items: stretch; flex-direction: column; }
   .writing-lesson-card-footer a { width: 100%; }
   .writing-breadcrumbs { margin-bottom: 12px; }
-  .writing-lesson-hero { padding: 25px 20px; gap: 24px; border-radius: 24px; }
-  .writing-lesson-character-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
-  .writing-lesson-character-strip span { border-radius: 16px; font-size: 31px; }
-  .writing-single-lesson { padding: 20px; grid-template-columns: 1fr; gap: 18px; border-radius: 22px; }
-  .writing-single-lesson-index { width: 72px; }
-  .writing-single-lesson-action { grid-column: auto; grid-template-columns: 1fr 1fr; }
-  .writing-single-lesson-action a { grid-column: 1 / -1; }
-  .himi-writing-studio { padding: 14px 12px 24px; }
+  .writing-breadcrumbs a { min-height: 44px; }
+  .writing-lesson-hero { min-height: 0; padding: 21px 17px; gap: 18px; border-radius: 24px; }
+  .writing-lesson-hero h1 { font-size: clamp(30px, 9.5vw, 40px); line-height: 1.04; }
+  .writing-lesson-hero p { margin-top: 13px; font-size: 14px; line-height: 1.55; }
+  .writing-lesson-character-strip { grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 6px; }
+  .writing-lesson-character-strip span { border-radius: 13px; font-size: clamp(22px, 7vw, 30px); }
+  .writing-single-lesson { padding: 18px; grid-template-columns: 58px minmax(0, 1fr); gap: 16px 13px; border-radius: 22px; }
+  .writing-single-lesson-index { width: 58px; grid-column: 1; grid-row: 1; border-radius: 18px; }
+  .writing-single-lesson-copy { grid-column: 2; }
+  .writing-single-lesson-copy h2 { font-size: clamp(22px, 7vw, 28px); }
+  .writing-single-lesson-copy ul { gap: 8px 14px; }
+  .writing-single-lesson-action { grid-column: 1 / -1; grid-template-columns: 1fr 1fr; }
+  .writing-single-lesson-action a { min-height: 44px; grid-column: 1 / -1; }
+  .himi-writing-studio {
+    min-height: 100dvh;
+    padding:
+      max(14px, env(safe-area-inset-top))
+      max(12px, env(safe-area-inset-right))
+      calc(96px + env(safe-area-inset-bottom))
+      max(12px, env(safe-area-inset-left));
+    overflow-x: clip;
+  }
   .himi-writing-session-header { padding: 14px; grid-template-columns: 1fr auto; gap: 10px; border-radius: 18px; }
-  .himi-writing-session-header > a { grid-column: 1 / -1; }
+  .himi-writing-session-header > a { min-height: 44px; grid-column: 1 / -1; }
   .himi-writing-session-header h1 { white-space: normal; }
   .himi-writing-workspace { gap: 12px; }
   .himi-writing-practice { padding: 12px; border-radius: 22px; }
@@ -978,18 +1008,73 @@
   .himi-writing-board-actions { align-items: stretch; }
   .himi-writing-board-actions button { flex: 1; padding-inline: 10px; }
   .himi-writing-library { padding: 15px; border-radius: 21px; }
+  .himi-writing-search { min-height: 44px; }
+  .himi-writing-groups button { min-height: 44px; padding-inline: 14px; }
   .himi-writing-character-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .himi-writing-character-grid button { min-height: 62px; }
   .himi-writing-character-grid button > span { font-size: 27px; }
-  .himi-writing-character-info { grid-template-columns: 1fr; }
+  .himi-writing-character-info { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .himi-writing-character-card,
+  .himi-writing-navigation { grid-column: 1 / -1; }
   .himi-writing-character-card,
   .himi-writing-daily-card,
   .himi-writing-rule-card { padding: 17px; }
   .himi-writing-navigation { min-height: 54px; }
+  .himi-writing-navigation button,
+  .himi-writing-character-card button { min-width: 44px; min-height: 44px; }
 }
 
 @media (max-width: 390px) {
+  .writing-topic-card-footer > span { align-self: flex-start; }
+  .writing-single-lesson { grid-template-columns: 52px minmax(0, 1fr); padding-inline: 15px; }
+  .writing-single-lesson-index { width: 52px; }
+  .himi-writing-mode-tabs { gap: 3px; }
+  .himi-writing-mode-tabs button { gap: 3px; }
   .himi-writing-mode-tabs button > svg { width: 15px; }
   .himi-writing-mode-tabs button strong { font-size: 9px; }
+  .himi-writing-board-actions { flex-direction: column; }
+  .himi-writing-character-info { grid-template-columns: 1fr; }
+  .himi-writing-character-card,
+  .himi-writing-navigation { grid-column: auto; }
+}
+
+@media (min-width: 560px) and (max-width: 720px) and (max-height: 500px) and (orientation: landscape) {
+  .writing-catalog-page,
+  .writing-lesson-page,
+  .himi-writing-studio {
+    padding-top: max(8px, env(safe-area-inset-top));
+    padding-right: max(10px, env(safe-area-inset-right));
+    padding-bottom: calc(82px + env(safe-area-inset-bottom));
+    padding-left: max(10px, env(safe-area-inset-left));
+  }
+  .writing-catalog-banner.himi-section-banner.is-immersive {
+    min-height: 236px;
+    padding: 18px 225px 18px 18px;
+    align-items: center;
+    background-position: center;
+  }
+  .writing-catalog-banner.is-immersive .himi-section-banner-copy { max-width: 390px; }
+  .writing-topic-section { margin-top: 22px; }
+  .writing-topic-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .writing-lesson-hero { grid-template-columns: minmax(0, 1fr) minmax(210px, .7fr); padding: 18px; }
+  .writing-lesson-character-strip { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  .himi-writing-session-header {
+    margin-bottom: 10px;
+    padding: 9px 12px;
+    grid-template-columns: auto minmax(0, 1fr) auto;
+  }
+  .himi-writing-session-header > a { min-height: 44px; grid-column: auto; }
+  .himi-writing-session-header h1 { font-size: 17px; white-space: nowrap; }
+  .himi-writing-workspace { grid-template-columns: minmax(0, 1fr) minmax(220px, .72fr); gap: 10px; }
+  .himi-writing-practice { order: 1; padding: 10px; }
+  .himi-writing-library { order: 2; padding: 12px; }
+  .himi-writing-character-info { order: 3; grid-column: 1 / -1; }
+  .himi-writing-board-shell { width: min(100%, calc(100dvh - 118px), 300px); }
+  .himi-writing-character-grid {
+    max-height: calc(100dvh - 225px);
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    overflow-y: auto;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

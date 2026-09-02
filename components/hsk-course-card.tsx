@@ -15,23 +15,13 @@ export function HskCourseCard() {
   return <Link className="course-card hsk-entry-card" href="/courses?view=hsk" prefetch>
     <div className="course-cover hsk-entry-cover">
       <Image
-        alt=""
-        aria-hidden="true"
-        className="hsk-entry-backdrop"
+        alt="Himi mới học chữ Hán theo giáo trình HSK tại bàn học"
+        className="course-cover-image hsk-entry-cover-image"
         fill
         priority
         sizes="(max-width: 720px) calc(100vw - 30px), (max-width: 980px) 50vw, 33vw"
-        src="/assets/backgrounds/courses-mint-sky.webp"
+        src="/assets/courses/himi-concepts/himi-hsk-curriculum-v2.png"
         unoptimized
-      />
-      <Image
-        alt="Himi học tiếng Trung theo giáo trình HSK"
-        className="hsk-entry-mascot"
-        height={240}
-        priority
-        src="/assets/mascot/penguin/penguin-study.png"
-        unoptimized
-        width={240}
       />
       <span className="course-cover-shade" aria-hidden="true" />
       <span className="course-tag">HSK 1–9</span>

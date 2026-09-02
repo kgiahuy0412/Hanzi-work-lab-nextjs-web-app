@@ -83,26 +83,25 @@ video {
   }
 
   .learner-app-shell .learn-topbar {
-    padding-left: max(var(--responsive-page-gutter), env(safe-area-inset-left));
-    padding-right: max(var(--responsive-page-gutter), env(safe-area-inset-right));
+    display: none;
   }
 
-  .learner-app-shell .topbar-actions,
-  .learner-app-shell .brand,
-  .learner-app-shell .user-chip {
-    min-width: 0;
+  .learner-app-shell .learner-shell-content {
+    padding-top: 0;
   }
 
   .learner-mobile-nav {
     left: max(8px, env(safe-area-inset-left));
     right: max(8px, env(safe-area-inset-right));
     padding-bottom: max(6px, env(safe-area-inset-bottom));
+    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .learner-mobile-nav a {
     min-width: 0;
     min-height: 50px;
     overflow: hidden;
+    font-size: clamp(8px, 2.35vw, 10px);
   }
 
   .learner-mobile-nav a span {
@@ -176,54 +175,380 @@ video {
     width: 100%;
     min-width: 0;
   }
-}
 
-/* Compact phones need the full wordmark and all three account actions to fit
- * in one row. The account action stays available; it becomes avatar-only. */
-@media (max-width: 359px) {
-  .learner-app-shell .learn-topbar {
-    padding-left: max(8px, env(safe-area-inset-left));
-    padding-right: max(8px, env(safe-area-inset-right));
+  /* VIP: keep the immersive identity while turning pricing into a calm,
+   * thumb-friendly single-column flow. */
+  .vip-page {
+    min-height: 100dvh;
+    padding-bottom: calc(86px + env(safe-area-inset-bottom));
+    overflow-x: clip;
   }
 
-  .learner-app-shell .learn-topbar .brand {
-    gap: 5px;
+  .vip-page > .section-shell {
+    width: auto;
+    margin-left: max(var(--responsive-page-gutter), env(safe-area-inset-left));
+    margin-right: max(var(--responsive-page-gutter), env(safe-area-inset-right));
+  }
+
+  .vip-page > .vip-page-header {
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+
+  .vip-page-header .himi-section-banner.is-vip {
+    min-height: clamp(292px, 82vw, 326px);
+    padding: 20px clamp(14px, 5vw, 20px) 120px;
+    border-radius: 22px;
+    background-position: 66% center;
+  }
+
+  .vip-page-header .is-vip .himi-section-banner-copy {
+    max-width: 100%;
+    margin: 0;
+    padding: 13px 14px 15px;
+  }
+
+  .vip-page-header .is-vip h1 {
+    font-size: clamp(30px, 9.6vw, 41px);
+  }
+
+  .vip-page-header .is-vip .himi-section-banner-copy > p {
+    max-width: 31ch;
+    font-size: clamp(11px, 3.1vw, 12px);
+  }
+
+  .vip-request-feedback {
+    padding-top: 14px;
+    gap: 10px;
+  }
+
+  .vip-request-notice {
+    width: 100%;
+    padding: 13px 14px;
+    border-radius: 15px;
+    font-size: clamp(11px, 3vw, 12px);
+  }
+
+  .vip-current-status {
+    min-height: 0;
+    padding: 14px;
+    grid-template-columns: 42px minmax(0, 1fr);
+    gap: 12px;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .84);
+  }
+
+  .vip-current-status + .vip-current-status {
+    border-top: 1px solid var(--line);
+  }
+
+  .vip-current-status > div {
+    gap: 4px;
+  }
+
+  .vip-current-status > div > span {
+    font-size: 9px;
+  }
+
+  .vip-current-status strong {
+    font-size: 14px;
+    line-height: 1.35;
+  }
+
+  .vip-current-status small {
+    font-size: 10px;
+    line-height: 1.5;
+  }
+
+  .vip-current-status > a,
+  .vip-current-status > form {
+    width: 100%;
+    grid-column: 1 / -1;
+  }
+
+  .vip-current-status > a,
+  .vip-current-status > form button {
+    min-height: var(--responsive-touch-target);
+    padding: 0 14px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 11px;
+    background: var(--sage-light);
+    font-size: 11px;
+  }
+
+  .vip-current-status > form button {
+    width: 100%;
+  }
+
+  .vip-pricing-grid {
+    padding-block: 18px 24px;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 14px;
+  }
+
+  .vip-plan-card,
+  .vip-plan-card.featured {
+    min-height: 0;
+    padding: 20px;
+    border-radius: 20px;
+    transform: none;
+  }
+
+  .vip-plan-card:not(.featured) .price-name {
+    margin-top: 0;
+  }
+
+  .vip-plan-card.featured .price-name {
+    margin-top: 15px;
+  }
+
+  .vip-plan-card .price {
+    margin-top: 10px;
+    flex-wrap: wrap;
+    row-gap: 0;
+  }
+
+  .vip-plan-card .price strong {
+    font-size: clamp(32px, 10vw, 38px);
+  }
+
+  .vip-plan-card .price-description {
+    min-height: 0;
+    margin: 8px 0 17px;
+    font-size: 12px;
+  }
+
+  .vip-plan-card .feature-list {
+    margin-bottom: 20px;
+    padding-top: 17px;
+    gap: 11px;
+    font-size: 12px;
+    line-height: 1.45;
+  }
+
+  .vip-plan-request-form {
+    gap: 11px;
+  }
+
+  .vip-plan-request-form label > span {
+    font-size: 10px;
+  }
+
+  .vip-plan-request-form input {
+    min-height: 46px;
+    padding-inline: 12px;
+    border-radius: 11px;
     font-size: 16px;
   }
 
-  .learner-app-shell .learn-topbar .brand-mark {
-    width: 40px;
-    height: 40px;
-    flex: 0 0 40px;
-    border-radius: 13px;
+  .vip-plan-card .button {
+    min-height: 48px;
+    padding-inline: 14px;
   }
 
-  .learner-app-shell .brand-wordmark {
-    gap: .16em;
-    letter-spacing: -.045em;
+  /* Account: remove the previous double gutter, surface each information
+   * group as a clear card, and keep every action within reach. */
+  .account-page {
+    min-height: 100dvh;
+    padding: max(14px, env(safe-area-inset-top))
+      max(var(--responsive-page-gutter), env(safe-area-inset-right))
+      calc(96px + env(safe-area-inset-bottom))
+      max(var(--responsive-page-gutter), env(safe-area-inset-left));
+    overflow-x: clip;
   }
 
-  .learner-app-shell .topbar-actions {
-    gap: 2px;
-    flex: 0 0 auto;
+  .account-page-inner {
+    width: min(100%, 640px);
+    padding: 4px 0 0;
   }
 
-  .learner-app-shell .streak-chip,
-  .learner-app-shell .topbar-icon,
-  .learner-app-shell .user-chip,
-  .learner-app-shell .user-chip > span {
-    width: 40px;
-    min-width: 40px;
-    height: 40px;
-    min-height: 40px;
+  .account-page-title {
+    font-size: clamp(24px, 7.2vw, 27px);
   }
 
-  .learner-app-shell .streak-chip,
-  .learner-app-shell .user-chip {
-    padding: 0;
+  .account-feedback {
+    width: 100%;
+    margin-top: 12px;
+  }
+
+  .account-profile-hero {
+    padding: 22px 2px 24px;
+    grid-template-columns: 88px minmax(0, 1fr);
+    align-items: center;
+    gap: 15px;
+  }
+
+  .account-profile-hero::after {
+    inset: -34px -28px 0 14%;
+    opacity: .32;
+    background-position: center, right 7% center;
+    background-size: cover, 270px auto;
+  }
+
+  .account-profile-avatar {
+    width: 84px;
+    height: 84px;
+  }
+
+  .account-profile-avatar > span {
+    font-size: 26px;
+  }
+
+  .account-profile-copy h2 {
+    font-size: clamp(25px, 8vw, 30px);
+    line-height: 1.08;
+    overflow-wrap: anywhere;
+  }
+
+  .account-profile-email {
+    align-items: center;
+  }
+
+  .account-profile-email > span {
+    max-width: 100%;
+  }
+
+  .account-profile-email em {
+    margin-left: 0;
+  }
+
+  .account-vip-outline {
+    min-height: var(--responsive-touch-target);
+    max-width: 100%;
+    margin: 16px 0 0;
+    padding-inline: 15px;
+    text-align: center;
+  }
+
+  .account-membership-band {
+    min-height: 0;
+    padding: 14px;
+    gap: 12px;
+    border-radius: 17px;
+  }
+
+  .account-membership-band > a {
+    min-height: var(--responsive-touch-target);
+    padding: 11px 3px 0;
+  }
+
+  .account-pending-request {
+    padding: 14px;
+    border-radius: 16px;
+  }
+
+  .account-pending-request button {
+    min-height: var(--responsive-touch-target);
+  }
+
+  .account-information dl {
+    overflow: hidden;
+    border: 1px solid var(--line);
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .66);
+  }
+
+  .account-information dl > div {
+    min-height: 0;
+    padding: 12px;
+  }
+
+  .account-information dl > div:last-child {
+    border-bottom: 0;
+  }
+
+  .account-information dd {
+    padding-left: 31px;
+  }
+
+  .account-security-list {
+    border-radius: 16px;
+    background: rgba(255, 255, 255, .72);
+  }
+
+  .account-security-row {
+    min-height: 70px;
+    padding: 11px 13px;
+  }
+
+  .account-security-row strong {
+    font-size: 13px;
+  }
+
+  .account-security-row small {
+    font-size: 11px;
+    line-height: 1.4;
+  }
+
+  .account-password-editor {
+    padding: 13px 14px 18px;
+  }
+
+  .account-password-editor > p {
+    margin-bottom: 13px;
+    line-height: 1.5;
+  }
+
+  .account-password-form input {
+    min-height: 48px;
+    font-size: 16px;
+  }
+
+  .account-password-form button {
+    min-height: 48px;
+  }
+
+  .account-page-footer {
+    margin: 24px 0 0;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+}
+
+/* Most portrait phones benefit from a centered profile composition. It gives
+ * long names and email addresses the full viewport width without crowding the
+ * avatar or relying on negative offsets. */
+@media (max-width: 430px) {
+  .account-profile-hero {
+    padding-top: 20px;
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    gap: 11px;
+    text-align: center;
+  }
+
+  .account-profile-avatar {
+    width: 82px;
+    height: 82px;
+  }
+
+  .account-profile-copy {
+    width: 100%;
+  }
+
+  .account-profile-copy > p {
+    margin-top: 7px;
+  }
+
+  .account-profile-email {
     justify-content: center;
   }
 
+  .account-profile-email em {
+    margin-inline: 0;
+  }
+
+  .account-vip-outline {
+    width: 100%;
+  }
+}
+
+/* Compact phones keep all six destinations reachable without horizontal
+ * scrolling. Labels stay single-line and the full cell remains tappable. */
+@media (max-width: 359px) {
   .learner-mobile-nav {
     left: 6px;
     right: 6px;
@@ -244,6 +569,60 @@ video {
   .auth-card-login-scene,
   .legal-card {
     border-radius: 22px;
+  }
+
+  .vip-page > .section-shell {
+    margin-left: max(10px, env(safe-area-inset-left));
+    margin-right: max(10px, env(safe-area-inset-right));
+  }
+
+  .vip-page-header .himi-section-banner.is-vip {
+    min-height: 286px;
+    padding: 16px 13px 106px;
+    border-radius: 19px;
+  }
+
+  .vip-page-header .is-vip .himi-section-banner-copy {
+    padding: 12px;
+  }
+
+  .vip-page-header .is-vip h1 {
+    font-size: 29px;
+  }
+
+  .vip-page-header .himi-section-banner-mascot.himi-vip-banner-mascot {
+    width: 174px;
+    right: -9px;
+    bottom: -23px;
+  }
+
+  .vip-plan-card,
+  .vip-plan-card.featured {
+    padding: 17px;
+    border-radius: 18px;
+  }
+
+  .account-page {
+    padding-left: max(10px, env(safe-area-inset-left));
+    padding-right: max(10px, env(safe-area-inset-right));
+  }
+
+  .account-page-title {
+    font-size: 23px;
+  }
+
+  .account-profile-copy h2 {
+    font-size: 26px;
+  }
+
+  .account-membership-band,
+  .account-pending-request {
+    padding: 12px;
+  }
+
+  .account-security-row {
+    padding-inline: 11px;
+    gap: 8px;
   }
 }
 
@@ -269,6 +648,100 @@ video {
 
   .auth-page-login-scene {
     min-height: 100dvh;
+  }
+}
+
+/* Landscape phones often cross the portrait breakpoint despite having very
+ * little vertical room. Compact the heroes and retain two useful columns. */
+@media (orientation: landscape) and (max-height: 500px) and (min-width: 560px) and (max-width: 980px) {
+  .vip-page {
+    padding-bottom: 28px;
+    overflow-x: clip;
+  }
+
+  .vip-page > .section-shell {
+    width: auto;
+    margin-left: max(16px, env(safe-area-inset-left));
+    margin-right: max(16px, env(safe-area-inset-right));
+  }
+
+  .vip-page-header {
+    padding-top: max(12px, env(safe-area-inset-top));
+  }
+
+  .vip-page-header .himi-section-banner.is-vip {
+    min-height: 218px;
+    padding: 18px 26px;
+    grid-template-columns: minmax(0, 1fr) 245px;
+    background-position: 58% center;
+  }
+
+  .vip-page-header .is-vip .himi-section-banner-copy {
+    max-width: 390px;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+  }
+
+  .vip-page-header .is-vip h1 {
+    font-size: clamp(32px, 5vw, 40px);
+  }
+
+  .vip-page-header .is-vip .himi-section-banner-copy > p {
+    margin-top: 10px;
+    font-size: 11px;
+  }
+
+  .vip-page-header .himi-section-banner-mascot.himi-vip-banner-mascot {
+    width: 224px;
+    right: -2px;
+    bottom: -35px;
+  }
+
+  .vip-pricing-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .account-page {
+    min-height: 100dvh;
+    padding: max(14px, env(safe-area-inset-top))
+      max(20px, env(safe-area-inset-right))
+      38px
+      max(20px, env(safe-area-inset-left));
+    overflow-x: clip;
+  }
+
+  .account-page-inner {
+    width: min(100%, 880px);
+    padding: 4px 0 0;
+  }
+
+  .account-profile-hero {
+    min-height: 202px;
+    padding: 18px 0;
+    grid-template-columns: 108px minmax(0, 1fr);
+    align-items: center;
+    gap: 28px;
+  }
+
+  .account-profile-avatar {
+    width: 104px;
+    height: 104px;
+    margin-top: 0;
+  }
+
+  .account-profile-copy {
+    margin-top: 0;
+  }
+
+  .account-profile-copy h2 {
+    font-size: 32px;
+  }
+
+  .account-vip-outline {
+    min-height: 44px;
+    margin-top: 16px;
   }
 }
 

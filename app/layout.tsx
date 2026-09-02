@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Suspense, type CSSProperties } from "react";
-import { Inter } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import "./globals.css";
 import "./motion.css";
 import "./responsive.css";
@@ -14,6 +14,12 @@ import { getCurrentUser } from "@/lib/auth-session";
 import { createBrandTheme } from "@/lib/brand";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
+const roboto = Roboto({
+  subsets: ["latin", "vietnamese"],
+  weight: "800",
+  variable: "--font-roboto",
+  display: "swap",
+});
 
 export const metadata: Metadata = {
   title: { default: "Himi Chinese — Tiếng Trung cho người đi làm", template: "%s | Himi Chinese" },
@@ -30,7 +36,7 @@ export default async function RootLayout({ children }: Readonly<{ children: Reac
     unreadNotificationCount: user.unreadNotificationCount,
   } : null;
 
-  return <html lang="vi" className={inter.variable} style={createBrandTheme() as CSSProperties}><body>
+  return <html lang="vi" className={`${inter.variable} ${roboto.variable}`} style={createBrandTheme() as CSSProperties}><body>
     <Suspense fallback={<SiteHeaderFallback />}><SiteHeader /></Suspense>
     <Suspense fallback={<div className="standalone-route-shell">{children}</div>}><LearnerAppShell user={shellUser}>{children}</LearnerAppShell></Suspense>
     <SiteFooter />
