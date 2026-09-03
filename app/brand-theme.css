@@ -131,25 +131,28 @@ body {
 
 .learner-app-shell .rail-pro-card {
   color: var(--himi-black);
-  border-color: color-mix(in srgb, var(--himi-orange) 32%, var(--himi-white));
-  background: color-mix(in srgb, var(--himi-orange) 9%, var(--himi-white));
-  box-shadow: 0 12px 28px color-mix(in srgb, var(--himi-orange) 12%, transparent);
+  border-color: color-mix(in srgb, var(--himi-red) 32%, var(--himi-white));
+  background: color-mix(in srgb, var(--himi-red) 9%, var(--himi-white));
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--himi-red) 12%, transparent);
 }
 
 .learner-app-shell .rail-pro-card:hover {
-  border-color: color-mix(in srgb, var(--himi-orange) 52%, var(--himi-white));
-  box-shadow: 0 16px 32px color-mix(in srgb, var(--himi-orange) 18%, transparent);
+  border-color: color-mix(in srgb, var(--himi-red) 52%, var(--himi-white));
+  box-shadow: 0 16px 32px color-mix(in srgb, var(--himi-red) 18%, transparent);
 }
 
 .learner-app-shell .rail-pro-crown {
-  color: var(--himi-on-orange);
-  background: var(--himi-orange);
-  box-shadow: 0 8px 20px color-mix(in srgb, var(--himi-orange) 24%, transparent);
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--himi-red) 24%, transparent);
 }
 
-.learner-app-shell .rail-pro-title,
-.learner-app-shell .rail-pro-title strong {
+.learner-app-shell .rail-pro-title {
   color: var(--himi-black);
+}
+
+.learner-app-shell .rail-pro-title strong {
+  color: var(--himi-red);
 }
 
 .learner-app-shell .rail-pro-copy {
@@ -157,8 +160,8 @@ body {
 }
 
 .learner-app-shell .rail-pro-action {
-  color: var(--himi-on-orange);
-  background: var(--himi-orange);
+  color: var(--himi-on-red);
+  background: var(--himi-red);
 }
 
 .learner-app-shell .rail-pro-arrow {

@@ -106,6 +106,9 @@ export function AccountAvatarUploader({ avatarUrl, displayName, initials }: {
 
       setCurrentAvatarUrl(completePayload.avatarUrl);
       setMessage("Đã cập nhật ảnh đại diện.");
+      window.dispatchEvent(new CustomEvent("himi:avatar-updated", {
+        detail: { avatarUrl: completePayload.avatarUrl },
+      }));
       router.refresh();
     } catch (error) {
       setHasError(true);
@@ -123,15 +126,18 @@ export function AccountAvatarUploader({ avatarUrl, displayName, initials }: {
   return <div aria-busy={busy} className="account-avatar-uploader">
     <div className={`account-profile-avatar ${currentAvatarUrl ? "has-image" : ""}`.trim()}>
       {currentAvatarUrl
-        ? <Image
-            alt={`Ảnh đại diện của ${displayName}`}
-            fill
-            onError={() => setCurrentAvatarUrl(null)}
-            sizes="(max-width: 420px) 74px, (max-width: 720px) 92px, (max-width: 920px) 132px, 156px"
-            src={currentAvatarUrl}
-            unoptimized
-          />
-        : <span aria-hidden="true">{initials}</span>}
+        ? <span className="account-profile-avatar-media">
+            <Image
+              alt={`Ảnh đại diện của ${displayName}`}
+              className="account-profile-avatar-image"
+              fill
+              onError={() => setCurrentAvatarUrl(null)}
+              sizes="(max-width: 420px) 74px, (max-width: 720px) 92px, (max-width: 920px) 132px, 156px"
+              src={currentAvatarUrl}
+              unoptimized
+            />
+          </span>
+        : <span aria-hidden="true" className="account-profile-avatar-initials">{initials}</span>}
       <button
         aria-label={busy ? status : "Chọn ảnh đại diện mới"}
         disabled={busy}

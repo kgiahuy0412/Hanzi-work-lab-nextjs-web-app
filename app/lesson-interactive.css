@@ -1,0 +1,897 @@
+/* Topic lessons: phrasebook, iFlytek pronunciation practice and role-play. */
+.lesson-page .lesson-tabs {
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.lesson-page .lesson-tabs::-webkit-scrollbar {
+  display: none;
+}
+
+.lesson-page .lesson-tab {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.lesson-interactive-heading,
+.roleplay-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.lesson-interactive-heading > div,
+.roleplay-header > div:first-child {
+  max-width: 720px;
+}
+
+.lesson-interactive-heading h2,
+.roleplay-header h2 {
+  margin: 7px 0 8px;
+  color: #073d35;
+  font-size: clamp(24px, 3vw, 34px);
+  line-height: 1.14;
+  letter-spacing: -.035em;
+}
+
+.lesson-interactive-heading p,
+.roleplay-header p {
+  margin: 0;
+  color: #667872;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.lesson-interactive-heading-icon {
+  width: 52px;
+  height: 52px;
+  flex: 0 0 auto;
+  display: grid;
+  place-items: center;
+  color: #0b7669;
+  border: 1px solid #cfe3dc;
+  border-radius: 15px;
+  background: #eef8f4;
+}
+
+.lesson-phrasebook,
+.lesson-pronunciation-coach,
+.roleplay-dialogue {
+  padding: 4px 2px;
+}
+
+.lesson-phrase-grid {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.lesson-phrase-card {
+  min-height: 176px;
+  padding: 21px 22px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dde6e1;
+  border-radius: 15px;
+  background: linear-gradient(150deg, #fff 54%, #f4faf7);
+}
+
+.lesson-phrase-card > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #0a8173;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: .04em;
+  text-transform: uppercase;
+}
+
+.lesson-phrase-card > strong {
+  margin-top: 15px;
+  color: #093f36;
+  font-size: 21px;
+  line-height: 1.4;
+}
+
+.lesson-phrase-card > small {
+  margin-top: 5px;
+  color: #078879;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.lesson-phrase-card > p {
+  margin: auto 0 0;
+  padding-top: 11px;
+  color: #667771;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.pronunciation-practice-layout {
+  margin-top: 26px;
+  display: grid;
+  grid-template-columns: 230px minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.pronunciation-target-list {
+  max-height: 560px;
+  padding: 7px;
+  display: grid;
+  gap: 4px;
+  overflow-y: auto;
+  border: 1px solid #dce6e1;
+  border-radius: 14px;
+  background: #f8faf8;
+}
+
+.pronunciation-target-list button {
+  width: 100%;
+  min-height: 48px;
+  padding: 8px 9px;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 18px;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #4f655f;
+  border: 0;
+  border-radius: 9px;
+  background: transparent;
+  text-align: left;
+}
+
+.pronunciation-target-list button:hover,
+.pronunciation-target-list button.is-active {
+  color: #075d52;
+  background: #e8f4f0;
+}
+
+.pronunciation-target-list button > span {
+  width: 27px;
+  height: 27px;
+  display: grid;
+  place-items: center;
+  color: #0b7669;
+  border: 1px solid #cbded7;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 9px;
+  font-weight: 800;
+}
+
+.pronunciation-target-list button > small {
+  overflow: hidden;
+  font-size: 11px;
+  font-weight: 690;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pronunciation-target-list button > svg {
+  color: #0c9b83;
+}
+
+.pronunciation-practice-card {
+  min-height: 510px;
+  padding: 34px 38px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #d7e2dc;
+  border-radius: 18px;
+  background: radial-gradient(circle at 50% 0, #f1faf6 0, #fff 48%);
+  box-shadow: 0 18px 42px rgba(26, 66, 57, .08);
+}
+
+.pronunciation-step-label {
+  color: #0b806f;
+  font-size: 10px;
+  font-weight: 850;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.pronunciation-practice-card > strong {
+  max-width: 720px;
+  margin-top: 25px;
+  color: #083c34;
+  font-size: clamp(30px, 4vw, 46px);
+  line-height: 1.3;
+}
+
+.pronunciation-practice-card > small {
+  margin-top: 10px;
+  color: #058878;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.pronunciation-practice-card > p {
+  margin: 7px 0 0;
+  color: #687a74;
+  font-size: 13px;
+}
+
+.pronunciation-evaluator {
+  width: 100%;
+  margin-top: 30px;
+}
+
+.pronunciation-actions {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.pronunciation-actions button,
+.pronunciation-next-row button,
+.roleplay-feedback > button,
+.roleplay-complete > button {
+  min-height: 45px;
+  padding: 0 17px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border: 1px solid #cbded7;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: 780;
+}
+
+.pronunciation-listen {
+  color: #087568;
+  background: #eef8f4;
+}
+
+.pronunciation-record {
+  color: #fff;
+  border-color: #0b6458 !important;
+  background: #0b6458;
+  box-shadow: 0 8px 18px rgba(11, 100, 88, .18);
+}
+
+.pronunciation-record.is-recording {
+  border-color: #b83d3d !important;
+  background: #b83d3d;
+  animation: pronunciation-recording 1s ease-in-out infinite alternate;
+}
+
+@keyframes pronunciation-recording {
+  to { box-shadow: 0 0 0 8px rgba(184, 61, 61, .12); }
+}
+
+.pronunciation-actions button:disabled,
+.pronunciation-next-row button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+.pronunciation-error {
+  margin: 14px auto 0;
+  padding: 11px 13px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  color: #8f3934;
+  border: 1px solid #efcec8;
+  border-radius: 10px;
+  background: #fff5f3;
+  font-size: 11px;
+  text-align: left;
+}
+
+.pronunciation-error button {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+  color: inherit;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  font-weight: 750;
+  white-space: nowrap;
+}
+
+.pronunciation-result {
+  margin-top: 18px;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: 14px;
+  border: 1px solid #cfe4dc;
+  border-radius: 13px;
+  background: #f1f9f6;
+  text-align: left;
+}
+
+.pronunciation-total {
+  width: 68px;
+  height: 68px;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  color: #fff;
+  border-radius: 50%;
+  background: #0a7668;
+}
+
+.pronunciation-total strong {
+  font-size: 24px;
+  line-height: 1;
+}
+
+.pronunciation-total span {
+  font-size: 9px;
+  opacity: .75;
+}
+
+.pronunciation-feedback > strong {
+  color: #0a5f54;
+  font-size: 12px;
+}
+
+.pronunciation-feedback > p {
+  margin: 4px 0 0;
+  color: #586c66;
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.pronunciation-feedback > small {
+  margin-top: 6px;
+  display: block;
+  color: #9a5c27;
+  font-size: 10px;
+}
+
+.pronunciation-dimensions {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.pronunciation-dimensions > span {
+  padding: 8px 9px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.pronunciation-dimensions small {
+  color: #72827d;
+  font-size: 9px;
+}
+
+.pronunciation-dimensions strong {
+  color: #09675c;
+  font-size: 12px;
+}
+
+.pronunciation-next-row {
+  width: 100%;
+  margin-top: auto;
+  padding-top: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 15px;
+  border-top: 1px solid #e2e9e5;
+}
+
+.pronunciation-next-row > span {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: #6a7c76;
+  font-size: 10px;
+  font-weight: 700;
+}
+
+.pronunciation-next-row > button {
+  min-height: 37px;
+  color: #0b7064;
+  background: #fff;
+}
+
+.roleplay-header {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e8e4;
+}
+
+.roleplay-live {
+  padding: 8px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: #0a7668;
+  border: 1px solid #cfe4dc;
+  border-radius: 999px;
+  background: #eff8f4;
+  font-size: 10px;
+  font-weight: 780;
+  white-space: nowrap;
+}
+
+.roleplay-live > span {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #11a58e;
+  box-shadow: 0 0 0 4px rgba(17, 165, 142, .12);
+}
+
+.roleplay-stage {
+  margin-top: 18px;
+  overflow: hidden;
+  border: 1px solid #dae4df;
+  border-radius: 18px;
+  background: #f8faf8;
+}
+
+.roleplay-conversation {
+  min-height: 240px;
+  max-height: 480px;
+  padding: 25px;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  overflow-y: auto;
+  background-image: radial-gradient(#dfe9e4 1px, transparent 1px);
+  background-size: 22px 22px;
+}
+
+.roleplay-message {
+  width: min(76%, 680px);
+  display: grid;
+  grid-template-columns: 36px minmax(0, 1fr) 34px;
+  align-items: start;
+  gap: 10px;
+}
+
+.roleplay-message.is-learner {
+  margin-left: auto;
+  grid-template-columns: 36px minmax(0, 1fr);
+  direction: rtl;
+}
+
+.roleplay-message.is-learner > * {
+  direction: ltr;
+}
+
+.roleplay-avatar {
+  width: 36px;
+  height: 36px;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  border-radius: 11px;
+  background: #0d7467;
+}
+
+.roleplay-message.is-learner .roleplay-avatar {
+  background: #d9894c;
+}
+
+.roleplay-message > div {
+  padding: 13px 15px;
+  display: grid;
+  gap: 4px;
+  border: 1px solid #dce6e1;
+  border-radius: 4px 15px 15px;
+  background: #fff;
+  box-shadow: 0 7px 18px rgba(30, 66, 58, .06);
+}
+
+.roleplay-message.is-learner > div {
+  border-color: #f1d9c5;
+  border-radius: 15px 4px 15px 15px;
+  background: #fff7ef;
+}
+
+.roleplay-message > div > small {
+  color: #7a8a85;
+  font-size: 9px;
+  font-weight: 750;
+  text-transform: uppercase;
+}
+
+.roleplay-message > div > strong {
+  color: #103f37;
+  font-size: 17px;
+  line-height: 1.45;
+}
+
+.roleplay-message > div > span {
+  color: #078575;
+  font-size: 11px;
+}
+
+.roleplay-message > div > p {
+  margin: 2px 0 0;
+  color: #697a75;
+  font-size: 10px;
+}
+
+.roleplay-message > button {
+  width: 34px;
+  height: 34px;
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  color: #0b7669;
+  border: 1px solid #cfe0da;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.roleplay-response-panel {
+  padding: 19px 24px 22px;
+  border-top: 1px solid #dfe7e3;
+  background: #fff;
+}
+
+.roleplay-instruction {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #0b7568;
+}
+
+.roleplay-instruction > span {
+  display: grid;
+  gap: 2px;
+  color: #71817c;
+  font-size: 10px;
+}
+
+.roleplay-instruction strong {
+  color: #164d44;
+  font-size: 12px;
+}
+
+.roleplay-mode-switch {
+  width: fit-content;
+  margin-top: 15px;
+  padding: 3px;
+  display: inline-flex;
+  gap: 3px;
+  border: 1px solid #dce5e0;
+  border-radius: 10px;
+  background: #f5f8f6;
+}
+
+.roleplay-mode-switch button {
+  min-height: 34px;
+  padding: 0 13px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  color: #687a74;
+  border: 0;
+  border-radius: 7px;
+  background: transparent;
+  font-size: 10px;
+  font-weight: 750;
+}
+
+.roleplay-mode-switch button.is-active {
+  color: #0a6d60;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(20, 59, 51, .08);
+}
+
+.pronunciation-evaluator.is-compact {
+  margin-top: 14px;
+}
+
+.pronunciation-evaluator.is-compact .pronunciation-actions {
+  justify-content: flex-start;
+}
+
+.roleplay-typing {
+  margin-top: 14px;
+}
+
+.roleplay-typing > label {
+  color: #60736d;
+  font-size: 10px;
+  font-weight: 720;
+}
+
+.roleplay-typing > div {
+  margin-top: 7px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 8px;
+}
+
+.roleplay-typing textarea {
+  width: 100%;
+  min-height: 64px;
+  padding: 12px 13px;
+  resize: vertical;
+  color: #153f38;
+  border: 1px solid #cadad4;
+  border-radius: 10px;
+  outline: none;
+  background: #fbfcfb;
+  font: inherit;
+  font-size: 14px;
+}
+
+.roleplay-typing textarea:focus {
+  border-color: #148879;
+  box-shadow: 0 0 0 3px rgba(20, 136, 121, .1);
+}
+
+.roleplay-typing button {
+  min-width: 118px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  cursor: pointer;
+  color: #fff;
+  border: 0;
+  border-radius: 10px;
+  background: #0b6458;
+  font-size: 11px;
+  font-weight: 770;
+}
+
+.roleplay-typing button:disabled {
+  cursor: not-allowed;
+  opacity: .45;
+}
+
+.roleplay-hint {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  color: #91703f;
+  font-size: 10px;
+}
+
+.roleplay-feedback {
+  margin-top: 15px;
+  padding: 14px;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) auto;
+  align-items: start;
+  gap: 10px;
+  border: 1px solid #c9e2d8;
+  border-radius: 12px;
+  background: #eff9f5;
+}
+
+.roleplay-feedback.is-retry {
+  border-color: #ecd8b7;
+  background: #fff9ee;
+}
+
+.roleplay-feedback > span {
+  color: #0b8d78;
+}
+
+.roleplay-feedback.is-retry > span {
+  color: #b2772e;
+}
+
+.roleplay-feedback > div > strong {
+  color: #174b43;
+  font-size: 12px;
+}
+
+.roleplay-feedback > div > p {
+  margin: 3px 0 0;
+  color: #71817c;
+  font-size: 10px;
+}
+
+.roleplay-natural {
+  margin-top: 10px;
+  padding-top: 10px;
+  display: grid;
+  gap: 3px;
+  border-top: 1px solid rgba(14, 111, 95, .14);
+}
+
+.roleplay-natural small {
+  color: #8a7360;
+  font-size: 9px;
+  font-weight: 780;
+  text-transform: uppercase;
+}
+
+.roleplay-natural strong {
+  color: #0c433a;
+  font-size: 15px;
+}
+
+.roleplay-natural span {
+  color: #078474;
+  font-size: 10px;
+}
+
+.roleplay-natural p {
+  margin: 0;
+  color: #697a74;
+  font-size: 10px;
+}
+
+.roleplay-feedback > button,
+.roleplay-complete > button {
+  min-height: 37px;
+  color: #fff;
+  border-color: #0b6f62;
+  background: #0b6f62;
+  white-space: nowrap;
+}
+
+.roleplay-complete {
+  padding: 48px 24px;
+  display: grid;
+  justify-items: center;
+  text-align: center;
+  color: #0a8877;
+  border-top: 1px solid #dfe7e3;
+  background: #fff;
+}
+
+.roleplay-complete .section-kicker {
+  margin-top: 12px;
+}
+
+.roleplay-complete h3 {
+  margin: 7px 0 5px;
+  color: #103f37;
+  font-size: 22px;
+}
+
+.roleplay-complete p {
+  margin: 0;
+  color: #697b75;
+  font-size: 11px;
+}
+
+.roleplay-complete > button {
+  margin-top: 18px;
+}
+
+@media (max-width: 760px) {
+  .lesson-phrasebook,
+  .lesson-pronunciation-coach,
+  .roleplay-dialogue {
+    padding: 0;
+  }
+
+  .lesson-interactive-heading,
+  .roleplay-header {
+    gap: 14px;
+  }
+
+  .lesson-interactive-heading-icon,
+  .roleplay-live {
+    display: none;
+  }
+
+  .lesson-interactive-heading h2,
+  .roleplay-header h2 {
+    font-size: 24px;
+  }
+
+  .lesson-phrase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .lesson-phrase-card {
+    min-height: 160px;
+  }
+
+  .pronunciation-practice-layout {
+    grid-template-columns: 1fr;
+  }
+
+  .pronunciation-target-list {
+    display: flex;
+    overflow-x: auto;
+  }
+
+  .pronunciation-target-list button {
+    width: 150px;
+    flex: 0 0 auto;
+  }
+
+  .pronunciation-practice-card {
+    min-height: 480px;
+    padding: 28px 18px 20px;
+  }
+
+  .pronunciation-practice-card > strong {
+    font-size: 30px;
+  }
+
+  .pronunciation-dimensions {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .roleplay-stage {
+    margin-inline: -12px;
+    border-radius: 14px;
+  }
+
+  .roleplay-conversation,
+  .roleplay-response-panel {
+    padding: 17px 14px;
+  }
+
+  .roleplay-message {
+    width: 95%;
+    grid-template-columns: 31px minmax(0, 1fr) 30px;
+    gap: 7px;
+  }
+
+  .roleplay-message.is-learner {
+    grid-template-columns: 31px minmax(0, 1fr);
+  }
+
+  .roleplay-avatar {
+    width: 31px;
+    height: 31px;
+    border-radius: 9px;
+  }
+
+  .roleplay-message > div {
+    padding: 11px 12px;
+  }
+
+  .roleplay-message > div > strong {
+    font-size: 15px;
+  }
+
+  .roleplay-message > button {
+    width: 30px;
+    height: 30px;
+  }
+
+  .roleplay-typing > div {
+    grid-template-columns: 1fr;
+  }
+
+  .roleplay-typing button {
+    min-height: 43px;
+  }
+
+  .roleplay-feedback {
+    grid-template-columns: 24px minmax(0, 1fr);
+  }
+
+  .roleplay-feedback > button {
+    grid-column: 2;
+    justify-self: start;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .pronunciation-record.is-recording {
+    animation: none;
+  }
+}

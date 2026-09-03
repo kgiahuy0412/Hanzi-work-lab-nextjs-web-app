@@ -29,6 +29,15 @@ if (!existsSync(wranglerCli)) {
   throw new Error("Không tìm thấy Wrangler. Hãy chạy `npm install` rồi thử lại.");
 }
 
+const iflytekAppId = process.env.IFLYTEK_ISE_APP_ID?.trim();
+const iflytekApiKey = process.env.IFLYTEK_ISE_API_KEY?.trim();
+const iflytekApiSecret = process.env.IFLYTEK_ISE_API_SECRET?.trim();
+const iflytekValues = [iflytekAppId, iflytekApiKey, iflytekApiSecret];
+const hasCompleteIflytekConfig = iflytekValues.every(Boolean);
+if (iflytekValues.some(Boolean) && !hasCompleteIflytekConfig) {
+  throw new Error("Cấu hình iFlytek chưa đủ bộ IFLYTEK_ISE_APP_ID, IFLYTEK_ISE_API_KEY và IFLYTEK_ISE_API_SECRET.");
+}
+
 const secrets = {
   DATABASE_URL: requiredEnvironmentValue("DATABASE_URL"),
   AUTH_SECRET: requiredEnvironmentValue("AUTH_SECRET"),
@@ -44,6 +53,11 @@ const secrets = {
   AUTH_COOKIE_SECURE: "1",
   AUTH_TRUST_X_FORWARDED_FOR: "0",
   AUTH_TRUST_CF_CONNECTING_IP: "1",
+  ...(hasCompleteIflytekConfig ? {
+    IFLYTEK_ISE_APP_ID: iflytekAppId!,
+    IFLYTEK_ISE_API_KEY: iflytekApiKey!,
+    IFLYTEK_ISE_API_SECRET: iflytekApiSecret!,
+  } : {}),
 };
 
 console.log(`Uploading ${Object.keys(secrets).length} staging secrets to ${workerName}...`);

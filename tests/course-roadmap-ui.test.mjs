@@ -62,6 +62,6 @@ test("an available course opens an overview that leads to the learner's next les
   const routeModule = await server.ssrLoadModule("/app/courses/[slug]/page.tsx").catch(() => null);
   assert.ok(routeModule, "the dynamic course roadmap route should be available");
   const staticParams = await routeModule.generateStaticParams();
-  assert.equal(staticParams.length, 7);
+  assert.equal(staticParams.length, 8);
   assert.ok(staticParams.some((params) => params.slug === "van-phong-hanh-chinh"));
 });

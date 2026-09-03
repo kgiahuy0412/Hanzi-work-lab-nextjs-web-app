@@ -612,7 +612,7 @@ test("desktop learner rail uses the Pro card as its only VIP entry point", async
   assert.match(shell, /className="rail-pro-card"[\s\S]*?href="\/vip"/);
 });
 
-test("course library uses seven editorial topic covers and a streamed catalog", async () => {
+test("course library uses eight editorial topic covers and a streamed catalog", async () => {
   const [page, card, visuals] = await Promise.all([
     read("app/courses/page.tsx"),
     read("components/course-card.tsx"),
@@ -622,7 +622,7 @@ test("course library uses seven editorial topic covers and a streamed catalog", 
   assert.match(page, /Suspense/);
   assert.match(card, /course-cover-image/);
   assert.match(card, /unoptimized/);
-  assert.equal((visuals.match(/src: "\/assets\/courses\//g) ?? []).length, 7);
+  assert.equal((visuals.match(/src: "\/assets\/courses\//g) ?? []).length, 8);
 });
 
 test("lesson vocabulary uses a focused interactive card deck", async () => {

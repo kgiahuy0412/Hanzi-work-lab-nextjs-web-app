@@ -1,0 +1,244 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/components/lesson-pronunciation-coach.tsx");const useMemo = __vite__cjsImport0_react["useMemo"]; const useState = __vite__cjsImport0_react["useState"];const _jsxDEV = __vite__cjsImport3_react_jsxDevRuntime["jsxDEV"]; const _Fragment = __vite__cjsImport3_react_jsxDevRuntime["Fragment"];"use client";
+import __vite__cjsImport0_react from "/node_modules/.vite/deps/react.js?v=4f3829a3";
+import { AudioLines, CheckCircle2 } from "/node_modules/lucide-react/dist/esm/lucide-react.mjs?v=4f3829a3";
+import { PronunciationEvaluator } from "/components/pronunciation-evaluator.tsx";
+var _jsxFileName = "D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/lesson-pronunciation-coach.tsx";
+import __vite__cjsImport3_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=4f3829a3";
+var _s = $RefreshSig$();
+export function LessonPronunciationCoach({ words, dialogue }) {
+	_s();
+	const targets = useMemo(() => {
+		const candidates = [...dialogue.map((line, index) => ({
+			id: `dialogue-${index}`,
+			hanzi: line.hanzi,
+			pinyin: line.pinyin,
+			translation: line.translation
+		})), ...words.map((word) => ({
+			id: `word-${word.slug}`,
+			hanzi: word.example,
+			pinyin: word.pinyin,
+			translation: word.translation
+		}))];
+		return candidates.filter((item, index) => candidates.findIndex((candidate) => candidate.hanzi === item.hanzi) === index);
+	}, [dialogue, words]);
+	const [index, setIndex] = useState(0);
+	const [passed, setPassed] = useState(() => new Set());
+	const current = targets[index];
+	if (!current) return /* @__PURE__ */ _jsxDEV("div", {
+		className: "lesson-vocab-empty",
+		children: [/* @__PURE__ */ _jsxDEV("h2", { children: "Bài này chưa có câu luyện nghe" }, void 0, false, {
+			fileName: _jsxFileName,
+			lineNumber: 27,
+			columnNumber: 60
+		}, this), /* @__PURE__ */ _jsxDEV("p", { children: "Hãy chuyển sang phần Hội thoại để tiếp tục." }, void 0, false, {
+			fileName: _jsxFileName,
+			lineNumber: 27,
+			columnNumber: 99
+		}, this)]
+	}, void 0, true, {
+		fileName: _jsxFileName,
+		lineNumber: 27,
+		columnNumber: 24
+	}, this);
+	return /* @__PURE__ */ _jsxDEV("section", {
+		className: "lesson-pronunciation-coach",
+		"aria-labelledby": "lesson-pronunciation-title",
+		children: [/* @__PURE__ */ _jsxDEV("div", {
+			className: "lesson-interactive-heading",
+			children: [/* @__PURE__ */ _jsxDEV("div", { children: [
+				/* @__PURE__ */ _jsxDEV("span", {
+					className: "section-kicker",
+					children: "🔊 Nghe → 🎤 Đọc lại → Nhận điểm"
+				}, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 31,
+					columnNumber: 12
+				}, this),
+				/* @__PURE__ */ _jsxDEV("h2", {
+					id: "lesson-pronunciation-title",
+					children: "Luyện nghe & phát âm với iFlytek"
+				}, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 31,
+					columnNumber: 84
+				}, this),
+				/* @__PURE__ */ _jsxDEV("p", { children: "Nghe câu mẫu, đọc trọn câu vào micro rồi nhận điểm chi tiết theo thang 100." }, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 31,
+					columnNumber: 157
+				}, this)
+			] }, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 31,
+				columnNumber: 7
+			}, this), /* @__PURE__ */ _jsxDEV("span", {
+				className: "lesson-interactive-heading-icon",
+				children: /* @__PURE__ */ _jsxDEV(AudioLines, { size: 25 }, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 32,
+					columnNumber: 57
+				}, this)
+			}, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 32,
+				columnNumber: 7
+			}, this)]
+		}, void 0, true, {
+			fileName: _jsxFileName,
+			lineNumber: 30,
+			columnNumber: 5
+		}, this), /* @__PURE__ */ _jsxDEV("div", {
+			className: "pronunciation-practice-layout",
+			children: [/* @__PURE__ */ _jsxDEV("nav", {
+				className: "pronunciation-target-list",
+				"aria-label": "Danh sách câu luyện phát âm",
+				children: targets.map((target, targetIndex) => /* @__PURE__ */ _jsxDEV("button", {
+					"aria-current": targetIndex === index ? "step" : undefined,
+					className: targetIndex === index ? "is-active" : "",
+					onClick: () => setIndex(targetIndex),
+					type: "button",
+					children: [
+						/* @__PURE__ */ _jsxDEV("span", { children: String(targetIndex + 1).padStart(2, "0") }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 43,
+							columnNumber: 9
+						}, this),
+						/* @__PURE__ */ _jsxDEV("small", { children: target.hanzi }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 44,
+							columnNumber: 9
+						}, this),
+						passed.has(target.id) ? /* @__PURE__ */ _jsxDEV(CheckCircle2, { size: 16 }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 45,
+							columnNumber: 34
+						}, this) : null
+					]
+				}, target.id, true, {
+					fileName: _jsxFileName,
+					lineNumber: 36,
+					columnNumber: 129
+				}, this))
+			}, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 36,
+				columnNumber: 7
+			}, this), /* @__PURE__ */ _jsxDEV("article", {
+				className: "pronunciation-practice-card",
+				children: [
+					/* @__PURE__ */ _jsxDEV("span", {
+						className: "pronunciation-step-label",
+						children: [
+							"Câu ",
+							index + 1,
+							" / ",
+							targets.length
+						]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 49,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV("strong", {
+						lang: "zh-CN",
+						children: current.hanzi
+					}, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 50,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV("small", { children: current.pinyin }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 51,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV("p", { children: current.translation }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 52,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV(PronunciationEvaluator, {
+						onEvaluated: (result) => {
+							if (result.totalScore < 70) return;
+							setPassed((items) => new Set(items).add(current.id));
+						},
+						targetText: current.hanzi
+					}, current.id, false, {
+						fileName: _jsxFileName,
+						lineNumber: 53,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV("div", {
+						className: "pronunciation-next-row",
+						children: [/* @__PURE__ */ _jsxDEV("span", { children: passed.has(current.id) ? /* @__PURE__ */ _jsxDEV(_Fragment, { children: [/* @__PURE__ */ _jsxDEV(CheckCircle2, { size: 16 }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 62,
+							columnNumber: 45
+						}, this), " Đã đạt câu này"] }, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 62,
+							columnNumber: 43
+						}, this) : "Mục tiêu: từ 70 điểm" }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 62,
+							columnNumber: 11
+						}, this), /* @__PURE__ */ _jsxDEV("button", {
+							disabled: index === targets.length - 1,
+							onClick: () => setIndex((currentIndex) => Math.min(targets.length - 1, currentIndex + 1)),
+							type: "button",
+							children: "Câu tiếp theo"
+						}, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 63,
+							columnNumber: 11
+						}, this)]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 61,
+						columnNumber: 9
+					}, this)
+				]
+			}, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 48,
+				columnNumber: 7
+			}, this)]
+		}, void 0, true, {
+			fileName: _jsxFileName,
+			lineNumber: 35,
+			columnNumber: 5
+		}, this)]
+	}, void 0, true, {
+		fileName: _jsxFileName,
+		lineNumber: 29,
+		columnNumber: 10
+	}, this);
+}
+_s(LessonPronunciationCoach, "UkG5845FTIv7ZpII9BuoPfBi9Wc=");
+_c = LessonPronunciationCoach;
+var _c;
+$RefreshReg$(_c, "LessonPronunciationCoach");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope;
+import * as __vite_react_currentExports from "/components/lesson-pronunciation-coach.tsx";
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+
+  const currentExports = __vite_react_currentExports;
+  queueMicrotask(() => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/lesson-pronunciation-coach.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/lesson-pronunciation-coach.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) { return RefreshRuntime.register(type, "D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/lesson-pronunciation-coach.tsx" + ' ' + id); }
+function $RefreshSig$() { return RefreshRuntime.createSignatureFunctionForTransform(); }
+
+//# sourceMappingURL=data:application/json;base64,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O0tBQ0Qsd0JBQUMsT0FBRDtNQUFLLFdBQVU7Z0JBQWYsQ0FDRSx3QkFBQyxRQUFELFlBQU8sT0FBTyxJQUFJLFFBQVEsRUFBRSxJQUFJLGdEQUFFLHdCQUFDLGNBQUQsRUFBYyxNQUFNLEdBQUs7Ozs7Z0JBQUMsaUJBQWlCOzs7O2lCQUFJLHVCQUE2Qjs7OztnQkFDOUcsd0JBQUMsVUFBRDtPQUFRLFVBQVUsVUFBVSxRQUFRLFNBQVM7T0FBRyxlQUFlLFVBQVUsaUJBQWlCLEtBQUssSUFBSSxRQUFRLFNBQVMsR0FBRyxlQUFlLENBQUMsQ0FBQztPQUFHLE1BQUs7aUJBQVM7TUFBcUI7Ozs7Y0FDM0s7Ozs7OztJQUNFOzs7OztXQUNOOzs7OztVQUNFOzs7Ozs7QUFDWCIsIm5hbWVzIjpbXSwic291cmNlcyI6WyJsZXNzb24tcHJvbnVuY2lhdGlvbi1jb2FjaC50c3giXSwidmVyc2lvbiI6Mywic291cmNlc0NvbnRlbnQiOlsiXCJ1c2UgY2xpZW50XCI7XG5cbmltcG9ydCB7IHVzZU1lbW8sIHVzZVN0YXRlIH0gZnJvbSBcInJlYWN0XCI7XG5pbXBvcnQgeyBBdWRpb0xpbmVzLCBDaGVja0NpcmNsZTIgfSBmcm9tIFwibHVjaWRlLXJlYWN0XCI7XG5pbXBvcnQgeyBQcm9udW5jaWF0aW9uRXZhbHVhdG9yIH0gZnJvbSBcIkAvY29tcG9uZW50cy9wcm9udW5jaWF0aW9uLWV2YWx1YXRvclwiO1xuaW1wb3J0IHR5cGUgeyBEaWFsb2d1ZUxpbmUsIFZvY2FidWxhcnkgfSBmcm9tIFwiQC9saWIvY29udGVudC10eXBlc1wiO1xuXG50eXBlIFByYWN0aWNlVGFyZ2V0ID0ge1xuICBpZDogc3RyaW5nO1xuICBoYW56aTogc3RyaW5nO1xuICBwaW55aW46IHN0cmluZztcbiAgdHJhbnNsYXRpb246IHN0cmluZztcbn07XG5cbmV4cG9ydCBmdW5jdGlvbiBMZXNzb25Qcm9udW5jaWF0aW9uQ29hY2goeyB3b3JkcywgZGlhbG9ndWUgfTogeyB3b3JkczogVm9jYWJ1bGFyeVtdOyBkaWFsb2d1ZTogRGlhbG9ndWVMaW5lW10gfSkge1xuICBjb25zdCB0YXJnZXRzID0gdXNlTWVtbzxQcmFjdGljZVRhcmdldFtdPigoKSA9PiB7XG4gICAgY29uc3QgY2FuZGlkYXRlcyA9IFtcbiAgICAgIC4uLmRpYWxvZ3VlLm1hcCgobGluZSwgaW5kZXgpID0+ICh7IGlkOiBgZGlhbG9ndWUtJHtpbmRleH1gLCBoYW56aTogbGluZS5oYW56aSwgcGlueWluOiBsaW5lLnBpbnlpbiwgdHJhbnNsYXRpb246IGxpbmUudHJhbnNsYXRpb24gfSkpLFxuICAgICAgLi4ud29yZHMubWFwKCh3b3JkKSA9PiAoeyBpZDogYHdvcmQtJHt3b3JkLnNsdWd9YCwgaGFuemk6IHdvcmQuZXhhbXBsZSwgcGlueWluOiB3b3JkLnBpbnlpbiwgdHJhbnNsYXRpb246IHdvcmQudHJhbnNsYXRpb24gfSkpLFxuICAgIF07XG4gICAgcmV0dXJuIGNhbmRpZGF0ZXMuZmlsdGVyKChpdGVtLCBpbmRleCkgPT4gY2FuZGlkYXRlcy5maW5kSW5kZXgoKGNhbmRpZGF0ZSkgPT4gY2FuZGlkYXRlLmhhbnppID09PSBpdGVtLmhhbnppKSA9PT0gaW5kZXgpO1xuICB9LCBbZGlhbG9ndWUsIHdvcmRzXSk7XG4gIGNvbnN0IFtpbmRleCwgc2V0SW5kZXhdID0gdXNlU3RhdGUoMCk7XG4gIGNvbnN0IFtwYXNzZWQsIHNldFBhc3NlZF0gPSB1c2VTdGF0ZTxTZXQ8c3RyaW5nPj4oKCkgPT4gbmV3IFNldCgpKTtcbiAgY29uc3QgY3VycmVudCA9IHRhcmdldHNbaW5kZXhdO1xuXG4gIGlmICghY3VycmVudCkgcmV0dXJuIDxkaXYgY2xhc3NOYW1lPVwibGVzc29uLXZvY2FiLWVtcHR5XCI+PGgyPkLDoGkgbsOgeSBjaMawYSBjw7MgY8OidSBsdXnhu4duIG5naGU8L2gyPjxwPkjDo3kgY2h1eeG7g24gc2FuZyBwaOG6p24gSOG7mWkgdGhv4bqhaSDEkeG7gyB0aeG6v3AgdOG7pWMuPC9wPjwvZGl2PjtcblxuICByZXR1cm4gPHNlY3Rpb24gY2xhc3NOYW1lPVwibGVzc29uLXByb251bmNpYXRpb24tY29hY2hcIiBhcmlhLWxhYmVsbGVkYnk9XCJsZXNzb24tcHJvbnVuY2lhdGlvbi10aXRsZVwiPlxuICAgIDxkaXYgY2xhc3NOYW1lPVwibGVzc29uLWludGVyYWN0aXZlLWhlYWRpbmdcIj5cbiAgICAgIDxkaXY+PHNwYW4gY2xhc3NOYW1lPVwic2VjdGlvbi1raWNrZXJcIj7wn5SKIE5naGUg4oaSIPCfjqQgxJDhu41jIGzhuqFpIOKGkiBOaOG6rW4gxJFp4buDbTwvc3Bhbj48aDIgaWQ9XCJsZXNzb24tcHJvbnVuY2lhdGlvbi10aXRsZVwiPkx1eeG7h24gbmdoZSAmIHBow6F0IMOibSB24bubaSBpRmx5dGVrPC9oMj48cD5OZ2hlIGPDonUgbeG6q3UsIMSR4buNYyB0cuG7jW4gY8OidSB2w6BvIG1pY3JvIHLhu5NpIG5o4bqtbiDEkWnhu4NtIGNoaSB0aeG6v3QgdGhlbyB0aGFuZyAxMDAuPC9wPjwvZGl2PlxuICAgICAgPHNwYW4gY2xhc3NOYW1lPVwibGVzc29uLWludGVyYWN0aXZlLWhlYWRpbmctaWNvblwiPjxBdWRpb0xpbmVzIHNpemU9ezI1fSAvPjwvc3Bhbj5cbiAgICA8L2Rpdj5cblxuICAgIDxkaXYgY2xhc3NOYW1lPVwicHJvbnVuY2lhdGlvbi1wcmFjdGljZS1sYXlvdXRcIj5cbiAgICAgIDxuYXYgY2xhc3NOYW1lPVwicHJvbnVuY2lhdGlvbi10YXJnZXQtbGlzdFwiIGFyaWEtbGFiZWw9XCJEYW5oIHPDoWNoIGPDonUgbHV54buHbiBwaMOhdCDDom1cIj57dGFyZ2V0cy5tYXAoKHRhcmdldCwgdGFyZ2V0SW5kZXgpID0+IDxidXR0b25cbiAgICAgICAgYXJpYS1jdXJyZW50PXt0YXJnZXRJbmRleCA9PT0gaW5kZXggPyBcInN0ZXBcIiA6IHVuZGVmaW5lZH1cbiAgICAgICAgY2xhc3NOYW1lPXt0YXJnZXRJbmRleCA9PT0gaW5kZXggPyBcImlzLWFjdGl2ZVwiIDogXCJcIn1cbiAgICAgICAga2V5PXt0YXJnZXQuaWR9XG4gICAgICAgIG9uQ2xpY2s9eygpID0+IHNldEluZGV4KHRhcmdldEluZGV4KX1cbiAgICAgICAgdHlwZT1cImJ1dHRvblwiXG4gICAgICA+XG4gICAgICAgIDxzcGFuPntTdHJpbmcodGFyZ2V0SW5kZXggKyAxKS5wYWRTdGFydCgyLCBcIjBcIil9PC9zcGFuPlxuICAgICAgICA8c21hbGw+e3RhcmdldC5oYW56aX08L3NtYWxsPlxuICAgICAgICB7cGFzc2VkLmhhcyh0YXJnZXQuaWQpID8gPENoZWNrQ2lyY2xlMiBzaXplPXsxNn0gLz4gOiBudWxsfVxuICAgICAgPC9idXR0b24+KX08L25hdj5cblxuICAgICAgPGFydGljbGUgY2xhc3NOYW1lPVwicHJvbnVuY2lhdGlvbi1wcmFjdGljZS1jYXJkXCI+XG4gICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInByb251bmNpYXRpb24tc3RlcC1sYWJlbFwiPkPDonUge2luZGV4ICsgMX0gLyB7dGFyZ2V0cy5sZW5ndGh9PC9zcGFuPlxuICAgICAgICA8c3Ryb25nIGxhbmc9XCJ6aC1DTlwiPntjdXJyZW50LmhhbnppfTwvc3Ryb25nPlxuICAgICAgICA8c21hbGw+e2N1cnJlbnQucGlueWlufTwvc21hbGw+XG4gICAgICAgIDxwPntjdXJyZW50LnRyYW5zbGF0aW9ufTwvcD5cbiAgICAgICAgPFByb251bmNpYXRpb25FdmFsdWF0b3JcbiAgICAgICAgICBrZXk9e2N1cnJlbnQuaWR9XG4gICAgICAgICAgb25FdmFsdWF0ZWQ9eyhyZXN1bHQpID0+IHtcbiAgICAgICAgICAgIGlmIChyZXN1bHQudG90YWxTY29yZSA8IDcwKSByZXR1cm47XG4gICAgICAgICAgICBzZXRQYXNzZWQoKGl0ZW1zKSA9PiBuZXcgU2V0KGl0ZW1zKS5hZGQoY3VycmVudC5pZCkpO1xuICAgICAgICAgIH19XG4gICAgICAgICAgdGFyZ2V0VGV4dD17Y3VycmVudC5oYW56aX1cbiAgICAgICAgLz5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJwcm9udW5jaWF0aW9uLW5leHQtcm93XCI+XG4gICAgICAgICAgPHNwYW4+e3Bhc3NlZC5oYXMoY3VycmVudC5pZCkgPyA8PjxDaGVja0NpcmNsZTIgc2l6ZT17MTZ9IC8+IMSQw6MgxJHhuqF0IGPDonUgbsOgeTwvPiA6IFwiTeG7pWMgdGnDqnU6IHThu6sgNzAgxJFp4buDbVwifTwvc3Bhbj5cbiAgICAgICAgICA8YnV0dG9uIGRpc2FibGVkPXtpbmRleCA9PT0gdGFyZ2V0cy5sZW5ndGggLSAxfSBvbkNsaWNrPXsoKSA9PiBzZXRJbmRleCgoY3VycmVudEluZGV4KSA9PiBNYXRoLm1pbih0YXJnZXRzLmxlbmd0aCAtIDEsIGN1cnJlbnRJbmRleCArIDEpKX0gdHlwZT1cImJ1dHRvblwiPkPDonUgdGnhur9wIHRoZW88L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG4gICAgICA8L2FydGljbGU+XG4gICAgPC9kaXY+XG4gIDwvc2VjdGlvbj47XG59XG4iXX0=

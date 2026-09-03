@@ -40,6 +40,11 @@ const courseVisuals: Record<string, CourseVisual> = {
     alt: "Himi chủ trì cuộc họp và điều phối giao tiếp công sở",
     position: "center",
   },
+  "tieng-trung-tan-suat-cao": {
+    src: "/assets/courses/himi-concepts/himi-hsk-curriculum-v2.png",
+    alt: "Himi học tiếng Trung qua nhiều chủ đề giao tiếp thiết thực",
+    position: "center",
+  },
 };
 
 export function getCourseVisual(slug: string): CourseVisual {

@@ -1,0 +1,529 @@
+const workProgressTranscript = [
+	{
+		id: "line-01",
+		role: "Quản lý",
+		hanzi: "项目进展怎么样了？",
+		pinyin: "xiàngmù jìnzhǎn zěnmeyàng le?",
+		translation: "Dự án tiến triển thế nào rồi?",
+		keyword: "进展",
+		startMs: 5800,
+		endMs: 8128,
+		sceneStartMs: 5e3,
+		sceneEndMs: 16e3
+	},
+	{
+		id: "line-02",
+		role: "Nhân viên",
+		hanzi: "已经完成百分之八十了。",
+		pinyin: "yǐjīng wánchéng bǎifēnzhī bāshí le.",
+		translation: "Đã hoàn thành 80% rồi.",
+		keyword: "百分之八十",
+		startMs: 16800,
+		endMs: 19440,
+		sceneStartMs: 16e3,
+		sceneEndMs: 27e3
+	},
+	{
+		id: "line-03",
+		role: "Nhân viên",
+		hanzi: "我今天下班前发给您。",
+		pinyin: "wǒ jīntiān xiàbān qián fā gěi nín.",
+		translation: "Tôi sẽ gửi cho anh/chị trước khi tan làm hôm nay.",
+		keyword: "下班前",
+		startMs: 27800,
+		endMs: 30344,
+		sceneStartMs: 27e3,
+		sceneEndMs: 38e3
+	}
+];
+const dailyLifeVideos = [
+	{
+		slug: "mua-do-o-cua-hang-tien-loi",
+		title: "Mua đồ ở cửa hàng tiện lợi",
+		summary: "Ba câu thiết yếu từ lúc nhận túi đến khi thanh toán bằng điện thoại.",
+		description: "Một tình huống mua sắm ngắn do Himi sản xuất. Video có hai giọng Trung, khoảng nghỉ nói theo và phụ đề tương tác để bạn luyện từng câu.",
+		source: "himi",
+		category: "Mua sắm",
+		level: "HSK 1",
+		contentType: "Tình huống",
+		durationLabel: "1 phút",
+		authorName: "Himi Chinese",
+		thumbnailUrl: "/assets/videos/daily-life/convenience-store/himi-convenience-store-poster-16x9.png",
+		videoUrl: "/assets/videos/daily-life/convenience-store/himi-convenience-store-16x9.mp4",
+		posterUrl: "/assets/videos/daily-life/convenience-store/himi-convenience-store-poster-16x9.png",
+		learningGoals: [
+			"Hỏi và trả lời về túi đựng",
+			"Nói lời cảm ơn tự nhiên",
+			"Hỏi cách thanh toán bằng điện thoại"
+		],
+		practicePrompts: [
+			"Nghe câu đầu không nhìn pinyin.",
+			"Bật lặp câu và nói theo trong khoảng nghỉ.",
+			"Đổi 一个 thành số lượng bạn muốn mua."
+		],
+		transcript: [
+			{
+				id: "store-01",
+				role: "Nhân viên",
+				hanzi: "您好，需要袋子吗？",
+				pinyin: "nín hǎo, xūyào dàizi ma?",
+				translation: "Xin chào, bạn có cần túi không?",
+				keyword: "袋子",
+				startMs: 5800,
+				endMs: 8152,
+				sceneStartMs: 5e3,
+				sceneEndMs: 16e3
+			},
+			{
+				id: "store-02",
+				role: "Khách hàng",
+				hanzi: "需要一个，谢谢。",
+				pinyin: "xūyào yí ge, xièxie.",
+				translation: "Tôi cần một cái, cảm ơn.",
+				keyword: "一个",
+				startMs: 16800,
+				endMs: 19344,
+				sceneStartMs: 16e3,
+				sceneEndMs: 27e3
+			},
+			{
+				id: "store-03",
+				role: "Khách hàng",
+				hanzi: "可以用手机支付吗？",
+				pinyin: "kěyǐ yòng shǒujī zhīfù ma?",
+				translation: "Tôi có thể thanh toán bằng điện thoại không?",
+				keyword: "手机支付",
+				startMs: 27800,
+				endMs: 30392,
+				sceneStartMs: 27e3,
+				sceneEndMs: 38e3
+			}
+		]
+	},
+	{
+		slug: "goi-mon-va-xin-it-cay",
+		title: "Gọi món và xin ít cay",
+		summary: "Gọi món, nói rõ khẩu vị và dùng bữa thoải mái chỉ với ba mẫu câu.",
+		description: "Tình huống ăn uống Himi Original giúp bạn nghe lời chào của phục vụ, gọi mì bò và yêu cầu giảm độ cay theo cách lịch sự.",
+		source: "himi",
+		category: "Ăn uống",
+		level: "HSK 1–2",
+		contentType: "Tình huống",
+		durationLabel: "1 phút",
+		authorName: "Himi Chinese",
+		thumbnailUrl: "/assets/videos/daily-life/restaurant/himi-restaurant-poster-16x9.png",
+		videoUrl: "/assets/videos/daily-life/restaurant/himi-restaurant-16x9.mp4",
+		posterUrl: "/assets/videos/daily-life/restaurant/himi-restaurant-poster-16x9.png",
+		learningGoals: [
+			"Hiểu câu hỏi gọi món",
+			"Gọi một phần mì bò",
+			"Yêu cầu cho ít ớt một cách lịch sự"
+		],
+		practicePrompts: [
+			"Nghe và nhận ra từ chỉ món ăn.",
+			"Nói theo từng câu đúng nhịp.",
+			"Thay 牛肉面 bằng món bạn muốn gọi."
+		],
+		transcript: [
+			{
+				id: "food-01",
+				role: "Phục vụ",
+				hanzi: "您好，想吃点儿什么？",
+				pinyin: "nín hǎo, xiǎng chī diǎnr shénme?",
+				translation: "Xin chào, bạn muốn dùng món gì?",
+				keyword: "吃",
+				startMs: 5800,
+				endMs: 8272,
+				sceneStartMs: 5e3,
+				sceneEndMs: 16e3
+			},
+			{
+				id: "food-02",
+				role: "Khách hàng",
+				hanzi: "我要一碗牛肉面。",
+				pinyin: "wǒ yào yì wǎn niúròu miàn.",
+				translation: "Tôi muốn một tô mì bò.",
+				keyword: "牛肉面",
+				startMs: 16800,
+				endMs: 19080,
+				sceneStartMs: 16e3,
+				sceneEndMs: 27e3
+			},
+			{
+				id: "food-03",
+				role: "Khách hàng",
+				hanzi: "请少放一点辣椒。",
+				pinyin: "qǐng shǎo fàng yìdiǎn làjiāo.",
+				translation: "Vui lòng cho ít ớt thôi.",
+				keyword: "少放",
+				startMs: 27800,
+				endMs: 30224,
+				sceneStartMs: 27e3,
+				sceneEndMs: 38e3
+			}
+		]
+	},
+	{
+		slug: "hoi-duong-den-ga-tau-dien",
+		title: "Hỏi đường đến ga tàu điện",
+		summary: "Hỏi đúng đường, nghe chỉ dẫn và xác nhận khoảng cách trong một phút.",
+		description: "Tình huống đi lại do Himi sản xuất, tập trung vào ba phản xạ quan trọng: hỏi đường, hiểu hướng rẽ và hỏi xa hay gần.",
+		source: "himi",
+		category: "Đi lại",
+		level: "HSK 2",
+		contentType: "Tình huống",
+		durationLabel: "1 phút",
+		authorName: "Himi Chinese",
+		thumbnailUrl: "/assets/videos/daily-life/metro/himi-metro-directions-poster-16x9.png",
+		videoUrl: "/assets/videos/daily-life/metro/himi-metro-directions-16x9.mp4",
+		posterUrl: "/assets/videos/daily-life/metro/himi-metro-directions-poster-16x9.png",
+		learningGoals: [
+			"Hỏi đường đến ga tàu điện",
+			"Hiểu chỉ dẫn đi thẳng và rẽ phải",
+			"Hỏi địa điểm có xa không"
+		],
+		practicePrompts: [
+			"Nghe hướng đi rồi vẽ mũi tên.",
+			"Lặp câu không nhìn pinyin.",
+			"Đổi 地铁站 thành địa điểm bạn cần tìm."
+		],
+		transcript: [
+			{
+				id: "metro-01",
+				role: "Du khách",
+				hanzi: "请问，地铁站怎么走？",
+				pinyin: "qǐngwèn, dìtiě zhàn zěnme zǒu?",
+				translation: "Xin hỏi, đi đến ga tàu điện thế nào?",
+				keyword: "地铁站",
+				startMs: 5800,
+				endMs: 8560,
+				sceneStartMs: 5e3,
+				sceneEndMs: 16e3
+			},
+			{
+				id: "metro-02",
+				role: "Người đi đường",
+				hanzi: "一直走，然后向右转。",
+				pinyin: "yìzhí zǒu, ránhòu xiàng yòu zhuǎn.",
+				translation: "Đi thẳng, sau đó rẽ phải.",
+				keyword: "向右转",
+				startMs: 16800,
+				endMs: 20016,
+				sceneStartMs: 16e3,
+				sceneEndMs: 27e3
+			},
+			{
+				id: "metro-03",
+				role: "Du khách",
+				hanzi: "离这里远吗？",
+				pinyin: "lí zhèlǐ yuǎn ma?",
+				translation: "Có xa chỗ này không?",
+				keyword: "远",
+				startMs: 27800,
+				endMs: 29600,
+				sceneStartMs: 27e3,
+				sceneEndMs: 38e3
+			}
+		]
+	}
+];
+const lessonScenarioVideos = [{
+	slug: "bao-tien-do-voi-quan-ly",
+	title: "Báo tiến độ công việc với quản lý",
+	summary: "Một tình huống văn phòng ngắn để nghe, nói theo và phản xạ với ba mẫu câu thiết yếu.",
+	description: "Video Himi Original có phụ đề Hán tự, pinyin và tiếng Việt theo từng câu. Bạn có thể tua đến câu, nghe lại và lặp đoạn shadowing ngay trong bài học.",
+	source: "himi",
+	category: "Công sở",
+	level: "HSK 2",
+	contentType: "Tình huống",
+	durationLabel: "1 phút",
+	thumbnailUrl: "/assets/videos/work-progress/himi-work-progress-poster-16x9.png",
+	videoUrl: "/assets/videos/work-progress/himi-work-progress-16x9.mp4",
+	posterUrl: "/assets/videos/work-progress/himi-work-progress-poster-16x9.png",
+	learningGoals: [
+		"Hỏi tiến độ dự án một cách tự nhiên",
+		"Báo phần trăm công việc đã hoàn thành",
+		"Cam kết thời điểm gửi kết quả"
+	],
+	practicePrompts: [
+		"Nghe trọn câu trước khi nhìn pinyin.",
+		"Bật lặp câu và nói theo trong khoảng nghỉ.",
+		"Xem lại không phụ đề để tự kiểm tra."
+	],
+	transcript: workProgressTranscript,
+	lessonBinding: {
+		courseSlug: "van-phong-hanh-chinh",
+		lessonSlug: "theo-doi-tien-do-cong-viec"
+	}
+}];
+export const learningVideos = [
+	...dailyLifeVideos,
+	{
+		slug: "am-thuc-duong-pho-trung-quoc",
+		title: "Ẩm thực đường phố Trung Quốc",
+		originalTitle: "中国街头小吃 | Chinese Street Food",
+		summary: "Luyện nghe qua chủ đề món ăn đường phố và văn hóa ẩm thực quen thuộc tại Trung Quốc.",
+		description: "Podcast tiếng Trung theo chủ đề đời sống, phù hợp để luyện nghe từ vựng món ăn và cách miêu tả trải nghiệm ẩm thực.",
+		source: "youtube",
+		category: "Văn hóa",
+		level: "HSK 2",
+		contentType: "Podcast",
+		sentenceCount: 274,
+		youtubeId: "GJanmMSj8QQ",
+		authorName: "Chinese Podcast Station",
+		authorUrl: "https://www.youtube.com/@ChinesePodcastStation101",
+		thumbnailUrl: "https://i.ytimg.com/vi/GJanmMSj8QQ/hqdefault.jpg",
+		learningGoals: [
+			"Nhận biết từ vựng món ăn",
+			"Luyện nghe đoạn kể chuyện dài",
+			"Làm quen ngữ điệu hội thoại tự nhiên"
+		],
+		practicePrompts: [
+			"Nghe lượt đầu không phụ đề.",
+			"Ghi lại ba món ăn bạn nghe được.",
+			"Tóm tắt nội dung bằng hai câu ngắn."
+		]
+	},
+	{
+		slug: "mot-ngay-cua-toi",
+		title: "Một ngày của tôi",
+		originalTitle: "我的一天 | My Day in Chinese",
+		summary: "Theo dõi một ngày thường nhật với tốc độ nghe phù hợp cho người mới bắt đầu.",
+		description: "Podcast nhập môn về lịch sinh hoạt, thời gian và các hoạt động hằng ngày bằng mẫu câu ngắn, dễ bắt chước.",
+		source: "youtube",
+		category: "Đời sống",
+		level: "HSK 1",
+		contentType: "Podcast",
+		sentenceCount: 207,
+		youtubeId: "LG7ysbsDf30",
+		authorName: "Chinese Podcast Station",
+		authorUrl: "https://www.youtube.com/@ChinesePodcastStation101",
+		thumbnailUrl: "https://i.ytimg.com/vi/LG7ysbsDf30/hqdefault.jpg",
+		learningGoals: [
+			"Nói về lịch sinh hoạt",
+			"Ôn cách diễn đạt thời gian",
+			"Nghe các động từ thông dụng"
+		],
+		practicePrompts: [
+			"Nghe và đánh dấu các mốc thời gian.",
+			"Nói lại lịch của bạn theo mẫu.",
+			"Shadowing một đoạn ngắn 30 giây."
+		]
+	},
+	{
+		slug: "vi-sao-hoc-mai-chua-noi-duoc",
+		title: "Vì sao học mãi vẫn chưa nói được tiếng Trung?",
+		originalTitle: "为什么你还不会说中文?",
+		summary: "Một podcast phân tích những rào cản thường gặp khiến người học biết nhiều nhưng vẫn ngại nói.",
+		description: "Nội dung tốc độ vừa phải, phù hợp để vừa luyện nghe vừa nhận ra cách xây thói quen luyện nói chủ động.",
+		source: "youtube",
+		category: "Kỹ năng",
+		level: "HSK 3",
+		contentType: "Podcast",
+		sentenceCount: 208,
+		youtubeId: "O6YPoFcJvvs",
+		authorName: "Chinese Podcast Station",
+		authorUrl: "https://www.youtube.com/@ChinesePodcastStation101",
+		thumbnailUrl: "https://i.ytimg.com/vi/O6YPoFcJvvs/hqdefault.jpg",
+		learningGoals: [
+			"Nhận biết từ vựng về học tập",
+			"Nghe lập luận dài hơn",
+			"Xây thói quen phản xạ nói"
+		],
+		practicePrompts: [
+			"Ghi lại nguyên nhân chính được nhắc đến.",
+			"Dừng sau mỗi ý và nói lại.",
+			"Chọn một thói quen để áp dụng hôm nay."
+		]
+	},
+	{
+		slug: "tieng-trung-trong-doi-song-hang-ngay",
+		title: "Tiếng Trung trong đời sống hằng ngày",
+		originalTitle: "生活中文 | Chinese for Everyday Life",
+		summary: "Ôn các cách diễn đạt gần gũi thường xuất hiện trong giao tiếp hằng ngày.",
+		description: "Podcast tổng hợp mẫu câu đời sống ở mức HSK 2–3, hữu ích cho việc mở rộng vốn từ theo ngữ cảnh.",
+		source: "youtube",
+		category: "Đời sống",
+		level: "HSK 2–3",
+		contentType: "Podcast",
+		sentenceCount: 235,
+		youtubeId: "M1BnUYEYeOg",
+		authorName: "Chinese Podcast Station",
+		authorUrl: "https://www.youtube.com/@ChinesePodcastStation101",
+		thumbnailUrl: "https://i.ytimg.com/vi/M1BnUYEYeOg/hqdefault.jpg",
+		learningGoals: [
+			"Mở rộng cụm từ đời sống",
+			"Nghe hiểu ý chính theo ngữ cảnh",
+			"Bắt chước nhịp nói tự nhiên"
+		],
+		practicePrompts: [
+			"Chia video thành các đoạn 3–5 phút.",
+			"Chọn năm cụm từ dùng được ngay.",
+			"Đặt câu mới cho từng cụm."
+		]
+	},
+	{
+		slug: "shadowing-giup-tien-bo-nhanh-hon",
+		title: "Shadowing giúp tiếng Trung tiến bộ nhanh hơn",
+		originalTitle: "跟读法让你中文进步更快",
+		summary: "Hiểu cách luyện shadowing và biến việc nghe lặp lại thành phản xạ nói chủ động.",
+		description: "Podcast hướng dẫn phương pháp nghe và nói đuổi theo, phù hợp cho người đã có nền tảng và muốn cải thiện độ trôi chảy.",
+		source: "youtube",
+		category: "Phương pháp",
+		level: "HSK 3",
+		contentType: "Podcast",
+		sentenceCount: 180,
+		youtubeId: "YGvbsy6VemA",
+		authorName: "Chinese Podcast Station",
+		authorUrl: "https://www.youtube.com/@ChinesePodcastStation101",
+		thumbnailUrl: "https://i.ytimg.com/vi/YGvbsy6VemA/hqdefault.jpg",
+		learningGoals: [
+			"Hiểu đúng kỹ thuật shadowing",
+			"Cải thiện nhịp và ngữ điệu",
+			"Tạo lịch luyện nói ngắn mỗi ngày"
+		],
+		practicePrompts: [
+			"Chọn đoạn 20–30 giây.",
+			"Nghe ba lần trước khi nói theo.",
+			"Thu âm và so sánh nhịp câu."
+		]
+	},
+	{
+		slug: "luyen-nghe-doc-sau-sau-thang",
+		title: "Bạn hiểu được bao nhiêu sau 6 tháng học?",
+		originalTitle: "Watch this if you've learned Chinese for 6 months - Chinese LISTENING and READING comprehension",
+		summary: "Một bài kiểm tra nghe–đọc nhẹ nhàng để nhận ra phần bạn đã hiểu tốt và vốn từ còn yếu.",
+		description: "Video luyện nghe và đọc hiểu bằng tiếng Trung, phù hợp khi bạn đã học nền tảng khoảng sáu tháng và muốn kiểm tra khả năng theo dõi nội dung liên tục.",
+		source: "youtube",
+		category: "Kiểm tra",
+		level: "HSK 2–3",
+		contentType: "Nghe & đọc",
+		sentenceCount: 90,
+		youtubeId: "JHxgGKMVIJA",
+		authorName: "ShuoshuoChinese说说中文",
+		authorUrl: "https://www.youtube.com/@ShuoshuoChinese",
+		thumbnailUrl: "https://i.ytimg.com/vi/JHxgGKMVIJA/hqdefault.jpg",
+		learningGoals: [
+			"Kiểm tra khả năng nắm ý chính",
+			"Luyện đọc cùng nội dung đang nghe",
+			"Nhận diện nhóm từ cần ôn lại"
+		],
+		practicePrompts: [
+			"Nghe lượt đầu không nhìn pinyin.",
+			"Dừng sau mỗi ý và tự tóm tắt.",
+			"Ghi lại năm từ bạn chưa nhận ra."
+		]
+	},
+	{
+		slug: "buoi-sang-bang-tieng-trung",
+		title: "Một buổi sáng bằng tiếng Trung",
+		originalTitle: "☀️ Can you understand this Chinese Vlog? | Slow Chinese Listening Practice for Beginners (HSK1-3)",
+		summary: "Vlog nghe chậm về sinh hoạt buổi sáng, gần gũi và dễ luyện theo cho người mới.",
+		description: "Một vlog đời sống với tốc độ nói rõ ràng, giúp bạn nghe từ vựng sinh hoạt và làm quen cách kể lại hoạt động hằng ngày bằng tiếng Trung.",
+		source: "youtube",
+		category: "Vlog",
+		level: "HSK 1–3",
+		contentType: "Nghe chậm",
+		sentenceCount: 89,
+		youtubeId: "V6SrjHDisDs",
+		authorName: "ShuoshuoChinese说说中文",
+		authorUrl: "https://www.youtube.com/@ShuoshuoChinese",
+		thumbnailUrl: "https://i.ytimg.com/vi/V6SrjHDisDs/hqdefault.jpg",
+		learningGoals: [
+			"Nghe từ vựng sinh hoạt buổi sáng",
+			"Nhận biết cấu trúc kể trình tự",
+			"Làm quen lời nói đời thường"
+		],
+		practicePrompts: [
+			"Nghe một lượt chỉ để nắm mạch.",
+			"Nói theo ba câu bạn dùng được ngay.",
+			"Kể lại buổi sáng của bạn trong 30 giây."
+		]
+	},
+	{
+		slug: "han-tu-dau-tien-trong-nam-phut",
+		title: "Hán tự đầu tiên trong 5 phút",
+		originalTitle: "Learn Your First Chinese Character in 5 Minutes with Yoyo Chinese (Part 1)",
+		summary: "Bắt đầu làm quen Hán tự bằng một bài giảng ngắn, trực quan và không tạo áp lực ghi nhớ.",
+		description: "Bài học nhập môn giải thích cách nhìn, hiểu và ghi nhớ Hán tự đầu tiên, phù hợp cho người mới bắt đầu từ con số không.",
+		source: "youtube",
+		category: "Hán tự",
+		level: "Nhập môn",
+		contentType: "Bài giảng",
+		sentenceCount: 14,
+		youtubeId: "mrxzgms3E1g",
+		authorName: "Yoyo Chinese",
+		authorUrl: "https://www.youtube.com/@YoyoChinese",
+		thumbnailUrl: "https://i.ytimg.com/vi/mrxzgms3E1g/hqdefault.jpg",
+		learningGoals: [
+			"Hiểu Hán tự được cấu tạo như thế nào",
+			"Gắn hình dạng với ý nghĩa",
+			"Tạo cảm giác dễ tiếp cận khi mới học"
+		],
+		practicePrompts: [
+			"Quan sát chữ trước khi nghe giải thích.",
+			"Viết lại chữ ba lần có chủ đích.",
+			"Tự nói lại ý nghĩa không nhìn ghi chú."
+		]
+	},
+	{
+		slug: "bai-hoc-tieng-trung-dau-tien",
+		title: "Bài học tiếng Trung đầu tiên",
+		originalTitle: "Why Mandarin Chinese is Easy to Learn - Yoyo Chinese",
+		summary: "Nhìn cấu trúc câu và từ ghép để thấy tiếng Trung logic, dễ tiếp cận hơn bạn nghĩ.",
+		description: "Bài giới thiệu dành cho người mới, giải thích trật tự câu, động từ không biến đổi và cách các từ quen thuộc kết hợp thành từ mới.",
+		source: "youtube",
+		category: "Nhập môn",
+		level: "HSK 1",
+		contentType: "Bài giảng",
+		sentenceCount: 15,
+		youtubeId: "AOEWadftWHA",
+		authorName: "Yoyo Chinese",
+		authorUrl: "https://www.youtube.com/@YoyoChinese",
+		thumbnailUrl: "https://i.ytimg.com/vi/AOEWadftWHA/hqdefault.jpg",
+		learningGoals: [
+			"Hiểu trật tự câu cơ bản",
+			"Nhận biết các từ ghép logic",
+			"Ghi nhớ nhóm từ có chung thành phần"
+		],
+		practicePrompts: [
+			"Nghe và sắp xếp lại câu mẫu.",
+			"Đọc to các từ ghép xuất hiện trong video.",
+			"Tự tạo một cặp từ có chung thành phần."
+		]
+	},
+	{
+		slug: "lac-duong-trong-thanh-pho",
+		title: "Lạc giữa thành phố",
+		originalTitle: "Lost in The City - Intermediate Chinese Listening Practice | Chinese Conversation | Slow Chinese",
+		summary: "Theo chân một cô gái rời quê, tìm việc và dần nhận ra cuộc sống thành phố không giống tưởng tượng.",
+		description: "Một câu chuyện nghe chậm dành cho trình độ trung cấp, giúp bạn theo dõi mạch kể dài và học cách diễn đạt lựa chọn, cảm xúc cùng trải nghiệm trưởng thành.",
+		source: "youtube",
+		category: "Câu chuyện",
+		level: "HSK 3",
+		contentType: "Nghe chậm",
+		sentenceCount: 136,
+		youtubeId: "uuUmhi2F0kc",
+		authorName: "Mandarin Corner",
+		authorUrl: "https://www.youtube.com/@MandarinCorner2",
+		thumbnailUrl: "https://i.ytimg.com/vi/uuUmhi2F0kc/hqdefault.jpg",
+		learningGoals: [
+			"Theo dõi một câu chuyện dài hơn",
+			"Học từ vựng về công việc và cảm xúc",
+			"Luyện đoán nghĩa từ ngữ cảnh"
+		],
+		practicePrompts: [
+			"Nghe lượt đầu và đoán diễn biến.",
+			"Ghi lại ba quyết định quan trọng của nhân vật.",
+			"Kể lại câu chuyện bằng năm câu ngắn."
+		]
+	}
+];
+export function findVideoBySlug(slug) {
+	return learningVideos.find((video) => video.slug === slug);
+}
+export function getLessonScenarioVideo(courseSlug, lessonSlug) {
+	return lessonScenarioVideos.find((video) => video.lessonBinding?.courseSlug === courseSlug && video.lessonBinding.lessonSlug === lessonSlug);
+}
+
+//# sourceMappingURL=data:application/json;base64,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O0VBQ2QsZUFBZTtHQUFDO0dBQW1DO0dBQXVDO0VBQThCO0VBQ3hILGlCQUFpQjtHQUFDO0dBQW9DO0dBQWtEO0VBQXNDO0NBQ2hKO0FBQ0Y7QUFFQSxPQUFPLFNBQVMsZ0JBQWdCLE1BQXlDO0NBQ3ZFLE9BQU8sZUFBZSxNQUFNLFVBQVUsTUFBTSxTQUFTLElBQUk7QUFDM0Q7QUFFQSxPQUFPLFNBQVMsdUJBQXVCLFlBQW9CLFlBQStDO0NBQ3hHLE9BQU8scUJBQXFCLE1BQU0sVUFBVSxNQUFNLGVBQWUsZUFBZSxjQUFjLE1BQU0sY0FBYyxlQUFlLFVBQVU7QUFDN0kiLCJuYW1lcyI6W10sInNvdXJjZXMiOlsidmlkZW8tbGlicmFyeS50cyJdLCJ2ZXJzaW9uIjozLCJzb3VyY2VzQ29udGVudCI6WyJleHBvcnQgdHlwZSBWaWRlb1NvdXJjZSA9IFwiaGltaVwiIHwgXCJ5b3V0dWJlXCI7XHJcblxyXG5leHBvcnQgdHlwZSBWaWRlb1RyYW5zY3JpcHRMaW5lID0ge1xyXG4gIGlkOiBzdHJpbmc7XHJcbiAgcm9sZTogc3RyaW5nO1xyXG4gIGhhbnppOiBzdHJpbmc7XHJcbiAgcGlueWluOiBzdHJpbmc7XHJcbiAgdHJhbnNsYXRpb246IHN0cmluZztcclxuICBrZXl3b3JkOiBzdHJpbmc7XHJcbiAgc3RhcnRNczogbnVtYmVyO1xyXG4gIGVuZE1zOiBudW1iZXI7XHJcbiAgc2NlbmVTdGFydE1zOiBudW1iZXI7XHJcbiAgc2NlbmVFbmRNczogbnVtYmVyO1xyXG59O1xyXG5cclxuZXhwb3J0IHR5cGUgTGVhcm5pbmdWaWRlbyA9IHtcclxuICBzbHVnOiBzdHJpbmc7XHJcbiAgdGl0bGU6IHN0cmluZztcclxuICBvcmlnaW5hbFRpdGxlPzogc3RyaW5nO1xyXG4gIHN1bW1hcnk6IHN0cmluZztcclxuICBkZXNjcmlwdGlvbjogc3RyaW5nO1xyXG4gIHNvdXJjZTogVmlkZW9Tb3VyY2U7XHJcbiAgY2F0ZWdvcnk6IHN0cmluZztcclxuICBsZXZlbDogc3RyaW5nO1xyXG4gIGNvbnRlbnRUeXBlOiBzdHJpbmc7XHJcbiAgZHVyYXRpb25MYWJlbD86IHN0cmluZztcclxuICBzZW50ZW5jZUNvdW50PzogbnVtYmVyO1xyXG4gIHlvdXR1YmVJZD86IHN0cmluZztcclxuICBhdXRob3JOYW1lPzogc3RyaW5nO1xyXG4gIGF1dGhvclVybD86IHN0cmluZztcclxuICB0aHVtYm5haWxVcmw6IHN0cmluZztcclxuICB2aWRlb1VybD86IHN0cmluZztcclxuICBwb3N0ZXJVcmw/OiBzdHJpbmc7XHJcbiAgbGVhcm5pbmdHb2Fsczogc3RyaW5nW107XHJcbiAgcHJhY3RpY2VQcm9tcHRzOiBzdHJpbmdbXTtcclxuICB0cmFuc2NyaXB0PzogVmlkZW9UcmFuc2NyaXB0TGluZVtdO1xyXG4gIGxlc3NvbkJpbmRpbmc/OiB7XHJcbiAgICBjb3Vyc2VTbHVnOiBzdHJpbmc7XHJcbiAgICBsZXNzb25TbHVnOiBzdHJpbmc7XHJcbiAgfTtcclxufTtcclxuXHJcbmNvbnN0IHdvcmtQcm9ncmVzc1RyYW5zY3JpcHQ6IFZpZGVvVHJhbnNjcmlwdExpbmVbXSA9IFtcclxuICB7XHJcbiAgICBpZDogXCJsaW5lLTAxXCIsXHJcbiAgICByb2xlOiBcIlF14bqjbiBsw71cIixcclxuICAgIGhhbnppOiBcIumhueebrui/m+WxleaAjuS5iOagt+S6hu+8n1wiLFxyXG4gICAgcGlueWluOiBcInhpw6BuZ23DuSBqw6xuemjHjm4gesSbbm1lecOgbmcgbGU/XCIsXHJcbiAgICB0cmFuc2xhdGlvbjogXCJE4buxIMOhbiB0aeG6v24gdHJp4buDbiB0aOG6vyBuw6BvIHLhu5NpP1wiLFxyXG4gICAga2V5d29yZDogXCLov5vlsZVcIixcclxuICAgIHN0YXJ0TXM6IDU4MDAsXHJcbiAgICBlbmRNczogODEyOCxcclxuICAgIHNjZW5lU3RhcnRNczogNTAwMCxcclxuICAgIHNjZW5lRW5kTXM6IDE2MDAwLFxyXG4gIH0sXHJcbiAge1xyXG4gICAgaWQ6IFwibGluZS0wMlwiLFxyXG4gICAgcm9sZTogXCJOaMOibiB2acOqblwiLFxyXG4gICAgaGFuemk6IFwi5bey57uP5a6M5oiQ55m+5YiG5LmL5YWr5Y2B5LqG44CCXCIsXHJcbiAgICBwaW55aW46IFwieceQasSrbmcgd8OhbmNow6luZyBix45pZsSTbnpoxKsgYsSBc2jDrSBsZS5cIixcclxuICAgIHRyYW5zbGF0aW9uOiBcIsSQw6MgaG/DoG4gdGjDoG5oIDgwJSBy4buTaS5cIixcclxuICAgIGtleXdvcmQ6IFwi55m+5YiG5LmL5YWr5Y2BXCIsXHJcbiAgICBzdGFydE1zOiAxNjgwMCxcclxuICAgIGVuZE1zOiAxOTQ0MCxcclxuICAgIHNjZW5lU3RhcnRNczogMTYwMDAsXHJcbiAgICBzY2VuZUVuZE1zOiAyNzAwMCxcclxuICB9LFxyXG4gIHtcclxuICAgIGlkOiBcImxpbmUtMDNcIixcclxuICAgIHJvbGU6IFwiTmjDom4gdmnDqm5cIixcclxuICAgIGhhbnppOiBcIuaIkeS7iuWkqeS4i+ePreWJjeWPkee7meaCqOOAglwiLFxyXG4gICAgcGlueWluOiBcInfHkiBqxKtudGnEgW4geGnDoGLEgW4gcWnDoW4gZsSBIGfEm2kgbsOtbi5cIixcclxuICAgIHRyYW5zbGF0aW9uOiBcIlTDtGkgc+G6vSBn4butaSBjaG8gYW5oL2No4buLIHRyxrDhu5tjIGtoaSB0YW4gbMOgbSBow7RtIG5heS5cIixcclxuICAgIGtleXdvcmQ6IFwi5LiL54+t5YmNXCIsXHJcbiAgICBzdGFydE1zOiAyNzgwMCxcclxuICAgIGVuZE1zOiAzMDM0NCxcclxuICAgIHNjZW5lU3RhcnRNczogMjcwMDAsXHJcbiAgICBzY2VuZUVuZE1zOiAzODAwMCxcclxuICB9LFxyXG5dO1xyXG5cclxuY29uc3QgZGFpbHlMaWZlVmlkZW9zOiBMZWFybmluZ1ZpZGVvW10gPSBbXHJcbiAge1xyXG4gICAgc2x1ZzogXCJtdWEtZG8tby1jdWEtaGFuZy10aWVuLWxvaVwiLFxyXG4gICAgdGl0bGU6IFwiTXVhIMSR4buTIOG7nyBj4butYSBow6BuZyB0aeG7h24gbOG7o2lcIixcclxuICAgIHN1bW1hcnk6IFwiQmEgY8OidSB0aGnhur90IHnhur91IHThu6sgbMO6YyBuaOG6rW4gdMO6aSDEkeG6v24ga2hpIHRoYW5oIHRvw6FuIGLhurFuZyDEkWnhu4duIHRob+G6oWkuXCIsXHJcbiAgICBkZXNjcmlwdGlvbjogXCJN4buZdCB0w6xuaCBodeG7kW5nIG11YSBz4bqvbSBuZ+G6r24gZG8gSGltaSBz4bqjbiB4deG6pXQuIFZpZGVvIGPDsyBoYWkgZ2nhu41uZyBUcnVuZywga2hv4bqjbmcgbmdo4buJIG7Ds2kgdGhlbyB2w6AgcGjhu6UgxJHhu4EgdMawxqFuZyB0w6FjIMSR4buDIGLhuqFuIGx1eeG7h24gdOG7q25nIGPDonUuXCIsXHJcbiAgICBzb3VyY2U6IFwiaGltaVwiLFxyXG4gICAgY2F0ZWdvcnk6IFwiTXVhIHPhuq9tXCIsXHJcbiAgICBsZXZlbDogXCJIU0sgMVwiLFxyXG4gICAgY29udGVudFR5cGU6IFwiVMOsbmggaHXhu5FuZ1wiLFxyXG4gICAgZHVyYXRpb25MYWJlbDogXCIxIHBow7p0XCIsXHJcbiAgICBhdXRob3JOYW1lOiBcIkhpbWkgQ2hpbmVzZVwiLFxyXG4gICAgdGh1bWJuYWlsVXJsOiBcIi9hc3NldHMvdmlkZW9zL2RhaWx5LWxpZmUvY29udmVuaWVuY2Utc3RvcmUvaGltaS1jb252ZW5pZW5jZS1zdG9yZS1wb3N0ZXItMTZ4OS5wbmdcIixcclxuICAgIHZpZGVvVXJsOiBcIi9hc3NldHMvdmlkZW9zL2RhaWx5LWxpZmUvY29udmVuaWVuY2Utc3RvcmUvaGltaS1jb252ZW5pZW5jZS1zdG9yZS0xNng5Lm1wNFwiLFxyXG4gICAgcG9zdGVyVXJsOiBcIi9hc3NldHMvdmlkZW9zL2RhaWx5LWxpZmUvY29udmVuaWVuY2Utc3RvcmUvaGltaS1jb252ZW5pZW5jZS1zdG9yZS1wb3N0ZXItMTZ4OS5wbmdcIixcclxuICAgIGxlYXJuaW5nR29hbHM6IFtcIkjhu49pIHbDoCB0cuG6oyBs4budaSB24buBIHTDumkgxJHhu7FuZ1wiLCBcIk7Ds2kgbOG7nWkgY+G6o20gxqFuIHThu7Egbmhpw6puXCIsIFwiSOG7j2kgY8OhY2ggdGhhbmggdG/DoW4gYuG6sW5nIMSRaeG7h24gdGhv4bqhaVwiXSxcclxuICAgIHByYWN0aWNlUHJvbXB0czogW1wiTmdoZSBjw6J1IMSR4bqndSBraMO0bmcgbmjDrG4gcGlueWluLlwiLCBcIkLhuq10IGzhurdwIGPDonUgdsOgIG7Ds2kgdGhlbyB0cm9uZyBraG/huqNuZyBuZ2jhu4kuXCIsIFwixJDhu5VpIOS4gOS4qiB0aMOgbmggc+G7kSBsxrDhu6NuZyBi4bqhbiBtdeG7kW4gbXVhLlwiXSxcclxuICAgIHRyYW5zY3JpcHQ6IFtcclxuICAgICAge2lkOiBcInN0b3JlLTAxXCIsIHJvbGU6IFwiTmjDom4gdmnDqm5cIiwgaGFuemk6IFwi5oKo5aW977yM6ZyA6KaB6KKL5a2Q5ZCX77yfXCIsIHBpbnlpbjogXCJuw61uIGjHjm8sIHjFq3nDoG8gZMOgaXppIG1hP1wiLCB0cmFuc2xhdGlvbjogXCJYaW4gY2jDoG8sIGLhuqFuIGPDsyBj4bqnbiB0w7ppIGtow7RuZz9cIiwga2V5d29yZDogXCLooovlrZBcIiwgc3RhcnRNczogNTgwMCwgZW5kTXM6IDgxNTIsIHNjZW5lU3RhcnRNczogNTAwMCwgc2NlbmVFbmRNczogMTYwMDB9LFxyXG4gICAgICB7aWQ6IFwic3RvcmUtMDJcIiwgcm9sZTogXCJLaMOhY2ggaMOgbmdcIiwgaGFuemk6IFwi6ZyA6KaB5LiA5Liq77yM6LCi6LCi44CCXCIsIHBpbnlpbjogXCJ4xat5w6BvIHnDrSBnZSwgeGnDqHhpZS5cIiwgdHJhbnNsYXRpb246IFwiVMO0aSBj4bqnbiBt4buZdCBjw6FpLCBj4bqjbSDGoW4uXCIsIGtleXdvcmQ6IFwi5LiA5LiqXCIsIHN0YXJ0TXM6IDE2ODAwLCBlbmRNczogMTkzNDQsIHNjZW5lU3RhcnRNczogMTYwMDAsIHNjZW5lRW5kTXM6IDI3MDAwfSxcclxuICAgICAge2lkOiBcInN0b3JlLTAzXCIsIHJvbGU6IFwiS2jDoWNoIGjDoG5nXCIsIGhhbnppOiBcIuWPr+S7peeUqOaJi+acuuaUr+S7mOWQl++8n1wiLCBwaW55aW46IFwia8SbeceQIHnDsm5nIHNox5J1asSrIHpoxKtmw7kgbWE/XCIsIHRyYW5zbGF0aW9uOiBcIlTDtGkgY8OzIHRo4buDIHRoYW5oIHRvw6FuIGLhurFuZyDEkWnhu4duIHRob+G6oWkga2jDtG5nP1wiLCBrZXl3b3JkOiBcIuaJi+acuuaUr+S7mFwiLCBzdGFydE1zOiAyNzgwMCwgZW5kTXM6IDMwMzkyLCBzY2VuZVN0YXJ0TXM6IDI3MDAwLCBzY2VuZUVuZE1zOiAzODAwMH0sXHJcbiAgICBdLFxyXG4gIH0sXHJcbiAge1xyXG4gICAgc2x1ZzogXCJnb2ktbW9uLXZhLXhpbi1pdC1jYXlcIixcclxuICAgIHRpdGxlOiBcIkfhu41pIG3Ds24gdsOgIHhpbiDDrXQgY2F5XCIsXHJcbiAgICBzdW1tYXJ5OiBcIkfhu41pIG3Ds24sIG7Ds2kgcsO1IGto4bqpdSB24buLIHbDoCBkw7luZyBi4buvYSB0aG/huqNpIG3DoWkgY2jhu4kgduG7m2kgYmEgbeG6q3UgY8OidS5cIixcclxuICAgIGRlc2NyaXB0aW9uOiBcIlTDrG5oIGh14buRbmcgxINuIHXhu5FuZyBIaW1pIE9yaWdpbmFsIGdpw7pwIGLhuqFuIG5naGUgbOG7nWkgY2jDoG8gY+G7p2EgcGjhu6VjIHbhu6UsIGfhu41pIG3DrCBiw7IgdsOgIHnDqnUgY+G6p3UgZ2nhuqNtIMSR4buZIGNheSB0aGVvIGPDoWNoIGzhu4tjaCBz4buxLlwiLFxyXG4gICAgc291cmNlOiBcImhpbWlcIixcclxuICAgIGNhdGVnb3J5OiBcIsSCbiB14buRbmdcIixcclxuICAgIGxldmVsOiBcIkhTSyAx4oCTMlwiLFxyXG4gICAgY29udGVudFR5cGU6IFwiVMOsbmggaHXhu5FuZ1wiLFxyXG4gICAgZHVyYXRpb25MYWJlbDogXCIxIHBow7p0XCIsXHJcbiAgICBhdXRob3JOYW1lOiBcIkhpbWkgQ2hpbmVzZVwiLFxyXG4gICAgdGh1bWJuYWlsVXJsOiBcIi9hc3NldHMvdmlkZW9zL2RhaWx5LWxpZmUvcmVzdGF1cmFudC9oaW1pLXJlc3RhdXJhbnQtcG9zdGVyLTE2eDkucG5nXCIsXHJcbiAgICB2aWRlb1VybDogXCIvYXNzZXRzL3ZpZGVvcy9kYWlseS1saWZlL3Jlc3RhdXJhbnQvaGltaS1yZXN0YXVyYW50LTE2eDkubXA0XCIsXHJcbiAgICBwb3N0ZXJVcmw6IFwiL2Fzc2V0cy92aWRlb3MvZGFpbHktbGlmZS9yZXN0YXVyYW50L2hpbWktcmVzdGF1cmFudC1wb3N0ZXItMTZ4OS5wbmdcIixcclxuICAgIGxlYXJuaW5nR29hbHM6IFtcIkhp4buDdSBjw6J1IGjhu49pIGfhu41pIG3Ds25cIiwgXCJH4buNaSBt4buZdCBwaOG6p24gbcOsIGLDslwiLCBcIlnDqnUgY+G6p3UgY2hvIMOtdCDhu5t0IG3hu5l0IGPDoWNoIGzhu4tjaCBz4buxXCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJOZ2hlIHbDoCBuaOG6rW4gcmEgdOG7qyBjaOG7iSBtw7NuIMSDbi5cIiwgXCJOw7NpIHRoZW8gdOG7q25nIGPDonUgxJHDum5nIG5o4buLcC5cIiwgXCJUaGF5IOeJm+iCiemdoiBi4bqxbmcgbcOzbiBi4bqhbiBtdeG7kW4gZ+G7jWkuXCJdLFxyXG4gICAgdHJhbnNjcmlwdDogW1xyXG4gICAgICB7aWQ6IFwiZm9vZC0wMVwiLCByb2xlOiBcIlBo4bulYyB24bulXCIsIGhhbnppOiBcIuaCqOWlve+8jOaDs+WQg+eCueWEv+S7gOS5iO+8n1wiLCBwaW55aW46IFwibsOtbiBox45vLCB4aceObmcgY2jEqyBkaceObnIgc2jDqW5tZT9cIiwgdHJhbnNsYXRpb246IFwiWGluIGNow6BvLCBi4bqhbiBtdeG7kW4gZMO5bmcgbcOzbiBnw6w/XCIsIGtleXdvcmQ6IFwi5ZCDXCIsIHN0YXJ0TXM6IDU4MDAsIGVuZE1zOiA4MjcyLCBzY2VuZVN0YXJ0TXM6IDUwMDAsIHNjZW5lRW5kTXM6IDE2MDAwfSxcclxuICAgICAge2lkOiBcImZvb2QtMDJcIiwgcm9sZTogXCJLaMOhY2ggaMOgbmdcIiwgaGFuemk6IFwi5oiR6KaB5LiA56KX54mb6IKJ6Z2i44CCXCIsIHBpbnlpbjogXCJ3x5IgecOgbyB5w6wgd8eObiBuacO6csOydSBtacOgbi5cIiwgdHJhbnNsYXRpb246IFwiVMO0aSBtdeG7kW4gbeG7mXQgdMO0IG3DrCBiw7IuXCIsIGtleXdvcmQ6IFwi54mb6IKJ6Z2iXCIsIHN0YXJ0TXM6IDE2ODAwLCBlbmRNczogMTkwODAsIHNjZW5lU3RhcnRNczogMTYwMDAsIHNjZW5lRW5kTXM6IDI3MDAwfSxcclxuICAgICAge2lkOiBcImZvb2QtMDNcIiwgcm9sZTogXCJLaMOhY2ggaMOgbmdcIiwgaGFuemk6IFwi6K+35bCR5pS+5LiA54K56L6j5qSS44CCXCIsIHBpbnlpbjogXCJxx5BuZyBzaMeObyBmw6BuZyB5w6xkaceObiBsw6BqacSBby5cIiwgdHJhbnNsYXRpb246IFwiVnVpIGzDsm5nIGNobyDDrXQg4bubdCB0aMO0aS5cIiwga2V5d29yZDogXCLlsJHmlL5cIiwgc3RhcnRNczogMjc4MDAsIGVuZE1zOiAzMDIyNCwgc2NlbmVTdGFydE1zOiAyNzAwMCwgc2NlbmVFbmRNczogMzgwMDB9LFxyXG4gICAgXSxcclxuICB9LFxyXG4gIHtcclxuICAgIHNsdWc6IFwiaG9pLWR1b25nLWRlbi1nYS10YXUtZGllblwiLFxyXG4gICAgdGl0bGU6IFwiSOG7j2kgxJHGsOG7nW5nIMSR4bq/biBnYSB0w6B1IMSRaeG7h25cIixcclxuICAgIHN1bW1hcnk6IFwiSOG7j2kgxJHDum5nIMSRxrDhu51uZywgbmdoZSBjaOG7iSBk4bqrbiB2w6AgeMOhYyBuaOG6rW4ga2hv4bqjbmcgY8OhY2ggdHJvbmcgbeG7mXQgcGjDunQuXCIsXHJcbiAgICBkZXNjcmlwdGlvbjogXCJUw6xuaCBodeG7kW5nIMSRaSBs4bqhaSBkbyBIaW1pIHPhuqNuIHh14bqldCwgdOG6rXAgdHJ1bmcgdsOgbyBiYSBwaOG6o24geOG6oSBxdWFuIHRy4buNbmc6IGjhu49pIMSRxrDhu51uZywgaGnhu4N1IGjGsOG7m25nIHLhur0gdsOgIGjhu49pIHhhIGhheSBn4bqnbi5cIixcclxuICAgIHNvdXJjZTogXCJoaW1pXCIsXHJcbiAgICBjYXRlZ29yeTogXCLEkGkgbOG6oWlcIixcclxuICAgIGxldmVsOiBcIkhTSyAyXCIsXHJcbiAgICBjb250ZW50VHlwZTogXCJUw6xuaCBodeG7kW5nXCIsXHJcbiAgICBkdXJhdGlvbkxhYmVsOiBcIjEgcGjDunRcIixcclxuICAgIGF1dGhvck5hbWU6IFwiSGltaSBDaGluZXNlXCIsXHJcbiAgICB0aHVtYm5haWxVcmw6IFwiL2Fzc2V0cy92aWRlb3MvZGFpbHktbGlmZS9tZXRyby9oaW1pLW1ldHJvLWRpcmVjdGlvbnMtcG9zdGVyLTE2eDkucG5nXCIsXHJcbiAgICB2aWRlb1VybDogXCIvYXNzZXRzL3ZpZGVvcy9kYWlseS1saWZlL21ldHJvL2hpbWktbWV0cm8tZGlyZWN0aW9ucy0xNng5Lm1wNFwiLFxyXG4gICAgcG9zdGVyVXJsOiBcIi9hc3NldHMvdmlkZW9zL2RhaWx5LWxpZmUvbWV0cm8vaGltaS1tZXRyby1kaXJlY3Rpb25zLXBvc3Rlci0xNng5LnBuZ1wiLFxyXG4gICAgbGVhcm5pbmdHb2FsczogW1wiSOG7j2kgxJHGsOG7nW5nIMSR4bq/biBnYSB0w6B1IMSRaeG7h25cIiwgXCJIaeG7g3UgY2jhu4kgZOG6q24gxJFpIHRo4bqzbmcgdsOgIHLhur0gcGjhuqNpXCIsIFwiSOG7j2kgxJHhu4thIMSRaeG7g20gY8OzIHhhIGtow7RuZ1wiXSxcclxuICAgIHByYWN0aWNlUHJvbXB0czogW1wiTmdoZSBoxrDhu5tuZyDEkWkgcuG7k2kgduG6vSBtxalpIHTDqm4uXCIsIFwiTOG6t3AgY8OidSBraMO0bmcgbmjDrG4gcGlueWluLlwiLCBcIsSQ4buVaSDlnLDpk4Hnq5kgdGjDoG5oIMSR4buLYSDEkWnhu4NtIGLhuqFuIGPhuqduIHTDrG0uXCJdLFxyXG4gICAgdHJhbnNjcmlwdDogW1xyXG4gICAgICB7aWQ6IFwibWV0cm8tMDFcIiwgcm9sZTogXCJEdSBraMOhY2hcIiwgaGFuemk6IFwi6K+36Zeu77yM5Zyw6ZOB56uZ5oCO5LmI6LWw77yfXCIsIHBpbnlpbjogXCJxx5BuZ3fDqG4sIGTDrHRpxJsgemjDoG4gesSbbm1lIHrHknU/XCIsIHRyYW5zbGF0aW9uOiBcIlhpbiBo4buPaSwgxJFpIMSR4bq/biBnYSB0w6B1IMSRaeG7h24gdGjhur8gbsOgbz9cIiwga2V5d29yZDogXCLlnLDpk4Hnq5lcIiwgc3RhcnRNczogNTgwMCwgZW5kTXM6IDg1NjAsIHNjZW5lU3RhcnRNczogNTAwMCwgc2NlbmVFbmRNczogMTYwMDB9LFxyXG4gICAgICB7aWQ6IFwibWV0cm8tMDJcIiwgcm9sZTogXCJOZ8aw4budaSDEkWkgxJHGsOG7nW5nXCIsIGhhbnppOiBcIuS4gOebtOi1sO+8jOeEtuWQjuWQkeWPs+i9rOOAglwiLCBwaW55aW46IFwiecOsemjDrSB6x5J1LCByw6FuaMOydSB4acOgbmcgecOydSB6aHXHjm4uXCIsIHRyYW5zbGF0aW9uOiBcIsSQaSB0aOG6s25nLCBzYXUgxJHDsyBy4bq9IHBo4bqjaS5cIiwga2V5d29yZDogXCLlkJHlj7PovaxcIiwgc3RhcnRNczogMTY4MDAsIGVuZE1zOiAyMDAxNiwgc2NlbmVTdGFydE1zOiAxNjAwMCwgc2NlbmVFbmRNczogMjcwMDB9LFxyXG4gICAgICB7aWQ6IFwibWV0cm8tMDNcIiwgcm9sZTogXCJEdSBraMOhY2hcIiwgaGFuemk6IFwi56a76L+Z6YeM6L+c5ZCX77yfXCIsIHBpbnlpbjogXCJsw60gemjDqGzHkCB5dceObiBtYT9cIiwgdHJhbnNsYXRpb246IFwiQ8OzIHhhIGNo4buXIG7DoHkga2jDtG5nP1wiLCBrZXl3b3JkOiBcIui/nFwiLCBzdGFydE1zOiAyNzgwMCwgZW5kTXM6IDI5NjAwLCBzY2VuZVN0YXJ0TXM6IDI3MDAwLCBzY2VuZUVuZE1zOiAzODAwMH0sXHJcbiAgICBdLFxyXG4gIH0sXHJcbl07XHJcblxyXG5jb25zdCBsZXNzb25TY2VuYXJpb1ZpZGVvczogTGVhcm5pbmdWaWRlb1tdID0gW1xyXG4gIHtcclxuICAgIHNsdWc6IFwiYmFvLXRpZW4tZG8tdm9pLXF1YW4tbHlcIixcclxuICAgIHRpdGxlOiBcIkLDoW8gdGnhur9uIMSR4buZIGPDtG5nIHZp4buHYyB24bubaSBxdeG6o24gbMO9XCIsXHJcbiAgICBzdW1tYXJ5OiBcIk3hu5l0IHTDrG5oIGh14buRbmcgdsSDbiBwaMOybmcgbmfhuq9uIMSR4buDIG5naGUsIG7Ds2kgdGhlbyB2w6AgcGjhuqNuIHjhuqEgduG7m2kgYmEgbeG6q3UgY8OidSB0aGnhur90IHnhur91LlwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiVmlkZW8gSGltaSBPcmlnaW5hbCBjw7MgcGjhu6UgxJHhu4EgSMOhbiB04buxLCBwaW55aW4gdsOgIHRp4bq/bmcgVmnhu4d0IHRoZW8gdOG7q25nIGPDonUuIELhuqFuIGPDsyB0aOG7gyB0dWEgxJHhur9uIGPDonUsIG5naGUgbOG6oWkgdsOgIGzhurdwIMSRb+G6oW4gc2hhZG93aW5nIG5nYXkgdHJvbmcgYsOgaSBo4buNYy5cIixcclxuICAgIHNvdXJjZTogXCJoaW1pXCIsXHJcbiAgICBjYXRlZ29yeTogXCJDw7RuZyBz4bufXCIsXHJcbiAgICBsZXZlbDogXCJIU0sgMlwiLFxyXG4gICAgY29udGVudFR5cGU6IFwiVMOsbmggaHXhu5FuZ1wiLFxyXG4gICAgZHVyYXRpb25MYWJlbDogXCIxIHBow7p0XCIsXHJcbiAgICB0aHVtYm5haWxVcmw6IFwiL2Fzc2V0cy92aWRlb3Mvd29yay1wcm9ncmVzcy9oaW1pLXdvcmstcHJvZ3Jlc3MtcG9zdGVyLTE2eDkucG5nXCIsXHJcbiAgICB2aWRlb1VybDogXCIvYXNzZXRzL3ZpZGVvcy93b3JrLXByb2dyZXNzL2hpbWktd29yay1wcm9ncmVzcy0xNng5Lm1wNFwiLFxyXG4gICAgcG9zdGVyVXJsOiBcIi9hc3NldHMvdmlkZW9zL3dvcmstcHJvZ3Jlc3MvaGltaS13b3JrLXByb2dyZXNzLXBvc3Rlci0xNng5LnBuZ1wiLFxyXG4gICAgbGVhcm5pbmdHb2FsczogW1xyXG4gICAgICBcIkjhu49pIHRp4bq/biDEkeG7mSBk4buxIMOhbiBt4buZdCBjw6FjaCB04buxIG5oacOqblwiLFxyXG4gICAgICBcIkLDoW8gcGjhuqduIHRyxINtIGPDtG5nIHZp4buHYyDEkcOjIGhvw6BuIHRow6BuaFwiLFxyXG4gICAgICBcIkNhbSBr4bq/dCB0aOG7nWkgxJFp4buDbSBn4butaSBr4bq/dCBxdeG6o1wiLFxyXG4gICAgXSxcclxuICAgIHByYWN0aWNlUHJvbXB0czogW1xyXG4gICAgICBcIk5naGUgdHLhu41uIGPDonUgdHLGsOG7m2Mga2hpIG5ow6xuIHBpbnlpbi5cIixcclxuICAgICAgXCJC4bqtdCBs4bq3cCBjw6J1IHbDoCBuw7NpIHRoZW8gdHJvbmcga2hv4bqjbmcgbmdo4buJLlwiLFxyXG4gICAgICBcIlhlbSBs4bqhaSBraMO0bmcgcGjhu6UgxJHhu4EgxJHhu4MgdOG7sSBraeG7g20gdHJhLlwiLFxyXG4gICAgXSxcclxuICAgIHRyYW5zY3JpcHQ6IHdvcmtQcm9ncmVzc1RyYW5zY3JpcHQsXHJcbiAgICBsZXNzb25CaW5kaW5nOiB7XHJcbiAgICAgIGNvdXJzZVNsdWc6IFwidmFuLXBob25nLWhhbmgtY2hpbmhcIixcclxuICAgICAgbGVzc29uU2x1ZzogXCJ0aGVvLWRvaS10aWVuLWRvLWNvbmctdmllY1wiLFxyXG4gICAgfSxcclxuICB9LFxyXG5dO1xyXG5cclxuZXhwb3J0IGNvbnN0IGxlYXJuaW5nVmlkZW9zOiBMZWFybmluZ1ZpZGVvW10gPSBbXHJcbiAgLi4uZGFpbHlMaWZlVmlkZW9zLFxyXG4gIHtcclxuICAgIHNsdWc6IFwiYW0tdGh1Yy1kdW9uZy1waG8tdHJ1bmctcXVvY1wiLFxyXG4gICAgdGl0bGU6IFwi4bqobSB0aOG7sWMgxJHGsOG7nW5nIHBo4buRIFRydW5nIFF14buRY1wiLFxyXG4gICAgb3JpZ2luYWxUaXRsZTogXCLkuK3lm73ooZflpLTlsI/lkIMgfCBDaGluZXNlIFN0cmVldCBGb29kXCIsXHJcbiAgICBzdW1tYXJ5OiBcIkx1eeG7h24gbmdoZSBxdWEgY2jhu6cgxJHhu4EgbcOzbiDEg24gxJHGsOG7nW5nIHBo4buRIHbDoCB2xINuIGjDs2Eg4bqpbSB0aOG7sWMgcXVlbiB0aHXhu5ljIHThuqFpIFRydW5nIFF14buRYy5cIixcclxuICAgIGRlc2NyaXB0aW9uOiBcIlBvZGNhc3QgdGnhur9uZyBUcnVuZyB0aGVvIGNo4bunIMSR4buBIMSR4budaSBz4buRbmcsIHBow7kgaOG7o3AgxJHhu4MgbHV54buHbiBuZ2hlIHThu6sgduG7sW5nIG3Ds24gxINuIHbDoCBjw6FjaCBtacOqdSB04bqjIHRy4bqjaSBuZ2hp4buHbSDhuqltIHRo4buxYy5cIixcclxuICAgIHNvdXJjZTogXCJ5b3V0dWJlXCIsXHJcbiAgICBjYXRlZ29yeTogXCJWxINuIGjDs2FcIixcclxuICAgIGxldmVsOiBcIkhTSyAyXCIsXHJcbiAgICBjb250ZW50VHlwZTogXCJQb2RjYXN0XCIsXHJcbiAgICBzZW50ZW5jZUNvdW50OiAyNzQsXHJcbiAgICB5b3V0dWJlSWQ6IFwiR0phbm1NU2o4UVFcIixcclxuICAgIGF1dGhvck5hbWU6IFwiQ2hpbmVzZSBQb2RjYXN0IFN0YXRpb25cIixcclxuICAgIGF1dGhvclVybDogXCJodHRwczovL3d3dy55b3V0dWJlLmNvbS9AQ2hpbmVzZVBvZGNhc3RTdGF0aW9uMTAxXCIsXHJcbiAgICB0aHVtYm5haWxVcmw6IFwiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9HSmFubU1TajhRUS9ocWRlZmF1bHQuanBnXCIsXHJcbiAgICBsZWFybmluZ0dvYWxzOiBbXCJOaOG6rW4gYmnhur90IHThu6sgduG7sW5nIG3Ds24gxINuXCIsIFwiTHV54buHbiBuZ2hlIMSRb+G6oW4ga+G7gyBjaHV54buHbiBkw6BpXCIsIFwiTMOgbSBxdWVuIG5n4buvIMSRaeG7h3UgaOG7mWkgdGhv4bqhaSB04buxIG5oacOqblwiXSxcclxuICAgIHByYWN0aWNlUHJvbXB0czogW1wiTmdoZSBsxrDhu6N0IMSR4bqndSBraMO0bmcgcGjhu6UgxJHhu4EuXCIsIFwiR2hpIGzhuqFpIGJhIG3Ds24gxINuIGLhuqFuIG5naGUgxJHGsOG7o2MuXCIsIFwiVMOzbSB04bqvdCBu4buZaSBkdW5nIGLhurFuZyBoYWkgY8OidSBuZ+G6r24uXCJdLFxyXG4gIH0sXHJcbiAge1xyXG4gICAgc2x1ZzogXCJtb3QtbmdheS1jdWEtdG9pXCIsXHJcbiAgICB0aXRsZTogXCJN4buZdCBuZ8OgeSBj4bunYSB0w7RpXCIsXHJcbiAgICBvcmlnaW5hbFRpdGxlOiBcIuaIkeeahOS4gOWkqSB8IE15IERheSBpbiBDaGluZXNlXCIsXHJcbiAgICBzdW1tYXJ5OiBcIlRoZW8gZMO1aSBt4buZdCBuZ8OgeSB0aMaw4budbmcgbmjhuq10IHbhu5tpIHThu5FjIMSR4buZIG5naGUgcGjDuSBo4bujcCBjaG8gbmfGsOG7nWkgbeG7m2kgYuG6r3QgxJHhuqd1LlwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiUG9kY2FzdCBuaOG6rXAgbcO0biB24buBIGzhu4tjaCBzaW5oIGhv4bqhdCwgdGjhu51pIGdpYW4gdsOgIGPDoWMgaG/huqF0IMSR4buZbmcgaOG6sW5nIG5nw6B5IGLhurFuZyBt4bqrdSBjw6J1IG5n4bqvbiwgZOG7hSBi4bqvdCBjaMaw4bubYy5cIixcclxuICAgIHNvdXJjZTogXCJ5b3V0dWJlXCIsXHJcbiAgICBjYXRlZ29yeTogXCLEkOG7nWkgc+G7kW5nXCIsXHJcbiAgICBsZXZlbDogXCJIU0sgMVwiLFxyXG4gICAgY29udGVudFR5cGU6IFwiUG9kY2FzdFwiLFxyXG4gICAgc2VudGVuY2VDb3VudDogMjA3LFxyXG4gICAgeW91dHViZUlkOiBcIkxHN3lzYnNEZjMwXCIsXHJcbiAgICBhdXRob3JOYW1lOiBcIkNoaW5lc2UgUG9kY2FzdCBTdGF0aW9uXCIsXHJcbiAgICBhdXRob3JVcmw6IFwiaHR0cHM6Ly93d3cueW91dHViZS5jb20vQENoaW5lc2VQb2RjYXN0U3RhdGlvbjEwMVwiLFxyXG4gICAgdGh1bWJuYWlsVXJsOiBcImh0dHBzOi8vaS55dGltZy5jb20vdmkvTEc3eXNic0RmMzAvaHFkZWZhdWx0LmpwZ1wiLFxyXG4gICAgbGVhcm5pbmdHb2FsczogW1wiTsOzaSB24buBIGzhu4tjaCBzaW5oIGhv4bqhdFwiLCBcIsOUbiBjw6FjaCBkaeG7hW4gxJHhuqF0IHRo4budaSBnaWFuXCIsIFwiTmdoZSBjw6FjIMSR4buZbmcgdOG7qyB0aMO0bmcgZOG7pW5nXCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJOZ2hlIHbDoCDEkcOhbmggZOG6pXUgY8OhYyBt4buRYyB0aOG7nWkgZ2lhbi5cIiwgXCJOw7NpIGzhuqFpIGzhu4tjaCBj4bunYSBi4bqhbiB0aGVvIG3huqt1LlwiLCBcIlNoYWRvd2luZyBt4buZdCDEkW/huqFuIG5n4bqvbiAzMCBnacOieS5cIl0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBzbHVnOiBcInZpLXNhby1ob2MtbWFpLWNodWEtbm9pLWR1b2NcIixcclxuICAgIHRpdGxlOiBcIlbDrCBzYW8gaOG7jWMgbcOjaSB24bqrbiBjaMawYSBuw7NpIMSRxrDhu6NjIHRp4bq/bmcgVHJ1bmc/XCIsXHJcbiAgICBvcmlnaW5hbFRpdGxlOiBcIuS4uuS7gOS5iOS9oOi/mOS4jeS8muivtOS4reaWhz9cIixcclxuICAgIHN1bW1hcnk6IFwiTeG7mXQgcG9kY2FzdCBwaMOibiB0w61jaCBuaOG7r25nIHLDoG8gY+G6o24gdGjGsOG7nW5nIGfhurdwIGtoaeG6v24gbmfGsOG7nWkgaOG7jWMgYmnhur90IG5oaeG7gXUgbmjGsG5nIHbhuqtuIG5n4bqhaSBuw7NpLlwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiTuG7mWkgZHVuZyB04buRYyDEkeG7mSB24burYSBwaOG6o2ksIHBow7kgaOG7o3AgxJHhu4MgduG7q2EgbHV54buHbiBuZ2hlIHbhu6thIG5o4bqtbiByYSBjw6FjaCB4w6J5IHRow7NpIHF1ZW4gbHV54buHbiBuw7NpIGNo4bunIMSR4buZbmcuXCIsXHJcbiAgICBzb3VyY2U6IFwieW91dHViZVwiLFxyXG4gICAgY2F0ZWdvcnk6IFwiS+G7uSBuxINuZ1wiLFxyXG4gICAgbGV2ZWw6IFwiSFNLIDNcIixcclxuICAgIGNvbnRlbnRUeXBlOiBcIlBvZGNhc3RcIixcclxuICAgIHNlbnRlbmNlQ291bnQ6IDIwOCxcclxuICAgIHlvdXR1YmVJZDogXCJPNllQb0ZjSnZ2c1wiLFxyXG4gICAgYXV0aG9yTmFtZTogXCJDaGluZXNlIFBvZGNhc3QgU3RhdGlvblwiLFxyXG4gICAgYXV0aG9yVXJsOiBcImh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL0BDaGluZXNlUG9kY2FzdFN0YXRpb24xMDFcIixcclxuICAgIHRodW1ibmFpbFVybDogXCJodHRwczovL2kueXRpbWcuY29tL3ZpL082WVBvRmNKdnZzL2hxZGVmYXVsdC5qcGdcIixcclxuICAgIGxlYXJuaW5nR29hbHM6IFtcIk5o4bqtbiBiaeG6v3QgdOG7qyB24buxbmcgduG7gSBo4buNYyB04bqtcFwiLCBcIk5naGUgbOG6rXAgbHXhuq1uIGTDoGkgaMahblwiLCBcIljDonkgdGjDs2kgcXVlbiBwaOG6o24geOG6oSBuw7NpXCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJHaGkgbOG6oWkgbmd1ecOqbiBuaMOibiBjaMOtbmggxJHGsOG7o2Mgbmjhuq9jIMSR4bq/bi5cIiwgXCJE4burbmcgc2F1IG3hu5dpIMO9IHbDoCBuw7NpIGzhuqFpLlwiLCBcIkNo4buNbiBt4buZdCB0aMOzaSBxdWVuIMSR4buDIMOhcCBk4bulbmcgaMO0bSBuYXkuXCJdLFxyXG4gIH0sXHJcbiAge1xyXG4gICAgc2x1ZzogXCJ0aWVuZy10cnVuZy10cm9uZy1kb2ktc29uZy1oYW5nLW5nYXlcIixcclxuICAgIHRpdGxlOiBcIlRp4bq/bmcgVHJ1bmcgdHJvbmcgxJHhu51pIHPhu5FuZyBo4bqxbmcgbmfDoHlcIixcclxuICAgIG9yaWdpbmFsVGl0bGU6IFwi55Sf5rS75Lit5paHIHwgQ2hpbmVzZSBmb3IgRXZlcnlkYXkgTGlmZVwiLFxyXG4gICAgc3VtbWFyeTogXCLDlG4gY8OhYyBjw6FjaCBkaeG7hW4gxJHhuqF0IGfhuqduIGfFqWkgdGjGsOG7nW5nIHh14bqldCBoaeG7h24gdHJvbmcgZ2lhbyB0aeG6v3AgaOG6sW5nIG5nw6B5LlwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiUG9kY2FzdCB04buVbmcgaOG7o3AgbeG6q3UgY8OidSDEkeG7nWkgc+G7kW5nIOG7nyBt4bupYyBIU0sgMuKAkzMsIGjhu691IMOtY2ggY2hvIHZp4buHYyBt4bufIHLhu5luZyB24buRbiB04burIHRoZW8gbmfhu68gY+G6o25oLlwiLFxyXG4gICAgc291cmNlOiBcInlvdXR1YmVcIixcclxuICAgIGNhdGVnb3J5OiBcIsSQ4budaSBz4buRbmdcIixcclxuICAgIGxldmVsOiBcIkhTSyAy4oCTM1wiLFxyXG4gICAgY29udGVudFR5cGU6IFwiUG9kY2FzdFwiLFxyXG4gICAgc2VudGVuY2VDb3VudDogMjM1LFxyXG4gICAgeW91dHViZUlkOiBcIk0xQm5VWUVZZU9nXCIsXHJcbiAgICBhdXRob3JOYW1lOiBcIkNoaW5lc2UgUG9kY2FzdCBTdGF0aW9uXCIsXHJcbiAgICBhdXRob3JVcmw6IFwiaHR0cHM6Ly93d3cueW91dHViZS5jb20vQENoaW5lc2VQb2RjYXN0U3RhdGlvbjEwMVwiLFxyXG4gICAgdGh1bWJuYWlsVXJsOiBcImh0dHBzOi8vaS55dGltZy5jb20vdmkvTTFCblVZRVllT2cvaHFkZWZhdWx0LmpwZ1wiLFxyXG4gICAgbGVhcm5pbmdHb2FsczogW1wiTeG7nyBy4buZbmcgY+G7pW0gdOG7qyDEkeG7nWkgc+G7kW5nXCIsIFwiTmdoZSBoaeG7g3Ugw70gY2jDrW5oIHRoZW8gbmfhu68gY+G6o25oXCIsIFwiQuG6r3QgY2jGsOG7m2Mgbmjhu4twIG7Ds2kgdOG7sSBuaGnDqm5cIl0sXHJcbiAgICBwcmFjdGljZVByb21wdHM6IFtcIkNoaWEgdmlkZW8gdGjDoG5oIGPDoWMgxJFv4bqhbiAz4oCTNSBwaMO6dC5cIiwgXCJDaOG7jW4gbsSDbSBj4bulbSB04burIGTDuW5nIMSRxrDhu6NjIG5nYXkuXCIsIFwixJDhurd0IGPDonUgbeG7m2kgY2hvIHThu6tuZyBj4bulbS5cIl0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBzbHVnOiBcInNoYWRvd2luZy1naXVwLXRpZW4tYm8tbmhhbmgtaG9uXCIsXHJcbiAgICB0aXRsZTogXCJTaGFkb3dpbmcgZ2nDunAgdGnhur9uZyBUcnVuZyB0aeG6v24gYuG7mSBuaGFuaCBoxqFuXCIsXHJcbiAgICBvcmlnaW5hbFRpdGxlOiBcIui3n+ivu+azleiuqeS9oOS4reaWh+i/m+atpeabtOW/q1wiLFxyXG4gICAgc3VtbWFyeTogXCJIaeG7g3UgY8OhY2ggbHV54buHbiBzaGFkb3dpbmcgdsOgIGJp4bq/biB2aeG7h2MgbmdoZSBs4bq3cCBs4bqhaSB0aMOgbmggcGjhuqNuIHjhuqEgbsOzaSBjaOG7pyDEkeG7mW5nLlwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiUG9kY2FzdCBoxrDhu5tuZyBk4bqrbiBwaMawxqFuZyBwaMOhcCBuZ2hlIHbDoCBuw7NpIMSRdeG7lWkgdGhlbywgcGjDuSBo4bujcCBjaG8gbmfGsOG7nWkgxJHDoyBjw7MgbuG7gW4gdOG6o25nIHbDoCBtdeG7kW4gY+G6o2kgdGhp4buHbiDEkeG7mSB0csO0aSBjaOG6o3kuXCIsXHJcbiAgICBzb3VyY2U6IFwieW91dHViZVwiLFxyXG4gICAgY2F0ZWdvcnk6IFwiUGjGsMahbmcgcGjDoXBcIixcclxuICAgIGxldmVsOiBcIkhTSyAzXCIsXHJcbiAgICBjb250ZW50VHlwZTogXCJQb2RjYXN0XCIsXHJcbiAgICBzZW50ZW5jZUNvdW50OiAxODAsXHJcbiAgICB5b3V0dWJlSWQ6IFwiWUd2YnN5NlZlbUFcIixcclxuICAgIGF1dGhvck5hbWU6IFwiQ2hpbmVzZSBQb2RjYXN0IFN0YXRpb25cIixcclxuICAgIGF1dGhvclVybDogXCJodHRwczovL3d3dy55b3V0dWJlLmNvbS9AQ2hpbmVzZVBvZGNhc3RTdGF0aW9uMTAxXCIsXHJcbiAgICB0aHVtYm5haWxVcmw6IFwiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9ZR3Zic3k2VmVtQS9ocWRlZmF1bHQuanBnXCIsXHJcbiAgICBsZWFybmluZ0dvYWxzOiBbXCJIaeG7g3UgxJHDum5nIGvhu7kgdGh14bqtdCBzaGFkb3dpbmdcIiwgXCJD4bqjaSB0aGnhu4duIG5o4buLcCB2w6Agbmfhu68gxJFp4buHdVwiLCBcIlThuqFvIGzhu4tjaCBsdXnhu4duIG7Ds2kgbmfhuq9uIG3hu5dpIG5nw6B5XCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJDaOG7jW4gxJFv4bqhbiAyMOKAkzMwIGdpw6J5LlwiLCBcIk5naGUgYmEgbOG6p24gdHLGsOG7m2Mga2hpIG7Ds2kgdGhlby5cIiwgXCJUaHUgw6JtIHbDoCBzbyBzw6FuaCBuaOG7i3AgY8OidS5cIl0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBzbHVnOiBcImx1eWVuLW5naGUtZG9jLXNhdS1zYXUtdGhhbmdcIixcclxuICAgIHRpdGxlOiBcIkLhuqFuIGhp4buDdSDEkcaw4bujYyBiYW8gbmhpw6p1IHNhdSA2IHRow6FuZyBo4buNYz9cIixcclxuICAgIG9yaWdpbmFsVGl0bGU6IFwiV2F0Y2ggdGhpcyBpZiB5b3UndmUgbGVhcm5lZCBDaGluZXNlIGZvciA2IG1vbnRocyAtIENoaW5lc2UgTElTVEVOSU5HIGFuZCBSRUFESU5HIGNvbXByZWhlbnNpb25cIixcclxuICAgIHN1bW1hcnk6IFwiTeG7mXQgYsOgaSBraeG7g20gdHJhIG5naGXigJPEkeG7jWMgbmjhurkgbmjDoG5nIMSR4buDIG5o4bqtbiByYSBwaOG6p24gYuG6oW4gxJHDoyBoaeG7g3UgdOG7kXQgdsOgIHbhu5FuIHThu6sgY8OybiB54bq/dS5cIixcclxuICAgIGRlc2NyaXB0aW9uOiBcIlZpZGVvIGx1eeG7h24gbmdoZSB2w6AgxJHhu41jIGhp4buDdSBi4bqxbmcgdGnhur9uZyBUcnVuZywgcGjDuSBo4bujcCBraGkgYuG6oW4gxJHDoyBo4buNYyBu4buBbiB04bqjbmcga2hv4bqjbmcgc8OhdSB0aMOhbmcgdsOgIG114buRbiBraeG7g20gdHJhIGto4bqjIG7Eg25nIHRoZW8gZMO1aSBu4buZaSBkdW5nIGxpw6puIHThu6VjLlwiLFxyXG4gICAgc291cmNlOiBcInlvdXR1YmVcIixcclxuICAgIGNhdGVnb3J5OiBcIktp4buDbSB0cmFcIixcclxuICAgIGxldmVsOiBcIkhTSyAy4oCTM1wiLFxyXG4gICAgY29udGVudFR5cGU6IFwiTmdoZSAmIMSR4buNY1wiLFxyXG4gICAgc2VudGVuY2VDb3VudDogOTAsXHJcbiAgICB5b3V0dWJlSWQ6IFwiSkh4Z0dLTVZJSkFcIixcclxuICAgIGF1dGhvck5hbWU6IFwiU2h1b3NodW9DaGluZXNl6K+06K+05Lit5paHXCIsXHJcbiAgICBhdXRob3JVcmw6IFwiaHR0cHM6Ly93d3cueW91dHViZS5jb20vQFNodW9zaHVvQ2hpbmVzZVwiLFxyXG4gICAgdGh1bWJuYWlsVXJsOiBcImh0dHBzOi8vaS55dGltZy5jb20vdmkvSkh4Z0dLTVZJSkEvaHFkZWZhdWx0LmpwZ1wiLFxyXG4gICAgbGVhcm5pbmdHb2FsczogW1wiS2nhu4NtIHRyYSBraOG6oyBuxINuZyBu4bqvbSDDvSBjaMOtbmhcIiwgXCJMdXnhu4duIMSR4buNYyBjw7luZyBu4buZaSBkdW5nIMSRYW5nIG5naGVcIiwgXCJOaOG6rW4gZGnhu4duIG5ow7NtIHThu6sgY+G6p24gw7RuIGzhuqFpXCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJOZ2hlIGzGsOG7o3QgxJHhuqd1IGtow7RuZyBuaMOsbiBwaW55aW4uXCIsIFwiROG7q25nIHNhdSBt4buXaSDDvSB2w6AgdOG7sSB0w7NtIHThuq90LlwiLCBcIkdoaSBs4bqhaSBuxINtIHThu6sgYuG6oW4gY2jGsGEgbmjhuq1uIHJhLlwiXSxcclxuICB9LFxyXG4gIHtcclxuICAgIHNsdWc6IFwiYnVvaS1zYW5nLWJhbmctdGllbmctdHJ1bmdcIixcclxuICAgIHRpdGxlOiBcIk3hu5l0IGJ14buVaSBzw6FuZyBi4bqxbmcgdGnhur9uZyBUcnVuZ1wiLFxyXG4gICAgb3JpZ2luYWxUaXRsZTogXCLimIDvuI8gQ2FuIHlvdSB1bmRlcnN0YW5kIHRoaXMgQ2hpbmVzZSBWbG9nPyB8IFNsb3cgQ2hpbmVzZSBMaXN0ZW5pbmcgUHJhY3RpY2UgZm9yIEJlZ2lubmVycyAoSFNLMS0zKVwiLFxyXG4gICAgc3VtbWFyeTogXCJWbG9nIG5naGUgY2jhuq1tIHbhu4Egc2luaCBob+G6oXQgYnXhu5VpIHPDoW5nLCBn4bqnbiBnxalpIHbDoCBk4buFIGx1eeG7h24gdGhlbyBjaG8gbmfGsOG7nWkgbeG7m2kuXCIsXHJcbiAgICBkZXNjcmlwdGlvbjogXCJN4buZdCB2bG9nIMSR4budaSBz4buRbmcgduG7m2kgdOG7kWMgxJHhu5kgbsOzaSByw7UgcsOgbmcsIGdpw7pwIGLhuqFuIG5naGUgdOG7qyB24buxbmcgc2luaCBob+G6oXQgdsOgIGzDoG0gcXVlbiBjw6FjaCBr4buDIGzhuqFpIGhv4bqhdCDEkeG7mW5nIGjhurFuZyBuZ8OgeSBi4bqxbmcgdGnhur9uZyBUcnVuZy5cIixcclxuICAgIHNvdXJjZTogXCJ5b3V0dWJlXCIsXHJcbiAgICBjYXRlZ29yeTogXCJWbG9nXCIsXHJcbiAgICBsZXZlbDogXCJIU0sgMeKAkzNcIixcclxuICAgIGNvbnRlbnRUeXBlOiBcIk5naGUgY2jhuq1tXCIsXHJcbiAgICBzZW50ZW5jZUNvdW50OiA4OSxcclxuICAgIHlvdXR1YmVJZDogXCJWNlNyakhEaXNEc1wiLFxyXG4gICAgYXV0aG9yTmFtZTogXCJTaHVvc2h1b0NoaW5lc2Xor7Tor7TkuK3mlodcIixcclxuICAgIGF1dGhvclVybDogXCJodHRwczovL3d3dy55b3V0dWJlLmNvbS9AU2h1b3NodW9DaGluZXNlXCIsXHJcbiAgICB0aHVtYm5haWxVcmw6IFwiaHR0cHM6Ly9pLnl0aW1nLmNvbS92aS9WNlNyakhEaXNEcy9ocWRlZmF1bHQuanBnXCIsXHJcbiAgICBsZWFybmluZ0dvYWxzOiBbXCJOZ2hlIHThu6sgduG7sW5nIHNpbmggaG/huqF0IGJ14buVaSBzw6FuZ1wiLCBcIk5o4bqtbiBiaeG6v3QgY+G6pXUgdHLDumMga+G7gyB0csOsbmggdOG7sVwiLCBcIkzDoG0gcXVlbiBs4budaSBuw7NpIMSR4budaSB0aMaw4budbmdcIl0sXHJcbiAgICBwcmFjdGljZVByb21wdHM6IFtcIk5naGUgbeG7mXQgbMaw4bujdCBjaOG7iSDEkeG7gyBu4bqvbSBt4bqhY2guXCIsIFwiTsOzaSB0aGVvIGJhIGPDonUgYuG6oW4gZMO5bmcgxJHGsOG7o2MgbmdheS5cIiwgXCJL4buDIGzhuqFpIGJ14buVaSBzw6FuZyBj4bunYSBi4bqhbiB0cm9uZyAzMCBnacOieS5cIl0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBzbHVnOiBcImhhbi10dS1kYXUtdGllbi10cm9uZy1uYW0tcGh1dFwiLFxyXG4gICAgdGl0bGU6IFwiSMOhbiB04buxIMSR4bqndSB0acOqbiB0cm9uZyA1IHBow7p0XCIsXHJcbiAgICBvcmlnaW5hbFRpdGxlOiBcIkxlYXJuIFlvdXIgRmlyc3QgQ2hpbmVzZSBDaGFyYWN0ZXIgaW4gNSBNaW51dGVzIHdpdGggWW95byBDaGluZXNlIChQYXJ0IDEpXCIsXHJcbiAgICBzdW1tYXJ5OiBcIkLhuq90IMSR4bqndSBsw6BtIHF1ZW4gSMOhbiB04buxIGLhurFuZyBt4buZdCBiw6BpIGdp4bqjbmcgbmfhuq9uLCB0cuG7sWMgcXVhbiB2w6Aga2jDtG5nIHThuqFvIMOhcCBs4buxYyBnaGkgbmjhu5suXCIsXHJcbiAgICBkZXNjcmlwdGlvbjogXCJCw6BpIGjhu41jIG5o4bqtcCBtw7RuIGdp4bqjaSB0aMOtY2ggY8OhY2ggbmjDrG4sIGhp4buDdSB2w6AgZ2hpIG5o4bubIEjDoW4gdOG7sSDEkeG6p3UgdGnDqm4sIHBow7kgaOG7o3AgY2hvIG5nxrDhu51pIG3hu5tpIGLhuq90IMSR4bqndSB04burIGNvbiBz4buRIGtow7RuZy5cIixcclxuICAgIHNvdXJjZTogXCJ5b3V0dWJlXCIsXHJcbiAgICBjYXRlZ29yeTogXCJIw6FuIHThu7FcIixcclxuICAgIGxldmVsOiBcIk5o4bqtcCBtw7RuXCIsXHJcbiAgICBjb250ZW50VHlwZTogXCJCw6BpIGdp4bqjbmdcIixcclxuICAgIHNlbnRlbmNlQ291bnQ6IDE0LFxyXG4gICAgeW91dHViZUlkOiBcIm1yeHpnbXMzRTFnXCIsXHJcbiAgICBhdXRob3JOYW1lOiBcIllveW8gQ2hpbmVzZVwiLFxyXG4gICAgYXV0aG9yVXJsOiBcImh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL0BZb3lvQ2hpbmVzZVwiLFxyXG4gICAgdGh1bWJuYWlsVXJsOiBcImh0dHBzOi8vaS55dGltZy5jb20vdmkvbXJ4emdtczNFMWcvaHFkZWZhdWx0LmpwZ1wiLFxyXG4gICAgbGVhcm5pbmdHb2FsczogW1wiSGnhu4N1IEjDoW4gdOG7sSDEkcaw4bujYyBj4bqldSB04bqhbyBuaMawIHRo4bq/IG7DoG9cIiwgXCJH4bqvbiBow6xuaCBk4bqhbmcgduG7m2kgw70gbmdoxKlhXCIsIFwiVOG6oW8gY+G6o20gZ2nDoWMgZOG7hSB0aeG6v3AgY+G6rW4ga2hpIG3hu5tpIGjhu41jXCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJRdWFuIHPDoXQgY2jhu68gdHLGsOG7m2Mga2hpIG5naGUgZ2nhuqNpIHRow61jaC5cIiwgXCJWaeG6v3QgbOG6oWkgY2jhu68gYmEgbOG6p24gY8OzIGNo4bunIMSRw61jaC5cIiwgXCJU4buxIG7Ds2kgbOG6oWkgw70gbmdoxKlhIGtow7RuZyBuaMOsbiBnaGkgY2jDui5cIl0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBzbHVnOiBcImJhaS1ob2MtdGllbmctdHJ1bmctZGF1LXRpZW5cIixcclxuICAgIHRpdGxlOiBcIkLDoGkgaOG7jWMgdGnhur9uZyBUcnVuZyDEkeG6p3UgdGnDqm5cIixcclxuICAgIG9yaWdpbmFsVGl0bGU6IFwiV2h5IE1hbmRhcmluIENoaW5lc2UgaXMgRWFzeSB0byBMZWFybiAtIFlveW8gQ2hpbmVzZVwiLFxyXG4gICAgc3VtbWFyeTogXCJOaMOsbiBj4bqldSB0csO6YyBjw6J1IHbDoCB04burIGdow6lwIMSR4buDIHRo4bqleSB0aeG6v25nIFRydW5nIGxvZ2ljLCBk4buFIHRp4bq/cCBj4bqtbiBoxqFuIGLhuqFuIG5naMSpLlwiLFxyXG4gICAgZGVzY3JpcHRpb246IFwiQsOgaSBnaeG7m2kgdGhp4buHdSBkw6BuaCBjaG8gbmfGsOG7nWkgbeG7m2ksIGdp4bqjaSB0aMOtY2ggdHLhuq10IHThu7EgY8OidSwgxJHhu5luZyB04burIGtow7RuZyBiaeG6v24gxJHhu5VpIHbDoCBjw6FjaCBjw6FjIHThu6sgcXVlbiB0aHXhu5ljIGvhur90IGjhu6NwIHRow6BuaCB04burIG3hu5tpLlwiLFxyXG4gICAgc291cmNlOiBcInlvdXR1YmVcIixcclxuICAgIGNhdGVnb3J5OiBcIk5o4bqtcCBtw7RuXCIsXHJcbiAgICBsZXZlbDogXCJIU0sgMVwiLFxyXG4gICAgY29udGVudFR5cGU6IFwiQsOgaSBnaeG6o25nXCIsXHJcbiAgICBzZW50ZW5jZUNvdW50OiAxNSxcclxuICAgIHlvdXR1YmVJZDogXCJBT0VXYWRmdFdIQVwiLFxyXG4gICAgYXV0aG9yTmFtZTogXCJZb3lvIENoaW5lc2VcIixcclxuICAgIGF1dGhvclVybDogXCJodHRwczovL3d3dy55b3V0dWJlLmNvbS9AWW95b0NoaW5lc2VcIixcclxuICAgIHRodW1ibmFpbFVybDogXCJodHRwczovL2kueXRpbWcuY29tL3ZpL0FPRVdhZGZ0V0hBL2hxZGVmYXVsdC5qcGdcIixcclxuICAgIGxlYXJuaW5nR29hbHM6IFtcIkhp4buDdSB0cuG6rXQgdOG7sSBjw6J1IGPGoSBi4bqjblwiLCBcIk5o4bqtbiBiaeG6v3QgY8OhYyB04burIGdow6lwIGxvZ2ljXCIsIFwiR2hpIG5o4bubIG5ow7NtIHThu6sgY8OzIGNodW5nIHRow6BuaCBwaOG6p25cIl0sXHJcbiAgICBwcmFjdGljZVByb21wdHM6IFtcIk5naGUgdsOgIHPhuq9wIHjhur9wIGzhuqFpIGPDonUgbeG6q3UuXCIsIFwixJDhu41jIHRvIGPDoWMgdOG7qyBnaMOpcCB4deG6pXQgaGnhu4duIHRyb25nIHZpZGVvLlwiLCBcIlThu7EgdOG6oW8gbeG7mXQgY+G6t3AgdOG7qyBjw7MgY2h1bmcgdGjDoG5oIHBo4bqnbi5cIl0sXHJcbiAgfSxcclxuICB7XHJcbiAgICBzbHVnOiBcImxhYy1kdW9uZy10cm9uZy10aGFuaC1waG9cIixcclxuICAgIHRpdGxlOiBcIkzhuqFjIGdp4buvYSB0aMOgbmggcGjhu5FcIixcclxuICAgIG9yaWdpbmFsVGl0bGU6IFwiTG9zdCBpbiBUaGUgQ2l0eSAtIEludGVybWVkaWF0ZSBDaGluZXNlIExpc3RlbmluZyBQcmFjdGljZSB8IENoaW5lc2UgQ29udmVyc2F0aW9uIHwgU2xvdyBDaGluZXNlXCIsXHJcbiAgICBzdW1tYXJ5OiBcIlRoZW8gY2jDom4gbeG7mXQgY8O0IGfDoWkgcuG7nWkgcXXDqiwgdMOsbSB2aeG7h2MgdsOgIGThuqduIG5o4bqtbiByYSBjdeG7mWMgc+G7kW5nIHRow6BuaCBwaOG7kSBraMO0bmcgZ2nhu5FuZyB0xrDhu59uZyB0xrDhu6NuZy5cIixcclxuICAgIGRlc2NyaXB0aW9uOiBcIk3hu5l0IGPDonUgY2h1eeG7h24gbmdoZSBjaOG6rW0gZMOgbmggY2hvIHRyw6xuaCDEkeG7mSB0cnVuZyBj4bqlcCwgZ2nDunAgYuG6oW4gdGhlbyBkw7VpIG3huqFjaCBr4buDIGTDoGkgdsOgIGjhu41jIGPDoWNoIGRp4buFbiDEkeG6oXQgbOG7sWEgY2jhu41uLCBj4bqjbSB4w7pjIGPDuW5nIHRy4bqjaSBuZ2hp4buHbSB0csaw4bufbmcgdGjDoG5oLlwiLFxyXG4gICAgc291cmNlOiBcInlvdXR1YmVcIixcclxuICAgIGNhdGVnb3J5OiBcIkPDonUgY2h1eeG7h25cIixcclxuICAgIGxldmVsOiBcIkhTSyAzXCIsXHJcbiAgICBjb250ZW50VHlwZTogXCJOZ2hlIGNo4bqtbVwiLFxyXG4gICAgc2VudGVuY2VDb3VudDogMTM2LFxyXG4gICAgeW91dHViZUlkOiBcInV1VW1oaTJGMGtjXCIsXHJcbiAgICBhdXRob3JOYW1lOiBcIk1hbmRhcmluIENvcm5lclwiLFxyXG4gICAgYXV0aG9yVXJsOiBcImh0dHBzOi8vd3d3LnlvdXR1YmUuY29tL0BNYW5kYXJpbkNvcm5lcjJcIixcclxuICAgIHRodW1ibmFpbFVybDogXCJodHRwczovL2kueXRpbWcuY29tL3ZpL3V1VW1oaTJGMGtjL2hxZGVmYXVsdC5qcGdcIixcclxuICAgIGxlYXJuaW5nR29hbHM6IFtcIlRoZW8gZMO1aSBt4buZdCBjw6J1IGNodXnhu4duIGTDoGkgaMahblwiLCBcIkjhu41jIHThu6sgduG7sW5nIHbhu4EgY8O0bmcgdmnhu4djIHbDoCBj4bqjbSB4w7pjXCIsIFwiTHV54buHbiDEkW/DoW4gbmdoxKlhIHThu6sgbmfhu68gY+G6o25oXCJdLFxyXG4gICAgcHJhY3RpY2VQcm9tcHRzOiBbXCJOZ2hlIGzGsOG7o3QgxJHhuqd1IHbDoCDEkW/DoW4gZGnhu4VuIGJp4bq/bi5cIiwgXCJHaGkgbOG6oWkgYmEgcXV54bq/dCDEkeG7i25oIHF1YW4gdHLhu41uZyBj4bunYSBuaMOibiB24bqtdC5cIiwgXCJL4buDIGzhuqFpIGPDonUgY2h1eeG7h24gYuG6sW5nIG7Eg20gY8OidSBuZ+G6r24uXCJdLFxyXG4gIH0sXHJcbl07XHJcblxyXG5leHBvcnQgZnVuY3Rpb24gZmluZFZpZGVvQnlTbHVnKHNsdWc6IHN0cmluZyk6IExlYXJuaW5nVmlkZW8gfCB1bmRlZmluZWQge1xyXG4gIHJldHVybiBsZWFybmluZ1ZpZGVvcy5maW5kKCh2aWRlbykgPT4gdmlkZW8uc2x1ZyA9PT0gc2x1Zyk7XHJcbn1cclxuXHJcbmV4cG9ydCBmdW5jdGlvbiBnZXRMZXNzb25TY2VuYXJpb1ZpZGVvKGNvdXJzZVNsdWc6IHN0cmluZywgbGVzc29uU2x1Zzogc3RyaW5nKTogTGVhcm5pbmdWaWRlbyB8IHVuZGVmaW5lZCB7XHJcbiAgcmV0dXJuIGxlc3NvblNjZW5hcmlvVmlkZW9zLmZpbmQoKHZpZGVvKSA9PiB2aWRlby5sZXNzb25CaW5kaW5nPy5jb3Vyc2VTbHVnID09PSBjb3Vyc2VTbHVnICYmIHZpZGVvLmxlc3NvbkJpbmRpbmcubGVzc29uU2x1ZyA9PT0gbGVzc29uU2x1Zyk7XHJcbn1cclxuIl19

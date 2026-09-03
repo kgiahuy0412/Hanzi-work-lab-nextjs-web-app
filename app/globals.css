@@ -5090,7 +5090,17 @@ body:has(.learner-dashboard) > .mobile-nav { display: none; }
 .topbar-icon:hover { background: #eef4f0; }
 .user-chip { display: flex; align-items: center; gap: 9px; }
 .user-chip > span { width: 38px; height: 38px; position: relative; overflow: hidden; display: grid; place-items: center; color: #fff; border-radius: 50%; background: #176b5b; font-size: 11px; font-weight: 800; }
-.user-chip > span > img { object-fit: cover; }
+.user-chip-avatar.has-image { background: transparent; }
+.user-chip-avatar > .user-chip-avatar-image {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  display: block;
+  inset: 0 !important;
+  border-radius: inherit;
+  object-fit: cover;
+  object-position: center;
+}
 .user-chip strong { font-size: 13px; }
 .learn-frame { margin-left: 88px; padding: 108px 38px 54px; display: grid; grid-template-columns: minmax(0, 1fr) 340px; gap: 30px; }
 .learn-main-column { min-width: 0; max-width: 920px; width: 100%; justify-self: center; }
@@ -8715,6 +8725,48 @@ body:has(.learner-app-shell) > .mobile-nav {
   letter-spacing: -.07em;
 }
 
+.lesson-phrase-hanzi {
+  max-width: 100%;
+  margin-top: 24px;
+  font-family: "Microsoft YaHei", "PingFang SC", sans-serif;
+  font-size: clamp(31px, 4.1vw, 48px);
+  font-weight: 680;
+  line-height: 1.24;
+  letter-spacing: -.045em;
+  text-wrap: balance;
+}
+
+.lesson-phrase-pinyin {
+  max-width: 92%;
+  font-size: 16px;
+  line-height: 1.45;
+  text-wrap: balance;
+}
+
+.lesson-phrase-purpose {
+  margin-top: 8px;
+  color: #60736d;
+  font-size: 12px;
+  font-weight: 720;
+  letter-spacing: .035em;
+  text-transform: uppercase;
+}
+
+.lesson-phrase-translation strong {
+  color: #008577;
+  font-family: inherit;
+  font-size: 10px;
+  font-weight: 820;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.lesson-phrase-translation p {
+  margin-top: 9px;
+  color: #344f48;
+  font-size: 15px;
+}
+
 .lesson-vocab-pinyin {
   margin-top: 13px;
   color: #008d7d;
@@ -8979,6 +9031,17 @@ body:has(.learner-app-shell) > .mobile-nav {
   .lesson-vocab-hanzi {
     margin-top: 14px;
     font-size: 59px;
+  }
+
+  .lesson-phrase-hanzi {
+    margin-top: 16px;
+    font-size: clamp(27px, 8.3vw, 38px);
+    line-height: 1.28;
+  }
+
+  .lesson-phrase-pinyin {
+    max-width: 100%;
+    font-size: 14px;
   }
 
   .lesson-vocab-pinyin {
@@ -13950,7 +14013,7 @@ body:has(.auth-register-is-success) { overflow: hidden; }
   min-width: 0;
 }
 
-.account-profile-avatar > span {
+.account-profile-avatar-initials {
   position: relative;
   z-index: 1;
   font-size: 42px;
@@ -13958,9 +14021,24 @@ body:has(.auth-register-is-success) { overflow: hidden; }
   letter-spacing: -.04em;
 }
 
-.account-profile-avatar > img {
-  border-radius: 50%;
+.account-profile-avatar-media {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  border-radius: inherit;
+}
+
+.account-profile-avatar-media > .account-profile-avatar-image {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: none;
+  display: block;
+  inset: 0 !important;
+  border-radius: inherit;
   object-fit: cover;
+  object-position: center;
 }
 
 .account-profile-avatar > button {
@@ -14368,7 +14446,7 @@ body:has(.auth-register-is-success) { overflow: hidden; }
 
   .account-profile-copy { margin-top: 63px; }
 
-  .account-profile-avatar > span { font-size: 36px; }
+  .account-profile-avatar-initials { font-size: 36px; }
   .account-profile-hero::after { inset-inline-start: 34%; }
 }
 
@@ -14409,7 +14487,7 @@ body:has(.auth-register-is-success) { overflow: hidden; }
 
   .account-avatar-uploader { width: 96px; }
 
-  .account-profile-avatar > span { font-size: 28px; }
+  .account-profile-avatar-initials { font-size: 28px; }
 
   .account-profile-avatar > button {
     width: 31px;
@@ -14561,7 +14639,7 @@ body:has(.auth-register-is-success) { overflow: hidden; }
 
   .account-avatar-uploader { width: 78px; }
 
-  .account-profile-avatar > span { font-size: 23px; }
+  .account-profile-avatar-initials { font-size: 23px; }
   .account-avatar-status { width: 118px; margin-left: -20px; }
   .account-profile-copy h2 { font-size: 27px; }
   .account-vip-outline { margin-left: -92px; }

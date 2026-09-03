@@ -3,10 +3,10 @@ import assert from "node:assert/strict";
 import { courses, getCourse } from "../lib/course-data.ts";
 import { getPublishedCourse, listPublishedCourses } from "../lib/course-repository.ts";
 
-test("demo catalog contains the seven approved MVP tracks", () => {
-  assert.equal(courses.length, 7);
+test("demo catalog contains the approved tracks and imported topic course", () => {
+  assert.equal(courses.length, 8);
   assert.equal(new Set(courses.map((course) => course.slug)).size, courses.length);
-  assert.equal(courses.filter((course) => course.availability === "available").length, 7);
+  assert.equal(courses.filter((course) => course.availability === "available").length, 8);
   assert.equal(courses.filter((course) => course.availability === "coming_soon").length, 0);
   assert.ok(courses.filter((course) => course.availability === "coming_soon").every((course) => course.lessons === 0 && course.freeLessons === 0));
 });
@@ -59,6 +59,14 @@ test("core workplace track is published with the same depth as office", () => {
   assert.equal(course?.availability, "available");
 });
 
+test("high-frequency topic track exposes all imported lessons", () => {
+  const course = getCourse("tieng-trung-tan-suat-cao");
+  assert.equal(course?.chineseTitle, "高频汉语主题");
+  assert.equal(course?.lessons, 27);
+  assert.equal(course?.freeLessons, 6);
+  assert.equal(course?.availability, "available");
+});
+
 test("course lookup returns the approved office track", () => {
   const course = getCourse("van-phong-hanh-chinh");
   assert.equal(course?.chineseTitle, "办公室与行政");
@@ -74,7 +82,7 @@ test("repository falls back to demo content without DATABASE_URL", async () => {
   try {
     const catalog = await listPublishedCourses();
     const course = await getPublishedCourse("van-phong-hanh-chinh");
-    assert.equal(catalog.length, 7);
+    assert.equal(catalog.length, 8);
     assert.equal(course?.title, "Văn phòng & hành chính");
   } finally {
     if (previous === undefined) delete process.env.DATABASE_URL;

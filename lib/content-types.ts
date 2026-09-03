@@ -53,6 +53,7 @@ export type LessonChallenge = {
 
 export type LessonContent = {
   dialogue: DialogueLine[];
+  phrases?: DialogueLine[];
   notes: UsageNote[];
   challenge?: LessonChallenge;
 };

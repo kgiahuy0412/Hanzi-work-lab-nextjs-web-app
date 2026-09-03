@@ -133,4 +133,11 @@ Sáu bài đầu của mỗi lộ trình đang mở là miễn phí; 18 bài chu
 - `/practice` ưu tiên từ chưa học hoặc đã đến lịch ôn; từ vừa đánh giá được tạm rời hàng đợi đến lần ôn tiếp theo. Kho ca làm có 8 tình huống thử miễn phí và khóa phần bài tập của ca VIP ở server; người chưa có VIP chỉ nhận metadata, bối cảnh và câu mẫu, không nhận đáp án bài tập trả phí.
 - Dashboard và trang tài khoản hiển thị số bài đã mở/hoàn thành từ DB. Người chưa đăng nhập vẫn học thử nhưng tiến độ không được ghi.
 
+## Chấm phát âm iFlytek
+
+- Bài học chuyên ngành có thêm luồng `Từ vựng → Cụm từ → Nghe & nói → Hội thoại`. Phần Nghe & nói thu âm trên trình duyệt, chuyển thành PCM 16 kHz/16-bit/mono và gửi tới iFlytek Speech Evaluation (ISE) bản streaming.
+- Tạo ứng dụng WebAPI trong iFlytek, bật dịch vụ 语音评测（流式版）, rồi đặt `IFLYTEK_ISE_APP_ID`, `IFLYTEK_ISE_API_KEY`, `IFLYTEK_ISE_API_SECRET` trong `.env.local` hoặc secrets của Worker. Không dùng tiền tố `NEXT_PUBLIC_` cho ba biến này; `npm run staging:secrets` sẽ tải cả bộ lên Worker khi đã khai báo đủ.
+- API secret chỉ ký URL WebSocket ngắn hạn ở server qua `POST /api/speech/iflytek/authorize`; trình duyệt không nhận secret. Khi chưa cấu hình, phần nghe mẫu vẫn hoạt động và nút chấm phát âm hiển thị hướng dẫn cấu hình thay vì tạo điểm giả.
+- Micro cần HTTPS trên môi trường thật (localhost vẫn được trình duyệt cho phép). Vì WebSocket được mở trực tiếp từ trình duyệt người học, ứng dụng iFlytek dùng cho web công khai thường phải tắt IP whitelist; nếu bật, IP công khai của từng máy học phải nằm trong danh sách cho phép.
+
 Đăng nhập, xác minh email, reset mật khẩu, rate-limit, RBAC, tiến độ bài học, lịch ôn, Admin CRUD và Kho ca làm responsive đã hoạt động. Bước tiếp theo hợp lý là lưu lịch sử xử lý ca theo tài khoản và đưa tình huống vào Admin CRUD; Brevo sẽ gửi email thật sau khi API key và địa chỉ gửi đã được xác minh.

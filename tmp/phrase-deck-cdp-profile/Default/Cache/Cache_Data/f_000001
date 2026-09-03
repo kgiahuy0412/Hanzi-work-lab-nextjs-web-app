@@ -1,0 +1,1609 @@
+/*
+ * Himi Chinese brand theme.
+ *
+ * The official palette is intentionally small: energetic red, lively orange,
+ * mascot black, and clean white. Semantic success states keep their functional
+ * green, but product navigation and learning actions use the brand palette.
+ */
+:root {
+  --ink: var(--himi-black);
+  --ink-soft: var(--himi-muted);
+  --forest: var(--himi-red);
+  --forest-deep: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --sage: color-mix(in srgb, var(--himi-red) 13%, var(--himi-white));
+  --sage-light: color-mix(in srgb, var(--himi-red) 6%, var(--himi-white));
+  --paper: var(--himi-white);
+  --surface: var(--himi-white);
+  --sand: color-mix(in srgb, var(--himi-orange) 13%, var(--himi-white));
+  --amber: var(--himi-orange);
+  --line: var(--himi-line);
+  --shadow: 0 18px 55px rgba(34, 34, 34, .09);
+  --focus-color: var(--himi-black);
+  --focus-halo: color-mix(in srgb, var(--himi-red) 26%, transparent);
+  --text-muted: var(--himi-muted);
+}
+
+html,
+body {
+  color: var(--himi-black);
+  background: var(--himi-white);
+}
+
+::selection {
+  color: var(--himi-black);
+  background: color-mix(in srgb, var(--himi-orange) 58%, var(--himi-white));
+}
+
+:where(a[href], button, input, select, textarea, summary):focus-visible {
+  outline-color: var(--focus-color);
+  box-shadow: 0 0 0 5px var(--focus-halo);
+}
+
+.button-primary,
+.round-button-main {
+  color: var(--himi-on-red);
+  border-color: var(--himi-red);
+  background: var(--himi-red);
+  box-shadow: 0 10px 25px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.button-primary:hover,
+.round-button-main:hover {
+  color: var(--himi-on-red);
+  border-color: var(--himi-red);
+  background: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+  box-shadow: 0 13px 28px color-mix(in srgb, var(--himi-red) 30%, transparent);
+}
+
+.button-secondary {
+  color: var(--himi-black);
+  background: color-mix(in srgb, var(--himi-orange) 28%, var(--himi-white));
+}
+
+.button-secondary:hover {
+  background: color-mix(in srgb, var(--himi-orange) 40%, var(--himi-white));
+}
+
+.section-kicker,
+.card-label,
+.free-label,
+.text-link {
+  color: var(--himi-red);
+}
+
+.text-link:hover {
+  color: var(--forest-deep);
+}
+
+/* Learner navigation */
+.learner-app-shell .learn-rail,
+.learner-app-shell .learn-topbar {
+  border-color: var(--line);
+  background-color: rgba(255, 255, 255, .97);
+  box-shadow: 8px 0 24px rgba(34, 34, 34, .045);
+}
+
+.learner-app-shell .rail-toggle:hover {
+  color: var(--himi-on-orange);
+  border-color: var(--himi-white);
+  background: var(--himi-orange);
+}
+
+.learner-app-shell .rail-toggle:focus-visible,
+.learner-app-shell .rail-nav a:focus-visible,
+.learner-app-shell .rail-practice-trigger:focus-visible,
+.learner-app-shell .rail-support:focus-visible,
+.learner-app-shell .rail-pro-card:focus-visible,
+.learner-app-shell .rail-brand:focus-visible {
+  outline-color: var(--himi-black);
+  box-shadow: 0 0 0 5px var(--focus-halo);
+}
+
+.learner-app-shell .rail-nav a,
+.learner-app-shell .rail-practice-trigger,
+.learner-app-shell .rail-support {
+  color: #655e5b;
+}
+
+.learner-app-shell .rail-nav a.active,
+.learner-app-shell .rail-practice-trigger.active,
+.learner-app-shell .rail-practice-menu a.active {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+.learner-app-shell .rail-nav a:hover,
+.learner-app-shell .rail-support:hover {
+  color: var(--himi-black);
+  background: color-mix(in srgb, var(--himi-red) 12%, var(--himi-white));
+}
+
+.learner-app-shell .rail-nav a.active:hover {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+  transform: none;
+}
+
+.learner-app-shell .rail-nav a.active::before,
+.learner-app-shell .rail-practice-trigger.active::before {
+  background: var(--himi-red);
+}
+
+.learner-app-shell .rail-pro-card {
+  color: var(--himi-black);
+  border-color: color-mix(in srgb, var(--himi-orange) 32%, var(--himi-white));
+  background: color-mix(in srgb, var(--himi-orange) 9%, var(--himi-white));
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--himi-orange) 12%, transparent);
+}
+
+.learner-app-shell .rail-pro-card:hover {
+  border-color: color-mix(in srgb, var(--himi-orange) 52%, var(--himi-white));
+  box-shadow: 0 16px 32px color-mix(in srgb, var(--himi-orange) 18%, transparent);
+}
+
+.learner-app-shell .rail-pro-crown {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--himi-orange) 24%, transparent);
+}
+
+.learner-app-shell .rail-pro-title,
+.learner-app-shell .rail-pro-title strong {
+  color: var(--himi-black);
+}
+
+.learner-app-shell .rail-pro-copy {
+  color: #655e5b;
+}
+
+.learner-app-shell .rail-pro-action {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+.learner-app-shell .rail-pro-arrow {
+  color: var(--himi-black);
+  background: var(--himi-white);
+}
+
+.learner-app-shell .streak-chip {
+  color: var(--himi-black);
+  border-color: color-mix(in srgb, var(--himi-orange) 28%, var(--himi-white));
+  background: color-mix(in srgb, var(--himi-orange) 8%, var(--himi-white));
+}
+
+.learner-app-shell .user-chip > span,
+.learner-app-shell .topbar-notification-count {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+.learner-app-shell .route-transition-progress span {
+  background: linear-gradient(90deg, var(--himi-red), var(--himi-orange));
+}
+
+.learner-app-shell .rail-brand .brand-wordmark strong,
+.brand-wordmark > strong {
+  color: var(--himi-red);
+}
+
+.learner-app-shell .learner-mobile-nav a.active,
+.learner-app-shell .mobile-practice-trigger.active {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+/* Home */
+.home-portal-art::after {
+  position: absolute;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background:
+    linear-gradient(90deg, rgba(255, 255, 255, .72) 0%, rgba(255, 255, 255, .2) 43%, transparent 72%),
+    radial-gradient(circle at 82% 56%, color-mix(in srgb, var(--himi-orange) 13%, transparent), transparent 30%),
+    linear-gradient(145deg, transparent 54%, color-mix(in srgb, var(--himi-red) 7%, transparent));
+}
+
+.home-portal-copy h1,
+.home-portal-dialogue,
+.home-portal-dialogue > strong {
+  color: var(--himi-black);
+}
+
+.home-portal-copy > p,
+.home-portal-dialogue > small {
+  color: #625b58;
+}
+
+.home-portal-dialogue {
+  border-color: color-mix(in srgb, var(--himi-red) 16%, transparent);
+  box-shadow: 0 18px 42px rgba(34, 34, 34, .12);
+}
+
+.home-portal-dialogue > span {
+  color: var(--himi-red);
+}
+
+.home-portal-dialogue-wave b {
+  background: var(--himi-orange);
+}
+
+.home-portal-primary {
+  color: var(--himi-on-red);
+  border: 1px solid color-mix(in srgb, var(--himi-black) 10%, transparent);
+  background: var(--himi-red);
+  box-shadow: 0 15px 36px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.home-portal-primary:hover {
+  color: var(--himi-on-red);
+  background: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+  box-shadow: 0 20px 42px color-mix(in srgb, var(--himi-red) 30%, transparent);
+}
+
+.home-portal-secondary {
+  color: var(--himi-black);
+}
+
+.home-portal-secondary > span {
+  color: var(--himi-on-orange);
+  border-color: color-mix(in srgb, var(--himi-orange) 24%, transparent);
+  background: var(--himi-orange);
+  box-shadow: 0 12px 30px color-mix(in srgb, var(--himi-orange) 18%, transparent);
+}
+
+.home-portal-primary:focus-visible,
+.home-portal-secondary:focus-visible {
+  outline-color: var(--himi-black);
+  box-shadow: 0 0 0 5px var(--focus-halo);
+}
+
+.home-portal-success {
+  color: var(--himi-black);
+  border-color: color-mix(in srgb, var(--himi-orange) 30%, transparent);
+}
+
+/* Course library and HSK curriculum */
+.course-library-page.hsk-curriculum-page,
+.course-library-page,
+.course-roadmap-page {
+  color: var(--himi-black);
+  background-color: var(--himi-white);
+  background-image: none;
+}
+
+.course-catalog-heading > span,
+.industry-course-heading > span,
+.course-progress-row strong {
+  color: var(--himi-red);
+}
+
+.course-catalog-heading h1,
+.industry-course-heading h2,
+.course-body h3,
+.course-roadmap-header h1 {
+  color: var(--himi-black);
+}
+
+.course-library-page .explorer-toolbar,
+.course-library-page .course-card,
+.course-roadmap-overview {
+  border-color: var(--line);
+  background: var(--himi-white);
+  box-shadow: 0 8px 26px rgba(34, 34, 34, .055);
+}
+
+.course-library-page .course-card:hover {
+  border-color: color-mix(in srgb, var(--himi-orange) 42%, var(--himi-white));
+  box-shadow: 0 22px 48px rgba(34, 34, 34, .11);
+}
+
+.course-library-page .course-tag {
+  color: var(--himi-black);
+  border-color: var(--line);
+  background: rgba(255, 255, 255, .9);
+}
+
+.course-library-page .search-box {
+  border-color: var(--line);
+  color: #625b58;
+  background: var(--himi-white);
+}
+
+.course-library-page .search-box:focus-within {
+  border-color: var(--himi-red);
+  box-shadow: 0 0 0 4px var(--focus-halo);
+}
+
+.course-library-page .filter-chip {
+  color: var(--himi-black);
+  border-color: var(--line);
+  background: var(--himi-white);
+}
+
+.course-library-page .filter-chip:hover {
+  border-color: var(--himi-orange);
+  background: color-mix(in srgb, var(--himi-orange) 9%, var(--himi-white));
+}
+
+.course-library-page .filter-chip.active {
+  color: var(--himi-on-red);
+  border-color: var(--himi-red);
+  background: var(--himi-red);
+}
+
+.course-progress span,
+.course-roadmap-progress-track > span {
+  background: var(--himi-orange);
+}
+
+.icon-link:hover {
+  color: var(--himi-on-red);
+  border-color: var(--himi-red);
+  background: var(--himi-red);
+}
+
+.hsk-curriculum {
+  --hsk-accent: var(--himi-red);
+  --hsk-accent-deep: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --hsk-accent-soft: color-mix(in srgb, var(--himi-red) 8%, var(--himi-white));
+  --hsk-ink: var(--himi-black);
+  --hsk-muted: #625b58;
+}
+
+.hsk-level-tabs button.is-active {
+  color: var(--himi-on-red);
+}
+
+.hsk-topic-list button.is-active {
+  color: var(--himi-black);
+}
+
+.hsk-lesson-start {
+  color: var(--himi-red);
+}
+
+.hsk-level-tabs button.is-active > span,
+.hsk-topic-list button.is-active .hsk-topic-icon,
+.hsk-lesson-row.is-active .hsk-lesson-index {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+/* Section banners */
+.himi-section-banner.is-practice,
+.himi-section-banner.is-listening,
+.himi-section-banner.is-videos,
+.himi-section-banner.is-writing {
+  --himi-banner-accent: var(--himi-red);
+  --himi-banner-accent-soft: color-mix(in srgb, var(--himi-red) 12%, var(--himi-white));
+}
+
+.himi-section-banner.is-vip {
+  --himi-banner-accent: var(--himi-orange);
+  --himi-banner-accent-soft: color-mix(in srgb, var(--himi-orange) 15%, var(--himi-white));
+}
+
+.himi-section-banner h1 {
+  color: var(--himi-black);
+}
+
+.himi-section-banner-copy > p {
+  color: #625b58;
+}
+
+/* Shared learner headers */
+.learner-page-header {
+  border-color: var(--himi-line);
+}
+
+.learner-page-header-eyebrow,
+.learner-page-header-meta svg,
+.learner-page-header-meta strong {
+  color: var(--himi-red);
+}
+
+.learner-page-header h1 {
+  color: var(--himi-black);
+}
+
+.learner-page-header p,
+.learner-page-header-meta > span,
+.learner-page-header-meta > a {
+  color: var(--himi-muted);
+}
+
+/* Listening */
+.listening-studio {
+  --listening-ink: var(--himi-black);
+  --listening-muted: #625b58;
+  --listening-coral: var(--himi-red);
+  color: var(--himi-black);
+  background:
+    radial-gradient(circle at 88% 8%, color-mix(in srgb, var(--himi-orange) 15%, transparent), transparent 28%),
+    radial-gradient(circle at 7% 83%, color-mix(in srgb, var(--himi-red) 8%, transparent), transparent 31%),
+    var(--himi-white);
+}
+
+.listening-mode-switcher {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 14px 38px rgba(34, 34, 34, .08);
+}
+
+.listening-mode-switcher a {
+  color: #625b58;
+}
+
+.listening-mode-switcher a:hover {
+  color: var(--himi-black);
+  background: color-mix(in srgb, var(--himi-orange) 9%, var(--himi-white));
+}
+
+.listening-mode-switcher a.is-active {
+  color: var(--himi-on-red);
+  background-color: var(--himi-red);
+  background-image: none;
+  box-shadow: 0 9px 22px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.listening-mode-icon {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+.listening-mode-switcher a.is-active .listening-mode-icon {
+  color: var(--himi-black);
+  background: color-mix(in srgb, var(--himi-white) 76%, transparent);
+}
+
+.listening-primary-action {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+  box-shadow: 0 14px 28px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.listening-primary-action:hover {
+  color: var(--himi-on-red);
+  background: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+  box-shadow: 0 18px 34px color-mix(in srgb, var(--himi-red) 29%, transparent);
+}
+
+.listening-section-heading h2,
+.listening-level-picker button strong,
+.listening-lesson-title,
+.listening-complete h1 {
+  color: var(--himi-black);
+}
+
+.listening-section-kicker,
+.listening-complete-eyebrow {
+  color: var(--himi-red);
+}
+
+.listening-level-picker button {
+  --level-accent: var(--himi-red);
+  --level-soft: color-mix(in srgb, var(--himi-red) 10%, var(--himi-white));
+  --level-on: var(--himi-on-red);
+  color: #625b58;
+  border-color: var(--line);
+  background: rgba(255, 255, 255, .92);
+}
+
+.listening-level-picker button:nth-child(2),
+.listening-level-picker button:nth-child(5) {
+  --level-accent: var(--himi-orange);
+  --level-soft: color-mix(in srgb, var(--himi-orange) 13%, var(--himi-white));
+  --level-on: var(--himi-on-orange);
+}
+
+.listening-level-picker button:nth-child(3),
+.listening-level-picker button:nth-child(6) {
+  --level-accent: var(--himi-black);
+  --level-soft: color-mix(in srgb, var(--himi-black) 7%, var(--himi-white));
+  --level-on: var(--himi-white);
+}
+
+.listening-level-picker button:nth-child(4),
+.listening-level-picker button:nth-child(7) {
+  --level-accent: var(--himi-red);
+  --level-soft: color-mix(in srgb, var(--himi-red) 10%, var(--himi-white));
+  --level-on: var(--himi-on-red);
+}
+
+.listening-level-symbol {
+  color: var(--level-on);
+  background: var(--level-accent);
+  box-shadow: 0 5px 0 color-mix(in srgb, var(--level-accent) 64%, var(--himi-black));
+}
+
+.listening-level-picker button.is-active {
+  color: var(--himi-black);
+  border-color: var(--level-accent);
+  background: var(--level-soft);
+  box-shadow: 0 12px 26px rgba(34, 34, 34, .09);
+}
+
+.listening-lesson-card {
+  border-color: var(--line);
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 14px 34px rgba(34, 34, 34, .065);
+}
+
+.listening-lesson-card:hover {
+  border-color: color-mix(in srgb, var(--himi-orange) 48%, var(--himi-white));
+  box-shadow: 0 18px 40px rgba(34, 34, 34, .1);
+}
+
+.listening-lesson-meta {
+  color: #625b58;
+}
+
+.listening-lesson-icon {
+  color: var(--himi-red);
+  background: color-mix(in srgb, var(--himi-red) 9%, var(--himi-white));
+}
+
+.listening-lesson-cta,
+.listening-typing-form button,
+.listening-feedback > button,
+.listening-complete-actions button {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+.listening-progress > span {
+  background: var(--himi-orange);
+}
+
+.listening-play-button {
+  color: var(--himi-on-red);
+  border-color: color-mix(in srgb, var(--himi-orange) 24%, var(--himi-white));
+  background: var(--himi-red);
+  box-shadow: 0 18px 38px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.listening-play-button:hover {
+  box-shadow: 0 22px 42px color-mix(in srgb, var(--himi-red) 30%, transparent);
+}
+
+.listening-complete-score {
+  color: var(--himi-red);
+}
+
+.listening-complete-actions button.is-secondary {
+  color: var(--himi-black);
+  border-color: var(--himi-orange);
+  background: var(--himi-white);
+}
+
+/* Authentication */
+.auth-page-login-scene {
+  --auth-coral: var(--himi-red);
+  --auth-coral-deep: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+  --auth-cream: color-mix(in srgb, var(--himi-orange) 5%, var(--himi-white));
+  background-color: var(--auth-cream);
+}
+
+.auth-card-login-scene .auth-heading h1,
+.auth-card-login-scene .auth-form label {
+  color: var(--himi-black);
+}
+
+.auth-card-login-scene .auth-heading p,
+.auth-card-login-scene .auth-switch {
+  color: #625b58;
+}
+
+.auth-card-login-scene .auth-input-shell:focus-within > svg,
+.auth-card-login-scene .auth-switch a {
+  color: var(--himi-red);
+}
+
+.auth-card-login-scene .auth-input-shell input:focus {
+  border-color: var(--himi-red);
+  box-shadow: 0 0 0 4px var(--focus-halo);
+}
+
+.auth-card-login-scene .auth-form .button {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+  box-shadow: 0 13px 24px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.auth-card-login-scene .auth-form .button:hover {
+  color: var(--himi-on-red);
+  background: var(--auth-coral-deep);
+  box-shadow: 0 16px 28px color-mix(in srgb, var(--himi-red) 30%, transparent);
+}
+
+.auth-scene-home {
+  color: var(--himi-black);
+}
+
+/* Empty/future learning states */
+.learning-mode-placeholder {
+  background:
+    radial-gradient(circle at 16% 16%, color-mix(in srgb, var(--himi-orange) 18%, transparent), transparent 32%),
+    radial-gradient(circle at 87% 82%, color-mix(in srgb, var(--himi-red) 10%, transparent), transparent 34%),
+    var(--himi-white);
+}
+
+.learning-mode-placeholder-card {
+  color: var(--himi-black);
+  border-color: var(--line);
+  box-shadow: 0 28px 80px rgba(34, 34, 34, .1);
+}
+
+.learning-mode-placeholder-icon {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+  box-shadow: 0 16px 34px color-mix(in srgb, var(--himi-orange) 24%, transparent);
+}
+
+.learning-mode-placeholder-eyebrow,
+.learning-mode-placeholder h1 {
+  color: var(--himi-black);
+}
+
+.learning-mode-placeholder-card > a {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+  box-shadow: 0 12px 28px color-mix(in srgb, var(--himi-red) 24%, transparent);
+}
+
+.learning-mode-placeholder-card > a:hover {
+  color: var(--himi-on-red);
+  background: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+  box-shadow: 0 15px 32px color-mix(in srgb, var(--himi-red) 30%, transparent);
+}
+
+/* Public header, footer and legal pages */
+.site-header {
+  border-color: var(--himi-line);
+  background: rgba(255, 255, 255, .95);
+}
+
+.desktop-nav,
+.mobile-menu-panel {
+  color: var(--himi-muted);
+}
+
+.desktop-nav a:hover,
+.mobile-menu-panel a:hover {
+  color: var(--himi-red);
+}
+
+.site-footer {
+  color: color-mix(in srgb, var(--himi-white) 80%, var(--himi-black));
+  background: var(--himi-black);
+}
+
+.legal-page {
+  color: var(--himi-black);
+  background:
+    radial-gradient(circle at 88% 4%, color-mix(in srgb, var(--himi-orange) 10%, transparent), transparent 26%),
+    var(--himi-white);
+}
+
+.legal-card {
+  color: var(--himi-black);
+  border-color: var(--himi-line);
+  box-shadow: 0 22px 58px rgba(34, 34, 34, .08);
+}
+
+.legal-kicker,
+.legal-card a {
+  color: var(--himi-red);
+}
+
+.legal-lead,
+.legal-card section p {
+  color: var(--himi-muted);
+}
+
+.legal-card section {
+  border-color: var(--himi-line);
+}
+
+/* Account and notifications */
+.account-page,
+.notifications-page {
+  color: var(--himi-black);
+  background: var(--himi-white);
+}
+
+.account-page-title,
+.account-profile-copy h2,
+.account-membership-band h2,
+.account-information h2,
+.account-security-panel h2,
+.account-security-row,
+.account-logout-form button {
+  color: var(--himi-black);
+}
+
+.account-profile-hero::after {
+  opacity: .26;
+  background-image:
+    linear-gradient(90deg, var(--himi-white) 0%, rgba(255, 255, 255, .28) 32%),
+    url("/assets/brand/himi-mascot-icon.png");
+  background-position: center, right 10% center;
+  background-repeat: no-repeat;
+  background-size: cover, 330px auto;
+}
+
+.account-profile-avatar {
+  color: var(--himi-on-red);
+  background: linear-gradient(145deg, var(--himi-red), var(--himi-orange));
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--himi-white) 24%, transparent),
+    0 14px 32px color-mix(in srgb, var(--himi-red) 18%, transparent);
+}
+
+.account-profile-avatar > button {
+  color: var(--himi-on-orange);
+  border-color: var(--himi-white);
+  background: var(--himi-orange);
+}
+
+.account-profile-copy > p,
+.account-profile-email,
+.account-membership-band p,
+.account-information dt,
+.account-information dd,
+.account-security-row small,
+.account-password-editor > p,
+.account-page-footer {
+  color: var(--himi-muted);
+}
+
+.account-vip-outline,
+.account-membership-band > a,
+.account-information dt svg,
+.account-security-row > svg:first-child {
+  color: var(--himi-red);
+}
+
+.account-vip-outline {
+  border-color: color-mix(in srgb, var(--himi-red) 28%, var(--himi-white));
+  background: rgba(255, 255, 255, .84);
+}
+
+.account-vip-outline:hover {
+  border-color: var(--himi-red);
+  background: var(--himi-red-soft);
+}
+
+.account-membership-band,
+.account-membership-band.is-active {
+  border-color: color-mix(in srgb, var(--himi-orange) 32%, var(--himi-white));
+  background: linear-gradient(90deg, var(--himi-red-soft), var(--himi-orange-soft));
+}
+
+.account-membership-icon {
+  color: var(--himi-red);
+  background: var(--himi-red-soft);
+}
+
+.account-information dl > div,
+.account-security-details,
+.account-logout-form {
+  border-color: var(--himi-line);
+}
+
+.account-security-list {
+  border-color: var(--himi-line);
+  background: var(--himi-white);
+}
+
+.account-security-row:hover,
+.account-password-editor {
+  background: var(--himi-red-soft);
+}
+
+.account-security-row > svg:last-child {
+  color: var(--himi-muted);
+}
+
+.notifications-header-aside {
+  color: var(--himi-red);
+  border-color: var(--himi-line);
+  background: linear-gradient(145deg, var(--himi-red-soft), var(--himi-orange-soft));
+}
+
+.notification-feed {
+  border-color: var(--himi-line);
+  background: var(--himi-white);
+  box-shadow: 0 18px 46px rgba(34, 34, 34, .055);
+}
+
+.notification-list,
+.notification-item {
+  border-color: var(--himi-line);
+}
+
+.notification-feed-heading > div > span,
+.notification-feed-heading form button,
+.notification-item-actions button,
+.notification-empty > span,
+.notification-empty a {
+  color: var(--himi-red);
+}
+
+.notification-feed-heading form button,
+.notification-empty > span {
+  background: var(--himi-red-soft);
+}
+
+.notification-item-icon:not(.vip_request_approved):not(.vip_request_rejected) {
+  color: var(--himi-red);
+  background: var(--himi-red-soft);
+}
+
+.notification-item-title i {
+  background: var(--himi-red);
+}
+
+.notification-item-message,
+.notification-open small,
+.notification-empty p {
+  color: var(--himi-muted);
+}
+
+/* HSK lesson overview, flashcards, quiz, pronunciation and writing */
+.hsk-lesson-page {
+  --hsk-learn-accent: var(--himi-red);
+  --hsk-learn-deep: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --hsk-learn-coral: var(--himi-orange);
+  --hsk-learn-ink: var(--himi-black);
+  --hsk-learn-muted: var(--himi-muted);
+  --hsk-learn-line: var(--himi-line);
+}
+
+.learner-shell-content:has(.hsk-lesson-page) {
+  background: linear-gradient(180deg, var(--himi-red-soft) 0, var(--himi-white) 360px);
+}
+
+.hsk-learning-progress-copy,
+.hsk-mode-intro > strong,
+.hsk-flashcard-answer b,
+.hsk-flashcard-example small,
+.hsk-result-card small,
+.hsk-pronunciation-card > small,
+.hsk-pronunciation-card > b,
+.hsk-shadowing-example small,
+.hsk-character-detail b {
+  color: var(--himi-red);
+}
+
+.hsk-learning-progress > span,
+.hsk-step-progress > span {
+  background: linear-gradient(90deg, var(--himi-red), var(--himi-orange));
+}
+
+.hsk-learning-tabs button:hover,
+.hsk-learning-tabs button.is-active,
+.hsk-speech-toolbar button[aria-pressed="true"],
+.hsk-pronunciation-list button.is-active,
+.hsk-hanzi-list button.is-active {
+  border-color: color-mix(in srgb, var(--himi-red) 30%, var(--himi-white));
+  background: var(--himi-red-soft);
+}
+
+.hsk-learning-greeting,
+.hsk-lesson-launch-actions a.is-primary,
+.hsk-audio-orb,
+.hsk-exercise-listen,
+.hsk-primary-action,
+.hsk-result-card > span,
+.hsk-pronunciation-play,
+.hsk-writing-modes button[aria-pressed="true"] {
+  color: var(--himi-on-red);
+}
+
+.hsk-learning-tabs button.is-active {
+  color: var(--himi-red);
+}
+
+.hsk-learning-tabs button.is-active small {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+#hsk-tab-vocabulary.is-active > span {
+  color: var(--himi-red);
+}
+
+#hsk-tab-vocabulary.is-active > small {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+/* Guided HSK player */
+.learner-app-shell:has(.hsk-guided-page),
+.learner-app-shell:has(.hsk-guided-page) > .learner-shell-content,
+.hsk-guided-page {
+  background: var(--himi-white);
+}
+
+.hsk-guided-page {
+  --guided-green: var(--himi-red);
+  --guided-green-deep: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --guided-mint: var(--himi-red-soft);
+  --guided-ink: var(--himi-black);
+  --guided-muted: var(--himi-muted);
+  --guided-line: var(--himi-line);
+}
+
+.hsk-guided-header,
+.hsk-guided-footer {
+  border-color: var(--himi-line);
+  box-shadow: 0 4px 18px rgba(34, 34, 34, .05);
+}
+
+.hsk-guided-progress > span {
+  background: linear-gradient(90deg, var(--himi-red), var(--himi-orange));
+}
+
+.hsk-guided-sections button:not(.is-active):hover,
+.hsk-guided-pinyin[aria-pressed="true"],
+.hsk-guided-writing-modes button[aria-pressed="true"] {
+  color: var(--himi-black);
+  background: var(--himi-red-soft);
+}
+
+.hsk-guided-sections button.is-active,
+.hsk-guided-sections button.is-active b,
+.hsk-guided-dialogue-title > button,
+.hsk-guided-writing-picker button[aria-pressed="true"],
+.hsk-guided-listen,
+.hsk-guided-completion > span,
+.hsk-guided-completion nav a:last-child,
+.hsk-guided-footer > button.is-primary {
+  color: var(--himi-on-red);
+}
+
+/* Work practice hub and listening scenarios */
+.practice-dashboard {
+  color: var(--himi-black);
+  background-color: var(--himi-white);
+  background-image:
+    radial-gradient(circle at 76% 8%, color-mix(in srgb, var(--himi-orange) 11%, transparent), transparent 27%),
+    linear-gradient(180deg, var(--himi-white), color-mix(in srgb, var(--himi-red) 3%, var(--himi-white)));
+}
+
+.practice-hub-kicker,
+.practice-case-title-row > div > span,
+.practice-case-language > span,
+.related-cases-heading > div > span,
+.practice-aside-title > span,
+.listening-session-context span,
+.listening-answer-panel > span,
+.listening-transcript > span,
+.practice-session-copy > span,
+.practice-session-heading > div > span {
+  color: var(--himi-red);
+}
+
+.practice-hub-heading h1,
+.practice-case-title-row h2,
+.practice-case-language strong,
+.related-cases-heading h2,
+.practice-aside-title > strong,
+.practice-audio-stage h2,
+.listening-answer-panel > h3,
+.practice-session-copy h2,
+.scenario-complete-card h2,
+.scenario-quote strong,
+.practice-session-heading h2 {
+  color: var(--himi-black);
+}
+
+.practice-hub-heading p,
+.practice-case-title-row p,
+.practice-case-language small,
+.practice-case-actions > span,
+.related-cases-heading > span,
+.practice-audio-stage > p,
+.scenario-complete-card > p,
+.scenario-quote span {
+  color: var(--himi-muted);
+}
+
+.practice-industry-tabs {
+  border-color: var(--himi-line);
+}
+
+.practice-industry-tabs button:hover,
+.practice-industry-tabs button.active,
+.practice-weekly-panel a,
+.practice-back-button:hover,
+.practice-audio-state,
+.practice-session-copy p {
+  color: var(--himi-red);
+}
+
+.practice-industry-tabs button.active::after,
+.scenario-progress span {
+  background: var(--himi-orange);
+}
+
+.practice-case-card,
+.practice-progress-panel,
+.practice-industry-note,
+.practice-session-card {
+  border-color: var(--himi-line);
+  background: rgba(255, 255, 255, .96);
+  box-shadow: 0 22px 58px rgba(34, 34, 34, .075);
+}
+
+.practice-case-language,
+.scenario-quote,
+.practice-audio-stage,
+.listening-session-context {
+  border-color: var(--himi-line);
+  background: var(--himi-red-soft);
+}
+
+.practice-start-button,
+.practice-session-actions button,
+.scenario-complete-actions .primary {
+  color: var(--himi-on-red);
+  border-color: var(--himi-red);
+  background: var(--himi-red);
+  box-shadow: 0 13px 28px color-mix(in srgb, var(--himi-red) 22%, transparent);
+}
+
+.practice-start-button:hover {
+  background: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+}
+
+.practice-case-meta .free,
+.related-access.free,
+.related-case-icon,
+.metric-icon,
+.binary-answer-button > span:first-child {
+  color: var(--himi-black);
+  background: var(--himi-orange-soft);
+}
+
+.practice-audio-orb,
+.practice-audio-controls button,
+.scenario-options button:not(:disabled):hover,
+.scenario-complete-actions button,
+.scenario-complete-actions a {
+  color: var(--himi-red);
+  border-color: color-mix(in srgb, var(--himi-red) 28%, var(--himi-white));
+}
+
+/* Game catalog and journey map UI. Illustration colors remain untouched. */
+.game-center-dashboard {
+  color: var(--himi-black);
+  background: var(--himi-white);
+}
+
+.game-center-hero {
+  color: var(--himi-white);
+  background: linear-gradient(132deg, var(--himi-red) 0 66%, var(--himi-orange) 66%);
+  box-shadow: 0 26px 66px color-mix(in srgb, var(--himi-red) 18%, transparent);
+}
+
+.game-center-hero-copy > p,
+.game-center-overview small {
+  color: color-mix(in srgb, var(--himi-white) 82%, transparent);
+}
+
+.game-featured-number,
+.game-journey-featured-number,
+.game-journey-station-number {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--himi-orange) 24%, transparent);
+}
+
+.game-featured-copy > span,
+.game-catalog-heading span,
+.game-card-cta,
+.game-journey-header > span,
+.game-journey-featured-card > small,
+.game-journey-skills > strong {
+  color: var(--himi-red);
+}
+
+.game-featured-copy h2,
+.game-catalog-heading h2,
+.game-catalog-card,
+.game-journey-header h1,
+.game-journey-featured-card h2,
+.game-journey-station {
+  color: var(--himi-black);
+}
+
+.game-featured-copy > p,
+.game-catalog-heading p,
+.game-card-description,
+.game-card-meta,
+.game-journey-header p,
+.game-journey-featured-card p,
+.game-journey-featured-meta span,
+.game-journey-station-copy small {
+  color: var(--himi-muted);
+}
+
+.game-featured-card,
+.game-catalog-card,
+.game-journey-featured-card,
+.game-journey-skills {
+  border-color: var(--himi-line);
+  box-shadow: 0 16px 40px rgba(34, 34, 34, .075);
+}
+
+.game-featured-card > button,
+.game-next-button,
+.game-journey-featured-card button {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+/* Video library, detail player and synchronized study studio */
+.video-library-page,
+.video-detail-page {
+  --video-coral: var(--himi-red);
+  --video-mint: var(--himi-red-soft);
+  --video-cream: var(--himi-orange-soft);
+  color: var(--himi-black);
+  background:
+    radial-gradient(circle at 86% 2%, color-mix(in srgb, var(--himi-orange) 14%, transparent), transparent 24%),
+    var(--himi-white);
+}
+
+.video-library-header {
+  border-color: color-mix(in srgb, var(--himi-orange) 30%, var(--himi-white));
+  background: linear-gradient(128deg, var(--himi-white), var(--himi-orange-soft) 58%, var(--himi-red-soft));
+  box-shadow: 0 18px 48px rgba(34, 34, 34, .08);
+}
+
+.video-detail-eyebrow,
+.video-featured-copy > span,
+.learning-video-card h3 a:hover,
+.video-card-footer > a,
+.video-empty-state button,
+.youtube-source-note a,
+.video-progress-copy strong,
+.interactive-transcript-heading > div > span,
+.transcript-copy small,
+.transcript-copy > span,
+.transcript-repeat,
+.related-video-list small {
+  color: var(--himi-red);
+}
+
+.video-category-filters button.active,
+.transcript-repeat[aria-pressed="true"] {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+.video-detail-back {
+  color: var(--himi-red);
+  border-color: var(--himi-line);
+}
+
+.video-detail-back:hover {
+  color: var(--himi-on-red);
+  border-color: var(--himi-red);
+  background: var(--himi-red);
+}
+
+.learning-video-card,
+.video-learning-player,
+.transcript-line,
+.video-about-card,
+.related-video-list > a {
+  border-color: var(--himi-line);
+  box-shadow: 0 16px 40px rgba(34, 34, 34, .07);
+}
+
+.video-study-sidebar .video-lesson-link {
+  color: var(--himi-white);
+  border-color: var(--himi-black);
+  background: var(--himi-black);
+}
+
+.youtube-study-studio {
+  --studio-ink: var(--himi-black);
+  --studio-teal: var(--himi-red);
+  --studio-teal-dark: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --studio-coral: var(--himi-red);
+  --studio-cream: var(--himi-orange-soft);
+  --studio-line: var(--himi-line);
+}
+
+.youtube-video-cover {
+  background: radial-gradient(circle at 50% 35%, color-mix(in srgb, var(--himi-red) 62%, var(--himi-black)), var(--himi-black) 72%);
+}
+
+.youtube-transcript-line[aria-current="true"],
+.dictation-reveal {
+  border-color: color-mix(in srgb, var(--himi-red) 28%, var(--himi-white));
+  background: linear-gradient(135deg, var(--himi-red-soft), var(--himi-orange-soft));
+}
+
+/* Writing catalog, lessons and handwriting studio */
+.writing-catalog-page,
+.writing-lesson-page,
+.himi-writing-studio {
+  --writing-red: var(--himi-red);
+  --writing-red-deep: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --writing-teal: var(--himi-red);
+  --writing-ink: var(--himi-black);
+  --writing-muted: var(--himi-muted);
+  --writing-cream: var(--himi-orange-soft);
+  --writing-line: var(--himi-line);
+  color: var(--himi-black);
+  background:
+    radial-gradient(circle at 94% 4%, color-mix(in srgb, var(--himi-orange) 14%, transparent), transparent 24%),
+    var(--himi-white);
+}
+
+.writing-topic-card,
+.writing-single-lesson,
+.himi-writing-session-header,
+.himi-writing-library,
+.himi-writing-practice,
+.himi-writing-character-info > * {
+  border-color: var(--himi-line);
+  box-shadow: 0 16px 42px rgba(34, 34, 34, .07);
+}
+
+.writing-lesson-hero {
+  background: linear-gradient(125deg, var(--himi-red-soft), var(--himi-orange-soft));
+  box-shadow: 0 22px 60px rgba(34, 34, 34, .08);
+}
+
+.writing-topic-card-topline > span,
+.writing-topic-card.is-level-2 .writing-topic-card-topline > span,
+.writing-topic-card.is-level-5 .writing-topic-card-topline > span {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+}
+
+.writing-topic-card.is-level-3 .writing-topic-card-topline > span,
+.writing-topic-card.is-level-6 .writing-topic-card-topline > span {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+.writing-single-lesson-index,
+.himi-writing-session-header > strong {
+  color: var(--himi-red);
+  background: var(--himi-red-soft);
+}
+
+.writing-topic-card-footer a,
+.writing-single-lesson-action a,
+.himi-writing-character-grid button.active,
+.himi-writing-board-actions button.primary {
+  color: var(--himi-on-red);
+}
+
+.himi-writing-character-grid button.active > span,
+.himi-writing-character-grid button.active small {
+  color: #fff;
+}
+
+.himi-writing-character-grid button.active > svg {
+  color: var(--himi-black);
+}
+
+.himi-writing-groups button.active,
+.himi-writing-navigation button:hover {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+/* VIP pricing */
+.vip-page-header + .vip-request-feedback,
+.vip-pricing-grid {
+  color: var(--himi-black);
+}
+
+.vip-plan-card {
+  border-color: var(--himi-line);
+  box-shadow: 0 18px 46px rgba(34, 34, 34, .07);
+}
+
+.vip-plan-card.featured {
+  color: var(--himi-white);
+  border-color: var(--himi-black);
+  background: var(--himi-black);
+  box-shadow: 0 25px 60px rgba(34, 34, 34, .2);
+}
+
+.vip-plan-card.featured .price-badge {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+}
+
+.vip-plan-card:not(.featured) .feature-list svg {
+  color: var(--himi-red);
+}
+
+/* Authentication and admin console primary identity */
+.auth-page:not(.auth-page-login-scene) {
+  color: var(--himi-black);
+  background:
+    radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--himi-orange) 11%, transparent), transparent 35%),
+    var(--himi-white);
+}
+
+.auth-card {
+  border-color: var(--himi-line);
+  box-shadow: 0 25px 70px rgba(34, 34, 34, .1);
+}
+
+.auth-card-admin {
+  border-top-color: var(--himi-red);
+}
+
+.auth-icon,
+.auth-heading > span,
+.auth-switch a {
+  color: var(--himi-red);
+}
+
+.auth-icon {
+  background: var(--himi-red-soft);
+}
+
+.auth-form label input {
+  border-color: var(--himi-line);
+}
+
+.auth-form label input:focus {
+  border-color: var(--himi-red);
+  box-shadow: 0 0 0 4px var(--focus-halo);
+}
+
+.admin-page {
+  --admin-accent: var(--himi-red);
+  --admin-accent-dark: color-mix(in srgb, var(--himi-red) 72%, var(--himi-black));
+  --admin-bg: #f8f7f6;
+  --admin-border: var(--himi-line);
+  --admin-muted: var(--himi-muted);
+  --admin-text: var(--himi-black);
+}
+
+.admin-page .admin-stat-icon,
+.admin-page .table-mark,
+.admin-page .admin-user-identity > span {
+  color: var(--himi-red);
+  border-color: color-mix(in srgb, var(--himi-red) 22%, var(--himi-white));
+  background: var(--himi-red-soft);
+}
+
+.admin-page .admin-period-filter a[aria-current="page"],
+.admin-page .admin-record-list > a:hover {
+  color: var(--himi-black);
+  background: var(--himi-orange-soft);
+}
+
+/* Final sweep for shared learner-shell inheritance */
+.learner-app-shell,
+.learner-app-shell .learn-rail,
+.learner-app-shell .learn-topbar,
+.learner-app-shell .rail-brand,
+.learner-app-shell .brand,
+.learner-app-shell .learner-shell-content,
+.learner-app-shell .user-chip,
+.learner-app-shell .user-chip strong {
+  color: var(--himi-black);
+}
+
+/* Industry course roadmap */
+.course-roadmap-header,
+.roadmap-lesson-list,
+.course-roadmap-overview {
+  border-color: var(--himi-line);
+}
+
+.course-roadmap-eyebrow,
+.course-roadmap-progress-row,
+.course-roadmap-progress-row small,
+.roadmap-stage-copy p,
+.roadmap-lesson-row,
+.roadmap-lesson-copy > span,
+.roadmap-lesson-minutes,
+.roadmap-overview-stat p {
+  color: var(--himi-muted);
+}
+
+.course-roadmap-header h1,
+.roadmap-stage-copy h2,
+.course-roadmap-overview h2,
+.roadmap-overview-stat strong {
+  color: var(--himi-black);
+}
+
+.course-roadmap-switch,
+.roadmap-signin-note {
+  color: var(--himi-red);
+}
+
+.course-roadmap-progress-track > span {
+  background: linear-gradient(90deg, var(--himi-red), var(--himi-orange));
+}
+
+.roadmap-stage.is-active:not(:last-child) .roadmap-stage-rail::after {
+  background: color-mix(in srgb, var(--himi-orange) 62%, var(--himi-white));
+}
+
+.roadmap-stage-marker.is-active {
+  color: var(--himi-on-orange);
+  background: var(--himi-orange);
+  box-shadow: 0 0 0 5px var(--himi-orange-soft), 0 4px 10px color-mix(in srgb, var(--himi-orange) 22%, transparent);
+}
+
+.roadmap-stage.is-active .roadmap-stage-card {
+  border-color: color-mix(in srgb, var(--himi-red) 32%, var(--himi-white));
+  box-shadow: 0 6px 20px rgba(34, 34, 34, .075);
+}
+
+.roadmap-stage-status.is-active {
+  color: var(--himi-red);
+  background: var(--himi-red-soft);
+}
+
+.roadmap-lesson-row.is-current {
+  color: var(--himi-black);
+  background: var(--himi-red-soft);
+}
+
+.roadmap-lesson-row.is-current .roadmap-lesson-state,
+.roadmap-lesson-row.is-current .roadmap-lesson-copy > strong {
+  color: var(--himi-red);
+}
+
+.roadmap-lesson-cta {
+  color: var(--himi-on-red);
+  background: var(--himi-red);
+  box-shadow: 0 6px 15px color-mix(in srgb, var(--himi-red) 22%, transparent);
+}
+
+.roadmap-lesson-cta:hover {
+  background: color-mix(in srgb, var(--himi-red) 84%, var(--himi-orange));
+}
+
+/* Industry lesson vocabulary player */
+.lesson-page,
+.lesson-header-card,
+.lesson-content-card,
+.lesson-vocab-deck {
+  color: var(--himi-black);
+}
+
+.lesson-vocab-order,
+.lesson-vocab-pinyin,
+.lesson-vocab-save {
+  color: var(--himi-red);
+}
+
+.lesson-vocab-hanzi,
+.lesson-vocab-example strong {
+  color: var(--himi-black);
+}
+
+.lesson-vocab-save:hover {
+  background: var(--himi-red-soft);
+}
+
+.lesson-vocab-card,
+.lesson-vocab-card-back {
+  border-color: var(--himi-line);
+  box-shadow: 0 20px 46px rgba(34, 34, 34, .09);
+}
+
+.lesson-vocab-nav > span {
+  color: var(--himi-red);
+  border-color: var(--himi-line);
+}
+
+.lesson-vocab-nav:not(:disabled):hover > span {
+  color: var(--himi-on-orange);
+  border-color: var(--himi-orange);
+  background: var(--himi-orange);
+}
+
+/* Remaining catalog accents */
+.video-detail-meta span,
+.video-card-meta span {
+  color: var(--himi-black);
+  background: var(--himi-orange-soft);
+}
+
+.writing-topic-characters span {
+  background: var(--himi-red-soft);
+}
+
+.game-journey-progress {
+  color: var(--himi-red);
+  border-color: color-mix(in srgb, var(--himi-orange) 36%, var(--himi-white));
+}
+
+.game-journey-done,
+.game-journey-station-complete {
+  color: var(--himi-red);
+  background: var(--himi-red-soft);
+}
+
+/* Practice catalog introduced after the original scenario player */
+.practice-feature-kicker,
+.practice-next-cases h2,
+.practice-next-index,
+.practice-feature-language p {
+  color: var(--himi-red);
+}
+
+.practice-feature-meta .free,
+.practice-next-access.free {
+  color: var(--himi-black);
+  background: var(--himi-orange-soft);
+}
+
+.practice-preview-button {
+  color: var(--himi-red);
+  border-color: color-mix(in srgb, var(--himi-red) 28%, var(--himi-white));
+}
+
+.practice-next-cases button,
+.practice-next-cases button strong {
+  color: var(--himi-black);
+}
+
+.practice-catalog-footer,
+.practice-catalog-footer button {
+  color: var(--himi-muted);
+}
+
+.practice-catalog-footer strong {
+  color: var(--himi-black);
+}
+
+@media (max-width: 720px) {
+  .home-portal-art::before {
+    --home-portal-curve-height: clamp(560px, 74vh, 660px);
+    width: max(620px, 170vw);
+    height: var(--home-portal-curve-height);
+    position: absolute;
+    top: calc(260px - var(--home-portal-curve-height));
+    left: 50%;
+    z-index: 1;
+    content: "";
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .97);
+    box-shadow: 0 22px 38px rgba(255, 255, 255, .34);
+    pointer-events: none;
+    transform: translateX(-50%);
+  }
+
+  .home-portal-art::after {
+    z-index: 2;
+    background:
+      linear-gradient(180deg,
+        rgba(255, 255, 255, .12) 0%,
+        rgba(255, 255, 255, .1) 24%,
+        rgba(255, 255, 255, .04) 40%,
+        transparent 56%),
+      linear-gradient(90deg,
+        rgba(255, 255, 255, .44) 0%,
+        rgba(255, 255, 255, .2) 64%,
+        transparent 100%),
+      radial-gradient(circle at 82% 56%, color-mix(in srgb, var(--himi-orange) 10%, transparent), transparent 30%);
+  }
+
+  .home-portal-copy > p {
+    color: color-mix(in srgb, var(--himi-black) 86%, var(--himi-white));
+    font-weight: 650;
+  }
+}

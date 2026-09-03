@@ -190,10 +190,10 @@ export function LessonVocabularyDeck({
             <Volume2 size={27} /><span>Nghe phát âm</span>
           </button>
 
-          <div className="lesson-vocab-example">
+          {currentWord.example ? <div className="lesson-vocab-example">
             <strong lang="zh">{currentWord.example}</strong>
             <p>{currentWord.translation}</p>
-          </div>
+          </div> : null}
 
           <button aria-pressed={saved} className={`lesson-vocab-save${saved ? " saved" : ""}`} disabled={savePending || saved} onClick={saveForReview} type="button">
             {savePending ? <LoaderCircle className="lesson-vocab-spinner" size={17} /> : saved ? <Check size={17} /> : <Bookmark size={17} />}
@@ -202,13 +202,13 @@ export function LessonVocabularyDeck({
         </article>
       </div>
 
-      <button aria-label={atEnd ? "Chuyển sang Hội thoại" : "Từ tiếp theo"} className="lesson-vocab-nav lesson-vocab-nav-next" onClick={moveForward} type="button">
-        <span><ChevronRight size={24} /></span><small>{atEnd ? "Hội thoại" : "Tiếp theo"}</small>
+      <button aria-label={atEnd ? "Chuyển sang Cụm từ" : "Từ tiếp theo"} className="lesson-vocab-nav lesson-vocab-nav-next" onClick={moveForward} type="button">
+        <span><ChevronRight size={24} /></span><small>{atEnd ? "Cụm từ" : "Tiếp theo"}</small>
       </button>
     </div>
 
     <button className="lesson-vocab-continue" onClick={moveForward} type="button">
-      {atEnd ? "Tiếp tục với Hội thoại" : "Đã hiểu · Tiếp tục"}<ChevronRight size={19} />
+      {atEnd ? "Tiếp tục với Cụm từ" : "Đã hiểu · Tiếp tục"}<ChevronRight size={19} />
     </button>
     <p className="lesson-vocab-keyboard">Nhấn <kbd>Enter</kbd> hoặc dùng <kbd>←</kbd> <kbd>→</kbd> để chuyển từ</p>
     <p aria-live="polite" className="sr-only">{audioMessage} {saveMessage}</p>

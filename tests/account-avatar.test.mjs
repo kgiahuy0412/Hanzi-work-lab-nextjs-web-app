@@ -45,13 +45,15 @@ test("Cloudinary avatar responses are signed and scoped to the current user", ()
   }
 });
 
-test("account avatar flow uploads in the browser and persists the verified URL", async () => {
-  const [component, route, schema, session, layout] = await Promise.all([
+test("account avatar flow uploads in the browser, fills every frame, and persists the verified URL", async () => {
+  const [component, shell, route, schema, session, layout, styles] = await Promise.all([
     read("components/account-avatar-uploader.tsx"),
+    read("components/learner-app-shell.tsx"),
     read("app/api/account/avatar/route.ts"),
     read("db/schema.ts"),
     read("lib/auth-session.ts"),
     read("app/layout.tsx"),
+    read("app/globals.css"),
   ]);
 
   assert.match(component, /type="file"/);
@@ -63,5 +65,11 @@ test("account avatar flow uploads in the browser and persists the verified URL",
   assert.match(schema, /avatarPublicId: varchar\("avatar_public_id"/);
   assert.match(session, /avatarUrl: users\.avatarUrl/);
   assert.match(layout, /avatarUrl: user\.avatarUrl/);
+  assert.match(component, /account-profile-avatar-media/);
+  assert.match(styles, /\.account-profile-avatar-media[^}]*inset: 0/s);
+  assert.match(styles, /\.account-profile-avatar-media > \.account-profile-avatar-image[^}]*object-fit: cover/s);
+  assert.match(component, /dispatchEvent\(new CustomEvent\("himi:avatar-updated"/);
+  assert.match(shell, /addEventListener\("himi:avatar-updated"/);
+  assert.match(shell, /className="user-chip-avatar-image"/);
+  assert.match(styles, /\.user-chip-avatar > \.user-chip-avatar-image[^}]*width: 100%[^}]*height: 100%[^}]*object-fit: cover/s);
 });
-

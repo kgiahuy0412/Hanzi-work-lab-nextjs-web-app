@@ -333,9 +333,11 @@
   font-size: 10px;
   font-weight: 730;
   white-space: nowrap;
+  transition: transform .24s cubic-bezier(.22, 1, .36, 1);
+  will-change: transform;
 }
 
-.video-category-filters button:hover,
+.video-category-filters button:hover { transform: translateY(-2px); }
 .video-category-filters button.active { color: #fff; background: #176b5b; }
 .video-result-count { margin-top: 16px; display: flex; align-items: center; gap: 7px; color: #6a7b76; font-size: 10px; font-weight: 700; }
 .learning-video-grid { margin-top: 15px; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 20px; }
@@ -656,7 +658,7 @@
 .dictation-input:focus-within { border-color: var(--studio-teal); box-shadow: 0 0 0 4px rgba(8,127,114,.1); }
 .dictation-input.is-correct { border-color: #43a982; background: #f2fbf7; }
 .dictation-input.is-incorrect { border-color: var(--studio-coral); background: #fff6f5; }
-.dictation-input input { min-width: 0; height: 100%; color: var(--studio-ink); border: 0; outline: 0; background: transparent; font-size: 13px; }
+.dictation-input input { min-width: 0; height: 100%; color: var(--studio-ink); border: 0; outline: 0; box-shadow: none; appearance: none; background: transparent; font-size: 13px; }
 .dictation-input button { width: 41px; height: 41px; display: grid; place-items: center; cursor: pointer; color: #fff; border: 0; border-radius: 10px; background: var(--studio-teal); }
 .dictation-input button svg { width: 17px; }
 .dictation-feedback { margin: 8px 0 0; display: flex; align-items: center; gap: 5px; font-size: 10px; line-height: 1.45; }

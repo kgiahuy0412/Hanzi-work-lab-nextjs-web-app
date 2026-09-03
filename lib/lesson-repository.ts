@@ -15,6 +15,7 @@ import { getLessonProgress } from "./progress-repository.ts";
 import { coreWorkplaceLessons, coreWorkplaceModules } from "./core-workplace-course-seed.ts";
 import { ecommerceLessons, ecommerceModules } from "./ecommerce-course-seed.ts";
 import { factoryLessons, factoryModules } from "./factory-course-seed.ts";
+import { highFrequencyLessons, highFrequencyModules } from "./high-frequency-course-seed.ts";
 import { logisticsLessons, logisticsModules } from "./logistics-course-seed.ts";
 import { officeLessons, officeModules } from "./office-course-seed.ts";
 import { restaurantLessons, restaurantModules } from "./restaurant-course-seed.ts";
@@ -41,6 +42,7 @@ const courseSeedBundles = new Map<string, CourseSeedBundle>([
   ["nha-hang-dich-vu", { courseSlug: "nha-hang-dich-vu", modules: restaurantModules, lessons: restaurantLessons }],
   ["thuong-mai-dien-tu", { courseSlug: "thuong-mai-dien-tu", modules: ecommerceModules, lessons: ecommerceLessons }],
   ["giao-tiep-cong-so", { courseSlug: "giao-tiep-cong-so", modules: coreWorkplaceModules, lessons: coreWorkplaceLessons }],
+  ["tieng-trung-tan-suat-cao", { courseSlug: "tieng-trung-tan-suat-cao", modules: highFrequencyModules, lessons: highFrequencyLessons }],
 ]);
 
 export type LessonPageData = {
@@ -58,15 +60,17 @@ function isString(value: unknown): value is string {
 
 function parseLessonContent(value: unknown): LessonContent {
   if (!value || typeof value !== "object") return { dialogue: [], notes: [] };
-  const raw = value as { dialogue?: unknown; notes?: unknown };
+  const raw = value as { dialogue?: unknown; phrases?: unknown; notes?: unknown };
 
-  const dialogue = Array.isArray(raw.dialogue)
-    ? raw.dialogue.filter((line): line is DialogueLine => {
+  const parseLines = (lines: unknown) => Array.isArray(lines)
+    ? lines.filter((line): line is DialogueLine => {
         if (!line || typeof line !== "object") return false;
         const item = line as Record<string, unknown>;
         return isString(item.speaker) && isString(item.hanzi) && isString(item.pinyin) && isString(item.translation);
       })
     : [];
+  const dialogue = parseLines(raw.dialogue);
+  const phrases = parseLines(raw.phrases);
 
   const notes = Array.isArray(raw.notes)
     ? raw.notes.filter((note): note is UsageNote => {
@@ -95,7 +99,7 @@ function parseLessonContent(value: unknown): LessonContent {
     }
   }
 
-  return { dialogue, notes, ...(challenge ? { challenge } : {}) };
+  return { dialogue, ...(phrases.length ? { phrases } : {}), notes, ...(challenge ? { challenge } : {}) };
 }
 
 function toSummary(lesson: CourseLessonSeed, order: number, moduleSeeds: CourseModuleSeed[]): LessonSummary {
@@ -200,7 +204,9 @@ async function getDemoLessonPageData(course: Course, requestedSlug?: string): Pr
   const lesson: LessonDetail = {
     ...summary,
     dialogue: access.allowed ? active.content.dialogue : [],
+    ...(access.allowed && active.content.phrases ? { phrases: active.content.phrases } : {}),
     notes: access.allowed ? active.content.notes : [],
+    ...(access.allowed && active.content.challenge ? { challenge: active.content.challenge } : {}),
     vocabulary: access.allowed ? active.vocabulary : [],
   };
 

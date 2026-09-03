@@ -43,6 +43,17 @@ export default defineConfig(async () => {
   const { cloudflare } = await import("@cloudflare/vite-plugin");
 
   return {
+    optimizeDeps: {
+      // Vinext runs separate client/RSC/SSR Vite environments. Keeping these
+      // browser-ready ESM packages out of the shared pre-bundle avoids stale
+      // optimizer hashes (504 "Outdated Optimize Dep") after HMR restarts.
+      exclude: [
+        "lucide-react",
+        "@gsap/react",
+        "gsap",
+        "gsap/MotionPathPlugin",
+      ],
+    },
     server: isCodexSeatbeltSandbox
       ? { watch: { useFsEvents: false, usePolling: true } }
       : undefined,

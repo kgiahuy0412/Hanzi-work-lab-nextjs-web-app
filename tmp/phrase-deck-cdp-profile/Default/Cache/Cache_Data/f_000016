@@ -1,0 +1,1305 @@
+"use client";
+import { r as __toESM } from "/node_modules/.vite/deps/chunk-CYJPkc-J.js?v=4f3829a3";
+import { t as require_react } from "/node_modules/.vite/deps/react.js?v=4f3829a3";
+import { t as require_jsx_runtime } from "/node_modules/.vite/deps/react_jsx-runtime.js?v=4f3829a3";
+import { c as NEXT_ROUTER_STATE_TREE_HEADER, d as VINEXT_MOUNTED_SLOTS_HEADER, f as VINEXT_PARAMS_HEADER, l as NEXT_URL_HEADER, o as NEXT_ROUTER_PREFETCH_HEADER, p as VINEXT_RSC_RENDER_MODE_HEADER, s as NEXT_ROUTER_SEGMENT_PREFETCH_HEADER, u as VINEXT_INTERCEPTION_CONTEXT_HEADER } from "/node_modules/.vite/deps/headers-Bo25JC5Z.js?v=4f3829a3";
+import { i as stripBasePath, n as isDangerousScheme, r as hasBasePath } from "/node_modules/.vite/deps/url-safety-zjkCS8vZ.js?v=4f3829a3";
+import { a as getDomainLocaleUrl, c as toBrowserNavigationHref, i as addLocalePrefix, l as toSameOriginAppPath, n as appendSearchParamsToUrl, o as isHashOnlyBrowserUrlChange, r as urlQueryToSearchParams, s as resolveRelativeHref, u as withBasePath } from "/node_modules/.vite/deps/query-70cgTss_.js?v=4f3829a3";
+//#region node_modules/vinext/dist/routing/utils.js
+var PATH_DELIMITER_REGEX = /([/#?\\]|%(2f|23|3f|5c))/gi;
+function encodePathDelimiters(segment) {
+	return segment.replace(PATH_DELIMITER_REGEX, (char) => encodeURIComponent(char));
+}
+/**
+* Decode a filesystem or URL path segment while preserving encoded path delimiters.
+* Mirrors Next.js segment-wise decoding so "%5F" becomes "_" but "%2F" stays "%2F".
+*/
+function decodeRouteSegment(segment) {
+	try {
+		return encodePathDelimiters(decodeURIComponent(segment));
+	} catch {
+		return segment;
+	}
+}
+/**
+* Normalize a pathname for route matching by decoding each segment independently.
+* This prevents encoded slashes from turning into real path separators.
+*/
+function normalizePathnameForRouteMatch(pathname) {
+	return pathname.split("/").map((segment) => decodeRouteSegment(segment)).join("/");
+}
+function decodeMatchedParam(value) {
+	try {
+		return decodeURIComponent(value);
+	} catch {
+		return value;
+	}
+}
+/**
+* Decode captured route params with `decodeURIComponent`, mirroring Next.js
+* route-matcher.ts:25-27. Mutates the params object in place. Catch-all
+* arrays are decoded element-wise. Malformed escapes are preserved (the
+* strict normalization layer rejects them at the request boundary).
+*/
+function decodeMatchedParams(params) {
+	for (const key of Object.keys(params)) {
+		const value = params[key];
+		if (Array.isArray(value)) params[key] = value.map(decodeMatchedParam);
+		else params[key] = decodeMatchedParam(value);
+	}
+}
+//#endregion
+//#region node_modules/vinext/dist/routing/route-trie.js
+function createNode() {
+	return {
+		staticChildren: /* @__PURE__ */ new Map(),
+		dynamicChild: null,
+		catchAllChild: null,
+		optionalCatchAllChild: null,
+		route: null
+	};
+}
+/**
+* Build a trie from pre-sorted routes.
+*
+* Routes must have a `patternParts` property (string[] of URL segments).
+* Pattern segment conventions:
+*   - `:name`  — dynamic segment
+*   - `:name+` — catch-all (1+ segments)
+*   - `:name*` — optional catch-all (0+ segments)
+*   - anything else — static segment
+*
+* First route to claim a terminal position wins (routes are pre-sorted
+* by precedence, so insertion order preserves correct priority).
+*/
+function buildRouteTrie(routes) {
+	const root = createNode();
+	for (const route of routes) {
+		const parts = route.patternParts;
+		if (parts.length === 0) {
+			if (root.route === null) root.route = route;
+			continue;
+		}
+		let node = root;
+		for (let i = 0; i < parts.length; i++) {
+			const part = parts[i];
+			if (part.endsWith("+") && part.startsWith(":")) {
+				if (i !== parts.length - 1) break;
+				const paramName = part.slice(1, -1);
+				if (node.catchAllChild === null) node.catchAllChild = {
+					paramName,
+					route
+				};
+				break;
+			}
+			if (part.endsWith("*") && part.startsWith(":")) {
+				if (i !== parts.length - 1) break;
+				const paramName = part.slice(1, -1);
+				if (node.optionalCatchAllChild === null) node.optionalCatchAllChild = {
+					paramName,
+					route
+				};
+				break;
+			}
+			if (part.startsWith(":")) {
+				const paramName = part.slice(1);
+				if (node.dynamicChild === null) node.dynamicChild = {
+					paramName,
+					node: createNode()
+				};
+				node = node.dynamicChild.node;
+				if (i === parts.length - 1) {
+					if (node.route === null) node.route = route;
+				}
+				continue;
+			}
+			let child = node.staticChildren.get(part);
+			if (!child) {
+				child = createNode();
+				node.staticChildren.set(part, child);
+			}
+			node = child;
+			if (i === parts.length - 1) {
+				if (node.route === null) node.route = route;
+			}
+		}
+	}
+	return root;
+}
+/**
+* Match a URL against the trie.
+*
+* Returns decoded param values — `decodeURIComponent` is applied to
+* individual param entries so that `%2F` → `/`, `%23` → `#`, etc.
+* Segment boundaries (the original `/` splits) are preserved by the
+* upstream normalization layer; this step only decodes the captured
+* param strings the caller sees.
+*
+* Mirrors Next.js route-matcher.ts:25-27.
+*
+* @param root - Trie root built by `buildRouteTrie`
+* @param urlParts - Pre-split URL segments (no empty strings)
+* @returns Match result with route and extracted params, or null
+*/
+function trieMatch(root, urlParts) {
+	const result = match(root, urlParts, 0);
+	if (result) decodeMatchedParams(result.params);
+	return result;
+}
+function createParams() {
+	return Object.create(null);
+}
+function match(node, urlParts, index) {
+	if (index === urlParts.length) {
+		if (node.route !== null) return {
+			route: node.route,
+			params: createParams()
+		};
+		if (node.optionalCatchAllChild !== null) return {
+			route: node.optionalCatchAllChild.route,
+			params: createParams()
+		};
+		return null;
+	}
+	const segment = urlParts[index];
+	const staticChild = node.staticChildren.get(segment);
+	if (staticChild) {
+		const result = match(staticChild, urlParts, index + 1);
+		if (result !== null) return result;
+	}
+	if (node.dynamicChild !== null) {
+		const result = match(node.dynamicChild.node, urlParts, index + 1);
+		if (result !== null) {
+			result.params[node.dynamicChild.paramName] = segment;
+			return result;
+		}
+	}
+	if (node.catchAllChild !== null) {
+		const remaining = urlParts.slice(index);
+		const params = createParams();
+		params[node.catchAllChild.paramName] = remaining;
+		return {
+			route: node.catchAllChild.route,
+			params
+		};
+	}
+	if (node.optionalCatchAllChild !== null) {
+		const remaining = urlParts.slice(index);
+		const params = createParams();
+		params[node.optionalCatchAllChild.paramName] = remaining;
+		return {
+			route: node.optionalCatchAllChild.route,
+			params
+		};
+	}
+	return null;
+}
+//#endregion
+//#region node_modules/vinext/dist/routing/route-matching.js
+/**
+* Shared route-match preamble used by both Pages Router and App Router.
+*
+* Both routers normalize URLs and call `trieMatch` with nearly-identical
+* preamble: strip query, trailing-slash normalize, run
+* `normalizePathnameForRouteMatch`, split into url parts, then look up via a
+* per-routes-array trie cache. This module factors that out so each router
+* just calls `matchRouteWithTrie(url, routes)`.
+*/
+function createRouteTrieCache() {
+	return /* @__PURE__ */ new WeakMap();
+}
+function getOrBuildTrie(cache, routes) {
+	let trie = cache.get(routes);
+	if (!trie) {
+		trie = buildRouteTrie(routes);
+		cache.set(routes, trie);
+	}
+	return trie;
+}
+/**
+* Match a URL path against a list of routes via the shared preamble:
+*   1. strip query string
+*   2. trailing-slash normalize (preserving root "/")
+*   3. run `normalizePathnameForRouteMatch`
+*   4. split into url parts and look up via the (cached) trie
+*
+* Generic over the route shape; both Pages `Route` and App `AppRoute`
+* satisfy `{ patternParts: string[] }`.
+*/
+function matchRouteWithTrie(url, routes, cache) {
+	const pathname = url.split("?")[0];
+	let normalizedUrl = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
+	normalizedUrl = normalizePathnameForRouteMatch(normalizedUrl);
+	const urlParts = normalizedUrl.split("/").filter(Boolean);
+	return trieMatch(getOrBuildTrie(cache, routes), urlParts);
+}
+//#endregion
+//#region node_modules/vinext/dist/server/artifact-compatibility.js
+function createArtifactCompatibilityEnvelope(input = {}) {
+	return {
+		schemaVersion: 1,
+		graphVersion: input.graphVersion ?? null,
+		deploymentVersion: input.deploymentVersion ?? null,
+		appElementsSchemaVersion: 1,
+		rscPayloadSchemaVersion: 1,
+		rootBoundaryId: input.rootBoundaryId ?? null,
+		renderEpoch: input.renderEpoch ?? null
+	};
+}
+function isRecord(value) {
+	return typeof value === "object" && value !== null && !Array.isArray(value);
+}
+function isStringOrNull(value) {
+	return typeof value === "string" || value === null;
+}
+function hasCurrentSchemaVersions(record) {
+	return record.schemaVersion === 1 && record.appElementsSchemaVersion === 1 && record.rscPayloadSchemaVersion === 1;
+}
+function parseArtifactCompatibilityEnvelope(value) {
+	if (!isRecord(value)) return null;
+	if (!hasCurrentSchemaVersions(value)) return null;
+	if (!isStringOrNull(value.graphVersion)) return null;
+	if (!isStringOrNull(value.deploymentVersion)) return null;
+	if (!isStringOrNull(value.rootBoundaryId)) return null;
+	if (!isStringOrNull(value.renderEpoch)) return null;
+	return {
+		schemaVersion: 1,
+		graphVersion: value.graphVersion,
+		deploymentVersion: value.deploymentVersion,
+		appElementsSchemaVersion: 1,
+		rscPayloadSchemaVersion: 1,
+		rootBoundaryId: value.rootBoundaryId,
+		renderEpoch: value.renderEpoch
+	};
+}
+//#endregion
+//#region node_modules/vinext/dist/server/app-elements-wire.js
+var import_react = /* @__PURE__ */ __toESM(require_react(), 1);
+var APP_INTERCEPTION_SEPARATOR = "\0";
+var APP_ARTIFACT_COMPATIBILITY_KEY = "__artifactCompatibility";
+var APP_INTERCEPTION_CONTEXT_KEY = "__interceptionContext";
+var APP_LAYOUT_IDS_KEY = "__layoutIds";
+var APP_LAYOUT_FLAGS_KEY = "__layoutFlags";
+var APP_ROUTE_KEY = "__route";
+var APP_ROOT_LAYOUT_KEY = "__rootLayout";
+var APP_UNMATCHED_SLOT_WIRE_VALUE = "__VINEXT_UNMATCHED_SLOT__";
+var UNMATCHED_SLOT = Symbol.for("vinext.unmatchedSlot");
+function appendInterceptionContext(identity, interceptionContext) {
+	return interceptionContext === null ? identity : `${identity}${APP_INTERCEPTION_SEPARATOR}${interceptionContext}`;
+}
+function createAppPayloadRouteId(routePath, interceptionContext) {
+	return appendInterceptionContext(`route:${routePath}`, interceptionContext);
+}
+function createAppPayloadPageId(routePath, interceptionContext) {
+	return appendInterceptionContext(`page:${routePath}`, interceptionContext);
+}
+function createAppPayloadLayoutId(treePath) {
+	return `layout:${treePath}`;
+}
+function createAppPayloadTemplateId(treePath) {
+	return `template:${treePath}`;
+}
+function createAppPayloadSlotId(slotName, treePath) {
+	return `slot:${slotName}:${treePath}`;
+}
+function createAppPayloadCacheKey(rscUrl, interceptionContext) {
+	return appendInterceptionContext(rscUrl, interceptionContext);
+}
+function parsePathWithInterception(input) {
+	const separatorIndex = input.indexOf(APP_INTERCEPTION_SEPARATOR);
+	const path = separatorIndex === -1 ? input : input.slice(0, separatorIndex);
+	if (!path.startsWith("/")) return null;
+	return {
+		interceptionContext: separatorIndex === -1 ? null : input.slice(separatorIndex + 1),
+		path
+	};
+}
+/**
+* AppElements tree paths are absolute route-tree paths on the wire.
+* Bare segment names are not valid layout/template/slot tree identities.
+*/
+function parseTreePath(input) {
+	return input.startsWith("/") ? input : null;
+}
+function parseAppElementsWireElementKey(key) {
+	if (key.startsWith("route:")) {
+		const parsed = parsePathWithInterception(key.slice(6));
+		if (!parsed) return null;
+		return {
+			interceptionContext: parsed.interceptionContext,
+			kind: "route",
+			path: parsed.path
+		};
+	}
+	if (key.startsWith("page:")) {
+		const parsed = parsePathWithInterception(key.slice(5));
+		if (!parsed) return null;
+		return {
+			interceptionContext: parsed.interceptionContext,
+			kind: "page",
+			path: parsed.path
+		};
+	}
+	if (key.startsWith("layout:")) {
+		const treePath = parseTreePath(key.slice(7));
+		return treePath ? {
+			kind: "layout",
+			treePath
+		} : null;
+	}
+	if (key.startsWith("template:")) {
+		const treePath = parseTreePath(key.slice(9));
+		return treePath ? {
+			kind: "template",
+			treePath
+		} : null;
+	}
+	if (key.startsWith("slot:")) {
+		const body = key.slice(5);
+		const separatorIndex = body.indexOf(":");
+		if (separatorIndex <= 0) return null;
+		const name = body.slice(0, separatorIndex);
+		const treePath = parseTreePath(body.slice(separatorIndex + 1));
+		return treePath ? {
+			kind: "slot",
+			name,
+			treePath
+		} : null;
+	}
+	return null;
+}
+function isAppElementsWireSlotId(key) {
+	if (!key.startsWith("slot:")) return false;
+	const body = key.slice(5);
+	const separatorIndex = body.indexOf(":");
+	return separatorIndex > 0 && body.charCodeAt(separatorIndex + 1) === 47;
+}
+function createAppElementsWireMetadataEntries(input) {
+	return {
+		[APP_ROUTE_KEY]: input.routeId,
+		[APP_INTERCEPTION_CONTEXT_KEY]: input.interceptionContext,
+		[APP_LAYOUT_IDS_KEY]: [...input.layoutIds ?? []],
+		[APP_ROOT_LAYOUT_KEY]: input.rootLayoutTreePath
+	};
+}
+function normalizeAppElements(elements) {
+	let needsNormalization = false;
+	for (const [key, value] of Object.entries(elements)) if (isAppElementsWireSlotId(key) && value === "__VINEXT_UNMATCHED_SLOT__") {
+		needsNormalization = true;
+		break;
+	}
+	if (!needsNormalization) return elements;
+	const normalized = {};
+	for (const [key, value] of Object.entries(elements)) normalized[key] = isAppElementsWireSlotId(key) && value === "__VINEXT_UNMATCHED_SLOT__" ? UNMATCHED_SLOT : value;
+	return normalized;
+}
+function isLayoutFlagsRecord(value) {
+	if (typeof value !== "object" || value === null || Array.isArray(value)) return false;
+	for (const v of Object.values(value)) if (v !== "s" && v !== "d") return false;
+	return true;
+}
+function parseLayoutFlags(value) {
+	if (isLayoutFlagsRecord(value)) return value;
+	return {};
+}
+function parseLayoutIds(value) {
+	if (value === void 0) return [];
+	if (!Array.isArray(value)) throw new Error("[vinext] Invalid __layoutIds in App Router payload: expected layout id string[]");
+	const layoutIds = [];
+	for (const entry of value) {
+		if (typeof entry !== "string") throw new Error("[vinext] Invalid __layoutIds in App Router payload: expected layout id string[]");
+		if (parseAppElementsWireElementKey(entry)?.kind !== "layout") throw new Error("[vinext] Invalid __layoutIds in App Router payload: expected layout ids");
+		layoutIds.push(entry);
+	}
+	return layoutIds;
+}
+/**
+* Type predicate for a plain (non-null, non-array) record of app payload values.
+* Used to distinguish the App Router payload object from bare React elements at
+* the render boundary. Narrows to `Readonly<Record<string, unknown>>` because
+* the outgoing payload carries heterogeneous values (ReactNodes for the rendered
+* tree, plus metadata like `__layoutFlags` which is a plain object). Delegates
+* to React's canonical `isValidElement` so we don't depend on React's internal
+* `$$typeof` marker scheme.
+*/
+function isAppElementsRecord(value) {
+	if (typeof value !== "object" || value === null) return false;
+	if (Array.isArray(value)) return false;
+	if ((0, import_react.isValidElement)(value)) return false;
+	return true;
+}
+function withLayoutFlags(elements, layoutFlags) {
+	return {
+		...elements,
+		[APP_LAYOUT_FLAGS_KEY]: layoutFlags
+	};
+}
+function buildOutgoingAppPayload(input) {
+	if (!isAppElementsRecord(input.element)) return input.element;
+	return {
+		...input.element,
+		[APP_LAYOUT_FLAGS_KEY]: input.layoutFlags,
+		[APP_ARTIFACT_COMPATIBILITY_KEY]: input.artifactCompatibility ?? createArtifactCompatibilityEnvelope()
+	};
+}
+function readArtifactCompatibilityMetadata(value) {
+	if (value === void 0) return createArtifactCompatibilityEnvelope();
+	return parseArtifactCompatibilityEnvelope(value) ?? createArtifactCompatibilityEnvelope();
+}
+function readAppElementsMetadata(elements) {
+	const routeId = elements[APP_ROUTE_KEY];
+	if (typeof routeId !== "string") throw new Error("[vinext] Missing __route string in App Router payload");
+	const interceptionContext = elements[APP_INTERCEPTION_CONTEXT_KEY];
+	if (interceptionContext !== void 0 && interceptionContext !== null && typeof interceptionContext !== "string") throw new Error("[vinext] Invalid __interceptionContext in App Router payload");
+	const rootLayoutTreePath = elements[APP_ROOT_LAYOUT_KEY];
+	if (rootLayoutTreePath === void 0) throw new Error("[vinext] Missing __rootLayout key in App Router payload");
+	if (rootLayoutTreePath !== null && typeof rootLayoutTreePath !== "string") throw new Error("[vinext] Invalid __rootLayout in App Router payload: expected string or null");
+	const layoutFlags = parseLayoutFlags(elements[APP_LAYOUT_FLAGS_KEY]);
+	const layoutIds = parseLayoutIds(elements[APP_LAYOUT_IDS_KEY]);
+	return {
+		artifactCompatibility: readArtifactCompatibilityMetadata(elements[APP_ARTIFACT_COMPATIBILITY_KEY]),
+		interceptionContext: interceptionContext ?? null,
+		layoutIds,
+		layoutFlags,
+		routeId,
+		rootLayoutTreePath
+	};
+}
+var AppElementsWire = {
+	keys: {
+		artifactCompatibility: APP_ARTIFACT_COMPATIBILITY_KEY,
+		interceptionContext: APP_INTERCEPTION_CONTEXT_KEY,
+		layoutIds: APP_LAYOUT_IDS_KEY,
+		layoutFlags: APP_LAYOUT_FLAGS_KEY,
+		rootLayout: APP_ROOT_LAYOUT_KEY,
+		route: APP_ROUTE_KEY
+	},
+	unmatchedSlotValue: APP_UNMATCHED_SLOT_WIRE_VALUE,
+	createMetadataEntries: createAppElementsWireMetadataEntries,
+	decode: normalizeAppElements,
+	encodeCacheKey: createAppPayloadCacheKey,
+	encodeLayoutId: createAppPayloadLayoutId,
+	encodeOutgoingPayload: buildOutgoingAppPayload,
+	encodePageId: createAppPayloadPageId,
+	encodeRouteId: createAppPayloadRouteId,
+	encodeSlotId: createAppPayloadSlotId,
+	encodeTemplateId: createAppPayloadTemplateId,
+	isSlotId: isAppElementsWireSlotId,
+	parseElementKey: parseAppElementsWireElementKey,
+	readMetadata: readAppElementsMetadata,
+	withLayoutFlags
+};
+//#endregion
+//#region node_modules/vinext/dist/server/app-rsc-render-mode.js
+var APP_RSC_RENDER_MODE_NAVIGATION = "navigation";
+var APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI = "refresh-preserve-ui";
+var APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI = "action-rerender-preserve-ui";
+function parseAppRscRenderMode(value) {
+	switch (value) {
+		case APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI: return APP_RSC_RENDER_MODE_REFRESH_PRESERVE_UI;
+		case APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI: return APP_RSC_RENDER_MODE_ACTION_RERENDER_PRESERVE_UI;
+		default: return APP_RSC_RENDER_MODE_NAVIGATION;
+	}
+}
+//#endregion
+//#region node_modules/vinext/dist/server/app-rsc-cache-busting.js
+/**
+* RSC cache-busting hashes cover the headers that make a `.rsc` payload vary.
+* Client-side variant headers must survive transit through CDNs and reverse
+* proxies; stripping them changes the server hash and turns stale URLs into
+* repeated canonicalization redirects.
+*/
+var VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM = "_rsc";
+var VINEXT_RSC_CONTENT_TYPE = "text/x-component";
+[
+	"RSC",
+	"Accept",
+	NEXT_ROUTER_STATE_TREE_HEADER,
+	NEXT_ROUTER_PREFETCH_HEADER,
+	NEXT_ROUTER_SEGMENT_PREFETCH_HEADER,
+	NEXT_URL_HEADER,
+	VINEXT_INTERCEPTION_CONTEXT_HEADER,
+	VINEXT_MOUNTED_SLOTS_HEADER,
+	VINEXT_RSC_RENDER_MODE_HEADER
+].join(", ");
+var CACHE_BUSTING_DIGEST_BYTES = 12;
+var textEncoder = new TextEncoder();
+function encodeBase64Url(bytes) {
+	let binary = "";
+	for (const byte of bytes) binary += String.fromCharCode(byte);
+	return btoa(binary).replaceAll("+", "-").replaceAll("/", "_").replace(/=+$/, "");
+}
+function normalizeHeaderValue(value) {
+	return value ?? "0";
+}
+function normalizeRenderModeHeaderValue(value) {
+	const renderMode = parseAppRscRenderMode(value);
+	return renderMode === "navigation" ? null : renderMode;
+}
+function createCacheBustingInput(headers, options = {}) {
+	const values = [
+		headers.get(NEXT_ROUTER_PREFETCH_HEADER),
+		headers.get(NEXT_ROUTER_SEGMENT_PREFETCH_HEADER),
+		headers.get(NEXT_ROUTER_STATE_TREE_HEADER),
+		headers.get(NEXT_URL_HEADER),
+		headers.get(VINEXT_INTERCEPTION_CONTEXT_HEADER),
+		headers.get(VINEXT_MOUNTED_SLOTS_HEADER),
+		...options.includeRenderModeHeader === false ? [] : [normalizeRenderModeHeaderValue(headers.get(VINEXT_RSC_RENDER_MODE_HEADER))]
+	];
+	if (values.every((value) => value === null)) return null;
+	return values.map(normalizeHeaderValue).join(",");
+}
+async function sha256CacheBustingHash(input) {
+	const digest = await globalThis.crypto.subtle.digest("SHA-256", textEncoder.encode(input));
+	return encodeBase64Url(new Uint8Array(digest).subarray(0, CACHE_BUSTING_DIGEST_BYTES));
+}
+function getSearchPairsWithoutRscCacheBusting(url) {
+	return (url.search.startsWith("?") ? url.search.slice(1) : url.search).split("&").filter((pair) => pair.length > 0 && !isRscCacheBustingSearchPair(pair));
+}
+function isRscCacheBustingSearchPair(pair) {
+	const separatorIndex = pair.indexOf("=");
+	const rawKey = separatorIndex === -1 ? pair : pair.slice(0, separatorIndex);
+	try {
+		return decodeURIComponent(rawKey.replaceAll("+", " ")) === VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM;
+	} catch {
+		return rawKey === VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM;
+	}
+}
+async function computeRscCacheBustingSearchParam(headers) {
+	const input = createCacheBustingInput(headers);
+	if (input === null) return "";
+	return sha256CacheBustingHash(input);
+}
+function setRscCacheBustingSearchParam(url, hash) {
+	const pairs = getSearchPairsWithoutRscCacheBusting(url);
+	pairs.push(hash.length > 0 ? `${VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM}=${hash}` : VINEXT_RSC_CACHE_BUSTING_SEARCH_PARAM);
+	url.search = `?${pairs.join("&")}`;
+}
+function createRscRequestHeaders(options = {}) {
+	const headers = new Headers({
+		Accept: VINEXT_RSC_CONTENT_TYPE,
+		["RSC"]: "1"
+	});
+	if (options.interceptionContext !== void 0 && options.interceptionContext !== null) headers.set(VINEXT_INTERCEPTION_CONTEXT_HEADER, options.interceptionContext);
+	if (options.mountedSlotsHeader !== void 0 && options.mountedSlotsHeader !== null) headers.set(VINEXT_MOUNTED_SLOTS_HEADER, options.mountedSlotsHeader);
+	const renderMode = options.renderMode ?? "navigation";
+	if (renderMode !== "navigation") headers.set(VINEXT_RSC_RENDER_MODE_HEADER, renderMode);
+	return headers;
+}
+function toRscRequestPath(href) {
+	const hashIndex = href.indexOf("#");
+	const beforeHash = hashIndex === -1 ? href : href.slice(0, hashIndex);
+	const queryIndex = beforeHash.indexOf("?");
+	const pathname = queryIndex === -1 ? beforeHash : beforeHash.slice(0, queryIndex);
+	const query = queryIndex === -1 ? "" : beforeHash.slice(queryIndex);
+	return `${pathname.length > 1 && pathname.endsWith("/") ? pathname.slice(0, -1) : pathname}.rsc${query}`;
+}
+async function createRscRequestUrl(href, headers) {
+	const url = new URL(toRscRequestPath(href), "http://vinext.local");
+	setRscCacheBustingSearchParam(url, await computeRscCacheBustingSearchParam(headers));
+	return `${url.pathname}${url.search}`;
+}
+//#endregion
+//#region node_modules/vinext/dist/client/instrumentation-client-state.js
+var clientInstrumentationHooks = null;
+function notifyAppRouterTransitionStart(href, navigationType) {
+	clientInstrumentationHooks?.onRouterTransitionStart?.(href, navigationType);
+}
+//#endregion
+//#region node_modules/vinext/dist/shims/readonly-url-search-params.js
+var ReadonlyURLSearchParamsError = class extends Error {
+	constructor() {
+		super("Method unavailable on `ReadonlyURLSearchParams`. Read more: https://nextjs.org/docs/app/api-reference/functions/use-search-params#updating-searchparams");
+	}
+};
+/**
+* Read-only URLSearchParams wrapper matching Next.js runtime behavior.
+* Mutation methods remain present for instanceof/API compatibility but throw.
+*/
+var ReadonlyURLSearchParams = class extends URLSearchParams {
+	append(_name, _value) {
+		throw new ReadonlyURLSearchParamsError();
+	}
+	delete(_name, _value) {
+		throw new ReadonlyURLSearchParamsError();
+	}
+	set(_name, _value) {
+		throw new ReadonlyURLSearchParamsError();
+	}
+	sort() {
+		throw new ReadonlyURLSearchParamsError();
+	}
+};
+//#endregion
+//#region node_modules/vinext/dist/shims/navigation.js
+var _SERVER_INSERTED_HTML_CTX_KEY = Symbol.for("vinext.serverInsertedHTMLContext");
+function getServerInsertedHTMLContext() {
+	if (typeof import_react.createContext !== "function") return null;
+	const globalState = globalThis;
+	if (!globalState[_SERVER_INSERTED_HTML_CTX_KEY]) globalState[_SERVER_INSERTED_HTML_CTX_KEY] = import_react.createContext(null);
+	return globalState[_SERVER_INSERTED_HTML_CTX_KEY] ?? null;
+}
+getServerInsertedHTMLContext();
+var isServer = typeof window === "undefined";
+/** basePath from next.config.js, injected by the plugin at build time */
+var __basePath$1 = process.env.__NEXT_ROUTER_BASEPATH ?? "";
+function getCurrentInterceptionContext() {
+	if (isServer) return null;
+	return stripBasePath(window.location.pathname, __basePath$1);
+}
+/** Get or create the shared in-memory RSC prefetch cache on window. */
+function getPrefetchCache() {
+	if (isServer) return /* @__PURE__ */ new Map();
+	if (!window.__VINEXT_RSC_PREFETCH_CACHE__) window.__VINEXT_RSC_PREFETCH_CACHE__ = /* @__PURE__ */ new Map();
+	return window.__VINEXT_RSC_PREFETCH_CACHE__;
+}
+/**
+* Get or create the shared set of already-prefetched RSC URLs on window.
+* Keyed by interception-aware cache key so distinct source routes do not alias.
+*/
+function getPrefetchedUrls() {
+	if (isServer) return /* @__PURE__ */ new Set();
+	if (!window.__VINEXT_RSC_PREFETCHED_URLS__) window.__VINEXT_RSC_PREFETCHED_URLS__ = /* @__PURE__ */ new Set();
+	return window.__VINEXT_RSC_PREFETCHED_URLS__;
+}
+/**
+* Evict prefetch cache entries if at capacity.
+* First sweeps expired entries, then falls back to FIFO eviction.
+*/
+function evictPrefetchCacheIfNeeded() {
+	const cache = getPrefetchCache();
+	if (cache.size < 50) return;
+	const now = Date.now();
+	const prefetched = getPrefetchedUrls();
+	for (const [key, entry] of cache) if (now - entry.timestamp >= 3e4) {
+		cache.delete(key);
+		prefetched.delete(key);
+	}
+	while (cache.size >= 50) {
+		const oldest = cache.keys().next().value;
+		if (oldest !== void 0) {
+			cache.delete(oldest);
+			prefetched.delete(oldest);
+		} else break;
+	}
+}
+/**
+* Snapshot an RSC response to an ArrayBuffer for caching and replay.
+* Consumes the response body and stores it with content-type and URL metadata.
+*/
+async function snapshotRscResponse(response) {
+	return {
+		buffer: await response.arrayBuffer(),
+		contentType: response.headers.get("content-type") ?? "text/x-component",
+		mountedSlotsHeader: response.headers.get(VINEXT_MOUNTED_SLOTS_HEADER),
+		paramsHeader: response.headers.get(VINEXT_PARAMS_HEADER),
+		url: response.url
+	};
+}
+/**
+* Prefetch an RSC response and snapshot it for later consumption.
+* Stores the in-flight promise so immediate clicks can await it instead
+* of firing a duplicate fetch.
+* Enforces a maximum cache size to prevent unbounded memory growth on
+* link-heavy pages.
+*/
+function prefetchRscResponse(rscUrl, fetchPromise, interceptionContext = null, mountedSlotsHeader = null) {
+	const cacheKey = AppElementsWire.encodeCacheKey(rscUrl, interceptionContext);
+	const cache = getPrefetchCache();
+	const prefetched = getPrefetchedUrls();
+	const entry = {
+		outcome: "pending",
+		timestamp: Date.now()
+	};
+	entry.pending = fetchPromise.then(async (response) => {
+		if (response.ok) entry.snapshot = {
+			...await snapshotRscResponse(response),
+			mountedSlotsHeader
+		};
+		else {
+			prefetched.delete(cacheKey);
+			cache.delete(cacheKey);
+		}
+	}).catch(() => {
+		prefetched.delete(cacheKey);
+		cache.delete(cacheKey);
+	}).finally(() => {
+		entry.pending = void 0;
+		if (entry.snapshot) entry.outcome = "cache-seeded";
+	});
+	cache.set(cacheKey, entry);
+	evictPrefetchCacheIfNeeded();
+}
+var _CLIENT_NAV_STATE_KEY = Symbol.for("vinext.clientNavigationState");
+var _MOUNTED_SLOTS_HEADER_KEY = Symbol.for("vinext.mountedSlotsHeader");
+function getMountedSlotsHeader() {
+	if (isServer) return null;
+	return window[_MOUNTED_SLOTS_HEADER_KEY] ?? null;
+}
+function getClientNavigationState() {
+	if (isServer) return null;
+	const globalState = window;
+	globalState[_CLIENT_NAV_STATE_KEY] ??= {
+		listeners: /* @__PURE__ */ new Set(),
+		cachedSearch: window.location.search,
+		cachedReadonlySearchParams: new ReadonlyURLSearchParams(window.location.search),
+		cachedPathname: stripBasePath(window.location.pathname, __basePath$1),
+		clientParams: {},
+		clientParamsJson: "{}",
+		pendingClientParams: null,
+		pendingClientParamsJson: null,
+		pendingPathname: null,
+		pendingPathnameNavId: null,
+		originalPushState: window.history.pushState.bind(window.history),
+		originalReplaceState: window.history.replaceState.bind(window.history),
+		patchInstalled: false,
+		hasPendingNavigationUpdate: false,
+		suppressUrlNotifyCount: 0,
+		navigationSnapshotActiveCount: 0
+	};
+	return globalState[_CLIENT_NAV_STATE_KEY];
+}
+function notifyNavigationListeners() {
+	const state = getClientNavigationState();
+	if (!state) return;
+	for (const fn of state.listeners) fn();
+}
+function syncCommittedUrlStateFromLocation() {
+	const state = getClientNavigationState();
+	if (!state) return false;
+	let changed = false;
+	const pathname = stripBasePath(window.location.pathname, __basePath$1);
+	if (pathname !== state.cachedPathname) {
+		state.cachedPathname = pathname;
+		changed = true;
+	}
+	const search = window.location.search;
+	if (search !== state.cachedSearch) {
+		state.cachedSearch = search;
+		state.cachedReadonlySearchParams = new ReadonlyURLSearchParams(search);
+		changed = true;
+	}
+	return changed;
+}
+/**
+* Check if a href is an external URL (any URL scheme per RFC 3986, or protocol-relative).
+*/
+function isExternalUrl(href) {
+	return /^[a-z][a-z0-9+.-]*:/i.test(href) || href.startsWith("//");
+}
+/**
+* Check if a href is only a hash change relative to the current URL.
+*/
+function isHashOnlyChange(href) {
+	if (typeof window === "undefined") return false;
+	if (href.startsWith("#")) return true;
+	return isHashOnlyBrowserUrlChange(href, window.location.href, __basePath$1);
+}
+/**
+* Scroll to a hash target element, or to the top if no hash.
+*/
+function scrollToHash(hash) {
+	if (!hash || hash === "#") {
+		window.scrollTo(0, 0);
+		return;
+	}
+	const id = hash.slice(1);
+	const element = document.getElementById(id);
+	if (element) element.scrollIntoView({ behavior: "auto" });
+}
+function withSuppressedUrlNotifications(fn) {
+	const state = getClientNavigationState();
+	if (!state) return fn();
+	state.suppressUrlNotifyCount += 1;
+	try {
+		return fn();
+	} finally {
+		state.suppressUrlNotifyCount -= 1;
+	}
+}
+/**
+* Commit pending client navigation state to committed snapshots.
+*
+* navId is optional: callers that don't own pendingPathname (for example,
+* superseded pre-paint cleanup) may pass undefined to flush URL/params state
+* without clearing pendingPathname owned by the active navigation. Such callers
+* must opt in explicitly if they also own an activated render snapshot.
+*/
+function commitClientNavigationState(navId, options) {
+	if (isServer) return;
+	const state = getClientNavigationState();
+	if (!state) return;
+	if ((navId !== void 0 || options?.releaseSnapshot === true) && state.navigationSnapshotActiveCount > 0) state.navigationSnapshotActiveCount -= 1;
+	const urlChanged = syncCommittedUrlStateFromLocation();
+	if (state.pendingClientParams !== null && state.pendingClientParamsJson !== null) {
+		state.clientParams = state.pendingClientParams;
+		state.clientParamsJson = state.pendingClientParamsJson;
+		state.pendingClientParams = null;
+		state.pendingClientParamsJson = null;
+	}
+	if (state.pendingPathnameNavId === null || navId !== void 0 && state.pendingPathnameNavId === navId) {
+		state.pendingPathname = null;
+		state.pendingPathnameNavId = null;
+	}
+	const shouldNotify = urlChanged || state.hasPendingNavigationUpdate;
+	state.hasPendingNavigationUpdate = false;
+	if (shouldNotify) notifyNavigationListeners();
+}
+function pushHistoryStateWithoutNotify(data, unused, url) {
+	withSuppressedUrlNotifications(() => {
+		getClientNavigationState()?.originalPushState.call(window.history, data, unused, url);
+	});
+}
+function replaceHistoryStateWithoutNotify(data, unused, url) {
+	withSuppressedUrlNotifications(() => {
+		getClientNavigationState()?.originalReplaceState.call(window.history, data, unused, url);
+	});
+}
+/**
+* Save the current scroll position into the current history state.
+* Called before every navigation to enable scroll restoration on back/forward.
+*
+* Uses replaceHistoryStateWithoutNotify to avoid triggering the patched
+* history.replaceState interception (which would cause spurious re-renders).
+*/
+function saveScrollPosition() {
+	replaceHistoryStateWithoutNotify({
+		...window.history.state ?? {},
+		__vinext_scrollX: window.scrollX,
+		__vinext_scrollY: window.scrollY
+	}, "");
+}
+/**
+* Restore scroll position from a history state object (used on popstate).
+*
+* When an RSC navigation is in flight (back/forward triggers both this
+* handler and the browser entry's popstate handler which calls
+* __VINEXT_RSC_NAVIGATE__), we must wait for the new content to render
+* before scrolling. Otherwise the user sees old content flash at the
+* restored scroll position.
+*
+* This handler fires before the browser entry's popstate handler (because
+* navigation.ts is loaded before hydration completes), so we defer via a
+* microtask to give the browser entry handler a chance to set
+* __VINEXT_RSC_PENDING__. Promise.resolve() schedules a microtask
+* that runs after all synchronous event listeners have completed.
+*/
+function restoreScrollPosition(state) {
+	if (state && typeof state === "object" && "__vinext_scrollY" in state) {
+		const { __vinext_scrollX: x, __vinext_scrollY: y } = state;
+		Promise.resolve().then(() => {
+			const pending = window.__VINEXT_RSC_PENDING__ ?? null;
+			if (pending) pending.then(() => {
+				requestAnimationFrame(() => {
+					window.scrollTo(x, y);
+				});
+			});
+			else requestAnimationFrame(() => {
+				window.scrollTo(x, y);
+			});
+		});
+	}
+}
+/**
+* Navigate to a URL, handling external URLs, hash-only changes, and RSC navigation.
+*/
+async function navigateClientSide(href, mode, scroll, programmaticTransition = false) {
+	let normalizedHref = href;
+	if (isExternalUrl(href)) {
+		const localPath = toSameOriginAppPath(href, __basePath$1);
+		if (localPath == null) {
+			if (mode === "replace") window.location.replace(href);
+			else window.location.assign(href);
+			return;
+		}
+		normalizedHref = localPath;
+	}
+	const fullHref = toBrowserNavigationHref(normalizedHref, window.location.href, __basePath$1);
+	notifyAppRouterTransitionStart(fullHref, mode);
+	if (mode === "push") saveScrollPosition();
+	if (isHashOnlyChange(fullHref)) {
+		const hash = fullHref.includes("#") ? fullHref.slice(fullHref.indexOf("#")) : "";
+		if (mode === "replace") replaceHistoryStateWithoutNotify(null, "", fullHref);
+		else pushHistoryStateWithoutNotify(null, "", fullHref);
+		commitClientNavigationState();
+		if (scroll) scrollToHash(hash);
+		return;
+	}
+	const hashIdx = fullHref.indexOf("#");
+	const hash = hashIdx !== -1 ? fullHref.slice(hashIdx) : "";
+	if (typeof window.__VINEXT_RSC_NAVIGATE__ === "function") await window.__VINEXT_RSC_NAVIGATE__(fullHref, 0, "navigate", mode, void 0, programmaticTransition);
+	else {
+		if (mode === "replace") replaceHistoryStateWithoutNotify(null, "", fullHref);
+		else pushHistoryStateWithoutNotify(null, "", fullHref);
+		commitClientNavigationState();
+	}
+	if (scroll) if (hash) scrollToHash(hash);
+	else window.scrollTo(0, 0);
+}
+if (!isServer) {
+	const state = getClientNavigationState();
+	if (state && !state.patchInstalled) {
+		state.patchInstalled = true;
+		window.addEventListener("popstate", (event) => {
+			if (typeof window.__VINEXT_RSC_NAVIGATE__ !== "function") {
+				commitClientNavigationState();
+				restoreScrollPosition(event.state);
+			}
+		});
+		window.history.pushState = function patchedPushState(data, unused, url) {
+			state.originalPushState.call(window.history, data, unused, url);
+			if (state.suppressUrlNotifyCount === 0) commitClientNavigationState();
+		};
+		window.history.replaceState = function patchedReplaceState(data, unused, url) {
+			state.originalReplaceState.call(window.history, data, unused, url);
+			if (state.suppressUrlNotifyCount === 0) commitClientNavigationState();
+		};
+	}
+}
+//#endregion
+//#region node_modules/vinext/dist/shims/i18n-context.js
+var _getI18nContext = () => {
+	if (globalThis.__VINEXT_DEFAULT_LOCALE__ == null && globalThis.__VINEXT_LOCALE__ == null) return null;
+	return {
+		locale: globalThis.__VINEXT_LOCALE__,
+		locales: globalThis.__VINEXT_LOCALES__,
+		defaultLocale: globalThis.__VINEXT_DEFAULT_LOCALE__,
+		domainLocales: globalThis.__VINEXT_DOMAIN_LOCALES__,
+		hostname: globalThis.__VINEXT_HOSTNAME__
+	};
+};
+function getI18nContext() {
+	return _getI18nContext();
+}
+//#endregion
+//#region node_modules/vinext/dist/shims/link-prefetch.js
+function canLinkPrefetch(input) {
+	return input.nodeEnv === "production" && input.prefetch !== false && !input.isDangerous;
+}
+/**
+* Normalize absolute and protocol-relative Link hrefs to app-relative paths
+* that are eligible for prefetching. Non-absolute relative hrefs are returned
+* unchanged; callers must resolve them against the current browser URL before
+* constructing a concrete fetch target.
+*/
+function getLinkPrefetchHref(input) {
+	const { href, basePath, currentOrigin } = input;
+	if (!isAbsoluteOrProtocolRelative(href)) return href;
+	if (currentOrigin === void 0) return null;
+	try {
+		const current = new URL(currentOrigin);
+		const parsed = href.startsWith("//") ? new URL(href, current.origin) : new URL(href);
+		if (parsed.origin !== current.origin) return null;
+		if (!basePath) return parsed.pathname + parsed.search + parsed.hash;
+		if (!hasBasePath(parsed.pathname, basePath)) return null;
+		return stripBasePath(parsed.pathname, basePath) + parsed.search + parsed.hash;
+	} catch {
+		return null;
+	}
+}
+function isAbsoluteOrProtocolRelative(href) {
+	return href.startsWith("http://") || href.startsWith("https://") || href.startsWith("//");
+}
+//#endregion
+//#region node_modules/vinext/dist/shims/link.js
+var import_jsx_runtime = require_jsx_runtime();
+/**
+* next/link shim
+*
+* Renders an <a> tag with client-side navigation support.
+* On click, prevents full page reload and triggers client-side
+* page swap via the router's navigation system.
+*/
+var LinkStatusContext = (0, import_react.createContext)({ pending: false });
+/**
+* useLinkStatus returns the pending state of the enclosing <Link>.
+* In Next.js, this is used to show loading indicators while a
+* prefetch-triggered navigation is in progress.
+*/
+function useLinkStatus() {
+	return (0, import_react.useContext)(LinkStatusContext);
+}
+/** basePath from next.config.js, injected by the plugin at build time */
+var __basePath = process.env.__NEXT_ROUTER_BASEPATH ?? "";
+var linkPrefetchRouteTrieCache = createRouteTrieCache();
+function resolveHref(href) {
+	if (typeof href === "string") return href;
+	let url = href.pathname ?? "/";
+	if (href.query) {
+		const params = urlQueryToSearchParams(href.query);
+		url = appendSearchParamsToUrl(url, params);
+	}
+	return url;
+}
+function resolveLinkPrefetchMode(prefetchProp, isDangerous) {
+	if (isDangerous || prefetchProp === false) return "disabled";
+	if (prefetchProp === true) return "full";
+	return "auto";
+}
+function toSameOriginRouteHref(href) {
+	if (typeof window === "undefined") return null;
+	let url;
+	try {
+		url = new URL(href, window.location.href);
+	} catch {
+		return null;
+	}
+	if (url.origin !== window.location.origin) return null;
+	return `${stripBasePath(url.pathname, __basePath)}${url.search}`;
+}
+function canAutoPrefetchFullAppRoute(href) {
+	if (typeof window === "undefined") return false;
+	const routes = window.__VINEXT_LINK_PREFETCH_ROUTES__;
+	if (!routes) return false;
+	const routeHref = toSameOriginRouteHref(href);
+	if (routeHref === null) return false;
+	const match = matchRouteWithTrie(routeHref, routes, linkPrefetchRouteTrieCache);
+	if (!match) return false;
+	return !match.route.isDynamic;
+}
+/**
+* Prefetch a URL for faster navigation.
+*
+* For App Router (RSC): fetches the .rsc payload in the background and
+* stores it in an in-memory cache for instant use during navigation.
+* For Pages Router: injects a <link rel="prefetch"> for the page module.
+*
+* Uses `requestIdleCallback` (or `setTimeout` fallback) to avoid blocking
+* the main thread during initial page load.
+*/
+function prefetchUrl(href, mode, priority = "low") {
+	if (typeof window === "undefined") return;
+	const prefetchHref = getLinkPrefetchHref({
+		href,
+		basePath: __basePath,
+		currentOrigin: window.location.origin
+	});
+	if (prefetchHref == null) return;
+	const fullHref = toBrowserNavigationHref(prefetchHref, window.location.href, __basePath);
+	(window.requestIdleCallback ?? ((fn) => setTimeout(fn, 100)))(() => {
+		(async () => {
+			if (typeof window.__VINEXT_RSC_NAVIGATE__ === "function") {
+				if (mode === "auto" && !canAutoPrefetchFullAppRoute(prefetchHref)) return;
+				const interceptionContext = getCurrentInterceptionContext();
+				const mountedSlotsHeader = getMountedSlotsHeader();
+				const headers = createRscRequestHeaders({ interceptionContext });
+				if (mountedSlotsHeader) headers.set(VINEXT_MOUNTED_SLOTS_HEADER, mountedSlotsHeader);
+				const rscUrl = await createRscRequestUrl(fullHref, headers);
+				const cacheKey = AppElementsWire.encodeCacheKey(rscUrl, interceptionContext);
+				const prefetched = getPrefetchedUrls();
+				if (prefetched.has(cacheKey)) return;
+				prefetched.add(cacheKey);
+				prefetchRscResponse(rscUrl, fetch(rscUrl, {
+					headers,
+					credentials: "include",
+					priority,
+					purpose: "prefetch"
+				}), interceptionContext, mountedSlotsHeader);
+			} else if (window.__NEXT_DATA__?.__vinext?.pageModuleUrl) {
+				const link = document.createElement("link");
+				link.rel = "prefetch";
+				link.href = fullHref;
+				link.as = "document";
+				document.head.appendChild(link);
+			}
+		})().catch((error) => {
+			console.error("[vinext] RSC prefetch setup error:", error);
+		});
+	});
+}
+/**
+* Shared IntersectionObserver for viewport-based prefetching.
+* All Link elements use the same observer to minimize resource usage.
+*/
+var sharedObserver = null;
+var observerCallbacks = /* @__PURE__ */ new WeakMap();
+function getSharedObserver() {
+	if (typeof window === "undefined" || typeof IntersectionObserver === "undefined") return null;
+	if (sharedObserver) return sharedObserver;
+	sharedObserver = new IntersectionObserver((entries) => {
+		for (const entry of entries) if (entry.isIntersecting) {
+			const callback = observerCallbacks.get(entry.target);
+			if (callback) {
+				callback();
+				sharedObserver?.unobserve(entry.target);
+				observerCallbacks.delete(entry.target);
+			}
+		}
+	}, { rootMargin: "250px" });
+	return sharedObserver;
+}
+function getDefaultLocale() {
+	if (typeof window !== "undefined") return window.__VINEXT_DEFAULT_LOCALE__;
+	return getI18nContext()?.defaultLocale;
+}
+function getDomainLocales() {
+	if (typeof window !== "undefined") return window.__NEXT_DATA__?.domainLocales;
+	return getI18nContext()?.domainLocales;
+}
+function getCurrentHostname() {
+	if (typeof window !== "undefined") return window.location.hostname;
+	return getI18nContext()?.hostname;
+}
+function getDomainLocaleHref(href, locale) {
+	return getDomainLocaleUrl(href, locale, {
+		basePath: __basePath,
+		currentHostname: getCurrentHostname(),
+		domainItems: getDomainLocales()
+	});
+}
+/**
+* Apply locale prefix to a URL path based on the locale prop.
+* - locale="fr" → prepend /fr (unless it already has a locale prefix)
+* - locale={false} → use the href as-is (no locale prefix, link to default)
+* - locale=undefined → use current locale (href as-is in most cases)
+*/
+function applyLocaleToHref(href, locale) {
+	if (locale === false) return href;
+	if (locale === void 0) return href;
+	if (href.startsWith("http://") || href.startsWith("https://") || href.startsWith("//")) return href;
+	const domainLocaleHref = getDomainLocaleHref(href, locale);
+	if (domainLocaleHref) return domainLocaleHref;
+	return addLocalePrefix(href, locale, getDefaultLocale() ?? "");
+}
+var Link = (0, import_react.forwardRef)(function Link({ href, as, replace = false, prefetch: prefetchProp, scroll = true, children, onClick, onMouseEnter, onTouchStart, onNavigate, ...rest }, forwardedRef) {
+	const { locale, ...restWithoutLocale } = rest;
+	const resolvedHref = as ?? resolveHref(href);
+	const isDangerous = typeof resolvedHref === "string" && isDangerousScheme(resolvedHref);
+	const localizedHref = applyLocaleToHref(isDangerous ? "/" : resolvedHref, locale);
+	const fullHref = withBasePath(localizedHref, __basePath);
+	const [pending, setPending] = (0, import_react.useState)(false);
+	const mountedRef = (0, import_react.useRef)(true);
+	(0, import_react.useEffect)(() => {
+		mountedRef.current = true;
+		return () => {
+			mountedRef.current = false;
+		};
+	}, []);
+	const internalRef = (0, import_react.useRef)(null);
+	const prefetchMode = resolveLinkPrefetchMode(prefetchProp, isDangerous);
+	const shouldPrefetch = canLinkPrefetch({
+		nodeEnv: "development",
+		prefetch: prefetchProp,
+		isDangerous
+	});
+	const setRefs = (0, import_react.useCallback)((node) => {
+		internalRef.current = node;
+		if (typeof forwardedRef === "function") forwardedRef(node);
+		else if (forwardedRef) forwardedRef.current = node;
+	}, [forwardedRef]);
+	(0, import_react.useEffect)(() => {
+		if (!shouldPrefetch || typeof window === "undefined") return;
+		const node = internalRef.current;
+		if (!node) return;
+		const hrefToPrefetch = getLinkPrefetchHref({
+			href: localizedHref,
+			basePath: __basePath,
+			currentOrigin: window.location.origin
+		});
+		if (hrefToPrefetch == null) return;
+		const observer = getSharedObserver();
+		if (!observer) return;
+		observerCallbacks.set(node, () => prefetchUrl(hrefToPrefetch, prefetchMode, "low"));
+		observer.observe(node);
+		return () => {
+			observer.unobserve(node);
+			observerCallbacks.delete(node);
+		};
+	}, [
+		shouldPrefetch,
+		prefetchMode,
+		localizedHref
+	]);
+	const prefetchOnIntent = (0, import_react.useCallback)(() => {
+		if (!shouldPrefetch) return;
+		prefetchUrl(localizedHref, prefetchMode, "high");
+	}, [
+		shouldPrefetch,
+		prefetchMode,
+		localizedHref
+	]);
+	const handleMouseEnter = (0, import_react.useCallback)((e) => {
+		onMouseEnter?.(e);
+		prefetchOnIntent();
+	}, [onMouseEnter, prefetchOnIntent]);
+	const handleTouchStart = (0, import_react.useCallback)((e) => {
+		onTouchStart?.(e);
+		prefetchOnIntent();
+	}, [onTouchStart, prefetchOnIntent]);
+	const handleClick = async (e) => {
+		if (onClick) onClick(e);
+		if (e.defaultPrevented) return;
+		if (e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+		if (e.currentTarget.target && e.currentTarget.target !== "_self") return;
+		let navigateHref = localizedHref;
+		if (resolvedHref.startsWith("http://") || resolvedHref.startsWith("https://") || resolvedHref.startsWith("//")) {
+			const localPath = toSameOriginAppPath(resolvedHref, __basePath);
+			if (localPath == null) return;
+			navigateHref = localPath;
+		}
+		e.preventDefault();
+		const absoluteHref = resolveRelativeHref(navigateHref, window.location.href, __basePath);
+		const absoluteFullHref = toBrowserNavigationHref(navigateHref, window.location.href, __basePath);
+		if (onNavigate) try {
+			const navUrl = new URL(absoluteFullHref, window.location.origin);
+			let prevented = false;
+			const navEvent = {
+				url: navUrl,
+				preventDefault() {
+					prevented = true;
+				},
+				get defaultPrevented() {
+					return prevented;
+				}
+			};
+			onNavigate(navEvent);
+			if (navEvent.defaultPrevented) return;
+		} catch {}
+		if (typeof window.__VINEXT_RSC_NAVIGATE__ === "function") {
+			setPending(true);
+			import_react.startTransition(() => {
+				navigateClientSide(navigateHref, replace ? "replace" : "push", scroll, true).finally(() => {
+					if (mountedRef.current) setPending(false);
+				});
+			});
+			return;
+		} else try {
+			const Router = (await import("/node_modules/.vite/deps/router-IDsNZWO8.js?v=4f3829a3")).default;
+			if (replace) await Router.replace(absoluteHref, void 0, { scroll });
+			else await Router.push(absoluteHref, void 0, { scroll });
+		} catch {
+			if (replace) window.history.replaceState({}, "", absoluteFullHref);
+			else window.history.pushState({}, "", absoluteFullHref);
+			window.dispatchEvent(new PopStateEvent("popstate"));
+		}
+	};
+	const { passHref: _p, ...anchorProps } = restWithoutLocale;
+	const linkStatusValue = import_react.useMemo(() => ({ pending }), [pending]);
+	if (isDangerous) {
+		console.warn(`<Link> blocked dangerous href: ${resolvedHref}`);
+		return /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+			...anchorProps,
+			onMouseEnter: handleMouseEnter,
+			onTouchStart: handleTouchStart,
+			children
+		});
+	}
+	return /* @__PURE__ */ (0, import_jsx_runtime.jsx)(LinkStatusContext.Provider, {
+		value: linkStatusValue,
+		children: /* @__PURE__ */ (0, import_jsx_runtime.jsx)("a", {
+			ref: setRefs,
+			href: fullHref,
+			onClick: (event) => {
+				handleClick(event);
+			},
+			onMouseEnter: handleMouseEnter,
+			onTouchStart: handleTouchStart,
+			...anchorProps,
+			children
+		})
+	});
+});
+//#endregion
+export { canAutoPrefetchFullAppRoute, Link as default, resolveLinkPrefetchMode, useLinkStatus };
+
+//# sourceMappingURL=next_link.js.map

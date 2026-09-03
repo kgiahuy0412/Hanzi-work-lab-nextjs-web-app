@@ -40,3 +40,11 @@ test("maps the remaining account and notification chrome to Himi brand tokens", 
   assert.match(css, /\.notifications-header-aside\s*\{[\s\S]*var\(--himi-red-soft\)[\s\S]*var\(--himi-orange-soft\)/);
   assert.match(css, /\.learner-page-header-eyebrow,[\s\S]*color:\s*var\(--himi-red\)/);
 });
+
+test("uses the Himi red tone for the learner rail Pro card", async () => {
+  const css = await readFile(new URL("../app/brand-theme.css", import.meta.url), "utf8");
+
+  assert.match(css, /\.rail-pro-card\s*\{[\s\S]*?border-color:[^;]*var\(--himi-red\)[\s\S]*?background:[^;]*var\(--himi-red\)/);
+  assert.match(css, /\.rail-pro-crown\s*\{[\s\S]*?background:\s*var\(--himi-red\)/);
+  assert.match(css, /\.rail-pro-action\s*\{[\s\S]*?background:\s*var\(--himi-red\)/);
+});

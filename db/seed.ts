@@ -19,6 +19,7 @@ import { courses } from "../lib/course-data.ts";
 import { coreWorkplaceLessons, coreWorkplaceModules } from "../lib/core-workplace-course-seed.ts";
 import { ecommerceLessons, ecommerceModules } from "../lib/ecommerce-course-seed.ts";
 import { factoryLessons, factoryModules } from "../lib/factory-course-seed.ts";
+import { highFrequencyLessons, highFrequencyModules } from "../lib/high-frequency-course-seed.ts";
 import { logisticsLessons, logisticsModules } from "../lib/logistics-course-seed.ts";
 import { officeLessons, officeModules } from "../lib/office-course-seed.ts";
 import { getPracticeListeningStatement, getPracticeMeaningQuestion, practiceIndustries, practiceScenarios } from "../lib/practice-content.ts";
@@ -69,6 +70,7 @@ const courseSeedBundles: CourseSeedBundle[] = [
   { courseSlug: "nha-hang-dich-vu", modules: restaurantModules, lessons: restaurantLessons },
   { courseSlug: "thuong-mai-dien-tu", modules: ecommerceModules, lessons: ecommerceLessons },
   { courseSlug: "giao-tiep-cong-so", modules: coreWorkplaceModules, lessons: coreWorkplaceLessons },
+  { courseSlug: "tieng-trung-tan-suat-cao", modules: highFrequencyModules, lessons: highFrequencyLessons },
 ];
 
 const practiceIndustryImages: Record<string, string> = {

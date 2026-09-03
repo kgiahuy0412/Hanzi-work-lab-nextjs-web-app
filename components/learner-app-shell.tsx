@@ -75,9 +75,9 @@ function initials(value: string): string {
 }
 
 function UserChipAvatar({ avatarUrl, displayName }: { avatarUrl: string | null; displayName: string }) {
-  return <span aria-hidden="true" className={avatarUrl ? "has-image" : undefined}>
+  return <span aria-hidden="true" className={`user-chip-avatar ${avatarUrl ? "has-image" : ""}`.trim()}>
     {avatarUrl
-      ? <Image alt="" fill sizes="42px" src={avatarUrl} unoptimized />
+      ? <Image alt="" className="user-chip-avatar-image" fill sizes="42px" src={avatarUrl} unoptimized />
       : initials(displayName)}
   </span>;
 }
@@ -99,6 +99,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
   const [practiceMenuOpen, setPracticeMenuOpen] = useState(false);
   const [practiceTriggerSelected, setPracticeTriggerSelected] = useState(false);
   const [accountMenuOpen, setAccountMenuOpen] = useState(false);
+  const [topbarAvatarUrl, setTopbarAvatarUrl] = useState(user?.avatarUrl ?? null);
   const practiceAutoExpandedRef = useRef(false);
   const routeProgressStartedAtRef = useRef<number | null>(null);
   const accountMenuRef = useRef<HTMLDivElement>(null);
@@ -117,6 +118,16 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
     return () => {
       if (handle) window.clearTimeout(handle);
     };
+  }, []);
+
+  useEffect(() => {
+    const updateTopbarAvatar = (event: Event) => {
+      const avatarUrl = (event as CustomEvent<{ avatarUrl?: unknown }>).detail?.avatarUrl;
+      if (typeof avatarUrl === "string" && avatarUrl) setTopbarAvatarUrl(avatarUrl);
+    };
+
+    window.addEventListener("himi:avatar-updated", updateTopbarAvatar);
+    return () => window.removeEventListener("himi:avatar-updated", updateTopbarAvatar);
   }, []);
 
   useEffect(() => {
@@ -406,7 +417,7 @@ export function LearnerAppShell({ children, user }: { children: ReactNode; user:
               ref={accountMenuButtonRef}
               type="button"
             >
-              <UserChipAvatar avatarUrl={user.avatarUrl} displayName={displayName} />
+              <UserChipAvatar avatarUrl={topbarAvatarUrl} displayName={displayName} />
               <strong>{displayName}</strong>
             </button>
 

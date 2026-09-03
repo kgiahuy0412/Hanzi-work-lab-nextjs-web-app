@@ -4,13 +4,16 @@ import Link from "next/link";
 import { useCallback, useEffect, useState } from "react";
 import { ArrowRight, Award, CheckCircle2, Crown, Gamepad2, Headphones } from "lucide-react";
 import { LessonChallengePanel } from "@/components/lesson-challenge";
+import { LessonPhrasebook } from "@/components/lesson-phrasebook";
+import { LessonPronunciationCoach } from "@/components/lesson-pronunciation-coach";
 import { LessonVocabularyDeck } from "@/components/lesson-vocabulary-deck";
+import { RoleplayDialogue } from "@/components/roleplay-dialogue";
 import { VideoLearningPlayer } from "@/components/video-learning-player";
 import type { Course, LessonAccess, LessonDetail, LessonProgressState, LessonSummary } from "@/lib/content-types";
 import { withDailySessionFlow, type DailyRecommendation } from "@/lib/daily-session";
 import { getLessonScenarioVideo } from "@/lib/video-library";
 
-type LessonTab = "Tình huống" | "Từ vựng" | "Hội thoại" | "Ghi chú" | "Kiểm tra";
+type LessonTab = "Tình huống" | "Từ vựng" | "Cụm từ" | "Nghe & nói" | "Hội thoại" | "Ghi chú" | "Kiểm tra";
 
 export function LessonWorkspace({
   course,
@@ -32,7 +35,15 @@ export function LessonWorkspace({
   dailyNextStep: DailyRecommendation | null;
 }) {
   const scenarioVideo = getLessonScenarioVideo(course.slug, lesson.slug);
-  const baseTabs: LessonTab[] = scenarioVideo ? ["Tình huống", "Từ vựng", "Hội thoại", "Ghi chú"] : ["Từ vựng", "Hội thoại", "Ghi chú"];
+  const practiceLines = lesson.phrases?.length ? lesson.phrases : lesson.dialogue;
+  const learningTabs: LessonTab[] = [
+    "Từ vựng",
+    "Cụm từ",
+    "Nghe & nói",
+    ...(lesson.dialogue.length ? ["Hội thoại" as const] : []),
+    ...(lesson.notes.length ? ["Ghi chú" as const] : []),
+  ];
+  const baseTabs: LessonTab[] = scenarioVideo ? ["Tình huống", ...learningTabs] : learningTabs;
   const [tab, setTab] = useState<LessonTab>(scenarioVideo ? "Tình huống" : "Từ vựng");
   const [challengePassed, setChallengePassed] = useState(!lesson.challenge);
   const tabs = lesson.challenge ? [...baseTabs, "Kiểm tra" as const] : baseTabs;
@@ -49,7 +60,8 @@ export function LessonWorkspace({
       ? "game"
       : "summary";
   const DailyNextIcon = dailyNextKind === "practice" ? Headphones : dailyNextKind === "game" ? Gamepad2 : Award;
-  const continueToDialogue = useCallback(() => setTab("Hội thoại"), []);
+  const continueToPhrases = useCallback(() => setTab("Cụm từ"), []);
+  const continueToPronunciation = useCallback(() => setTab("Nghe & nói"), []);
 
   useEffect(() => {
     if (!authenticated || !access.allowed) return;
@@ -88,7 +100,7 @@ export function LessonWorkspace({
         <h2>Mở khóa bài học này</h2>
         <p>Server đã xác nhận đây không phải bài học miễn phí. Nội dung từ vựng, hội thoại và ghi chú chưa được gửi tới trình duyệt.</p>
         <Link className="button button-primary" href="/vip">Xem quyền lợi VIP</Link>
-      </div> : <div className={`lesson-content-card${tab === "Từ vựng" ? " lesson-content-card-vocabulary" : ""}${tab === "Tình huống" ? " lesson-content-card-video" : ""}`}>
+      </div> : <div className={`lesson-content-card${tab === "Từ vựng" || tab === "Cụm từ" ? " lesson-content-card-vocabulary" : ""}${tab === "Tình huống" ? " lesson-content-card-video" : ""}`}>
         <div className="lesson-tab-panel-viewport">
           <div
               aria-labelledby={`lesson-tab-${tabIndex}`}
@@ -101,8 +113,10 @@ export function LessonWorkspace({
                 <div className="lesson-scenario-video-heading"><div><span className="section-kicker">Tình huống mở đầu</span><h2>{scenarioVideo.title}</h2><p>{scenarioVideo.summary}</p></div></div>
                 <VideoLearningPlayer compact video={scenarioVideo} />
               </section> : null}
-              {tab === "Từ vựng" ? <LessonVocabularyDeck authenticated={authenticated} onFinished={continueToDialogue} words={lesson.vocabulary} /> : null}
-              {tab === "Hội thoại" ? <div className="dialogue">{lesson.dialogue.map((line, index) => <div className="dialogue-line" key={`${line.speaker}-${index}`}><strong lang="zh">{line.speaker}：{line.hanzi}</strong><small>{line.pinyin}</small><span>{line.translation}</span></div>)}</div> : null}
+              {tab === "Từ vựng" ? <LessonVocabularyDeck authenticated={authenticated} onFinished={continueToPhrases} words={lesson.vocabulary} /> : null}
+              {tab === "Cụm từ" ? <LessonPhrasebook dialogue={practiceLines} notes={lesson.notes} onFinished={continueToPronunciation} words={lesson.vocabulary} /> : null}
+              {tab === "Nghe & nói" ? <LessonPronunciationCoach dialogue={practiceLines} words={lesson.vocabulary} /> : null}
+              {tab === "Hội thoại" ? <RoleplayDialogue courseTitle={course.title} lines={lesson.dialogue} situation={lesson.situation} /> : null}
               {tab === "Ghi chú" ? <div className="lesson-note-list">{lesson.notes.map((note) => <article className="note-panel" key={note.pattern}><h3>{note.title}</h3><strong lang="zh">{note.pattern}</strong><p>{note.explanation}</p></article>)}</div> : null}
               {tab === "Kiểm tra" && lesson.challenge ? <LessonChallengePanel challenge={lesson.challenge} onPassed={setChallengePassed} /> : null}
             </div>

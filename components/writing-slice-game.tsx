@@ -430,7 +430,7 @@ export function WritingSliceGame({
               >
                 <span className="writing-word-face">
                   <span className="writing-word-whole" lang="zh-CN">{word.hanzi}</span>
-                  <small>{word.meaning}</small>
+                  <small lang="zh-Latn">{word.pinyin}</small>
                 </span>
                 <span aria-hidden="true" className="writing-word-half is-left" lang="zh-CN">{word.hanzi}</span>
                 <span aria-hidden="true" className="writing-word-half is-right" lang="zh-CN">{word.hanzi}</span>

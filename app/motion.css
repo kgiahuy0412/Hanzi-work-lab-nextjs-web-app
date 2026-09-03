@@ -489,6 +489,11 @@
     transition-duration: 220ms, 280ms !important;
   }
 
+  /* Keep the explicitly requested video filter hover feedback available. */
+  .video-category-filters button {
+    transition-duration: 240ms !important;
+  }
+
   /* Keep the requested card feedback, with a smaller travel distance. */
   .course-card {
     transition-duration: 180ms, 220ms, 180ms, 260ms, 260ms !important;

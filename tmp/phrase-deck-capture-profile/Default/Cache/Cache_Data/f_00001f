@@ -1,0 +1,564 @@
+import { createHotContext as __vite__createHotContext } from "/@vite/client";import.meta.hot = __vite__createHotContext("/components/roleplay-dialogue.tsx");const useMemo = __vite__cjsImport0_react["useMemo"]; const useState = __vite__cjsImport0_react["useState"];const _jsxDEV = __vite__cjsImport5_react_jsxDevRuntime["jsxDEV"];"use client";
+import __vite__cjsImport0_react from "/node_modules/.vite/deps/react.js?v=4f3829a3";
+import { Bot, CheckCircle2, Headphones, Keyboard, Lightbulb, RotateCcw, Send, UserRound, Volume2 } from "/node_modules/lucide-react/dist/esm/lucide-react.mjs?v=4f3829a3";
+import { PronunciationEvaluator } from "/components/pronunciation-evaluator.tsx";
+import { speakMandarin } from "/lib/client-mandarin-audio.ts";
+import { evaluateTypedDialogueResponse } from "/lib/dialogue-evaluation.ts";
+var _jsxFileName = "D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/roleplay-dialogue.tsx";
+import __vite__cjsImport5_react_jsxDevRuntime from "/node_modules/.vite/deps/react_jsx-dev-runtime.js?v=4f3829a3";
+var _s = $RefreshSig$();
+export function RoleplayDialogue({ courseTitle, situation, lines }) {
+	_s();
+	const pairs = useMemo(() => {
+		const result = [];
+		for (let index = 0; index + 1 < lines.length; index += 2) result.push({
+			system: lines[index],
+			learner: lines[index + 1]
+		});
+		return result;
+	}, [lines]);
+	const [pairIndex, setPairIndex] = useState(0);
+	const [mode, setMode] = useState("voice");
+	const [input, setInput] = useState("");
+	const [answers, setAnswers] = useState([]);
+	const [feedback, setFeedback] = useState(null);
+	const [completed, setCompleted] = useState(false);
+	const current = pairs[pairIndex];
+	const submitTyped = () => {
+		if (!current) return;
+		setFeedback({
+			...evaluateTypedDialogueResponse(input, current.learner.hanzi),
+			mode: "typing"
+		});
+	};
+	const receivePronunciation = (result) => {
+		setFeedback({
+			accepted: result.totalScore >= 70,
+			score: result.totalScore,
+			feedback: result.feedback,
+			mode: "voice"
+		});
+	};
+	const continueTurn = () => {
+		if (!current || !feedback?.accepted) return;
+		const nextAnswers = [...answers, feedback.mode === "typing" ? input.trim() : current.learner.hanzi];
+		setAnswers(nextAnswers);
+		setInput("");
+		setFeedback(null);
+		if (pairIndex === pairs.length - 1) setCompleted(true);
+		else setPairIndex((index) => index + 1);
+	};
+	const retry = () => {
+		setFeedback(null);
+		if (mode === "voice") setInput("");
+	};
+	const restart = () => {
+		setPairIndex(0);
+		setAnswers([]);
+		setInput("");
+		setFeedback(null);
+		setCompleted(false);
+	};
+	if (!current) return /* @__PURE__ */ _jsxDEV("div", {
+		className: "lesson-vocab-empty",
+		children: [/* @__PURE__ */ _jsxDEV("h2", { children: "Bài này chưa có hội thoại" }, void 0, false, {
+			fileName: _jsxFileName,
+			lineNumber: 71,
+			columnNumber: 60
+		}, this), /* @__PURE__ */ _jsxDEV("p", { children: "Nội dung nhập vai sẽ xuất hiện khi hội thoại được biên soạn." }, void 0, false, {
+			fileName: _jsxFileName,
+			lineNumber: 71,
+			columnNumber: 94
+		}, this)]
+	}, void 0, true, {
+		fileName: _jsxFileName,
+		lineNumber: 71,
+		columnNumber: 24
+	}, this);
+	const visiblePairs = pairs.slice(0, completed ? pairs.length : pairIndex + 1);
+	return /* @__PURE__ */ _jsxDEV("section", {
+		className: "roleplay-dialogue",
+		"aria-labelledby": "roleplay-title",
+		children: [/* @__PURE__ */ _jsxDEV("header", {
+			className: "roleplay-header",
+			children: [/* @__PURE__ */ _jsxDEV("div", { children: [
+				/* @__PURE__ */ _jsxDEV("span", {
+					className: "section-kicker",
+					children: ["Tình huống · ", courseTitle]
+				}, void 0, true, {
+					fileName: _jsxFileName,
+					lineNumber: 77,
+					columnNumber: 12
+				}, this),
+				/* @__PURE__ */ _jsxDEV("h2", {
+					id: "roleplay-title",
+					children: ["Nhập vai: ", situation]
+				}, void 0, true, {
+					fileName: _jsxFileName,
+					lineNumber: 77,
+					columnNumber: 78
+				}, this),
+				/* @__PURE__ */ _jsxDEV("p", { children: "Hệ thống đóng vai người đối thoại. Bạn nghe câu hỏi rồi nói hoặc gõ câu trả lời bằng tiếng Trung." }, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 77,
+					columnNumber: 128
+				}, this)
+			] }, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 77,
+				columnNumber: 7
+			}, this), /* @__PURE__ */ _jsxDEV("div", {
+				className: "roleplay-live",
+				children: [/* @__PURE__ */ _jsxDEV("span", {}, void 0, false, {
+					fileName: _jsxFileName,
+					lineNumber: 78,
+					columnNumber: 38
+				}, this), " Đang luyện cùng AI"]
+			}, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 78,
+				columnNumber: 7
+			}, this)]
+		}, void 0, true, {
+			fileName: _jsxFileName,
+			lineNumber: 76,
+			columnNumber: 5
+		}, this), /* @__PURE__ */ _jsxDEV("div", {
+			className: "roleplay-stage",
+			children: [/* @__PURE__ */ _jsxDEV("div", {
+				className: "roleplay-conversation",
+				"aria-live": "polite",
+				children: visiblePairs.flatMap((pair, index) => {
+					const learnerVisible = index < answers.length;
+					return [/* @__PURE__ */ _jsxDEV("article", {
+						className: "roleplay-message is-system",
+						children: [
+							/* @__PURE__ */ _jsxDEV("span", {
+								className: "roleplay-avatar",
+								children: /* @__PURE__ */ _jsxDEV(Bot, { size: 19 }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 86,
+									columnNumber: 47
+								}, this)
+							}, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 86,
+								columnNumber: 13
+							}, this),
+							/* @__PURE__ */ _jsxDEV("div", { children: [
+								/* @__PURE__ */ _jsxDEV("small", { children: "Người đối thoại" }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 87,
+									columnNumber: 18
+								}, this),
+								/* @__PURE__ */ _jsxDEV("strong", {
+									lang: "zh-CN",
+									children: pair.system.hanzi
+								}, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 87,
+									columnNumber: 48
+								}, this),
+								/* @__PURE__ */ _jsxDEV("span", { children: pair.system.pinyin }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 87,
+									columnNumber: 97
+								}, this),
+								/* @__PURE__ */ _jsxDEV("p", { children: pair.system.translation }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 87,
+									columnNumber: 130
+								}, this)
+							] }, void 0, true, {
+								fileName: _jsxFileName,
+								lineNumber: 87,
+								columnNumber: 13
+							}, this),
+							/* @__PURE__ */ _jsxDEV("button", {
+								"aria-label": `Nghe câu ${pair.system.hanzi}`,
+								onClick: () => speakMandarin(pair.system.hanzi),
+								type: "button",
+								children: /* @__PURE__ */ _jsxDEV(Volume2, { size: 17 }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 88,
+									columnNumber: 129
+								}, this)
+							}, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 88,
+								columnNumber: 13
+							}, this)
+						]
+					}, `system-${index}`, true, {
+						fileName: _jsxFileName,
+						lineNumber: 85,
+						columnNumber: 11
+					}, this), learnerVisible ? /* @__PURE__ */ _jsxDEV("article", {
+						className: "roleplay-message is-learner",
+						children: [/* @__PURE__ */ _jsxDEV("span", {
+							className: "roleplay-avatar",
+							children: /* @__PURE__ */ _jsxDEV(UserRound, { size: 19 }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 91,
+								columnNumber: 47
+							}, this)
+						}, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 91,
+							columnNumber: 13
+						}, this), /* @__PURE__ */ _jsxDEV("div", { children: [
+							/* @__PURE__ */ _jsxDEV("small", { children: "Bạn" }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 92,
+								columnNumber: 18
+							}, this),
+							/* @__PURE__ */ _jsxDEV("strong", {
+								lang: "zh-CN",
+								children: answers[index]
+							}, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 92,
+								columnNumber: 36
+							}, this),
+							/* @__PURE__ */ _jsxDEV("p", { children: pair.learner.translation }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 92,
+								columnNumber: 82
+							}, this)
+						] }, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 92,
+							columnNumber: 13
+						}, this)]
+					}, `learner-${index}`, true, {
+						fileName: _jsxFileName,
+						lineNumber: 90,
+						columnNumber: 28
+					}, this) : null];
+				})
+			}, void 0, false, {
+				fileName: _jsxFileName,
+				lineNumber: 82,
+				columnNumber: 7
+			}, this), !completed ? /* @__PURE__ */ _jsxDEV("div", {
+				className: "roleplay-response-panel",
+				children: [
+					/* @__PURE__ */ _jsxDEV("div", {
+						className: "roleplay-instruction",
+						children: [/* @__PURE__ */ _jsxDEV(Headphones, { size: 18 }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 98,
+							columnNumber: 47
+						}, this), /* @__PURE__ */ _jsxDEV("span", { children: [/* @__PURE__ */ _jsxDEV("strong", { children: "Lượt của bạn" }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 98,
+							columnNumber: 77
+						}, this), "Nghe câu phía trên rồi trả lời."] }, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 98,
+							columnNumber: 71
+						}, this)]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 98,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV("div", {
+						className: "roleplay-mode-switch",
+						role: "tablist",
+						"aria-label": "Cách trả lời",
+						children: [/* @__PURE__ */ _jsxDEV("button", {
+							"aria-selected": mode === "voice",
+							className: mode === "voice" ? "is-active" : "",
+							onClick: () => {
+								setMode("voice");
+								setFeedback(null);
+							},
+							role: "tab",
+							type: "button",
+							children: [/* @__PURE__ */ _jsxDEV(Volume2, { size: 16 }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 100,
+								columnNumber: 182
+							}, this), " Nói"]
+						}, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 100,
+							columnNumber: 11
+						}, this), /* @__PURE__ */ _jsxDEV("button", {
+							"aria-selected": mode === "typing",
+							className: mode === "typing" ? "is-active" : "",
+							onClick: () => {
+								setMode("typing");
+								setFeedback(null);
+							},
+							role: "tab",
+							type: "button",
+							children: [/* @__PURE__ */ _jsxDEV(Keyboard, { size: 16 }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 101,
+								columnNumber: 185
+							}, this), " Gõ"]
+						}, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 101,
+							columnNumber: 11
+						}, this)]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 99,
+						columnNumber: 9
+					}, this),
+					mode === "voice" ? /* @__PURE__ */ _jsxDEV(PronunciationEvaluator, {
+						compact: true,
+						onEvaluated: receivePronunciation,
+						showListen: false,
+						targetText: current.learner.hanzi
+					}, `${pairIndex}-voice`, false, {
+						fileName: _jsxFileName,
+						lineNumber: 104,
+						columnNumber: 29
+					}, this) : /* @__PURE__ */ _jsxDEV("div", {
+						className: "roleplay-typing",
+						children: [/* @__PURE__ */ _jsxDEV("label", {
+							htmlFor: "roleplay-answer",
+							children: "Câu trả lời tiếng Trung"
+						}, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 105,
+							columnNumber: 11
+						}, this), /* @__PURE__ */ _jsxDEV("div", { children: [/* @__PURE__ */ _jsxDEV("textarea", {
+							id: "roleplay-answer",
+							onChange: (event) => {
+								setInput(event.target.value);
+								setFeedback(null);
+							},
+							placeholder: "Nhập câu trả lời của bạn…",
+							rows: 2,
+							value: input
+						}, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 106,
+							columnNumber: 16
+						}, this), /* @__PURE__ */ _jsxDEV("button", {
+							disabled: !input.trim(),
+							onClick: submitTyped,
+							type: "button",
+							children: [/* @__PURE__ */ _jsxDEV(Send, { size: 18 }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 106,
+								columnNumber: 256
+							}, this), " Kiểm tra"]
+						}, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 106,
+							columnNumber: 187
+						}, this)] }, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 106,
+							columnNumber: 11
+						}, this)]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 104,
+						columnNumber: 182
+					}, this),
+					feedback ? /* @__PURE__ */ _jsxDEV("div", {
+						className: `roleplay-feedback ${feedback.accepted ? "is-correct" : "is-retry"}`,
+						children: [
+							/* @__PURE__ */ _jsxDEV("span", { children: feedback.accepted ? /* @__PURE__ */ _jsxDEV(CheckCircle2, { size: 21 }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 110,
+								columnNumber: 38
+							}, this) : /* @__PURE__ */ _jsxDEV(Lightbulb, { size: 21 }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 110,
+								columnNumber: 67
+							}, this) }, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 110,
+								columnNumber: 11
+							}, this),
+							/* @__PURE__ */ _jsxDEV("div", { children: [
+								/* @__PURE__ */ _jsxDEV("strong", { children: feedback.feedback }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 111,
+									columnNumber: 16
+								}, this),
+								/* @__PURE__ */ _jsxDEV("p", { children: [
+									"Điểm lượt này: ",
+									feedback.score,
+									"/100"
+								] }, void 0, true, {
+									fileName: _jsxFileName,
+									lineNumber: 111,
+									columnNumber: 52
+								}, this),
+								/* @__PURE__ */ _jsxDEV("div", {
+									className: "roleplay-natural",
+									children: [
+										/* @__PURE__ */ _jsxDEV("small", { children: "Cách nói tự nhiên hơn" }, void 0, false, {
+											fileName: _jsxFileName,
+											lineNumber: 112,
+											columnNumber: 47
+										}, this),
+										/* @__PURE__ */ _jsxDEV("strong", {
+											lang: "zh-CN",
+											children: current.learner.hanzi
+										}, void 0, false, {
+											fileName: _jsxFileName,
+											lineNumber: 112,
+											columnNumber: 83
+										}, this),
+										/* @__PURE__ */ _jsxDEV("span", { children: current.learner.pinyin }, void 0, false, {
+											fileName: _jsxFileName,
+											lineNumber: 112,
+											columnNumber: 136
+										}, this),
+										/* @__PURE__ */ _jsxDEV("p", { children: current.learner.translation }, void 0, false, {
+											fileName: _jsxFileName,
+											lineNumber: 112,
+											columnNumber: 173
+										}, this)
+									]
+								}, void 0, true, {
+									fileName: _jsxFileName,
+									lineNumber: 112,
+									columnNumber: 13
+								}, this)
+							] }, void 0, true, {
+								fileName: _jsxFileName,
+								lineNumber: 111,
+								columnNumber: 11
+							}, this),
+							feedback.accepted ? /* @__PURE__ */ _jsxDEV("button", {
+								onClick: continueTurn,
+								type: "button",
+								children: pairIndex === pairs.length - 1 ? "Hoàn thành" : "Tiếp tục"
+							}, void 0, false, {
+								fileName: _jsxFileName,
+								lineNumber: 114,
+								columnNumber: 32
+							}, this) : /* @__PURE__ */ _jsxDEV("button", {
+								onClick: retry,
+								type: "button",
+								children: [/* @__PURE__ */ _jsxDEV(RotateCcw, { size: 15 }, void 0, false, {
+									fileName: _jsxFileName,
+									lineNumber: 114,
+									columnNumber: 187
+								}, this), " Thử lại"]
+							}, void 0, true, {
+								fileName: _jsxFileName,
+								lineNumber: 114,
+								columnNumber: 149
+							}, this)
+						]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 109,
+						columnNumber: 21
+					}, this) : /* @__PURE__ */ _jsxDEV("div", {
+						className: "roleplay-hint",
+						children: [/* @__PURE__ */ _jsxDEV(Lightbulb, { size: 16 }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 115,
+							columnNumber: 49
+						}, this), /* @__PURE__ */ _jsxDEV("span", { children: ["Gợi ý: ", current.learner.translation] }, void 0, true, {
+							fileName: _jsxFileName,
+							lineNumber: 115,
+							columnNumber: 72
+						}, this)]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 115,
+						columnNumber: 18
+					}, this)
+				]
+			}, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 97,
+				columnNumber: 21
+			}, this) : /* @__PURE__ */ _jsxDEV("div", {
+				className: "roleplay-complete",
+				children: [
+					/* @__PURE__ */ _jsxDEV(CheckCircle2, { size: 35 }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 117,
+						columnNumber: 9
+					}, this),
+					/* @__PURE__ */ _jsxDEV("span", {
+						className: "section-kicker",
+						children: "Hoàn thành tình huống"
+					}, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 117,
+						columnNumber: 35
+					}, this),
+					/* @__PURE__ */ _jsxDEV("h3", { children: "Bạn đã đi hết cuộc hội thoại" }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 117,
+						columnNumber: 96
+					}, this),
+					/* @__PURE__ */ _jsxDEV("p", { children: "Hãy luyện lại và thử nói liền mạch hơn ở lượt tiếp theo." }, void 0, false, {
+						fileName: _jsxFileName,
+						lineNumber: 117,
+						columnNumber: 133
+					}, this),
+					/* @__PURE__ */ _jsxDEV("button", {
+						onClick: restart,
+						type: "button",
+						children: [/* @__PURE__ */ _jsxDEV(RotateCcw, { size: 17 }, void 0, false, {
+							fileName: _jsxFileName,
+							lineNumber: 117,
+							columnNumber: 236
+						}, this), " Luyện lại từ đầu"]
+					}, void 0, true, {
+						fileName: _jsxFileName,
+						lineNumber: 117,
+						columnNumber: 196
+					}, this)
+				]
+			}, void 0, true, {
+				fileName: _jsxFileName,
+				lineNumber: 116,
+				columnNumber: 16
+			}, this)]
+		}, void 0, true, {
+			fileName: _jsxFileName,
+			lineNumber: 81,
+			columnNumber: 5
+		}, this)]
+	}, void 0, true, {
+		fileName: _jsxFileName,
+		lineNumber: 75,
+		columnNumber: 10
+	}, this);
+}
+_s(RoleplayDialogue, "+mfLOaW6nj7SqY1B/bC9+w8lnqI=");
+_c = RoleplayDialogue;
+var _c;
+$RefreshReg$(_c, "RoleplayDialogue");
+import * as RefreshRuntime from "/@react-refresh";
+const inWebWorker = typeof WorkerGlobalScope !== 'undefined' && self instanceof WorkerGlobalScope;
+import * as __vite_react_currentExports from "/components/roleplay-dialogue.tsx";
+if (import.meta.hot && !inWebWorker) {
+  if (!window.$RefreshReg$) {
+    throw new Error(
+      "@vitejs/plugin-react can't detect preamble. Something is wrong."
+    );
+  }
+
+  const currentExports = __vite_react_currentExports;
+  queueMicrotask(() => {
+    RefreshRuntime.registerExportsForReactRefresh("D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/roleplay-dialogue.tsx", currentExports);
+    import.meta.hot.accept((nextExports) => {
+      if (!nextExports) return;
+      const invalidateMessage = RefreshRuntime.validateRefreshBoundaryAndEnqueueUpdate("D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/roleplay-dialogue.tsx", currentExports, nextExports);
+      if (invalidateMessage) import.meta.hot.invalidate(invalidateMessage);
+    });
+  });
+}
+function $RefreshReg$(type, id) { return RefreshRuntime.register(type, "D:/Code/HiMi/Hanzi-work-lab-nextjs-web-app/components/roleplay-dialogue.tsx" + ' ' + id); }
+function $RefreshSig$() { return RefreshRuntime.createSignatureFunctionForTransform(); }
+
+//# sourceMappingURL=data:application/json;base64,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QUQsYUFBTSxXQUFRLFFBQVEsUUFBUSxXQUFrQjs7OztjQUFNOzs7Ozs7SUFDbEg7Ozs7O2NBQUksd0JBQUMsT0FBRDtJQUFLLFdBQVU7Y0FBZjtLQUNQLHdCQUFDLGNBQUQsRUFBYyxNQUFNLEdBQUs7Ozs7O0tBQUMsd0JBQUMsUUFBRDtNQUFNLFdBQVU7Z0JBQWlCO0tBQTJCOzs7OztLQUFDLHdCQUFDLE1BQUQsWUFBSSwrQkFBZ0M7Ozs7O0tBQUMsd0JBQUMsS0FBRCxZQUFHLDJEQUEyRDs7Ozs7S0FBQyx3QkFBQyxVQUFEO01BQVEsU0FBUztNQUFTLE1BQUs7Z0JBQS9CLENBQXdDLHdCQUFDLFdBQUQsRUFBVyxNQUFNLEdBQUs7Ozs7Z0JBQUMsbUJBQXlCOzs7Ozs7SUFDaFI7Ozs7O1dBQ0Y7Ozs7O1VBQ0U7Ozs7OztBQUNYIiwibmFtZXMiOltdLCJzb3VyY2VzIjpbInJvbGVwbGF5LWRpYWxvZ3VlLnRzeCJdLCJ2ZXJzaW9uIjozLCJzb3VyY2VzQ29udGVudCI6WyJcInVzZSBjbGllbnRcIjtcblxuaW1wb3J0IHsgdXNlTWVtbywgdXNlU3RhdGUgfSBmcm9tIFwicmVhY3RcIjtcbmltcG9ydCB7IEJvdCwgQ2hlY2tDaXJjbGUyLCBIZWFkcGhvbmVzLCBLZXlib2FyZCwgTGlnaHRidWxiLCBSb3RhdGVDY3csIFNlbmQsIFVzZXJSb3VuZCwgVm9sdW1lMiB9IGZyb20gXCJsdWNpZGUtcmVhY3RcIjtcbmltcG9ydCB7IFByb251bmNpYXRpb25FdmFsdWF0b3IsIHR5cGUgUHJvbnVuY2lhdGlvblJlc3VsdCB9IGZyb20gXCJAL2NvbXBvbmVudHMvcHJvbnVuY2lhdGlvbi1ldmFsdWF0b3JcIjtcbmltcG9ydCB7IHNwZWFrTWFuZGFyaW4gfSBmcm9tIFwiQC9saWIvY2xpZW50LW1hbmRhcmluLWF1ZGlvXCI7XG5pbXBvcnQgdHlwZSB7IERpYWxvZ3VlTGluZSB9IGZyb20gXCJAL2xpYi9jb250ZW50LXR5cGVzXCI7XG5pbXBvcnQgeyBldmFsdWF0ZVR5cGVkRGlhbG9ndWVSZXNwb25zZSwgdHlwZSBUeXBlZERpYWxvZ3VlRXZhbHVhdGlvbiB9IGZyb20gXCJAL2xpYi9kaWFsb2d1ZS1ldmFsdWF0aW9uXCI7XG5cbnR5cGUgVHVybkZlZWRiYWNrID0gVHlwZWREaWFsb2d1ZUV2YWx1YXRpb24gJiB7IG1vZGU6IFwidHlwaW5nXCIgfCBcInZvaWNlXCIgfTtcblxuZXhwb3J0IGZ1bmN0aW9uIFJvbGVwbGF5RGlhbG9ndWUoe1xuICBjb3Vyc2VUaXRsZSxcbiAgc2l0dWF0aW9uLFxuICBsaW5lcyxcbn06IHtcbiAgY291cnNlVGl0bGU6IHN0cmluZztcbiAgc2l0dWF0aW9uOiBzdHJpbmc7XG4gIGxpbmVzOiBEaWFsb2d1ZUxpbmVbXTtcbn0pIHtcbiAgY29uc3QgcGFpcnMgPSB1c2VNZW1vKCgpID0+IHtcbiAgICBjb25zdCByZXN1bHQ6IHsgc3lzdGVtOiBEaWFsb2d1ZUxpbmU7IGxlYXJuZXI6IERpYWxvZ3VlTGluZSB9W10gPSBbXTtcbiAgICBmb3IgKGxldCBpbmRleCA9IDA7IGluZGV4ICsgMSA8IGxpbmVzLmxlbmd0aDsgaW5kZXggKz0gMikgcmVzdWx0LnB1c2goeyBzeXN0ZW06IGxpbmVzW2luZGV4XSwgbGVhcm5lcjogbGluZXNbaW5kZXggKyAxXSB9KTtcbiAgICByZXR1cm4gcmVzdWx0O1xuICB9LCBbbGluZXNdKTtcbiAgY29uc3QgW3BhaXJJbmRleCwgc2V0UGFpckluZGV4XSA9IHVzZVN0YXRlKDApO1xuICBjb25zdCBbbW9kZSwgc2V0TW9kZV0gPSB1c2VTdGF0ZTxcInR5cGluZ1wiIHwgXCJ2b2ljZVwiPihcInZvaWNlXCIpO1xuICBjb25zdCBbaW5wdXQsIHNldElucHV0XSA9IHVzZVN0YXRlKFwiXCIpO1xuICBjb25zdCBbYW5zd2Vycywgc2V0QW5zd2Vyc10gPSB1c2VTdGF0ZTxzdHJpbmdbXT4oW10pO1xuICBjb25zdCBbZmVlZGJhY2ssIHNldEZlZWRiYWNrXSA9IHVzZVN0YXRlPFR1cm5GZWVkYmFjayB8IG51bGw+KG51bGwpO1xuICBjb25zdCBbY29tcGxldGVkLCBzZXRDb21wbGV0ZWRdID0gdXNlU3RhdGUoZmFsc2UpO1xuICBjb25zdCBjdXJyZW50ID0gcGFpcnNbcGFpckluZGV4XTtcblxuICBjb25zdCBzdWJtaXRUeXBlZCA9ICgpID0+IHtcbiAgICBpZiAoIWN1cnJlbnQpIHJldHVybjtcbiAgICBzZXRGZWVkYmFjayh7IC4uLmV2YWx1YXRlVHlwZWREaWFsb2d1ZVJlc3BvbnNlKGlucHV0LCBjdXJyZW50LmxlYXJuZXIuaGFuemkpLCBtb2RlOiBcInR5cGluZ1wiIH0pO1xuICB9O1xuXG4gIGNvbnN0IHJlY2VpdmVQcm9udW5jaWF0aW9uID0gKHJlc3VsdDogUHJvbnVuY2lhdGlvblJlc3VsdCkgPT4ge1xuICAgIHNldEZlZWRiYWNrKHtcbiAgICAgIGFjY2VwdGVkOiByZXN1bHQudG90YWxTY29yZSA+PSA3MCxcbiAgICAgIHNjb3JlOiByZXN1bHQudG90YWxTY29yZSxcbiAgICAgIGZlZWRiYWNrOiByZXN1bHQuZmVlZGJhY2ssXG4gICAgICBtb2RlOiBcInZvaWNlXCIsXG4gICAgfSk7XG4gIH07XG5cbiAgY29uc3QgY29udGludWVUdXJuID0gKCkgPT4ge1xuICAgIGlmICghY3VycmVudCB8fCAhZmVlZGJhY2s/LmFjY2VwdGVkKSByZXR1cm47XG4gICAgY29uc3QgbmV4dEFuc3dlcnMgPSBbLi4uYW5zd2VycywgZmVlZGJhY2subW9kZSA9PT0gXCJ0eXBpbmdcIiA/IGlucHV0LnRyaW0oKSA6IGN1cnJlbnQubGVhcm5lci5oYW56aV07XG4gICAgc2V0QW5zd2VycyhuZXh0QW5zd2Vycyk7XG4gICAgc2V0SW5wdXQoXCJcIik7XG4gICAgc2V0RmVlZGJhY2sobnVsbCk7XG4gICAgaWYgKHBhaXJJbmRleCA9PT0gcGFpcnMubGVuZ3RoIC0gMSkgc2V0Q29tcGxldGVkKHRydWUpO1xuICAgIGVsc2Ugc2V0UGFpckluZGV4KChpbmRleCkgPT4gaW5kZXggKyAxKTtcbiAgfTtcblxuICBjb25zdCByZXRyeSA9ICgpID0+IHtcbiAgICBzZXRGZWVkYmFjayhudWxsKTtcbiAgICBpZiAobW9kZSA9PT0gXCJ2b2ljZVwiKSBzZXRJbnB1dChcIlwiKTtcbiAgfTtcblxuICBjb25zdCByZXN0YXJ0ID0gKCkgPT4ge1xuICAgIHNldFBhaXJJbmRleCgwKTtcbiAgICBzZXRBbnN3ZXJzKFtdKTtcbiAgICBzZXRJbnB1dChcIlwiKTtcbiAgICBzZXRGZWVkYmFjayhudWxsKTtcbiAgICBzZXRDb21wbGV0ZWQoZmFsc2UpO1xuICB9O1xuXG4gIGlmICghY3VycmVudCkgcmV0dXJuIDxkaXYgY2xhc3NOYW1lPVwibGVzc29uLXZvY2FiLWVtcHR5XCI+PGgyPkLDoGkgbsOgeSBjaMawYSBjw7MgaOG7mWkgdGhv4bqhaTwvaDI+PHA+TuG7mWkgZHVuZyBuaOG6rXAgdmFpIHPhur0geHXhuqV0IGhp4buHbiBraGkgaOG7mWkgdGhv4bqhaSDEkcaw4bujYyBiacOqbiBzb+G6oW4uPC9wPjwvZGl2PjtcblxuICBjb25zdCB2aXNpYmxlUGFpcnMgPSBwYWlycy5zbGljZSgwLCBjb21wbGV0ZWQgPyBwYWlycy5sZW5ndGggOiBwYWlySW5kZXggKyAxKTtcblxuICByZXR1cm4gPHNlY3Rpb24gY2xhc3NOYW1lPVwicm9sZXBsYXktZGlhbG9ndWVcIiBhcmlhLWxhYmVsbGVkYnk9XCJyb2xlcGxheS10aXRsZVwiPlxuICAgIDxoZWFkZXIgY2xhc3NOYW1lPVwicm9sZXBsYXktaGVhZGVyXCI+XG4gICAgICA8ZGl2PjxzcGFuIGNsYXNzTmFtZT1cInNlY3Rpb24ta2lja2VyXCI+VMOsbmggaHXhu5FuZyDCtyB7Y291cnNlVGl0bGV9PC9zcGFuPjxoMiBpZD1cInJvbGVwbGF5LXRpdGxlXCI+Tmjhuq1wIHZhaToge3NpdHVhdGlvbn08L2gyPjxwPkjhu4cgdGjhu5FuZyDEkcOzbmcgdmFpIG5nxrDhu51pIMSR4buRaSB0aG/huqFpLiBC4bqhbiBuZ2hlIGPDonUgaOG7j2kgcuG7k2kgbsOzaSBob+G6t2MgZ8O1IGPDonUgdHLhuqMgbOG7nWkgYuG6sW5nIHRp4bq/bmcgVHJ1bmcuPC9wPjwvZGl2PlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb2xlcGxheS1saXZlXCI+PHNwYW4gLz4gxJBhbmcgbHV54buHbiBjw7luZyBBSTwvZGl2PlxuICAgIDwvaGVhZGVyPlxuXG4gICAgPGRpdiBjbGFzc05hbWU9XCJyb2xlcGxheS1zdGFnZVwiPlxuICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb2xlcGxheS1jb252ZXJzYXRpb25cIiBhcmlhLWxpdmU9XCJwb2xpdGVcIj57dmlzaWJsZVBhaXJzLmZsYXRNYXAoKHBhaXIsIGluZGV4KSA9PiB7XG4gICAgICAgIGNvbnN0IGxlYXJuZXJWaXNpYmxlID0gaW5kZXggPCBhbnN3ZXJzLmxlbmd0aDtcbiAgICAgICAgcmV0dXJuIFtcbiAgICAgICAgICA8YXJ0aWNsZSBjbGFzc05hbWU9XCJyb2xlcGxheS1tZXNzYWdlIGlzLXN5c3RlbVwiIGtleT17YHN5c3RlbS0ke2luZGV4fWB9PlxuICAgICAgICAgICAgPHNwYW4gY2xhc3NOYW1lPVwicm9sZXBsYXktYXZhdGFyXCI+PEJvdCBzaXplPXsxOX0gLz48L3NwYW4+XG4gICAgICAgICAgICA8ZGl2PjxzbWFsbD5OZ8aw4budaSDEkeG7kWkgdGhv4bqhaTwvc21hbGw+PHN0cm9uZyBsYW5nPVwiemgtQ05cIj57cGFpci5zeXN0ZW0uaGFueml9PC9zdHJvbmc+PHNwYW4+e3BhaXIuc3lzdGVtLnBpbnlpbn08L3NwYW4+PHA+e3BhaXIuc3lzdGVtLnRyYW5zbGF0aW9ufTwvcD48L2Rpdj5cbiAgICAgICAgICAgIDxidXR0b24gYXJpYS1sYWJlbD17YE5naGUgY8OidSAke3BhaXIuc3lzdGVtLmhhbnppfWB9IG9uQ2xpY2s9eygpID0+IHNwZWFrTWFuZGFyaW4ocGFpci5zeXN0ZW0uaGFuemkpfSB0eXBlPVwiYnV0dG9uXCI+PFZvbHVtZTIgc2l6ZT17MTd9IC8+PC9idXR0b24+XG4gICAgICAgICAgPC9hcnRpY2xlPixcbiAgICAgICAgICBsZWFybmVyVmlzaWJsZSA/IDxhcnRpY2xlIGNsYXNzTmFtZT1cInJvbGVwbGF5LW1lc3NhZ2UgaXMtbGVhcm5lclwiIGtleT17YGxlYXJuZXItJHtpbmRleH1gfT5cbiAgICAgICAgICAgIDxzcGFuIGNsYXNzTmFtZT1cInJvbGVwbGF5LWF2YXRhclwiPjxVc2VyUm91bmQgc2l6ZT17MTl9IC8+PC9zcGFuPlxuICAgICAgICAgICAgPGRpdj48c21hbGw+QuG6oW48L3NtYWxsPjxzdHJvbmcgbGFuZz1cInpoLUNOXCI+e2Fuc3dlcnNbaW5kZXhdfTwvc3Ryb25nPjxwPntwYWlyLmxlYXJuZXIudHJhbnNsYXRpb259PC9wPjwvZGl2PlxuICAgICAgICAgIDwvYXJ0aWNsZT4gOiBudWxsLFxuICAgICAgICBdO1xuICAgICAgfSl9PC9kaXY+XG5cbiAgICAgIHshY29tcGxldGVkID8gPGRpdiBjbGFzc05hbWU9XCJyb2xlcGxheS1yZXNwb25zZS1wYW5lbFwiPlxuICAgICAgICA8ZGl2IGNsYXNzTmFtZT1cInJvbGVwbGF5LWluc3RydWN0aW9uXCI+PEhlYWRwaG9uZXMgc2l6ZT17MTh9IC8+PHNwYW4+PHN0cm9uZz5MxrDhu6N0IGPhu6dhIGLhuqFuPC9zdHJvbmc+TmdoZSBjw6J1IHBow61hIHRyw6puIHLhu5NpIHRy4bqjIGzhu51pLjwvc3Bhbj48L2Rpdj5cbiAgICAgICAgPGRpdiBjbGFzc05hbWU9XCJyb2xlcGxheS1tb2RlLXN3aXRjaFwiIHJvbGU9XCJ0YWJsaXN0XCIgYXJpYS1sYWJlbD1cIkPDoWNoIHRy4bqjIGzhu51pXCI+XG4gICAgICAgICAgPGJ1dHRvbiBhcmlhLXNlbGVjdGVkPXttb2RlID09PSBcInZvaWNlXCJ9IGNsYXNzTmFtZT17bW9kZSA9PT0gXCJ2b2ljZVwiID8gXCJpcy1hY3RpdmVcIiA6IFwiXCJ9IG9uQ2xpY2s9eygpID0+IHsgc2V0TW9kZShcInZvaWNlXCIpOyBzZXRGZWVkYmFjayhudWxsKTsgfX0gcm9sZT1cInRhYlwiIHR5cGU9XCJidXR0b25cIj48Vm9sdW1lMiBzaXplPXsxNn0gLz4gTsOzaTwvYnV0dG9uPlxuICAgICAgICAgIDxidXR0b24gYXJpYS1zZWxlY3RlZD17bW9kZSA9PT0gXCJ0eXBpbmdcIn0gY2xhc3NOYW1lPXttb2RlID09PSBcInR5cGluZ1wiID8gXCJpcy1hY3RpdmVcIiA6IFwiXCJ9IG9uQ2xpY2s9eygpID0+IHsgc2V0TW9kZShcInR5cGluZ1wiKTsgc2V0RmVlZGJhY2sobnVsbCk7IH19IHJvbGU9XCJ0YWJcIiB0eXBlPVwiYnV0dG9uXCI+PEtleWJvYXJkIHNpemU9ezE2fSAvPiBHw7U8L2J1dHRvbj5cbiAgICAgICAgPC9kaXY+XG5cbiAgICAgICAge21vZGUgPT09IFwidm9pY2VcIiA/IDxQcm9udW5jaWF0aW9uRXZhbHVhdG9yIGNvbXBhY3Qga2V5PXtgJHtwYWlySW5kZXh9LXZvaWNlYH0gb25FdmFsdWF0ZWQ9e3JlY2VpdmVQcm9udW5jaWF0aW9ufSBzaG93TGlzdGVuPXtmYWxzZX0gdGFyZ2V0VGV4dD17Y3VycmVudC5sZWFybmVyLmhhbnppfSAvPiA6IDxkaXYgY2xhc3NOYW1lPVwicm9sZXBsYXktdHlwaW5nXCI+XG4gICAgICAgICAgPGxhYmVsIGh0bWxGb3I9XCJyb2xlcGxheS1hbnN3ZXJcIj5Dw6J1IHRy4bqjIGzhu51pIHRp4bq/bmcgVHJ1bmc8L2xhYmVsPlxuICAgICAgICAgIDxkaXY+PHRleHRhcmVhIGlkPVwicm9sZXBsYXktYW5zd2VyXCIgb25DaGFuZ2U9eyhldmVudCkgPT4geyBzZXRJbnB1dChldmVudC50YXJnZXQudmFsdWUpOyBzZXRGZWVkYmFjayhudWxsKTsgfX0gcGxhY2Vob2xkZXI9XCJOaOG6rXAgY8OidSB0cuG6oyBs4budaSBj4bunYSBi4bqhbuKAplwiIHJvd3M9ezJ9IHZhbHVlPXtpbnB1dH0gLz48YnV0dG9uIGRpc2FibGVkPXshaW5wdXQudHJpbSgpfSBvbkNsaWNrPXtzdWJtaXRUeXBlZH0gdHlwZT1cImJ1dHRvblwiPjxTZW5kIHNpemU9ezE4fSAvPiBLaeG7g20gdHJhPC9idXR0b24+PC9kaXY+XG4gICAgICAgIDwvZGl2Pn1cblxuICAgICAgICB7ZmVlZGJhY2sgPyA8ZGl2IGNsYXNzTmFtZT17YHJvbGVwbGF5LWZlZWRiYWNrICR7ZmVlZGJhY2suYWNjZXB0ZWQgPyBcImlzLWNvcnJlY3RcIiA6IFwiaXMtcmV0cnlcIn1gfT5cbiAgICAgICAgICA8c3Bhbj57ZmVlZGJhY2suYWNjZXB0ZWQgPyA8Q2hlY2tDaXJjbGUyIHNpemU9ezIxfSAvPiA6IDxMaWdodGJ1bGIgc2l6ZT17MjF9IC8+fTwvc3Bhbj5cbiAgICAgICAgICA8ZGl2PjxzdHJvbmc+e2ZlZWRiYWNrLmZlZWRiYWNrfTwvc3Ryb25nPjxwPsSQaeG7g20gbMaw4bujdCBuw6B5OiB7ZmVlZGJhY2suc2NvcmV9LzEwMDwvcD5cbiAgICAgICAgICAgIDxkaXYgY2xhc3NOYW1lPVwicm9sZXBsYXktbmF0dXJhbFwiPjxzbWFsbD5Dw6FjaCBuw7NpIHThu7Egbmhpw6puIGjGoW48L3NtYWxsPjxzdHJvbmcgbGFuZz1cInpoLUNOXCI+e2N1cnJlbnQubGVhcm5lci5oYW56aX08L3N0cm9uZz48c3Bhbj57Y3VycmVudC5sZWFybmVyLnBpbnlpbn08L3NwYW4+PHA+e2N1cnJlbnQubGVhcm5lci50cmFuc2xhdGlvbn08L3A+PC9kaXY+XG4gICAgICAgICAgPC9kaXY+XG4gICAgICAgICAge2ZlZWRiYWNrLmFjY2VwdGVkID8gPGJ1dHRvbiBvbkNsaWNrPXtjb250aW51ZVR1cm59IHR5cGU9XCJidXR0b25cIj57cGFpckluZGV4ID09PSBwYWlycy5sZW5ndGggLSAxID8gXCJIb8OgbiB0aMOgbmhcIiA6IFwiVGnhur9wIHThu6VjXCJ9PC9idXR0b24+IDogPGJ1dHRvbiBvbkNsaWNrPXtyZXRyeX0gdHlwZT1cImJ1dHRvblwiPjxSb3RhdGVDY3cgc2l6ZT17MTV9IC8+IFRo4butIGzhuqFpPC9idXR0b24+fVxuICAgICAgICA8L2Rpdj4gOiA8ZGl2IGNsYXNzTmFtZT1cInJvbGVwbGF5LWhpbnRcIj48TGlnaHRidWxiIHNpemU9ezE2fSAvPjxzcGFuPkfhu6NpIMO9OiB7Y3VycmVudC5sZWFybmVyLnRyYW5zbGF0aW9ufTwvc3Bhbj48L2Rpdj59XG4gICAgICA8L2Rpdj4gOiA8ZGl2IGNsYXNzTmFtZT1cInJvbGVwbGF5LWNvbXBsZXRlXCI+XG4gICAgICAgIDxDaGVja0NpcmNsZTIgc2l6ZT17MzV9IC8+PHNwYW4gY2xhc3NOYW1lPVwic2VjdGlvbi1raWNrZXJcIj5Ib8OgbiB0aMOgbmggdMOsbmggaHXhu5FuZzwvc3Bhbj48aDM+QuG6oW4gxJHDoyDEkWkgaOG6v3QgY3Xhu5ljIGjhu5lpIHRob+G6oWk8L2gzPjxwPkjDo3kgbHV54buHbiBs4bqhaSB2w6AgdGjhu60gbsOzaSBsaeG7gW4gbeG6oWNoIGjGoW4g4bufIGzGsOG7o3QgdGnhur9wIHRoZW8uPC9wPjxidXR0b24gb25DbGljaz17cmVzdGFydH0gdHlwZT1cImJ1dHRvblwiPjxSb3RhdGVDY3cgc2l6ZT17MTd9IC8+IEx1eeG7h24gbOG6oWkgdOG7qyDEkeG6p3U8L2J1dHRvbj5cbiAgICAgIDwvZGl2Pn1cbiAgICA8L2Rpdj5cbiAgPC9zZWN0aW9uPjtcbn1cbiJdfQ==

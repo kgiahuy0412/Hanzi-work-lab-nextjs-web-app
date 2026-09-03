@@ -6,6 +6,7 @@ import "./motion.css";
 import "./responsive.css";
 import "./white-backgrounds.css";
 import "./brand-theme.css";
+import "./lesson-interactive.css";
 import { SiteHeader, SiteHeaderFallback } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { MobileNav } from "@/components/mobile-nav";
